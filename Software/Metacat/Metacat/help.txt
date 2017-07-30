@@ -1,0 +1,99 @@
+Release: 1.0 (December 2003)
+
+This file is an abbreviated version of README.html
+
+The definitive source of information about Metacat is James B. Marshall's PhD dissertation, "Metacat: A Self-Watching Cognitive Architecture for Analogy-Making and High-Level Perception", Department of Computer Science, Indiana University, Bloomington, 1999.
+
+INSTRUCTIONS FOR RUNNING METACAT
+================================
+
+Windows may be rearranged, resized, or iconified as desired.  The windows labeled repl and Interaction can be iconified and ignored, but should not be closed.
+
+To quit Metacat, close the Control Panel window.
+
+CONTROL PANEL
+-------------
+
+To run Metacat on an analogy problem such as "abc -> cba; pqrs -> ?", type the strings into the Control Panel's input field and press Return.  Punctuation is optional.  A seed value used to initialize the random number generator at the start of the run may be specified by including it after the letter-strings, if desired.  Example: "abc cba pqrs 123456".  Click Go or press Return again to begin the run.  In general, clicking Go is equivalent to pressing Return in an empty input field.
+
+To interrupt execution, click Stop or click once anywhere in the Workspace window.  Click Go or click on the Workspace again to resume execution.
+
+The Speed slider bar controls the speed of the graphics.
+
+The Step button single-steps program execution.  After pressing Step, single-stepping may be continued by clicking directly on the Workspace window, until Go is pressed or the problem is reset.  The step size may be changed via the "Step mode interval" menu option.  Program execution will be interrupted on every time step that is a multiple of the current step size setting.
+
+Use the "Set breakpoint" menu option to specify a particular time at which to interrupt execution.  The breakpoint will remain in effect until it is cleared manually via "Clear breakpoint".  It is not possible to set multiple breakpoints.
+
+The Reset button resets the current run to the beginning, using the same seed value as before.  WARNING: resetting a run does not erase Metacat's memory.  If the program is rerun with the same seed after finding a new answer, it won't find that answer again, because it already exists in memory.  To reproduce a run exactly, the state of the memory must be the same as it was at the beginning of the run.
+
+"Clear Memory" erases all answers from Metacat's memory.
+
+Use the "Windows" menu to show or hide individual windows as desired.  A window can also be hidden by closing it.  (Exception: closing the repl, Interaction, or Control Panel windows will destroy them.)
+
+To run Metacat in answer justification mode, include an extra letter-string when entering a problem in the Control Panel.  A seed value can also be included after the strings if desired.  Example: "abc cba pqrs sqrp 123456"
+
+WORKSPACE WINDOW AND TEMPERATURE
+--------------------------------
+
+The Workspace window displays the activity of codelets during a run.  Newly-proposed structures are shown as dotted lines, evaluated structures as dashed lines, and built structures as solid lines.  Temperature is an inverse measure of the amount and quality of built structures that currently exist in the Workspace.
+
+SLIPNET WINDOW
+--------------
+
+The Slipnet window shows the current activation of each concept in the Slipnet.  Concepts that are clamped at full activation are shown in light blue.  The Slipnet display can be turned on or off by toggling the "Slipnet graphics" menu option.
+
+CODERACK WINDOW
+---------------
+
+The Coderack window displays, for each codelet type, the number of codelets of that type currently on the Coderack and the relative probability that a codelet of that type will be chosen to run next (shown as a horizontal bar).  Selection probabilities depend on the number of codelets of each type, the urgency values of each codelet, and the current Workspace temperature.  The last codelet type that ran is shown in dark pink.
+
+The display of codelet counts (the numbers to the left of each codelet type) can be turned on or off by toggling the "Show codelet counts" menu setting. The last-codelet-type indicator can be turned on or off via the "Show last codelet type" setting.  The entire Coderack display can be turned on or off by toggling the "Coderack graphics" setting.
+
+THEMESPACE WINDOWS
+------------------
+
+The activation level of a theme is indicated by a green or red circle (green for positive activation, red for negative) in the Top Themes, Bottom Themes, and Vertical Themes windows.  Dominant themes (those with activation levels exceeding all other themes in their category by a sufficiently wide margin) are highlighted against a yellow background.  A clamped pattern of themes is indicated by a bright green background in one or more Theme windows.
+
+TEMPORAL TRACE WINDOW
+---------------------
+
+Clicking on an event icon in the Temporal Trace window displays information about the event in the Workspace window, and possibly other windows depending on the type of event.  For example, clicking on a rule event shows the rule and Workspace state at the time the rule was created.  In addition, the Slipnet window shows the concepts that make up the rule, and the Theme windows show the themes associated with the rule.  Clicking on the icon again restores the contents of all windows.
+
+EPISODIC MEMORY AND COMMENTARY WINDOWS
+--------------------------------------
+
+Clicking on an answer icon in the Episodic Memory window displays the answer, together with all of its supporting structures, in the Workspace window.  In addition, the Theme windows show the answer's underlying themes and the Temperature window displays the answer's temperature.  Clicking on the icon again restores the contents of all windows.
+
+To have Metacat compare two answers stored in memory, click on the answers' icons in succession.  The program will generate a summary in English of the similarities and differences that it sees, based on an analysis of the underlying themes and other structures stored in the answer descriptions.  This summary appears in the Commentary window.
+
+The tone of the program's commentary can be controlled via the "Eliza mode" menu setting.  Turning Eliza mode off results in more neutral-sounding commentary.  Toggling Eliza mode on or off causes all of the text currently in the Commentary window to be redisplayed in the new mode.
+
+The Commentary window font can be changed via the "Commentary font face" and "Commentary font size" menu options.  To save the current contents of the window to a text file, choose "Save commentary to file".
+
+The "Verbose mode" setting controls the printing of technical codelet messages in the Interaction or repl window.  These messages are useful for debugging, or for seeing what individual codelets are doing, but otherwise are not important.  They also slow down the program considerably, so turning Verbose mode on is not recommended.
+
+EEG WINDOW
+----------
+
+The EEG window can be used to track the progression of numerical values such as temperature as they change over time.  This can be useful in understanding the long-term behavior of parameters or other values during a run.  By default, the EEG is configured to plot Workspace activity and temperature, but can easily be changed to track any desired values that fall within the range 0-100.  See the file eeg-graphics.ss for more information.
+
+DEMOS
+-----
+
+The sample runs of Metacat discussed in Chapter 5 of the PhD dissertation are available under the "Demos" menu.  Selecting a demo will initialize the letter-strings and random number seed value appropriately.  Click Go to begin the run.  Many of these demos assume an initially empty memory, so it is a good idea to clear the memory before beginning each run.
+
+This is not true, however, for the Answer comparison and reminding demos.  For example, to have Metacat compare the answers mrrkkk and mrrjjjj to the problem" abc -> abd; mrrjjj -> ?", run the demos labeled "abc / mrrkkk" and "abc / mrrjjjj" in succession, without clearing the memory between runs.  Then click on the icons for these answers in the Episodic Memory window in order to have the program compare them.
+
+PATTERN CLAMPING AND SELF-WATCHING
+----------------------------------
+
+The "Self-watching mode" menu setting turns Metacat's mechanisms for self-watching on or off.  With self-watching off, all activity in the Themespace is suppressed, and no Progress watcher, Jootser, or Thematic bridge scout codelets are allowed to run.
+
+The "Clamp theme pattern" or "Clamp codelet pattern" menu options can be used to manually clamp theme or codelet patterns.  To specify a theme pattern, choose "Clamp theme pattern" and then click on one or more Theme windows to select the themes to include in the pattern.  Left-clicking a theme specifies maximum positive activation; right-clicking or shift-clicking specifies maximum negative activation.  Clicking an already-selected theme removes it from the pattern.
+
+To manually undo a clamp, select the "Undo last clamp" menu option.
+
+FEEDBACK
+--------
+
+Send bug reports or other feedback to marshall@cs.pomona.edu.  If the program crashes on a particular run, please make sure to indicate the exact letter-strings and random number seed value used, as well as the state of the Episodic Memory at the beginning of the run.  Thanks!

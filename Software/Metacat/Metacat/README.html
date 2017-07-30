@@ -1,0 +1,772 @@
+<html>
+
+<head>
+<title>Metacat README</title>
+</head>
+
+<body bgcolor=white text=black>
+
+<h1 align=center>Metacat Source Code Distribution</h1>
+
+<p>
+Release 1.0 &nbsp;(December 2003)<br>
+Author: &nbsp;James B. Marshall<br>
+<i>marshall@cs.pomona.edu</i>
+</p>
+
+<p>This page provides information about the Metacat computer model of
+analogy-making and perception, including downloadable source code and
+instructions for running the program.</p>
+
+<p>The definitive source of information about Metacat is my PhD dissertation,
+<i>Metacat: A Self-Watching Cognitive Architecture for Analogy-Making and
+High-Level Perception</i>, Department of Computer Science, Indiana University,
+Bloomington, 1999.  Downloadable versions of the dissertation in PDF or gzipped
+PostScript format are available here:</p>
+
+<ul>
+<li>
+<a href="http://www.cs.pomona.edu/~marshall/metacat/dissertation.pdf">Metacat PhD
+dissertation</a> (PDF)</li>
+<li>
+<a href="http://www.cs.pomona.edu/~marshall/metacat/dissertation.ps.gz">Metacat PhD
+dissertation</a> (gzipped PostScript)</li>
+</ul>
+
+<p>A hardcopy version may be obtained by contacting Helga Keller at:</p>
+
+<p>
+Center for Research on Concepts and Cognition<br>
+Indiana University<br>
+510 North Fess Street<br>
+Bloomington, IN 47408<br>
+(812) 855-6965<br>
+<i>htkeller@indiana.edu</i>
+</p>
+
+<hr>
+
+<h2>Overview</h2>
+
+<p>Metacat is a computer model of analogy-making and perception that builds on
+the foundations of an earlier model called Copycat.  Copycat was originally
+developed by Douglas Hofstadter and Melanie Mitchell as part of a research
+program aimed at computationally modeling the fundamental mechanisms underlying
+human thought processes.  Central to the philosophy of this research is the
+belief that the mind's ability to perceive connections between apparently
+dissimilar things, and to make analogies based on these connections, lies at
+the heart of intelligence.  According to this view, to understand the
+analogical mechanisms of thinking and perception is to understand the source of
+the remarkable fluidity of the human mind, including its hidden wellsprings of
+creativity.</p>
+
+<p>Like Copycat, Metacat operates in an idealized world of analogy problems
+involving short strings of letters.  Although the program understands only a
+limited set of concepts about its letter-string world, its emergent processing
+mechanisms give it considerable flexibility in recognizing and applying these
+concepts in a wide variety of situations.  The program's high-level behavior
+emerges in a bottom-up manner from the collective actions of many small
+nondeterministic processing agents (called <i>codelets</i>) working in
+parallel, in much the same way that an ant colony's high-level behavior emerges
+from the individual behaviors of the underlying ants, without any central
+executive directing the course of events.</p>
+
+<p>Metacat focuses on the issue of <i>self-watching</i>: the ability of a system
+to perceive and respond to patterns that arise not only in its immediate
+perceptions of the world, but also in its own processing of those perceptions.
+Copycat lacked such an "introspective" capacity, and consequently lacked
+insight into how it arrived at its answers.  It was unable to notice
+similarities between analogies, or to explain the differences between them (or
+why one analogy might be considered to be better or worse than another).  In
+contrast, Metacat's self-watching mechanisms enable it to create much richer
+representations of analogies, allowing it to compare and contrast answers in an
+insightful way.  Furthermore, it is able to recognize, remember, and recall
+patterns that occur in its own "train of thought" as it makes analogies.  For
+instance, by monitoring its own processing, Metacat can often recognize when it
+has fallen into a repetitive cycle of behavior, enabling it to break out of its
+"rut" and try something else.</p>
+
+<h3>Additional Information</h3>
+
+<p>If you are interested in learning more about Copycat and Metacat, or other
+similar projects, the following publications and web sites are good places to
+start (in addition to downloading and trying out the code itself):</p>
+
+<ul>
+
+<li><a href="http://www.cs.pomona.edu/~marshall/papers/cogsci02.pdf">Metacat:
+a self-watching cognitive architecture for analogy-making</a>, by James
+B. Marshall, <i>Proceedings of the 24th Annual Conference of the Cognitive
+Science Society</i> (2002), pages 631-636.</li>
+
+<li><a href="http://www.cs.pomona.edu/~marshall/papers/ecai02.pdf">Metacat: a
+program that judges creative analogies in a microworld</a>, by James
+B. Marshall, <i>Proceedings of the 2nd Workshop on Creative Systems: Approaches
+to Creativity in Artificial Intelligence and Cognitive Science</i>,
+15th European Conference on Artificial Intelligence, Lyon, France (2002), pages
+77-84.</li>
+
+<li><i><a href="http://www.cogsci.indiana.edu/fcca.html">Fluid Concepts and
+Creative Analogies</a></i>, by Douglas R. Hofstadter and the Fluid Analogies
+Research Group, Basic Books, 1995.</li>
+
+<li><i><a
+href="http://mitpress.mit.edu/catalog/item/default.asp?sid=D0E48B34-D132-4040-8CCE-8FBA0DCA7DE4&ttype=2&tid=7097">The
+Subtlety of Sameness</a></i>, by Robert M. French, MIT Press, 1995.</li>
+
+<li><i><a
+href="http://mitpress.mit.edu/catalog/item/default.asp?sid=19F59B4B-1EFC-427C-A7C2-C15AC48A70F8&ttype=2&tid=6581">Analogy-Making
+as Perception</a></i>, by Melanie Mitchell, MIT Press, 1993.</li>
+
+<li><a href="http://www.cse.ogi.edu/~mm/analogy-problems.html">A sampler of Copycat
+analogy problems</a></li>
+
+<li><a href="http://www.cse.ogi.edu/~mm/how-to-get-copycat.html">Original
+Copycat source code (in Common Lisp)</a></li>
+
+<li><a href="http://www.cogsci.indiana.edu">Center for Research on Concepts and
+Cognition</a></li>
+
+</ul>
+
+<hr>
+
+<h2>Downloading and Installing Metacat</h2>
+
+<p>The Metacat source code is available as a gzipped tar file for Linux and Mac
+OS X or as a zip file for Windows from the links below, under the terms of the
+<a href="http://www.gnu.org/licenses/gpl.txt">GNU General Public
+License</a>.</p>
+
+<ul>
+<li><a
+href="http://www.cs.pomona.edu/~marshall/metacat/Metacat-1.0.tar.gz">Metacat
+source code (gzipped tar archive)</a></li>
+<li><a
+href="http://www.cs.pomona.edu/~marshall/metacat/Metacat-1.0.zip">Metacat
+source code (Windows zip archive)</a></li>
+</ul>
+
+<p>To run Metacat, you will need the following software packages:</p>
+
+<ul>
+<li>Petite Chez Scheme</li>
+<li>Scheme Widget Library (SWL)</li>
+<li>Tcl/Tk (version 8.3 or later)</li>
+</ul>
+
+<p>Petite Chez Scheme is an ANSI/IEEE-compliant implementation of the Scheme
+programming language.  SWL is a windowing and graphics package based on Tcl/Tk
+that extends the capabilities of Petite Chez Scheme.  To install SWL, you must
+first install Petite Chez Scheme and Tcl/Tk 8.3, if they are not already on
+your system.  Versions of Tcl/Tk later than 8.3 should work fine also.  All
+three packages are available for Linux, Macintosh, or Windows from the links
+below.</p>
+
+<h3>Linux</h3>
+
+<ul>
+<li><a
+href="https://www.cs.indiana.edu/chezscheme/iu/PetiteChezScheme-6.9b-2.i386.rpm">PetiteChezScheme-6.9b-2.i386.rpm</a>:
+Petite Chez Scheme RPM for Intel Linux.</li>
+<li><a
+href="https://www.cs.indiana.edu/chezscheme/iu/SWL-0.9x-1.i386.rpm">SWL-0.9x-1.i386.rpm</a>:
+Scheme Widget Library RPM for Intel Linux.</li>
+<li><a
+href="https://www.cs.indiana.edu/chezscheme/iu/tcl-8.3.3-62.i386.rpm">tcl-8.3.3-62.i386.rpm</a>:
+Tcl RPM for Intel Linux.</li>
+<li><a
+href="https://www.cs.indiana.edu/chezscheme/iu/tk-8.3.3-62.i386.rpm">tk-8.3.3-62.i386.rpm</a>:
+Tk RPM for Intel Linux.</li>
+
+<p>To install Scheme, run the following command as root:
+<pre>
+rpm --install PetiteChezScheme-6.9b-2.i386.rpm
+</pre>
+This will create the executable file /usr/bin/petite and place supporting files
+in /usr/lib/csv6.9b.  It will also install the online documentation.  If
+needed, install Tcl/Tk next by running the two commands below as root.  (The
+commands "locate libtcl" and "locate libtk" can be used to find out what
+version of Tcl/Tk you have on your machine.)
+<pre>
+rpm --install tcl-8.3.3-62.i386.rpm
+rpm --install tk-8.3.3-62.i386.rpm
+</pre>
+This will place Tcl and Tk supporting files in /usr/lib, /usr/include, and
+/usr/bin.  In general, to see a complete listing of all files to be installed,
+use
+<pre>
+rpm --query --list --package <i>&lt;package-file&gt;</i>
+</pre>
+To install SWL, run
+<pre>
+rpm --install SWL-0.9x-1.i386.rpm
+</pre>
+Packages can be uninstalled with the following command
+(where the package name is just the name of the package file minus
+the .i386.rpm extension):
+<pre>
+rpm --erase <i>&lt;package-name&gt;</i>
+</pre>
+Debian users should be able to install the Linux RPMs using <i>alien</i>
+as shown below:
+<pre>
+alien -cd PetiteChezScheme-6.9b-2.i386.rpm
+</pre>
+</p>
+</ul>
+
+<h3>Macintosh</h3>
+
+<ul>
+<li><a
+href="https://www.cs.indiana.edu/chezscheme/iu/pcsv6.9b-3.pkg.tar.gz">pcsv6.9b-3.pkg.tar.gz</a>:
+Petite Chez Scheme PKG for Apple PowerPC Mac OS X.</li>
+<li><a
+href="https://www.cs.indiana.edu/chezscheme/iu/swl0.9x-3.pkg.tar.gz">swl0.9x-3.pkg.tar.gz</a>:
+Scheme Widget Library PKG for Apple PowerPC Mac OS X.</li>
+<li><a
+href="https://www.cs.indiana.edu/chezscheme/iu/tcl8.4.4.pkg.tar.gz">tcl8.4.4.pkg.tar.gz</a>:
+Tcl PKG for Apple PowerPC Mac OS X.</li>
+<li><a
+href="https://www.cs.indiana.edu/chezscheme/iu/tk8.4.4.pkg.tar.gz">tk8.4.4.pkg.tar.gz</a>:
+Tk PKG for Apple PowerPC Mac OS X.</li>
+
+<p>To install Scheme, unpack pcsv6.9b-3.pkg.tar.gz and click on the pkg file.
+To install SWL, you must first install Tcl and Tk by unpacking
+tcl8.4.4.pkg.tar.gz and tk8.4.4.pkg.tar.gz and clicking on the pkg files. Then
+unpack swl0.9x-3.pkg.tar.gz and click on the pkg file.</p>
+
+</ul>
+
+<h3>Windows</h3>
+
+<ul>
+<li><a
+href="https://www.cs.indiana.edu/chezscheme/iu/pcsv69b.exe">pcsv69b.exe</a>:
+Petite Chez Scheme self-extracting .exe for Windows 95/98/ME/NT/2000/XP.</li>
+<li><a
+href="https://www.cs.indiana.edu/chezscheme/iu/swl09x69b.exe">swl09x69b.exe</a>:
+Scheme Widget Library self-extracting .exe for Windows
+95/98/ME/NT/2000/XP. Also installs Tcl/Tk if necessary.</li>
+
+<p>Run pcsv69b.exe first to install Scheme, then swl09x69b.exe to install SWL
+and Tcl/Tk (accepting all of the defaults).  Scheme, SWL, and Tcl/Tk can be
+uninstalled via the Add/Remove Programs option in the Windows control
+panel.</p>
+
+</ul>
+
+<p>See the <a href="https://www.cs.indiana.edu/chezscheme/iu">Chez Scheme
+6.9b</a> download page for further information.</p>
+
+<p><b><font color=red>Important:</font></b> After untarring or unzipping the
+archive file, you should edit the configuration settings at the top of
+<tt>metacat.ss</tt> before running Metacat for the first time.  The
+<tt>*metacat-directory*</tt> pathname should point to the directory containing
+the Metacat source code.  The <tt>*file-dialog-directory*</tt> pathname
+specifies the default directory used when saving files with the <i>Save
+commentary to file</i> menu option.</p>
+
+<p>Metacat uses a lot of memory.  For best performance, at least 512MB of RAM
+is recommended, especially for some of the longer demo runs.</p>
+
+<hr>
+
+<h2>Running Metacat</h2>
+
+<p>To start the program, do one of the following:</p>
+
+<ul>
+<li><p>In Linux, <tt>cd</tt> to the <tt>Metacat</tt> subdirectory and type
+<tt>swl</tt>&nbsp;<tt>metacat.ss</tt> at the Linux prompt.</p></li>
+<li>In Mac OS X, start SWL and then load the file <tt>metacat.ss</tt> using
+its full pathname.  For example:
+<pre>
+> (load "~/Desktop/Metacat/metacat.ss")
+</pre>
+</li>
+<li>In Windows, first create a shortcut on the Desktop to the SWL application:
+under the <i>Start<tt>-&gt;</tt>Programs<tt>-&gt;</tt>Chez Scheme</i> submenu,
+right-click on <i>SWL</i> and choose <i>Send To<tt>-&gt;</tt>Desktop</i>.
+Then simply drag and drop the file <tt>metacat.ss</tt> onto the Desktop SWL
+icon.</li>
+</ul>
+
+<p>This will load all of the Metacat source code into Scheme/SWL.  Next, type
+<tt>(setup)</tt> at the <tt>&gt;</tt> prompt in the <i>repl</i> window to
+initialize all of Metacat's windows.  These may be rearranged, resized, or
+iconified as desired.  Closing a window hides it but does not destroy it (there
+are a few exceptions to this, however; see below).  The following windows are
+created by Metacat:</p>
+
+<ul>
+<li>Control Panel</li>
+<li>Workspace</li>
+<li>Temperature</li>
+<li>Slipnet</li>
+<li>Coderack</li>
+<li>Top, Bottom, and Vertical Themes</li>
+<li>Temporal Trace</li>
+<li>Episodic Memory</li>
+<li>Commentary</li>
+<li>EEG (hidden)</li>
+<li>Metacat Logo (hidden)</li>
+</ul>
+
+<p>Two other windows, labeled <i>repl</i> and <i>Interaction window</i>, are
+created automatically by SWL, and should not be closed.  However, they can be
+iconified and ignored since they are not needed to run the program.</p>
+
+<p>To quit Metacat, simply close the Control Panel window.</p>
+
+<h3>Control Panel</h3>
+
+<p>Most interaction with Metacat occurs through the Control Panel, shown below.
+(Note: the appearance of the graphics will be slightly different on non-Linux
+systems.  For instance, in Mac OS X, the main menu bar is located at the top
+of the screen.)  To run Metacat on an analogy problem such as
+<i><b>abc&nbsp;-&gt;&nbsp;cba;&nbsp;pqrs&nbsp;-&gt;&nbsp;?</b></i>, type the
+problem into the Control Panel's input field as shown, and press Return.
+Punctuation is optional.</p>
+
+<p align=center><img src="pictures/control-panel.gif"></p>
+
+<p>This will initialize the Workspace, Slipnet, and other program components
+accordingly.  To begin the run, press Return again or click the <i>Go</i>
+button.  In general, clicking <i>Go</i> is equivalent to pressing Return.</p>
+
+<p>To interrupt execution, click <i>Stop</i> or click once anywhere in the
+Workspace window.  Click <i>Go</i> or click on the Workspace again to resume
+execution.  The <i>Speed</i> slider bar controls the speed of the graphics.</p>
+
+<p>When Metacat finds a new answer, it stops running and displays the answer
+along with the Workspace structures (groups, bridges, rules, etc.) that gave
+rise to it.  It also stores a description of the answer in its Episodic Memory.
+Continuing a run after an answer has been found may lead the program to
+discover other answers to the same problem.  It may even discover an
+alternative way of producing some earlier answer based on a different
+interpretation of the letter-strings (<i>i.e.</i>, by using a different rule to
+describe how the strings change).  However, it will not reproduce an answer
+that is identical to one already in memory involving exactly the same
+letter-strings and rules.</p>
+
+<p>The <i>Step</i> button single-steps program execution, where each step
+corresponds to running one codelet from the Coderack.  After pressing
+<i>Step</i>, single-stepping may be continued by clicking directly on the
+Workspace window, until <i>Go</i> is pressed or the problem is reset.  The
+default step size is one codelet, but this may be changed via the <i>Step mode
+interval</i> setting under the Control Panel <i>Options</i> menu.  Program
+execution will be interrupted on every time step that is a multiple of the
+current step size setting.</p>
+
+<p>It is also possible to specify a particular time at which to interrupt
+execution.  This can be done via <i>Set breakpoint</i> under the
+<i>Options</i> menu.  The breakpoint will remain in effect until it is cleared,
+which must be done manually using the <i>Clear breakpoint</i> menu option.  It
+is not possible to set multiple breakpoints.</p>
+
+<p>Since Metacat is nondeterministic, it may produce different results when run
+more than once on the same problem.  The exact behavior of the program is
+determined by the <i>seed value</i> used to initialize the random number
+generator at the beginning of a run.  The seed used for the current run appears
+in the upper right corner of the Control Panel.  A particular seed value may be
+specified by including it after the letter-strings in the input field.  For
+example, to run the above problem using the seed 123456, enter "abc cba pqrs
+123456".</p>
+
+<p>The <i>Reset</i> button resets the current run to the beginning, using the
+same seed value as before.  <font color=red><b>Warning:</b></font> resetting a
+run does not erase Metacat's Episodic Memory.  If the program is rerun with the
+same seed after finding a new answer, it won't find that answer again, because
+it already exists in memory.  To reproduce a run exactly, the state of the
+memory must be the same as it was at the beginning of the run.</p>
+
+<p>To erase all answers from Metacat's memory, click <i>Clear Memory</i> on the
+Control Panel's main menu bar.  (In Mac OS X, this option is located under
+the <i>Options</i> menu.)</p>
+
+<p>The <i>Windows</i> menu makes it easy to hide and unhide Metacat's many
+windows, which can help to reduce screen clutter.  To show or hide a window,
+choose the appropriate action from the menu.  A window can also be hidden by
+closing it, usually by clicking on a small "X" in the corner of the frame.
+(Closing the <i>repl</i>, <i>Interaction</i>, or <i>Control Panel</i> windows,
+however, will destroy them, so don't do this.)</p>
+
+<p>It is also possible to provide Metacat with an answer to a problem along
+with the problem itself.  In this case, Metacat runs in <i>answer justification
+mode</i>, working backwards from the answer to try to discover why (or if) it
+makes sense.  (See pages 49, 59-62, and 152-161 of the dissertation for an
+explanation of answer justification.)  To provide an answer, simply include it
+as an extra letter-string when entering a problem in the Control Panel.  For
+example, to specify <i><b>sqrp</b></i> as the answer to the earlier problem,
+enter "abc cba pqrs sqrp".  As before, a seed value can be included after the
+letter-strings if desired, as in "abc cba pqrs sqrp 123456".</p>
+
+<h3>Workspace and Temperature</h3>
+
+<p align=center>
+<table cellspacing=10 border=0>
+<tr>
+<td valign=top><img src="pictures/workspace.gif"></td>
+<td valign=top><img src="pictures/temperature.gif"></td>
+</tr>
+</table>
+</p>
+
+<p>The Workspace window displays the activity of codelets as they propose,
+evaluate, build, and destroy structures (groups, bridges, rules, etc.) during a
+run.  Newly-proposed structures are shown as dotted lines, evaluated structures
+as dashed lines, and built structures as solid lines (see the image above).</p>
+
+<p>The Workspace <i>temperature</i> is an inverse measure of the amount and
+quality of built structures that currently exist in the Workspace, and is
+displayed in the Temperature window.  At the beginning of a run, when no
+structures have yet been built, the temperature is very high (100 degrees).  As
+the program builds up a more organized view of the letter-strings, temperature
+falls toward zero.</p>
+
+<p>Besides serving as a measure of Workspace organization, temperature also
+controls the amount of randomness used by codelets in making decisions.  At
+higher temperatures, codelet decisions are largely random; at lower
+temperatures they become much more deterministic.  The net effect is that the
+program gradually moves from largely random, exploratory behavior at the outset
+of a run to largely deterministic, focused behavior near the end, as it
+discovers more relationships among the letter-strings.</p>
+
+<h3>Slipnet</h3>
+
+<p align=center><img src="pictures/slipnet.gif"></p>
+
+<p>The Slipnet window shows the current activation of each Slipnet node (links
+between nodes are not shown).  Each node corresponds to a particular concept
+that the program knows about the letter-string world.  Some concepts start out
+highly activated at the beginning of a run, depending on the particular
+problem.  In general, the more highly activated a concept is, the more
+influence it exerts on the nondeterministic decisions made by codelets in the
+Workspace.  In turn, structure-building activity in the Workspace influences
+the amount of activation that concepts receive in the Slipnet.</p>
+
+<p>Depending on the circumstances, concepts may be temporarily <i>clamped</i>
+by the program at full activation, which causes them to exert maximal influence
+over codelet activity.  When a concept is clamped, its activation is shown in
+light blue, as in the example above.</p>
+
+<p>If desired, the Slipnet display can be turned on or off by toggling the
+<i>Slipnet graphics</i> setting under the Control Panel <i>Options</i> menu.
+This can be useful for speeding up the graphics in the other windows.</p>
+
+<h3>Coderack</h3>
+
+<p><img src="pictures/coderack.gif" align=left vspace=10 hspace=15></p>
+
+<p>The Coderack holds the current pool of codelets waiting to run.  On each
+time step, one codelet is chosen probabilistically from this pool, removed from
+the Coderack, and run.  The Coderack window displays, for each codelet type,
+the number of codelets of that type currently in the pool and the relative
+probability that a codelet of that type will be chosen to run next (shown as a
+horizontal bar).  Selection probabilities depend on the number of codelets of
+each type, the <i>urgency</i> values of each codelet (not shown), and the
+current Workspace temperature.  In general, every codelet is assigned an
+urgency value at the time it gets created, with higher urgencies meaning a
+higher likelhood of being chosen to run.  The most recent codelet type that ran
+is shown in dark pink.</p>
+
+<p>For example, a typical Coderack state is shown to the left.  Here the last
+codelet that ran was a <i>Top-down description scout</i>.  The most likely type
+of codelet to run next is a <i>Description evaluator</i>, even though there is
+just one such codelet waiting.  This is because its urgency value is much
+higher than that of the other codelets, even the combined urgencies of the 19
+<i>Rule scout</i> codelets waiting to run.</p>
+
+<p>If desired, the display of codelet counts (the numbers to the left of each
+codelet type) in the Coderack window can be turned on or off by toggling the
+<i>Show codelet counts</i> setting under the Control Panel <i>Options</i> menu.
+Likewise, the last-codelet-type indicator can be turned on or off via the
+<i>Show last codelet type</i> menu setting.  Finally, the entire Coderack
+display can be turned on or off by toggling the <i>Coderack graphics</i> menu
+setting.  This can be useful for speeding up the graphics in the other
+windows.<br clear=left></p>
+
+<h3>Themespace</h3>
+
+<p><i>Themes</i> are structures that represent relationships between
+letter-strings at an abstract level.  They play a key role in the descriptions
+created by Metacat of its answers to analogy problems, and serve as the basis
+for answer comparison.  Themes reside in the Themespace, and are displayed in
+the three windows labeled <i>Top Themes</i>, <i>Bottom Themes</i>, and
+<i>Vertical Themes</i>.  "Top", "bottom", or "vertical" refers to the
+particular string-mapping represented by a theme.</p>
+
+<p>For example, the three top themes shown below represent properties of the
+horizontal <i><b>abc&nbsp;->&nbsp;cba</b></i> mapping shown earlier in the top
+region of the Workspace window.  The activation level of each theme is
+indicated by a green circle.  In general, a theme whose activation level
+exceeds that of all other themes in its category by a sufficiently wide margin
+is called a <i>dominant theme</i>, and appears highlighted against a yellow
+background in the display.  Themes can also be negatively activated, in which
+case they appear red instead of green.</p>
+
+<p align=center><img src="pictures/themes.gif"></p>
+
+<p>Like Slipnet concepts, themes can be temporarily <i>clamped</i> by the
+program at full activation, which causes them to exert strong top-down pressure
+on the activities of codelets in the Workspace, effectively channeling
+Metacat's behavior in particular directions.  A set of clamped themes is
+indicated by a bright green background in the theme window.  For example, with
+the top themes <i>String Position: identity</i> and <i>Direction: identity</i>
+clamped, the Top Themes window would appear as shown below.  This would
+encourage Metacat to reperceive <i><b>abc</b></i> and <i><b>cba</b></i> as
+going in the same direction, with the leftmost letter of <i><b>abc</b></i>
+mapping to the leftmost letter of <i><b>cba</b></i>, and so on.  (See sections
+4.1 and 4.2 of the dissertation for a complete discussion of themes and the
+Themespace.)</p>
+
+<p align=center><img src="pictures/clamped-themes.gif"></p>
+
+<h3>Temporal Trace</h3>
+
+<p>The Temporal Trace window shows a high-level record of the events that occur
+during a run.  These events are monitored by codelets looking for patterns in
+the program's behavior.  For example, several different types of events are
+shown below.  These events include the building of the string-encompassing
+groups <i><b>abc</b></i> and <i><b>pqrs</b></i>, the activation of the
+<i>Opposite</i> concept in the Slipnet, the creation of a slippage between the
+concepts <i>left</i> and <i>right</i>, the creation of three different rules,
+and the clamping of a set of themes.  (Section 4.4 of the dissertation
+describes the Temporal Trace in detail.)</p>
+
+<p>An event can be examined more closely by clicking on its icon when the
+program is not running.  Information about the event will be displayed in the
+Workspace window, and possibly other windows depending on the type of event.
+For example, clicking on one of the rule events shown below will display the
+rule along with the state of the Workspace at the time the rule was created.
+In addition, the concepts making up the rule will be displayed in the Slipnet
+window, and the themes associated with the rule will be displayed in the
+appropriate Theme window.  Clicking on the event's icon again will restore the
+contents of the Workspace and the other windows.</p>
+
+<p align=center><img src="pictures/trace.gif"></p>
+
+<h3>Episodic Memory and Commentary</h3>
+
+<p>Metacat stores descriptions of problems and answers in its Episodic Memory.
+These descriptions contain the themes, rules, bridges, and other Workspace
+structures that gave rise to each answer, in addition to the letter-strings
+themselves.  Each description appears as a labeled icon in the Episodic Memory
+window.  For example, the left image below shows the contents of the memory
+after the program was run in answer justification mode on the answers
+<i><b>srqp</b></i> and <i><b>sqrp</b></i> for the earlier problem.</p>
+
+<p>An answer can be displayed by clicking on its icon in the window.  This will
+show the answer together with all of its supporting structures in the Workspace
+window, as well as the answer's associated themes in the Theme windows and its
+temperature in the Temperature window.  Clicking on the icon again will restore
+the contents of the windows.</p>
+
+<p>To have Metacat compare two answers stored in memory, simply click on the
+answers' icons in succession.  The program will generate a summary in English
+of the similarities and differences that it sees, based on an analysis of the
+underlying themes and other structures stored in the answer descriptions.  This
+summary appears in the Commentary window.  For example, comparing the answers
+<i><b>srqp</b></i> and <i><b>sqrp</b></i> resulted in the commentary shown
+below.  A few other messages generated during the <i><b>sqrp</b></i> run are
+also visible.  (See section 4.7 of the dissertation for a detailed discussion
+of answer comparison and reminding).</p>
+
+<p align=center>
+<table cellpadding=20 border=0>
+<tr>
+<td valign=top><img src="pictures/memory.gif"></td>
+<td valign=top><img src="pictures/commentary.gif"></td>
+</tr>
+</table>
+</p>
+
+<p>Whenever Metacat works on an analogy problem, it generates a running
+narrative of its "thoughts" in the Commentary window.  The tone of this
+commentary can be controlled via the <i>Eliza mode</i> setting under the
+Control Panel <i>Options</i> menu.  Turning Eliza mode off results in more
+neutral-sounding commentary (this is useful for the humor-impaired, or for
+those worried about the notorious "Eliza effect").  Toggling Eliza mode on or
+off causes all of the text currently in the Commentary window to be redisplayed
+in the new mode, but does not change the number of paragraphs.  This makes it
+easy to see the corresponding "translation" of any part of the text.  (See
+sections 4.6 and 4.7.4 of the dissertation for more information about Metacat's
+commentary-generating mechanisms.)</p>
+
+<p>The Commentary window font can be changed via the <i>Commentary font
+face</i> and <i>Commentary font size</i> settings under the Control Panel
+<i>Options</i> menu.  The <i>Save commentary to file</i> menu option can be
+used to save the current contents of the window to a text file.</p>
+
+<p>The <i>Verbose mode</i> setting under the <i>Options</i> menu controls the
+printing of technical codelet messages in the Interaction window, and
+is unrelated to the generation of English commentary.  These messages are
+useful for debugging, or for seeing what individual codelets are doing, but
+otherwise are not important.  They do, however, slow down the program
+considerably, so turning Verbose mode on is not recommended.</p>
+
+<h3>EEG</h3>
+
+<p>The EEG window can be used to track the progression of numerical values such
+as temperature as they change over time.  This can be useful in understanding
+the long-term behavior of parameters or other values during a run.  By default,
+the EEG is configured to plot temperature and average Workspace activity (see
+below), but can easily be changed to track any desired values that fall within
+the range 0-100.  See the file <tt>eeg-graphics.ss</tt> for more information.
+(The Workspace activity measure is described on pages 169-170 of the
+dissertation.)</p>
+
+<p align=center><img src="pictures/eeg.gif"></p>
+
+<h3>Demo Runs</h3>
+
+<p>The sample runs of Metacat discussed in Chapter 5 of the dissertation are
+available under the <i>Demos</i> menu of the Control Panel.  Selecting a demo
+will initialize the letter-strings and random number seed value appropriately.
+Click <i>Go</i> to begin the run.  Many of these demos assume an initially
+empty memory, so it is a good idea to clear the memory before beginning each
+run.</p>
+
+<p>This is not true, however, for the <i>Answer comparison and reminding</i>
+demos (discussed on pages 247-255 of Chapter 5).  For example, to have Metacat
+compare the answers <i><b>mrrkkk</b></i> and <i><b>mrrjjjj</b></i> to the
+problem <i><b>abc&nbsp;-&gt;&nbsp;abd;&nbsp;mrrjjj&nbsp;-&gt;&nbsp;?</b></i>,
+as shown at the bottom of page 249, first run the demos labeled
+"abc&nbsp;/&nbsp;mrrkkk" and "abc&nbsp;/&nbsp;mrrjjjj" in succession, without
+clearing the memory between runs.  Then click on the icons for these answers in
+the Episodic Memory window in order to make the program compare them.  The
+program's commentary will appear in the Commentary window.</p>
+
+<p>A few other interesting runs, which were not discussed in the
+dissertation, are included in the <i>Demos</i> menu under <i>Other sample
+runs</i>.  For instance, the first one (a long run of 7794 time steps)
+illustrates the program's ability to make sense of the answer
+<i><b>mmmrrj</b></i> to the problem
+<i><b>abc&nbsp;-&gt;&nbsp;cba;&nbsp;mrrjjj&nbsp;-&gt;&nbsp;?</b></i>.  This
+requires the program to see the <i>lengths</i> of the groups <i><b>m</b></i> and
+<i><b>jjj</b></i> in <i><b>mrrjjj</b></i> as getting swapped, rather than their
+<i>positions</i> or <i>letter-categories</i> (which would yield the answers
+<i><b>jjjrrm</b></i> and
+<i><b>jrrmmm</b></i>, respectively).</p>
+
+<p>The second one asks Metacat to justify the answer <i><b>abd</b></i> to the
+problem <i><b>abc&nbsp;-&gt;&nbsp;abd;&nbsp;ijk&nbsp;-&gt;&nbsp;?</b></i>.  To
+do this, the program creates a rule describing both strings
+<i><b>abc</b></i> and
+<i><b>ijk</b></i> as changing their leftmost letter to <i><b>a</b></i>, their
+middle letter to <i><b>b</b></i>, and their rightmost letter to
+<i><b>d</b></i>, even though in <i><b>abc</b></i>'s case the leftmost and
+middle letter "changes" are from <i><b>a</b></i> to <i><b>a</b></i> and
+<i><b>b</b></i> to <i><b>b</b></i>.  Under normal circumstances the program
+would never perceive a letter as "changing" into itself, but given the context
+here, this idea makes perfect sense.</p>
+
+<p>The last three examples demonstrate nondeterministic rule translation.  In
+the first one,
+<i><b>abc&nbsp;-&gt;&nbsp;aabbcc;&nbsp;kkjjii&nbsp;-&gt;&nbsp;?</b></i>, the
+program sees all letters in <i><b>abc</b></i> as increasing their lengths by
+one.  The successor-predecessor symmetry between <i><b>abc</b></i> and
+<i><b>kkjjii</b></i> leads the program to <i>decrease</i> the lengths of the
+groups in <i><b>kkjjii</b></i>, yielding <i><b>kji</b></i>.  Shortly
+thereafter, however, the program finds the answer <i><b>kkkjjjiii</b></i> by
+using the same rule as before, but this time ignoring the symmetry.  (It also
+finds the answer <i><b>kkjjii</b></i> using a more literal-minded rule later.)
+In the next two examples,
+<i><b>a&nbsp;-&gt;&nbsp;b;&nbsp;z&nbsp;-&gt;&nbsp;?</b></i> and
+<i><b>abc&nbsp;-&gt;&nbsp;abd;&nbsp;glz&nbsp;-&gt;&nbsp;?</b></i>, Metacat
+notices the alphabetic symmetry between <i><b>a</b></i> and
+<i><b>z</b></i> (after hitting the <i><b>z</b></i>-snag multiple times, and
+answering <i><b>b</b></i> in the case of
+<i><b>a&nbsp;-&gt;&nbsp;b;&nbsp;z&nbsp;-&gt;&nbsp;?</b></i>).  The alphabetic
+symmetry causes a "coattail" slippage to occur between the symmetric concepts
+of <i>successor</i> and <i>predecessor</i>, yielding, respectively, the answers
+<i><b>y</b></i> and <i><b>flz</b></i>.  (See section 3.4 of the dissertation
+for more information.)</p>
+
+<h3>Pattern Clamping and Self-Watching</h3>
+
+<p>Metacat uses the information in the Temporal Trace to monitor its own
+behavior, and can alter its behavior by clamping patterns of themes, concepts,
+or codelet types in response to this information.  This gives the program a
+high degree of self-control.  There are three main types of codelets
+responsible for monitoring the Temporal Trace and responding to clamped
+patterns: <i>Progress watchers</i>, <i>Jootsers</i>, and <i>Thematic bridge
+scouts</i>.  These codelets, together with the top-down effects of clamped
+themes, are the principal mechanisms for self-watching in Metacat.  (See
+section 4.5 of the dissertation for a full discussion of self-watching.)</p>
+
+<p>If desired, these codelet types can be turned off, along with the top-down
+effects of themes, by toggling the <i>Self-watching mode</i> setting under the
+Control Panel <i>Options</i> menu.  With self-watching off, all activity in the
+Themespace is suppressed, and no new <i>Progress watcher</i>,
+<i>Jootser</i>, or <i>Thematic bridge scout</i> codelets are allowed to run,
+although new events are still recorded in the Temporal Trace and newly-found
+answers are stored in memory as before.  This feature makes it possible to
+explore how Metacat's self-watching mechanisms influence its behavior on
+particular problems.</p>
+
+<p>It is also possible for the user to manually clamp patterns of themes and
+codelet types.  To specify a theme pattern, choose <i>Clamp theme pattern</i>
+under the Control Panel <i>Options</i> menu, and then click on one or more
+Theme windows to select the themes to include in the pattern.  When a Theme
+window is clicked, it will appear as shown below.</p>
+
+<p align=center><img src="pictures/editing-themes.gif"></p>
+
+<p>At this point, individual themes can be specified by left- or right-clicking
+on their names.  Left-clicking selects maximum positive activation (green), and
+right-clicking selects maximum negative activation (red).  On a Macintosh,
+Shift-clicking is equivalent to right-clicking.  Clicking on an
+already-selected theme removes it from the pattern.  When the desired theme
+pattern has been created, click the <i>Clamp Themes</i> button in the yellow
+confirmation dialog (not shown here) to clamp the pattern.  A corresponding
+clamp event will appear in the Temporal Trace.  The clamped pattern will remain
+in effect until undone by the program in the normal fashion at a later time, or
+until the user manually unclamps it.</p>
+
+<p>To undo a clamp manually, select <i>Undo last clamp</i> from the Control
+Panel <i>Options</i> menu.  This will undo the most recent clamp event in the
+Temporal Trace (whether created by the program or user), assuming that one is
+still in effect.</p>
+
+<p>In addition to theme patterns, codelet patterns can also be clamped
+manually.  A predefined set of codelet patterns is available under the <i>Clamp
+codelet pattern</i> submenu.  Clamping a codelet pattern temporarily imposes a
+set of urgencies on the Coderack that overrides the urgencies of individual
+codelets.  This enhances the likelihood that certain types of codelets will
+run, which may in turn encourage the program to focus on building specific
+types of structures, such as rules.</p>
+
+<p>For example, a codelet pattern that promotes the discovery of new rules is
+shown below on the left.  This pattern enhances the urgencies of all <i>Rule
+scout</i>, <i>Rule evaluator</i>, and <i>Rule builder</i> codelets, while
+suppressing the urgencies of all other codelet types (urgencies are indicated
+by shades of grey, with lighter shades corresponding to higher urgencies).  On
+the other hand, the pattern shown on the right encourages the creation of new
+Workspace structures of any type, by enhancing the urgencies of all bottom-up
+scout codelets and, to an even greater degree, all evaluator and builder
+codelets.  Top-down codelet types are not affected.  Note that these two
+examples involve exactly the same pool of codelets in the Coderack.  The only
+difference is the codelet pattern clamped, which results in a very different
+profile of selection probabilities in each case.</p>
+
+<p align=center>
+<table cellpadding=20 border=0>
+<tr>
+<td valign=top><img src="pictures/clamped-coderack1.gif"></td>
+<td valign=top><img src="pictures/clamped-coderack2.gif"></td>
+</tr>
+</table>
+</p>
+
+<h3>Feedback</h3>
+
+<p>Send bug reports or other feedback to <i>marshall@cs.pomona.edu</i>.  If the
+program crashes on a particular run, please make sure to indicate the exact
+letter-strings and random number seed value, as well as the state of the
+Episodic Memory at the beginning of the run.  Thanks!</p>
+
+</body>
+</html>
