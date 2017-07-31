@@ -47,8 +47,8 @@ understand situations? If so, how?
 This project is based on the computational cognitive models of Fluid Concepts, such as Copycat, Letter Spirit, 
 Phaeaco, Tabletop, Numbo, Seeqsee, etc. These projects have been developed by Douglas Hofstadter and his PhD students.
 
-Capyblanca has been developed in Delphi, by Alex Linhares (see www.capyblanca.com for more info). As of May 7th, 2008, 
-the codebase compiles and runs in free (as in beer) turbodelphi for windows.
+Capyblanca has been developed in Delphi. As of May 7th, 2008, the codebase compiles and runs in free (as in beer) 
+turbodelphi for windows.
 
 With this initiative, we hope to contribute to the scientific community by letting those interested not only replicate 
 the results in detail, but also improve the architecture and explore different design decisions which we have not been 
@@ -99,12 +99,10 @@ that of a piece that finds itself having to juggle between two different, incomp
 run detailed below (in the case of the black king of position 6).
 
 
-Source code on ref
+Source code previously on https://code.google.com/archive/p/capyblanca/, now available here, in the /Software folder.
 
 
 
-COURSE / BOOK OUTLINE
----
 
 
  
