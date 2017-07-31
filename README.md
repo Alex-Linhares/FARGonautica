@@ -10,7 +10,8 @@ This repository has a number of goals:
     ii) we want to collect **all** the literature (unpublished papers, CRCC reports, published papers, 
     Theses, &tc);
     iii) we want to create an online course, and perhaps a collaborative course book, on Fluid Concepts 
-    & Creative Analogies (also called "Fluid Concepts", "FARG architectures", "Copycat Architecture", &tc).    
+    & Creative Analogies (also called "Fluid Concepts", "FARG architectures", "Copycat Architecture", 
+    "Active Symbols", &tc).    
      
     
 
@@ -22,7 +23,7 @@ Welcome!  Join us.  This will be fun.
 PROJECTS TO JOIN HERE (desiderata)
 ---
 
-
+The ambition is to catalogue the sourcecode and literature 
 
 Numbo  
 Copycat  
@@ -35,6 +36,94 @@ Capyblanca
 George  
 SeqSee  
 
+PROJECT: COPYCAT
+---
+Copycat is a model of analogy making and human cognition based on the concept of the parallel terraced scan, developed 
+in 1988 by Douglas Hofstadter, Melanie Mitchell, and others at the Center for Research on Concepts and Cognition, 
+Indiana University Bloomington.
+
+Copycat produces answers to such problems as "abc is to abd as ijk is to what?" (abc:abd :: ijk:?). Hofstadter and 
+Mitchell consider analogy making as the core of high-level cognition, or high-level perception, as Hofstadter calls it, 
+basic to recognition and categorization. High-level perception emerges from the spreading activity of many independent 
+processes, called codelets, running in parallel, competing or cooperating. They create and destroy temporary perceptual 
+constructs, probabilistically trying out variations to eventually produce an answer. The codelets rely on an associative 
+network, slipnet, built on pre-programmed concepts and their associations (a long-term memory). The changing activation 
+levels of the concepts make a conceptual overlap with neighboring concepts.
+
+Copycat's architecture is tripartite, consisting of a slipnet, a working area (also called workspace, similar to 
+blackboard systems), and the coderack (with the codelets). The slipnet is a network composed of nodes, which represent 
+permanent concepts, and weighted links, which are relations, between them. It differs from traditional semantic networks 
+as the effective weight associated with a particular link may vary through time according to the activation level of 
+specific concepts (nodes). The codelets build structures in the working area and modify activations in the slipnet 
+accordingly (bottom-up processes), and the current state of slipnet determines probabilistically which codelets must be 
+run (top-down influences).
+
+Copycat was implemented in LISP, and there are multiple ports available.  Scott Boland did one of the first re-implementations 
+in Java (available in this repo and in https://archive.org/details/JavaCopycat). This implementation has served for another 
+port, to Python, which is available here: https://github.com/Quuxplusone/co.py.cat. 
+
+AJ Hager has also independently developed a python version of copycat, with some amazing OpenGL graphics, available 
+(and maintained) at https://github.com/ajhager/copycat
+
+
+
+PROJECT: METACAT
+---
+
+
+
+PROJECT: NUMBO
+---
+
+Daniel Defays sent in 2006 a printed version of the sourcecode to Alex Linhares.  This will be scanned and archived in this 
+repo---eventually.
+
+
+PROJECT: SEQSEE
+---
+A Concept-centered Architecture for Sequence Perception
+Abhijit A. Mahabal
+
+One of the goals of this project is to design and implement a computer program
+that can extend integer sequences intelligently, and the project has resulted in the
+creation of the program named ―Seqsee‖ (pronounced ―sexy‖). Seqsee can extend a wide
+range of cognitively interesting sequences, including the following sequence (Seqsee is
+presented the sequence without the groupings indicated by the parentheses):
+
+    ( (1) ) ( (1) (1 2) ) ( (1) (1 2) (1 2 3) )
+
+If people are shown this sequence (without the parentheses), they quickly form a
+group consisting of the three initial ―1‖s, but then realize that each plays a slightly
+different role in the sequence. Like people, Seqsee is initially distracted by the three
+consecutive ―1‖s, but gradually figures out that the second ―1‖ is an ascending group,
+and that the initial ―1‖ is an ascending group made up of one ascending group.
+
+Architecturally, Seqsee is a descendant of Hofstadter & Mitchell‘s computer
+program Copycat, and adds several novel features that allow it to easily modify behavior
+in response to its recent perceptions, to form specific expectations such as ―an
+ascending group is likely to be located here‖, to more quickly understand sequences
+having previously seen similar sequences, to see an entity as something else, and to do
+all this without the use of brute force.
+
+Seqsee uses several ideas in achieving its goals: William James‘ notions of the
+fringe and the stream of thought; analogies between objects; categorization and labeling
+of objects and of situations, and the detection of categories without using brute-force
+tests for all sorts of categories; the notion of context which influences and is influenced
+by perception; the notion, similar to affordances, of the ―action fringe‖ of an object; and
+a category-based long-term memory.
+
+
+The dissertation (Aivailable here and in http://www.amahabal.com/files/Seqsee--doublesided.pdf) 
+describes the program and its principles, which are much more general 
+than integer-sequence extrapolation, and compares its performance with human
+performance.
+
+Seqsee is written in Perl and a new version is written in Python and the code is maintained 
+by Dr. Mahabal---which is why we do not provide the code in this git repo.  For the latest
+versions, see:
+
+Perl version: https://github.com/amahabal/Seqsee 
+Python version: https://github.com/amahabal/PySeqsee 
 
 
 PROJECT: CAPYBLANCA
@@ -99,7 +188,7 @@ that of a piece that finds itself having to juggle between two different, incomp
 run detailed below (in the case of the black king of position 6).
 
 
-Source code previously on https://code.google.com/archive/p/capyblanca/, now available here, in the /Software folder.
+Sourcecode previously on https://code.google.com/archive/p/capyblanca/, now available here, in the /Software folder.
 
 
 
