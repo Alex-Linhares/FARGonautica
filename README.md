@@ -210,4 +210,8 @@ it is an active, dynamic process of creating mental structures. Thus when Musica
 an act to be creative, and I call it a “listening performance”.
 
 PhD Thesis of Dr. Eric Paul Nichols is available here: http://ericpnichols.com/musicat/pdf/MusicatDissertation.pdf, and 
-the sourcecode is available at http://ericpnichols.com/musicat/ (and also archived here).
+the sourcecode is available at http://ericpnichols.com/musicat/ (and also archived here).  
+
+PROJECT: LETTER SPIRIT
+---
+Defcon 1. 404 file not found so far...
