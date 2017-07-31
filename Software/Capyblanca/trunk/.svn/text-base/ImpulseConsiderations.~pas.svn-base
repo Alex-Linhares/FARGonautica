@@ -1,0 +1,321 @@
+unit ImpulseConsiderations;
+
+interface
+
+uses basicimpulse, abstractimpulses, slipnetunit, classes;
+
+type
+         TParamGuardianConsiderations = class (TParamAbstractRole)
+                                             Node: Tnode;
+                                        end;
+
+         TParamJugglerConsiderations = class (TParamGuardianConsiderations)
+                                        end;
+                                                                
+
+         TGuardianConsiderations = class (TimpulseAbstractRole)
+                                                    Parameters: TParamGuardianConsiderations;
+
+                                                    Constructor create (P:TParamGuardianConsiderations; U: TUrgency);
+                                                    Procedure Do_I_Really_Need_To_Guard_This;
+                                                    Procedure Launch_noattackers_node;
+                                                    Procedure Anyone_Else_Guarding_this;
+                                                    procedure fire;  override;
+                                              end;
+
+
+         TInterceptorConsiderations = class (TGuardianConsiderations)
+                                                    Constructor create (P:TParamGuardianConsiderations; U: TUrgency);
+                                                    procedure fire;  override;
+                                              end;
+
+         TNoAttackersConsiderations = class (TGuardianConsiderations)
+                                                    Constructor create (P:TParamGuardianConsiderations; U: TUrgency);
+                                                    procedure fire;  override;
+                                                    function Are_There_No_Current_Attackers (side:boolean): Boolean;
+
+                                              end;
+
+         TJugglerConsiderations = class (TimpulseAbstractRole)
+                                                    Parameters: TParamGuardianConsiderations;
+
+                                                    Constructor create (P:TParamGuardianConsiderations; U: TUrgency);
+                                                    procedure fire;  override;
+                                              end;
+
+
+function GetSideName (S:Boolean):string;
+
+implementation
+
+uses workingmemoryunit, externalmemoryunit;
+
+function GetSideName (S:Boolean):string;
+begin
+     if S then result:='white' else result:='black';
+end;
+
+Constructor TNoAttackersConsiderations.create (P:TParamGuardianConsiderations; U: TUrgency);
+begin
+     Parameters:=P;
+     Urgency:= U;
+     Feel_Urging_Pressure (Parameters.impulsepointer);
+end;
+
+function TNoAttackersConsiderations.Are_There_No_Current_Attackers (side:boolean): Boolean;
+Var AttackersList:Tlist;
+begin
+     AttackersList:= WorkingMemory.GetAttackers (side);
+     result:=(AttackersList.count=0);
+end;
+
+
+Procedure TNoAttackersConsiderations.fire;
+var none, ourside:boolean;
+begin
+{    1st thing: trigger on the right moment!}
+{it's being triggered at some guardians, not all!!!!}
+{it should only be triggered when a piece LOSES attacking potential!}
+     Ourside:= parameters.origin.white;
+
+     With PARAMETERS DO                                           
+     BEGIN
+     if Node.activation>10 {threshold} then
+     begin
+          {PART I: Decay}
+          Node.Decay;
+
+          none:=Are_There_No_Current_Attackers (not ourside);
+          if none then
+          begin
+               parameters.pmemo.lines.add('                   I want to release the guardians of the '+GetSideName (Ourside)+' side');
+               parameters.pmemo.lines.add('                   ');
+               parameters.pmemo.lines.add('                   ');
+               parameters.pmemo.lines.add('                   ');
+
+               Workingmemory.Release_Intensity_in_Guardians (ourside);
+               WorkingMemory.look_for_attack_trajectories (ourside, parameters.pmemo);
+          end;
+
+          {TRIGGER ITSELF ONCE AGAIN}
+          Node.Considerations;
+     end
+     else begin  {CONCEPT HAS DECAYED}
+               node.activation:=0;
+          end;
+     END;
+end;
+
+
+Constructor TJugglerConsiderations.create (P:TParamGuardianConsiderations; U: TUrgency); {&&&&REFACTOR THIS BASE METHOD TO VIRTUAL!!!}
+begin
+     Parameters:=P;
+     Urgency:= U;
+     Feel_Urging_Pressure (Parameters.impulsepointer);
+end;
+
+Procedure TJugglerConsiderations.fire;
+{var List:tlist; x:integer;  imaginedjuggler: tpiece;  square:^tsquare; S:string;}
+begin
+(*     list:=tlist.Create;
+     with parameters do
+     begin
+          imaginedjuggler:=TpieceFactory(destinationsquare, origin.white, origin.piecetype);
+     {Fire impulse that will print "TOP-DOWN impulse!"}
+     pmemo.lines.add('     TOP-DOWN JUGGLER impulse on imagined juggler '+imaginedjuggler.FullId);
+
+     {Test one:  is this the sole guardian of two or more distinct things?  Fire impulse (scooter codelet like); if it is, activate juggler node}
+     list:=workingmemory.CanSomeoneHelpMeHerePlease(origin, imaginedjuggler); {here destinationsquare should have the square of the pawn promotion}
+     if (list.count=0) then
+     begin
+          {No other pieces seem to be defending destinationsquare, so...
+           this juggler will have its intensity way up and...
+           all roles outside its defense line will be thrown to the background}
+
+          {B. Minimize_Roles_leading_to_these_squares(piece, list)}
+          for x:= 0 to list.count-1 do
+          begin
+               square:=list.items[x];
+               imaginedjuggler.minimize_role (square^);
+          end;
+     end;
+
+     str(list.Count, S);
+     pmemo.lines.add('     '+imaginedjuggler.FullId+ ' lost roles numbering:'+s);
+     end;*)
+end;
+
+
+Function GetInterceptors (trajectory:Tlist; guardian: tpiece):Tlist;  {Refactor to workingmemory???}
+var t:integer; P1: tpiece;  square: ^tsquare; List:Tlist;
+begin
+     List:=tlist.Create;
+     for t:= 0 to workingmemory.Pieces.Count-1 do
+     begin
+          P1:=workingmemory.Pieces.items[t];
+          square:=trajectory.items[trajectory.count-1];
+          if ((P1.white<>guardian.white) and (P1.isDefending(square^) ) ) then
+             List.add(workingmemory.Pieces.items[t]);
+     end;
+     result:=List;
+end;
+
+
+Procedure TGuardianConsiderations.Launch_noattackers_node;
+var n: tnode;
+begin
+     with parameters do
+     begin
+           n:=node.GetAssociatedNode (No_Attackers);
+           if n<>nil then
+              n.activate(1000);
+     end;
+end;
+
+Procedure TGuardianConsiderations.Anyone_Else_Guarding_this;  {REFACTOR}
+var x, index:integer; originsquare1, destsquare1, aux_sq: ^tsquare;
+    Guardian1, OtherGuy, ImaginedPiece: Tpiece;  Interceptors, Forbidden: Tlist;
+
+begin
+     {Step1: someone else lower ranked already guarding it?}
+     {1a. scans pieces with same destination square}
+     destsquare1:=parameters.trajectory.items[parameters.trajectory.count-1];
+     originsquare1:= parameters.trajectory.items[0];
+     GUardian1:= workingmemory.GetPieceAt(originsquare1^);
+
+     index:=-1;
+     for x:=0 to workingmemory.pieces.Count-1 do
+     begin
+          OtherGuy:=workingmemory.pieces.items[x];
+          if ((OtherGuy<>Guardian1) and (otherGuy.White=Guardian1.White) and (OtherGuy.isDefending(destsquare1^)) and (guardian1.isDefending(destsquare1^)) ) then
+               index:=x;
+     end;
+
+     if index=-1 then  {nobody is helping to defend destsquare, so...}
+     begin
+          Interceptors:= GetInterceptors (parameters.trajectory, guardian1);
+          if (Interceptors.count>0) then
+          for index:=0 to interceptors.Count-1 do
+          begin
+               GUardian1:=Interceptors.items[index];
+
+               Parameters.pmemo.lines.add(Guardian1.fullid+' is totally alone at protecting '+SquareName(destsquare1^));
+
+               Launch_noattackers_node;
+
+               ImaginedPiece:=TPieceFactoryMethod(destsquare1^, Guardian1.White, Guardian1.PieceType);
+
+               Forbidden:= ImaginedPiece.Forbidden_Squares(parameters.Trajectory.Count);
+               for x:= 0 to forbidden.Count-1 do
+               begin
+                    aux_sq:=forbidden.items[x];
+                    Guardian1.Forbid_square(aux_sq^);
+               end;
+          end;
+     end;
+end;
+
+
+
+Procedure TGuardianConsiderations.Do_I_Really_Need_To_Guard_This;
+var x:integer; originsquare1, destsquare1: ^tsquare;
+    Guardian1, OtherGuy: Tpiece;
+
+begin
+     if (parameters.Trajectory.Count>0) then
+     begin
+     {Step1: someone else lower ranked already guarding it?}
+     {1a. scans pieces with same destination square}
+     destsquare1:=parameters.trajectory.items[parameters.trajectory.count-1];
+     originsquare1:= parameters.trajectory.items[0];
+     GUardian1:= workingmemory.GetPieceAt(originsquare1^);
+     for x:=0 to workingmemory.pieces.Count-1 do
+     begin
+          {if found, checks whether piece is lower ranked}
+          OtherGuy:=workingmemory.pieces.items[x];
+          if ((OtherGuy<>Guardian1) and (otherGuy.White=Guardian1.White) and (OtherGuy.isDefending(destsquare1^)) and (guardian1.isDefending(destsquare1^)) ) then
+          begin
+               parameters.pmemo.lines.add('   -->'+Guardian1.fullid+ ' is defending something defended by '+OtherGuy.FullId );
+               if (otherguy.DynamicValue<Guardian1.DynamicValue) then
+               begin
+                    {Lower Ranked? Great, exchange intensity with my minimum one / OR / lower intensity to minimum possible
+                    / AND / SAY I CAN GO SOMEWHERE ELSE=ROLE=FREE_RIDER}
+                    Guardian1.liberate_from_role(destsquare1, parameters.pmemo);
+                end else
+                begin
+                     parameters.pmemo.lines.add('   -->'+OtherGuy.fullid+ ' is defending something defended by '+Guardian1.FullId );
+                     if (otherguy.DynamicValue>Guardian1.DynamicValue) then
+                     begin
+                          {Higher Ranked? Great, liberate OtherGuy!  CAN GO SOMEWHERE ELSE=ROLE=FREE_RIDER}
+                          OtherGuy.liberate_from_role(destsquare1, parameters.pmemo);
+                     end
+                     {higher ranked? EXCHANGE AND Raise Intensity to my maximum one ?!??!??!?!}
+                end;
+          end;
+     end;
+     end;
+end;
+
+
+Constructor TGuardianConsiderations.create (P:TParamGuardianConsiderations; U: TUrgency);
+begin
+     Parameters:=P;
+     Urgency:= U;
+     Feel_Urging_Pressure (Parameters.impulsepointer);
+end;
+
+Procedure TGuardianConsiderations.fire; {Considerations are bound to something}
+begin
+     With PARAMETERS DO
+     BEGIN
+     if Node.activation>10 {threshold} then
+     begin
+          {PART I: Decay}
+          Node.Decay;
+
+          Do_I_Really_Need_To_Guard_This;
+
+          {TRIGGER ITSELF ONCE AGAIN}
+          Node.Considerations;
+     end
+     else begin  {CONCEPT HAS DECAYED}
+               node.activation:=0;
+          end;
+     END;
+end;
+
+
+Constructor TInterceptorConsiderations.create (P:TParamGuardianConsiderations; U: TUrgency);
+begin
+     Parameters:=P;
+     Urgency:= U;
+     Feel_Urging_Pressure (Parameters.impulsepointer);
+end;
+
+Procedure TInterceptorConsiderations.fire;
+begin
+     With PARAMETERS DO
+     BEGIN
+     if Node.activation>10 {threshold} then
+     begin
+          {PART I: Decay}
+          Node.Decay;
+
+          {"AM I THE ONLY ONE, LONELY?"-->"IF SO, AM I JUGGLING?"-->"IF SO, GIVE ME ATTENTION"}
+          Anyone_Else_Guarding_this;
+
+          {"DO I NEED TO GUARD THIS?"-->IF SO, GIVE ME ATTENTION, IF NOT, TAKE IT EASY}
+          {Do_I_Really_Need_To_Guard_This;}
+
+
+          {PART THREE: TRIGGER ITSELF ONCE AGAIN}
+          Node.Considerations;
+     end
+     else begin  {CONCEPT HAS DECAYED}
+               node.activation:=0;
+          end;
+     END;
+end;
+
+
+end.

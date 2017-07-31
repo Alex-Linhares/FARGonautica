@@ -1,0 +1,99 @@
+unit WorkingMemoryUnit;
+
+interface
+
+uses ExternalMemoryUnit, classes;
+
+
+type
+    TWorkingMemory = class
+                          ImaginedBoard: Array[1..8,1..8] of Tlist;
+                          Pieces: Tlist;
+                          Trajectories: TList;
+                          Interceptions: Tlist;
+                          AbstractRoles: TList;
+                          Alreadythinking:boolean;
+                          impulses_fired:integer;
+
+                          WhiteThreatens: Array[1..8,1..8] of integer;
+                          BlackThreatens: Array[1..8,1..8] of integer;
+                          Saccaded:Array[1..8,1..8] of boolean;
+                          GlancedShadow:Array[1..8,1..8] of boolean;
+
+                          constructor create;
+                          procedure Threatens(P:Tpiece);
+                          function GetPieceAt(S:TSquare):TPiece;
+                          {to be continued...}
+                      end;
+
+
+var WorkingMemory: TWorkingMemory;
+
+implementation
+
+function TWorkingmemory.GetPieceAt(S:TSquare):TPiece;
+var t,index:integer;P:Tpiece;
+begin
+     Pieces.pack;
+{     new (p);}
+     index:=-1;
+     t:=0;
+     while (t<Pieces.Count)do
+     begin
+          P:=Pieces.items[t];
+          if (P.sq.x=S.x) and (P.sq.y=S.y) then index:=t;
+          t:=t+1;
+     end;
+     if index>=0 then
+     begin
+          P:=Pieces.Items[index];
+          result:=P;
+     end
+     else
+         result:=nil;
+end;
+
+constructor Tworkingmemory.create;
+var x,y:integer;
+begin
+     Pieces:=Tlist.create;
+     Trajectories:=Tlist.create;
+     Interceptions:=Tlist.create;
+
+     impulsesfired:=0;
+
+     for x:= 1 to 8 do
+         for y:= 1 to 8 do
+         begin
+              WhiteThreatens[x,y]:=10000;
+              BlackThreatens[x,y]:=10000;
+              Saccaded[x,y]:=false;
+              GlancedShadow[x,y]:=false;
+         end;
+end;
+
+Procedure TWorkingmemory.Threatens(P:TPiece);
+var L:Tlist; sq:^Tsquare; t:integer;
+begin
+     L:=Tlist.create;
+     L:= P.GetThreathenedSquares(P.sq);
+     new (sq);
+
+     if P.white then
+     begin
+          for t:= 0 to (L.count-1) do
+          begin
+               sq:=L.items[t];
+               WhiteThreatens[sq^.x,sq^.y]:=1;
+          end;
+     end else
+     begin
+          for t:= 0 to (L.count-1) do
+          begin
+               sq:=L.items[t];
+               BlackThreatens[sq^.x,sq^.y]:=1;
+          end;
+     end;
+     dispose(sq);
+end;
+end.

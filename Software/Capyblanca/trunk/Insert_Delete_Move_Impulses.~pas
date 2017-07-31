@@ -1,0 +1,184 @@
+unit Insert_Delete_Move_Impulses;    
+
+interface
+
+
+(*
+uses ExternalMemoryUnit, WorkingMemoryUnit, BasicImpulse, BoardViewerUnit, classes, stdctrls, graphics;
+
+type
+     TParamImpDeletePiece = class (TParameterSet)
+                            end;
+
+     TImpulseDeletePiece = class (TImpulse)
+                                  p:^tpiece;
+                                  sq:^tsquare;
+                                  {procedure unpack_parameters (List:Tlist); Override;}
+                                  procedure fire; Override;
+                            end;
+
+
+     TImpulseInsertPiece = class (TImpulse)
+                                  p:^tpiece;
+                                  {procedure unpack_parameters (List:Tlist); Override;}
+                                  procedure fire; Override;
+                            end;
+
+
+*)
+
+implementation
+
+(*
+uses abstractimpulses, impulsesquareandpiece, mainunit;
+
+
+{========================================================================}
+procedure TImpulseInsertPiece.fire;
+var i:^timpulse; l:tlist; x1, pieceindex:integer; piecepoint, newpiece:^tpiece; sqspaux1, sqspaux2:tsquare;
+begin
+     {0. Check if piece is already there, then kill impulse if it is...}
+     sqspaux1:=p^.sq;
+     x1:=0;
+     repeat
+           piecepoint^:=workingmemory.Pieces.items[x1];
+           sqspaux2:=Piecepoint^.sq;
+           if (sqspaux1.x=sqspaux2.x) and (sqspaux1.y=sqspaux2.y) then
+              if (piecepoint^.white=P^.white) then
+              begin
+                   exit;
+              end;
+           x1:=x1+1;
+     until (x1=workingmemory.Pieces.count);
+
+      {Preliminaries...}
+      new(newpiece);
+      case P^.piecetype of
+          Pawn: newpiece^:=tpawn.create (P^.Pposition^, P^.pWhite^, P^.Piecetype);
+          Bishop: newpiece^:=tbishop.create (P^.Pposition^, P^.pWhite^, P^.Piecetype);
+          King: newpiece^:=tking.create (P^.Pposition^, P^.pWhite^, P^.Piecetype);
+          Rook: newpiece^:=trook.create (P^.Pposition^, P^.pWhite^, P^.Piecetype);
+      end;
+
+      newpiece^.Mobility[P^.pposition^.x,P^.pposition^.y].distance:=0;
+      newpiece^.sq.x:=P^.pposition^.x;
+      newpiece^.sq.y:=P^.pposition^.y;
+      newpiece^.abstractroles:=tlist.create;
+      newpiece^.abstractroles.clear;
+
+     {1. insert piece on working memory}
+      WorkingMemory.Pieces.add(newpiece^);
+      pieceindex:= Workingmemory.Pieces.indexof(newpiece^);
+      externalmemory.white[newPiece^.sq.x,newPiece^.sq.y]:=newPiece^.white;
+      externalmemory.square[newPiece^.sq.x,newPiece^.sq.y]:=newPiece^.piecetype;
+      {SAVES THE IMMEDIATE THREATS}
+      WorkingMemory.Threatens(newpiece^);
+
+
+     {2. map piece's terrain}
+      l:=Tlist.create;
+      L.add(newpiece);
+      l.add(@form1.memo1);
+      new (i);
+end;
+
+
+{========================================================================}
+procedure TImpulseDeletePiece.fire;
+var x1, x2, pieceindex: integer; Rolepoint:^TParamabstractrole; piecepoint, pieceparam: ^tpiece;
+    sqaux:^tsquare; L:Tlist; I: ^TImpulse;
+
+Param:^TParamMapTerrain;
+begin
+     pieceindex:=-1;
+     new (p);
+     P^:=tpiece.create (sq^,true,pawn);
+     new (Rolepoint);
+     new (sqaux);
+
+     for x1:= 0 to workingmemory.pieces.count-1 do
+     begin
+          p^:=workingmemory.pieces.items[x1];
+          if (P^.sq.x=sq^.x) and (P^.sq.y=sq^.y) then pieceindex:=x1;
+     end;
+     if (pieceindex>=0) then
+     begin
+           P^:=workingmemory.pieces.items[pieceindex];
+
+          {1st step: delete roles from workingmemory}
+          for x1:= P^.abstractroles.count-1 downto 0 do
+          begin
+               Rolepoint:=P^.abstractroles.items[x1];
+               P^.abstractroles.delete(x1);
+               dispose (Rolepoint);
+          end;
+          P^.abstractroles.clear;
+
+          {2nd step: delete roles from other pieces to it}
+
+
+            {2.1 immediate guardian & attack roles}
+
+            new (piecepoint);
+            new (rolepoint);
+            Piecepoint^:=tpiece.create (sq^,true,pawn);
+
+            for x1 := 0 to workingmemory.pieces.count-1 do        {for each piece...}
+                if (x1<>pieceindex) then
+                begin
+                     piecepoint^:=workingmemory.pieces.items[x1];
+
+                     x2:=-1;
+                     while (x2<piecepoint^.abstractroles.count-1) do   {for each of its roles...}
+                     begin
+                          x2:=x2+1;
+                          {point:=piecepoint.abstractroles.items[x2];}
+                          {if (point^.destination=P) then}
+
+                          rolepoint:= piecepoint^.AbstractRoles.items[x2];
+                          sqaux:= rolepoint^.Trajectory.items[rolepoint^.Trajectory.count-1];
+                          if (sqaux^.x=P^.sq.x) and (sqaux^.y=P^.sq.y) then
+                          begin
+                               piecepoint^.abstractroles.delete(x2);   {THIS IS NOT DELETING THE ROLES!!!!!!!! WHY?????????}
+                               x2:=x2-1;
+                          end;
+                     end;
+                end;
+
+             {2.2 now think about any interceptions done/triggered by this piece}
+             {we would have to look at the chains of interceptions and make them collapse}
+             {but lets leave this as a problem FOR THE FUTURE!}
+
+
+          {3rd step: delete piece}
+          workingmemory.pieces.delete(pieceindex);
+          workingmemory.pieces.Pack;
+          externalmemory.white[P^.sq.x,P^.sq.y]:=false;
+          externalmemory.square[P^.sq.x,P^.sq.y]:=none;
+          dispose(P);
+
+          {4th step: trigger? or compute? mapterrain of other pieces}
+           L:=tlist.create;
+
+           x1:=workingmemory.pieces.count;
+           repeat
+                {trigger mapterrain}
+                x1:=x1-1;
+
+           new (Param);
+           Param^:= TParamMapTerrain.Create;
+           Param.Piece:=workingmemory.pieces.items[x1];
+           {Param.pmemo:=pmemo^;}
+
+           new (I);
+{           I^:=TimpulseMapTerrain.create;}
+
+           Until (x1=0);
+
+          {5th step: delete any shadows}
+          workingmemory.glancedshadow[sq.x,sq.y]:=false;
+     end;
+end;
+
+*)
+end.

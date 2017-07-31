@@ -1,0 +1,159 @@
+unit SpecialFunctions;
+
+interface
+uses  abstractimpulses, graphics, math;
+
+procedure arrow(x1,y1,x2,y2: integer; sharp,size: integer; Canvas:TCanvas);
+procedure Draw_Trajectory (AbstractRole:TParamabstractRole; C:Tcanvas);
+
+
+implementation
+
+uses impulsesquareandpiece, mainunit, Workingmemoryunit, Externalmemoryunit, types;
+
+
+{===============================================================================}
+procedure Draw_Trajectory (AbstractRole:TParamabstractRole; C:Tcanvas);
+var s1,s2: ^tsquare; counter, delta1, delta2, x1,x2,y1,y2:integer; intense,Arrowhead:integer;
+begin
+     if (AbstractRole.Trajectory.count>0) then
+     for counter:= 0 to AbstractRole.Trajectory.count-2 do {its -2 because we'll use +1 below...}
+     begin
+          s1:=AbstractRole.Trajectory.items[counter];
+          x1:=(s1^.x-1)*50+25;
+          y1:=(s1^.y-1)*50+25;
+          s2:=AbstractRole.Trajectory.items[counter+1];
+          x2:=(s2^.x-1)*50+25;
+          y2:=(s2^.y-1)*50+25;
+
+
+          if externalmemory.square[s1^.x,s1^.y]<>none then delta1:=15 else delta1:=0;
+          if externalmemory.square[s2^.x,s2^.y]<>none then delta2:=15 else delta2:=0;
+          if (x1>x2) then
+          begin
+               x1:=x1-delta1;
+               x2:=x2+delta2;
+          end;
+          if (x1<x2) then
+          begin
+               x1:=x1+delta1;
+               x2:=x2-delta2;
+          end;
+          if (y1>y2) then
+          begin
+               y1:=y1-delta1;
+               y2:=y2+delta2;
+          end;
+          if (y1<y2) then
+          begin
+               y1:=y1+delta1;
+               y2:=y2-delta2;
+          end;
+
+          intense:=1;
+          if (AbstractRole.Intensity>1000) then intense:=intense+1;
+          if (AbstractRole.Intensity>100000) then intense:=intense+1;
+          if (AbstractRole.Intensity>1000000) then intense:=intense+1;
+          if (abstractRole.Roletype=guardian) then Arrowhead:=30 else Arrowhead:=15;
+          Arrow(x1,y1,x2,y2,ArrowHead,Intense,C);
+     end;
+end;
+
+{===============================================================================}
+
+procedure arrow(x1,y1,x2,y2: integer; sharp,size: integer; Canvas:TCanvas);
+var
+  sharprad: single; HighlightColor: Tcolor;
+  angle,len,rise,run: single;
+  hx,hy: single;  headx1,headx2,heady1,heady2:integer;
+  Point1, Point2, Point3: Tpoint;
+begin
+  Canvas.Pen.Style := psSolid;
+  Canvas.Pen.Mode := pmCopy;
+  Canvas.Pen.width := size;
+  if size>2 then HighlightColor:=clyellow else HighlightColor:=clwhite;
+
+  size:=10+size*5;
+
+  Canvas.Pen.Color := clBlack;
+  Canvas.MoveTo(x1+Canvas.Pen.width,y1+Canvas.Pen.width);
+  Canvas.LineTo(x2+Canvas.Pen.width,y2+Canvas.Pen.width);
+  Canvas.Pen.Color := HighlightColor;
+  Canvas.MoveTo(x1,y1);
+  Canvas.LineTo(x2,y2);
+
+  // convert arrow sharpness to radians.
+  sharprad := (sharp/360)*(2*pi);
+
+  // Determine the "rise" and "run" of the line
+  rise := -(y2-y1); // use -ve because real world counts from bottom up,
+                    // delphi counts from top down.
+  run := (x2-x1);
+
+  // Determine the length of the line
+  len := sqrt(rise*rise+run*run);
+
+  // Determine the angle (in radians) of the line from horizontal.
+  angle := arcsin(abs(rise)/len);
+  if ( run<0 ) then
+    angle := pi-angle;
+  if ( rise<0 ) then
+    angle := 2*pi-angle;
+
+  // Determine x,y of arrow's head part 1
+  hx := -cos(angle+sharprad);
+  hy := sin(angle+sharprad);
+  x1 := Round(x2+hx*size);
+  y1 := Round(y2+hy*size);
+  headx1:=x1;
+  heady1:=y1;
+
+  // Center point is the end point of the line. (x2,y2)
+  Canvas.Pen.Color := clBlack;
+  Canvas.MoveTo(x2+Canvas.Pen.width,y2+Canvas.Pen.width);
+  Canvas.LineTo(x1+Canvas.Pen.width,y1+Canvas.Pen.width);
+  Canvas.Pen.Color := HighlightColor;
+  Canvas.MoveTo(x2,y2);
+  Canvas.LineTo(x1,y1);
+  Point1:=Point(x2+Canvas.Pen.width,y2+Canvas.Pen.width);
+  Point2:=Point(x1+Canvas.Pen.width,y1+Canvas.Pen.width);
+
+  // Determine x,y of arrow's head part 2
+  hx := -cos(angle-sharprad);
+  hy := sin(angle-sharprad);
+  x1 := Round(x2+hx*size);
+  y1 := Round(y2+hy*size);
+  headx2:=x1;
+  heady2:=y1;
+  Point3:=Point(x1,y1);
+
+  // Center point is the end point of the line. (x2,y2)
+  if (sharp=15) then
+  begin
+       Canvas.Pen.Color := {clskyblue} clyellow;
+       Canvas.Brush.Color := clyellow{clskyblue};
+       Canvas.Brush.Style:=bssolid;
+       Canvas.Polygon([Point1, Point2, Point3, point1]);
+  end;
+  Canvas.Pen.Color := clBlack;
+  Canvas.MoveTo(x2+Canvas.Pen.width,y2+Canvas.Pen.width);
+  Canvas.LineTo(x1+Canvas.Pen.width,y1+Canvas.Pen.width);
+  Canvas.Pen.Color := HighlightColor;
+  Canvas.MoveTo(x2,y2);
+  Canvas.LineTo(x1,y1);
+
+
+  // if it's an attack relationship... close the arrow
+  if (sharp=15) then
+  begin
+       Canvas.Pen.Color := clBlack;
+       Canvas.MoveTo(headx2+Canvas.Pen.width,heady2+Canvas.Pen.width);
+       Canvas.LineTo(headx1+Canvas.Pen.width,heady1+Canvas.Pen.width);
+       Canvas.Pen.Color := HighlightColor;
+       Canvas.MoveTo(headx1,heady1);
+       Canvas.LineTo(headx2,heady2);
+  end;
+
+end;
+
+end.

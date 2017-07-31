@@ -1,0 +1,92 @@
+unit BasicImpulse;
+
+interface
+
+uses BoardViewerUnit, classes, stdctrls;
+
+type
+    TUrgency = integer;
+
+    TTemperature = byte; {to be continued...}
+
+    timpulse = class
+                    urgency: TUrgency;
+                    plist: ^tlist;
+                    L:Tlist;
+
+                    {data structures to unpack go here}
+
+                    procedure unpack_parameters (List:Tlist); virtual;
+                    procedure Fire; virtual; abstract;
+                    {runs & sparks new urges}
+                 end;
+
+    {TIMP = class of TImpulse;}
+
+      timpulsestring= class (Timpulse)
+                        S:string;
+                        PS:^string;
+                        pmemo:^Tmemo;
+
+                        procedure unpack_parameters (List:Tlist); override;
+                        Procedure Fire; override;
+                  end;
+
+      timpulsenumber= class (Timpulse)
+                        N:real;
+                        PN:^real;
+                        pmemo:^Tmemo;
+                        memopad:Tmemo;
+
+                        procedure unpack_parameters (List:Tlist); override;
+                        Procedure Fire; override;
+                  end;
+
+var urges:tlist;
+
+
+
+implementation
+
+procedure timpulse.unpack_parameters(List:Tlist);
+begin
+end;
+
+
+
+{each impulse has three phases:  (i) unpacking the list of parameters from a Tlist, (ii) executing;
+and (iii) sparking new impulses (posting new codelets)}
+
+{impulse NUMBER}
+Procedure TImpulseNumber.Unpack_parameters (List:Tlist);
+begin
+     PN:=List.items[0];
+     N:=PN^;
+     pmemo:=List.items[1];
+end;
+
+Procedure TImpulseNumber.Fire;
+var s:string;
+begin
+     str(N:5:2,S);
+     Pmemo^.lines.add(S);
+end;
+
+{Impulse STRING}
+Procedure TImpulseString.Unpack_parameters (List:Tlist);
+begin
+     PS:=List.items[0];
+     S:=PS^;
+     pmemo:=List.items[1];
+end;
+
+
+Procedure TImpulseString.Fire;
+begin
+     Pmemo^.lines.add(S);
+end;
+
+
+
+
+end.
