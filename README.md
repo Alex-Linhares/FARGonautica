@@ -4,14 +4,15 @@ Congratulations you have made it to the center of the internet!
 
 This repository has a number of goals:  
 
-    i) we want to collect **all** the (open-source) computational architectures that have been developed in 
+    i) we want to collect all the (open-source) computational architectures that have been developed in 
     Douglas Hofstadter's group's research in Fluid Concepts & Creative Analogies; from Numbo to Copycat to 
-    Tabletop to Letter Spirit, Metacat, Musicat, &tc, alongside the info on how to install and run it;
-    ii) we want to collect **all** the literature (unpublished papers, CRCC reports, published papers, 
-    Theses, &tc);
-    iii) we want to create an online course, and perhaps a collaborative course book, on Fluid Concepts 
-    & Creative Analogies (also called "Fluid Concepts", "FARG architectures", "Copycat Architecture", 
-    "Active Symbols", &tc).    
+    Tabletop to Letter Spirit, Metacat, Musicat, etc, alongside the info on how to install and run it;
+    ii) we want to collect all the literature (unpublished papers, CRCC reports, published papers, 
+    Theses, etc);
+    iii) we want to archive all materials for an online course on Fluid Concepts & Creative Analogies 
+    (also called "Fluid Concepts", "FARG architectures", "Copycat Architecture", "Active Symbols", etc).
+    
+    
      
     
 
@@ -23,7 +24,9 @@ Welcome!  Join us.  This will be fun.
 PROJECTS TO JOIN HERE (desiderata)
 ---
 
-The ambition is to catalogue the sourcecode and literature 
+The ambition is to catalogue and archive the sourcecode and literature involved in building new Fluid Concepts 
+Architectures to new domains.  Eventually we hope to have a complete set of archived projects (or linked from 
+here when being maintained).
 
 Numbo  
 Copycat  
@@ -35,6 +38,7 @@ Musicat
 Capyblanca  
 George  
 SeqSee  
+
 
 PROJECT: COPYCAT
 ---
@@ -192,6 +196,18 @@ Sourcecode previously on https://code.google.com/archive/p/capyblanca/, now avai
 
 
 
+PROJECT: MUSICAT
+---
+What happens when people listen to music? What sorts of mental structures are formed? How do we make sense of a melody 
+as its notes fly by in rapid succession? Can we model the experience of listening to music in real time? 
 
+Musicat is a model of real-time melody perception by people. The program “listens” to monophonic Western 
+tonal melodies one note at a time (presented not as audio recordings, but rather in a symbolic form much like sheet 
+music) and generates an internal representation of the musical structures it “hears”. These structures include groups of
+adjacent notes, meta-groups comprised of smaller groups, expectations for upcoming structures, and, most importantly, 
+analogies between groups (and meta-groups) of various sizes. In the model, listening is not a passive process; instead, 
+it is an active, dynamic process of creating mental structures. Thus when Musicat listens to a melody, I consider such 
+an act to be creative, and I call it a “listening performance”.
 
- 
+PhD Thesis of Dr. Eric Paul Nichols is available here: http://ericpnichols.com/musicat/pdf/MusicatDissertation.pdf, and 
+the sourcecode is available at http://ericpnichols.com/musicat/ (and also archived here).
