@@ -53,7 +53,7 @@ YouTube videos:
 
 I would like to make some screencasting videos for wider divulgation: 
 
-*Capyblanca  
+*Capyblanca (need to find the running screencast) 
 *The Challenge of Bongard Problems  
 *Metacat, if I can get it running  
 
