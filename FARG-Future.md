@@ -6,16 +6,17 @@ own stuff in the folder /FARG-Future/[Author-Name].
 
 
 
-=========
+=========  
+
 Alex Linhares
 
 Multiple long-term projects... Trying to figure out some big questions:  
 
 i) How do SDM & FARG complement each other?  
-iii) how does the slipnet emerge from data?  
-v) What is the evolutionary psychology of FARG?  How do Gibson's affordances fit into the overall theory?  See 
-also sociologists papers
-vi) What are the limits of human intuition?
+ii) how does the slipnet emerge from data?  
+iii) What is the evolutionary psychology of FARG?  How do Gibson's affordances fit into the overall theory?  See 
+also sociologists papers  
+iv) What are the limits of human intuition?
 
 And some smaller projects:
 
@@ -45,6 +46,6 @@ Cairo 2d graphics library
 
 https://www.cairographics.org/
 
-And some gui stuff, like Tkinter, pyQT, etc.  
+And some gui stuff, like Tkinter, pyQT, etc.  But this is only necessary if not forking from pyseeqsee
 
 
