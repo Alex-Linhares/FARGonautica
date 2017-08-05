@@ -26,8 +26,9 @@ And some smaller projects:
 My first thought here is to run Abhijit's framework and get familiar with it.  Planning to
 document every single step and submit pull requests to his project.  
 
-After being fully familiar as a user with it, I would like to implement numbo with the framework 
-and see which changes it should need then.  After that, I would like to implement Andréia's thesis.
+After being fully familiar _as a user_ with it, I would like to implement numbo with the framework 
+and see which changes it should need then.  After that, I would like to implement NUMBO and document each step of
+the implementation. Then, I would like to implement Andréia's thesis.
 
 
 --
