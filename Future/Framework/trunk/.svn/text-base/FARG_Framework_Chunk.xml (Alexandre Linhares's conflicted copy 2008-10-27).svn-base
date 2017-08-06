@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="FARG_Framework_Chunk">
+  <const name="Propose" type="EnumState">
+    <value>
+      Propose
+    </value>
+  </const>
+  <const name="CheckStrength" type="EnumState">
+    <value>
+      CheckStrength
+    </value>
+  </const>
+  <const name="CommitToMemory" type="EnumState">
+    <value>
+      CommitToMemory
+    </value>
+  </const>
+  <enum name="EnumState">
+    <element name="Propose" />
+    <element name="CheckStrength" />
+    <element name="CommitToMemory" />
+  </enum>
+  <class name="TConnotation">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="InitInstance" visibility="public">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public">
+      </methodref>
+      <methodref name="ClassName" visibility="public">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public">
+      </methodref>
+      <methodref name="ClassParent" visibility="public">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public">
+      </methodref>
+      <methodref name="MethodName" visibility="public">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public">
+      </methodref>
+      <methodref name="Dispatch" visibility="public">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public">
+      </methodref>
+      <methodref name="NewInstance" visibility="public">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public">
+      </methodref>
+      <methodref name="Destroy" visibility="public">
+      </methodref>
+    </ancestor>
+    <members>
+      <field name="ExtMemoryRef" type="TObject" visibility="public" />
+      <field name="ExpectedConnotation" type="TConnotation" visibility="public" />
+      <field name="ExpectedConnotationFound" type="TConnotation" visibility="public" />
+      <field name="Relevance" type="Real" visibility="public" />
+      <field name="State" type="EnumState" visibility="public" />
+      <function name="Contains" visibility="public" procflags="virtual">
+        <parameters>
+          <parameter name="ConnotationType" type="TClass" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="Codelet" visibility="public">
+      </procedure>
+      <function name="TopDownSeekFor" visibility="public" procflags="virtual">
+        <parameters>
+          <parameter name="C" type="TConnotation" />
+          <retval type="TConnotation" />
+        </parameters>
+      </function>
+      <procedure name="BottomUpPropose" visibility="public" procflags="virtual">
+      </procedure>
+      <procedure name="SearchForInstance" visibility="public" procflags="abstract virtual">
+      </procedure>
+      <procedure name="CheckCurrentStrength" visibility="public" procflags="abstract virtual">
+      </procedure>
+      <procedure name="CommitToSTM" visibility="public" procflags="abstract virtual">
+      </procedure>
+      <procedure name="Destroyer" visibility="public" procflags="abstract virtual">
+      </procedure>
+    </members>
+  </class>
+  <class name="TValue">
+    <ancestor name="TConnotation" namespace="FARG_Framework_Chunk">
+      <methodref name="Contains" visibility="public" />
+      <methodref name="Codelet" visibility="public" />
+      <methodref name="TopDownSeekFor" visibility="public" />
+      <methodref name="BottomUpPropose" visibility="public" />
+      <methodref name="SearchForInstance" visibility="public" />
+      <methodref name="CheckCurrentStrength" visibility="public" />
+      <methodref name="CommitToSTM" visibility="public" />
+      <methodref name="Destroyer" visibility="public" />
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="InitInstance" visibility="public">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public">
+        </methodref>
+        <methodref name="ClassName" visibility="public">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public">
+        </methodref>
+        <methodref name="ClassParent" visibility="public">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public">
+        </methodref>
+        <methodref name="MethodName" visibility="public">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public">
+        </methodref>
+        <methodref name="Dispatch" visibility="public">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public">
+        </methodref>
+        <methodref name="NewInstance" visibility="public">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public">
+        </methodref>
+        <methodref name="Destroy" visibility="public">
+        </methodref>
+      </ancestor>
+    </ancestor>
+    <members>
+      <function name="GetValue" visibility="public" procflags="abstract virtual">
+        <parameters>
+          <retval type="TObject" />
+        </parameters>
+      </function>
+      <procedure name="SetValue" visibility="public" procflags="abstract virtual">
+        <parameters>
+          <parameter name="V" type="TObject" />
+        </parameters>
+      </procedure>
+      <function name="ExactValueCheck" visibility="public" procflags="abstract virtual">
+        <parameters>
+          <parameter name="N" type="TValue" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="TopDownSeekFor" visibility="public" procflags="override">
+        <parameters>
+          <parameter name="C" type="TConnotation" />
+          <retval type="TConnotation" />
+        </parameters>
+      </function>
+    </members>
+  </class>
+  <class name="TRelation">
+    <ancestor name="TConnotation" namespace="FARG_Framework_Chunk">
+      <methodref name="Contains" visibility="public" />
+      <methodref name="Codelet" visibility="public" />
+      <methodref name="TopDownSeekFor" visibility="public" />
+      <methodref name="BottomUpPropose" visibility="public" />
+      <methodref name="SearchForInstance" visibility="public" />
+      <methodref name="CheckCurrentStrength" visibility="public" />
+      <methodref name="CommitToSTM" visibility="public" />
+      <methodref name="Destroyer" visibility="public" />
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="InitInstance" visibility="public">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public">
+        </methodref>
+        <methodref name="ClassName" visibility="public">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public">
+        </methodref>
+        <methodref name="ClassParent" visibility="public">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public">
+        </methodref>
+        <methodref name="MethodName" visibility="public">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public">
+        </methodref>
+        <methodref name="Dispatch" visibility="public">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public">
+        </methodref>
+        <methodref name="NewInstance" visibility="public">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public">
+        </methodref>
+        <methodref name="Destroy" visibility="public">
+        </methodref>
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="Elements" type="TList" visibility="public" />
+      <field name="NewElements" type="TList" visibility="public" />
+      <field name="AcceptableConnotations" type="TList" visibility="public" />
+      <constructor name="create" visibility="public">
+        <parameters>
+        </parameters>
+      </constructor>
+      <procedure name="GetOriginalElements" visibility="public" procflags="virtual">
+      </procedure>
+      <function name="ConnotationIsAcceptable" visibility="public" procflags="virtual">
+        <parameters>
+          <parameter name="C" type="TConnotation" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetConnotationOfType" visibility="public">
+        <parameters>
+          <parameter name="T" type="TClass" />
+          <retval type="TConnotation" />
+        </parameters>
+      </function>
+      <procedure name="GetAcceptableConnotationsTypes" visibility="public" procflags="abstract virtual">
+      </procedure>
+      <function name="ComputeRelation" visibility="public" procflags="abstract virtual">
+        <parameters>
+          <parameter name="RelatedItems" type="TList" />
+          <retval type="TList" />
+        </parameters>
+      </function>
+      <function name="ConditionsAreSatisfied" visibility="public" procflags="abstract virtual">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="SearchForInstance" visibility="public" procflags="override">
+      </procedure>
+      <procedure name="CommitToSTM" visibility="public" procflags="override">
+      </procedure>
+    </members>
+  </class>
+  <class name="TChunk">
+    <ancestor name="TRelation" namespace="FARG_Framework_Chunk">
+      <methodref name="create" visibility="public" />
+      <methodref name="GetOriginalElements" visibility="public" />
+      <methodref name="ConnotationIsAcceptable" visibility="public" />
+      <methodref name="GetConnotationOfType" visibility="public" />
+      <methodref name="GetAcceptableConnotationsTypes" visibility="public" />
+      <methodref name="ComputeRelation" visibility="public" />
+      <methodref name="ConditionsAreSatisfied" visibility="public" />
+      <methodref name="SearchForInstance" visibility="public" />
+      <methodref name="CommitToSTM" visibility="public" />
+      <ancestor name="TConnotation" namespace="FARG_Framework_Chunk">
+        <methodref name="Contains" visibility="public" />
+        <methodref name="Codelet" visibility="public" />
+        <methodref name="TopDownSeekFor" visibility="public" />
+        <methodref name="BottomUpPropose" visibility="public" />
+        <methodref name="SearchForInstance" visibility="public" />
+        <methodref name="CheckCurrentStrength" visibility="public" />
+        <methodref name="CommitToSTM" visibility="public" />
+        <methodref name="Destroyer" visibility="public" />
+        <ancestor name="TObject" namespace="System">
+          <methodref name="Create" visibility="public">
+          </methodref>
+          <methodref name="Free" visibility="public">
+          </methodref>
+          <methodref name="InitInstance" visibility="public">
+          </methodref>
+          <methodref name="CleanupInstance" visibility="public">
+          </methodref>
+          <methodref name="ClassType" visibility="public">
+          </methodref>
+          <methodref name="ClassName" visibility="public">
+          </methodref>
+          <methodref name="ClassNameIs" visibility="public">
+          </methodref>
+          <methodref name="ClassParent" visibility="public">
+          </methodref>
+          <methodref name="ClassInfo" visibility="public">
+          </methodref>
+          <methodref name="InstanceSize" visibility="public">
+          </methodref>
+          <methodref name="InheritsFrom" visibility="public">
+          </methodref>
+          <methodref name="MethodAddress" visibility="public">
+          </methodref>
+          <methodref name="MethodName" visibility="public">
+          </methodref>
+          <methodref name="FieldAddress" visibility="public">
+          </methodref>
+          <methodref name="GetInterface" visibility="public">
+          </methodref>
+          <methodref name="GetInterfaceEntry" visibility="public">
+          </methodref>
+          <methodref name="GetInterfaceTable" visibility="public">
+          </methodref>
+          <methodref name="SafeCallException" visibility="public">
+          </methodref>
+          <methodref name="AfterConstruction" visibility="public">
+          </methodref>
+          <methodref name="BeforeDestruction" visibility="public">
+          </methodref>
+          <methodref name="Dispatch" visibility="public">
+          </methodref>
+          <methodref name="DefaultHandler" visibility="public">
+          </methodref>
+          <methodref name="NewInstance" visibility="public">
+          </methodref>
+          <methodref name="FreeInstance" visibility="public">
+          </methodref>
+          <methodref name="Destroy" visibility="public">
+          </methodref>
+        </ancestor>
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="ElementsAtAllChunkLevels" type="TList" visibility="public" />
+      <constructor name="Create" visibility="public">
+        <parameters>
+        </parameters>
+      </constructor>
+      <procedure name="CreateFromList" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="L" type="TList" />
+        </parameters>
+      </procedure>
+      <procedure name="GetOriginalElements" visibility="public" procflags="virtual">
+      </procedure>
+      <function name="ConnotationIsAcceptable" visibility="public" procflags="virtual">
+        <parameters>
+          <parameter name="C" type="TConnotation" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetConnotationOfType" visibility="public">
+        <parameters>
+          <parameter name="T" type="TClass" />
+          <retval type="TConnotation" />
+        </parameters>
+      </function>
+      <procedure name="GetAcceptableConnotationsTypes" visibility="public" procflags="abstract virtual">
+      </procedure>
+      <function name="ConditionsAreSatisfied" visibility="public" procflags="abstract virtual">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="CommitToSTM" visibility="public" procflags="override">
+      </procedure>
+      <procedure name="ChunkRelation" visibility="public">
+        <parameters>
+          <parameter name="R" type="TRelation" />
+        </parameters>
+      </procedure>
+      <function name="Contains" visibility="public" procflags="override">
+        <parameters>
+          <parameter name="ConnotationType" type="TClass" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetRelationsThatBindChunk" visibility="public">
+        <parameters>
+          <retval type="TList" />
+        </parameters>
+      </function>
+      <function name="GetConnotationsFromTheseRelations" visibility="public">
+        <parameters>
+          <parameter name="Relations" type="TList" />
+          <retval type="TList" />
+        </parameters>
+      </function>
+      <function name="Depth" visibility="public">
+        <parameters>
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <function name="Width" visibility="public">
+        <parameters>
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <function name="TopDownSeekFor" visibility="public" procflags="override">
+        <parameters>
+          <parameter name="C" type="TConnotation" />
+          <retval type="TConnotation" />
+        </parameters>
+      </function>
+      <procedure name="Destroyer" visibility="public" procflags="override">
+      </procedure>
+    </members>
+  </class>
+  <variable name="STM_Content" type="TList" />
+</namespace>

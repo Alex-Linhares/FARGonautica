@@ -1,0 +1,464 @@
+unit AbstractImpulses;
+
+interface
+
+uses ExternalMemoryUnit, WorkingMemoryUnit, BasicImpulse, BoardViewerUnit, classes, stdctrls, graphics;
+
+type
+     TRoles = (NoRole, Guardian, Attacker, Blocker, Interceptor);
+
+     PTAbstractRole= ^TAbstractRole;
+     TAbstractRole = record
+                           Trajectory: ^TList;
+                           Origin: ^TPiece;
+                           Destination: ^TPiece;
+                           intensity, v1, v2, Proximity: integer; {use 1 to 10000}
+                           Roletype: TRoles;
+                           Intercepts: PTAbstractRole;
+                           Attack_Chain: TList;
+                     end;
+
+
+     TImpulseAbstractRole = class (TImpulse)
+                                  AbstractRole:^TAbstractRole;
+                                  procedure unpack_parameters (List:Tlist); Override;
+                            end;
+
+     TImpulseAttackerRole = class (TImpulseAbstractRole)       
+                                  procedure Fire; Override;
+                                  end;
+
+     TImpulseGuardianRole = class (TImpulseAbstractRole)
+                                  procedure Fire; Override;
+                                  end;
+
+     TImpulsePromotionRole = class (TImpulseAbstractRole)
+                                  S2: ^Tsquare;
+                                  procedure Unpack_parameters(List:Tlist); override;
+                                  procedure Fire; Override;
+                                  end;
+
+     TImpulseBlockerRole = class (TImpulseAbstractRole)
+                                  procedure Fire; Override;
+                                  end;
+
+     TImpulseCheckInterception = class (TImpulseAbstractRole)
+                                       procedure unpack_parameters (List:Tlist); Override;
+                                       procedure fire; override;
+                                 end;
+
+
+
+
+
+implementation
+
+uses MainUnit, SpecialFunctions, Math, Insert_delete_move_Impulses;
+
+
+{===============================================================================}
+procedure TImpulseCheckInterception.Unpack_Parameters(List:Tlist);
+begin
+     abstractrole:=List.items[0];
+     pmemo:=list.items[1];
+end;
+
+
+procedure TImpulseCheckInterception.fire;
+var pc: ^tpiece; sq, squ, sqaux:^tsquare; x,y,x1,y1,x2,t1,numberofmoves,t,t2,t3, aux:integer; enemycolor:boolean;s:string;
+    Traj: ^TList; Auxrole,NewInterceptionRole:^TabstractRole; Impulse:^TImpulseAbstractRole; L:Tlist; disablerecursion:Boolean;
+    I: ^TImpulse;
+
+
+    pieceaux:^tpiece; {sqaux:tsquare;}
+begin
+     {We must check if the attack from piece abstractrole.origin can be intercepted by any enemy piece}
+     {this is done by checking the mobility of EACH enemy piece to EACH square in the attack trajectory}
+
+     new (sq); new (pc);
+     {for EACH square in the trajectory, startin from the most distant one... }
+     numberofmoves:=(AbstractRole.trajectory^.count)-1;
+     for t:=  AbstractRole.Trajectory^.count-1 downto 0 do
+     begin
+          enemycolor:= not (AbstractRole.Origin^.white);
+          sq:=AbstractRole.Trajectory.items[t];
+
+          {check the mobility of EACH enemy piece to it!}
+          t2:=-1;
+          while (t2<workingmemory.pieces.count-1) do
+          begin
+               t2:=t2+1;
+               {get the proper square...}
+               pc^:=Workingmemory.Pieces.items[t2];
+
+               disablerecursion:=false;
+               for t3:= AbstractRole.Attack_Chain.Count-1 downto 0 do  {check for interception deadlock...}
+               begin
+                    if (pc^=AbstractRole.Attack_Chain.items[t3]) then disablerecursion:=true;
+               end;
+
+               if (pc^.white=enemycolor) and (Disablerecursion=false) then
+               begin
+                   aux:=Pc^.Mobility[sq^.x,sq^.Y].distance;
+                    if (aux<0) then aux:=-aux;
+                    if (aux<=numberofmoves) then
+                    begin
+                         {if there is an interception, create an attack role of interception!
+                         (which may or may not restrict the mobility of the interceptor)}
+                         str (numberofmoves,S);
+                         pmemo.lines.add ('       The '+ Pc^.FullId + ' may intercept an attack in ' +s+' moves!');
+
+                         {NOW I SHOULD CREATE THE CORRESPONDING INTERCEPTOR ROLES HERE!!!!!!!!!}
+                         {===============================================================================}
+
+                         {1st step: create interception trajectory}
+                          {CODE adapted from maketrajectorytosquare}
+
+                          new (Traj);
+                          Traj^:=Tlist.create;
+                          x:=Sq^.X; Y:=Sq^.y;
+                          t1:=pc^.mobility[x,y].distance;
+                          if t1<0 then t1:=0-t1;
+                          new (squ);
+                          squ^.x:=x; squ^.y:=y;
+                          Traj^.insert(0,squ);
+                          t1:=t1-1;
+                          while (t1>0) do
+                          begin
+                               new (squ);
+                               squ^:=pc^.mobility[x,y].Previous;
+                               x1:= pc^.mobility[x,y].Previous.x;
+                               y1:= pc^.mobility[x,y].Previous.y;
+                               x:=x1; y:=y1;
+                               Traj^.insert(0,squ);
+                               t1:=t1-1;
+                          end;
+                          new (squ);
+                          squ^:=pc^.mobility[x,y].Previous;
+                          x1:= pC^.sq.x;
+                          y1:= pC^.sq.y;
+                          Traj^.insert(0,squ);
+
+                         {2nd step: fill the data for the abstract role}
+
+                           New (NewInterceptionRole);
+
+                           NewInterceptionRole.Roletype:=Interceptor;
+                           NewInterceptionRole.Origin:= Pc;
+                           NewInterceptionRole.Trajectory:=Traj;
+
+                           NewInterceptionRole.Attack_Chain:=TList.create;
+                           for t3:= 0 to abstractrole.Attack_chain.count-1 do
+                               NewInterceptionRole.Attack_Chain.add(abstractrole.Attack_chain.items[t3]); {we've included the past...}
+                           NewInterceptionRole.Attack_Chain.add(pc^);
+
+
+                           {NewInterceptionRole.Destination:= sq^; not needed; you can grab the correct square from the trajectory!}
+
+                         {3rd step: save link to original trajectory now intercepted, and THEN calculate intensity of interception role}
+                           NewInterceptionRole.Intercepts:=AbstractRole;
+
+                           {intensity: calculate integer intensity as function of the value of the origin piece, the
+                           trajectory, and of the distance involved}
+
+                           NewInterceptionRole^.Proximity:= 63 - NewInterceptionRole^.Trajectory^.count;
+                           if NewInterceptionRole^.proximity<0 then NewInterceptionRole^.Proximity:=1;
+                           NewInterceptionRole^.v1:= (101-AbstractRole.Origin^.DynamicValue);
+                           NewInterceptionRole^.v2:= AbstractRole.v2-Abstractrole.Origin^.DynamicValue;
+                           NewInterceptionRole^.intensity:= (NewInterceptionRole^.v1*NewInterceptionRole^.v2*NewInterceptionRole^.Proximity);
+
+                           str (NewinterceptionRole^.intensity, S);
+                           pmemo.lines.add ('       Intensity of interception seems to be around '+ S);
+
+                           S:='       The trajectory is [';
+                           x2:=0;
+                           sqaux:=Traj.items[x2];
+                           S:=S+ConvertSquare(sqaux^.x,sqaux^.y);
+                           while (x2<traj.count-1) do
+                           begin
+                                X2:=X2+1;
+                                sqaux:=Traj.items[x2];
+                                S:=S+', '+ConvertSquare(sqaux^.x,sqaux^.y);
+                           end;
+                           S:=S+']'; pmemo.lines.add (S);
+
+
+     {inserts the abstract role by order of intensity}
+     if (NewInterceptionRole.Origin^.AbstractRoles.count=0) then
+        NewInterceptionRole.Origin^.AbstractRoles.add(AbstractRole)
+     else begin
+               x1:=0;
+               while (x1<NewInterceptionRole.Origin^.AbstractRoles.count) do
+               begin
+                    auxrole:=NewInterceptionRole.Origin^.AbstractRoles.items[x1];
+                    if (NewInterceptionRole^.intensity>=auxrole^.intensity) then
+                    begin
+                         NewInterceptionRole.Origin^.AbstractRoles.insert(x1,NewInterceptionRole);
+                         x1:=NewInterceptionRole.Origin^.AbstractRoles.count;
+                    end;
+                    x1:=x1+1;
+               end;
+          end;
+
+
+                         {4th step: lower "a little bit" the intensity of the intercepted trajectory}
+                           AbstractRole^.Intensity:= Round(AbstractRole^.Intensity * (0.8));
+
+                          {5th step: Trigger impulse to test whether this interception can be intercepted...
+                         ...if it can be intercepted, then strenghen a bit the original trajectory}
+
+                          if (NewInterceptionRole.Intensity>100000) then
+                          begin
+                               {Launch interceptor-search}
+                               new (Impulse);
+                               Impulse^:= TImpulseCheckInterception.create;
+
+                               L:=Tlist.create;
+                               L.clear;
+                               L.Add(NewInterceptionRole);
+                               L.add(pmemo);
+                               Impulse^.urgency:=100;
+                               Impulse^.unpack_parameters(L);
+                               Urges.Add(Impulse);
+
+
+
+
+                               if numberofmoves=2 then
+                               begin
+                               {DELETE THIS TEST LATER!!!}
+                               new (sq);
+                               sq^.x:=4;
+                               sq^.y:=8;
+                               L.Clear;
+                               L.add(sq);
+                               New (I);
+                               I^:=TImpulseDeletePiece.create;
+                               I^.unpack_parameters(L);
+                               I^.fire;
+                               I^.destroy;
+
+                               new (i);
+                               I^:=TImpulseInsertPiece.create;
+                               new(PieceAux);
+                               new (sqaux);
+                               sqaux.x:=1;sqaux.y:=1;
+                               PieceAux^:=Tpiece.create(sqaux^,true,bishop);
+                               L.clear;
+                               L.add(PieceAux);
+                               I^.unpack_parameters(L);
+                               I^.fire;
+                               I^.destroy;
+                               end;
+
+                          end;
+
+                         {6th step (maybe implemented as another impulse): if interception REALLY crucial
+                          then restrict piece mobility & hurt incompatible roles by lowering their values}
+
+                    end;
+               end;
+          end;
+          numberofmoves:=numberofmoves-1;
+     end;
+end;
+
+{===============================================================================}
+procedure TImpulsePromotionRole.Fire;
+var  s:string; l:Tlist; Impulse:^TImpulseAbstractRole; x1:integer; auxrole:^Tabstractrole;
+begin
+     AbstractRole.Roletype:= Attacker;
+
+     {First measure of intensity, among other things}
+     {intensity is a function of the value of the pieces and of the distances involved}
+     {Traj^.pack;}
+     with AbstractRole^ do
+     begin
+
+     Proximity:= 63 - Trajectory^.count;
+     if (proximity<=0) then Proximity:=1;
+
+     v1:= (101-AbstractRole.Origin^.DynamicValue);
+     v2:= QUEENVALUE;
+
+     intensity:= (v1*v2*Proximity);
+     str (AbstractRole.Intensity, S);
+     pmemo^.lines.add('I see that the '+AbstractRole.Origin^.fullId +' might promote to '+Convertsquare(s2^.x,s2^.y));
+     pmemo^.lines.add('In principle, I find the intensity of this relation to be around '+s);
+
+     Attack_Chain:=TList.create;
+     Attack_Chain.add(Origin^);
+
+     {inserts the abstract role by order of intensity}
+     if (AbstractRole.Origin^.AbstractRoles.count=0) then
+        AbstractRole.Origin^.AbstractRoles.add(AbstractRole)
+     else begin
+               x1:=0;
+               while (x1<AbstractRole.Origin^.AbstractRoles.count) do
+               begin
+                    auxrole:=AbstractRole.Origin^.AbstractRoles.items[x1];
+                    if (intensity>=auxrole^.intensity) then
+                    begin
+                         AbstractRole.Origin^.AbstractRoles.insert(x1,AbstractRole);
+                         x1:=AbstractRole.Origin^.AbstractRoles.count;
+                    end;
+                    x1:=x1+1;
+               end;
+          end;
+
+
+
+
+
+     if (AbstractRole.Intensity>100000) then
+     begin
+          {Launch interceptor-search}
+          new (Impulse);
+          Impulse^:= TImpulseCheckInterception.create;
+
+          L:=Tlist.create;
+          L.Add(AbstractRole);
+          L.add(pmemo);
+          Impulse^.urgency:=100;
+          Impulse^.unpack_parameters(L);
+          Urges.Add(Impulse);
+     end;
+
+     end;
+
+end;
+
+
+procedure TImpulseAttackerRole.Fire;
+var    s:string; auxrole:^Tabstractrole; x1:integer;
+begin
+     AbstractRole.Roletype:= Attacker;
+
+     {First measure of intensity, among other things}
+     {intensity is a function of the value of the pieces and of the distances involved}
+     with abstractRole^ do
+     begin
+
+     Proximity:= 63 - AbstractRole.Trajectory^.count;
+     if proximity<0 then Proximity:=1;
+
+     v1:= (101-AbstractRole.Origin^.DynamicValue);
+     v2:= (AbstractRole.Destination^.DynamicValue);
+     AbstractRole.proximity:= proximity;
+
+
+     AbstractRole.intensity:= (v1*v2*Proximity);
+     str (AbstractRole.Intensity, S);
+     pmemo^.lines.add('I see that the '+AbstractRole.Origin^.fullId +' might attack the '+AbstractRole.Destination^.FullID);
+     pmemo^.lines.add('In principle, I find the intensity of this relation to be around '+s);
+
+     {inserts the abstract role by order of intensity}
+     if (AbstractRole.Origin^.AbstractRoles.count=0) then
+        AbstractRole.Origin^.AbstractRoles.add(AbstractRole)
+     else begin
+               x1:=0;
+               while (x1<AbstractRole.Origin^.AbstractRoles.count) do
+               begin
+                    auxrole:=AbstractRole.Origin^.AbstractRoles.items[x1];
+                    if (intensity>=auxrole^.intensity) then
+                    begin
+                         AbstractRole.Origin^.AbstractRoles.insert(x1,AbstractRole);
+                         x1:=AbstractRole.Origin^.AbstractRoles.count;
+                    end;
+                    x1:=x1+1;
+               end;
+          end;
+
+          
+     {Trigger impulse to check if this attack can be stopped}
+
+
+     end;
+
+
+end;
+
+
+
+procedure TImpulseGuardianRole.Fire;
+var  s:string; x1:integer; auxrole:^Tabstractrole;
+begin
+     AbstractRole.Roletype:= Guardian;
+
+     {First measure of intensity, among other things}
+     {intensity is a function of the value of the pieces and of the distances involved}
+     {Traj^.pack;}
+
+     With AbstractRole^ do
+     begin
+
+     Proximity:= 63 - (AbstractRole.Trajectory^.count);
+     if proximity<0 then Proximity:=1;
+
+     v1:= (101-AbstractRole.Origin^.DynamicValue);
+     v2:= (AbstractRole.Destination^.DynamicValue);
+
+     AbstractRole.intensity:= v1*v2*Proximity;
+
+     str (AbstractRole.Intensity, S);
+     pmemo^.lines.add('I see that the '+AbstractRole.Origin^.fullId +' is a guardian of the '+AbstractRole.Destination^.FullID);
+     pmemo^.lines.add('In principle, I find the intensity of this relation to be around '+s);
+
+     {inserts the abstract role by order of intensity}
+     if (AbstractRole.Origin^.AbstractRoles.count=0) then
+        AbstractRole.Origin^.AbstractRoles.add(AbstractRole)
+     else begin
+               x1:=0;
+               while (x1<AbstractRole.Origin^.AbstractRoles.count) do
+               begin
+                    auxrole:=AbstractRole.Origin^.AbstractRoles.items[x1];
+                    if (intensity>=auxrole^.intensity) then
+                    begin
+                         AbstractRole.Origin^.AbstractRoles.insert(x1,AbstractRole);
+                         x1:=AbstractRole.Origin^.AbstractRoles.count;
+                    end;
+                    x1:=x1+1;
+               end;
+          end;
+
+     end;
+
+
+end;
+
+procedure TImpulseBlockerRole.Fire;
+begin
+     AbstractRole.Roletype:= Blocker;
+     AbstractRole.Intensity:=50;
+end;
+
+
+
+procedure TImpulsePromotionRole.unpack_parameters (List:Tlist);
+begin
+     New (AbstractRole);
+
+     new (AbstractRole.Trajectory);
+
+     AbstractRole.Trajectory^:= Tlist.create;
+     AbstractRole.Trajectory^:= List.items[0];
+     AbstractRole.Origin:= List.items[1];
+     S2:= List.items[2];
+     pmemo:= list.items[3];
+end;
+
+procedure TImpulseAbstractRole.unpack_parameters (List:Tlist);
+begin
+     New (AbstractRole);
+
+     new (AbstractRole.Trajectory);
+
+     AbstractRole.Trajectory^:= Tlist.create;
+     AbstractRole.Trajectory^:= List.items[0];
+     AbstractRole.Origin:= List.items[1];
+     AbstractRole.Destination:= List.items[2];
+     pmemo:= list.items[3];
+end;
+
+
+end.

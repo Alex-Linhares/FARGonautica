@@ -1,0 +1,22 @@
+program Fluid_Chess_Project;
+           
+uses
+  Forms,
+  MainUnit in 'MainUnit.pas' {Form1},
+  BoardViewerUnit in 'BoardViewerUnit.pas' {BoardViewerWindow},
+  BasicImpulse in 'BasicImpulse.pas',
+  ImpulseSquareAndPiece in 'ImpulseSquareAndPiece.pas',
+  WorkingMemoryUnit in 'WorkingMemoryUnit.pas',
+  ExternalMemoryUnit in 'ExternalMemoryUnit.pas',
+  AbstractImpulses in 'AbstractImpulses.pas',
+  SpecialFunctions in 'Backup\arrow\SpecialFunctions.pas',
+  Insert_Delete_Move_Impulses in 'Insert_Delete_Move_Impulses.pas';
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.Title := 'Fluid Chess';
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

@@ -1,0 +1,157 @@
+unit FARG_Framework_Similarity;
+
+{
+mostly used in Bonnie and Clyde for the time being.
+Needs full revision and extension.
+}
+
+interface
+
+uses FARG_Framework_Chunk, NumboConnotations, classes;
+
+type
+
+  TSimilarity = class
+                  private                          
+                  C1, C2: TChunk;              
+                  res: boolean;
+                  Connotation1, Connotation2: TConnotation;
+                  index:integer;
+
+                  public
+                  ConnotationSet: TList;
+                  Outliers: TList;
+                  Delta, Sum: real;
+                  OutlierX, OutlierY, MostOutlierX, MostOutlierY:integer;
+
+                  constructor Create;
+
+                  procedure MeasureSetSimilarities;
+                  function SumDistances:real;
+
+                  Function GetDelta(X:TNumberInteger; Y: TNumberInteger):real;  overload;  virtual;
+                  {Function GetDelta(XCon:TConnotation; YCon: TConnotation):real;  overload; virtual;}
+
+
+                  function Compare(Chunk1, Chunk2:TChunk):Boolean;
+                  procedure ComparisonSubroutine; virtual; abstract;
+  end;
+
+  TChunks = class (TSimilarity)
+                  procedure ComparisonSubroutine; override;
+  end;
+
+  TTemplates = class (TSimilarity)
+                  procedure ComparisonSubroutine; override;
+  end;
+
+  TSet = class (TSimilarity)
+                  procedure ComparisonSubroutine; override;
+  end;
+
+implementation
+
+{ TSimilarity }
+
+Constructor TSimilarity.Create;
+begin
+  ConnotationSet:=TList.Create;
+end;
+
+function TSimilarity.GetDelta(X:TNumberInteger; Y: TNumberInteger): real;
+var num:real;
+begin
+    num:=sqrt((x.GetValue+y.GetValue)*(x.getvalue+y.GetValue));
+    result:=num;
+end;
+
+procedure TSimilarity.MeasureSetSimilarities;
+var best, measure: real;
+    x, y, bestX, bestY:integer;
+    Nx, Ny:TNumberInteger;
+begin
+ (* OutlierX:=-1;
+  OutlierY:=-1;
+  Best:=SumDistances*sumdistances;
+  measure:=best;
+  for x := 0 to ConnotationSet.Count - 1 do
+  begin
+    for y := 0 to ConnotationSet.Count - 1 do
+    begin
+      if x<>y then
+      begin
+        OutlierX:=x;
+        OutlierY:=Y;
+        Sum:=SumDistances;
+
+        NX:=ConnotationSet.items[outlierx];
+        NY:=ConnotationSet.items[outliery];
+        sum:=  (sum+GetDelta(Nx,Ny)) / (sqrt( (sum-GetDelta(NX,NY)) * (sum-GetDelta(NX,NY)) ));
+
+        {sum:= sqrt( (measure-sum)*(measure-sum) );}
+
+        {sum:=SumDistances;}
+        {it must be one group versus the other}
+        if (Sum<Best) then
+        begin
+          Best:=sum;
+          MostOutlierX:=OutlierX;
+          MostOutlierY:=OutlierY;
+        end;
+      end;
+    end;
+  end;*)
+end;
+
+function TSimilarity.SumDistances: real;
+Var sum: real;
+    x,y: integer;
+    ConnotationX, ConnotationY: TConnotation;
+    Nx, Ny: TNumberInteger;
+begin
+ {  sum:=0;
+   for x := 0 to ConnotationSet.Count - 1 do
+     for y := 0 to ConnotationSet.Count - 1 do
+       if (x<>y) and (x<>outlierX) and (y<>outlierY) then
+       begin
+          ConnotationX:=ConnotationSet.Items[x];
+          ConnotationY:=ConnotationSet.Items[y];
+          if ConnotationX.ClassType=TNumberInteger then
+          begin
+            NX:=TNumberInteger(ConnotationX);
+            NY:=TNumberInteger(ConnotationY);
+            sum:=sum+GetDelta(NX,NY);
+          end;
+       end;
+    result:=sum;}
+end;
+
+function TSimilarity.Compare(Chunk1, Chunk2: TChunk): Boolean;
+
+begin
+
+end;
+
+{ TSet }
+
+procedure TSet.ComparisonSubroutine;
+begin
+
+end;
+
+{ TTemplates }
+
+procedure TTemplates.ComparisonSubroutine;
+begin
+
+end;
+
+{ TChunks }
+
+procedure TChunks.ComparisonSubroutine;
+begin
+
+end;
+
+
+end.

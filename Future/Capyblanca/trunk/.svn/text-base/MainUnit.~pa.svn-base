@@ -1,0 +1,1085 @@
+unit MainUnit;
+
+interface
+
+uses
+  AbstractImpulses, ExternalMemoryUnit, Workingmemoryunit, ImpulseSquareAndPiece,BasicImpulse, BoardViewerUnit, StdCtrls, Controls, ExtCtrls, ComCtrls, Classes, Windows, Messages, SysUtils, Graphics, Forms, Dialogs,
+  Grids, SpecialFunctions, Buttons, Spin;
+
+type
+  TBoardLoader = class(Tobject)
+                             Board: TImage;
+                             constructor create;
+                             procedure MakeWilkins(B:Timage);
+                             procedure MakeWilkinsEasy(B:Timage);
+                             procedure MakeWilkinsHard(B:Timage);
+                             procedure MakeWilkinsPromoted(B:Timage);
+                             procedure makeStartGame(B:Timage);
+                             procedure QueenOrKnight(B:Timage);
+                       end;
+
+
+  TForm1 = class(TForm)
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    BoardViewer: TCheckBox;
+    Objects: TCheckBox;
+    Concepts: TCheckBox;
+    ParallelPriorities: TCheckBox;
+    Temperature: TCheckBox;
+    Button1: TButton;
+    Button2: TButton;
+    TabSheet3: TTabSheet;
+    Board: TImage;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    RadioButton4: TRadioButton;
+    Button3: TButton;
+    Button4: TButton;
+    StringGrid1: TStringGrid;
+    RadioButton5: TRadioButton;
+    RadioButton6: TRadioButton;
+    Memo1: TMemo;
+    SpinEdit1: TSpinEdit;
+    Play: TBitBtn;
+    Mobility: TLabel;
+    ProgressBar1: TProgressBar;
+    NumberofImpulses: TLabel;
+    UrgesRemaining: TLabel;
+    RadioButton7: TRadioButton;
+
+    Procedure ImpulsiveUrges;
+    procedure ImpulsiveThoughtsInRandomOrder;
+    procedure ImpulsiveThoughtsByUrgency;
+    procedure SomeImpulsiveThoughtsByUrgency(Numberimpulses:integer);
+
+    procedure BoardViewerClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+
+
+
+    procedure StartCognition;
+    procedure Button3Click(Sender: TObject);
+    procedure RadioButton1Click(Sender: TObject);
+    procedure RadioButton2Click(Sender: TObject);
+    procedure RadioButton3Click(Sender: TObject);
+    procedure RadioButton4Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure RadioButton5Click(Sender: TObject);
+    procedure RadioButton6Click(Sender: TObject);
+    procedure PlayClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+  numImpulses:integer;
+  Temperature: TTemperature;
+
+  boardloader:Tboardloader;
+
+implementation
+{$R *.DFM}
+
+
+
+
+Procedure TForm1.StartCognition;
+var impulse: ^timpulse; pmemo: ^tmemo; L:Tlist; prob:^real; pos_x,pos_y:integer; potentialsquare: ^tsquare;
+begin
+     {this procedure creates the very first impulse to search for pieces on a random
+     square and then transfers control to the main loop}
+
+     Workingmemory.Alreadythinking:=true;
+     for pos_x:= 1 to 8 do
+         for Pos_y:=1 to 8 do
+         begin
+              L:=Tlist.create;
+              new (impulse);
+              new(potentialsquare);
+              Potentialsquare^.x:=pos_x;
+              Potentialsquare^.y:=pos_y;
+
+              Impulse^:=TImpulseCheckSquare.create;
+              Impulse^.urgency:=15;
+              L:=Tlist.create;
+              L.add(potentialsquare);
+              new (pmemo);
+              pmemo^:=form1.memo1;
+              L.Add(pmemo);
+              Impulse^.Unpack_parameters(L);
+              Urges.Add(Impulse);
+         end;
+end;
+
+procedure TForm1.BoardViewerClick(Sender: TObject);
+begin
+     If BoardViewer.checked then
+     begin
+          Application.CreateForm(TBoardViewerWindow, BoardViewerWindow);
+          {BoardViewerWindow.create(nil);
+          BoardViewerWindow.setfocus(); }
+          BoardViewerWindow.Make(self);
+     end;
+end;
+
+Procedure Tform1.ImpulsiveUrges;
+var PN:^real; x:real;   Impulse:^Timpulse;
+    L: Tlist;   counter:integer;  S:string; PS:^string;
+begin
+     L:=Tlist.create;
+     for counter:=0 to 10 do
+     begin
+          new (impulse);
+          impulse^:= timpulsenumber.create;
+          x:=counter/100;
+          PN:=@x;
+          L.Add(PN);
+          L.add(@Memo1);
+          Impulse^.urgency:=counter+1;
+          Impulse^.Unpack_parameters(L);
+          Urges.Add(Impulse);
+     end;
+     for counter:=11 to 19 do
+     begin
+          new (impulse);
+          impulse^:=timpulsestring.create;
+          S:='gotcha!';
+          PS:=@S;
+          L.clear;
+          L.Add(PS);
+          L.add(@Memo1);
+          Impulse^.urgency:=1;
+          Impulse^.Unpack_parameters(L);
+          Urges.Add(IMPulse);
+     end;
+     for counter:=20 to 30 do
+     begin
+          New(Impulse);
+          impulse^:=timpulsenumber.create;
+          x:=counter/100;
+          PN:=@x;
+          L.clear;
+          L.Add(PN);
+          L.add(@Memo1);
+          Impulse^.urgency:=counter;
+          Impulse^.Unpack_parameters(L);
+          Urges.Add(IMPulse);
+     end;
+     for counter:=31 to 35 do
+     begin
+          new (impulse);
+          impulse^:=timpulsestring.create;
+          S:='iiiihhaaaa!';
+          PS:=@S;
+          L.clear;
+          L.Add(PS);
+          L.add(@Memo1);
+          Impulse^.urgency:=50;
+          Impulse^.Unpack_parameters(L);
+          Urges.Add(IMPulse);
+     end;
+end;
+
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+     ImpulsiveUrges;
+     Button2.Enabled:=true;
+     Button3.Enabled:=true;
+     Memo1.Lines.add('=============================================');
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+     ImpulsiveThoughtsInRandomOrder;
+end;
+
+procedure TForm1.ImpulsiveThoughtsInRandomOrder;
+var x:integer; s,s1:string; imp:^timpulse;
+begin
+     Urges.pack;
+     while (urges.count>0) do
+     begin
+          urges.pack;
+          x:=random(urges.count);
+          str(x,s);   str (urges.count,s1);
+          memo1.lines.add('random urge numbered '+S+' taken from set of '+s1);
+          Imp:=Urges.items[x];
+          Urges.remove(imp);
+          Urges.pack;
+          imp^.fire;
+          Dispose(imp);
+          urges.pack;
+     end;
+end;
+
+procedure TForm1.ImpulsiveThoughtsByUrgency;
+var counter:integer;  Imp:^Timpulse; U,x,SumUrgency:Turgency;
+begin
+     Urges.pack;
+     NumImpulses:=0;
+     while (Urges.count>0) do
+     begin
+          sumurgency:=0;
+          for counter:=0 to Urges.count-1 do
+          begin
+               imp:=Urges.items[counter];
+               sumurgency:=sumurgency+imp^.urgency;
+          end;
+          x:= random(sumurgency+1);
+          counter:=-1;
+          u:=0;
+          repeat
+                counter:=counter+1;
+                Imp:=Urges.items[counter];
+                u:=u+imp^.urgency;
+          until (u>=X);  {this means that impulse number COUNTER is going to fire!}
+          Urges.remove(imp);
+          Urges.pack;
+          imp^.fire;
+          Imp^.free;
+          Imp:=nil;
+          Dispose(imp);
+          NumImpulses:=NumImpulses+1;
+          Urges.pack;
+     end;
+end;
+
+procedure TForm1.SomeImpulsiveThoughtsByUrgency(Numberimpulses:integer);                                                
+var counter:integer;  Imp:^Timpulse; U,x,SumUrgency:Turgency;
+begin
+     Urges.pack;
+     NumImpulses:=0;
+     while (Urges.count>0) and ((numimpulses<Numberimpulses) or (NumberImpulses=0)) do
+     begin
+          sumurgency:=0;
+          for counter:=0 to Urges.count-1 do
+          begin
+               imp:=Urges.items[counter];
+               sumurgency:=sumurgency+imp^.urgency;
+          end;
+          x:= random(sumurgency+1);
+          counter:=-1;
+          u:=0;
+          repeat
+                counter:=counter+1;
+                Imp:=Urges.items[counter];
+                u:=u+imp^.urgency;
+          until (u>=X);  {this means that impulse number COUNTER is going to fire!}
+          Urges.remove(imp);
+          Urges.pack;
+          imp^.fire;
+          Imp^.free;
+          Imp:=nil;
+          Dispose(imp);
+          NumImpulses:=NumImpulses+1;
+          Urges.pack;
+     end;
+     workingmemory.impulses_fired:=workingmemory.impulses_fired+Numimpulses;
+end;
+
+{the following procedures implement the wilkins position}
+procedure TForm1.RadioButton1Click(Sender: TObject);
+begin
+     Boardloader:=Tboardloader.create;
+     boardloader.makewilkins(Form1.Board);
+end;
+
+constructor Tboardloader.create;
+begin
+     {ExternalMemory:=TexternalMemory.create;}
+end;
+
+procedure TBoardLoader.makeWilkins (B:Timage);
+Var P:Array[1..32] of TExternalPiece; Pos:Tsquare;
+    x1,y1, Z1: integer; Color:Tcolor;
+begin
+     Board:=B;
+     Z1:=Boardsize div 8;
+
+     Color:=clwhite;
+     {for x1:= 0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+              Board.Canvas.Brush.Color:=Color;
+              Board.Canvas.Pen.Color:=Color;
+              Board.Canvas.rectangle(x1*z1,y1*z1,(x1+1)*z1-1,(y1+1)*z1-1);
+              Drawsquare(Board,x1,y1);
+         end;
+     Board.Canvas.Pen.Color:=clWhite;
+     Board.Canvas.Brush.Color:=clWhite;}
+
+     Pos.X:=3;Pos.Y:=5;
+     P[1]:=TExternalpiece.create (Pos,false,pawn);
+
+     Pos.x:=4; Pos.y:=4;
+     P[2]:=TExternalpiece.create (Pos,false,pawn);
+
+     Pos.x:=5; Pos.y:=3;
+     P[3]:=TExternalpiece.create (Pos,false,pawn);
+
+     Pos.x:=7; Pos.y:=3;
+     P[4]:=TExternalpiece.create (Pos,false,pawn);
+
+     Pos.X:=4;Pos.Y:=2;
+     P[5]:=TExternalpiece.create (Pos,false,king);
+
+     Pos.X:=4;Pos.Y:=7;
+     P[6]:=TExternalpiece.create (Pos,true,king);
+
+     Pos.X:=3;Pos.Y:=6;
+     P[7]:=TExternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=4;Pos.Y:=5;
+     P[8]:=TExternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=5;Pos.Y:=4;
+     P[9]:=TExternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=6;Pos.Y:=3;
+     P[10]:=TExternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=7;Pos.Y:=4;
+     P[11]:=TExternalpiece.create (Pos,true,pawn);
+
+{     P[1].display (Board.Canvas);
+     P[2].display (Board.Canvas);
+     P[3].display (Board.Canvas);
+     P[4].display (Board.Canvas);
+     P[5].display (Board.Canvas);
+     P[6].display (Board.Canvas);
+     P[7].display (Board.Canvas);
+     P[8].display (Board.Canvas);
+     P[9].display (Board.Canvas);
+     P[10].display (Board.Canvas);
+     P[11].display (Board.Canvas);}
+
+
+     {for x1:=0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+
+              if ((x1+y1) mod 2)=1 then
+              begin
+                   Board.canvas.Font.Color := clblack;
+              end else
+              begin
+                   Board.canvas.Font.Color := clBlack;
+              end;
+              Board.Canvas.brush.style := bsClear;
+
+              Board.Canvas.textout(x1*z1+1,y1*z1+1,convertsquare(x1+1,y1+1));
+              Board.canvas.Font.Color := clwhite;
+              Board.Canvas.textout(x1*z1,y1*z1,convertsquare(x1+1,y1+1));
+         end;}
+
+     for x1:=1 to 11 do
+         P[x1].destroy;
+end;
+
+procedure TBoardLoader.makeWilkinsHard (B:Timage);
+Var P:Array[1..32] of TExternalPiece; Pos:Tsquare;
+    x1,y1, Z1: integer; Color:Tcolor;
+begin
+     ExternalMemory:=TexternalMemory.create;
+     Board:=B;
+     Z1:=Boardsize div 8;
+
+     Color:=clwhite;
+{     for x1:= 0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+              Board.Canvas.Brush.Color:=Color;
+              Board.Canvas.Pen.Color:=Color;
+              Board.Canvas.rectangle(x1*z1,y1*z1,(x1+1)*z1-1,(y1+1)*z1-1);
+              Drawsquare(Board,x1,y1);
+
+
+         end;
+     Board.Canvas.Pen.Color:=clWhite;
+     Board.Canvas.Brush.Color:=clWhite;}
+
+     Pos.X:=3;Pos.Y:=6;
+     P[1]:=TExternalpiece.create (Pos,false,pawn);
+
+     Pos.x:=4; Pos.y:=5;
+     P[2]:=TExternalpiece.create (Pos,false,pawn);
+
+     Pos.x:=5; Pos.y:=4;
+     P[3]:=TExternalpiece.create (Pos,false,pawn);
+
+     Pos.x:=7; Pos.y:=4;
+     P[4]:=TExternalpiece.create (Pos,false,pawn);
+
+     Pos.X:=8;Pos.Y:=3;
+     P[5]:=TExternalpiece.create (Pos,false,king);
+
+     Pos.X:=8;Pos.Y:=6;
+     P[6]:=TExternalpiece.create (Pos,true,king);
+
+     Pos.X:=4;Pos.Y:=6;
+     P[7]:=TExternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=5;Pos.Y:=5;
+     P[8]:=TExternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=6;Pos.Y:=4;
+     P[9]:=TExternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=7;Pos.Y:=5;
+     P[10]:=TExternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=8;Pos.Y:=8;
+     P[11]:=TExternalpiece.create (Pos,true,bishop);
+
+     Pos.X:=3;Pos.Y:=7;
+     P[12]:=TExternalpiece.create (Pos,true,pawn);
+
+{     P[1].display (Board.Canvas);
+     P[2].display (Board.Canvas);
+     P[3].display (Board.Canvas);
+     P[4].display (Board.Canvas);
+     P[5].display (Board.Canvas);
+     P[6].display (Board.Canvas);
+     P[7].display (Board.Canvas);
+     P[8].display (Board.Canvas);
+     P[9].display (Board.Canvas);
+     P[10].display (Board.Canvas);
+     P[11].display (Board.Canvas);
+     P[12].display (Board.Canvas);
+     P[13].display (Board.Canvas);}
+
+     {for x1:=0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+              if ((x1+y1) mod 2)=1 then
+              begin
+                   Board.canvas.Font.Color := clblack;
+              end else
+              begin
+                   Board.canvas.Font.Color := clBlack;
+              end;
+              Board.Canvas.brush.style := bsClear;
+
+              Board.Canvas.textout(x1*z1+1,y1*z1+1,convertsquare(x1+1,y1+1));
+              Board.canvas.Font.Color := clwhite;
+              Board.Canvas.textout(x1*z1,y1*z1,convertsquare(x1+1,y1+1));
+         end; }
+
+     for x1:=1 to 12 do
+         P[x1].destroy;
+
+     {Board.Canvas.brush.style := bsSolid;}
+end;
+
+
+procedure TForm1.RadioButton2Click(Sender: TObject);
+begin
+     Boardloader:=Tboardloader.create;
+     boardloader.makeWilkinsEasy(Form1.Board);
+end;
+
+procedure TBoardLoader.makeWilkinsEasy (B:Timage);
+Var P:Array[1..32] of TPiece; Pos:Tsquare;
+    x,y,x1,y1, Z1: integer; Color:Tcolor;
+begin
+     Board:=B;
+     Z1:=Boardsize div 8;
+
+     for x:=1 to 8 do
+         for y:=1 to 8 do
+         begin
+              externalmemory.square[x,y]:=none;
+         end;
+
+     Color:=clwhite;
+     for x1:= 0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+              Board.Canvas.Brush.Color:=Color;
+              Board.Canvas.Pen.Color:=Color;
+              Board.Canvas.rectangle(x1*z1,y1*z1,(x1+1)*z1-1,(y1+1)*z1-1);
+              Drawsquare(Board,x1,y1);
+         end;
+     Board.Canvas.Pen.Color:=clWhite;
+     Board.Canvas.Brush.Color:=clWhite;
+
+
+     Pos.X:=3;Pos.Y:=5;
+     P[1]:=Texternalpiece.create (Pos,false,pawn);
+
+     Pos.x:=4; Pos.y:=4;
+     P[2]:=Texternalpiece.create (Pos,false,pawn);
+
+     Pos.x:=5; Pos.y:=3;
+     P[3]:=Texternalpiece.create (Pos,false,pawn);
+
+     Pos.x:=7; Pos.y:=3;
+     P[4]:=Texternalpiece.create (Pos,false,pawn);
+
+     Pos.X:=4;Pos.Y:=2;
+     P[5]:=Texternalpiece.create (Pos,false,king);
+
+     Pos.X:=3;Pos.Y:=4;
+     P[6]:=Texternalpiece.create (Pos,true,king);
+
+     Pos.X:=3;Pos.Y:=6;
+     P[7]:=Texternalpiece.create (Pos,true,pawn);
+
+
+     Pos.X:=4;Pos.Y:=5;
+     P[8]:=Texternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=5;Pos.Y:=4;
+     P[9]:=Texternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=6;Pos.Y:=3;
+     P[10]:=Texternalpiece.create (Pos,true,pawn);
+
+     Pos.X:=7;Pos.Y:=4;
+     P[11]:=Texternalpiece.create (Pos,true,pawn);
+
+{     P[1].display (Board.Canvas);
+     P[2].display (Board.Canvas);
+     P[3].display (Board.Canvas);
+     P[4].display (Board.Canvas);
+     P[5].display (Board.Canvas);
+     P[6].display (Board.Canvas);
+     P[7].display (Board.Canvas);
+     P[8].display (Board.Canvas);
+     P[9].display (Board.Canvas);
+     P[10].display (Board.Canvas);
+     P[11].display (Board.Canvas);}
+
+     for x1:=0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+
+              if ((x1+y1) mod 2)=1 then
+              begin
+                   Board.canvas.Font.Color := clblack;
+              end else
+              begin
+                   Board.canvas.Font.Color := clBlack;
+              end;
+              Board.Canvas.brush.style := bsClear;
+
+              Board.Canvas.textout(x1*z1+1,y1*z1+1,convertsquare(x1+1,y1+1));
+              Board.canvas.Font.Color := clwhite;
+              Board.Canvas.textout(x1*z1,y1*z1,convertsquare(x1+1,y1+1));
+         end;
+
+     for x1:=1 to 11 do
+     begin
+          p[x1].display(board.canvas);
+          {P[x1].destroy;}
+     end;
+
+
+end;
+
+procedure TForm1.RadioButton3Click(Sender: TObject);
+begin
+     Boardloader:=Tboardloader.create;
+     boardloader.makeWilkinsHard(Form1.Board);
+end;
+
+procedure Tboardloader.makeWilkinsPromoted(B:Timage);
+Var P:Array[1..32] of TPiece; Pos:Tsquare;
+    x1,y1, Z1: integer; Color:Tcolor;
+begin
+     Board:=B;
+     Z1:=Boardsize div 8;
+
+     Color:=clwhite;
+     for x1:= 0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+              Board.Canvas.Brush.Color:=Color;
+              Board.Canvas.Pen.Color:=Color;
+              Board.Canvas.rectangle(x1*z1,y1*z1,(x1+1)*z1-1,(y1+1)*z1-1);
+              Drawsquare(Board,x1,y1);
+         end;
+     Board.Canvas.Pen.Color:=clWhite;
+     Board.Canvas.Brush.Color:=clWhite;
+
+     Pos.X:=3;Pos.Y:=5;
+     P[1]:=TEXTERNALpiece.create (Pos,false,pawn);
+     P[1].display (Board.Canvas);
+
+     Pos.x:=4; Pos.y:=4;
+     P[2]:=TEXTERNALpiece.create (Pos,false,pawn);
+     P[2].display (Board.Canvas);
+
+     Pos.x:=5; Pos.y:=1;
+     P[3]:=TEXTERNALpiece.create (Pos,TRUE,QUEEN);
+     P[3].display (Board.Canvas);
+
+     Pos.x:=7; Pos.y:=3;
+     P[4]:=TEXTERNALpiece.create (Pos,false,pawn);           
+     P[4].display (Board.Canvas);
+
+     Pos.X:=8;Pos.Y:=2;
+     P[5]:=TEXTERNALpiece.create (Pos,false,king);
+     P[5].display (Board.Canvas);
+
+     Pos.X:=4;Pos.Y:=2;
+     P[6]:=TEXTERNALpiece.create (Pos,true,king);
+     P[6].display (Board.Canvas);
+
+
+     Pos.X:=4;Pos.Y:=5;
+     P[8]:=TEXTERNALpiece.create (Pos,true,pawn);
+     P[8].display (Board.Canvas);
+
+     Pos.X:=6;Pos.Y:=3;
+     P[10]:=TEXTERNALpiece.create (Pos,true,pawn);
+     P[10].display (Board.Canvas);
+
+     Pos.X:=7;Pos.Y:=4;
+     P[11]:=TEXTERNALpiece.create (Pos,true,pawn);
+     P[11].display (Board.Canvas);
+
+     Pos.X:=3;Pos.Y:=6;
+     P[13]:=TEXTERNALpiece.create (Pos,true,pawn);
+     P[13].display (Board.Canvas);
+
+     for x1:=0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+
+              if ((x1+y1) mod 2)=1 then
+              begin
+                   Board.canvas.Font.Color := clblack;
+              end else
+              begin
+                   Board.canvas.Font.Color := clBlack;
+              end;
+              Board.Canvas.brush.style := bsClear;
+
+              Board.Canvas.textout(x1*z1+1,y1*z1+1,convertsquare(x1+1,y1+1));
+              Board.canvas.Font.Color := clwhite;
+              Board.Canvas.textout(x1*z1,y1*z1,convertsquare(x1+1,y1+1));
+         end;
+     {for x1:=1 to 12 do
+         P[x1].destroy; }
+end;
+
+procedure Tboardloader.QueenOrKnight(B:Timage);
+Var P:Array[1..32] of TPiece; Pos:Tsquare;
+    x1,y1, Z1: integer; Color:Tcolor;
+begin
+     Board:=B;
+     Z1:=Boardsize div 8;
+
+     Color:=clwhite;
+     for x1:= 0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+              Board.Canvas.Brush.Color:=Color;
+              Board.Canvas.Pen.Color:=Color;
+              Board.Canvas.rectangle(x1*z1,y1*z1,(x1+1)*z1-1,(y1+1)*z1-1);
+              Drawsquare(Board,x1,y1);
+         end;
+     Board.Canvas.Pen.Color:=clWhite;
+     Board.Canvas.Brush.Color:=clWhite;
+
+     Pos.X:=2;Pos.Y:=2;
+     P[1]:=Tpiece.create (Pos,false,king);
+     P[1].display (Board.Canvas);
+
+     Pos.x:=4; Pos.y:=2;
+     P[2]:=Tpiece.create (Pos,true,pawn);
+     P[2].display (Board.Canvas);
+
+     Pos.x:=5; Pos.y:=3;
+     P[3]:=Tpiece.create (Pos,false,queen);
+     P[3].display (Board.Canvas);
+
+     Pos.x:=7; Pos.y:=6;
+     P[4]:=Tpiece.create (Pos,false,pawn);
+     P[4].display (Board.Canvas);
+
+     Pos.x:=7; Pos.y:=7;
+     P[5]:=Tpiece.create (Pos,true,pawn);
+     P[5].display (Board.Canvas);
+
+     Pos.x:=7; Pos.y:=8;
+     P[6]:=Tpiece.create (Pos,true,king);
+     P[6].display (Board.Canvas);
+
+
+     for x1:=0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+
+              if ((x1+y1) mod 2)=1 then
+              begin
+                   Board.canvas.Font.Color := clblack;
+              end else
+              begin
+                   Board.canvas.Font.Color := clBlack;
+              end;
+              Board.Canvas.brush.style := bsClear;
+
+              Board.Canvas.textout(x1*z1+1,y1*z1+1,convertsquare(x1+1,y1+1));
+              Board.canvas.Font.Color := clwhite;
+              Board.Canvas.textout(x1*z1,y1*z1,convertsquare(x1+1,y1+1));
+         end;
+     for x1:=1 to 6 do
+         P[x1].destroy;
+end;
+
+procedure TForm1.RadioButton5Click(Sender: TObject);
+begin
+     Boardloader:=Tboardloader.create;
+     boardloader.makeWilkinsPromoted(Form1.Board);
+end;
+
+
+procedure TForm1.RadioButton6Click(Sender: TObject);
+begin
+     Boardloader:=Tboardloader.create;
+     boardloader.QueenOrKnight(Form1.Board);
+end;
+
+
+procedure TForm1.RadioButton4Click(Sender: TObject);
+begin
+     Boardloader:=Tboardloader.create;
+     boardloader.makeStartGame(Form1.Board);
+end;
+
+procedure TBoardLoader.makeStartGame (B:Timage);
+Var P:Array[1..32] of TPiece; Pos:Tsquare;
+    x1,y1, Z1: integer; Color:Tcolor;
+begin
+     Board:=B;
+     Z1:=Boardsize div 8;
+
+     Color:=clwhite;
+     for x1:= 0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+              Board.Canvas.Brush.Color:=Color;
+              Board.Canvas.Pen.Color:=Color;
+              Board.Canvas.rectangle(x1*z1,y1*z1,(x1+1)*z1-1,(y1+1)*z1-1);
+              Drawsquare(Board,x1,y1);
+         end;
+     Board.Canvas.Pen.Color:=clWhite;
+     Board.Canvas.Brush.Color:=clWhite;
+
+
+     for X1:=1 to 8 do
+     begin
+          Pos.X:=x1;
+          Pos.Y:=2;
+          P[x1]:=Tpiece.create (Pos,false,pawn);
+          P[x1].display (Board.Canvas);
+     end;
+
+     for x1:= 1 to 8 do
+     begin
+          Pos.x:=x1;
+          Pos.Y:=7;
+          P[8+x1]:=Tpiece.create (Pos,true,pawn);
+          P[8+x1].display (Board.Canvas);
+     end;
+
+     Pos.x:=1; Pos.y:=1;
+     P[17]:=Tpiece.create (Pos,false,rook);
+     P[17].display (Board.Canvas);
+
+     Pos.x:=8;
+     P[18]:=Tpiece.create (Pos,false,rook);
+     P[18].display (Board.Canvas);
+
+     Pos.x:=1; Pos.y:=8;
+     P[19]:=Tpiece.create (Pos,true,rook);
+     P[19].display (Board.Canvas);
+
+     Pos.x:=8;
+     P[20]:=Tpiece.create (Pos,true,rook);
+     P[20].display (Board.Canvas);
+
+
+     Pos.x:=2; Pos.y:=1;
+     P[21]:=Tpiece.create (Pos,false,knight);
+     P[21].display (Board.Canvas);
+
+     Pos.x:=7; Pos.y:=1;
+     P[22]:=Tpiece.create (Pos,false,knight);
+     P[22].display (Board.Canvas);
+
+     Pos.x:=2; Pos.y:=8;
+     P[23]:=Tpiece.create (Pos,true,knight);
+     P[23].display (Board.Canvas);
+
+     Pos.x:=7; Pos.y:=8;
+     P[24]:=Tpiece.create (Pos,true,knight);
+     P[24].display (Board.Canvas);
+
+     Pos.x:=3; Pos.y:=1;
+     P[25]:=Tpiece.create (Pos,false,bishop);
+     P[25].display (Board.Canvas);
+     Pos.x:=6; Pos.y:=1;
+     P[26]:=Tpiece.create (Pos,false,bishop);
+     P[26].display (Board.Canvas);
+     Pos.x:=3; Pos.y:=8;
+     P[27]:=Tpiece.create (Pos,true,bishop);
+     P[27].display (Board.Canvas);
+     Pos.x:=6; Pos.y:=8;
+     P[28]:=Tpiece.create (Pos,true,bishop);
+     P[28].display (Board.Canvas);
+
+     Pos.x:=5; Pos.y:=1;
+     P[29]:=Tpiece.create (Pos,false,king);
+     P[29].display (Board.Canvas);
+     Pos.x:=5; Pos.y:=8;
+     P[30]:=Tpiece.create (Pos,true,king);
+     P[30].display (Board.Canvas);
+
+     Pos.x:=4; Pos.y:=1;
+     P[31]:=Tpiece.create (Pos,false,queen);
+     P[31].display (Board.Canvas);
+     Pos.x:=4; Pos.y:=8;
+     P[32]:=Tpiece.create (Pos,true,queen);
+     P[32].display (Board.Canvas);
+
+     for x1:=0 to 7 do
+         for y1:= 0 to 7 do
+         begin
+
+              if ((x1+y1) mod 2)=1 then
+              begin
+                   Board.canvas.Font.Color := clblack;
+              end else
+              begin
+                   Board.canvas.Font.Color := clBlack;
+              end;
+              Board.Canvas.brush.style := bsClear;
+
+              Board.Canvas.textout(x1*z1+1,y1*z1+1,convertsquare(x1+1,y1+1));
+              Board.canvas.Font.Color := clwhite;
+              Board.Canvas.textout(x1*z1,y1*z1,convertsquare(x1+1,y1+1));
+         end;
+
+     for x1:=1 to 32 do
+         P[x1].destroy;
+end;
+
+
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+     Urges:=Tlist.create; {Creates the urges -- list of parallel priorities}
+
+     ExternalMemory:=TexternalMemory.create;
+
+     Workingmemory :=Tworkingmemory.create;
+
+     {RadioButton1Click(self);} {Loads the Wilkins position}
+     randomize;
+     Randseed:=65965321; {64716078; {does not trigger interception... very funny indeed}
+
+
+
+     Workingmemory.Alreadythinking:=false;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+     ImpulsiveThoughtsbyUrgency;
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+var t,x,y,x1,x2:integer; s:string; Piece:^tpiece; p:tsquare; squ: ^tsquare ; Traj:Tlist; Abs:TImpulseAbstractRole;
+    TABS:^TabstractRole;
+begin
+     StartCognition;
+
+     {transfering control to main loop:}
+     ImpulsiveThoughtsByUrgency;
+
+     new (piece);
+     p.x:=1;
+     p.y:=1;
+
+     piece^:=tpiece.create(p,true,knight);
+     t:=0;
+     while (WorkingMemory.Pieces.count>t) do
+     begin
+          Piece^:=WorkingMemory.Pieces.items[t];
+          if (Piece^.sq.x=8) and (Piece^.sq.y=5) then break;
+          t:=t+1; {scans the list of pieces for the correct one}
+     end;
+     for x:= 1 to 8 do
+         for y:= 1 to 8 do
+         begin
+              str(Piece^.Mobility[x,y].distance,s);
+              stringGrid1.Cells[x-1,y-1]:=S;
+         end;
+
+     t:=random(workingmemory.Trajectories.count);
+     traj:=tlist.create;
+     traj:=workingmemory.trajectories.items[t];
+     Str(workingmemory.Trajectories.count,S);
+     form1.Memo1.lines.add(S+' created trajectories.');
+
+     Str(workingmemory.Pieces.count,S);
+     form1.Memo1.lines.add(S+' created Pieces.');
+
+     Str(Numimpulses,S);
+     form1.Memo1.lines.add(S+' impulses fired.');
+
+     new (squ);
+     for t:= 0 to traj.count-1 do
+     begin
+          squ:=traj.items[t];
+          form1.memo1.lines.add(convertsquare(squ^.x,squ^.y));
+     end;
+
+     new (TABS);
+     for x1:= 0 to workingmemory.pieces.count-1 do
+     begin
+          piece^:=workingmemory.Pieces.items[x1];
+          if (piece^.abstractroles.count>0) then
+             for x2:= 0 to piece^.abstractroles.count-1 do
+             begin
+                  TABS:= piece^.abstractroles.items[x2];
+                  Draw_Trajectory(Tabs^,Form1.Board.canvas);
+             end;
+     end;
+
+{     for x1:= 0 to workingmemory.pieces.count-1 do
+     begin
+          piece^:=workingmemory.Pieces.items[x1];
+          Piece^.display2(Form1.Board.canvas);
+     end;}
+end;
+
+
+
+procedure TForm1.PlayClick(Sender: TObject);
+var t,x,y,x1,x2, maxrolesdisplayed:integer; s:string; Piece:^tpiece; p:tsquare; squ: ^tsquare ; Traj:Tlist; Abs:TImpulseAbstractRole;
+    TABS:^TabstractRole;
+begin
+
+     if not(workingmemory.alreadythinking) then
+     begin
+          str(randseed,S);
+          form1.memo1.lines.add('Seed='+S);
+     end;
+
+     If not (workingmemory.alreadythinking) then StartCognition;
+
+     {transfering control to main loop:}
+     SomeImpulsiveThoughtsByUrgency(spinedit1.value);
+
+
+     new (piece);
+
+     p.x:=1;
+     p.y:=1;
+
+     piece^:=tpiece.create(p,true,knight);
+
+     {t:=0;
+     while (WorkingMemory.Pieces.count>t) do
+     begin
+          Piece^:=WorkingMemory.Pieces.items[t];
+          if (Piece^.sq.x=8) and (Piece^.sq.y=5) then break;
+          t:=t+1; {scans the list of pieces for the correct one
+     end;                                                      }
+
+
+      traj:=tlist.create;
+
+      if (WorkingMemory.Pieces.count>0) then
+      begin
+           Piece^:= workingmemory.pieces.items[(workingmemory.impulses_fired mod WorkingMemory.Pieces.count)];
+           Form1.Mobility.Caption:='Mobility of '+Piece^.FullId;
+      end;
+     for x:= 1 to 8 do
+         for y:= 1 to 8 do
+         begin
+              str(Piece^.Mobility[x,y].distance,s);
+              stringGrid1.Cells[x-1,y-1]:=S;
+         end;
+
+      for x:=1 to 8 do
+          for y:= 1 to 8 do
+          begin
+               if workingmemory.saccaded[x,y] then
+               begin
+                    Drawsquare(Board,x-1,y-1);
+                    DrawSquareName(Board,x-1,y-1);
+               end;
+
+               if workingmemory.glancedshadow[x,y] then
+               begin
+                    Drawshadow(Board,x-1,y-1);
+               end;
+
+          end;
+
+      for t:= 0 to WorkingMemory.Pieces.count-1 do
+      begin
+           Piece^:= workingmemory.pieces.items[t];
+           Drawsquare(Board,Piece^.sq.x-1,Piece^.sq.y-1);
+           Piece^.display(form1.board.canvas);
+           DrawSquareName(Board,Piece^.sq.x-1,Piece^.sq.y-1);
+      end;
+
+          new (TABS);
+          for x1:= 0 to workingmemory.pieces.count-1 do
+          begin
+               piece^:=workingmemory.Pieces.items[x1];
+               if (piece^.abstractroles.count>0) then
+               begin
+                    maxrolesdisplayed:= piece^.abstractroles.count;
+                    if maxrolesdisplayed>2 then maxrolesdisplayed:=2;
+                    for x2:= 0 to maxrolesdisplayed-1 do
+                    begin
+                         TABS:= piece^.abstractroles.items[x2];
+                         Draw_Trajectory(Tabs^,Form1.Board.canvas);
+                    end;
+               end;
+          end;
+
+      Progressbar1.max:=workingmemory.impulses_fired+urges.count;
+      Progressbar1.position:=workingmemory.impulses_fired;
+
+      str (Workingmemory.impulses_fired, S);
+      NumberofImpulses.caption:='Number of fired impulses: '+S;
+      str (Urges.count, S);
+      UrgesRemaining.caption:='Urges remaining: '+S;
+
+
+     if (urges.count=0) then
+     begin
+          t:=random(workingmemory.Trajectories.count);
+
+          traj:=workingmemory.trajectories.items[t];
+
+          Str(workingmemory.Trajectories.count,S);
+          form1.Memo1.lines.add(S+' created trajectories.');
+
+          Str(workingmemory.Pieces.count,S);
+          form1.Memo1.lines.add(S+' created Pieces.');
+
+          Str(Numimpulses,S);
+          form1.Memo1.lines.add(S+' impulses fired.');
+     end;
+end;
+
+end.

@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="FARG_Framework_Similarity">
+  <class name="TSimilarity">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="InitInstance" visibility="public">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public">
+      </methodref>
+      <methodref name="ClassName" visibility="public">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public">
+      </methodref>
+      <methodref name="ClassParent" visibility="public">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public">
+      </methodref>
+      <methodref name="MethodName" visibility="public">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public">
+      </methodref>
+      <methodref name="Dispatch" visibility="public">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public">
+      </methodref>
+      <methodref name="NewInstance" visibility="public">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public">
+      </methodref>
+      <methodref name="Destroy" visibility="public">
+      </methodref>
+    </ancestor>
+    <members>
+      <field name="C1" type="TChunk" visibility="private" />
+      <field name="C2" type="TChunk" visibility="private" />
+      <field name="res" type="Boolean" visibility="private" />
+      <field name="Connotation1" type="TConnotation" visibility="private" />
+      <field name="Connotation2" type="TConnotation" visibility="private" />
+      <field name="index" type="Integer" visibility="private" />
+      <field name="ConnotationSet" type="TList" visibility="public" />
+      <field name="Outliers" type="TList" visibility="public" />
+      <field name="Delta" type="Real" visibility="public" />
+      <field name="Sum" type="Real" visibility="public" />
+      <field name="OutlierX" type="Integer" visibility="public" />
+      <field name="OutlierY" type="Integer" visibility="public" />
+      <field name="MostOutlierX" type="Integer" visibility="public" />
+      <field name="MostOutlierY" type="Integer" visibility="public" />
+      <constructor name="Create" visibility="public">
+        <parameters>
+        </parameters>
+      </constructor>
+      <procedure name="MeasureSetSimilarities" visibility="public">
+      </procedure>
+      <function name="SumDistances" visibility="public">
+        <parameters>
+          <retval type="Real" />
+        </parameters>
+      </function>
+      <function name="GetDelta" visibility="public" procflags="overload virtual">
+        <parameters>
+          <parameter name="X" type="TNumber" />
+          <parameter name="Y" type="TNumber" />
+          <retval type="Real" />
+        </parameters>
+      </function>
+      <function name="Compare" visibility="public">
+        <parameters>
+          <parameter name="Chunk1" type="TChunk" />
+          <parameter name="Chunk2" type="TChunk" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="ComparisonSubroutine" visibility="public" procflags="abstract virtual">
+      </procedure>
+    </members>
+  </class>
+  <class name="TChunks">
+    <ancestor name="TSimilarity" namespace="FARG_Framework_Similarity">
+      <methodref name="Create" visibility="public" />
+      <methodref name="MeasureSetSimilarities" visibility="public" />
+      <methodref name="SumDistances" visibility="public" />
+      <methodref name="GetDelta" visibility="public" />
+      <methodref name="Compare" visibility="public" />
+      <methodref name="ComparisonSubroutine" visibility="public" />
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="InitInstance" visibility="public">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public">
+        </methodref>
+        <methodref name="ClassName" visibility="public">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public">
+        </methodref>
+        <methodref name="ClassParent" visibility="public">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public">
+        </methodref>
+        <methodref name="MethodName" visibility="public">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public">
+        </methodref>
+        <methodref name="Dispatch" visibility="public">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public">
+        </methodref>
+        <methodref name="NewInstance" visibility="public">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public">
+        </methodref>
+        <methodref name="Destroy" visibility="public">
+        </methodref>
+      </ancestor>
+    </ancestor>
+    <members>
+      <procedure name="ComparisonSubroutine" visibility="public" procflags="override">
+      </procedure>
+    </members>
+  </class>
+  <class name="TTemplates">
+    <ancestor name="TSimilarity" namespace="FARG_Framework_Similarity">
+      <methodref name="Create" visibility="public" />
+      <methodref name="MeasureSetSimilarities" visibility="public" />
+      <methodref name="SumDistances" visibility="public" />
+      <methodref name="GetDelta" visibility="public" />
+      <methodref name="Compare" visibility="public" />
+      <methodref name="ComparisonSubroutine" visibility="public" />
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="InitInstance" visibility="public">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public">
+        </methodref>
+        <methodref name="ClassName" visibility="public">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public">
+        </methodref>
+        <methodref name="ClassParent" visibility="public">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public">
+        </methodref>
+        <methodref name="MethodName" visibility="public">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public">
+        </methodref>
+        <methodref name="Dispatch" visibility="public">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public">
+        </methodref>
+        <methodref name="NewInstance" visibility="public">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public">
+        </methodref>
+        <methodref name="Destroy" visibility="public">
+        </methodref>
+      </ancestor>
+    </ancestor>
+    <members>
+      <procedure name="ComparisonSubroutine" visibility="public" procflags="override">
+      </procedure>
+    </members>
+  </class>
+  <class name="TSet">
+    <ancestor name="TSimilarity" namespace="FARG_Framework_Similarity">
+      <methodref name="Create" visibility="public" />
+      <methodref name="MeasureSetSimilarities" visibility="public" />
+      <methodref name="SumDistances" visibility="public" />
+      <methodref name="GetDelta" visibility="public" />
+      <methodref name="Compare" visibility="public" />
+      <methodref name="ComparisonSubroutine" visibility="public" />
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="InitInstance" visibility="public">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public">
+        </methodref>
+        <methodref name="ClassName" visibility="public">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public">
+        </methodref>
+        <methodref name="ClassParent" visibility="public">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public">
+        </methodref>
+        <methodref name="MethodName" visibility="public">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public">
+        </methodref>
+        <methodref name="Dispatch" visibility="public">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public">
+        </methodref>
+        <methodref name="NewInstance" visibility="public">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public">
+        </methodref>
+        <methodref name="Destroy" visibility="public">
+        </methodref>
+      </ancestor>
+    </ancestor>
+    <members>
+      <procedure name="ComparisonSubroutine" visibility="public" procflags="override">
+      </procedure>
+    </members>
+  </class>
+</namespace>

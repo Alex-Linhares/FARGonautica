@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="846oe6hxk_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:ChunkProject1:NumboConnotations.TOperations">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="480,100,163,81" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:ChunkProject1:NumboConnotations.TTarget">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="440,600,127,80" />
+      <reference referencedUin="delphi:e_method:src:ChunkProject1:NumboConnotations.TTarget.SearchForInstance()" />
+      <reference referencedUin="delphi:l_gnt:src:ChunkProject1:NumboConnotations.TTarget:NumboConnotations.TNumber">
+        <property name="sourceAnchor" value="513,600" />
+        <property name="targetAnchor" value="513,433" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:ChunkProject1:NumboConnotations.TBrick">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="260,600,127,80" />
+      <reference referencedUin="delphi:e_method:src:ChunkProject1:NumboConnotations.TBrick.SearchForInstance()" />
+      <reference referencedUin="delphi:l_gnt:src:ChunkProject1:NumboConnotations.TBrick:NumboConnotations.TNumber">
+        <property name="sourceAnchor" value="357,600" />
+        <property name="targetAnchor" value="494,433" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:ChunkProject1:NumboConnotations.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="100,100,172,77" />
+      <reference referencedUin="delphi:e_field:src:ChunkProject1:NumboConnotations.ExtMem" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:ChunkProject1:NumboConnotations.TNumber">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="460,320,164,113" />
+      <reference referencedUin="delphi:e_method:src:ChunkProject1:NumboConnotations.TNumber.SearchForInstance()" />
+      <reference referencedUin="delphi:e_method:src:ChunkProject1:NumboConnotations.TNumber.BottomUpPropose()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:ChunkProject1:NumboConnotations.TResult">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="600,600,127,80" />
+      <reference referencedUin="delphi:e_method:src:ChunkProject1:NumboConnotations.TResult.SearchForInstance()" />
+      <reference referencedUin="delphi:l_gnt:src:ChunkProject1:NumboConnotations.TResult:NumboConnotations.TNumber">
+        <property name="sourceAnchor" value="638,600" />
+        <property name="targetAnchor" value="539,433" />
+        <property name="bendpoints" value="540,442,539,439" />
+        <property name="bounds_setted_by_user" value="True" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:ChunkProject1:NumboConnotations.TMentalObject">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="300,100,153,81" />
+    </reference>
+  </view>
+</nodeSet>
