@@ -26,4 +26,20 @@ So, trying to run...
 And it runs nicely!  
 
 ===============  
+Next Step: play around with the BP app:  https://amahabal.github.io/PySeqsee/new_app/create_new_app.html  
+
+So, I run:
+
+    farg create bongard  
+    
+and... I get errors. Seems like the bongard folder was there all along, and that threw some exception.  
+
+
+
+
+
+
+
+
+===============  
 Next Step: play with other number sequences
