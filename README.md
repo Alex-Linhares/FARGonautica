@@ -16,7 +16,7 @@ This repository has a number of goals:
      
     
 
-Welcome!  Join us.  This will be fun.  
+Welcome!  Join us.  This will be insanely fun.  
 
 
 
@@ -73,7 +73,7 @@ AJ Hager has also independently developed a python version of copycat, with some
 
 PROJECT: METACAT
 ---
-
+Jim Marshall is maintaining the Metacat Project page at http://science.slc.edu/~jmarshall/metacat/. 
 
 
 PROJECT: NUMBO
