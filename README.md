@@ -1,6 +1,12 @@
 # Fluid Concepts & Creative Analogies
 
-Congratulations you have made it to the center of the internet!
+Congratulations you have made it to the center of the internet. 
+
+Don't you just hate it when you get a new computer and you have to scour the entire internet in search of
+all the FARG projects yet once again? Haven't you always dreamt of that special place where you could get 
+every single FARG project that's available?  Now you can scream out the window that those days are gone!  
+Enjoy your new life cloning this repo in your new computer, in your friends computers, in Apple stores, and
+much more!
 
 This repository has a number of goals:  
 
