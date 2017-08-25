@@ -209,7 +209,7 @@ that of a piece that finds itself having to juggle between two different, incomp
 run detailed below (in the case of the black king of position 6).
 
 
-Sourcecode previously on https://code.google.com/archive/p/capyblanca/, now available here, in the [Software folder](/Software).
+Sourcecode previously on https://code.google.com/archive/p/capyblanca/, now available here, in the [PhD Theses folder](/Literature/Ph.D.%20Theses).
 
 
 
@@ -234,7 +234,7 @@ the sourcecode is available at http://ericpnichols.com/musicat/ (and also archiv
 
 PROJECT: PHAEACO
 ---
-![Phaeaco](/Phaeaco-the-solver.gif) 
+![Phaeaco](phaeaco-the-solver.gif) 
 
 Phaeaco is an architecture that is able to solve some Bongard-problems in a psychologically plausible way.  Numerous 
 people believe that Bongard problems are one of the quintessential challenges of AI and Cognitive Science.  Here is what 
