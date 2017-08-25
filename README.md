@@ -144,6 +144,8 @@ Python version: https://github.com/amahabal/PySeqsee
 
 PROJECT: CAPYBLANCA
 ---
+![Capyblanca](/Software/Capyblanca/Capyblanca.Screenshot.png)
+
 A chess system based on Active Symbols / Fluid Concepts.  [Here](https://youtu.be/5h67WwfuQDg) is the sample run of it 
 described in the [Information Sciences paper](https://github.com/Alex-Linhares/Fluid-Concepts-and-Creative-Analogies/blob/master/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf).
 
