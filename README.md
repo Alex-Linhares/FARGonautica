@@ -231,6 +231,22 @@ an act to be creative, and I call it a “listening performance”.
 PhD Thesis of Dr. Eric Paul Nichols is available here: http://ericpnichols.com/musicat/pdf/MusicatDissertation.pdf, and
 the sourcecode is available at http://ericpnichols.com/musicat/ (and also archived here).  
 
+
+PROJECT: PHAEACO
+---
+![Phaeaco](/Phaeaco-solver.gif) 
+
+Phaeaco is an architecture that is able to solve some Bongard-problems in a psychologically plausible way.  Numerous 
+people believe that Bongard problems are one of the quintessential challenges of AI and Cognitive Science.  Here is what 
+Dr. Foundalis said about them:
+
+    "I see Bongard problems not as a mere collection of cute visual puzzles, but as a gateway that allows us to get a 
+    glimpse at the foundations of cognition: a set of principles that are as fundamental for cognitive science as 
+    Newton’s laws are for physics. Bongard problems themselves are solved primarily as a consequence of following some 
+    fundamental principles of cognition."
+
+Dr. Foundalis is not sharing the code at this time, but his thesis is found in [the Software Folder](/Software).
+
 PROJECT: LETTER SPIRIT
 ---
 Defcon 1. 404 file not found so far...
