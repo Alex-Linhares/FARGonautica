@@ -211,6 +211,8 @@ Sourcecode previously on https://code.google.com/archive/p/capyblanca/, now avai
 
 PROJECT: MUSICAT
 ---
+![Musicat](http://ericpnichols.com/images/musicat.png)
+
 What happens when people listen to music? What sorts of mental structures are formed? How do we make sense of a melody
 as its notes fly by in rapid succession? Can we model the experience of listening to music in real time?
 
