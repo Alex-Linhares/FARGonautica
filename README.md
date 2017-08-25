@@ -32,16 +32,18 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
 Architectures to new domains.  Eventually we hope to have a complete set of archived projects (or linked from
 here when being maintained).
 
-Numbo  
-Copycat  
-Tabletop  
-Letter Spirit  
-Metacat  
-Phaeaco  
-Musicat  
-Capyblanca  
-George  
-SeqSee  
+ | Project | Author | Language |
+ |---------| --------- | ----------|
+ | Numbo | Daniel Defays | Lisp | 
+ | Copycat | Melanie Mitchell | Lisp |   
+ |Tabletop | Bob French | ?? |  
+ | Letter Spirit | Gary McGraw, John Rehling | ?? |  
+ | Metacat | Jim Marshall | Chez Scheme |  
+ | Phaeaco | C++ | Harry Foundalis |  
+ | Musicat | Eric Nichols | C# | 
+ | Capyblanca | Alex Linhares | Delphi | 
+ | George | ?? | ?? | 
+ | SeqSee | Abhijit Mahabal | Perl | 
 
 
 PROJECT: COPYCAT
