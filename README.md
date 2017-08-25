@@ -50,6 +50,7 @@ here when being maintained).
 PROJECT: COPYCAT
 ---
 ![Copycat](https://upload.wikimedia.org/wikipedia/en/d/d4/Metacat_demo_abc_abd_mrrjjj_mrrjjjj.jpg)
+
 Copycat is a model of analogy making and human cognition based on the concept of the parallel terraced scan, developed
 in 1988 by Douglas Hofstadter, Melanie Mitchell, and others at the Center for Research on Concepts and Cognition,
 Indiana University Bloomington.
