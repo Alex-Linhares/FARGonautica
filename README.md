@@ -37,13 +37,14 @@ here when being maintained).
  | Numbo | Daniel Defays | Lisp | 
  | Copycat | Melanie Mitchell | Lisp |   
  |Tabletop | Bob French | ?? |  
- | Letter Spirit | Gary McGraw, John Rehling | ?? |  
+ | Letter Spirit | Gary McGraw | ?? |  
+ | Letter Spirit | John Rehling | ?? | 
  | Metacat | Jim Marshall | Chez Scheme |  
- | Phaeaco | C++ | Harry Foundalis |  
- | Musicat | Eric Nichols | C# | 
- | Capyblanca | Alex Linhares | Delphi | 
+ | Phaeaco | Harry Foundalis | C++ |  
+ | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | 
+ | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | 
  | George | ?? | ?? | 
- | SeqSee | Abhijit Mahabal | Perl | 
+ | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | 
 
 
 PROJECT: COPYCAT
@@ -69,11 +70,11 @@ accordingly (bottom-up processes), and the current state of slipnet determines p
 run (top-down influences).
 
 Copycat was implemented in LISP, and there are multiple ports available.  Scott Boland did one of the first re-implementations
-in Java (available in this repo and in https://archive.org/details/JavaCopycat). This implementation has served for another
-port, to Python, which is available here: https://github.com/Quuxplusone/co.py.cat.
+in Java (available in this repo and in [here](https://archive.org/details/JavaCopycat). This implementation has served for [another
+port, to Python](https://github.com/Quuxplusone/co.py.cat).
 
 AJ Hager has also independently developed a python version of copycat, with some amazing OpenGL graphics, available
-(and maintained) at https://github.com/ajhager/copycat
+(and maintained) at https://github.com/ajhager/copycat.
 
 
 
