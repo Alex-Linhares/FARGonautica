@@ -234,7 +234,7 @@ the sourcecode is available at http://ericpnichols.com/musicat/ (and also archiv
 
 PROJECT: PHAEACO
 ---
-![Phaeaco](/Phaeaco-solver.gif) 
+![Phaeaco](/Phaeaco-the-solver.gif) 
 
 Phaeaco is an architecture that is able to solve some Bongard-problems in a psychologically plausible way.  Numerous 
 people believe that Bongard problems are one of the quintessential challenges of AI and Cognitive Science.  Here is what 
