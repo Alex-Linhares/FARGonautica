@@ -85,6 +85,8 @@ AJ Hager has also independently developed a python version of copycat, with some
 
 PROJECT: METACAT
 ---
+![Metacat](/Software/Metacat/metacat.png)
+
 Jim Marshall is maintaining the Metacat Project page at http://science.slc.edu/~jmarshall/metacat/.
 
 
