@@ -205,7 +205,7 @@ that of a piece that finds itself having to juggle between two different, incomp
 run detailed below (in the case of the black king of position 6).
 
 
-Sourcecode previously on https://code.google.com/archive/p/capyblanca/, now available here, in the (Software folder)[/Software].
+Sourcecode previously on https://code.google.com/archive/p/capyblanca/, now available here, in the [Software folder](/Software).
 
 
 
