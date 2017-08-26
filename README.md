@@ -4,7 +4,7 @@
 
 Don't you just hate it when you get a new computer and you have to scour the entire internet in search of
 all the FARG projects yet once again? Haven't you always dreamt of that special place where you could get
-every single FARG project that's available?  Now you can scream out the window that those days are gone!  
+every single FARG project that's available?  Now you can scream out the window that those days are gone! 
 Congratulations you have made it to the center of the internet--tap yourself on the back and enjoy your
 new life cloning this repo in your new computer, in your friends computers, in Apple stores, and
 much more!
@@ -39,11 +39,11 @@ here when being maintained).
  |---------| --------- | ----------|
  | Numbo | Daniel Defays | Lisp | 
  | Copycat | Melanie Mitchell | Lisp |   
- |Tabletop | Bob French | ?? |  
+ |Tabletop | [Bob French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  
  | Letter Spirit | Gary McGraw | ?? |  
  | Letter Spirit | John Rehling | ?? | 
- | Metacat | Jim Marshall | Chez Scheme |  
- | Phaeaco | Harry Foundalis | C++ |  
+ | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  
+ | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ |  
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | 
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | 
  | George | Francisco Lara-Dammer | ?? | 
@@ -53,6 +53,8 @@ here when being maintained).
 PROJECT: COPYCAT
 ---
 ![Copycat](https://camo.githubusercontent.com/fce9eca50ac44e256082460f36bca5fd48c56e46/687474703a2f2f692e696d6775722e636f6d2f6c484d776e2e706e67)
+
+[Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
 Copycat is a model of analogy making and human cognition based on the concept of the parallel terraced scan, developed
 in 1988 by Douglas Hofstadter, Melanie Mitchell, and others at the Center for Research on Concepts and Cognition,
@@ -78,8 +80,8 @@ Copycat was implemented in LISP, and there are multiple ports available.  Scott 
 in Java (available in this repo and in [here](https://archive.org/details/JavaCopycat). This implementation has served for [another
 port, to Python](https://github.com/Quuxplusone/co.py.cat).
 
-AJ Hager has also independently developed a python version of copycat, with some amazing OpenGL graphics, available
-(and maintained) at https://github.com/ajhager/copycat.
+AJ Hager has also independently developed a python version of copycat, with some amazing OpenGL graphics (i.e., the 
+above screenshot), available (and maintained) at https://github.com/ajhager/copycat.
 
 
 
@@ -87,7 +89,9 @@ PROJECT: METACAT
 ---
 ![Metacat](/Software/Metacat/metacat.png)
 
-Jim Marshall is maintaining the Metacat Project page at http://science.slc.edu/~jmarshall/metacat/.
+[James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
+
+Dr. Marshall is maintaining the Metacat Project page at http://science.slc.edu/~jmarshall/metacat/.
 
 
 PROJECT: NUMBO
@@ -100,7 +104,8 @@ repo---eventually.
 PROJECT: SEQSEE
 ---
 A Concept-centered Architecture for Sequence Perception
-Abhijit A. Mahabal
+
+[Abhijit A. Mahabal](https://github.com/amahabal) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
 One of the goals of this project is to design and implement a computer program
 that can extend integer sequences intelligently, and the project has resulted in the
@@ -148,6 +153,8 @@ PROJECT: CAPYBLANCA
 ---
 ![Capyblanca](/Software/Capyblanca/Capyblanca.Screenshot.png)
 
+[Alex Linhares](https://github.com/Alex-Linhares) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
+
 A chess system based on Active Symbols / Fluid Concepts.  [Here](https://youtu.be/5h67WwfuQDg) is the sample run of it 
 described in the [Information Sciences paper](https://github.com/Alex-Linhares/Fluid-Concepts-and-Creative-Analogies/blob/master/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf).
 
@@ -175,24 +182,25 @@ Sourcecode:
   
 Future and ongoing activities:
   - A review paper, containing the major findings in analogies in chess and of the Capyblanca architecture, is being written--perhaps for publication as a chapter in the sequel of *Fluid Concepts and Creative Analogies*. 
-  - Linhares has been working on Pentii Kanerva's Sparse Distributed Memory, as he has become convinced of the truth involved in an offmark comment by Hofstadter... in a diner in 2005, that "concepts are, somehow, sparse". The first paper considered the range of dimensions that an SDM should have were it to respect the "magic number 7"; a second paper studied the critical distance as the memory becomes saturated; a third paper (underway) studies interaction effects between different attractors, and a fourth paper presents the [highly-palallel SDM framework](https://github.com/msbrogli/sdm-framework) developed by [PhD Candidate Marcelo Brogliato](https://github.com/msbrogli).  
+  - Linhares has been working on Pentii Kanerva's Sparse Distributed Memory, as he has become convinced of the truth involved in an offmark comment by Hofstadter... in a diner... back in 2006, that "concepts are, somehow, sparse". The first paper considered the range of dimensions that an SDM should have were it to respect i) chunking-by-averaging, and ii) the "magic number 7"; a second paper studied the critical distance as the memory becomes saturated; a third paper (underway) studies interaction effects between different attractors, and a fourth paper presents the [highly-palallel SDM framework](https://github.com/msbrogli/sdm-framework) developed by [PhD Candidate Marcelo Brogliato](https://github.com/msbrogli).  
   - Linhares plans to rewrite a number of AI/cogsci projects that may be of relevance to a future architecture, such as ENTROPICA, KT-Forms, and complex Clusterings.
   - A rewrite of Daniel Defays "Numbo" in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans 
   - A rewrite of Capyblanca in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans 
+  - An original, Fluid-Concepts-based, re-write of Kemp and Tenembaum's Forms in Mahabal's Framework is in the plans
   - as is the idea of a book tentatively entitled "Fluid concepts: a course" 
   - The long-term goal is to create a computational architecture that, without knowing the rules or goals of a game, can come to understand and play combinatorics games like checkers, chess, or go.
   - Another long-term goal is to create a computational architecture that is able to solve Bongard problems and Raven's matrices. Extending Phaeaco beyond what is currently possible.
-  - A paper on a "measure of human intuition" is in the plans
+  - A paper on a "measure of human intuition" is in the plans, after Dr. Eric Nichols agreed that the idea and the methodology seems to make sense.
   - Some ideas on a technical, mathematical, definition of what is commonly called *strong AI* or *AI-Complete* are being sketched.  
   
 If you are interested in joining these future activities, please get in touch!
- 
-
 
 
 PROJECT: MUSICAT
 ---
 ![Musicat](http://ericpnichols.com/images/musicat.png)
+
+[Eric Paul Nichols](https://github.com/eraoul) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
 What happens when people listen to music? What sorts of mental structures are formed? How do we make sense of a melody
 as its notes fly by in rapid succession? Can we model the experience of listening to music in real time?
@@ -213,6 +221,8 @@ PROJECT: PHAEACO
 ---
 ![Phaeaco](phaeaco-the-solver.gif) 
 
+[Harry Foundalis](http://www.foundalis.com/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
+
 Phaeaco is an architecture that is able to solve some Bongard-problems in a psychologically plausible way.  Numerous 
 people believe that Bongard problems are one of the quintessential challenges of AI and Cognitive Science.  Here is what 
 Dr. Foundalis said about them:
@@ -223,6 +233,7 @@ Dr. Foundalis said about them:
     are solved primarily as a consequence of following some fundamental principles of cognition."
 
 Dr. Foundalis is not sharing the code at this time, but his thesis is found in [the Software Folder](/Software).
+
 
 PROJECT: LETTER SPIRIT
 ---
