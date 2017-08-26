@@ -40,7 +40,7 @@ here when being maintained).
  | Numbo | Daniel Defays | Lisp | 
  | Copycat | Melanie Mitchell | Lisp |   
  |Tabletop | [Bob French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  
- | Letter Spirit | Gary McGraw | ?? |  
+ | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  
  | Letter Spirit | John Rehling | ?? | 
  | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ |  
@@ -55,6 +55,8 @@ PROJECT: COPYCAT
 ![Copycat](https://camo.githubusercontent.com/fce9eca50ac44e256082460f36bca5fd48c56e46/687474703a2f2f692e696d6775722e636f6d2f6c484d776e2e706e67)
 
 [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
+
+[Wikipedia](https://en.wikipedia.org/wiki/Melanie_Mitchell)  [Google Scholar](https://scholar.google.com.br/citations?user=k4gbv2AAAAAJ&hl=en&oi=ao) [Academia.edu](https://pdx.academia.edu/MelanieMitchell)
 
 Copycat is a model of analogy making and human cognition based on the concept of the parallel terraced scan, developed
 in 1988 by Douglas Hofstadter, Melanie Mitchell, and others at the Center for Research on Concepts and Cognition,
@@ -107,6 +109,8 @@ A Concept-centered Architecture for Sequence Perception
 
 [Abhijit A. Mahabal](https://github.com/amahabal) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
+[Google Scholar](https://scholar.google.com.br/citations?user=67MnndUAAAAJ&hl=en&oi=ao) [Academia.edu](https://google.academia.edu/AbhijitMahabal)
+
 One of the goals of this project is to design and implement a computer program
 that can extend integer sequences intelligently, and the project has resulted in the
 creation of the program named ―Seqsee‖ (pronounced ―sexy‖). Seqsee can extend a wide
@@ -153,7 +157,9 @@ PROJECT: CAPYBLANCA
 ---
 ![Capyblanca](/Software/Capyblanca/Capyblanca.Screenshot.png)
 
-[Alex Linhares](https://github.com/Alex-Linhares) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
+[Alex Linhares](https://github.com/Alex-Linhares) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof) 
+
+[Homepage](http://ebape.fgv.br/en/faculty/alexandre-linhares) [Academia.edu](https://fgv.academia.edu/AlexandreLinhares) [Google Scholar](https://scholar.google.com.br/citations?user=jzP1_8QAAAAJ&hl=en&oi=sra)  
 
 A chess system based on Active Symbols / Fluid Concepts.  [Here](https://youtu.be/5h67WwfuQDg) is the sample run of it 
 described in the [Information Sciences paper](https://github.com/Alex-Linhares/Fluid-Concepts-and-Creative-Analogies/blob/master/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf).
@@ -202,6 +208,8 @@ PROJECT: MUSICAT
 
 [Eric Paul Nichols](https://github.com/eraoul) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
+[Google Scholar](https://scholar.google.com.br/citations?user=Q37xBqwAAAAJ&hl=en) [Academia.edu](https://indiana.academia.edu/EricNichols)
+
 What happens when people listen to music? What sorts of mental structures are formed? How do we make sense of a melody
 as its notes fly by in rapid succession? Can we model the experience of listening to music in real time?
 
@@ -221,7 +229,9 @@ PROJECT: PHAEACO
 ---
 ![Phaeaco](phaeaco-the-solver.gif) 
 
-[Harry Foundalis](http://www.foundalis.com/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
+[Harry Foundalis](http://www.foundalis.com/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof) 
+
+[Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=foundalis+harry&btnG=&as_sdt=1%2C5&as_sdtp=&oq=harr)
 
 Phaeaco is an architecture that is able to solve some Bongard-problems in a psychologically plausible way.  Numerous 
 people believe that Bongard problems are one of the quintessential challenges of AI and Cognitive Science.  Here is what 
@@ -241,12 +251,14 @@ Defcon 1. 404 file not found so far...
 
 If you have any information (screenshots, sourcecode, homepage / github page of authors, email, etc.), please let us solve issues #5 and #6. 
 
-Gary McGray
-[Google Scholar](https://scholar.google.com.br/scholar?q=mcgraw+letter+spirit&btnG=&hl=en&as_sdt=0%2C5)
+[Gary McGray](https://www.garymcgraw.com/) 
 
-Is he the author of books on computer security?  Have to look into that.
+[Google Scholar](https://scholar.google.com.br/scholar?q=mcgraw+letter+spirit&btnG=&hl=en&as_sdt=0%2C5)  [Amazon Author's page](https://www.amazon.com/Gary-McGraw/e/B000APFZ2S/ref=sr_ntt_srch_lnk_1?qid=1503736392&sr=8-1)  
+
+
 
 John (Andrew?) Rehling
+
 [Google Scolar](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=)
 
 2017-08-26 Sent an email to reputation.com.. I think he published a patent there. 
