@@ -1112,47 +1112,47 @@ end;
 procedure tKing.load_data;
 begin
      if white then Piecebitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\White_King.bmp')
-     else PieceBitmap.LoadFromFile('Black_King.bmp');
+     else PieceBitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\Black_King.bmp');
      DynamicValue:=KingValue;
      PieceName:= 'King';
 end;
 
 Procedure TQueen.Load_data;
 begin
-     if white then Piecebitmap.LoadFromFile('White_Queen.bmp')
-     else PieceBitmap.LoadFromFile('Black_Queen.bmp');
+     if white then Piecebitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\White_Queen.bmp')
+     else PieceBitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\Black_Queen.bmp');
      DynamicValue:=QueenValue;
      PieceName:= 'Queen';
 end;
 
 Procedure TKnight.Load_Data;
 begin
-     if white then Piecebitmap.LoadFromFile('White_Knight.bmp')
-     else PieceBitmap.LoadFromFile('Black_Knight.bmp');
+     if white then Piecebitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\White_Knight.bmp')
+     else PieceBitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\Black_Knight.bmp');
      PieceName:= 'Knight';
      DynamicValue:=8;
 end;
 
 Procedure TBishop.Load_Data;
 begin
-     if white then Piecebitmap.LoadFromFile('White_Bishop.bmp')
-     else PieceBitmap.LoadFromFile('Black_Bishop.bmp');
+     if white then Piecebitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\White_Bishop.bmp')
+     else PieceBitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\Black_Bishop.bmp');
      DynamicValue:=12;
      PieceName:= 'Bishop';
 end;
 
 Procedure TRook.Load_data;
 begin
-     if white then Piecebitmap.LoadFromFile('White_Rook.bmp')
-     else PieceBitmap.LoadFromFile('Black_Rook.bmp');
+     if white then Piecebitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\White_Rook.bmp')
+     else PieceBitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\Black_Rook.bmp');
      DynamicValue:=12;
      Piecename:='Rook';
 end;
 
 Procedure TPawn.Load_Data;
 begin
-     if white then Piecebitmap.LoadFromFile('White_Pawn.bmp')
-     else PieceBitmap.LoadFromFile('Black_Pawn.bmp');
+     if white then Piecebitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\White_Pawn.bmp')
+     else PieceBitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\Black_Pawn.bmp');
      DynamicValue:=1;
      Piecename:='Pawn';
 end;

@@ -1111,7 +1111,7 @@ end;
 
 procedure tKing.load_data;
 begin
-     if white then Piecebitmap.LoadFromFile('C:\Users\alexa\Documents\GitHub\Fluid-Concepts-and-Creative-Analogies\Software\Capyblanca\trunk\White_King.bmp')
+     if white then Piecebitmap.LoadFromFile('White_King.bmp')
      else PieceBitmap.LoadFromFile('Black_King.bmp');
      DynamicValue:=KingValue;
      PieceName:= 'King';
