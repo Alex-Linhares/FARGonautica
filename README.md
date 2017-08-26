@@ -36,7 +36,7 @@ Architectures to new domains.  Eventually we hope to have a complete set of arch
 here when being maintained).
 
  | Project | Author | Language | Available at [FARGlexandria](https://github.com/Alex-Linhares/FARGlexandria)? |
- |---------| --------- | ----------|
+ |---------| --------- | ----------| ----------|
  | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | Not yet |
  | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp | partially |  
  |Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet |
