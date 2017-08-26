@@ -37,7 +37,7 @@ here when being maintained).
 
  | Project | Author | Language | Available at [FARGlexandria](https://github.com/Alex-Linhares/FARGlexandria)? |
  |---------| --------- | ----------| ----------|
- | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | Not yet |
+ | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | (soon) |
  | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | Yes |  
  |Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet |
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  Not yet |
@@ -56,7 +56,7 @@ PROJECT: COPYCAT
 
 [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
-[Wikipedia](https://en.wikipedia.org/wiki/Melanie_Mitchell)  [Google Scholar](https://scholar.google.com.br/citations?user=k4gbv2AAAAAJ&hl=en&oi=ao) [Academia.edu](https://pdx.academia.edu/MelanieMitchell)
+[Homepage](http://web.cecs.pdx.edu/~mm/)  |  [Wikipedia](https://en.wikipedia.org/wiki/Melanie_Mitchell)  |  [Google Scholar](https://scholar.google.com.br/citations?user=k4gbv2AAAAAJ&hl=en&oi=ao)  |  [Academia.edu](https://pdx.academia.edu/MelanieMitchell)
 
 Copycat is a model of analogy making and human cognition based on the concept of the parallel terraced scan, developed
 in 1988 by Douglas Hofstadter, Melanie Mitchell, and others at the Center for Research on Concepts and Cognition,
