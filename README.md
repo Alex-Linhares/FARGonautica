@@ -1,4 +1,4 @@
-# Fluid Concepts & Creative Analogies
+# The library of FARGlexandria: a repo with Fluid Concepts & Creative Analogies projects
 
 
 
