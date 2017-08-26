@@ -240,3 +240,13 @@ PROJECT: LETTER SPIRIT
 Defcon 1. 404 file not found so far...
 
 If you have any information (screenshots, sourcecode, homepage / github page of authors, email, etc.), please let us solve issues #5 and #6. 
+
+Gary McGray
+[Google Scholar](https://scholar.google.com.br/scholar?q=mcgraw+letter+spirit&btnG=&hl=en&as_sdt=0%2C5)
+
+Is he the author of books on computer security?  Have to look into that.
+
+John (Andrew?) Rehling
+[Google Scolar](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=)
+
+2017-08-26 Sent an email to reputation.com.. I think he published a patent there. 
