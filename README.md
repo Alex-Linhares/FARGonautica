@@ -83,8 +83,7 @@ Copycat was implemented in LISP, and there are multiple ports available.  Scott 
 in Java (available in this repo and in [here](https://archive.org/details/JavaCopycat). This implementation has served for [another
 port, to Python](https://github.com/Quuxplusone/co.py.cat).
 
-AJ Hager has also independently developed a python version of copycat, with some amazing OpenGL graphics (i.e., the 
-above screenshot), available (and maintained) at https://github.com/ajhager/copycat.
+AJ Hager has also independently developed a python version of copycat, with [amazingly gorgeous OpenGL graphics](https://youtu.be/v7Eotp-XKVA), available (and maintained) at https://github.com/ajhager/copycat.
 
 
 
