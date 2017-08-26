@@ -217,10 +217,10 @@ Phaeaco is an architecture that is able to solve some Bongard-problems in a psyc
 people believe that Bongard problems are one of the quintessential challenges of AI and Cognitive Science.  Here is what 
 Dr. Foundalis said about them:
 
-    "I see Bongard problems not as a mere collection of cute visual puzzles, but as a gateway that allows us to get a 
-    glimpse at the foundations of cognition: a set of principles that are as fundamental for cognitive science as 
-    Newton’s laws are for physics. Bongard problems themselves are solved primarily as a consequence of following some 
-    fundamental principles of cognition."
+    "I see Bongard problems not as a mere collection of cute visual puzzles, but as a gateway that 
+    allows us to get a glimpse at the foundations of cognition: a set of principles that are as 
+    fundamental for cognitive science as Newton’s laws are for physics. Bongard problems themselves 
+    are solved primarily as a consequence of following some fundamental principles of cognition."
 
 Dr. Foundalis is not sharing the code at this time, but his thesis is found in [the Software Folder](/Software).
 
