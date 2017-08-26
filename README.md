@@ -97,8 +97,8 @@ Dr. Marshall is maintaining the Metacat Project page at http://science.slc.edu/~
 PROJECT: NUMBO
 ---
 
-Daniel Defays sent in 2006 a printed version of the sourcecode to Alex Linhares.  This will be scanned and archived in this
-repo---eventually.
+Daniel Defays sent in 2006 a printed version of the sourcecode to Alex Linhares.  This will be scanned 
+and archived in this repo---eventually.
 
 
 PROJECT: SEQSEE
@@ -182,16 +182,16 @@ Sourcecode:
   
 Future and ongoing activities:
   - A review paper, containing the major findings in analogies in chess and of the Capyblanca architecture, is being written--perhaps for publication as a chapter in the sequel of *Fluid Concepts and Creative Analogies*. 
-  - Linhares has been working on Pentii Kanerva's Sparse Distributed Memory, as he has become convinced of the truth involved in an offmark comment by Hofstadter... in a diner... back in 2006, that "concepts are, somehow, sparse". The first paper considered the range of dimensions that an SDM should have were it to respect i) chunking-by-averaging, and ii) the "magic number 7"; a second paper studied the critical distance as the memory becomes saturated; a third paper (underway) studies interaction effects between different attractors, and a fourth paper presents the [highly-palallel SDM framework](https://github.com/msbrogli/sdm-framework) developed by [PhD Candidate Marcelo Brogliato](https://github.com/msbrogli).  
-  - Linhares plans to rewrite a number of AI/cogsci projects that may be of relevance to a future architecture, such as ENTROPICA, KT-Forms, and complex Clusterings.
+  - Linhares has been working on Pentii Kanerva's Sparse Distributed Memory, as he has become convinced of the truth involved in an offmark comment by Hofstadter... in a diner... back in 2006, that "concepts are, somehow, sparse". The first [paper considered the range of dimensions that an SDM should have were it to respect i) chunking-by-averaging, and ii) the "magic number 7"](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015592); a second [paper studied the critical distance as the memory becomes saturated](http://journal.frontiersin.org/article/10.3389/fnhum.2014.00222/full); a third paper (underway) studies interaction effects between different attractors, and a fourth paper presents the [highly-palallel SDM framework](https://github.com/msbrogli/sdm-framework) developed by [PhD Candidate Marcelo Brogliato](https://github.com/msbrogli).  
+  - Linhares plans to rewrite a number of AI/cogsci projects that may be of relevance to a future architecture, such as [ENTROPICA](https://www.ted.com/talks/alex_wissner_gross_a_new_equation_for_intelligence), [KT-Forms](http://www.pnas.org/content/105/31/10687), and complex Clusterings.
   - A rewrite of Daniel Defays "Numbo" in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans 
   - A rewrite of Capyblanca in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans 
   - An original, Fluid-Concepts-based, re-write of Kemp and Tenembaum's Forms in Mahabal's Framework is in the plans
-  - as is the idea of a book tentatively entitled "Fluid concepts: a course" 
+  - ...as is the idea of a book tentatively entitled "Fluid concepts: a course" 
   - The long-term goal is to create a computational architecture that, without knowing the rules or goals of a game, can come to understand and play combinatorics games like checkers, chess, or go.
   - Another long-term goal is to create a computational architecture that is able to solve Bongard problems and Raven's matrices. Extending Phaeaco beyond what is currently possible.
   - A paper on a "measure of human intuition" is in the plans, after Dr. Eric Nichols agreed that the idea and the methodology seems to make sense.
-  - Some ideas on a technical, mathematical, definition of what is commonly called *strong AI* or *AI-Complete* are being sketched.  
+  - Some ideas on a technical, mathematical, definition of what is commonly called *strong AI* or *AI-Complete* are being sketched. They use mostly combinatorics and information theory... but they stem from the solving of Bongard problems. 
   
 If you are interested in joining these future activities, please get in touch!
 
@@ -238,3 +238,5 @@ Dr. Foundalis is not sharing the code at this time, but his thesis is found in [
 PROJECT: LETTER SPIRIT
 ---
 Defcon 1. 404 file not found so far...
+
+If you have any information (screenshots, sourcecode, homepage / github page of authors, email, etc.), please let us solve issues #5 and #6. 
