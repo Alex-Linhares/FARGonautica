@@ -35,19 +35,19 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
 Architectures to new domains.  Eventually we hope to have a complete set of archived projects (or linked from
 here when being maintained).
 
- | Project | Author | Language |
+ | Project | Author | Language | Available at [FARGlexandria](https://github.com/Alex-Linhares/FARGlexandria)? |
  |---------| --------- | ----------|
- | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | 
- | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp |   
- |Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  
- | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  
- | Letter Spirit | John Rehling | ?? | 
- | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  
- | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ |  
- | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | 
- | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | 
- | George | Francisco Lara-Dammer | ?? | 
- | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | 
+ | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | Not yet |
+ | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp | partially |  
+ |Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet |
+ | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  Not yet |
+ | Letter Spirit | John Rehling | ?? | Not yet | 
+ | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  Yes |
+ | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Not yet | 
+ | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | Yes |
+ | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | Yes |
+ | George | Francisco Lara-Dammer | ?? | Not yet |
+ | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | Yes |
 
 
 PROJECT: COPYCAT
