@@ -44,7 +44,7 @@ here when being maintained).
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  Not yet |
  | Letter Spirit | John Rehling | ?? | Not yet | 
  | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  Yes |
- | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Not yet | 
+ | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Not open-source currently | 
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | Yes |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | Yes |
  | George | Francisco Lara-Dammer | ?? | Not yet |
