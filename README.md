@@ -160,56 +160,33 @@ Phaeaco, Tabletop, Numbo, Seeqsee, etc. These projects have been developed by Do
 Capyblanca has been developed in Delphi. As of May 7th, 2008, the codebase compiles and runs in free (as in beer)
 turbodelphi for windows.
 
-With this initiative, we hope to contribute to the scientific community by letting those interested not only replicate
-the results in detail, but also improve the architecture and explore different design decisions which we have not been
-able to. (A major task, discussed in the conclusion, concerns the integration of learning algorithms.)
-
-A major point concerning FARG architectures is that programs do not rely on procedure calling; they do, instead, launch
-tasks which are to be handled asynchronously (Hofstadter and FARG, 1995). As mentioned, the task scheduler is known as
-the coderack, for processes may be triggered from any part of the task queue. It is impossible to detail the thousands
-of lines of the whole code here, but by focusing on some of the units involved, we may have a better grasp of how the
-system is developed, how it works, and how one might be able to further develop it and extend the architecture.
-
-Pascal code is divided over units. The major units involved in the current implementation of Capyblanca are detailed
-below.
-
-• MainUnit: Creates the graphical user interface; loads particular chess positions into memory; initializes working
-memory, external memory, and the slipnet; lets the user test the system; includes some basic tests.
-
-• Slipnet Unit: Creates basic semantic nodes and their associations (for example, a piece can be a guardian or an
-attacker--each of these roles has a corresponding node)
-
-• ExternalMemoryUnit: Creates a chess position; includes basic code for piece movement, potential trajectories that
-each piece might access, and the piece's "spheres of influence". Includes code that will attach abstract roles to pieces
-(or detach them, eventually--see fig. 8)
-
-• WorkingMemoryUnit: Creates the representation for the "ImaginedBoard", that is, the board in the system's "mind's eye".
-Notice that this is not equivalent to external memory. For example, external memory starts with a complete position with all
-pieces, while working memory is gradually filled with bottom-up, data-driven information glanced from external memory, or
-"imagined", top-down, expectation-driven trajectories and roles.
-
-• SpecialFunctions Unit: GUI-related; displays only parts of graphics associated with the current representation of
-trajectories.
-
-• BasicImpulse Unit: Implementation of an abstract class "TImpulse", which has the basic data structures and associated
-methods for use on more specific subclasses.
-
-• ImpulseSquareAndPiece Unit: The impulses implemented here work at a low level, "looking" at squares in the board,
-creating structures in STM if a piece is found, and finding trajectories and relations between a piece and either a
-square or a piece.
-
-• AbstractImpulses Unit: Handles the processing of abstract roles, such as the role of attacker, or guardian, or,
-in the case of a pawn, of a potential promotion, etc. Creates the corresponding roles for further processing.
-
-• ImpulseConsiderations Unit: This is the most abstract level of processing in Capyblanca. This unit attempts to model
-"abstract thoughts", i.e., considerations which are NOT tied to an specific piece or square, and are in their most
-general form. One example is: "the only solution to a double check is to escape with the king". In this example, nothing
-is said about the types of pieces attacking the king, their positions, the color that is under check, etc. Another example,
-that of a piece that finds itself having to juggle between two different, incompatible roles, are presented in the sample
-run detailed below (in the case of the black king of position 6).
-
-
-Sourcecode previously on https://code.google.com/archive/p/capyblanca/, now available here, in the [PhD Theses folder](/Literature/Ph.D.%20Theses).
+Sourcecode:
+ - previously on https://code.google.com/archive/p/capyblanca/ 
+ - now available here, in the [Software folder](/Software/Capyblanca).
+ 
+ Publications in Capyblanca & Analogies in Chess: 
+  - [Linhares, A. (2005) An Active Symbols Theory of Chess Intuition.  *Minds and Machines* 15 131--181.](/Literature/Chess-Capyblanca-2005-Linhares-Minds_and_Machines.pdf) 
+  - [Linhares, A., & Brum, P. (2007) Understanding our understanding of strategic scenarios: What roles do chunks play?  *Cognitive Science* 31 989--1007](/Literature/Chess-Capyblanca-Linhares.and.Brum-2007-Cognitive%20Science.pdf) 
+  - [Linhares, A., & Brum, P. (2009) How can experts see the invisible? Reply to Bilali & Gobet, *Cognitive Science* 33 748--751](/Literature/Chess-Capyblanca-Linhares.and.Brum-2009-Cognitive%20Science.pdf)
+  - [Linhares, A. & A.E.T.A. Freitas (2010) Questioning Chase and Simon's (1973) "Perception in Chess": The "experience recognition" hypothesis, *New Ideas in Psychology* 28 64--78](/Literature/Chess-Capyblanca-Linhares.and.Freitas-2010-New%20Ideas%20in%20Psychology.pdf)
+  - [Linhares, A., A.E.T.A. Freitas, A. Mendes, & J.S. Silva (2012) Entanglement of Perception and Reasoning in Chess: differential errors of strategic reconstruction *Cognitive Systems Research* 13 72--86](/Literature/Chess-Capyblanca-Linhares%20et%20al-2012-Cognitive%20Systems%20Research.pdf)
+  - [Linhares, A., and Chada, D. (2013) What is the nature of the mind's pattern recognition in chess? *New Ideas in Psychology* 31 108--121](/Literature/Chess-Capyblanca-Linhares.Chada-2013-New%20Ideas%20in%20Psychology.pdf)
+  - [Linhares, A. (2014) The Emergence of Choice: decision-making and strategic thinking through analogies, *Information Sciences* 259 36--56](/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf)
+  
+Future and ongoing activities:
+  - A review paper, containing the major findings in analogies in chess and of the Capyblanca architecture, is being written--perhaps for publication as a chapter in the sequel of *Fluid Concepts and Creative Analogies*. 
+  - Linhares has been working on Pentii Kanerva's Sparse Distributed Memory, as he has become convinced of the truth involved in an offmark comment by Hofstadter... in a diner in 2005, that "concepts are, somehow, sparse". The first paper considered the range of dimensions that an SDM should have were it to respect the "magic number 7"; a second paper studied the critical distance as the memory becomes saturated; a third paper (underway) studies interaction effects between different attractors, and a fourth paper presents the [highly-palallel SDM framework](https://github.com/msbrogli/sdm-framework) developed by [PhD Candidate Marcelo Brogliato](https://github.com/msbrogli).  
+  - Linhares plans to rewrite a number of AI/cogsci projects that may be of relevance to a future architecture, such as ENTROPICA, KT-Forms, and complex Clusterings.
+  - A rewrite of Daniel Defays "Numbo" in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans 
+  - A rewrite of Capyblanca in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans 
+  - as is the idea of a book tentatively entitled "Fluid concepts: a course" 
+  - The long-term goal is to create a computational architecture that, without knowing the rules or goals of a game, can come to understand and play combinatorics games like checkers, chess, or go.
+  - Another long-term goal is to create a computational architecture that is able to solve Bongard problems and Raven's matrices. Extending Phaeaco beyond what is currently possible.
+  - A paper on a "measure of human intuition" is in the plans
+  - Some ideas on a technical, mathematical, definition of what is commonly called *strong AI* or *AI-Complete* are being sketched.  
+  
+If you are interested in joining these future activities, please get in touch!
+ 
 
 
 
