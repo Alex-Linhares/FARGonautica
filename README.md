@@ -7,7 +7,7 @@ Don't you just hate it when you get a new computer and you have to scour the ent
 all the FARG projects yet once again? Haven't you always dreamt of that special place where you could get
 every single FARG project that's available?  Now you can scream out the window that those days are gone! 
 Congratulations you have made it to the center of the internet--tap yourself on the back and enjoy your
-new life convinently cloning this repo in your new computer, in your friends computers, in Apple stores, 
+new life conveniently cloning this repo in your new computer, in your friends computers, in Apple stores, 
 and much more!
 
 This repository has a number of goals:  
@@ -261,6 +261,6 @@ If you have any information (screenshots, sourcecode, homepage / github page of 
 
 John (Andrew?) Rehling
 
-[Google Scolar](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=)
+[Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=)
 
 2017-08-26 Sent an email to reputation.com.. I think he published a patent there. 
