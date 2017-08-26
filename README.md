@@ -6,7 +6,7 @@ Don't you just hate it when you get a new computer and you have to scour the ent
 all the FARG projects yet once again? Haven't you always dreamt of that special place where you could get
 every single FARG project that's available?  Now you can scream out the window that those days are gone! 
 Congratulations you have made it to the center of the internet--tap yourself on the back and enjoy your
-new life cloning this convinently repo in your new computer, in your friends computers, in Apple stores, 
+new life convinently cloning this repo in your new computer, in your friends computers, in Apple stores, 
 and much more!
 
 This repository has a number of goals:  
@@ -38,7 +38,7 @@ here when being maintained).
  | Project | Author | Language | Available at [FARGlexandria](https://github.com/Alex-Linhares/FARGlexandria)? |
  |---------| --------- | ----------| ----------|
  | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | Not yet |
- | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp | partially |  
+ | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | Yes |  
  |Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet |
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  Not yet |
  | Letter Spirit | John Rehling | ?? | Not yet | 
@@ -109,7 +109,7 @@ A Concept-centered Architecture for Sequence Perception
 
 [Abhijit A. Mahabal](https://github.com/amahabal) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
-[Google Scholar](https://scholar.google.com.br/citations?user=67MnndUAAAAJ&hl=en&oi=ao) [Academia.edu](https://google.academia.edu/AbhijitMahabal)
+[Google Scholar](https://scholar.google.com.br/citations?user=67MnndUAAAAJ&hl=en&oi=ao)  |  [Academia.edu](https://google.academia.edu/AbhijitMahabal)
 
 One of the goals of this project is to design and implement a computer program
 that can extend integer sequences intelligently, and the project has resulted in the
@@ -150,6 +150,7 @@ by Dr. Mahabal---which is why we do not provide the code in this git repo.  For 
 versions, see:
 
 Perl version: https://github.com/amahabal/Seqsee
+
 Python version: https://github.com/amahabal/PySeqsee
 
 
@@ -159,7 +160,7 @@ PROJECT: CAPYBLANCA
 
 [Alex Linhares](https://github.com/Alex-Linhares) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof) 
 
-[Homepage](http://ebape.fgv.br/en/faculty/alexandre-linhares) [Academia.edu](https://fgv.academia.edu/AlexandreLinhares) [Google Scholar](https://scholar.google.com.br/citations?user=jzP1_8QAAAAJ&hl=en&oi=sra)  
+[Homepage](http://ebape.fgv.br/en/faculty/alexandre-linhares) |  [Academia.edu](https://fgv.academia.edu/AlexandreLinhares)  |  [Google Scholar](https://scholar.google.com.br/citations?user=jzP1_8QAAAAJ&hl=en&oi=sra)  
 
 A chess system based on Active Symbols / Fluid Concepts.  [Here](https://youtu.be/5h67WwfuQDg) is the sample run of it 
 described in the [Information Sciences paper](https://github.com/Alex-Linhares/Fluid-Concepts-and-Creative-Analogies/blob/master/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf).
@@ -208,7 +209,7 @@ PROJECT: MUSICAT
 
 [Eric Paul Nichols](https://github.com/eraoul) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
-[Google Scholar](https://scholar.google.com.br/citations?user=Q37xBqwAAAAJ&hl=en) [Academia.edu](https://indiana.academia.edu/EricNichols)
+[Google Scholar](https://scholar.google.com.br/citations?user=Q37xBqwAAAAJ&hl=en)  |  [Academia.edu](https://indiana.academia.edu/EricNichols)
 
 What happens when people listen to music? What sorts of mental structures are formed? How do we make sense of a melody
 as its notes fly by in rapid succession? Can we model the experience of listening to music in real time?
@@ -251,9 +252,9 @@ Defcon 1. 404 file not found so far...
 
 If you have any information (screenshots, sourcecode, homepage / github page of authors, email, etc.), please let us solve issues #5 and #6. 
 
-[Gary McGray](https://www.garymcgraw.com/) 
+[Gary McGraw](https://www.garymcgraw.com/) 
 
-[Google Scholar](https://scholar.google.com.br/scholar?q=mcgraw+letter+spirit&btnG=&hl=en&as_sdt=0%2C5)  [Amazon Author's page](https://www.amazon.com/Gary-McGraw/e/B000APFZ2S/ref=sr_ntt_srch_lnk_1?qid=1503736392&sr=8-1)  
+[Google Scholar](https://scholar.google.com.br/scholar?q=mcgraw+letter+spirit&btnG=&hl=en&as_sdt=0%2C5)  |  [Amazon Author's page](https://www.amazon.com/Gary-McGraw/e/B000APFZ2S/ref=sr_ntt_srch_lnk_1?qid=1503736392&sr=8-1)  
 
 
 
