@@ -12,15 +12,15 @@ and much more!
 
 This repository has a number of goals:  
 
-    i) we want to collect **all** the (open-source) computational architectures that have been developed in
+    i) we want to collect all the (open-source) computational architectures that have been developed in
     Douglas Hofstadter's group's research in Fluid Concepts & Creative Analogies; from Numbo to Copycat to
     Tabletop to Letter Spirit, Metacat, Musicat, etc, alongside the info on how to install and run it;
-    ii) we want to collect **all** the literature:
+    ii) we want to collect all the literature (except for published books, of course):
      - unpublished papers,
      - CRCC reports, 
      - published papers,
      - Theses, etc
-    iii) we want to archive **all** materials for an online course on Fluid Concepts & Creative Analogies
+    iii) we want to archive all materials for an online course on Fluid Concepts & Creative Analogies
     (also called "Fluid Concepts", "FARG architectures", "Copycat Architecture", "Active Symbols", etc).
 
 
@@ -256,6 +256,7 @@ If you have any information (screenshots, sourcecode, homepage / github page of 
 [Gary McGraw](https://www.garymcgraw.com/) 
 
 [Google Scholar](https://scholar.google.com.br/scholar?q=mcgraw+letter+spirit&btnG=&hl=en&as_sdt=0%2C5)  |  [Amazon Author's page](https://www.amazon.com/Gary-McGraw/e/B000APFZ2S/ref=sr_ntt_srch_lnk_1?qid=1503736392&sr=8-1)  
+
 
 
 
