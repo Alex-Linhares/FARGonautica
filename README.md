@@ -6,8 +6,8 @@ Don't you just hate it when you get a new computer and you have to scour the ent
 all the FARG projects yet once again? Haven't you always dreamt of that special place where you could get
 every single FARG project that's available?  Now you can scream out the window that those days are gone! 
 Congratulations you have made it to the center of the internet--tap yourself on the back and enjoy your
-new life cloning this repo in your new computer, in your friends computers, in Apple stores, and
-much more!
+new life cloning this convinently repo in your new computer, in your friends computers, in Apple stores, 
+and much more!
 
 This repository has a number of goals:  
 
@@ -37,9 +37,9 @@ here when being maintained).
 
  | Project | Author | Language |
  |---------| --------- | ----------|
- | Numbo | Daniel Defays | Lisp | 
- | Copycat | Melanie Mitchell | Lisp |   
- |Tabletop | [Bob French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  
+ | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | 
+ | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp |   
+ |Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  
  | Letter Spirit | John Rehling | ?? | 
  | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  
