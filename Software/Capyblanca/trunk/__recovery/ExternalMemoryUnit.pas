@@ -1182,7 +1182,7 @@ begin
 end;
 
 
-Procedure TPiece.Display (Canvas:Tcanvas);
+Procedure TPiece.Display2 (Canvas:Tcanvas);
 var x,y: integer; Color:Tcolor;
 begin
      Canvas.Pen.Color:=clblack;
@@ -1198,7 +1198,7 @@ begin
 end;
 
 
-Procedure TPiece.Display2 (Canvas:Tcanvas);
+Procedure TPiece.Display (Canvas:Tcanvas);
 var x,y: integer; Color:Tcolor;
 begin
      Canvas.Pen.Color:=clblack;

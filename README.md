@@ -5,9 +5,9 @@
 
 Don't you just hate it when you get a new computer and you have to scour the entire internet in search of
 all the FARG projects yet once again? Haven't you always dreamt of that special place where you could get
-every single FARG project that's available?  Now you can scream out the window that those days are gone! 
+every single FARG project that's available?  Now you can scream out the window that those days are gone!
 Congratulations you have made it to the center of the internet--tap yourself on the back and enjoy your
-new life conveniently cloning this repo in your new computer, in your friends computers, in Apple stores, 
+new life conveniently cloning this repo in your new computer, in your friends computers, in Apple stores,
 and much more!
 
 This repository has a number of goals:  
@@ -17,7 +17,7 @@ This repository has a number of goals:
     Tabletop to Letter Spirit, Metacat, Musicat, etc, alongside the info on how to install and run it;
     ii) we want to collect all the literature (except for published books, of course):
      - unpublished papers,
-     - CRCC reports, 
+     - CRCC reports,
      - published papers,
      - Theses, etc
     iii) we want to archive all materials for an online course on Fluid Concepts & Creative Analogies
@@ -42,9 +42,9 @@ here when being maintained).
  | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | Yes |  
  |Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet |
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  Not yet |
- | Letter Spirit | John Rehling | ?? | Not yet | 
+ | Letter Spirit | John Rehling | ?? | Not yet |
  | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  Yes |
- | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Not open-source currently | 
+ | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Not open-source currently |
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | Yes |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | Yes |
  | George | Francisco Lara-Dammer | ?? | Not yet |
@@ -76,14 +76,21 @@ blackboard systems), and the coderack (with the codelets). The slipnet is a netw
 permanent concepts, and weighted links, which are relations, between them. It differs from traditional semantic networks
 as the effective weight associated with a particular link may vary through time according to the activation level of
 specific concepts (nodes). The codelets build structures in the working area and modify activations in the slipnet
-accordingly (bottom-up processes), and the current state of slipnet determines probabilistically which codelets must be
-run (top-down influences).
+accordingly (bottom-up processes), and the current state of slipnet determines probabilistically which codelets must be run (top-down influences).
 
-Copycat was implemented in LISP, and there are multiple ports available.  Scott Boland did one of the first re-implementations
-in Java (available in this repo and in [here](https://archive.org/details/JavaCopycat). This implementation has served for [another
-port, to Python](https://github.com/Quuxplusone/co.py.cat).
+Implementations of the Copycat project:
 
-AJ Hager has also independently developed a python version of copycat, with [amazingly gorgeous OpenGL graphics](https://youtu.be/v7Eotp-XKVA), available (and maintained) at https://github.com/ajhager/copycat.
+| Author  |  Language/Sourcecode |  Note  |
+|--------|------------------------|-------|
+| Melanie Mitchell |  [LISP](/Software/Copycat/ccat.tar.gz) | Bitrotten |  
+| Scott Boland  | [Java](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) | (SB's email lost?) |
+| [speakeasy](https://github.com/speakeasy) (oh well)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland  code |
+| [Greg Detre](https://github.com/gregdetre) | [Clojure](https://github.com/gregdetre/copycat-clojure)  | Not tested  |
+| Multiple Authors | [Python](https://github.com/jtauber/co.py.cat/network)  | Multiple forks, no graphics ? |
+| [Joseph Aaron Hager](https://github.com/ajhager) | [Python](https://github.com/ajhager/copycat) | [OpenGL graphics](https://youtu.be/v7Eotp-XKVA) |
+
+
+Please see [Mitchell](http://web.cecs.pdx.edu/~mm/)'s [Copycat page](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html). Scott Boland's re-implementation in Java is 404'ing at The University of Queensland, but it is available [in this repo](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) and in [archive](https://archive.org/details/JavaCopycat). 
 
 
 
@@ -91,17 +98,20 @@ PROJECT: METACAT
 ---
 ![Metacat](/Software/Metacat/metacat.png)
 
-Find Dr. Marshall in  [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
+[James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
-Dr. Marshall is maintaining the Metacat Project page at http://science.slc.edu/~jmarshall/metacat/.
+Find Dr. Marshall in [Sarah Lawrence College](https://www.sarahlawrence.edu/faculty/marshall-james.html)  |  [Personal Website](http://science.slc.edu/~jmarshall/)  |  [Google Scholar](https://scholar.google.com.br/scholar?q=james+marshall+metacat&btnG=&hl=en&as_sdt=0%2C5&oq=james+marshall+)
+
+Dr. Marshall is maintaining [the Metacat Project page](http://science.slc.edu/~jmarshall/metacat/).
+
 
 
 PROJECT: NUMBO
 ---
 
-Find Dr. Defays in [Homepage]()  |  [Google Scholar]() 
+Find Dr. Defays in [Homepage]()  |  [Google Scholar]()
 
-Daniel Defays sent in 2006 a printed version of the sourcecode to Alex Linhares.  This will be scanned 
+Daniel Defays sent in 2006 a printed version of the sourcecode to Alex Linhares.  This will be scanned
 and archived in this repo---eventually.
 
 
@@ -151,21 +161,20 @@ Seqsee is written in Perl and a new version is written in Python and the code is
 by Dr. Mahabal---which is why we do not provide the code in this git repo.  For the latest
 versions, see:
 
-Perl version: https://github.com/amahabal/Seqsee
+[Perl version, original project](https://github.com/amahabal/Seqsee)
 
-Python version: https://github.com/amahabal/PySeqsee
+[Python version being rewritten](https://github.com/amahabal/PySeqsee)
 
 
 PROJECT: CAPYBLANCA
 ---
 ![Capyblanca](/Software/Capyblanca/Capyblanca.Screenshot.png)
 
-[Alex Linhares](https://github.com/Alex-Linhares) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof) 
+[Alex Linhares](https://github.com/Alex-Linhares) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
 Find Linhares in  [Homepage](http://ebape.fgv.br/en/faculty/alexandre-linhares) |  [Academia.edu](https://fgv.academia.edu/AlexandreLinhares)  |  [Google Scholar](https://scholar.google.com.br/citations?user=jzP1_8QAAAAJ&hl=en&oi=sra)  
 
-A chess system based on Active Symbols / Fluid Concepts.  [Here](https://youtu.be/5h67WwfuQDg) is the sample run of it 
-described in the [Information Sciences paper](https://github.com/Alex-Linhares/Fluid-Concepts-and-Creative-Analogies/blob/master/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf).
+A chess system based on Active Symbols / Fluid Concepts.  [Here](https://youtu.be/5h67WwfuQDg) is the sample run of it described in the [Information Sciences paper](https://github.com/Alex-Linhares/Fluid-Concepts-and-Creative-Analogies/blob/master/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf).
 
 Most chess programs consist of nothing but tree search. Can a program have ideas; perceive abstractions;
 understand situations? If so, how?
@@ -177,31 +186,31 @@ Capyblanca has been developed in Delphi. As of May 7th, 2008, the codebase compi
 turbodelphi for windows.
 
 Sourcecode:
- - previously on https://code.google.com/archive/p/capyblanca/ 
+ - previously on https://code.google.com/archive/p/capyblanca/
  - now available here, in the [Software folder](/Software/Capyblanca).
- 
- Publications in Capyblanca & Analogies in Chess: 
-  - [Linhares, A. (2005) An Active Symbols Theory of Chess Intuition.  *Minds and Machines* 15 131--181.](/Literature/Chess-Capyblanca-2005-Linhares-Minds_and_Machines.pdf) 
-  - [Linhares, A., & Brum, P. (2007) Understanding our understanding of strategic scenarios: What roles do chunks play?  *Cognitive Science* 31 989--1007](/Literature/Chess-Capyblanca-Linhares.and.Brum-2007-Cognitive%20Science.pdf) 
+
+ Publications in Capyblanca & Analogies in Chess:
+  - [Linhares, A. (2005) An Active Symbols Theory of Chess Intuition.  *Minds and Machines* 15 131--181.](/Literature/Chess-Capyblanca-2005-Linhares-Minds_and_Machines.pdf)
+  - [Linhares, A., & Brum, P. (2007) Understanding our understanding of strategic scenarios: What roles do chunks play?  *Cognitive Science* 31 989--1007](/Literature/Chess-Capyblanca-Linhares.and.Brum-2007-Cognitive%20Science.pdf)
   - [Linhares, A., & Brum, P. (2009) How can experts see the invisible? Reply to Bilali & Gobet, *Cognitive Science* 33 748--751](/Literature/Chess-Capyblanca-Linhares.and.Brum-2009-Cognitive%20Science.pdf)
   - [Linhares, A. & A.E.T.A. Freitas (2010) Questioning Chase and Simon's (1973) "Perception in Chess": The "experience recognition" hypothesis, *New Ideas in Psychology* 28 64--78](/Literature/Chess-Capyblanca-Linhares.and.Freitas-2010-New%20Ideas%20in%20Psychology.pdf)
   - [Linhares, A., A.E.T.A. Freitas, A. Mendes, & J.S. Silva (2012) Entanglement of Perception and Reasoning in Chess: differential errors of strategic reconstruction *Cognitive Systems Research* 13 72--86](/Literature/Chess-Capyblanca-Linhares%20et%20al-2012-Cognitive%20Systems%20Research.pdf)
   - [Linhares, A., and Chada, D. (2013) What is the nature of the mind's pattern recognition in chess? *New Ideas in Psychology* 31 108--121](/Literature/Chess-Capyblanca-Linhares.Chada-2013-New%20Ideas%20in%20Psychology.pdf)
   - [Linhares, A. (2014) The Emergence of Choice: decision-making and strategic thinking through analogies, *Information Sciences* 259 36--56](/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf)
-  
+
 Future and ongoing activities:
-  - A review paper, containing the major findings in analogies in chess and of the Capyblanca architecture, is being written--perhaps for publication as a chapter in the sequel of *Fluid Concepts and Creative Analogies*. 
+  - A review paper, containing the major findings in analogies in chess and of the Capyblanca architecture, is being written--perhaps for publication as a chapter in the sequel of *Fluid Concepts and Creative Analogies*.
   - Linhares has been working on Pentii Kanerva's Sparse Distributed Memory, as he has become convinced of the truth involved in an offmark comment by Hofstadter... in a diner... back in 2006, that "concepts are, somehow, sparse". The first [paper considered the range of dimensions that an SDM should have were it to respect i) chunking-by-averaging, and ii) the "magic number 7"](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015592); a second [paper studied the critical distance as the memory becomes saturated](http://journal.frontiersin.org/article/10.3389/fnhum.2014.00222/full); a third paper (underway) studies interaction effects between different attractors, and a fourth paper presents the [highly-palallel SDM framework](https://github.com/msbrogli/sdm-framework) developed by [PhD Candidate Marcelo Brogliato](https://github.com/msbrogli).  
   - Linhares plans to rewrite a number of AI/cogsci projects that may be of relevance to a future architecture, such as [ENTROPICA](https://www.ted.com/talks/alex_wissner_gross_a_new_equation_for_intelligence), [KT-Forms](http://www.pnas.org/content/105/31/10687), and complex Clusterings.
-  - A rewrite of Daniel Defays "Numbo" in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans 
-  - A rewrite of Capyblanca in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans 
+  - A rewrite of Daniel Defays "Numbo" in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans
+  - A rewrite of Capyblanca in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans
   - An original, Fluid-Concepts-based, re-write of Kemp and Tenembaum's Forms in Mahabal's Framework is in the plans
-  - ...as is the idea of a book tentatively entitled "Fluid concepts: a course" 
+  - ...as is the idea of a book tentatively entitled "Fluid concepts: a course"
   - The long-term goal is to create a computational architecture that, without knowing the rules or goals of a game, can come to understand and play combinatorics games like checkers, chess, or go.
   - Another long-term goal is to create a computational architecture that is able to solve Bongard problems and Raven's matrices. Extending Phaeaco beyond what is currently possible.
   - A paper on a "measure of human intuition" is in the plans, after Dr. Eric Nichols agreed that the idea and the methodology seems to make sense.
-  - Some ideas on a technical, mathematical, definition of what is commonly called *strong AI* or *AI-Complete* are being sketched. They use mostly combinatorics and information theory... but they stem from the solving of Bongard problems. 
-  
+  - Some ideas on a technical, mathematical, definition of what is commonly called *strong AI* or *AI-Complete* are being sketched. They use mostly combinatorics and information theory... but they stem from the solving of Bongard problems.
+
 If you are interested in joining these future activities, please get in touch!
 
 
@@ -230,19 +239,19 @@ the sourcecode is available at http://ericpnichols.com/musicat/ (and also archiv
 
 PROJECT: PHAEACO
 ---
-![Phaeaco](phaeaco-the-solver.gif) 
+![Phaeaco](phaeaco-the-solver.gif)
 
-[Harry Foundalis](http://www.foundalis.com/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof) 
+[Harry Foundalis](http://www.foundalis.com/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
 Find Dr. Foundalis in [homepage](http://www.foundalis.com/)  |  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=foundalis+harry&btnG=&as_sdt=1%2C5&as_sdtp=&oq=harr)
 
-Phaeaco is an architecture that is able to solve some Bongard-problems in a psychologically plausible way.  Numerous 
-people believe that Bongard problems are one of the quintessential challenges of AI and Cognitive Science.  Here is what 
+Phaeaco is an architecture that is able to solve some Bongard-problems in a psychologically plausible way.  Numerous
+people believe that Bongard problems are one of the quintessential challenges of AI and Cognitive Science.  Here is what
 Dr. Foundalis said about them:
 
-    "I see Bongard problems not as a mere collection of cute visual puzzles, but as a gateway that 
-    allows us to get a glimpse at the foundations of cognition: a set of principles that are as 
-    fundamental for cognitive science as Newton’s laws are for physics. Bongard problems themselves 
+    "I see Bongard problems not as a mere collection of cute visual puzzles, but as a gateway that
+    allows us to get a glimpse at the foundations of cognition: a set of principles that are as
+    fundamental for cognitive science as Newton’s laws are for physics. Bongard problems themselves
     are solved primarily as a consequence of following some fundamental principles of cognition."
 
 Dr. Foundalis is not sharing the code at this time, but his thesis is found in [the Software Folder](/Software).
@@ -252,9 +261,9 @@ PROJECT: LETTER SPIRIT
 ---
 Defcon 1. 404 file not found so far...
 
-If you have any information (screenshots, sourcecode, homepage / github page of authors, email, etc.), please let us solve issues #5 and #6. 
+If you have any information (screenshots, sourcecode, homepage / github page of authors, email, etc.), please let us solve issues #5 and #6 of this repository.
 
-[Gary McGraw](https://www.garymcgraw.com/) 
+[Gary McGraw](https://www.garymcgraw.com/)
 
 Find Dr. McGraw in  [Google Scholar](https://scholar.google.com.br/scholar?q=mcgraw+letter+spirit&btnG=&hl=en&as_sdt=0%2C5)  |  [Amazon Author's page](https://www.amazon.com/Gary-McGraw/e/B000APFZ2S/ref=sr_ntt_srch_lnk_1?qid=1503736392&sr=8-1)  
 
@@ -265,4 +274,4 @@ John (Andrew?) Rehling
 
 Find Dr. Rehling in  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=)
 
-2017-08-26 Sent an email to reputation.com.. I think he published a patent there. 
+2017-08-26 Sent an email to reputation.com.. I think he published a patent there.
