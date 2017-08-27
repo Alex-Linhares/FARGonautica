@@ -82,7 +82,7 @@ Implementations of the Copycat project:
 
 | Author  |  Language/Sourcecode |  Note  |
 |--------|------------------------|-------|
-| Melanie Mitchell |  [LISP](/Software/Copycat/ccat.tar.gz) | Bitrotten |  
+| Melanie Mitchell |  [LISP](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html) | Bitrotten |  
 | Scott Boland  | [Java](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) | (SB's email lost?) |
 | [speakeasy](https://github.com/speakeasy) (oh well)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland  code |
 | [Greg Detre](https://github.com/gregdetre) | [Clojure](https://github.com/gregdetre/copycat-clojure)  | Not tested  |
@@ -90,7 +90,7 @@ Implementations of the Copycat project:
 | [Joseph Aaron Hager](https://github.com/ajhager) | [Python](https://github.com/ajhager/copycat) | [OpenGL graphics](https://youtu.be/v7Eotp-XKVA) |
 
 
-Please see [Mitchell](http://web.cecs.pdx.edu/~mm/)'s [Copycat page](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html). Scott Boland's re-implementation in Java is 404'ing at The University of Queensland, but it is available [in this repo](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) and in [archive](https://archive.org/details/JavaCopycat). 
+Please see [Mitchell](http://web.cecs.pdx.edu/~mm/)'s [Copycat page](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html). Scott Boland's re-implementation in Java is 404'ing at The University of Queensland, but it is available [in this repo](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) and in [archive](https://archive.org/details/JavaCopycat).
 
 
 
