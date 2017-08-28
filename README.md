@@ -176,7 +176,7 @@ Find Dr. Lara-Dammer at [LinkedIn](https://www.linkedin.com/in/francisco-lara-da
 Publications: 
 - Modeling Human Discoverativity in Geometry, PhD Thesis, Indiana University, 
 - Lara-Dammer & Hofstadter, [*Perception of Direction and its Influence on Geometric Discoveries*](https://cogsci.indiana.edu/pub/lara-dammer.perception-of-direction-2006.pdf)
-- Lara-Dammer, Hofstadter & Goldstone (2017) A computer model of context-dependent perception in a very simple world, *Journal of Experimental and Theoretical Artificial Intelligence* 1--36
+- [Lara-Dammer, Hofstadter & Goldstone (2017) A computer model of context-dependent perception in a very simple world, *Journal of Experimental and Theoretical Artificial Intelligence* 1--36](http://www.tandfonline.com/eprint/hNcJzAjrviqTaWjzR235/full)
 
 
 PROJECT: CAPYBLANCA
