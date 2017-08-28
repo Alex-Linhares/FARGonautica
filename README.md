@@ -47,7 +47,7 @@ here when being maintained).
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Not open-source currently |
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | Yes |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | Yes |
- | George | Francisco Lara-Dammer | ?? | Not yet |
+ | George | Francisco Lara-Dammer | Java | Not yet |
  | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | Yes |
 
 
