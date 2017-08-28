@@ -82,7 +82,8 @@ Implementations of the Copycat project:
 | Scott Boland  | [Java](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) | (SB's email lost?) |
 | ["speakeasy"](https://github.com/speakeasy)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland  code |
 | [Greg Detre](https://github.com/gregdetre) | [Clojure](https://github.com/gregdetre/copycat-clojure)  | Not tested  |
-| Multiple Authors | [Python](https://github.com/jtauber/co.py.cat/network)  | Multiple forks, no graphics  |
+| Multiple Authors | [Python 2](https://github.com/Quuxplusone/co.py.cat)  | Multiple forks, no graphics  |
+| [Lucas Saldyt](https://github.com/LSaldyt) | [Python 3](https://github.com/LSaldyt/copycat/commit/bc848e8f2d7dd922b96bd0118ba4adf2fc033e55)  | Above repo patch to Python 3  |
 | [Joseph Aaron Hager](https://github.com/ajhager) | [Python](https://github.com/ajhager/copycat) | [OpenGL graphics](https://youtu.be/v7Eotp-XKVA) |
 
 
