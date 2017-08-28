@@ -163,7 +163,20 @@ versions, see:
 
 [Perl version, original project](https://github.com/amahabal/Seqsee)
 
-[Python version being rewritten](https://github.com/amahabal/PySeqsee)
+[Python version being rewritten](https://github.com/amahabal/Pyhttps://scholar.google.com.br/scholar?hl=en&q=Francisco+Lara-Dammer&btnG=&as_sdt=1%2C5&as_sdtp=&oq=francisco+Seqsee)
+
+PROJECT: George
+---
+A Concept-centered Architecture for Sequence Perception
+
+[Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) &  [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
+
+Find Dr. Lara-Dammer at [LinkedIn](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/)  |  [Homepage at IU](https://www.cs.indiana.edu/~flaradam/)  |  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=Francisco+Lara-Dammer&btnG=&as_sdt=1%2C5&as_sdtp=&oq=francisco+)  |  [Academia.edu (?)](https://independent.academia.edu/FranciscoLaraDammer) 
+
+Publications: 
+- Modeling Human Discoverativity in Geometry, PhD Thesis, Indiana University, 
+- Lara-Dammer & Hofstadter, [*Perception of Direction and its Influence on Geometric Discoveries*](https://cogsci.indiana.edu/pub/lara-dammer.perception-of-direction-2006.pdf)
+- Lara-Dammer, Hofstadter & Goldstone (2017) A computer model of context-dependent perception in a very simple world, *Journal of Experimental and Theoretical Artificial Intelligence* 1--36
 
 
 PROJECT: CAPYBLANCA
