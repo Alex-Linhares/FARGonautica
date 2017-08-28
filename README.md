@@ -34,7 +34,7 @@ here when being maintained).
  | Project | Author | Language | Available at [FARGlexandria](https://github.com/Alex-Linhares/FARGlexandria)? |
  |---------| --------- | ----------| ----------|
  | Seek-Whence | [Marsha Meredith](https://scholar.google.com.br/scholar?hl=en&q=marsha+meredith&btnG=&as_sdt=1%2C5&as_sdtp=) | ?? | Not Yet |
- | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | (soon) |
+ | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | **(coming soon)** |
  | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | **Yes** |  
  |Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet |
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  Not yet |
@@ -80,9 +80,9 @@ Implementations of the Copycat project:
 |--------|------------------------|-------|
 | Melanie Mitchell |  [LISP](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html) | Bitrotten |  
 | Scott Boland  | [Java](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) | (SB's email lost?) |
-| [speakeasy](https://github.com/speakeasy) (oh well)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland  code |
+| ["speakeasy"](https://github.com/speakeasy)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland  code |
 | [Greg Detre](https://github.com/gregdetre) | [Clojure](https://github.com/gregdetre/copycat-clojure)  | Not tested  |
-| Multiple Authors | [Python](https://github.com/jtauber/co.py.cat/network)  | Multiple forks, no graphics ? |
+| Multiple Authors | [Python](https://github.com/jtauber/co.py.cat/network)  | Multiple forks, no graphics  |
 | [Joseph Aaron Hager](https://github.com/ajhager) | [Python](https://github.com/ajhager/copycat) | [OpenGL graphics](https://youtu.be/v7Eotp-XKVA) |
 
 
