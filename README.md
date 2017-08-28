@@ -35,16 +35,16 @@ here when being maintained).
  |---------| --------- | ----------| ----------|
  | Seek-Whence | [Marsha Meredith](https://scholar.google.com.br/scholar?hl=en&q=marsha+meredith&btnG=&as_sdt=1%2C5&as_sdtp=) | ?? | Not Yet |
  | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | (soon) |
- | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | Yes |  
+ | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | **Yes** |  
  |Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet |
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  Not yet |
  | Letter Spirit | John Rehling | ?? | Not yet |
- | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  Yes |
+ | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  **Yes** |
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Not open-source currently |
- | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | Yes |
- | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | Yes |
+ | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
+ | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | **Yes** |
  | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | Not yet |
- | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | Yes |
+ | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | **Yes** |
 
 
 PROJECT: COPYCAT
