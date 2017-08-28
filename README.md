@@ -5,11 +5,12 @@
 
 Don't you just hate it when you get a new computer and you have to scour the entire internet in search of
 all the FARG projects yet once again? All those long days of suffering by googling for everything; finding
-out that your old files are corrupt; and email spamming the authors? Haven't you always dreamt of that 
-special place where you could get every single FARG project that's available?  Your problems have been solved! 
-Now you can scream out the window that those days are gone! Congratulations you have made it to the center 
-of the internet--tap yourself on the back and enjoy your new life conveniently cloning this repo in your 
-new computer, in all your friends' computers, in Apple stores, and much more!
+out that your old files are corrupt; and email spamming the authors? Isn't it horrible having your wife and
+kids screaing at you once again, because they just want to run Letter Spirit one more time? Haven't you always 
+dreamt of a magical place where you could get every single FARG project that's available?  Your problems have 
+been solved! Now you can scream out the window that those days are gone! Congratulations you have made it to 
+the very center of the internet--tap yourself on the back and enjoy your new life conveniently cloning this 
+repo in your new computer, in all your friends' computers, in Apple stores, and much more!
 
 This repository has a number of goals:  
 
