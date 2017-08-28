@@ -152,7 +152,7 @@ by perception; the notion, similar to affordances, of the ―action fringe‖ of
 a category-based long-term memory.
 
 
-The dissertation (Aivailable here and in http://www.amahabal.com/files/Seqsee--doublesided.pdf)
+The dissertation (Available here and in [Dr. Mahabal's website](http://www.amahabal.com/files/Seqsee--doublesided.pdf)
 describes the program and its principles, which are much more general
 than integer-sequence extrapolation, and compares its performance with human
 performance.
