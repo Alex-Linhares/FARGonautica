@@ -34,10 +34,11 @@ As of right now, this repo is considered, in open-source fashion, to be in versi
 
 **Goals for version 1.0.0**:
 - Each project should contain:
-    - Source code of all major projects, complete and running
-    - Literature of all major projects, complete
-    - Exercises for undergraduate courses
-    - Challenges for graduate students (each challenge being able to lead to a publication, in principle)
+    - **Source code** of all major projects, complete and running
+    - **Literature** of all major projects, complete
+    - **Exercises** for undergraduate courses
+    - **Programming challenges** large or small
+    - **Research challenges** for graduate students (each challenge being able to lead to a publication, in principle)
 
 Welcome!  Join us.  This will be insanely fun.  
 
