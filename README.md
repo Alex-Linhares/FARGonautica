@@ -28,6 +28,14 @@ This repository has a number of goals:
 
 Welcome!  Join us.  This will be insanely fun.  
 
+---
+We presume most users of this repository should be familiar with the following work:
+
+[**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
+
+Fluid Concept and Creative Analogies (FCCA) is the central publication concerning these projects.  Whereas numerous ideas had been developed before, in Gödel, Escher, Bach: an eternal golden braid; The Minds' I, and Metamagical Themas, it is FCCA that finally synthetizes the whole of the thinking over the years in computational models:  The *parallel terraced scan*, the idea of [*temperature*](/Literature/Hofstadter-Non.Deterministic.Approach.to.Analogy.pdf) controlling randomness, the *slipnet* (a semantic network in which nodes can become closer or farther apart based on context), the idea of *codelets* and their imprecise order of execution, and so forth.  
+
+
 REPOSITORY VERSION & HOW YOU CAN CONTRIBUTE
 ---
 
@@ -58,17 +66,10 @@ So here is a table of what version 1 could be:
 
 So this repo can not only be a library but also a source for an undergraduate course and a set of research questions... don't you wish your teachers at university (or even high school) had something like this?  And [here's where we are!](repo-version.md)
 
-Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](how-to-contribute.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter
+Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](contributing.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter
 gracefully conceded the honorable title of "Associate FARGonaut" to me (Linhares), of which I am truly proud.  If you have ideas for
 exercises, research questions, programming challenges, or something else altogether... please get in touch!  
 
-
----
-We presume most users of this repository should be familiar with the following work:
-
-[**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
-
-Fluid Concept and Creative Analogies (FCCA) is the central publication concerning these projects.  Whereas numerous ideas had been developed before, in Gödel, Escher, Bach: an eternal golden braid; The Minds' I, and Metamagical Themas, it is FCCA that finally synthetizes the whole of the thinking over the years in computational models:  The *parallel terraced scan*, the idea of [*temperature*](/Literature/Hofstadter-Non.Deterministic.Approach.to.Analogy.pdf) controlling randomness, the *slipnet* (a semantic network in which nodes can become closer or farther apart based on context), the idea of *codelets* and their imprecise order of execution, and so forth.  
 
 
 
@@ -91,7 +92,11 @@ here when being maintained).
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Not open-source currently |
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | **Yes** |
+<<<<<<< HEAD
  | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | Dr. Lara-Dammer desires to clean up the code prior to release |
+=======
+ | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | Lara-Dammer desires to "clean the code" |
+>>>>>>> 9b0b0fc1a7ce60c8a9856cae817abdfe2fa17ab1
  | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | **Yes** |
 
 
