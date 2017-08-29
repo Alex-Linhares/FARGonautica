@@ -40,6 +40,20 @@ As of right now, this repo is considered, in open-source fashion, to be in versi
     - **Programming challenges** large or small
     - **Research challenges** for graduate students (each challenge being able to lead to a publication, in principle)
 
+So here is a table of what version 1 could be:
+
+| Project | Sourcecode | Literature | Exercises | Programming challenges | Research challenges |
+|---------| --------- | ----------| ----------|  ----------| ----------|
+| Seek-Whence & SeqSee | Yes | Yes | 15 | 3 | 2 |
+| Numbo | Yes | Yes | 5 | 1 | 1 |
+| Copycat & Metacat | Yes | Yes | 35 | 8 | 5 |
+| Tabletop | Yes | Yes | 17 | 3 | 1 |
+| Letter Spirit | Yes | Yes | 15 | 10 | 2 |
+| Phaeaco | Yes | Yes | 15 | 10 | 3 |
+| Musicat | Yes | Yes | 15 | 5 | 9 |
+| Capyblanca | Yes | Yes | 15 | 4 | 4 |
+| George | Yes | Yes | 25 | 3 | 8 |
+
 Welcome!  Join us.  This will be insanely fun.  
 
 ---
