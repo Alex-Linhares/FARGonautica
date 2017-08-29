@@ -27,7 +27,7 @@ This repository has a number of goals:
 
 Welcome!  Join us.  This will be insanely fun.  
 
-REPOSITORY VERSION
+REPOSITORY VERSION & HOW YOU CAN CONTRIBUTE
 ---
 
 As of right now, this repo is considered, in open-source fashion, to be in version 0.0.8:
@@ -55,11 +55,17 @@ So here is a table of what version 1 could be:
 | George | Yes | Yes | 25 | 3 | 8 |
 
 
-And [Here's where we are!](repo-version.md)
+Do you see how cool this could be?  Not only a library but also a course and a set of research questions... don't you wish your teachers, say, at kindergarten, had something like this?  And [here's where we are!](repo-version.md)
 
-Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](how-to-contribute.md). You do **not** have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter 
+Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](how-to-contribute.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter
 gracefully conceded the honorable title of "Associate FARGonaut" to me (Linhares), of which I am truly proud.  If you have ideas for
 exercises, research questions, programming challenges, or something else altogether... please get in touch!  
+
+Because when we get there, here's what we can do:
+
+![Fargonautica-book](FARGonautica-a-course-saved-image-canva.png)
+
+That's right: we can do a full-blown book/e-book with *a course on the computer science of building FARG architectures*.  Don't worry about the details now... Whether or not Hofstadter will join... whether or not it will be published anywhere fancy: if you're like me and you feel that this is something that should exist, join us and let's make it happen!  
 
 ---
 We presume most users of this repository should be familiar with the following work:
