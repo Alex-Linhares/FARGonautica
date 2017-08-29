@@ -92,11 +92,7 @@ here when being maintained).
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Not open-source currently |
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | **Yes** |
-<<<<<<< HEAD
  | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | Dr. Lara-Dammer desires to clean up the code prior to release |
-=======
- | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | Lara-Dammer desires to "clean the code" |
->>>>>>> 9b0b0fc1a7ce60c8a9856cae817abdfe2fa17ab1
  | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | **Yes** |
 
 
