@@ -32,6 +32,13 @@ As of right now, this repo is considered, in open-source fashion, to be in versi
 - version 0.1.0 (coming up soon)
      - This version will include exercises to be conducted on an undergraduate course, and challenges for graduates students that, if completed sucessfully, could lead to copycat-related original results worthy of publication in AI / cognitive science journals.
 
+**Goals for version 1.0.0**:
+- Each project should contain:
+    - Source code of all major projects, complete and running
+    - Literature of all major projects, complete
+    - Exercises for undergraduate courses
+    - Challenges for graduate students (each challenge being able to lead to a publication, in principle)
+
 Welcome!  Join us.  This will be insanely fun.  
 
 ---
