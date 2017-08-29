@@ -153,13 +153,13 @@ Programming challenges:
 1. Integrate the best implementation ideas from Joseph Aaron Hager's project and co.py.cat.  
 
 Open Research Project:
-1. Implement Copycat in Dr. Abhijit's Mahabal framework in PySeqsee.
+1. Implement Copycat in Dr. Abhijit Mahabal's framework in PySeqsee.
      - document how the implementation is done
      - document how others may use the framework in their own projects
      - document what, if anything, becomes easier/simpler under the framework
      - document necessary changes *to the framework itself* to accomodate *both* Copycat and SeqSee
 
- 
+
 
 
 
