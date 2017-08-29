@@ -157,7 +157,7 @@ Open Research Project:
      - document how the implementation is done
      - document how others may use the framework in their own projects
      - document what, if anything, becomes easier/simpler under the framework
-     - document necessary changes *to the framework itself* to accomodate *both* Copycat and SeqSee
+     - document necessary changes *to the framework itself* to accommodate *both* Copycat and SeqSee
 
 
 
