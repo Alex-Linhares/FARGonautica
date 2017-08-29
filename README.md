@@ -31,17 +31,11 @@ REPOSITORY VERSION
 ---
 
 As of right now, this repo is considered, in open-source fashion, to be in version 0.0.8:
-- What we yearn for has reached the outer limits of the googleverse.  We have collected the projects that are available across the web (i.e., anyone is able to get this material by googling for it). Our yearnings now take us to the email spamming phase of authors of other projects.   
-
-- version 0.0.9 (coming up shortly)
-     - This version will include the key references of the Copycat project:  anyone that reads those articles should have a great understanding of what the project is about, what are easy and hard problems, how the architecture is mostly organized and why perception and analogy are inseparable.  
-- version 0.1.0 (coming up soon)
-     - This version will include exercises to be conducted on an undergraduate course, and challenges for graduates students that, if completed sucessfully, could lead to copycat-related original results worthy of publication in AI / cognitive science journals.
 
 **Goals for version 1.0.0**:
 - Each project should contain:
     - **Source code** of all major projects, complete and running
-    - **Literature** of all major projects, complete
+    - **Literature** of all major projects, complete with links to books
     - **Exercises** for undergraduate courses
     - **Programming challenges** large or small
     - **Research challenges** for graduate students (each challenge being able to lead to a publication, in principle)
@@ -61,22 +55,11 @@ So here is a table of what version 1 could be:
 | George | Yes | Yes | 25 | 3 | 8 |
 
 
-And here is how it stands at **version 0.0.8**
-So here is a table of what version 1 could be:
+And [Here's where we are!](repo-version.md)
 
-| Project | Sourcecode | Literature | Exercises | Programming challenges | Research challenges |
-|---------| --------- | ----------| ----------|  ----------| ----------|
-| Seek-Whence & SeqSee | Yes (SeqSee) | Yes | 0 | 0 | 0 |
-| Numbo | Yes (Coming soon) | Yes | 0 | 0 | 0 |
-| Copycat & Metacat | Yes | Yes | 0 | 0 | 0 |
-| Tabletop | No | Yes | 0 | 0 | 0 |
-| Letter Spirit | No | Yes | 0 | 0 | 0 |
-| Phaeaco | No | Yes | 0 | 0 | 0 |
-| Musicat | Yes | Yes | 0 | 0 | 0 |
-| Capyblanca | Yes | Yes | 0 | 0 | 0 |
-| George | No | Partially | 0 | 0 | 0 |
-
-Long ways to go to get there.  Please help by submitting pull requests!
+Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](how-to-contribute.md). You do **not** have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter 
+gracefully conceded the honorable title of "Associate FARGonaut" to me (Linhares), of which I am truly proud.  If you have ideas for
+exercises, research questions, programming challenges, or something else altogether... please get in touch!  
 
 ---
 We presume most users of this repository should be familiar with the following work:
