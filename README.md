@@ -133,7 +133,7 @@ Selected publications regarding Copycat:
  - Chalmers, French, and Hofstadter (1992) [High-level perception, representation, and analogy: a critique of artificial intelligence methodology](/Literature/Foundations-Chalmers.French.and.Hofstadter-1992-Journal%20of%20Experimental%20and%20Theoretical%20Artificial%20Intelligence.pdf), Journal of Experimental and Theoretical Artificial Intelligence 4  185--211.
 
 
-Undergraduate exercises:
+**Undergraduate exercises**:
 1. Install Copycat on your machine and run some of the examples discussed in the literature.
 1. Create three copycat problems that are not discussed in the above literature
 1. Consider the SME (Structure-Mapping Engine) discussed in the literature.  Could it solve the following problems? If so, how? If not, why not?
@@ -147,17 +147,18 @@ Undergraduate exercises:
 1. What does the slipnet do?  Why the term "*slip*"?
 
 
-Programming challenges:
+**Programming challenges**:
 1. Make the code in Python **robust**: can it solve a large number of interesting problems, with different random seeds, without breaking?
 1. Design a GUI for the project co.py.cat.. maybe taking from Joseph Aaron Hager's project?
 1. Integrate the best implementation ideas from Joseph Aaron Hager's project and co.py.cat.  
 
-Open Research Project:
+**Open Research Project**:
 1. Implement Copycat in Dr. Abhijit Mahabal's framework in PySeqsee.
      - document how the implementation is done
      - document how others may use the framework in their own projects
      - document what, if anything, becomes easier/simpler under the framework
      - document necessary changes *to the framework itself* to accommodate *both* Copycat and SeqSee
+     - Write up a paper, and teach us how to make the development of a FARG architecture easier.
 
 
 
@@ -281,6 +282,16 @@ Future and ongoing activities:
   - Some ideas on a technical, mathematical, definition of what is commonly called *strong AI* or *AI-Complete* are being sketched. They use mostly combinatorics and information theory... but they stem from the solving of Bongard problems.
 
 If you are interested in joining these future activities, please get in touch!
+
+**Undergraduate (and graduate-level) exercises**:
+1. Computer chess programs basically expand the decision tree.  Explain why people play in a fundamentally different form.  Cite the evidence for the human approach.
+1. Consider the model of chunking proposed by the computational cognitive science CHREST.  What are the arguments that it falls short?
+1. How can Capyblanca "see abstractions"?  Can CHREST do the same?
+1. Why is it claimed that Chase and Simon did a mistake in their classic paper "Perception in chess"?  What is the evidence for that claim?
+1. An master chess player made serious mistakes in reconstructing the board (after seeing it twice for 5 seconds only). Why does Linhares claim that Figure 4 of [this paper](/Literature/Chess-Capyblanca-Linhares%20et%20al-2012-Cognitive%20Systems%20Research.pdf) is "remarkable"?
+1. What is meant by "strategically equivalent" chess positions?
+1. What is meant by "abstract representational invariance"?
+1. What is meant by "the abstraction is the *most efficent* level of description"? 
 
 
 PROJECT: MUSICAT
