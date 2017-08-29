@@ -24,6 +24,12 @@ This repository has a number of goals:
     not they make sense.  (Linhares is going to try to teach 5 classes in 2017; if "reasonably successful",
     these classes will be posted here).
 
+
+Welcome!  Join us.  This will be insanely fun.  
+
+REPOSITORY VERSION 
+---
+
 As of right now, this repo is considered, in open-source fashion, to be in version 0.0.8:
 - What we yearn for has reached the outer limits of the googleverse.  We have collected the projects that are available across the web (i.e., anyone is able to get this material by googling for it). Our yearnings now take us to the email spamming phase of authors of other projects.   
 
@@ -53,8 +59,6 @@ So here is a table of what version 1 could be:
 | Musicat | Yes | Yes | 15 | 5 | 9 |
 | Capyblanca | Yes | Yes | 15 | 4 | 4 |
 | George | Yes | Yes | 25 | 3 | 8 |
-
-Welcome!  Join us.  This will be insanely fun.  
 
 ---
 We presume most users of this repository should be familiar with the following work:
