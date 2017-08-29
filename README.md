@@ -39,7 +39,7 @@ Fluid Concept and Creative Analogies (FCCA) is the central publication concernin
 REPOSITORY VERSION & HOW YOU CAN CONTRIBUTE
 ---
 
-As of right now, this repo is considered, in open-source fashion, to be in version 0.0.8:
+As of right now, this repo is considered, in open-source fashion, to be in version 0.1.0:
 
 **Goals for version 1.0.0**:
 - Each project should contain:
