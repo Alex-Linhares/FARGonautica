@@ -27,7 +27,7 @@ This repository has a number of goals:
 
 Welcome!  Join us.  This will be insanely fun.  
 
-REPOSITORY VERSION 
+REPOSITORY VERSION
 ---
 
 As of right now, this repo is considered, in open-source fashion, to be in version 0.0.8:
@@ -59,6 +59,24 @@ So here is a table of what version 1 could be:
 | Musicat | Yes | Yes | 15 | 5 | 9 |
 | Capyblanca | Yes | Yes | 15 | 4 | 4 |
 | George | Yes | Yes | 25 | 3 | 8 |
+
+
+And here is how it stands at **version 0.0.8**
+So here is a table of what version 1 could be:
+
+| Project | Sourcecode | Literature | Exercises | Programming challenges | Research challenges |
+|---------| --------- | ----------| ----------|  ----------| ----------|
+| Seek-Whence & SeqSee | Yes (SeqSee) | Yes | 0 | 0 | 0 |
+| Numbo | Yes (Coming soon) | Yes | 0 | 0 | 0 |
+| Copycat & Metacat | Yes | Yes | 0 | 0 | 0 |
+| Tabletop | No | Yes | 0 | 0 | 0 |
+| Letter Spirit | No | Yes | 0 | 0 | 0 |
+| Phaeaco | No | Yes | 0 | 0 | 0 |
+| Musicat | Yes | Yes | 0 | 0 | 0 |
+| Capyblanca | Yes | Yes | 0 | 0 | 0 |
+| George | No | Partially | 0 | 0 | 0 |
+
+Long ways to go to get there.  Please help by submitting pull requests!
 
 ---
 We presume most users of this repository should be familiar with the following work:
