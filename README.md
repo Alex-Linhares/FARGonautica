@@ -137,10 +137,10 @@ Undergraduate exercises:
 1. Install Copycat on your machine and run some of the examples discussed in the literature.
 1. Create three copycat problems that are not discussed in the above literature
 1. Consider the SME (Structure-Mapping Engine) discussed in the literature.  Could it solve the following problems? If so, how? If not, why not?
-- abc:abd ijk:?
-- abc:abd iijjkk:?
-- abc:abd rppkkk:?
-- abc:abd ijkl:?
+    - abc:abd ijk:?
+    - abc:abd iijjkk:?
+    - abc:abd rppkkk:?
+    - abc:abd ijkl:?
 1. Why is it claimed that analogy-making is part of perception?
 1. How do analogy-making and perception interact in Copycat?  Are they different modules? If so, why?  If not, Why not?
 
