@@ -17,7 +17,13 @@ This repository has a number of goals:
      - Theses, etc
     iii) we want to archive all materials for an online course on Fluid Concepts & Creative Analogies (also called "Fluid Concepts", "FARG architectures", "Copycat Architecture", "Hofstadter School", "Active Symbols", etc).  By proposing this course, ideally, **every single undergraduate program** across the globe would be able to study the principles of this school of thought, **see those principles in action**, and **compare those principles with different approaches**.   Graduate students, now with easy access to the code, could play with their own ideas, and find out whether or not they make sense.  (Linhares is going to try to teach 5 classes in 2017; if "reasonably successful", these classes will be posted here).
 
+As of right now, this repo is considered, in open-source fashion, to be in version 0.0.8:
+- What we yearn for has reached the outer limits of the googleverse.  We have collected the projects that are available across the web (i.e., anyone is able to get this material by googling for it). Our yearnings now take us to the email spamming phase of authors of other projects.   
 
+- version 0.0.9 (coming up shortly)
+     - This version will include the key references of the Copycat project:  anyone that reads those articles should have a great understanding of what the project is about, what are easy and hard problems, how the architecture is mostly organized and why perception and analogy are inseparable.  
+- version 0.1.0 (coming up soon)
+     - This version will include exercises to be conducted on an undergraduate course, and challenges for graduates students that, if completed sucessfully, could lead to copycat-related original results worthy of publication in AI / cognitive science journals.
 
 Welcome!  Join us.  This will be insanely fun.  
 
