@@ -126,11 +126,11 @@ Implementations of the Copycat project:
 
 Please see [Mitchell](http://web.cecs.pdx.edu/~mm/)'s [Copycat page](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html). Scott Boland's re-implementation in Java is 404'ing at The University of Queensland, but it is available [here in this repo](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) and in [archive.org](https://archive.org/details/JavaCopycat).
 
-Publications regarding Copycat:
+Selected publications regarding Copycat:
  - FCCA (see above)
  - [**Mitchell, M. (1992) Analogy-Making as Perception. MIT Press.**](http://web.cecs.pdx.edu/~mm/books.html)
- - Physica D
- - Jetai
+ - Mitchell, M. and Hofstadter, D. R. (1990). [The emergence of understanding in a computer model of concepts and analogy-making](/Literature/Copycat-Mitchell.and.Hofstadter-1990-Physica%20D%20Nonlinear%20Phenomena.pdf). Physica D, 42, 322--334, https://doi.org/10.1016/0167-2789(90)90086-5.
+ - Chalmers, French, and Hofstadter (1992) [High-level perception, representation, and analogy: a critique of artificial intelligence methodology](/Literature/Foundations-Chalmers.French.and.Hofstadter-1992-Journal%20of%20Experimental%20and%20Theoretical%20Artificial%20Intelligence.pdf), Journal of Experimental and Theoretical Artificial Intelligence 4  185--211.
 
 
 Undergraduate exercises:
@@ -141,9 +141,25 @@ Undergraduate exercises:
     - abc:abd iijjkk:?
     - abc:abd rppkkk:?
     - abc:abd ijkl:?
+    - abc:abd xyz:?
 1. Why is it claimed that analogy-making is part of perception?
 1. How do analogy-making and perception interact in Copycat?  Are they different modules? If so, why?  If not, Why not?
+1. What does the slipnet do?  Why the term "*slip*"?
 
+
+Programming challenges:
+1. Make the code in Python **robust**: can it solve a large number of interesting problems, with different random seeds, without breaking?
+1. Design a GUI for the project co.py.cat.. maybe taking from Joseph Aaron Hager's project?
+1. Integrate the best implementation ideas from Joseph Aaron Hager's project and co.py.cat.  
+
+Open Research Project:
+1. Implement Copycat in Dr. Abhijit's Mahabal framework in PySeqsee.
+     - document how the implementation is done
+     - document how others may use the framework in their own projects
+     - document what, if anything, becomes easier/simpler under the framework
+     - document necessary changes *to the framework itself* to accomodate *both* Copycat and SeqSee
+
+ 
 
 
 
