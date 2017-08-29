@@ -79,7 +79,7 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
 Architectures to new domains.  Eventually we hope to have a complete set of archived projects (or linked from
 here when being maintained).
 
- | Project | Author | Language | Available at [FARGlexandria](https://github.com/Alex-Linhares/FARGlexandria)? |
+ | Project | Author | Language | Available at [FARGonautica](https://github.com/Alex-Linhares/FARGonautica)? |
  |---------| --------- | ----------| ----------|
  | Seek-Whence | [Marsha Meredith](https://scholar.google.com.br/scholar?hl=en&q=marsha+meredith&btnG=&as_sdt=1%2C5&as_sdtp=) | ?? | Not Yet |
  | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | **Yes (coming soon)** |
@@ -231,7 +231,7 @@ Future and ongoing activities:
   - A rewrite of Daniel Defays "Numbo" in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans
   - A rewrite of Capyblanca in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans
   - An original, Fluid-Concepts-based, re-write of Kemp and Tenembaum's Forms in Mahabal's Framework is in the plans
-  - ...as is the idea of a book tentatively entitled "Fluid concepts: a course"
+  - ...as is the idea of a book/(free e-book) on the computer science of building Fluid concepts architectures
   - The long-term goal is to create a computational architecture that, without knowing the rules or goals of a game, can come to understand and play combinatorics games like checkers, chess, or go.
   - Another long-term goal is to create a computational architecture that is able to solve Bongard problems and Raven's matrices. Extending Phaeaco beyond what is currently possible.
   - A paper on a "measure of human intuition" is in the plans, after Dr. Eric Nichols agreed that the idea and the methodology seems to make sense.
