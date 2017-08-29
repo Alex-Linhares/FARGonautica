@@ -58,7 +58,7 @@ So here is a table of what version 1 could be:
 
 Do you see how cool this could be?  Not only a library but also a course and a set of research questions... don't you wish your teachers at university (or even high school) had something like this?  And [here's where we are!](repo-version.md)
 
-Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](how-to-contribute.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter
+Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](contributing.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter
 gracefully conceded the honorable title of "Associate FARGonaut" to me (Linhares), of which I am truly proud.  If you have ideas for
 exercises, research questions, programming challenges, or something else altogether... please get in touch!  
 
