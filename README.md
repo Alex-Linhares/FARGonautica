@@ -15,13 +15,13 @@ This repository has a number of goals:
      - CRCC reports,
      - published papers,
      - Theses, etc
-    iii) we want to archive all materials for an online course on Fluid Concepts & Creative Analogies 
-    (also called "Fluid Concepts", "FARG architectures", "Copycat Architecture", "Hofstadter School", 
-    "Active Symbols", etc).  By proposing this course, ideally, **every single undergraduate program** 
-    across the globe would be able to study the principles of this school of thought, **see those 
-    principles in action**, and **compare those principles with different approaches**.   Graduate 
-    students, now with easy access to the code, could play with their own ideas, and find out whether or 
-    not they make sense.  (Linhares is going to try to teach 5 classes in 2017; if "reasonably successful", 
+    iii) we want to archive all materials for an online course on Fluid Concepts & Creative Analogies
+    (also called "Fluid Concepts", "FARG architectures", "Copycat Architecture", "Hofstadter School",
+    "Active Symbols", etc).  By proposing this course, ideally, **every single undergraduate program**
+    across the globe would be able to study the principles of this school of thought, **see those
+    principles in action**, and **compare those principles with different approaches**.   Graduate
+    students, now with easy access to the code, could play with their own ideas, and find out whether or
+    not they make sense.  (Linhares is going to try to teach 5 classes in 2017; if "reasonably successful",
     these classes will be posted here).
 
 As of right now, this repo is considered, in open-source fashion, to be in version 0.0.8:
