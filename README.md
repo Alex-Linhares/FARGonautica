@@ -66,7 +66,7 @@ exercises, research questions, programming challenges, or something else altoget
 ---
 We presume most users of this repository should be familiar with the following work:
 
-Hofstadter, D., and FARG (1995) *Fluid Concepts and Creative Analogies*, Basic Books.
+[**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
 
 Fluid Concept and Creative Analogies (FCCA) is the central publication concerning these projects.  Whereas numerous ideas had been developed before, in Gödel, Escher, Bach: an eternal golden braid; The Minds' I, and Metamagical Themas, it is FCCA that finally synthetizes the whole of the thinking over the years in computational models:  The *parallel terraced scan*, the idea of [*temperature*](/Literature/Hofstadter-Non.Deterministic.Approach.to.Analogy.pdf) controlling randomness, the *slipnet* (a semantic network in which nodes can become closer or farther apart based on context), the idea of *codelets* and their imprecise order of execution, and so forth.  
 
