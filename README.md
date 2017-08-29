@@ -3,7 +3,7 @@
 
 
 
-Don't you just hate it when you get a new computer and you have to scour the entire internet in search of all the FARG projects yet once again? All those long days of suffering by googling for everything; finding out that your old files are corrupt; and email spamming the authors? Aren't you tired of having your wife and kids furiously screaming at you just because they need to run Letter Spirit with the boat style? When was the last time you checked the integrity of [pcsv84.exe](/Software/Metacat/pcsv69b.exe) to make sure you were ready to run chez scheme?  Haven't you always dreamt of a magical forward-looking place where you could get every single FARG project?  Well do we have good news for you! As from now on with this exclusive, limited-time offer, all your problems have been solved! Now you can scream out the window that those days of excruciating agony are finally gone. Congratulations, sir, for you have made it to the very center of the internet--the very place where the smart and the fine-looking congregate.  Open up that big smile and tap yourself on the back to fully enjoy your modern conveniences of cloning this repo in your notebook, in your boss' desktop unbeknownst to him, in public libraries, Apple stores, and more!  Never forget: having all FARG projects safely backed-up, sharply organized, and always ready to run is the very recipe for a modern happy family.
+Congratulations, for you have made it to the very center of the internet--the very place where the smart and the fine-looking congregate.
 
 This repository has a number of goals:  
 
@@ -12,17 +12,18 @@ This repository has a number of goals:
     Tabletop to Letter Spirit, Metacat, Musicat, etc, alongside the info on how to install and run it;
     ii) we want to collect all the literature (except for published books, of course):
      - unpublished papers,
-     - CRCC reports,
+     - CRCC reports related to FARG architectures,
      - published papers,
      - Theses, etc
     iii) we want to archive all materials for an online course on Fluid Concepts & Creative Analogies
     (also called "Fluid Concepts", "FARG architectures", "Copycat Architecture", "Hofstadter School",
     "Active Symbols", etc).  By proposing this course, ideally, **every single undergraduate program**
     across the globe would be able to study the principles of this school of thought, **see those
-    principles in action**, and **compare those principles with different approaches**.   Graduate
-    students, now with easy access to the code, could play with their own ideas, and find out whether or
-    not they make sense.  (Linhares is going to try to teach 5 classes in 2017; if "reasonably successful",
-    these classes will be posted here).
+    principles in action**, and **compare those principles with different approaches**.   Moving to more
+    advanced stuff, Graduate students, now with easy access to the code, could have a complete course on
+    the computer science of building these architectures; they could, for instance, play with their own
+    ideas, and find out whether or not they make sense.  (Linhares is going to try to teach 5 classes in
+    2017; if "reasonably successful", these classes will be posted here).
 
 
 Welcome!  Join us.  This will be insanely fun.  
