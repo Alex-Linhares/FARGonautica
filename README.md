@@ -126,6 +126,28 @@ Implementations of the Copycat project:
 
 Please see [Mitchell](http://web.cecs.pdx.edu/~mm/)'s [Copycat page](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html). Scott Boland's re-implementation in Java is 404'ing at The University of Queensland, but it is available [here in this repo](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) and in [archive.org](https://archive.org/details/JavaCopycat).
 
+Publications regarding Copycat:
+ - FCCA (see above)
+ - [**Mitchell, M. (1992) Analogy-Making as Perception. MIT Press.**](http://web.cecs.pdx.edu/~mm/books.html)
+ - Physica D
+ - Jetai
+
+
+Undergraduate exercises:
+1. Install Copycat on your machine and run some of the examples discussed in the literature.
+1. Create three copycat problems that are not discussed in the above literature
+1. Consider the SME (Structure-Mapping Engine) discussed in the literature.  Could it solve the following problems? If so, how? If not, why not?
+- abc:abd ijk:?
+- abc:abd iijjkk:?
+- abc:abd rppkkk:?
+- abc:abd ijkl:?
+1. Why is it claimed that analogy-making is part of perception?
+1. How do analogy-making and perception interact in Copycat?  Are they different modules? If so, why?  If not, Why not?
+
+
+
+
+
 
 
 PROJECT: METACAT
