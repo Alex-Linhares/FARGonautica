@@ -55,7 +55,7 @@ So here is a table of what version 1 could be:
 | George | Yes | Yes | 25 | 3 | 8 |
 
 
-Do you see how cool this could be?  Not only a library but also a course and a set of research questions... don't you wish your teachers, say, at kindergarten, had something like this?  And [here's where we are!](repo-version.md)
+Do you see how cool this could be?  Not only a library but also a course and a set of research questions... don't you wish your teachers at university (or even high school) had something like this?  And [here's where we are!](repo-version.md)
 
 Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](how-to-contribute.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter
 gracefully conceded the honorable title of "Associate FARGonaut" to me (Linhares), of which I am truly proud.  If you have ideas for
@@ -102,24 +102,12 @@ PROJECT: COPYCAT
 
 Find Dr. Mitchell in  [Homepage](http://web.cecs.pdx.edu/~mm/)  |  [Wikipedia](https://en.wikipedia.org/wiki/Melanie_Mitchell)  |  [Google Scholar](https://scholar.google.com.br/citations?user=k4gbv2AAAAAJ&hl=en&oi=ao)  |  [Academia.edu](https://pdx.academia.edu/MelanieMitchell)
 
-Copycat is a model of analogy making and human cognition based on the concept of the parallel terraced scan, developed
-in 1988 by Douglas Hofstadter, Melanie Mitchell, and others at the Center for Research on Concepts and Cognition,
-Indiana University Bloomington.
+Copycat is a model of analogy making and human cognition based on the concept of the parallel terraced scan, developed in 1988 by Douglas Hofstadter, Melanie Mitchell, and others at the Center for Research on Concepts and Cognition, Indiana University Bloomington.
 
-Copycat produces answers to such problems as "abc is to abd as ijk is to what?" (abc:abd :: ijk:?). Hofstadter and
-Mitchell consider analogy making as the core of high-level cognition, or high-level perception, as Hofstadter calls it,
-basic to recognition and categorization. High-level perception emerges from the spreading activity of many independent
-processes, called codelets, running in parallel, competing or cooperating. They create and destroy temporary perceptual
-constructs, probabilistically trying out variations to eventually produce an answer. The codelets rely on an associative
-network, slipnet, built on pre-programmed concepts and their associations (a long-term memory). The changing activation
-levels of the concepts make a conceptual overlap with neighboring concepts.
+Copycat produces answers to such problems as "abc is to abd as ijk is to what?" (abc:abd :: ijk:?). Hofstadter and Mitchell consider analogy making as the core of high-level cognition, or high-level perception, as Hofstadter calls it, basic to recognition and categorization. High-level perception emerges from the spreading activity of many independent processes, called codelets, running in parallel, competing or cooperating. They create and destroy temporary perceptual constructs, probabilistically trying out variations to eventually produce an answer. The codelets rely on an associative
+network, slipnet, built on pre-programmed concepts and their associations (a long-term memory). The changing activation levels of the concepts make a conceptual overlap with neighboring concepts.
 
-Copycat's architecture is tripartite, consisting of a slipnet, a working area (also called workspace, similar to
-blackboard systems), and the coderack (with the codelets). The slipnet is a network composed of nodes, which represent
-permanent concepts, and weighted links, which are relations, between them. It differs from traditional semantic networks
-as the effective weight associated with a particular link may vary through time according to the activation level of
-specific concepts (nodes). The codelets build structures in the working area and modify activations in the slipnet
-accordingly (bottom-up processes), and the current state of slipnet determines probabilistically which codelets must be run (top-down influences).
+Copycat's architecture is tripartite, consisting of a slipnet, a working area (also called workspace, similar to blackboard systems), and the coderack (with the codelets). The slipnet is a network composed of nodes, which represent permanent concepts, and weighted links, which are relations, between them. It differs from traditional semantic networks as the effective weight associated with a particular link may vary through time according to the activation level of specific concepts (nodes). The codelets build structures in the working area and modify activations in the slipnet accordingly (bottom-up processes), and the current state of slipnet determines probabilistically which codelets must be run (top-down influences).
 
 Implementations of the Copycat project:
 
@@ -153,7 +141,7 @@ Dr. Marshall is maintaining [the Metacat Project page](http://science.slc.edu/~j
 PROJECT: NUMBO
 ---
 
-Find Dr. Defays in [Homepage]()  |  [Google Scholar]()
+Find Dr. Defays in [Homepage](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369)  |  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=daniel+defays&btnG=&as_sdt=1%2C5&as_sdtp=)
 
 Daniel Defays sent in 2006 a printed version of the sourcecode to Alex Linhares.  This will be scanned
 and archived in this repo---eventually.
@@ -167,47 +155,28 @@ A Concept-centered Architecture for Sequence Perception
 
 Find Dr. Mahabal in  [Google Scholar](https://scholar.google.com.br/citations?user=67MnndUAAAAJ&hl=en&oi=ao)  |  [Academia.edu](https://google.academia.edu/AbhijitMahabal)
 
-One of the goals of this project is to design and implement a computer program
-that can extend integer sequences intelligently, and the project has resulted in the
-creation of the program named ―Seqsee‖ (pronounced ―sexy‖). Seqsee can extend a wide
-range of cognitively interesting sequences, including the following sequence (Seqsee is
-presented the sequence without the groupings indicated by the parentheses):
+One of the goals of this project is to design and implement a computer program that can extend integer sequences intelligently, and the project has resulted in the creation of the program named ―Seqsee‖ (pronounced ―sexy‖). Seqsee can extend a wide range of cognitively interesting sequences, including the following sequence (Seqsee is presented the sequence without the groupings indicated by the parentheses):
 
     ( (1) ) ( (1) (1 2) ) ( (1) (1 2) (1 2 3) )
 
-If people are shown this sequence (without the parentheses), they quickly form a
-group consisting of the three initial ―1‖s, but then realize that each plays a slightly
-different role in the sequence. Like people, Seqsee is initially distracted by the three
-consecutive ―1‖s, but gradually figures out that the second ―1‖ is an ascending group,
-and that the initial ―1‖ is an ascending group made up of one ascending group.
+If people are shown this sequence (without the parentheses), they quickly form a group consisting of the three initial ―1‖s, but then realize that each plays a slightly different role in the sequence. Like people, Seqsee is initially distracted by the three consecutive ―1‖s, but gradually figures out that the second ―1‖ is an ascending group, and that the initial ―1‖ is an ascending group made up of one ascending group.
 
-Architecturally, Seqsee is a descendant of Hofstadter & Mitchell‘s computer
-program Copycat, and adds several novel features that allow it to easily modify behavior
-in response to its recent perceptions, to form specific expectations such as ―an
-ascending group is likely to be located here‖, to more quickly understand sequences
-having previously seen similar sequences, to see an entity as something else, and to do
-all this without the use of brute force.
+Architecturally, Seqsee is a descendant of Hofstadter & Mitchell‘s computer program Copycat, and adds several novel features that allow it to easily modify behavior in response to its recent perceptions, to form specific expectations such as an ascending group is likely to be located here, to more quickly understand sequences having previously seen similar sequences, to see an entity as something else, and to do all this without the use of brute force.
 
-Seqsee uses several ideas in achieving its goals: William James‘ notions of the
-fringe and the stream of thought; analogies between objects; categorization and labeling
-of objects and of situations, and the detection of categories without using brute-force
-tests for all sorts of categories; the notion of context which influences and is influenced
-by perception; the notion, similar to affordances, of the ―action fringe‖ of an object; and
-a category-based long-term memory.
+Seqsee uses several ideas in achieving its goals: William James‘ notions of the fringe and the stream of thought; analogies between objects; categorization and labeling of objects and of situations, and the detection of categories without using brute-force
+tests for all sorts of categories; the notion of context which influences and is influenced by perception; the notion, similar to affordances, of the action fringe of an object; and a category-based long-term memory.
 
 
-The dissertation (Available here and in [Dr. Mahabal's website](http://www.amahabal.com/files/Seqsee--doublesided.pdf)
-describes the program and its principles, which are much more general
-than integer-sequence extrapolation, and compares its performance with human
+The dissertation (Available [here](/Literature) and in [Dr. Mahabal's website](http://www.amahabal.com/files/Seqsee--doublesided.pdf)
+describes the program and its principles, which are much more general than integer-sequence extrapolation, and compares its performance with human
 performance.
 
-Seqsee is written in Perl and a new version is written in Python and the code is maintained
-by Dr. Mahabal---which is why we do not provide the code in this git repo.  For the latest
-versions, see:
+Seqsee is written in Perl and a new version is written in Python and the code is maintained by Dr. Mahabal---which is why we do not provide the code in this git repo.  For the latest versions, see:
 
 [Perl version, original project](https://github.com/amahabal/Seqsee)
 
 [Python version being rewritten](https://github.com/amahabal/Pyhttps://scholar.google.com.br/scholar?hl=en&q=Francisco+Lara-Dammer&btnG=&as_sdt=1%2C5&as_sdtp=&oq=francisco+Seqsee)
+
 
 PROJECT: George
 ---

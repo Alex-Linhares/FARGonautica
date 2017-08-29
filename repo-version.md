@@ -39,7 +39,7 @@ Because when we get there, here's what we can do:
 
 ![Fargonautica-book](FARGonautica-a-course-saved-image-canva.png)
 
-That's right: we can do a full-blown book/e-book with *a course on the computer science of building FARG architectures*.  Don't worry about the details now... Whether or not Hofstadter will join... whether or not it will be published anywhere fancy: if you're like me and you feel that this is something that should exist, join us and let's make it happen!  
+That's right: we can do a full-blown book/e-book with *a course on the computer science of building FARG architectures*.  But two things:  First, this book would be the subject of *another* repository; and second, Don't worry about the details now... Whether or not Hofstadter will join... whether or not it will be published anywhere fancy: if you're like me and you feel that this is something that should exist, join us and let's make it happen!  
 
 
 
