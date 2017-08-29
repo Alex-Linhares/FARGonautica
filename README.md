@@ -56,7 +56,7 @@ So here is a table of what version 1 could be:
 | George | Yes | Yes | 25 | 3 | 8 |
 
 
-Do you see how cool this could be?  Not only a library but also a course and a set of research questions... don't you wish your teachers at university (or even high school) had something like this?  And [here's where we are!](repo-version.md)
+So this repo can not only be a library but also a source for an undergraduate course and a set of research questions... don't you wish your teachers at university (or even high school) had something like this?  And [here's where we are!](repo-version.md)
 
 Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](how-to-contribute.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter
 gracefully conceded the honorable title of "Associate FARGonaut" to me (Linhares), of which I am truly proud.  If you have ideas for
@@ -91,7 +91,7 @@ here when being maintained).
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Not open-source currently |
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | **Yes** |
- | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | Not yet |
+ | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | Dr. Lara-Dammer desires to clean up the code prior to release |
  | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | **Yes** |
 
 
@@ -188,9 +188,13 @@ Modeling Human Discoverativity in Geometry
 Find Dr. Lara-Dammer at [LinkedIn](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/)  |  [Homepage at IU](https://www.cs.indiana.edu/~flaradam/)  |  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=Francisco+Lara-Dammer&btnG=&as_sdt=1%2C5&as_sdtp=&oq=francisco+)  |  [Academia.edu (?)](https://independent.academia.edu/FranciscoLaraDammer)
 
 Publications:
-- Modeling Human Discoverativity in Geometry, PhD Thesis, Indiana University,
+- Lara-Dammer, F. (2009) Modeling Human Discoverativity in Geometry, PhD Thesis, Indiana University,
 - Lara-Dammer & Hofstadter, [*Perception of Direction and its Influence on Geometric Discoveries*](https://cogsci.indiana.edu/pub/lara-dammer.perception-of-direction-2006.pdf)
 - [Lara-Dammer, Hofstadter & Goldstone (2017) A computer model of context-dependent perception in a very simple world, *Journal of Experimental and Theoretical Artificial Intelligence* 1--36](http://www.tandfonline.com/eprint/hNcJzAjrviqTaWjzR235/full)
+
+2017-08-29. Dr. Lara-Dammer's Thesis is not available here as he is working on a book on the subject.  We'll stay tuned and link to it as soon as more information is available.
+
+2017-08-29. Dr. Lara-Dammer desires to clean up the code before a wider release.  
 
 
 PROJECT: CAPYBLANCA
