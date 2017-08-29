@@ -21,6 +21,12 @@ This repository has a number of goals:
 
 Welcome!  Join us.  This will be insanely fun.  
 
+---
+We presume most users of this repository should be familiar with the following work: 
+
+Hofstadter, D., and FARG (1995) *Fluid Concepts and Creative Analogies*, Basic Books.
+
+Fluid Concept and Creative Analogies (FCCA) is the central publication concerning these projects.  Whereas numerous ideas had been developed before, in Gödel, Escher, Bach: an eternal golden braid; The Minds' I, and Metamagical Themas, it is FCCA that finally synthetizes the whole of the thinking over the years in computational models:  The *parallel terraced scan*, the idea of [*temperature*](/Literature/Hofstadter-Non.Deterministic.Approach.to.Analogy.pdf) controlling randomness, the *slipnet* (a semantic network in which nodes can become closer or farther apart based on context), the idea of *codelets* and their imprecise order of execution, and so forth.  
 
 
 
@@ -168,10 +174,10 @@ Modeling Human Discoverativity in Geometry
 
 [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) &  [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
-Find Dr. Lara-Dammer at [LinkedIn](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/)  |  [Homepage at IU](https://www.cs.indiana.edu/~flaradam/)  |  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=Francisco+Lara-Dammer&btnG=&as_sdt=1%2C5&as_sdtp=&oq=francisco+)  |  [Academia.edu (?)](https://independent.academia.edu/FranciscoLaraDammer) 
+Find Dr. Lara-Dammer at [LinkedIn](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/)  |  [Homepage at IU](https://www.cs.indiana.edu/~flaradam/)  |  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=Francisco+Lara-Dammer&btnG=&as_sdt=1%2C5&as_sdtp=&oq=francisco+)  |  [Academia.edu (?)](https://independent.academia.edu/FranciscoLaraDammer)
 
-Publications: 
-- Modeling Human Discoverativity in Geometry, PhD Thesis, Indiana University, 
+Publications:
+- Modeling Human Discoverativity in Geometry, PhD Thesis, Indiana University,
 - Lara-Dammer & Hofstadter, [*Perception of Direction and its Influence on Geometric Discoveries*](https://cogsci.indiana.edu/pub/lara-dammer.perception-of-direction-2006.pdf)
 - [Lara-Dammer, Hofstadter & Goldstone (2017) A computer model of context-dependent perception in a very simple world, *Journal of Experimental and Theoretical Artificial Intelligence* 1--36](http://www.tandfonline.com/eprint/hNcJzAjrviqTaWjzR235/full)
 
