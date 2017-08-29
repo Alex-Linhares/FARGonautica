@@ -1,5 +1,5 @@
-# FARGlexandria
-**the lost library of Fluid Concepts & Creative Analogies projects**
+# FARGonautica
+**A repository of Fluid Concepts & Creative Analogies projects**
 
 
 
