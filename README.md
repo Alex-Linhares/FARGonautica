@@ -61,11 +61,6 @@ Long ways to go to get there, hah?  Please help; if you would like to contribute
 gracefully conceded the honorable title of "Associate FARGonaut" to me (Linhares), of which I am truly proud.  If you have ideas for
 exercises, research questions, programming challenges, or something else altogether... please get in touch!  
 
-Because when we get there, here's what we can do:
-
-![Fargonautica-book](FARGonautica-a-course-saved-image-canva.png)
-
-That's right: we can do a full-blown book/e-book with *a course on the computer science of building FARG architectures*.  Don't worry about the details now... Whether or not Hofstadter will join... whether or not it will be published anywhere fancy: if you're like me and you feel that this is something that should exist, join us and let's make it happen!  
 
 ---
 We presume most users of this repository should be familiar with the following work:
