@@ -22,7 +22,7 @@ This repository has a number of goals:
 Welcome!  Join us.  This will be insanely fun.  
 
 ---
-We presume most users of this repository should be familiar with the following work: 
+We presume most users of this repository should be familiar with the following work:
 
 Hofstadter, D., and FARG (1995) *Fluid Concepts and Creative Analogies*, Basic Books.
 
@@ -276,7 +276,8 @@ PROJECT: LETTER SPIRIT
 ---
 Defcon 1. 404 file not found so far...
 
-If you have any information (screenshots, sourcecode, homepage / github page of authors, email, etc.), please let us solve issues #5 and #6 of this repository.
+**LETTER SPIRIT:  OPEN ISSUES**
+If you have any information (screenshots, sourcecode, homepage / github page of authors, email, etc.), please let us solve [issues 5](/issues/5) and [6](/issues/6) of this repository.
 
 [Gary McGraw](https://www.garymcgraw.com/)
 
