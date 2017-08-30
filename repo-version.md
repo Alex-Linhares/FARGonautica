@@ -88,3 +88,4 @@ Here is how this repository stands:
 | Musicat | Yes | Yes | 0 | 0 | 0 |
 | Capyblanca | Yes | Yes | 0 | 0 | 0 |
 | George | No | Partially | 0 | 0 | 0 |
+    

@@ -92,7 +92,7 @@ here when being maintained).
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Closed-source |
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | **Yes** |
- | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | Dr. Lara-Dammer desires to clean up the code prior to release |
+ | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | (asap) Dr. Lara-Dammer desires to clean up the code prior to release (2017-08-29) |
  | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | **Yes** |
 
 
@@ -145,6 +145,8 @@ Selected publications regarding Copycat:
 1. Why is it claimed that analogy-making is part of perception?
 1. How do analogy-making and perception interact in Copycat?  Are they different modules? If so, why?  If not, Why not?
 1. What does the slipnet do?  Why the term "*slip*"?
+1. What does the temperature do?  Do codelets regulate the temperature? Does temperature regulate the codelets?
+
 
 
 **Programming challenges**:
@@ -283,7 +285,7 @@ Future and ongoing activities:
 
 If you are interested in joining these future activities, please get in touch!
 
-**Undergraduate (and graduate-level) exercises**:
+**Undergraduate exercises**:
 1. Computer chess programs basically expand the decision tree.  Explain why people play in a fundamentally different form.  Cite the evidence for the human approach.
 1. Consider the model of chunking proposed by the computational cognitive science CHREST.  What are the arguments that it falls short?
 1. How can Capyblanca "see abstractions"?  Can CHREST do the same?
@@ -291,7 +293,18 @@ If you are interested in joining these future activities, please get in touch!
 1. An master chess player made serious mistakes in reconstructing the board (after seeing it twice for 5 seconds only). Why does Linhares claim that Figure 4 of [this paper](/Literature/Chess-Capyblanca-Linhares%20et%20al-2012-Cognitive%20Systems%20Research.pdf) is "remarkable"?
 1. What is meant by "strategically equivalent" chess positions?
 1. What is meant by "abstract representational invariance"?
-1. What is meant by "the abstraction is the *most efficent* level of description"? 
+1. What is meant by "the abstraction is the *most efficent* level of description"?
+
+**Programming challenges**
+1. Port to python 3.  To be started soon.  
+1. Afterwards, a port to Abhijit Mahabal's FARG Framework.
+
+**Open research problems**
+1. How can Capyblanca learn by observing?  What kinds of new architectural elements are needed?
+
+
+
+
 
 
 PROJECT: MUSICAT
