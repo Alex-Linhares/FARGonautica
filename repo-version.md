@@ -61,7 +61,7 @@ Here is how this repository stands:
 | Letter Spirit | No | Yes | 0 | 0 | 0 |
 | Phaeaco | No | Yes | 0 | 0 | 0 |
 | Musicat | Yes | Yes | 0 | 0 | 0 |
-| Capyblanca | Yes | Yes | 0 | 0 | 0 |
+| Capyblanca | Yes | Yes | 8 | 2 | 1 |
 | George | No | Partially | 0 | 0 | 0 |
 
 
