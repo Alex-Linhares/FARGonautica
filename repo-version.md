@@ -56,12 +56,12 @@ Here is how this repository stands:
 |---------| --------- | ----------| ----------|  ----------| ----------|
 | Seek-Whence & SeqSee | Yes (SeqSee) | Yes | 0 | 0 | 0 |
 | Numbo | Yes (Coming soon) | Yes | 0 | 0 | 0 |
-| Copycat & Metacat | Yes | Yes | 6 | 3 | 1 |
+| Copycat & Metacat | Yes | Yes | **6** | **3** | **2** |
 | Tabletop | No | Yes | 0 | 0 | 0 |
 | Letter Spirit | No | Yes | 0 | 0 | 0 |
 | Phaeaco | No | Yes | 0 | 0 | 0 |
 | Musicat | Yes | Yes | 0 | 0 | 0 |
-| Capyblanca | Yes | Yes | 8 | 2 | 1 |
+| Capyblanca | Yes | Yes | **8** | **2** | **1** |
 | George | No | Partially | 0 | 0 | 0 |
 
 
