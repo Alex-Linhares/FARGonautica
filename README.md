@@ -92,7 +92,7 @@ here when being maintained).
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Closed-source |
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | **Yes** |
- | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | (asap) Dr. Lara-Dammer desires to clean up the code prior to release (2017-08-29) |
+ | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | **(asap)** Dr. Lara-Dammer desires to clean up the code prior to release (2017-08-29) |
  | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | **Yes** |
 
 
@@ -290,7 +290,7 @@ If you are interested in joining these future activities, please get in touch!
 1. Consider the model of chunking proposed by the computational cognitive science CHREST.  What are the arguments that it falls short?
 1. How can Capyblanca "see abstractions"?  Can CHREST do the same?
 1. Why is it claimed that Chase and Simon did a mistake in their classic paper "Perception in chess"?  What is the evidence for that claim?
-1. An master chess player made serious mistakes in reconstructing the board (after seeing it twice for 5 seconds only). Why does Linhares claim that Figure 4 of [this paper](/Literature/Chess-Capyblanca-Linhares%20et%20al-2012-Cognitive%20Systems%20Research.pdf) is "remarkable"?
+1. A master chess player made loads of mistakes in reconstructing the board (after seeing it twice for 5 seconds only). Why does Linhares claim that Figure 4 of [this paper](/Literature/Chess-Capyblanca-Linhares%20et%20al-2012-Cognitive%20Systems%20Research.pdf) is "remarkable"?
 1. What is meant by "strategically equivalent" chess positions?
 1. What is meant by "abstract representational invariance"?
 1. What is meant by "the abstraction is the *most efficent* level of description"?
