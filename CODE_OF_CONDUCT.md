@@ -12,7 +12,7 @@ We invite all those who participate in FARGonautica to help us create a cool exp
 
 A supplemental goal of this Code of Conduct is to increase open source citizenship by encouraging participants to focus on the work.
 
-Debates will labeled as intrigue between TROLL#1 and TROLL#2, and sorted out based on MERIT.
+Debates will labeled as intrigue between TROLL#1 and TROLL#2, and sorted out based on merit of the arguments (and not on the people involved, or their supposed intentions by others).
 
 
 ## 3. Expected Behavior
@@ -30,7 +30,7 @@ The following behaviors are are not that cool:
 *   Posting or threatening to post other people’s personally identifying information ("doxing").
 *   Inappropriate photography or recording.
 *   Deliberate intimidation.
-*   Concern trolling over perceived SJW snowflakery. 
+*   Concern trolling. 
 *   Spamming of any form (especially spamming projects that are NOT extremely influenced by Copycat, FARG, Hofstadter, etc.)
 *   Advocating for, or encouraging, any of the above behavior.
 
@@ -39,23 +39,20 @@ The following behaviors are are not that cool:
 
 Unacceptable behavior from anybody is bad.  Anyone asked to stop unacceptable behavior is expected to keep it cool.
 
-## 6. Whatever was here was deleted
+
+## 6. Addressing Grievances
+
+Post an issue, let others discuss it, then see a therapist if you're not satisfied with the outcome.
+
+## 7. Scope
+
+We expect all community participants (contributors, paid or otherwise; sponsors; and other guests) to abide by this Code of Conduct in all venues.
 
 
-## 7. Addressing Grievances
+## 8. Contact info
 
-See a therapist.
+linhares@clubofrome.org.brbutrememberthenospammingrule
 
-## 8. Scope
-
-We expect all community participants (contributors, paid or otherwise; sponsors; and other guests) to abide by this Code of Conduct in all community venues–online and in-person–as well as in all one-on-one communications pertaining to community business.
-
-This code of conduct and its related procedures also applies to unacceptable behavior occurring outside the scope of community activities when such behavior has the potential to adversely affect the safety and well-being of community members.
-
-## 9. Contact info
-
-linhares@clubofrome.org.br
-
-## 10. License and attribution
+## 9. License and attribution
 
 This Code of Conduct is distributed under a [Creative Commons Attribution-ShareAlike license](http://creativecommons.org/licenses/by-sa/3.0/).
