@@ -50,26 +50,11 @@ As of right now, this repo is considered, in open-source fashion, to be in versi
     - **Programming challenges** large or small
     - **Research challenges** for graduate students (each challenge being able to lead to a publication, in principle)
 
-So here is a table of what version 1 could be:
-
-| Project | Sourcecode | Literature | Exercises | Programming challenges | Research challenges |
-|---------| --------- | ----------| ----------|  ----------| ----------|
-| Seek-Whence & SeqSee | Yes | Yes | 15 | 3 | 2 |
-| Numbo | Yes | Yes | 5 | 1 | 1 |
-| Copycat & Metacat | Yes | Yes | 35 | 8 | 5 |
-| Tabletop | Yes | Yes | 17 | 3 | 1 |
-| Letter Spirit | Yes | Yes | 15 | 10 | 2 |
-| Phaeaco | Yes | Yes | 15 | 10 | 3 |
-| Musicat | Yes | Yes | 15 | 5 | 9 |
-| Capyblanca | Yes | Yes | 15 | 4 | 4 |
-| George | Yes | Yes | 25 | 3 | 8 |
 
 
-So this repo can not only be a library but also a source for an undergraduate course and a set of research questions... don't you wish your teachers at university (or even high school) had something like this?  And [here's where we are!](repo-version.md)
+This repo can not only be a library but also a source for undergraduate courses and a set of research questions... don't you wish your teachers at university (or even high school) had something like this?  [Here's where we are and here's where we're going!](repo-version.md)
 
-Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](contributing.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter
-gracefully conceded the honorable title of "Associate FARGonaut" to me (Linhares), of which I am truly proud.  If you have ideas for
-exercises, research questions, programming challenges, or something else altogether... please get in [here](contributing.md)!  
+Long ways to go to get there, hah?  Not really, as contributors can speed things up. If you would like to contribute please see [how you can contribute to this repository](contributing.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter. If you have ideas for undergraduate exercises, research questions, programming challenges, or something else altogether... please get in [here](contributing.md)!  
 
 
 
