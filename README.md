@@ -5,6 +5,13 @@
 
 Congratulations, for you have made it to the very center of the internet--the very place where the smart and the fine-looking congregate.
 
+We presume most users of this repository should be familiar with the following work:
+
+[**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
+
+Fluid Concept and Creative Analogies (FCCA) is the central publication concerning these projects.  Whereas numerous ideas had been developed before, in Gödel, Escher, Bach: an eternal golden braid; The Minds' I, and Metamagical Themas, it is FCCA that finally synthetizes the whole of the thinking over the years in computational models:  The *parallel terraced scan*, the idea of [*temperature*](/Literature/Hofstadter-Non.Deterministic.Approach.to.Analogy.pdf) controlling randomness, the *slipnet* (a semantic network in which nodes can become closer or farther apart based on context), the idea of *codelets* and their imprecise order of execution, and so forth.  
+
+
 This repository has a number of goals:  
 
     i) we want to collect all the (open-source) computational architectures that have been developed in
@@ -28,12 +35,6 @@ This repository has a number of goals:
 
 Welcome!  Join us.  This will be insanely fun.  
 
----
-We presume most users of this repository should be familiar with the following work:
-
-[**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
-
-Fluid Concept and Creative Analogies (FCCA) is the central publication concerning these projects.  Whereas numerous ideas had been developed before, in Gödel, Escher, Bach: an eternal golden braid; The Minds' I, and Metamagical Themas, it is FCCA that finally synthetizes the whole of the thinking over the years in computational models:  The *parallel terraced scan*, the idea of [*temperature*](/Literature/Hofstadter-Non.Deterministic.Approach.to.Analogy.pdf) controlling randomness, the *slipnet* (a semantic network in which nodes can become closer or farther apart based on context), the idea of *codelets* and their imprecise order of execution, and so forth.  
 
 
 REPOSITORY VERSION & HOW YOU CAN CONTRIBUTE
@@ -68,7 +69,7 @@ So this repo can not only be a library but also a source for an undergraduate co
 
 Long ways to go to get there, hah?  Please help; if you would like to contribute please see [how you can contribute to this repository](contributing.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter:  Hofstadter
 gracefully conceded the honorable title of "Associate FARGonaut" to me (Linhares), of which I am truly proud.  If you have ideas for
-exercises, research questions, programming challenges, or something else altogether... please get in touch!  
+exercises, research questions, programming challenges, or something else altogether... please get in [here](contributing.md)!  
 
 
 
