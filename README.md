@@ -30,6 +30,8 @@ This repository has a number of goals:
     2017; if "reasonably successful", these classes will be posted here).
 
 
+We hope that, after this repository is complete (or close to), it will be cloned and hosted at a [Indiana University Github:IU page](https://kb.iu.edu/d/bagk), where it will be easily found by the interested community.
+
 Welcome!  Join us.  This will be insanely fun.  
 
 
