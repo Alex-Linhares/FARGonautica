@@ -2,11 +2,13 @@
 **A repository of Fluid Concepts & Creative Analogies projects**
 
 
+
+![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
 We presume most users of this repository should be familiar with the following work:
 
 [**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
 
-Fluid Concept and Creative Analogies (FCCA) is the central publication concerning these projects.  Whereas numerous ideas had been developed before, in Gödel, Escher, Bach; The Minds' I, and Metamagical Themas, it is FCCA that finally synthetizes the whole of the thinking over the years in computational models:  The *parallel terraced scan*, the idea of [*temperature*](/Literature/Hofstadter-Non.Deterministic.Approach.to.Analogy.pdf) controlling randomness, the *slipnet* (a semantic network in which nodes can become closer or farther apart based on context), the idea of *codelets* and their imprecise order of execution, and so forth.  
+Research carried out at CRCC has been described in detail in the book Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought, written by Douglas Hofstadter and members of the Fluid Analogies Research Group. Hofstadter's first two books, Goedel, Escher, Bach and Metamagical Themas discussed a number of ideas relevant to artificial intelligence and cognitive science, such as recursivity and emergent behavior, but this new book looks back from the perspective of having grappled with those ideas in the course of implementing actual computer models. Programs that model creativity and analogy-making have been designed by Hofstadter and his graduate students, and the story of their past, present and future development is the subject of the book, co-authored by the students in the Fluid Analogies Research Group (FARG). There is an incredible wealth of information in this book.
 
 
 This repository has a number of goals:  
