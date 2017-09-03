@@ -214,6 +214,10 @@ Modeling Human Discoverativity in Geometry
 
 Find Dr. Lara-Dammer at [LinkedIn](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/)  |  [Homepage at IU](https://www.cs.indiana.edu/~flaradam/)  |  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=Francisco+Lara-Dammer&btnG=&as_sdt=1%2C5&as_sdtp=&oq=francisco+)  |  [Academia.edu (?)](https://independent.academia.edu/FranciscoLaraDammer)
 
+
+I propose a psychologically plausible mental representation of simple geometric entities such as points, lines, and circles as they are imagined by people (as opposed to being drawn on an external medium such as paper). The representation is simulated with a computer program whose purpose is to model geometric discovery. A consequence of the construction of mental figures is that it facilitates some tasks (such as analogy-making and remembering) while making other tasks difficult (it makes humans susceptible to illusions, errors, and uncertainty). The mental plane, as I call the place in the brain where this imagery occurs, has some similarities to other systems of the brain, such as the auditory system and the tactile system.
+I have exploited these similarities in my attempt to model the mental plane computationally. Also, I propose that much of geometric discovery takes place in the mental plane, and I have described mechanisms, based on analogy-making and on a sense of symmetry and esthetics, which underlie human mathematical curiosity and the propensity to make geometrical discoveries.
+
 Publications:
 - Lara-Dammer, F. (2009) Modeling Human Discoverativity in Geometry, PhD Thesis, Indiana University,
 - Lara-Dammer & Hofstadter, [*Perception of Direction and its Influence on Geometric Discoveries*](https://cogsci.indiana.edu/pub/lara-dammer.perception-of-direction-2006.pdf)
@@ -333,6 +337,7 @@ Dr. Foundalis said about them:
     are solved primarily as a consequence of following some fundamental principles of cognition."
 
 Dr. Foundalis is not sharing the code at this time, but his thesis is found in [the Software Folder](/Software).
+
 
 
 PROJECT: LETTER SPIRIT
