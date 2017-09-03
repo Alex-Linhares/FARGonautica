@@ -1,12 +1,10 @@
 # FARGonautica
-**A repository of Fluid Concepts & Creative Analogies projects**
 
-
-
-![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
-We presume most users of this repository should be familiar with the following work:
 
 [**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
+![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
+
+*News: 12 different open-souce implementations available!*
 
 Research carried out at CRCC has been described in detail in the book Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought, written by Douglas Hofstadter and members of the Fluid Analogies Research Group. Hofstadter's first two books, Goedel, Escher, Bach and Metamagical Themas discussed a number of ideas relevant to artificial intelligence and cognitive science, such as recursivity and emergent behavior, but this new book looks back from the perspective of having grappled with those ideas in the course of implementing actual computer models. Programs that model creativity and analogy-making have been designed by Hofstadter and his graduate students, and the story of their past, present and future development is the subject of the book, co-authored by the students in the Fluid Analogies Research Group (FARG). There is an incredible wealth of information in this book.
 
@@ -124,11 +122,11 @@ Selected publications regarding Copycat:
 1. Install Copycat on your machine and run some of the examples discussed in the literature.
 1. Create three copycat problems that are not discussed in the above literature
 1. Consider the SME (Structure-Mapping Engine) discussed in the literature.  Could it solve the following problems? If so, how? If not, why not?
-    - **abc : abd    ijk : ?**
-    - **abc : abd    iijjkk : ?**
-    - **abc : abd    rppkkk : ?**
-    - **abc : abd    ijkl : ?**
-    - **abc : abd    xyz : ?**
+    - **abc : abd  ::  ijk : ?**
+    - **abc : abd  ::  iijjkk : ?**
+    - **abc : abd  ::  rppkkk : ?**
+    - **abc : abd  ::  ijkl : ?**
+    - **abc : abd  ::  xyz : ?**
 1. Why is it claimed that analogy-making is part of perception?
 1. How do analogy-making and perception interact in Copycat?  Are they different modules? If so, why?  If not, Why not?
 1. What does the slipnet do?  Why the term "*slip*"?
