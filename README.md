@@ -4,6 +4,8 @@
 
 
 ![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
+
+
 We presume most users of this repository should be familiar with the following work:
 
 [**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
