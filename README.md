@@ -2,12 +2,12 @@
 
 
 [**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
+
 ![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
 
-*News: 12 different open-souce implementations available!*
+*Repository News: 12 different open-souce implementations available!*
 
 Research carried out at CRCC has been described in detail in the book Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought, written by Douglas Hofstadter and members of the Fluid Analogies Research Group. Hofstadter's first two books, Goedel, Escher, Bach and Metamagical Themas discussed a number of ideas relevant to artificial intelligence and cognitive science, such as recursivity and emergent behavior, but this new book looks back from the perspective of having grappled with those ideas in the course of implementing actual computer models. Programs that model creativity and analogy-making have been designed by Hofstadter and his graduate students, and the story of their past, present and future development is the subject of the book, co-authored by the students in the Fluid Analogies Research Group (FARG). There is an incredible wealth of information in this book.
-
 
 This repository has a number of goals:  
 
@@ -85,6 +85,9 @@ PROJECT: COPYCAT
 ---
 ![Copycat](https://camo.githubusercontent.com/fce9eca50ac44e256082460f36bca5fd48c56e46/687474703a2f2f692e696d6775722e636f6d2f6c484d776e2e706e67)
 
+[![Watch](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://youtu.be/v7Eotp-XKVA)
+
+
 [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
 Find Dr. Mitchell in  [Homepage](http://web.cecs.pdx.edu/~mm/)  |  [Wikipedia](https://en.wikipedia.org/wiki/Melanie_Mitchell)  |  [Google Scholar](https://scholar.google.com.br/citations?user=k4gbv2AAAAAJ&hl=en&oi=ao)  |  [Academia.edu](https://pdx.academia.edu/MelanieMitchell)
@@ -96,7 +99,7 @@ network, slipnet, built on pre-programmed concepts and their associations (a lon
 
 Copycat's architecture is tripartite, consisting of a slipnet, a working area (also called workspace, similar to blackboard systems), and the coderack (with the codelets). The slipnet is a network composed of nodes, which represent permanent concepts, and weighted links, which are relations, between them. It differs from traditional semantic networks as the effective weight associated with a particular link may vary through time according to the activation level of specific concepts (nodes). The codelets build structures in the working area and modify activations in the slipnet accordingly (bottom-up processes), and the current state of slipnet determines probabilistically which codelets must be run (top-down influences).
 
-Implementations of the Copycat project:
+**Implementations of the Copycat project:**
 
 | Author  |  Language/Sourcecode |  Note  |
 |--------|------------------------|-------|
@@ -132,15 +135,13 @@ Selected publications regarding Copycat:
 1. What does the slipnet do?  Why the term "*slip*"?
 1. What does the temperature do?  Do codelets regulate the temperature? Does temperature regulate the codelets?
 
-
-
 **Programming challenges**:
 1. Make the code in Python **robust**: can it solve a large number of interesting problems, with different random seeds, without breaking?
 1. Design a GUI for the project co.py.cat.. maybe taking from Joseph Aaron Hager's project?
 1. Integrate the best implementation ideas from Joseph Aaron Hager's project and co.py.cat.  
 
-**Open Research Project**:
-1. Implement Copycat in Dr. Abhijit Mahabal's framework in PySeqsee.
+**Open Research Projects**:
+1. Implement Copycat in Dr. [Abhijit Mahabal's Fluid Concepts framework](https://github.com/amahabal/Pyseqsee).
      - document how the implementation is done
      - document how others may use the framework in their own projects
      - document what, if anything, becomes easier/simpler under the framework
@@ -172,7 +173,7 @@ PROJECT: NUMBO
 Find Dr. Defays in [Homepage](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369)  |  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=daniel+defays&btnG=&as_sdt=1%2C5&as_sdtp=)
 
 Daniel Defays sent in 2006 a printed version of the sourcecode to Alex Linhares.  This will be scanned
-and archived in this repo---eventually.
+and archived in this repo---eventually.  Moreover, a port to python 3 and a [port to Abhijit Mahabal's Fluid Concepts Frameowrk](https://github.com/amahabal/Pyseqsee) will be gradually appearing [here](https://github.com/Alex-Linhares/Capyblanca/).
 
 
 PROJECT: SEQSEE
@@ -239,10 +240,7 @@ Find Linhares in  [Homepage](http://ebape.fgv.br/en/faculty/alexandre-linhares) 
 A chess system based on Active Symbols / Fluid Concepts.  [Here](https://youtu.be/5h67WwfuQDg) is the sample run of it described in the [Information Sciences paper](https://github.com/Alex-Linhares/Fluid-Concepts-and-Creative-Analogies/blob/master/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf).
 
 Most chess programs consist of nothing but tree search. Can a program have ideas; perceive abstractions;
-understand situations? If so, how?
-
-This project is based on the computational cognitive models of Fluid Concepts, such as Copycat, Letter Spirit,
-Phaeaco, Tabletop, Numbo, Seeqsee, etc. These projects have been developed by Douglas Hofstadter and his PhD students.
+and grasp a very simple, but high-level understanding of situations? If so, how?
 
 Capyblanca has been developed in Delphi. As of May 7th, 2008, the codebase compiles and runs in free (as in beer)
 turbodelphi for windows.
@@ -285,8 +283,8 @@ If you are interested in joining these future activities, please get in touch!
 1. What is meant by "the abstraction is the *most efficent* level of description"?
 
 **Programming challenges**
-1. Port to python 3.  To be started soon.  
-1. Afterwards, a port to Abhijit Mahabal's FARG Framework.
+1. Port to python 3.  To be started soon. [Progress will be posted on this repo](https://github.com/Alex-Linhares/Capyblanca).  
+1. Afterwards, a port to [Abhijit Mahabal's Fluid Concepts Framework](https://github.com/amahabal/Pyseqsee).
 
 **Open research problems**
 1. How can Capyblanca learn by observing?  What kinds of new architectural elements are needed?
