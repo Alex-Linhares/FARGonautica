@@ -83,7 +83,7 @@ here when being maintained).
 
 PROJECT: COPYCAT
 ---
-[![Watch]((https://camo.githubusercontent.com/fce9eca50ac44e256082460f36bca5fd48c56e46/687474703a2f2f692e696d6775722e636f6d2f6c484d776e2e706e67))](https://youtu.be/v7Eotp-XKVA)
+[![Watch]((https://camo.githubusercontent.com/fce9eca50ac44e256082460f36bca5fd48c56e46/687474703a2f2f692e696d6775722e636f6d2f6c484d776e2e706e67)](https://youtu.be/v7Eotp-XKVA)
 
 
 [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
