@@ -65,7 +65,7 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
 Architectures to new domains.  Eventually we hope to have a complete set of archived projects (or linked from
 here when being maintained).
 
- | Project | Author | Language | Available [Here](https://github.com/Alex-Linhares/FARGonautica)? |
+ | Project | Author | Language | Available? |
  |---------| --------- | ----------| ----------|
  | Seek-Whence | [Marsha Meredith](https://scholar.google.com.br/scholar?hl=en&q=marsha+meredith&btnG=&as_sdt=1%2C5&as_sdtp=) | Franz Lisp | **Yes  (coming soon)**|
  | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | **Yes (coming soon)** |
