@@ -39,7 +39,7 @@ Welcome!  Join us.  This will be insanely fun.
 REPOSITORY VERSION & HOW YOU CAN CONTRIBUTE
 ---
 
-As of right now, this repo is considered, in open-source fashion, to be in version 0.1.0:
+As of right now, this repo is considered, in open-source fashion, to be in version 0.2.0:
 
 **Goals for version 1.0.0**:
 - Each project should contain:
@@ -356,6 +356,6 @@ LETTER SPIRIT, PART II
 
 John Rehling
 
-Find Dr. Rehling in  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=)
+Find Dr. Rehling in  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=).
 
 Dr. Rehling's thesis is available [here](http://goosie.cogsci.indiana.edu/farg/mcgrawg/thesis.html) and his sourcecode is available in the [/Software folder](/Software/Letter-Spirit).
