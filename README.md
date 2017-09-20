@@ -22,12 +22,12 @@ This repository has a number of goals:
     iii) we want to archive all materials for an online course on Fluid Concepts & Creative Analogies
     (also called "Fluid Concepts", "FARG architectures", "Copycat Architecture", "Hofstadter School",
     "Active Symbols", etc).  By proposing this course, ideally, **every single undergraduate program**
-    across the globe would be able to study the principles of this school of thought, **see those
-    principles in action**, and **compare those principles with different approaches**.   Moving to more
-    advanced stuff, Graduate students, now with easy access to the code, could have a complete course on
-    the computer science of building these architectures; they could, for instance, play with their own
-    ideas, and find out whether or not they make sense.  (Linhares is going to try to teach 5 classes in
-    2017; if "reasonably successful", these classes will be posted here).
+    would be able to study the principles of this school of thought, **see those principles in action**,
+    and **compare those principles with different approaches**.   Moving to more advanced stuff,
+    Graduate students, now with easy access to the code, could have a complete course on the computer
+    science of building these architectures; they could, for instance, play with their own ideas, and
+    find out whether or not they make sense.  (Linhares is going to try to teach 5 classes in 2017; if
+    "reasonably successful", these classes will be posted here).
 
 
 We hope that, after this repository is complete (or close to), it will be cloned and hosted at a [Indiana University Github:IU page](https://kb.iu.edu/d/bagk), where it will be easily found by the interested community.
@@ -39,7 +39,7 @@ Welcome!  Join us.  This will be insanely fun.
 REPOSITORY VERSION & HOW YOU CAN CONTRIBUTE
 ---
 
-As of right now, this repo is considered, in open-source fashion, to be in version 0.2.0:
+As of right now, this repo is considered, in open-source fashion, to be in version **0.2.0**:
 
 **Goals for version 1.0.0**:
 - Each project should contain:
@@ -71,8 +71,8 @@ here when being maintained).
  | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | **Yes (coming soon)** |
  | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | **Yes** |  
  | Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet (email sent 2017-08-29) |
- | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  Not yet |
- | Letter Spirit | [John Rehling](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=) | Schez Scheme |  **Yes** |
+ | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Chez Scheme |  Not yet |
+ | Letter Spirit | [John Rehling](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=) | Chez Scheme |  **Yes** |
  | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  **Yes** |
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Closed-source |
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
