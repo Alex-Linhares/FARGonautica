@@ -1,6 +1,6 @@
 # REPOSITORY VERSION
 
-As of right now, this repo is considered, in open-source fashion, to be in version 0.1.0.
+As of right now, this repo is considered, in open-source fashion, to be in version 0.2.0.
 
 
 # REPOSITORY GOALS
@@ -50,7 +50,7 @@ Here is how this repository stands:
 
 | Project | Sourcecode | Literature | Exercises | Programming challenges | Research challenges |
 |---------| --------- | ----------| ----------|  ----------| ----------|
-| Seek-Whence & SeqSee | Yes (SeqSee) | Yes | 0 | 0 | 0 |
+| Seek-Whence & SeqSee | Yes (Seek-Whence coming soon, SeqSee complete) | Yes | 0 | 0 | 0 |
 | Numbo | Yes (Coming soon) | FCCA | 0 | 0 | 0 |
 | Copycat & Metacat | Yes | Yes | **6** | **3** | **2** |
 | Tabletop | No | Yes | 0 | 0 | 0 |
