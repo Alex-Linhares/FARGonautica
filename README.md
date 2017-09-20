@@ -5,7 +5,7 @@
 
 ![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
 
-*Repository News: 11 different open-souce implementations available---and 2 soon to be available!*
+**Repository News: Letter Spirit sourcecode just added, Seek-Whence coming soon!**
 
 Research carried out at CRCC has been described in detail in the book Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought, written by Douglas Hofstadter and members of the Fluid Analogies Research Group. Hofstadter's first two books, Goedel, Escher, Bach and Metamagical Themas discussed a number of ideas relevant to artificial intelligence and cognitive science, such as recursivity and emergent behavior, but this new book looks back from the perspective of having grappled with those ideas in the course of implementing actual computer models. Programs that model creativity and analogy-making have been designed by Hofstadter and his graduate students, and the story of their past, present and future development is the subject of the book, co-authored by the students in the Fluid Analogies Research Group (FARG). There is an incredible wealth of information in this book.
 
@@ -61,9 +61,7 @@ Long ways to go to get there, hah?  Not really, as contributors can speed things
 PROJECTS TO JOIN HERE (desiderata)
 ---
 
-The ambition is to catalogue and archive the sourcecode and literature involved in building new Fluid Concepts
-Architectures to new domains.  Eventually we hope to have a complete set of archived projects (or linked from
-here when being maintained).
+The ambition is to catalogue and archive the sourcecode and literature involved in building new Fluid Concepts Architectures to new domains.  Eventually we hope to have a complete set of archived projects (or linked from here when being maintained).
 
  | Project | Author | Language | Available? |
  |---------| --------- | ----------| ----------|
@@ -71,7 +69,7 @@ here when being maintained).
  | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | **Yes (coming soon)** |
  | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | **Yes** |  
  | Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet (email sent 2017-08-29) |
- | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Chez Scheme |  Not yet |
+ | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  **Yes** (McGraw's work was extended by Rehling) |
  | Letter Spirit | [John Rehling](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=) | Chez Scheme |  **Yes** |
  | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  **Yes** |
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Closed-source |
@@ -103,7 +101,7 @@ Copycat's architecture is tripartite, consisting of a slipnet, a working area (a
 |--------|------------------------|-------|
 | Melanie Mitchell |  [LISP](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html) | Bitrotten |  
 | Scott Boland  | [Java](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) | (SB's email lost?) |
-| ["speakeasy"](https://github.com/speakeasy)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland  code |
+| ["speakeasy"](https://github.com/speakeasy)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland's code |
 | [Greg Detre](https://github.com/gregdetre) | [Clojure](https://github.com/gregdetre/copycat-clojure)  | Not tested  |
 | [Arthur O'Dwyer](https://github.com/Quuxplusone), [J Alan Brogan](https://github.com/jalanb),others | [Python 2](https://github.com/Quuxplusone/co.py.cat)  | Multiple forks, no graphics  |
 | [Lucas Saldyt](https://github.com/LSaldyt) | [Python 3](https://github.com/LSaldyt/copycat/commit/bc848e8f2d7dd922b96bd0118ba4adf2fc033e55)  | Above repo patch to Python 3  |
@@ -344,18 +342,18 @@ The specific focus of Letter Spirit is the creative act of artistic letter-desig
 
 PART I
 
-[Gary McGraw](https://www.garymcgraw.com/)
+[Gary McGraw](https://www.garymcgraw.com/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
-Dr. McGraw implemented Letter Spirit's gridletter recognizer (the Examiner also called the "role model") for his PhD. Gary's thesis is available [here](http://goosie.cogsci.indiana.edu/farg/mcgrawg/thesis.html).
+Dr. McGraw implemented Letter Spirit's gridletter recognizer (the Examiner also called the "role model") for his PhD. Gary's thesis is available [here](http://goosie.cogsci.indiana.edu/farg/mcgrawg/thesis.html).  Letter Spirit was later extended by Dr. John Rehling (see below).
 
-Find Dr. McGraw in  [Google Scholar](https://scholar.google.com.br/scholar?q=mcgraw+letter+spirit&btnG=&hl=en&as_sdt=0%2C5)  |  [Amazon Author's page](https://www.amazon.com/Gary-McGraw/e/B000APFZ2S/ref=sr_ntt_srch_lnk_1?qid=1503736392&sr=8-1)  
+Find Dr. McGraw in  [Personal page](https://www.garymcgraw.com/)  |  [Google Scholar](https://scholar.google.com.br/scholar?q=mcgraw+letter+spirit&btnG=&hl=en&as_sdt=0%2C5)  |  [Amazon Author's page](https://www.amazon.com/Gary-McGraw/e/B000APFZ2S/ref=sr_ntt_srch_lnk_1?qid=1503736392&sr=8-1)  
 
 
 LETTER SPIRIT, PART II
 ---
 
-John Rehling
+John Rehling & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
 Find Dr. Rehling in  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=).
 
-Dr. Rehling's thesis is available [here](http://goosie.cogsci.indiana.edu/farg/mcgrawg/thesis.html) and his sourcecode is available in the [/Software folder](/Software/Letter-Spirit).
+Dr. Rehling's thesis is available [here](http://goosie.cogsci.indiana.edu/farg/mcgrawg/thesis.html) and his sourcecode is available in the [/Software/Letter-Spirit folder](/Software/Letter-Spirit).
