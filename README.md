@@ -336,11 +336,15 @@ Dr. Foundalis is not sharing the code at this time, but his thesis is found in [
 
 PROJECT: LETTER SPIRIT
 ---
+![Letter-Spirit](Letter-Spirit-bl-7-22-4.gif)
+![Letter-Spirit](Letter-Spirit-br-7-4sm.gif)
+
 The Letter Spirit project is an attempt to model central aspects of human high-level perception and creativity on a computer. It is based on the belief that creativity is an automatic outcome of the existence of sufficiently flexible and context-sensitive concepts --- what we call fluid concepts. Accordingly, our goal is to implement a model of fluid concepts in a challenging domain. Not surprisingly, the Letter Spirit project is a very complex undertaking and requires complex dynamic memory structures, as well as a sophisticated control structure based on the principles of emergent computation, wherein complex high-level behavior emerges as a statistical consequence of many small computational actions. The full realization of such a model will, we believe, shed light on the mechanisms of human creativity.
 The specific focus of Letter Spirit is the creative act of artistic letter-design. The aim is to model how the 26 lowercase letters of the roman alphabet can be rendered in many different but internally coherent styles. The program addresses two important aspects of letterforms: the categorical sameness possessed by letters belonging to a given category (e.g., "a") and the stylistic sameness possessed by letters belonging to a given style ( e.g., Helvetica). Starting with one or more seed letters representing the beginnings of a style, the program will attempt to create the rest of the alphabet in such a way that all 26 letters share that same style, or spirit.
 
 
 PART I
+---
 
 [Gary McGraw](https://www.garymcgraw.com/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
