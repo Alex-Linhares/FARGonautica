@@ -1,0 +1,475 @@
+Chez Scheme Transcript [Thu Sep  9 12:44:51 1999]
+>>> (map tf-check (map car font-DB))
+Examiner failed on m, re-trying
+Examiner failed on m, re-trying
+Examiner failed on v, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+Examiner failed on c, re-trying
+
+debug> n
+>>>> *trained*
+three-d
+>>>> (map car font-DB)
+(checkmark
+  flournoy-ranch
+  bowtie
+  double-backslash
+  hint4
+  sabretooth
+  standard-square
+  shorts
+  house
+  benzene-left
+  benzene-right
+  boat
+  hunt4
+  slant
+  slash
+  snout
+  intersect
+  funtnip
+  close
+  three-d
+  sluice
+  weird-arrow
+  square-curl)
+>>>> (map tf-check '
+(checkmark
+  flournoy-ranch
+  bowtie
+  double-backslash
+  hint4
+  sabretooth
+  standard-square
+  shorts
+  house
+  benzene-left
+  benzene-right
+  boat
+  hunt4
+  slant
+  slash
+  snout
+  intersect
+  funtnip
+  close
+  weird-arrow
+  square-curl)
+)
+Examiner failed on f, re-trying
+((checkmark
+   ((*relative-nvs* ((tips (up-tip *inward*))))
+    (*turn-180-motifs* ((*nw*)))
+    (*abstract-rules* (at-most-3)))
+   ((*relative-nvs*
+      ((left-edge less)
+       (tips (tip *inward*))
+       (tips (tip *outward*))
+       (tips (down-tip *inward*))
+       (tips (tip *w*))
+       (right-edge less)
+       (width less)
+       (tips (down-tip *w*))))
+    (*abstract-rules* (ban-90-angle))
+    (*translate-motifs* ((*ne*) (*sw*) (*sw* *se*)))
+    (*turn-90-motifs* ((*ne*))))
+   ((*relative-nvs*
+      ((left-edge more)
+       (weight less)
+       (tips (tip *n*))
+       (height less)
+       (weight more)
+       (width more)
+       (tips (up-tip *w*))
+       (curve more)
+       (curve less)))
+    (*abstract-rules*
+      (at-most-2
+        ban-horiz-quanta
+        ban-180-angle
+        ban-vertedges
+        ban-leftedge))
+    (*val-to-val-nvs* ((left-edge (l-edge-md l-edge-lf))))
+    (*translate-motifs* ((*e*) (*se*) (*nw*)))
+    (*literal-motifs* ((36) (50)))
+    (*turn-45-motifs* ((90)))
+    (*turn-90-motifs* ((*n* *ne*) (*ne*))))
+   19
+   47
+   82)
+ (flournoy-ranch
+   ()
+   ((*turn-180-motifs* ((*n* *ne*)))
+    (*translate-motifs* ((*e*))))
+   ((*relative-nvs* ((width less) (weight more)))
+    (*literal-motifs* ((21)))
+    (*abstract-rules* (at-most-3))
+    (*turn-45-motifs* ((-45)))
+    (*translate-motifs* ((*nw*) (*s*) (*n* *n*) (*n*)))
+    (*turn-90-motifs* ((*w*))))
+   22
+   47
+   78)
+ (bowtie
+   ((*literal-motifs* ((50)))
+    (*abstract-rules* (at-most-3))
+    (*translate-motifs* ((*ne*))))
+   ((*literal-motifs* ((36) (50 36)))
+    (*relative-nvs*
+      ((right-edge less)
+       (width less)
+       (curve less)
+       (tips (tip *inward*))
+       (tips (tip *outward*))))
+    (*translate-motifs* ((*sw* *se*)))
+    (*turn-180-motifs* ((*ne*)))
+    (*turn-90-motifs* ((*ne*))))
+   ((*relative-nvs*
+      ((curve more)
+       (weight more)
+       (tips (down-tip *inward*))
+       (left-edge less)
+       (tips (tip *n*))
+       (left-edge more)
+       (tips (up-tip *inward*))
+       (tips (down-tip *w*))
+       (tips (tip *w*))
+       (weight less)))
+    (*abstract-rules*
+      (ban-180-angle ban-vertedges ban-leftedge at-most-2))
+    (*translate-motifs* ((*nw*)))
+    (*turn-45-motifs* ((90)))
+    (*turn-90-motifs* ((*n* *ne*) (*ne*))))
+   14
+   37
+   77)
+ (double-backslash
+   ((*abstract-rules* (ban-foreslash-quanta at-most-3))
+    (*turn-180-motifs* ((*ne*))))
+   ((*abstract-rules* (at-most-2))
+    (*relative-nvs*
+      ((tips (up-tip *inward*))
+       (width more)
+       (tips (down-tip *inward*))
+       (width less)
+       (tips (tip *inward*))
+       (tips (down-tip *outward*))))
+    (*turn-90-motifs* ((*nw* *e*)))
+    (*translate-motifs* ((*se* *n*) (*se*)))
+    (*turn-180-motifs* ((*n* *ne*))))
+   ((*abstract-rules* (ban-corners ban-90-angle))
+    (*relative-nvs*
+      ((tips (tip *outward*))
+       (left-edge less)
+       (tips (tip *w*))
+       (tips (down-tip *e*))
+       (right-edge more)
+       (weight more)
+       (tips (tip *n*))
+       (curve more)))
+    (*turn-180-motifs* ((*se* *n*)))
+    (*val-to-val-nvs*
+      ((left-edge (l-edge-lf l-edge-md)) (touch (t1 m))))
+    (*turn-90-motifs* ((*ne*) (*w*)))
+    (*translate-motifs*
+      ((*n* *se*) (*se*) (*e*) (*s*) (*n* *n*) (*n*)))
+    (*turn-45-motifs* ((135) (-45)))
+    (*literal-motifs* ((21) (50))))
+   31
+   50
+   100)
+ (hint4
+   ()
+   ((*relative-nvs* ((weight less) (tips (tip *inward*))))
+    (*translate-motifs* ((*ne*))))
+   ((*relative-nvs* ((curve less) (tips (tip *w*))))
+    (*turn-90-motifs* ((*n* *ne*) (*ne*)))
+    (*abstract-rules* (at-most-3))
+    (*translate-motifs* ((*ne*)))
+    (*turn-180-motifs* ((*sw*))))
+   16
+   25
+   64)
+ (sabretooth
+   ()
+   ((*translate-motifs* ((*e* *se*) (*w*) (*nw*) (*s*) (*e*)))
+    (*literal-motifs* ((6)))
+    (*turn-180-motifs* ((*n*)))
+    (*turn-90-motifs* ((*n*))))
+   ((*translate-motifs*
+      ((*sw* *e*) (*s*) (*n*) (*w*) (*nw* *w*) (*nw*)))
+    (*literal-motifs* ((51 6) (25) (36) (36 6) (6 51) (51)))
+    (*turn-90-motifs* ((*s*))))
+   13
+   26
+   48)
+ (standard-square
+   ()
+   ((*translate-motifs*
+      ((*s*) (*w* *n*) (*w*) (*s* *s*) (*e*)))
+    (*literal-motifs* ((5)))
+    (*abstract-rules*
+      (ban-foreslash-quanta
+        ban-45-135-angle
+        ban-diagonal-quanta)))
+   ((*literal-motifs*
+      ((20) (5 4) (9) (23 8 9) (23 8) (20 23 8 9) (9 8)))
+    (*abstract-rules* (ban-135-angle ban-backslash-quanta))
+    (*translate-motifs*
+      ((*w* *w*) (*n* *n*) (*e* *e*) (*s* *s*) (*s*)))
+    (*turn-90-motifs* ((*s* *e*)))
+    (*turn-180-motifs* ((*e* *e*))))
+   18
+   15
+   44)
+ (shorts
+   ()
+   ((*literal-motifs* ((4)))
+    (*turn-180-motifs* ((*e* *s*)))
+    (*abstract-rules*
+      (ban-diagonal-quanta ban-vertboxes ban-foreslash-quanta))
+    (*translate-motifs* ((*n*) (*s* *s*))))
+   ((*literal-motifs*
+      ((9) (4 20 23) (23 20) (8 9) (4 20) (23 8)))
+    (*turn-180-motifs* ((*w* *n*) (*s* *w*)))
+    (*abstract-rules*
+      (ban-backslash-quanta ban-135-angle ban-45-135-angle))
+    (*relative-nvs* ((height less)))
+    (*translate-motifs* ((*s*) (*e*) (*n*)))
+    (*turn-45-motifs* ((180)))
+    (*turn-90-motifs* ((*e* *e* *n*))))
+   19
+   39
+   54)
+ (house
+   ()
+   ((*abstract-rules* (ban-vertboxes))
+    (*literal-motifs* ((49) (36 49) (36 23) (36)))
+    (*turn-45-motifs* ((90)))
+    (*translate-motifs* ((*n*)))
+    (*relative-nvs* ((tips (tip *inward*)))))
+   ((*abstract-rules* (at-most-3))
+    (*literal-motifs* ((36 23 8) (23 8 9) (8 9) (23) (23 36)))
+    (*relative-nvs* ((tips (up-tip *inward*)) (height less)))
+    (*translate-motifs*
+      ((*n* *ne* *se*) (*sw* *s*) (*nw* *sw*) (*s*)))
+    (*turn-180-motifs* ((*ne*) (*s*) (*n*)))
+    (*turn-90-motifs* ((*e*))))
+   25
+   28
+   66)
+ (benzene-left
+   ()
+   ((*translate-motifs* ((*w* *nw*) (*w* *nw* *n*) (*w*)))
+    (*abstract-rules* (ban-foreslash-quanta)))
+   ((*translate-motifs*
+      ((*nw* *w* *s* *se*) (*nw*) (*e*) (*se*) (*w*)))
+    (*literal-motifs* ((49) (50 20) (9 50)))
+    (*relative-nvs*
+      ((tips (up-tip *inward*)) (tips (tip *inward*)))))
+   14
+   30
+   41)
+ (benzene-right
+   ((*translate-motifs* ((*n*))))
+   ((*translate-motifs* ((*s*)))
+    (*relative-nvs* ((tips (tip *inward*))))
+    (*literal-motifs* ((36))))
+   ((*literal-motifs* ((39 8 23) (8 39) (39) (8 23)))
+    (*relative-nvs* ((tips (down-tip *n*)) (tips (tip *n*))))
+    (*turn-90-motifs* ((*e*)))
+    (*abstract-rules* (ban-backslash-quanta))
+    (*translate-motifs* ((*e*) (*w* *n*) (*s*) (*ne*)))
+    (*turn-180-motifs* ((*s*))))
+   15
+   18
+   58)
+ (boat ()
+       ((*literal-motifs* ((50 20) (4) (50) (20 50)))
+        (*translate-motifs* ((*w*) (*nw* *n*) (*n*)))
+        (*turn-45-motifs* ((135))))
+       ((*turn-180-motifs* ((*s* *se*) (*n*)))
+        (*literal-motifs* ((39) (50 39) (50)))
+        (*translate-motifs*
+          ((*se* *ne*) (*w* *w*) (*s*) (*n*) (*e*) (*nw*) (*se*)))
+        (*relative-nvs*
+          ((tips (tip *n*))
+           (tips (down-tip *inward*))
+           (tips (tip *inward*))))
+        (*abstract-rules* (at-most-3 ban-vertboxes)))
+       26
+       28
+       52)
+ (hunt4
+   ()
+   ((*turn-90-motifs* ((*ne*) (*se*))))
+   ((*translate-motifs* ((*ne*)))
+    (*literal-motifs* ((50)))
+    (*turn-45-motifs* ((-90)))
+    (*turn-180-motifs* ((*ne*))))
+   12
+   14
+   53)
+ (slant
+   ((*literal-motifs* ((21 38) (38 21) (21) (38))))
+   ((*literal-motifs* ((21)))
+    (*translate-motifs* ((*ne*) (*s* *sw*) (*sw*))))
+   ((*translate-motifs*
+      ((*ne* *n* *e*) (*n* *e*) (*ne*) (*s* *sw*)))
+    (*literal-motifs* ((8 38) (9) (5 21) (5)))
+    (*turn-180-motifs* ((*s*)))
+    (*abstract-rules* (ban-backslash-quanta ban-leftedge))
+    (*turn-90-motifs* ((*ne* *n*) (*s*))))
+   16
+   17
+   59)
+ (slash
+   ((*literal-motifs* ((38) (38 37) (37 38)))
+    (*translate-motifs* ((*ne* *ne*))))
+   ((*translate-motifs* ((*ne*)))
+    (*literal-motifs* ((38) (37))))
+   ((*translate-motifs* ((*w* *ne*) (*sw* *e*) (*sw* *sw*)))
+    (*relative-nvs* ((weight less)))
+    (*turn-90-motifs* ((*w* *w* *ne*)))
+    (*abstract-rules* (ban-leftedge ban-backslash-quanta)))
+   9
+   23
+   48)
+ (snout
+   ((*translate-motifs* ((*n*))))
+   ((*translate-motifs* ((*e* *e*) (*w* *w*)))
+    (*turn-90-motifs* ((*e* *n*))))
+   ((*translate-motifs* ((*w*))))
+   12
+   30
+   61)
+ (intersect
+   ()
+   ((*turn-180-motifs* ((*n* *nw*)))
+    (*translate-motifs* ((*n*) (*s*))))
+   ((*abstract-rules* (at-most-3 at-most-2))
+    (*relative-nvs*
+      ((left-edge more) (curve more) (tips (up-tip *inward*))))
+    (*turn-90-motifs* ((*nw*) (*ne*)))
+    (*turn-180-motifs* ((*n* *nw*))))
+   13
+   36
+   69)
+ (funtnip
+   ((*literal-motifs* ((6)))
+    (*translate-motifs* ((*w*) (*n*)))
+    (*turn-90-motifs* ((*e* *n*))))
+   ((*abstract-rules* (at-most-3))
+    (*relative-nvs*
+      ((tips (up-tip *inward*))
+       (roof less)
+       (tips (tip *inward*))
+       (width less)))
+    (*turn-180-motifs* ((*ne*)))
+    (*translate-motifs* ((*e* *e*) (*w* *w*))))
+   ((*relative-nvs*
+      ((weight more) (touch out-of) (right-edge less)))
+    (*literal-motifs* ((23) (6 37) (37) (8)))
+    (*turn-45-motifs* ((-135)))
+    (*turn-180-motifs* ((*e* *ne*) (*e*)))
+    (*translate-motifs* ((*w* *n*) (*w*)))
+    (*turn-90-motifs* ((*ne* *n*))))
+   30
+   37
+   84)
+ (close
+   ()
+   ((*translate-motifs* ((*ne*))))
+   ((*literal-motifs* ((9 8) (9)))
+    (*abstract-rules*
+      (ban-backslash-quanta
+        ban-vertboxes
+        ban-corners
+        at-most-3
+        ban-leftedge))
+    (*translate-motifs* ((*ne*) (*e*)))
+    (*relative-nvs* ((width less) (roof less)))
+    (*turn-180-motifs* ((*ne*)))
+    (*turn-45-motifs* ((180))))
+   17
+   28
+   46)
+ (weird-arrow
+   ()
+   ((*relative-nvs* ((tips (tip *inward*))))
+    (*translate-motifs* ((*e*) (*ne*) (*n*))))
+   ((*literal-motifs* ((21)))
+    (*translate-motifs* ((*ne* *s*) (*n*) (*e*) (*se*)))
+    (*relative-nvs* ((left-edge more)))
+    (*turn-90-motifs* ((*n* *nw*)))
+    (*abstract-rules* (at-most-3))
+    (*turn-180-motifs* ((*w* *s*) (*w*))))
+   13
+   39
+   61)
+ (square-curl
+   ()
+   ((*abstract-rules*
+      (ban-45-135-angle
+        ban-135-angle
+        ban-diagonal-quanta
+        ban-foreslash-quanta))
+    (*literal-motifs* ((23 20) (20 23) (20)))
+    (*turn-180-motifs* ((*n* *n* *w*) (*e* *s* *s*)))
+    (*translate-motifs* ((*e* *s*))))
+   ((*translate-motifs* ((*w*) (*w* *s*) (*s*)))
+    (*abstract-rules*
+      (at-most-3 ban-backslash-quanta ban-corners))
+    (*relative-nvs*
+      ((tips (tip *inward*))
+       (tips (up-tip *inward*))
+       (tips (tip *sw*))
+       (curve more)))
+    (*literal-motifs* ((4) (21)))
+    (*turn-90-motifs* ((*n* *w*) (*n* *e* *s*)))
+    (*turn-45-motifs* ((90)))
+    (*turn-180-motifs* ((*n* *n* *e*) (*n* *n* *w*))))
+   22
+   36
+   65))
+>>>> (transcript-off)

@@ -1,0 +1,78 @@
+Chez Scheme Transcript [Wed Jul 14 23:36:01 1999]
+>>>> (test-adj) (test-adj)
+Training SS
+Temperature 2
+
+Error: variable levelname is not bound.
+Type (debug) to enter the debugger.
+>>>> Training SS
+Temperature 2
+
+Error: variable levelname is not bound.
+Type (debug) to enter the debugger.
+>>>>  (load "adjudicator.ss")
+>>>>  (test-adj) (test-adj)
+Training SS
+Temperature 2
+Temperature 1
+Temperature 2
+Temperature 20
+Temperature 3
+Testing 
+Testing a 
+Temperature 4
+Temperature 12
+Temperature 46
+Temperature 60
+Temperature 63
+Temperature 48
+Testing d 
+Temperature 0
+Temperature 13
+Temperature 30
+Temperature 74
+Temperature 37
+Temperature 35
+Testing h 
+Temperature 4
+Temperature 20
+Temperature 21
+Temperature 60
+Temperature 43
+Temperature 41
+Testing y 
+Temperature 13
+Temperature 33
+Temperature 76
+Temperature 52
+Temperature 61
+Temperature 44
+Training SH
+Temperature 1
+Temperature 17
+Temperature 11
+Temperature 20
+Temperature 13
+Testing 
+Testing a 
+Temperature 13
+Temperature 8
+Temperature 42
+Temperature 55
+Temperature 54
+Temperature 41
+Testing d 
+Temperature 2
+Temperature 4
+Temperature 22
+Temperature 66
+Temperature 19
+Temperature 24
+Testing h 
+Temperature 5
+Temperature 9
+Temperature 14
+Temperature 45
+
+debug> n
+>>>>> (transcript-off)

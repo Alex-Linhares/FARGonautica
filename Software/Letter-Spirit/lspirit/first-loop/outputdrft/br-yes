@@ -1,0 +1,165 @@
+Chez Scheme Transcript [Thu Nov  4 14:00:56 1999]
+> (try-gridfont 'benzene-right)
+Trying l; ruled (15 18 5 22 25) a l1 score of 77.343
+Trying k; ruled (50 9 14 17 20 23 36 5) a k1 score of 51.654
+Trying u; ruled (37 36 23 8 39) a w1
+Trying i; ruled (5 22 39 8) a u1
+Trying v; ruled (22 39 8 21 38) a u1
+Trying y; ruled (20 23 8 21 24 27 42 12 43 31) a y1 score of 77.523
+Trying a; ruled (36 5 22 39 7 38 8) a a2 score of 66.083
+Borrow g Trying o; ruled (5 8 22 23 25 36 39) a q2
+Trying z; ruled (36 5 38 37 8 39) a z1 score of 56.89
+Trying j; ruled (19 36 23 8 40 29 42) a j1 score of 124.343
+Trying p; ruled (38 24 27 11 28 25 22 23 26 29) a y1
+Trying t; ruled (36 5 18 21 38 26 10 11 28) a t1 score of 83.491
+
+debug> n
+>> (exit)
+debug> i
+#<system continuation in list-length>                             : d
+#<system continuation in map>                                     : s
+  continuation:          #<continuation in longest>
+  free variables:
+  0: (() () ())
+  1: #<system procedure length>
+#<system continuation in map>                                     : d
+#<continuation in longest>                                        : s
+  continuation:          #<continuation in biggest-overlap>
+  procedure code:        (lambda (ls-ls) (if (null? ls-ls) (quote ()) ...))
+  call code:             (map length ls-ls)
+  free variables:
+  0. ls-ls:              (() () ())
+#<continuation in longest>                                        : d
+#<continuation in biggest-overlap>                                : s
+  continuation:          #<continuation in biggest-overlap>
+  procedure code:        (lambda (ls1 ls2) (if ((...) (...)) (quote ()) ...))
+  call code:             (biggest-overlap ls1 (cdr ls2))
+  free variables:
+  0. ls2:                (*sw* *e*)
+  1. ls1:                (*w*)
+  2: ()
+  3: ()
+#<continuation in biggest-overlap>                                : d
+#<continuation in biggest-overlap>                                : s
+  continuation:          #<continuation in biggest-overlap>
+  procedure code:        (lambda (ls1 ls2) (if ((...) (...)) (quote ()) ...))
+  call code:             (biggest-overlap ls1 (cdr ls2))
+  free variables:
+  0. ls2:                (*se* *sw* *e*)
+  1. ls1:                (*w*)
+  2: ()
+  3: ()
+#<continuation in biggest-overlap>                                : d
+#<continuation in biggest-overlap>                                : s
+  continuation:          #<continuation in biggest-overlap>
+  procedure code:        (lambda (ls1 ls2) (if ((...) (...)) (quote ()) ...))
+  call code:             (biggest-overlap ls1 (cdr ls2))
+  free variables:
+  0. ls2:                (*w* *se* *sw* *e*)
+  1. ls1:                (*w*)
+  2: (*w*)
+  3: ()
+#<continuation in biggest-overlap>                                : q
+
+debug> n
+>> (length *coderack*)
+48
+>> *codelets-run*
+147
+>> (exit)
+debug> e
+Trying d; ruled (3 33 1 0 14 17 48 6 50 40 20 4 5 22 25 9 8 23) a t1
+Borrow c Trying r; ruled (5 23 36 39) a i1
+Trying h; ruled (36 5 22 25 17 20 23 8) a h1 score of 84.19
+Trying m; ruled (36 23 5 22 25 21 24) a m1 score of 65.686
+Trying r; ruled (23 8 36 5) a r1 score of 62.02
+Trying u; ruled (37 24 36 23 8) a u1 score of 94.889
+Trying n; ruled (5 22 39 36 23) a n1 score of 57.545
+Trying v; ruled (23 49 39 8) a u1
+Trying i; ruled (45 0 14 5 22 39) a i1 score of 70.937
+Trying w; ruled (24 5 22 39 20 23 8) a w1 score of 78.023
+Trying p; ruled (38 24 39 25 23 26 29) a m1
+Tried (22 39 8 21 38) as v before
+Trying x; ruled (38 37 36 23 8 9) a y1
+Trying x; ruled (21 24 27 11 38 37) a y1
+Trying v; ruled (24 8 23 20 5 22 25 41) a y1
+Borrow b Trying d; ruled (4 9 16 19 22 20 25 49 50) a d1 score of 79.739
+Trying x; ruled (4 21 24 9 36 5) a x1 score of 47.924
+Trying r; ruled (23 8 36 5) a r1
+Borrow b Trying o; ruled (5 8 20 22 23 36 39) a b1
+Borrow b Trying q; ruled (8 5 31 28 25 23 22 39 36) a q1 score of 21.069
+Trying r; ruled (23 36 5) a r1 score of 68.733
+Trying s; ruled (36 5 8 39 6 7) a s2 score of 75.653
+Borrow b Trying p; ruled (9 4 29 26 23 25 20 50 49) a p1 score of 76.837
+Trying v; ruled (22 39 8 36 23) a u1
+Trying v; ruled (23 5 22 39 8) a u1
+Tried (23 5 22 39 8) as v before
+Tried (23 5 22 39 8) as v before
+Trying v; ruled (21 38 23) a v1 score of 96.809
+Trying k; ruled (6 48 34 2 46 49 36 5 14 17 20 23) a v1
+Trying o; ruled (36 5 22 25 9 8 23) a o1 score of 29.65
+Trying r; ruled (5 22 36 23) a r1 score of 61.162
+Trying j; ruled (21 24 9 28 43 12) a y2
+Trying j; ruled (5 22 25 28 43 12 3 15) a j1 score of 70.005
+Borrow e Trying a; ruled (8 7 5 22 39 38 36) a a1
+Trying p; ruled (48 6 50 27 30 20 4 5 22 25 9 8 23) a a1
+Trying u; ruled (20 23 26 10 41 21 24 27 11) a y1
+Trying l; ruled (2 3 19 22 25 9 8 23) a h1
+Trying j; ruled (5 22 25 28 31 3) a j1
+Trying d; ruled (16 3 15 20 4 5 22 25 9 8 23) a j1
+Trying w; ruled (6 23 8 4 20 50 39) a g1
+Trying r; ruled (5 22 36 23) a r1
+Tried (23 36 5) as r before
+Tried (5 22 36 23) as r before
+Trying r; ruled (4 5 22 20 23) a r1 score of 75.21
+Trying v; ruled (38 8 5 22 25 41 10 40) a u1
+Trying p; ruled (20 6 24 27 42 36 5 22 25 9 8 23) a u1
+Trying k; ruled (15 18 21 24 39 25 23 26 10 11 28 36 5) a u1
+Trying z; ruled (8 39 38 37 36 5) a z1 score of 49.342
+Tried (23 36 5) as r before
+Trying j; ruled (5 22 25 28 43 12 3 15) a j1
+Trying j; ruled (22 25 28 43 12 35) a j1 score of 70.35
+Trying i; ruled (3 15 5 22 39 8) a i1
+Trying p; ruled (38 7 25 9 23 8 27 30) a p1
+Trying n; ruled (36 6 48 5 22 39 8) a o1
+Trying w; ruled (22 39 4 20 23 8 24) a u1
+Trying u; ruled (37 51 25 36 23 8 39) a o1
+Trying d; ruled (19 22 25 5 36 23 8 39) a d1 score of 53.154
+Trying y; ruled (22 25 28 43 12 4 20 23 8 39) a y1 score of 70.703
+Trying u; ruled (37 7 25 36 23 8 39) a u1 score of 78.58
+Borrow g Trying y; ruled (8 12 22 23 25 28 36 39 43) a y1 score of 55.564
+Trying l; ruled (16 19 22 25 9 8) a l1
+Trying n; ruled (5 22 39 36 23) a n1
+Tried (5 22 39 36 23) as n before
+Trying n; ruled (23 36 5 22 39) a n1 score of 63.741
+Trying t; ruled (36 5 18 21 38 8 39) a t1 score of 72.316
+Trying k; ruled (50 9 51 7 22 5 23 26 10 11 28 17 20 6 24 39 49) a t1
+Tried (23 5 22 39 8) as v before
+Trying i; ruled (45 0 14 5 22 39) a i1
+Trying i; ruled (3 15 5 22 25) a i1 score of 91.781
+Trying p; ruled (20 6 24 53 31 36 5 22 25 41 10 26 23) a g1
+Trying w; ruled (25 28 11 30 13 36 23 8 24) a y1
+Trying n; ruled (23 36 5 22 39) a n1
+Trying n; ruled (5 22 39 8) a u1
+Tried (5 22 39 36 23) as n before
+Trying n; ruled (5 22 25 36 23) a n1 score of 57.49
+Trying j; ruled (21 24 27 42 12 43 31 16) a j1
+Trying y; ruled (22 39 27 42 36 23 8) a y1
+Trying m; ruled (36 23 5 22 25 21 24) a m1
+Trying j; ruled (21 24 9 28 31) a y2
+Trying m; ruled (5 22 25 23 8) a n1
+Trying m; ruled (21 36 23 5 22 39) a m1 score of 63.673
+Trying z; ruled (8 39 38 37 36 5) a z1
+Trying z; ruled (38 37 8 39 36 5) a z1 score of 55.46
+Trying h; ruled (36 5 22 39 14 17 20 23) a h1 score of 50.969
+Trying i; ruled (3 15 5 22 25) a i1 score of 73.611
+Trying y; ruled (8 12 22 23 25 28 36 39 43) a y1
+Trying y; ruled (21 7 25 28 43 12 23 8 39) a y1 score of 57.286
+Trying w; ruled (36 23 8 7 25) a n1
+Trying p; ruled (36 5 22 25 9 8 23 26 29) a p1 score of 68.112
+Trying d; ruled (16 19 22 39 5 4 20 23 8) a d1 score of 40.312
+Trying d; ruled (5 36 50 16 19 22 39) a d1
+Trying x; ruled (21 24 9 8 39 22) a x1
+
+debug> n
+>> (transcript-off)

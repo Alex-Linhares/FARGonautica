@@ -1,0 +1,360 @@
+Chez Scheme Transcript [Wed Nov  3 14:02:42 1999]
+>>> (try-gridfont 'flournoy-ranch)
+Trying s; ruled (19 3 2 17 48 7 25 28 11 10) a y1
+Borrow g Trying y; ruled (20 21 23 25 28 31 38 49 55) a y1 score of 90.843
+Trying q; ruled (22 25 28 43 47 2 17 20 23) a y1
+Trying s; ruled (8 9 51 4 5 22 48) a s2 score of 91.608
+Trying z; ruled (38 51 39 22 36 5) a x1
+Trying m; ruled (36 23 5 22 25 21 24) a m1 score of 93.926
+Trying x; ruled (48 51 38 37) a x1 score of 63.274
+Trying n; ruled (34 3 19 22 25 20 23) a n1 score of 132.546
+Trying l; ruled (15 18 21 51) a l1 score of 59.012
+Trying p; ruled (26 29 12 20 34 3 19 22 25 41) a j1
+Trying k; ruled (36 5 17 20 23 8 24 21 18 15 50 9) a g1
+Trying z; ruled (38 37 8 9 4 5) a z1 score of 77.8
+Trying i; ruled (45 5 22 25) a i1 score of 64.441
+Trying j; ruled (22 25 28 43 12 3) a j1 score of 71.379
+Borrow b Trying h; ruled (14 17 20 22 24 25 37 44 50) a h1 score of 104.458
+Trying d; ruled (49 4 20 23 26 10 41 19 22 25) a h1
+Trying u; ruled (20 23 52 22 25) a i1
+Borrow c Trying r; ruled (20 39 48 50) a c1
+Trying r; ruled (4 5 22 20 23) a r1 score of 69.739
+Trying k; ruled (6 37 23 52 14 17 48 24) a k1 score of 113.957
+Trying q; ruled (7 38 26 29 12 43 11 28 31 13 30 27 39 49) a k1
+Trying a; ruled (20 48 38 5 22 25) a n1
+Trying v; ruled (20 23 8 9 49 25) a u1
+Trying t; ruled (6 7 22 18 21 51) a t1 score of 94.658
+Borrow g Trying o; ruled (4 5 20 21 23 25 38 49) a d2
+Borrow b Trying d; ruled (9 8 16 19 22 20 24 23 48 33 39) a d2 score of 104.043
+Trying u; ruled (20 50 25 28 11 27) a u1 score of 109.058
+Borrow b Trying o; ruled (8 9 20 22 24 25 37 50) a p2
+Trying v; ruled (22 39 20 23 8) a u1
+Trying v; ruled (49 39 48 24) a v1 score of 102.472
+Trying s; ruled (20 34 38 7 36 5) a i1
+Trying w; ruled (20 50 51 25 49 5) a i1
+Trying w; ruled (36 23 8 9 22 25 51) a w1 score of 85.717
+Borrow b Trying q; ruled (5 4 31 28 25 23 21 20 38 55 49) a g2
+Trying q; ruled (21 38 26 29 12 20 34 3 19 22 25 9 50) a p2
+Borrow b Trying p; ruled (4 5 29 26 23 25 21 22 51 42 36) a p2 score of 63.981
+Trying q; ruled (22 25 28 31 47 2 17 20 23) a p2
+Trying a; ruled (36 21 38 34 3 19 22 25) a i1
+Borrow e Trying a; ruled (8 23 22 39 37 50) a a2 score of 96.259
+Tried (21 38 26 29 12 20 34 3 19 22 25 9 50) as q before
+Trying o; ruled (20 34 3 19 22 25 9 50) a o1 score of 113.672
+Tried (22 25 28 31 47 2 17 20 23) as q before
+Trying q; ruled (21 6 23 26 29 20 34 3 19 22 25 9 50) a p2
+Trying q; ruled (25 28 31 49 4 20 23 26) a o1
+Trying q; ruled (47 2 17 20 23 8 9 22 25 28 31) a q1 score of 97.975
+Trying h; ruled (34 3 19 22 25 14 17 20) a h1
+Trying t; ruled (18 21 48 17 14 0 45 16 36 5) a k1
+
+debug> i
+#<continuation in lookup>                                         : d
+#<continuation in get-on-neighbors-list>                          : s
+  continuation:          #<continuation in prob-neighbors-list>
+  procedure code:        (lambda (quantum) ((...) (...)))
+  call code:             (lookup quantum *neighbors*)
+#<continuation in get-on-neighbors-list>                          : d
+#<continuation in prob-neighbors-list>                            : s
+  continuation:          #<continuation in pick-neighbor-to-glom>
+  procedure code:        (lambda (quantum) ((...) (...)))
+  call code:             (get-on-neighbors-list quantum)
+#<continuation in prob-neighbors-list>                            : d
+#<continuation in pick-neighbor-to-glom>                          : s
+  continuation:          #<continuation in bond-quantum>
+  procedure code:        (lambda (quantum) ((...) (...)))
+  call code:             (prob-neighbors-list quantum)
+#<continuation in pick-neighbor-to-glom>                          : d
+#<continuation in bond-quantum>                                   : s
+  continuation:          #<continuation in bond-quanta>
+  procedure code:        (lambda () ((lambda (...) (...)) (pick-quantum)))
+  call code:             (pick-neighbor-to-glom quantum)
+  free variables:
+  0. quantum:            51
+#<continuation in bond-quantum>                                   : d
+#<continuation in bond-quanta>                                    : s
+  continuation:          #<continuation in label-parts>
+  procedure code:        (lambda () (if (...) ...))
+  call code:             (bond-quantum)
+#<continuation in bond-quanta>                                    : d
+#<continuation in label-parts>                                    : s
+  continuation:          #<continuation in run-examiner>
+  procedure code:        (lambda () (if *graphics* ...) (set-up-workspace) ...)
+  call code:             (bond-quanta)
+#<continuation in label-parts>                                    : d
+#<continuation in run-examiner>                                   : s
+  continuation:          #<continuation in check-gridletter>
+  procedure code:        (lambda optional-args (if (...) ...))
+  call code:             (label-parts)
+  free variables:
+  0. optional-args:      ()
+#<continuation in run-examiner>                                   : q
+
+debug> n
+>>>> *quanta-list*
+(35 51)
+>>>> (smart-parse)
+>>>> *workspace*
+((((35)) (**whine 10)) (((51)) (**whine 10)))
+>>>> (load "labeler.ss")
+>>>> (re-draw 'i)
+>>>> (try-cats)
+Trying j; ruled (51 28 43 12 42 10 40 39 49 5) a g1
+Trying h; ruled (5 22 25 15 18 21 38) a h1 score of 88.704
+Trying z; ruled (4 5 8 9 38 37) a z1
+Trying p; ruled (52 30 12 29 40 24 21 20 17 2 3 19 22) a j1
+Trying o; ruled (20 34 3 19 22 25 9 50) a o1 score of 110.066
+Trying s; ruled (20 50 4 5 22 8 9 51 48) a g1
+Trying m; ruled (20 23 48 24 37 22 25) a m1 score of 66.62
+Trying a; ruled (7 25 9 8 26 29 49 4 20 23) a q1
+Trying y; ruled (22 25 28 43 12 20 23 8 9) a y1 score of 72.161
+Trying t; ruled (18 21 38 26) a l1
+Tried (34 3 19 22 25 14 17 20) as h before
+Trying h; ruled (14 17 20 34 3 19 22 25) a h1
+Trying i; ruled (49 25 19) a i1
+Trying v; ruled (4 49 39 24) a v1 score of 96.404
+Trying s; ruled (20 34 3 38 7 36 49) a r1
+Trying d; ruled (20 34 18 21 38 16 19 22 39 27) a j1
+Trying k; ruled (17 20 36 21 51 6 37 23 8) a j1
+Trying z; ruled (38 37 22 8 9 49) a o1
+Trying u; ruled (22 25 20 23 8 9) a u1 score of 82.739
+Trying u; ruled (36 23 25 9 24 37) a i1
+Trying i; ruled (49 25 45) a i1
+Trying w; ruled (4 20 23 8 51 25 39 27) a i1
+Trying t; ruled (4 5 46 21 6 23 26) a y1
+Trying z; ruled (50 9 36 5 34 47) a l1
+Tried (20 34 3 19 22 25 9 50) as o before
+Trying x; ruled (49 25 39 22) a x1
+Trying d; ruled (20 34 18 21 38 16 19 22 25) a n1
+Trying i; ruled (16 51) a i1
+Trying q; ruled (25 28 31 13 49 4 20 23) a g1
+Trying a; ruled (7 25 9 8 49 4 20 23) a a1 score of 93.869
+Trying q; ruled (21 38 26 20 34 3 19 22 25 9 50) a p2
+Trying r; ruled (48 7 20 23) a r1
+Trying a; ruled (37 22 25 23 20 4 5) a n1
+Trying u; ruled (22 25 20 23 52) a i1
+Trying y; ruled (50 9 22 25 28 43 12) a y1
+Trying z; ruled (5 8 9 38 37) a z1 score of 64.541
+Trying j; ruled (22 25 28 43 12) a y2
+Trying n; ruled (20 23 34 3 19 22 25) a l1
+Trying j; ruled (25 28 43 12 42 10) a l1
+Trying x; ruled (48 51 36 5) a r1
+Trying d; ruled (1 0 14 46 36 23 8 20 34 3 19 22) a r1
+Trying u; ruled (22 25 20 23 8 9) a u1 score of 81.993
+Trying q; ruled (20 34 3 19 37 38 28 31 13 30 27 39 49) a y1
+Tried (20 34 3 19 22 25 9 50) as o before
+Trying d; ruled (47 2 17 20 23 8 16 19 22 39 9) a d1
+Trying y; ruled (51 28 31 13 12 42 10 20 23 8 9) a y1
+Trying p; ruled (36 5 22 25 9 50 20 23 26 29) a p2 score of 52.878
+Trying t; ruled (18 21 38 36 5) a r1
+Trying j; ruled (3 22 25 28 43 12) a j1
+Trying d; ruled (1 15 18 21 38 26 20 34 3 19 22 25 9 50) a j1
+Trying u; ruled (20 23 8 9 22 25) a u1 score of 81.753
+Trying z; ruled (34 47 6 7 25 36 5) a l1
+Trying s; ruled (7 25 9 4 20 23 38) a r1
+Trying n; ruled (36 23 5 22 25) a n1 score of 88.967
+Trying l; ruled (15 18 21 51) a l1 score of 55.362
+Trying v; ruled (19 3 34 20 23 38 49 25) a y1
+
+debug> n
+>>>>> (re-draw 'a)
+>>>>> (exit)
+debug> e
+Tried (22 25 20 23 8 9) as u before
+Trying r; ruled (20 23 4 5 22) a r1
+Trying v; ruled (22 39 48 24) a v1 score of 95.59
+Trying w; ruled (49 39 20 23 8 24) a u1
+Tried (20 23 8 9 49 25) as v before
+Tried (14 17 20 34 3 19 22 25) as h before
+Trying t; ruled (46 49 22 47 34 20 23 8 9) a l1
+Trying j; ruled (3 22 25 41 10) a j1
+Trying r; ruled (20 23 4 5) a r1
+Tried (34 3 19 22 25 14 17 20) as h before
+Trying u; ruled (22 25 36 23 52 11 28) a w1
+Trying s; ruled (6 51 28 47 2 17 20) a n1
+Tried (20 23 8 9 49 25) as v before
+Trying t; ruled (18 21 6 23 26 48 7) a y1
+Trying s; ruled (19 3 2 17 20 6 51) a l1
+Trying w; ruled (22 25 36 23 34 2 46 21 38) a m1
+Tried (20 34 18 21 38 16 19 22 39 27) as d before
+Trying o; ruled (20 34 3 19 22) a r1
+Trying x; ruled (38 37 48 51) a x1 score of 57.752
+Trying v; ruled (21 51 22 25) a v1 score of 68.286
+Tried (36 21 38 34 3 19 22 25) as a before
+Trying t; ruled (4 5 18 21 6 23 26) a t1
+Trying i; ruled (49 25) a c1
+Tried (20 23 4 5) as r before
+Trying v; ruled (19 3 2 14 0 4 49 25) a i1
+Trying a; ruled (38 24 39 36 5 22 25) a a2
+Trying m; ruled (20 23 48 24 37 22 25) a m1
+Trying k; ruled (21 51 17 20 4 5) a k1 score of 88.209
+Trying w; ruled (46 20 23 8 25 51 21) a j1
+Tried (21 38 26 29 12 20 34 3 19 22 25 9 50) as q before
+Trying d; ruled (19 22 25 4 20 23 52 41) a j1
+Tried (22 25 28 31 47 2 17 20 23) as q before
+Trying r; ruled (4 5 22 20 23) a r1
+Trying u; ruled (20 23 8 9 22 25) a u1
+Trying u; ruled (7 37 5 35 20 23 8 9) a i1
+Trying d; ruled (49 4 20 23 8 9 16 19 22 25) a d1 score of 61.817
+Trying z; ruled (38 37 5 8 9) a z1
+Trying z; ruled (36 5 39 22) a n1
+Tried (4 5 22 20 23) as r before
+Trying k; ruled (50 9 51 7 36 5 17 20 23 8 24 21 18 15 0) a n1
+Tried (49 25) as i before
+Trying r; ruled (5 22 36 23) a r1
+Trying j; ruled (49 25 28 31 19) a j1
+Trying n; ruled (20 23 4 5 22 25) a n1
+Tried (4 5 22 20 23) as r before
+Trying r; ruled (23 36 5) a r1
+Tried (20 34 3 19 22 25 9 50) as o before
+Trying a; ruled (7 38 8 9 34 33 1 0 14 46) a j1
+Trying j; ruled (49 25 28 43 12 45) a j1 score of 66.08
+Trying a; ruled (20 4 35 3 2 37 22 25) a i1
+Trying v; ruled (19 3 33 1 0 14 17 20 6 4 49 25) a f1
+Trying u; ruled (20 23 52 41 22 25) a v1
+Tried (20 34 3 19 22 25 9 50) as o before
+Trying y; ruled (25 28 43 12 29 40 20 23 52 41) a v1
+Tried (20 34 3 19 22 25 9 50) as o before
+Tried (37 22 25 23 20 4 5) as a before
+Trying h; ruled (17 20 23 8 24 21 18 15 34 3 19 22 25) a v1
+Trying k; ruled (38 48 7 17 20 23 52 10 40) a v1
+Trying h; ruled (34 3 19 22 25 17 20 23 8 24) a h1
+Trying m; ruled (4 21 24 20 23 5 22 25) a m1
+Trying q; ruled (20 34 3 35 21 38 22 25 28 31) a j1
+Trying t; ruled (4 5 18 21 6 23 26 10 11 28 9 39) a t1
+Tried (22 25 20 23 8 9) as u before
+Tried (50 9 22 25 28 43 12) as y before
+Tried (22 25 28 43 12) as j before
+Trying h; ruled (4 49 25 14 17 20) a h1 score of 80.083
+Tried (18 21 38 36 5) as t before
+Trying q; ruled (25 28 31 13 30 27 24 37 47 3 45 49 4 20 23) a h1
+Trying s; ruled (6 51 9 8 19 3 2 17 20) a l1
+Trying y; ruled (20 50 9 22 25 28 43 12) a y1 score of 62.804
+Trying m; ruled (5 22 25 48 24 20 23) a m1
+Tried (22 25 28 31 47 2 17 20 23) as q before
+Trying x; ruled (38 37 48 51) a x1
+Trying s; ruled (8 39 6 7 36 5) a s2
+Trying a; ruled (36 21 38 26 10 11 53 34 3 19 22 25) a j1
+Trying k; ruled (14 17 20 4 5 21 51) a k1 score of 74.532
+Trying v; ruled (19 3 2 32 4 49 25) a i1
+Trying s; ruled (6 51 28 19 3 2) a j1
+Trying k; ruled (15 18 21 36 5 23 8) a t1
+Trying s; ruled (6 7 8 9 25 36 5) a s2 score of 91.003
+Trying v; ruled (20 23 8 9 22 25) a u1
+Trying j; ruled (22 25 28 43 12 35) a j1
+Trying z; ruled (8 9 28 11 10 38 7 36 35 19 47) a j1
+Tried (21 38 26 29 12 20 34 3 19 22 25 9 50) as q before
+Trying s; ruled (19 3 2 17 48 7 25) a l1
+Trying d; ruled (20 4 21 38 8 39 16 19 22 25) a h1
+Trying k; ruled (4 5 14 17 20 48 51) a k1 score of 73.274
+Trying s; ruled (34 3 19 22 38 7 4 49) a q2
+Trying h; ruled (14 17 20 4 49 25) a h1 score of 79.502
+Trying i; ruled (5 22 25) a r1
+Tried (20 34 3 19 22) as o before
+Trying i; ruled (6 51 35) a i1
+Tried (20 34 3 19 22 25 9 50) as o before
+Tried (34 3 19 22 25 14 17 20) as h before
+Tried (22 39 20 23 8) as v before
+Tried (14 17 20 34 3 19 22 25) as h before
+Tried (20 34 3 19 22 25 9 50) as o before
+Trying y; ruled (20 50 9 22 25 28 43 12) a y1 score of 61.245
+Trying u; ruled (39 24 37 5 20 23 52 41) a i1
+Trying n; ruled (4 49 25 20 23) a n1 score of 77.391
+Trying t; ruled (18 21 38 52 11 36 5) a t1 score of 83.273
+Trying w; ruled (23 8 49 25 48 24) a i1
+Trying s; ruled (48 51 6 7 25 4 5 19 3 2 32 1) a i1
+Trying a; ruled (34 3 19 22 25) a l1
+Trying j; ruled (49 25 28 43 12) a u1
+Trying k; ruled (50 9 17 20 23 8 24 4 5) a u1
+Trying s; ruled (22 19 3 2 6 51 9 8) a i1
+Trying d; ruled (20 34 18 21 38 16 19 22 39 9 28 31) a i1
+Trying z; ruled (38 37 36 5) a r1
+Trying i; ruled (3 5 22 25) a i1
+Tried (20 34 3 35 21 38 22 25 28 31) as q before
+Trying q; ruled (22 25 28 31 47 2 17 20 23 52) a i1
+Trying m; ruled (38 37 22 25 24) a m1
+Trying s; ruled (19 45 7 25 28 11) a j1
+Trying j; ruled (22 25 28 43 12 45) a j1 score of 58.858
+Trying d; ruled (47 2 17 20 23 8 9 19 22 25) a d1
+Trying a; ruled (34 3 19 22 49 36 23) a l1
+Tried (48 51 38 37) as x before
+Trying d; ruled (20 17 2 18 21 38 16 19 22) a j1
+Trying h; ruled (34 3 19 22 25 17 20 23 52 10 40) a h1
+Trying s; ruled (6 51 46 17 20) a l1
+Tried (5 22 25 48 24 20 23) as m before
+Trying m; ruled (48 38 20 50 22 25) a i1
+Trying i; ruled (3 49 25) a i1
+Tried (18 21 38 36 5) as t before
+Tried (15 18 21 51) as l before
+Trying s; ruled (19 3 2 17 20 6 51 28) a l1
+Tried (4 5 22 20 23) as r before
+Tried (20 34 3 19 22) as o before
+Trying w; ruled (20 6 22 25 21 51) a w1 score of 75.671
+Trying t; ruled (6 7 39 46 49 22 47 34 20 23 8 9) a w1
+Trying j; ruled (48 51 28 43 12) a y2
+Trying d; ruled (16 19 22 49 4 20 23) a l1
+Trying y; ruled (20 23 8 9 49 25 28 43 12) a y1
+Trying l; ruled (45 19 22 25) a l1
+Trying q; ruled (49 4 20 23 8 9 22 25 28 31) a q1 score of 67.36
+Tried (20 34 3 35 21 38 22 25 28 31) as q before
+Trying y; ruled (22 25 41 42 21 51) a y2 score of 58.821
+Trying t; ruled (4 5 18 21 6 23) a t1 score of 82.122
+Trying h; ruled (17 20 23 52 10 40 24 21 18 15 0 34 3 19 22 25) a t1
+Tried (20 34 3 35 21 38 22 25 28 31) as q before
+Trying a; ruled (7 25 9 8 26 10 11 49 4 20 23) a q1
+Trying s; ruled (6 51 9 8 22 47 2) a i1
+Trying x; ruled (8 9 36 5) a i1
+Trying n; ruled (5 22 25 36 23) a n1
+Trying r; ruled (4 5 22 48 24) a r1 score of 64.596
+Trying p; ruled (20 23 26 54 34 3 19 22 25) a r1
+Trying u; ruled (20 23 8 9 49 25) a u1
+Tried (20 23 34 3 19 22 25) as n before
+Trying u; ruled (20 50 24 37 19 3 2 25 28) a u1
+Tried (20 34 3 19 22 25 9 50) as o before
+Tried (47 2 17 20 23 8 9 22 25 28 31) as q before
+Trying r; ruled (4 5 22 48 24) a r1
+Trying y; ruled (20 23 8 9 22 25 28 43 12) a y1
+Tried (3 5 22 25) as i before
+Tried (15 18 21 51) as l before
+Trying z; ruled (6 37 4 5 50 9) a z1
+Tried (15 18 21 51) as l before
+Trying q; ruled (49 4 20 23 8 9 25 28 31 13 30 27 24 37) a z1
+Tried (15 18 21 51) as l before
+Tried (4 5 22 48 24) as r before
+Trying d; ruled (49 4 20 23 8 9 16 19 22 25) a d1
+Trying p; ruled (34 3 19 22 25 9 8 20 23 26) a p1
+Trying j; ruled (45 25 28 43 12 29 26 52 55) a j1
+Trying p; ruled (48 24 27 30 51 9 8 23 36 5) a q1
+Trying l; ruled (16 19 22 25) a l1
+Trying k; ruled (51 17 20 23 8 24 21 18 15 36 5) a l1
+Tried (4 5 22 48 24) as r before
+Tried (20 23 34 3 19 22 25) as n before
+Trying n; ruled (23 36 5 22 25) a n1
+Tried (3 22 25 28 43 12) as j before
+Trying i; ruled (19 51) a i1
+Tried (22 25 28 43 12) as j before
+Tried (20 23 8 9 22 25) as u before
+Tried (20 23 8 9 22 25) as u before
+Trying k; ruled (36 50 9 4 5 17 20 23 8 24 21 18 15) a i1
+Tried (20 23 8 9 22 25) as u before
+Trying x; ruled (48 51 39 22) a x1
+Tried (36 23 5 22 25 21 24) as m before
+Tried (5 22 25 36 23) as n before
+Trying w; ruled (25 9 27 11 38 26 46 17 20 23) a x1
+Tried (20 34 3 35 21 38 22 25 28 31) as q before
+Tried (20 23 8 9 22 25 28 43 12) as y before
+Tried (20 34 3 19 22 25 9 50) as o before
+Tried (36 21 38 34 3 19 22 25) as a before
+Trying o; ruled (20 17 2 3 19 22 25 9 50) a o1
+Trying q; ruled (22 25 28 31 47 2 17 20 50 9) a q1
+Tried (20 34 3 19 22 25 9 50) as o before
+Trying a; ruled (7 38 26 10 41 4 5 22 25) a a1
+Trying h; ruled (32 17 20 23 34 3 19 22 25) a h1
+Trying i; ruled (16 49 25) a i1
+Tried (49 25 28 43 12) as j before
+Trying a; ruled (5 36 23 8 9 34 3 19 22 25) a b1
+Trying z; ruled (36 5 8 9 38 37) a z1
+Trying z; ruled (38 6 4 5 39 22) a n1
+Tried (20 34 3 19 22 25 9 50) as o before
+Trying s; ruled (7 25 9 8 19 3 2 17 48) a s2
+>>>> (transcript-off)

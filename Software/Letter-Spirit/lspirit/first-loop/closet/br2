@@ -1,0 +1,181 @@
+Chez Scheme Transcript [Thu Jan 27 08:17:31 2000]
+> (try-gridfont 'benzene-right)
+Accepted, as a seed for b, (5 8 14 17 20 22 23 36 39)
+Accepted, as a seed for c, (5 8 23 36 39)
+Accepted, as a seed for e, (5 6 8 23 36 37 39)
+Accepted, as a seed for f, (18 21 24 33 36 5)
+Accepted, as a seed for g, (5 8 12 22 23 25 28 36 39 43)
+(nada () ((*literal-motifs* ((36) (36 5) (5) (5 36))) (*turn-90-motifs* ((*ne*))) (*translate-motifs* ((*sw* *s*)))) ((*literal-motifs* ((23 36 5) (8 39) (23 8 39))) (*translate-motifs* ((*sw* *w* *n* *ne*) (*w* *n*) (*s*))) (*turn-90-motifs* ((*s* *e*))) (*relative-nvs* ((tips (tip *inward*)))) (*turn-180-motifs* ((*e* *ne*) (*ne*)))) 18 19 38)
+Trying p by borrowing b; seed margin 57.592 5/3
+accepted as p1 score 57.592 beat 299.99 (4 9 20 23 25 26 29 49 50)
+Trying n by drafting n; seed margin 103.077 8.227428571428572
+accepted as n1 score 103.077 beat 299.99 (5 22 36 38 39)
+Trying s by drafting s; rejected as a2, score 300.0 (4 5 9 22 23 24 25 38)
+Trying z by drafting z; rejected as c1, score 300.0 (5 6 8 36 38 39)
+Trying v by drafting v; rejected as u1, score 300.0 (8 21 22 38 39)
+Trying k by drafting k; rejected as quit, score 300.0 (2 5 6 14 17 20 23 34 36 48)
+Trying p by drafting p; rejected as q1, score 300.0 (5 8 22 23 27 30 36 39)
+Trying j by drafting j; seed margin 54.061 18.833624999999998
+accepted as j1 score 54.061 beat 299.99 (1 12 16 22 25 28 43)
+Trying z by drafting z; seed margin 82.519 21.63666666666667
+accepted as z1 score 82.519 beat 299.99 (5 6 7 8 23 25 36)
+Trying h by borrowing b; seed margin 44.278 26.724900000000005
+accepted as h1 score 44.278 beat 299.99 (5 14 17 20 22 23 36 39)
+Trying s by drafting s; rejected as i1, score 300.0 (4 5 9 23 24 25 38)
+Trying i by drafting i; seed margin 55.578 27.411545454545454
+accepted as i1 score 55.578 beat 299.99 (5 9 15 22 25 36 45)
+Trying k by drafting k; seed margin 83.517 28.925416666666663
+accepted as k1 score 83.517 beat 299.99 (5 8 14 17 20 23 36 38 51)
+Trying l by drafting l; seed margin 100.379 32.35553846153846
+accepted as l1 score 100.379 beat 299.99 (0 1 2 8 14 16 18 19 22 23 36)
+Trying r by borrowing c; rejected as i1, score 300.0 (5 23 36 39)
+Trying v by drafting v; rejected as u1, score 300.0 (5 8 22 23 39)
+Trying r by drafting r; rejected as n1, score 300.0 (5 36 38)
+Trying v by drafting v; rejected as u1, score 300.0 (5 8 22 23 39)
+Trying a by borrowing e; seed margin 57.076 36.50007142857144
+accepted as a2 score 57.076 beat 299.99 (5 7 8 22 36 38 39)
+Trying n by drafting n; seed margin 96.213 33.214285714285715
+reelected as n1 score 96.213 (5 22 36 38 39)
+Trying l by drafting l; seed margin 60.899 32.91671428571429
+accepted as l1 score 60.899 beat 100.379 (9 15 18 21 24)
+Trying o by borrowing g; rejected as i1, score 300.0 (5 8 22 23 25 36 39)
+Trying y by borrowing g; seed margin 42.513 34.11553333333334
+accepted as y1 score 42.513 beat 299.99 (8 12 22 23 25 28 36 39 43)
+Trying t by drafting t; rejected as k1, score 300.0 (5 6 8 18 20 21 23 36 39)
+Trying z by drafting z; seed margin 43.109 31.448466666666675
+accepted as z1 score 43.109 beat 82.519 (5 8 36 37 38)
+Trying d by borrowing b; seed margin 55.199 31.552250000000008
+accepted as d1 score 55.199 beat 299.99 (4 9 16 19 20 22 25 49 50)
+Trying h by drafting h; seed margin 45.103 32.234812500000004
+reelected as h1 score 45.103 (5 14 17 20 22 23 36 39)
+Trying w by drafting w; rejected as r1, score 300.0 (5 20 21 23 25 38 39 51)
+Trying o by drafting o; seed margin 42.431 32.403529411764715
+accepted as o1 score 42.431 beat 299.99 (4 5 8 9 20 22 23 25)
+Trying v by drafting v; seed margin 73.617 32.40505555555555
+accepted as v1 score 73.617 beat 299.99 (20 21 23 38)
+Trying m by drafting m; rejected as quit, score 300.0 (5 9 11 13 22 28 30 36 38)
+Trying m by drafting m; rejected as p1, score 300.0 (5 9 10 21 22 23 25 26 30 36)
+Trying k by drafting k; rejected as k1, score 95.261 (5 14 17 20 23 36 39)
+Trying s by drafting s; rejected as i1, score 300.0 (5 7 8 9 36 38)
+Trying w by drafting w; seed margin 104.459 34.08331578947368
+accepted as w1 score 104.459 beat 299.99 (5 10 11 20 21 23 24 26 50)
+Trying h by drafting h; seed margin 42.9 37.20731578947368
+accepted as h1 score 42.9 beat 43.9 (5 14 17 20 22 23 25 36)
+Trying j by drafting j; rejected as c1, score 300.0 (12 22 25 28 43)
+Trying m by drafting m; seed margin 52.24 36.99195
+accepted as m1 score 52.24 beat 299.99 (5 9 21 22 23 25 36)
+Trying r by drafting r; seed margin 29.825 37.24185714285714
+seedified as r1 score 29.825 beat 299.99 (5 23 36)
+Trying y by drafting y; seed margin 47.272 60
+seedified as y1 score 47.272 beat 48.01 (8 9 12 22 23 25 28 36 43)
+Trying u by borrowing y; seed margin 35.391 60
+seedified as u1 score 35.391 beat 299.99 (8 22 23 25 36 39)
+Trying p by drafting p; rejected as b2, score 300.0 (0 2 5 9 14 16 20 22 23 25 34 36 45 50)
+Trying a by drafting a; rejected as i1, score 300.0 (3 5 9 14 25 32 34 36 37 45 50)
+Trying t by drafting t; seed margin 51.174 51.556000000000004
+seedified as t1 score 51.174 beat 299.99 (4 5 8 17 21 36 38 39)
+Trying o by drafting o; seed margin 8.375 60
+seedified as o1 score 8.375 beat 42.431 (5 8 9 22 23 25 36)
+Trying x by drafting x; seed margin 36.309 60
+seedified as x1 score 36.309 beat 299.99 (5 6 9 20 23 24 36)
+Trying q by borrowing b; seed margin 5.997 60
+seedified as q1 score 5.997 beat 299.99 (5 8 22 23 25 28 31 36 39)
+Trying i by drafting i; rejected as i1, score 113.431 (16 22 25)
+Trying l by drafting l; rejected as l1, score 102.561 (9 16 19 22 25)
+Trying s by drafting s; rejected as j1, score 300.0 (5 7 8 23 25 28 36)
+Trying s by drafting s; rejected as y2, score 300.0 (7 10 11 19 21 23 25 26 28 35)
+Trying s by drafting s; seed margin 60.184 52.159
+accepted as s2 score 60.184 beat 299.99 (5 6 7 10 11 25 26 28 36)
+Trying w by drafting w; rejected as j1, score 300.0 (8 10 11 22 23 25 36 40)
+Trying w by drafting w; rejected as j1, score 300.0 (4 22 24 25 27 36 41)
+Trying l by drafting l; rejected as c1, score 300.0 (5 8 10 11 12 13 22 23 24 28 29 36 51)
+Trying d by borrowing q; seed margin 60.697 60.224000000000004
+reelected as d1 score 60.697 (4 9 16 19 20 22 25 49 50)
+Trying k by drafting k; rejected as m1, score 300.0 (5 9 14 17 20 23 24 36)
+Trying v by drafting v; rejected as u1, score 300.0 (8 22 23 36 39)
+Trying s by drafting s; rejected as c1, score 300.0 (5 6 7 36)
+Trying j by drafting j; rejected as j1, score 56.953 (4 12 22 25 28 35 43)
+Trying i by drafting i; rejected as c1, score 300.0 (22 25)
+Trying s by drafting s; rejected as quit, score 300.0 (5 7 9 10 11 17 26 34 47 49 51 53)
+Trying z by drafting z; rejected as c1, score 300.0 (5 8 23 36 39)
+Trying z by drafting z; rejected as i1, score 300.0 (5 7 38)
+Trying i by drafting i; rejected as i1, score 73.251 (3 15 22 25)
+Trying h by borrowing y; seed margin 32.399 56.6335
+seedified as h1 score 32.399 beat 35.21 (1 5 17 20 22 23 32 36 39)
+Trying n by borrowing h; seed margin 21.428 60
+seedified as n1 score 21.428 beat 96.213 (5 20 22 23 25 36)
+Trying v by drafting v; rejected as y1, score 300.0 (5 11 22 24 36 38 39 52)
+Trying m by drafting m; rejected as m1, score 69.515 (5 9 20 21 22 23 25 36)
+Trying l by drafting l; rejected as l1, score 69.269 (0 1 2 8 14 16 18 19 22 23 36)
+Trying k by drafting k; seed margin 3.918 49.23725
+seedified as k1 score 3.918 beat 84.192 (5 6 7 14 17 20 23 25 36)
+Trying i by drafting i; rejected as i1, score 74.355 (22 25 35)
+Trying i by drafting i; rejected as i1, score 72.849 (3 22 25 34)
+Trying m by drafting m; seed margin 14.28 52.789
+seedified as m1 score 14.28 beat 52.24 (4 5 20 21 22 23 25)
+Trying i by drafting i; rejected as l1, score 300.0 (5 22 25 35)
+Trying l by drafting l; rejected as q1, score 300.0 (5 8 10 11 12 13 22 23 24 28 29 36 51)
+Trying d by drafting d; rejected as quit, score 300.0 (0 3 5 8 9 22 23 25 34 36 45 48 51)
+Trying d by drafting d; seed margin 39.185 45.55666666666667
+seedified as d1 score 39.185 beat 60.697 (5 8 15 18 21 23 24 36 39)
+Trying l by drafting l; seed margin 28.785 60
+seedified as l1 score 28.785 beat 32.197 (8 15 18 23 36)
+Trying a by drafting a; rejected as n1, score 300.0 (5 8 22 23 25 36)
+Trying v by drafting v; rejected as l1, score 300.0 (3 19 23 36 37 38)
+Trying i by drafting i; rejected as l1, score 300.0 (5 22 25 35)
+Trying i by drafting i; rejected as r1, score 300.0 (4 21 35)
+Trying s by drafting s; rejected as i1, score 300.0 (5 7 36 38)
+Trying j by drafting j; rejected as y2, score 300.0 (12 22 25 28 34 43 47)
+Trying i by drafting i; rejected as i1, score 62.187 (5 22 25 34)
+Trying s by drafting s; seed margin 45.806 50.49480000000001
+seedified as s2 score 45.806 beat 53.496 (5 7 8 21 23 39)
+Trying z by drafting z; rejected as z1, score 70.824 (5 6 7 8 23 25 36)
+Trying z by borrowing s; rejected as quit, score 300.0 (4 6 7 10 11 23 26 28 49)
+Trying i by drafting i; rejected as i1, score 91.156 (3 4 21)
+Trying z by drafting z; rejected as c1, score 300.0 (5 8 9 23 36)
+Trying w by borrowing m; seed margin 11.446 43.76333333333334
+seedified as w1 score 11.446 beat 104.459 (8 9 20 22 23 24 25)
+Trying p by borrowing d; rejected as quit, score 300.0 (5 8 21 22 24 27 30 36 39)
+Trying i by drafting i; rejected as i1, score 91.038 (0 4 21 45)
+Trying a by drafting a; rejected as n1, score 300.0 (5 22 25 36)
+Trying a by drafting a; rejected as o1, score 300.0 (5 10 22 23 25 26 36 41)
+Trying p by borrowing q; seed margin 51.772 48.419000000000004
+reelected as p1 score 51.772 (4 9 20 23 25 26 29 49 50)
+Trying j by drafting j; rejected as quit, score 300.0 (12 22 25 28 43)
+Trying v by drafting v; rejected as u1, score 300.0 (5 6 9 20 22 24 25)
+Trying i by drafting i; rejected as r1, score 300.0 (5 22 25)
+Trying j by drafting j; seed margin 43.385 50.129200000000004
+seedified as j1 score 43.385 beat 49.855 (12 18 22 25 28 33 43)
+Trying p by drafting p; seed margin 26.729 60
+seedified as p1 score 26.729 beat 51.772 (5 8 22 23 26 29 36 39)
+Trying z by drafting z; seed margin 51.851 60
+seedified as z on re-election 51.851 (5 8 36 37 38)
+Trying i by borrowing j; rejected as i1, score 81.696 (1 16 22 25)
+
+debug> n
+>> (map car *scratchspace*)
+(i z p j v a w s l d m k n h q x o t u y r g f e c b)
+>> (length *scratchspace*)
+26
+>>  (map car *library*)
+(z p j w s l d m k n h q x o t u y r g f e c b)
+>> (beg-borrow-or-draw 'i)
+(i (22 39) (15))
+>>  (beg-borrow-or-draw 'i) *drawn-from*
+(i (16 1) (24 9))
+>> a
+>> (load "loop.ss")
+>> (load "borrow.ss")
+>> (draw 'i)
+
+Error: variable draw is not bound.
+Type (debug) to enter the debugger.
+>> (draw-cat 'i)
+(i (16 1) (7 25 28))
+>> (try-cat 'i)
+Trying i by drafting i; rejected as i1, score 84.138 (22 25 35)
+>>  (try-cat 'i)
+Trying i by drafting i; rejected as i1, score 86.992 (1 16 22 25)
+>>  (try-cat 'i)
+Trying i by drafting i; rejected as i1, score 98.055 (1 4 16 21)
+>> (transcript-off)

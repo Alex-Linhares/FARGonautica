@@ -1,0 +1,66 @@
+Rules-
+ #t for a zone, angle or orientation implies that the named feature is
+ABSENT in the gridletter, and thus the rule APPLIES
+
+ #t for at-least, at-most implies that the named property DOES APPLY
+
+THEMATIC FOCUS:
+
+	A row for each letter category. This will be all we need to
+indicate that an SP has turned up at least once.
+
+	A row to indicate SPs that have turned up at least twice.
+	A row for SPs that have turned up "sometimes."
+	A row for SPs that are "nearly universal."
+
+
+Bugs?
+	Spark values of loop roles going over 100
+	Fixed, but will have to re-test Examiner.
+	Also, role-defs are liable to change for a while.
+
+NORM-VIOLATIONS
+
+	OK, lots missing. Namely, the different ways of looking at
+them, and all the tip ones, including rotation, and the r-role ones.
+	Curve -- OK, now
+
+	Example - Height of SHORT-b
+	(height less) (height x-height -> t-height)
+
+	Thus NV-compare (implemented), NV-value, NV-mapping
+
+
+	ROLE-DEFS -- lots of revision to do here
+
+	Tip NVs: Radial (N, S, E, W). "Altered" (no reference to
+direction). Rotation "Clockwise", "Counter-clockwise."
+
+	But WHICH tip? Right tip down, left-tip left, etc.
+	Gotta compute the default position of the tip in relation to
+the other tip.
+
+	R-role NVs: Should touch and don't. Shouldn't and do (rare, I
+imagine).
+	
+nt	ZILCH
+t	SOME
+all-ov	MUCH
+
+More specific version of SOME:
+
+	t1	m	t2	2ts	t1m	mt2	2ms
+t1	-	into	diff	+t	+m	diff	diff
+m	out-of	-	out-of	diff	+t	+t	+m	
+t2	diff	into	-	+t	diff	+m	diff
+2ts	-t	diff	-t	-	into	into	into
+t1m	-m	-t	diff	out-of	-	diff	into
+mt2	diff	-t	-m	out-of	diff	-	into
+2ms	diff	-m	diff	out-of	out-of	out-of	-
+
+touch NVs:
+
+less, minus-t, minus-m, plus-t, plus-m, into, out-of, more, diff
+
+
+ACTIVATIONS

@@ -1,0 +1,728 @@
+Chez Scheme Transcript [Thu Feb 18 09:16:19 1999]
+> all-that
+((a-archs
+   (medium-wt 10)
+   (light 1)
+   curve
+   ((*square-right* 10)
+    (*straight* 10)
+    (*slight-right* 10)
+    (*slight-left* 3)
+    (*strong-right* 3))
+   curve1
+   ((*straight* 10)
+    (*weird-curve* 3)
+    (*square-right* 5)
+    (*slight-right* 8)
+    (*strong-right* 3))
+   curve2
+   ((*straight* 10)
+    (*slight-right* 8)
+    (*square-right* 5)
+    (*weird-curve* 5)))
+ (backslashs
+   (light 2)
+   (heavy 1)
+   (medium-wt 10)
+   curve
+   ((*straight* 10)
+    (*square-left* 2)
+    (*slight-left* 4)
+    (*slight-right* 4)
+    (*square-right* 6))
+   curve1
+   ((*straight* 10)
+    (*strong-right* 10)
+    (*weird-curve* 8)
+    (*slight-left* 3)
+    (*square-right* 3))
+   curve2
+   ((*straight* 10)
+    (*full-left* 3)
+    (*square-right* 3)
+    (*square-left* 10)
+    (*slight-left* 3)
+    (*strong-right* 10)
+    (*weird-curve* 3)))
+ (basebars
+   (light 10)
+   (medium-wt 7)
+   (very-light 2)
+   curve
+   ((*straight* 5)
+    (*square-left* 10)
+    (*slight-left* 10)
+    (*slight-right* 3))
+   curve1
+   ((*straight* 10) (*slight-left* 1))
+   curve2
+   ((*straight* 10) (*square-left* 1) (*strong-right* 1)))
+ (caps (light 10)
+       (very-light 6)
+       (medium-wt 8)
+       curve
+       ((*straight* 10)
+        (*slight-left* 4)
+        (*square-right* 7)
+        (*full-right* 1)
+        (*slight-right* 4))
+       curve1
+       ((*straight* 10) (*strong-right* 1) (*slight-right* 1))
+       curve2
+       ((*straight* 10)
+        (*square-left* 1)
+        (*square-right* 2)
+        (*weird-curve* 2)))
+ (center-posts
+   (medium-wt 10)
+   (heavy 10)
+   curve
+   ((*straight* 6)
+    (*slight-left* 10)
+    (*square-left* 6)
+    (*full-left* 1))
+   curve1
+   ((*straight* 10)
+    (*slight-left* 3)
+    (*square-right* 1)
+    (*slight-right* 1))
+   curve2
+   ((*straight* 10)
+    (*full-left* 3)
+    (*slight-left* 10)
+    (*square-left* 8)
+    (*weird-curve* 8)
+    (*slight-right* 3)))
+ (circles
+   (heavy 10)
+   (medium-wt 1)
+   curve
+   ((*closure* 10) (*full-right* 1))
+   curve1
+   ((*square-right* 10) (*slight-right* 8) (*full-right* 1))
+   curve2
+   ((*square-right* 10) (*full-right* 2) (*slight-right* 5)))
+ (crossbars
+   (light 10)
+   (medium-wt 2)
+   (very-light 4)
+   curve
+   ((*straight* 10)
+    (*slight-left* 4)
+    (*square-right* 1)
+    (*slight-right* 4))
+   curve1
+   ((*straight* 10) (*weird-curve* 1))
+   curve2
+   ((*straight* 10) (*strong-right* 1)))
+ (dots (very-light 3)
+       (medium-wt 10)
+       (light 10)
+       curve
+       ((*straight* 10)
+        (*full-right* 2)
+        (*square-right* 4)
+        (*weird-curve* 2)
+        (*strong-right* 6)
+        (*closure* 8)
+        (*slight-left* 2)
+        (*full-left* 2))
+       curve1
+       ((*straight* 10)
+        (*weird-curve* 2)
+        (*strong-right* 3)
+        (*square-right* 1)
+        (*slight-right* 1)
+        (*square-left* 1))
+       curve2
+       ((*straight* 10)
+        (*weird-curve* 2)
+        (*square-right* 2)
+        (*square-left* 1)
+        (*strong-right* 2)
+        (*slight-right* 1)))
+ (down-arms
+   (very-light 2)
+   (medium-wt 8)
+   (light 10)
+   curve
+   ((*straight* 3)
+    (*full-left* 3)
+    (*slight-left* 10)
+    (*square-right* 3)
+    (*square-left* 3)
+    (*strong-right* 7)
+    (*slight-right* 7)
+    (*weird-curve* 3))
+   curve1
+   ((*straight* 10) (*slight-right* 1))
+   curve2
+   ((*straight* 10)
+    (*square-left* 1)
+    (*square-right* 1)
+    (*weird-curve* 3)
+    (*strong-right* 1)))
+ (down-circles
+   (heavy 10)
+   (medium-wt 8)
+   curve
+   ((*closure* 10))
+   curve1
+   ((*slight-right* 10)
+    (*square-right* 6)
+    (*straight* 2)
+    (*strong-right* 4))
+   curve2
+   ((*slight-right* 8) (*square-right* 10)))
+ (e-bowls
+   (heavy 10)
+   curve
+   ((*full-left* 10))
+   curve1
+   ((*weird-curve* 3)
+    (*square-left* 10)
+    (*slight-left* 8)
+    (*square-right* 2)
+    (*full-left* 3))
+   curve2
+   ((*square-left* 7)
+    (*slight-left* 10)
+    (*straight* 1)
+    (*weird-curve* 4)))
+ (e-crossbars
+   (light 10)
+   (very-light 3)
+   curve
+   ((*straight* 10) (*slight-left* 4) (*slight-right* 2))
+   curve1
+   ((*straight* 10))
+   curve2
+   ((*straight* 10)))
+ (e-tails
+   (medium-wt 6)
+   (light 10)
+   (very-light 1)
+   curve
+   ((*slight-left* 8)
+    (*square-left* 10)
+    (*strong-right* 3)
+    (*weird-curve* 5)
+    (*straight* 5))
+   curve1
+   ((*square-left* 3)
+    (*straight* 10)
+    (*weird-curve* 1)
+    (*slight-left* 1))
+   curve2
+   ((*straight* 10) (*slight-left* 2)))
+ (f-posts
+   (medium-wt 6)
+   (heavy 10)
+   curve
+   ((*slight-left* 8)
+    (*square-left* 10)
+    (*weird-curve* 8)
+    (*full-left* 5)
+    (*straight* 3))
+   curve1
+   ((*slight-left* 10) (*square-left* 7) (*weird-curve* 1))
+   curve2
+   ((*straight* 10) (*slight-left* 5) (*slight-right* 1)))
+ (foreslashs
+   (light 4)
+   (medium-wt 10)
+   curve
+   ((*straight* 7)
+    (*slight-left* 7)
+    (*slight-right* 10)
+    (*square-right* 5))
+   curve1
+   ((*straight* 10)
+    (*square-right* 4)
+    (*strong-right* 5)
+    (*weird-curve* 1)
+    (*slight-left* 1))
+   curve2
+   ((*straight* 10)
+    (*weird-curve* 3)
+    (*slight-left* 5)
+    (*square-left* 5)
+    (*strong-right* 5)))
+ (halfposts
+   (medium-wt 10)
+   (light 5)
+   (very-light 1)
+   curve
+   ((*slight-right* 10)
+    (*strong-right* 8)
+    (*straight* 5)
+    (*slight-left* 5)
+    (*square-right* 10)
+    (*full-right* 3)
+    (*square-left* 3))
+   curve1
+   ((*square-right* 4)
+    (*straight* 10)
+    (*strong-right* 4)
+    (*square-left* 1)
+    (*weird-curve* 1)
+    (*slight-right* 1)
+    (*slight-left* 1))
+   curve2
+   ((*straight* 10)
+    (*square-right* 2)
+    (*slight-right* 1)
+    (*weird-curve* 1)
+    (*square-left* 1)))
+ (left-bowls
+   (heavy 10)
+   (medium-wt 5)
+   (light 1)
+   curve
+   ((*full-left* 10) (*square-left* 1) (*weird-curve* 3))
+   curve1
+   ((*slight-left* 10)
+    (*square-left* 5)
+    (*straight* 4)
+    (*full-left* 1)
+    (*weird-curve* 2))
+   curve2
+   ((*slight-left* 10)
+    (*straight* 4)
+    (*square-left* 4)
+    (*weird-curve* 3)
+    (*slight-right* 1)))
+ (left-downbowls
+   (medium-wt 10)
+   (heavy 4)
+   curve
+   ((*full-left* 10) (*weird-curve* 3))
+   curve1
+   ((*slight-left* 6)
+    (*slight-right* 2)
+    (*straight* 10)
+    (*weird-curve* 2))
+   curve2
+   ((*slight-left* 10)
+    (*square-left* 5)
+    (*straight* 8)
+    (*weird-curve* 3)))
+ (left-halfarcs
+   (medium-wt 9)
+   (light 10)
+   curve
+   ((*slight-left* 6)
+    (*straight* 2)
+    (*square-left* 10)
+    (*weird-curve* 6)
+    (*full-left* 2))
+   curve1
+   ((*straight* 10) (*strong-right* 1) (*slight-left* 3))
+   curve2
+   ((*square-left* 4) (*straight* 10) (*weird-curve* 4)))
+ (left-halfarchs
+   (medium-wt 7)
+   (very-light 10)
+   (light 10)
+   curve
+   ((*slight-right* 5)
+    (*straight* 10)
+    (*strong-right* 3)
+    (*square-right* 3))
+   curve1
+   ((*square-right* 2) (*straight* 10) (*strong-right* 2))
+   curve2
+   ((*straight* 10)))
+ (left-halfposts
+   (light 10)
+   (medium-wt 6)
+   (very-light 2)
+   curve
+   ((*straight* 10)
+    (*slight-right* 6)
+    (*slight-left* 3)
+    (*full-right* 1)
+    (*square-left* 1)
+    (*square-right* 1))
+   curve1
+   ((*straight* 10) (*strong-right* 4) (*weird-curve* 1))
+   curve2
+   ((*straight* 10)
+    (*square-left* 2)
+    (*slight-right* 2)
+    (*slight-left* 1)))
+ (left-posts
+   (medium-wt 10)
+   (heavy 8)
+   (light 3)
+   curve
+   ((*straight* 10)
+    (*slight-right* 4)
+    (*slight-left* 5)
+    (*square-right* 1))
+   curve1
+   ((*straight* 10)
+    (*slight-right* 6)
+    (*square-left* 1)
+    (*slight-left* 6))
+   curve2
+   ((*straight* 10)
+    (*slight-right* 4)
+    (*slight-left* 3)
+    (*square-right* 3)
+    (*square-left* 1)))
+ (left-tails
+   (medium-wt 10)
+   (light 4)
+   (heavy 1)
+   curve
+   ((*straight* 10)
+    (*square-right* 4)
+    (*slight-right* 4)
+    (*slight-left* 2)
+    (*square-left* 2))
+   curve1
+   ((*straight* 10) (*strong-right* 1) (*slight-right* 3))
+   curve2
+   ((*straight* 10)
+    (*slight-right* 1)
+    (*weird-curve* 1)
+    (*square-right* 1)))
+ (left-uparcs
+   (medium-wt 10)
+   (light 2)
+   (heavy 1)
+   curve
+   ((*square-left* 10)
+    (*weird-curve* 8)
+    (*slight-left* 8)
+    (*slight-right* 6)
+    (*straight* 2)
+    (*full-left* 6))
+   curve1
+   ((*straight* 10)
+    (*slight-right* 3)
+    (*slight-left* 8)
+    (*strong-right* 3)
+    (*square-left* 3))
+   curve2
+   ((*straight* 10)
+    (*slight-left* 6)
+    (*square-left* 3)
+    (*weird-curve* 3)))
+ (left-upbowls
+   (medium-wt 10)
+   (light 4)
+   curve
+   ((*slight-left* 2)
+    (*weird-curve* 3)
+    (*full-left* 10)
+    (*square-left* 7))
+   curve1
+   ((*straight* 10)
+    (*strong-right* 1)
+    (*slight-left* 4)
+    (*square-left* 5))
+   curve2
+   ((*square-left* 5)
+    (*straight* 10)
+    (*slight-left* 4)
+    (*weird-curve* 6)))
+ (left-wings
+   (light 10)
+   (medium-wt 9)
+   (very-light 1)
+   curve
+   ((*slight-left* 4)
+    (*square-right* 2)
+    (*square-left* 2)
+    (*straight* 8)
+    (*slight-right* 10)
+    (*full-right* 2))
+   curve1
+   ((*straight* 10)
+    (*strong-right* 4)
+    (*square-right* 3)
+    (*square-left* 1))
+   curve2
+   ((*straight* 10)
+    (*slight-right* 2)
+    (*slight-left* 2)
+    (*square-right* 1)))
+ (right-bowls
+   (heavy 10)
+   (medium-wt 4)
+   curve
+   ((*full-right* 10) (*strong-right* 2))
+   curve1
+   ((*slight-right* 10) (*square-right* 4) (*straight* 3))
+   curve2
+   ((*slight-right* 10) (*square-right* 6) (*straight* 3)))
+ (right-buttresss
+   (medium-wt 10)
+   (light 4)
+   (heavy 3)
+   (very-light 1)
+   curve
+   ((*square-right* 10)
+    (*slight-right* 8)
+    (*strong-right* 3)
+    (*straight* 3)
+    (*full-right* 5)
+    (*slight-left* 2))
+   curve1
+   ((*straight* 10)
+    (*slight-right* 5)
+    (*square-right* 2)
+    (*strong-right* 1)
+    (*slight-left* 1))
+   curve2
+   ((*straight* 10)
+    (*slight-left* 1)
+    (*slight-right* 6)
+    (*full-right* 1)
+    (*square-right* 2)
+    (*weird-curve* 1)))
+ (right-curls
+   (heavy 10)
+   (huge 0)
+   (medium-wt 5)
+   curve
+   ((*square-right* 10)
+    (*slight-right* 8)
+    (*slight-left* 4)
+    (*straight* 4)
+    (*strong-right* 4)
+    (*full-right* 2))
+   curve1
+   ((*slight-right* 6)
+    (*slight-left* 3)
+    (*straight* 10)
+    (*square-right* 5)
+    (*square-left* 1)
+    (*full-right* 2)
+    (*strong-right* 2))
+   curve2
+   ((*slight-right* 10)
+    (*straight* 4)
+    (*square-right* 5)
+    (*square-left* 1)
+    (*slight-left* 1)
+    (*full-right* 1)
+    (*strong-right* 1)))
+ (right-downbowls
+   (medium-wt 10)
+   (light 3)
+   (heavy 2)
+   curve
+   ((*full-right* 10)
+    (*square-right* 9)
+    (*slight-right* 4)
+    (*strong-right* 6))
+   curve1
+   ((*slight-right* 5)
+    (*strong-right* 8)
+    (*square-right* 3)
+    (*straight* 10)
+    (*slight-left* 1))
+   curve2
+   ((*slight-right* 7)
+    (*weird-curve* 3)
+    (*straight* 10)
+    (*strong-right* 2)
+    (*square-right* 4)
+    (*slight-left* 1)))
+ (right-halfarcs
+   (medium-wt 4)
+   (very-light 4)
+   (light 10)
+   curve
+   ((*slight-left* 8)
+    (*straight* 8)
+    (*square-left* 5)
+    (*slight-right* 3)
+    (*weird-curve* 10))
+   curve1
+   ((*straight* 10) (*slight-right* 1))
+   curve2
+   ((*square-left* 1) (*straight* 10) (*weird-curve* 2)))
+ (right-halfarchs
+   (medium-wt 8)
+   (light 10)
+   curve
+   ((*slight-right* 10)
+    (*strong-right* 10)
+    (*square-right* 10))
+   curve1
+   ((*square-right* 4) (*strong-right* 4) (*straight* 10))
+   curve2
+   ((*straight* 10) (*square-right* 1) (*slight-right* 1)))
+ (right-halfposts
+   (light 10)
+   (medium-wt 7)
+   (very-light 5)
+   curve
+   ((*straight* 10)
+    (*square-right* 4)
+    (*slight-right* 4)
+    (*full-right* 2)
+    (*square-left* 4)
+    (*full-left* 2))
+   curve1
+   ((*straight* 10)
+    (*square-right* 1)
+    (*slight-left* 2)
+    (*weird-curve* 1))
+   curve2
+   ((*straight* 10) (*square-left* 2) (*weird-curve* 1)))
+ (right-hooks
+   (heavy 10)
+   (medium-wt 9)
+   curve
+   ((*square-right* 10)
+    (*slight-right* 7)
+    (*strong-right* 3)
+    (*straight* 1))
+   curve1
+   ((*slight-right* 3)
+    (*square-left* 1)
+    (*straight* 10)
+    (*slight-left* 1))
+   curve2
+   ((*slight-right* 10)
+    (*square-right* 9)
+    (*straight* 1)
+    (*strong-right* 3)
+    (*slight-left* 1)))
+ (right-posts
+   (medium-wt 10)
+   (heavy 6)
+   (light 2)
+   curve
+   ((*straight* 10)
+    (*slight-left* 8)
+    (*slight-right* 3)
+    (*square-right* 3))
+   curve1
+   ((*straight* 10)
+    (*square-left* 2)
+    (*square-right* 2)
+    (*slight-left* 2)
+    (*strong-right* 2))
+   curve2
+   ((*straight* 10)
+    (*square-left* 2)
+    (*square-right* 2)
+    (*slight-left* 4)))
+ (right-tails
+   (medium-wt 10)
+   (heavy 3)
+   (light 1)
+   (very-light 1)
+   curve
+   ((*straight* 10)
+    (*square-left* 3)
+    (*slight-right* 1)
+    (*slight-left* 1))
+   curve1
+   ((*straight* 10) (*weird-curve* 1) (*slight-left* 3))
+   curve2
+   ((*straight* 10)
+    (*slight-left* 3)
+    (*slight-right* 1)
+    (*square-left* 1)))
+ (right-wings
+   (light 10)
+   (medium-wt 10)
+   curve
+   ((*slight-right* 10)
+    (*full-right* 3)
+    (*square-right* 3)
+    (*straight* 5))
+   curve1
+   ((*straight* 10)
+    (*square-right* 5)
+    (*strong-right* 3)
+    (*slight-right* 3))
+   curve2
+   ((*straight* 10) (*slight-right* 3)))
+ (s-bases
+   (light 10)
+   (medium-wt 7)
+   (very-light 3)
+   curve
+   ((*straight* 10)
+    (*slight-left* 6)
+    (*square-left* 6)
+    (*slight-right* 2))
+   curve1
+   ((*straight* 10) (*strong-right* 2))
+   curve2
+   ((*straight* 10) (*square-left* 2) (*slight-left* 1)))
+ (s-crossbars
+   (light 10)
+   (very-light 6)
+   curve
+   ((*straight* 10) (*slight-left* 4) (*slight-right* 2))
+   curve1
+   ((*straight* 10))
+   curve2
+   ((*straight* 10)))
+ (t-posts
+   (medium-wt 10)
+   (heavy 3)
+   curve
+   ((*slight-left* 10)
+    (*straight* 3)
+    (*square-left* 7)
+    (*slight-right* 2))
+   curve1
+   ((*straight* 10)
+    (*slight-left* 3)
+    (*square-right* 1)
+    (*slight-right* 3))
+   curve2
+   ((*square-left* 10)
+    (*strong-right* 3)
+    (*slight-left* 8)
+    (*full-left* 3)
+    (*weird-curve* 10)))
+ (up-arms
+   (light 10)
+   (medium-wt 3)
+   (very-light 6)
+   curve
+   ((*straight* 10)
+    (*square-right* 3)
+    (*slight-right* 5)
+    (*slight-left* 2)
+    (*strong-right* 2))
+   curve1
+   ((*straight* 10) (*slight-right* 1) (*slight-left* 1))
+   curve2
+   ((*straight* 10) (*strong-right* 2)))
+ (up-circles
+   (heavy 10)
+   (medium-wt 9)
+   curve
+   ((*closure* 10))
+   curve1
+   ((*slight-right* 10)
+    (*square-right* 10)
+    (*straight* 2)
+    (*strong-right* 3))
+   curve2
+   ((*slight-right* 10)
+    (*square-right* 7)
+    (*straight* 2)
+    (*strong-right* 7)))
+ (z-caps
+   (light 10)
+   (very-light 8)
+   curve
+   ((*straight* 10) (*slight-right* 5) (*square-right* 3))
+   curve1
+   ((*straight* 10))
+   curve2
+   ((*straight* 10))))
+> (transcript-off)

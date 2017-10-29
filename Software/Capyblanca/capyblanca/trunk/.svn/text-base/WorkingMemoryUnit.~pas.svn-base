@@ -1,0 +1,186 @@
+unit WorkingMemoryUnit;
+
+interface
+
+uses ExternalMemoryUnit, stdctrls, classes;            
+
+
+type
+    TWorkingMemory = class
+                          ImaginedBoard: Array[1..8,1..8] of Tlist;
+                          Pieces: Tlist;
+                          Alreadythinking:boolean;
+                          impulses_fired:integer;
+
+                          WhiteThreatens: Array[1..8,1..8] of integer;
+                          BlackThreatens: Array[1..8,1..8] of integer;
+                          Saccaded:Array[1..8,1..8] of boolean;   {COGBUG???}
+                          GlancedShadow:Array[1..8,1..8] of boolean;
+
+                          constructor create;
+                          procedure Threatens(P:Tpiece);
+                          function GetPieceAt(S:TSquare):TPiece;
+                          function GetAttackers (Side: TPlayerColor):Tlist;
+                          function GetGuardians (Side: TPlayerColor):Tlist;
+                          Procedure look_for_attack_trajectories (side:boolean; pmemo:tmemo);
+                          Procedure Release_Intensity_in_Guardians(side:boolean);
+                          Function get_pieces_of_side(side:boolean): tlist;
+                          function CanSomeoneHelpMeHerePlease (Imagined_Displaced_Piece, RealPiece: Tpiece):tlist;
+                          {to be continued...}
+                      end;
+
+
+var WorkingMemory: TWorkingMemory;
+
+implementation
+
+uses abstractimpulses;
+
+Function Tworkingmemory.get_pieces_of_side(side:boolean): tlist;
+var count: integer; piece_aux:tpiece;
+begin
+     get_pieces_of_side:=Tlist.Create;
+     for count:= 0 to pieces.count-1 do
+     begin
+          piece_aux:= pieces.items[count];
+          if piece_aux.White=side then
+             get_pieces_of_side.add(piece_aux);
+     end;
+end;
+
+Procedure Tworkingmemory.look_for_attack_trajectories (side:boolean; pmemo:tmemo);
+var RightSidePieces, WrongSidePieces:Tlist;
+    Attack, victim: Tpiece;
+    count1, count2:integer;
+begin
+     RightSidePieces:=get_pieces_of_side (side);
+
+     {1st thing: See if the right side can attack the wrong side}
+     for count1:= 0 to RightSidePieces.count-1 do
+     begin
+          Attack:=RightSidePieces.items[count1];
+          WrongSidePieces:=get_pieces_of_side (not side);
+          for count2:= 0 to WrongSidePieces.count-1 do
+          begin
+               victim:=WrongSidePieces.items[count2];
+               Attack.Launch_Impulse_Finding_Relation_To(victim, pmemo);
+          end;
+     end;
+end;
+
+Procedure TWorkingmemory.Release_Intensity_in_Guardians(side:boolean);
+var FreeGuys:Tlist;  count:integer; Piece_aux: Tpiece; 
+begin
+     FreeGuys:=Workingmemory.GetGuardians (side);
+     for count:= 0 to FreeGuys.count-1 do
+     begin
+          Piece_aux:=FreeGuys.items[count];
+          Piece_aux.Release_Intensity_of_Guarding;
+     end;
+end;
+
+Function TWorkingmemory.GetAttackers (Side:TPlayerColor):Tlist;
+var AuxPiece: Tpiece; Pieces_to_scan, AttackersList:Tlist; count:integer;
+begin
+     AttackersList:=Tlist.create;
+     Pieces_to_scan:=get_pieces_of_side (side);
+     for count := 0 to Pieces_to_scan.count-1 do
+     begin
+          auxpiece:= workingmemory.pieces.items[count];
+          if (auxpiece.isattacker) then
+             AttackersList.Add(auxpiece);
+     end;
+     result:=attackerslist;
+end;
+
+Function TWorkingmemory.GetGuardians (Side:TPlayerColor):Tlist;
+var AuxPiece: Tpiece; AttackersList:Tlist; count:integer;
+begin
+     AttackersList:=Tlist.create;
+     for count := 0 to workingmemory.pieces.count-1 do
+     begin
+          auxpiece:= workingmemory.pieces.items[count];
+          if (auxpiece.isguardian) then
+             AttackersList.Add(auxpiece);
+     end;
+     result:=attackerslist;
+end;
+
+
+function Tworkingmemory.CanSomeoneHelpMeHerePlease (Imagined_Displaced_Piece, RealPiece: Tpiece):tlist;
+var T: Tlist; P_Aux:Tpiece; x:integer;
+begin
+     t:=Tlist.create;
+     for x := 0 to workingmemory.pieces.count-1 do
+     begin
+          P_Aux:=pieces.items[x];
+          if (Realpiece<>p_aux) then
+          begin
+               if (p_aux.isDefending(Imagined_Displaced_Piece.sq)) then
+                  T.Add(P_aux);
+          end;
+     end;
+     result:= T;
+end;
+
+function TWorkingmemory.GetPieceAt(S:TSquare):TPiece;
+var t,index:integer;P:Tpiece;
+begin
+     Pieces.pack;
+     index:=-1;
+     t:=0;
+     while (t<Pieces.Count)do
+     begin
+          P:=Pieces.items[t];
+          if (P.sq.x=S.x) and (P.sq.y=S.y) then index:=t;
+          t:=t+1;
+     end;
+     if index>=0 then
+     begin
+          P:=Pieces.Items[index];
+          result:=P;
+     end
+     else
+         result:=nil;
+end;
+
+constructor Tworkingmemory.create;
+var x,y:integer;
+begin
+     Pieces:=Tlist.create;
+     impulses_fired:=0;
+
+     for x:= 1 to 8 do
+         for y:= 1 to 8 do
+         begin
+              WhiteThreatens[x,y]:=10000;
+              BlackThreatens[x,y]:=10000;
+              Saccaded[x,y]:=false;
+              GlancedShadow[x,y]:=false;
+         end;
+end;
+
+Procedure TWorkingmemory.Threatens(P:TPiece);
+var L:Tlist; sq:^Tsquare; t:integer;
+begin
+     L:= P.GetThreathenedSquares(P.sq);
+     new (sq);
+
+     if P.white then
+     begin
+          for t:= 0 to (L.count-1) do
+          begin
+               sq:=L.items[t];
+               WhiteThreatens[sq^.x,sq^.y]:=1;
+          end;
+     end else
+     begin
+          for t:= 0 to (L.count-1) do
+          begin
+               sq:=L.items[t];
+               BlackThreatens[sq^.x,sq^.y]:=1;
+          end;
+     end;
+     dispose(sq);
+end;
+end.

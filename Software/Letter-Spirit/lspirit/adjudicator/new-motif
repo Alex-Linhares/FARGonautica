@@ -1,0 +1,29 @@
+find TF matches for motif M, length L
+
+SL = sublists (M)
+
+build list of TF motifs of sp-type
+
+LEVEL-1
+ (m sublists(m))
+LEVEL-2
+ etc
+
+M-SIZE-LEVEL-SEARCH
+ (options: motifs of length >=s)
+ (common(option) (intersect SL (cadr option))
+ success: (map common options) of length >=s
+ if (null? success) '() else roulette(map car success)
+
+M-SIZE-SEARCH
+ (level: car levels)
+ (top-check: M-SIZE-LEVEL-SEARCH level)
+ (if (not null? top-check) top-check
+  else M-SIZE-SEARCH (cdr levels)
+
+M-MATCH (size)
+ (biggest-check: M-SIZE-SEARCH(size))
+ (if (not null? biggest-check) biggest-check
+  else M-MATCH (- size 1)
+
+M-MATCH (L)

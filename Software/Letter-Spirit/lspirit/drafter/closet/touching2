@@ -1,0 +1,15 @@
+PICKING INITIAL POINTS
+
+ends - quanta/rules
+ends - quanta/literal-motifs
+
+ends - quanta/already been used (multiply by zero -- this nukes!)
+
+point:
+ point info, touching norms, etc. TIMES
+ end-and-point norm score TIMES
+ end-quantum score (product of the above)
+
+We WERE multiplying end norm and end-quantum first, and this gave us
+one out of a possible two end-norm scores
+

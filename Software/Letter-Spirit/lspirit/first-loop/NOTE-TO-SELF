@@ -1,0 +1,8 @@
+The boat intrafont run will show-tf without a being trained. Easily
+remedied by adjudicating a and show-tf-ing again. Build this into all
+the other tests.
+
+Intrafont on STSQ and Benzene will "do" those two for show-tf.
+
+Other, harder, gridfonts can be done with training on smaller, secure
+subsets of the alphabet. 

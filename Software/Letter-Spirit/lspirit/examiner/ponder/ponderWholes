@@ -1,0 +1,39 @@
+ROLE DEF add name
+
+also, I don't think the curve names need the asterisks
+
+rather than:
+( (context blah1) (topology type blah2) (norms blah3) )
+
+let's go with :
+( (activation-node name) (topology type) (norms blah1 blah2 blah3) )
+
+and, give neighborhood 20 points -- include the 20 explicitly, to make
+norm score consistent
+
+subdivide role contact by implicated whole, so the info can be used
+equally for role sparking and whole r-roles
+
+WHOLE DEF add name
+
+( (activation-node name) (cat category)
+  (abstract-rule-norms (uphold) (violate))
+  (roles (r-list) )
+
+r-roles:
+just list the roles contained within a whole, then do a check on:
+filled, covered, norms.contact
+
+PROBLEM: touching info for roles involved with two wholes doesn't
+specify which; left-post gets 20 for m touching, but that's not part
+of b1; we'll have to specify the touching appropriate for the whole
+
+so, how to score it?
+not filled, not covered, let's whack things to where?
+whack 40
+
+max activation with 2 of 3 roles full, before r-roles: 20+40 = 60
+max activation with 1 of 3 roles full, before r-roles: 20+20 = 40
+max activation with 1 of 2 roles full, before r-roles: 20+30 = 50
+
+touching OK: get the minimum of the role-touching-match?

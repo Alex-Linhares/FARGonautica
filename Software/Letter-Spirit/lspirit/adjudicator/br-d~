@@ -1,0 +1,260 @@
+Chez Scheme Transcript [Tue Mar 16 23:48:08 1999]
+>>> (pick-letter 'br 'd)
+Temperature 24
+>>> temp-jolts
+((ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *n*)))
+ (back-found *turn-180-motifs* *common-sps* (*sw*))
+ (ahead-not-found *relative-nvs* (height less))
+ (back-found *turn-180-motifs* *frequent-sps* (*ne*))
+ (ahead-not-found *abstract-rules* ban-backslash-quanta)
+ (back-found *translate-motifs* *universal-sps* (*ne*))
+ (back-found *abstract-rules* *common-sps* at-most-3)
+ (back-not-found
+   *abstract-rules*
+   *two-time-sps*
+   ban-90-angle)
+ (ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *n*)))
+ (ahead-not-found *literal-motifs* (39 22 5 36 23 8 39))
+ (ahead-not-found *literal-motifs* (8 23 36 5 19 16))
+ (back-found *abstract-rules* *common-sps* at-most-3)
+ (ahead-found *literal-motifs* *letter-rows* (22 39 8 23 20))
+ (back-not-found
+   *relative-nvs*
+   *occasional-sps*
+   (height more))
+ (back-found *literal-motifs* *frequent-sps* (39))
+ (ahead-not-found *literal-motifs* (39 22 5 36 23 8 39))
+ (back-found *literal-motifs* *frequent-sps* (39))
+ (ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *n*)))
+ (ahead-found *abstract-rules* *letter-rows* ban-45-angle)
+ (ahead-not-found
+   *turn-90-motifs*
+   (*s* *s* *s* *sw* *w* *n* *ne* *e*))
+ (ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *n*)))
+ (back-found *turn-180-motifs* *occasional-sps* (*w* *n*))
+ (back-found *turn-180-motifs* *occasional-sps* (*w* *n*))
+ (back-found *turn-180-motifs* *two-time-sps* (*sw* *s*))
+ (ahead-found
+   *turn-45-motifs*
+   *letter-rows*
+   (-90 45 180 135 135))
+ (ahead-found
+   *map-nvs*
+   *letter-rows*
+   (tips (down-tip (19 18))))
+ (ahead-not-found *literal-motifs* (39 8 23 36 5 19 16))
+ (ahead-not-found
+   *literal-motifs*
+   (19 5 36 23 8 39 22 19 16))
+ (ahead-found *turn-90-motifs* *frequent-sps* (*s* *s*))
+ (ahead-not-found *literal-motifs* (8 39 22 5 36 23 8))
+ (back-found *literal-motifs* *common-sps* (36))
+ (back-found *translate-motifs* *common-sps* (*ne* *e*))
+ (ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *n*)))
+ (ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *inward*)))
+ (ahead-not-found *abstract-rules* ban-backslash-quanta)
+ (back-found *turn-90-motifs* *common-sps* (*sw*))
+ (back-found *literal-motifs* *frequent-sps* (39))
+ (back-found *turn-90-motifs* *common-sps* (*ne*))
+ (back-found *literal-motifs* *occasional-sps* (39))
+ (ahead-found *abstract-rules* *letter-rows* ban-45-angle)
+ (ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *n*)))
+ (ahead-not-found *literal-motifs* (22 19 16))
+ (back-found *translate-motifs* *letter-rows* (*n* *ne* *e*))
+ (ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *inward*)))
+ (back-found *turn-90-motifs* *two-time-sps* (*w* *ne* *e*))
+ (ahead-not-found *relative-nvs* (floor more))
+ (ahead-found *turn-90-motifs* *common-sps* (*n* *n* *n*))
+ (back-found *translate-motifs* *common-sps* (*sw*))
+ (back-found *turn-90-motifs* *occasional-sps* (*sw*))
+ (ahead-found *abstract-rules* *letter-rows* ban-45-angle)
+ (ahead-found *abstract-rules* *common-sps* at-most-3)
+ (back-found *turn-45-motifs* *occasional-sps* (180))
+ (back-found *turn-180-motifs* *occasional-sps* (*n* *n*))
+ (ahead-found *abstract-rules* *letter-rows* ban-45-angle)
+ (back-found *turn-45-motifs* *common-sps* (-135 -90 -135))
+ (ahead-not-found
+   *map-nvs*
+   (floor (floor-baseline floor-midline)))
+ (ahead-found *abstract-rules* *letter-rows* ban-45-angle)
+ (back-not-found
+   *relative-nvs*
+   *two-time-sps*
+   (left-edge less))
+ (back-not-found
+   *relative-nvs*
+   *two-time-sps*
+   (tips (up-tip *e*)))
+ (back-found *literal-motifs* *two-time-sps* (36 5))
+ (ahead-not-found *abstract-rules* ban-backslash-quanta)
+ (ahead-found *translate-motifs* *frequent-sps* (*ne* *n*))
+ (back-found *literal-motifs* *two-time-sps* (36))
+ (back-not-found
+   *abstract-rules*
+   *two-time-sps*
+   ban-vert-quanta)
+ (back-not-found
+   *relative-nvs*
+   *occasional-sps*
+   (curve less))
+ (ahead-found *abstract-rules* *common-sps* at-most-3)
+ (ahead-not-found
+   *translate-motifs*
+   (*e* *ne* *n* *w* *sw* *s* *e*))
+ (back-not-found *translate-motifs* *common-sps* (*nw*))
+ (ahead-found *abstract-rules* *letter-rows* ban-45-angle)
+ (ahead-found *abstract-rules* *letter-rows* ban-45-angle)
+ (back-not-found *literal-motifs* *letter-rows* (4 21 24))
+ (ahead-not-found *literal-motifs* (16 19 5 36 23))
+ (back-found *abstract-rules* *common-sps* at-most-3)
+ (ahead-found
+   *turn-45-motifs*
+   *letter-rows*
+   (-135 -90 45 180 135 135))
+ (back-found *turn-90-motifs* *common-sps* (*sw*))
+ (ahead-not-found *turn-45-motifs* (180 180 135 135 90 135))
+ (ahead-found *abstract-rules* *common-sps* at-most-3)
+ (ahead-not-found
+   *turn-180-motifs*
+   (*w* *n* *ne* *e* *n* *n*))
+ (back-found *turn-45-motifs* *frequent-sps* (180))
+ (back-found *turn-180-motifs* *two-time-sps* (*s*))
+ (ahead-found *turn-90-motifs* *frequent-sps* (*n* *n*))
+ (ahead-not-found
+   *turn-45-motifs*
+   (-135 -90 -135 -135 -90 -135))
+ (ahead-found
+   *map-nvs*
+   *letter-rows*
+   (tips (down-tip (19 18))))
+ (back-found *turn-90-motifs* *letter-rows* (*n*))
+ (ahead-not-found
+   *turn-90-motifs*
+   (*s* *e* *ne* *n* *w* *sw* *s*))
+ (ahead-found *translate-motifs* *common-sps* (*n* *n* *n*))
+ (back-found *turn-180-motifs* *frequent-sps* (*ne*))
+ (ahead-not-found *relative-nvs* (height less))
+ (ahead-not-found *relative-nvs* (floor more))
+ (back-not-found *literal-motifs* *two-time-sps* (20))
+ (back-found *translate-motifs* *common-sps* (*n*))
+ (back-found *translate-motifs* *common-sps* (*n* *n*))
+ (back-found
+   *turn-45-motifs*
+   *occasional-sps*
+   (-90 -90 -90 -90))
+ (ahead-found *abstract-rules* *common-sps* at-most-3)
+ (ahead-found *turn-45-motifs* *two-time-sps* (135 90))
+ (ahead-found *turn-90-motifs* *frequent-sps* (*s* *s*))
+ (back-found *turn-45-motifs* *frequent-sps* (180))
+ (ahead-not-found *literal-motifs* (5 36 23 8 39 22 5))
+ (ahead-not-found
+   *literal-motifs*
+   (19 5 36 23 8 39 22 19 16))
+ (back-found *abstract-rules* *common-sps* at-most-3)
+ (back-found *translate-motifs* *frequent-sps* (*ne* *n*))
+ (ahead-not-found *literal-motifs* (5 36 23 8 39 22 5))
+ (ahead-found *turn-45-motifs* *two-time-sps* (135 90))
+ (back-found *literal-motifs* *occasional-sps* (36))
+ (ahead-found *turn-45-motifs* *two-time-sps* (135 90))
+ (back-not-found
+   *literal-motifs*
+   *letter-rows*
+   (24 21 49 25))
+ (back-found *translate-motifs* *universal-sps* (*ne*))
+ (back-found *turn-180-motifs* *occasional-sps* (*sw*))
+ (ahead-found *abstract-rules* *letter-rows* ban-45-angle)
+ (back-not-found
+   *abstract-rules*
+   *two-time-sps*
+   ban-rightedge)
+ (back-not-found
+   *map-nvs*
+   *two-time-sps*
+   (tips (left-tip (3 4))))
+ (ahead-found *turn-180-motifs* *common-sps* (*se* *ne* *n*))
+ (ahead-found
+   *turn-45-motifs*
+   *letter-rows*
+   (-135 -90 45 180 135 135))
+ (back-found *translate-motifs* *letter-rows* (*sw*))
+ (ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *n*)))
+ (ahead-found
+   *map-nvs*
+   *letter-rows*
+   (tips (down-tip (19 18))))
+ (ahead-found *abstract-rules* *letter-rows* ban-45-angle)
+ (back-found *turn-45-motifs* *letter-rows* (-135 -135))
+ (ahead-found *abstract-rules* *letter-rows* ban-45-angle)
+ (back-found *literal-motifs* *common-sps* (23))
+ (back-found *translate-motifs* *universal-sps* (*ne*))
+ (back-not-found
+   *relative-nvs*
+   *occasional-sps*
+   (weight more))
+ (ahead-not-found *relative-nvs* (height less))
+ (back-found *turn-180-motifs* *frequent-sps* (*ne*))
+ (ahead-not-found
+   *literal-motifs*
+   (19 5 36 23 8 39 22 19 16))
+ (ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *n*)))
+ (back-found *turn-90-motifs* *occasional-sps* (*sw*))
+ (ahead-found *turn-180-motifs* *common-sps* (*ne* *n*))
+ (back-found *abstract-rules* *common-sps* at-most-3)
+ (back-not-found *literal-motifs* *frequent-sps* (50))
+ (ahead-found
+   *relative-nvs*
+   *occasional-sps*
+   (tips (down-tip *n*)))
+ (ahead-found *abstract-rules* *common-sps* at-most-3)
+ (ahead-found *literal-motifs* *letter-rows* (19 16))
+ (ahead-not-found
+   *turn-180-motifs*
+   (*s* *s* *s* *sw* *w* *n* *ne* *e*))
+ (back-found *turn-45-motifs* *frequent-sps* (180))
+ (ahead-not-found
+   *turn-90-motifs*
+   (*sw* *s* *e* *ne* *n* *w* *sw*))
+ (ahead-found *turn-180-motifs* *two-time-sps* (*e* *n* *n*))
+ (back-found *turn-45-motifs* *frequent-sps* (180))
+ (back-found *literal-motifs* *two-time-sps* (39 22))
+ (ahead-found *abstract-rules* *common-sps* at-most-3)
+ (back-found *turn-90-motifs* *occasional-sps* (*sw*))
+ (back-not-found
+   *relative-nvs*
+   *occasional-sps*
+   (weight less))
+ (ahead-found *translate-motifs* *two-time-sps* (*n* *e*))
+ (ahead-found *abstract-rules* *common-sps* at-most-3)
+ (ahead-not-found *relative-nvs* (floor more))
+ (ahead-not-found *abstract-rules* ban-backslash-quanta))
+>>> (transcript-off)

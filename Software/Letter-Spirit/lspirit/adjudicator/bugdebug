@@ -1,0 +1,53 @@
+Error in cdr: 0 is not a pair.
+Type (debug) to enter the debugger.
+>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in sublists>                                       : s
+  continuation:          #<continuation in common-sublists>
+  procedure code:        (lambda (ls) (if (null? ls) (quote ()) ...))
+  call code:             (cdr ls)
+  free variables:
+  0. ls:                 0
+#<continuation in sublists>                                       : d
+#<continuation in common-sublists>                                : s
+  continuation:          #<continuation in shared-sequence-rotate>
+  procedure code:        (lambda (ls1 ls2) (intersect (...) ...))
+  call code:             (sublists ls2)
+  free variables:
+  0. ls2:                0
+  1: ((0 90 0) (90 0) (0 90) (90) (0))
+#<continuation in common-sublists>                                : d
+#<continuation in shared-sequence-rotate>                         : s
+  continuation:          #<system continuation in map1>
+  procedure code:        (lambda (ls1 ls2) ((...) (...)))
+  call code:             (common-sublists ls1 ls2)
+  free variables:
+  0. ls2:                0
+  1. ls1:                (0 90 0)
+#<continuation in shared-sequence-rotate>                         : d
+
+******************
+
+Error in length: 45-angle is not a proper list.
+Type (debug) to enter the debugger.
+>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in roulette>                                       : s
+  continuation:          #<continuation>
+  procedure code:        (lambda (ls) (nth (n-sided-die (length ls)) ls))
+  call code:             (length ls)
+  free variables:
+  0. ls:                 45-angle
+#<continuation in roulette>                                       : d
+#<continuation>                                                   : s
+  continuation:          #<continuation in adj-run>
+  procedure code:        (lambda (gen) ...)
+  call code:             (roulette valid-near-ends)
+  free variables:
+  0. levelname:          *letter-rows*
+  1. sp-type:            *abstract-rules*
+  2. far-end:            45-angle
+  3. test-near-end:      #<procedure test-near-end>
+  4. valid-near-ends:    45-angle

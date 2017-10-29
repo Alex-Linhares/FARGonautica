@@ -1,0 +1,32 @@
+Existing r-roles that will do the trick:
+
+notouch (role, role)
+closure (t/f)
+touchpoints (role, role, number)
+dangle-tip (role)
+connect (role, mid/tip)
+open (direction)
+filled (role)
+covered (roles)
+point (role, preference (alternates))
+
+I think we can get by with:
+
+contact (role, role, where)
+
+e.g.
+
+contact left-post right-bowl m-t1
+contact left-post right bowl t2-t2
+
+MUST INCLUDE notouch AS A POSSIBILITY
+
+Maybe represent this by the tips and mids of each part?
+
+left-post tip1: nothing
+left-post mid: right-bowl tip1
+left-post tip2: right-bowl tip2
+
+filled (as is)
+
+covered (as is)

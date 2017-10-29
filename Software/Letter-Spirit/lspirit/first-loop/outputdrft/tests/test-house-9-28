@@ -1,0 +1,415 @@
+Chez Scheme Transcript [Tue Sep 28 00:21:54 1999]
+>>>>> (try-gridfont 'house)
+
+Error in +: (10000.0) is not a number.
+Type (debug) to enter the debugger.
+>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in +>                                       : s
+  continuation:          #<continuation in weighted-roulette>
+  free variables:
+  0: ((10000.0) (10000.0) (10000.0) (10000.0) (10000.0) (10000.0) (10000.0) ...)
+#<system continuation in +>                                       : d
+#<continuation in weighted-roulette>                              : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda (ls) ((lambda (...) (...)) (apply + (...))))
+  call code:             (apply + (map cadr ls))
+  free variables:
+  0. ls:                 ((g 0) (f 0) (e 0) (c 0) (b 0) (a (10000.0)) ...)
+#<continuation in weighted-roulette>                              : d
+#<continuation in try-cats>                                       : s
+  continuation:          #<top level continuation>
+  procedure code:        (lambda () (if (...) ...))
+  call code:             (pick-category)
+#<continuation in try-cats>                                       : q
+
+debug> n
+>>>>>> (load "stats.ss")
+>>>>>> (load "loop.ss")
+>>>>>>  (try-gridfont 'house)
+Tried to draw a o Ruled (36 49 25 9 50) a o1 score of 55.545
+
+debug> n
+>>>>>>> (load "loop.ss")
+>>>>>>>  (try-gridfont 'house)
+Tried to draw a i Ruled (3 49 25 9) a i1 score of 72.265
+
+debug> n
+>>>>>>>> *scratchspace*
+((i (3 49 25 9) (72.265) 0)
+ (g (8 9 10 11 23 25 28 36 49) (0.0) 0)
+ (f (20 23 34 36 47 49) (0.0) 0)
+ (e (6 7 8 9 23 36 49) (0.0) 0)
+ (c (8 9 23 36 49) (0.0) 0)
+ (b (8 9 17 20 23 25 36 49) (0.0) 0)
+ (a () (10000.0) 0)
+ (d () (10000.0) 0)
+ (h () (10000.0) 0)
+ (j () (10000.0) 0)
+ (k () (10000.0) 0)
+ (l () (10000.0) 0)
+ (m () (10000.0) 0)
+ (n () (10000.0) 0)
+ (o () (10000.0) 0)
+ (p () (10000.0) 0)
+ (q () (10000.0) 0)
+ (r () (10000.0) 0)
+ (s () (10000.0) 0)
+ (t () (10000.0) 0)
+ (u () (10000.0) 0)
+ (v () (10000.0) 0)
+ (w () (10000.0) 0)
+ (x () (10000.0) 0)
+ (y () (10000.0) 0)
+ (z () (10000.0) 0))
+>>>>>>>> (exit)
+debug> e
+Tried to draw a p Ruled (23 26 29 36 49 25 28) a n1
+
+Error in apply: 10000.0 is not a proper list.
+Type (debug) to enter the debugger.
+>>>>>>> (debug) 
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in apply>                                   : s
+  continuation:          #<continuation in average>
+  free variables:
+  0: 10000.0
+  1: #<system procedure +>
+#<system continuation in apply>                                   : d
+#<continuation in average>                                        : s
+  continuation:          #<system continuation in map1>
+  procedure code:        (lambda (ls) (/ (apply + ls) (length ls)))
+  call code:             (apply + ls)
+  free variables:
+  0. ls:                 10000.0
+#<continuation in average>                                        : d
+#<system continuation in map1>                                    : s
+  continuation:          #<continuation in pick-category>
+  free variables:
+  0: (10000.0 (72.265) (0.0) (0.0) (0.0) (0.0) (0.0) (10000.0) (10000.0) ...)
+  1: #<system procedure map1>
+  2: (0.0 0.0 0.0 0.0 0.0 10000.0 10000.0 10000.0 10000.0 10000.0 10000.0 ...)
+  3: 72.265
+#<system continuation in map1>                                    : d
+#<continuation in pick-category>                                  : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda () ((...) (...)))
+  call code:             (map average (map caddr *scratchspace*))
+  free variables:
+  0: (p i g f e c b a d h j k l m n o q r s t u v w x y z)
+#<continuation in pick-category>                                  : q
+
+debug> n
+>>>>>>>> (load "loop.ss")
+
+Error in read: unexpected end-of-file on #<input port loop.ss>.
+Type (debug) to enter the debugger.
+>>>>>>>>  (load "loop.ss")
+>>>>>>>> (try-cats)
+
+Error in apply: 10000.0 is not a proper list.
+Type (debug) to enter the debugger.
+>>>>>>>>  (try-gridfont 'house)
+Tried to draw a z Ruled (38 7 36 49 8 9) a z1 score of 71.577
+Tried to draw a s Ruled (6 51 9 8 49 36) a s2 score of 71.499
+Tried to draw a h Ruled (36 49 25 14 17 20 23) a h1 score of 51.699
+Tried to draw a m Ruled (23 8 35 19) a i1
+Tried to draw a r Ruled (23 36 49) a r1 score of 38.314
+Tried to draw a w Ruled (23 8 9 49 25 51) a w1 score of 98.125
+Tried to draw a v Ruled (50 49 25) a n1
+Tried to draw a l Ruled (15 18 49 25) a l1 score of 49.868
+Tried to draw a k Ruled (17 20 23 36 49) a h1
+Tried to draw a o Ruled (36 49 25 9 50) a o1 score of 56.896
+Tried to draw a k Ruled (14 17 20 23 36 49) a h1
+Tried to draw a u Ruled (25 28 11 36 23) a j1
+Tried to draw a t Ruled (18 21 38 26 36 49) a t1 score of 75.844
+Tried to draw a i Ruled (3 49 25) a i1 score of 73.269
+Tried to draw a d Ruled (16 19 22 49 36 23 8 9) a l1
+Tried to draw a v Ruled (49 25) a r1
+Tried to draw a x Ruled (48 51 23 36 49) a x1 score of 26.138
+Tried to draw a y Ruled (48 37 22 39 9 36 23 8 27 10) a x1
+Tried to draw a n Ruled (5 22 25 36 23) a n1 score of 68.824
+Tried to draw a p Ruled (20 23 26 36 49 25 9 50) a p2 score of 41.153
+Tried to draw a j Ruled (45 49 25 28) a j1 score of 79.937
+Tried to draw a q Ruled (25 28 11 30 49 36 23) a q1 score of 76.496
+Tried to draw a k Ruled (17 4 18 15 0 36 23 8 9 49 7) a k1 score of 98.5
+Tried to draw a v Ruled (50 49 25) a n1
+Tried to draw a v Ruled (50 27 49 25) a i1
+Tried to draw a m Ruled (37 22 25 23 8 36) a n1
+Tried to draw a d Ruled (36 49 16 19 22 25) a d1 score of 110.706
+Tried to draw a u Ruled (23 8 9 25 49) a u1 score of 72.127
+Tried to draw a m Ruled (21 5 22 39 36 23) a m1 score of 76.347
+Tried to draw a v Ruled (22 39 8 36 23) a u1
+Tried to draw a a Ruled (38 7 36 49 25) a x1
+Tried to draw a v Ruled (22 39 8 36 23) a u1
+Tried to draw a a Ruled (38 24 40 10 11 36 49 25) a i1
+Tried to draw a a Ruled (7 38 26 10 41 36 49 25) a g1
+Tried to draw a y Ruled (22 25 28 11 10 54 12 36 23) a j1
+Tried to draw a a Ruled (7 38 26 36 5 22 25) a z1
+Tried to draw a y Ruled (22 25 28 11 10 26 8 24 36 23) a y1 score of 73.586
+Tried to draw a a Ruled (7 38 36 49 25) a n1
+Tried to draw a v Ruled (22 39 8 36 23) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 36 23) a u1
+Tried to draw a p Ruled (36 49 25 28 11 52 23 26) a p1
+Tried to draw a a Ruled (38 24 40 10 11 36 49 25) a i1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a a Ruled (4 5 22 7 24 50 23 8 39 25 51 6) a u1
+Tried to draw a a Ruled (7 38 8 9 36 49 25) a a1 score of 58.008
+Tried to draw a v Ruled (49 25) a c1
+Tried to draw a v Ruled (22 39 8 36 23) a u1
+Tried to draw a v Ruled (50 27 49 25) a i1
+Tried to draw a d Ruled (49 36 23 16 19 22 25) a d1 score of 66.902
+Tried to draw a o Ruled (36 49 25 9 8 23) a o1 score of 22.571
+Tried to draw a v Ruled (22 39 8 36 23) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 36 23) a u1
+Tried to draw a v Ruled (22 39 8 36 23) a u1
+Tried to draw a j Ruled (49 25 28 43 12 45) a j1 score of 64.537
+Tried to draw a v Ruled (50 49 25) a n1
+Tried to draw a t Ruled (36 49 18 21 38 8 53 11) a t1
+Tried to draw a v Ruled (49 25) a c1
+Tried to draw a v Ruled (22 39 8 36 23) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (5 22 25 9 27 11 21 24 8 23 20) a q2
+Tried to draw a y Ruled (37 24 27 42 49 25) a x1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a k Ruled (6 7 14 17 20 23 50 9) a k1 score of 96.274
+Tried to draw a v Ruled (21 24 8 26 10) a y2
+Tried to draw a v Ruled (50 27 49 25) a j1
+Tried to draw a v Ruled (21 24 8 23 20 34 47 22) a l1
+Tried to draw a v Ruled (49 25) a n1
+Tried to draw a v Ruled (49 25) a c1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a m Ruled (5 22 39 21 38) a n1
+Tried to draw a v Ruled (49 25) a c1
+Tried to draw a v Ruled (48 6 21 24 8 23) a d1
+Tried to draw a j Ruled (49 25 28) a u1
+Tried to draw a v Ruled (49 25) a c1
+Tried to draw a l Ruled (15 18 36 23 8 9) a l1 score of 45.336
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (50 21 24 8 26) a y2
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20 34 47 22 25) a w1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (48 51 28 11 21 24 8 23) a y1
+Tried to draw a s Ruled (6 51 22 5 36) a r1
+Tried to draw a v Ruled (20 34 21 38) a i1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (5 22 25 9 21 24 8 23 20) a q1
+Tried to draw a v Ruled (21 24 8 23) a u1
+Tried to draw a y Ruled (37 24 27 10 26 49 25) a x1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (50 40 21 24 8 26) a u1
+Tried to draw a d Ruled (16 19 22 25 20 4 49) a d1
+Tried to draw a v Ruled (5 22 25 21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 4 21 24 40 26) a r1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a n Ruled (5 22 25 36 23) a n1
+Tried to draw a v Ruled (5 22 25 28 21 24 40 10 52 23 20) a y1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a h Ruled (17 20 23 36 49 25) a h1 score of 32.122
+Tried to draw a v Ruled (21 24 8 23) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 34 2 21 24 8) a i1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (23 8 21 24 40 10 11) a y1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a w Ruled (25 28 11 27 36 23 48 38) a j1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (21 24 8 23) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (23 26 21 24 40 10 11) a y1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a w Ruled (48 37 36 23 25 9) a m1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a r Ruled (23 36 49) a r1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a t Ruled (4 49 18 36 23 8 9) a t1 score of 46.343
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a i Ruled (7 25 28 35) a u1
+Tried to draw a v Ruled (20 34 21 38) a i1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a s Ruled (6 51 9 8 22 5 36) a s2
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 34 2 21 38) a i1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 34 21 24 8) a i1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a m Ruled (49 25 23 8) a n1
+Tried to draw a v Ruled (21 24 40 10 52 23 20) a n1
+Tried to draw a v Ruled (21 24 40 10 11 28) a y1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 4 21 24 8) a n1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (5 22 25 21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a u Ruled (23 52 11 53 40 49) a j1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (20 34 21 24 8 26 10 11 28 25 22) a j1
+Tried to draw a v Ruled (20 34 2 32 21 38) a i1
+Tried to draw a v Ruled (20 34 15 0 21 38) a i1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 34 21 38) a i1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23) a u1
+Tried to draw a n Ruled (36 23 5 22 25) a n1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 4 21 24 8 26 10 11 28 25 22) a y1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 4 18 2 21 24 8) a t1
+Tried to draw a v Ruled (49 25) a c1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 34 21 24 8) a i1
+Tried to draw a v Ruled (20 34 2 32 21 38) a i1
+Tried to draw a v Ruled (21 24 8 23) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a z Ruled (50 9 36 49 48 7) a e2
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a w Ruled (24 36 23 25 28 11 27) a j1
+Tried to draw a v Ruled (23 26 21 24 40 10 11) a y1
+Tried to draw a v Ruled (36 6 48 21 24 8 23 20) a y1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 40 10 11 28) a y1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (5 22 25 9 27 11 21 24 8 23 20) a q2
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a d Ruled (3 15 1 20 4 5 22 25 9 50) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 34 21 38) a i1
+Tried to draw a v Ruled (49 21 24 8 23 20) a u1
+Tried to draw a k Ruled (21 51 36 49 14 17 20 23) a k1 score of 56.112
+Tried to draw a t Ruled (18 21 38 6 7) a t1
+Tried to draw a v Ruled (21 24 8 23) a u1
+Tried to draw a v Ruled (49 25) a c1
+Tried to draw a v Ruled (20 34 21 24 8) a i1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 4 18 2 21 24 8) a t1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (20 34 21 24 40 26) a j1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 4 21 38) a n1
+Tried to draw a v Ruled (21 24 8 23 20 34 47) a l1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (20 34 2 21 38) a i1
+Tried to draw a d Ruled (20 4 21 38 8 39 16 19 22 25) a h1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20 34 47 22 25) a u1
+Tried to draw a v Ruled (20 34 21 38) a i1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (36 6 48 21 24 40 10 52 23 20) a u1
+Tried to draw a v Ruled (21 24 8 23) a u1
+Tried to draw a v Ruled (20 34 2 21 24 8) a i1
+Tried to draw a s Ruled (51 9 40 22 5 36 23) a n1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 40 10 11 28) a y1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20 34 47) a l1
+Tried to draw a v Ruled (20 34 21 38) a i1
+Tried to draw a v Ruled (20 34 21 24 40 26) a j1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a a Ruled (34 47 22 7 49 36 23) a r1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (49 25) a c1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (49 25) a c1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (5 22 25 21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (23 8 21 24 40 10 11 28 25) a y2
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (49 25 28 21 24 8 23 20 34 47) a y1
+Tried to draw a v Ruled (21 24 8 23 20) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (22 39 8 21 38) a u1
+Tried to draw a v Ruled (49 39 50) a v1 score of 92.35
+Tried to draw a y Ruled (22 25 28 43 12 36 23 8) a y1 score of 55.281
+Tried to draw a z Ruled (38 7 8 9 36 49) a z1 score of 41.833
+Tried to draw a s Ruled (6 51 9 8 22 47 34 20) a r1
+Tried to draw a s Ruled (6 51 9 8 22 5 36) a s2
+Tried to draw a i Ruled (49 25 9 8) a s2
+Tried to draw a q Ruled (7 38 26 10 27 50 20 49 25 28) a u1
+Tried to draw a q Ruled (37 24 27 30 36 49 25 9 50) a q1
+Tried to draw a j Ruled (3 15 49 25 28) a j1 score of 59.514
+Tried to draw a u Ruled (23 8 39 49) a u1
+Tried to draw a d Ruled (20 4 21 38 8 39 16 19 22 25) a h1
+Tried to draw a v Ruled (21 24 40 10 11 28) a y1
+Tried to draw a n Ruled (36 23 5 22 25) a n1 score of 57.279
+Tried to draw a n Ruled (23 36 49 25) a n1
+Tried to draw a j Ruled (22 25 28 43 12 35) a j1
+Tried to draw a d Ruled (19 47 33 1 0 14 17 48 36 49 25 9 50) a d2
+Tried to draw a k Ruled (14 46 21 24 36 23 49 22 37 48 20) a d2
+>>>>>>>> (transcript-off)

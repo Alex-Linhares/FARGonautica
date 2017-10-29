@@ -1,0 +1,81 @@
+		Height	Width	Weight	Horiz	Roof	Floor	Curve
+Endpoint permutations:
+
+L R
+T B
+LT RB
+RT LB
+
+Like Chinese character strokes, we could always go T to B when
+possible, L to R when that's a washout
+
+Curvature can take 9 possibilities:
+
+Straight	--
+F-curve		v-
+Question-mark	^-
+Iota-curve	-v
+Comma-curve	-^
+Cnterclockwise	vv
+Clockwise	^^
+S-curve		v^
+Z-curve		^v
+
+In addition, Clockwise and Counterclockwise, if closed all the way
+around, make a worthwhile 10th curvature possibility
+
+Other norms:
+
+Tips/Endpoints (location, orientation)
+Squares
+Center-of-gravity
+Midpoint location
+
+Neighbor-touching
+Rest-of-gridletter prototypes
+
+With regard to any of these, how do you allow for leeway in the norms?
+
+	a) Two values, with one weighted less
+		i.e. (very-tall 10) (tall 6)
+	b) Define a range (tall very-tall)
+	c) Give one norm, but give partial credit for proximity
+
+More on norms:
+
+	What about properties that are permissable for a role, but not
+for the whole? Especially with g and j and y and q.
+
+	A j's or y's descender can end vertically, or possibly even
+curved to the right. A g's can't, due to q. How do we do this... on
+the role level (so g's descender has to be regarded as its own thing)
+or on the whole level, where an r-role forbids g from doing that? This
+is a more general issue, but is most applicable here.
+
+R-roles:
+
+Given part 1 and part 2, how do they touch?
+
+no-touch	Obvious
+major-t		Part 1's tip touches Part 2's mid
+minor-t		Part 1's mid touches Part 2's tip
+x-cross		Part 1's mid touches Part 2's mid
+junction	Part 1's tip touches Part 2's tip
+
+	And multiple touches possible (esp. 2). Are we going to do
+this on such a global level that's important, or just on the tip-level
+where multiple touches would be considered as such (a touch in one
+place and a touch in another)?
+
+PURE ADJUDICATOR/DRAFTER
+
+Norm-violation consideration:
+With respect to, i.e. vertical position, could consider a t's crossbar
+being raised as either:
+
+ROOF more [possibly with FLOOR more, as well]
+
+or, you could consider it:
+
+X-HEIGHT -> T-HEIGHT
+

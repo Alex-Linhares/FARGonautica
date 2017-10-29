@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="670cb1f5-f915-408e-b4d6-0218ac1d7439" name="epnichols@MACBOOK-WIN7 2012-07-13 13:46:59" runUser="MacBook-Win7\epnichols" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="caeca7a8-6ee7-4d06-a13e-cb5aab2af7bc">
+    <Deployment runDeploymentRoot="epnichols_MACBOOK-WIN7 2012-07-13 13_46_59">
+      <DeploymentItem filename="C:\Users\epnichols\Documents\Visual Studio 2010\Projects\RhythmCat\GroundTruthParser\bin\Debug\GroundTruthParser.dll" />
+      <DeploymentItem filename="C:\Users\epnichols\Documents\Visual Studio 2010\Projects\RhythmCat\RhythmCat\bin\Debug\RhythmCat.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-13T13:46:59.1753856-04:00" queuing="2012-07-13T13:46:59.7585999-04:00" start="2012-07-13T13:46:59.8678001-04:00" finish="2012-07-13T13:47:00.8506018-04:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="11" executed="11" passed="9" error="0" failed="0" timeout="0" aborted="0" inconclusive="2" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestParseMeasures" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="ec43728e-17fa-a272-1f36-181563a2be47">
+      <Execution id="87ddcfec-acc0-4cca-81bf-f31eb36e0c68" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.RhythmTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestParseMeasures" />
+    </UnitTest>
+    <UnitTest name="GetAlphabetsWithLikelihoodsTest2" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="4050e997-a130-e455-f0aa-c2003360c489">
+      <Execution id="c9997136-c71b-4563-8ad6-e1ae37a13d66" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.GroupTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAlphabetsWithLikelihoodsTest2" />
+    </UnitTest>
+    <UnitTest name="GetAttackPointLevelsTest34" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="bf08efd6-6d91-b193-a262-43ecb34dba53">
+      <Execution id="1bcd6d53-2869-4cbe-a72e-b1e5436508c1" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.MeasureTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAttackPointLevelsTest34" />
+    </UnitTest>
+    <UnitTest name="TestGetAlphabets" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="98e58ba9-e175-0bce-64c9-41e4e689a432">
+      <Execution id="bc4901f5-6f44-4feb-a1f8-90d742ed9b43" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.AlphabetTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestGetAlphabets" />
+    </UnitTest>
+    <UnitTest name="TestExpectationVector" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="60346bc6-447b-1856-4996-1496b72a2196">
+      <Execution id="f30da2a7-9921-4770-ad08-9e81c2cbfb70" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.TestLarsonExpectedness, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestExpectationVector" />
+    </UnitTest>
+    <UnitTest name="GetMajorScaleAlphabetWithTriadOnDegreeTest" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="8fbdded3-bfb5-ed36-ea4a-a66afc34622d">
+      <Execution id="108c340b-2ac3-4110-9f95-cb1154a9fe76" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.AlphabetTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMajorScaleAlphabetWithTriadOnDegreeTest" />
+    </UnitTest>
+    <UnitTest name="GetAttackPointLevelsTest44" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="c2d3e0e9-d4e2-a4f0-3b31-76b55c0309f5">
+      <Execution id="e6d13a5a-129c-4a13-a360-1e344dbf3ad4" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.MeasureTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAttackPointLevelsTest44" />
+    </UnitTest>
+    <UnitTest name="GetAlphabetsWithLikelihoodsTest1" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="4517ac27-71db-2528-43bd-593ea40ca0b6">
+      <Execution id="690a90db-683e-4dce-b46c-2ffe9459a4f5" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.GroupTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAlphabetsWithLikelihoodsTest1" />
+    </UnitTest>
+    <UnitTest name="TestShiftRhythmMeasures" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="7dab547a-8352-7397-de2e-8d1272634259">
+      <Execution id="f4b4aaac-7661-424c-86cc-c2b80ad2a42f" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.RhythmTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestShiftRhythmMeasures" />
+    </UnitTest>
+    <UnitTest name="TestParseMeasuresKey" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="2e9cd80c-6551-0cf8-e12c-f9192c13bd94">
+      <Execution id="0202558f-0709-4ae8-8594-3c97fd4fa18b" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.RhythmTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestParseMeasuresKey" />
+    </UnitTest>
+    <UnitTest name="GetAlphabetFromScaleWithTriadOnDegreeTest" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="99eef4d8-b42a-db69-936e-d4f83503c233">
+      <Execution id="a3d67486-288d-463f-bfb4-b437e2433881" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.AlphabetTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAlphabetFromScaleWithTriadOnDegreeTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2e9cd80c-6551-0cf8-e12c-f9192c13bd94" executionId="0202558f-0709-4ae8-8594-3c97fd4fa18b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4050e997-a130-e455-f0aa-c2003360c489" executionId="c9997136-c71b-4563-8ad6-e1ae37a13d66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4517ac27-71db-2528-43bd-593ea40ca0b6" executionId="690a90db-683e-4dce-b46c-2ffe9459a4f5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60346bc6-447b-1856-4996-1496b72a2196" executionId="f30da2a7-9921-4770-ad08-9e81c2cbfb70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7dab547a-8352-7397-de2e-8d1272634259" executionId="f4b4aaac-7661-424c-86cc-c2b80ad2a42f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8fbdded3-bfb5-ed36-ea4a-a66afc34622d" executionId="108c340b-2ac3-4110-9f95-cb1154a9fe76" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="98e58ba9-e175-0bce-64c9-41e4e689a432" executionId="bc4901f5-6f44-4feb-a1f8-90d742ed9b43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99eef4d8-b42a-db69-936e-d4f83503c233" executionId="a3d67486-288d-463f-bfb4-b437e2433881" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf08efd6-6d91-b193-a262-43ecb34dba53" executionId="1bcd6d53-2869-4cbe-a72e-b1e5436508c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2d3e0e9-d4e2-a4f0-3b31-76b55c0309f5" executionId="e6d13a5a-129c-4a13-a360-1e344dbf3ad4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec43728e-17fa-a272-1f36-181563a2be47" executionId="87ddcfec-acc0-4cca-81bf-f31eb36e0c68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0202558f-0709-4ae8-8594-3c97fd4fa18b" testId="2e9cd80c-6551-0cf8-e12c-f9192c13bd94" testName="TestParseMeasuresKey" computerName="MACBOOK-WIN7" duration="00:00:00.0817242" startTime="2012-07-13T13:46:59.9926003-04:00" endTime="2012-07-13T13:47:00.5542013-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0202558f-0709-4ae8-8594-3c97fd4fa18b">
+    </UnitTestResult>
+    <UnitTestResult executionId="c9997136-c71b-4563-8ad6-e1ae37a13d66" testId="4050e997-a130-e455-f0aa-c2003360c489" testName="GetAlphabetsWithLikelihoodsTest2" computerName="MACBOOK-WIN7" duration="00:00:00.0664745" startTime="2012-07-13T13:47:00.5698013-04:00" endTime="2012-07-13T13:47:00.6322015-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9997136-c71b-4563-8ad6-e1ae37a13d66">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at RhythmCatTests.GroupTest.GetAlphabetsWithLikelihoodsTest2() in C:\Users\epnichols\Documents\Visual Studio 2010\Projects\RhythmCat\RhythmCatTests\GroupTest.cs:line 111
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="690a90db-683e-4dce-b46c-2ffe9459a4f5" testId="4517ac27-71db-2528-43bd-593ea40ca0b6" testName="GetAlphabetsWithLikelihoodsTest1" computerName="MACBOOK-WIN7" duration="00:00:00.0022471" startTime="2012-07-13T13:47:00.6478015-04:00" endTime="2012-07-13T13:47:00.6478015-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="690a90db-683e-4dce-b46c-2ffe9459a4f5">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at RhythmCatTests.GroupTest.GetAlphabetsWithLikelihoodsTest1() in C:\Users\epnichols\Documents\Visual Studio 2010\Projects\RhythmCat\RhythmCatTests\GroupTest.cs:line 86
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f30da2a7-9921-4770-ad08-9e81c2cbfb70" testId="60346bc6-447b-1856-4996-1496b72a2196" testName="TestExpectationVector" computerName="MACBOOK-WIN7" duration="00:00:00.0101777" startTime="2012-07-13T13:47:00.6478015-04:00" endTime="2012-07-13T13:47:00.6790015-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f30da2a7-9921-4770-ad08-9e81c2cbfb70">
+      <Output>
+        <StdOut>C4: 0
+D4: 0
+E4: 0.187
+F4: 0.187
+MIN: G4: -0.137
+MAX: A4: 0.187
+MIN: B4: 0.127
+MAX: C5: 0.592
+MIN: C5: -0.187
+MAX: B4: 0
+MIN: A4: -0.13
+G#4: 0.335
+MAX: G4: 0.68
+MIN: F4: 0.275
+MAX: E4: 0.599
+D4: 0.275
+C#4: 0.275
+MAX: C4: 0.659
+MIN: B3: 0.187
+C4: 0.218</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f4b4aaac-7661-424c-86cc-c2b80ad2a42f" testId="7dab547a-8352-7397-de2e-8d1272634259" testName="TestShiftRhythmMeasures" computerName="MACBOOK-WIN7" duration="00:00:00.0071328" startTime="2012-07-13T13:47:00.6790015-04:00" endTime="2012-07-13T13:47:00.6946016-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4b4aaac-7661-424c-86cc-c2b80ad2a42f">
+    </UnitTestResult>
+    <UnitTestResult executionId="108c340b-2ac3-4110-9f95-cb1154a9fe76" testId="8fbdded3-bfb5-ed36-ea4a-a66afc34622d" testName="GetMajorScaleAlphabetWithTriadOnDegreeTest" computerName="MACBOOK-WIN7" duration="00:00:00.0031649" startTime="2012-07-13T13:47:00.6946016-04:00" endTime="2012-07-13T13:47:00.7102016-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="108c340b-2ac3-4110-9f95-cb1154a9fe76">
+    </UnitTestResult>
+    <UnitTestResult executionId="bc4901f5-6f44-4feb-a1f8-90d742ed9b43" testId="98e58ba9-e175-0bce-64c9-41e4e689a432" testName="TestGetAlphabets" computerName="MACBOOK-WIN7" duration="00:00:00.0037337" startTime="2012-07-13T13:47:00.7102016-04:00" endTime="2012-07-13T13:47:00.7258016-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc4901f5-6f44-4feb-a1f8-90d742ed9b43">
+      <Output>
+        <StdOut>Major
+1 2 3 4 5 6 7 
+2 4 6 1 
+4 6 1 
+4 6 1 3 
+Minor
+1 2 3b 4 5 6b 7b 
+2 4 6b 1 
+4 6b 1 
+4 6b 1 3b 
+1 2 3b 4 5 6 7 
+2 4 6 1 
+4 6 1 
+4 6 1 3b 
+1 2 3b 4 5 6b 7</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a3d67486-288d-463f-bfb4-b437e2433881" testId="99eef4d8-b42a-db69-936e-d4f83503c233" testName="GetAlphabetFromScaleWithTriadOnDegreeTest" computerName="MACBOOK-WIN7" duration="00:00:00.0072082" startTime="2012-07-13T13:47:00.7258016-04:00" endTime="2012-07-13T13:47:00.7414016-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3d67486-288d-463f-bfb4-b437e2433881">
+    </UnitTestResult>
+    <UnitTestResult executionId="1bcd6d53-2869-4cbe-a72e-b1e5436508c1" testId="bf08efd6-6d91-b193-a262-43ecb34dba53" testName="GetAttackPointLevelsTest34" computerName="MACBOOK-WIN7" duration="00:00:00.0034610" startTime="2012-07-13T13:47:00.7414016-04:00" endTime="2012-07-13T13:47:00.7570017-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1bcd6d53-2869-4cbe-a72e-b1e5436508c1">
+    </UnitTestResult>
+    <UnitTestResult executionId="e6d13a5a-129c-4a13-a360-1e344dbf3ad4" testId="c2d3e0e9-d4e2-a4f0-3b31-76b55c0309f5" testName="GetAttackPointLevelsTest44" computerName="MACBOOK-WIN7" duration="00:00:00.0005790" startTime="2012-07-13T13:47:00.7570017-04:00" endTime="2012-07-13T13:47:00.7570017-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e6d13a5a-129c-4a13-a360-1e344dbf3ad4">
+    </UnitTestResult>
+    <UnitTestResult executionId="87ddcfec-acc0-4cca-81bf-f31eb36e0c68" testId="ec43728e-17fa-a272-1f36-181563a2be47" testName="TestParseMeasures" computerName="MACBOOK-WIN7" duration="00:00:00.0032757" startTime="2012-07-13T13:47:00.7726017-04:00" endTime="2012-07-13T13:47:00.7726017-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87ddcfec-acc0-4cca-81bf-f31eb36e0c68">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,153 @@
+[repetitions]
+20
+
+[input]
+QC QD | QE QA HA_ | HA QG QF | QE QC HC_ | HC QC QD | QE QB QB QB | QB QC5 QB4 QC5 | QA4 QG HG_ | HG QD QE | QF QE5 HE_ | HE QD QE | QD QC HC_ | HC QE QD | HC QD QC | HB4 QC5 QB4 | WA_ | HA
+[name]
+On the Street Where you Live
+[output-groups]
+1-2
+3-4
+1-4
+5-8
+1-8
+9-10
+11-12
+9-12
+13-16
+9-16
+[output-analogies]
+1-2=3-4
+1-2=5-6
+3-4=7-8
+1-4=5-8
+9-10=11-12
+1-2=9-10
+1-4=9-12
+5-8=9-12
+[output-sequences]
+13-16
+
+[input]
+EE EF QG QA QC_ | QC QD HE | ED EE QF QG QB3_ | QB QC4 HD | EE EF QG QA QB | QC5 EB4 EA QG QA | HG HF# | HF# HF | EE EF QG QA QC_ | QC QD HE | ED EE QF QG QB3_ | QB QC4 HD | EE EF QG QA QB | QC5 EB4 EA QG QA | HG HF# | QG QD QD QD
+[name]
+Younger than Springtime (first 16 measures)
+[output-groups]
+1-2
+3-4
+1-4
+5-6
+7-8
+5-8
+9-10
+11-12
+9-12
+13-14
+15-16
+13-16
+[output-analogies]
+1-2=3-4
+1-2=9-10
+3-4=11-12
+5-6=13-14
+5-8=13-16
+
+[input]
+H.E QF# | H.F# QG | H.G QA | QD QD QD QD | H.E QF# | H.F# QG | WG | WG 
+[name]
+Younger than Springtime (middle 8 measures)
+[output-groups]
+1-2
+3-4
+1-4
+5-6
+7-8
+5-8
+1-8
+[output-analogies]
+1-2=3-4
+1-4=5-8
+[output-sequences]
+1-4
+5-8
+
+[input]
+EC ED | EE EG_ QG EC ED | EE EG_ QG EC5 ED | EE EG_ QG EE ED | QC QA4 EC5 ED | QC Q.G4 EC5 | QA4 QG QE | H.D_ | QD Er EC EC ED | EE EG_ QG EC ED | EE EG_ QG EC5 ED | EE EG_ QG EE ED | QC QA4 QC5 | QC Q.G4 EA | QE QB3 QD4 | H.C_ | HC
+[name]
+Tennessee Waltz (1st half)
+[output-groups]
+1-2
+3-4
+1-4
+5-8
+1-8
+9-10
+11-12
+9-12
+13-16
+9-16
+1-16
+[output-analogies]
+1-2=3-4
+1-4=9-12
+5-8=13-16
+1-2=9-10
+3-4=11-12
+5-8=13-16
+1-8=9-16
+
+[input]
+EC5 EB4 EC5 EG4 EC5 EB4 EC5 EB4 | EC5 EG4 EE5 ED EC EB4 EA EG | EA EG# EA EE EA EG# EA EG# | EA EE EC5 EB4 EA EG EF EE | EF EC EF EG EA EE EF EG | EA EE EA EB EC5 EG4 EA EB | EC5 EG4 EA EG EA EE EF EE | EF EC ED EG3 EA EC4 ED EF | QG QG EF EE ED EE | WC
+[name]
+Good People All
+[output-groups]
+1-2
+3-4
+1-4
+5-6
+7-8
+9-10
+5-8
+5-10
+1-10
+[output-analogies]
+1-2=3-4
+5-6=7-8
+
+[input]
+Q.D5 EE_ HE | Q.D EE_ QE QG | Q.C ED_ HD | Q.C ED_ ED EC ED EG | Q.C ED_ HD | Q.C ED_ QD QG | Q.B4 EC5_ HC | Q.B4 EC5_ QC QE | WA4 | Q.G EC5_ QC QG4 | Q.F EC5_ QC QF4 | WD
+[name]
+Sun and Moon (first half)
+[output-groups]
+1-2
+3-4
+1-4
+5-6
+7-9
+5-9
+10-12
+1-12
+[output-analogies]
+1-2=3-4
+1-2=5-6
+1-2=7-9
+5-6=7-9
+7-9=10-12
+1-4=5-9
+
+[input]
+Q.D EE_ HE | Q.D EE_ QE QG | Q.G EA_ HA | Q.G EA_ QA QC5 | Q.C EB4_ QB QA | Q.A EG_ QG QF | Q.F EE_ QE QD | H.C Qr | Q.A3 EC4_ QC QA3 | Q.G EC4_ QC QG3 | Q.F EC4_ QC QF | H.D Er EC | H.C Qr
+[name]
+Sun and Moon (second half)
+[output-groups]
+1-2
+3-4
+1-4
+5-6
+7-8
+5-8
+9-13
+[output-analogies]
+1-2=3-4
+5-6=7-8
+1-2=5-6

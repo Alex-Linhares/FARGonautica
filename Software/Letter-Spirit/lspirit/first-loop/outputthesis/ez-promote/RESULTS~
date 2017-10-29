@@ -1,0 +1,69 @@
+Easy promotions
+
+	EXAM	NOREC	ADJ	SAME
+BR	14.0	0	34.5	4
+HOUSE	24.9	2	32.9	4
+SHORTS	18.4	1	15.4	6
+SNOUT	8.4	0	48.5	3
+STSQ	15.7	1	17.4	13
+
+COMPARISON (vs. promotion strategy)
+***
+					Ex+Adj
+EASY	16.3	0.8	29.7	6.0	46.0
+TOUGH	15.9	0.4	26.1	6.0	42.0
+NO	15.0	0.8	28.4	4.6	43.4
+
+***
+
+
+seeds r,s,t,u,w with EASY
+NOTE: BIG-SET is tested by TOUGH promotion
+	EXAM	NOREC	ADJ	SAME
+BR	24.6	3	35.7	1
+HOUSE	14.0	0	28.4	5
+SHORTS	28.2	2	13.2	4
+SNOUT	19.1	2	39.4	2
+STSQ	10.2	0	7.1	12
+AVE	19.2	1.4	24.8	4.8
+
+HIGH-RAND with TOUGH
+    (set! *choose-rand* 1.1)
+    (set! *tip-randomness* 0.09)
+NOTE: BIG-SET is tested by TOUGH promotion
+	EXAM	NOREC	ADJ	SAME
+BR	
+HOUSE	
+SHORTS	
+SNOUT	
+STSQ	
+AVE	
+
+middlin' RAND
+
+BR	33.3	4	26.7	
+
+BCEFG-EASY, RSTUW-EASY
+
+	EXAM	NOREC	ADJ	SAME	Ex+Adj
+BCEFG	16.3	0.8	29.7	6.0	46.0
+RSTUW	19.2	1.4	24.7	4.8	43.9
+
+BCEFG normal-rand TOUGH; and BCEFG high-rand TOUGH
+
+	EXAM	NOREC	ADJ	SAME	Ex+Adj
+NORMAL	16.5	0.4	25.4	6.4	41.9
+RAND	
+
+HYPOTHESIS: ODDSEED more general SPs? more general motifs, etc?
+
+***
+
+(with v)
+BR	13.0	0	49.2	
+
+
+***
+
+(EZ bcefg)
+BL	17.9	0	33.0	4

@@ -1,0 +1,237 @@
+when you get to the Central Loop, on re-draws of bad letters, reject
+the order used in drawing them the first time
+
+***
+
+Drafter/Adjudicator TO-DOs:
+
+	1) SPEED of motifs -- just terrible; caching doesn't help
+	2) multiple TOUCH NORMS
+PROPOSAL: have a secondary touch norm, and handle it in a hack-y way
+	3) loops and dot
+	4) draw from either direction
+	5) tip-2-looking-ahead; I snipped -- put it back?
+***
+
+concerns
+
+	1) curvature -- go to calculating based on form? maybe for
+penultimate step(s) -- not good as sole method of calculating
+curvature at beginning -- what you have now is sort of a trick to get
+anticipation in the mix
+	2) NEIGHBORHOODS -- perhaps just a small tie-breaker?
+	3) tip-2-looking-ahead; I snipped -- put it back?
+
+***
+
+ADJ only
+
+	1) Unfortunately, seems to be a conflict in that Adjudicator
+wants to really bias levels for scoring, but not so much for Drafter
+or maybe even for building TF with Adjudicator; maybe another
+parameter to kludge this?
+
+	1) the WORM is giving us motifs which are biased, as regard
+their distribution about the gridletter they bore into
+Example: Benzene Right quanta, and sizes of literal motifs that
+comtain them (after explore-font 'br)
+5	3, 2, 5, 2, 1, 2, 4, 3 = 22
+36	3, 1, 4, 2, 2, 5, 1, 2, 2, 4, 3 = 29
+23	3, 2, 3, 4, 3, 1, 2, 5, 4, 3 = 30
+8	3, 2, 2, 3, 4, 2, 3, 5, 4 = 28
+39	1, 3, 1, 2, 3, 4, 2, 3, 5 = 24
+	NOTE 5/36 discrepancy, despite the fact that they both occur
+in each training letter
+	NOTE
+	size of motif is influencing score, through the back door, via
+draft-level-score (just a touch, though)
+
+	solved, I think, by making motifs actually work! 7/19/99
+
+	6) make weight a punish-hard dimension
+	1) partial credit for norms filled by tip-2
+	COMMENT: this would only be for norm-progress; just calculate
+these for quanta plus tipS (count tip-1; highly relevant for the first
+step, which is a lulu); make it some fraction of the current
+norm-progress
+
+Hmmm.. in general, finding gold is better than finding tin
+but lacking tin is worse than lacking gold
+
+Drafter and adj-bridge successes is like finding gold
+adj-bridge failures are like lacking tin
+
+thus we need two importance functions
+
+	0) profound bias for upper "corner rounding" in SPs over lower
+"corner rounding" when trained on b, c, e, f, g; is this because of
+`f', or because of geometry of motif-worm cutoffs near junctions?
+	COMMENT: must not demote unfound motifs
+	BING!? demotion should pertain to sp-prob?
+	BING-er: focus on levels should not be so strong (power of 5)
+	can we un-do this in Drafter, but leave it in Adjudicator?
+	Why, yes, we can.
+
+SO-SO	3) curvature -- getting close, but make sure homing is merely
+a tiebreaker, that *straight* points where it should (needn't force
+into a 45-degree step off the grid, perhaps that local twists contrary
+to the general curve are solidly punished; multiple norms?
+
+DONE	8) SPs we take from TF to influence drawing -- have enough?
+Why not just take from TF on the fly? Or if pre-processing helps, get
+them all? Is their level-skewed representation important?
+
+
+	1) count role-fillers in common with library in lowering
+temperature?
+	2) number of bridges?
+	3) SLOW -- ~1:45 per run with 400 of each type of bridge
+	4) bigger letters win on motif scoring; have to adjust for
+that, maybe by punishing for having extra stuff not in the TF
+	5) smaller motifs -- punish more for bridge failure
+           reward less for bridge find
+
+
+	1) scoring not great
+	Yet to test with levels included in found-ahead
+	*full-levels* should count in all the four thermostat calls
+	2) Speed
+DONE	cut motif-sublist searches in half?
+	still sucks
+	3) Stable? Run twice. I doubt that we have enough codelets
+running, depressingly
+	IDEA: focus on top levels even more sharply; not power of two
+per level, but power of FOUR, say
+	WHY NO NVs promoted in explore SHORTS???!?!?!?
+
+LS
+
+	1) If only, say, 30% of your letters drawn are real keepers,
+do you want to muddle the Thematic Focus with their crap? One
+solution: only add letter's stuff to TF if the score is under
+threshold
+
+***
+
+DONE	2) bigger punishment for bigger norm/nv slips
+DONE	3) IMPORTANCE -- weighting level scores for Adj/Draft, SP-type
+and level
+
+DONE	2) bridge-ahead motif-match (via motif-DB) DOES NOT WORK!
+DONE	3) scoring thrown off by changes; motifs should be expected to
+be rare, and you shouldn't punish much if they don't show up
+(economically use drafter importance function?)
+OK	4) I upset the applecart with favored sp-types; put the apples
+back? (I think not; but you can streamline the code by using normal
+roulette function)
+
+
+***
+
+	DIFFERENT adjusted-level-score for rules and motifs
+	We punished non-literal motifs far too much for rules'
+insolence
+	Also, val-to-val NVs should get more credit than relatives
+
+	AND the NV distinction and possibly a more pronounced motif
+distinction should be incorporated into the ADJUDICATOR
+
+	should IMPORTANCE be given a unified definition, or should
+drafting involve, say, the non-literal motif types less than
+adjudicating?
+
+***
+
+	LIKES TO ADD LAST STEP IF IT SATISFIES MOTIF, even if it mucks
+up other stuff
+
+	Rules too weak
+
+	Maybe roles and motifs need different level-score functions?
+
+	Here's the problem: the idea of quit-consider is being screwed
+up by the difference between touch-continue and touch-quit; fix this
+and be king; we were going to rework touching anyway, so have at
+
+***
+
+BIG DRAFTER TO-DOs:
+
+multiple touch norms -- may restructure whole touching code!!!
+
+deletion of touch items from touch list, and moving to avoid list
+ 2ms -- put on touch list twice; only put on avoid when both are gone
+
+curvature -- punish local wrong-turns?
+
+homing and heading probably still not right
+ certainly in case of *straight*; maybe OK otherwise
+ use non-grid current->tip-2 calculation; needn't cram into 45/90/etc
+ framework
+
+neighborhoods
+
+loops & dots
+
+draw from either direction
+
+***
+
+I think NEIGHBORHOOD could help, if you can believe it
+
+be able to draw from other direction, and make sure role-defs allow
+quitting, say, when left-post collides with circle
+
+don't-touch should affect the quanta and second point down the road in
+picking initial tips
+
+mid-q touch should not count very positively for touching
+
+tip-picking doesn't discriminate which end of favored quanta are
+favored by end norms
+
+loops and dots
+
+may *tip-2* "tip off" nvs, rules, etc?
+ to wit, if you know (suspect, actually) that you get to that point,
+ then you can consider that norm slightly less urgent than others
+
+touch-info flawed for three-role wholes
+ problem is, how to update in the face of 2ms touch norm?
+
+a homing-style aim at *to-touch*?
+ (think of the second role in x aiming at the middle of the first)
+
+motifs -- score based on *own-stuff*, but should include *other-stuff*
+as well (but less?)
+
+bigger discrepancies from busted norm/goal equal bigger penalties
+
+maybe go looking for single-quanta motifs for the next step, at least,
+via motif-match? (gestalt-like thinking)
+
+have to be able to accomodate any of multiple touch norms
+
+...and multiple curve norms
+
+homing/heading still not right
+
+***
+(checked todo's) 
+
+avoid-quanta, avoid-tips MUST influence tip selection
+
+motifs likely biased badly
+
+ALWAYS look ahead one step after the end (~UNLESS you are at *tip-2*)
+
+***
+
+experimental examination of component values
+1 breadcrumbs
+2 tips
+3 homing
+4 norm met
+5 norm progress
+6 rules
+7 motifs

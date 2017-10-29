@@ -1,0 +1,173 @@
+Chez Scheme Transcript [Tue Oct 12 17:02:25 1999]
+> (lil-adj-test)
+
+Error in cdr: () is not a pair.
+Type (debug) to enter the debugger.
+> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in nth>                                            : s
+  continuation:          #<continuation in seed-font-seeds>
+  procedure code:        (lambda (n ls) (if (= n 1) (car ls) ...))
+  call code:             (cdr ls)
+  free variables:
+  0. ls:                 ()
+  1. n:                  2
+  2: 1
+#<continuation in nth>                                            : d
+#<continuation in seed-font-seeds>                                : s
+  continuation:          #<continuation in adj-test-one-font>
+  procedure code:        (lambda (font seeds) ...)
+  call code:             (nth 6 seeds)
+  free variables:
+  0. seeds:              (b c n p)
+  1. font:               benzene-right
+#<continuation in seed-font-seeds>                                : q
+
+debug> e
+> (load "stats.ss")
+> (load "coderack.ss")
+>  (lil-adj-test)
+TestSet0 benzene-right g benzene-left 62.512
+TestSet0 benzene-right z benzene-left 73.925
+TestSet0 benzene-right o benzene-left 84.255
+TestSet0 benzene-right a benzene-left 81.658
+TestSet0 benzene-right g benzene-right 21.121
+TestSet0 benzene-right z benzene-right 60.113
+TestSet0 benzene-right o benzene-right 37.952
+TestSet0 benzene-right a benzene-right 33.615
+TestSet0 benzene-right g boat 60.609
+TestSet0 benzene-right z boat 67.531
+TestSet0 benzene-right o boat 78.696
+TestSet0 benzene-right a boat 70.56
+TestSet0 benzene-right g close 55.808
+TestSet0 benzene-right z close 80.811
+TestSet0 benzene-right o close 57.865
+TestSet0 benzene-right a close 46.819
+TestSet0 benzene-right g house 50.172
+TestSet0 benzene-right z house 72.189
+TestSet0 benzene-right o house 68.702
+TestSet0 benzene-right a house 67.89
+TestSet0 close g benzene-left 74.399
+TestSet0 close z benzene-left 9.345
+TestSet0 close o benzene-left 77.816
+TestSet0 close a benzene-left 75.395
+TestSet0 close g benzene-right 65.105
+TestSet0 close z benzene-right 51.918
+TestSet0 close o benzene-right 66.868
+TestSet0 close a benzene-right 56.916
+TestSet0 close g boat 68.806
+TestSet0 close z boat 58.454
+TestSet0 close o boat 62.871
+TestSet0 close a boat 65.704
+TestSet0 close g close 36.501
+TestSet0 close z close 36.255
+TestSet0 close o close 31.792
+TestSet0 close a close 47.057
+TestSet0 close g house 66.568
+TestSet0 close z house 58.313
+TestSet0 close o house 66.109
+TestSet0 close a house 56.739
+TestSet0 house g benzene-left 72.543
+TestSet0 house z benzene-left 78.753
+TestSet0 house o benzene-left 80.415
+TestSet0 house a benzene-left 74.687
+TestSet0 house g benzene-right 66.418
+TestSet0 house z benzene-right 77.769
+TestSet0 house o benzene-right 66.237
+TestSet0 house a benzene-right 69.025
+TestSet0 house g boat 84.167
+TestSet0 house z boat 83.912
+TestSet0 house o boat 81.102
+TestSet0 house a boat 81.803
+TestSet0 house g close 80.66
+TestSet0 house z close 82.624
+TestSet0 house o close 83.114
+TestSet0 house a close 77.361
+TestSet0 house g house 52.029
+TestSet0 house z house 61.351
+TestSet0 house o house 53.771
+TestSet0 house a house 58.772
+TestSet0 boat g benzene-left 46.107
+TestSet0 boat z benzene-left 61.899
+TestSet0 boat o benzene-left 65.863
+TestSet0 boat a benzene-left 77.771
+TestSet0 boat g benzene-right 70.108
+TestSet0 boat z benzene-right 76.214
+TestSet0 boat o benzene-right 77.913
+TestSet0 boat a benzene-right 68.902
+TestSet0 boat g boat 24.014
+TestSet0 boat z boat 59.235
+TestSet0 boat o boat 59.567
+TestSet0 boat a boat 57.706
+TestSet0 boat g close 77.873
+TestSet0 boat z close 81.611
+TestSet0 boat o close 84.88
+TestSet0 boat a close 73.113
+TestSet0 boat g house 58.32
+TestSet0 boat z house 78.842
+TestSet0 boat o house 86.008
+TestSet0 boat a house 75.573
+TestSet0 benzene-left g benzene-left 36.369
+TestSet0 benzene-left z benzene-left 35.908
+TestSet0 benzene-left o benzene-left 60.489
+TestSet0 benzene-left a benzene-left 65.405
+TestSet0 benzene-left g benzene-right 74.669
+TestSet0 benzene-left z benzene-right 75.434
+TestSet0 benzene-left o benzene-right 83.861
+TestSet0 benzene-left a benzene-right 76.226
+TestSet0 benzene-left g boat 34.138
+TestSet0 benzene-left z boat 58.698
+TestSet0 benzene-left o boat 59.342
+TestSet0 benzene-left a boat 71.512
+TestSet0 benzene-left g close 77.023
+TestSet0 benzene-left z close 79.402
+TestSet0 benzene-left o close 85.501
+TestSet0 benzene-left a close 75.704
+TestSet0 benzene-left g house 63.264
+TestSet0 benzene-left z house 72.904
+TestSet0 benzene-left o house 81.306
+TestSet0 benzene-left a house 75.032
+TestSet1 shorts m hunt4 77.355
+TestSet1 shorts u hunt4 70.693
+TestSet1 shorts s hunt4 83.646
+TestSet1 shorts a hunt4 84.081
+TestSet1 shorts m shorts 37.787
+TestSet1 shorts u shorts 34.464
+TestSet1 shorts s shorts 10.072
+TestSet1 shorts a shorts 33.447
+TestSet1 shorts m slant 70.185
+TestSet1 shorts u slant 69.286
+TestSet1 shorts s slant 37.369
+TestSet1 shorts a slant 75.023
+TestSet1 shorts m snout 46.855
+TestSet1 shorts u snout 70.789
+TestSet1 shorts s snout 71.092
+TestSet1 shorts a snout 51.713
+TestSet1 shorts m standard-square 57.19
+TestSet1 shorts u standard-square 46.747
+TestSet1 shorts s standard-square 47.206
+TestSet1 shorts a standard-square 51.266
+TestSet1 snout m hunt4 69.288
+TestSet1 snout u hunt4 65.212
+TestSet1 snout s hunt4 83.951
+TestSet1 snout a hunt4 83.48
+TestSet1 snout m shorts 59.702
+TestSet1 snout u shorts 77.993
+TestSet1 snout s shorts 57.678
+TestSet1 snout a shorts 75.011
+TestSet1 snout m slant 72.948
+TestSet1 snout u slant 74.553
+TestSet1 snout s slant 85.246
+TestSet1 snout a slant 79.47
+TestSet1 snout m snout 66.355
+TestSet1 snout u snout 77.342
+TestSet1 snout s snout 61.774
+TestSet1 snout a snout 62.109
+TestSet1 snout m standard-square 75.4
+TestSet1 snout u standard-square 76.98
+TestSet1 snout s standard-square 78.106
+TestSet1 snout a standard-square 87.193
+
+debug> n
+>> (transcript-off)

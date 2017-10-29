@@ -1,0 +1,129 @@
+Chez Scheme Transcript [Thu Dec 16 21:33:00 1999]
+>>>>> (try-gridfont 'boat)
+(blah () ((*literal-motifs* ((50 20 4) (20 50) (4 20) (20 4) (50) (4) (4 20 50) (20))) (*turn-180-motifs* ((*nw* *n*) (*nw*))) (*translate-motifs* ((*n* *e*) (*w*))) (*turn-45-motifs* ((-90)))) ((*literal-motifs* ((20) (4 5) (20 50))) (*turn-180-motifs* ((*w* *s*))) (*turn-90-motifs* ((*ne* *n* *w*))) (*relative-nvs* ((tips (tip *inward*)))) (*translate-motifs* ((*n*)))) 21 16 46)
+Try n draft n; accepted as n1 score 49.587 beat 299.99 (4 5 20 22 25 50)
+Try t draft t; accepted as t1 score 59.612 beat 299.99 (4 5 6 8 18 21 23)
+Try i draft i; accepted as i1 score 82.775 beat 299.99 (20 35 50)
+Try y borrow g; accepted as y1 score 35.832 beat 299.99 (20 22 25 39 41 50 52)
+Try r borrow c; rejected as c1 score 300.0 beaten-by 299.995 (4 5 20 39 50)
+Try j draft j; rejected as i1 score 300.0 beaten-by 299.995 (26 35 38 40 50 51)
+Try r draft r; accepted as r1 score 21.264 beat 299.995 (4 5 20 22 50)
+Borrowed role
+Try j draft j; rejected as quit score 300.0 beaten-by 299.99666666666667 (19 22 25 41 52)
+Try o draft o; rejected as r1 score 300.0 beaten-by 299.995 (4 5 20)
+Try s draft s; 
+Error in cdr: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in nth>                                            : s
+  continuation:          #<continuation in lazy-snake-crawl>
+  procedure code:        (lambda (n ls) (if (= n 1) (car ls) ...))
+  call code:             (cdr ls)
+  free variables:
+  0. ls:                 ()
+  1. n:                  0
+  2: -1
+#<continuation in nth>                                            : d
+#<continuation in lazy-snake-crawl>                               : s
+  continuation:          #<continuation in worm-type>
+  procedure code:        (lambda (qlist) ((...) (...)))
+  call code:             (roulette qlist)
+  free variables:
+  0. qlist:              ()
+#<continuation in lazy-snake-crawl>                               : d
+#<continuation in worm-type>                                      : s
+  continuation:          #<continuation>
+  procedure code:        (lambda (mtftype) ((...) (...)))
+  call code:             (lazy-snake-crawl *quanta-list*)
+  free variables:
+  0. mtftype:            turn-180
+#<continuation in worm-type>                                      : q
+
+debug> n
+>>>>>> *quanta-list*
+()
+>>>>>> *answer*
+s1
+>>>>>> *fillers*
+()
+>>>>>> *codelets-run*
+9
+>>>>>> (set! *quanta-list* '(4 48 51 9 50 37))
+>>>>>> (run-examiner)
+(r1 85.222)
+>>>>>> *codelets-run*
+3291
+>>>>>>     (examiner-cleanup)
+>>>>>> 	(get-category *answer*)
+r
+>>>>>>   (adj-init)
+>>>>>> 		  (adj-run)
+>>>>>> 		*temperature*
+46.102241682751306
+>>>>>> (check-gridletter 's '(4 48 51 9 50 37))
+(r1 300.0)
+>>>>>> (check-gridletter 's '(4 48 51 9 50 37))
+(u1 300.0)
+>>>>>> (check-gridletter 's '(4 48 51 9 50 37))
+(r1 300.0)
+>>>>>>  (check-gridletter 's '(4 48 51 9 50 37))
+(r1 300.0)
+>>>>>> (re-draw 's)
+>>>>>> (score-draw 's 200)
+
+Error: incorrect number of arguments to #<procedure score-draw>.
+Type (debug) to enter the debugger.
+>>>>>> (try-cats)
+Try a draft a; rejected as e2 score 300.0 beaten-by 299.995 (8 9 23 36 38 48 49)
+Try q borrow b; accepted as q1 score 64.299 beat 299.99 (8 9 23 25 28 36 49)
+Try l draft l; accepted as l1 score 39.701 beat 299.99 (4 15 18 20 50)
+Try y draft y; rejected as y1 score 66.246 beaten-by 35.832 (9 28 48 50 51)
+Try p borrow b; accepted as p1 score 55.601 beat 299.99 (8 9 23 25 26 36 49)
+Try d borrow b; accepted as d1 score 33.388 beat 299.99 (4 5 19 20 22 39 50)
+Try o draft o; seedified as o1 score 16.438 beat 299.995 (4 5 9 20 22 25 50)
+Try z draft z; accepted as z1 score 58.059 beat 299.99 (4 5 6 9 37 50)
+Borrowed role
+Try k draft k; accepted as k1 score 49.756 beat 299.99 (4 5 17 20 21 51)
+Try w draft w; accepted as w1 score 58.328 beat 299.99 (5 9 20 22 25 50 51)
+Try m draft m; accepted as m1 score 26.328 beat 299.99 (4 5 20 21 22 25 50)
+Try u draft u; rejected as v1 score 300.0 beaten-by 299.995 (20 21 24 50)
+Try a draft a; accepted as a2 score 63.448 beat 299.995 (4 5 7 8 22 38 39)
+Try j draft j; accepted as j1 score 52.031 beat 299.99666666666667 (12 20 28 35 43 48 51)
+Try v draft v; accepted as v1 score 56.914 beat 299.99 (20 39 49 50)
+Try u draft u; accepted as u1 score 59.951 beat 299.995 (9 20 21 50 51)
+Try h borrow b; rejected as b1 score 300.0 beaten-by 299.995 (4 5 17 20 22 39 50)
+Try n draft n; reelected as n1 score 43.19225 scores (35.34 43.462) (44.38 49.587) (4 5 20 22 25 50)
+Try i draft i; accepted as i1 score 49.082 beat 82.775 (4 20 45 50)
+Try y draft y; rejected as y1 score 73.325 beaten-by 35.832 (4 9 12 21 28 43 50 51)
+Try z draft z; rejected as quit score 300.0 beaten-by 58.059 (4 5 7 20 37 38 48 50)
+Borrowed role
+Try h draft h; accepted as h1 score 54.328 beat 299.995 (4 5 17 20 22 25)
+Try s draft s; rejected as j1 score 300.0 beaten-by 299.995 (4 6 8 9 10 11 20 28 29 37)
+Try i draft i; rejected as j1 score 300.0 beaten-by 49.082 (9 22 25 35 50)
+Try s draft s; rejected as n1 score 300.0 beaten-by 299.99666666666667 (4 5 9 22 50)
+Try m draft m; rejected as m1 score 44.001 beaten-by 26.328 (4 5 20 21 22 23 24 25)
+Try a borrow e; accepted as a1 score 59.164500000000004 beat 64.4205 (7 8 9 25 36 38 49)
+Borrowed role
+Try q draft q; accepted as q1 score 30.917 beat 64.299 (4 5 9 20 22 25 28 31 50)
+Borrowed role
+Try s draft s; rejected as c1 score 300.0 beaten-by 299.9975 (4 9 20 50)
+Try i draft i; rejected as i1 score 55.418499999999995 beaten-by 49.361000000000004 (3 5 22 25)
+Try x draft x; accepted as x1 score 57.175 beat 299.99 (4 5 7 20 38 50)
+Borrowed role
+Try t draft t; rejected as i1 score 300.0 beaten-by 59.612 (4 7 22 38 47)
+Try d draft d; accepted as d1 score 15.774 beat 33.388 (4 5 9 19 20 22 25 50)
+Try j draft j; rejected as j1 score 107.657 beaten-by 52.031 (13 16 26 28 31 38 40 50 51)
+Borrowed role
+Try q draft q; accepted as q1 score 19.579 beat 22.4815 (4 5 20 22 25 28 31 39 50)
+Try s draft s; rejected as y2 score 300.0 beaten-by 299.998 (4 7 8 22 23 24 34 47)
+Borrowed role
+Try r draft r; rejected as r1 score 41.587 beaten-by 21.264 (4 20 50)
+Try w draft w; accepted as w1 score 42.028 beat 58.328 (9 20 24 25 49 50)
+Try p draft p; rejected as g1 score 300.0 beaten-by 55.601 (4 5 9 12 20 22 25 26 27 29 30 50)
+Try s draft s; rejected as i1 score 300.0 beaten-by 299.99833333333333 (4 5 9 48 50)
+Try h draft h; accepted as h1 score 45.475 beat 53.623000000000005 (4 5 17 20 22 25 50)
+
+debug> n
+>>>>>>> (transcript-off)

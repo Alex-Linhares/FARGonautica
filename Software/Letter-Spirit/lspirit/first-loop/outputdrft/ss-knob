@@ -1,0 +1,633 @@
+Chez Scheme Transcript [Sun Aug 15 13:24:57 1999]
+>> (try-gridfont 'ss)
+
+Error in lookup: item f not found..
+Type (debug) to enter the debugger.
+>>  (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in try-gridfont>                                   : s
+  continuation:          #<top level continuation>
+  procedure code:        (lambda (fontname) (design-gridfont (...)))
+  call code:             (pick-letter fontname (quote f))
+  free variables:
+  0. fontname:           ss
+#<continuation in try-gridfont>                                   : q
+
+debug> n
+>>> (load "adj-stats.ss")
+>>>  (try-gridfont 'ss)
+
+debug> i
+#<system continuation in length>                                  : d
+#<continuation in overlap-progress>                               : s
+  continuation:          #<continuation in biggest-overlap>
+  procedure code:        (lambda (ls1 ls2 ever active) (if (...) ...))
+  call code:             (length active)
+  free variables:
+  0. active:             ()
+  1. ever:               ()
+  2. ls2:                (*n* *e* *e*)
+  3. ls1:                (*n* *n* *w*)
+  4. act-new:            (*n*)
+#<continuation in overlap-progress>                               : d
+#<continuation in biggest-overlap>                                : s
+  continuation:          #<continuation in biggest-overlap>
+  procedure code:        (lambda (ls1 ls2) (if ((...) (...)) (quote ()) ...))
+  call code:             (order-overlap ls1 ls2)
+  free variables:
+  0. ls2:                (*n* *e* *e*)
+  1. ls1:                (*n* *n* *w*)
+#<continuation in biggest-overlap>                                : d
+#<continuation in biggest-overlap>                                : s
+  continuation:          #<continuation in biggest-overlap>
+  procedure code:        (lambda (ls1 ls2) (if ((...) (...)) (quote ()) ...))
+  call code:             (biggest-overlap (cdr ls1) ls2)
+  free variables:
+  0. ls2:                (*n* *e* *e*)
+  1. ls1:                (*e* *n* *n* *w*)
+  2: ()
+#<continuation in biggest-overlap>                                : d
+#<continuation in biggest-overlap>                                : s
+  continuation:          #<continuation in biggest-overlap>
+  procedure code:        (lambda (ls1 ls2) (if ((...) (...)) (quote ()) ...))
+  call code:             (biggest-overlap (cdr ls1) ls2)
+  free variables:
+  0. ls2:                (*n* *e* *e*)
+  1. ls1:                (*e* *e* *n* *n* *w*)
+  2: (*e*)
+#<continuation in biggest-overlap>                                : d
+#<continuation in biggest-overlap>                                : 
+#<continuation in biggest-overlap>                                : d
+#<continuation in biggest-overlap>                                : d
+#<continuation in biggest-overlap>                                : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : s
+  continuation:          #<continuation in sublists-include>
+  procedure code:        (lambda (sublists ls2) (if (...) ...))
+  call code:             (sublists-include (cdr sublists) ls2)
+  free variables:
+  0. ls2:                (*s* *w* *w* *n* *n* *e* *e*)
+  1. sublists:           ((*e* *n* *n*) (*w* *w* *n* ...) (*w* *n* *n* ...) ...)
+  2: (*n* *n*)
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : s
+  continuation:          #<continuation in sublists-include>
+  procedure code:        (lambda (sublists ls2) (if (...) ...))
+  call code:             (sublists-include (cdr sublists) ls2)
+  free variables:
+  0. ls2:                (*s* *w* *w* *n* *n* *e* *e*)
+  1. sublists:           ((*e* *e* ...) (*e* *s* ...) ...)
+  2: (*e* *e*)
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : ddddddddddd
+Invalid command.  Type ? for options.
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in sublists-include>                               : d
+#<continuation in match-one>                                      : d
+#<system continuation in map1>                                    : d
+#<continuation in motif-match-all>                                : d
+#<continuation in biggest-match>                                  : d
+#<system continuation in map1>                                    : d
+#<continuation in all-level-matches>                              : d
+#<continuation in best-tf-motif-match>                            : d
+#<continuation in bridge-ahead-codelet>                           : d
+#<continuation in adj-run>                                        : d
+#<continuation in try-gridfont>                                   : d
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : n
+
+>>>> *the-whole*
+v1
+>>>> *scratchspace*
+((q (5 4 20 23 22 25 28 31) 21.023)
+ (k (14 17 20 23 4 5 21 7) 9.757)
+ (w (51 5 22 25 20 23 8 9) 15.776)
+ (x (8 24 21 5 6 7 25) 34.825)
+ (p (20 23 26 29 4 5 22 25 9 8) 1.206)
+ (s (6 7 25 9 8 20 4 5) 14.388)
+ (o (20 4 5 22 25 9 8 23) 0.511)
+ (d (16 19 22 5 4 20 23) 48.362)
+ (t (18 21 6 23 8 9 4 5) 18.527)
+ (i (25 9 24 6 20 19 5) 37.43)
+ (j (5 22 25 28 31 3) 32.614)
+ (a (4 5 22 25 7 24 9) 4.556)
+ (h (4 5 22 25 14 17 20 23) 1.243)
+ (r (20 23 4 5 22) 7.433)
+ (n (20 23 4 5 22 25) 12.266)
+ (l (15 18 5 22 25) 14.105)
+ (m (5 22 25 20 23 4 21 24) 23.555)
+ (u (20 23 8 9 5 22 25) 12.369)
+ (y (5 22 25 28 31 20 23 8 9) 7.467)
+ (z (8 9 4 5 23 6 7 22) 14.181)
+ (g (4 5 8 9 12 13 20 22 23 25 28 31) 0)
+ (f (1 4 5 15 18 21 24) 0)
+ (e (4 5 6 7 8 9 20 22 23) 0)
+ (c (4 5 8 9 20 23) 0)
+ (b (4 5 8 9 14 17 20 22 23 25) 0)
+ (v () 10000))
+>>>> (transcript-off)

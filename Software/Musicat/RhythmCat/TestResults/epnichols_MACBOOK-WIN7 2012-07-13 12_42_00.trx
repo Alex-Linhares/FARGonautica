@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="59f311c8-a1cf-4c9f-a798-df6f131acad1" name="epnichols@MACBOOK-WIN7 2012-07-13 12:42:00" runUser="MacBook-Win7\epnichols" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="7676bca2-e91a-4519-b51b-432c2c0bbe31">
+    <Deployment runDeploymentRoot="epnichols_MACBOOK-WIN7 2012-07-13 12_42_00">
+      <DeploymentItem filename="C:\Users\epnichols\Documents\Visual Studio 2010\Projects\RhythmCat\GroundTruthParser\bin\Debug\GroundTruthParser.dll" />
+      <DeploymentItem filename="C:\Users\epnichols\Documents\Visual Studio 2010\Projects\RhythmCat\RhythmCat\bin\Debug\RhythmCat.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-13T12:42:00.5361870-04:00" queuing="2012-07-13T12:42:04.9993845-04:00" start="2012-07-13T12:42:05.5154126-04:00" finish="2012-07-13T12:42:35.4009908-04:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="MACBOOK-WIN7" outcome="Error" timestamp="2012-07-13T12:42:35.3979907-04:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetAttackPointLevelsTest44" storage="c:\users\epnichols\documents\visual studio 2010\projects\rhythmcat\rhythmcattests\bin\debug\rhythmcattests.dll" id="c2d3e0e9-d4e2-a4f0-3b31-76b55c0309f5">
+      <Execution id="da466dd9-d16e-41e7-a82a-89fa297c37b2" />
+      <TestMethod codeBase="C:/Users/epnichols/Documents/Visual Studio 2010/Projects/RhythmCat/RhythmCatTests/bin/Debug/RhythmCatTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RhythmCatTests.MeasureTest, RhythmCatTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAttackPointLevelsTest44" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c2d3e0e9-d4e2-a4f0-3b31-76b55c0309f5" executionId="da466dd9-d16e-41e7-a82a-89fa297c37b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="da466dd9-d16e-41e7-a82a-89fa297c37b2" testId="c2d3e0e9-d4e2-a4f0-3b31-76b55c0309f5" testName="GetAttackPointLevelsTest44" computerName="MACBOOK-WIN7" duration="00:00:29.3645484" startTime="2012-07-13T12:42:06.0344423-04:00" endTime="2012-07-13T12:42:35.3989907-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da466dd9-d16e-41e7-a82a-89fa297c37b2">
+    </UnitTestResult>
+  </Results>
+</TestRun>

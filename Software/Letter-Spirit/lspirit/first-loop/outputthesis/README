@@ -1,0 +1,55 @@
+Here's the plan:
+
+SEEDED
+
+Test set: Benzene Right, House, Shorts, Snout, Standard Square
+
+For seeded things, use runs c. Jan. 15, in closet/
+Revised promotion cutoffs used for runs from scratch
+
+hard-promote seeded tests run 1-27 to 1-29:
+ cutoff is 0.33 * (average {prevs + 110}) + 15
+
+Feel free to mention, in thesis, the other tests, and explain why a
+general approach does not work for both
+
+easy-promote tests run 1-27 to 1-29:
+ cutoff is average {prevs + 70} - 10
+
+no-promote tests run 1-30 to ???
+
+EVALUATE
+ re-train TF on the BCEFG seeds
+ Exam mean score, Failed-Recs, Adj mean score and SAME (as human
+ designer)
+
+SAME, just for hard-promote, with the 15 gridfonts of the larger set
+that you possibly can with
+
+ANOTHER TEST for The Five: just the plain Drafter, one shot at
+everything. And/or, passes at each character until the Examiner passes
+everything.
+
+AND, data points on the scores at every fifty points or so, in the
+no-promotion version, to show how scores climb. No new runs
+necessary... just new scoring!
+
+
+***
+
+UNSEEDED, we'll want to get six easy-promote and six hard-promote
+ (no-promote makes no sense), and plenty of whichever (easy) is better
+
+***
+
+big run: br-noprom-3000
+analyses:
+
+raw # of reject, promote, accept, re-elect
+
+per run:
+ quit, category reject, category correct
+ for category corrects, score distribution
+
+number of tries per category: mean is obvious, but distribution...
+

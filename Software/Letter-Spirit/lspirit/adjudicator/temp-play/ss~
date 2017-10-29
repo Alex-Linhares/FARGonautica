@@ -1,0 +1,48 @@
+a
+
+d
+((back-not-found *abstract-rules* *universal-sps* at-most-3)
+ (back-not-found *abstract-rules* *universal-sps* at-most-2)
+ (back-not-found *abstract-rules* *universal-sps* at-most-2)
+ (back-not-found *abstract-rules* *universal-sps* at-most-2)
+ (back-not-found *abstract-rules* *universal-sps* at-most-3))
+
+x
+((back-not-found  *translate-motifs*  *universal-sps*  (*w* *n*))
+ (back-not-found *turn-180-motifs* *frequent-sps* (*n* *n*))
+ (back-not-found *literal-motifs* *universal-sps* (22))
+ (back-not-found  *translate-motifs*  *universal-sps*  (*n* *e*))
+ (back-not-found *literal-motifs* *universal-sps* (22))
+ (back-not-found  *abstract-rules*  *universal-sps*  ban-backslash-quanta)
+ (back-not-found *literal-motifs* *universal-sps* (9))
+ (back-not-found *literal-motifs* *universal-sps* (20 4))
+ (back-not-found  *translate-motifs*  *universal-sps*  (*w* *n*))
+ (back-not-found  *abstract-rules*  *frequent-sps*  ban-foreslash-quanta)
+ (back-not-found  *turn-90-motifs*  *frequent-sps*  (*s* *s* *e* *n*))
+ (back-not-found *literal-motifs* *universal-sps* (9))
+ (back-not-found *literal-motifs* *universal-sps* (8 9))
+ (back-not-found  *abstract-rules*  *frequent-sps*  ban-diagonal-quanta)
+ (back-not-found *literal-motifs* *universal-sps* (9))
+ (back-not-found  *translate-motifs*  *universal-sps*  (*n* *e*))
+ (back-not-found *literal-motifs* *universal-sps* (20 4))
+ (back-not-found *turn-180-motifs* *frequent-sps* (*n* *n*))
+ (back-not-found *translate-motifs* *frequent-sps* (*e* *e*))
+ (back-not-found *literal-motifs* *universal-sps* (5 4))
+ (back-not-found *literal-motifs* *universal-sps* (5 4))
+ (back-not-found *literal-motifs* *universal-sps* (9))
+ (back-not-found  *translate-motifs*  *frequent-sps*  (*e* *n* *n*))
+ (back-not-found  *abstract-rules*  *universal-sps*  ban-backslash-quanta)
+ (back-not-found  *translate-motifs*  *universal-sps*  (*n* *w*))
+ (back-not-found  *translate-motifs*  *frequent-sps*  (*n* *n*)))
+
+y
+
+((back-not-found *abstract-rules* *universal-sps* at-most-2)
+ (back-not-found *literal-motifs* *universal-sps* (5 4))
+ (back-not-found *literal-motifs* *universal-sps* (5 4))
+ (back-not-found *abstract-rules* *universal-sps* at-most-3)
+ (back-not-found *literal-motifs* *universal-sps* (5 4))
+ (back-not-found *abstract-rules* *universal-sps* at-most-3)
+ (back-not-found *abstract-rules* *universal-sps* at-most-2)
+ (back-not-found *abstract-rules* *universal-sps* at-most-3)
+ (back-not-found *abstract-rules* *universal-sps* at-most-3))

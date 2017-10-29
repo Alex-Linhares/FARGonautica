@@ -1,0 +1,30 @@
+quit prob product of:
+
+tip2 weight
+height, width, weight match with size norms+NVs
+4 borders match with border norms+NVs
+contact matches
+---
+
+tip weight product of:
+
+ends which match with rules and correlate with tip orientations and
+tip locations: norms+NVs
+contact norms+NVs
+---
+
+step prob product of:
+
+curve cast
+motif scores (many)
+abstract rule scores (many)
+don't break border norm+NVs (many)
+don't exceed size norm+NVs (many)
+don't contradict contact
+seek out contact if mid needs contact and you haven't made contact
+or if tip2 needs contact and the point can be tip2
+
+---
+
+eventually, get to where you can start with tip2 and finish with tip1;
+should be easy as hell

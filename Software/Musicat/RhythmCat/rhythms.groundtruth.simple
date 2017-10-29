@@ -1,0 +1,98 @@
+[repetitions]
+10
+
+[input]
+QC QC QG QG | QA QA HG | QF QF QE QE | QD QD HC | QG QG QF QF | QE QE HD | QG QG QF QF | QE QE HD | QC QC QG QG | QA QA HG | QF QF QE QE | QD QD HC
+[name]
+Twinkle Twinkle
+[output-groups]
+1-2
+3-4
+1-4
+5-6
+7-8
+5-8
+9-10
+11-12
+9-12
+1-12
+[output-analogies]
+1-2=3-4
+1-4=9-12
+5-6=7-8
+7-8=11-12
+
+[input]
+H.C | H.C | HC QD | H.E | HE QD | HE QF | H.G_ | H.G | QC5 QC QC | QG4 QG QG | QE QE QE | QC QC QC | HG QF | HE QD | H.C_ | H.C
+[name]
+Row, Row, Row Your Boat
+[output-groups]
+1-2
+3-4
+1-4
+5-6
+7-8
+5-8
+1-8
+9-12
+13-14
+15-16
+13-16
+9-16
+1-16
+[output-analogies]
+3-4=5-6
+5-8=13-16
+9-10=11-12
+
+[input]
+QC QC HC | QD QD HD | QE QF QG QC | QB3 QC4 QD QG3 | QC4 QC HC | QD QD HD | QE QF QG QC | QD QB3 HC4
+[name]
+Sur le Pont d'Avignon
+[output-groups]
+1-2
+3-4
+1-4
+5-6
+7-8
+5-8
+1-8
+[output-analogies]
+1-2=5-6
+3-4=7-8
+1-4=5-8
+
+[input]
+QC QD QE QC | QC QD QE QC | QE QF HG | QE QF HG | EG EA EG EF QE QC | EG EA EG EF QE QC | QC QG3 HC4 | QC QG3 HC4
+[name]
+Frere Jacques
+[output-groups]
+1-2
+3-4
+1-4
+5-6
+7-8
+5-8
+1-8
+[output-analogies]
+1-2=3-4
+1-2=5-6
+3-4=7-8
+1-4=5-8
+
+[input]
+EE | QA EC5 QE EA | E.C6 SB5 EA QB EE | E.E SD EF# E.E SD EF# | Q.E_ QE EE4 | QA EC5 QE EG | E.Bb SA EG QA EA4 | E.A SG# EB E.A SG# EC5 | Q.A4_ QA
+[name]
+Faure Sicillienne
+[output-groups]
+1-2
+3-4
+1-4
+5-6
+7-8
+5-8
+1-8
+[output-analogies]
+1-2=5-6
+3-4=7-8
+1-4=5-8

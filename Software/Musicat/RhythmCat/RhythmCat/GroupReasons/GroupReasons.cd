@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RhythmCat.GroupReason">
+    <Position X="6" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAQEBAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReason.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonComponentsIdentical" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonComponentsIdentical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonComponentsSimilar" Collapsed="true">
+    <Position X="1.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonComponentsSimilar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonSequence" Collapsed="true">
+    <Position X="1.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonAnalogySupport" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonAnalogySupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonNumberOfSubelements" Collapsed="true">
+    <Position X="9.5" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonNumberOfSubelements.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonStrongBoundaryPosition">
+    <Position X="5.75" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonStrongBoundaryPosition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonStrongStartPosition">
+    <Position X="3.5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonStrongStartPosition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonStrongEndPosition">
+    <Position X="8.25" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonStrongEndPosition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonStartAfterLeap" Collapsed="true">
+    <Position X="1.25" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonStartAfterLeap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonStartAfterGap" Collapsed="true">
+    <Position X="4" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonStartAfterGap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonEndBeforeLeap">
+    <Position X="7" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonEndBeforeLeap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonEndBeforeGap" Collapsed="true">
+    <Position X="9.75" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonEndBeforeGap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonExpected">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupReasons\GroupReasonExpected.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.Analogy" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAkQAYICQAAAABAAAAKAgAABQQQgAA=</HashCode>
+      <FileName>Analogy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.Codelet" Collapsed="true">
+    <Position X="16.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABEQEAAQAQAAIAEBAAAAAAIEAAKCBI=</HashCode>
+      <FileName>Codelet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RhythmCat.AddRelationshopsToAnalogyCodelet" Collapsed="true">
+    <Position X="8.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAI=</HashCode>
+      <FileName>Codelets\Analogy\AddRelationshipsToAnalogyCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.CreateAnalogyCodelet" Collapsed="true">
+    <Position X="12.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Codelets\Analogy\CreateAnalogyCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.FormLabelFromAnalogy" Collapsed="true">
+    <Position X="17.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAoAAAAAAAAAAI=</HashCode>
+      <FileName>Codelets\Analogy\FormLabelFromAnalogyCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.ExamineLinkedPairsCodelet" Collapsed="true">
+    <Position X="21.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEI=</HashCode>
+      <FileName>Codelets\ExamineLinkedPairsCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.FormLabelAssignerCodelet" Collapsed="true">
+    <Position X="26.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgACAAAACAAAAAACAAAAAAAAAAAAACAAAAAAAQAEI=</HashCode>
+      <FileName>Codelets\FormLabelAssignerCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupBreakerCodelet" Collapsed="true">
+    <Position X="28.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Codelets\Grouping\GroupBreakerCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GenerateExpectedGroupCopyCodelet" Collapsed="true">
+    <Position X="30.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Codelets\Expectations\GenerateExpectedGroupCopyCodelet.cs</FileName>
+      <NewMemberFileName>Codelets\Grouping\MeasureSamenessGrouperCodelet.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.MetaGrouperCodelet" Collapsed="true">
+    <Position X="1.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAABAAAAAI=</HashCode>
+      <FileName>Codelets\Grouping\MetaGrouperCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonAnalogyComponentCodelet" Collapsed="true">
+    <Position X="3.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAI=</HashCode>
+      <FileName>Codelets\GroupReasons\GroupReasonAnalogyComponentCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupReasonNumberComponentsCodelet" Collapsed="true">
+    <Position X="10.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Codelets\GroupReasons\GroupReasonNumberComponentsCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.LookForRelationshipCodelet" Collapsed="true">
+    <Position X="15" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAI=</HashCode>
+      <FileName>Codelets\LookForRelationshipCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.MeasureLinkBreakerCodelet" Collapsed="true">
+    <Position X="19.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAEI=</HashCode>
+      <FileName>Codelets\MeasureLinkBreakerCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.MeasureLinkerCodelet" Collapsed="true">
+    <Position X="24" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAAI=</HashCode>
+      <FileName>Codelets\MeasureLinkerCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.CoderackEventArgs" Collapsed="true">
+    <Position X="38.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Coderack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.CoderackRunCodeletEventArgs" Collapsed="true">
+    <Position X="40.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Coderack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.Coderack" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEQCAQAQQAYBBFAFSBAQBSQFBAgAAAAAgCgAAQAIAAA=</HashCode>
+      <FileName>Coderack.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RhythmCat.ConceptLink" Collapsed="true">
+    <Position X="33.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAACQABAAEAAYQAIACEgCAA=</HashCode>
+      <FileName>ConceptLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.ConceptNode" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAyAAAAIAAAACQFAAAwQARigAQMAACAAgEAgAAAEoA=</HashCode>
+      <FileName>ConceptNode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RhythmCat.Constants" Collapsed="true">
+    <Position X="36.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.CodeletAttribute" Collapsed="true">
+    <Position X="35" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQBAQAAAAAAAAAAAAAAAAgAAAQABQACAA=</HashCode>
+      <FileName>CustomAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.OptimizableParameterAttribute" Collapsed="true">
+    <Position X="14.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>CustomAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.TopDownCodeletAttribute" Collapsed="true">
+    <Position X="38.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.OptimizableBoolParameterAttribute" Collapsed="true">
+    <Position X="14.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.OptimizableDoubleParameterAttribute" Collapsed="true">
+    <Position X="17" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEEAAAAAAQAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.OptimizableIntParameterAttribute" Collapsed="true">
+    <Position X="12.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEEAAAAAAQAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.Expectations" Collapsed="true">
+    <Position X="38.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAQIAABAQAAIEAQAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Expectations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.MainForm" Collapsed="true">
+    <Position X="33.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAICAAAACAAAAAAAACQAAAAAAAAA=</HashCode>
+      <FileName>frmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.WorkspaceForm" Collapsed="true">
+    <Position X="36.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABABGDAISIgBhiAQITAyQAGA4AEACGQAAAgAIgRgIA=</HashCode>
+      <FileName>frmWorkspace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.MyPanel" Collapsed="true">
+    <Position X="36.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.Group" Collapsed="true">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAEAACAAAKAAIRAgAAAAAADAAECAAAAAAA=</HashCode>
+      <FileName>Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.GroupElement" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAIAAI4AAAgAAEABAAACCAAAAAA=</HashCode>
+      <FileName>GroupElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.IntMapping" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAAAAAQAEAAAAAAAAAAAAAAAgBQAAAAAAABA=</HashCode>
+      <FileName>IntMap.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RhythmCat.Measure" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACIAAAgEAAQwACEAEIAAIQAAAAAAAABACAAAAAAABA=</HashCode>
+      <FileName>Measure.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RhythmCat.MeasureLink" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAQEAAAAAAAAAAAgBAAAQAAQAAAAAAA=</HashCode>
+      <FileName>MeasureLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RhythmCat.Program" Collapsed="true">
+    <Position X="38.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACIAAAAAAAGAAAAQAAAQQAAAAAAAAEAAgACBIAIAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipParameter" Collapsed="true">
+    <Position X="4" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelatinoshipParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.Relationship" Collapsed="true">
+    <Position X="5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAQAAQAAAAAAAAAAQABAEAAAAAA=</HashCode>
+      <FileName>Relationships\Relationship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipIdentical" Collapsed="true">
+    <Position X="7.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipIdentical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipMetricPosition" Collapsed="true">
+    <Position X="9.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipMetricPosition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipParameterDecreasing" Collapsed="true">
+    <Position X="2.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipParameterDecreasin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipParameterIncreasing" Collapsed="true">
+    <Position X="5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipParameterIncreasing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipSimilar" Collapsed="true">
+    <Position X="0.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipSimilar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipStartIdentical" Collapsed="true">
+    <Position X="7.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipStartIdentical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipStartSimilar" Collapsed="true">
+    <Position X="0.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipStartSimilar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.Rhythm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAACAEAECAAAAQQAAAAAAAAAEAAAAQAQABA=</HashCode>
+      <FileName>Rhythm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RhythmCat.SlipnetEventArgs" Collapsed="true">
+    <Position X="36.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Slipnet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.Slipnet" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCQgAYAAAAGABxEFQBBAIAAAAIAJAEABSAEAAAAIIAA=</HashCode>
+      <FileName>Slipnet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RhythmCat.Utilities" Collapsed="true">
+    <Position X="40.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIIAQAIAAAJAAAAAAAAAAAAgAAAAICAAAAAAAAAA=</HashCode>
+      <FileName>Utilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.WorkspaceEventArgs" Collapsed="true">
+    <Position X="35" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Workspace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.Workspace" Collapsed="true">
+    <Position X="33.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAQAEwAAAA5YhkWEBACAEAAIAkAoTAHQAggAhYAMAYA=</HashCode>
+      <FileName>Workspace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.Codelets.MeasureHierarchyCodelet" Collapsed="true">
+    <Position X="6" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Codelets\MeasureHierarchuyCodelet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.ExpectedMeasure">
+    <Position X="13.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExpectedMeasure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.ExpectedGroup">
+    <Position X="15.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAIAAAACAgACAAIAAAAEAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>ExpectedGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.ExpectedAnalogy">
+    <Position X="18.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExpectedAnalogy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="RhythmCat.ConceptInstance" Collapsed="true">
+    <Position X="33.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>ConceptInstance.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RhythmCat.IntPair" Collapsed="true">
+    <Position X="35" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>IntMap.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

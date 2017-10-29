@@ -1,0 +1,72 @@
+First three columns from gridfonts made from a few fonts, seeds BCEFG,
+circa 11/26/99
+
+HARDMIN based on hard-test of Nov 12 -- minimum score per category,
+based on varied training
+
+HANDICAP is a JAR-derived column trying to state what is a great score for
+the category
+
+OK, self -- problem is that this is all gridfont-dependent. The
+near-zero scores for several categories in a really good gridfont
+belie the spread that opens up with tougher ones.
+
+	MIN	MEAN	MAX	HARDMIN	HANDICAP
+a	0.998	34.872	89.811	0.998	0
+b	0	0	0	11.953	0
+c	0	0	0	38.072	20
+d	0.31	22.489	52.255	10.919	0
+e	0	0	0	20.114	20
+f	0	0	0	13.744	15
+g	0	0	0	1.024	0
+h	10.826	36.439	66.336	3.809	5
+i	13.325	40.473	53.222	27.452	15
+j	9.276	33.892	57.137	10.638	10
+k	20.274	38.208	56.281	4.22	10
+l	7.162	35.807	52.83	3.224	5
+m	8.931	36.533	60.307	5.597	5
+n	17.434	41.108	65.523	5.7	5
+o	2.989	25.641	57.346	0.5	0
+p	2.283	28.298	51.717	0.998	0
+q	0.738	24.91	56.949	1.366	0
+r	2.427	32.948	57.311	0.658	0
+s	15.166	43.103	65.082	11.146	12
+t	20.346	45.646	62.572	16.225	15
+u	15.088	42.039	61.646	14.427	15
+v	26.495	57.11	72.623	27.487	25
+w	13.661	42.883	64.267	1.493	5
+x	34.795	51.918	63.262	11.393	10
+y	11.053	31.858	55.838	6.157	8
+z	9.797	41.384	64.551	1.586	5
+
+***
+
+trained on BOAT b, tested on everything
+
+> (map check alphabet)
+((a2 70.016)
+ (b1 30.716)
+ (c1 59.37)
+ (d1 63.584)
+ (e2 76.729)
+ (f1 77.435)
+ (g1 73.953)
+ (h1 62.335)
+ (i1 72.416)
+ (j1 62.944)
+ (k1 59.599)
+ (l1 70.768)
+ (m1 64.197)
+ (n1 78.408)
+ (o1 51.999)
+ (p1 44.014)
+ (q1 57.312)
+ (r1 63.267)
+ (s2 73.117)
+ (t1 83.138)
+ (u1 71.392)
+ (v1 70.312)
+ (w1 77.256)
+ (x1 58.894)
+ (y1 58.628)
+ (z1 71.47))

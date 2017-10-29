@@ -1,0 +1,596 @@
+;===========================================================================
+; tools.ss : a set of scheme functions that are used throughout the code
+;===========================================================================
+; these functions are not locally dependent nor do they use non-standard
+; representational systems.
+;---------------------------------------------------------------------------
+
+; this should be in any scheme!
+(define member?
+  (lambda (item ls)
+    (if (member item ls)
+	#t
+	#f)))
+
+(define memq?
+  (lambda (item ls)
+    (if (memq item ls)
+	#t
+	#f)))
+
+; deep recursive member?
+(define member*?
+  (lambda (item ls)
+    (cond
+      ((null? ls) #f)
+      ((equal? (car ls) item) #t)
+      ((list? (car ls)) (or (member*? item (car ls))
+			    (member*? item (cdr ls))))
+      (else (member*? item (cdr ls))))))
+
+; add to the list only if it's not already in there
+(define condcons
+ (lambda (item ls)
+   (if (member? item ls) ls (cons item ls))))
+
+; good old lookup...should be replaced by select
+(define lookup
+  (lambda (item ls)
+    (cond
+      ((null? ls) (error 'lookup "item ~s not found." item))
+      ((equal? (caar ls) item) (cadar ls))
+     (else (lookup item (cdr ls))))))
+
+; zero if not found
+(define lookup-score
+  (lambda (item ls)
+    (cond
+      ((null? ls) 0)
+      ((equal? (caar ls) item) (cadar ls))
+     (else (lookup-score item (cdr ls))))))
+
+; finds the whole list following the search key, not just the cadar
+
+(define lookup-list
+  (lambda (item ls)
+    (cond
+      ((null? ls) '())
+      ((equal? (caar ls) item) (cdar ls))
+     (else (lookup-list item (cdr ls))))))
+
+; look for the second item on the list as the key, and return the first
+(define lookup-second
+  (lambda (item ls)
+    (cond
+      ((null? ls) '())
+      ((equal? (cadar ls) item) (caar ls))
+     (else (lookup-second item (cdr ls))))))
+
+; specific for quantum endpoint lookups
+(define lookup-pair
+  (lambda (item1 item2 ls)
+    (cond
+      ((null? ls) '())
+      ((or (equal? (cadar ls) item1)(equal? (cadar ls) item2)) (caar ls))
+     (else (lookup-pair item1 item2 (cdr ls))))))
+
+; find as many matches as there are
+(define lookup-many
+  (lambda (item ls)
+    (cond
+      ((null? ls) '())
+      ((equal? (caar ls) item) (cons (cadar ls) (lookup-many item (cdr ls))))
+      (else (lookup-many item (cdr ls))))))
+
+
+(define remove-item
+  (lambda (item ls)
+    (cond
+      ((null? ls) '())
+      ((equal? (car ls) item) (remove-item item (cdr ls)))
+      (else (cons (car ls) (remove-item item (cdr ls)))))))
+
+; removes sublist beginning with key
+(define remove-key
+  (lambda (item ls)
+    (cond
+      ((null? ls) '())
+      ((equal? (caar ls) item) (remove-key item (cdr ls)))
+      (else (cons (car ls) (remove-key item (cdr ls)))))))
+  
+(define find
+  (lambda (item ls)
+    (cond
+      ((null? ls) (error 'find "item ~s not found." item))
+      ((equal? (caar ls) item) (car ls))
+     (else (find item (cdr ls))))))
+
+; what is cons spelled backwards?
+(define snoc
+  (lambda (item ls)
+    (reverse (cons item
+		   (reverse ls)))))
+
+; throw two lists together for lookup: JAR, 9/13/96 (Friday... oooh)
+(define make-index
+  (lambda (ls1 ls2)
+    (cond
+      ((or (null? ls1) (null? ls2))'())
+      (else (cons (list (car ls1) (car ls2))
+		  (make-index (cdr ls1) (cdr ls2)))))))
+
+; JAR 2/22/98
+; inclusive between
+(define between?
+  (lambda (x y z)
+    (and (<= x z) (>= x y))))
+
+; maker for printflag functions
+(define ifprint-proto
+  (lambda (flag)
+    (lambda args
+      (if (eq? flag #t)
+	  (apply printf args)
+	  (printf "")))))
+
+; maker for pretty-printflag functions
+(define ifpprint-proto
+  (lambda (flag)
+    (lambda args
+      (if (eq? flag #t)
+	  (apply pretty-print args)
+	  (printf "")))))
+
+; what reasonable names!!
+(define select assq)
+
+; throw an n-sided die - return the answer
+; takes reals as well as integers
+(define n-sided-die
+  (lambda (n)
+    (if (zero? (floor n))
+	0
+	(add1 (random (floor n))))))
+
+(define cointoss
+  (lambda ()
+    (roulette '(#t #f))))
+
+(define one-in-n
+  (lambda (n)
+    (eq? 1 (n-sided-die n))))
+
+(define roulette-select
+  (lambda (ls n)
+    (cond
+     [(or (eq? (length ls) 1) (>= (cadar ls) n)) (caar ls)]
+     [else (roulette-select (cdr ls) (- n (cadar ls)))])))
+
+(define weighted-roulette
+  (lambda (ls)
+    (let*
+	([total (apply + (map cadr ls))]
+	 [index (n-sided-die total)])
+      (roulette-select ls index))))
+
+; remove duplicates from a list
+(define uniquify
+  (lambda (ls)
+    (cond
+      ((null? ls) '())
+      ((member? (car ls) (cdr ls)) (uniquify (cdr ls)))
+      (else (cons (car ls)
+		  (uniquify (cdr ls)))))))
+
+; intersect two lats
+(define intersect
+  (lambda (l1 l2)
+    (cond
+     [(null? l1) '()]
+     [(member? (car l1) l2) (cons (car l1)
+				  (intersect (cdr l1) l2))]
+     [else (intersect (cdr l1) l2)])))
+
+(define intersect-uniq
+  (lambda (l1 l2)
+    (cond
+     [(null? l1) '()]
+     [(member? (car l1) l2) (cons (car l1)
+				  (intersect-uniq (cdr l1)
+						  (subtract-once l2
+							    (list (car l1)))))]
+     [else (intersect (cdr l1) l2)])))
+
+(define subtract-once
+  (lambda (l1 l2)
+    (cond
+     [(null? l1) '()]
+     [(member? (car l1) l2) (cdr l1)]
+     [else (cons (car l1)
+		 (subtract-once (cdr l1) l2))])))
+
+; subtract l2 from l1
+(define subtract
+  (lambda (l1 l2)
+    (cond
+     [(null? l1) '()]
+     [(member? (car l1) l2) (subtract (cdr l1) l2)]
+     [else (cons (car l1)
+		 (subtract (cdr l1) l2))])))
+     
+; pause until a proper key is pressed
+(define pause
+  (lambda ()
+    (let ((answer (ask "Enter Q to quit or (RETURN) to continue: ")))
+      (cond
+	((quit? answer) (printf "Stoped in coderack run.~%")
+	 (reset))
+	(else (newline))))))
+
+; ask a question and wait for an answer
+(define ask
+  (lambda l
+    (for-each display l)
+    (clear-input-port)
+    (let ((first-char (read-char)))
+      (cond
+	((char=? first-char #\newline) #t)
+	(else (unread-char first-char)
+	      (read))))))
+
+; decide whether to quit (boolean)
+(define quit?
+  (lambda (ans)
+    (or (eq? ans 'q)
+	(eq? ans 'quit))))
+
+; look at bit from a flat bit-list to see if it's on
+; zero based function
+(define bit-on?
+  (lambda (bitls index)
+    (letrec ((work (lambda (acc bitls)
+                     (cond
+                       ((null? bitls) #f)
+                       ((and (= acc index)
+                             (= (car bitls) 1)) #t)
+                       (else (work (add1 acc) (cdr bitls)))))))
+      (work 0 bitls))))
+
+; return the nth value of a list.  one based.
+(define nth
+  (lambda (n ls)
+    (cond
+      ((= n 1) (car ls))
+      (else (nth (sub1 n) (cdr ls))))))
+
+(define sublist
+  (lambda (start end ls)
+    (letrec ((loop (lambda (n ls)
+		     (cond
+		       ((null? ls) '())
+		       ((and (or (= n start)
+				 (> n start))
+			     (or (= n end)
+				 (< n end))) (cons (car ls)
+						   (loop (add1 n) (cdr ls))))
+		       (else (loop (add1 n) (cdr ls)))))))
+      (loop 0 ls))))
+
+; list sans last atom
+(define anticdr
+  (lambda (ls)
+    (sublist 0 (- (length ls) 2) ls)))
+
+(define make-n-bit-list
+  (lambda (q-list ctr bits n)
+    (cond
+      ((= ctr n) (reverse bits))
+      ((member? ctr q-list)
+         (make-n-bit-list q-list (add1 ctr) (cons 1 bits) n))
+      (else (make-n-bit-list q-list (add1 ctr) (cons 0 bits) n)))))
+
+(define bin->hex
+  (lambda (ls)
+    (letrec ((convert (lambda (subls)
+                        (cond
+                          ((equal? subls '(0 0 0 0)) "0")
+                          ((equal? subls '(0 0 0 1)) "1")
+                          ((equal? subls '(0 0 1 0)) "2")
+                          ((equal? subls '(0 0 1 1)) "3")
+                          ((equal? subls '(0 1 0 0)) "4")
+                          ((equal? subls '(0 1 0 1)) "5")
+                          ((equal? subls '(0 1 1 0)) "6")
+                          ((equal? subls '(0 1 1 1)) "7")
+                          ((equal? subls '(1 0 0 0)) "8")
+                          ((equal? subls '(1 0 0 1)) "9")
+                          ((equal? subls '(1 0 1 0)) "a")
+                          ((equal? subls '(1 0 1 1)) "b")
+                          ((equal? subls '(1 1 0 0)) "c")
+                          ((equal? subls '(1 1 0 1)) "d")
+                          ((equal? subls '(1 1 1 0)) "e")
+                          ((equal? subls '(1 1 1 1)) "f")))))
+      (cond
+        ((null? ls) "")
+        (else (string-append (convert (sublist 0 3 ls))
+                (bin->hex (cddddr ls))))))))
+
+; make a flat list out of the two things
+(define glob
+  (lambda (thing1 thing2)
+    (cond
+      ((and (list? thing1)
+            (list? thing2)) (append thing2 thing1))
+      ((list? thing1) (cons thing2 thing1))
+      ((list? thing2) (cons thing1 thing2))
+      (else (cons thing1 (cons thing2
+			       '()))))))
+
+; expects at least pairs as items
+(define pair-list
+  (lambda (i1 i2)
+    (let ((new1 (if (list? (car i1))
+		    i1
+		    (list i1)))
+	  (new2 (if (list? (car i2))
+		    i2
+		    (list i2))))
+      (append new1 new2))))
+
+; create a list of all subgloms from the *workspace* for display purposes
+(define make-display-list
+  (lambda (w)
+    (let ((parts (make-display-list-h w)))
+      (letrec ((loop (lambda (pts)
+		       (cond
+			 ((null? pts) '())
+			 ((null? (cdar pts)) (loop (cdr pts)))
+			 (else (cons (car pts)
+				     (loop (cdr pts)))))))
+	       (srt (lambda (pts)
+		      (cond
+			((null? pts) '())
+			(else (cons (sort < (car pts))
+				     (srt (cdr pts)))))))
+	       (convert (lambda (pts)
+			  (cond
+			    ((null? pts) '())
+			    (else (append (lookup (car pts) *part-numbers*)
+				          (convert (cdr pts))))))))
+	(convert (srt (loop parts)))))))
+
+(define make-display-list-h
+  (lambda (w)
+    (cond
+      ((null? w) '())
+      ((list? (caaar w)) (append (caar w)
+			       (make-display-list-h (cdr w))))
+      (else (append (list (caar w))
+	      (make-display-list-h (cdr w)))))))
+
+(define workspace-print
+  (lambda (ls port)
+    (clear-workspace-area)
+    (window-set-cursor! gwind 1 0)
+    (workspace-print-work ls port)))
+
+; pad a string to be of length n
+(define pad
+  (lambda (str n)
+    (let ([l (string-length str)])
+      (letrec ([loop (lambda (n str)
+                       (cond
+                         [(= n 0) (list->string (reverse (string->list str)))]
+                         [else (loop (sub1 n) (string-append " " str))]))])
+	(if (> l n)
+	    (substring str 0 n)
+	    (loop (- n l) (list->string (reverse (string->list str)))))))))
+
+; front end quicky for compile-file (takes a symbol 'filename)
+; also loads newly compiled file
+(define cf
+  (lambda (fn)
+    (compile-file (string-append (symbol->string fn) ".ss"))
+    (printf "smart loading ~a~%" fn)
+    (sload fn)))
+
+; a fix to round so it returns integers
+; and rounds up from evens plus 0.5
+(define round
+  (let ((scheme-round round))
+    (lambda (n) (inexact->exact (scheme-round (+ n 0.0000001))))))
+
+(define floor
+  (let ((scheme-floor floor))
+    (lambda (n) (inexact->exact (scheme-floor n)))))
+
+; get a REALLY random seed from the clock
+(define randomize
+  (let ((upper-bound (expt 2 32)))
+    (lambda ()
+      (random-seed (modulo (round (expt (real-time) 5/3)) upper-bound)))))
+
+(define list-to-string
+  (lambda (ls str)
+    (cond
+      [(null? ls) (substring str 1 (string-length str))]
+      [else (list-to-string (cdr ls)
+	      (string-append str " " (symbol->string (car ls))))])))
+
+(define hex->bin
+  (lambda (ls)
+    (letrec ([convert (lambda (hx)
+                        (case hx
+                          [#\0 '(0 0 0 0)]
+                          [#\1 '(0 0 0 1)]
+                          [#\2 '(0 0 1 0)]
+                          [#\3 '(0 0 1 1)]
+                          [#\4 '(0 1 0 0)]
+                          [#\5 '(0 1 0 1)]
+                          [#\6 '(0 1 1 0)]
+                          [#\7 '(0 1 1 1)]
+                          [#\8 '(1 0 0 0)]
+                          [#\9 '(1 0 0 1)]
+                          [#\A '(1 0 1 0)]
+                          [#\a '(1 0 1 0)]
+                          [#\B '(1 0 1 1)]
+                          [#\b '(1 0 1 1)]
+                          [#\C '(1 1 0 0)]
+                          [#\c '(1 1 0 0)]
+                          [#\D '(1 1 0 1)]
+                          [#\d '(1 1 0 1)]
+                          [#\E '(1 1 1 0)]
+                          [#\e '(1 1 1 0)]
+                          [#\F '(1 1 1 1)]
+                          [#\f '(1 1 1 1)]))])
+      (cond
+        [(null? ls) '()]
+        [else (append (convert (car ls))
+                    (hex->bin (cdr ls)))]))))
+
+
+(define string-upcase
+  (lambda (s)
+    (list->string (map char-upcase (string->list s)))))
+
+(define string-downcase
+  (lambda (s)
+    (list->string (map char-downcase (string->list s)))))
+
+(define overlap?
+  (lambda (ls1 ls2)
+    (cond
+      ((null? ls1) #f)
+      ((member? (car ls1) ls2) #t)
+      (else (overlap? (cdr ls1) ls2)))))
+
+; deep recursive overlap
+(define overlap*?
+  (lambda (ls1 ls2)
+    (cond
+      ((null? ls1) #f)
+      ((list? (car ls1)) (or (overlap*? (car ls1) ls2)
+			     (overlap*? (cdr ls1) ls2)))
+      ((member*? (car ls1) ls2) #t)
+      (else (overlap*? (cdr ls1) ls2)))))
+
+; nepotism
+; function to determine how much role's previous activation should
+; influence sparking
+; put together in three-pieces
+; negative numbers: vetoed (0 factor)
+; 0 to 18: playing with this
+; >18: 1.0 (don't fall in love with the same role twice)
+; culmination of all JAR's 1996 tweakings, 11/23/96
+(define nepotism
+  (lambda (x)
+    (cond
+     ((< x 0) 0.0)
+     ((> x 20) 1.5)
+     ((and (> x 12) (<= x 20)) 1.3)
+     ((and (> x 6) (<= x 12)) 1.2)
+     ((and (> x 2) (<= x 6)) 1.1)
+     (else 1.0))))
+
+(define sgn
+    (lambda (x)
+    (cond
+     ((> x 0) 1)
+     ((< x 0) -1)
+     (else 0))))
+
+(define negate
+  (lambda (n)
+    (if (number? n) (- n) n)))
+
+(define round-3
+  (lambda (x)
+    (/ (round (* 1000 x)) 1000.0)))
+
+; by JAR 3/6/98
+; semantics: return what order in a list an item is; 0 is no occurrence
+(define order
+  (lambda (it ls)
+    (cond
+     ((eq? it (car ls))     1)
+     ((not (member? it ls)) 0)
+     (else (+ 1 (order it (cdr ls)))))))
+
+; arithmetic mean
+(define average
+  (lambda (ls)
+    (/ (apply + ls) (length ls))))
+
+; pick one item from a list at random
+(define roulette
+  (lambda (ls)
+    (nth (n-sided-die (length ls)) ls)))
+
+(define sqr
+  (lambda (x)
+    (* x x)))
+
+; distance between two points, JAR 6/10/98
+; I'm probably the first person ever to implement this
+(define distance
+  (lambda (a b x y)
+    (sqrt (+ (sqr (- a x)) (sqr (- b y))))))
+
+; last element in a list
+(define tail
+  (lambda (ls)
+    (cond
+     ((null? ls) '())
+     ((null? (cdr ls)) (car ls))
+     (else (tail (cdr ls))))))
+
+; +1 if true, -1 if false
+(define truth-sign
+  (lambda (x)
+    (if x 1 -1)))
+
+; 0 if false
+(define boolean-to-int
+  (lambda (x)
+    (if x 1 0)))
+
+(define sign-compare
+  (lambda (x y)
+    (cond
+     ((> x y) 1)
+     ((< x y) -1)
+     (else 0))))
+
+; given a list of pairs of the form (item key), return the item with
+; the biggest/smallest key
+
+(define find-min-aux
+  (lambda (ls winner best)
+    (cond
+     ((null? ls) winner)
+     ((< best (cadar ls)) (find-min-aux (cdr ls) winner best))
+     (else (find-min-aux (cdr ls) (caar ls) (cadar ls))))))
+
+(define find-min
+  (lambda (ls)
+    (find-min-aux ls 0 9e99)))
+
+(define find-max-aux
+  (lambda (ls winner best)
+    (cond
+     ((null? ls) winner)
+     ((> best (cadar ls)) (find-max-aux (cdr ls) winner best))
+     (else (find-max-aux (cdr ls) (caar ls) (cadar ls))))))
+
+(define find-max
+  (lambda (ls)
+    (find-max-aux ls 0 -9e99)))
+
+(define same-contents
+  (lambda (ls1 ls2)
+    (and (eq? (length ls1) (length ls2))
+	 (null? (subtract ls1 ls2))
+	 (null? (subtract ls2 ls1)))))
+
+(define power
+  (lambda (x y)
+    (exp (* y (log x)))))

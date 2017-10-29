@@ -1,0 +1,31 @@
+gems contains all of Gary's Examiner files, intact
+tinker is an alteration which has a different way of spreading activation.
+ It doesn't improve the original any.
+supercdlt combines several activation-changing codelets into one to enforce
+ a serial order to those operations.
+curious is an exploration in the use of top-down processing to guide
+ activity in keeping with the parallel terraced scan.
+basic freezes things from curious at an acceptable point
+examiner is the "final" version
+graf uses the new, fast graphics
+forShow is for horsie & other SunOS demos of Examiner
+goosieDemo is likewise for Solaris
+adjudicator was a failed start of what ls-main really is
+
+versions created 5/16/98 to hold 8 JAR versions of the examiner, all
+from April 1996 - June 1997
+
+newexaminer holds files used in the 1998 re-tooling of the Examiner
+
+final-examiner was the last version of the Examiner prior to
+Adjudicator work
+
+adjudicator holds a tentatively-final version of the Adjudicator
+
+drafter updates the Adjudicator significantly (near-final, 7/15/99)
+and sallies forth with a Drafter, tentative as of 7/15/99; of course,
+includes Examiner as well
+
+ls-main, in lobby.ss, calls a seed-entering program, but graphics may
+not mesh neatly with those in drafter
+

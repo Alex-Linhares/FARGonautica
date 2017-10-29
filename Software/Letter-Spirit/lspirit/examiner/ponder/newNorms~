@@ -1,0 +1,53 @@
+The standard ones:
+
+height, weight, width, horiz, floor, roof
+
+Endpoints:
+Each EP labeled with one or two of:
+Top, Left, Right, Bottom
+Each has its own norms for
+Orientation
+Position
+
+Midpoint:
+optional; used in drawing and in calculating norm-filler curvature
+
+Curvature:
+Straight, Slight-left, Square-left, Far-left, Slight-right,
+Square-right, Far-right
+When calculating curvature for a part, more than one may apply (the
+adjacent ones, of course)
+If there is a midpoint, we expect a pair of curvatures
+
+Neighborhood:
+Subset of (W NW N NE E SE S SW)
+Satisifed if the preponderence of other stuff in the grid is covered
+by sweeping out from the part in the directions in the Neighborhood
+Question: With large Neighborhood subsets, how do you keep this from
+being vacuous? For instance, going N and S from a crossbar will cover
+the whole grid; if (N S) is the Neighborhood for crossbar, it will
+work with Z, but it should fail on account of the neighbors being all
+S and no N
+
+OK, two Neighborhood lists: full and empty. The full list MUST have
+stuff in their paths. The empty list must not.
+
+Touching:
+5 types of touching:
+no-touch
+t-major (the part's endpoint hits another part's midpoint)
+t-minor (the part's midpoint hits another part's endpoint)
+x-cross (the part's midpoint hits another part's midpoint)
+junction (the part's endpoint hits another part's endpoint)
+
+Question: What if this is not exact? Partial credit according to this
+diagram?
+
+           x-cross
+    t-major        t-minor
+           junction
+
+Sparking:
+We may be able to re-organize this completely, and spark any role that
+exceeds some threshold, because we mightn't expect more than a couple
+to work. Ideally, of course, always exactly one.

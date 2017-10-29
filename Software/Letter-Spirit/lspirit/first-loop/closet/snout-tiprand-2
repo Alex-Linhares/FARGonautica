@@ -1,0 +1,542 @@
+Chez Scheme Transcript [Sun Oct 31 21:58:26 1999]
+>>>>>>> (load "loop.ss")
+>>>>>>> (try-gridfont 'snout)
+Trying m; ruled (24 37 22 25 38) a m1 score of 96.357
+Trying k ;ruled (38 21 18 15 23 8 9 7 6 20 17) a m1
+Trying t ;ruled (18 21 6 23 26 10 11 28) a m1
+Trying w ;ruled (41 11 53 23 8 39 22 51 37) a g1
+Trying l; ruled (15 18 21 51) a l1 score of 73.826
+Trying j; ruled (42 41 51 37 16) a j1 score of 98.037
+Trying k; ruled (50 9 23 20 17 14 4 5) a k1 score of 82.602
+Trying y; ruled (23 52 27 21 24 53 43 12) a y1 score of 88.62
+Trying o; ruled (20 4 5 22 25 9 50) a o1 score of 50.571
+Borrow c Trying r; ruled (37 6 23) a r1 score of 87.188
+Trying s ;ruled (4 20 23 8 39 22 37 6) a z1
+Trying x; ruled (37 38 51 48) a x1 score of 75.533
+Trying h; ruled (23 20 17 14 4 5 22 25) a h1 score of 63.279
+Trying u; ruled (21 51 23 8 9) a u1 score of 89.054
+Trying w ;ruled (20 34 3 19 22 25 24 21 5) a n1
+Trying s ;ruled (26 10 11 28 9 50 48 17 46 49) a j1
+Trying w ;ruled (40 10 42 12 13 31 28 51 38 23 9 24 21 22 39) a j1
+Trying t; ruled (5 4 18 21 6 23 26 10 11 28) a t1 score of 85.474
+Trying a ;ruled (25 22 5 4) a o1
+Trying i; ruled (25 22 5 45) a i1 score of 82.843
+Trying p ;ruled (52 23 6 48 34 2 20 4 5 22 25 9 50) a i1
+Borrow e Trying a; ruled (20 23 8 9 25 7 48 22 5) a a1 score of 65.28
+Trying v; ruled (22 39 48 24) a v1 score of 97.103
+Trying w ;ruled (22 47 3 8 27 10 21 51) a v1
+Trying d ;ruled (16 3 15 0 14 17 48 38 8 50 36 49 20 4 5 22 25 41) a v1
+Trying n; ruled (39 22 5 4 23) a n1 score of 120.979
+Trying z; ruled (8 9 4 5 37 38) a z1 score of 65.415
+Borrow b Trying q; ruled (31 28 25 22 7 38 23 20 4 5) a q1 score of 65.483
+Borrow b Trying p; ruled (29 26 23 20 6 51 25 22 5 4) a p1 score of 67.528
+Trying s ;ruled (20 4 5 50 39 7) a r1
+Trying w ;ruled (23 8 39 22 51 37) a o1
+Borrow b Trying d; ruled (16 19 22 25 7 48 20 23 8 9) a d1 score of 52.879
+Trying w ;ruled (22 37 51 9 24 21 8 23 20 4) a d1
+Tried (22 37 51 9 24 21 8 23 20 4) as w before
+Tried (22 37 51 9 24 21 8 23 20 4) as w before
+Tried (22 37 51 9 24 21 8 23 20 4) as w before
+Tried (22 37 51 9 24 21 8 23 20 4) as w before
+Trying s; ruled (8 9 25 5 36 6 7) a s2 score of 79.131
+Trying w ;ruled (9 53 11 40 26 23 36 51 25 49) a s2
+Tried (9 53 11 40 26 23 36 51 25 49) as w before
+Tried (9 53 11 40 26 23 36 51 25 49) as w before
+Tried (9 53 11 40 26 23 36 51 25 49) as w before
+Tried (9 53 11 40 26 23 36 51 25 49) as w before
+Trying k; ruled (6 37 23 20 17 14 50 9) a k1 score of 64.705
+Trying w ;ruled (38 48 20 25 22 5 8 23 36) a k1
+Trying v ;ruled (22 25 38 21) a n1
+Trying w ;ruled (37 51 25 39 23 52 11) a j1
+Trying a ;ruled (34 18 36 23 26 10 11 6 38 8 39 25) a j1
+Trying w ;ruled (22 25 8 23 20 21 51) a j1
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Tried (22 25 8 23 20 21 51) as w before
+Trying v ;ruled (39 25 28 11 10 29 23 20 48 37) a j1
+Trying w ;ruled (24 23 52 11 53 39 22) a u1
+Tried (24 23 52 11 53 39 22) as w before
+Trying j ;ruled (43 28 9 50 20) a y1
+Trying w ;ruled (51 24 27 11 36 23 34 47 22 25) a j1
+Tried (51 24 27 11 36 23 34 47 22 25) as w before
+Tried (51 24 27 11 36 23 34 47 22 25) as w before
+Trying t ;ruled (18 21 6 23 26 10 11 28 25) a y1
+Trying w; ruled (39 22 9 24 21 20 50) a w1 score of 92.499
+Trying o ;ruled (20 4 5 22 25 41 10 26 23) a o1
+Trying k ;ruled (36 5 23 8 9 25 17 20 6 21 18 15 0) a k1
+Borrow b Trying d ;ruled (16 19 22 25 7 48 20 23 8 9) a d1
+Trying l ;ruled (49 46 14 0 1 16 19 37 38) a d1
+Trying i ;ruled (7 25 28 11 27 3) a j1
+Trying s ;ruled (26 10 11 4 20 6 7) a j1
+Trying u; ruled (25 22 5 23 8 9) a u1 score of 88.311
+Trying w ;ruled (24 8 4 20 23 25 22 37) a c1
+Borrow c Trying r; ruled (37 6 23) a r1 score of 84.404
+Trying l; ruled (15 18 21 24 9) a l1 score of 62.265
+Trying m ;ruled (24 48 25 49 23) a m1
+Trying a; ruled (25 22 5 4 7 38 8 9) a a1 score of 50.243
+Trying t; ruled (18 21 38 8 9 7 6 20) a t1 score of 79.333
+Trying d ;ruled (25 22 19 16 9 8 23 20) a d1
+Trying o ;ruled (20 4 5 22 25 41 10 26 23) a o1
+Trying x ;ruled (6 37 20 23 8 9) a r1
+Trying m; ruled (20 48 24 23 5 22 25) a m1 score of 89.577
+Borrow b Trying p ;ruled (29 26 23 20 6 51 25 22 5 4) a p1
+Trying n ;ruled (23 20 25 22 47) a i1
+Borrow b Trying q; ruled (31 28 25 22 7 38 23 20 4 5) a q1 score of 62.034
+Trying i ;ruled (22 25 9) a c1
+Trying m ;ruled (20 48 38 23 8 25 22 5) a m1
+Trying l ;ruled (25 22 19 45) a l1
+Trying k ;ruled (51 37 6 38 21 18 15) a k1
+Trying x ;ruled (51 48 38 37) a x1
+Trying a ;ruled (22 5 4 34 3 23 6 24 40 10 41 28) a x1
+Trying d ;ruled (20 4 21 38 8 39 25 22 19 16) a h1
+Trying i; ruled (45 22 25 9) a i1 score of 79.411
+Tried (45 22 25 9) as i before
+Trying p ;ruled (23 26 29 36 5 22 25 28 11 10) a p1
+Borrow c Trying r ;ruled (37 6 23) a r1
+Trying w ;ruled (9 24 21 8 50 6 48 25 28 11 30 13) a r1
+Trying q ;ruled (37 38 26 29 20 4 5 22 25 9 50) a r1
+Borrow e Trying a ;ruled (20 23 8 9 25 7 48 22 5) a a1
+Trying n; ruled (20 23 4 5 22 25) a n1 score of 81.953
+Trying j ;ruled (3 40 39 49 5 37 6 23 52) a j1
+Trying t ;ruled (51 7 22 19 3) a l1
+Trying x ;ruled (37 38 25 49) a x1
+Trying u ;ruled (49 5 37 24 9 8 23) a u1
+Trying m ;ruled (25 22 47 4 21 24 23) a m1
+Trying x ;ruled (51 21 6 37) a x1
+Trying l ;ruled (15 18 21 51) a l1
+Trying i ;ruled (19 4 49 25 9) a i1
+Trying s ;ruled (7 25 9 8 5 36 50) a n1
+Trying u ;ruled (8 23 20 25 49) a n1
+Trying w ;ruled (24 50 20 22 5 18 38) a i1
+Trying q ;ruled (20 17 46 35 3 47 37 38 8 9 28 25 22) a i1
+Trying r; ruled (6 37 23) a r1 score of 83.823
+Trying u ;ruled (22 7 21 9 8 23) a y1
+Trying i ;ruled (3 25 22 5) a i1
+Trying l ;ruled (15 18 21 51) a l1
+Trying v ;ruled (39 22 5 4 21 24) a e1
+Trying y ;ruled (10 41 51 21 18 47 19 45 0 14 20 50 9) a y2
+Trying x; ruled (21 51 38 37) a x1 score of 69.683
+Trying k ;ruled (50 9 17 20 23 8 24 21 18 15 5 4 48 6) a x1
+Trying i ;ruled (7 25 28 11 27 40 26 35) a j1
+Borrow b Trying d ;ruled (16 19 22 25 7 48 20 23 8 9) a d1
+Trying r; ruled (36 5 23) a r1 score of 77.752
+Trying j ;ruled (19 42 41 51 21) a j1
+Trying n; ruled (20 23 4 5 22 25) a n1 score of 79.868
+Trying z ;ruled (4 5 9 8 6 7 22) a j1
+Trying m ;ruled (24 37 22 25 38) a m1
+Trying x ;ruled (37 38 7 6) a r1
+Trying s ;ruled (48 4 5 22 24 8 23) a s2
+Trying w ;ruled (38 8 4 20 23 25 22 37) a y2
+Trying p ;ruled (36 5 22 25 9 50 23 20 4 21 24 40 54) a q1
+Borrow b Trying q ;ruled (31 28 25 22 7 38 23 20 4 5) a q1
+Trying m; ruled (37 22 25 23 20 48 24) a m1 score of 71.276
+Borrow e Trying a ;ruled (20 23 8 9 25 7 48 22 5) a a1
+Trying h ;ruled (14 2 15 45 25 22 5 4) a i1
+Trying j ;ruled (25 28 43 12) a o1
+Tried (25 28 43 12) as j before
+Trying n ;ruled (23 25 22 5 4) a n1
+Trying j; ruled (45 22 25 28 43 12) a j1 score of 63.335
+Trying t; ruled (18 21 38 26 10 11 28 25 5 36) a t1 score of 71.648
+Trying k ;ruled (5 22 25 39 50 38 21 18 15) a t1
+Trying l ;ruled (24 21 18 15 1) a l1
+Trying i ;ruled (5 22 25) a r1
+Borrow b Trying p; ruled (29 26 23 20 6 51 25 22 5 4) a p1 score of 66.863
+Borrow b Trying d ;ruled (16 19 22 25 7 48 20 23 8 9) a d1
+Trying l ;ruled (22 19 16 1 0 14 2 18 36 23 38 48) a d1
+Trying m ;ruled (7 25 28 43 24 48 38) a x1
+Trying u ;ruled (7 37 5 20 23 8 9) a i1
+Trying k ;ruled (49 4 23 8 9 21 18 15 0) a k1
+Trying i; ruled (39 22 5 45) a i1 score of 72.704
+Trying n ;ruled (25 22 5 4 23) a n1
+Borrow g Trying y; ruled (22 25 28 31 55 10 20 23 38 7) a y1 score of 61.852
+Trying s ;ruled (23 50 9 48 7) a n1
+Trying h ;ruled (23 20 17 14 4 5 22 25) a h1
+Borrow b Trying p; ruled (29 26 23 20 6 51 25 22 5 4) a p1 score of 63.754
+Trying w ;ruled (8 9 28 11 10 29 12 49 21 37) a j1
+Trying q ;ruled (31 11 30 54 26 38 6 36 20 4 5 22 25 9 50) a q1
+Borrow g Trying y; ruled (22 25 28 31 55 10 20 23 38 7) a y1 score of 60.782
+Trying z ;ruled (20 4 35 19 6 7 25 5) a s1
+Trying n ;ruled (25 22 47 34 23) a n1
+Trying y ;ruled (10 11 31 13 12 25 49) a i1
+Trying j ;ruled (3 22 25 28 43 12) a j1
+Trying s ;ruled (8 9 41 11 31 5 36 6 7) a j1
+Trying n ;ruled (25 22 5 4 23) a n1
+Trying v ;ruled (25 22 38 21) a n1
+Trying m ;ruled (36 23 5 22 25 21 24) a m1
+Trying t; ruled (4 5 18 21 6 23 8 9 25) a t1 score of 71.352
+Trying u ;ruled (24 39 49 5 41 10 26 23 20) a i1
+Borrow b Trying h; ruled (14 17 20 23 6 37 22 25) a h1 score of 56.757
+Trying x ;ruled (38 37 50 9) a x1
+Borrow c Trying r ;ruled (37 6 23) a r1
+Trying u ;ruled (8 23 20 25 22 5) a n1
+Trying k ;ruled (6 37 14 17 20 23 39) a k1
+Trying v ;ruled (20 23 8 9 22 25) a u1
+Trying j ;ruled (28 51 21 49 39 40 29 12 19) a j1
+Trying u ;ruled (22 5 21 51 41 11 9 8 23 20) a y1
+Trying p ;ruled (8 24 51 25 49 5 23 26 29) a y1
+Trying x ;ruled (38 37 48 51) a x1
+Borrow b Trying q ;ruled (31 28 25 22 7 38 23 20 4 5) a q1
+Borrow b Trying p ;ruled (29 26 23 20 6 51 25 22 5 4) a p1
+Trying m ;ruled (51 9 23 20 25 49) a m1
+Trying w ;ruled (40 26 23 36 41 11) a j1
+Trying p ;ruled (20 23 26 29 4 5 22 25 41 10) a q1
+Trying u; ruled (22 7 51 20 23 8 9) a u1 score of 73.608
+Trying q ;ruled (31 43 30 27 24 37 20 4 5 22 25 41 10 26 23) a u1
+Trying w ;ruled (22 7 24 8 23 36 51 37) a e2
+Trying j ;ruled (22 25 28 43 12 3) a j1
+Trying k ;ruled (18 36 50 24 23 52 11 53 37 6 20) a j1
+Trying u ;ruled (24 37 36 23 52) a n1
+Borrow b Trying h; ruled (14 17 20 23 6 37 22 25) a h1 score of 50.408
+Trying d ;ruled (20 4 21 38 8 39 25 22 19 16) a h1
+Trying i; ruled (3 15 1 5 22 25) a i1 score of 65.84
+Trying v ;ruled (9 25 22 48 24) a u1
+Trying k ;ruled (5 4 9 50 17 48 21 18 44 0) a u1
+Borrow c Trying r ;ruled (37 6 23) a r1
+Trying t ;ruled (18 21 38 26 10 11 5 36) a t1
+Trying s ;ruled (36 49 22 9 8 23 5 4 48) a e2
+Trying n ;ruled (23 25 22 5 4) a n1
+Trying a ;ruled (39 50 6 51 4 5 22 25) a a1
+Trying w ;ruled (38 23 20 4 39 22 51 21 5) a d1
+Trying x ;ruled (6 51 37 38) a x1
+Trying r ;ruled (23 49 4) a n1
+Tried (23 49 4) as r before
+Trying v ;ruled (9 25 22 48 24) a u1
+Tried (9 25 22 48 24) as v before
+Trying t ;ruled (51 7 49 4 34 2 36 5) a t1
+Trying s ;ruled (48 7 5 36 20) a c1
+Trying r; ruled (36 5 23) a r1 score of 76.944
+Borrow b Trying h ;ruled (14 17 20 23 6 37 22 25) a h1
+Trying i ;ruled (5 22 25) a r1
+Trying h ;ruled (25 22 47 14 17 20 23) a n1
+Trying q ;ruled (20 4 5 47 3 45 25 28 31 13 30 27 24 21) a n1
+Borrow b Trying h ;ruled (14 17 20 23 6 37 22 25) a h1
+Trying j; ruled (22 25 28 43 12 3 15) a j1 score of 51.225
+Trying l ;ruled (25 22 19 45) a l1
+Trying m ;ruled (24 48 25 49 20 23) a m1
+Trying h ;ruled (25 22 5 14 17 20 23) a n1
+Trying p ;ruled (36 5 22 25 28 11 10 40 50 20 23 26 29) a g1
+Trying n ;ruled (23 25 22 5 4) a n1
+Trying i ;ruled (39 22 5) a r1
+Borrow c Trying r ;ruled (37 6 23) a r1
+Trying l ;ruled (22 19 16 1 0 14 2 18 36 50) a l1
+Trying w ;ruled (22 39 9 6 48 4 49 25) a s1
+Trying n ;ruled (25 49 21 24 53 23 20) a n1
+Tried (25 49 21 24 53 23 20) as n before
+Tried (25 49 21 24 53 23 20) as n before
+Trying m ;ruled (36 6 38 5 22 25 24 21 46) a g1
+Trying n ;ruled (25 22 47 20 23) a i1
+Borrow b Trying q ;ruled (31 28 25 22 7 38 23 20 4 5) a q1
+Trying r ;ruled (23 49 4) a n1
+Trying s ;ruled (7 25 41 10 5 36 23) a j1
+Trying n ;ruled (23 25 22 5 4) a n1
+Borrow c Trying r ;ruled (37 6 23) a r1
+Borrow b Trying p ;ruled (29 26 23 20 6 51 25 22 5 4) a p1
+Trying s ;ruled (36 5 7 6 39 8 23) a b1
+Trying v ;ruled (22 39 48 24) a v1
+Borrow c Trying r ;ruled (37 6 23) a r1
+Trying u ;ruled (20 23 38 25 28 11 27 24) a u1
+Trying h ;ruled (25 49 21 24 23 20 17 14) a n1
+Trying q ;ruled (20 4 21 38 8 39 28 25 22) a y1
+Trying u ;ruled (21 51 40 26 23) a n1
+Trying l ;ruled (15 18 21 51) a l1
+Trying v ;ruled (22 39 48 24) a v1
+Trying i ;ruled (23 50 24 21 19) a i1
+Trying z ;ruled (9 40 10 11 37 38 5 4) a i1
+Trying n ;ruled (23 36 5 22 25) a n1
+Borrow b Trying h ;ruled (14 17 20 23 6 37 22 25) a h1
+Trying k ;ruled (39 6 37 23 20 17 14) a k1
+Trying m ;ruled (38 7 25 28 11 27 40 23 36) a y1
+Trying a ;ruled (20 4 5 22 25) a n1
+Trying z ;ruled (22 6 51 5 36) a r1
+Trying x ;ruled (38 37 9 50) a x1
+Trying w ;ruled (28 53 8 26 29 12 13 25 41 51 21) a x1
+Borrow b Trying p; ruled (29 26 23 20 6 51 25 22 5 4) a p1 score of 63.683
+Trying w ;ruled (8 40 10 11 51 21 49 5) a p1
+Trying l ;ruled (15 18 21 51) a l1
+Borrow e Trying a ;ruled (20 23 8 9 25 7 48 22 5) a a1
+Trying m ;ruled (25 49 23 20 48 24) a m1
+Borrow b Trying p ;ruled (29 26 23 20 6 51 25 22 5 4) a p1
+Trying k ;ruled (14 17 20 50 36 5 8 38 51) a k1
+Borrow b Trying p ;ruled (29 26 23 20 6 51 25 22 5 4) a p1
+Trying y ;ruled (41 25 22 19 35 18 2 32 0 48 51) a y1
+Tried (41 25 22 19 35 18 2 32 0 48 51) as y before
+Trying o ;ruled (20 4 5 22 25 9 50) a o1
+Trying s ;ruled (4 48 37 9 8 23) a i1
+Trying v ;ruled (25 22 38 21) a n1
+Trying z ;ruled (37 6 9 8 4 5) a j1
+Trying x ;ruled (48 51 38 37) a x1
+Trying v ;ruled (22 25 38 21) a n1
+Borrow b Trying h ;ruled (14 17 20 23 6 37 22 25) a h1
+Borrow b Trying p ;ruled (29 26 23 20 6 51 25 22 5 4) a p1
+Trying j ;ruled (41 51 21 5 22 39 40 26 23 20 34 3 45) a p1
+Trying s ;ruled (7 6 4 5 9 8 23) a i1
+Trying x ;ruled (37 38 51 48) a x1
+Trying w ;ruled (48 38 22 25 9 8 23 36) a w1
+Trying v; ruled (51 48 22 25) a v1 score of 73.084
+Trying w; ruled (20 50 25 9 24 21) a w1 score of 83.972
+Trying i ;ruled (39 22 5) a r1
+Borrow b Trying d ;ruled (16 19 22 25 7 48 20 23 8 9) a d1
+Trying s ;ruled (39 8 7 48 36 49) a g1
+Trying n ;ruled (25 22 5 4 23) a n1
+Trying v ;ruled (22 25 24 48) a n1
+Trying n ;ruled (23 4 5 22 25) a n1
+Trying t ;ruled (51 24 53 11 52 26 29 12 13 7 6 20) a y1
+Tried (51 24 53 11 52 26 29 12 13 7 6 20) as t before
+Trying u ;ruled (5 37 51 25 9 8 23 20) a u1
+Borrow b Trying q ;ruled (31 28 25 22 7 38 23 20 4 5) a q1
+Trying w ;ruled (53 11 41 25 9 50 48 21 5 22 39) a q1
+Trying k ;ruled (14 17 20 23 51 36 5) a m1
+Trying s ;ruled (49 36 8 9 25 6 37) a o1
+Trying w ;ruled (22 39 9 24 21 23 8) a w1
+Trying m ;ruled (25 49 23 20 24) a m1
+Trying n ;ruled (23 4 5 22 25) a n1
+Trying m ;ruled (20 23 4 21 24 25 22 47) a i1
+Trying h ;ruled (15 2 14 25 22 5 4) a i1
+Trying s ;ruled (37 38 5 4 20) a n1
+
+debug> n
+>>>>>>>> *quanta-list*
+(37 23)
+>>>>>>>> (exit)
+debug> i
+#<system continuation in equal?>                                  : d
+#<continuation in collapse>                                       : s
+  continuation:          #<continuation in pick-neighbor-to-glom>
+  procedure code:        (lambda (ls) (if (null? ls) (quote ()) ...))
+  call code:             (equal? (caar ls) (quote -))
+  free variables:
+  0. ls:                 ((- 1) (- 1) (- 1) (- 1))
+#<continuation in collapse>                                       : d
+#<continuation in pick-neighbor-to-glom>                          : s
+  continuation:          #<continuation in bond-quantum>
+  procedure code:        (lambda (quantum) ((...) (...)))
+  call code:             (prob-neighbors-list quantum)
+#<continuation in pick-neighbor-to-glom>                          : d
+#<continuation in bond-quantum>                                   : s
+  continuation:          #<continuation in bond-quanta>
+  procedure code:        (lambda () ((lambda (...) (...)) (pick-quantum)))
+  call code:             (pick-neighbor-to-glom quantum)
+  free variables:
+  0. quantum:            37
+#<continuation in bond-quantum>                                   : d
+#<continuation in bond-quanta>                                    : s
+  continuation:          #<continuation in glom>
+  procedure code:        (lambda () (if (...) ...))
+  call code:             (bond-quantum)
+#<continuation in bond-quanta>                                    : d
+#<continuation in glom>                                           : s
+  continuation:          #<continuation in run-examiner>
+  procedure code:        (lambda () (clean) (reset-glom-globals) ...)
+  call code:             (bond-quanta)
+#<continuation in glom>                                           : d
+#<continuation in run-examiner>                                   : s
+  continuation:          #<continuation in check-gridletter>
+  procedure code:        (lambda optional-args (if (...) ...))
+  call code:             (glom)
+  free variables:
+  0. optional-args:      ()
+#<continuation in run-examiner>                                   : q
+
+debug> e
+
+debug> n
+>>>>>>>> (prob-neighbors-list 37)
+()
+>>>>>>>> (bond-quanta)
+
+debug> n
+>>>>>>>>> (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>>  (bond-quantum)
+()
+>>>>>>>>> *ant-increment* *ant-counter*
+30000
+>>>>>>>>> 1114
+>>>>>>>>> (load "bond.ss")
+>>>>>>>>> (bond-quantum)
+()
+>>>>>>>>> (bond-quanta)
+
+debug> n
+>>>>>>>>>> *ant-increment* *ant-counter*
+30
+>>>>>>>>>> 27
+>>>>>>>>>> (exit)
+debug> e
+
+debug> n
+>>>>>>>>>>  *ant-increment* *ant-counter*
+30
+>>>>>>>>>> 9
+>>>>>>>>>> *redund-ants* *redund-ant-c*
+0
+>>>>>>>>>> 500
+>>>>>>>>>> (map pick-neighbor-to-glom *quanta-list*)
+(() ())
+>>>>>>>>>> (apply append (map pick-neighbor-to-glom *quanta-list*))
+()
+>>>>>>>>>>  (load bond.ss")
+"
+
+>>>>>>>>>> (load "bond.ss")
+>>>>>>>>>> (load "glom.ss")
+>>>>>>>>>> (re-draw 'r)
+>>>>>>>>>> (try-cats)
+Trying y ;ruled (51 48 25 28 43) a y2
+
+debug> n
+>>>>>>>>>>> *quanta-list*
+(42 41 51 21)
+>>>>>>>>>>> (car *coderack*)
+
+Error in car: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>>>>>>>> *coderack*
+()
+>>>>>>>>>>> *workspace*
+(((3 4 *w* -90) 0)
+ ((2 46 *nw* -135) 0)
+ ((9 18 *n* 180) 0)
+ ((16 35 *ne* 135) 0)
+ ((17 5 *e* 90) 0)
+ ((18 49 *se* 45) 0)
+ ((4 36 *sw* -45) 0))
+>>>>>>>>>>> *promotions*
+((promote
+   *relative-nvs*
+   *letter-rows*
+   (tips (tip *inward*))
+   (tips (tip *inward*)))
+ (add *val-to-val-nvs* (width (wide half-wide)))
+ (promote
+   *abstract-rules*
+   *two-time-sps*
+   ban-vertedges
+   ban-vertedges)
+ (promote
+   *relative-nvs*
+   *two-time-sps*
+   (tips (tip *s*))
+   (tips (tip *s*)))
+ (add *relative-nvs* (height less))
+ (add *abstract-rules* ban-90-angle)
+ (add *relative-nvs* (width less))
+ (promote *abstract-rules* *letter-rows* at-most-3 at-most-3)
+ (add *relative-nvs* (left-edge less))
+ (promote
+   *turn-180-motifs*
+   *occasional-sps*
+   (*e* *se*)
+   (*se*))
+ (add *val-to-val-nvs* (tips (up-tip (17 18))))
+ (promote
+   *turn-90-motifs*
+   *two-time-sps*
+   (*e* *ne* *s* *s*)
+   (*ne* *s*))
+ (add *val-to-val-nvs* (height (tall medium-ht)))
+ (promote *literal-motifs* *common-sps* (23) ())
+ (demote *literal-motifs* *common-sps* (23))
+ (add *relative-nvs* (tips (down-tip *e*)))
+ (promote
+   *turn-90-motifs*
+   *two-time-sps*
+   (*e* *ne* *s* *s*)
+   (*e* *ne*))
+ (add *abstract-rules* at-least-2)
+ (add *abstract-rules* ban-leftedge)
+ (promote *translate-motifs* *frequent-sps* (*n*) (*n*))
+ (add *val-to-val-nvs* (weight (medium-wt light)))
+ (promote
+   *turn-180-motifs*
+   *occasional-sps*
+   (*se* *n* *n*)
+   (*n* *n*))
+ (add *val-to-val-nvs* (tips (tip (17 18))))
+ (add *relative-nvs* (weight less))
+ (demote *translate-motifs* *frequent-sps* (*w*))
+ (add *val-to-val-nvs* (roof (roof-x-height roof-midline)))
+ (promote
+   *translate-motifs*
+   *common-sps*
+   (*n* *n*)
+   (*n* *n*))
+ (add *val-to-val-nvs* (left-edge (l-edge-lf l-edge-md)))
+ (add *relative-nvs* (roof less))
+ (promote *abstract-rules* *letter-rows* at-most-2 at-most-2)
+ (add *abstract-rules* ban-horiz-quanta)
+ (promote
+   *relative-nvs*
+   *letter-rows*
+   (tips (up-tip *inward*))
+   (tips (up-tip *inward*)))
+ (promote *turn-45-motifs* *occasional-sps* (180) (180))
+ (promote *turn-45-motifs* *occasional-sps* (-135) (-135))
+ (promote
+   *turn-180-motifs*
+   *occasional-sps*
+   (*se* *n* *n*)
+   (*se* *n*))
+ (add *val-to-val-nvs* (tips (down-tip (7 14))))
+ (demote *literal-motifs* *occasional-sps* (23 8)))
+>>>>>>>>>>> (exit)
+debug> i
+#<system continuation in enable-interrupts>                       : d
+#<system continuation in dynamic-wind>                            : s
+  continuation:          #<continuation in glom>
+  free variables:
+  0: #<system procedure enable-interrupts>
+  1: #<system procedure>
+  2: #<system procedure disable-interrupts>
+  3: #<system procedure dynamic-wind>
+  4: #<void>
+#<system continuation in dynamic-wind>                            : d
+#<continuation in glom>                                           : s
+  continuation:          #<continuation in run-examiner>
+  procedure code:        (lambda () (clean) (reset-glom-globals) ...)
+  call code:             (clean)
+#<continuation in glom>                                           : n
+
+>>>>>>>>>>> (exit)
+
+#<continuation in glom>                                           : q
+
+debug> a

@@ -1,0 +1,88 @@
+	RT%	TIME	SCORE	QUIT%
+benz-l	96.2	168	82.7	
+benz-r	100.0	151	81.8	
+boat	98.1	129	82.1	
+bowtie	58.5	1963	55.8	1.5
+chckmrk	76.2	967	73.5	2.8
+close	93.8	364	80.4	
+dub-bs	83.5	807	75.6	0.4
+fl-rnch	78.1	2412	54.2	1.5
+funtnip	53.1	3064	50.2	13.1
+hint4	88.1	377	72.8	
+house	94.2	137	84.0	
+hunt4	95.0	207	87.0	
+inters	66.2	1016	67.5	
+sabtth	83.5	399	77.5	
+shorts	98.5	180	82.0	
+slant	91.5	188	82.8	
+slash	84.6	486	81.6	
+sluice	15.0	2496	57.8	
+snout	96.2	148	87.2	
+sq-curl	83.8	818	73.1	
+st-sq	100.0	63	91.2	
+three-d	0.0	8000	0.0	100.0
+w-arrow	85.4	1053	70.9	
+
+TOTAL	79.1	1112	71.8
+CLEAN	89.1	530	78.3
+C-RT	100.0	329	80.9
+C-WR/QT	0.0	2173	56.9
+
+CLEAN omits: Bowtie, Funtnip, Sluice, and Three-D
+PSYCH-F: Bowtie, Double Backslash, Flournoy Ranch, Hint Four, Close,
+Sabretooth
+
+bowtie	58.5	1963	55.8	1.5
+close	93.8	364	80.4	
+dub-bs	83.5	807	75.6	0.4
+fl-rnch	78.1	2412	54.2	1.5
+hint4	88.1	377	72.8	
+sabtth	83.5	399	77.5	
+
+NORMALS	389
+TRAIN	130
+NOTRAIN	259
+PSYCH-F	156
+PSY-TR	415
+ALL	545
+SHORT	52
+
+
+Examiner, 9/99
+	RT%	TIME	SCORE
+NORMALS	98.5	147	85.6
+TRAIN	99.9	80	87.0
+NOTRAIN	97.7	180	84.9
+PSYCH-F	80.9	1054	69.4
+PSY-TR	91.4	509	79.1
+ALL	93.5	407	81.0
+SHORT	94.8	425	82.7
+
+GEM Examiner (skips tricky 'k'! make it do this, to get the time!)
+~/inquiry/lspirit/gems/test*
+	RT%	TIME
+NORMALS	95.5	783
+TRAIN	
+NOTRAIN	
+PSYCH-F	49.9	2901
+PSY-TR	
+ALL	82.4	1389
+SHORT	91.9	970
+
+People
+	RT%
+NORMALS	90.1
+TRAIN	
+NOTRAIN	85.0
+PSYCH-F	68.7
+PSY-TR	80.1
+ALL	84.0
+
+Netrec+
+	RT%
+NORMALS	
+TRAIN	
+NOTRAIN	89.7
+PSYCH-F	63.0
+PSY-TR	79.2
+ALL	

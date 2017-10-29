@@ -1,0 +1,55 @@
+Pre-draw conditions:
+
+first of many
+last (including first of one)
+middle of many
+
+Norm:
+
+tip1: touch/no-touch
+ decided right away
+
+middle:
+ nt -- avoid
+ t, and already t'd -- avoid
+ t, and haven't yet -- sort of indifferent
+   but only to *other-stuff*, not *own stuff*
+ 2ts -- ?????
+
+tip2: touch or no/touch
+ nt -- avoid
+ t -- if last, then ~insist
+   but only to *other-stuff*, not *own stuff*
+
+***
+
+Also have stuff from previous role fillers which you may need to
+touch, or need to avoid
+
+***
+
+for any part, you may have:
+
+tip (#1 or #2): touch or don't touch
+middle: touch (maybe twice) or don't touch
+
+and as context, you may have:
+
+own-quanta (don't possibly touch, and heavily discourage crossing)
+own-points (ditto, unless loop)
+
+must-touch points
+must-touch quanta (somewhere, not everywhere)
+  but how to represent the need to touch twice?
+  (subtract a counter or place on touch-list twice?)
+
+***
+
+so maybe have list of things to touch, and things not to touch
+
+not to touch
+ never touch
+to touch
+ give small reward for touching when middle of many is drawn
+ give large reward when last is drawn
+ punish if untouched at quit of last part drawn

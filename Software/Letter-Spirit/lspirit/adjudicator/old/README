@@ -1,0 +1,136 @@
+New Checklist
+
+Tinker with temperature
+ Does salience need to come into it? Level does. A high-level
+ bridge-back failure ought to cost dearly
+Top-down/bottom-up flow
+  bridges posted by SP-finders
+  number of bridges per level ought to be principled by stuff there
+  bridge-back failure leads to search for new SPs
+  handle the messy job of having all three phases going on at once?
+    in an intricate dance?
+Activations -- What for, and when?
+  How else would you relate less height, less width and less weight?
+  Could it be used just in the Drafter? Don't see it helping here.
+
+Keep a list where you tack the letter onto the workspace and file
+it away; if you need to delete it, you can re-arrange the lower two
+levels of the TF
+
+More complex promotion/demotion
+ NVs should be promoted only with prob 1/number-of-roles
+ Some NVs are more general than others
+ Some rules are more general than others
+ Demotion should be more likely at higher levels
+ Big motifs should not be replaced with smaller matches
+
+On higher levels -- remove motifs which are subsets of bigger ones?
+
+Motif types
+ Full hierarchy would be:
+  literal, translations, rotate/reflect 180, rotate/reflect 90,
+  rotate/reflect 45/135
+
+------
+
+CHECK Hey, we didn't look for ARs that were irrelevant; now bridge-back
+gives you a demotion for that! (Maybe bridge-out, too)
+
+CHECK We don't want to actually perform pro/demotions until letter is
+accepted! Have an extra buffer to store the pro/demotions in, and then
+crank them out later?
+
+CHECK Promotion eradicates the old SP. So motifs always shrink!
+Leave the old motif where it was during promotion. You can still
+delete it during demotion (when it won't shrink, anyway).
+
+-------
+
+THEMATIC FOCUS:
+
+	A row for each letter category. This will be all we need to
+indicate that an SP has turned up at least once.
+
+	A row to indicate SPs that have turned up at least twice.
+	A row for SPs that have turned up "sometimes."
+	A row for SPs that are "nearly universal."
+
+
+Bugs?
+	Spark values of loop roles going over 100
+	Fixed, but will have to re-test Examiner.
+	Also, role-defs are liable to change for a while.
+	Make weight more fine-grained? Big curves?
+	punish bigger deviations from norm more
+
+NORM-VIOLATIONS
+
+
+	OK, lots missing. Namely, the different ways of looking at
+them, and all the tip ones, including rotation, and the r-role ones.
+	Curve -- OK, now
+
+	Example - Height of SHORT-b
+	(height less) (height x-height -> t-height)
+
+	Thus NV-compare (implemented), NV-value, NV-mapping
+
+
+	ROLE-DEFS -- lots of revision to do here
+
+	Tip NVs: Radial (N, S, E, W). Inward/Outward? Rotation
+"Clockwise", "Counter-clockwise." Rotation a property of each tip, or
+of both?
+
+	Inward/Outward?
+
+	But WHICH tip? Right tip down, left-tip left, etc.
+	Gotta compute the default position of the tip in relation to
+the other tip.
+
+	Gotta allow multiple which-tip designations to make it to the
+SP list. (right, up-right, etc)
+
+	R-role NVs: Should touch and don't. Shouldn't and do (rare, I
+imagine). touch NVs:
+less, minus-t, minus-m, plus-t, plus-m, into, out-of, more, diff
+
+
+ACTIVATIONS
+
+orientations, compass directions, angles, dimension-directions/NVs
+inward/outward tip shift
+superordinates of the above
+
+Come in when?
+ Superordinates, only when activation spreads.
+
+Behavior -> activation
+ Worm could
+ Comparer
+ Certain abstract rules, but do what to the activation? If backslash
+ is banned, deactivate it? Sure -- push it towards -100.
+
+Activation -> behavior
+ Worm, could be added with pain
+ 
+TEMPERATURE
+
+bridge-ahead finds nothing in TF
+ Bad, but only very slightly.
+ Move temp towards 15, modest pace.
+
+bridge-ahead finds something in TF
+ Good. The higher the TF level, the better.
+ Move temp towards 0, pace by TF (higher = faster).
+
+bridge-back finds nothing in workspace
+ Worst of all. The higher the TF level, the worse.
+ Move temp towards 100, pace by TF (higher = faster).
+
+bridge-back finds something in workspace
+ Good. The higher the TF level, the better.
+ Move temp towards 0, pace by TF (higher = faster).
+
+promoter -- only deals with actual bridges, whereas the interesting
+stuff is detected in bridgebuilding

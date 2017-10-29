@@ -1,0 +1,102 @@
+highest-rated stylistic properties for each gridfont
+after the Adjudicator has seen 'b', 'c', 'e', 'f', and 'g'
+
+
+---------------------------------------------------------------
+
+standard square
+
+UNIVERSAL
+none
+FREQUENT
+*literal-motifs* ((5) (5 4) (4)))
+*turn-45-motifs* (180)
+*translate-motifs* ((*w* *w*) (*e* *n*)))
+*abstract-rules* (ban-diagonal-quanta)
+COMMON
+*turn-90-motifs* ((*w* *n* *n*)))
+*translate-motifs* (*s* *s* *e*) (*e* *s*) (*n* *w*) (*e* *e*)
+     (*n* *n* *w*) (*n* *n*) (*w* *w* *n* *e*) (*s* *s* *s*)
+*abstract-rules* (ban-135-angle ban-backslash-quanta ban-foreslash-quanta)
+*literal-motifs* (8 9) (9)))
+*turn-45-motifs* (90) (180 180 180)
+*turn-180-motifs* (*w* *w*)
+
+---------------------------------------------------------------
+
+shorts
+
+UNIVERSAL
+none
+FREQUENT
+*literal-motifs* (23 20) (4) (23) (4 20 23) (20)))
+*abstract-rules* (ban-foreslash-quanta)
+*translate-motifs* (*w* *s*) (*w* *w*)
+*turn-90-motifs* (*s* *s* *e*)
+COMMON
+*literal-motifs* (23 8) (20 23 8) (20 23) (8 23)))
+*turn-180-motifs* (*w* *w*) (*n* *n* *e*) (*e*)))
+*abstract-rules* (ban-backslash-quanta ban-45-135-angle
+      ban-135-angle ban-diagonal-quanta)
+*translate-motifs* (*e* *e*) (*e* *n* *n* *w* *w* *n*)
+     (*e* *n* *w* *w* *n*) (*s* *s*) (*n* *n* *e* *e*)
+     (*w* *w* *n* *n*) (*e*) (*w* *n*) (*n* *n* *e*)
+     (*w* *w* *n* *n* *n*) (*w* *w* *n* *e*)
+*turn-90-motifs* ((*n* *n* *e* *e*) (*w* *w*)
+
+---------------------------------------------------------------
+
+boat
+
+UNIVERSAL
+none
+FREQUENT
+none
+COMMON
+*literal-motifs* ((4 20) (5 4 20) (4 20 50) (39 50 20)
+     (39 50 20 4 5) (50 39) (50 20) (50 20 4))
+*relative-nvs* ((tips (down-tip *inward*))
+*translate-motifs* ((*sw*) (*s* *se* *ne*) (*n*)
+*turn-90-motifs* ((*n* *n*))
+---------------------------------------------------------------
+hunt 4
+
+UNIVERSAL
+none
+FREQUENT
+none
+COMMON
+*translate-motifs* (*se*) (*sw*)
+*turn-90-motifs* (*ne* *n*) (*sw*)
+*literal-motifs* (50 36 49) (36 50) (50) (50 36) (49 36) (49 36 50)
+*turn-45-motifs* (-135)
+---------------------------------------------------------------
+
+benzene left
+
+UNIVERSAL
+none
+FREQUENT
+*translate-motifs* (*s* *se*) (*n* *e*) (*s*)
+*literal-motifs* (4)
+COMMON
+*literal-motifs* (50) (9 50 20) (20 50) (9)))
+*translate-motifs* (*se* *e*) (*w* *nw*) (*e* *se*) (*se*) (*se* *s* *s*)
+*turn-180-motifs* (*w* *nw*)))
+*abstract-rules* (ban-foreslash-quanta)
+---------------------------------------------------------------
+
+benzene right
+
+UNIVERSAL
+none
+FREQUENT
+*literal-motifs* (36) (36 5) (5)))
+*translate-motifs* (*s* *e*)
+COMMON
+*turn-45-motifs* ((135)))
+*translate-motifs* (*s* *s* *s* *s* *e* *ne*) (*sw* *w*) (*sw* *s* *e*)
+     (*n* *n* *sw*) (*w* *sw*) (*sw*) (*ne* *e*)
+*literal-motifs* (36 23)
+*abstract-rules* (ban-backslash-quanta)
+*turn-180-motifs* (*w* *s* *s*)

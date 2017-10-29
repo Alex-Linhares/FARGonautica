@@ -1,0 +1,42 @@
+minuses edges: only proceed if there is stuff on that edge?
+
+***
+
+role-filler morphology?
+
+routines for
+checking to see if a role has a filler in the library
+if a letter has a filler with a given style score
+
+a (steal 'e *180-turn-list*)
+b (steal 'q *180-turn-list*) (steal 'd *horiz-flip-list*)
+  (steal 'p *vert-flip-list*)
+c (chop 'o *rightedge-zone*)
+d (steal 'p *180-turn-list*) (steal 'b *horiz-flip-list*)
+  (steal 'q *vert-flip-list*)
+e (steal 'a *180-turn-list*)
+f 
+g 
+h (chop 'b '(8 9)) (steal 'y *180-turn-list*)
+i (chop 'j *descender-zone*)
+j 
+k 
+l 
+m (steal 'w *180-turn-list*)
+n (chop 'o '(8 9)) (steal 'u *180-turn-list*) (chop 'h *ascender-zone*)
+o (chop 'b *ascender-zone*) (chop 'd *ascender-zone*)
+ (chop 'g *descender-zone*) (chop 'p *descender-zone*)
+ (chop 'q *descender-zone*)
+p (steal 'd *180-turn-list*) (steal 'q *horiz-flip-list*)
+  (steal 'b *vert-flip-list*)
+q (steal 'b *180-turn-list*) (steal 'p *horiz-flip-list*)
+  (steal 'd *vert-flip-list*)
+r 
+s 
+t 
+u (chop 'o '(4 5)) (chop 'y *descender-zone*) (steal 'n *180-turn-list*)
+v 
+w (steal 'm *180-turn-list*)
+x 
+y (chop 'g '(4 5))  (steal 'h *180-turn-list*)
+z 

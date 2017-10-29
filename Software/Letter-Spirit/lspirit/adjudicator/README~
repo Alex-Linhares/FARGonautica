@@ -1,0 +1,61 @@
+New Checklist
+
+***
+
+CHECK Promotion (more or less)
+
+IGNORE Activation
+
+DO Temperature (very important, what's more!)
+
+PONDER Top-down, Bottom-up flow
+
+***
+
+
+Note: motif matches will not be made between two motifs which have
+overlap, but the overlap itself is in two or more non-contiguous
+stretches (Example: will NOT detect (4 49 7 6) (4 5 37 6) overlap)
+This is a huge savings computationally, so dandy. It can still find
+the overlap if smaller versions of the same motifs exist
+
+Tinker with temperature
+ Does salience need to come into it? Level does. A high-level
+ bridge-back failure ought to cost dearly
+ Low-level, but salient
+  Find -- lower temp a lot
+  Don't find -- shouldn't hurt you
+ High-level, low salience
+  Find -- lower temperature, but not too much
+  Don't find -- raise temperature more
+ In other words -- very salient means more lowering
+Top-down/bottom-up flow
+  bridges posted by SP-finders
+  number of bridges per level ought to be principled by stuff there
+  bridge-back failure leads to search for new SPs
+  handle the messy job of having all three phases going on at once?
+    in an intricate dance?
+Activations -- What for, and when?
+  How else would you relate less height, less width and less weight?
+  Could it be used just in the Drafter? Don't see it helping here.
+
+Keep a list where you tack the letter onto the workspace and file
+it away; if you need to delete it, you can re-arrange the lower two
+levels of the TF
+
+More complex promotion/demotion
+ NVs should be promoted only with prob 1/number-of-roles
+ Some NVs are more general than others
+ Some rules are more general than others
+ Demotion should be more likely at higher levels
+ Big motifs should not be replaced with smaller matches
+
+On higher levels -- remove motifs which are subsets of bigger ones?
+
+Motif types
+ Full hierarchy would be:
+  literal, translations, rotate/reflect 180, rotate/reflect 90,
+  rotate/reflect 45/135
+  FULLY IMPLEMENTED BUT FOR THE MATCHING
+
+

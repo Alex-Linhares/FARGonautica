@@ -1,0 +1,71 @@
+Typical score of first item:
+decent: 63
+bad: 117
+
+Typical score of second item:
+no particular resemblance to seed: 57
+OK resemblance: 51
+
+Every seedifying should wipe *approved* clean
+
+But, approval calculation needs to consider *number* of seeds (length
+*library*)
+
+Cutoff with no seeds:
+ not really that important: 70 will do
+
+Cutoff with one seed: about 55
+
+Cutoff with more seeds: context gets important
+
+boat, abc: MEAN 74.5
+YES: o (47.2)
+MAYBE: y (44.4), t (68), n (66), j (58), k (116)
+NO: w (78), e (72), f (112), x (80), p (53), i (100)
+
+rule: KNOCK 15 to 25 off the mean
+
+benzene left, lark: MEAN 58.9
+
+YES: p (46.5), a (67.8)
+MAYBE: d (40), i (62), i (55.5),  f (60.8), y (71), u (64.7), x (79)
+NO: n (66), o (39), s (65), h (46.6), m (55), b (22.4), t (69.6), q
+(95), j (53.7)
+
+standard square p,a,c,k: MEAN 36.5
+
+YES: e (14), h (19.9), u (32), q (17.1), n (27.5), w (28.8), r (20.2)
+MAYBE: z (61.9), l (21), m (52.5)
+NO: y (63), t (78)
+
+double backslash i,s,e: MEAN 58.8
+
+YES: d (48.5), c (34.8), o (44)
+MAYBE: l (56), n (68)
+NO: k (86), r (90), h (67), j (34.6)
+
+***
+
+
+Cutoffs
+ ABSOLUTE: 47 to 58, 55 to 79, 32 to 52, 48 to 60
+ RELATIVE TO MEAN: -27.5 to -16.5, -26.9 to -6, -4 to +16, -10 to +2
+
+A mean-cutoff that works decently: none!
+
+Mean & Middle-range:
+
+	mean	range
+	75	-22
+	60	-18
+	37	6
+	60	-5
+
+	Tinkering, I sorta like:
+
+	a) range ~= 28 - 2/3 mean
+	b) 28 + 1/3 mean
+
+	To get cutoff of 55 (for one seed), need dummy value of 80
+	To get approval for first gridletter, maybe have special-case
+cutoff

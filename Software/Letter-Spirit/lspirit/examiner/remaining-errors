@@ -1,0 +1,82 @@
+FIXABLE:
+
+b 04C02640420000        *better b, but quicker gradient ascent to d
+e 0D800B00000000        gets it sometimes
+k 00404900080060        extra k parse
+k 0C404DC0000000        gets it sometimes
+m 000002C0060000        fixed, role-defs
+s 00000300060000        gets it sometimes, role-defs
+z 07800300000000        role-defs?
+z 0B400000000060        role-defs?
+
+ALL OF THEM:
+
+b 04C02640420000	systematically 'd'; break zigzag right-post?
+b 0A014000830060	systematically 'l'
+d 05011000090430	systematically 'l'
+e 01400000080060	sometimes gets it
+e 014000000C0060	systematically 'c'
+e 0D800B00000000	extra e parse? triple-point -> east?
+f 04000480100000	usually gets it
+g 0140000A0C1060	usually gets it
+g 0C900BC8000000	slow to parse
+h 00024840080040	easier as 'l'
+k 00002440460010	usually gets it
+k 00404900080060	extra k parse? triple-point (t-junction) parse?
+k 04004100880090	*flaw in notion of indivisible quanta
+k 0C404DC0000000	extra k parse? role defs?
+m 000001C0080040	sometimes gets it
+m 000001c00800c0	flaw in notion of indivisible quanta
+m 000002C0060000	parses it right; role-defs?
+m 000005C00000E0	sometimes gets it
+m 000007000D0000	sometimes gets it
+m 00000C400000E0	sometimes gets it
+m 00000DC0080040	usually gets it
+m 04800AC0040080	sometimes gets it
+m 0C000E40000000	usually gets it
+n 000000C00A0060	sometimes gets it
+n 00000240060000	maybe fixed now
+n 000004C00000E0	sometimes gets it
+n 000006C0060000	pretty 'm'-ish
+n 04000340080080	don't know how it should see it
+n 048002C0040000	pretty weird
+o 020000000900E0	pretty weird
+o 08000000010060	pretty 'v'-ish
+o 08000000090060	pretty 'a'-ish
+o 0C000D00020000	pretty weird
+p 028000220900C2	pretty weird
+q 014400080C1061	pretty weird
+q 0C000D12031040	probably fixed
+q 0C800BC8000000	pretty weird
+r 080002000000D0	easier as 'c'
+s 00000300060000	role-defs?
+s 04000000160000	pretty weird
+s 06000000030060	pretty weird
+u 000000400000D0	v-ish
+u 00000D80060000	pretty weird
+u 04800D00020000	pretty weird
+v 00800300090000	u-ish
+v 00800600030000	u-ish
+v 008006000B0000	u-ish
+v 04000D00020000	usually gets it
+v 06400AC0000000	u-ish
+w 000003800b0000	u-ish
+w 000006C00000B0	pretty weird
+w 00000D00060000	pretty weird
+w 00000E00010020	pretty weird
+w 00000E80000060	pretty weird
+w 00000F80070000	has enclosed space
+w 00000a80010020	sometimes gets it
+w 00000ac0000030	sometimes gets it
+w 00800B80010000	sometimes gets it
+w 04800D40020010	pretty weird
+x 028002000E0010	too easy to get as u; theoretically fixable
+x 08000600020050	*flaw in notion of one-quantum -> one-part
+y 00880348091000	fixed; allowed g open at top too easily
+y 00C00240024000	fixed; ditto; really whacked it!
+z 00C00C000A0000	fixed; role-defs
+z 00D00800000098	major zone violation
+z 01C00800020080	pretty weird
+z 07800300000000	role-defs?
+z 09000000090030	pretty weird
+z 0B400000000060	role-defs?

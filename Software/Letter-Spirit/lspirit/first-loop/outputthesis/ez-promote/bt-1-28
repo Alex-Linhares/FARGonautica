@@ -1,0 +1,536 @@
+Chez Scheme Transcript [Fri Jan 28 13:58:28 2000]
+>> (try-gridfont 'boat)
+Accepted, as a seed for b, (4 5 17 20 22 39 50)
+Accepted, as a seed for c, (4 5 20 39 50)
+Accepted, as a seed for e, (4 5 6 20 37 39 50)
+Accepted, as a seed for f, (2 3 4 17 20 50)
+Accepted, as a seed for g, (4 5 20 22 25 39 41 50 52)
+(nada () ((*literal-motifs* ((50 20) (4 20) (20 4) (4) (50 20 4) (20))) (*translate-motifs* ((*nw*) (*se*) (*nw* *n*))) (*turn-180-motifs* ((*e* *e* *s*)))) ((*literal-motifs* ((4) (39) (50 39) (20) (4 5))) (*translate-motifs* ((*nw* *n* *e*) (*n* *e*) (*w* *s*))) (*relative-nvs* ((tips (down-tip *inward*)) (tips (tip *inward*)))) (*turn-180-motifs* ((*w* *s* *se*)))) 18 30 52)
+Trying h by borrowing b; rejected as b1, score 300.0 (4 5 17 20 22 39 50)
+Trying z by drafting z; rejected as u1, score 300.0 (4 5 22 39)
+Trying h by drafting h; seed margin 53.867 58.0
+seedified as h1 score 53.867 beat 299.99 (4 5 17 20 22 39)
+Trying k by drafting k; seed margin 56.046 58.0
+seedified as k1 score 56.046 beat 299.99 (5 9 14 17 20 23 36 50)
+Trying d by borrowing b; seed margin 40.904 58.0
+seedified as d1 score 40.904 beat 299.99 (4 5 19 20 22 39 50)
+Trying m by drafting m; seed margin 67.5 58.0
+accepted as m1 score 67.5 beat 299.99 (5 17 20 21 22 25 46 50)
+Trying v by drafting v; rejected as o1, score 300.0 (4 5 22 23 38 39 50)
+Trying y by drafting y; seed margin 63.491 56.75
+accepted as y2 score 63.491 beat 299.99 (22 25 41 48 51 52)
+Trying t by drafting t; seed margin 56.103 54.997
+accepted as t1 score 56.103 beat 299.99 (4 9 17 20 25 50)
+Trying v by drafting v; seed margin 52.614 52.274
+accepted as v1 score 52.614 beat 299.99 (20 39 49 50)
+Trying l by drafting l; seed margin 92.812 49.942
+accepted as l1 score 92.812 beat 299.99 (2 3 4 5 17 22 45)
+Trying a by borrowing e; seed margin 55.872 55.087
+accepted as a1 score 55.872 beat 299.99 (7 8 9 25 36 38 49)
+Trying p by borrowing b; seed margin 58.099 53.485
+accepted as p1 score 58.099 beat 299.99 (8 9 23 25 26 36 49)
+Trying i by drafting i; seed margin 49.031 52.561
+seedified as i1 score 49.031 beat 299.99 (3 5 22 39)
+Trying x by drafting x; seed margin 108.499 58.0
+accepted as x1 score 108.499 beat 299.99 (37 38 50 53)
+Trying r by borrowing c; rejected as c1, score 300.0 (4 5 20 39 50)
+Trying s by drafting s; seed margin 61.329 77.25
+seedified as s2 score 61.329 beat 299.99 (4 5 9 22 48 50 51)
+Trying y by borrowing g; seed margin 58.997 58.0
+accepted as y1 score 58.997 beat 61.194 (20 22 25 39 41 50 52)
+Trying l by drafting l; rejected as l1, score 112.038 (25 46 49)
+Trying j by drafting j; seed margin 56.643 61.936
+seedified as j1 score 56.643 beat 299.99 (3 22 25 41 52)
+Trying t by drafting t; rejected as f1, score 300.0 (2 3 4 8 23 36 46 49)
+Trying z by borrowing s; seed margin 53.099 51.052
+accepted as z1 score 53.099 beat 299.99 (4 5 8 20 37 38 39)
+Trying o by borrowing g; rejected as q2, score 300.0 (4 5 20 22 25 39 50)
+Trying m by drafting m; seed margin 37.339 47.734
+seedified as m1 score 37.339 beat 67.5 (4 5 20 21 22 25 50)
+Trying n by borrowing h; seed margin 56.857 58.0
+seedified as n1 score 56.857 beat 299.99 (4 5 20 22 39)
+Trying r by borrowing n; rejected as i1, score 300.0 (4 5 20 39)
+Trying q by borrowing b; seed margin 70.032 58.0
+accepted as q1 score 70.032 beat 299.99 (8 9 23 25 28 36 49)
+Trying t by drafting t; rejected as k1, score 300.0 (4 46 49)
+Trying l by drafting l; seed margin 71.607 53.378
+accepted as l1 score 71.607 beat 92.812 (15 22 39 47)
+Trying r by drafting r; seed margin 19.093 54.936
+seedified as r1 score 19.093 beat 299.99 (4 5 20 22 50)
+Trying w by borrowing m; seed margin 66.005 58.0
+accepted as w1 score 66.005 beat 299.99 (8 9 20 23 24 25 49)
+Trying o by borrowing b; seed margin 22.838 56.003
+seedified as o1 score 22.838 beat 299.99 (4 5 20 22 39 50)
+Trying u by borrowing n; seed margin 47.268 58.0
+seedified as u1 score 47.268 beat 299.99 (8 9 23 25 36)
+Trying l by drafting l; seed margin 70.655 58.0
+accepted as l1 score 70.655 beat 72.8 (15 18 49)
+Trying p by borrowing d; seed margin 48.151 58.328
+seedified as p on re-election 48.151 (8 9 23 25 26 36 49)
+Trying v by drafting v; rejected as u1, score 300.0 (5 9 22 24 25 48)
+Trying l by drafting l; seed margin 63.052 49.307
+accepted as l1 score 63.052 beat 73.389 (5 22 39 46)
+Trying v by drafting v; rejected as u1, score 300.0 (5 9 22 24 25 48)
+Trying z by drafting z; rejected as u1, score 300.0 (4 5 22 39)
+Trying y by borrowing h; rejected as q1, score 300.0 (8 9 23 25 28 36)
+Trying y by drafting y; seed margin 48.819 47.691
+reelected as y1 score 48.819 (20 22 25 39 41 50 52)
+Trying l by drafting l; rejected as h1, score 300.0 (22 44 47)
+Trying q by borrowing p; seed margin 44.544 45.517
+seedified as q on re-election 44.544 (8 9 23 25 28 36 49)
+Trying a by drafting a; rejected as w1, score 300.0 (4 5 9 22 25 39 50)
+Trying x by drafting x; seed margin 80.731 50.936
+accepted as x1 score 80.731 beat 108.499 (21 24 37 38)
+Trying a by drafting a; rejected as o1, score 300.0 (4 5 22 39)
+Trying z by drafting z; rejected as u1, score 300.0 (4 5 22 39)
+Trying v by drafting v; rejected as v1, score 177.579 (4 5 22 24 39)
+Trying v by drafting v; rejected as u1, score 300.0 (4 9 21 22 24 25)
+Trying v by drafting v; rejected as v1, score 52.257 (4 5 22 24 39)
+Trying x by drafting x; rejected as r1, score 300.0 (6 7 21 22 24)
+Trying z by drafting z; rejected as o1, score 300.0 (4 5 6 37)
+Trying y by drafting y; rejected as g1, score 300.0 (8 9 22 23 25 36 41 52)
+Trying v by drafting v; rejected as v1, score 78.163 (22 24 39 48)
+Trying t by drafting t; rejected as t1, score 51.578 (4 5 6 8 9 18 21 22 23)
+Trying t by drafting t; rejected as x1, score 300.0 (4 5 46 49)
+Trying x by drafting x; rejected as x1, score 97.418 (20 21 38 50)
+Trying l by drafting l; seed margin 40.97 47.664
+seedified as l1 score 40.97 beat 63.052 (15 22 47)
+Trying t by drafting t; rejected as quit, score 300.0 (2 4 19 47)
+Trying x by drafting x; seed margin 65.209 48.652
+accepted as x1 score 65.209 beat 80.731 (8 22 39 48 51)
+Trying t by drafting t; rejected as r1, score 300.0 (3 4 8 18 23 36)
+Trying w by drafting w; rejected as w1, score 110.461 (9 25 36 48 50)
+Trying v by drafting v; rejected as u1, score 300.0 (4 9 21 22 24 25)
+Trying x by drafting x; seed margin 61.444 49.283
+accepted as x1 score 61.444 beat 62.985 (22 39 48 50 51)
+Trying a by drafting a; rejected as quit, score 300.0 (4 5 6 22 25 36 39 51)
+Trying a by drafting a; rejected as u1, score 300.0 (4 5 22 39)
+Trying t by drafting t; rejected as quit, score 300.0 (5 6 7 9 19 22 37 48 50)
+Trying a by drafting a; rejected as o1, score 300.0 (4 5 22 39)
+Trying t by drafting t; rejected as t1, score 66.312 (4 5 18 21 38)
+Trying a by drafting a; rejected as o1, score 300.0 (4 5 22)
+Trying x by drafting x; rejected as i1, score 300.0 (4 5 8 9 20 25)
+Trying w by drafting w; rejected as w1, score 85.927 (8 9 20 23 25 51)
+Trying x by drafting x; seed margin 54.465 48.2
+accepted as x1 score 54.465 beat 64.091 (22 23 39 48 50 51)
+Trying a by drafting a; rejected as w1, score 300.0 (4 5 9 22 25 39 50)
+Trying w by drafting w; rejected as w1, score 97.872 (4 6 20 22 24 39 50)
+Trying x by drafting x; rejected as x1, score 81.178 (6 8 22 39 51)
+Trying a by drafting a; rejected as quit, score 300.0 (4 5 6 10 11 22 25 26 28 38 39 49)
+Trying a by drafting a; rejected as o1, score 300.0 (4 5 22 39)
+Trying w by drafting w; rejected as s1, score 300.0 (4 5 8 9 20 23 25 50)
+Trying v by drafting v; rejected as v1, score 83.87 (4 21 22 24 39)
+Trying x by drafting x; rejected as x1, score 92.903 (21 24 37 38)
+Trying x by drafting x; rejected as u1, score 300.0 (8 21 38 48 51)
+Trying z by drafting z; rejected as m1, score 300.0 (4 5 6 9 22 23 51)
+Trying a by drafting a; rejected as n1, score 300.0 (4 5 6 22 38 39)
+Trying t by drafting t; seed margin 49.081 47.544
+accepted as t1 score 49.081 beat 54.777 (4 5 8 18 22 23 36)
+Trying w by drafting w; rejected as u1, score 300.0 (7 8 20 22 23 24 25)
+Trying w by drafting w; rejected as u1, score 300.0 (8 20 21 22 38 39 50)
+Trying x by drafting x; rejected as r1, score 300.0 (5 6 7 20 21 38)
+Trying t by drafting t; rejected as j1, score 300.0 (4 5 13 22 28 29 30 31 42)
+Trying v by drafting v; rejected as n1, score 300.0 (20 22 39)
+Trying z by drafting z; rejected as r1, score 300.0 (4 5 6 8 22 39 51)
+Trying t by drafting t; rejected as t1, score 54.036 (4 5 9 17 20 22 50)
+Trying v by drafting v; rejected as o1, score 300.0 (8 9 25 37 38 49)
+Trying t by drafting t; rejected as t1, score 65.17 (4 9 17 20 25 50)
+Trying w by drafting w; rejected as j1, score 300.0 (4 20 25 26 41 50 52)
+Trying x by drafting x; rejected as x1, score 71.674 (4 5 6 22 39 51)
+Trying t by drafting t; rejected as t1, score 91.909 (4 18 21 38)
+Trying y by drafting y; rejected as quit, score 300.0 (8 9 22 23 25 36 41 52)
+Trying z by drafting z; rejected as i1, score 300.0 (4 5 7 8 20 25 38)
+Trying t by drafting t; rejected as t1, score 92.812 (4 23 36 46)
+Trying x by drafting x; rejected as x1, score 81.819 (20 37 38 50)
+Trying y by drafting y; seed margin 21.583 45.833
+seedified as y2 score 21.583 beat 48.819 (5 20 22 23 25 28 38 51 53)
+Trying w by drafting w; rejected as u1, score 300.0 (8 23 25 39 49)
+Trying a by drafting a; rejected as i1, score 300.0 (4 5 6 22 39)
+Trying v by drafting v; rejected as v1, score 40.964 (4 5 22 24 39)
+Trying x by drafting x; rejected as x1, score 88.652 (21 24 37 38)
+Trying w by drafting w; rejected as g1, score 300.0 (8 9 25 38 50 51)
+Trying w by drafting w; rejected as y2, score 300.0 (5 8 9 20 21 23 25 51)
+Trying z by drafting z; rejected as r1, score 300.0 (4 5 22 24 37)
+Trying a by drafting a; rejected as u1, score 300.0 (4 5 22 25)
+Trying x by drafting x; seed margin 53.498 48.56
+accepted as x1 score 53.498 beat 54.806 (20 23 24 37 38 51)
+Trying v by drafting v; rejected as u1, score 300.0 (8 22 38 39 48)
+Trying z by drafting z; rejected as n1, score 300.0 (4 6 8 9 21)
+Trying a by drafting a; rejected as u1, score 300.0 (4 5 22)
+Trying w by drafting w; rejected as x1, score 300.0 (9 20 23 25 36 50)
+Trying w by drafting w; rejected as w1, score 74.125 (8 9 20 21 23 25 51)
+Trying x by drafting x; rejected as o1, score 300.0 (4 5 20 22 23 38 39 51)
+Trying v by drafting v; rejected as u1, score 300.0 (9 24 25 48 49)
+Trying t by drafting t; rejected as l1, score 300.0 (6 8 18 21 23 39)
+Trying w by drafting w; rejected as u1, score 300.0 (8 20 21 22 38 39 50)
+Trying v by drafting v; rejected as v1, score 82.778 (22 24 39 48)
+Trying v by drafting v; rejected as u1, score 300.0 (8 9 20 22 23 25)
+Trying a by drafting a; rejected as n1, score 300.0 (4 5 9 22 39 50)
+Trying z by drafting z; rejected as quit, score 300.0 (4 6 7 53)
+Trying t by drafting t; rejected as i1, score 300.0 (4 37 38 47)
+Trying a by drafting a; rejected as o1, score 300.0 (4 5 22)
+Trying x by drafting x; seed margin 46.719 46.287
+accepted as x1 score 46.719 beat 53.333 (20 22 23 38 39 51)
+Trying z by drafting z; rejected as u1, score 300.0 (4 9 21 22 24 25)
+Trying w by drafting w; rejected as i1, score 300.0 (20 24 25 38 50)
+Trying a by drafting a; rejected as a2, score 86.787 (4 5 6 9 22 23 24 39)
+Trying v by drafting v; rejected as v1, score 76.36 (4 21 23 38)
+Trying z by drafting z; rejected as i1, score 300.0 (4 24 37)
+Trying w by drafting w; promoted as w score 74.125 (8 9 20 21 23 25 51)
+Trying a by drafting a; rejected as quit, score 300.0 (4 5 9 20 22 25 39 50)
+Trying v by drafting v; rejected as v1, score 76.53 (4 21 22 24 39)
+Trying a by drafting a; rejected as s1, score 300.0 (4 5 6 8 22 23 39)
+Trying x by drafting x; seed margin 46.447 47.968
+seedified as x on re-election 46.447 (20 22 23 38 39 51)
+Trying a by drafting a; rejected as u1, score 300.0 (4 5 22 39)
+Trying t by drafting t; rejected as l1, score 300.0 (4 20 22 39 46 50)
+Trying z by drafting z; rejected as quit, score 300.0 (4 6 22 39)
+Trying w by drafting w; rejected as g1, score 300.0 (8 9 20 22 23 25 50)
+Trying w by drafting w; rejected as w1, score 96.351 (5 8 21 24 25 51)
+Trying t by drafting t; rejected as t1, score 69.244 (4 8 18 23 36)
+Trying w by drafting w; rejected as g1, score 300.0 (8 20 22 23 36 39 50)
+Trying z by drafting z; rejected as k1, score 300.0 (4 6 7 22 39)
+Trying w by drafting w; rejected as q1, score 300.0 (4 5 8 20 21 23 24 25 51)
+Trying v by drafting v; rejected as v1, score 54.961 (4 5 22 24 39)
+Trying w by drafting w; rejected as w1, score 70.06 (4 9 20 24 25 37 50)
+Trying v by drafting v; rejected as u1, score 300.0 (9 24 25 48 49)
+Trying z by drafting z; rejected as a2, score 300.0 (4 5 6 8 9 22 38 39)
+Trying t by drafting t; seed margin 41.695 49.191
+seedified as t1 score 41.695 beat 47.231 (4 5 8 22 23 35 36)
+Trying w by drafting w; rejected as i1, score 300.0 (8 20 23 24 25)
+Trying z by drafting z; rejected as quit, score 300.0 (4 6 10 11 22 26 28 38 39)
+Trying a by drafting a; seed margin 38.158 52.146
+seedified as a2 score 38.158 beat 55.872 (4 5 7 8 22 38 39)
+Trying z by drafting z; rejected as n1, score 300.0 (4 5 6 22 38 39)
+Trying v by drafting v; rejected as l1, score 300.0 (2 21 22 24 39 47)
+Trying v by drafting v; rejected as v1, score 66.107 (4 20 23 37 38)
+Trying v by drafting v; rejected as u1, score 300.0 (8 9 25 38 48 49)
+Trying z by drafting z; rejected as i1, score 300.0 (4 5 10 22 39 41)
+Trying w by drafting w; rejected as q1, score 300.0 (4 8 9 20 23 25 50)
+Trying w by drafting w; rejected as i1, score 300.0 (4 20 23 25 39)
+Trying v by drafting v; rejected as y1, score 300.0 (21 27 38 50)
+Trying v by drafting v; rejected as v1, score 65.592 (4 21 22 24 39)
+Trying v by drafting v; rejected as v1, score 80.576 (24 39 48 49)
+Trying v by drafting v; rejected as u1, score 300.0 (9 21 22 24 25)
+Trying v by drafting v; rejected as v1, score 61.547 (4 21 22 24 39)
+Trying v by drafting v; seed margin 50.421 52.146
+seedified as v1 score 50.421 beat 59.751 (22 39 50)
+Trying w by drafting w; rejected as w1, score 186.167 (8 9 20 23 25 51)
+Trying z by drafting z; rejected as r1, score 300.0 (4 9 21 24)
+Trying w by drafting w; rejected as v1, score 300.0 (4 20 22 39 50)
+Trying w by drafting w; rejected as u1, score 300.0 (8 9 23 24 25 36)
+Trying z by drafting z; rejected as n1, score 300.0 (4 5 7 22 38 39)
+Trying z by drafting z; rejected as i1, score 300.0 (4 22 24 25 37)
+Trying w by drafting w; rejected as i1, score 300.0 (4 20 25 50)
+Trying z by drafting z; rejected as o1, score 300.0 (4 5 22 39)
+Trying w by drafting w; rejected as w1, score 178.746 (20 21 22 24 39 50)
+Trying w by drafting w; rejected as y2, score 300.0 (4 20 24 25 27 41 50)
+Trying w by drafting w; rejected as q1, score 300.0 (5 20 23 36 39 49 50)
+Trying z by drafting z; rejected as e2, score 300.0 (5 6 7 22 36 39)
+Trying z by drafting z; rejected as i1, score 300.0 (4 5 22 28 39 41 52)
+Trying w by drafting w; rejected as quit, score 300.0 (5 8 20 23 25 36 50)
+Trying z by drafting z; rejected as u1, score 300.0 (4 5 22 39)
+Trying w by drafting w; rejected as w1, score 68.402 (20 21 24 25 50)
+Trying w by drafting w; rejected as u1, score 300.0 (8 20 22 39 50)
+Trying w by drafting w; rejected as s1, score 300.0 (8 9 20 23 25 50)
+Trying w by drafting w; seed margin 61.674 49.55
+accepted as w1 score 61.674 beat 67.532 (8 9 20 21 23 24 25)
+Trying w by drafting w; seed margin 53.401 49.55
+accepted as w1 score 53.401 beat 61.993 (9 20 24 25 37 50)
+Trying z by drafting z; rejected as i1, score 300.0 (2 4 9 21 22 24 47)
+Trying w by drafting w; rejected as g1, score 300.0 (8 9 20 23 25 36 50)
+Trying z by drafting z; rejected as a2, score 300.0 (4 5 7 22 23 38 39 50)
+Trying z by drafting z; rejected as x1, score 300.0 (5 6 7 22 39)
+Trying z by drafting z; rejected as u1, score 300.0 (4 5 22 39)
+Trying w by drafting w; rejected as x1, score 300.0 (21 25 37 39 48 51)
+Trying z by drafting z; rejected as o1, score 300.0 (4 5 22 39)
+Trying z by drafting z; rejected as j1, score 300.0 (4 6 10 11 22 26 38 39 50)
+Trying z by drafting z; rejected as u1, score 300.0 (4 5 22 39)
+Trying z by drafting z; rejected as i1, score 300.0 (4 22 39 48)
+Trying z by drafting z; rejected as v1, score 300.0 (4 5 22 39 50)
+Trying z by drafting z; rejected as u1, score 300.0 (4 5 22 39)
+Trying w by drafting w; rejected as i1, score 300.0 (8 10 20 25 26 50)
+Trying z by drafting z; rejected as u1, score 300.0 (4 5 22 39)
+Trying z by drafting z; rejected as a2, score 300.0 (4 5 6 22 38 39 50)
+Trying z by drafting z; rejected as u1, score 300.0 (4 5 22 39)
+Trying z by drafting z; rejected as x1, score 300.0 (4 6 20 22 39 51)
+Trying w by drafting w; rejected as r1, score 300.0 (5 21 25 48 51)
+Trying z by drafting z; rejected as u1, score 300.0 (4 5 22 39)
+Trying z by drafting z; seed margin 42.27 49.701
+seedified as z1 score 42.27 beat 48.534 (4 5 7 8 9 22 38)
+Trying w by drafting w; rejected as n1, score 300.0 (4 7 25 36 50)
+Trying w by drafting w; rejected as i1, score 300.0 (4 20 23 25 38)
+Trying w by drafting w; rejected as u1, score 300.0 (7 21 23 25 38)
+Trying w by drafting w; rejected as u1, score 300.0 (8 20 23 24 25 51)
+Trying w by drafting w; rejected as q1, score 300.0 (5 8 20 22 23 25 36 39 50)
+Trying w by drafting w; rejected as y2, score 300.0 (10 23 25 26 41 49 51)
+Trying w by drafting w; rejected as i1, score 300.0 (4 20 23 25)
+Trying w by drafting w; rejected as u1, score 300.0 (8 9 20 23 25 51)
+Trying w by drafting w; rejected as w1, score 77.832 (8 20 23 24 25)
+Trying w by drafting w; rejected as y2, score 300.0 (23 25 41 48 51 52)
+Trying w by drafting w; rejected as w1, score 105.029 (8 20 23 36 39 50)
+Trying w by drafting w; rejected as w1, score 80.891 (8 21 23 24 25)
+Trying w by drafting w; rejected as i1, score 300.0 (4 8 20 25 38 50)
+Trying w by drafting w; rejected as quit, score 300.0 (8 21 23 24 25 36 48)
+Trying w by drafting w; rejected as quit, score 300.0 (6 20 21 23 38)
+Trying w by drafting w; rejected as j1, score 300.0 (11 23 25 39 52)
+Trying w by drafting w; rejected as i1, score 300.0 (4 5 6 20 25 38)
+Trying w by drafting w; rejected as w1, score 63.861 (8 9 20 23 25 51)
+Trying w by drafting w; rejected as w1, score 57.485 (8 9 20 23 24 25 37)
+Trying w by drafting w; rejected as w1, score 100.778 (9 22 25 38 49 50)
+Trying w by drafting w; rejected as n1, score 300.0 (8 20 25 39 50)
+Trying w by drafting w; rejected as r1, score 300.0 (5 8 20 21 23 24)
+Trying w by drafting w; rejected as n1, score 300.0 (5 21 25 48 51)
+Trying w by drafting w; rejected as n1, score 300.0 (4 6 39 48 49)
+Trying w by drafting w; rejected as w1, score 88.093 (24 25 36 50)
+Trying w by drafting w; rejected as w1, score 125.863 (5 21 23 25 36 48)
+Trying w by drafting w; rejected as u1, score 300.0 (10 23 25 26 41 51)
+Trying w by drafting w; seed margin 43.325 58.0
+seedified as w1 score 43.325 beat 52.432 (8 9 20 23 24 25)
+235 draws and 886317 codelets
+>> (load "loop.ss")
+>> (try-cats)
+235 draws and 886317 codelets
+((w (8 9 20 23 24 25))
+ (z (4 5 7 8 9 22 38))
+ (v (22 39 50))
+ (a (4 5 7 8 22 38 39))
+ (t (4 5 8 22 23 35 36))
+ (x (20 22 23 38 39 51))
+ (y (5 20 22 23 25 28 38 51 53))
+ (l (15 22 47))
+ (q (8 9 23 25 28 36 49))
+ (p (8 9 23 25 26 36 49))
+ (u (8 9 23 25 36))
+ (o (4 5 20 22 39 50))
+ (r (4 5 20 22 50))
+ (n (4 5 20 22 39))
+ (m (4 5 20 21 22 25 50))
+ (j (3 22 25 41 52))
+ (s (4 5 9 22 48 50 51))
+ (i (3 5 22 39))
+ (d (4 5 19 20 22 39 50))
+ (k (5 9 14 17 20 23 36 50))
+ (h (4 5 17 20 22 39))
+ (g (4 5 20 22 25 39 41 50 52))
+ (f (2 3 4 17 20 50))
+ (e (4 5 6 20 37 39 50))
+ (c (4 5 20 39 50))
+ (b (4 5 17 20 22 39 50)))
+>> (tf-summary)
+(nada ((*literal-motifs* ((20) (50 20) (20 4)))
+       (*turn-90-motifs* ((*ne* *nw*) (*s* *w*)))
+       (*translate-motifs*
+         ((*e* *e*) (*w* *s* *se*) (*w* *s*) (*n*)))
+       (*turn-45-motifs* ((90) (-135)))
+       (*abstract-rules* (at-most-3 ban-corners))
+       (*turn-180-motifs* ((*w* *s*))))
+      ((*turn-180-motifs* ((*w*) (*e* *e* *s*) (*s*)))
+       (*relative-nvs* ((weight more) (curve less) (height less)))
+       (*literal-motifs* ((5 4) (39) (4) (5) (39 50) (39 22)))
+       (*translate-motifs* ((*se*) (*w*) (*nw* *n*)))
+       (*abstract-rules* (at-most-2 ban-bottombox ban-vertboxes)))
+      ((*turn-180-motifs* ((*se* *ne*) (*se* *ne* *n*)))
+       (*relative-nvs*
+         ((weight less)
+          (tips (up-tip *inward*))
+          (floor less)
+          (tips (tip *inward*))
+          (left-edge more)
+          (tips (down-tip *inward*))
+          (tips (down-tip *n*))))
+       (*translate-motifs* ((*nw*) (*se* *ne*)))
+       (*abstract-rules* (ban-leftedge ban-vertedges ban-topbox))
+       (*literal-motifs*
+         ((22 5)
+          (4 5 22)
+          (50 20 4)
+          (50 20)
+          (4 5)
+          (39 50)
+          (4)
+          (5 4)
+          (50)
+          (22)))
+       (*val-to-val-nvs* ((curve (*slight-right* *straight*))))
+       (*turn-45-motifs* ((-90 -135))))
+      45
+      46
+      73)
+>> (post-run-score 'benzene-right)
+Accepted, as a seed for b, (5 8 14 17 20 22 23 36 39)
+Accepted, as a seed for c, (5 8 23 36 39)
+Accepted, as a seed for e, (5 6 8 23 36 37 39)
+Accepted, as a seed for f, (18 21 24 33 36 5)
+Accepted, as a seed for g, (5 8 12 22 23 25 28 36 39 43)
+
+debug> n
+>>>  (post-run-score 'boat)
+Accepted, as a seed for b, (4 5 17 20 22 39 50)
+Accepted, as a seed for c, (4 5 20 39 50)
+Accepted, as a seed for e, (4 5 6 20 37 39 50)
+Accepted, as a seed for f, (2 3 4 17 20 50)
+Accepted, as a seed for g, (4 5 20 22 25 39 41 50 52)
+
+Error: variable quit is not bound.
+Type (debug) to enter the debugger.
+>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation>                                            : s
+  continuation:          #<continuation in get-category>
+  free variables:
+  0: quit
+#<system continuation>                                            : d
+#<continuation in get-category>                                   : s
+  continuation:          #<continuation in report-card>
+  procedure code:        (lambda (whole) (cadr (cadar (eval whole))))
+  call code:             (eval whole)
+#<continuation in get-category>                                   : d
+#<continuation in report-card>                                    : s
+  continuation:          #<system continuation in map1>
+  procedure code:        (lambda (attempt qls) ...)
+  call code:             (get-category *answer*)
+  free variables:
+  0. qls:                ()
+  1. attempt:            d
+#<continuation in report-card>                                    : d
+#<system continuation in map1>                                    : s
+  continuation:          #<continuation in post-run-score>
+  free variables:
+  0: (a d h i j k l m n o p q r s t u v w x y z)
+  1: #<system procedure map1>
+#<system continuation in map1>                                    : q
+
+debug> e
+>>> (load "loop.ss")
+>>> (token-place 'w '(8 9 20 23 24 25) "Peru")
+>>> (define doit (lambda (it) (token-place (car it) (cadr it) "Peru")))
+>>> (map doit '((w (8 9 20 23 24 25))
+ (z (4 5 7 8 9 22 38))
+ (v (22 39 50))
+ (a (4 5 7 8 22 38 39))
+ (t (4 5 8 22 23 35 36))
+ (x (20 22 23 38 39 51))
+ (y (5 20 22 23 25 28 38 51 53))
+ (l (15 22 47))
+ (q (8 9 23 25 28 36 49))
+ (p (8 9 23 25 26 36 49))
+ (u (8 9 23 25 36))
+ (o (4 5 20 22 39 50))
+ (r (4 5 20 22 50))
+ (n (4 5 20 22 39))
+ (m (4 5 20 21 22 25 50))
+ (j (3 22 25 41 52))
+ (s (4 5 9 22 48 50 51))
+ (i (3 5 22 39))
+ (d (4 5 19 20 22 39 50))
+ (k (5 9 14 17 20 23 36 50))
+ (h (4 5 17 20 22 39))))
+(#<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>)
+>>> (define doit (lambda (it) (token-place (car it) (cadr it) "NavajoWhite")
+)
+)
+>>>  (map doit '((w (8 9 20 23 24 25))
+ (z (4 5 7 8 9 22 38))
+ (v (22 39 50))
+ (a (4 5 7 8 22 38 39))
+ (t (4 5 8 22 23 35 36))
+ (x (20 22 23 38 39 51))
+ (y (5 20 22 23 25 28 38 51 53))
+ (l (15 22 47))
+ (q (8 9 23 25 28 36 49))
+ (p (8 9 23 25 26 36 49))
+ (u (8 9 23 25 36))
+ (o (4 5 20 22 39 50))
+ (r (4 5 20 22 50))
+ (n (4 5 20 22 39))
+ (m (4 5 20 21 22 25 50))
+ (j (3 22 25 41 52))
+ (s (4 5 9 22 48 50 51))
+ (i (3 5 22 39))
+ (d (4 5 19 20 22 39 50))
+ (k (5 9 14 17 20 23 36 50))
+ (h (4 5 17 20 22 39))))
+(#<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>)
+>>>  (post-run-score 'boat)
+Accepted, as a seed for b, (4 5 17 20 22 39 50)
+Accepted, as a seed for c, (4 5 20 39 50)
+Accepted, as a seed for e, (4 5 6 20 37 39 50)
+Accepted, as a seed for f, (2 3 4 17 20 50)
+Accepted, as a seed for g, (4 5 20 22 25 39 41 50 52)
+
+Error in /: undefined for 0.
+Type (debug) to enter the debugger.
+>>> (debug) 
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in #/>                                      : s
+  continuation:          #<continuation in post-run-score>
+  free variables:
+  0: 0
+  1: 0
+  2: /
+  3: #<system procedure #/>
+#<system continuation in #/>                                      : d
+#<continuation in post-run-score>                                 : s
+  continuation:          #<top level continuation>
+  procedure code:        (lambda (font) ((...) (...)))
+  call code:             (average (remove-item 300.0 (map caddr results)))
+  free variables:
+  0. font:               boat
+  1. ls-work:            ((a ()) (d ()) (h ()) (i ()) (j ()) (k ()) (l ()) ...)
+  2. test-set:           (a d h i j k l m n o p q r s t u v w x y z)
+  3. cat-stat:           #<procedure cat-stat>
+  4. results:            ((() 300.0 ...) (() 300.0 ...) ...)
+#<continuation in post-run-score>                                 : d
+#<top level continuation>                                         : s
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : d
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : s
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : q
+
+debug> e
+>>> (transcript-off)

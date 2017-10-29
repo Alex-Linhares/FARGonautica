@@ -1,0 +1,801 @@
+Chez Scheme Transcript [Fri Mar 19 09:05:34 1999]
+>>>>> (test-adj)
+Training SS
+Temperature 22
+Temperature 5
+Temperature 10
+Temperature 38
+Temperature 6
+Testing 
+Starting  ss a
+Temperature 11
+Temperature 11
+Temperature 10
+Temperature 12
+Temperature 14
+Score:  9.542872965224173
+Starting  sh a
+Temperature 17
+Temperature 11
+Temperature 30
+Temperature 32
+Temperature 16
+Score:  10.906115900832832
+Starting  bt a
+Temperature 22
+Temperature 14
+Temperature 54
+Temperature 74
+Temperature 21
+Score:  13.920247252451473
+Starting  h4 a
+Temperature 87
+Temperature 56
+Temperature 62
+Temperature 59
+Temperature 87
+Score:  56.209177998475795
+Starting  bl a
+Temperature 71
+Temperature 29
+Temperature 24
+Temperature 72
+Temperature 49
+Score:  24.236128809614158
+Starting  br a
+Temperature 60
+Temperature 37
+Temperature 21
+Temperature 49
+Temperature 46
+Score:  21.03730099011213
+Starting  ss d
+Temperature 3
+Temperature 3
+Temperature 4
+Temperature 5
+Temperature 4
+Score:  2.820562959955209
+Starting  sh d
+Temperature 7
+Temperature 8
+Temperature 3
+Temperature 5
+Temperature 7
+Score:  3.3987235022897404
+Starting  bt d
+Temperature 28
+Temperature 38
+Temperature 46
+Temperature 31
+Temperature 21
+Score:  20.90496101038334
+Starting  h4 d
+Temperature 80
+Temperature 38
+Temperature 61
+Temperature 53
+Temperature 86
+Score:  37.78269516048652
+Starting  bl d
+Temperature 35
+Temperature 42
+Temperature 23
+Temperature 44
+Temperature 15
+Score:  14.858872079126964
+Starting  br d
+Temperature 48
+Temperature 40
+Temperature 54
+Temperature 45
+Temperature 59
+Score:  40.00401476087956
+Starting  ss y
+Temperature 40
+Temperature 45
+Temperature 24
+Temperature 42
+Temperature 60
+Score:  23.74487235490451
+Starting  sh y
+Temperature 72
+Temperature 83
+Temperature 60
+Temperature 81
+Temperature 73
+Score:  59.969989875605656
+Starting  bt y
+Temperature 83
+Temperature 85
+Temperature 79
+Temperature 64
+Temperature 42
+Score:  42.38854682414253
+Starting  h4 y
+Temperature 80
+Temperature 61
+Temperature 70
+Temperature 80
+Temperature 69
+Score:  61.04655839045932
+Starting  bl y
+Temperature 40
+Temperature 88
+Temperature 64
+Temperature 86
+Temperature 72
+Score:  39.92298933670515
+Starting  br y
+Temperature 48
+Temperature 84
+Temperature 74
+Temperature 57
+Temperature 49
+Score:  47.904823973778925
+Training SH
+Temperature 19
+Temperature 5
+Temperature 53
+Temperature 10
+Temperature 12
+Testing 
+Starting  ss a
+Temperature 16
+Temperature 14
+Temperature 23
+Temperature 39
+Temperature 17
+Score:  14.429691307080576
+Starting  sh a
+Temperature 25
+Temperature 42
+Temperature 23
+Temperature 47
+Temperature 37
+Score:  23.088799607573844
+Starting  bt a
+Temperature 88
+Temperature 88
+Temperature 80
+Temperature 87
+Temperature 80
+Score:  79.77069307573811
+Starting  h4 a
+Temperature 88
+Temperature 83
+Temperature 88
+Temperature 65
+Temperature 86
+Score:  65.29738789472879
+Starting  bl a
+Temperature 83
+Temperature 31
+Temperature 86
+Temperature 74
+Temperature 78
+Score:  30.505848048765902
+Starting  br a
+Temperature 83
+Temperature 84
+Temperature 76
+Temperature 85
+Temperature 71
+Score:  71.24353071000593
+Starting  ss d
+Temperature 12
+Temperature 15
+Temperature 15
+Temperature 18
+Temperature 11
+Score:  10.894360036788562
+Starting  sh d
+Temperature 12
+Temperature 16
+Temperature 16
+Temperature 16
+Temperature 18
+Score:  11.84209784293511
+Starting  bt d
+Temperature 71
+Temperature 79
+Temperature 57
+Temperature 78
+Temperature 22
+Score:  21.584452510092976
+Starting  h4 d
+Temperature 87
+Temperature 87
+Temperature 84
+Temperature 89
+Temperature 90
+Score:  84.1945029984559
+Starting  bl d
+Temperature 77
+Temperature 50
+Temperature 83
+Temperature 30
+Temperature 64
+Score:  30.388073650986627
+Starting  br d
+Temperature 73
+Temperature 65
+Temperature 82
+Temperature 59
+Temperature 83
+Score:  59.14714769650004
+Starting  ss y
+Temperature 17
+Temperature 24
+Temperature 20
+Temperature 22
+Temperature 14
+Score:  14.11791298758544
+Starting  sh y
+Temperature 28
+Temperature 15
+Temperature 25
+Temperature 22
+Temperature 47
+Score:  15.237688495268614
+Starting  bt y
+Temperature 87
+Temperature 88
+Temperature 66
+Temperature 79
+Temperature 82
+Score:  66.30693522960266
+Starting  h4 y
+Temperature 84
+Temperature 75
+Temperature 89
+Temperature 65
+Temperature 66
+Score:  64.53116268303859
+Starting  bl y
+Temperature 62
+Temperature 60
+Temperature 85
+Temperature 60
+Temperature 56
+Score:  56.431149810420564
+Starting  br y
+Temperature 80
+Temperature 73
+Temperature 73
+Temperature 65
+Temperature 89
+Score:  65.26896864615436
+Training BT
+Temperature 18
+Temperature 5
+Temperature 10
+Examiner had no answer for that
+Temperature 7
+Testing 
+Starting  ss a
+Temperature 72
+Temperature 69
+Temperature 87
+Temperature 56
+Temperature 77
+Score:  55.88334606886244
+Starting  sh a
+Temperature 84
+Temperature 90
+Temperature 79
+Temperature 86
+Temperature 70
+Score:  69.68443580796803
+Starting  bt a
+Temperature 21
+Temperature 12
+Temperature 20
+Temperature 13
+Temperature 38
+Score:  11.701319803418144
+Starting  h4 a
+Temperature 17
+Temperature 26
+Temperature 30
+Temperature 26
+Temperature 32
+Score:  16.675619408930984
+Starting  bl a
+Temperature 43
+Temperature 54
+Temperature 45
+Temperature 41
+Temperature 29
+Score:  28.699568177793257
+Starting  br a
+Temperature 44
+Temperature 39
+Temperature 29
+Temperature 62
+Temperature 66
+Score:  28.763335017025902
+Starting  ss d
+Temperature 23
+Temperature 68
+Temperature 60
+Temperature 81
+Temperature 89
+Score:  23.017739337663627
+Starting  sh d
+Temperature 91
+Temperature 85
+Temperature 50
+Temperature 22
+Temperature 20
+Score:  20.22879737979828
+Starting  bt d
+Temperature 18
+Temperature 26
+Temperature 16
+Temperature 10
+Temperature 21
+Score:  10.367202657049388
+Starting  h4 d
+Temperature 44
+Temperature 84
+Temperature 88
+Temperature 20
+Temperature 29
+Score:  20.385557533602046
+Starting  bl d
+Temperature 39
+Temperature 35
+Temperature 45
+Temperature 32
+Temperature 14
+Score:  13.579605260855642
+Starting  br d
+Temperature 51
+Temperature 42
+Temperature 35
+Temperature 30
+Temperature 41
+Score:  29.746276278481826
+Starting  ss y
+Temperature 73
+Temperature 67
+Temperature 86
+Temperature 88
+Temperature 87
+Score:  66.86407447795068
+Starting  sh y
+Temperature 89
+Temperature 86
+Temperature 83
+Temperature 87
+Temperature 87
+Score:  83.47129239781958
+Starting  bt y
+Temperature 15
+Temperature 46
+Temperature 11
+Temperature 23
+Temperature 17
+Score:  11.098097961602278
+Starting  h4 y
+Temperature 14
+Temperature 63
+Temperature 49
+Temperature 47
+Temperature 89
+Score:  14.44849828174535
+Starting  bl y
+Temperature 28
+Temperature 62
+Temperature 48
+Temperature 70
+Temperature 27
+Score:  26.731878438292814
+Starting  br y
+Temperature 53
+Temperature 91
+Temperature 90
+Temperature 81
+Temperature 63
+Score:  52.81011439685206
+Training H4
+Temperature 20
+Temperature 29
+Temperature 10
+Temperature 87
+Temperature 20
+Testing 
+Starting  ss a
+Temperature 84
+Temperature 86
+Temperature 82
+Temperature 80
+Temperature 78
+Score:  78.09614357351293
+Starting  sh a
+Temperature 87
+Temperature 87
+Temperature 85
+Temperature 83
+Temperature 89
+Score:  82.84108503856598
+Starting  bt a
+Temperature 53
+Temperature 45
+Temperature 63
+Temperature 72
+Temperature 75
+Score:  45.468481538710165
+Starting  h4 a
+Temperature 47
+Temperature 17
+Temperature 22
+Temperature 33
+Temperature 33
+Score:  16.781571401662056
+Starting  bl a
+Temperature 32
+Temperature 48
+Temperature 46
+Temperature 30
+Temperature 34
+Score:  30.29344851551799
+Starting  br a
+Temperature 46
+Temperature 35
+Temperature 28
+Temperature 45
+Temperature 36
+Score:  27.862114124940838
+Starting  ss d
+Temperature 87
+Temperature 82
+Temperature 91
+Temperature 83
+Temperature 85
+Score:  82.02140672723378
+Starting  sh d
+Temperature 91
+Temperature 91
+Temperature 87
+Temperature 89
+Temperature 89
+Score:  86.79364204155983
+Starting  bt d
+Temperature 82
+Temperature 62
+Temperature 57
+Temperature 59
+Temperature 79
+Score:  56.88593004791007
+Starting  h4 d
+Temperature 13
+Temperature 13
+Temperature 27
+Temperature 23
+Temperature 12
+Score:  12.360006435968824
+Starting  bl d
+Temperature 43
+Temperature 36
+Temperature 38
+Temperature 51
+Temperature 45
+Score:  36.20308980969399
+Starting  br d
+Temperature 63
+Temperature 37
+Temperature 37
+Temperature 59
+Temperature 52
+Score:  36.93485704046101
+Starting  ss y
+Temperature 88
+Temperature 82
+Temperature 86
+Temperature 87
+Temperature 90
+Score:  82.23288358482105
+Starting  sh y
+Temperature 87
+Temperature 72
+Temperature 76
+Temperature 87
+Temperature 81
+Score:  71.60721056176843
+Starting  bt y
+Temperature 63
+Temperature 69
+Temperature 87
+Temperature 53
+Temperature 58
+Score:  53.459567034586335
+Starting  h4 y
+Temperature 89
+Temperature 56
+Temperature 52
+Temperature 57
+Temperature 65
+Score:  52.35775367615043
+Starting  bl y
+Temperature 52
+Temperature 53
+Temperature 37
+Temperature 38
+Temperature 66
+Score:  36.86344782321558
+Starting  br y
+Temperature 58
+Temperature 38
+Temperature 48
+Temperature 51
+Temperature 42
+Score:  37.975980772123584
+Training BL
+Temperature 18
+Temperature 5
+Temperature 32
+Temperature 25
+Temperature 10
+Testing 
+Starting  ss a
+Temperature 64
+Temperature 39
+Temperature 51
+Temperature 44
+Temperature 45
+Score:  38.89457096084163
+Starting  sh a
+Temperature 67
+Temperature 72
+Temperature 68
+Temperature 76
+Temperature 61
+Score:  61.09940182660996
+Starting  bt a
+Temperature 44
+Temperature 52
+Temperature 47
+Temperature 56
+Temperature 62
+Score:  44.31893286742206
+Starting  h4 a
+Temperature 33
+Temperature 39
+Temperature 36
+Temperature 34
+Temperature 41
+Score:  32.62550813671146
+Starting  bl a
+Temperature 22
+Temperature 29
+Temperature 15
+Temperature 20
+Temperature 23
+Score:  14.936605334070169
+Starting  br a
+Temperature 81
+Temperature 84
+Temperature 88
+Temperature 90
+Temperature 89
+Score:  81.38457300453193
+Starting  ss d
+Temperature 34
+Temperature 48
+Temperature 39
+Temperature 43
+Temperature 37
+Score:  33.89487855856585
+Starting  sh d
+Temperature 42
+Temperature 24
+Temperature 30
+Temperature 47
+Temperature 56
+Score:  23.644672668597874
+Starting  bt d
+Temperature 27
+Temperature 38
+Temperature 39
+Temperature 40
+Temperature 45
+Score:  26.887560095000453
+Starting  h4 d
+Temperature 79
+Temperature 75
+Temperature 69
+Temperature 85
+Temperature 79
+Score:  68.91795908769924
+Starting  bl d
+Temperature 5
+Temperature 7
+Temperature 8
+Temperature 10
+Temperature 10
+Score:  5.242626649572307
+Starting  br d
+Temperature 79
+Temperature 89
+Temperature 87
+Temperature 88
+Temperature 85
+Score:  78.87728807064923
+Starting  ss y
+Temperature 64
+Temperature 71
+Temperature 84
+Temperature 74
+Temperature 78
+Score:  64.09818321415875
+Starting  sh y
+Temperature 82
+Temperature 75
+Temperature 71
+Temperature 73
+Temperature 77
+Score:  70.87491596642472
+Starting  bt y
+Temperature 65
+Temperature 84
+Temperature 72
+Temperature 66
+Temperature 66
+Score:  64.82964430044969
+Starting  h4 y
+Temperature 73
+Temperature 79
+Temperature 61
+Temperature 66
+Temperature 74
+Score:  60.6756107756049
+Starting  bl y
+Temperature 28
+Temperature 61
+Temperature 43
+Temperature 54
+Temperature 33
+Score:  27.838260313065692
+Starting  br y
+Temperature 85
+Temperature 81
+Temperature 86
+Temperature 89
+Temperature 80
+Score:  80.3587266386854
+Training BR
+Temperature 20
+Temperature 34
+Temperature 10
+Temperature 44
+Temperature 8
+Testing 
+Starting  ss a
+Temperature 56
+Temperature 46
+Temperature 46
+Temperature 45
+Temperature 72
+Score:  44.53636301648781
+Starting  sh a
+Temperature 55
+Temperature 30
+Temperature 30
+Temperature 46
+Temperature 31
+Score:  30.269617428661288
+Starting  bt a
+Temperature 75
+Temperature 49
+Temperature 80
+Temperature 75
+Temperature 52
+Score:  49.25172455413832
+Starting  h4 a
+Temperature 74
+Temperature 80
+Temperature 66
+Temperature 53
+Temperature 82
+Score:  53.46332738582407
+Starting  bl a
+Temperature 58
+Temperature 83
+Temperature 77
+Temperature 77
+Temperature 88
+Score:  58.05816746495018
+Starting  br a
+Temperature 18
+Temperature 21
+Temperature 20
+Temperature 18
+Temperature 25
+Score:  17.77361921686799
+Starting  ss d
+Temperature 30
+Temperature 27
+Temperature 65
+Temperature 37
+Temperature 40
+Score:  26.914327532152885
+Starting  sh d
+Temperature 57
+Temperature 34
+Temperature 64
+Temperature 22
+Temperature 36
+Score:  22.246680368141895
+Starting  bt d
+Temperature 63
+Temperature 66
+Temperature 61
+Temperature 67
+Temperature 73
+Score:  60.80510881125133
+Starting  h4 d
+Temperature 67
+Temperature 71
+Temperature 53
+Temperature 45
+Temperature 47
+Score:  44.6278646416259
+Starting  bl d
+Temperature 74
+Temperature 85
+Temperature 66
+Temperature 80
+Temperature 83
+Score:  65.67666762206294
+Starting  br d
+Temperature 7
+Temperature 11
+Temperature 8
+Temperature 9
+Temperature 9
+Score:  6.516882709932576
+Starting  ss y
+Temperature 69
+Temperature 58
+Temperature 72
+Temperature 78
+Temperature 73
+Score:  57.927608854030126
+Starting  sh y
+Temperature 61
+Temperature 37
+Temperature 44
+Temperature 74
+Temperature 40
+Score:  37.48140246133983
+Starting  bt y
+Temperature 78
+Temperature 79
+Temperature 72
+Temperature 72
+Temperature 66
+Score:  65.57514928936175
+Starting  h4 y
+Temperature 85
+Temperature 56
+Temperature 70
+Temperature 75
+Temperature 64
+Score:  55.829329566309184
+Starting  bl y
+Temperature 70
+Temperature 67
+Temperature 33
+Temperature 80
+Temperature 82
+Score:  33.04149028499043
+Starting  br y
+Temperature 10
+Temperature 49
+Temperature 30
+Temperature 14
+Temperature 26
+Score:  10.351050298389158
+>>>>> (transcript-off)

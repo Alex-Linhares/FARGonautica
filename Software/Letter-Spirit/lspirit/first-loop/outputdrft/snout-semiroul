@@ -1,0 +1,342 @@
+Chez Scheme Transcript [Thu Aug 12 18:54:20 1999]
+>> (try-gridfont 'sn)
+Tried to draw a t Ruled (4 5 18 21 6 23 8 9) a t1 score of 48.678
+Tried to draw a j Ruled (3 15 22 25 28 31 13 12) a j1 score of 65.773
+Tried to draw a q Ruled (23 8 24 21 49 22 25 28 31) a u1
+Tried to draw a o Ruled (20 4 5 22 25 51 6) a o1 score of 18.429
+Tried to draw a d Ruled (5 4 20 23 8 9 16 19 22 25) a d1 score of 42.807
+Tried to draw a v Ruled (4 21 38 22 25 9 8) a u1
+Tried to draw a r Ruled (4 5 20 23) a r1 score of 51.686
+Tried to draw a l Ruled (15 18 21 51) a l1 score of 75.62
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in map>                                     : s
+  continuation:          #<continuation in quanta-real-tips>
+  free variables:
+  0: #f
+  1: #<procedure quantum-get-points>
+#<system continuation in map>                                     : d
+#<continuation in quanta-real-tips>                               : s
+  continuation:          #<continuation in tip-nearest>
+  procedure code:        (lambda (qls) (find-uniques (apply append (...))))
+  call code:             (map quantum-get-points qls)
+#<continuation in quanta-real-tips>                               : d
+#<continuation in tip-nearest>                                    : s
+  continuation:          #<continuation in eval-string>
+  procedure code:        (lambda (pt except qls) ((...) (...)))
+  call code:             (quanta-real-tips qls)
+  free variables:
+  0. qls:                #f
+  1. except:             4
+  2. pt:                 19
+#<continuation in tip-nearest>                                    : d
+#<continuation in eval-string>                                    : s
+  continuation:          #<continuation in gestalt-parse>
+  procedure code:        (lambda (parse-string qls) ((...) (...)))
+  call code:             (parse-item (caddr parse-string) start-point ...)
+  free variables:
+  0. qls:                (37 9 51)
+  1. parse-string:       (cleave-out (quad) (tp-n 19))
+  2. islands:            ((37 51 9))
+  3. start-point:        4
+  4. cleaveland:         #f
+  5. rest:               ((37 51 9))
+#<continuation in eval-string>                                    : d
+#<continuation in gestalt-parse>                                  : s
+  continuation:          #<continuation in smart-parse>
+  procedure code:        (lambda () ((...) (...)))
+  call code:             (eval-string (cadr gestalt-string) ...)
+  free variables:
+  0. gestalt-string:     ((cleave-out (...) ...) (cleave-out (...) ...))
+  1. first-pass:         ((14 17 20 36 21 6 23) (37) (9 51))
+  2: (14 17 20 36 21 6 23)
+#<continuation in gestalt-parse>                                  : d
+#<continuation in smart-parse>                                    : s
+  continuation:          #<continuation in exam-run>
+  procedure code:        (lambda () (set! *workspace* ...) (dampen) ...)
+  call code:             (gestalt-parse)
+#<continuation in smart-parse>                                    : q
+
+debug> e
+>> *quanta-list*
+(36 21 51 9 14 17 20 23 6 37)
+>> (length *quanta-list*)
+10
+>> (load "smartparse.ss")
+>> (token-place 'k '())
+>> (try-cats)
+
+Error in lookup: item (11 27 24 21) not found..
+Type (debug) to enter the debugger.
+>> (token-place 'm '())
+>>  (load "smartparse.ss") (try-cats)
+>> Tried to draw a a Ruled (4 5 22 7 6 50 27 23 8 9 25) a l1
+Tried to draw a y Ruled (23 8 9 22 25 28 31 13 12) a y1 score of 66.096
+Tried to draw a h Ruled (14 17 20 23 4 5 22 25) a h1 score of 46.754
+Tried to draw a q Ruled (5 4 20 23 8 9 22 25 28 31) a q1 score of 46.106
+Tried to draw a a Ruled (4 5 22 25 7 6 23) a n1
+Tried to draw a z Ruled (23 50 39 6 7 22 8 9 28 11 10) a n1
+Tried to draw a v Ruled (22 25 9 20 23 8) a u1
+Tried to draw a u Ruled (20 23 8 22 25 28 11) a y1
+Tried to draw a z Ruled (23 6 37 8 9 4 5) a z1 score of 22.577
+Tried to draw a s Ruled (5 4 20 6 7 25) a c1
+Tried to draw a a Ruled (7 6 23 4 5 22 25) a n1
+Tried to draw a k Ruled (17 34 18 36 23 38 6 7 25 9 8 20 4 5) a n1
+Tried to draw a m Ruled (6 23 7 25 28 11 24) a m1 score of 75.103
+Tried to draw a a Ruled (7 6 23 26 10 41 4 5 22 25) a a1 score of 36.639
+Tried to draw a p Ruled (20 4 21 24 27 30 6 7 25 9 8 26 10 11) a a1
+Tried to draw a s Ruled (20 48 6 7 8 9 28 11) a a1
+Tried to draw a s Ruled (7 25 28 11 10 5 4 20 6) a s2 score of 49.116
+Tried to draw a w Ruled (48 24 4 20 23 8 22 25 9) a s1
+Tried to draw a p Ruled (38 7 25 28 23 8 27 30) a y1
+Tried to draw a v Ruled (4 21 38 22 25 9 8) a u1
+Tried to draw a n Ruled (4 5 22 25 20 23) a n1 score of 42.576
+Tried to draw a w Ruled (20 6 23 8 9 25 22 21 24 39) a n1
+Tried to draw a k Ruled (36 5 14 17 20 23 6 7 25 9 8) a b2
+Tried to draw a p Ruled (6 24 9 28 43 23 26 29) a n1
+Tried to draw a k Ruled (14 17 20 36 21 23 8 9 28 11 6 7 22) a n1
+Tried to draw a v Ruled (22 25 9 20 23 8) a u1
+Tried to draw a u Ruled (22 25 9 20 23 8) a u1 score of 45.492
+Tried to draw a p Ruled (23 26 29 20 4 5 22 25 28) a q1
+Tried to draw a k Ruled (23 8 9 20 4 5 14 17 48 24) a d1
+Tried to draw a w Ruled (48 24 25 28 11 27 4 20 23 8) a q1
+Tried to draw a p Ruled (20 6 24 27 30 23 8 9 25 22 5 36) a q1
+Tried to draw a i Ruled (3 18) a q1
+Tried to draw a v Ruled (22 25 9 20 23 8) a u1
+Tried to draw a k Ruled (36 5 14 17 20 23 6 51) a k1 score of 87.268
+
+Error in random: invalid argument 0.
+Type (debug) to enter the debugger.
+>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in pick-quantum>                                   : s
+  continuation:          #<continuation in bond-quantum>
+  procedure code:        (lambda () ((...) (...)))
+  call code:             (random ons)
+#<continuation in pick-quantum>                                   : d
+#<continuation in bond-quantum>                                   : s
+  continuation:          #<continuation in bond-quanta>
+  procedure code:        (lambda () ((lambda (...) (...)) (pick-quantum)))
+  call code:             (pick-quantum)
+#<continuation in bond-quantum>                                   : d
+#<continuation in bond-quanta>                                    : s
+  continuation:          #<continuation in glom>
+  procedure code:        (lambda () (if (...) ...))
+  call code:             (bond-quantum)
+#<continuation in bond-quanta>                                    : d
+#<continuation in glom>                                           : s
+  continuation:          #<continuation in re-rec>
+  procedure code:        (lambda () (clean) (reset-glom-globals) ...)
+  call code:             (bond-quanta)
+#<continuation in glom>                                           : d
+#<continuation in re-rec>                                         : s
+  continuation:          #<continuation in check-gridletter>
+  procedure code:        (lambda optional-args ...)
+  call code:             (glom)
+  free variables:
+  0. optional-args:      ()
+#<continuation in re-rec>                                         : q
+
+debug> e
+>> *quanta-list*
+()
+>> *the-whole*
+i1
+>> (try-cats)
+Tried to draw a p Ruled (26 29 12 30 27 24 6 20 4 5 22 25 9 50) a k1
+Tried to draw a w Ruled (6 24 40 26 22 25 28 11 4 20 23) a k1
+Tried to draw a i Ruled (3 18) a k1
+Tried to draw a p Ruled (6 24 27 30 20 4 5 22 25 9 8 23) a k1
+Tried to draw a i Ruled (3 15) a l1
+Tried to draw a v Ruled (20 6 38 22 25 9 8) a u1
+Tried to draw a w Ruled (22 5 21 51 24 9 20 23 8) a m1
+Tried to draw a v Ruled (4 21 38 22 25 9 8) a u1
+Tried to draw a v Ruled (20 6 38 22 25 9 8) a u1
+Tried to draw a x Ruled (26 10 11 28 25 22 23 8 9) a g1
+Tried to draw a w Ruled (22 39 4 20 23 8 17 46 36 6 38 26) a g1
+
+Error in random: invalid argument 0.
+Type (debug) to enter the debugger.
+>> *the-whole*
+i1
+>> (try-cats)
+Tried to draw a v Ruled (22 25 9 20 23 8) a u1
+
+debug> n
+>>> (load "coderack.ss")
+>>> (exit)
+debug> e
+
+debug> n
+>>> *quanta-list*
+(19)
+>>> *the-whole*
+i1
+>>> (try-cats)
+Tried to draw a p Ruled (8 27 11 31 13 54 23 26 29) a p1 score of 69.523
+Tried to draw a w Ruled (22 25 9 20 23 8 21 24) a w1 score of 60.908
+
+Error in random: invalid argument 0.
+Type (debug) to enter the debugger.
+>>> (get-highest-whole *wholes* '($ 0))
+($ 0)
+>>> (check-gridletter 'r '(4 20 23))
+(r1 65.181)
+>>>  (get-highest-whole *wholes* '($ 0))
+(r1 93.5)
+>>>  (get-highest-whole *wholes* '($ 0))
+(r1 93.5)
+>>> (load "recog.ss")
+>>> (try-cats)
+
+Error in lookup: item *n* not found..
+Type (debug) to enter the debugger.
+>>>  (load "recog.ss")
+>>>  (try-cats)
+
+Error in lookup: item *n* not found..
+Type (debug) to enter the debugger.
+>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in draw-pt-quantum-c>                              : s
+  continuation:          #<continuation in draw-pt-quanta-c>
+  procedure code:        (lambda (gc q color) ((...) (...)))
+  call code:             (lookup q *endpoints*)
+  free variables:
+  0. color:              "ForestGreen"
+  1. gc:                 #:g23271
+#<continuation in draw-pt-quantum-c>                              : d
+#<continuation in draw-pt-quanta-c>                               : s
+  continuation:          #<continuation in draw-workspace-work>
+  procedure code:        (lambda (gc ls color) (if (...) ...))
+  call code:             (draw-pt-quantum-c gc (car ls) color)
+  free variables:
+  0. color:              "ForestGreen"
+  1. ls:                 (*n* none)
+  2. gc:                 #:g23271
+#<continuation in draw-pt-quanta-c>                               : q
+
+debug> n
+>>>> *the-whole*
+v1
+>>>> (re-draw 'p)
+>>>>  (re-draw 'n)
+>>>>  (re-draw 'v)
+>>>>  (re-draw 'i)
+>>>> (try-cats)
+
+Error in lookup: item *n* not found..
+Type (debug) to enter the debugger.
+>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in draw-pt-quantum-c>                              : s
+  continuation:          #<continuation in draw-pt-quanta-c>
+  procedure code:        (lambda (gc q color) ((...) (...)))
+  call code:             (lookup q *endpoints*)
+  free variables:
+  0. color:              "ForestGreen"
+  1. gc:                 #:g23271
+#<continuation in draw-pt-quantum-c>                              : d
+#<continuation in draw-pt-quanta-c>                               : s
+  continuation:          #<continuation in draw-workspace-work>
+  procedure code:        (lambda (gc ls color) (if (...) ...))
+  call code:             (draw-pt-quantum-c gc (car ls) color)
+  free variables:
+  0. color:              "ForestGreen"
+  1. ls:                 (*n* none)
+  2. gc:                 #:g23271
+#<continuation in draw-pt-quanta-c>                               : d
+#<continuation in draw-workspace-work>                            : s
+  continuation:          #<continuation in draw-workspace>
+  procedure code:        (lambda (ls x y colorls) (letrec (...) ...))
+  call code:             (draw-pt-quanta-c workgp quanta color)
+  free variables:
+  0. colorls:            ("ForestGreen" "red" "DarkViolet" "NavyBlue" ...)
+  1. y:                  25
+  2. x:                  22
+  3. ls:                 (((...) 0) ((...) 0) ...)
+  4. loop:               #<procedure loop>
+  5. color:              "ForestGreen"
+#<continuation in draw-workspace-work>                            : d
+#<continuation in draw-workspace>                                 : s
+  continuation:          #<continuation in draft-run>
+  procedure code:        (lambda (w) (if (equal? *wold* w) #t ...))
+  call code:             (draw-workspace-work w 22 25 *wfore*)
+  free variables:
+  0. w:                  (((...) 0) ((...) 0) ...)
+#<continuation in draw-workspace>                                 : d
+#<continuation in draft-run>                                      : s
+  continuation:          #<continuation in draft-step>
+  procedure code:        (lambda () ...)
+  call code:             (draw-workspace *workspace*)
+#<continuation in draft-run>                                      : d
+#<continuation in draft-step>                                     : s
+  continuation:          #<continuation in draft>
+  procedure code:        (lambda () (if (...) ...))
+  call code:             (take-step)
+#<continuation in draft-step>                                     : q
+
+debug> n
+>>>>>  (draw-workspace *workspace*)
+
+Error in lookup: item *n* not found..
+Type (debug) to enter the debugger.
+>>>>> *quanta-list*
+()
+>>>>> (clear-scratchpad)
+#:g23677666
+>>>>> (try-cats)
+
+Error in lookup: item *n* not found..
+Type (debug) to enter the debugger.
+>>>>> (graf-off)
+>>>>>  (try-cats)
+Tried to draw a v Ruled (4 21 6 23 22 25 9 8) a u1
+Tried to draw a i Ruled () a u1
+Tried to draw a v Ruled (22 25 9 20 23 8) a u1
+Tried to draw a x Ruled (6 7 25 23 20 4 5) a n1
+Tried to draw a x Ruled (20 50 9 23 6 7 22) a x1 score of 32.081
+
+debug> n
+>>>>>> *alphabet*
+
+Error: variable *alphabet* is not bound.
+Type (debug) to enter the debugger.
+>>>>>> (map re-draw *categories*)
+(#<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>)
+>>>>>> (exit)
+debug> e
+
+debug> a

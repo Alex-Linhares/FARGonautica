@@ -1,0 +1,135 @@
+Idea: instead of setting letter-category baseline by intrafont test,
+just use this hard test data: check the minimum (?) score for each
+letter category, in any condition
+
+				TRAIN	TEST	SCORE (%)
+0	BL BR BT CL HO		bcnp	agoz	100
+1	HU4 SH SLT SN STSQ	dhrz	amsu	75
+2	HI4 CH DBS FLR FNT	dfqt	vy	50
+3	BW BT SAB SLS SQC	flty	hijk	75
+4	BL INT HO SH SN		bdfo	grxz	60
+5	HU4 BR SLT CL STSQ	dgiq	amjz	55
+6	BL WAR HU4 BW HI4	fily	juvw	30
+7	BR WAR SH CH INT	cflr	ioqz	55
+8	BT SLT DBS SAB HO	eghi	loqs	80
+9	CL SN FLR SLS STSQ	bdgi	klmp	65
+10	FNT SQC STSQ SH BL	bdft	hnrw	40
+11	HU4 BR DBS WAR SLS	fghi	bcde	80
+12	HO SN FLR SAB INT	jlqr	bcdf	30
+13	BT WAR SLT FNT SQC	hnry	dfw	60
+14	HI4 DBS SLS SLT CL	cdjq	elpx	80
+15	BW HU4 SN INT SAB	jlty	fi	40
+16	SQC WAR FNT CL CH	dfhn	ry	50
+17	BR CH DBS BW BL		fhil	tvxy	65
+18	CH BT FLR HI4 FNT	dfry	qtv	53.3
+19	HO SAB HI4 SH SQC	dfil	bnps	35
+20	BW INT FLR SLS STSQ	fijl	ty	90
+
+	ALL					60.8%
+
+Time: 18:43 (H:M) for 1850 tests, and 420 trains, or 2270 Adj runs
+30 seconds per run
+
+
+*** MUST RE-DO EVERYTHING BELOW HERE
+?? Adj is right
+
+	EXAM	ADJ/TRAIN
+b-lf	95.4	90.0
+b-rt	99.6	80.0
+boat	97.3	83.3
+bowtie	60.4	56.3
+chckmrk	76.5	33.3
+close	94.6	77.8
+dub-bs	83.8	94.4
+f-rnch	76.5	66.7
+fntnp	54.2	28.6
+hint4	88.8	29.4
+house	94.2	75.0
+hunt4	95.8	27.8
+intrsct	63.5	37.5
+sbrth	81.9	33.3
+shorts	97.7	45.0
+slant	90.8	89.5
+slash	85.8	86.1
+snout	96.2	50.0
+sqcrl	81.9	64.7
+stsq	100	72.2
+w-arrow	87.7	41.1
+
+sluice	13.5	---
+threed	0.0	---
+
+MEAN (of the 21)
+	85.8	60.1
+
+above on Ex and below on Adj: hint4, hunt4, shorts, snout, weird arrow
+below on Ex and above on Adj: dub-bs, f-ranch, slash, sq-curl
+
+EXAM-ADJTRAIN correlation: r=0.403, p=0.0698
+
+calculate performance
+ per font
+ per letter
+ per post-and-bowl letters in TRAIN
+
+all 987 test letters
+
+by cat, based on the huge set, fonts+psych exp. set
+
+	Exam	Adj
+a	0.80	0.80
+b	0.88	0.47
+c	0.92	0.60
+d	0.94	0.60
+e	0.88	0.80
+f	0.95	0.47
+g	0.90	0.90
+h	0.89	0.60
+i	1.00	0.53
+j	1.00	0.73
+k	0.89	1.00
+l	0.94	0.67
+m	0.83	0.53
+n	0.85	0.40
+o	0.84	0.80
+p	0.93	0.60
+q	0.95	0.93
+r	0.93	0.60
+s	0.84	0.60
+t	0.96	0.60
+u	0.83	0.30
+v	0.84	0.55
+w	0.81	0.20
+x	0.85	0.47
+y	0.98	0.60
+z	0.83	0.60
+
+Exam/Adj correlation
+r=0.24, p=0.25
+
+Discuss: Two forces.
+	1) Letters more like other letters easier to confuse category,
+but easier to style match.
+	2) Letters more normal-like (post-and-bowlish) easier to
+recognize and style rec. than oddballs like k, x, v
+
+COULD ALSO CORRELATE with mean number of quanta per cat
+
+***
+
+variations based on size of training set
+
+				CORRECT, %
+			TEST	b	bce	bcdefg
+CL SN FLR SLS STSQ	jklmp			
+HU4 BR DBS WAR SLS	jlpvy	
+BOTH				14	60	62
+
+***
+
+variations based on testing each letter thrice (same training, though)
+
+				
+			SINGLES	1st-of3	TRIPLE
+medium-adj-test		75%	72%	73%

@@ -1,0 +1,751 @@
+; make sure there are no ties for the lead if you want
+; to use that for norm-violations
+(set! a-arch
+      '((names (a-arch a-arch a-arch-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc n dc dc dc y dc dc) 20)))
+	 (contact (a1 (mt2 20) (2ms 9)) (a2 (t2 6) (m 20)))
+	 (tips ((location (3 10) (4 4) (10 1))
+		(orientation (*w* 10) (*n* 2) (*sw* 4) (*nw* 4) (*s* 2)))
+	       ((location (19 10) (18 4) (12 1))
+		(orientation (*s* 10) (*se* 1) (*sw* 1) (*n* 3))))
+	 (curve
+	  ((*square-right* 10) (*straight* 9) (*slight-right* 9)
+	   (*slight-left* 3) (*strong-right* 3)))
+	 (short 10) (very-short 1) (wide 10) (half-wide 1)
+	 (normal-wt 10) (light 1) (roof-x-height 10)
+	 (floor-baseline 10) (floor-midline 1)
+	 (left 10) (middle 10) (right 10))))
+(set! backslash
+      '((names (backslash b-slash backslash-act))
+	(topology segment)
+	(norms
+	(neighborhood (((dc y dc n dc y dc n) 20)))
+	(contact (x1 (m 20)))
+	(tips ((location (3 10) (4 8) (10 8) (5 3))
+	       (orientation (*nw* 10) (*n* 7) (*ne* 7)
+			    (*sw* 5) (*s* 7) (*e* 3) (*w* 3)))
+	      ((location (19 10) (18 3) (12 4))
+	       (orientation (*se* 10) (*n* 5) (*s* 3)
+			     (*e* 8) (*sw* 5) (*w* 3))))
+	(curve
+	 ((*straight* 10) (*square-left* 3) (*slight-left* 4)
+	  (*slight-right* 4) (*square-right* 6)))
+	 (short 10) (very-short 1) (wide 10) (half-wide 1) (light 3)
+	 (heavy 1) (normal-wt 10) (roof-x-height 10)
+	 (roof-midline 1) (floor-baseline 10)
+	 (left 10) (middle 10) (right 10))))
+(set! basebar
+      '((names (basebar b-bar basebar-act))
+       (topology segment)
+       (norms
+	(neighborhood (((y dc dc dc dc dc dc dc) 20)))
+	(contact (z1 (t1 20) (t1-m 1)))
+	(tips ((location (5 10) (4 3) (3 1))
+	       (orientation (*w* 6) (*n* 2) (*nw* 3) (*e* 1)))
+	      ((location (19 5) (17 1) (18 3) (12 2) (20 1))
+	       (orientation (*e* 7) (*n* 2) (*ne* 2) (*s* 1))))
+	(curve
+	 ((*straight* 3) (*square-left* 3)
+	  (*slight-left* 4) (*slight-right* 1)))
+	(no-height 3) (short 2) (very-short 7)
+	(wide 10) (half-wide 2) (light 8) (normal-wt 4)
+	(roof-baseline 4) (roof-x-height 2)
+	(roof-midline 6) (floor-baseline 11)
+	(floor-middown 1)
+	(left 10) (middle 10) (right 9))))
+(set! cap
+      '((names (cap cap cap-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc n dc dc y dc dc) 20)
+			((n n dc dc y dc dc dc) 20)))
+	 (contact (r1 (t1 20) (m 1)) (s1 (t1 20) (m 1)))
+	 (tips ((location (3 10) (4 9) (10 4) (11 1) (17 1))
+		(orientation (*w* 10) (*ne* 3) (*sw* 8) (*s* 5)
+			     (*e* 3) (*nw* 2)))
+	       ((location (17 10) (10 4) (18 9) (11 1) (16 1))
+		(orientation (*e* 10) (*ne* 4) (*se* 3) (*n* 3)
+			     (*s* 6) (*w* 1))))
+	 (curve
+	  ((*straight* 10) (*slight-left* 4) (*square-right* 7)
+	   (*strong-right* 1) (*slight-right* 4)))
+	 (no-height 2) (very-short 10) (wide 10) (half-wide 6)
+	 (skinny 1) (light 10) (normal-wt 5) (roof-x-height 10)
+	 (roof-t-height 1) (floor-x-height 3) (floor-midline 10)
+	 (left 8) (middle 10) (right 9))))
+(set! center-post
+      '((names (center-post c-post center-post-act))
+       (topology segment)
+	(norms
+	 (neighborhood (((n n n n n n n n) 20)))
+	 (contact (l1 (nt 20)))
+	 (tips ((location (8 10) (15 3) (2 3) (9 4) (1 3))
+		(orientation (*n* 10) (*ne* 3) (*s* 1) (*w* 1)))
+	       ((location (12 3) (19 10) (18 7) (5 1) (17 1))
+		(orientation (*s* 8) (*n* 8) (*e* 10) (*se* 5) (*ne* 8)
+			     (*sw* 3))))
+	 (curve
+	  ((*straight* 6) (*slight-left* 10) (*square-left* 6)
+	   (*strong-left* 1)))
+	 (tall 10) (medium 3) (skinny 3) (half-wide 10) (wide 9)
+	 (normal-wt 10) (heavy 6) (roof-top 10) (roof-t-height 3)
+	 (floor-baseline 10)
+	 (left 5) (middle 10) (right 9))))
+(set! circle
+      '((names (circle circle circle-act))
+	(topology loop)
+	(norms
+	 (neighborhood (((dc dc n n dc dc dc y) 20)    ; b
+			((dc y dc dc dc n n dc) 20)    ; d
+			((dc dc dc y y dc dc n) 20)    ; g
+			((n n n n n n n n) 20)         ; o
+			((dc n dc dc dc y dc dc) 20)   ; p
+			((dc dc dc y dc dc dc n) 20))) ; q 
+	 (contact (o1 (nt 19))
+		  (b2 (t 20))
+		  (d2 (t 20))
+		  (g2 (t 20))
+		  (p2 (t 20))
+		  (q2 (t 20)))
+	 (short 10) (very-short 1) (wide 10) (half-wide 1) (heavy 10)
+	 (normal-wt 5) (roof-x-height 10)
+	 (roof-midline 1) (floor-baseline 10)
+	 (left 10) (middle 10) (right 10))))
+(set! crossbar
+      '((names (crossbar c-bar crossbar-act))
+	(topology segment) 
+	(norms
+	 (neighborhood (((y dc dc dc y dc dc dc) 20)))
+	 (contact (f1 (m 20) (t1 7) (t2 1)) (t1 (m 20) (t1 7) (t2 1)))
+	 (tips ((location (3 7) (4 10) (5 3) (9 2) (10 2) (2 2))
+		(orientation (*w* 8) (*n* 2) (*sw* 10) (*e* 6) (*nw* 2)
+			     (*se* 2)))
+	       ((location (17 10) (18 6) (10 1) (16 3) (11 1))
+		(orientation (*e* 10) (*ne* 6) (*se* 4) (*s* 1))))
+	 (curve
+	  ((*straight* 10) (*slight-left* 4) (*square-right* 1)
+	   (*slight-right* 4)))
+	 (no-height 8) (short 7) (very-short 10) (wide 10) (half-wide 4)
+	 (light 10) (normal-wt 2) (roof-x-height 10) (roof-midline 2)
+	 (roof-t-height 4) (floor-x-height 6) (floor-midline 10)
+	 (floor-baseline 3) (left 9) (middle 10) (right 9))))       
+(set! dot
+      '((names (dot dot dot-act))
+	(topology dot)
+	(norms
+	 (neighborhood (((n dc dc dc y dc dc dc) 20)))
+	 (contact (i1 (nt 20) (t 1)) (j1 (nt 20) (t 1)))
+	 (no-height 1) (very-short 10) (short 2) (half-wide 10)
+	 (wide 4) (light 10) (normal-wt 7) (roof-t-height 6)
+	 (roof-top 10) (roof-x-height 1) (floor-t-height 10)
+	 (floor-x-height 7) (floor-midline 2)
+	 (left 4) (middle 10) (right 10))))
+(set! down-arm
+      '((names (down-arm down-arm down-arm-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((y y dc n dc dc y y) 20)))
+	 (contact (k1 (t1 20) (m 1)))
+	 (tips ((location (11 8) (10 4) (4 10) (3 2))
+		(orientation (*se* 2) (*n* 2) (*nw* 10) (*w* 9)))
+	       ((location (19 10) (18 9) (12 4))
+		(orientation (*se* 3) (*n* 10) (*e* 3) (*s* 8) (*ne* 3)
+			     (*sw* 5))))
+	 (curve
+	  ((*straight* 3) (*strong-left* 7) (*slight-left* 10)
+	   (*square-right* 3) (*square-left* 3) (*strong-right* 7)
+	   (*slight-right* 7)))
+	 (very-short 10) (short 3) (half-wide 10) (wide 9) (light 10)
+	 (normal-wt 7) (roof-midline 10) (roof-x-height 3) (floor-baseline 13)
+	 (left 5) (middle 10) (right 10))))
+(set! down-circle
+      '((names (down-circle dwn-circ down-circle-act))
+	(topology loop)
+	(norms
+	 (neighborhood (((y dc dc dc dc n dc dc) 20)))
+	 (contact (a2 (nt 1) (t 20)))
+	 (very-short 10) (short 2) (wide 10) (half-wide 2)
+	 (heavy 4) (normal-wt 10) (roof-midline 10)
+	 (roof-x-height 2) (floor-baseline 10)
+	 (left 10) (middle 10) (right 9))))
+(set! e-bowl
+      '((names (e-bowl e-bowl e-bowl-act))
+       (topology segment)
+       (norms
+	(neighborhood (((n n n n n n n n) 20)))
+	(contact (e1 (t1m 20) (t1 3)))
+	(tips ((location (18 10) (10 1) (17 4) (19 1))
+	       (orientation (*s* 10) (*se* 8) (*e* 8)))
+	      ((location (19 10) (17 1) (18 3) (12 3))
+	       (orientation (*e* 10) (*ne* 3) (*n* 1) (*se* 1))))
+	(curve ((*strong-left* 10)))
+	(short 10) (very-short 1) (wide 10) (heavy 6) (normal-wt 10)
+	(roof-x-height 10) (floor-baseline 10)
+	(left 10) (middle 10) (right 10))))
+(set! e-crossbar
+      '((names (e-crossbar e-cross e-crossbar-act))
+       (topology segment)
+       (norms
+	(neighborhood (((y y y dc y y y y) 20)))
+	(contact (e1 (2ts 20) (t2 4) (mt2 2) (2ms 1) (t1m 1)))
+	(tips ((location (4 10) (3 7) (5 3) (11 7))
+	       (orientation (*w* 10) (*nw* 7) (*sw* 3) (*e* 3) (*ne* 3)))
+	      ((location (18 10) (19 7) (17 9))
+	       (orientation (*e* 10) (*se* 7) (*ne* 9))))
+	(curve
+	 ((*straight* 10) (*slight-left* 4) (*slight-right* 2)))
+	(no-height 5) (short 5) (very-short 10) (wide 10)
+	(half-wide 3) (light 10) (roof-midline 6)
+	(roof-x-height 10) (floor-midline 10) (floor-baseline 6)
+	(left 8) (middle 10) (right 10))))
+(set! e-tail
+      '((names (e-tail e-tail e-tail-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((y y dc n n n dc y) 20)))
+	 (contact (e2 (t1 20) (m 1)))
+	 (tips ((location (4 10) (11 8) (5 4) (3 2))
+		(orientation (*n* 10) (*ne* 2) (*nw* 6) (*se* 2) (*w* 4)))
+	       ((location (19 10) (18 7) (12 2) (5 2))
+		(orientation (*e* 10) (*ne* 5) (*w* 2) (*se* 2) (*n* 2))))
+	 (curve
+	  ((*slight-left* 8) (*square-left* 10) (*strong-right* 3)
+	   (*strong-left* 5) (*straight* 5)))
+	 (very-short 10) (short 1) (no-height 1) (wide 10)
+	 (half-wide 7) (normal-wt 5) (light 10) (roof-midline 10)
+	 (roof-x-height 1) (roof-baseline 1) (floor-baseline 10)
+	 (left 8) (middle 10) (right 9))))
+(set! f-post
+      '((names (f-post f-post f-post-act))
+	(topology bisegment)
+	(norms
+	 (neighborhood (((n n dc n n n dc n) 20)))
+	 (contact (f1 (m 20) (nt 1)))
+	 (tips ((location (15 5) (17 5) (16 10) (8 2))
+		(orientation (*e* 8) (*se* 10) (*s* 4) (*ne* 4)))
+	       ((location (12 10) (5 6) (19 3))
+		(orientation (*s* 10) (*se* 7) (*sw* 1))))
+	 (curve1
+	  ((*slight-left* 10) (*square-left* 7) (*strong-left* 1)))
+	 (curve2
+	  ((*straight* 10) (*slight-left* 5) (*slight-right* 1)))
+	 (tall 10) (medium 4) (half-wide 4) (wide 10) (normal-wt 10)
+	 (heavy 4) (roof-top 10) (roof-t-height 4) (floor-baseline 10)
+	 (left 8) (middle 10) (right 10))))
+(set! foreslash
+      '((names (foreslash f-slash foreslash-act))
+       (topology segment)
+       (norms
+	(neighborhood (((dc n dc y dc n dc y)
+			(dc dc dc y dc dc dc y) 20)))
+	(contact (x1 (m 20)) (z1 (2ts 20) (t1m 1) (mt2 1)))
+	(tips ((location (5 10) (12 5) (4 2))
+	       (orientation (*sw* 10) (*w* 3) (*se* 7) (*s* 7) (*nw* 2)))
+	      ((location (17 10) (10 2) (18 7))
+	       (orientation (*ne* 10) (*w* 1) (*e* 3) (*n* 4) (*se* 3)
+			    (*nw* 1) (*s* 1))))
+	(curve
+	 ((*straight* 10) (*slight-left* 7) (*slight-right* 9)
+	  (*square-right* 5)))
+	(short 10) (very-short 3) (wide 10) (half-wide 1) (light 4)
+	(normal-wt 10) (roof-x-height 10) (roof-midline 2)
+	(floor-baseline 10) (floor-midline 1)
+	(left 10) (middle 10) (right 10))))
+(set! halfpost
+      '((names (halfpost h-post halfpost-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((y dc dc n n n dc dc) 20)))
+	 (contact (i1 (nt 20) (t 1)))
+	 (tips ((location (10 10) (12 2) (11 8)
+			  (17 6) (18 2) (4 4) (3 2))
+		(orientation (*w* 10) (*sw* 4) (*s* 8) (*e* 2) (*nw* 4)
+			     (*n* 4) (*ne* 2)))
+	       ((location (19 9) (12 10) (5 4) (18 1))
+		(orientation (*s* 10) (*w* 1) (*sw* 8) (*n* 1) (*se* 1))))
+	 (curve
+	  ((*slight-right* 10) (*strong-right* 9) (*straight* 5)
+	   (*slight-left* 5) (*square-right* 9) (*square-left* 3)))
+	 (short 10) (very-short 2) (half-wide 10) (wide 3)
+	 (skinny 1) (normal-wt 10) (light 5)
+	 (roof-x-height 10) (roof-midline 2) (floor-baseline 10)
+	 (left 4) (middle 10) (right 9))))
+(set! left-bowl
+      '((names (left-bowl l-bowl left-bowl-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((n n n n n n n n) 20)
+			((dc y dc dc dc n dc dc) 20)))
+	 (contact (c1 (nt 20))
+		  (d1 (2ts 20) (t1 5) (t2 5) (t1m 1) (mt2 1) (2ms 1))
+		  (g1 (2ts 20) (t1 5) (t2 5) (t1m 1) (mt2 1) (2ms 1))
+		  (q1 (2ts 20) (t1 5) (t2 5) (t1m 1) (mt2 1) (2ms 1)))
+	 (tips ((location (17 10) (18 6) (10 2) (11 1))
+		(orientation (*e* 14) (*se* 5) (*ne* 4) (*n* 1) (*s* 2)))
+	       ((location (19 10) (18 4) (12 2))
+		(orientation (*e* 10) (*n* 1) (*ne* 3) (*se* 1) (*s* 1))))
+	 (curve ((*strong-left* 10) (*square-left* 1)))
+	 (short 10) (very-short 1) (wide 10) (half-wide 1) (heavy 2)
+	 (normal-wt 10) (roof-x-height 10) (roof-midline 1)
+	 (floor-baseline 10) (left 10) (middle 10) (right 10))))
+(set! left-downbowl
+      '((names (left-downbowl l-dnbwl left-downbowl-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((y dc dc dc dc n dc dc) 20)))
+	 (contact ((2ts 20) (t2 2) (t1 2)))
+	 (tips ((location (18 10) (17 5) (11 2))
+		(orientation (*e* 10) (*ne* 7)))
+	       ((location (19 10) (18 3) (12 3))
+		(orientation (*e* 10) (*ne* 3) (*se* 1))))
+	 (curve ((*strong-left* 10)))
+	 (very-short 10) (short 7) (wide 10) (normal-wt 10) (heavy 1)
+	 (roof-midline 10) (roof-x-height 7) (floor-baseline 10)
+	 (left 10) (middle 10) (right 10))))
+(set! left-halfarc
+      '((names (left-halfarc l-hlfarc left-halfarc-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc y dc dc n n n) 20)))
+	 (contact (w1 (t2 20) (m 1)))
+	 (tips ((location (3 7) (4 3) (10 4))
+		(orientation (*n* 8) (*w* 1) (*ne* 4) (*nw* 1)))
+	       ((location (12 7) (11 6) (5 1))
+		(orientation (*e* 6) (*ne* 3) (*se* 2) (*n* 2) (*s* 1))))
+	 (curve
+	  ((*slight-left* 6) (*straight* 2) (*square-left* 10)
+	   (*strong-left* 8)))
+	 (short 10) (very-short 4) (half-wide 10) (normal-wt 9) (light 10)
+	 (roof-x-height 10) (roof-midline 3) (floor-baseline 10)
+	 (floor-midline 1) (left 10) (middle 10) (right 0))))
+(set! left-halfarch
+      '((names (left-halfarch l-hlfarch left-halfarch-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc y dc dc dc y dc) 20)))
+	 (contact (m1 (t1m 20) (t1 10) (2ts 1) (m 1) (nt 1)))
+	 (tips ((location (3 10) (11 2) (4 2) (10 2))
+		(orientation (*w* 10) (*se* 5) (*sw* 5) (*nw* 9) (*s* 9)))
+	       ((location (12 10) (11 8) (19 3))
+		(orientation (*s* 10) (*se* 3))))
+	 (curve
+	  ((*slight-right* 10) (*straight* 9) (*strong-right* 3)
+	   (*square-right* 3)))
+	 (short 10) (very-short 9) (half-wide 10) (wide 2)
+	 (skinny 4) (normal-wt 3) (light 10) (roof-x-height 10)
+	 (roof-midline 1) (floor-baseline 10) (floor-midline 6)
+	 (left 8) (middle 10) (right 2))))
+(set! left-halfpost
+      '((names (left-halfpost l-hlfpost left-halfpost-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc y dc dc n n n) 20)))
+	 (contact (m1 (t1 20) (m 15) (nt 1))
+		  (n1 (t1 20) (m 15) (nt 1))
+		  (r1 (t1 20) (m 15) (nt 1)))
+	 (tips ((location (3 10) (4 2) (10 4) (17 1))
+		(orientation (*n* 10) (*nw* 6) (*ne* 6) (*sw* 2)
+			     (*w* 4) (*s* 4)))
+	       ((location (5 10) (12 6) (4 1) (19 1))
+		(orientation (*s* 10) (*sw* 5) (*se* 5))))
+	 (curve
+	  ((*straight* 10) (*slight-right* 6) (*slight-left* 3)
+	   (*strong-right* 1) (*square-left* 1) (*square-right* 1)))
+	 (short 10) (very-short 1) (skinny 4) (half-wide 10) (wide 2)
+	 (light 10) (normal-wt 5) (roof-x-height 10) (roof-midline 1)
+	 (floor-baseline 16) (floor-midline 1)
+	 (left 10) (middle 8) (right 2))))
+(set! left-post
+      '((names (left-post l-post left-post-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((n n dc y dc dc dc n) 20)))
+	 (contact (b1 (mt2 20) (m 2) (t2 2) (2ms 15))
+		  (b2 (m 20) (t2 10))
+		  (h1 (m 20))
+		  (k1 (m 20) (t2 10)))
+	 (tips ((location (1 10) (8 5) (2 5) (9 2) (15 2))
+		(orientation (*n* 10) (*w* 1) (*ne* 4) (*nw* 3)))
+	       ((location (5 10) (4 4) (12 4) (11 1))
+		(orientation (*s* 10) (*sw* 4) (*se* 3) (*n* 1))))
+	 (curve
+	  ((*straight* 10) (*slight-right* 3) (*slight-left* 4)
+	   (*square-right* 1)))
+	 (tall 10) (short 2) (medium 3) (skinny 10)
+	 (half-wide 9) (wide 1) (normal-wt 10) (light 2)
+	 (roof-top 10) (roof-t-height 4) (floor-baseline 10)
+	 (floor-midline 3) (left 9) (middle 7) (right 1))))
+(set! left-tail
+      '((names (left-tail l-tail left-tail-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc y dc n n n dc dc) 20)))
+	 (contact (p1 (t1m 20) (m 1) (2ms 10)
+		  (t1 5) (2ms 10) (nt 1))
+		  (p2 (m 20) (t1 15)))
+	 (tips ((location (3 10) (5 3) (4 3) (12 2))
+		(orientation (*n* 10) (*sw* 2) (*w* 2) (*nw* 3) (*ne* 2)))
+	       ((location (7 10) (14 2) (5 2) (6 3) (13 2))
+		(orientation (*s* 10) (*sw* 1) (*w* 3) (*ne* 1))))
+	 (curve
+	  ((*straight* 10) (*square-right* 4) (*slight-right* 4)
+	   (*slight-left* 2) (*square-left* 2)))
+	 (tall 6) (medium 10) (short 6) (skinny 8) (half-wide 10)
+	 (normal-wt 10) (light 4) (heavy 1) (roof-x-height 10)
+	 (roof-midline 5) (roof-baseline 3) (floor-bottom 10)
+	 (floor-middown 3) (floor-baseline 1)
+	 (left 10) (middle 5) (right 0))))
+(set! left-uparc
+      '((names (left-uparc l-uparc left-uparc-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc y dc dc n n n) 20)   ; u
+			((dc dc y y y dc dc n) 20))) ; y
+	 (contact (u1 (t2 20) (m 5) (nt 1))
+		  (y1 (t2 20) (m 5) (nt 1)))
+	 (tips ((location (3 10) (4 3) (10 4))
+		(orientation (*n* 10) (*w* 2) (*ne* 4) (*nw* 2) (*s* 1)))
+	       ((location (19 10) (18 7) (12 4) (11 3) (5 3) (17 1))
+		(orientation (*e* 10) (*ne* 8) (*s* 4) (*n* 3) (*se* 1))))
+	 (curve
+	  ((*square-left* 7) (*strong-left* 10) (*slight-left* 6)
+	   (*slight-right* 4) (*straight* 1)))
+	 (short 10) (very-short 1) (wide 10) (half-wide 5) (skinny 1)
+	 (normal-wt 10) (light 2) (roof-x-height 10) (roof-midline 1)
+	 (floor-baseline 10) (left 10) (middle 10) (right 7))))
+(set! left-upbowl
+      '((names (left-upbowl l-upbwl left-upbowl-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((n n dc dc y dc dc n) 20)))
+	 (contact (s2 (t2 20) (mt2 1)))
+	 (tips ((location (17 10) (10 4) (18 3))
+		(orientation (*e* 10) (*ne* 1) (*se* 2) (*n* 1)))
+	       ((location (4 4) (18 7) (11 10) (17 1))
+		(orientation (*s* 3) (*e* 10) (*sw* 2) (*se* 4) (*ne* 1))))
+	 (curve
+	  ((*slight-left* 2) (*strong-left* 10) (*square-left* 5)))
+	 (very-short 10) (wide 10) (half-wide 4) (normal-wt 10) (light 4)
+	 (roof-x-height 10) (floor-midline 10)
+	 (left 9) (middle 10) (right 9))))
+(set! left-wing
+      '((names (left-wing l-wing left-wing-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc y dc dc n n n) 20)))
+	 (contact (v1 (t2 20)))
+	 (tips ((location (3 10) (4 4) (10 4))
+		(orientation (*n* 10) (*s* 3) (*ne* 5) (*nw* 5)
+			     (*se* 3) (*w* 8) (*sw* 3)))
+	       ((location (12 10) (19 3) (5 7))
+		(orientation (*se* 7) (*s* 10) (*sw* 3))))	
+	 (curve
+	  ((*slight-left* 4) (*square-right* 2) (*square-left* 2)
+	   (*straight* 8) (*slight-right* 10) (*strong-right* 2)))
+	 (short 10) (very-short 1) (half-wide 10) (wide 2)
+	 (skinny 1) (light 10) (normal-wt 8) (roof-x-height 10)
+	 (roof-midline 1) (floor-baseline 10)
+	 (left 10) (middle 10) (right 2))))
+(set! right-bowl
+      '((names (right-bowl r-bowl right-bowl-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc dc n dc dc dc y) 20)   ; b
+			((dc n dc dc dc y dc dc) 20))) ; p
+	 (contact (b1 (2ts 20) (t1 1) (t2 1))
+		  (p1 (2ts 20) (t1 1) (t2 1)))
+	 (tips ((location (3 10) (4 7) (10 5))
+		(orientation (*w* 10) (*sw* 4) (*nw* 3)))
+	       ((location (5 10) (4 5) (12 1))
+		(orientation (*w* 10) (*nw* 5) (*sw* 1))))
+	 (curve ((*strong-right* 10)))
+	 (short 10) (wide 10) (half-wide 1) (heavy 2) (normal-wt 10)
+	 (roof-x-height 10) (floor-baseline 10)
+	 (left 10) (middle 10) (right 10))))
+(set! right-buttress
+      '((names (right-buttress r-butt right-buttress-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc dc n dc dc y y) 20)    ; h
+			((dc dc dc n dc dc y dc) 20))) ; n
+	 (contact (h1 (t1 20) (nt 1) (m 2)) (n1 (t1 20) (nt 1) (m 2)))
+	 (tips ((location (3 10) (10 3) (4 3) (11 2) (5 2))
+		(orientation (*w* 10) (*nw* 6) (*sw* 6) (*se* 1)))
+	       ((location (19 10) (12 5) (18 1) (11 1))
+		(orientation (*s* 10) (*sw* 5) (*se* 2) (*e* 1) (*n* 2))))
+	 (curve
+	  ((*square-right* 10) (*slight-right* 8) (*strong-right* 8)
+	   (*straight* 3) (*slight-left* 2)))
+	 (short 10) (very-short 1) (wide 10)
+	 (half-wide 5) (normal-wt 10) (light 4) (heavy 1)
+	 (roof-x-height 10) (roof-midline 1) (floor-baseline 10)
+	 (left 8) (middle 10) (right 10))))
+(set! right-curl
+      '((names (right-curl r-curl right-curl-act))
+	(topology bisegment)
+	(norms
+	 (neighborhood (((y dc dc n n n dc dc) 20)   ; j
+			((dc n n n n dc dc y) 20)))  ; y
+	 (contact (j1 (nt 20) (m 20) (t1 1)) (y1 (nt 20) (m 20) (t1 1)))
+	 (tips ((location (10 7) (17 10) (11 4) (4 1) (18 1) (3 1))
+		(orientation (*w* 6) (*e* 3) (*n* 10) (*nw* 6) (*s* 5)
+			     (*sw* 1) (*ne* 3)))
+	       ((location (14 4) (7 10) (6 8) (21 2) (5 1) (13 4) (20 2)
+			  (12 3))
+		(orientation (*w* 10) (*s* 7) (*sw* 7) (*e* 1) (*nw* 5)
+			     (*n* 3) (*se* 1))))
+	 (curve1
+	  ((*slight-right* 6) (*slight-left* 3) (*straight* 10)
+	   (*square-right* 5) (*square-left* 1) (*strong-right* 3)))
+	 (curve2
+	  ((*slight-right* 10) (*square-left* 1) (*square-right* 5)
+	   (*strong-right* 2) (*straight* 4) (*slight-left* 1)))
+	 (tall 20) (medium 6) (short 1)
+	 (half-wide 15) (wide 10) (heavy 5) (normal-wt 10)
+	 (roof-x-height 10) (roof-midline 1) (floor-bottom 10)
+	 (floor-middown 6) (left 7) (middle 10) (right 10))))
+(set! right-downbowl
+      '((names (right-downbowl r-dwnbwl right-downbowl-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((y dc dc dc n dc dc dc) 20)))
+	 (contact (s2 (t1 20) (t1m 1) (nt 1)))
+	 (tips ((location (4 6) (11 10) (18 3) (19 1) (3 2) (17 1))
+		(orientation (*w* 10) (*nw* 5) (*n* 2) (*e* 1) (*ne* 1)
+			     (*sw* 1)))
+	       ((location (5 10) (4 3) (12 4))
+		(orientation (*w* 10) (*s* 2) (*nw* 3) (*sw* 1))))
+	 (curve
+	  ((*strong-right* 10) (*square-right* 6) (*slight-right* 3)))
+	 (very-short 10) (short 2) (wide 10) (half-wide 2)
+	 (normal-wt 10) (light 3) (heavy 1) (roof-midline 10)
+	 (roof-x-height 2) (floor-baseline 10)
+	 (left 9) (middle 10) (right 10))))
+(set! right-halfarc
+      '((names (right-halfarc r-hlfarc right-halfarc-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc y dc dc dc y dc) 20)))
+	 (contact (w1 (mt2 20) (t2 10) (m 1) (2ts 1)))
+	 (tips ((location (10 8) (11 10) (3 3))
+		(orientation (*n* 10) (*se* 2) (*s* 3) (*nw* 5) (*ne* 2)))
+	       ((location (19 10) (18 8) (12 6) (11 2))
+		(orientation (*e* 10) (*se* 9) (*ne* 9) (*s* 9) (*n* 3))))
+	 (curve
+	  ((*slight-left* 8) (*straight* 8) (*square-left* 5)
+	   (*slight-right* 3) (*strong-left* 10)))
+	 (short 9) (very-short 10) (half-wide 10) (wide 1) (skinny 2)
+	 (normal-wt 3) (light 10) (roof-x-height 10) (roof-midline 9)
+	 (floor-baseline 10) (floor-midline 1)
+	 (left 3) (middle 10) (right 8))))
+(set! right-halfarch
+      '((names (right-halfarch r-hlfarch right-halfarch-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc y dc dc dc y dc) 20)))
+	 (contact (m1 (t1 20) (nt 1)))
+	 (tips ((location (10 10) (11 9) (17 3))
+		(orientation (*w* 10) (*s* 7) (*nw* 7) (*n* 3) (*sw* 3)))
+	       ((location (19 10) (12 6) (18 2))
+		(orientation (*s* 10) (*w* 2) (*sw* 4) (*se* 2))))
+	 (curve
+	  ((*slight-right* 4) (*strong-right* 3) (*square-right* 3)))
+	 (short 10) (very-short 3) (half-wide 10) (normal-wt 8) (light 10)
+	 (roof-x-height 10) (roof-midline 1) (floor-baseline 10)
+	 (floor-midline 1) (left 0) (middle 10) (right 10))))
+(set! right-halfpost
+      '((names (right-halfpost r-hlfpst right-halfpost-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc n n n dc dc y dc) 20)))
+	 (contact (u1 (t2 20) (m 15)) (w1 (t2 20) (m 15)))
+	 (tips ((location (17 10) (10 19) (18 4) (11 2))
+		(orientation (*n* 8) (*w* 3) (*s* 10) (*ne* 5)
+			     (*se* 3) (*nw* 5)))
+	       ((location (19 10) (18 7) (12 5))
+		(orientation (*s* 10) (*se* 3) (*sw* 3) (*ne* 1)
+			     (*e* 1))))
+	 (curve
+	  ((*straight* 10) (*square-right* 4) (*slight-right* 4)
+	   (*strong-right* 2) (*square-left* 4) (*strong-left* 2)))
+	 (short 10) (very-short 4) (skinny 4) (half-wide 10) (light 10)
+	 (normal-wt 4) (roof-x-height 10) (roof-midline 1)
+	 (floor-baseline 10) (floor-midline 3)
+	 (left 0) (middle 8) (right 10))))
+(set! right-hook
+      '((names (right-hook r-hook right-hook-act))
+	(topology bisegment)
+	(norms
+	 (neighborhood (((dc dc n n n n dc dc) 20)))
+	 (contact (g1 (t1m 20) (m 1) (t1 1) (nt 1))
+		  (g2 (m 20) (t1 15) (nt 1)))
+	 (tips ((location (10 4) (3 1) (18 4) (17 10) (11 1))
+		(orientation (*w* 3) (*nw* 2) (*n* 12) (*e* 1) (*ne* 2)))
+	       ((location (14 2) (6 10) (7 3) (5 2) (21 1) (12 1) (13 1))
+		(orientation (*w* 10) (*n* 4) (*nw* 4) (*se* 1))))	
+	 (curve1
+	  ((*slight-right* 3) (*square-left* 1) (*straight* 10)
+	   (*slight-left* 1)))
+	 (curve2
+	  ((*slight-right* 10) (*square-right* 9) (*straight* 1)
+	   (*strong-right* 3) (*slight-left* -10)))
+	 (tall 9) (medium 10) (short 2) (half-wide 3) (wide 10) (heavy 4)
+	 (normal-wt 10) (roof-x-height 10) (roof-midline 4) (floor-bottom 10)
+	 (floor-middown 7) (left 8) (middle 10) (right 10))))
+(set! right-post
+      '((names (right-post r-post right-post-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((n n dc dc dc y dc dc) 20)))
+	 (contact (d1 (mt2 20) (m 1) (t2 1))
+		  (d2 (m 20) (t2 10)))
+	 (tips ((location (15 10) (9 5) (16 5) (8 3))
+		(orientation (*n* 10) (*ne* 4) (*nw* 2) (*sw* 2)))
+	       ((location (19 10) (18 3) (12 2))
+		(orientation (*s* 10) (*se* 6) (*sw* 2))))
+	 (curve
+	  ((*straight* 10) (*slight-left* 8) (*slight-right* 3)
+	   (*square-right* 3)))
+	 (tall 10) (medium 6) (short 2) (skinny 10) (half-wide 9) (normal-wt 10)
+	 (light 1) (roof-top 10) (roof-t-height 5) (floor-baseline 10)
+	 (floor-midline 3) (left 0) (middle 6) (right 10))))
+(set! right-tail
+      '((names (right-tail r-tail right-tail-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc dc n n n n dc dc) 20)))
+	 (contact (q1 (t1m 20) (m 1) (2ms 10) (t1 1) (nt 1))
+		  (q2 (m 20) (t1 15) (nt 1)))
+	 (tips ((location (17 10) (19 4) (18 4) (3 2) (10 2))
+		(orientation (*n* 10) (*se* 2) (*nw* 4) (*ne* 4) (*s* 2)))
+	       ((location (21 10) (14 2) (20 9))
+		(orientation (*s* 10) (*se* 1) (*e* 4))))
+	 (curve
+	  ((*straight* 10) (*square-left* 3) (*slight-right* 1)
+	   (*slight-left* 1)))
+	 (tall 8) (medium 10) (short 2) (very-short 2) (skinny 10)
+	 (half-wide 10) (wide 2) (normal-wt 10) (light 2)
+	 (roof-x-height 10) (roof-midline 4) (roof-baseline 1) (floor-bottom 10)
+	 (floor-middown 8) (left 1) (middle 5) (right 10))))
+(set! right-wing
+      '((names (right-wing r-wing right-wing-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((dc n n n dc dc y dc) 20)))
+	 (contact (v1 (t2 20)))
+	 (tips ((location (17 10) (11 3) (10 8))
+		(orientation (*n* 10) (*s* 3) (*nw* 3) (*w* 7) (*ne* 3)))
+	       ((location (12 10) (19 7) (5 9))
+		(orientation (*sw* 10) (*s* 4) (*w* 2))))
+	 (curve
+	  ((*slight-right* 10) (*strong-right* 3) (*square-right* 3)
+	   (*straight* 5)))
+	 (short 10) (half-wide 10) (wide 8) (skinny 3) (light 10)
+	 (normal-wt 10) (roof-x-height 10) (floor-baseline 10)
+	 (left 4) (middle 9) (right 10))))
+(set! s-base
+      '((names (s-base s-base s-base-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((y dc dc n n n dc dc) 20)))
+	 (contact (s1 (t2 20) (mt2 1)))
+	 (tips ((location (5 10) (3 2) (4 5) (12 3))
+		(orientation (*w* 10) (*s* 6) (*nw* 6) (*e* 2)))
+	       ((location (19 10) (18 9) (5 2) (17 2))
+		(orientation (*e* 10) (*ne* 8) (*n* 8) (*se* 3) (*s* 3))))
+	 (curve
+	  ((*straight* 10) (*slight-left* 6) (*square-left* 6)
+	   (*slight-right* 2)))
+	 (no-height 3) (very-short 10) (short 3) (wide 10) (skinny 1)
+	 (half-wide 2) (light 10) (normal-wt 5) (roof-baseline 3)
+	 (roof-midline 10) (roof-x-height 3) (floor-baseline 10)
+	 (left 9) (middle 10) (right 10))))
+(set! s-crossbar
+      '((names (s-crossbar s-cross s-crossbar-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((y dc dc dc y dc dc dc) 20)))
+	 (contact (s1 (2ts 20)))
+	 (tips ((location (4 10) (3 5) (11 3) (10 3))
+		(orientation (*w* 10) (*nw* 7) (*e* 9)))
+	       ((location (18 10) (19 7) (11 3) (17 7))
+		(orientation (*e* 10) (*se* 4) (*ne* 2))))
+	 (curve
+	  ((*straight* 10) (*slight-left* 4) (*slight-right* 2)))
+	 (no-height 10) (very-short 8) (short 3) (wide 10) (half-wide 6)
+	 (light 10) (roof-midline 10) (roof-x-height 9) (floor-midline 10)
+	 (floor-baseline 4) (floor-x-height 2)
+	 (left 8) (middle 10) (right 9))))
+(set! t-post
+      '((names (t-post t-post t-post-act))
+	(topology bisegment)
+	(norms
+	 (neighborhood (((n n dc n n n dc n) 20)))
+	 (contact (t1 (m 20)))
+	 (tips ((location (9 10) (16 1) (2 7))
+		(orientation (*n* 10) (*ne* 1) (*nw* 2)))
+	       ((location (19 10) (11 3) (18 7) (12 2))
+		(orientation (*e* 10) (*w* 3) (*ne* 5) (*sw* 3)
+			     (*se* 5) (*n* 8))))
+	 (curve1
+	  ((*straight* 10) (*slight-left* 3) (*square-right* 1)
+	   (*slight-right* 3)))
+	 (curve2
+	  ((*square-left* 8) (*strong-right* 2) (*slight-left* 6)
+	   (*strong-left* 10)))
+	 (medium 10) (half-wide 9) (wide 9) (normal-wt 10)
+	 (roof-t-height 10) (floor-baseline 10)
+	 (left 5) (middle 10) (right 10))))
+(set! up-arm
+      '((names (up-arm up-arm up-arm-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((y dc dc dc y y y y) 20)))
+	 (contact (k1 (t1 20) (t1m 20) (m 2)))
+	 (tips ((location (5 2) (4 10) (11 2) (3 5) (10 2))
+		(orientation (*sw* 10) (*w* 9) (*ne* 5) (*e* 5)))
+	       ((location (17 10) (11 2) (18 5) (10 3))
+		(orientation (*ne* 10) (*e* 9) (*se* 5) (*s* 5))))
+	 (curve
+	  ((*straight* 10) (*slight-left* 2) (*square-right* 2)
+	   (*strong-right* 2) (*slight-right* 5)))
+	 (short 1) (very-short 10) (no-height 4) (wide 10)
+	 (half-wide 7) (light 10) (normal-wt 1) (roof-x-height 10)
+	 (floor-baseline 1) (floor-midline 10) (floor-x-height 4)
+	 (left 9) (middle 10) (right 8))))
+(set! up-circle
+      '((names (up-circle up-circ up-circle-act))
+	(topology loop)
+	(norms
+	 (neighborhood (((n n dc dc y y dc dc) 20)))
+	 (contact (e2 (nt 1) (t 20)))
+	 (very-short 10) (short 4) (wide 10) (half-wide 2) (heavy 3)
+	 (normal-wt 10) (roof-x-height 10) (floor-midline 10)
+	 (floor-baseline 4) (left 9) (middle 10) (right 10))))
+(set! z-cap
+      '((names (z-cap z-cap z-cap-act))
+	(topology segment)
+	(norms
+	 (neighborhood (((n dc dc dc y dc dc dc) 20)))
+	 (contact (z1 (t2 20) (m 5)))
+	 (tips ((location (3 10) (4 9) (10 3))
+		(orientation (*w* 10) (*ne* 5) (*sw* 9) (*e* 9)))
+	       ((location (17 10) (18 7) (10 7))
+		(orientation (*e* 10) (*se* 5) (*ne* 3))))
+	 (curve
+	  ((*straight* 10) (*slight-right* 5) (*square-right* 3)))
+	 (no-height 8) (very-short 10) (wide 10) (half-wide 8) (light 10)
+	 (roof-x-height 10) (floor-x-height 8) (floor-midline 10)
+	 (left 9) (middle 10) (right 8))))
+
+(set! *roles*
+      '(a-arch backslash basebar cap center-post circle crossbar dot
+	       down-arm down-circle e-bowl e-crossbar e-tail f-post
+	       foreslash halfpost left-bowl left-downbowl left-halfarc
+	       left-halfarch left-halfpost left-post left-tail left-uparc
+	       left-upbowl left-wing right-bowl right-buttress right-curl
+	       right-downbowl right-halfarc right-halfarch right-halfpost
+	       right-hook right-post right-tail right-wing s-base
+	       s-crossbar t-post up-arm up-circle z-cap))

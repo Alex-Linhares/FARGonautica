@@ -1,0 +1,36 @@
+Chez Scheme Transcript [Wed Sep  1 11:44:32 1999]
+>>>>>>>>> (run-train 10) (set! *the-font* 'no-train) (run-no-train 10)
+Testing all PSYCH-TRAIN
+a as a ac 97.572 cd 42 tm 12.257 an rt 058002400b0000 94.2865
+a as a ac 85.559 cd 58 tm 11.51 an rt 058002400b0000 94.2865
+a as a ac 100.0 cd 34 tm 11.403 an rt 058002400b0000 94.2865
+a as a ac 80.073 cd 60 tm 14.094 an rt 058002400b0000 94.2865
+a as a ac 97.572 cd 45 tm 14.691 an rt 058002400b0000 94.2865
+a as a ac 100.0 cd 34 tm 10.563 an rt 058002400b0000 94.2865
+a as a ac 100.0 cd 32 tm 10.61 an rt 058002400b0000 94.2865
+a as a ac 97.572 cd 56 tm 11.62 an rt 058002400b0000 94.2865
+a as a ac 100.0 cd 31 tm 13.563 an rt 058002400b0000 94.2865
+a as a ac 100.0 cd 40 tm 11.934 an rt 058002400b0000 94.2865
+a as a ac 100.0 cd 41 tm 15.473 an rt 0B800140010040 99.286
+a as a ac 100.0 cd 47 tm 13.847 an rt 0B800140010040 99.286
+a as a ac 99.572 cd 40 tm 11.403 an rt 0B800140010040 99.286
+a as a ac 99.572 cd 32 tm 13.563 an rt 0B800140010040 99.286
+a as a ac 89.879 cd 36 tm 14.687 an rt 0B800140010040 99.286
+a as a ac 99.572 cd 48 tm 12.483 an rt 0B800140010040 99.286
+a as a ac 100.0 cd 48 tm 13.999 an rt 0B800140010040 99.286
+a as a ac 83.073 cd 58 tm 11.131 an rt 0B800140010040 99.286
+a as a ac 100.0 cd 42 tm 13.847 an rt 0B800140010040 99.286
+a as a ac 100.0 cd 80 tm 11.072 an rt 0B800140010040 99.286
+a as a ac 100.0 cd 45 tm 15.53 an rt 09800040030040 99.286
+a as a ac 83.073 cd 49 tm 16.413 an rt 09800040030040 99.286
+a as a ac 99.572 cd 36 tm 11.403 an rt 09800040030040 99.286
+a as a ac 99.572 cd 46 tm 11.135 an rt 09800040030040 99.286
+a as a ac 99.572 cd 37 tm 11.749 an rt 09800040030040 99.286
+a as a ac 100.0 cd 53 tm 16.413 an rt 09800040030040 99.286
+a as a ac 100.0 cd 41 tm 11.88 an rt 09800040030040 99.286
+a as a ac 100.0 cd 35 tm 11.096 an rt 09800040030040 99.286
+a as a ac 83.073 cd 70 tm 10.723 an rt 09800040030040 99.286
+a as a ac 87.244 cd 74 tm 13.842 an rt 09800040030040 99.286
+
+debug> n
+>>>>>>>>>> (transcript-off)

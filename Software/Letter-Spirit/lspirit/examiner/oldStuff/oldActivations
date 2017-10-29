@@ -1,0 +1,253 @@
+A little bit of three versions of the activation spreader
+
+; role
+; whole-1
+; whole-2
+; whole-3
+
+Role
+ take max of the incoming links, weight * act
+Whole-X
+ take sum of the incoming links, then divide that sum by X
+ (since that's the length of the list, just use average)
+
+Lookup
+ We can probably go one pass through the long list by comparing each item
+ to the short list
+
+GEM activation-changers
+
+; get-role-activation
+; change-role-activation
+; get-link-lengths-and-activations
+; process-node
+; dampen-node
+; activate-roles
+; gestalt-set-node
+; list-active-wholes (for r-role punishment)
+
+On the top level, used in:
+
+; activation spreading
+; sparking
+; check-inhibitions, used in spreading activation; DID YOU KNOW THIS EXISTED?
+; graphics (get-activ)
+; r-roles (super wasteful)
+; binding-list (gets acts of roles bound to a part)
+; GEM's gestalt (forced-gestalt, now disabled, so delete it)
+; GEM's clamping (now disabled, so delete it; could be useful idea, though)
+;   like in recognizing weird letters from the Drafter
+; JAR's gestalt, which is already well-done (pat-on-back)
+; count-active-wholes, used in temperature calculation
+; get-highest-whole, picks winner
+
+In summary, activation is accessed in the following ways:
+
+1) Global simultaneous update of all activations
+2) Sparking (old act is called up and then re-set)
+3) Graphics
+4) R-roles
+5) Gestalt
+6) Temperature calculation
+7) Rarely-used bookkeeping functions
+
+other activation patterns may be used for style, etc.
+
+(set! *acts*
+      '(
+	(a 50)
+	(b  0)
+	(c 80)
+	(d 0)
+	(e 10)
+	(f 0)
+	(g 10)
+	(h 0)
+	(i 60)
+	(j 10)
+	(k 0)
+	(l 10)
+	(m 0)
+	(n 40)
+	(o 0)
+	(p 0)
+	(q 0)
+	(r 10)
+	(s 0)
+	(t 20)
+	(u 0)
+	(v 10)
+	(w 0)
+	(x 30)
+	(y 20)
+	(z 10)))
+
+
+(set! *links*
+      '(
+	(a (b c))
+	(b (m z))
+	(c (n a))
+	(d (r j))
+	(e (d k))
+	(f (t))
+	(g (q u v))
+	(h (b k))
+	(i (j l))
+	(j (i l))
+	(k (b h))
+	(l (j i))
+	(m (b n))
+	(n (a m))
+	(o (u))
+	(p (b))
+	(q (e g))
+	(r (a))
+	(s (t h))
+	(t (f))
+	(u (w))
+	(v (w))
+	(w (x))
+	(x (y z))
+	(y (x))
+	(z (x))))
+
+(define new-acts
+  (lambda (acts)
+    (cond
+     ((null? acts) '())
+     (else
+      (cons
+       (list (caar acts) (new-act (caar acts)))
+       (new-acts (cdr acts)))))))
+
+(define new-act
+  (lambda (node)
+    (* 0.75
+       (+ (lookup node *acts*)
+	  (apply +
+		 (mapcar weighted-spread (lookup node *links*)))))))
+
+(define weighted-spread
+  (lambda (node)
+    (* 0.1 (lookup node *acts*))))
+
+(define spread-acts
+  (lambda ()
+    (set! *acts* (new-acts *acts*))))
+
+(define do-acts
+  (lambda (n)
+    (begin
+      (spread-acts)
+      (if (< 0 n) (do-acts (- n 1))))))
+
+; 40 sec for 430K link-spreads on horsie
+; ~ 10750 link-spreads per second
+; on goosie, 32 sec for 430K link spread (not much faster)
+
+; GEM Examiner has 138 links; each spread-act does 276
+; should be 1/40 per second at most
+; about 6 seconds on goosie starting with compiled code
+; for 10 spreads
+; at best, 460 per second
+
+; NEW QUICKACT
+; Nov 18, 1998
+; 12 seconds for 1000 spreads on goosie
+
+; speedup of 50!
+
+; There's a factor of 29 speedup on spreading activation
+; Perhaps 58!
+; Granted, this was totally bare-bones, but even allowing for variable
+; spreading rules (different strength links, different summation strategies)
+; a healthy speedup should be maintained
+
+
+; goosie graphics SSb:
+; 50 sec, about 35 spread-acts in 286 codelets
+; this is 10 seconds without graphics
+
+; 20 sec on SSB, no graphics for 148 codelet run on SSb
+
+; How many SAs per run? On SSs...
+; 38 SAs in 367
+; 20 in 206
+; 27 in 236
+; 9 in 123
+
+; average: 94 in 932, or about 10% of all codelets
+
+; on a 148 codelet run taking 20 sec, that's 15 SAs in about 5 sec
+; So a massive speedup in activation-spreading could speed up the whole
+; program 30% or so
+
+
+; old activation spreader (uses rules we want)
+
+; the caddar and cadar are activation and link strength
+; why -10 for roles? to make sure the sum is no lower than that -
+; so arbitrary, then?
+
+; this will fly when we're done!
+
+(define sum-spread-activation
+  (lambda (ls type)
+    (letrec ([role-loop (lambda (register ls)
+                     (cond
+                       [(null? ls) register]
+                       [else (let* ((calc (* (caddar ls) (cadar ls))))
+                               (role-loop
+				(max register calc) (cdr ls)))]))]
+	     [whole-loop (lambda (register ls)
+                     (cond
+                       [(null? ls) register]
+                       [else (let* ((calc (* (caddar ls) (cadar ls))))
+                               (whole-loop
+				(+ register calc) (cdr ls)))]))])
+      (if (equal? type 'role)
+	  (role-loop -10 ls)
+	  (whole-loop 0 ls)))))
+
+
+; new approach - variable names for activations, to reduce list scanning
+; to minimum
+
+; from old code: only 20 or 40 from old value crept in
+
+;	   (activation-calculation
+;	    (+ (min act (if (equal? type 'role) 40 20)) ssa clamp-jolt))
+
+
+(set! whole-acts
+      '(a1-act a2-act b1-act b2-act c1-act))
+
+(set! role-acts
+      '(a-arch-act circle-act down-circle-act left-downbowl-act
+		   left-bowl-act left-post-act right-bowl-act))
+
+(set! a-arch-act '(0 (*  (max a1-act a2-act))))
+(set! circle-act '(0 (*  (max b2-act))))
+(set! down-circle-act '(0 (*  (max a2-act))))
+(set! left-downbowl-act '(0 (*  (max a1-act))))
+(set! left-bowl-act '(0 (*  (max c1-act))))
+(set! left-post-act '(0 (*  (max b1-act b2-act))))
+(set! right-bowl-act '(0 (*  (max b1-act))))
+
+
+(set! a1-act '(0 (+
+		  (min 20 (car a1-act))
+		  (* 0.3 (+ (car a-arch-act) (car left-downbowl-act))))))
+
+; (cons (eval (cadr a1-act)) (cdr a1-act))
+
+; looks to me like 11 operations to calculate new activation
+; for a two-role whole
+
+(set! a2-act '(0 (* 0.3 (+ a-arch-act down-circle-act))))
+(set! b1-act '(0 (* 0.3 (+ left-post-act right-bowl-act))))
+(set! b2-act '(0 (* 0.3 (+ left-post-act circle-act))))
+(set! c1-act '(0 (* 0.6 left-bowl-act)))
+
+(eval (cadr a1-act))

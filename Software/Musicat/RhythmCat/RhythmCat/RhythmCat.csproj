@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA6B2E00-26DB-4F97-812F-4F9F819C5C6A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RhythmCat</RootNamespace>
+    <AssemblyName>RhythmCat</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accidental.cs" />
+    <Compile Include="Analogy.cs" />
+    <Compile Include="Codelets\Analogy\AddNonRhythmRelationshipsToAnalogyCodelet.cs" />
+    <Compile Include="Codelets\Analogy\AddRelationshipsToAnalogyCodelet.cs" />
+    <Compile Include="Codelets\Analogy\CreateAnalogyCodelet.cs" />
+    <Compile Include="Codelets\Analogy\DestroyOldAnalogyCodelet.cs" />
+    <Compile Include="Codelets\Analogy\RecussitateAnalogyCodelet.cs" />
+    <Compile Include="Codelets\Analogy\StoreStrongAnalogy.cs" />
+    <Compile Include="Codelets\Analogy\SuggestParallelAnalogyCodelet.cs" />
+    <Compile Include="Codelets\Analogy\SuggestSameLengthAnalogyCodelet.cs" />
+    <Compile Include="Codelets\Expectations\GenerateExpectedAnalogyCopyCodelet.cs" />
+    <Compile Include="Codelets\Expectations\StrengthenExpectationCodelet.cs" />
+    <Compile Include="Codelets\Expectations\SuggestAnalogyFromExpectationCodelet.cs" />
+    <Compile Include="Codelets\Expectations\SuggestLinkFromExpectationCodelet.cs" />
+    <Compile Include="Codelets\Grouping\FindSequenceCodelet.cs" />
+    <Compile Include="Codelets\Grouping\MakeTranspositionGroupCodelet.cs" />
+    <Compile Include="Codelets\Grouping\PickAlphabetForGroupCodlet.cs" />
+    <Compile Include="Codelets\GroupReasons\GroupPenaltyHierarchyCrossingCodelet.cs" />
+    <Compile Include="Codelets\GroupReasons\GroupReasonEndPitchCodelet.cs" />
+    <Compile Include="Codelets\GroupReasons\GroupReasonHierarchyEndCodelet.cs" />
+    <Compile Include="Codelets\GroupReasons\GroupReasonMusicalForcesClosureCodelet.cs" />
+    <Compile Include="Codelets\GroupReasons\GroupReasonSlowingEndCodelet.cs" />
+    <Compile Include="Codelets\Links\ExamineLinkedPairsCodelet.cs" />
+    <Compile Include="Codelets\Expectations\GenerateExpectedGroupCopyCodelet.cs" />
+    <Compile Include="Codelets\Expectations\SuggestGroupFromExpectationCodelet.cs" />
+    <Compile Include="Codelets\Grouping\ExtendGroupRightCodelet.cs" />
+    <Compile Include="Codelets\Form\FormLabelAssignerCodelet.cs" />
+    <Compile Include="Codelets\Analogy\FormLabelFromAnalogyCodelet.cs" />
+    <Compile Include="Codelets\Grouping\GroupBreakerCodelet.cs" />
+    <Compile Include="Codelets\GroupReasons\GroupPenaltySubcomponentLengthCodelet.cs" />
+    <Compile Include="Codelets\GroupReasons\GroupReasonAnalogyComponentCodelet.cs" />
+    <Compile Include="Codelets\GroupReasons\GroupReasonComponentsSimilarCodelet.cs" />
+    <Compile Include="Codelets\GroupReasons\GroupReasonNumberComponentsCodelet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Codelets\GroupReasons\GroupReasonRhythmGapCodelet.cs" />
+    <Compile Include="Codelets\Links\LookForAntecedentConsequentRelationshipCodelet.cs" />
+    <Compile Include="Codelets\Links\LookForContourRelationshipCodelet.cs" />
+    <Compile Include="Codelets\Links\LookForMetricPositionRelationshipCodelet.cs" />
+    <Compile Include="Codelets\Links\LookForRelationshipCodelet.cs" />
+    <Compile Include="Codelets\Links\LookForStartingRelationshipCodelet.cs" />
+    <Compile Include="Codelets\Links\LookForTranspositionRelationshipCodelet.cs" />
+    <Compile Include="Codelets\Links\MeasureLinkBreakerCodelet.cs" />
+    <Compile Include="Codelets\Hierarchy\MeasureHierarchyCodelet.cs" />
+    <Compile Include="Codelets\Links\MeasureLinkerCodelet.cs" />
+    <Compile Include="Codelets\Grouping\MetaGrouperCodelet.cs" />
+    <Compile Include="Codelets\Grouping\ProximityGrouperCodelet.cs" />
+    <Compile Include="Codelets\Grouping\MeasureSamenessGrouperCodelet.cs" />
+    <Compile Include="Codelets\Links\OldMeasureLinkBreakerCodelet.cs" />
+    <Compile Include="Codelets\Links\RelationshipBreakerCodelet.cs" />
+    <Compile Include="ColorList.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Codelet.cs" />
+    <Compile Include="Coderack.cs" />
+    <Compile Include="ConceptInstance.cs" />
+    <Compile Include="ConceptLink.cs" />
+    <Compile Include="ConceptNode.cs" />
+    <Compile Include="CustomAttributes.cs" />
+    <Compile Include="Expectations\Expectations.cs" />
+    <Compile Include="Expectations\ExpectedAnalogy.cs" />
+    <Compile Include="Expectations\ExpectedGroup.cs" />
+    <Compile Include="Expectations\ExpectedMeasureLink.cs" />
+    <Compile Include="Expectations\ExpectedMeasure.cs" />
+    <Compile Include="frmAnalogyScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnalogyScores.Designer.cs">
+      <DependentUpon>frmAnalogyScores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoderack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoderack.Designer.cs">
+      <DependentUpon>frmCoderack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroupScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroupScores.Designer.cs">
+      <DependentUpon>frmGroupScores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkspace.Designer.cs">
+      <DependentUpon>frmWorkspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Group.cs" />
+    <Compile Include="GroupElement.cs" />
+    <Compile Include="GroupReasons\GroupPenaltyReason.cs" />
+    <Compile Include="GroupReasons\GroupPenaltyHierarchyCrossing.cs" />
+    <Compile Include="GroupReasons\GroupPenaltySubcomponentLength.cs" />
+    <Compile Include="GroupReasons\GroupReasonEndDominant.cs" />
+    <Compile Include="GroupReasons\GroupReasonEndTonalClosure.cs" />
+    <Compile Include="GroupReasons\GroupReasonEndTonic.cs" />
+    <Compile Include="GroupReasons\GroupReasonExpectationMeasureLink.cs" />
+    <Compile Include="GroupReasons\GroupReasonExpected.cs" />
+    <Compile Include="GroupReasons\GroupReasonAnalogySupport.cs" />
+    <Compile Include="GroupReasons\GroupReasonEndBeforeGap.cs" />
+    <Compile Include="GroupReasons\GroupReasonEndBeforeLeap.cs" />
+    <Compile Include="GroupReasons\GroupReasonHierarchyEnd.cs" />
+    <Compile Include="GroupReasons\GroupReasonNumberOfSubelements.cs" />
+    <Compile Include="GroupReasons\GroupReasonSlowingEnd.cs" />
+    <Compile Include="GroupReasons\GroupReasonStartAfterGap.cs" />
+    <Compile Include="GroupReasons\GroupReasonStartAfterLeap.cs" />
+    <Compile Include="GroupReasons\GroupReasonStrongBoundaryPosition.cs" />
+    <Compile Include="GroupReasons\GroupReasonStrongEndPosition.cs" />
+    <Compile Include="GroupReasons\GroupReasonStrongStartPosition.cs" />
+    <Compile Include="GroupReasons\GroupReasonComponentsIdentical.cs" />
+    <Compile Include="GroupReasons\GroupReasonComponentsSimilar.cs" />
+    <Compile Include="GroupReasons\GroupReasonSequence.cs" />
+    <Compile Include="GroupReasons\GroupReason.cs" />
+    <Compile Include="IntMap.cs" />
+    <Compile Include="Measure.cs" />
+    <Compile Include="MeasureLink.cs" />
+    <Compile Include="MelodyContour.cs" />
+    <Compile Include="MusicPrimitives\Accidental.cs" />
+    <Compile Include="MusicPrimitives\Alphabet.cs" />
+    <Compile Include="MusicPrimitives\Alteration.cs" />
+    <Compile Include="MusicPrimitives\Key.cs" />
+    <Compile Include="MusicPrimitives\KeyMode.cs" />
+    <Compile Include="MusicPrimitives\KeySignature.cs" />
+    <Compile Include="MusicPrimitives\Pitch.cs" />
+    <Compile Include="MusicPrimitives\PitchClass.cs" />
+    <Compile Include="MusicPrimitives\PitchInterval.cs" />
+    <Compile Include="MusicPrimitives\ScaleDegree.cs" />
+    <Compile Include="Note.cs" />
+    <Compile Include="MidiInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relationships\RelationshipAntecedentConsequentTonality.cs" />
+    <Compile Include="Relationships\RelationshipParameter.cs" />
+    <Compile Include="Relationships\RelationshipAnalogy.cs" />
+    <Compile Include="Relationships\RelationshipIdentical.cs" />
+    <Compile Include="Relationships\RelationshipMelodyContour.cs" />
+    <Compile Include="Relationships\RelationshipMetricPosition.cs" />
+    <Compile Include="Relationships\RelationshipParameterDecreasing.cs" />
+    <Compile Include="Relationships\RelationshipParameterIncreasing.cs" />
+    <Compile Include="Relationships\RelationshipSimilar.cs" />
+    <Compile Include="Relationships\RelationshipStartIdentical.cs" />
+    <Compile Include="Relationships\RelationshipStartSimilar.cs" />
+    <Compile Include="Relationships\Relationship.cs" />
+    <Compile Include="Relationships\RelationshipTransposition.cs" />
+    <Compile Include="Rhythm.cs" />
+    <Compile Include="Sequence.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Settings2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Slipnet.cs" />
+    <Compile Include="StructureCollection.cs" />
+    <Compile Include="TemporaryGroup.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Workspace.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAnalogyScores.resx">
+      <DependentUpon>frmAnalogyScores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCoderack.resx">
+      <DependentUpon>frmCoderack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroupScores.resx">
+      <DependentUpon>frmGroupScores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkspace.resx">
+      <DependentUpon>frmWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="GroupReasons\GroupReasons.cd" />
+    <None Include="Relationships\Relationships.cd" />
+    <None Include="rhythms.groundtruth" />
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings2.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3048.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GroundTruthParser\GroundTruth.csproj">
+      <Project>{FBE4BBC8-AAC0-4067-86C4-E7DDB93FBB71}</Project>
+      <Name>GroundTruth</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

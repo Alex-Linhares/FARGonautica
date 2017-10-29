@@ -1,0 +1,53 @@
+TRAIN: c, d, f, i, q, y
+
+10 EASY:
+benz-l	96.2
+benz-r	100.0
+boat	98.1
+close	93.8
+house	94.2
+
+hunt4	95.0
+shorts	98.5
+slant	91.5
+snout	96.2
+st-sq	100.0
+
+11 INTERMEDIATES:
+
+bowtie	58.5
+chckmrk	76.2
+dub-bs	83.5
+fl-rnch	78.1
+funtnip	53.1
+hint4	88.1
+inters	66.2
+sabtth	83.5
+slash	84.6
+sq-curl	83.8
+w-arrow	85.4
+
+2 TOO HARD:
+sluice	15.0
+three-d	0.0
+
+***
+
+TRAIN sets:
+
+benz-l, benz-r, boat, close, house CDFIQY, CFY, D
+hunt4, shorts, slant, snout, st-sq CDFIQY, CFY, D
+bowtie, chckmrk, dub-bs, fl-rnch, funtnip FHMTVY, FMY, H
+boat, close, fl-rnch, hint4, hunt4 CDFIQY, CFY, D
+inters, sabtth, slash, sq-curl, w-arrow CDFIQY, CFY, D
+
+TEST sets:
+
+benz-l, benz-r, boat, close, house AKOXZ
+hunt4, shorts, slant, snout, st-sq HLNSU
+bowtie, chckmrk, dub-bs, fl-rnch, funtnip KN
+boat, close, fl-rnch, hint4, hunt4 EGKPT
+inters, sabtth, slash, sq-curl, w-arrow BJLMR
+
+TESTed letters: ABEGHJKLMNOPRSTUY
+Letters not TESTed or TRAINed: VW

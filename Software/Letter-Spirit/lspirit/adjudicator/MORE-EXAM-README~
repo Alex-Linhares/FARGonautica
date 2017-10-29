@@ -1,0 +1,57 @@
+1) Want to super-punish super-bad-NVs without having to list the
+egregious errors
+
+Each of the simple features exists along a continuum
+When you get a new feature (lookup-or-punish does this now),
+ make a list of the norms whose points value is positive
+If the simple feature is explicitly in the norms, give that as a score
+If not, punish according to how many places away from the nearest norm
+ it is
+
+So, if height norms were
+
+short 10
+very-short 6
+medium 1
+
+the score would go
+
+no-height -punish
+very-short 6
+short 10
+medium 1
+tall -punish
+very-tall -2*punish
+
+Basic code for this is in new-punish.ss
+Need to use it in lookup-or-punish, but for efficiency's sake, wait
+until first phase is over
+Also need it in curve-score
+
+2) You know what else? Make all the phases twice as long.
+
+3) And, get dirty and go through all the tip and endpoint norms and hack
+in everything that should be there
+
+4) And, let the sparker go to work with one less than the maximum number
+of labels AFTER the first phase.
+
+5) Refine the weight and curve dimensions
+
+6) Get rid of the icky offset of 2 in phases
+
+
+Started this, Feb 18, 1999
+
+Weight and curve refinements done
+Everything but (1) and (3) are very easy
+(3) is straightforward
+
+PERFORMANCE, 3/4/99:
+
+"spicy" has the fonts and majors
+
+NORMALS	98.8	(0.3% higher)	189.5
+FONTS	81.5	(0.2% lower)	1800.8
+MAJORS	94.9	(0.2% higher)	360.5
+TOTAL	94.2	(0.2% higher)

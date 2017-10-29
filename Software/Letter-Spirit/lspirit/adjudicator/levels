@@ -1,0 +1,30 @@
+Fire up second phase (add bridgebuilders) when coderack is empty from
+first phase.
+
+I now envision 5 (?) levels in the Thematic Focus:
+
+1) The individual letter rows. All 26 of them, not pooled anywhere.
+
+Then 4 rows by promotion, with no inherent semantics for what each
+does or means (model of pyramid-like memory?). Promotion/demotion is
+stoachstic. While running on letter GAMMA, bridges from GAMMA SPs to
+existing TF SPs will probabilistically lead to promotion at
+cleanup. Bridges from TF to nowhere will probabilistically lead to
+demotion at cleanup. Promote easier than demote. (Like offense easier
+than defense in football.) Promote/demote same things that lower/raise
+temperature. Bridges from GAMMA to nowhere will raise temperature a
+little.
+
+Promotion/demotion -- Consider variations on this rule:
+ See an SP: 2/3 chance of promotion.
+ Miss an SP: 1/3 chance of demotion
+
+2) *two-time-SPs*
+
+3, Etc...) no inherent semantics. 
+
+3) *occasional-SPs*
+4) *common-SPs*
+5) *frequent-SPs*
+6) *universal-SPs*
+

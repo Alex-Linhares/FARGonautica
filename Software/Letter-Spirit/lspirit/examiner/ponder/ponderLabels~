@@ -1,0 +1,19 @@
+Maximum of 18 labels on a part
+
+neighbors
+touching
+tip location and orientation (4 labels possible)
+closure
+curvature (3 labels possible)
+
+height
+weight
+width
+floor
+ceiling
+left/middle/right (3 labels possible)
+
+Let's post labelers for a part in groups of 5, and only if the part
+has less than the maximum number of labels. If it has no tips,.that's
+11; with two tips, it's 18.
+

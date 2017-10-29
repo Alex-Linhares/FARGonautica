@@ -1,0 +1,17 @@
+hierarchy:
+
+literal -- done
+translate -- done, but must reverse via tip-flip
+
+now, for 180-degree operations, you could rotate, reflect, or both
+both is like a 180-reflection in the orthogonal dimension
+
+90-degree rotations, with or without reflection
+
+45/135-degree rotations, with or without reflection
+
+translate -- respect all 8 compass directions
+180 -- respect N-S, E-W, NE-SW, NW-SE, angles: magnitude and rel. sign
+90 -- respect N-S-E-W, NE-SW-NW-SE, angles: magnitude and rel. sign
+45/135 -- angles: magnitude and rel. sign
+

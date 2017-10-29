@@ -1,0 +1,63 @@
+Test on 'a'
+	SS	SH	BT	H4	BL	BR	Correct?
+SS	7	16	78	47	20	46	y
+SH	10	5	43	77	14	74	y
+BT	25	91	3	9	50	54	y
+H4	74	80	22	21	72	52	y
+BL	36	40	51	30	6	81	y
+BR	30	21	85	90	76	6	y
+
+Test on 'd'
+	SS	SH	BT	H4	BL	BR
+SS	6	4	32	69	27	32	n
+SH	42	3	52	81	80	49	y
+BT	83	18	3	91	70	70	y
+H4	76	65	55	22	67	57	y
+BL	70	53	29	81	8	84	y
+BR	31	58	69	62	71	3	y
+
+Test on 'y'
+	SS	SH	BT	H4	BL	BR
+SS	3	33	86	21	36	45	y
+SH	15	4	75	82	29	45	y
+BT	90	72	3	37	23	63	y
+H4	68	68	21	9	53	49	y
+BL	32	49	16	32	3	70	y
+BR	44	91	66	28	53	4	y
+
+RISKY TEST -- only "training" on a..f
+Note: this is with literal motifs promoted at 4.0; changed to 3.0 for
+subsequent test, and that helped SS-y, anyway
+
+Also, probably ought to make all temperature calculations reflect
+highest level of TF with stuff in it
+
+And ought to test by training on b, c, e, f, g; test a, d, y
+
+Test on 'a'
+	SS	SH	BT	H4	BL	BR	Correct?
+SS	4	18	34	86	66	48	y
+SH	7	9	84	83	86	80	n
+BT	66	81	14	25	62	63	y
+H4	79	76	28	27	62	58	y
+BL	48	79	76	34	7	76	y
+BR	57	47	36	90	90	3	y
+
+Test on 'd'
+	SS	SH	BT	H4	BL	BR
+SS	4	6	66	79	47	26	y
+SH	6	8	75	87	81	34	n
+BT	62	54	13	79	61	55	y
+H4	80	79	70	17	69	70	y
+BL	48	48	75	72	7	79	y
+BR	39	55	49	37	89	0	y
+
+Test on 'y'
+	SS	SH	BT	H4	BL	BR
+SS	77	37	84	85	85	78	n
+SH	24	20	85	90	87	42	y
+BT	86	86	67	40	70	72	n
+H4	79	78	69	70	69	70	n
+BL	44	59	71	72	26	83	y
+BR	83	76	90	90	87	30	y
+

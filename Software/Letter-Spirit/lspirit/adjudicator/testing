@@ -1,0 +1,78 @@
+Standard Square, Shorts, Boat, Hunt 4, Benzene Left, Benzene Right
+a, d, y
+
+Test on 'a'
+	SS	SH	BT	H4	BL	BR	Correct?
+SS	55.0	69.8	86.9	73.2	81.2	70.5	Y
+SH	54.9	53.4	82.5	83.8	78.4	79.0	Y
+BT	64.2	71.6	44.3	51.8	62.9	43.5	Y
+H4	81.6	78.2	48.5	45.2	70.2	65.5	Y
+BL	84.3	78.9	82.2	87.6	67.6	81.1	Y
+BR	69.3	66.9	79.2	92.7	88.4	51.8	Y
+
+Test on 'd'
+	SS	SH	BT	H4	BL	BR
+SS	44.6	38.6	76.2	93.6	87.2	87.6	N
+SH	90.5	49.5	78.5	92.7	91.9	82.3	Y
+BT	83.4	57.8	31.1	88.8	77.9	89.1	Y
+H4	81.9	84.7	38.9	54.6	63.6	48.9	N
+BL	86.6	76.4	85.9	95.8	82.9	90.8	N
+BR	70.4	71.5	83.4	86.5	91.9	50.9	Y
+
+Test on 'y'
+	SS	SH	BT	H4	BL	BR
+SS	35.6	50.2	93.5	88.2	78.5	76.1	Y
+SH	87.2	48.2	81.6	87.5	87.9	84.7	Y
+BT	90.5	68.2	43.7	75.0	77.5	88.3	Y
+H4	80.2	80.4	35.2	42.5	61.3	63.3	N
+BL	84.9	70.5	90.9	87.0	63.0	88.5	Y
+BR	69.4	78.0	84.2	82.4	93.8	53.4	Y
+
+***
+NEW TESTS, 3/17/99
+***
+
+Note: In the "know-font" stage, some temps too high
+ example: SS i, SH l, BR l
+Intrinsic score pertaining to letter category, probably number of
+quanta and inherent "likeness" of letter to other letters
+
+Given the errors, maybe need to punish ahead-not-found more
+ Maybe some abstract-rules deserve more punish than others
+ Maybe thermostat "target" and not merely rate, need to be
+  influenced by importance
+
+NOTE: limitations in the approach!!! style that consists of a
+ disjunction (like shorts: less this or less that) not learnable
+ as well
+
+Timing 3/17/99: 88sec  to run the 25 letters of Boat (3.5 sec/letter)
+
+Test on 'a'
+	SS	SH	BT	H4	BL	BR	Correct?
+SS	32	27	69	77	78	77	n (retest y, easily)
+SH	6	4	72	83	76	53	y
+BT	121	81	5	4	47	24	n (retest y, easily)
+H4	78	80	16	12	62	43	y
+BL	22	40	27	7	4	91	y
+BR	23	35	75	42	64	3	y
+
+Test on 'd'
+	SS	SH	BT	H4	BL	BR
+SS	3	3	65	86	38	22	y~ (retest no)
+SH	28	4	16	87	86	24	y
+BT	69	73	3	17	87	54	y
+H4	74	74	28	13	55	41	y
+BL	16	32	65	69	3	89	y
+BR	29	15	76	34	63	0	y
+
+Test on 'y'
+	SS	SH	BT	H4	BL	BR
+SS	6	63	75	72	101	25	y
+SH	34	3	62	25	75	36	y
+BT	73	61	3	12	12	123	y
+H4	52	76	16	6	61	22	y
+BL	115	61	104	30	5	79	y
+BR	16	44	46	61	68	3	y
+
+

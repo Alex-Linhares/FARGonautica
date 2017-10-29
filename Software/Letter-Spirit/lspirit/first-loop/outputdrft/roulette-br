@@ -1,0 +1,338 @@
+Chez Scheme Transcript [Tue Aug 10 12:19:37 1999]
+>>>>>>>>> (try-gridfont 'br)
+
+Error in cadr: incorrect list structure 20.
+Type (debug) to enter the debugger.
+>>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in cadr>                                    : s
+  continuation:          #<continuation in draft-run>
+#<system continuation in cadr>                                    : d
+#<continuation in draft-run>                                      : s
+  continuation:          #<continuation in draft-step>
+  procedure code:        (lambda () ...)
+  call code:             (cadr winner)
+  free variables:
+  0. winner:             20
+  1: 250
+#<continuation in draft-run>                                      : q
+
+debug> e
+>>>>>>>>> (define draft-winner
+  (lambda ()
+    (let*
+	([steps (map cadr *candidates*)]
+	 [what-counts
+	  (lambda (step)
+	    (let
+		([scores (lookup-list step *choice-weights*)])
+	      (list
+		  (quit-score scores)
+		  (continue-score scores))))]
+	 [best-continue
+	  (find-max-val
+	   (map list *candidates*
+		(map cadr (map what-counts steps))))]
+	 [best-quit
+	  (find-max-val
+	   (map list *candidates*
+		(map car (map what-counts steps))))])
+      (if (< (cadr best-continue) 0)
+	  (set! *quit-drawing* #t))
+      (if (or
+	   (> (cadr best-quit) (cadr best-continue))
+	   (< (cadr best-continue) 0))
+	  (car best-quit)
+	  (car best-continue)))))
+>>>>>>>>> (draft-winner)
+(10 36 *ne* none)
+>>>>>>>>> *the-whole*
+r1
+>>>>>>>>> *candidates*
+((3 20 *n* none)
+ (10 36 *ne* none)
+ (11 6 *e* none)
+ (12 50 *se* none)
+ (5 23 *s* none))
+>>>>>>>>> (lookup-list 12 *candidates*)
+(50 *se* none)
+>>>>>>>>> (choice-info)
+((20 47098.55 -2090070.2)
+ (6 47559.35 -583734.4)
+ (23 47177.95 -2090175.8)
+ (50 39041.55 -592437.2)
+ (36 48491.75 -582802.0))
+>>>>>>>>> (lookup-list 20 (choice-info))
+(47098.55 -2090070.2)
+>>>>>>>>> 
+>>>>>>>>> 
+(load "coderack.ss")
+>>>>>>>>> (draft-winner)
+
+Error in caddr: incorrect list structure ((10 36 *ne* none) (48491.75 -582802.0)).
+Type (debug) to enter the debugger.
+>>>>>>>>>  (load "coderack.ss")
+>>>>>>>>>  (draft-winner)
+(12 50 *se* none)
+>>>>>>>>>  (draft-winner)
+(12 50 *se* none)
+>>>>>>>>>  (draft-winner)
+(12 50 *se* none)
+>>>>>>>>>  (draft-winner)
+(3 20 *n* none)
+>>>>>>>>>  (draft-winner)
+(5 23 *s* none)
+>>>>>>>>> (try-cats)
+Tried to draw a s
+Ruled (20 4 35 38 7 50 8) a o1
+
+Error in cadar: incorrect list structure ().
+Type (debug) to enter the debugger.
+>>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in cadar>                                   : s
+  continuation:          #<continuation in roulette-select>
+#<system continuation in cadar>                                   : d
+#<continuation in roulette-select>                                : s
+  continuation:          #<continuation in draft-run>
+  procedure code:        (lambda (ls n) (if ((...) (...)) (caar ls) ...))
+  call code:             (cadar ls)
+  free variables:
+  0. n:                  0
+  1. ls:                 ()
+#<continuation in roulette-select>                                : d
+#<continuation in draft-run>                                      : s
+  continuation:          #<continuation in draft-step>
+  procedure code:        (lambda () ...)
+  call code:             (draft-winner)
+#<continuation in draft-run>                                      : d
+#<continuation in draft-step>                                     : s
+  continuation:          #<continuation in draft>
+  procedure code:        (lambda () (if (...) ...))
+  call code:             (take-step)
+#<continuation in draft-step>                                     : d
+#<continuation in draft>                                          : s
+  continuation:          #<system continuation in map1>
+  procedure code:        (lambda (rname) ((...) (...)))
+  call code:             (do-draft)
+  free variables:
+  0. rname:              center-post
+#<continuation in draft>                                          : d
+#<system continuation in map1>                                    : s
+  continuation:          #<continuation in draw-cat>
+#<system continuation in map1>                                    : q
+
+debug> e
+>>>>>>>>> (choice-info)
+()
+>>>>>>>>> *candidates*
+()
+>>>>>>>>> (candidates)
+()
+>>>>>>>>> (draw-cat 'r)
+(r (4 20 23 8 9) (36 50 24))
+>>>>>>>>> (draw-cat 'r)
+(r (20 48 24 8) (36 21 7 22))
+>>>>>>>>> (draw-cat 'r)
+(r (20 34 2 46) (36 21))
+>>>>>>>>> (load "coderack.ss")
+>>>>>>>>>  (draw-cat 'r)
+(r (50 24) (36 5))
+>>>>>>>>>  (draw-cat 'r)
+(r (23) (6 7 22))
+>>>>>>>>>  (load "coderack.ss")
+>>>>>>>>> (try-cats)
+Tried to draw a o
+Ruled (36 21 38 8 9 25) a u1
+
+debug> n
+>>>>>>>>>>  (load "coderack.ss")
+>>>>>>>>>>  (try-cats)
+
+debug> n
+>>>>>>>>>>> (token-place 'r '())
+>>>>>>>>>>> (exit)
+debug> e
+
+Error in cadar: incorrect list structure ().
+Type (debug) to enter the debugger.
+>>>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in cadar>                                   : s
+  continuation:          #<continuation in roulette-select>
+#<system continuation in cadar>                                   : d
+#<continuation in roulette-select>                                : s
+  continuation:          #<continuation in draft-run>
+  procedure code:        (lambda (ls n) (if ((...) (...)) (caar ls) ...))
+  call code:             (cadar ls)
+  free variables:
+  0. n:                  0
+  1. ls:                 ()
+#<continuation in roulette-select>                                : q
+
+debug> n
+>>>>>>>>>>> *own-stuff*
+(50 9 28 11 10 26)
+>>>>>>>>>>>  (load "coderack.ss")
+>>>>>>>>>>>  (try-cats)
+Tried to draw a i
+Ruled (19 47 21 48 20 50 8 26) a j1
+Tried to draw a y
+Ruled (23 8 9 5 37 24 39 25 28 31) a q1
+Tried to draw a o
+Ruled (20 48 38 8 9 41 10) a y1
+Tried to draw a u
+Ruled (20 34 21 24 9) a i1
+
+debug> n
+>>>>>>>>>>>>  (load "coderack.ss") (try-cats)
+>>>>>>>>>>>> Tried to draw a t
+Ruled (34 17 46 49 39 23 38 48 4 5) a d1
+Tried to draw a o
+Ruled (36 5 22 39 8 23) a o1 score of 10.392
+Tried to draw a v
+Ruled (22 39 8 36 23) a u1
+Tried to draw a i
+Ruled (37 7 39 35 18) a i1 score of 82.64
+Tried to draw a l
+Ruled (32 17 34 3 19 22 25) a l1 score of 59.492
+Tried to draw a s
+Ruled (5 4 20 50 39 7 38 23) a s2 score of 79.529
+Tried to draw a r
+Ruled (21 7 36 23) a r1 score of 51.15
+Tried to draw a t
+Ruled (34 17 46 21 7 39 36 5) a r1
+Tried to draw a x
+Ruled (20 6 24 9 23 36 5) a x1 score of 16.877
+Tried to draw a a
+Ruled (25 51 38 36 5 22 39 8) a a1 score of 41.961
+Tried to draw a q
+Ruled (23 8 40 10 11 31 5 21 7 39 27 41 28 43 13) a a1
+Tried to draw a h
+Ruled (14 32 15 18 36 23 6 7 25 28) a h1 score of 55.484
+Tried to draw a w
+Ruled (4 5 37 6 50 9 25 22 7 24 36 23 8) a h1
+Tried to draw a y
+Ruled (37 6 50 27 42 18 2 17) a j1
+Tried to draw a j
+Ruled (16 36 50 9 51 37 22) a j1 score of 87.831
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in map>                                     : s
+  continuation:          #<continuation in quanta-real-tips>
+  free variables:
+  0: #f
+  1: #<procedure quantum-get-points>
+#<system continuation in map>                                     : d
+#<continuation in quanta-real-tips>                               : s
+  continuation:          #<continuation in tip-nearest>
+  procedure code:        (lambda (qls) (find-uniques (apply append (...))))
+  call code:             (map quantum-get-points qls)
+#<continuation in quanta-real-tips>                               : d
+#<continuation in tip-nearest>                                    : s
+  continuation:          #<continuation in eval-string>
+  procedure code:        (lambda (pt except qls) ((...) (...)))
+  call code:             (quanta-real-tips qls)
+  free variables:
+  0. qls:                #f
+  1. except:             8
+  2. pt:                 12
+#<continuation in tip-nearest>                                    : d
+#<continuation in eval-string>                                    : s
+  continuation:          #<continuation in gestalt-parse>
+  procedure code:        (lambda (parse-string qls) ((...) (...)))
+  call code:             (parse-item (caddr parse-string) start-point ...)
+  free variables:
+  0. qls:                (22 39 21 24 9 28 20 4 35 3 2 14 0)
+  1. parse-string:       (cleave-out (tp-n 15) (tp-n 12))
+  2. islands:            ((22 39 24 21 4 20) (28 9))
+  3. start-point:        8
+  4. cleaveland:         #f
+  5. rest:               ((22 39 24 21 4 20) (28 9))
+#<continuation in eval-string>                                    : q
+
+debug> e
+>>>>>>>>>>>> *quanta-list*
+(22 39 21 24 9 28 20 4 35 3 2 14 0)
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 24 21 4 20) (28 9))
+>>>>>>>>>>>> (robust-linearize '(48 37 21 7 6 24 38 51))
+((48 38) (21 37) (6 24) (7 51))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14))
+((22 39 9 28) (14 2 3 35 4 20) (21 24))
+>>>>>>>>>>>> (length '(22 39 21 24 9 28 20 4 35 3 2 14))
+12
+>>>>>>>>>>>> (map length '((22 39 9 28) (14 2 3 35 4 20) (21 24)))
+(4 6 2)
+>>>>>>>>>>>> (map length '((22 39 24 21 4 20) (28 9)))
+(6 2)
+>>>>>>>>>>>>  (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 4 20) (21 24))
+>>>>>>>>>>>> (map length '((22 39 9 28) (0 14 2 3 35 4 20) (21 24)))
+(4 7 2)
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 21 24) (4 20))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 4 20) (21 24))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 24 21 35 3 2 14 0) (28 9))
+>>>>>>>>>>>> (subtract '(22 39 21 24 9 28 20 4 35 3 2 14 0) '(22 39 24 21 35 3 2 14 0))
+(9 28 20 4)
+>>>>>>>>>>>> (robust-linearize '(9 28 20 4))
+((9 28) (4 20))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 35 3 2 14 0))
+((22 39 24 21 35 3 2 14 0) (28 9))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 21 24))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 21 24))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 35 3 2 14 0))
+((22 39 24 21 35 3 2 14 0) (28 9))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 35 3 2 14 0))
+((22 39 24 21 35 3 2 14 0) (28 9))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 35 3 2 14 0))
+((22 39 24 21 35 3 2 14 0) (28 9))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 21 24))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 21 24))
+>>>>>>>>>>>> (robust-linearize '(22 39 21 24 9 28 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 21 24))
+>>>>>>>>>>>> (robust-neighbor-sort '(4) '(22 39 21 24 9 28 20 35 3 2 14 0))
+((4 21 24 9 28) (39 22))
+>>>>>>>>>>>> (load "smartparse.ss")
+>>>>>>>>>>>>  (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 21 24) (4 20))
+>>>>>>>>>>>>  (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 24 21 4 20) (28 9) (35 3 2 14 0))
+>>>>>>>>>>>>  (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 24 21 4 20) (28 9) (35 3 2 14 0))
+>>>>>>>>>>>>  (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 24 21 4 20) (28 9) (35 3 2 14 0))
+>>>>>>>>>>>>  (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 4 20) (21 24))
+>>>>>>>>>>>>  (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 21 24) (4 20))
+>>>>>>>>>>>>  (robust-linearize '(22 39 21 24 9 28 20 4 35 3 2 14 0))
+((22 39 9 28) (0 14 2 3 35 21 24) (4 20))
+>>>>>>>>>>>> (token-place 'w '())
+>>>>>>>>>>>> (try-cats)
+Tried to draw a u
+Ruled (23 26 40 27 11 21 24 39 25) a w1
+Tried to draw a k
+Ruled (50 39 22 44 18 36 23 6 51) a d1
+Tried to draw a y
+Ruled (23 8 9 5 37 7 25 41 42) a y2 score of 60.612
+Tried to draw a m
+Ruled (49 25 5 37 24 36 20 48) a q1
+
+debug> n
+>>>>>>>>>>>>> (exit)
+debug> a

@@ -1,0 +1,171 @@
+Chez Scheme Transcript [Thu Jan 27 17:26:43 2000]
+>> (try-gridfont 'benzene-left)
+Accepted, as a seed for b, (4 9 14 17 20 25 49 50)
+Accepted, as a seed for c, (4 9 20 49 50)
+Accepted, as a seed for e, (4 7 9 20 48 49 50)
+Accepted, as a seed for f, (0 4 5 14 21 24 45 46)
+Accepted, as a seed for g, (4 9 13 20 25 28 31 49 50 54)
+(nada () ((*translate-motifs* ((*s* *se* *e*) (*w* *nw* *n*) (*se* *e*))) (*literal-motifs* ((4))) (*abstract-rules* (ban-foreslash-quanta))) ((*translate-motifs* ((*w*) (*e*) (*s* *se*) (*nw* *w*) (*s*))) (*literal-motifs* ((20) (20 50) (49 4) (50 20) (9 50 20))) (*turn-45-motifs* ((135))) (*turn-180-motifs* ((*se*)))) 12 25 43)
+Trying r by borrowing c; seed margin 7.426 58.0
+seedified as r1 score 7.426 beat 299.99 (4 20 49 50)
+Trying j by drafting j; rejected as c1, score 300.0 (13 25 28 31 49 54)
+Trying t by drafting t; seed margin 59.073 58.0
+accepted as t1 score 59.073 beat 299.99 (4 6 8 9 18 21 23 49)
+Trying x by drafting x; rejected as r1, score 300.0 (6 7 22 48 51)
+Trying a by drafting a; seed margin 87.373 52.537
+accepted as a2 score 87.373 beat 299.99 (4 5 7 8 22 25 38 50)
+Trying k by drafting k; seed margin 42.027 60.149
+seedified as k1 score 42.027 beat 299.99 (6 7 9 14 17 20 22 23 50)
+Trying d by borrowing b; seed margin 63.867 58.0
+accepted as d1 score 63.867 beat 299.99 (5 8 16 19 22 23 36 39)
+Trying y by borrowing g; seed margin 24.321 54.934
+seedified as y1 score 24.321 beat 299.99 (9 13 20 25 28 31 49 50 54)
+Trying x by drafting x; seed margin 26.86 58.0
+seedified as x1 score 26.86 beat 299.99 (4 6 7 9 21 22 24)
+Trying j by drafting j; seed margin 49.226 58.0
+seedified as j1 score 49.226 beat 299.99 (13 19 25 28 31 49 54)
+Trying s by drafting s; rejected as quit, score 300.0 (4 5 9 11 20 22 38 51 52)
+Trying l by drafting l; seed margin 54.061 58.0
+seedified as l1 score 54.061 beat 299.99 (15 22 25 47)
+Trying s by drafting s; seed margin 29.667 58.0
+seedified as s2 score 29.667 beat 299.99 (4 5 7 9 25 48 50)
+Trying p by borrowing b; seed margin 67.162 58.0
+accepted as p1 score 67.162 beat 299.99 (5 8 22 23 26 29 36 39)
+Trying v by drafting v; rejected as u1, score 300.0 (9 22 24 25 48)
+Trying o by drafting o; seed margin 7.932 56.581
+seedified as o1 score 7.932 beat 299.99 (4 5 9 20 22 25 50)
+Trying h by borrowing y; rejected as quit, score 300.0 (4 13 14 17 20 25 45 49 50)
+Trying w by drafting w; rejected as y1, score 300.0 (11 20 24 25 41 50 53)
+Trying v by drafting v; seed margin 21.952 58.0
+seedified as v1 score 21.952 beat 299.99 (25 48 49 51)
+Trying u by drafting u; seed margin 28.781 58.0
+seedified as u1 score 28.781 beat 299.99 (9 20 25 49 50)
+Trying n by borrowing o; seed margin 28.998 58.0
+seedified as n1 score 28.998 beat 299.99 (4 5 20 22 25 50)
+Trying t by drafting t; rejected as t1, score 49.014 (4 5 25 46 49)
+Trying m by drafting m; rejected as n1, score 300.0 (20 25 49 50)
+Trying m by drafting m; rejected as n1, score 300.0 (4 20 25 49 50)
+Trying m by drafting m; seed margin 57.787 46.614
+accepted as m1 score 57.787 beat 299.99 (20 21 25 46 49 50)
+Trying q by drafting q; seed margin 18.208 46.338
+seedified as q1 score 18.208 beat 299.99 (4 9 20 22 25 28 49 50)
+Trying a by borrowing e; seed margin 26.408 58.0
+seedified as a2 score 26.408 beat 87.373 (4 6 9 25 49 50 51)
+Trying h by borrowing b; seed margin 20.569 58.0
+seedified as h1 score 20.569 beat 299.99 (4 14 17 20 25 49 50)
+Trying i by borrowing j; seed margin 65.368 58.0
+accepted as i1 score 65.368 beat 299.99 (19 25 49)
+Trying z by borrowing s; seed margin 54.147 55.684
+seedified as z1 score 54.147 beat 299.99 (4 5 6 8 23 37 39)
+Trying w by drafting w; rejected as u1, score 300.0 (7 8 20 25 38 49 50)
+Trying w by drafting w; seed margin 48.902 58.0
+seedified as w1 score 48.902 beat 299.99 (8 9 20 23 24 25 49)
+Trying m by borrowing w; seed margin 49.194 58.0
+seedified as m1 score 49.194 beat 178.894 (4 5 20 21 22 25 50)
+Trying t by drafting t; rejected as r1, score 300.0 (6 7 9 20 49 50)
+Trying d by drafting d; rejected as j1, score 300.0 (1 4 9 19 20 25 45 47 49 50)
+Trying i by drafting i; rejected as i1, score 88.02 (9 19 24)
+Trying i by drafting i; seed margin 75.329 48.365
+reelected as i1 score 75.329 (19 25 49)
+Trying p by borrowing q; seed margin 43.338 52.106
+seedified as p1 score 43.338 beat 45.161 (5 8 20 22 23 26 36 39)
+Trying d by borrowing p; seed margin 36.218 58.0
+seedified as d on re-election 36.218 (5 8 16 19 22 23 36 39)
+Trying t by drafting t; rejected as i1, score 300.0 (5 9 20 50)
+Trying i by drafting i; seed margin 60.174 46.614
+accepted as i1 score 60.174 beat 82.375 (3 25 49)
+Trying i by drafting i; rejected as i1, score 120.398 (9 19 24)
+Trying i by drafting i; rejected as i1, score 120.026 (9 19 24)
+Trying t by drafting t; seed margin 37.76 53.087
+seedified as t1 score 37.76 beat 43.096 (4 5 9 18 36 50)
+Trying i by drafting i; rejected as i1, score 113.232 (9 19 24)
+Trying i by drafting i; rejected as i1, score 113.898 (9 19 24)
+Trying i by drafting i; rejected as i1, score 108.281 (19 25 49)
+Trying i by drafting i; rejected as i1, score 107.818 (19 51)
+Trying i by drafting i; rejected as i1, score 111.681 (9 19 24)
+Trying i by drafting i; rejected as i1, score 94.107 (19 25 49)
+Trying i by drafting i; rejected as i1, score 99.234 (19 25 49)
+Trying i by drafting i; seed margin 50.69 58.0
+seedified as i1 score 50.69 beat 58.805 (2 25 47 49)
+((i (2 25 47 49))
+ (t (4 5 9 18 36 50))
+ (d (5 8 16 19 22 23 36 39))
+ (p (5 8 20 22 23 26 36 39))
+ (m (4 5 20 21 22 25 50))
+ (w (8 9 20 23 24 25 49))
+ (z (4 5 6 8 23 37 39))
+ (h (4 14 17 20 25 49 50))
+ (a (4 6 9 25 49 50 51))
+ (q (4 9 20 22 25 28 49 50))
+ (n (4 5 20 22 25 50))
+ (u (9 20 25 49 50))
+ (v (25 48 49 51))
+ (o (4 5 9 20 22 25 50))
+ (s (4 5 7 9 25 48 50))
+ (l (15 22 25 47))
+ (j (13 19 25 28 31 49 54))
+ (x (4 6 7 9 21 22 24))
+ (y (9 13 20 25 28 31 49 50 54))
+ (k (6 7 9 14 17 20 22 23 50))
+ (r (4 20 49 50))
+ (g (4 9 13 20 25 28 31 49 50 54))
+ (f (0 4 5 14 21 24 45 46))
+ (e (4 7 9 20 48 49 50))
+ (c (4 9 20 49 50))
+ (b (4 9 14 17 20 25 49 50)))
+>> (tf-summary)
+(nada ((*translate-motifs*
+         ((*n*)
+          (*w*)
+          (*e*)
+          (*s* *s*)
+          (*se* *e*)
+          (*s*)
+          (*s* *se*)
+          (*nw* *n*)))
+       (*abstract-rules* (at-most-3))
+       (*turn-90-motifs* ((*e* *s*) (*s*) (*nw*)))
+       (*turn-180-motifs* ((*n*))))
+      ((*literal-motifs*
+         ((49 4)
+          (4)
+          (20)
+          (25)
+          (4 20)
+          (50 20)
+          (9 25)
+          (25 9)
+          (9)
+          (49)))
+       (*relative-nvs* ((tips (tip *inward*)) (weight more)))
+       (*abstract-rules* (ban-foreslash-quanta ban-45-angle))
+       (*turn-90-motifs* ((*n* *e* *se*) (*s* *se*)))
+       (*translate-motifs* ((*n* *nw*) (*n*) (*nw* *w*)))
+       (*turn-45-motifs* ((135)))
+       (*turn-180-motifs* ((*e* *se*) (*nw*) (*se*) (*n* *n*))))
+      ((*relative-nvs*
+         ((weight less)
+          (roof less)
+          (width more)
+          (tips (tip *outward*))
+          (tips (tip *n*))
+          (tips (down-tip *inward*))
+          (curve less)
+          (floor less)
+          (height more)
+          (curve more)
+          (tips (down-tip *n*))
+          (tips (tip *e*))
+          (height less)
+          (tips (tip *s*))
+          (tips (tip *w*))
+          (tips (up-tip *w*))
+          (tips (up-tip *inward*))))
+       (*literal-motifs* ((20 50) (49 25)))
+       (*abstract-rules* (ban-leftedge))
+       (*translate-motifs* ((*e*)))
+       (*turn-180-motifs* ((*w* *nw* *n*))))
+      29
+      31
+      69)
+>> (transcript-off)

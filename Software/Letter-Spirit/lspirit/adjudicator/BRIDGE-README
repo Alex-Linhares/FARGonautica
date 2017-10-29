@@ -1,0 +1,71 @@
+CHECK tf-search is random.. looks for match in one place, instead of being
+exhaustive
+
+SHOULDN'T BE A PROBLEM, BECAUSE REPEATS WON'T OCCUR
+duplicates of motifs counted multiply
+BUT THEY SHOULD, FOR MOTIFS and NVs, MAYBE
+
+CHECK (not tested) demotion and bridge-back, obviously
+
+set up phases of posting, temperature control, conditions of quitting
+ all the SP-finders
+ all the bridge-builders
+ NOTE a bridge-out and bridge-back on the same SP could cause an
+error, because the second one to deal with it might find it not there,
+anymore; if so, the remove-from-TF will do nothing; this should be
+detected and prevent the add-to-TF from doing anything
+ all the promoters
+
+COMMENT: basic stuff added, but not temperature; see no problem with
+multiple bridges on one SP; let it bifurcate; it won't crash
+
+probabilistic promotion/demotion, by "newsworthiness"
+
+NEED TO DO
+
+add activations to weight certain things
+
+NEED TO DO
+
+test that sucker
+
+Scoring: move temperature a certain fraction (1/20?) towards a baseline
+Start at 50.
+
+Out-bridge to *letter-rows* -- baseline to 15
+to successive levels of TF: to 12, 9, 6, 3, 0
+
+Promote -- baseline to 0
+
+Demote -- baseline to 100
+
+(define thermo
+  (lambda (test)
+    (let*
+      ([aim (if test 100 0)]
+       [new-temp (+ (* 0.90 temp) (* 0.10 aim))])
+      (set! temp new-temp))))
+
+---------
+
+New Checklist
+
+More complex promotion/demotion
+Scoring via temperature -- When? Promotion or Bridge-building?
+Activations -- What for, and when?
+Top-down/bottom-up flow
+  bridges posted by SP-finders
+  bridge-back failure leads to search for new SPs
+  handle the messy job of having all three phases going on at once?
+    in an intricate dance?
+
+CHECK Hey, we didn't look for ARs that were irrelevant; now bridge-back
+gives you a demotion for that! (Maybe bridge-out, too)
+
+CHECK We don't want to actually perform pro/demotions until letter is
+accepted! Have an extra buffer to store the pro/demotions in, and then
+crank them out later?
+
+CHECK Promotion eradicates the old SP. So motifs always shrink!
+Leave the old motif where it was during promotion. You can still
+delete it during demotion (when it won't shrink, anyway).

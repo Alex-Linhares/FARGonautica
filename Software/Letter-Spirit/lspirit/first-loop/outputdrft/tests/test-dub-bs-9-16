@@ -1,0 +1,63 @@
+Chez Scheme Transcript [Thu Sep 16 14:50:02 1999]
+>>>>>>> (try-gridfont 'double-backslash)
+Tried to draw a t Ruled (18 21 48 20 23 8 9) a l1
+Tried to draw a p Ruled (51 25 22 5 36 6 48 24 27 30) a l1
+Tried to draw a d Ruled (5 21 51 16 19 22) a d1 score of 64.648
+Tried to draw a w Ruled (25 51 24 4 20 50) a c1
+Tried to draw a t Ruled (18 21 48 17 32 1 16 19 22 25 9 8 23 36 5) a c1
+Tried to draw a x Ruled (49 8 9 51 48) a i1
+Tried to draw a j Ruled (16 48 51 28) a j1 score of 83.98
+Tried to draw a v Ruled (22 25 51 48) a v1 score of 38.742
+Tried to draw a x Ruled (8 39 22 48 51) a x1 score of 70.546
+Tried to draw a u Ruled (48 51 22 25) a v1
+Tried to draw a h Ruled (44 18 48 51) a i1
+Tried to draw a h Ruled (44 18 48 51) a i1
+Tried to draw a r Ruled (4 5 48) a c1
+Tried to draw a h Ruled (17 20 48 51 9 8) a h1 score of 103.417
+Tried to draw a r Ruled (48 7) a r1 score of 80.878
+Tried to draw a y Ruled (49 22 48 51 28 31) a j1
+Tried to draw a q Ruled (28 31 55 30 5 4 48 51) a q1 score of 70.35
+
+debug> n
+>>>>>>>> (try-cats)
+
+debug> n
+>>>>>>>>> *the-whole*
+i1
+>>>>>>>>> (exit)
+debug> n
+>>>>>>>>> (try-cats)
+Tried to draw a y Ruled (22 25 28 11 10 48 51) a y2 score of 32.591
+Tried to draw a n Ruled (4 5 22 25 48) a c1
+Tried to draw a s Ruled (8 9 51 6 48 7) a r1
+
+debug> e
+
+debug> n
+>>>>>>>>>>  *the-whole*
+i1
+>>>>>>>>>> (try-cats)
+Tried to draw a n Ruled (4 36 23 48 51) a o1
+Tried to draw a n Ruled (20 23 48 51) a n1 score of 49.279
+Tried to draw a u Ruled (21 24 9 48 51 25 22) a g1
+
+debug> e
+
+debug> n
+>>>>>>>>>>>  *the-whole*
+i1
+>>>>>>>>>>> (try-cats)
+Tried to draw a l Ruled (45 19 22 25) a l1 score of 116.025
+Tried to draw a a Ruled (50 39 7 48 51 9 8) a l1
+Tried to draw a k Ruled (14 17 20 36 5 23 8 9 51) a h1
+Tried to draw a t Ruled (18 21 48 6 7) a t1 score of 80.734
+Tried to draw a p Ruled (20 23 26 48 51 9 8) a p1 score of 30.619
+Tried to draw a u Ruled (22 25 48 51) a v1
+Tried to draw a a Ruled (23 50 39 7 48 51) a w1
+Tried to draw a w Ruled (48 49 22 37) a o1
+Tried to draw a o Ruled (48 51 9 8 23 20) a o1 score of 21.445
+
+debug> n
+>>>>>>>>>>>> *the-whole*
+w1
+>>>>>>>>>>>> (transcript-off)

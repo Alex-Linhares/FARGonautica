@@ -1,0 +1,782 @@
+Chez Scheme Transcript [Sat Sep 25 11:25:48 1999]
+>>  (try-gridfont 'double-backslash)
+Tried to draw a s Ruled (5 36 6 51 9 8) a s2 score of 39.565
+Tried to draw a q Ruled (21 5 22 25 28) a q1 score of 107.986
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in map>                                     : s
+  continuation:          #<continuation in quanta-real-tips>
+  free variables:
+  0: #f
+  1: #<procedure quantum-get-points>
+#<system continuation in map>                                     : d
+#<continuation in quanta-real-tips>                               : s
+  continuation:          #<continuation in tip-nearest>
+  procedure code:        (lambda (qls) (find-uniques (apply append (...))))
+  call code:             (map quantum-get-points qls)
+#<continuation in quanta-real-tips>                               : d
+#<continuation in tip-nearest>                                    : s
+  continuation:          #<continuation in eval-string>
+  procedure code:        (lambda (pt except qls) ((...) (...)))
+  call code:             (quanta-real-tips qls)
+  free variables:
+  0. qls:                #f
+  1. except:             4
+  2. pt:                 19
+#<continuation in tip-nearest>                                    : d
+#<continuation in eval-string>                                    : s
+  continuation:          #<continuation in gestalt-parse>
+  procedure code:        (lambda (parse-string qls) ((...) (...)))
+  call code:             (parse-item (caddr parse-string) start-point ...)
+  free variables:
+  0. qls:                (24 48 17 51)
+  1. parse-string:       (cleave-out (quad) (tp-n 19))
+  2. island1:            ((17 48 51 24))
+  3. island1-missing:    ()
+  4. islands:            ((17 48 51 24))
+  5. start-point:        4
+  6. cleaveland:         #f
+  7. rest:               ((17 48 51 24))
+#<continuation in eval-string>                                    : d
+#<continuation in gestalt-parse>                                  : s
+  continuation:          #<continuation in smart-parse>
+  procedure code:        (lambda () ((...) (...)))
+  call code:             (eval-string (cadr gestalt-string) ...)
+  free variables:
+  0. gestalt-string:     ((cleave-out (...) ...) (cleave-out (...) ...))
+  1. first-pass:         ((6 7) (24 48 17) (51))
+  2: (6 7)
+#<continuation in gestalt-parse>                                  : d
+#<continuation in smart-parse>                                    : s
+  continuation:          #<continuation in label-parts>
+  procedure code:        (lambda () (set! *workspace* ...) (dampen) ...)
+  call code:             (gestalt-parse)
+#<continuation in smart-parse>                                    : d
+#<continuation in label-parts>                                    : s
+  continuation:          #<continuation in run-examiner>
+  procedure code:        (lambda () (if *graphics* ...) (set-up-workspace) ...)
+  call code:             (smart-parse)
+#<continuation in label-parts>                                    : q
+
+debug> n
+>>> (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>> (apply append (glom-islands *quanta-list*))
+(24 51 6 7 48 17)
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>>  (glom-islands *quanta-list*)
+((24 51 6 7 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (glom-islands '(17 48 51 24))
+((51 24 48 17))
+>>> (gestalt-parse)
+((17 48 6) (7) (51 24))
+>>>  (gestalt-parse)
+((17 48 6) (7) (51 24))
+>>>  (gestalt-parse)
+((17 48 6) (7 24) (51))
+>>>  (gestalt-parse)
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>  (gestalt-parse)
+((17 48 6) (7) (51 24))
+>>>  (gestalt-parse)
+((17 48 6) (7) (51 24))
+>>>  (gestalt-parse)
+((17 48 6) (7 24) (51))
+>>>  (gestalt-parse)
+((17 48 6) (7) (51 24))
+>>>  (gestalt-parse)
+((17 48 6) (7) (51 24))
+>>>  (gestalt-parse)
+((17 48 6) (7) (51 24))
+>>>  (gestalt-parse)
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>  (gestalt-parse)
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>  (gestalt-parse)
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>  (gestalt-parse)
+((17 48 6) (7) (51 24))
+>>> (load "smartparse.ss")
+>>>  (gestalt-parse)
+k
+((17 48 6) (7) (51 24))
+>>>  (gestalt-parse)
+k
+((17 48 6) (7) (51 24))
+>>>  (gestalt-parse)
+k
+((17 48 6) (7 24) (51))
+>>>  (gestalt-parse)
+k
+((17 48 6) (7) (51 24))
+>>>  (gestalt-parse)
+k
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>  (gestalt-parse)
+k
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>  (gestalt-parse)
+k
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>  (gestalt-parse)
+k
+((17 48 6) (7) (51 24))
+>>> (active-gestalts *gestalt-index*)
+((f 3.174)
+ (h 11.33)
+ (i 12.872)
+ (k 15.848)
+ (l 8.365)
+ (m 1.942)
+ (s 2.016)
+ (t 9.75)
+ (x 3.542))
+>>> (load "smartparse.ss")
+>>>  (gestalt-parse)
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in map>                                     : s
+  continuation:          #<continuation in quanta-real-tips>
+  free variables:
+  0: #f
+  1: #<procedure quantum-get-points>
+#<system continuation in map>                                     : d
+#<continuation in quanta-real-tips>                               : s
+  continuation:          #<continuation in tip-nearest>
+  procedure code:        (lambda (qls) (find-uniques (apply append (...))))
+  call code:             (map quantum-get-points qls)
+#<continuation in quanta-real-tips>                               : d
+#<continuation in tip-nearest>                                    : s
+  continuation:          #<continuation in eval-string>
+  procedure code:        (lambda (pt except qls) ((...) (...)))
+  call code:             (quanta-real-tips qls)
+  free variables:
+  0. qls:                #f
+  1. except:             4
+  2. pt:                 19
+#<continuation in tip-nearest>                                    : d
+#<continuation in eval-string>                                    : s
+  continuation:          #<continuation in gestalt-parse>
+  procedure code:        (lambda (parse-string qls) ((...) (...)))
+  call code:             (parse-item (caddr parse-string) start-point ...)
+  free variables:
+  0. qls:                (24 48 17 51)
+  1. parse-string:       (cleave-out (quad) (tp-n 19))
+  2. island1:            ((17 48 51 24))
+  3. island1-missing:    ()
+  4. islands:            ((17 48 51 24))
+  5. start-point:        4
+  6. cleaveland:         #f
+  7. rest:               ((17 48 51 24))
+#<continuation in eval-string>                                    : d
+#<continuation in gestalt-parse>                                  : s
+  continuation:          #<top level continuation>
+  procedure code:        (lambda () ((...) (...)))
+  call code:             (eval-string (cadr gestalt-string) ...)
+  free variables:
+  0. gestalt-string:     ((cleave-out (...) ...) (cleave-out (...) ...))
+  1. first-pass:         ((6 7) (24 48 17) (51))
+  2: (6 7)
+#<continuation in gestalt-parse>                                  : q
+
+debug> n
+>>>> (tip-nearest 4 '() '(17 48 51 24))
+12
+>>>> (tip-nearest 4 4 '(17 48 51 24))
+12
+>>>> (tip-nearest 4 12 '(17 48 51 24))
+2
+>>>>  (tip-nearest 4 4 '(17 48 51 24))
+12
+>>>>  (tip-nearest 4 4 '(17 48 51 24))
+12
+>>>>  (tip-nearest 4 4 '(17 48 51 24))
+12
+>>>> (tip-nearest 4 12 '(17 48 51 24))
+2
+>>>> (tip-nearest 4 12 '(17 48 51 24))
+2
+>>>> (tip-nearest 4 12 '(17 48 51 24))
+2
+>>>> (tip-nearest 4 12 '(17 48 51 24))
+2
+>>>>  (tip-nearest 4 12 '(17 48 51 24))
+2
+>>>> (roulette (lookup 'k *parse-smarts*))
+((cleave-out (tp-n 1) (pt-n 5))
+ (cleave-out (tp-n 17) (pt-n 3)))
+>>>>  (roulette (lookup 'k *parse-smarts*)) 
+((cleave-out (quad) (tp-n 17))
+ (cleave-out (quad) (tp-n 19)))
+>>>> (map linearize ; BUG HERE!? 9/25/99
+			  (eval-string '(cleave-out (quad) (tp-n 17)) *quanta-list*))
+((6 7) (24 48 17) (51))
+>>>>  (map linearize ; BUG HERE!? 9/25/99
+                          (eval-string '(cleave-out (quad) (tp-n 17)) *quanta-list*))
+((6 7) (24 51) (17 48))
+>>>>  (map linearize ; BUG HERE!? 9/25/99
+                          (eval-string '(cleave-out (quad) (tp-n 17)) *quanta-list*))
+((6 7) (24 51) (17 48))
+>>>>  (map linearize ; BUG HERE!? 9/25/99
+                          (eval-string '(cleave-out (quad) (tp-n 17)) *quanta-list*))
+((6 7) (24 51) (17 48))
+>>>>  (map linearize ; BUG HERE!? 9/25/99
+                          (eval-string '(cleave-out (quad) (tp-n 17)) *quanta-list*))
+((6 7) (24 51) (17 48))
+>>>>  (map linearize ; BUG HERE!? 9/25/99
+                          (eval-string '(cleave-out (quad) (tp-n 17)) *quanta-list*))
+((6 7) (24 51) (17 48))
+>>>> (eval-string '(cleave-out (quad) (tp-n 19)) '(24 51 17 48)))
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>>  (eval-string '(cleave-out (quad) (tp-n 19)) '(24 51 17 48)))
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>>  (eval-string '(cleave-out (quad) (tp-n 19)) '(24 51 17 48)))
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>>  (eval-string '(cleave-out (quad) (tp-n 19)) '(24 51 17 48)))
+
+Error in map: #f is not a proper list.
+Type (debug) to enter the debugger.
+>>>> (glom-islands '(24 51 17 48)))
+((17 51 48 24))
+>>>> (parse-item 'cleave-out 'no-except '(24 51 17 48))
+>>>> (parse-item '(quad) 'no-except '(24 51 17 48))
+4
+>>>> (island-with-point 4 '((24 51 17 48))
+)
+#f
+>>>> (quadruple-point)
+4
+>>>> (quadruple-point)
+4
+>>>> (quadruple-point)
+4
+>>>> (quadruple-point)
+4
+>>>> (quadruple-point)
+4
+>>>> *point-list*
+((1 (0 44 14))
+ (2 (14 32 2 46 17))
+ (3 (17 34 4 48 20))
+ (4 (20 36 6 50 23))
+ (5 (23 38 8 52 26))
+ (6 (26 40 10 54 29))
+ (7 (29 42 12))
+ (8 (1 45 15 32 0))
+ (9 (2 44 15 33 3 47 18 34))
+ (10 (4 46 18 35 5 49 21 36))
+ (11 (6 48 21 37 7 51 24 38))
+ (12 (8 50 24 39 9 53 27 40))
+ (13 (10 52 27 41 11 55 30 42))
+ (14 (12 54 30 43 13))
+ (15 (16 33 1))
+ (16 (16 45 3 35 19))
+ (17 (19 47 5 37 22))
+ (18 (22 49 7 39 25))
+ (19 (25 51 9 41 28))
+ (20 (28 53 11 43 31))
+ (21 (31 55 13)))
+>>>> (load "smartparse.ss")
+>>>> (quadruple-point '(24 51 17 48))
+11
+>>>>  (quadruple-point '(24 51 17 48))
+11
+>>>>  (quadruple-point '(24 51 17 48))
+11
+>>>>  (load "smartparse.ss")
+>>>> (eval-string '(cleave-out (quad) (tp-n 19)) '(24 51 17 48)))
+((51) (17 48 24))
+>>>> (eval-string '(cleave-out (quad) (tp-n 19)) '(24 51 17 48)))
+((51) (17 48 24))
+>>>> (try-cats)
+
+debug> n
+>>>>> (re-draw 'k)
+>>>>> (exit)
+debug> e
+Tried to draw a o Ruled (48 4 5) a c1
+Tried to draw a u Ruled (22 25 48 51) a v1
+Tried to draw a t Ruled (18 21 48 20 23 8) a l1
+Tried to draw a o Ruled (48 51 9 8 23 20) a o1 score of 16.106
+Tried to draw a w Ruled (48 51 22 49 36 23 8 9) a o1
+Tried to draw a d Ruled (16 19 22 25 5 4 48 51) a d1 score of 24.028
+Tried to draw a z Ruled (48 7 9 25) a s2
+Tried to draw a r Ruled (48 7) a r1 score of 88.97
+Tried to draw a t Ruled (18 21 48 17 36 5) a d1
+Tried to draw a w Ruled (36 6 48 22 25) a i1
+Tried to draw a z Ruled (6 37 8 9) a i1
+Tried to draw a x Ruled (6 7 39 8 9 51 48) a i1
+Tried to draw a t Ruled (36 5 18 21 51) a t1 score of 51.885
+Tried to draw a i Ruled (3) a l1
+Tried to draw a y Ruled (5 47 3 45 1 48 51 25 22) a f1
+Tried to draw a h Ruled (17 20 23 48 51) a h1 score of 28.372
+Tried to draw a a Ruled (50 8 26 10 11 48 51) a j1
+Tried to draw a m Ruled (36 20 5 22 25 21 24 8) a n1
+Tried to draw a a Ruled (4 5 22 25 6 50 8) a i1
+Tried to draw a n Ruled (48 51) a r1
+Tried to draw a n Ruled (48 51) a r1
+Tried to draw a x Ruled (48 51 38 37) a x1 score of 65.94
+Tried to draw a u Ruled (20 50 22 25 51 24) a w1
+Tried to draw a p Ruled (23 26 29 48 4 5 22 25) a m1
+Tried to draw a w Ruled (48 21 36 23 22 25) a n1
+Tried to draw a u Ruled (20 50 22 25 51 24) a u1 score of 75.696
+Tried to draw a l Ruled (15 18 21 51) a l1 score of 36.278
+Tried to draw a n Ruled (20 23 48 51) a n1 score of 28.28
+Tried to draw a w Ruled (36 50 24 48 22 25 28) a j1
+Tried to draw a q Ruled (22 49 35 3 48 51 9 8 23 20) a q2 score of 99.997
+Tried to draw a k Ruled (5 46 21 48 51) a k1 score of 103.568
+Tried to draw a z Ruled (52 11 6 37 8 9) a i1
+Tried to draw a w Ruled (22 25 51 24 20 50) a w1 score of 49.135
+Tried to draw a a Ruled (4 5 22 25 7 6 50 9) a a1 score of 19.152
+Tried to draw a i Ruled (19) a a1
+Tried to draw a v Ruled (22 39 48 24) a v1 score of 58.179
+Tried to draw a p Ruled (20 23 26 10 30 48 51 9 8) a p1 score of 17.999
+Tried to draw a y Ruled (22 25 28 43 12 48 51) a y2 score of 13.742
+Tried to draw a m Ruled (7 49 5 48 51) a r1
+Tried to draw a z Ruled (38 7 8 9 51 48 36 5) a r1
+Tried to draw a j Ruled (35 48 51 28) a j1 score of 33.405
+Tried to draw a i Ruled (45) a j1
+Tried to draw a z Ruled (38 51 6 7 49 5 8 9 28 11 10) a g1
+Tried to draw a i Ruled (45) a g1
+Tried to draw a z Ruled (49 8 9 51 48 23) a j1
+Tried to draw a i Ruled (3) a l1
+Tried to draw a z Ruled (23 36 49 8 9 48 7) a e2
+Tried to draw a i Ruled (3) a e2
+Tried to draw a m Ruled (36 5 22 25 21 38) a n1
+Tried to draw a i Ruled (45) a n1
+Tried to draw a i Ruled () a n1
+Tried to draw a i Ruled (3) a n1
+Tried to draw a m Ruled (4 36 50 48 5 22 25) a m1 score of 78.853
+Tried to draw a i Ruled (49 25 3 34) a i1 score of 62.538
+Tried to draw a z Ruled (52 41 8 39 22 48 37) a z1 score of 130.269
+Tried to draw a w Ruled (21 24 9 22 25 48 51) a g1
+Tried to draw a z Ruled (8 9 24 48 4 5 36 49) a k1
+Tried to draw a w Ruled (48 51 49 22) a i1
+Tried to draw a z Ruled (4 5 8 9 38 37) a z1 score of 78.631
+Tried to draw a r Ruled (4 5 48) a c1
+Tried to draw a x Ruled (48 51 38 37) a x1 score of 57.516
+Tried to draw a k Ruled (17 48 24 27 51 6 7) a k1 score of 71.931
+Tried to draw a v Ruled (48 38 22 25 9 8) a u1
+Tried to draw a h Ruled (14 17 20 23 48 51) a h1
+Tried to draw a q Ruled (28 31 13 30 27 48 4 5 22 25 51) a g1
+Tried to draw a i Ruled (3) a g1
+Tried to draw a n Ruled (48 51) a r1
+Tried to draw a v Ruled (22 25 51 48) a v1 score of 29.822
+Tried to draw a v Ruled (48 24 27 22 25) a i1
+Tried to draw a t Ruled (18 21 48 20 23 8 9) a l1
+Tried to draw a j Ruled (48 51 28 53 27 3) a j1
+Tried to draw a h Ruled (14 17 20 23 48 51) a h1
+Tried to draw a z Ruled (5 8 9 51 48 23 6 7) a h1
+Tried to draw a o Ruled (48 4 5) a c1
+Tried to draw a z Ruled (4 5 38 37 8 9) a z1
+Tried to draw a k Ruled (5 46 21 24 51) a k1 score of 69.251
+Tried to draw a i Ruled (3 2) a k1
+Tried to draw a s Ruled (48 7) a c1
+Tried to draw a u Ruled (48 21 36 50 25 28 11 27) a o1
+Tried to draw a m Ruled (7 22 5 18 3 45 1 48 51 9 8 20 36) a o1
+Tried to draw a k Ruled (14 17 48 24 51 6 7) a k1 score of 69.142
+Tried to draw a i Ruled (19) a k1
+Tried to draw a r Ruled (4 5) a c1
+Tried to draw a r Ruled (48 7) a r1
+Tried to draw a r Ruled (4 5 22) a r1
+Tried to draw a n Ruled (4 5 22 25 48) a c1
+Tried to draw a s Ruled (4 49 48 51) a c1
+Tried to draw a n Ruled (48 51) a r1
+Tried to draw a w Ruled (21 51 9 50 22 25 48) a w1
+Tried to draw a r Ruled (48 7) a r1
+Tried to draw a h Ruled (14 17 20 23 48 51) a h1
+Tried to draw a y Ruled (49 25 48 51 28) a y2
+Tried to draw a x Ruled (49 25 28 8 9 51 48) a x1
+Tried to draw a q Ruled (48 51 9 8 23 20) a o1
+Tried to draw a y Ruled (36 23 8 9 48 51 28) a o1
+Tried to draw a x Ruled (49 25 8 9 51 48) a y2
+Tried to draw a s Ruled (8 9 48 7) a n1
+Tried to draw a l Ruled (15 18 21 51) a l1
+Tried to draw a z Ruled (48 37 8 9 23 36 5) a o1
+Tried to draw a k Ruled (5 46 21 24 51) a k1 score of 52.105
+Tried to draw a w Ruled (48 49 22 37 6 23 8) a u1
+Tried to draw a t Ruled (18 21 48 17 6 7) a t1
+Tried to draw a k Ruled (44 18 21 24 51 6 37) a k1 score of 48.152
+Tried to draw a q Ruled (5 4 48 51 28 31 55 30 54 29) a y2
+Tried to draw a r Ruled (4 5 22 48) a c1
+Tried to draw a z Ruled (38 37 36 5 8 9) a z1 score of 67.511
+Tried to draw a t Ruled (18 21 48 17 32 45 36 5) a f1
+Tried to draw a r Ruled (48 7) a r1
+Tried to draw a r Ruled (48 7) a r1
+Tried to draw a j Ruled (48 51 28 35) a j1
+Tried to draw a m Ruled (4 36 23 51 24) a i1
+Tried to draw a r Ruled (48 4 5 22) a c1
+Tried to draw a s Ruled (51 9 8 5 4 48) a s2 score of 23.312
+Tried to draw a m Ruled (21 5 22 25) a o1
+Tried to draw a q Ruled (5 4 48 51) a c1
+Tried to draw a q Ruled (28 11 30 13 5 4 48 51) a q1 score of 55.923
+Tried to draw a r Ruled (48 7) a c1
+Tried to draw a k Ruled (17 48 24 8 23 36 18 51 6 37) a c1
+Tried to draw a x Ruled (38 37 48 51) a x1
+Tried to draw a l Ruled (15 18 21 51) a l1
+Tried to draw a h Ruled (14 17 20 23 48 51) a h1
+Tried to draw a r Ruled (48 7) a r1
+Tried to draw a v Ruled (22 25 51 48) a v1 score of 23.53
+Tried to draw a d Ruled (19 22 25 5 4 48 51) a d1 score of 21.655
+Tried to draw a q Ruled (5 4 48 51 28 31 55 30 54 29) a y2
+Tried to draw a y Ruled (22 25 28 11 42 48 51) a y2
+Tried to draw a q Ruled (5 4 48 51 28 31 13 30 27) a q1
+Tried to draw a m Ruled (36 23 5 22 25 21 48) a n1
+Tried to draw a j Ruled (22 25 28 43 12 3 34) a j1
+Tried to draw a u Ruled (48 51 49 25) a v1
+Tried to draw a r Ruled (48 7) a r1
+Tried to draw a u Ruled (20 50 22 25 51 24) a w1
+Tried to draw a w Ruled (48 51 49 22) a i1
+Tried to draw a v Ruled (48 24 22 39) a v1
+Tried to draw a x Ruled (49 25 8 9 51 48) a y2
+Tried to draw a l Ruled (15 18 21 51) a l1 score of 32.32
+Tried to draw a t Ruled (18 21 48 20 23 8 9 25) a l1
+Tried to draw a w Ruled (20 50 48 21 36 23 22 25 9) a l1
+Tried to draw a x Ruled (8 24 21 5 48 51) a x1 score of 36.313
+Tried to draw a r Ruled (4 5 22) a r1 score of 87.821
+Tried to draw a u Ruled (48 51 22 25) a v1
+Tried to draw a i Ruled (48 38 8 9) a o1
+Tried to draw a s Ruled (8 9 28 48 7) a j1
+Tried to draw a z Ruled (23 36 49 8 9 48 7) a o1
+Tried to draw a m Ruled (5 22 25 48) a i1
+Tried to draw a a Ruled (23 50 39 7 48 51) a w1
+Tried to draw a r Ruled (20 23 48 51 28 11 27 40) a y2
+Tried to draw a u Ruled (48 51 22 25) a v1
+Tried to draw a r Ruled (4 5 48) a c1
+Tried to draw a m Ruled (4 20 5 22 25 21 24 8) a m1
+Tried to draw a z Ruled (8 9 6 37) a i1
+Tried to draw a m Ruled (21 48 5 22 25) a c1
+Tried to draw a m Ruled (21 5 22 25 36 23) a n1
+Tried to draw a j Ruled (3 48 51 28 31) a j1
+Tried to draw a h Ruled (44 18 48 51 9 8) a i1
+Tried to draw a d Ruled (3 15 1 48 4 5 22 25) a i1
+Tried to draw a o Ruled (48 4 5 22 25) a c1
+Tried to draw a m Ruled (24 37 22 25 38) a m1
+Tried to draw a l Ruled (15 18 21 51) a l1 score of 32.238
+Tried to draw a i Ruled (35) a l1
+Tried to draw a x Ruled (6 7 25 8 9 51 48) a l1
+Tried to draw a w Ruled (22 25 51 24 20 50) a w1
+Tried to draw a h Ruled (17 20 48 51) a h1
+Tried to draw a t Ruled (18 21 48 20 23 8 9) a l1
+Tried to draw a k Ruled (51 6 37 44 18 21 24) a k1
+Tried to draw a k Ruled (51 44 18 21 24 5 22 7 48 20) a m1
+Tried to draw a m Ruled (36 23 5 22 25 21) a n1
+Tried to draw a z Ruled (23 36 5 48 8 9) a z1
+Tried to draw a u Ruled (22 49 48 51) a i1
+Tried to draw a r Ruled (48 7) a c1
+Tried to draw a t Ruled (18 21 48 20 23 26 10 11 28) a l1
+Tried to draw a n Ruled (20 23 48 51) a n1
+Tried to draw a w Ruled (20 50 22 25 28 11 48 21 36 23) a n1
+Tried to draw a q Ruled (28 31 13 30 27 24 21 49 48 4 5 22 25 51) a n1
+Tried to draw a k Ruled (5 44 18 21 24 51) a k1 score of 45.223
+Tried to draw a n Ruled (48 51 9 8) a s1
+Tried to draw a q Ruled (4 36 50 8 26 10 11 28 31 13 30 27 24 7 22) a s1
+Tried to draw a u Ruled (22 49 48 51) a i1
+Tried to draw a h Ruled (44 18 48 51) a i1
+Tried to draw a j Ruled (3 18 48 51 28) a j1 score of 30.087
+Tried to draw a r Ruled (4 5 22 48) a c1
+Tried to draw a k Ruled (51 6 37 17 48 24) a k1
+Tried to draw a z Ruled (4 5 8 9 38 37) a z1
+Tried to draw a n Ruled (48 51 9 8) a s1
+Tried to draw a t Ruled (18 21 48 20 23 8 9) a l1
+Tried to draw a v Ruled (48 38 22 25 9 8) a u1
+Tried to draw a m Ruled (36 23 5 22 25 21) a n1
+Tried to draw a r Ruled (20 50 37) a i1
+Tried to draw a m Ruled (38 51 9 39 22) a o1
+Tried to draw a q Ruled (22 49 21 24 27 55 48 51 9 8 23 20) a o1
+Tried to draw a u Ruled (20 23 8 22 25 51 24) a w1
+Tried to draw a o Ruled (48 4 5 22 25 51) a o1
+Tried to draw a o Ruled (48 51 9 8 23 20) a o1
+Tried to draw a r Ruled (4 5 22 48) a c1
+Tried to draw a r Ruled (48 7) a c1
+Tried to draw a r Ruled (4 5) a c1
+Tried to draw a x Ruled (38 37 48 51) a x1
+Tried to draw a u Ruled (22 49 48 51) a i1
+Tried to draw a j Ruled (3 48 51 28) a j1 score of 28.433
+Tried to draw a x Ruled (48 51 38 37) a x1
+Tried to draw a v Ruled (22 25) a c1
+Tried to draw a z Ruled (23 6 7 8 9 51 37 4 5) a z1
+Tried to draw a v Ruled (48 38 22 25 9 8) a u1
+Tried to draw a t Ruled (36 5 18 21 51) a t1 score of 45.701
+Tried to draw a z Ruled (23 36 49 8 9 48 7) a o1
+Tried to draw a i Ruled (3 48 51 9) a i1 score of 35.65
+Tried to draw a q Ruled (22 49 35 48 51 9 8 23 20) a q2
+Tried to draw a l Ruled (15 18 21 51) a l1 score of 30.422
+Tried to draw a l Ruled (15 18 21 51) a l1
+Tried to draw a q Ruled (5 4 48 51 28 31 55 30) a q1
+Tried to draw a h Ruled (14 17 48 24 4 5 22 25) a h1
+Tried to draw a z Ruled (4 5 38 37 8 9) a z1
+Tried to draw a z Ruled (23 36 49 8 9 48 7) a e2
+Tried to draw a h Ruled (17 20 23 48 51) a h1
+Tried to draw a w Ruled (21 38 8 22 25 51 24 20 50) a g1
+Tried to draw a u Ruled (36 23 8 48 51 25 22) a w1
+Tried to draw a l Ruled (15 18 21 51) a l1
+Tried to draw a q Ruled (22 49 35 3 34 17 32 0 48 51 9 8 23 20) a d1
+Tried to draw a d Ruled (19 37 24 21 49 25 51) a d1
+Tried to draw a r Ruled (4 5 22 48) a c1
+Tried to draw a r Ruled (4 5 22) a r1 score of 76.239
+Tried to draw a k Ruled (4 5 14 17 48 24 51) a k1
+Tried to draw a m Ruled (20 23 48 51 7 39 27 11 28) a g1
+Tried to draw a a Ruled (6 50 9 48 51) a a1
+Tried to draw a u Ruled (49 25 48 51) a v1
+Tried to draw a x Ruled (6 7 25 28 8 9 51 48) a v1
+Tried to draw a z Ruled (4 5 8 9 38 37) a z1
+Tried to draw a j Ruled (19 48 51 28 43 12) a j1
+Tried to draw a x Ruled (48 51 38 37) a x1
+Tried to draw a r Ruled (48 7) a c1
+Tried to draw a u Ruled (22 49 48 51) a i1
+Tried to draw a u Ruled (22 49 35 3 48 51) a i1
+Tried to draw a m Ruled (4 20 23 5 22 25 21) a n1
+Tried to draw a r Ruled (48 7) a r1
+Tried to draw a m Ruled (5 22 25 48) a i1
+Tried to draw a s Ruled (5 4 48 51 28 11 52) a s2
+Tried to draw a j Ruled (45 15 48 51 28) a j1 score of 26.838
+Tried to draw a t Ruled (18 21 48 20 23 8 9) a l1
+Tried to draw a q Ruled (5 4 48 51) a c1
+Tried to draw a z Ruled (36 5 8 9 38 37) a z1
+Tried to draw a u Ruled (36 23 8 24 7 48 51 25 22) a z1
+Tried to draw a u Ruled (4 36 50 22 25 51 24) a u1 score of 63.861
+Tried to draw a k Ruled (14 17 20 23 51 6 37 22 49) a k1
+Tried to draw a k Ruled (14 17 48 24 6 37 51) a k1
+Tried to draw a h Ruled (48 51 17 20 23) a h1
+Tried to draw a k Ruled (4 5 14 17 48 20 23 8 9 25) a t1
+Tried to draw a t Ruled (18 21 48 20 23 8 9) a l1
+Tried to draw a q Ruled (28 31 13 30 27 39 22 5 4 48 51) a l1
+Tried to draw a h Ruled (4 5 17 48 24) a t1
+Tried to draw a w Ruled (20 50 48 21 22 25 9) a d1
+Tried to draw a z Ruled (4 5 8 9 38 37) a z1
+Tried to draw a r Ruled (48 7) a c1
+Tried to draw a l Ruled (15 18 21 51) a l1
+Tried to draw a l Ruled (15 18 21 51) a l1
+Tried to draw a m Ruled (21 5 22 25 36 23) a n1
+Tried to draw a d Ruled (5 4 48 51 19 22 25) a d1 score of 17.646
+Tried to draw a p Ruled (21 5 22 25 51 48 24 27) a p2
+Tried to draw a v Ruled (48 38 22 25 9 8) a u1
+Tried to draw a z Ruled (8 9 38 37 4 5) a z1
+Tried to draw a m Ruled (48 51 9 27 30 13 31) a u1
+Tried to draw a i Ruled (35) a u1
+Tried to draw a m Ruled (20 23 51 24) a n1
+Tried to draw a q Ruled (7 38 23 20 28 31 13 30 27 39 49) a y1
+Tried to draw a z Ruled (48 7 8 9 23 36 35) a t1
+Tried to draw a z Ruled (8 9 38 37 4 5) a z1
+Tried to draw a u Ruled (22 25 48 51) a v1
+Tried to draw a n Ruled (4 36 23 48 51) a o1
+Tried to draw a t Ruled (18 21 48 6 51) a r1
+Tried to draw a j Ruled (48 51 28 11 10 26 8 3) a j1
+Tried to draw a u Ruled (22 49 48 51) a i1
+Tried to draw a l Ruled (15 18 21 51) a l1
+Tried to draw a z Ruled (4 21 6 39 22 19 52 11 28 9) a j1
+Tried to draw a n Ruled (20 36 21 48 51 9 8) a e2
+Tried to draw a l Ruled (15 18 21 51) a l1
+Tried to draw a q Ruled (28 31 13 30 27 39 22 5 4 48 51) a l1
+Tried to draw a l Ruled (15 18 21 51) a l1
+Tried to draw a j Ruled (48 51 28 53 27 42 3) a j1
+Tried to draw a p Ruled (4 5 22 39 48 24 27) a p1
+Tried to draw a z Ruled (38 37 36 5 8 9) a z1
+Tried to draw a r Ruled (4 5 48) a c1
+Tried to draw a z Ruled (23 6 37 8 9 4 5) a z1
+Tried to draw a j Ruled (3 48 51 28) a j1
+Tried to draw a v Ruled (48 38 22 25 9 8) a u1
+Tried to draw a u Ruled (22 25 48 51) a v1
+Tried to draw a q Ruled (25 28 31 13 49 4 20 23) a g1
+Tried to draw a h Ruled (4 5 22 25 14 17 48) a h1
+Tried to draw a i Ruled (16) a h1
+Tried to draw a t Ruled (18 21 48 20 23 8 9 25) a l1
+Tried to draw a r Ruled (48 7) a r1
+Tried to draw a q Ruled (28 31 13 30 27 5 4 48 51) a y2
+Tried to draw a j Ruled (3 48 51 28) a j1
+Tried to draw a t Ruled (18 21 48 20 23 8 9) a l1
+Tried to draw a u Ruled (48 21 36 50 22 25 9) a u1 score of 37.42
+Tried to draw a o Ruled (48 51 28) a u1
+Tried to draw a a Ruled (23 50 39 7 48 51) a r1
+Tried to draw a x Ruled (6 7 25 28 8 9 51 48) a q1
+Tried to draw a a Ruled (50 8 38 7 25 48 51) a w1
+Tried to draw a z Ruled (38 37 4 5 8 9) a z1
+>>>> (transcript-off)

@@ -1,0 +1,59 @@
+highest-rated stylistic properties for each gridfont
+after the Adjudicator has seen 'b', 'c', 'e', 'f', and 'g'
+
+standard square
+
+UNIVERSAL
+none
+FREQUENT
+(*literal-motifs* ((5) (4 5) (5 4) (4)))
+
+---------------------------------------------------------------
+
+shorts
+
+UNIVERSAL
+none
+FREQUENT
+*abstract-rules* (ban-45-135-angle ban-135-angle ban-diagonal-quanta)
+*literal-motifs* ((20 4) (4) (4 20) (23) (20 23))
+*translate-motifs* ((*w* *w*) (*w* *w* *s* *s*))
+
+---------------------------------------------------------------
+
+boat
+
+UNIVERSAL
+none
+FREQUENT
+none
+OCCASIONAL
+*literal-motifs* ((4 20) (5 4 20) (4 20 50) (39 50 20)
+     (39 50 20 4 5) (50 39) (50 20) (50 20 4))
+*relative-nvs* ((tips (down-tip *inward*))
+*translate-motifs* ((*sw*) (*s* *se* *ne*) (*n*)
+*turn-90-motifs* ((*n* *n*))
+---------------------------------------------------------------
+
+hunt 4
+
+UNIVERSAL
+none
+FREQUENT
+
+---------------------------------------------------------------
+
+benzene left
+
+UNIVERSAL
+none
+FREQUENT
+
+---------------------------------------------------------------
+
+benzene right
+
+UNIVERSAL
+none
+FREQUENT
+

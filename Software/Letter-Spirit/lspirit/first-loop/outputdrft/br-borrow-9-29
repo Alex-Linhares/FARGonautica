@@ -1,0 +1,372 @@
+Chez Scheme Transcript [Wed Sep 29 14:02:39 1999]
+> (try-gridfont 'benzene-right)
+Choices: ()  Tried v Ruled (22 39 8 36 23) a u1
+Choices: (e)  Borrow Tried a Ruled (8 7 5 22 39 38 36) a a1 score of 51.948
+Choices: ()  Tried n Ruled (5 22 39 36 23) a n1 score of 36.488
+Choices: ()  Tried i Ruled (5 22 39) a r1
+Choices: (b)  Tried p Ruled (38 24 27 41 28 43 13 23 26 29) a n1
+Choices: (b)  Borrow Tried h Ruled (5 14 17 20 22 23 36 39) a h1 score of 38.757
+Choices: ()  Tried u Ruled (37 24 36 23 8) a u1 score of 77.36
+Choices: (b)  Tried d Ruled (5 36 23 8 16 19 22 39) a d1 score of 21.402
+Choices: ()  Tried w Ruled (25 41 11 53 36 23 8 24) a y1
+Choices: ()  Tried l Ruled (15 18 21 24 39 25) a h1
+Choices: ()  Tried t Ruled (18 21 38 8 39 36 5) a t1 score of 60.248
+Choices: ()  Tried i Ruled (49 25 9) a s2
+Choices: (c)  Borrow Tried r Ruled (5 23 36 39) a i1
+Choices: ()  Tried x Ruled (38 37 23 8 39) a y1
+Choices: (b g)  Tried o Ruled (36 5 22 25 9 8 23) a o1 score of 3.042
+Choices: ()  Tried i Ruled (5 22 39 16) a i1 score of 119.252
+Choices: ()  Tried l Ruled (15 18 21 24 39 25) a h1
+Choices: (b)  Borrow Tried p Ruled (9 4 29 26 23 25 20 50 49) a p1 score of 78.533
+Choices: ()  Tried l Ruled (15 18 36 23 8 39) a l1 score of 39.447
+Choices: (b)  Tried q Ruled (36 21 38 26 40 53 11 22 25 28 31) a x1
+Choices: ()  Tried w Ruled (24 9 5 22 39 23 26 10 11 28) a w1 score of 57.797
+Choices: ()  Tried m Ruled (36 20 5 22 39 21 38) a n1
+Choices: (g)  Tried y Ruled (37 51 28 43 12 36 23 8 39 25) a g1
+Choices: ()  Tried m Ruled (36 23 5 22 25 21 24) a m1 score of 51.636
+Choices: (g)  Borrow Tried y Ruled (8 12 22 23 25 28 36 39 43) a y1 score of 26.695
+Choices: (c)  Tried r Ruled (23 36 5) a r1 score of 61.032
+Choices: ()  Tried z Ruled (36 5 8 39 38 37) a z1 score of 44.058
+Choices: (b)  Borrow Tried q Ruled (8 5 31 28 25 23 22 39 36) a q1 score of 8.712
+Choices: ()  Tried k Ruled (6 48 4 5 14 17 20 23 36 49 25 9) a q1
+Choices: ()  Tried j Ruled (45 21 24 27 42 12 54 26 23) a j1 score of 108.842
+Choices: ()  Tried k Ruled (36 5 23 8 14 17 20 6) a t1
+Choices: ()  Tried v Ruled (22 39 8 36 23) a u1
+Choices: ()  Tried k Ruled (36 5 23 8 9 14 17 20 6) a t1
+Choices: ()  Tried k Ruled (17 20 6 21 18 15 0 23 8 9 36 5) a k1 score of 106.216
+Choices: ()  Tried x Ruled (21 24 9 38 37) a x1 score of 28.083
+Choices: ()  Tried s Ruled (25 41 10 40 24 5 36 23) a j1
+Choices: ()  Tried s Ruled (6 7 8 39 36 5) a s2 score of 77.33
+Choices: ()  Tried v Ruled (23 38 48 5 22 39) a n1
+Choices: ()  Tried v Ruled (6 48 4 5 22 39 8) a n1
+Choices: ()  Tried x Ruled (38 37 23 8 9) a x1
+Choices: ()  Tried v Ruled (23 26 10 27 24 48 5 22 39) a y2
+Choices: ()  Tried v Ruled (6 48 4 18 2 32 0 5 22 39 8) a y1
+Choices: ()  Tried v Ruled (22 39 8 36 23) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (6 48 4 18 49 39 8) a t1
+Choices: ()  Tried v Ruled (22 39 8 36 23) a u1
+Choices: ()  Tried v Ruled (23 38 24 5 22 39) a w1
+Choices: ()  Tried v Ruled (5 22 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 36 23) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (23 8 49 39) a u1
+Choices: ()  Tried v Ruled (23 38 48 49 39) a i1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried s Ruled (38 7 36 5 22) a e2
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried n Ruled (23 8 36 5 22 25) a n1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (21 24 8 23 20) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (50 49 25) a n1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried w Ruled (22 39 36 23 24 9) a w1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried s Ruled (5 21 48 25 28 11 10 26 23) a j1
+Choices: ()  Tried u Ruled (37 24 36 23 8) a u1 score of 77.218
+Choices: (b)  Tried p Ruled (38 24 27 30 13 31 23 26 29) a y1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: (c)  Borrow Tried r Ruled (5 23 36 39) a i1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (21 24 40 10 11 28) a y1
+Choices: ()  Tried s Ruled (5 36 6 7 25 28 11 10 26) a s2 score of 76.427
+Choices: ()  Tried i Ruled (3 5 22 39) a i1 score of 76.505
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: (b)  Tried p Ruled (24 6 36 18 2 32 0 20 4 5 22 25 41 10 26 23) a c1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (50 49 25) a n1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: (c)  Tried r Ruled (5 22 36 23) a r1 score of 60.724
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: (b)  Tried p Ruled (38 24 27 41 28 31 13 54 23 26 29) a r1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried z Ruled (48 37 23 36 5 8 39) a e2
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried j Ruled (45 15 21 24 27 42 12) a j1 score of 92.783
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried x Ruled (36 21 24 9 38 37) a x1 score of 22.353
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried j Ruled (36 23 8 27 42 12 13 3) a j1 score of 91.084
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried m Ruled (21 51 36 23 5 22 39) a g1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: (b)  Borrow Tried d Ruled (4 9 16 19 22 20 25 49 50) a d1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried s Ruled (5 36 20 25 9 24) a i1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried n Ruled (23 36 5 22 39) a n1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (49 25) a n1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (50 49 25) a n1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried m Ruled (5 22 25 23 8) a n1
+Choices: ()  Tried i Ruled (3 5 22 39) a i1 score of 74.174
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: (b)  Tried p Ruled (38 24 27 30 13 31 28 25 23 26 29) a y1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (36 49 25) a n1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried u Ruled (23 8 39 21 24 27 11) a y1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+
+debug> n
+>> *style-knob*
+0.0
+>> (length *coderack*)
+15
+>> *coderack*
+((#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure> labeler 25 2)
+ (#<procedure> labeler 25 2)
+ (#<procedure> labeler 25 2)
+ (#<procedure> labeler 25 2)
+ (#<procedure> labeler 25 2)
+ (#<procedure> labeler 25 2)
+ (#<procedure> labeler 25 2)
+ (#<procedure> labeler 25 2)
+ (#<procedure> sparker 45 4)
+ (#<procedure activation-spreader-codelet>
+   activation-spreader
+   50
+   5)
+ (#<procedure> labeler 25 2)
+ (#<procedure label-checker-codelet> label-checker 25 9)
+ (#<procedure label-checker-codelet> label-checker 25 3))
+>> (exit)
+debug> e
+Tried v Ruled (49 25) a r1
+
+debug> n
+>> *style-knob*
+0.0
+>>  (length *coderack*)
+27
+>>  *coderack*
+((#<procedure> sparker 45 6)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure> breaker 50 9)
+ (#<procedure> sparker 45 7)
+ (#<procedure> sparker 45 4)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure activation-spreader-codelet>
+   activation-spreader
+   50
+   8)
+ (#<procedure> sparker 45 4)
+ (#<procedure> sparker 45 4)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure activation-spreader-codelet>
+   activation-spreader
+   50
+   5)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure> labeler 25 2)
+ (#<procedure> labeler 25 2)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure label-checker-codelet> label-checker 25 3)
+ (#<procedure label-checker-codelet> label-checker 25 6)
+ (#<procedure label-checker-codelet> label-checker 25 6)
+ (#<procedure label-checker-codelet> label-checker 25 6)
+ (#<procedure label-checker-codelet> label-checker 25 6)
+ (#<procedure label-checker-codelet> label-checker 25 6)
+ (#<procedure label-checker-codelet> label-checker 25 5))
+>> (exit)
+debug> e
+Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried w Ruled (36 23 24 9 25 22) a y1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (5 22 25 50 8 26 10) a j1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: (b)  Tried p Ruled (23 26 29 36 5 22 25 9 8) a p1 score of 23.321
+Choices: ()  Tried l Ruled (15 18 36 23 8 9) a l1 score of 36.59
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a o1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried n Ruled (23 36 5 22 25) a n1
+Choices: ()  Tried w Ruled (49 21 24 9 28 20 34 47 22) a l1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried j Ruled (19 36 23 8 27 42 12 13) a j1
+Choices: ()  Tried n Ruled (23 36 5 22 25) a n1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried z Ruled (38 37 36 5 8 39) a z1 score of 41.575
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a r1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+Choices: ()  Tried v Ruled (49 25) a c1
+Choices: ()  Tried v Ruled (22 39 8 21 38) a u1
+> (transcript-off)

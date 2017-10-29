@@ -1,0 +1,51 @@
+TO RUN LETTER SPIRIT
+
+Start SXM, which will give you Scheme functionality plus graphics.
+If you are going to work around the existing LS graphics, you can
+start in regular Scheme, but you will have to figure out a way to turn
+off graphics! It is not claimed that this will be easy.
+
+Load the necessary code simply by loading ls-load.ss
+(load ls-load.ss)
+
+Several functions allow different ways of running the program. The
+most basic and general is probably to call design-gridfont with
+seeds. For example,
+
+(design-gridfont '((4 5 6 7 8 9 22 23 25) (4 5 8 9 14 17 20 22 23
+25)))
+
+will take those two gridletters, expressed in terms of lists of
+quanta, and start Letter Spirit running on it.
+
+NOTE
+
+Much of this code was written when the Examiner was the only part of
+the program that existed. Many functions and variables are
+Examiner-only, although their names sound more general than that. For
+example, (set! *graphics* #f) does not turn off LS graphics. It turns
+off Examiner graphics.
+
+MOST LIKELY SNAGS
+
+1) Graphics.
+
+2) The function set-top-level-value!
+   I think some versions of Scheme might not have this function. It is
+called about five times in the code, and it is essential to how
+activation is spread -- a solution that is very fast in SXM/Chez. if a
+workaround is needed, serious attention should be given to maintaining
+the speed.
+
+3) Examiner-centrism
+   Much of this code was written when the Examiner was the only part of
+the program that existed. Many functions and variables are
+Examiner-only, although their names sound more general than that. For
+example, (set! *graphics* #f) does not turn off LS graphics. It turns
+off Examiner graphics.
+
+4) General clutteredness
+   The code is basically a mess now. FILE-STRUCTURE describes it in
+brief. Comments are present in some places, rare in others. I will
+re-organize the code without changing its functionality circa autumn
+2001.

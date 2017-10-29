@@ -1,0 +1,294 @@
+Chez Scheme Transcript [Sat Oct  2 13:00:28 1999]
+> (design-gridfont
+(list
+(that-letter 'hunt4 'a)
+(that-letter 'hunt4 'd)
+(that-letter 'hunt4 'e)
+(that-letter 'hunt4 'f)
+(that-letter 'hunt4 'h) (that-letter 'hunt4 'j) (that-letter 'hunt4 'k)
+(that-letter 'hunt4 'm) (that-letter 'hunt4 'q) (that-letter 'hunt4 'r)
+(that-letter 'hunt4 's) (that-letter 'hunt4 'u) (that-letter 'hunt4 'x)))
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Choices: (d q)  Borrow Tried p Ruled (20 23 26 29 49 50 36 39) a p2 score of 38.224
+Choices: ()  Tried v Ruled (48 24 49 39) a v1 score of 88.639
+Choices: (d q)  Tried o Ruled (20 4 5 22 25 9 50) a o1 score of 86.434
+Choices: ()  Tried t Ruled (18 21 38 8 9 7 6 20) a t1 score of 108.175
+Choices: (j)  Tried i Ruled (19 24 48 4 36 23 26) a j1
+Tried (19 24 48 4 36 23 26) before
+Choices: ()  Tried l Ruled (15 18 21 24 39 25) a h1
+Choices: (m)  Tried w Ruled (20 50 25 9 24 21 51 37 5) a h1
+Tried (20 50 25 9 24 21 51 37 5) before
+Tried (20 50 25 9 24 21 51 37 5) before
+Choices: (j)  Tried i Ruled (45 23 8 24 21) a i1 score of 123.533
+Choices: (m)  Borrow Tried w Ruled (25 24 22 21 20 39 50) a w1 score of 50.376
+Choices: (u h)  Tried n Ruled (23 20 25 49) a n1 score of 97.713
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 2) a l1 score of 157.464
+Choices: ()  Tried g Ruled (20 4 21 38 8 39 22 25 28 43 12) a y1
+Choices: ()  Tried c Ruled (49 36 23) a r1
+Choices: (q d)  Tried b Ruled (14 17 20 36 49 25) a l1
+Choices: (h)  Tried y Ruled (42 41 28 43 54 26 38 37 5 39 8) a y1 score of 132.837
+Choices: ()  Tried g Ruled (7 48 4 5 47 3 16 25 9 50 20) a b1
+Choices: (q d)  Tried b Ruled (4 5 22 25 9 8 14 17 20 23) a b1 score of 84.323
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Tried (25 9 50 20) before
+Tried (25 9 50 20) before
+Choices: (s)  Tried z Ruled (49 4 6 37 22 9 8) a n1
+Choices: ()  Tried g Ruled (7 48 4 5 47 3 16 1 0 14 25 9 50 20) a b1
+Choices: (s)  Borrow Tried z Ruled (4 7 6 9 49 50) a z1 score of 127.337
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Choices: ()  Tried g Ruled (20 4 21 38 8 40 39 22) a u1
+Tried (20 4 21 38 8 40 39 22) before
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Tried (25 9 50 20) before
+Tried (25 9 50 20) before
+Tried (25 9 50 20) before
+Tried (25 9 50 20) before
+Tried (25 9 50 20) before
+Choices: ()  Tried g Ruled (49 36 23 8 9 22 25 28 31 13 12) a g1 score of 79.798
+Choices: ()  Tried c Ruled (49 36 23) a r1
+Tried (49 36 23) before
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1 score of 100.593
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Tried (25 9 50 20) before
+Tried (25 9 50 20) before
+Choices: (m)  Borrow Tried w Ruled (25 24 22 21 20 39 50) a w1
+Choices: (s)  Tried z Ruled (8 9 49 4 37 38) a z1 score of 71.832
+Choices: ()  Tried c Ruled (49 36 23) a c1 score of 100.091
+Choices: ()  Tried g Ruled (10 11 43 13 25 9 50 20) a j1
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 34) a l1 score of 154.911
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: (d q)  Borrow Tried o Ruled (22 25 36 39 49 50) a d2
+Choices: (s)  Tried z Ruled (36 49 39 8 7 48) a r1
+Choices: (u h)  Borrow Tried n Ruled (20 23 25 36 49) a n1 score of 49.452
+Choices: (h)  Tried y Ruled (9 50 42 41 51 21) a y1 score of 89.942
+Choices: ()  Tried g Ruled (10 11 31 13 12 20 4 5 22 25 9 50) a g2
+Tried (10 11 31 13 12 20 4 5 22 25 9 50) before
+Choices: ()  Tried c Ruled (49 36 23) a c1
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: ()  Tried v Ruled (38 21 39 22) a n1
+Choices: (m)  Tried w Ruled (51 21 8 23 20) a n1
+Choices: (u h)  Tried n Ruled (4 5 22 25 20 23) a n1
+Choices: ()  Tried c Ruled (49 36 23) a c1
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: ()  Tried c Ruled (49 36 23) a r1
+Choices: (d q)  Tried p Ruled (29 26 23 6 20 4 5 22 25 9 50) a q1
+Choices: ()  Tried v Ruled (25 49 4 24 48) a n1
+Choices: ()  Tried l Ruled (22 19 16 33 44 0 32 17 20 23 8 9) a l1 score of 137.716
+Choices: ()  Tried v Ruled (37 51 4 49 25) a o1
+Choices: (s)  Borrow Tried z Ruled (4 7 6 9 49 50) a z1
+Choices: ()  Tried v Ruled (22 39 48 24) a v1 score of 84.254
+Choices: ()  Tried c Ruled (49 4 20 23) a r1
+Choices: (q d)  Borrow Tried b Ruled (14 17 20 23 49 50 36 39) a b2 score of 37.332
+Choices: (q d)  Borrow Tried b Ruled (23 20 17 14 39 36 50 49) a b2
+Choices: ()  Tried c Ruled (49 4 20 23) a r1
+Tried (49 4 20 23) before
+Choices: (u h)  Tried n Ruled (20 23 4 5 22 25) a n1
+Choices: (d q)  Tried o Ruled (20 4 5 22 25 9 50) a o1 score of 83.344
+Choices: ()  Tried g Ruled (20 4 5 37 51 25 28 43 12 29 26 52) a y2
+Tried (20 4 5 37 51 25 28 43 12 29 26 52) before
+Tried (20 4 5 37 51 25 28 43 12 29 26 52) before
+Choices: (d q)  Tried o Ruled (20 4 5 22 25 9 50) a o1
+Choices: ()  Tried l Ruled (22 19 16 1 0) a l1
+Choices: (h)  Tried y Ruled (20 23 8 9 42 41 51 21) a y2
+Choices: (m)  Tried w Ruled (25 22 8 23 20 21 51) a y1
+Choices: ()  Tried l Ruled (15 18 21 24) a l1 score of 92.938
+Choices: ()  Tried v Ruled (9 51 6 23 4 49 39) a o1
+Choices: ()  Tried c Ruled (49 36 23) a c1
+Choices: (u h)  Borrow Tried n Ruled (5 25 23 22 20 36) a n1
+Choices: ()  Tried g Ruled (40 24 7 22 49 36 23) a r1
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Choices: ()  Tried t Ruled (51 24 50 23 26 10 11 31 13 12 7 6 20) a u1
+Tried (51 24 50 23 26 10 11 31 13 12 7 6 20) before
+Choices: (m)  Tried w Ruled (39 25 20 23 8 24 21) a u1
+Tried (39 25 20 23 8 24 21) before
+Choices: (d q)  Tried p Ruled (36 5 22 25 9 50 20 23 26 29) a p2
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Tried (31 28 25 22 20 39 50) before
+Choices: (j)  Tried i Ruled (9 25 49 45) a i1 score of 93.022
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: ()  Tried t Ruled (24 51 28 11 52 26 29 12 13 7 6) a y1
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 34 20 23 8) a k1
+Choices: ()  Tried g Ruled (6 23 26 29 42 30 20 4 5 22 25 9 50) a g1
+Choices: (d q)  Tried o Ruled (20 4 5 22 25 9 50) a o1
+Choices: (m)  Tried w Ruled (21 8 23 20 25 49) a m1
+Choices: (d q)  Borrow Tried p Ruled (29 26 23 20 39 36 50 49) a p2 score of 37.152
+Choices: (d q)  Borrow Tried o Ruled (22 25 36 39 49 50) a d2
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 34) a l1
+Choices: (d q)  Borrow Tried o Ruled (22 25 36 39 49 50) a d2
+Choices: (m)  Borrow Tried w Ruled (25 24 22 21 20 39 50) a w1 score of 47.298
+Choices: ()  Tried l Ruled (15 18 21 24 39 25) a l1
+Choices: (d q)  Borrow Tried o Ruled (22 25 36 39 49 50) a d2
+Choices: ()  Tried l Ruled (15 18 21 24 39 25) a l1
+Tried (15 18 21 24 39 25) before
+Choices: (d q)  Tried p Ruled (8 39 22 5 36 29 26 23 20) a p1
+Choices: (d q)  Borrow Tried o Ruled (22 25 36 39 49 50) a d1
+Choices: (s)  Tried z Ruled (39 38 37 5 4) a i1
+Choices: ()  Tried g Ruled (20 4 21 38 40 39 22) a n1
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: ()  Tried g Ruled (24 40 54 13 31 20 4 5 22 25 41 10) a y2
+Choices: (s)  Tried z Ruled (23 6 51 49 4 37 24 8) a y2
+Choices: ()  Tried t Ruled (4 5 7 51 9 50 23 26 10 11 31 13 12) a j1
+Choices: (u h)  Borrow Tried n Ruled (20 23 25 36 49) a n1 score of 45.9
+Choices: (q d)  Tried b Ruled (23 50 40 10 11 20 34 18 21 7 22) a y1
+Choices: ()  Tried t Ruled (24 51 25 22 19 3 7 6 20) a k1
+Choices: ()  Tried v Ruled (38 21 39 22) a n1
+Choices: ()  Tried t Ruled (37 6 18 21 38 8 39) a t1 score of 98.86
+Choices: (d q)  Borrow Tried p Ruled (29 26 23 20 39 36 50 49) a p2 score of 35.838
+Choices: ()  Tried g Ruled (25 28 43 12 29 26 52 55 49 36 23) a q1
+Choices: ()  Tried t Ruled (18 21 48 17 32 0 6 7 22) a t1
+Choices: (j)  Borrow Tried i Ruled (5 21 24 33) a i1 score of 66.833
+Choices: ()  Tried v Ruled (51 24 4 49 25) a c1
+Choices: (d q)  Borrow Tried o Ruled (22 25 36 39 49 50) a d2
+Choices: ()  Tried t Ruled (18 21 38 7 6 20) a t1
+Choices: (q d)  Borrow Tried b Ruled (23 20 17 14 39 36 50 49) a b2 score of 37.27
+Choices: ()  Tried t Ruled (6 37 18 21 38 8 9) a t1
+Choices: (u h)  Tried n Ruled (25 49 23 20) a n1
+Choices: (h)  Tried y Ruled (42 41 28 43 54 26 38 37 39 8) a y2
+Tried (42 41 28 43 54 26 38 37 39 8) before
+Choices: (d q)  Tried o Ruled (20 4 5 22 25 9 50) a o1
+Tried (20 4 5 22 25 9 50) before
+Tried (20 4 5 22 25 9 50) before
+Choices: ()  Tried t Ruled (7 51 9 8 26 10 6 37) a y1
+Choices: (h)  Tried y Ruled (25 28 43 12 42 10 26 8 24 37 5 20 50) a y1
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 34 20 23 38) a l1
+Choices: ()  Tried v Ruled (51 48 49 25) a v1
+Choices: ()  Tried l Ruled (15 18 21 24 39 25) a h1
+Choices: ()  Tried g Ruled (10 11 31 13 12 20 4 5 22 25 9 50) a g2
+Choices: (j)  Borrow Tried i Ruled (5 21 24 33) a i1 score of 66.119
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Choices: (j)  Borrow Tried i Ruled (5 21 24 33) a i1 score of 62.888
+Choices: ()  Tried t Ruled (24 51 25 49 36 23 7 6 20) a i1
+Choices: (u h)  Borrow Tried n Ruled (5 25 23 22 20 36) a n1
+Choices: ()  Tried v Ruled (24 48 49 39) a v1
+Choices: (d q)  Tried o Ruled (20 4 5 22 25 9 50) a o1
+Choices: (m)  Tried w Ruled (8 23 20 25 51 21) a i1
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 34 20 23 38) a l1
+Choices: ()  Tried t Ruled (18 21 38 8 9 7 6 20) a t1
+Choices: (d q)  Borrow Tried p Ruled (29 26 23 20 39 36 50 49) a p2
+Tried (29 26 23 20 39 36 50 49) before
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: (j)  Borrow Tried i Ruled (5 21 24 33) a i1 score of 59.178
+Choices: ()  Tried g Ruled (25 28 43 13 55 10 49 36 23) a g1
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Tried (31 28 25 22 20 39 50) before
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Choices: ()  Tried l Ruled (15 18 21 24) a l1
+Choices: (j)  Tried i Ruled (19 24 48 4) a i1
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 34 17 46 36 23 38) a i1
+Choices: (m)  Tried w Ruled (51 21 8 23 20) a i1
+Choices: ()  Tried t Ruled (4 5 7 51 9 50 23 26 10 11 31) a j1
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 2 17 20 23 38) a l1
+Choices: ()  Tried c Ruled (49 36 23) a c1
+Choices: ()  Tried g Ruled (49 36 23 8 9 22 25 28 31 13 54) a g1 score of 78.989
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 34 20 23 8 24) a l1
+Tried (22 19 16 1 0 44 34 20 23 8 24) before
+Choices: ()  Tried t Ruled (18 21 38 8 9 7 6 20) a t1
+Choices: ()  Tried v Ruled (38 21 39 22) a n1
+Choices: (u h)  Borrow Tried n Ruled (5 25 23 22 20 36) a n1
+Choices: (d q)  Borrow Tried p Ruled (29 26 23 20 39 36 50 49) a p2
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 34 20 36 21 38) a l1
+Choices: ()  Tried g Ruled (10 11 31 13 12 20 4 5 22 25 9 50) a g2
+Choices: ()  Tried v Ruled (25 49 4 24 48) a n1
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: ()  Tried l Ruled (22 19 16 1 0 44 34 20 23 8 9 51 21 46) a l1
+Choices: ()  Tried v Ruled (48 38 39 22) a n1
+Choices: (d q)  Borrow Tried p Ruled (20 23 26 29 49 50 36 39) a p2
+Choices: (m)  Borrow Tried w Ruled (25 24 22 21 20 39 50) a w1
+Choices: ()  Tried g Ruled (7 48 4 5 47 3 16 1 0 14 25 9 50 20) a b1
+Choices: (j)  Borrow Tried i Ruled (5 21 24 33) a i1 score of 58.896
+Choices: (d q)  Borrow Tried o Ruled (22 25 36 39 49 50) a d1
+Tried (22 25 36 39 49 50) before
+Choices: ()  Tried l Ruled (15 18 21 24 39 25) a h1
+Choices: ()  Tried c Ruled (49 4 20 23) a r1
+Choices: (h)  Tried y Ruled (42 41 28 43 54 26 38 39 8 23 20) a y1
+Choices: ()  Tried t Ruled (6 7 22 18 21 38) a t1
+Tried (6 7 22 18 21 38) before
+Choices: (m)  Borrow Tried w Ruled (25 24 22 21 20 39 50) a w1
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: ()  Tried g Ruled (49 36 23 8 9 22 25 28 31 13) a g1 score of 78.249
+Choices: (j)  Borrow Tried i Ruled (5 21 24 33) a i1
+Choices: ()  Tried c Ruled (49 4 20 23) a r1
+Choices: (d q)  Tried o Ruled (20 4 5 22 25 9 50) a o1 score of 83.126
+Choices: ()  Tried c Ruled (25 9 50 20) a u1
+Choices: ()  Tried t Ruled (37 6 18 21 38) a t1
+Choices: (s)  Borrow Tried z Ruled (4 7 6 9 49 50) a z1
+Tried (4 7 6 9 49 50) before
+Choices: ()  Tried v Ruled (38 21 39 22) a n1
+Choices: ()  Tried c Ruled (49 36 23) a c1
+Choices: (m)  Tried w Ruled (49 5 47 39 20 23 38 7) a w1
+Choices: (s)  Tried z Ruled (4 49 39 8 26 10 51 6) a u1
+Choices: ()  Tried v Ruled (51 48 49 25) a v1
+Choices: (d q)  Borrow Tried o Ruled (22 25 36 39 49 50) a d2
+Choices: ()  Tried l Ruled (15 18 21 24 9) a l1 score of 87.13
+Choices: (h)  Tried y Ruled (9 8 23 20 42 41 51 21) a y2
+Tried (9 8 23 20 42 41 51 21) before
+Choices: ()  Tried l Ruled (15 18 21 24 9) a l1
+Choices: ()  Tried v Ruled (39 22 48 24) a v1
+Choices: (h)  Tried y Ruled (42 41 28 43 54 26 23 39 8) a y1
+Choices: ()  Tried g Ruled (25 28 43 12 29 26 52 55 39 50 20) a y1
+Choices: (h)  Tried y Ruled (20 23 8 9 42 41 51 21) a y1 score of 83.449
+Choices: (u h)  Borrow Tried n Ruled (20 23 25 36 49) a n1
+Choices: ()  Tried g Ruled (49 4 20 23 8 9 22 25 28 31 13) a g1
+Choices: (s)  Tried z Ruled (5 36 39 22 38) a n1
+Choices: (d q)  Tried o Ruled (20 4 5) a r1
+Choices: ()  Tried t Ruled (5 4 7 51 9 50 23 26) a j1
+Choices: (d q)  Tried o Ruled (20 34 18 21 38 8) a n1
+Choices: ()  Tried t Ruled (4 5 7 51 9 50 23 26 10 11 31 13) a j1
+Choices: ()  Tried g Ruled (25 28 43 12 29 26 52 55 49 36 23) a q1
+Choices: (m)  Tried w Ruled (23 20 39 49 21 37) a y1
+Choices: (d q)  Tried p Ruled (29 26 23 6 20 4 5 22 25 9 50) a g1
+Choices: ()  Tried g Ruled (49 4 20 50 40 39 22) a g1
+Choices: (m)  Tried w Ruled (25 24 21 23 36 49) a m1
+Choices: (h)  Tried y Ruled (42 41 51 21 50 20) a j1
+Choices: ()  Tried v Ruled (39 22 38 21) a n1
+Tried (39 22 38 21) before
+Choices: (d q)  Tried o Ruled (20 4 5 22 25 9 50) a o1
+Tried (20 4 5 22 25 9 50) before
+Choices: ()  Tried g Ruled (10 11 43 12 25 9 50 20) a y1
+Choices: ()  Tried l Ruled (15 18 21 24 9) a l1 score of 85.862
+Choices: ()  Tried v Ruled (20 23 8 9 49 25) a u1
+Choices: ()  Tried t Ruled (24 51 28 11 52 26 29 7 6 20) a y1
+Choices: (d q)  Tried o Ruled (20 4 5 22 25 9 50) a o1
+Choices: (j)  Borrow Tried i Ruled (5 21 24 33) a i1
+Choices: (u h)  Borrow Tried n Ruled (5 25 23 22 20 36) a n1
+Choices: (j)  Borrow Tried i Ruled (5 21 24 33) a i1
+Choices: (h)  Tried y Ruled (42 41 28 43 54 26 38 37 39 8) a y1
+Choices: ()  Tried t Ruled (18 21 38 7 6 20) a t1
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: (q d)  Borrow Tried b Ruled (23 20 17 14 39 36 50 49) a b2
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: ()  Tried t Ruled (6 7 18 21 38) a t1
+Choices: (d q)  Borrow Tried o Ruled (22 25 36 39 49 50) a d2
+Choices: ()  Tried g Ruled (49 36 23 8 9 22 25 28 43) a g1
+Choices: ()  Tried l Ruled (22 19 16 1 0 44) a l1
+Choices: (u h)  Borrow Tried n Ruled (5 25 23 22 20 36) a n1
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Choices: ()  Tried g Ruled (25 51 21 4 20 50 8 40 39 22) a q1
+Choices: (m)  Tried w Ruled (25 49 20 23 8 24 51) a w1
+Choices: ()  Tried v Ruled (51 24 4 49 25) a o1
+Tried (51 24 4 49 25) before
+Choices: ()  Tried g Ruled (25 28 43 12 29 26 52 55 49 36 23) a q1
+Choices: ()  Tried c Ruled (49 36 23) a c1
+Choices: (d q)  Tried o Ruled (20 4 5 22 25 9 50) a o1
+Choices: ()  Tried v Ruled (48 38 39 22) a n1
+Choices: ()  Tried g Ruled (40 24 7 22 19 49 36 23) a y2
+Choices: ()  Tried l Ruled (15 18 21 24 9) a l1
+Tried (15 18 21 24 9) before
+Choices: ()  Tried g Ruled (20 4 35 3 2 22 25 28 31 13) a j1
+Choices: (j)  Tried i Ruled (45 32 24 48 4) a i1
+Choices: (d q)  Tried p Ruled (29 26 23 6 20 4 5 22 25 9 50) a q1
+Choices: ()  Tried c Ruled (49 4 20 23) a r1
+Tried (49 4 20 23) before
+Choices: (h)  Borrow Tried y Ruled (31 28 25 22 20 39 50) a y1
+Tried (31 28 25 22 20 39 50) before
+Choices: ()  Tried v Ruled (48 24 49 39) a v1
+Choices: ()  Tried c Ruled (9 50 20) a c1
+Choices: (j)  Tried i Ruled (45 39 49) a i1
+Choices: ()  Tried v Ruled (48 38 39 22) a n1
+Choices: (s)  Tried z Ruled (48 7 9 25 22 19 3 2) a t1
+Choices: (m)  Tried w Ruled (48 38 8 36 25 22) a m1
+
+debug> n
+>> (transcript-off)

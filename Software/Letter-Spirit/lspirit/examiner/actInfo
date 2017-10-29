@@ -1,0 +1,52 @@
+role
+ up to 40 from last spread, 60 from max activating whole
+ up to 100 from sparking
+whole
+ up to 20 from last spread, 60 from sum of roles, -60..+20 from r-roles
+
+activation-changers
+
+get-role-activation
+change-role-activation
+get-link-lengths-and-activations
+process-node
+dampen-node
+activate-roles
+gestalt-set-node
+list-active-wholes (for r-role punishment)
+
+On the top level, used in:
+
+activation spreading
+sparking
+graphics (get-activ)
+r-roles (super wasteful)
+binding-list (gets acts of roles bound to a part)
+GEM's gestalt (forced-gestalt, now disabled, so delete it)
+GEM's clamping (now disabled, so delete itcould be useful idea, though)
+  like in recognizing weird letters from the Drafter
+JAR's gestalt, which is already well-done (pat-on-back)
+count-active-wholes, used in temperature calculation
+get-highest-whole, picks winner
+
+In summary, activation is accessed in the following ways:
+
+1) Global simultaneous update of all activations
+2) Sparking (old act is called up and then re-set)
+3) Graphics
+4) R-roles
+5) Gestalt
+6) Temperature calculation
+7) Rarely-used bookkeeping functions
+
+other activation patterns may be used for style, etc.
+ought to have function to clear activations for new run
+
+benchmark of spread-activation 2.0 by JAR (cf GEM's)
+There's a factor of 29 speedup on spreading activation
+Granted, this was totally bare-bones, but even allowing for variable
+spreading rules (different strength links, different summation strategies)
+a healthy speedup should be maintained
+With more cleverness, spread-activation 3.0 by JAR should be faster yet
+
+

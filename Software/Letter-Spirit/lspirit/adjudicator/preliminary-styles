@@ -1,0 +1,48 @@
+standard-square
+	Motifs: 0-degree-angles, 90-degree-angles
+	Rules against diagonal-orientations, 135-angles,
+	foreslash-orientations, 45-135-angles
+house
+	Norm violation: Upper-tips shifted inwards
+	Rule: length of segment at most 3
+shorts
+	Rule against diagonal-orientations
+	Rules against foreslash-orientations
+	Rule: length of segment at most 3
+	Norm violations: Width less, Height less
+	Rules against diagonal-orientations, 135-angles, 45-135-angles
+slash
+	Rule against backslash-orientations
+slant
+	Motifs: 0-degree-angles, 90-degree-angles
+	Rule: length of segment at most 3
+	Norm violation: Width less
+	Rule: no quanta on left edge of grid
+	Norm violations: Width less, left edge of part shifted right
+snout
+	Motif: 0-degree-angles
+	Rule: length of segment at most 3
+	Motif: vertical segment of length 2
+benzene-right
+	Motif: 45-degree-angles
+	Rule: length of segment at most 3
+	Norm violation: Curve more
+	Rule against backslash-orientations
+benzene-left
+	Rule against forward-slash-orientations
+	Rule: length of segment at most 3
+	Motif: 45-degree-angles
+square-curl
+	Rules against diagonal-orientations, 45-135-angles
+	Motifs: 0-degree-angles, 90-degree-angles, 90-90
+	Rule: length of segment at most 3
+hunt4
+	Rule: length of segment at most 3
+	Motif: 45-degree-angles
+	Motif: vertical segment of length 2
+boat
+	Norm violation: Lower-tips shifted inwards
+	Norm violation: Lower-tips shifted upward
+	Rule: length of segment at most 3
+	Norm violation: Curve more
+	Motif: 90-degree-angles

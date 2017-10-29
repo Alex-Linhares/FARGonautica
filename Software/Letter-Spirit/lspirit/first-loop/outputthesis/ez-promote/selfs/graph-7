@@ -1,0 +1,23 @@
+For delta-seed(n), count the number of seedifications within a sliding
+window of +/-5 of n...
+
+3-8:1
+9-13:2
+14-17:1
+18-19:2
+20-23: 3
+24: 4
+25-26: 5
+27: 6
+28: 
+
+(define matches (lambda (n ls)
+	(if (null? ls)
+		0
+		(if (< (abs (- n (car ls))) 6)
+			(+ 1 (matches n (cdr ls)))
+			(matches n (cdr ls))))))
+
+(define nums
+  (lambda (n)
+   (if (eq? n 0) '(0) (append (nums (- n 1)) (list n)))))

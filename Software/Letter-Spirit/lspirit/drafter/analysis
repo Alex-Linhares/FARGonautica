@@ -1,0 +1,75 @@
+choice of next quantum:
+
+cont: (breadcrumbs homing rules motifs) norm-potential norm-met 
+quit: (breadcrumbs homing rules motifs) norm-met tips
+
+
+Among CONT choices:
+1) norm met should exhibit progress made by, i.e., heading in the
+ correct direction (without necessarily getting there)
+
+2) norm potential should punish, severely, choices which exceed bounds
+
+Among QUIT choices:
+
+3) norm met should exhibit a correct final choice; any misses should be
+ punished severely
+
+4) tips should favor good tips over bad ones
+
+CONT to QUIT:
+
+5) norm-potential should give CONT steps edge over any but the best QUIT
+ steps
+
+6) a complete norm-met for a QUIT step should equal, or just slightly
+ exceed the score of a CONT with high potential
+
+7) tips should exert a preference for finishing, all things being equal
+
+---
+
+Problems:
+
+left-upbowl; pt 17 to pt 11
+5 21 6 20...
+
+Second step:
+
+Drew  21
+>>>>>> *choice-weights*
+((4 2499.9 0 0 454.545 6250.0 0 2530.907)
+ (18 2499.9 0 0 3.637 -1250.0 0 2530.907)
+ (49 224.1 0 0 3903.637 6250.0 -7636.366 2530.907)
+ (36 2241.025 0 0 3612.87 6250.0 -11345.455 2530.907)
+ (21 2499.9 0 0 5236.962 6250.0 0 2530.907)
+ (35 2241.025 0 0 3.637 -1250.0 -10036.363 2530.907)
+ (46 2241.025 0 0 454.545 -1250.0 -8945.458 2530.907))
+
+opts for 21 over 4 on basis of superior norms-met; BUT, because it is
+a finish site, we should dock it points
+
+should we not punish unmet norms for continue-condition?
+
+ought to punish continuting ones not for having tip potential, but for
+how much tip potential is available in subsequent steps (reward
+according to the latter)
+
+MUST have superior homing/curve to what's there now (e-bowl shortcut)
+
+look, basically, there is no lookahead, and this is a problem (but one
+we can work with)
+
+*** role-curve is not quite right
+  for e-bowl, doesn't allow the width of that curve (full-right)
+  for bisegments, also not right
+
+ ALLOW A WIDER BERTH
+
+---
+
+*** some things, we're going with winner-takes-all
+    other things, we allow things to work in a very gray,
+    partial-credit way
+
+    SHOULD BE MORE WTA-ish (e.g. tip-2)

@@ -1,0 +1,137 @@
+Idea: instead of setting letter-category baseline by intrafont test,
+just use this hard test data: check the minimum (?) score for each
+letter category, in any condition
+
+			TRAIN	TEST	SCORE
+0	BL BR BT CL HO		bcnp	agoz	90.0
+1	HU4 SH SLT SN STSQ	dhrz	amsu	70.0
+2	HI4 CH DBS FLR FNT	dfqt	vy	30.0
+3	BW BT SAB SLS SQC	flty	hijk	80.0
+4	BL INT HO SH SN		bdfo	grxz	45.0
+5	HU4 BR SLT CL STSQ	dgiq	amjz	60.0
+6	BL WAR HU4 BW HI4	fily	juvw	45.0
+7	BR WAR SH CH INT	cflr	ioqz	50.0
+8	BT SLT DBS SAB HO	eghi	loqs	65.0
+9	CL SN FLR SLS STSQ	bdgi	klmp	60.0
+10	FNT SQC STSQ SH BL	bdft	hnrw	40.0
+11	HU4 BR DBS WAR SLS	fghi	bcde	85.0
+12	HO SN FLR SAB INT	jlqr	bcdf	70.0
+13	BT WAR SLT FNT SQC	hnry	dfw	33.3
+14	HI4 DBS SLS SLT CL	cdjq	elpx	70.0
+15	BW HU4 SN INT SAB	jlty	fi	60.0
+16	SQC WAR FNT CL CH	dfhn	ry	60.0
+17	BR CH DBS BW BL		fhil	tvxy	20.0
+18	CH BT FLR HI4 FNT	dfry	qtv	46.7
+19	HO SAB HI4 SH SQC	dfil	bnps	50.0
+20	BW INT FLR SLS STSQ	fijl	ty	70.0
+
+	ALL					57.8%
+
+(With MUCH longer runs: 61.1%)
+~/inquiry/lspirit/first-loop/outputadj/almost-final/
+
+***
+
+Category Minima
+a	15.691
+b	10.949
+c	38.939
+d	22.934
+e	29.798
+f	9.067
+g	18.838
+
+(OK... this will not work to show intercategory baselines)
+
+
+
+*** MUST RE-DO EVERYTHING BELOW HERE
+
+	EXAM	ADJ/TRAIN
+b-lf	95.4	55.0
+b-rt	99.6	80.0
+boat	97.3	72.2
+bowtie	60.4	56.3
+chckmrk	76.5	33.3
+close	94.6	72.2
+dub-bs	83.8	83.3
+f-rnch	76.5	46.7
+fntnp	54.2	21.4
+hint4	88.8	29.4
+house	94.2	70.0
+hunt4	95.8	50.0
+intrsct	63.5	37.5
+sbrth	81.9	44.4
+shorts	97.7	50.0
+slant	90.8	73.7
+slash	85.8	83.3
+snout	96.2	55.6
+sqcrl	81.9	70.6
+stsq	100	66.7
+w-arrow	87.7	41.1
+
+EXAM-ADJTRAIN correlation: r=0.515, p=0.017
+
+calculate performance
+ per font
+ per letter
+ per post-and-bowl letters in TRAIN
+
+
+	You can correlate this with Examiner, too! (fonts23 as the
+data set; counts qt as error, of course)
+
+all 987 test letters
+
+	EXAM	ADJTEST
+a	76.9	73.3
+b	85.7	86.7
+c	88.8	50.0
+d	91.4	73.3
+e	84.4	70.0
+f	91.8	40.0
+g	85.5	90.0
+h	85.9	90.0
+i	94.7	60.0
+j	93.5	60.0
+k	86.9	70.0
+l	90.9	66.7
+m	81.0	53.3
+n	82.6	30.0
+o	81.1	73.3
+p	90.6	86.7
+q	92.8	66.7
+r	90.3	46.7
+s	81.8	40.0
+t	92.9	53.3
+u	80.8	60.0
+v	81.6	50.0
+w	79.1	20.0
+x	83.3	26.7
+y	95.7	45.0
+z	80.3	50.0
+
+r=0.139, p=0.500
+
+***
+
+variations based on size of training set
+
+				CORRECT, %
+			TEST	b	bce	bcdefg
+CL SN FLR SLS STSQ	jklmp	16	56	60
+HU4 BR DBS WAR SLS	jlpvy	16	84	68
+BOTH				16	70	64
+
+***
+
+variations based on testing each letter thrice (same training, though)
+
+				
+			TRAIN	TEST	SINGLES	1st-of3	TRIPLE
+CL SN FLR SLS STSQ	bdgi	klmp	
+HU4 BR DBS WAR SLS	fghi	bcde	
+TOTAL					75.0	77.5	82.5
+
+***
+

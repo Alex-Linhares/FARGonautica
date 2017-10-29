@@ -1,0 +1,20 @@
+Chez Scheme Transcript [Fri Apr 21 01:01:54 2000]
+>> (design-init) (try-cats)
+>> Trying v by drafting v; rejected as u1, score 300.0 (8 21 22 38 39)
+Trying e by drafting e; rejected as p2, score 300.0 (4 20 23 25 48 49 51)
+Trying m by drafting m; rejected as n1, score 300.0 (5 8 20 21 22 25 48 50)
+Trying e by drafting e; accepted as e2 score 112.065 beat 299.99 (4 8 20 22 48 49 50 51)
+Trying s by drafting s; rejected as j1, score 300.0 (4 6 8 9 11 20 28 49)
+Trying j by drafting j; rejected as quit, score 300.0 (28 31 48 51)
+Trying q by drafting q; rejected as j1, score 300.0 (2 3 4 7 13 20 27 28 30 31 35 37 39)
+Trying t by drafting t; accepted as t1 score 85.465 beat 299.99 (4 5 8 9 23 36 46 51)
+Trying a by drafting a; seedified as a1 score 49.118 beat 299.99 (4 7 8 9 25 38 49)
+Trying d by drafting d; rejected as g1, score 300.0 (4 5 9 18 20 21 22 25 50 51)
+Trying c by drafting c; rejected as r1, score 300.0 (4 20 23 49)
+Trying l by drafting l; accepted as l1 score 56.713 beat 299.99 (15 18 21 51)
+Trying w by drafting w; rejected as u1, score 300.0 (8 20 21 23 24 25 39)
+Trying p by drafting p; seedified as p1 score 51.707 beat 299.99 (4 5 8 9 20 22 23 25 26 29)
+Trying o by borrowing p; accepted as o1 score 51.999 beat 299.99 (4 5 8 9 20 22 23 25)
+
+debug> n
+>>>  (transcript-off)

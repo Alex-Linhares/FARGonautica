@@ -1,0 +1,2503 @@
+Chez Scheme Transcript [Tue Mar  7 22:52:50 2000]
+> (examine '(14 17 20 23 36 50 39 49))
+1 smartparse to ((14 17 20 23) (39 49 36 50))
+25 sparked (39 49 36 50) ((circle) ())
+30 sparked (14 17 20 23) ((circle) (left-post))
+33 sparked (39 49 36 50) ((circle) (left-post))
+34 r-role-check b1 1.0
+34 r-role-check b2 98.714
+34 r-role-check h1 1.0
+34 r-role-check o1 1.0
+35 r-role-check b2 100.0
+34 end
+(b2 300.0)
+> (examine '(33 34 20 23 36 49 25))
+1 smartparse to ((33 34 20 23) (25 49 36))
+18 sparked (33 34 20 23) ((f-post left-post) ())
+21 r-role-check h1 1.0
+27 sparked (33 34 20 23) (() (f-post left-post))
+37 r-role-check b1 1.0
+37 r-role-check b2 1.0
+37 r-role-check f1 1.0
+37 r-role-check h1 1.0
+37 r-role-check k1 1.0
+40 sparked (33 34 20 23) (() (f-post left-post))
+46 sparked (25 49 36) ((halfpost right-buttress) (f-post left-post))
+48 sparked (25 49 36) ((halfpost right-buttress) (f-post left-post))
+51 sparked (25 49 36) ((halfpost right-buttress) (f-post left-post))
+52 sparked (33 34 20 23) ((halfpost right-buttress) (f-post left-post))
+54 r-role-check h1 72.749
+54 r-role-check i1 1.0
+54 r-role-check l1 1.0
+54 r-role-check n1 1.0
+55 r-role-check h1 92.749
+54 end
+(h1 300.0)
+>  (examine '(5 4 20 50))
+1 smartparse to ((50 20) (4 5))
+25 sparked (4 5) ((cap z-cap) ())
+30 sparked (4 5) ((cap z-cap) ())
+31 r-role-check r1 1.0
+31 r-role-check s1 1.0
+34 r-role-check c1 1.0
+34 r-role-check n1 1.0
+34 r-role-check s2 1.0
+35 sparked (4 5) ((cap z-cap) ())
+45 sparked (4 5) (() (cap z-cap))
+46 r-role-check r1 1.0
+46 r-role-check s1 1.0
+46 r-role-check v1 1.0
+46 r-role-check x1 1.0
+46 r-role-check z1 1.0
+48 r-role-check c1 1.0
+48 r-role-check m1 1.0
+48 r-role-check n1 1.0
+48 r-role-check s2 1.0
+48 r-role-check u1 1.0
+52 sparked (4 5) (() (cap z-cap))
+55 r-role-check h1 1.0
+55 r-role-check r1 1.0
+55 r-role-check s1 1.0
+55 r-role-check v1 1.0
+55 r-role-check x1 1.0
+55 r-role-check z1 1.0
+57 sparked (50 20) ((left-halfpost left-wing) (cap z-cap))
+58 sparked (50 20) ((left-halfpost left-wing) (cap z-cap))
+59 sparked (4 5) ((left-halfpost left-wing) (cap z-cap))
+60 sparked (50 20) ((left-halfpost left-wing) (cap z-cap))
+61 r-role-check c1 1.0
+61 r-role-check m1 1.0
+61 r-role-check n1 1.0
+61 r-role-check r1 77.786
+61 r-role-check s1 1.0
+61 r-role-check s2 1.0
+61 r-role-check u1 1.0
+61 r-role-check v1 1.0
+61 r-role-check z1 1.0
+62 r-role-check r1 97.786
+61 end
+(r1 300.0)
+>  (examine '(5 4 20 50))
+1 smartparse to ((50 20) (4 5))
+32 sparked (4 5) ((cap z-cap) ())
+35 sparked (50 20) ((cap z-cap) (left-halfpost left-wing))
+39 r-role-check n1 1.0
+39 r-role-check r1 96.786
+39 r-role-check s1 1.0
+39 r-role-check v1 1.0
+40 r-role-check r1 100.0
+39 end
+(r1 300.0)
+>  (examine '(5 4 20 50))
+1 smartparse to ((50 20) (4 5))
+25 sparked (50 20) (() (left-halfpost left-wing))
+31 sparked (4 5) ((cap z-cap) (left-halfpost left-wing))
+35 sparked (50 20) ((cap z-cap) (left-halfpost left-wing))
+39 sparked (50 20) ((cap z-cap) (left-halfpost left-wing))
+40 sparked (4 5) ((cap z-cap) (left-halfpost left-wing))
+41 r-role-check n1 1.0
+41 r-role-check r1 96.786
+41 r-role-check s1 1.0
+41 r-role-check v1 1.0
+42 r-role-check r1 100.0
+41 end
+(r1 300.0)
+>  (examine '(5 4 20 50))
+1 smartparse to ((50 20) (4 5))
+25 sparked (50 20) ((e-tail left-halfpost left-wing left-halfarc) ())
+32 sparked (50 20) ((e-tail left-halfpost left-wing left-halfarc) ())
+35 r-role-check n1 1.0
+35 r-role-check r1 1.0
+36 sparked (4 5) ((e-tail left-halfpost left-wing left-halfarc) (cap z-cap))
+37 r-role-check r1 68.177
+37 r-role-check s1 1.0
+38 r-role-check r1 88.177
+37 end
+(r1 300.0)
+> (examine '(48 4 49 25 9 39))
+1 smartparse to ((48 4 49 39 9 25))
+4 breaking to ((48) (4 49 39 9 25))
+7 breaking to ((39 9 25) (4 49) (48))
+24 r-role-check a1 1.0
+24 r-role-check a2 1.0
+24 r-role-check o1 1.0
+29 r-role-check e1 1.0
+29 r-role-check e2 1.0
+43 sparked (39 9 25) (() () (circle down-circle))
+57 sparked (39 9 25) (() () (circle down-circle))
+63 sparked (39 9 25) (() () (circle down-circle))
+64 smartparse to ((48 4 49 39 9 25))
+69 breaking to ((48) (4 49 39 9 25))
+80 glomming to ((49 39 9 25 4 48))
+97 breaking to ((49 4 48) (39 9 25))
+113 sparked (39 9 25) ((circle) ())
+115 r-role-check o1 1.0
+121 sparked (39 9 25) ((circle down-circle) ())
+123 r-role-check a2 1.0
+123 r-role-check o1 1.0
+125 r-role-check a1 1.0
+130 glomming to ((9 25 4 48 39 49))
+150 breaking to ((39 49 4 48) (9 25))
+204 sparked (39 49 4 48) (() (a-arch))
+210 sparked (9 25) ((right-downbowl s-base) (a-arch))
+215 r-role-check a1 1.0
+215 r-role-check a2 1.0
+215 r-role-check o1 1.0
+219 sparked (39 49 4 48) ((right-downbowl s-base) (a-arch))
+221 sparked (9 25) ((right-downbowl s-base) (a-arch))
+222 sparked (39 49 4 48) ((right-downbowl s-base) (a-arch))
+223 sparked (39 49 4 48) ((right-downbowl s-base) (a-arch))
+228 sparked (9 25) ((right-downbowl s-base) (a-arch))
+229 r-role-check e1 1.0
+229 r-role-check e2 1.0
+229 r-role-check s1 1.0
+229 r-role-check s2 1.0
+231 sparked (9 25) ((right-downbowl s-base) (a-arch))
+234 r-role-check a1 1.0
+234 r-role-check a2 1.0
+234 r-role-check o1 1.0
+238 sparked (9 25) ((right-downbowl s-base) (a-arch))
+239 glomming to ((25 49 4 48 9 39))
+248 r-role-check a1 1.0
+248 r-role-check a2 1.0
+248 r-role-check o1 1.0
+257 breaking to ((39 49 4 48) (9 25))
+279 sparked (39 49 4 48) (() (a-arch))
+281 breaking to ((48) (39 4 49) (9 25))
+292 r-role-check a1 1.0
+292 r-role-check a2 1.0
+292 r-role-check o1 1.0
+314 sparked (39 4 49) (() () (a-arch right-buttress))
+315 r-role-check e1 1.0
+315 r-role-check e2 1.0
+329 smartparse to ((49 4 48) (9 39 25))
+352 sparked (49 4 48) (() (left-upbowl))
+359 sparked (49 4 48) (() (left-upbowl))
+361 sparked (49 4 48) (() (left-upbowl))
+362 sparked (49 4 48) (() (left-upbowl))
+363 sparked (49 4 48) (() (left-upbowl))
+364 r-role-check s2 1.0
+380 r-role-check a1 1.0
+380 r-role-check a2 1.0
+380 r-role-check o1 1.0
+380 r-role-check s2 1.0
+390 sparked (49 4 48) (() (left-upbowl))
+391 sparked (9 39 25) ((circle down-circle) (left-upbowl))
+395 r-role-check b2 1.0
+395 r-role-check e1 1.0
+395 r-role-check e2 1.0
+395 r-role-check o1 1.0
+395 r-role-check s1 1.0
+397 smartparse to ((48 4 49 25 9 39))
+413 breaking to ((48) (4 49 25 9 39))
+466 breaking to ((48) (4 49 25 9 39))
+470 breaking to ((48) (4 49 25 9 39))
+480 breaking to ((25 9 39) (4 49) (48))
+509 sparked (25 9 39) (() (circle down-circle) ())
+524 sparked (25 9 39) (() (circle down-circle) ())
+525 r-role-check o1 1.0
+527 sparked (25 9 39) (() (circle down-circle) ())
+535 r-role-check o1 1.0
+536 r-role-check a2 1.0
+540 sparked (25 9 39) (() (circle down-circle) ())
+541 sparked (25 9 39) (() (circle down-circle) ())
+544 sparked (4 49) ((cap) (circle down-circle) ())
+546 r-role-check a1 1.0
+546 r-role-check b2 1.0
+546 r-role-check d2 1.0
+546 r-role-check g2 1.0
+546 r-role-check o1 1.0
+546 r-role-check p2 1.0
+546 r-role-check q2 1.0
+550 r-role-check a2 1.0
+551 breaking to ((48) (4 49) (25 9 39))
+556 breaking to ((48) (4 49) (25 9 39))
+558 sparked (25 9 39) (() () (circle down-circle))
+560 r-role-check o1 1.0
+563 sparked (4 49) (() (cap) (circle down-circle))
+565 sparked (4 49) (() (cap) (circle down-circle))
+568 sparked (4 49) (() (cap) (circle down-circle))
+569 r-role-check a2 1.0
+569 r-role-check o1 1.0
+569 r-role-check r1 1.0
+575 sparked (4 49) (() (cap) (circle down-circle))
+576 sparked (25 9 39) (() (cap) (circle down-circle))
+577 sparked (25 9 39) (() (cap) (circle down-circle))
+579 sparked (4 49) (() (cap) (circle down-circle))
+582 sparked (4 49) (() (cap) (circle down-circle))
+584 sparked (4 49) (() (cap) (circle down-circle))
+585 r-role-check a1 1.0
+585 r-role-check a2 1.0
+585 r-role-check b2 1.0
+585 r-role-check d2 1.0
+585 r-role-check g2 1.0
+585 r-role-check o1 1.0
+585 r-role-check p2 1.0
+585 r-role-check q2 1.0
+585 r-role-check s1 1.0
+586 r-role-check e1 1.0
+586 r-role-check e2 1.0
+586 r-role-check r1 1.0
+587 r-role-check a1 1.0
+587 r-role-check a2 1.0
+587 r-role-check b2 1.0
+587 r-role-check d2 1.0
+587 r-role-check g2 1.0
+587 r-role-check o1 1.0
+587 r-role-check p2 1.0
+587 r-role-check q2 1.0
+587 r-role-check s1 1.0
+587 r-role-check s2 1.0
+595 sparked (25 9 39) (() (cap) (circle down-circle))
+597 sparked (25 9 39) (() (cap) (circle down-circle))
+598 r-role-check b2 1.0
+598 r-role-check c1 1.0
+598 r-role-check d1 1.0
+598 r-role-check d2 1.0
+598 r-role-check e1 1.0
+598 r-role-check e2 1.0
+598 r-role-check n1 1.0
+598 r-role-check o1 1.0
+598 r-role-check p2 1.0
+598 r-role-check q1 1.0
+598 r-role-check q2 1.0
+598 r-role-check r1 1.0
+602 sparked (25 9 39) (() (cap) (circle down-circle))
+605 sparked (25 9 39) (() (cap) (circle down-circle))
+607 r-role-check a1 1.0
+607 r-role-check a2 1.0
+607 r-role-check d2 1.0
+607 r-role-check g1 1.0
+607 r-role-check g2 1.0
+607 r-role-check h1 1.0
+607 r-role-check o1 1.0
+607 r-role-check q2 1.0
+607 r-role-check s1 1.0
+607 r-role-check s2 1.0
+612 r-role-check b1 1.0
+612 r-role-check b2 1.0
+612 r-role-check c1 1.0
+612 r-role-check d1 1.0
+612 r-role-check e1 1.0
+612 r-role-check e2 1.0
+612 r-role-check n1 1.0
+612 r-role-check p1 1.0
+612 r-role-check p2 1.0
+612 r-role-check q1 1.0
+612 r-role-check r1 1.0
+613 sparked (48) ((left-halfarch) (cap) (circle down-circle))
+614 r-role-check a1 1.0
+614 r-role-check a2 1.0
+614 r-role-check d2 1.0
+614 r-role-check g1 1.0
+614 r-role-check g2 1.0
+614 r-role-check h1 1.0
+614 r-role-check m1 1.0
+614 r-role-check o1 1.0
+614 r-role-check q2 1.0
+614 r-role-check s1 1.0
+614 r-role-check s2 1.0
+615 smartparse to ((48 4 49 25) (9 39))
+627 r-role-check b2 1.0
+627 r-role-check c1 1.0
+627 r-role-check d1 1.0
+627 r-role-check d2 1.0
+627 r-role-check h1 1.0
+627 r-role-check n1 1.0
+627 r-role-check o1 1.0
+627 r-role-check p2 1.0
+627 r-role-check q1 1.0
+627 r-role-check q2 1.0
+627 r-role-check r1 1.0
+639 r-role-check b1 1.0
+639 r-role-check e1 1.0
+639 r-role-check e2 1.0
+639 r-role-check g1 1.0
+639 r-role-check g2 1.0
+639 r-role-check m1 1.0
+639 r-role-check o1 1.0
+639 r-role-check p1 1.0
+639 r-role-check s1 1.0
+642 r-role-check a1 1.0
+642 r-role-check a2 1.0
+642 r-role-check b2 1.0
+642 r-role-check c1 1.0
+642 r-role-check d1 1.0
+642 r-role-check d2 1.0
+642 r-role-check e1 1.0
+642 r-role-check e2 1.0
+642 r-role-check h1 1.0
+642 r-role-check n1 1.0
+642 r-role-check p2 1.0
+642 r-role-check q1 1.0
+642 r-role-check q2 1.0
+642 r-role-check r1 1.0
+642 r-role-check s2 1.0
+646 r-role-check b1 1.0
+646 r-role-check g1 1.0
+646 r-role-check g2 1.0
+646 r-role-check m1 1.0
+646 r-role-check o1 1.0
+646 r-role-check p1 1.0
+646 r-role-check s1 1.0
+655 breaking to ((9) (39) (48 4 49 25))
+696 sparked (9) (() (s-base) ())
+698 sparked (9) (() (s-base) ())
+706 sparked (9) (() (s-base) ())
+710 sparked (9) (() (s-base) ())
+711 sparked (9) (() (s-base) ())
+716 r-role-check a1 1.0
+716 r-role-check a2 1.0
+716 r-role-check e1 1.0
+716 r-role-check e2 1.0
+716 r-role-check o1 1.0
+716 r-role-check s1 1.0
+718 sparked (48 4 49 25) ((a-arch) (s-base) ())
+719 r-role-check a1 1.0
+719 r-role-check a2 1.0
+719 r-role-check b2 1.0
+719 r-role-check c1 1.0
+719 r-role-check d2 1.0
+719 r-role-check n1 1.0
+719 r-role-check p2 1.0
+719 r-role-check q2 1.0
+719 r-role-check r1 1.0
+719 r-role-check s2 1.0
+721 sparked (48 4 49 25) ((a-arch) (s-base) ())
+722 sparked (9) ((a-arch) (s-base) ())
+725 r-role-check d1 1.0
+725 r-role-check e1 1.0
+725 r-role-check e2 1.0
+725 r-role-check g1 1.0
+725 r-role-check g2 1.0
+725 r-role-check h1 1.0
+725 r-role-check o1 1.0
+725 r-role-check q1 1.0
+725 r-role-check s1 1.0
+727 r-role-check a1 1.0
+727 r-role-check a2 1.0
+727 r-role-check b2 1.0
+727 r-role-check c1 1.0
+727 r-role-check d2 1.0
+727 r-role-check m1 1.0
+727 r-role-check n1 1.0
+727 r-role-check p2 1.0
+727 r-role-check q2 1.0
+727 r-role-check r1 1.0
+727 r-role-check s2 1.0
+728 sparked (48 4 49 25) ((a-arch) (s-base) ())
+730 r-role-check a1 1.0
+730 r-role-check a2 1.0
+730 r-role-check b1 1.0
+730 r-role-check d1 1.0
+730 r-role-check e1 1.0
+730 r-role-check e2 1.0
+730 r-role-check g1 1.0
+730 r-role-check g2 1.0
+730 r-role-check h1 1.0
+730 r-role-check o1 1.0
+730 r-role-check q1 1.0
+730 r-role-check s1 1.0
+731 r-role-check b2 1.0
+731 r-role-check c1 1.0
+731 r-role-check d2 1.0
+731 r-role-check m1 1.0
+731 r-role-check n1 1.0
+731 r-role-check p1 1.0
+731 r-role-check p2 1.0
+731 r-role-check q2 1.0
+731 r-role-check r1 1.0
+731 r-role-check s2 1.0
+734 sparked (9) ((a-arch) (s-base) ())
+735 sparked (48 4 49 25) ((a-arch) (s-base) ())
+737 r-role-check a1 1.0
+737 r-role-check a2 1.0
+737 r-role-check b1 1.0
+737 r-role-check d1 1.0
+737 r-role-check e1 1.0
+737 r-role-check e2 1.0
+737 r-role-check g1 1.0
+737 r-role-check g2 1.0
+737 r-role-check h1 1.0
+737 r-role-check o1 1.0
+737 r-role-check q1 1.0
+737 r-role-check s1 1.0
+738 r-role-check b2 1.0
+738 r-role-check c1 1.0
+738 r-role-check d2 1.0
+738 r-role-check k1 1.0
+738 r-role-check m1 1.0
+738 r-role-check n1 1.0
+738 r-role-check p1 1.0
+738 r-role-check p2 1.0
+738 r-role-check q2 1.0
+738 r-role-check r1 1.0
+738 r-role-check s2 1.0
+739 r-role-check a1 1.0
+739 r-role-check a2 1.0
+739 r-role-check b1 1.0
+739 r-role-check d1 1.0
+739 r-role-check e1 1.0
+739 r-role-check e2 1.0
+739 r-role-check g1 1.0
+739 r-role-check g2 1.0
+739 r-role-check h1 1.0
+739 r-role-check o1 1.0
+739 r-role-check q1 1.0
+739 r-role-check s1 1.0
+742 sparked (9) ((a-arch) (s-base) ())
+743 sparked (48 4 49 25) ((a-arch) (s-base) ())
+744 r-role-check a1 1.0
+744 r-role-check a2 1.0
+744 r-role-check b2 1.0
+744 r-role-check c1 1.0
+744 r-role-check d2 1.0
+744 r-role-check k1 1.0
+744 r-role-check m1 1.0
+744 r-role-check n1 1.0
+744 r-role-check p1 1.0
+744 r-role-check p2 1.0
+744 r-role-check q2 1.0
+744 r-role-check r1 1.0
+744 r-role-check s2 1.0
+745 r-role-check b1 1.0
+745 r-role-check d1 1.0
+745 r-role-check e1 1.0
+745 r-role-check e2 1.0
+745 r-role-check g1 1.0
+745 r-role-check g2 1.0
+745 r-role-check h1 1.0
+745 r-role-check o1 1.0
+745 r-role-check q1 1.0
+745 r-role-check s1 1.0
+747 sparked (48 4 49 25) ((a-arch) (s-base) ())
+748 r-role-check a1 1.0
+748 r-role-check a2 1.0
+748 r-role-check b2 1.0
+748 r-role-check c1 1.0
+748 r-role-check d2 1.0
+748 r-role-check k1 1.0
+748 r-role-check m1 1.0
+748 r-role-check n1 1.0
+748 r-role-check p1 1.0
+748 r-role-check p2 1.0
+748 r-role-check q2 1.0
+748 r-role-check r1 1.0
+748 r-role-check s2 1.0
+766 sparked (48 4 49 25) (() (a-arch) (s-base))
+768 sparked (9) (() (a-arch) (s-base))
+769 r-role-check b1 1.0
+769 r-role-check d1 1.0
+769 r-role-check e1 1.0
+769 r-role-check e2 1.0
+769 r-role-check g1 1.0
+769 r-role-check g2 1.0
+769 r-role-check h1 1.0
+769 r-role-check o1 1.0
+769 r-role-check q1 1.0
+769 r-role-check s1 1.0
+772 sparked (48 4 49 25) (() (a-arch) (s-base))
+773 r-role-check a1 1.0
+773 r-role-check a2 1.0
+773 r-role-check b2 1.0
+773 r-role-check c1 1.0
+773 r-role-check d2 1.0
+773 r-role-check k1 1.0
+773 r-role-check m1 1.0
+773 r-role-check n1 1.0
+773 r-role-check p1 1.0
+773 r-role-check p2 1.0
+773 r-role-check q2 1.0
+773 r-role-check r1 1.0
+773 r-role-check s2 1.0
+774 sparked (48 4 49 25) (() (a-arch) (s-base))
+775 r-role-check a1 1.0
+775 r-role-check a2 1.0
+775 r-role-check b1 1.0
+775 r-role-check d1 1.0
+775 r-role-check e1 1.0
+775 r-role-check e2 1.0
+775 r-role-check g1 1.0
+775 r-role-check g2 1.0
+775 r-role-check h1 1.0
+775 r-role-check o1 1.0
+775 r-role-check q1 1.0
+775 r-role-check s1 1.0
+776 r-role-check b2 1.0
+776 r-role-check c1 1.0
+776 r-role-check d2 1.0
+776 r-role-check k1 1.0
+776 r-role-check m1 1.0
+776 r-role-check n1 1.0
+776 r-role-check p1 1.0
+776 r-role-check p2 1.0
+776 r-role-check q2 1.0
+776 r-role-check r1 1.0
+776 r-role-check s2 1.0
+783 glomming to ((9 39) (48 4 49 25))
+797 sparked (48 4 49 25) (() (a-arch))
+803 r-role-check a1 1.0
+803 r-role-check a2 1.0
+804 sparked (48 4 49 25) (() (a-arch right-buttress))
+810 sparked (48 4 49 25) (() (a-arch right-buttress))
+812 glomming to ((39 48 4 49 9 25))
+823 breaking to ((48 4 49) (39 9 25))
+854 sparked (39 9 25) (() (circle up-circle down-circle))
+856 sparked (39 9 25) (() (circle up-circle down-circle))
+863 sparked (48 4 49) ((cap left-upbowl) (circle up-circle down-circle))
+866 r-role-check a2 1.0
+866 r-role-check e2 1.0
+866 r-role-check o1 1.0
+867 sparked (39 9 25) ((cap left-upbowl) (circle up-circle down-circle))
+868 smartparse to ((48 4 49 25) (9 39))
+894 sparked (48 4 49 25) ((a-arch) ())
+900 r-role-check a1 1.0
+900 r-role-check a2 1.0
+906 sparked (48 4 49 25) (() (a-arch))
+908 sparked (48 4 49 25) (() (a-arch))
+921 sparked (48 4 49 25) (() (a-arch))
+922 glomming to ((39 48 4 49 9 25))
+948 breaking to ((48 4 49) (39 9 25))
+965 sparked (48 4 49) ((left-upbowl) ())
+981 sparked (48 4 49) (() (cap left-upbowl))
+982 r-role-check a1 1.0
+982 r-role-check a2 1.0
+982 r-role-check o1 1.0
+982 r-role-check s2 1.0
+985 r-role-check e1 1.0
+985 r-role-check e2 1.0
+986 sparked (48 4 49) (() (cap left-upbowl))
+990 sparked (48 4 49) (() (cap left-upbowl))
+996 r-role-check a1 1.0
+996 r-role-check a2 1.0
+996 r-role-check o1 1.0
+996 r-role-check s1 1.0
+996 r-role-check s2 1.0
+999 sparked (39 9 25) ((circle up-circle down-circle) (cap left-upbowl))
+1000 r-role-check b2 1.0
+1000 r-role-check c1 1.0
+1000 r-role-check d2 1.0
+1000 r-role-check e1 1.0
+1000 r-role-check e2 1.0
+1000 r-role-check g2 1.0
+1000 r-role-check n1 1.0
+1000 r-role-check o1 1.0
+1000 r-role-check p2 1.0
+1000 r-role-check q2 1.0
+1000 r-role-check r1 1.0
+1001 sparked (39 9 25) ((circle up-circle down-circle) (cap left-upbowl))
+1002 sparked (48 4 49) ((circle up-circle down-circle) (cap left-upbowl))
+1003 sparked (39 9 25) ((circle up-circle down-circle) (cap left-upbowl))
+1005 r-role-check a1 1.0
+1005 r-role-check a2 1.0
+1005 r-role-check d1 1.0
+1005 r-role-check g1 1.0
+1005 r-role-check o1 1.0
+1005 r-role-check q1 1.0
+1005 r-role-check s1 1.0
+1005 r-role-check s2 1.0
+1006 sparked (39 9 25) ((circle up-circle down-circle) (cap left-upbowl))
+1007 r-role-check b2 1.0
+1007 r-role-check c1 1.0
+1007 r-role-check d2 1.0
+1007 r-role-check e1 1.0
+1007 r-role-check e2 1.0
+1007 r-role-check g2 1.0
+1007 r-role-check h1 1.0
+1007 r-role-check n1 1.0
+1007 r-role-check o1 1.0
+1007 r-role-check p2 1.0
+1007 r-role-check q2 1.0
+1007 r-role-check r1 1.0
+1010 sparked (39 9 25) ((circle up-circle down-circle) (cap left-upbowl))
+1015 sparked (48 4 49) ((circle up-circle down-circle) (cap left-upbowl))
+1017 sparked (39 9 25) ((circle up-circle down-circle) (cap left-upbowl))
+1018 r-role-check a1 1.0
+1018 r-role-check a2 1.0
+1018 r-role-check b2 1.0
+1018 r-role-check d1 1.0
+1018 r-role-check d2 1.0
+1018 r-role-check g1 1.0
+1018 r-role-check g2 1.0
+1018 r-role-check o1 1.0
+1018 r-role-check p2 1.0
+1018 r-role-check q1 1.0
+1018 r-role-check q2 1.0
+1018 r-role-check s1 1.0
+1018 r-role-check s2 1.0
+1019 r-role-check c1 1.0
+1019 r-role-check e1 1.0
+1019 r-role-check e2 1.0
+1019 r-role-check h1 1.0
+1019 r-role-check m1 1.0
+1019 r-role-check n1 1.0
+1019 r-role-check r1 1.0
+1020 r-role-check a1 1.0
+1020 r-role-check a2 1.0
+1020 r-role-check b1 1.0
+1020 r-role-check b2 1.0
+1020 r-role-check d1 1.0
+1020 r-role-check d2 1.0
+1020 r-role-check g1 1.0
+1020 r-role-check g2 1.0
+1020 r-role-check o1 1.0
+1020 r-role-check p1 1.0
+1020 r-role-check p2 1.0
+1020 r-role-check q1 1.0
+1020 r-role-check q2 1.0
+1020 r-role-check s1 1.0
+1020 r-role-check s2 1.0
+1021 sparked (48 4 49) ((circle up-circle down-circle) (cap left-upbowl))
+1022 r-role-check c1 1.0
+1022 r-role-check e1 1.0
+1022 r-role-check e2 1.0
+1022 r-role-check h1 1.0
+1022 r-role-check m1 1.0
+1022 r-role-check n1 1.0
+1022 r-role-check r1 1.0
+1022 r-role-check s2 1.0
+1025 sparked (48 4 49) ((circle up-circle down-circle) (cap left-upbowl))
+1027 glomming to ((9 25 48 4 39 49))
+1040 r-role-check a1 1.0
+1040 r-role-check a2 1.0
+1040 r-role-check o1 1.0
+1045 breaking to ((48 39 4 49) (9 25))
+1062 sparked (48 39 4 49) ((a-arch) ())
+1068 sparked (48 39 4 49) ((a-arch) ())
+1077 sparked (48 39 4 49) ((a-arch) ())
+1082 sparked (48 39 4 49) ((a-arch) ())
+1083 sparked (48 39 4 49) ((a-arch) ())
+1084 r-role-check a1 1.0
+1084 r-role-check a2 1.0
+1090 sparked (48 39 4 49) ((a-arch) ())
+1091 sparked (48 39 4 49) ((a-arch) ())
+1093 sparked (9 25) ((a-arch) (right-downbowl s-base))
+1094 sparked (9 25) ((a-arch) (right-downbowl s-base))
+1095 sparked (48 39 4 49) ((a-arch) (right-downbowl s-base))
+1097 r-role-check a1 1.0
+1097 r-role-check a2 1.0
+1097 r-role-check o1 1.0
+1098 r-role-check e1 1.0
+1098 r-role-check e2 1.0
+1098 r-role-check s1 1.0
+1098 r-role-check s2 1.0
+1102 r-role-check a1 1.0
+1102 r-role-check a2 1.0
+1102 r-role-check c1 1.0
+1102 r-role-check o1 1.0
+1102 r-role-check r1 1.0
+1104 sparked (48 39 4 49) ((a-arch) (right-downbowl s-base))
+1105 r-role-check b2 1.0
+1105 r-role-check d1 1.0
+1105 r-role-check d2 1.0
+1105 r-role-check e1 1.0
+1105 r-role-check e2 1.0
+1105 r-role-check g1 1.0
+1105 r-role-check g2 1.0
+1105 r-role-check n1 1.0
+1105 r-role-check p2 1.0
+1105 r-role-check q1 1.0
+1105 r-role-check q2 1.0
+1105 r-role-check s1 1.0
+1105 r-role-check s2 1.0
+1107 r-role-check a1 1.0
+1107 r-role-check a2 1.0
+1107 r-role-check c1 1.0
+1107 r-role-check h1 1.0
+1107 r-role-check o1 1.0
+1107 r-role-check r1 1.0
+1108 r-role-check b2 1.0
+1108 r-role-check d1 1.0
+1108 r-role-check d2 1.0
+1108 r-role-check e1 1.0
+1108 r-role-check e2 1.0
+1108 r-role-check g1 1.0
+1108 r-role-check g2 1.0
+1108 r-role-check n1 1.0
+1108 r-role-check p2 1.0
+1108 r-role-check q1 1.0
+1108 r-role-check q2 1.0
+1108 r-role-check s1 1.0
+1108 r-role-check s2 1.0
+1111 sparked (9 25) ((a-arch) (right-downbowl s-base))
+1115 sparked (48 39 4 49) ((a-arch) (right-downbowl s-base))
+1117 sparked (9 25) ((a-arch) (right-downbowl s-base))
+1118 r-role-check a1 1.0
+1118 r-role-check a2 1.0
+1118 r-role-check c1 1.0
+1118 r-role-check h1 1.0
+1118 r-role-check m1 1.0
+1118 r-role-check o1 1.0
+1118 r-role-check r1 1.0
+1120 sparked (9 25) ((a-arch) (right-downbowl s-base))
+1121 r-role-check b1 1.0
+1121 r-role-check b2 1.0
+1121 r-role-check d1 1.0
+1121 r-role-check d2 1.0
+1121 r-role-check e1 1.0
+1121 r-role-check e2 1.0
+1121 r-role-check g1 1.0
+1121 r-role-check g2 1.0
+1121 r-role-check n1 1.0
+1121 r-role-check p1 1.0
+1121 r-role-check p2 1.0
+1121 r-role-check q1 1.0
+1121 r-role-check q2 1.0
+1121 r-role-check s1 1.0
+1121 r-role-check s2 1.0
+1122 r-role-check a1 1.0
+1122 r-role-check a2 1.0
+1122 r-role-check c1 1.0
+1122 r-role-check h1 1.0
+1122 r-role-check m1 1.0
+1122 r-role-check o1 1.0
+1122 r-role-check r1 1.0
+1123 sparked (48 39 4 49) ((a-arch) (right-downbowl s-base))
+1124 sparked (48 39 4 49) ((a-arch) (right-downbowl s-base))
+1125 r-role-check b1 1.0
+1125 r-role-check b2 1.0
+1125 r-role-check d1 1.0
+1125 r-role-check d2 1.0
+1125 r-role-check e1 1.0
+1125 r-role-check e2 1.0
+1125 r-role-check g1 1.0
+1125 r-role-check g2 1.0
+1125 r-role-check n1 1.0
+1125 r-role-check p1 1.0
+1125 r-role-check p2 1.0
+1125 r-role-check q1 1.0
+1125 r-role-check q2 1.0
+1125 r-role-check s1 1.0
+1125 r-role-check s2 1.0
+1126 smartparse to ((49 4 48) (9 39 25))
+1152 r-role-check a1 1.0
+1152 r-role-check a2 1.0
+1152 r-role-check b2 1.0
+1152 r-role-check c1 1.0
+1152 r-role-check n1 1.0
+1152 r-role-check o1 1.0
+1152 r-role-check r1 1.0
+1155 sparked (9 39 25) ((circle up-circle down-circle) ())
+1157 sparked (49 4 48) ((circle up-circle down-circle) (cap left-upbowl))
+1159 sparked (49 4 48) ((circle up-circle down-circle) (cap left-upbowl))
+1160 r-role-check d1 1.0
+1160 r-role-check d2 1.0
+1160 r-role-check e1 1.0
+1160 r-role-check e2 1.0
+1160 r-role-check g1 1.0
+1160 r-role-check g2 1.0
+1160 r-role-check h1 1.0
+1160 r-role-check m1 1.0
+1160 r-role-check o1 1.0
+1160 r-role-check p2 1.0
+1160 r-role-check q1 1.0
+1160 r-role-check q2 1.0
+1160 r-role-check s1 1.0
+1160 r-role-check s2 1.0
+1170 sparked (9 39 25) ((circle up-circle down-circle) (cap left-upbowl))
+1171 r-role-check a1 1.0
+1171 r-role-check a2 1.0
+1171 r-role-check b1 1.0
+1171 r-role-check b2 1.0
+1171 r-role-check c1 1.0
+1171 r-role-check n1 1.0
+1171 r-role-check o1 1.0
+1171 r-role-check r1 1.0
+1174 sparked (9 39 25) ((circle up-circle down-circle) (cap left-upbowl))
+1176 sparked (49 4 48) ((circle up-circle down-circle) (cap left-upbowl))
+1177 r-role-check b2 1.0
+1177 r-role-check d1 1.0
+1177 r-role-check d2 1.0
+1177 r-role-check e1 1.0
+1177 r-role-check e2 1.0
+1177 r-role-check g1 1.0
+1177 r-role-check g2 1.0
+1177 r-role-check h1 1.0
+1177 r-role-check m1 1.0
+1177 r-role-check o1 1.0
+1177 r-role-check p1 1.0
+1177 r-role-check p2 1.0
+1177 r-role-check q1 1.0
+1177 r-role-check q2 1.0
+1177 r-role-check s1 1.0
+1177 r-role-check s2 1.0
+1178 sparked (9 39 25) ((circle up-circle down-circle) (cap left-upbowl))
+1179 sparked (49 4 48) ((circle up-circle down-circle) (cap left-upbowl))
+1182 sparked (49 4 48) ((circle up-circle down-circle) (cap left-upbowl))
+1183 sparked (49 4 48) ((circle up-circle down-circle) (cap left-upbowl))
+1184 r-role-check a1 1.0
+1184 r-role-check a2 1.0
+1184 r-role-check b1 1.0
+1184 r-role-check b2 1.0
+1184 r-role-check c1 1.0
+1184 r-role-check d2 1.0
+1184 r-role-check k1 1.0
+1184 r-role-check n1 1.0
+1184 r-role-check o1 1.0
+1184 r-role-check p2 1.0
+1184 r-role-check q2 1.0
+1184 r-role-check r1 1.0
+1184 r-role-check s2 1.0
+1185 sparked (49 4 48) ((circle up-circle down-circle) (cap left-upbowl))
+1187 r-role-check d1 1.0
+1187 r-role-check e1 1.0
+1187 r-role-check e2 1.0
+1187 r-role-check g1 1.0
+1187 r-role-check g2 1.0
+1187 r-role-check h1 1.0
+1187 r-role-check m1 1.0
+1187 r-role-check p1 1.0
+1187 r-role-check q1 1.0
+1187 r-role-check s1 1.0
+1188 smartparse to ((49 4 48) (9 39 25))
+1215 sparked (9 39 25) (() (circle up-circle down-circle))
+1218 glomming to ((9 25 4 48 39 49))
+1236 breaking to ((49 39 9 25) (4 48))
+1249 breaking to ((9 25) (39 49) (4 48))
+1288 sparked (4 48) (() (left-upbowl) ())
+1296 sparked (4 48) (() (left-upbowl) ())
+1306 sparked (4 48) (() (left-upbowl) ())
+1308 r-role-check s2 1.0
+1310 sparked (9 25) ((right-downbowl s-base) (left-upbowl) ())
+1311 sparked (9 25) ((right-downbowl s-base) (left-upbowl) ())
+1317 r-role-check a1 1.0
+1317 r-role-check a2 1.0
+1317 r-role-check o1 1.0
+1318 sparked (4 48) (() (left-upbowl) ())
+1322 sparked (4 48) (() (left-upbowl) ())
+1324 sparked (4 48) (() (left-upbowl) ())
+1325 r-role-check e1 1.0
+1325 r-role-check e2 1.0
+1325 r-role-check s2 1.0
+1327 r-role-check a1 1.0
+1327 r-role-check a2 1.0
+1327 r-role-check o1 1.0
+1327 r-role-check s1 1.0
+1328 r-role-check b2 1.0
+1328 r-role-check c1 1.0
+1328 r-role-check d2 1.0
+1328 r-role-check e1 1.0
+1328 r-role-check e2 1.0
+1328 r-role-check g2 1.0
+1328 r-role-check p2 1.0
+1328 r-role-check q2 1.0
+1328 r-role-check r1 1.0
+1328 r-role-check s2 1.0
+1332 sparked (4 48) (() (left-upbowl) ())
+1333 sparked (9 25) ((right-downbowl s-base) (left-upbowl) ())
+1335 sparked (9 25) ((right-downbowl s-base) (left-upbowl) ())
+1336 sparked (4 48) ((right-downbowl s-base) (left-upbowl) ())
+1337 sparked (4 48) ((right-downbowl s-base) (left-upbowl) ())
+1338 r-role-check a1 1.0
+1338 r-role-check a2 1.0
+1338 r-role-check d1 1.0
+1338 r-role-check n1 1.0
+1338 r-role-check o1 1.0
+1338 r-role-check q1 1.0
+1338 r-role-check s1 1.0
+1340 r-role-check b2 1.0
+1340 r-role-check c1 1.0
+1340 r-role-check d2 1.0
+1340 r-role-check e1 1.0
+1340 r-role-check e2 1.0
+1340 r-role-check g1 1.0
+1340 r-role-check g2 1.0
+1340 r-role-check h1 1.0
+1340 r-role-check p2 1.0
+1340 r-role-check q2 1.0
+1340 r-role-check r1 1.0
+1340 r-role-check s2 1.0
+1342 sparked (9 25) ((right-downbowl s-base) (left-upbowl) ())
+1344 r-role-check a1 1.0
+1344 r-role-check a2 1.0
+1344 r-role-check d1 1.0
+1344 r-role-check n1 1.0
+1344 r-role-check o1 1.0
+1344 r-role-check q1 1.0
+1344 r-role-check s1 1.0
+1345 r-role-check b2 1.0
+1345 r-role-check c1 1.0
+1345 r-role-check d2 1.0
+1345 r-role-check e1 1.0
+1345 r-role-check e2 1.0
+1345 r-role-check g1 1.0
+1345 r-role-check g2 1.0
+1345 r-role-check h1 1.0
+1345 r-role-check p2 1.0
+1345 r-role-check q2 1.0
+1345 r-role-check r1 1.0
+1345 r-role-check s2 1.0
+1346 r-role-check a1 1.0
+1346 r-role-check a2 1.0
+1346 r-role-check b1 1.0
+1346 r-role-check d1 1.0
+1346 r-role-check m1 1.0
+1346 r-role-check n1 1.0
+1346 r-role-check o1 1.0
+1346 r-role-check p1 1.0
+1346 r-role-check q1 1.0
+1346 r-role-check s1 1.0
+1347 r-role-check b2 1.0
+1347 r-role-check c1 1.0
+1347 r-role-check d2 1.0
+1347 r-role-check e1 1.0
+1347 r-role-check e2 1.0
+1347 r-role-check g1 1.0
+1347 r-role-check g2 1.0
+1347 r-role-check h1 1.0
+1347 r-role-check p2 1.0
+1347 r-role-check q2 1.0
+1347 r-role-check r1 1.0
+1347 r-role-check s2 1.0
+1348 r-role-check a1 1.0
+1348 r-role-check a2 1.0
+1348 r-role-check b1 1.0
+1348 r-role-check d1 1.0
+1348 r-role-check m1 1.0
+1348 r-role-check n1 1.0
+1348 r-role-check o1 1.0
+1348 r-role-check p1 1.0
+1348 r-role-check q1 1.0
+1348 r-role-check s1 1.0
+1349 r-role-check b2 1.0
+1349 r-role-check c1 1.0
+1349 r-role-check d2 1.0
+1349 r-role-check e1 1.0
+1349 r-role-check e2 1.0
+1349 r-role-check g1 1.0
+1349 r-role-check g2 1.0
+1349 r-role-check h1 1.0
+1349 r-role-check p2 1.0
+1349 r-role-check q2 1.0
+1349 r-role-check r1 1.0
+1349 r-role-check s2 1.0
+1351 r-role-check a1 1.0
+1351 r-role-check a2 1.0
+1351 r-role-check b1 1.0
+1351 r-role-check d1 1.0
+1351 r-role-check m1 1.0
+1351 r-role-check n1 1.0
+1351 r-role-check o1 1.0
+1351 r-role-check p1 1.0
+1351 r-role-check q1 1.0
+1351 r-role-check s1 1.0
+1352 sparked (4 48) ((right-downbowl s-base) (left-upbowl) ())
+1355 r-role-check b2 1.0
+1355 r-role-check c1 1.0
+1355 r-role-check d2 1.0
+1355 r-role-check e1 1.0
+1355 r-role-check e2 1.0
+1355 r-role-check g1 1.0
+1355 r-role-check g2 1.0
+1355 r-role-check h1 1.0
+1355 r-role-check k1 1.0
+1355 r-role-check p2 1.0
+1355 r-role-check q2 1.0
+1355 r-role-check r1 1.0
+1355 r-role-check s2 1.0
+1357 sparked (9 25) ((right-downbowl s-base) (left-upbowl) ())
+1358 r-role-check a1 1.0
+1358 r-role-check a2 1.0
+1358 r-role-check b1 1.0
+1358 r-role-check d1 1.0
+1358 r-role-check m1 1.0
+1358 r-role-check n1 1.0
+1358 r-role-check o1 1.0
+1358 r-role-check p1 1.0
+1358 r-role-check q1 1.0
+1358 r-role-check s1 1.0
+1363 sparked (9 25) ((right-downbowl s-base) (left-upbowl) ())
+1364 sparked (9 25) ((right-downbowl s-base) (left-upbowl) ())
+1365 sparked (9 25) ((right-downbowl s-base) (left-upbowl) ())
+1366 r-role-check b2 1.0
+1366 r-role-check c1 1.0
+1366 r-role-check d2 1.0
+1366 r-role-check e1 1.0
+1366 r-role-check e2 1.0
+1366 r-role-check g1 1.0
+1366 r-role-check g2 1.0
+1366 r-role-check h1 1.0
+1366 r-role-check k1 1.0
+1366 r-role-check p2 1.0
+1366 r-role-check q2 1.0
+1366 r-role-check r1 1.0
+1366 r-role-check s2 1.0
+1368 r-role-check a1 1.0
+1368 r-role-check a2 1.0
+1368 r-role-check b1 1.0
+1368 r-role-check d1 1.0
+1368 r-role-check m1 1.0
+1368 r-role-check n1 1.0
+1368 r-role-check o1 1.0
+1368 r-role-check p1 1.0
+1368 r-role-check q1 1.0
+1368 r-role-check s1 1.0
+1369 r-role-check b2 1.0
+1369 r-role-check c1 1.0
+1369 r-role-check d2 1.0
+1369 r-role-check e1 1.0
+1369 r-role-check e2 1.0
+1369 r-role-check g1 1.0
+1369 r-role-check g2 1.0
+1369 r-role-check h1 1.0
+1369 r-role-check k1 1.0
+1369 r-role-check p2 1.0
+1369 r-role-check q2 1.0
+1369 r-role-check r1 1.0
+1369 r-role-check s2 1.0
+1371 r-role-check a1 1.0
+1371 r-role-check a2 1.0
+1371 r-role-check b1 1.0
+1371 r-role-check d1 1.0
+1371 r-role-check m1 1.0
+1371 r-role-check n1 1.0
+1371 r-role-check o1 1.0
+1371 r-role-check p1 1.0
+1371 r-role-check q1 1.0
+1371 r-role-check s1 1.0
+1373 sparked (9 25) ((right-downbowl s-base) (left-upbowl) ())
+1375 sparked (4 48) ((right-downbowl s-base) (left-upbowl) ())
+1376 r-role-check b2 1.0
+1376 r-role-check c1 1.0
+1376 r-role-check d2 1.0
+1376 r-role-check e1 1.0
+1376 r-role-check e2 1.0
+1376 r-role-check g1 1.0
+1376 r-role-check g2 1.0
+1376 r-role-check h1 1.0
+1376 r-role-check k1 1.0
+1376 r-role-check p2 1.0
+1376 r-role-check q2 1.0
+1376 r-role-check r1 1.0
+1376 r-role-check s2 1.0
+1377 sparked (4 48) ((right-downbowl s-base) (left-upbowl) ())
+1378 r-role-check a1 1.0
+1378 r-role-check a2 1.0
+1378 r-role-check b1 1.0
+1378 r-role-check d1 1.0
+1378 r-role-check m1 1.0
+1378 r-role-check n1 1.0
+1378 r-role-check o1 1.0
+1378 r-role-check p1 1.0
+1378 r-role-check q1 1.0
+1378 r-role-check s1 1.0
+1379 r-role-check b2 1.0
+1379 r-role-check c1 1.0
+1379 r-role-check d2 1.0
+1379 r-role-check e1 1.0
+1379 r-role-check e2 1.0
+1379 r-role-check g1 1.0
+1379 r-role-check g2 1.0
+1379 r-role-check h1 1.0
+1379 r-role-check k1 1.0
+1379 r-role-check p2 1.0
+1379 r-role-check q2 1.0
+1379 r-role-check r1 1.0
+1379 r-role-check s2 1.0
+1396 sparked (39 49) ((down-arm right-halfarch right-buttress) (right-downbowl s-base) (left-upbowl))
+1397 sparked (9 25) ((down-arm right-halfarch right-buttress) (right-downbowl s-base) (left-upbowl))
+1401 sparked (4 48) ((down-arm right-halfarch right-buttress) (right-downbowl s-base) (left-upbowl))
+1402 r-role-check a1 1.0
+1402 r-role-check a2 1.0
+1402 r-role-check b1 1.0
+1402 r-role-check d1 1.0
+1402 r-role-check m1 1.0
+1402 r-role-check n1 1.0
+1402 r-role-check o1 1.0
+1402 r-role-check p1 1.0
+1402 r-role-check q1 1.0
+1402 r-role-check s1 1.0
+1404 sparked (9 25) ((down-arm right-halfarch right-buttress) (right-downbowl s-base) (left-upbowl))
+1407 r-role-check b2 1.0
+1407 r-role-check c1 1.0
+1407 r-role-check d2 1.0
+1407 r-role-check e1 1.0
+1407 r-role-check e2 1.0
+1407 r-role-check g1 1.0
+1407 r-role-check g2 1.0
+1407 r-role-check h1 1.0
+1407 r-role-check k1 1.0
+1407 r-role-check p2 1.0
+1407 r-role-check q2 1.0
+1407 r-role-check r1 1.0
+1407 r-role-check s2 1.0
+1409 r-role-check a1 1.0
+1409 r-role-check a2 1.0
+1409 r-role-check b1 1.0
+1409 r-role-check d1 1.0
+1409 r-role-check m1 1.0
+1409 r-role-check n1 1.0
+1409 r-role-check o1 1.0
+1409 r-role-check p1 1.0
+1409 r-role-check q1 1.0
+1409 r-role-check s1 1.0
+1410 sparked (39 49) ((down-arm right-halfarch right-buttress) (right-downbowl s-base) (left-upbowl))
+1411 sparked (9 25) ((down-arm right-halfarch right-buttress) (right-downbowl s-base) (left-upbowl))
+1412 r-role-check b2 1.0
+1412 r-role-check c1 1.0
+1412 r-role-check d2 1.0
+1412 r-role-check e1 1.0
+1412 r-role-check e2 1.0
+1412 r-role-check g1 1.0
+1412 r-role-check g2 1.0
+1412 r-role-check h1 1.0
+1412 r-role-check k1 1.0
+1412 r-role-check m1 1.0
+1412 r-role-check p2 1.0
+1412 r-role-check q2 1.0
+1412 r-role-check r1 1.0
+1412 r-role-check s2 1.0
+1414 glomming to ((25 49 9 39) (4 48))
+1416 smartparse to ((49 4 48) (9 39 25))
+1439 sparked (9 39 25) ((circle up-circle down-circle) ())
+1443 r-role-check o1 1.0
+1451 sparked (9 39 25) ((circle up-circle down-circle) ())
+1453 r-role-check a2 1.0
+1453 r-role-check o1 1.0
+1454 r-role-check a1 1.0
+1454 r-role-check e2 1.0
+1455 r-role-check a2 1.0
+1455 r-role-check b2 1.0
+1455 r-role-check d2 1.0
+1455 r-role-check e1 1.0
+1455 r-role-check g2 1.0
+1455 r-role-check o1 1.0
+1455 r-role-check p2 1.0
+1455 r-role-check q2 1.0
+1460 sparked (9 39 25) (() (circle up-circle down-circle))
+1462 sparked (49 4 48) ((cap left-upbowl) (circle up-circle down-circle))
+1463 r-role-check a1 1.0
+1463 r-role-check e2 1.0
+1463 r-role-check o1 1.0
+1463 r-role-check s1 1.0
+1463 r-role-check s2 1.0
+1464 sparked (9 39 25) ((cap left-upbowl) (circle up-circle down-circle))
+1467 sparked (9 39 25) ((cap left-upbowl) (circle up-circle down-circle))
+1469 sparked (49 4 48) ((cap left-upbowl) (circle up-circle down-circle))
+1470 smartparse to ((49 4 48) (9 39 25))
+1496 sparked (9 39 25) ((circle up-circle down-circle) ())
+1497 sparked (9 39 25) ((circle up-circle down-circle) ())
+1500 r-role-check a1 1.0
+1500 r-role-check a2 1.0
+1500 r-role-check b2 1.0
+1500 r-role-check d2 1.0
+1500 r-role-check e1 1.0
+1500 r-role-check e2 1.0
+1500 r-role-check g2 1.0
+1500 r-role-check o1 1.0
+1500 r-role-check p2 1.0
+1500 r-role-check q2 1.0
+1502 r-role-check c1 1.0
+1502 r-role-check d1 1.0
+1502 r-role-check g1 1.0
+1502 r-role-check n1 1.0
+1502 r-role-check q1 1.0
+1502 r-role-check r1 1.0
+1502 r-role-check s1 1.0
+1502 r-role-check s2 1.0
+1503 sparked (9 39 25) (() (circle up-circle down-circle))
+1504 r-role-check a1 1.0
+1504 r-role-check a2 1.0
+1504 r-role-check b2 1.0
+1504 r-role-check d2 1.0
+1504 r-role-check e1 1.0
+1504 r-role-check e2 1.0
+1504 r-role-check g2 1.0
+1504 r-role-check h1 1.0
+1504 r-role-check o1 1.0
+1504 r-role-check p2 1.0
+1504 r-role-check q2 1.0
+1510 sparked (9 39 25) (() (circle up-circle down-circle))
+1511 sparked (9 39 25) (() (circle up-circle down-circle))
+1513 r-role-check b1 1.0
+1513 r-role-check b2 1.0
+1513 r-role-check c1 1.0
+1513 r-role-check d1 1.0
+1513 r-role-check d2 1.0
+1513 r-role-check g1 1.0
+1513 r-role-check g2 1.0
+1513 r-role-check n1 1.0
+1513 r-role-check o1 1.0
+1513 r-role-check p1 1.0
+1513 r-role-check p2 1.0
+1513 r-role-check q1 1.0
+1513 r-role-check q2 1.0
+1513 r-role-check r1 1.0
+1513 r-role-check s1 1.0
+1513 r-role-check s2 1.0
+1524 sparked (49 4 48) ((cap left-upbowl) (circle up-circle down-circle))
+1525 r-role-check a1 1.0
+1525 r-role-check a2 1.0
+1525 r-role-check e1 1.0
+1525 r-role-check e2 1.0
+1525 r-role-check h1 1.0
+1525 r-role-check m1 1.0
+1525 r-role-check s2 1.0
+1526 r-role-check b1 1.0
+1526 r-role-check b2 1.0
+1526 r-role-check c1 1.0
+1526 r-role-check d1 1.0
+1526 r-role-check d2 1.0
+1526 r-role-check g1 1.0
+1526 r-role-check g2 1.0
+1526 r-role-check n1 1.0
+1526 r-role-check o1 1.0
+1526 r-role-check p1 1.0
+1526 r-role-check p2 1.0
+1526 r-role-check q1 1.0
+1526 r-role-check q2 1.0
+1526 r-role-check r1 1.0
+1526 r-role-check s1 1.0
+1530 sparked (9 39 25) ((cap left-upbowl) (circle up-circle down-circle))
+1531 sparked (49 4 48) ((cap left-upbowl) (circle up-circle down-circle))
+1533 sparked (49 4 48) ((cap left-upbowl) (circle up-circle down-circle))
+1534 r-role-check a1 1.0
+1534 r-role-check a2 1.0
+1534 r-role-check b2 1.0
+1534 r-role-check d2 1.0
+1534 r-role-check e1 1.0
+1534 r-role-check e2 1.0
+1534 r-role-check g2 1.0
+1534 r-role-check h1 1.0
+1534 r-role-check m1 1.0
+1534 r-role-check o1 1.0
+1534 r-role-check p2 1.0
+1534 r-role-check q2 1.0
+1534 r-role-check s2 1.0
+1536 r-role-check b1 1.0
+1536 r-role-check c1 1.0
+1536 r-role-check d1 1.0
+1536 r-role-check g1 1.0
+1536 r-role-check k1 1.0
+1536 r-role-check n1 1.0
+1536 r-role-check p1 1.0
+1536 r-role-check q1 1.0
+1536 r-role-check r1 1.0
+1536 r-role-check s1 1.0
+1537 sparked (9 39 25) ((cap left-upbowl) (circle up-circle down-circle))
+1538 sparked (49 4 48) ((cap left-upbowl) (circle up-circle down-circle))
+1539 r-role-check a1 1.0
+1539 r-role-check a2 1.0
+1539 r-role-check b2 1.0
+1539 r-role-check d2 1.0
+1539 r-role-check e1 1.0
+1539 r-role-check e2 1.0
+1539 r-role-check g2 1.0
+1539 r-role-check h1 1.0
+1539 r-role-check m1 1.0
+1539 r-role-check o1 1.0
+1539 r-role-check p2 1.0
+1539 r-role-check q2 1.0
+1539 r-role-check s2 1.0
+1544 sparked (49 4 48) ((cap left-upbowl) (circle up-circle down-circle))
+1545 sparked (9 39 25) ((cap left-upbowl) (circle up-circle down-circle))
+1547 sparked (9 39 25) ((cap left-upbowl) (circle up-circle down-circle))
+1548 sparked (9 39 25) ((cap left-upbowl) (circle up-circle down-circle))
+1549 sparked (9 39 25) ((cap left-upbowl) (circle up-circle down-circle))
+1550 r-role-check b1 1.0
+1550 r-role-check b2 1.0
+1550 r-role-check c1 1.0
+1550 r-role-check d1 1.0
+1550 r-role-check d2 1.0
+1550 r-role-check g1 1.0
+1550 r-role-check g2 1.0
+1550 r-role-check k1 1.0
+1550 r-role-check n1 1.0
+1550 r-role-check o1 1.0
+1550 r-role-check p1 1.0
+1550 r-role-check p2 1.0
+1550 r-role-check q1 1.0
+1550 r-role-check q2 1.0
+1550 r-role-check r1 1.0
+1550 r-role-check s1 1.0
+1550 r-role-check s2 1.0
+1551 sparked (49 4 48) ((cap left-upbowl) (circle up-circle down-circle))
+1553 r-role-check a1 1.0
+1553 r-role-check a2 1.0
+1553 r-role-check e1 1.0
+1553 r-role-check e2 1.0
+1553 r-role-check h1 1.0
+1553 r-role-check m1 1.0
+1554 r-role-check b1 1.0
+1554 r-role-check b2 1.0
+1554 r-role-check c1 1.0
+1554 r-role-check d1 1.0
+1554 r-role-check d2 1.0
+1554 r-role-check g1 1.0
+1554 r-role-check g2 1.0
+1554 r-role-check k1 1.0
+1554 r-role-check n1 1.0
+1554 r-role-check o1 1.0
+1554 r-role-check p1 1.0
+1554 r-role-check p2 1.0
+1554 r-role-check q1 1.0
+1554 r-role-check q2 1.0
+1554 r-role-check r1 1.0
+1554 r-role-check s1 1.0
+1554 r-role-check s2 1.0
+1555 r-role-check a1 1.0
+1555 r-role-check a2 1.0
+1555 r-role-check e1 1.0
+1555 r-role-check e2 1.0
+1555 r-role-check h1 1.0
+1555 r-role-check m1 1.0
+1556 r-role-check b1 1.0
+1556 r-role-check b2 1.0
+1556 r-role-check c1 1.0
+1556 r-role-check d1 1.0
+1556 r-role-check d2 1.0
+1556 r-role-check g1 1.0
+1556 r-role-check g2 1.0
+1556 r-role-check k1 1.0
+1556 r-role-check n1 1.0
+1556 r-role-check o1 1.0
+1556 r-role-check p1 1.0
+1556 r-role-check p2 1.0
+1556 r-role-check q1 1.0
+1556 r-role-check q2 1.0
+1556 r-role-check r1 1.0
+1556 r-role-check s1 1.0
+1556 r-role-check s2 1.0
+1557 r-role-check a1 1.0
+1557 r-role-check a2 1.0
+1557 r-role-check e1 1.0
+1557 r-role-check e2 1.0
+1557 r-role-check h1 1.0
+1557 r-role-check m1 1.0
+1559 glomming to ((9 25 4 48 39 49))
+1568 breaking to ((49 39 9 25) (4 48))
+1573 breaking to ((9 25) (39 49) (4 48))
+1615 sparked (39 49) ((right-buttress) () ())
+1618 sparked (4 48) (() (right-buttress) (cap left-upbowl))
+1621 r-role-check o1 1.0
+1623 sparked (9 25) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1629 sparked (39 49) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1630 r-role-check a1 1.0
+1630 r-role-check a2 1.0
+1630 r-role-check e1 1.0
+1630 r-role-check e2 1.0
+1630 r-role-check n1 1.0
+1630 r-role-check s1 1.0
+1630 r-role-check s2 1.0
+1631 sparked (4 48) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1632 sparked (4 48) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1634 sparked (4 48) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1636 sparked (9 25) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1637 r-role-check o1 1.0
+1637 r-role-check r1 1.0
+1640 sparked (4 48) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1641 sparked (39 49) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1645 sparked (39 49) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1646 sparked (39 49) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1647 sparked (39 49) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1648 r-role-check a1 1.0
+1648 r-role-check a2 1.0
+1648 r-role-check b2 1.0
+1648 r-role-check c1 1.0
+1648 r-role-check d2 1.0
+1648 r-role-check e1 1.0
+1648 r-role-check e2 1.0
+1648 r-role-check g2 1.0
+1648 r-role-check h1 1.0
+1648 r-role-check n1 1.0
+1648 r-role-check p2 1.0
+1648 r-role-check q2 1.0
+1648 r-role-check s1 1.0
+1648 r-role-check s2 1.0
+1649 r-role-check d1 1.0
+1649 r-role-check o1 1.0
+1649 r-role-check q1 1.0
+1649 r-role-check r1 1.0
+1650 r-role-check a1 1.0
+1650 r-role-check a2 1.0
+1650 r-role-check b2 1.0
+1650 r-role-check c1 1.0
+1650 r-role-check d2 1.0
+1650 r-role-check e1 1.0
+1650 r-role-check e2 1.0
+1650 r-role-check g1 1.0
+1650 r-role-check g2 1.0
+1650 r-role-check h1 1.0
+1650 r-role-check n1 1.0
+1650 r-role-check p2 1.0
+1650 r-role-check q2 1.0
+1650 r-role-check s1 1.0
+1650 r-role-check s2 1.0
+1651 sparked (9 25) ((right-downbowl s-base) (right-buttress) (cap left-upbowl))
+1652 glomming to ((25 49 9 39) (4 48))
+1665 r-role-check a1 1.0
+1665 r-role-check a2 1.0
+1665 r-role-check o1 1.0
+1670 sparked (4 48) (() (cap left-upbowl))
+1672 breaking to ((9 25) (39 49) (4 48))
+1680 sparked (4 48) (() () (cap left-upbowl))
+1685 r-role-check s2 1.0
+1686 r-role-check a1 1.0
+1686 r-role-check a2 1.0
+1686 r-role-check e1 1.0
+1686 r-role-check e2 1.0
+1686 r-role-check o1 1.0
+1686 r-role-check r1 1.0
+1686 r-role-check s1 1.0
+1698 sparked (4 48) (() () (cap left-upbowl))
+1699 sparked (39 49) ((right-buttress right-halfarch) () (cap left-upbowl))
+1710 sparked (9 25) (() (right-downbowl s-base) (cap left-upbowl))
+1711 sparked (9 25) (() (right-downbowl s-base) (cap left-upbowl))
+1714 sparked (4 48) (() (right-downbowl s-base) (cap left-upbowl))
+1715 r-role-check b2 1.0
+1715 r-role-check c1 1.0
+1715 r-role-check d2 1.0
+1715 r-role-check m1 1.0
+1715 r-role-check n1 1.0
+1715 r-role-check p2 1.0
+1715 r-role-check q2 1.0
+1715 r-role-check s2 1.0
+1718 r-role-check a1 1.0
+1718 r-role-check a2 1.0
+1718 r-role-check d1 1.0
+1718 r-role-check e1 1.0
+1718 r-role-check e2 1.0
+1718 r-role-check g1 1.0
+1718 r-role-check g2 1.0
+1718 r-role-check h1 1.0
+1718 r-role-check o1 1.0
+1718 r-role-check q1 1.0
+1718 r-role-check r1 1.0
+1718 r-role-check s1 1.0
+1719 sparked (4 48) (() (right-downbowl s-base) (cap left-upbowl))
+1721 sparked (39 49) ((right-buttress right-halfarch) (right-downbowl s-base) (cap left-upbowl))
+1722 r-role-check b2 1.0
+1722 r-role-check c1 1.0
+1722 r-role-check d2 1.0
+1722 r-role-check m1 1.0
+1722 r-role-check n1 1.0
+1722 r-role-check p2 1.0
+1722 r-role-check q2 1.0
+1722 r-role-check s2 1.0
+1723 r-role-check a1 1.0
+1723 r-role-check a2 1.0
+1723 r-role-check d1 1.0
+1723 r-role-check e1 1.0
+1723 r-role-check e2 1.0
+1723 r-role-check g1 1.0
+1723 r-role-check g2 1.0
+1723 r-role-check h1 1.0
+1723 r-role-check o1 1.0
+1723 r-role-check q1 1.0
+1723 r-role-check r1 1.0
+1723 r-role-check s1 1.0
+1724 r-role-check b2 1.0
+1724 r-role-check c1 1.0
+1724 r-role-check d2 1.0
+1724 r-role-check m1 1.0
+1724 r-role-check n1 1.0
+1724 r-role-check p2 1.0
+1724 r-role-check q2 1.0
+1724 r-role-check s2 1.0
+1726 r-role-check a1 1.0
+1726 r-role-check a2 1.0
+1726 r-role-check b1 1.0
+1726 r-role-check d1 1.0
+1726 r-role-check e1 1.0
+1726 r-role-check e2 1.0
+1726 r-role-check g1 1.0
+1726 r-role-check g2 1.0
+1726 r-role-check h1 1.0
+1726 r-role-check o1 1.0
+1726 r-role-check p1 1.0
+1726 r-role-check q1 1.0
+1726 r-role-check r1 1.0
+1726 r-role-check s1 1.0
+1728 smartparse to ((48 4 49 39 9 25))
+1732 breaking to ((48) (4 49 39 9 25))
+1736 breaking to ((4 49) (39 9 25) (48))
+1780 sparked (4 49) ((a-arch e-crossbar s-crossbar cap) () ())
+1783 sparked (39 9 25) ((a-arch e-crossbar s-crossbar cap) (circle up-circle down-circle) ())
+1792 r-role-check a1 1.0
+1792 r-role-check a2 1.0
+1792 r-role-check o1 1.0
+1793 r-role-check e1 1.0
+1793 r-role-check e2 1.0
+1793 r-role-check s1 1.0
+1797 sparked (4 49) ((a-arch e-crossbar s-crossbar cap) (circle up-circle down-circle) ())
+1799 sparked (4 49) ((a-arch e-crossbar s-crossbar cap) (circle up-circle down-circle) ())
+1800 breaking to ((48) (4 49) (39 9 25))
+1807 sparked (4 49) (() (a-arch e-crossbar s-crossbar cap) ())
+1812 breaking to ((48) (4 49) (39 9 25))
+1820 sparked (39 9 25) (() () (circle up-circle down-circle))
+1821 r-role-check o1 1.0
+1822 r-role-check a2 1.0
+1824 sparked (4 49) (() (a-arch e-crossbar s-crossbar cap) (circle up-circle down-circle))
+1825 sparked (39 9 25) (() (a-arch e-crossbar s-crossbar cap) (circle up-circle down-circle))
+1832 r-role-check a1 1.0
+1832 r-role-check b2 1.0
+1832 r-role-check d2 1.0
+1832 r-role-check e1 1.0
+1832 r-role-check e2 1.0
+1832 r-role-check g2 1.0
+1832 r-role-check o1 1.0
+1832 r-role-check p2 1.0
+1832 r-role-check q2 1.0
+1832 r-role-check s1 1.0
+1834 r-role-check a2 1.0
+1840 r-role-check a1 1.0
+1840 r-role-check e1 1.0
+1840 r-role-check e2 1.0
+1840 r-role-check o1 1.0
+1840 r-role-check r1 1.0
+1840 r-role-check s1 1.0
+1846 sparked (4 49) (() (a-arch e-crossbar s-crossbar cap) (circle up-circle down-circle))
+1847 sparked (39 9 25) (() (a-arch e-crossbar s-crossbar cap) (circle up-circle down-circle))
+1849 breaking to ((48) (4 49) (39 9 25))
+1851 sparked (4 49) (() (a-arch e-crossbar s-crossbar cap) ())
+1854 sparked (4 49) (() (a-arch e-crossbar s-crossbar cap) ())
+1856 r-role-check r1 1.0
+1856 r-role-check s1 1.0
+1865 r-role-check a2 1.0
+1867 sparked (39 9 25) (() (a-arch e-crossbar s-crossbar cap) (circle up-circle down-circle))
+1869 r-role-check a1 1.0
+1869 r-role-check a2 1.0
+1869 r-role-check e1 1.0
+1869 r-role-check o1 1.0
+1869 r-role-check s1 1.0
+1870 sparked (4 49) (() (a-arch e-crossbar s-crossbar cap) (circle up-circle down-circle))
+1871 r-role-check e2 1.0
+1871 r-role-check r1 1.0
+1873 r-role-check a1 1.0
+1873 r-role-check a2 1.0
+1873 r-role-check b2 1.0
+1873 r-role-check d2 1.0
+1873 r-role-check e1 1.0
+1873 r-role-check g2 1.0
+1873 r-role-check n1 1.0
+1873 r-role-check o1 1.0
+1873 r-role-check p2 1.0
+1873 r-role-check q2 1.0
+1873 r-role-check s1 1.0
+1873 r-role-check s2 1.0
+1876 sparked (4 49) (() (a-arch e-crossbar s-crossbar left-halfarch cap) (circle up-circle down-circle))
+1879 sparked (39 9 25) (() (a-arch e-crossbar s-crossbar left-halfarch cap) (circle up-circle down-circle))
+1880 r-role-check c1 1.0
+1880 r-role-check d1 1.0
+1880 r-role-check e2 1.0
+1880 r-role-check g1 1.0
+1880 r-role-check h1 1.0
+1880 r-role-check m1 1.0
+1880 r-role-check o1 1.0
+1880 r-role-check q1 1.0
+1880 r-role-check r1 1.0
+1886 r-role-check a1 1.0
+1886 r-role-check a2 1.0
+1886 r-role-check b2 1.0
+1886 r-role-check d2 1.0
+1886 r-role-check e1 1.0
+1886 r-role-check g2 1.0
+1886 r-role-check n1 1.0
+1886 r-role-check p2 1.0
+1886 r-role-check q2 1.0
+1886 r-role-check s1 1.0
+1886 r-role-check s2 1.0
+1887 r-role-check b1 1.0
+1887 r-role-check c1 1.0
+1887 r-role-check d1 1.0
+1887 r-role-check e2 1.0
+1887 r-role-check g1 1.0
+1887 r-role-check h1 1.0
+1887 r-role-check m1 1.0
+1887 r-role-check o1 1.0
+1887 r-role-check p1 1.0
+1887 r-role-check q1 1.0
+1887 r-role-check r1 1.0
+1888 sparked (39 9 25) (() (a-arch e-crossbar s-crossbar left-halfarch cap) (circle up-circle down-circle))
+1889 r-role-check a1 1.0
+1889 r-role-check a2 1.0
+1889 r-role-check b2 1.0
+1889 r-role-check d2 1.0
+1889 r-role-check e1 1.0
+1889 r-role-check g2 1.0
+1889 r-role-check n1 1.0
+1889 r-role-check o1 1.0
+1889 r-role-check p2 1.0
+1889 r-role-check q2 1.0
+1889 r-role-check s1 1.0
+1889 r-role-check s2 1.0
+1890 sparked (4 49) (() (a-arch e-crossbar s-crossbar left-halfarch cap) (circle up-circle down-circle))
+1896 sparked (4 49) (() (a-arch e-crossbar s-crossbar left-halfarch cap) (circle up-circle down-circle))
+1897 r-role-check b1 1.0
+1897 r-role-check c1 1.0
+1897 r-role-check d1 1.0
+1897 r-role-check e2 1.0
+1897 r-role-check g1 1.0
+1897 r-role-check h1 1.0
+1897 r-role-check m1 1.0
+1897 r-role-check p1 1.0
+1897 r-role-check q1 1.0
+1897 r-role-check r1 1.0
+1898 r-role-check a1 1.0
+1898 r-role-check a2 1.0
+1898 r-role-check b2 1.0
+1898 r-role-check d2 1.0
+1898 r-role-check e1 1.0
+1898 r-role-check g2 1.0
+1898 r-role-check n1 1.0
+1898 r-role-check o1 1.0
+1898 r-role-check p2 1.0
+1898 r-role-check q2 1.0
+1898 r-role-check s1 1.0
+1898 r-role-check s2 1.0
+1899 sparked (4 49) (() (a-arch e-crossbar s-crossbar up-arm left-halfarch cap) (circle up-circle down-circle))
+1900 sparked (39 9 25) (() (a-arch e-crossbar s-crossbar up-arm left-halfarch cap) (circle up-circle down-circle))
+1901 sparked (39 9 25) (() (a-arch e-crossbar s-crossbar up-arm left-halfarch cap) (circle up-circle down-circle))
+1902 r-role-check b1 1.0
+1902 r-role-check b2 1.0
+1902 r-role-check c1 1.0
+1902 r-role-check d1 1.0
+1902 r-role-check d2 1.0
+1902 r-role-check e2 1.0
+1902 r-role-check g1 1.0
+1902 r-role-check g2 1.0
+1902 r-role-check h1 1.0
+1902 r-role-check k1 1.0
+1902 r-role-check m1 1.0
+1902 r-role-check o1 1.0
+1902 r-role-check p1 1.0
+1902 r-role-check p2 1.0
+1902 r-role-check q1 1.0
+1902 r-role-check q2 1.0
+1902 r-role-check r1 1.0
+1904 r-role-check a1 1.0
+1904 r-role-check a2 1.0
+1904 r-role-check e1 1.0
+1904 r-role-check n1 1.0
+1904 r-role-check s1 1.0
+1904 r-role-check s2 1.0
+1905 r-role-check b1 1.0
+1905 r-role-check b2 1.0
+1905 r-role-check c1 1.0
+1905 r-role-check d1 1.0
+1905 r-role-check d2 1.0
+1905 r-role-check e2 1.0
+1905 r-role-check g1 1.0
+1905 r-role-check g2 1.0
+1905 r-role-check h1 1.0
+1905 r-role-check k1 1.0
+1905 r-role-check m1 1.0
+1905 r-role-check o1 1.0
+1905 r-role-check p1 1.0
+1905 r-role-check p2 1.0
+1905 r-role-check q1 1.0
+1905 r-role-check q2 1.0
+1905 r-role-check r1 1.0
+1909 sparked (39 9 25) (() (a-arch e-crossbar s-crossbar up-arm left-halfarch cap) (circle up-circle down-circle))
+1915 r-role-check a1 1.0
+1915 r-role-check a2 1.0
+1915 r-role-check b2 1.0
+1915 r-role-check d2 1.0
+1915 r-role-check e1 1.0
+1915 r-role-check g2 1.0
+1915 r-role-check n1 1.0
+1915 r-role-check o1 1.0
+1915 r-role-check p2 1.0
+1915 r-role-check q2 1.0
+1915 r-role-check s1 1.0
+1915 r-role-check s2 1.0
+1920 sparked (4 49) (() (a-arch e-crossbar s-crossbar up-arm left-halfarch cap) (circle up-circle down-circle))
+1921 sparked (48) ((left-halfarch) (a-arch e-crossbar s-crossbar up-arm left-halfarch cap) (circle up-circle down-circle))
+1922 sparked (39 9 25) ((left-halfarch) (a-arch e-crossbar s-crossbar up-arm left-halfarch cap) (circle up-circle down-circle))
+1924 r-role-check b1 1.0
+1924 r-role-check c1 1.0
+1924 r-role-check d1 1.0
+1924 r-role-check e2 1.0
+1924 r-role-check g1 1.0
+1924 r-role-check h1 1.0
+1924 r-role-check k1 1.0
+1924 r-role-check m1 1.0
+1924 r-role-check o1 1.0
+1924 r-role-check p1 1.0
+1924 r-role-check q1 1.0
+1924 r-role-check r1 1.0
+1925 sparked (39 9 25) ((left-halfarch) (a-arch e-crossbar s-crossbar up-arm left-halfarch cap) (circle up-circle down-circle))
+1926 sparked (39 9 25) ((left-halfarch) (a-arch e-crossbar s-crossbar up-arm left-halfarch cap) (circle up-circle down-circle))
+1927 r-role-check a1 1.0
+1927 r-role-check a2 1.0
+1927 r-role-check b2 1.0
+1927 r-role-check d2 1.0
+1927 r-role-check e1 1.0
+1927 r-role-check g2 1.0
+1927 r-role-check n1 1.0
+1927 r-role-check o1 1.0
+1927 r-role-check p2 1.0
+1927 r-role-check q2 1.0
+1927 r-role-check s1 1.0
+1927 r-role-check s2 1.0
+1928 r-role-check b1 1.0
+1928 r-role-check c1 1.0
+1928 r-role-check d1 1.0
+1928 r-role-check e2 1.0
+1928 r-role-check g1 1.0
+1928 r-role-check h1 1.0
+1928 r-role-check k1 1.0
+1928 r-role-check m1 1.0
+1928 r-role-check p1 1.0
+1928 r-role-check q1 1.0
+1928 r-role-check r1 1.0
+1929 r-role-check a1 1.0
+1929 r-role-check a2 1.0
+1929 r-role-check b2 1.0
+1929 r-role-check d2 1.0
+1929 r-role-check e1 1.0
+1929 r-role-check g2 1.0
+1929 r-role-check n1 1.0
+1929 r-role-check o1 1.0
+1929 r-role-check p2 1.0
+1929 r-role-check q2 1.0
+1929 r-role-check s1 1.0
+1929 r-role-check s2 1.0
+1930 sparked (39 9 25) ((left-halfarch) (a-arch e-crossbar s-crossbar up-arm left-halfarch cap) (circle up-circle down-circle))
+1931 r-role-check b1 1.0
+1931 r-role-check b2 1.0
+1931 r-role-check c1 1.0
+1931 r-role-check d1 1.0
+1931 r-role-check d2 1.0
+1931 r-role-check e2 1.0
+1931 r-role-check g1 1.0
+1931 r-role-check g2 1.0
+1931 r-role-check h1 1.0
+1931 r-role-check k1 1.0
+1931 r-role-check m1 1.0
+1931 r-role-check o1 1.0
+1931 r-role-check p1 1.0
+1931 r-role-check p2 1.0
+1931 r-role-check q1 1.0
+1931 r-role-check q2 1.0
+1931 r-role-check r1 1.0
+1932 r-role-check a1 1.0
+1932 r-role-check a2 1.0
+1932 r-role-check e1 1.0
+1932 r-role-check n1 1.0
+1932 r-role-check s1 1.0
+1932 r-role-check s2 1.0
+1933 r-role-check b1 1.0
+1933 r-role-check b2 1.0
+1933 r-role-check c1 1.0
+1933 r-role-check d1 1.0
+1933 r-role-check d2 1.0
+1933 r-role-check e2 1.0
+1933 r-role-check g1 1.0
+1933 r-role-check g2 1.0
+1933 r-role-check h1 1.0
+1933 r-role-check k1 1.0
+1933 r-role-check m1 1.0
+1933 r-role-check o1 1.0
+1933 r-role-check p1 1.0
+1933 r-role-check p2 1.0
+1933 r-role-check q1 1.0
+1933 r-role-check q2 1.0
+1933 r-role-check r1 1.0
+1934 breaking to ((4) (49) (48) (39 9 25))
+1936 glomming to ((4 48) (49) (39 9 25))
+1952 sparked (39 9 25) (() () (circle up-circle down-circle))
+1955 glomming to ((9 25 39 49) (4 48))
+1960 breaking to ((9 25) (39 49) (4 48))
+1980 r-role-check o1 1.0
+1994 sparked (4 48) (() () (cap left-upbowl))
+2000 r-role-check a1 1.0
+2000 r-role-check a2 1.0
+2000 r-role-check e1 1.0
+2000 r-role-check e2 1.0
+2000 r-role-check o1 1.0
+2000 r-role-check s2 1.0
+2002 sparked (39 49) ((right-buttress) () (cap left-upbowl))
+2005 r-role-check a1 1.0
+2005 r-role-check a2 1.0
+2005 r-role-check r1 1.0
+2005 r-role-check s1 1.0
+2008 sparked (4 48) ((right-buttress) () (cap left-upbowl))
+2014 sparked (9 25) ((right-buttress) (right-downbowl s-base) (cap left-upbowl))
+2016 r-role-check c1 1.0
+2016 r-role-check e1 1.0
+2016 r-role-check e2 1.0
+2016 r-role-check n1 1.0
+2016 r-role-check o1 1.0
+2016 r-role-check s2 1.0
+2018 sparked (4 48) ((right-buttress) (right-downbowl s-base) (cap left-upbowl))
+2019 sparked (9 25) ((right-buttress) (right-downbowl s-base) (cap left-upbowl))
+2021 sparked (4 48) ((right-buttress) (right-downbowl s-base) (cap left-upbowl))
+2023 r-role-check a1 1.0
+2023 r-role-check a2 1.0
+2023 r-role-check b2 1.0
+2023 r-role-check d2 1.0
+2023 r-role-check g2 1.0
+2023 r-role-check p2 1.0
+2023 r-role-check q2 1.0
+2023 r-role-check r1 1.0
+2023 r-role-check s1 1.0
+2027 sparked (39 49) ((right-buttress) (right-downbowl s-base) (cap left-upbowl))
+2028 sparked (4 48) ((right-buttress) (right-downbowl s-base) (cap left-upbowl))
+2029 r-role-check c1 1.0
+2029 r-role-check d1 1.0
+2029 r-role-check e1 1.0
+2029 r-role-check e2 1.0
+2029 r-role-check h1 1.0
+2029 r-role-check n1 1.0
+2029 r-role-check o1 1.0
+2029 r-role-check q1 1.0
+2029 r-role-check s2 1.0
+2031 sparked (4 48) ((right-buttress) (right-downbowl s-base) (cap left-upbowl))
+2032 r-role-check a1 1.0
+2032 r-role-check a2 1.0
+2032 r-role-check b2 1.0
+2032 r-role-check d2 1.0
+2032 r-role-check g1 1.0
+2032 r-role-check g2 1.0
+2032 r-role-check p2 1.0
+2032 r-role-check q2 1.0
+2032 r-role-check r1 1.0
+2032 r-role-check s1 1.0
+2032 r-role-check s2 1.0
+2033 sparked (4 48) ((right-buttress) (right-downbowl s-base) (cap left-upbowl))
+2034 sparked (4 48) ((right-buttress) (right-downbowl s-base) (cap left-upbowl))
+2035 sparked (39 49) ((right-buttress right-halfarch) (right-downbowl s-base) (cap left-upbowl))
+2036 r-role-check c1 1.0
+2036 r-role-check d1 1.0
+2036 r-role-check e1 1.0
+2036 r-role-check e2 1.0
+2036 r-role-check h1 1.0
+2036 r-role-check m1 1.0
+2036 r-role-check n1 1.0
+2036 r-role-check o1 1.0
+2036 r-role-check q1 1.0
+2037 r-role-check a1 1.0
+2037 r-role-check a2 1.0
+2037 r-role-check b2 1.0
+2037 r-role-check d2 1.0
+2037 r-role-check g1 1.0
+2037 r-role-check g2 1.0
+2037 r-role-check p2 1.0
+2037 r-role-check q2 1.0
+2037 r-role-check r1 1.0
+2037 r-role-check s1 1.0
+2037 r-role-check s2 1.0
+2039 sparked (9 25) ((right-buttress right-halfarch) (right-downbowl s-base) (cap left-upbowl))
+2040 breaking to ((9) (25) (39 49) (4 48))
+2042 sparked (39 49) (() () (right-buttress right-halfarch) ())
+2044 smartparse to ((48 4 49 39 9 25))
+2047 breaking to ((39 9 25) (48 4 49))
+2079 r-role-check a1 1.0
+2079 r-role-check a2 1.0
+2079 r-role-check e1 1.0
+2079 r-role-check e2 1.0
+2079 r-role-check o1 1.0
+2082 r-role-check s1 1.0
+2082 r-role-check s2 1.0
+2094 sparked (39 9 25) (() (circle up-circle down-circle))
+2098 r-role-check a1 1.0
+2098 r-role-check a2 1.0
+2098 r-role-check b2 1.0
+2098 r-role-check c1 1.0
+2098 r-role-check d2 1.0
+2098 r-role-check e1 1.0
+2098 r-role-check e2 1.0
+2098 r-role-check o1 1.0
+2098 r-role-check p2 1.0
+2098 r-role-check q2 1.0
+2098 r-role-check r1 1.0
+2101 r-role-check a1 1.0
+2101 r-role-check a2 1.0
+2101 r-role-check e1 1.0
+2101 r-role-check e2 1.0
+2101 r-role-check g2 1.0
+2101 r-role-check n1 1.0
+2101 r-role-check o1 1.0
+2101 r-role-check s1 1.0
+2101 r-role-check s2 1.0
+2104 sparked (48 4 49) ((cap left-upbowl left-bowl) (circle up-circle down-circle))
+2106 r-role-check b2 1.0
+2106 r-role-check c1 1.0
+2106 r-role-check d2 1.0
+2106 r-role-check p2 1.0
+2106 r-role-check q2 1.0
+2106 r-role-check r1 1.0
+2106 r-role-check s2 1.0
+2109 r-role-check a1 1.0
+2109 r-role-check a2 1.0
+2109 r-role-check d1 1.0
+2109 r-role-check e1 1.0
+2109 r-role-check e2 1.0
+2109 r-role-check g2 1.0
+2109 r-role-check n1 1.0
+2109 r-role-check o1 1.0
+2109 r-role-check q1 1.0
+2109 r-role-check s1 1.0
+2112 sparked (48 4 49) ((cap left-upbowl left-bowl) (circle up-circle down-circle))
+2115 sparked (48 4 49) ((cap left-upbowl left-bowl) (circle up-circle down-circle))
+2117 r-role-check b2 1.0
+2117 r-role-check c1 1.0
+2117 r-role-check d2 1.0
+2117 r-role-check g1 1.0
+2117 r-role-check h1 1.0
+2117 r-role-check p2 1.0
+2117 r-role-check q2 1.0
+2117 r-role-check r1 1.0
+2117 r-role-check s2 1.0
+2121 sparked (48 4 49) ((cap left-upbowl left-bowl) (circle up-circle down-circle))
+2125 sparked (48 4 49) ((cap left-upbowl left-bowl) (circle up-circle down-circle))
+2126 sparked (39 9 25) ((cap left-upbowl left-bowl) (circle up-circle down-circle))
+2127 glomming to ((9 25 48 4 39 49))
+2155 r-role-check a1 1.0
+2155 r-role-check a2 1.0
+2155 r-role-check o1 1.0
+2159 r-role-check b2 1.0
+2159 r-role-check d2 1.0
+2159 r-role-check e1 1.0
+2159 r-role-check e2 1.0
+2159 r-role-check g2 1.0
+2159 r-role-check n1 1.0
+2159 r-role-check q2 1.0
+2159 r-role-check r1 1.0
+2159 r-role-check s1 1.0
+2168 breaking to ((48) (4 49 39 9 25))
+2185 sparked (48) ((left-halfarch) ())
+2189 breaking to ((9 25) (39 4 49) (48))
+2206 sparked (9 25) (() (right-downbowl s-base) ())
+2219 sparked (48) (() (right-downbowl s-base) (left-halfarch))
+2222 sparked (9 25) (() (right-downbowl s-base) (left-halfarch))
+2223 r-role-check a1 1.0
+2223 r-role-check a2 1.0
+2223 r-role-check o1 1.0
+2223 r-role-check s1 1.0
+2223 r-role-check s2 1.0
+2226 r-role-check e1 1.0
+2226 r-role-check e2 1.0
+2232 sparked (9 25) (() (right-downbowl s-base) (left-halfarch))
+2233 sparked (39 4 49) ((a-arch left-halfpost right-buttress left-halfarch) (right-downbowl s-base) (left-halfarch))
+2234 sparked (39 4 49) ((a-arch left-halfpost right-buttress left-halfarch) (right-downbowl s-base) (left-halfarch))
+2235 r-role-check a1 1.0
+2235 r-role-check a2 1.0
+2235 r-role-check m1 1.0
+2235 r-role-check n1 1.0
+2235 r-role-check o1 1.0
+2235 r-role-check r1 1.0
+2235 r-role-check s1 1.0
+2235 r-role-check s2 1.0
+2237 r-role-check b2 1.0
+2237 r-role-check c1 1.0
+2237 r-role-check d2 1.0
+2237 r-role-check e1 1.0
+2237 r-role-check e2 1.0
+2237 r-role-check g2 1.0
+2237 r-role-check p2 1.0
+2237 r-role-check q2 1.0
+2240 sparked (9 25) ((a-arch left-halfpost right-buttress left-halfarch) (right-downbowl s-base) (left-halfarch))
+2244 sparked (9 25) ((a-arch left-halfpost right-buttress left-halfarch) (right-downbowl s-base) (left-halfarch))
+2252 r-role-check a1 1.0
+2252 r-role-check a2 1.0
+2252 r-role-check d1 1.0
+2252 r-role-check g1 1.0
+2252 r-role-check h1 1.0
+2252 r-role-check m1 1.0
+2252 r-role-check n1 1.0
+2252 r-role-check o1 1.0
+2252 r-role-check q1 1.0
+2252 r-role-check r1 1.0
+2252 r-role-check s1 1.0
+2252 r-role-check s2 1.0
+2253 sparked (48) ((a-arch left-halfpost right-buttress left-halfarch) (right-downbowl s-base) (left-halfarch))
+2254 sparked (9 25) ((a-arch left-halfpost right-buttress left-halfarch) (right-downbowl s-base) (left-halfarch))
+2257 sparked (48) ((a-arch left-halfpost right-buttress left-halfarch) (right-downbowl s-base) (left-halfarch))
+2258 r-role-check b2 1.0
+2258 r-role-check c1 1.0
+2258 r-role-check d2 1.0
+2258 r-role-check e1 1.0
+2258 r-role-check e2 1.0
+2258 r-role-check g2 1.0
+2258 r-role-check p2 1.0
+2258 r-role-check q2 1.0
+2259 r-role-check a1 1.0
+2259 r-role-check a2 1.0
+2259 r-role-check d1 1.0
+2259 r-role-check g1 1.0
+2259 r-role-check h1 1.0
+2259 r-role-check m1 1.0
+2259 r-role-check n1 1.0
+2259 r-role-check o1 1.0
+2259 r-role-check q1 1.0
+2259 r-role-check r1 1.0
+2259 r-role-check s1 1.0
+2259 r-role-check s2 1.0
+2260 sparked (9 25) ((a-arch left-halfpost right-buttress left-halfarch) (right-downbowl s-base) (left-halfarch))
+2261 sparked (9 25) ((a-arch left-halfpost right-buttress left-halfarch) (right-downbowl s-base) (left-halfarch))
+2262 r-role-check b2 1.0
+2262 r-role-check c1 1.0
+2262 r-role-check d2 1.0
+2262 r-role-check e1 1.0
+2262 r-role-check e2 1.0
+2262 r-role-check g2 1.0
+2262 r-role-check p2 1.0
+2262 r-role-check q2 1.0
+2263 sparked (9 25) ((a-arch left-halfpost right-buttress left-halfarch) (right-downbowl s-base) (left-halfarch))
+2265 r-role-check a1 1.0
+2265 r-role-check a2 1.0
+2265 r-role-check b1 1.0
+2265 r-role-check d1 1.0
+2265 r-role-check g1 1.0
+2265 r-role-check h1 1.0
+2265 r-role-check m1 1.0
+2265 r-role-check n1 1.0
+2265 r-role-check o1 1.0
+2265 r-role-check p1 1.0
+2265 r-role-check q1 1.0
+2265 r-role-check r1 1.0
+2265 r-role-check s1 1.0
+2265 r-role-check s2 1.0
+2266 sparked (39 4 49) ((a-arch left-halfpost right-buttress right-bowl left-halfarch) (right-downbowl s-base) (left-halfarch))
+2267 sparked (9 25) ((a-arch left-halfpost right-buttress right-bowl left-halfarch) (right-downbowl s-base) (left-halfarch))
+2268 r-role-check a1 1.0
+2268 r-role-check a2 1.0
+2268 r-role-check b2 1.0
+2268 r-role-check c1 1.0
+2268 r-role-check d2 1.0
+2268 r-role-check e1 1.0
+2268 r-role-check e2 1.0
+2268 r-role-check g2 1.0
+2268 r-role-check h1 1.0
+2268 r-role-check p2 1.0
+2268 r-role-check q2 1.0
+2269 sparked (39 4 49) ((a-arch left-halfpost right-buttress right-bowl left-halfarch) (right-downbowl s-base) (left-halfarch))
+2270 r-role-check b1 1.0
+2270 r-role-check d1 1.0
+2270 r-role-check g1 1.0
+2270 r-role-check h1 1.0
+2270 r-role-check m1 1.0
+2270 r-role-check n1 1.0
+2270 r-role-check o1 1.0
+2270 r-role-check p1 1.0
+2270 r-role-check q1 1.0
+2270 r-role-check r1 1.0
+2270 r-role-check s1 1.0
+2270 r-role-check s2 1.0
+2272 smartparse to ((48 4 49 39 9 25))
+2285 breaking to ((48) (4 49 39 9 25))
+2307 smartparse to ((48 4 49 25 9 39))
+2322 breaking to ((48) (4 49 25 9 39))
+2328 breaking to ((25) (4 49 9 39) (48))
+2354 sparked (4 49 9 39) (() (a-arch right-buttress s-base e-tail) ())
+2361 r-role-check a1 1.0
+2361 r-role-check a2 1.0
+2366 smartparse to ((48 4 49 25 9 39))
+2375 breaking to ((25 9 39) (48 4 49))
+2403 sparked (25 9 39) (() (circle up-circle down-circle))
+2405 sparked (25 9 39) (() (circle up-circle down-circle))
+2406 r-role-check o1 1.0
+2414 sparked (25 9 39) ((circle up-circle down-circle) ())
+2415 sparked (25 9 39) ((circle up-circle down-circle) ())
+2420 r-role-check a2 1.0
+2420 r-role-check o1 1.0
+2425 r-role-check a1 1.0
+2425 r-role-check e2 1.0
+2428 sparked (48 4 49) ((cap left-upbowl up-circle left-bowl) (circle up-circle down-circle))
+2431 r-role-check a2 1.0
+2431 r-role-check b2 1.0
+2431 r-role-check c1 1.0
+2431 r-role-check e1 1.0
+2431 r-role-check o1 1.0
+2431 r-role-check s2 1.0
+2432 r-role-check a1 1.0
+2432 r-role-check d2 1.0
+2432 r-role-check e2 1.0
+2432 r-role-check g2 1.0
+2432 r-role-check p2 1.0
+2432 r-role-check q2 1.0
+2432 r-role-check r1 1.0
+2432 r-role-check s1 1.0
+2435 r-role-check a2 1.0
+2435 r-role-check b2 1.0
+2435 r-role-check c1 1.0
+2435 r-role-check d1 1.0
+2435 r-role-check e1 1.0
+2435 r-role-check o1 1.0
+2435 r-role-check q1 1.0
+2435 r-role-check s2 1.0
+2444 sparked (48 4 49) ((cap left-upbowl up-circle left-bowl) (circle up-circle down-circle))
+2448 sparked (25 9 39) ((cap left-upbowl up-circle left-bowl) (circle up-circle down-circle))
+2450 sparked (25 9 39) ((cap left-upbowl up-circle left-bowl) (circle up-circle down-circle))
+2451 glomming to ((48 4 9 39 25 49))
+2467 breaking to ((48 25 4 49) (9 39))
+2504 sparked (48 25 4 49) ((a-arch right-buttress) ())
+2509 sparked (9 39) ((a-arch right-buttress) (e-tail s-base left-bowl))
+2510 sparked (9 39) ((a-arch right-buttress) (e-tail s-base left-bowl))
+2514 glomming to ((39 48 4 49 9 25))
+2542 r-role-check a1 1.0
+2542 r-role-check a2 1.0
+2542 r-role-check o1 1.0
+2546 breaking to ((48) (4 49 39 9 25))
+2563 breaking to ((39) (4 49 9 25) (48))
+2589 sparked (48) (() (cap) ())
+2600 sparked (48) (() (cap) ())
+2602 sparked (4 49 9 25) (() (cap) (left-halfpost right-downbowl right-buttress))
+2607 r-role-check n1 1.0
+2607 r-role-check r1 1.0
+2612 sparked (48) (() (cap left-halfarch) (left-halfpost right-downbowl right-buttress))
+2614 r-role-check s2 1.0
+2615 r-role-check a1 1.0
+2615 r-role-check a2 1.0
+2615 r-role-check m1 1.0
+2615 r-role-check n1 1.0
+2615 r-role-check o1 1.0
+2615 r-role-check r1 1.0
+2615 r-role-check s1 1.0
+2619 sparked (4 49 9 25) (() (cap left-halfarch) (left-halfarch right-buttress right-downbowl left-halfpost))
+2620 sparked (48) (() (cap left-halfarch) (left-halfarch right-buttress right-downbowl left-halfpost))
+2621 sparked (4 49 9 25) (() (cap left-halfarch) (left-halfarch right-buttress right-downbowl left-halfpost))
+2623 r-role-check e1 1.0
+2623 r-role-check e2 1.0
+2623 r-role-check h1 1.0
+2623 r-role-check s2 1.0
+2628 r-role-check a1 1.0
+2628 r-role-check a2 1.0
+2628 r-role-check b2 1.0
+2628 r-role-check m1 1.0
+2628 r-role-check n1 1.0
+2628 r-role-check o1 1.0
+2628 r-role-check r1 1.0
+2628 r-role-check s1 1.0
+2629 sparked (48) (() (cap left-halfarch) (left-halfarch right-buttress right-downbowl left-halfpost))
+2630 sparked (48) (() (cap left-halfarch) (left-halfarch right-buttress right-downbowl left-halfpost))
+2631 r-role-check c1 1.0
+2631 r-role-check d2 1.0
+2631 r-role-check e1 1.0
+2631 r-role-check e2 1.0
+2631 r-role-check g2 1.0
+2631 r-role-check h1 1.0
+2631 r-role-check p2 1.0
+2631 r-role-check q2 1.0
+2631 r-role-check s2 1.0
+2633 r-role-check a1 1.0
+2633 r-role-check a2 1.0
+2633 r-role-check b2 1.0
+2633 r-role-check d1 1.0
+2633 r-role-check m1 1.0
+2633 r-role-check n1 1.0
+2633 r-role-check o1 1.0
+2633 r-role-check q1 1.0
+2633 r-role-check r1 1.0
+2633 r-role-check s1 1.0
+2634 sparked (48) (() (cap left-halfarch) (left-halfarch right-buttress right-downbowl left-halfpost))
+2635 r-role-check b1 1.0
+2635 r-role-check c1 1.0
+2635 r-role-check d2 1.0
+2635 r-role-check e1 1.0
+2635 r-role-check e2 1.0
+2635 r-role-check g1 1.0
+2635 r-role-check g2 1.0
+2635 r-role-check h1 1.0
+2635 r-role-check m1 1.0
+2635 r-role-check p2 1.0
+2635 r-role-check q2 1.0
+2635 r-role-check s2 1.0
+2641 glomming to ((4 9 25 39 49) (48))
+2646 sparked (48) (() (cap left-halfarch))
+2647 sparked (48) (() (cap left-halfarch))
+2650 sparked (48) (() (cap left-halfarch))
+2664 r-role-check m1 1.0
+2664 r-role-check r1 1.0
+2664 r-role-check s1 1.0
+2666 r-role-check b2 1.0
+2666 r-role-check n1 1.0
+2666 r-role-check o1 1.0
+2668 sparked (48) (() (cap left-halfarch))
+2670 sparked (48) (() (cap left-halfarch))
+2671 r-role-check a1 1.0
+2671 r-role-check a2 1.0
+2671 r-role-check b1 1.0
+2671 r-role-check c1 1.0
+2671 r-role-check d1 1.0
+2671 r-role-check d2 1.0
+2671 r-role-check g1 1.0
+2671 r-role-check g2 1.0
+2671 r-role-check h1 1.0
+2671 r-role-check m1 1.0
+2671 r-role-check o1 1.0
+2671 r-role-check p2 1.0
+2671 r-role-check q1 1.0
+2671 r-role-check q2 1.0
+2671 r-role-check r1 1.0
+2671 r-role-check s1 1.0
+2673 r-role-check b2 1.0
+2673 r-role-check e1 1.0
+2673 r-role-check e2 1.0
+2673 r-role-check n1 1.0
+2673 r-role-check p1 1.0
+2673 r-role-check s2 1.0
+2678 breaking to ((9) (39 25 4 49) (48))
+2684 sparked (48) (() () (cap left-halfarch))
+2694 sparked (9) (() (s-base) (cap left-halfarch))
+2696 r-role-check s1 1.0
+2699 sparked (48) (() (s-base) (cap left-halfarch))
+2700 r-role-check a1 1.0
+2700 r-role-check a2 1.0
+2700 r-role-check m1 1.0
+2700 r-role-check o1 1.0
+2700 r-role-check r1 1.0
+2701 breaking to ((39) (25 4 49) (9) (48))
+2709 sparked (48) (() () () (cap left-halfarch))
+2717 sparked (9) (() () (s-base) (cap left-halfarch))
+2722 r-role-check s1 1.0
+2724 sparked (48) (() () (s-base) (cap left-halfarch))
+2726 sparked (9) (() () (s-base) (cap left-halfarch))
+2730 sparked (9) (() () (s-base) (cap left-halfarch))
+2732 r-role-check a1 1.0
+2732 r-role-check a2 1.0
+2732 r-role-check m1 1.0
+2732 r-role-check o1 1.0
+2736 sparked (25 4 49) ((a-arch left-halfpost right-buttress left-halfarch) () (s-base) (cap left-halfarch))
+2738 r-role-check a1 1.0
+2738 r-role-check a2 1.0
+2738 r-role-check e1 1.0
+2738 r-role-check e2 1.0
+2738 r-role-check n1 1.0
+2738 r-role-check r1 1.0
+2738 r-role-check s1 1.0
+2741 r-role-check c1 1.0
+2741 r-role-check m1 1.0
+2741 r-role-check o1 1.0
+2741 r-role-check s2 1.0
+2752 r-role-check a1 1.0
+2752 r-role-check a2 1.0
+2752 r-role-check b2 1.0
+2752 r-role-check d1 1.0
+2752 r-role-check d2 1.0
+2752 r-role-check e1 1.0
+2752 r-role-check e2 1.0
+2752 r-role-check g2 1.0
+2752 r-role-check h1 1.0
+2752 r-role-check n1 1.0
+2752 r-role-check p2 1.0
+2752 r-role-check q1 1.0
+2752 r-role-check q2 1.0
+2752 r-role-check r1 1.0
+2752 r-role-check s1 1.0
+2755 sparked (9) (() (a-arch left-halfpost right-buttress left-halfarch) (s-base) (cap left-halfarch))
+2758 sparked (48) (() (a-arch left-halfpost right-buttress left-halfarch) (s-base) (cap left-halfarch))
+2761 smartparse to ((48 4 49 25) (9 39))
+2786 sparked (9 39) (() (e-tail s-base left-bowl))
+2793 sparked (9 39) (() (e-tail s-base left-bowl))
+2795 r-role-check a1 1.0
+2795 r-role-check a2 1.0
+2795 r-role-check c1 1.0
+2795 r-role-check o1 1.0
+2796 r-role-check e1 1.0
+2796 r-role-check e2 1.0
+2796 r-role-check s2 1.0
+2798 sparked (9 39) (() (e-tail s-base left-bowl))
+2803 sparked (9 39) (() (e-tail s-base left-bowl))
+2808 sparked (48 4 49 25) ((a-arch right-buttress left-halfarch) (e-tail s-base left-bowl))
+2810 r-role-check a1 1.0
+2810 r-role-check a2 1.0
+2810 r-role-check c1 1.0
+2810 r-role-check n1 1.0
+2810 r-role-check o1 1.0
+2810 r-role-check r1 1.0
+2810 r-role-check s1 1.0
+2811 sparked (48 4 49 25) ((a-arch right-buttress left-halfarch) (e-tail s-base left-bowl))
+2813 sparked (9 39) ((a-arch right-buttress left-halfarch) (e-tail s-base left-bowl))
+2815 r-role-check a1 1.0
+2815 r-role-check a2 1.0
+2815 r-role-check b2 1.0
+2815 r-role-check d1 1.0
+2815 r-role-check d2 1.0
+2815 r-role-check e1 1.0
+2815 r-role-check e2 1.0
+2815 r-role-check g1 1.0
+2815 r-role-check g2 1.0
+2815 r-role-check m1 1.0
+2815 r-role-check p2 1.0
+2815 r-role-check q1 1.0
+2815 r-role-check q2 1.0
+2815 r-role-check s2 1.0
+2816 sparked (48 4 49 25) ((a-arch right-buttress left-halfarch) (e-tail s-base left-bowl))
+2820 sparked (9 39) ((a-arch right-buttress left-halfarch) (e-tail s-base left-bowl))
+2821 r-role-check c1 1.0
+2821 r-role-check h1 1.0
+2821 r-role-check n1 1.0
+2821 r-role-check o1 1.0
+2821 r-role-check r1 1.0
+2821 r-role-check s1 1.0
+2823 sparked (48 4 49 25) ((a-arch right-buttress left-halfarch) (e-tail s-base left-bowl))
+2824 r-role-check a1 1.0
+2824 r-role-check a2 1.0
+2824 r-role-check b2 1.0
+2824 r-role-check d1 1.0
+2824 r-role-check d2 1.0
+2824 r-role-check e1 1.0
+2824 r-role-check e2 1.0
+2824 r-role-check g1 1.0
+2824 r-role-check g2 1.0
+2824 r-role-check m1 1.0
+2824 r-role-check p2 1.0
+2824 r-role-check q1 1.0
+2824 r-role-check q2 1.0
+2824 r-role-check s2 1.0
+2827 glomming to ((48 4 25 9 39 49))
+2839 r-role-check a1 1.0
+2839 r-role-check a2 1.0
+2839 r-role-check o1 1.0
+2849 r-role-check e1 1.0
+2849 r-role-check e2 1.0
+2849 r-role-check s1 1.0
+2853 breaking to ((25) (48 4 49 9 39))
+2892 glomming to ((48 4 9 39 25 49))
+2897 breaking to ((48) (25 4 49 9 39))
+2908 breaking to ((9) (39 25 4 49) (48))
+2913 breaking to ((39) (25 4 49) (48) (9))
+2934 sparked (48) (() (cap) () ())
+2938 sparked (25 4 49) (() (cap) (a-arch right-buttress left-halfpost) ())
+2946 r-role-check a1 1.0
+2946 r-role-check a2 1.0
+2946 r-role-check n1 1.0
+2957 r-role-check r1 1.0
+2964 r-role-check a1 1.0
+2964 r-role-check a2 1.0
+2964 r-role-check n1 1.0
+2964 r-role-check o1 1.0
+2977 r-role-check e1 1.0
+2977 r-role-check e2 1.0
+2977 r-role-check r1 1.0
+2977 r-role-check s1 1.0
+2982 sparked (48) (() () (cap left-halfarch) (a-arch right-buttress left-halfpost))
+2986 sparked (25 4 49) (() () (cap left-halfarch) (a-arch left-halfpost right-buttress left-halfarch))
+2989 smartparse to ((48 4 49 39 9 25))
+3001 breaking to ((39 9 25) (48 4 49))
+3022 sparked (39 9 25) ((circle up-circle down-circle) ())
+3045 sparked (48 4 49) ((cap left-upbowl up-circle left-bowl) (circle up-circle down-circle))
+3047 r-role-check a2 1.0
+3047 r-role-check o1 1.0
+3049 sparked (39 9 25) ((cap left-upbowl up-circle left-bowl) (circle up-circle down-circle))
+3054 sparked (39 9 25) ((cap left-upbowl up-circle left-bowl) (circle up-circle down-circle))
+3055 r-role-check a1 1.0
+3055 r-role-check c1 1.0
+3055 r-role-check e2 1.0
+3055 r-role-check o1 1.0
+3058 r-role-check a2 1.0
+3058 r-role-check e1 1.0
+3058 r-role-check r1 1.0
+3058 r-role-check s1 1.0
+3058 r-role-check s2 1.0
+3063 sparked (39 9 25) ((cap left-upbowl up-circle left-bowl) (circle up-circle down-circle))
+3064 sparked (48 4 49) ((cap left-upbowl up-circle left-bowl) (circle up-circle down-circle))
+3065 sparked (39 9 25) ((cap left-upbowl up-circle left-bowl) (circle up-circle down-circle))
+3066 smartparse to ((48 4 49 39 9 25))
+3088 breaking to ((39) (48 4 49 9 25))
+3110 smartparse to ((48 4 49 39 9 25))
+3133 breaking to ((48) (4 49 39 9 25))
+3149 breaking to ((9 25) (39 4 49) (48))
+3170 sparked (48) (() () (cap))
+3171 sparked (48) (() () (cap))
+3180 sparked (48) (() () (cap))
+3194 sparked (39 4 49) ((a-arch right-buttress right-downbowl left-halfpost) () (cap))
+3207 sparked (9 25) ((e-tail right-downbowl s-base right-buttress) (a-arch right-buttress right-downbowl left-halfpost) (cap))
+3208 r-role-check a1 1.0
+3208 r-role-check a2 1.0
+3208 r-role-check e1 1.0
+3208 r-role-check e2 1.0
+3208 r-role-check o1 1.0
+3208 r-role-check r1 1.0
+3208 r-role-check s1 1.0
+3208 r-role-check s2 1.0
+3214 r-role-check n1 1.0
+3215 glomming to ((39 49 4 48) (9 25))
+3223 sparked (9 25) (() (right-downbowl s-base))
+3244 sparked (9 25) (() (right-downbowl s-base))
+3247 sparked (9 25) (() (right-downbowl s-base))
+3251 sparked (9 25) (() (right-downbowl s-base))
+3252 r-role-check s2 1.0
+3258 r-role-check s1 1.0
+3261 sparked (9 25) (() (right-downbowl s-base))
+3265 sparked (9 25) (() (right-downbowl s-base))
+3267 sparked (39 49 4 48) ((a-arch right-buttress) (right-downbowl s-base))
+3268 r-role-check a1 1.0
+3268 r-role-check a2 1.0
+3268 r-role-check e1 1.0
+3268 r-role-check e2 1.0
+3268 r-role-check o1 1.0
+3268 r-role-check s2 1.0
+3269 r-role-check b2 1.0
+3269 r-role-check c1 1.0
+3269 r-role-check d2 1.0
+3269 r-role-check n1 1.0
+3269 r-role-check p2 1.0
+3269 r-role-check q2 1.0
+3269 r-role-check r1 1.0
+3269 r-role-check s1 1.0
+3271 sparked (9 25) ((a-arch right-buttress) (right-downbowl s-base))
+3274 r-role-check a1 1.0
+3274 r-role-check a2 1.0
+3274 r-role-check e1 1.0
+3274 r-role-check e2 1.0
+3274 r-role-check o1 1.0
+3274 r-role-check q1 1.0
+3274 r-role-check s2 1.0
+3280 r-role-check b2 1.0
+3280 r-role-check c1 1.0
+3280 r-role-check d1 1.0
+3280 r-role-check d2 1.0
+3280 r-role-check g1 1.0
+3280 r-role-check g2 1.0
+3280 r-role-check h1 1.0
+3280 r-role-check n1 1.0
+3280 r-role-check p2 1.0
+3280 r-role-check q2 1.0
+3280 r-role-check r1 1.0
+3280 r-role-check s1 1.0
+3284 sparked (9 25) ((a-arch right-buttress) (right-downbowl s-base))
+3285 sparked (9 25) ((a-arch right-buttress) (right-downbowl s-base))
+3286 glomming to ((25 49 4 48 9 39))
+3312 breaking to ((49 4 48) (39 9 25))
+3338 sparked (39 9 25) ((circle up-circle down-circle) ())
+3339 r-role-check a2 1.0
+3339 r-role-check e2 1.0
+3339 r-role-check o1 1.0
+3345 r-role-check a1 1.0
+3354 sparked (39 9 25) (() (circle up-circle down-circle))
+3355 r-role-check a2 1.0
+3355 r-role-check b2 1.0
+3355 r-role-check d2 1.0
+3355 r-role-check e1 1.0
+3355 r-role-check e2 1.0
+3355 r-role-check g2 1.0
+3355 r-role-check o1 1.0
+3355 r-role-check p2 1.0
+3355 r-role-check q2 1.0
+3356 sparked (39 9 25) (() (circle up-circle down-circle))
+3366 sparked (39 9 25) (() (circle up-circle down-circle))
+3372 sparked (39 9 25) (() (circle up-circle down-circle))
+3379 sparked (39 9 25) (() (circle up-circle down-circle))
+3380 r-role-check a1 1.0
+3380 r-role-check c1 1.0
+3380 r-role-check o1 1.0
+3380 r-role-check r1 1.0
+3380 r-role-check s1 1.0
+3380 r-role-check s2 1.0
+3386 sparked (49 4 48) ((a-arch e-bowl left-upbowl up-circle left-bowl cap) (circle up-circle down-circle))
+3387 sparked (39 9 25) ((a-arch e-bowl left-upbowl up-circle left-bowl cap) (circle up-circle down-circle))
+3388 sparked (49 4 48) ((a-arch e-bowl left-upbowl up-circle left-bowl cap) (circle up-circle down-circle))
+3389 sparked (49 4 48) ((a-arch e-bowl left-upbowl up-circle left-bowl cap) (circle up-circle down-circle))
+3390 r-role-check a2 63.097
+3390 r-role-check b2 1.0
+3390 r-role-check d1 1.0
+3390 r-role-check d2 1.0
+3390 r-role-check e1 1.0
+3390 r-role-check e2 1.0
+3390 r-role-check g2 1.0
+3390 r-role-check n1 1.0
+3390 r-role-check o1 1.0
+3390 r-role-check p2 1.0
+3390 r-role-check q1 1.0
+3390 r-role-check q2 1.0
+3390 r-role-check s2 1.0
+3391 r-role-check a2 76.097
+3390 end
+(a2 53.007)
+> (exit)
+
+> (exit)

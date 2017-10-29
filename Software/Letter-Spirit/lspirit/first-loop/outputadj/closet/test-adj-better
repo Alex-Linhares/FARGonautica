@@ -1,0 +1,76 @@
+Chez Scheme Transcript [Sun Oct 10 10:52:50 1999]
+>> (lil-adj-test)
+TestSet0 benzene-right g benzene-left 13.882
+TestSet0 benzene-right z benzene-left 30.274
+TestSet0 benzene-right o benzene-left 34.085
+TestSet0 benzene-right a benzene-left 26.79
+TestSet0 benzene-right g benzene-right 16.793
+TestSet0 benzene-right z benzene-right 39.827
+TestSet0 benzene-right o benzene-right 15.216
+TestSet0 benzene-right a benzene-right 12.167
+TestSet0 benzene-right g boat 15.678
+TestSet0 benzene-right z boat 32.136
+TestSet0 benzene-right o boat 52.402
+TestSet0 benzene-right a boat 20.958
+TestSet0 benzene-right g close 26.669
+TestSet0 benzene-right z close 57.292
+TestSet0 benzene-right o close 44.361
+TestSet0 benzene-right a close 24.344
+TestSet0 benzene-right g house 13.701
+TestSet0 benzene-right z house 37.853
+TestSet0 benzene-right o house 54.831
+TestSet0 benzene-right a house 26.683
+TestSet0 close g benzene-left 5.729
+TestSet0 close z benzene-left 23.243
+TestSet0 close o benzene-left 30.534
+TestSet0 close a benzene-left 8.177
+TestSet0 close g benzene-right 0.288
+
+debug> n
+>>> (load "coderack.ss")
+>>> (load "adjudicator.ss")
+>>> (lil-adj-test)
+TestSet0 benzene-right g benzene-left 13.768
+TestSet0 benzene-right z benzene-left 39.286
+TestSet0 benzene-right o benzene-left 32.558
+TestSet0 benzene-right a benzene-left 16.38
+TestSet0 benzene-right g benzene-right 1.923
+TestSet0 benzene-right z benzene-right 25.158
+TestSet0 benzene-right o benzene-right 1.556
+TestSet0 benzene-right a benzene-right 2.716
+TestSet0 benzene-right g boat 5.843
+TestSet0 benzene-right z boat 25.156
+TestSet0 benzene-right o boat 24.683
+TestSet0 benzene-right a boat 11.036
+TestSet0 benzene-right g close 6.409
+TestSet0 benzene-right z close 27.878
+TestSet0 benzene-right o close 10.919
+TestSet0 benzene-right a close 5.166
+TestSet0 benzene-right g house 4.659
+TestSet0 benzene-right z house 37.51
+TestSet0 benzene-right o house 24.719
+TestSet0 benzene-right a house 12.557
+TestSet0 close g benzene-left 18.788
+TestSet0 close z benzene-left 37.451
+TestSet0 close o benzene-left 59.768
+TestSet0 close a benzene-left 35.453
+TestSet0 close g benzene-right 12.685
+TestSet0 close z benzene-right 37.35
+TestSet0 close o benzene-right 25.369
+TestSet0 close a benzene-right 12.61
+TestSet0 close g boat 10.313
+TestSet0 close z boat 49.48
+TestSet0 close o boat 49.19
+TestSet0 close a boat 25.098
+TestSet0 close g close 9.892
+TestSet0 close z close 39.083
+TestSet0 close o close 18.309
+TestSet0 close a close 13.59
+TestSet0 close g house 18.962
+TestSet0 close z house 35.507
+TestSet0 close o house 42.752
+TestSet0 close a house 24.71
+TestSet0 house g benzene-left 17.846
+
+debug> n
+>>>> (transcript-off)

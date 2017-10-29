@@ -1,0 +1,7 @@
+grep Test zozo | sort | awk '{if ($2==$4) {print $1, $2, $3, "@", $4, $5, "R"} else {print $1, $2, $3, "Z", $4, $5}}' | sort | awk '{print $1, $2, $3, $5, $6, $7}' > zozo2
+
+
+That line saves you tons of work!
+It takes an adjudicator test file, and sorts into blocks whereby the
+correct answer is at the top of each block, and is followed with an
+"R"

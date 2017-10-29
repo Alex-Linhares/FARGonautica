@@ -1,0 +1,117 @@
+Chez Scheme Transcript [Mon Oct 18 11:08:33 1999]
+>>>>>>>> (all-combo-adj-test 'boat)
+TestSet0 boat b boat (22.984 17.378 22.334)
+TestSet1 boat d boat (4.93 8.818 11.059)
+TestSet2 boat f boat (18.162 22.74 17.728)
+Examiner failed on m, re-trying
+TestSet3 boat h boat (11.647 16.704 15.035)
+TestSet4 boat j boat (34.702 35.339 34.145)
+TestSet5 boat l boat (10.109 13.558 9.148)
+Examiner failed on w, re-trying
+TestSet6 boat n boat (59.26 62.103 67.272)
+TestSet7 boat p boat (5.681 5.048 4.254)
+TestSet8 boat r boat (57.436 62.574 51.269)
+Examiner failed on w, re-trying
+Examiner failed on w, re-trying
+TestSet9 boat t boat (22.339 18.502 15.125)
+TestSet10 boat v boat (73.938 64.009 67.598)
+Examiner failed on m, re-trying
+TestSet11 boat x boat (61.021 53.445 59.422)
+Examiner failed on f, re-trying
+TestSet12 boat z boat (37.469 39.961 42.082)
+Examiner failed on w, re-trying
+TestSet13 boat y boat (16.987 15.593 13.928)
+Examiner failed on f, re-trying
+TestSet14 boat w boat (30.683 35.878 30.448)
+Examiner failed on z, re-trying
+TestSet15 boat u boat (56.448 53.581 58.258)
+TestSet16 boat s boat (51.116 43.364 46.886)
+TestSet17 boat q boat (6.966 6.141 6.206)
+Examiner failed on w, re-trying
+TestSet18 boat o boat (56.232 59.212 47.376)
+TestSet19 boat m boat (41.172 44.107 40.032)
+TestSet20 boat k boat (30.161 29.634 28.612)
+TestSet21 boat i boat (46.217 47.898 52.065)
+TestSet22 boat g boat (5.601 9.95 8.238)
+Examiner failed on z, re-trying
+TestSet23 boat e boat (32.934 37.784 38.719)
+TestSet24 boat c boat (41.379 45.192 50.136)
+TestSet25 boat a boat (45.071 53.615 42.004)
+(boat ((*literal-motifs*
+         ((4) (5) (5 4) (4 5) (39 50) (50 20) (20 50) (50)))
+       (*relative-nvs*
+         ((tips (tip *inward*)) (tips (down-tip *n*))))
+       (*turn-90-motifs* ((*s* *sw*) (*ne*) (*e*)))
+       (*abstract-rules* (at-most-3 ban-vertboxes))
+       (*translate-motifs*
+         ((*w*)
+          (*ne*)
+          (*w* *s*)
+          (*sw* *nw* *n* *e*)
+          (*w* *w* *s*)
+          (*sw* *nw*)
+          (*nw* *n* *e* *e*)))
+       (*turn-45-motifs* ((180) (-135) (-90)))
+       (*turn-180-motifs* ((*ne*) (*e* *s*) (*se* *ne*))))
+      ((*relative-nvs*
+         ((weight less) (floor less) (tips (tip *n*))))
+       (*literal-motifs* ((39) (20) (5) (20 4) (4 20)))
+       (*translate-motifs* ((*s* *s*) (*ne* *n*) (*ne*) (*e* *s*)))
+       (*turn-90-motifs* ((*n* *n*)))
+       (*abstract-rules* (ban-topbox ban-corners))
+       (*turn-45-motifs* ((180 -90) (-90)))
+       (*turn-180-motifs* ((*s* *sw*) (*s* *se*))))
+      ((*relative-nvs*
+         ((curve less)
+          (curve more)
+          (tips (right-tip *inward*))
+          (tips (down-tip *inward*))
+          (tips (tip *w*))
+          (height less)
+          (tips (down-tip *e*))
+          (tips (up-tip *w*))
+          (weight more)
+          (tips (up-tip *inward*))
+          (right-edge less)
+          (width less)
+          (left-edge more)
+          (tips (tip *e*))
+          (roof less)))
+       (*turn-180-motifs*
+         ((*n* *w* *w*)
+          (*e* *e*)
+          (*se* *ne* *n*)
+          (*w*)
+          (*n* *n*)
+          (*n* *e*)))
+       (*turn-90-motifs* ((*e* *e* *s*) (*s*) (*n* *e*)))
+       (*literal-motifs* ((20) (20 17) (5) (4 17) (4 20)))
+       (*val-to-val-nvs* ((tips (down-tip (19 18)))))
+       (*translate-motifs*
+         ((*n*)
+          (*nw* *n*)
+          (*e* *e*)
+          (*w* *n*)
+          (*e*)
+          (*se*)
+          (*e* *s*)
+          (*s*)
+          (*s* *se*)
+          (*w*)
+          (*w* *s*)
+          (*sw* *nw* *n* *e*)
+          (*nw*)
+          (*sw* *nw*)
+          (*sw*)
+          (*w* *w*)))
+       (*abstract-rules*
+         (ban-bottombox
+           ban-vertedges
+           ban-bottomright
+           at-most-2
+           ban-topleft))
+       (*turn-45-motifs* ((90 135) (-90 180 -90) (90) (-90 -135))))
+      33
+      45
+      96)
+>>>>>>>> (transcript-off)

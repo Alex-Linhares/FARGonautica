@@ -1,0 +1,138 @@
+(set! *rule-types*
+  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+ '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+
+; other rules: closure? mid-quanta cross?
+
+a  '(rightedge leftedge))
+b  '(topedge topbox ascender rightedge vertboxes topleft topright
+	corners  at-least-2 at-most-2 at-most-3))
+c  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+d  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+e  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+f  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+g  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+h  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+i  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+j  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+l  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+k  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+m  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+n  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+o  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+p  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+q  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+r  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+s  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+t  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+u  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+v  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+w  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+x  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+y  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+z  '(topedge topbox ascender descender bottombox bottomedge rightedge leftedge
+	    vertedges vertboxes topleft topright bottomleft bottomright
+	    corners horiz-o vert-o foreslash-o backslash-o rectilinear-o
+	    diagonal-o 45-angle 90-angle 135-angle 180-angle 45-135-angle
+	    90-180-angle at-least-2 at-most-2 at-most-3))
+

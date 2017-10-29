@@ -1,0 +1,95 @@
+(set! *label-types* '(Ht-Wd Curve Weight Horizontal Vertical Square Tips))
+
+Height and Width (three sub-types: height, width, and the ratio)
+Weight (straightforward)
+Horizontal **left, **right, and **middle
+Vertical **ascender, **x-zone, **descender, **on-baseline, **on-xheight
+ **top, **bottom
+
+Square - 12 of 'em, any contact is a "yes"
+
+Tips
+ttips rh-tip lh-tip uv-tip dv-tip uf-tip df-tip ub-tip db-tip
+ttips gives the total number
+the others are broken down into sub-categories giving fairly exact
+direction and location, totalling 36 possible labels
+
+Curve
+ closure curvy straight concave bow
+
+    (set! left-post (make-instance *role-prototype*
+		      '((name left-post)
+			(norms ((tall 5)
+				(vertical 5)
+				(skinny 2)
+				(normal-wt 2)
+				(left 8)
+				(straight 5)
+				(ascender 8)
+				(x-zone 2)
+				(top 2)
+				(baseline--top 4)
+				(s1 4)
+				(s3 4)
+				(s5 4)
+				(s7 4)
+				(up-left-top-tip 7)
+				(down-left-baseline-tip 7)))
+			(role-of-links (left-post<->B
+					left-post<->B3
+					left-post<->H
+					left-post<->K2
+					left-post<->K3
+					left-post<->K4
+					left-post<->K))
+			(incoming-links (left-post<->B
+					 left-post<->B3
+					 left-post<->H
+					 left-post<->K2
+					 left-post<->K3
+					 left-post<->K4
+					 left-post<->K)))))
+
+    (set! right-bowl (make-instance *role-prototype*
+		      '((name right-bowl)
+			(norms ((short 2)
+				(wide 2)
+				(heavy 2)
+				(concave 5)
+				(left--right 2)
+				(left 1)
+				(right 2)              ; more stuff right!
+				(x-zone 2)
+				(baseline--x-height 2)
+				(s5 4)
+				(s6 4)
+				(s7 4)
+				(s8 4)
+				(two-left-tips 20)
+				(left-xheight-tip 12)
+				(left-baseline-tip 12)))
+			(role-of-links (right-bowl<->B
+					right-bowl<->P))
+			(incoming-links (right-bowl<->B
+					 right-bowl<->P)))))
+
+    (set! B (make-instance *role-set-prototype*
+		    '((name B)
+		      (cat B)
+		      (roles (left-post right-bowl))
+		      ; new data structure type for r-roles
+		      (r-roles ((filled left-post)
+				(filled right-bowl)
+				(covered left-post right-bowl)
+				(closure #t)
+				(point (left-post 1 (8 9)))
+				(point (left-post 5 (12)))
+				(point (right-bowl 3 (2 10 4 11)))
+				(point (right-bowl 5 (4 12)))
+				(touchpoints left-post right-bowl 2)
+				(connect (left-post tip)
+					 (right-bowl tip))
+				(connect (left-post mid)
+					 (right-bowl tip))))
+		      (incoming-links (left-post<->B
+				       right-bowl<->B)))))

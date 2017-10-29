@@ -1,0 +1,110 @@
+Chez Scheme Transcript [Mon Jul 12 23:11:44 1999]
+>> (test-adj)
+Training SS
+Temperature 30
+Temperature 1
+Temperature 12
+Temperature 28
+Temperature 1
+Testing 
+Temperature 1
+Temperature 12
+Temperature 62
+Temperature 76
+Temperature 72
+Temperature 76
+Temperature 0
+Temperature 2
+Temperature 50
+Temperature 80
+Temperature 60
+Temperature 56
+Temperature 2
+Temperature 13
+Temperature 32
+Temperature 69
+Temperature 63
+Temperature 48
+Temperature 46
+Temperature 46
+Temperature 87
+Examiner had no answer for that
+Temperature 81
+Examiner had no answer for that
+Temperature 31
+Temperature 31
+Temperature 80
+Temperature 76
+Temperature 82
+Temperature 61
+Training SH
+Temperature 27
+Temperature 17
+Temperature 10
+Temperature 4
+Temperature 5
+Testing 
+Temperature 7
+Temperature 48
+Temperature 77
+Temperature 69
+Temperature 77
+Temperature 86
+Temperature 2
+Temperature 1
+Temperature 38
+Temperature 91
+Temperature 32
+Temperature 58
+Temperature 2
+Temperature 10
+Temperature 41
+Temperature 49
+Temperature 58
+Temperature 54
+Temperature 10
+Temperature 49
+Temperature 77
+Examiner had no answer for that
+Temperature 71
+Examiner had no answer for that
+Temperature 9
+Temperature 26
+Temperature 65
+Temperature 62
+Temperature 51
+Temperature 61
+Training BT
+Temperature 23
+Temperature 16
+Temperature 13
+Examiner had no answer for that
+Temperature 3
+Testing 
+Temperature 41
+Temperature 59
+Temperature 13
+Temperature 23
+Temperature 38
+Temperature 43
+Temperature 35
+
+debug> n
+>>> (motif-match-all '*turn-90-motifs* '(*se* *ne*)
+'((*e* *ne* *nw*) (*e* *s*) (*sw* *nw* *ne*) (*n* *n* *n* *n*)))
+(((*e* *ne* *nw*) *ne* *nw*)
+ ((*e* *ne* *nw*) *se* *ne*)
+ ((*e* *s*))
+ ((*e* *s*))
+ ((*sw* *nw* *ne*) *nw* *ne*)
+ ((*sw* *nw* *ne*) *se* *ne*)
+ ((*n* *n* *n* *n*))
+ ((*n* *n* *n* *n*)))
+>>> (motif-match-two '*turn-90-motifs* '(*se* *ne*)
+'((*e* *ne* *nw*) (*e* *s*) (*sw* *nw* *ne*) (*n* *n* *n* *n*)))
+(((*e* *ne* *nw*) *ne* *nw*)
+ ((*e* *s*))
+ ((*sw* *nw* *ne*) *nw* *ne*)
+ ((*n* *n* *n* *n*)))
+>>> (load "string.ss")
+>>> (transcript-off)

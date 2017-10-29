@@ -1,0 +1,84 @@
+Basic categories of things that influence next-quantum selection:
+
+NORMS + NVs:
+curvature -- norm + NVs, laid out after tip selection, not
+on-the-fly
+size attributes -- height, weight, width
+boundaries -- floor, ceiling, left-edge, right-edge
+contact -- norm + NVs
+
+ABSTRACT RULES:
+ban-rules & at-most rules on the fly
+at-least only at the last step
+
+MOTIFS:
+recall from TF, based on level, and how far the motif has been
+followed so far (if at all), and the size of the motif, even if not
+followed so far yet
+
+TIP-2:
+may quit if tip-2 location, contact, all norms, and at-least rule have
+ all already been satisfied
+
+***
+
+Influence tip selection
+
+Tip norms, obviously + NVs
+End norms (further modified by ARs? by motifs?)
+boundaries and size norms and NVs
+
+NORMS + NVs: 
+
+***
+
+how to influence SP use by level?
+1) select one by level and use it?
+ fine, but what about motifs, with the length factor?
+ OK, pick motifs by length
+
+***
+
+motif
+
+{height, weight, width} (+NV?)
+{floor, ceiling, left-edge, right-edge} (+NV?)
+curve (+NV?)
+
+ban-rules & at-most rules (everything but at-least-2)
+
+contact -- self and neighbors (at gridpoints, mid-quanta)
+
+***
+
+basic types of step:
+
+picking a tip's possible locations (literal motifs involved)
+picking the initial tip
+
+***
+
+how do you consult TF?
+
+NVs -- could do in advance, or at time NV is checked
+ curve could be done in advance by weighted total of possibilities
+ other norms I want to do on the fly
+Maybe pick a norm, then scan the TF, deepwise, to come up with a fuzzy
+vector for score
+
+TWO kinds of considerations, for, e.g., height
+ at no point to do want to exceed goal, but to fall short is fine,
+usually
+ but for the last quantum, you have to meet the goal, and neither fall
+short nor exceed
+
+Rules, scan the TF, deepwise, to come up with a fuzzy vector for score
+
+Curve, bisegments and NVs?
+
+endpoints? pick tip1 first, obviously, and maybe throw out candidate
+tip2s
+
+Motifs -- level of TF a factor, but so is how long the filler has
+followed the motif so far; motif type, I don't think needs to be a
+factor

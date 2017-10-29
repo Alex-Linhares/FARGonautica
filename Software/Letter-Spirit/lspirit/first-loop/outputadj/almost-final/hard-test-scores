@@ -1,0 +1,152 @@
+			TRAIN	TEST	SCORE
+BL BR BT CL HO		bcnp	agoz	90.0
+HU4 SH SLT SN STSQ	dhrz	amsu	55.0
+HI4 CH DBS FLR FNT	dfqt	vy	30.0
+BW BT SAB SLS SQC	flty	hijk	65.0
+BL INT HO SH SN		bdfo	grxz	55.0
+HU4 BR SLT CL STSQ	dgiq	amjz	60.0
+BL WAR HU4 BW HI4	fily	juvw	60.0
+BR WAR SH CH INT	cflr	ioqz	60.0
+BT SLT DBS SAB HO	eghi	loqs	75.0
+CL SN FLR SLS STSQ	bdgi	klmp	75.0
+FNT SQC STSQ SH BL	bdft	hnrw	50.0
+HU4 BR DBS WAR SLS	fghi	bcde	85.0
+HO SN FLR SAB INT	jlqr	bcdf	55.0
+BT WAR SLT FNT SQC	hnry	dfw	40.0
+HI4 DBS SLS SLT CL	cdjq	elpx	65.0
+BW HU4 SN INT SAB	jlty	fi	50.0
+SQC WAR FNT CL CH	dfhn	ry	40.0
+BR CH DBS BW BL		fhil	tvxy	50.0
+CH BT FLR HI4 FNT	dfry	qtv	53.3
+HO SAB HI4 SH SQC	dfil	bnps	55.0
+BW INT FLR SLS STSQ	fijl	ty	80.0
+
+ALL					61.1%
+
+***
+
+post-and-bowls in training set
+
+			TRAIN	TEST	PBTR	SCORE
+BL BR BT CL HO		bcnp	agoz	2	90.0
+HU4 SH SLT SN STSQ	dhrz	amsu	1	55.0
+HI4 CH DBS FLR FNT	dfqt	vy	2	30.0
+BW BT SAB SLS SQC	flty	hijk	0	65.0
+BL INT HO SH SN		bdfo	grxz	2	55.0
+HU4 BR SLT CL STSQ	dgiq	amjz	3	60.0
+BL WAR HU4 BW HI4	fily	juvw	0	60.0
+BR WAR SH CH INT	cflr	ioqz	0	60.0
+BT SLT DBS SAB HO	eghi	loqs	1	75.0
+CL SN FLR SLS STSQ	bdgi	klmp	3	75.0
+FNT SQC STSQ SH BL	bdft	hnrw	2	50.0
+HU4 BR DBS WAR SLS	fghi	bcde	1	85.0
+HO SN FLR SAB INT	jlqr	bcdf	1	55.0
+BT WAR SLT FNT SQC	hnry	dfw	0	40.0
+HI4 DBS SLS SLT CL	cdjq	elpx	2	65.0
+BW HU4 SN INT SAB	jlty	fi	0	50.0
+SQC WAR FNT CL CH	dfhn	ry	2	40.0
+BR CH DBS BW BL		fhil	tvxy	0	50.0
+CH BT FLR HI4 FNT	dfry	qtv	1	53.3
+HO SAB HI4 SH SQC	dfil	bnps	1	55.0
+BW INT FLR SLS STSQ	fijl	ty	0	80.0
+
+0	65 60 60 40 50 80 (59.2)
+1	55 75 85 55 53.3 55 (63.05)
+2	90 30 55 50 65 40 (55.0)
+3	60 75 (67.5)
+
+***
+
+
+	EXAM	ADJ/TRAIN
+bnz-lf	96.2	85.0
+bnz-rt	100.0	75.0
+boat	98.5	77.8
+bowtie	59.2	50.0
+chckmrk	76.2	33.3
+close	94.6	44.4
+dub-bs	83.1	88.9
+f-rnch	77.3	80.0
+fntnp	54.2	28.6
+hint4	88.8	47.1
+house	95.0	85.0
+hunt4	96.2	38.9
+intrsct	66.2	56.3
+sabrth	84.2	38.9
+shorts	99.2	50.0
+slant	90.8	63.2
+slash	84.2	83.3
+sluice	14.6	---
+snout	96.2	38.9
+sqrcrl	82.7	70.6
+stsqr	100.0	72.2
+three-d	0.0	---
+w-arrow	88.5	64.7
+
+EXAM-ADJTRAIN correlation: r=0.325
+
+calculate performance
+ per font
+ per letter
+ per post-and-bowl letters in TRAIN
+
+
+	You can correlate this with Examiner, too! (fonts23 as the
+data set; counts qt as error, of course)
+
+r=0.0966, p=0.638
+
+	EXAM	ADJTEST
+a	65.7	80
+b	78.3	73.3
+c	84.8	60
+d	87.0	80
+e	74.3	50
+f	89.6	33.3
+g	75.7	90
+h	82.2	90
+i	91.3	60
+j	87.0	60
+k	80.4	60
+l	87.0	73.3
+m	76.1	53.3
+n	78.3	30
+o	69.6	86.7
+p	79.6	86.7
+q	84.8	86.7
+r	83.0	40
+s	71.7	46.7
+t	89.1	60
+u	68.7	30
+v	68.7	60
+w	69.6	40
+x	73.0	33.3
+y	94.8	60
+z	73.9	60
+
+***
+
+variations based on size of training set
+
+				CORRECT, %
+			TEST	b	bce	bcdefg
+CL SN FLR SLS STSQ	jklmp	12.0	52.0	56.0
+HU4 BR DBS WAR SLS	jlpvy	8.0	84.0	80.0
+BOTH				10.0	68.0	68.0
+
+***
+
+variations based on testing each letter thrice (same training, though)
+
+				
+			TRAIN	TEST	SINGLES	1st-of3	TRIPLE
+CL SN FLR SLS STSQ	bdgi	klmp	75.0	65.0	65.0
+HU4 BR DBS WAR SLS	fghi	bcde	85.0	85.0	90.0
+
+TOTAL					80.0	75.0	77.5
+
+First set result implies that tripling test does little, though
+training differences can make a difference
+
+***
+

@@ -1,0 +1,865 @@
+unit ImpulseSquareAndPiece;
+
+interface
+
+Uses ExternalMemoryUnit, WorkingMemoryUnit, BasicImpulse, BoardViewerUnit, classes, stdctrls;
+
+type
+      TImpulseCheckRandomSquare = class (TImpulse)
+                                  x: integer;
+                                  y: integer;
+                                  ProbNextOccurence: real;
+                                  L:Tlist;
+
+                                  procedure unpack_parameters (List:Tlist); override;
+                                  procedure Fire; Override;
+                                  end;
+
+      TImpulseFindRelations = class (TImpulse)
+                                    P1, p2: ^Tpiece;
+                                    procedure unpack_parameters (List:Tlist); override;
+                                    procedure Fire; Override;
+                              end;
+
+      TImpulseMakeTrajectory = class (TImpulse)
+                                     P1,P2: ^TPiece;
+                                     i: ^TImpulse;
+                                     procedure unpack_parameters (List:Tlist); override;
+                                     procedure Fire; Override;
+                               end;
+
+      TimpulseMakePawnTrajectory = class (TImpulseMakeTrajectory)
+                                     procedure Fire; Override;
+                               end;
+
+
+      TImpulseMakeTrajectoryToSquare = class (Timpulse)
+                                     P1: ^TPiece;
+                                     S2:^Tsquare;
+                                     i: ^TImpulse;
+                                     procedure unpack_parameters (List:Tlist); override;
+                                     procedure Fire; Override;
+                               end;
+
+      TImpulseCheckSquare = class (TImpulse)
+                                  ProbNextOccurence: real;
+                                  move: ^tsquare;
+                                  L:Tlist;
+
+                                  procedure unpack_parameters (List:Tlist); override;
+                                  procedure Fire; Override;
+                                  end;
+
+      TImpulseFoundPiece = class (Timpulse)
+                                  PPosition: ^TSquare;
+                                  PWhite: ^boolean;
+                                  PieceType: ^TPieceType;
+                                  newpiece:^tpiece;
+
+                                  CurrentFloodFillPos:Tsquare;
+                                  procedure Fire;  override;
+                                  procedure unpack_parameters (List:Tlist); override;
+                                  function getnextmoves:Tlist; virtual; abstract;
+                           end;
+
+       TImpulseFoundPawn = class (TimpulseFoundPiece)
+                           end;
+
+       TImpulseFoundKing = class (TimpulseFoundPiece)
+                           end;
+
+
+      TImpulseMapTerrain = class (TImpulse)
+                                 epicenter:^tsquare;
+                                 dist:^integer;
+                                 height: ^integer;
+                                 Piece: ^Tpiece;
+                                 NextMoves: Tlist;
+
+                                 procedure unpack_parameters (List:Tlist); override;
+                                 procedure fire; override;
+                           end;
+
+
+implementation
+uses AbstractImpulses;
+
+
+
+
+{=========================================================}
+Procedure TImpulseFoundPiece.Unpack_parameters (list:TList);
+begin
+     PMemo:= list.items[0];
+     PPosition:= list.items[1];
+     pwhite:=list.items[2];
+     piecetype:=list.items[3];
+end;
+
+Procedure TImpulseFoundPiece.fire;
+var s,s1,s2:string; L:Tlist; height, dist: ^integer;  i:^timpulse; t:integer; allpieces:^tpiece;
+begin
+      { (i) creates piece in working memory -- piece very unhappy -- highest urgency=1000!}
+      new(newpiece);
+      case piecetype^ of
+          Pawn: newpiece^:=tpawn.create (Pposition^, pWhite^, Piecetype^);
+          Bishop: newpiece^:=tbishop.create (Pposition^, pWhite^, Piecetype^);
+          King: newpiece^:=tking.create (PPosition^, pWhite^, Piecetype^);
+      end;
+
+      newpiece^.Mobility[pposition^.x,pposition^.y].distance:=0;
+      newpiece^.sq.x:=pposition^.x;
+      newpiece^.sq.y:=pposition^.y;
+      pmemo^.Lines.add('I just found a '+NewPiece.FullId+'.');
+
+      new (height);
+      height^:=0;
+      new (dist);
+      dist^:=0;
+
+      WorkingMemory.Pieces.add(newpiece^);
+      {SAVES THE IMMEDIATE THREATS}
+      WorkingMemory.Threatens(newpiece^);
+
+      l:=Tlist.create;
+      L.add(newpiece);
+      L.add(pmemo);
+      new (i);
+      I^:=TimpulseMapTerrain.create;
+      I^.urgency:=10;
+      I^.Unpack_parameters(l);
+      Urges.add(i);
+
+
+      {new (allpieces);
+      t:=0;
+      while (t<workingmemory.pieces.count) do
+      begin
+           allpieces^:=workingmemory.pieces.items[t];
+           l:=Tlist.create;
+           L.add(allpieces);
+           L.add(pmemo);
+
+           new (i);
+           I^:=TimpulseMapTerrain.create;
+           I^.urgency:=50;
+           I^.Unpack_parameters(l);
+           Urges.add(i);
+           {t:=t+1;
+      end;}
+end;
+
+{=========================================================}
+Procedure TImpulseMapTerrain.Unpack_Parameters (List:Tlist);
+var t,x1,y1:integer;   pwhite: ^boolean; ppiecetype:^tpiecetype;
+begin
+     piece:=list.items[0];
+     pmemo:=list.items[1];
+end;
+
+
+Procedure TImpulseMapTerrain.fire;
+var I:^timpulse; L, NextMoves, FollowingMoves, NewList:Tlist; t,t1,x,y,expansion:integer;
+    psquare, psquare2:^Tsquare; P: tsquare; S:String; initial:boolean;
+begin
+      { generate floodfill urges to look at neighboring &
+      potentially upcoming squares... with ever decreasing urgency.
+      if it finds blocks, create block urges (originpiece, blockpiece/
+      blocksquare) and estimate painness (height of blockdness) of that
+      blockdness.  (What's the value of the unreachable objects?
+      Whats the value of the desired attacks?  Whats the value of the needed
+      defenses?) }
+
+      NewList:=Tlist.create; newlist.clear;
+      FollowingMoves:=TList.create;
+
+      New (Psquare);
+      New (Psquare2);
+      Expansion:=0; initial:=true;
+      {generate list with immediate next moves}
+      NextMoves:=Tlist.create;
+      NextMoves.add(piece^.pposition); {epicenter}
+      while (Nextmoves.count>0) do  {enquanto houver quadrados restando...}
+      begin
+           t:=0;
+           while (t<NextMoves.count) do {...marque os atuais na Nextmoves...}
+           begin
+                psquare:=NextMoves.items[t];
+                X:= PSQUARE^.x; y:= PSQUARE^.y;
+                Piece^.Mobility[X,Y].distance:=expansion;
+
+                if ((externalmemory.square[x,y]<>none) and (not (initial)) and   {what does this do? it takes out a square occupied with same color piece from the list}
+                (externalmemory.white[x,y]=Piece^.white)) then
+                begin
+                     NextMoves.delete(t);
+                     t:=t-1;
+                end
+                else if (Piece^.white) and (WorkingMemory.BlackThreatens[x,y]=1) and (not (initial))then
+                begin
+                     Piece^.Mobility[x,y].distance:=0-Piece^.Mobility[x,y].distance;
+                     NextMoves.delete(t);
+                     t:=t-1;
+                end
+                else if (not Piece^.white) and (WorkingMemory.WhiteThreatens[x,y]=1) and (not (initial)) then
+                begin
+                     Piece^.Mobility[x,y].distance:=0-Piece^.Mobility[x,y].distance;
+                     NextMoves.delete(t);
+                     t:=t-1;
+                end;
+                t:=t+1;
+           end;
+           initial:=false;
+           expansion:=expansion+1;
+           t:=0;
+           while (t<NextMoves.count) do {...e obtenha os proximos a marcar...}
+           begin
+                psquare:=NextMoves.Items[t];
+                FollowingMoves.clear;
+                FollowingMoves:=Piece.GetNextMoves(psquare^); {captura os proximos quadrados...}
+                T1:=0; {e somente insere na newlist aqueles nao preenchidos}
+                while (T1<FollowingMoves.count) do
+                begin
+                     psquare2:= FollowingMoves.items[t1];
+                     X:= PSQUARE2^.x; y:= PSQUARE2^.y;
+                     if (Piece^.Mobility[x,y].distance=10000) then
+                     begin
+                          NewList.add(psquare2);
+
+                          {update in previous!}
+                          Piece^.Mobility[x,y].previous.x:=psquare^.x;
+                          Piece^.Mobility[x,y].previous.y:=psquare^.y;
+                     end;
+                     T1:=T1+1;
+                end;
+                t:=t+1;
+           end;
+
+           NextMoves.clear; {copy o conteudo de newlist para a nextmoves, para a proxima expansion}
+           t1:=0;
+           while (NewList.count>t1) do
+           begin
+                nextmoves.add(newlist.items[t1]);
+                t1:=t1+1;
+           end;
+           t1:=followingmoves.count;
+           NewList.clear;
+           NextMoves.pack;
+      end;
+      Piece^.computemobility;
+      str (Piece^.UnsafeMobility, S);
+      pmemo.lines.add('mobility of '+piece^.FullId+' is '+s);
+      {go mapping each square in the following dimensions: (1) distance, (2) blockdness height}
+      {Blockness=0 --> floodfill; Blockedness=1 --> at least one border crossing needed; etc}
+
+      {Trigger impulses to find attack relations and find defense relations -- creating trajectories}
+      l:=Tlist.create;
+      L.add(Piece);
+      L.add(pmemo);
+
+      new (i);
+      I^:=TimpulseFindRelations.create;
+      I^.urgency:=50;
+      I^.Unpack_parameters(l);
+      Urges.add(i);
+
+      {how about destroy relations?}
+      {
+      new (i);
+      I^:=TimpulseDestroyRelations.create;
+      I^.urgency:=50;
+      I^.Unpack_parameters(l);
+      Urges.add(i);
+      }
+
+end;
+{=========================================================}
+
+procedure TImpulseFindRelations.unpack_parameters (List:Tlist);
+begin
+     P1:=list.items[0];
+     pmemo:=list.items[1];
+     {pmemo^.Lines.add('Lets see.. Looking for relevant relations of '+P1^.FullId);}
+
+end;
+
+procedure TImpulseFindRelations.Fire;
+var test1, test2, t, index, column, row,x, x1 :integer;  i:^timpulse; P_aux:Tpiece;
+    s1,s_aux:Tsquare; s2:ptsquare; squares:tlist; piecepoint:^tpiece;   sqspaux1, sqspaux2:tsquare;
+begin
+     {Will trigger RELEVANT trajectory building impulses, between reachable pieces, pawn chains, and promotions}
+     {find index of P1}
+     t:=0;
+     while (t<workingmemory.pieces.count) do
+     begin
+          if (p1^=workingmemory.pieces.items[t]) then index:=t;
+          t:=t+1;
+     end;
+     if index=workingmemory.pieces.count then exit;
+
+     {first test if the target is equal to the origin...}
+     new (piecepoint)
+     sqspaux1:=p1^.sq;
+     x1:=0;
+     repeat
+           if (x1<>index) then
+           begin
+                piecepoint^:=workingmemory.Pieces.items[x1];
+                sqspaux2:=Piecepoint^.sq;
+                if (sqspaux1.x=sqspaux2.x) and (sqspaux1.y=sqspaux2.y) then
+                   if (piecepoint^.white=P1^.white) then
+                   begin
+                        exit;
+                   end;
+                end;
+                x1:=x1+1;
+     until (x1=workingmemory.Pieces.count);
+
+     pmemo^.Lines.add('Looking for relevant relations of '+P1^.FullId);
+
+     t:=0;
+     while (t<workingmemory.pieces.count) do   {Checks relations with all other pieces}
+     begin
+          if (t<>index) then
+          begin
+               new (p2);
+               P2^:=workingmemory.pieces.items[t];
+
+               if (p1^.mobility[p2^.sq.x,p2^.sq.y].distance<>10000) then
+               begin
+                    {launch maketrajectory impulse between index and t}
+                    l:=Tlist.create;
+                    L.add(p1);
+                    L.add(p2);
+                    L.add(pmemo);
+                    new (i);
+                    I^:=TimpulseMakeTrajectory.create;
+                    I^.urgency:=10;
+                    I^.Unpack_parameters(l);
+                    Urges.add(i);
+               end;
+               {JUST TESTING A THEORY HERE... Symetrical testing, just in case of alternate order of piece discovery}
+               if (p2^.mobility[p1^.sq.x,p1^.sq.y].distance<>10000) then
+               begin
+                    {launch maketrajectory impulse between index and t}
+                    l:=Tlist.create;
+                    L.add(p2);
+                    L.add(p1);
+                    L.add(pmemo);
+                    new (i);
+                    I^:=TimpulseMakeTrajectory.create;
+                    I^.urgency:=10;
+                    I^.Unpack_parameters(l);
+                    Urges.add(i);
+               end;
+          end;
+          t:=t+1;
+     end;
+     if (p1^.piecetype = pawn) then {PAWN CHAINS AND PAWN PROMOTIONS IN HERE...}
+     begin
+          {Checks for pieces guarded by pawns chains}
+          squares:=tlist.create;
+          s1.x:=P1^.sq.x;
+          s1.y:=P1^.sq.y;
+          Squares:=P1^.GetThreathenedSquares(s1);   {where could they be? which squares?}
+          for x:= 0 to Squares.count-1 do
+          begin
+               {scans working memory for pieces in such position}
+               s2:= squares.items[x];
+               s_aux.x:= s2^.x;
+               s_aux.y:= s2^.y;
+               index:=-1;
+               t:=0;
+               while (t<Workingmemory.pieces.count-1)do
+               begin
+                    new (P2);
+                    P2^:=workingmemory.pieces.items[t];
+                    if (p2^.sq.x= s_aux.x) and (p2^.sq.y=s_aux.y) then index:=t;
+                    t:=t+1;
+               end;
+               if (index>=0) then  {is there a piece in that position?}
+               begin
+                    {launch maketrajectory impulse between pawn p1 and piece p2}
+                    p2^:=workingmemory.pieces.items[index];
+                    l:=Tlist.create;
+                    L.add(p1);
+                    L.add(p2);
+                    L.add(pmemo);
+                    new (i);
+                    I^:=TimpulseMakePawnTrajectory.create;
+                    I^.urgency:=25;
+                    I^.Unpack_parameters(l);
+                    Urges.add(i);
+               end;
+          end;
+     end;
+
+     if (p1^.piecetype = pawn) then { Checks for pawn promotions}
+     begin
+          if P1^.white then row:=1 else row:=8;
+          for column:= 1 to 8 do
+          begin
+               if (p1^.mobility[column,row].distance<>10000) then
+               begin
+                    {launch maketrajectory impulse between index and t}
+                    l:=Tlist.create;
+                    L.add(p1);
+                    new (s2);
+                    S2^.x:=column;
+                    S2^.y:=row;
+                    L.add(s2);
+                    L.add(pmemo);
+                    new (i);
+                    I^:=TimpulseMakeTrajectoryToSquare.create;
+                    I^.urgency:=25;
+                    I^.Unpack_parameters(l);
+                    Urges.add(i);
+               end;
+          end;
+     end;
+end;
+
+
+
+
+{=========================================================}
+procedure TImpulseCheckSquare.unpack_parameters (List:Tlist);
+begin
+     pmemo:=List.items[1];
+     new (move);
+     move:=List.Items[0];
+end;
+
+procedure TImpulseCheckSquare.Fire;
+var x,y,t:integer; Impulse:^timpulse; ppos: ^Tsquare; pwhite:^boolean; tp:^Tpiecetype; prob:^real; s,s1,s2:string;
+    potentialsquare: ^tsquare; CheckedSquare: Tpiece; PotentialShadows:Tlist;
+begin
+     urges.pack;
+     L:=Tlist.create;
+     x:= move.x;
+     y:= move.y;
+
+     pmemo.lines.add('Saccading to '+convertsquare(x,y)+'...');
+     Workingmemory.Saccaded[x,y]:=true;
+
+     if (ExternalMemory.square[x,y]<>none) and (ExternalMemory.found[x,y]=false) then
+     begin
+          {launch top-down urge to create piece with highest urgency}
+          {(i) creates piece in working memory -- piece very unhappy }
+
+          new (impulse);
+          impulse^:=TImpulseFoundPiece.create;
+
+          L.clear;
+          L.add(pmemo);
+          pmemo.lines.add('There´s something here at '+convertsquare(x,y)+'...');
+          new (ppos);
+          ppos^.x:=x;
+          ppos^.y:=y;
+          L.Add(ppos);
+
+          new (pwhite);
+          Pwhite^:=ExternalMemory.white[x,y];
+          L.add(Pwhite);
+
+          new (tp); tp^:=ExternalMemory.square[x,y];
+          L.add(tp);
+
+          Impulse^.urgency:=250;
+          Impulse^.Unpack_Parameters(L);
+          L.clear;
+
+          Urges.pack;
+          Urges.Add(impulse);
+     end;
+
+     ExternalMemory.found[x,y]:=true; {here or inside the if?}
+
+
+     {NOW We must chech shadows... Do we glance any shadows?}
+
+      new (potentialsquare);
+      new (ppos);
+
+      ppos^.x:=x;
+      ppos^.y:=y;
+
+      CheckedSquare:= TKing.create(Ppos^, true, king); {let`s use the king`s upcoming movements to check shadows}
+      PotentialShadows:=Tlist.create;
+      PotentialShadows:= CheckedSquare.GetNextMoves(Ppos^);
+      t:=0;
+      PotentialShadows.pack;
+      while ((PotentialShadows.count>0) and (t<PotentialShadows.count))do
+      begin
+           potentialsquare:=PotentialShadows.items[t];
+
+           if (externalmemory.square[potentialsquare^.x,potentialsquare^.y]<>none)
+               and (not (externalmemory.found[potentialsquare^.x,potentialsquare^.y])) then
+           begin
+                str (x,s1);str(y,s2);
+                pmemo.lines.add('...and I see a shadow at '+convertsquare(potentialsquare^.x,potentialsquare^.y));
+                Workingmemory.GlancedShadow[potentialsquare^.x,potentialsquare^.y]:=true;
+                New(impulse);
+                Impulse^:=TImpulseCheckSquare.create;
+                Impulse^.urgency:=250;
+
+                L:=Tlist.create;
+                L.add(potentialsquare);
+                L.Add(pmemo);
+
+                Impulse^.Unpack_parameters(L);
+
+                Urges.Add(Impulse);
+                L.destroy;
+           end;
+           t:=t+1;
+      end;
+
+      CheckedSquare.destroy;
+      PotentialShadows.destroy;
+
+end;
+
+
+{=======================================================}
+procedure TImpulseCheckRandomSquare.unpack_parameters (List:Tlist);
+var prob:^real;
+begin
+     prob := List.items[0];
+     ProbNextOccurence:=prob^;
+     pmemo:=list.items[1];
+end;
+
+
+procedure TImpulseCheckRandomSquare.Fire;
+var Impulse:^timpulse; ppos: ^Tsquare; pwhite:^boolean; tp:^Tpiecetype; prob:^real; s,s1,s2:string;
+    potentialShadows: Tlist; checkedsquare:Tking; potentialsquare: ^tsquare; t:integer;
+begin
+     urges.pack;
+     L:=Tlist.create;
+     x:= 1+random(8);
+     y:= 1+random(8);
+
+     if (ExternalMemory.square[x,y]<>none) and (ExternalMemory.found[x,y]=false) then
+     begin
+          {launch top-down urge to create piece with highest urgency}
+          {(i) creates piece in working memory -- piece very unhappy }
+
+          ExternalMemory.found[x,y]:=true;
+
+          new (impulse);
+          impulse^:=TImpulseFoundPiece.create;
+
+          L.clear;
+          L.add(pmemo);
+
+          new (ppos);
+          ppos^.x:=x;
+          ppos^.y:=y;
+          L.Add(ppos);
+
+          new (pwhite);
+          Pwhite^:=ExternalMemory.white[x,y];
+          L.add(Pwhite);
+
+          new (tp); tp^:=ExternalMemory.square[x,y];
+          L.add(tp);
+
+          Impulse^.urgency:=250;
+          Impulse^.Unpack_Parameters(L);
+          L.clear;
+
+          Urges.pack;
+          Urges.Add(impulse);
+     end
+     else begin
+           {nothing here at this square. Boring. But we may still have another urge to check
+           random squares with ever decreasing probability -- until boredom explodes and
+           these urging checks eventually stop (since no new urges will arise) }
+           L.clear;
+           new (impulse);
+           impulse^:= timpulsecheckRandomSquare.create;
+           new (prob);
+           if (ExternalMemory.found[x,y]=false) then
+           begin
+               ExternalMemory.found[x,y]:=true;
+               prob^:=ProbNextOccurence;
+               S:=convertsquare(x,y); str(Prob^:5:2,S1);
+               pmemo^.lines.add ('I dont see anything on square '+S+'. Looking elsewhere with probability '+s1);
+           end
+           else
+           begin
+                prob^:=ProbNextOccurence*0.98; str(Prob^:5:2,S1);
+                S:=convertsquare(x,y);
+                pmemo^.lines.add ('I´ve already browsed square '+S+'. Looking elsewhere with probability '+s1);
+           end;
+
+           L.add(prob);
+           L.add(pmemo);
+
+           if (prob^>random) then
+           begin
+                Impulse^.urgency:=10;
+                Impulse^.Unpack_parameters(L);
+                L.clear;
+                Urges.pack;
+                Urges.Add(Impulse);
+           end;
+     end; {else}
+
+     {NOW that we've saccaded to this square, do we glance any shadows near it?}
+
+      new (potentialsquare);
+      new (ppos);
+
+      ppos^.x:=x;
+      ppos^.y:=y;
+
+      CheckedSquare:= TKing.create(Ppos^, true, king); {let`s use the king`s upcoming movements to check shadows}
+      PotentialShadows:=Tlist.create;
+      PotentialShadows:= CheckedSquare.GetNextMoves(ppos^);
+      t:=0;
+      PotentialShadows.pack;
+      while ((PotentialShadows.count>0) and (t<PotentialShadows.count))do
+      begin
+           potentialsquare:=PotentialShadows.items[t];
+
+           if (externalmemory.square[potentialsquare^.x,potentialsquare^.y]<>none)
+              and (externalmemory.found[potentialsquare^.x,potentialsquare^.y]=false) then
+           begin
+                New(impulse);
+                Impulse^:=TImpulseCheckSquare.create;
+                Impulse^.urgency:=25;
+
+                L:=Tlist.create;
+                L.add(potentialsquare);
+                L.Add(pmemo);
+
+                Impulse^.Unpack_parameters(L);
+
+                Urges.Add(Impulse);
+                L.destroy;
+           end;
+           t:=t+1;
+      end;
+      CheckedSquare.destroy;
+      PotentialShadows.destroy;
+end;
+
+
+{=========================================================}
+procedure TImpulseMakeTrajectory.unpack_parameters (List:Tlist);
+begin
+     P1:= list.items[0];
+     P2:= list.items[1];
+     pmemo:= list.items[2];
+end;
+
+
+procedure TImpulseMakeTrajectory.Fire;
+var Traj, ParamList: Tlist; t,t1,x,y,x1,y1, index1, index2:integer; squ:^tsquare;  Paux1:^tpiece;
+begin
+     {0. First of all, do both pieces still exist, or have they been killed?}
+     new (Paux1); Paux1^:=Tpiece.create (P1^.sq, false, pawn);
+     index1:=-1; index2:=-1;
+     for t:= 0 to workingmemory.pieces.count-1 do
+     begin
+          Paux1^:=workingmemory.pieces.items[t];
+          if (Paux1^=p1^) then index1:= t;
+          if (Paux1^=p2^) then index2:= t;
+     end;
+     if (index1=-1) or (index2=-1) then
+        exit;
+
+
+
+     {1. We must scan the list of trajectories to know if there is already a trajectory there...}
+     {scan workingmemory.trajectories para achar tanto a P1 quanto a P2}
+
+     Traj:=Tlist.create;
+
+     for t:= 0 to workingmemory.trajectories.count-1 do
+     begin
+          with workingmemory.trajectories do
+          begin
+               Traj:=items[t];
+               {new (squ);}
+               squ:= Traj.items[0];
+               if (squ^.x=P1^.sq.x) and (squ^.y=P1^.sq.y) then
+               begin
+                    squ:=Traj[Traj.count-1];
+                    if (squ^.x=P2^.sq.x) and (squ^.y=P2^.sq.y) then
+                        exit;
+               end;
+               {dispose(squ);}
+          end;
+     end;
+
+     {2. Get x,y of destination piece P2}
+     x:=p2^.sq.x;
+     y:=p2^.sq.y;
+     pmemo.lines.add('creating trajectory from '+ P1^.FullId +' to '+P2^.fullid);
+
+     {3.if reachable...}
+     if (p1^.mobility[x,y].distance<>10000) then
+     begin
+          {3.1. Create trajectory between p1 and p2}
+          Traj:=Tlist.create;
+          t1:=p1^.mobility[x,y].distance;
+          if t1<0 then t1:=0-t1;
+          new (squ);
+          squ^.x:=x; squ^.y:=y;
+          Traj.insert(0,squ);
+          t1:=t1-1;
+          while (t1>0) do
+          begin
+               new (squ);
+               squ^:=p1^.mobility[x,y].Previous;
+               x1:= p1^.mobility[x,y].Previous.x;
+               y1:= p1^.mobility[x,y].Previous.y;
+               x:=x1; y:=y1;
+               Traj.insert(0,squ);
+               t1:=t1-1;
+          end;
+          new (squ);
+          squ^:=p1^.mobility[x,y].Previous;
+          x1:= p1^.sq.x;
+          y1:= p1^.sq.y;
+          Traj.insert(0,squ);
+          WorkingMemory.Trajectories.Add(traj);
+
+          {3.2. Launch impulse for abstract role...}
+          New (i);
+          if (P1^.white <> P2^.white) then
+             I^:= TImpulseAttackerRole.create
+          else
+              I^:= TImpulseGuardianRole.create;
+
+          ParamList:=Tlist.create;
+          ParamList.Add (Traj);
+          ParamList.add (P1);
+          ParamList.add (P2);
+          ParamList.add (Pmemo);
+
+          I^.urgency:=45;
+          I^.Unpack_Parameters(ParamList);
+
+          Urges.pack;
+          Urges.add(i);
+          {ParamList.destroy;} {checar se isso eh possivel, se os parametros vivem!}
+     end;
+end;
+
+
+{=========================================================}
+procedure TImpulseMakeTrajectoryToSquare.unpack_parameters (List:Tlist);
+begin
+     P1:= list.items[0];
+     S2:= list.items[1];
+     pmemo:= list.items[2];
+end;
+
+
+procedure TImpulseMakeTrajectoryToSquare.Fire;
+var Traj, ParamList: Tlist; t1,x,y,x1,y1:integer; squ:^tsquare;
+begin
+     {1. Get x,y of destination piece P2}
+     pmemo.lines.add('creating trajectory from '+ P1^.FullId +' to '+ConvertSquare(S2^.x,S2^.y));
+     x:=S2^.x;
+     y:=S2^.y;
+
+     {2.if reachable...}
+     if (p1^.mobility[x,y].distance<>10000) then
+     begin
+          {3. Create trajectory between p1 and p2}
+          Traj:=Tlist.create;
+          t1:=p1^.mobility[x,y].distance;
+          if t1<0 then t1:=0-t1;
+          new (squ);
+          squ^.x:=x; squ^.y:=y;
+          Traj.insert(0,squ);
+          t1:=t1-1;
+          while (t1>0) do
+          begin
+               new (squ);
+               squ^:=p1^.mobility[x,y].Previous;
+               x1:= p1^.mobility[x,y].Previous.x;
+               y1:= p1^.mobility[x,y].Previous.y;
+               x:=x1; y:=y1;
+               Traj.insert(0,squ);
+               t1:=t1-1;
+          end;
+          new (squ);
+          squ^:=p1^.mobility[x,y].Previous;
+          x1:= p1^.sq.x;
+          y1:= p1^.sq.y;
+          Traj.insert(0,squ);
+          WorkingMemory.Trajectories.Add(traj);
+
+          {4. Launch impulse for abstract role...   here???}
+          New (i);
+          I^:= TImpulsePromotionRole.create;
+
+          ParamList:=Tlist.create;
+          ParamList.Add (Traj);
+          ParamList.add (P1);
+          ParamList.add (S2);
+          ParamList.add (Pmemo);
+
+          I^.urgency:=45;
+          I^.Unpack_Parameters(ParamList);
+
+          Urges.pack;
+          Urges.add(i);
+          {ParamList.destroy;} {checar se isso eh possivel, se os parametros vivem!}
+     end;
+end;
+
+
+{==============================================================================}
+procedure TImpulseMakePawnTrajectory.Fire;
+var Traj, ParamList: Tlist; t1,x,y,x1,y1:integer; squ:^tsquare;
+begin
+     {1. Get x,y of destination piece P2}
+     x:=p2^.sq.x;
+     y:=p2^.sq.y;
+
+     pmemo.lines.add('creating trajectory from '+ P1^.FullId +' to '+P2^.fullid);
+
+
+     {2.Connect next piece with p1}
+     Traj:=Tlist.create;
+     new (squ);
+     squ^.x:=p2^.sq.x;
+     squ^.y:=p2^.sq.y;
+     Traj.insert(0,squ);
+     new (squ);
+     squ^.x:=p1^.sq.x;
+     squ^.y:=p1^.sq.y;
+     Traj.insert(0,squ);
+     WorkingMemory.Trajectories.Add(traj);
+
+
+     
+     {3. Launch impulse for abstract role...   here???}
+     New (i);
+     if (P1^.white <> P2^.white) then
+         I^:= TImpulseAttackerRole.create
+     else
+         I^:= TImpulseGuardianRole.create;
+
+     ParamList:=Tlist.create;
+     ParamList.Add (Traj);
+     ParamList.add (P1);
+     ParamList.add (P2);
+     ParamList.add (Pmemo);
+
+     I^.urgency:=45;
+     I^.Unpack_Parameters(ParamList);
+
+     Urges.pack;
+     Urges.add(i);
+     {ParamList.destroy;} {checar se isso eh possivel, se os parametros vivem!}
+end;
+
+
+end.

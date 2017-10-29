@@ -1,0 +1,15 @@
+unit AssociationUnit;
+
+
+interface
+
+uses slipnetunit;
+
+
+         TAssociation = class
+                             strenght: integer;
+                             node: tnode;
+                        end;
+implementation
+
+end.

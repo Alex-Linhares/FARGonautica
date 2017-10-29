@@ -1,0 +1,73 @@
+      ; U/V distinction is made better with this hack
+      [v-angle (let* ([role1 (cadr r-role)]
+		      [role2 (caddr r-role)]
+		      [filler1 (get-role-binding role1)]
+		      [filler2 (get-role-binding role2)]
+		      [q1 (collapse (car filler1))]
+		      [q2 (collapse (car filler2))]
+		      [qc (append q1 q2)]
+		      [pts1 (get-all-points q1)]
+		      [pts2 (get-all-points q2)]
+		      [isect (intersect pts1 pts2)]
+		      [ipt (if (null? isect)
+			       -1
+			       (car isect))])
+		 (if (check-vpt ipt qc)
+		     (codemsg "   V-angle.~%")
+		     (begin
+		       (codemsg "   No V-angle!  BIG WHACK~%")
+		       (let ([act (get-role-activation role-set)])
+			 (change-role-activation
+			  role-set
+			  (- act
+			     (* 5 *r-role-penalty*)))))))]
+      [no-v-angle (if (= (length (cdr r-role)) 1)
+		      ; one role case (U2)
+		      (let* ([role (cadr r-role)]
+			     [filler (get-role-binding role)]
+			     [q1 (collapse (car filler))]
+			     [ipts (get-interior-points q1)]
+			     [ipt1 (intersect ipts '(5))]
+			     [ipt2 (intersect ipts '(12))]
+			     [ipt3 (intersect ipts '(19))])
+			(if (or (if (not (null? ipt1))
+				    (check-vpt (car ipt1) q1)
+				    #f)
+				(if (not (null? ipt2))
+				    (check-vpt (car ipt2) q1)
+				    #f)
+				(if (not (null? ipt3))
+				    (check-vpt (car ipt3) q1)
+				    #f))
+			    (begin
+			      (codemsg "   V-angle!  BIG WHACK~%")
+			      (let ([act (get-role-activation role-set)])
+				(change-role-activation
+				 role-set
+				 (- act
+				    (* 7 *r-role-penalty*))))
+			      #f)
+			    (codemsg "   No V-angle.~%")))
+		      ; two role case (U)
+		      (let* ([role1 (cadr r-role)]
+			     [role2 (caddr r-role)]
+			     [filler1 (get-role-binding role1)]
+			     [filler2 (get-role-binding role2)]
+			     [q1 (collapse (car filler1))]
+			     [q2 (collapse (car filler2))]
+			     [qc (append q1 q2)]
+			     [pts1 (get-all-points q1)]
+			     [pts2 (get-all-points q2)]
+			     [isect (intersect pts1 pts2)]
+			     [ipt (if (null? isect)
+				      -1
+				      (car isect))])
+			(if (check-vpt ipt qc)
+			    (begin
+			      (codemsg "   V-angle!  BIG WHACK~%")
+			      (let ([act (get-role-activation role-set)])
+				(change-role-activation
+				 role-set
+				 (- act
+				    (* 5 *r-role-penalty*)))))
+			    (codemsg "   No V-angle.~%"))))]

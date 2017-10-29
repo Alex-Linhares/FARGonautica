@@ -1,0 +1,22 @@
+(define zigzag?
+  (lambda (qls)
+    (and (> (length qls) 1)
+	 (let
+	     ([turns (quanta-to-angles qls)])
+	   (and (>= (apply max turns) 135) (<= (apply min turns) -135))))))
+
+(define jagged?
+  (lambda (qls)
+    (and (> (length qls) 1)
+	 (let*
+	     ([turns (quanta-to-angles qls)]
+	      [sum-turns (apply + turns)])
+	   (and (eq? sum-turns 180)
+		(> (- (apply max turns) (apply min turns)) 200))))))
+
+(define twists?
+  (lambda (qls)
+    (and (> (length qls) 1)
+	 (let
+	     ([turn (abs (apply + (quanta-to-angles qls)))])
+	   (< turn 180)))))

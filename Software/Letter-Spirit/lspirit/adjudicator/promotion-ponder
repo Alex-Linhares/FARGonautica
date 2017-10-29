@@ -1,0 +1,28 @@
+let demot=(level[try]-2)/4
+let promot=(7-level[try])/6
+
+ .1              1.93 
+ .15             2.3 
+ .2              2.58 
+ .25             2.84 
+ .3              3.09 
+ .35             3.36 
+ .4              3.59 
+ .45             3.68 
+ .5              4.12 
+ .55             4.08 
+ .6              4.47 
+ .65             4.63 
+ .7              4.85 
+ .75             5.08 
+ .8              5.24 
+ .85             5.41 
+ .9              5.66 
+ .95             5.79 
+
+level-1 
+level-2 up to 0.18   (5 letters)
+level-3 0.18 to 0.38 (10 letters)
+level-4 0.38 to 0.61 (16 letters)
+level-5 0.61 to 0.87 (23 letters)
+level-6 0.87 to 1.00

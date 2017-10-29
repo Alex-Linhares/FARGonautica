@@ -1,0 +1,51 @@
+Seven errors where correct answer was under 20, but still lost
+
+8.172 S10 stsq h stsq 8.172 sqcrl 7.841
+11.964 S10 stsq w stsq 11.964 sqcrl 10.033
+12.8 S10 shrt n shrt 12.8 stsq 9.535 
+15.892 S10 shrt h shrt 15.892 sqcrl 8.021 stsq 5.915    
+15.986 S9 stsq l stsq 15.986 cls 11.184
+18.667 S15 int f int 18.667 bwt 15.562
+19.548 S2 chmk y chmk 19.548 fl-r 17.644
+
+Explain:
+SqrCrl h has more stuff, and more angles, and all very square
+SqrCrl w... ditto
+Stsq n... ditto
+next case, ditto
+almost identical letters
+similar style (explain)
+similar?
+
+Four from Testset 10!
+
+Seven errors where correct answer was over 59
+
+fily 59.151 S6 wrd v wrd 59.151 bwt 56.568 hu4 58.523
+fhil 59.287 S17 bwt x bwt 59.287 bl 50.666 br 58.993 dubbs 56.569
+fily  59.301 S6 wrd w wrd 59.301 bl 58.357 bwt 53.374 hu4 50.705
+dfqt 59.35 S2 hi4 v hi4 59.35 chmk 54.546 dubbs 58.041 fl-r 53.458 fnt 53.646
+jlqr 60.743 S12 fl-r c fl-r 60.743 hs 57.878 int 60.564 sabr 60.338 snt 60.037
+dhrz 60.978 S1 shrt u shrt 60.978 snt 55.096 stsq 60.015
+hnry 61.412 S13 fnt d fnt 61.412 bt 51.12 slt 19.961 sqcrl 52.795 wrd 18.507
+
+Explain:
+WrdAr v points a different direction than 3/4 of the seeds
+Bowtie x has the tight self-cross, little other overlap with the seeds
+WrdAr w points a different direction than 3/4 of the seeds
+Hint4 v (remember, an artifical style) has little in common with the
+ seeds that any old v wouldn't
+Fl-R c has little in common with the seeds
+Mix of weirdness and losing to other squares
+little literal overlap...
+
+Excusable errors:
+37.629 S5 stsq z stsq 37.629 slt 36.58     has more squareness 
+33.714 S14 sls x sls 33.714 hi4 33.614     exactly identical
+50.579 S4 hs x hs 50.579 int 47.77 snt 46.475
+
+Damning errors:
+snout, p: prefered close	based on little submotifs
+
+Adj lacks sense of salience, as a feature, and as something to call
+attention to motifs to rank them high as part of the style

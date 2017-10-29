@@ -1,0 +1,59 @@
+Chez Scheme Transcript [Tue Aug  3 17:21:15 1999]
+>>>>>>>>> (try-cats)
+Tried to draw a q
+Ruled (7 38 23 20 4 5 49 39 53 43 13) a q1 score of 53.796
+Tried to draw a j
+Ruled (45 49 39 40 54 12) a j1 score of 56.553
+Tried to draw a e
+Ruled (5 22 7 48 4 50 9) a i1
+Tried to draw a v
+Ruled (37 24 36 50) a v1 score of 32.152
+Tried to draw a t
+Ruled (6 37 34 48 51) a t1 score of 56.85
+Tried to draw a k
+Ruled (44 34 48 21 36 23 50 9 6 37) a k1 score of 51.672
+Tried to draw a b
+Ruled (20 23 8 9 25 22 37 44 34 4 21) a b1 score of 56.275
+Tried to draw a o
+Ruled (20 4 5 22 25 9 50) a o1 score of 66.584
+
+Error in map: lists ((((...) (...) (...) (...) (...) (...) ...) (quanta (...))) (((...) (...) (...)) (quanta (...))) (((...) (...) (...)) (**whine 10))) and () differ in length.
+Type (debug) to enter the debugger.
+>>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in map>                                     : s
+  continuation:          #<continuation in examiner-cleanup>
+  free variables:
+  0: ()
+  1: (((...) (...)) ((...) (...)) ...)
+  2: #<procedure ordered-quanta>
+#<system continuation in map>                                     : d
+#<continuation in examiner-cleanup>                               : s
+  continuation:          #<continuation in check-gridletter>
+  procedure code:        (lambda () ((lambda (...) (...)) (car (...))))
+  call code:             (map ordered-quanta *workspace* roles)
+  free variables:
+  0. winner:             o1
+  1. roles:              ()
+#<continuation in examiner-cleanup>                               : d
+#<continuation in check-gridletter>                               : s
+  continuation:          #<continuation in try-cat>
+  procedure code:        (lambda (attempt qls) ...)
+  call code:             (examiner-cleanup)
+  free variables:
+  0. attempt:            y
+#<continuation in check-gridletter>                               : d
+#<continuation in try-cat>                                        : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda (category) ((...) (...)))
+  call code:             (check-gridletter category *quanta-list*)
+  free variables:
+  0. category:           y
+  1. old-best:           1000
+#<continuation in try-cat>                                        : q
+
+debug> n
+>>>>>>>>>> *codelets-run*
+8000
+>>>>>>>>>> (transcript-off)

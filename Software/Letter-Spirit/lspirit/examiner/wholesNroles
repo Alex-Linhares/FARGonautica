@@ -1,0 +1,84 @@
+a1	a-arch  	left-downbowl
+a2	a-arch  	down-circle
+b1	left-post	right-bowl
+b2	left-post	circle
+c1	left-bowl
+d1	right-post	left-bowl
+d2	right-post	circle
+e1	e-bowl  	e-crossbar
+e2	up-circle	e-tail
+f1	f-post  	crossbar
+g1	right-hook	left-bowl
+g2	right-hook	circle
+h1	left-post	right-buttress
+i1	halfpost	dot
+j1	right-curl	dot
+k1	left-post	up-arm  	down-arm
+l1	center-post
+m1	left-halfpost	left-halfarch	right-halfarch
+n1	left-halfpost	right-buttress
+o1	circle
+p1	left-tail	right-bowl
+p2	left-tail	circle
+q1	right-tail	left-bowl
+q2	right-tail	circle
+r1	left-halfpost	cap
+s1	cap     	s-crossbar	s-base
+s2	left-up-bowl	right-down-bowl
+t1	t-post  	crossbar
+u1	right-halfpost	left-uparc
+v1	left-wing	right-wing
+w1	right-halfpost	left-halfarc	right-halfarc
+x1	foreslash	backslash
+y1	right-curl	left-uparc
+z1	z-cap   	foreslash	basebar
+
+*****
+
+a-arch		a1 a2
+backslash	x1
+basebar		z1
+cap		r1 s1
+center-post	l1
+circle		b2 d2 g2 p2 q2
+crossbar	f1 t1
+dot		i1 j1
+down-arm	k1
+down-circle	a2
+e-bowl		e1
+e-crossbar	e1
+e-tail		e2
+f-post		f1
+foreslash	x1 z1
+halfpost	i1
+left-bowl	c1 d1 g1 q1
+left-downbowl	a1
+left-halfarc	w1
+left-halfarch	m1
+left-halfpost	m1 n1 r1
+left-post	b1 b2 h1 k1
+left-tail	p1 p2
+left-uparc	u1 y1
+left-up-bowl	s2
+left-wing	v1
+right-bowl	b1 p1
+right-buttress	h1 n1
+right-curl	j1 y1
+right-down-bowl	s2
+right-halfarc	w1
+right-halfarch	m1
+right-halfpost	u1 w1
+right-hook	g1 g2
+right-post	d1 d2
+right-tail	q1 q2
+right-wing	v1
+s-base		s1
+s-crossbar	s1
+t-post		t1
+up-arm		k1
+up-circle	e2
+z-cap		z1
+
+34 wholes
+43 roles
+70 links

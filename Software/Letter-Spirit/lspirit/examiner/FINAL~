@@ -1,0 +1,28 @@
+dataset		Correct		Codelets
+NORMALS		97.9%		158
+FONTS		76.8%		802
+MAJORS		94.2%		223
+
+TOTAL (831)	92.7%		301
+
+MAJOR errors reduced by a factor of 2.2
+
+NORMALS = 389 letters from psych experiment; GEM used 388, discarding
+a difficult 'k', which is indeed difficult
+
+FONTS = 156 the gridletters of the 6 relatively difficult gridfonts
+used in the psych experiment: Bowtie, Close, Double Backslash,
+Flournoy Ranch, Hint Four and Sabretooth
+
+MAJORS = 286 letters from 11 fonts: Standard Square, House, Shorts,
+Slash, Slant, Snout, Benzene Right, Benzene Left, Square Curl, Hunt
+Four, Boat
+
+With Examiner Version 2, the numbers were:
+
+dataset		Correct		Codelets
+NORMALS		96.8%		391
+FONTS		56.8%		1207
+MAJORS		79.2%		787
+
+TOTAL (831)	83.2%		680

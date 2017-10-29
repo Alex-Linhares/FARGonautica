@@ -1,0 +1,46 @@
+when you get to the Central Loop, on re-draws of bad letters, reject
+the order used in drawing them the first time
+
+***
+
+Adj/Drafter TO-DOs:
+
+	1) dots not working great
+
+Examiner:
+
+	1) appears to break on some weirdly loopy parts
+
+General:
+
+Examiner/Adj scores
+
+***
+
+concerns
+
+	2) draw from either direction
+SOLN: swap tip-1s and tip-2s before picking tip-1; also reverse
+norm-curve, micro-tricky if it's a bisegment
+	1) speed
+pick motifs probabilistically favoring shorter ones?
+cache Drafter calculations?
+	2) loops and dot TOUCHING
+* alter touch- and avoid-, after drafting, based on secondary touch norm
+	00) how can the drawing go up when tip-2 is down? avoiding
+this was the whole point of adding that wrinkle
+	1) SPEED (esp. esp. of ADJ motifs) -- bad; caching helps
+7/22/99: ADJ about 6:30 to explore BR; DRFT 0:34 to draw a b
+
+	2) NEIGHBORHOODS -- perhaps just a small tie-breaker?
+	3) tip-2-looking-ahead -- I put it back; try it
+
+***
+
+ADJ only
+
+	1) Unfortunately, seems to be a conflict in that Adjudicator
+wants to really bias levels for scoring, but not so much for Drafter
+or maybe even for building TF with Adjudicator; maybe another
+parameter to kludge this?
+	3

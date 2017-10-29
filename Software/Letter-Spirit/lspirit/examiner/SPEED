@@ -1,0 +1,48 @@
+From the "hone"  version:
+
+Seconds per codelet:
+
+Examiner 1.0 was GEM
+Examiner 2.0 was JAR, finished in 1997
+Examiner 3.0 is JAR, 1998
+
+NG: no graphics
+WG: with graphics
+
+E3 graphics cheat by not drawing roles
+
+HORSIE
+
+E2-WG 0.78
+E2-NG 0.28
+E1-WG 1.39
+
+GOOSIE, COMPILED
+
+E2-WG 0.21
+E2-NG 0.066
+
+GOOSIE, UNCOMPILED
+E3-NG 0.0067
+
+Based on major-test run of 1/2/99, 90 codelets per second
+ Average of 2 seconds per run on camel-humps
+
+E2 had an average of 26 seconds per run, so the E3 optimization gave a
+real speedup of 14
+
+E3-WG 0.073
+
+E2 vs. E1, WG, Horsie: factor of 1.8
+Goosie vs. Horsie: factor of 4, roughly
+E3 vs. E2, NG: factor of 10
+
+E3 vs. E1 (extrapolate): factor of 20
+E3-WG-goosie vs. E1-WG-horsie: factor of 20
+
+----
+
+Improvement in number of codelets, E1 to E2, was a factor of 2 to 3.3
+
+This would lead to an overall speedup of 74
+

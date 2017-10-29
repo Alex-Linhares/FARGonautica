@@ -1,0 +1,702 @@
+Chez Scheme Transcript [Tue Aug  3 01:10:27 1999]
+>>>>>>> (design-gridfont '((14 17 20 23 36 5 22 39 8)
+(5 36 23 8 39) (5 36 23 8 39 6 37) (33 18 21 24 36 5)
+(5 36 23 8 39 22 25 28 43 12)))
+
+Tried to draw a l
+Ruled it a l1
+
+Tried to draw a l
+Ruled it a l1
+
+
+Tried to draw a r
+Ruled it a r1
+
+
+Tried to draw a s
+Ruled it a i1
+
+
+Tried to draw a b
+Ruled it a b1
+>>>>>>> (map list
+		     (map car *scratchspace*)
+		     (map caddr *scratchspace*))
+((g1 0)
+ (f1 0)
+ (e2 0)
+ (c1 0)
+ (b1 0)
+ (a 200)
+ (b 200)
+ (c 200)
+ (d 200)
+ (e 200)
+ (f 200)
+ (g 200)
+ (h 200)
+ (i 200)
+ (j 200)
+ (k 200)
+ (l 200)
+ (m 200)
+ (n 200)
+ (o 200)
+ (p 200)
+ (q 200)
+ (r 200)
+ (s 200)
+ (t 200)
+ (u 200)
+ (v 200)
+ (w 200)
+ (x 200)
+ (y 200)
+ (z 200))
+>>>>>>> (load "loop.ss")
+>>>>>>> (check-gridletter 'c '(5 4 20 23 8 9))
+(c1 49.506)
+>>>>>>> (load "draft-setup.ss")
+>>>>>>> (load "loop.ss")
+>>>>>>>  (load "draft-setup.ss")
+>>>>>>>  (load "draft-setup.ss")
+>>>>>>>  (design-gridfont '((14 17 20 23 36 5 22 39 8)
+(5 36 23 8 39) (5 36 23 8 39 6 37) (33 18 21 24 36 5)
+(5 36 23 8 39 22 25 28 43 12)))
+
+Tried to draw a j
+Ruled it a o1
+Tried to draw a l
+Ruled it a l1 score of 
+
+Error in printf: too many arguments supplied for control string "Ruled it a ~s score of ~%".
+Type (debug) to enter the debugger.
+>>>>>>>  (load "loop.ss")
+>>>>>>>  (load "loop.ss")
+>>>>>>>  (design-gridfont '((14 17 20 23 36 5 22 39 8)
+(5 36 23 8 39) (5 36 23 8 39 6 37) (33 18 21 24 36 5)
+(5 36 23 8 39 22 25 28 43 12)))
+
+Error in car: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in examiner-cleanup>                               : s
+  continuation:          #<continuation in check-gridletter>
+  procedure code:        (lambda () ((lambda (...) (...)) (car (...))))
+  call code:             (covers winner)
+  free variables:
+  0. winner:             p2
+#<continuation in examiner-cleanup>                               : q
+
+debug> n
+>>>>>>>> *codelets-run*
+8000
+>>>>>>>>  (load "loop.ss")
+>>>>>>>>  (design-gridfont '((14 17 20 23 36 5 22 39 8)
+(5 36 23 8 39) (5 36 23 8 39 6 37) (33 18 21 24 36 5)
+(5 36 23 8 39 22 25 28 43 12)))
+
+Tried to draw a p
+Ruled (26 29 12 30 55 20 4 49 39 50) a q2
+
+Tried to draw a i
+Ruled (49 25 9) a s2
+Tried to draw a z
+Ruled (36 5 8 39 38 37) a z1 score of 27.277
+
+Tried to draw a j
+Ruled (49 25 28 43 12) a y2
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a n
+Ruled (23 36 5 22 39) a n1 score of 30.537
+
+Tried to draw a i
+Ruled (49 25 9) a s2
+Tried to draw a y
+Ruled (22 25 28 43 12 36 23 8 39) a y1 score of 20.832
+
+
+Error in car: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in examiner-cleanup>                               : s
+  continuation:          #<continuation in check-gridletter>
+  procedure code:        (lambda () ((lambda (...) (...)) (car (...))))
+  call code:             (covers winner)
+  free variables:
+  0. winner:             o1
+#<continuation in examiner-cleanup>                               : q
+
+debug> e
+>>>>>>>> *codelets-run*
+8000
+>>>>>>>> (define check-gridletter
+  (lambda (attempt qls)
+    (begin
+      (set! *quanta-list* qls)
+      (set! *quanta* (quanta-into-bits qls '()))
+      (re-rec)
+      (if (< *codelets-run* 8000)
+	  (examiner-cleanup))
+      (if (eq? (get-category *answer*) attempt)
+	  (begin
+	    (adj-init)
+	    (adj-run)
+	    (list *answer* (round-3 *temperature*)))
+	  (list *answer*)))))
+>>>>>>>> (try-cats)
+Tried to draw a m
+Ruled (21 48 17 50 35 19) a i1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a s
+Ruled (6 51 28 11 52 5 36) a s2 score of 46.162
+Tried to draw a a
+Ruled (7 38 8 36 5 22 39) a a2 score of 26.221
+Tried to draw a d
+Ruled (19 37 24 5 36 50) a d1 score of 54.588
+Tried to draw a k
+Ruled (36 5 50 14 17 20 23) a k1 score of 42.093
+
+Tried to draw a p
+Ruled (26 29 12 30 55 20 4 49 25 9 50) a q2
+Tried to draw a n
+Ruled (23 36 5 22 39) a n1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a r
+Ruled (5 22 36 23) a r1 score of 43.052
+Tried to draw a h
+Ruled (14 17 20 23 36 5 22 39) a h1 score of 31.678
+
+debug> n
+>>>>>>>>> (load "loop.ss")
+>>>>>>>>> (exit)
+debug> e
+Tried to draw a t
+Ruled (18 21 38 8 39 36 5) a t1 score of 30.921
+
+Tried to draw a o
+Ruled (20 4 5 37 7 39 50) a o1 score of 37.395
+Tried to draw a i
+Ruled (3 49 25 9) a i1 score of 82.567
+Tried to draw a q
+Ruled (5 36 23 8 39 22 25 28 31) a q1 score of 5.124
+
+Error in car: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in examiner-cleanup>                               : s
+  continuation:          #<continuation in check-gridletter>
+  procedure code:        (lambda () ((lambda (...) (...)) (car (...))))
+  call code:             (covers winner)
+  free variables:
+  0. winner:             y1
+#<continuation in examiner-cleanup>                               : d
+#<continuation in check-gridletter>                               : s
+  continuation:          #<continuation in try-cat>
+  procedure code:        (lambda (attempt qls) ...)
+  call code:             (examiner-cleanup)
+  free variables:
+  0. attempt:            w
+#<continuation in check-gridletter>                               : q
+
+debug> e
+>>>>>>>> (covers 'y1)
+
+Error in car: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>>>>> (uniquify
+	   (apply append (mapcar get-part-bindings *workspace*)))
+(right-halfarc
+  z-cap
+  right-halfpost
+  backslash
+  dot
+  halfpost
+  left-uparc
+  right-curl
+  left-halfarc
+  foreslash
+  basebar)
+>>>>>>>> (length *workspace*)
+3
+>>>>>>>> (whole-roles 'y1)
+(right-curl left-uparc)
+>>>>>>>> (intersect '(right-halfarc
+  z-cap
+  right-halfpost
+  backslash
+  dot
+  halfpost
+  left-uparc
+  right-curl
+  left-halfarc
+  foreslash
+  basebar) '(right-curl left-uparc))
+(left-uparc right-curl)
+>>>>>>>> (spark-combos '(right-curl left-uparc))
+()
+>>>>>>>> (mapcar get-part-bindings *workspace*)
+(() (backslash
+      foreslash
+      right-halfarc
+      z-cap
+      right-halfpost
+      halfpost
+      dot)
+    (backslash
+      dot
+      halfpost
+      left-uparc
+      right-curl
+      left-halfarc
+      foreslash
+      basebar))
+>>>>>>>> (eq? 2 2 (+ 1 1))
+
+Error: incorrect number of arguments to #<system procedure eq?>.
+Type (debug) to enter the debugger.
+>>>>>>>> (load "adj-setup.ss")
+
+Error in read: unexpected close bracket on #<input port adj-setup.ss>.
+Type (debug) to enter the debugger.
+>>>>>>>>  (load "adj-setup.ss")
+
+Error in read: unexpected close parenthesis on #<input port adj-setup.ss>.
+Type (debug) to enter the debugger.
+>>>>>>>>  (load "adj-setup.ss")
+>>>>>>>> *total-draws*
+23
+>>>>>>>>  (try-cats)
+Tried to draw a m
+
+Error in lookup: item quote not found..
+Type (debug) to enter the debugger.
+>>>>>>>> *quanta-list*
+(21 48 17 50 27 10 26 5 22 25)
+>>>>>>>> (check-gridletter category *quanta-list*)
+
+Error: variable category is not bound.
+Type (debug) to enter the debugger.
+>>>>>>>> *answer*
+j1
+>>>>>>>> (lookup-list 'm *scratchspace*)
+('() 200)
+>>>>>>>> (load "loop.ss")
+>>>>>>>> *scratchspace*
+((q (5 36 23 8 39 22 25 28 31) 5.124)
+ (i (3 49 25 9) 82.567)
+ (o (20 4 5 37 7 39 50) 37.395)
+ (t (18 21 38 8 39 36 5) 30.921)
+ (h (14 17 20 23 36 5 22 39) 31.678)
+ (r (5 22 36 23) 43.052)
+ (k (36 5 50 14 17 20 23) 42.093)
+ (d (19 37 24 5 36 50) 54.588)
+ (a (7 38 8 36 5 22 39) 26.221)
+ (s (6 51 28 11 52 5 36) 46.162)
+ (y (22 25 28 43 12 36 23 8 39) 20.832)
+ (n (23 36 5 22 39) 30.537)
+ (z (36 5 8 39 38 37) 27.277)
+ (g (5 36 23 8 39 22 25 28 43 12) 0)
+ (f (33 18 21 24 36 5) 0)
+ (e (5 36 23 8 39 6 37) 0)
+ (c (5 36 23 8 39) 0)
+ (b (14 17 20 23 36 5 22 39 8) 0)
+ (j '() 200)
+ (l '() 200)
+ (m '() 200)
+ (p '() 200)
+ (u '() 200)
+ (v '() 200)
+ (w '() 200)
+ (x '() 200))
+>>>>>>>> (set! *scratchspace*
+'((q (5 36 23 8 39 22 25 28 31) 5.124)
+ (i (3 49 25 9) 82.567)
+ (o (20 4 5 37 7 39 50) 37.395)
+ (t (18 21 38 8 39 36 5) 30.921)
+ (h (14 17 20 23 36 5 22 39) 31.678)
+ (r (5 22 36 23) 43.052)
+ (k (36 5 50 14 17 20 23) 42.093)
+ (d (19 37 24 5 36 50) 54.588)
+ (a (7 38 8 36 5 22 39) 26.221)
+ (s (6 51 28 11 52 5 36) 46.162)
+ (y (22 25 28 43 12 36 23 8 39) 20.832)
+ (n (23 36 5 22 39) 30.537)
+ (z (36 5 8 39 38 37) 27.277)
+ (g (5 36 23 8 39 22 25 28 43 12) 0)
+ (f (33 18 21 24 36 5) 0)
+ (e (5 36 23 8 39 6 37) 0)
+ (c (5 36 23 8 39) 0)
+ (b (14 17 20 23 36 5 22 39 8) 0)
+(j () 1000)
+(l () 1000)
+(m () 1000)
+(p () 1000)
+(u () 1000)
+(v () 1000)
+(w () 1000)
+(x () 1000)))
+>>>>>>>> (try-cats)
+Tried to draw a v
+Ruled (23 38 48 49 39) a n1
+
+Tried to draw a j
+Ruled (45 49 25 28 31) a j1 score of 75.953
+Tried to draw a w
+Ruled (4 20 50 37 24) a v1
+Tried to draw a u
+Ruled (4 20 50 37 24) a v1
+Tried to draw a a
+Ruled (7 38 8 36 5 22 39) a a2
+Tried to draw a u
+Ruled (37 7 25 36 23 8 39) a u1 score of 23.393
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a x
+Ruled (21 24 9 38 7) a x1 score of 66.565
+Tried to draw a m
+Ruled (5 37 51 36 23 49 39) a n1
+Tried to draw a p
+Ruled (36 5 22 25 51 38 23 8 27 30 12) a p1 score of 40.866
+Tried to draw a v
+Ruled (6 38 49 39 8) a u1
+Tried to draw a l
+Ruled (15 47 22 25) a l1 score of 80.495
+Tried to draw a m
+Ruled (5 22 25 50 23) a m1 score of 71.751
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (23 38 48 49 39) a i1
+Tried to draw a w
+Ruled (20 34 49 37 24 39) a j1
+Tried to draw a w
+Ruled (23 8 49 37 7) a i1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a w
+Ruled (49 23 8 9 51) a i1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a w
+Ruled (22 39 4 20 50 24) a w1 score of 50.044
+Tried to draw a r
+Ruled (23 36 5) a r1 score of 29.963
+Tried to draw a j
+Ruled (3 49 25 28 31) a j1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+
+
+Error in map: lists ((((...) (...) (...) (...) (...) (...) ...) (**whine 10)) (((...) (...) (...) (...) (...) (...) ...) (**whine 10))) and () differ in length.
+Type (debug) to enter the debugger.
+>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in map>                                     : s
+  continuation:          #<continuation in examiner-cleanup>
+  free variables:
+  0: ()
+  1: (((...) (...)) ((...) (...)))
+  2: #<procedure ordered-quanta>
+#<system continuation in map>                                     : d
+#<continuation in examiner-cleanup>                               : s
+  continuation:          #<continuation in check-gridletter>
+  procedure code:        (lambda () ((lambda (...) (...)) (car (...))))
+  call code:             (map ordered-quanta *workspace* roles)
+  free variables:
+  0. winner:             p2
+  1. roles:              ()
+#<continuation in examiner-cleanup>                               : d
+#<continuation in check-gridletter>                               : s
+  continuation:          #<continuation in try-cat>
+  procedure code:        (lambda (attempt qls) ...)
+  call code:             (examiner-cleanup)
+  free variables:
+  0. attempt:            p
+#<continuation in check-gridletter>                               : q
+
+debug> e
+>>>>>>>> (length *workspace*)
+2
+>>>>>>>> *codelets-run*
+8000
+>>>>>>>> (load "loop.ss")
+>>>>>>>> (token-place 'p (car (lookup-list 'p *scratchspace*)))
+>>>>>>>> (load "draft-setup.ss")
+>>>>>>>> (try-cats)
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a v
+Ruled (22 25 9 8 21 38) a u1
+Tried to draw a l
+Ruled (15 18 21 51 25) a l1 score of 58.449
+Tried to draw a y
+Ruled (23 8 39 49 25 28 43 12) a y1
+Tried to draw a s
+Ruled (38 7 36 5 22) a n1
+Tried to draw a v
+Ruled (6 38 49 39 8) a u1
+Tried to draw a h
+Ruled (36 5 22 39 14 17 20 23) a h1 score of 26.686
+Tried to draw a s
+Ruled (36 5 6 7 25 9 8) a s2 score of 43.073
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+
+Error in map: lists ((((...) (...) (...) (...)) (quanta (...)) (ends (...)) wide r-edge-rt l-edge-lf ...) ((23) (quanta (...)) (tips (...)) r-edge-lf l-edge-lf (ends (...)) ...) (((...) (...) (...) (...) (...)) (quanta (...)) r-edge-rt l-edge-lf (shape *simple*) roof-midline ...)) and () differ in length.
+Type (debug) to enter the debugger.
+>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in map>                                     : s
+  continuation:          #<continuation in examiner-cleanup>
+  free variables:
+  0: ()
+  1: (((...) (...) ...) ((...) (...) ...) ...)
+  2: #<procedure ordered-quanta>
+#<system continuation in map>                                     : d
+#<continuation in examiner-cleanup>                               : s
+  continuation:          #<continuation in check-gridletter>
+  procedure code:        (lambda () ((lambda (...) (...)) (car (...))))
+  call code:             (map ordered-quanta *workspace* roles)
+  free variables:
+  0. winner:             a1
+  1. roles:              ()
+#<continuation in examiner-cleanup>                               : d
+#<continuation in check-gridletter>                               : s
+  continuation:          #<continuation in try-cat>
+  procedure code:        (lambda (attempt qls) ...)
+  call code:             (examiner-cleanup)
+  free variables:
+  0. attempt:            p
+#<continuation in check-gridletter>                               : q
+
+debug> e
+>>>>>>>> (< *codelets-run* 8000)
+#f
+>>>>>>>> (load "loop.ss")
+>>>>>>>> *total-draws*
+58
+>>>>>>>> (try-cats)
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a l
+Ruled (15 18 21 24 39) a l1 score of 44.264
+Tried to draw a v
+Ruled (23 38 48 17 49 39) a i1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a t
+Ruled (36 5 18 21 38 8 39) a t1 score of 29.164
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a n
+Ruled (5 22 39 36 23) a n1
+Tried to draw a w
+Ruled (22 25 9 24 39 4 20 50) a g1
+
+Error in map: lists ((((...) (...) (...)) (quanta (...)) (ends (...)) (curve *slight-right*) (curve1 *strong-right*) (curve2 *straight*) ...) ((11) (quanta (...)) (contact t2) roof-middown floor-middown (neighborhood (...)) ...) (((...) (...) (...) (...) (...)) (quanta (...)) roof-midline floor-baseline medium-wt (ends (...)) ...) (((...)) (quanta (...)) r-edge-rt l-edge-md very-short (shape *simple*) ...)) and () differ in length.
+Type (debug) to enter the debugger.
+>>>>>>>> (load "loop.ss")
+>>>>>>>>  (token-place 'p (car (lookup-list 'p *scratchspace*)))
+>>>>>>>> (token-place 'w (car (lookup-list 'w *scratchspace*)))
+>>>>>>>> *total-draws*
+68
+>>>>>>>> (try-cats)
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (6 48 4 49 39 8) a n1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a s
+Ruled (8 39 36 5 6) a i1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a a
+Ruled (7 38 8 36 5 22 39) a a2 score of 25.449
+Tried to draw a v
+Ruled (49 39 8 23) a u1
+Tried to draw a v
+Ruled (6 48 49 39 8) a i1
+Tried to draw a j
+Ruled (49 25 28 43 12 3) a j1
+Tried to draw a v
+Ruled (22 25 41 52 21 38) a u1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a o
+Ruled (20 4 5 37 7 39 50) a o1
+
+debug> n
+>>>>>>>>> (load "sugar.ss")
+>>>>>>>>> (exit)
+debug> e
+Tried to draw a r
+Ruled (5 22 36 23 8) a r1
+Tried to draw a p
+Ruled (23 26 29 36 5 22 25 28 11 52) a p1 score of 14.166
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a d
+Ruled (16 19 22 5 36 23 8 39) a d1 score of 21.976
+Tried to draw a w
+Ruled (37 48 49 23 8 9 25 22) a q1
+Tried to draw a k
+Ruled (36 5 14 17 20 23 8 6 51) a k1 score of 41.054
+Tried to draw a v
+Ruled (23 38 48 49 39) a i1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (6 38 49 39 8) a u1
+Tried to draw a k
+Ruled (50 39 14 17 20 23 36 5) a k1 score of 28.386
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a u
+Ruled (25 41 11 53 4 20 50) a c1
+Tried to draw a v
+Ruled (49 39 8 23) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a o
+Ruled (20 34 3) a l1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a n
+Ruled (23 36 5 22 39) a n1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a v
+Ruled (22 25 9 8 21 38) a u1
+Tried to draw a v
+Ruled (6 48 49 39 8) a i1
+Tried to draw a m
+Ruled (21 5 22 39 36 23) a m1 score of 40.039
+Tried to draw a r
+Ruled (5 36 23) a r1
+Tried to draw a k
+Ruled (14 46 21 36 5 23 8) a t1
+Tried to draw a v
+Ruled (6 48 49 39 8) a i1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a y
+Ruled (50 9 49 25 28 31) a y1
+Tried to draw a k
+Ruled (14 46 21 23 8 36 5) a t1
+Tried to draw a d
+Ruled (5 36 50 19 37 24) a d1
+Tried to draw a v
+Ruled (6 48 49 39 8) a i1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a v
+Ruled (6 48 34 2 49 39 8) a i1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a w
+Ruled (20 34 49 37 24 39) a j1
+Tried to draw a v
+Ruled (6 48 4 49 39 8) a n1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (6 48 4 49 39 8) a n1
+Tried to draw a w
+Ruled (21 24 27 11 20 4 5 22 25) a y1
+Tried to draw a r
+Ruled (5 22 36 23) a r1
+Tried to draw a z
+Ruled (36 5 22 38 7 8 9) a z1 score of 26.128
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a s
+Ruled (20 38 7 36 49) a r1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a v
+Ruled (6 48 4 49 39 8) a n1
+Tried to draw a d
+Ruled (16 19 22 39 5 4 20 50) a d1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a z
+Ruled (38 7 23 36 5) a c1
+Tried to draw a o
+Ruled (20 4 5 37 7 39 50) a o1
+Tried to draw a v
+Ruled (22 25 41 50 8 38 21) a j1
+Tried to draw a v
+Ruled (6 38 49 39 8) a u1
+Tried to draw a v
+Ruled (6 48 49 39 8) a i1
+Tried to draw a j
+Ruled (22 25 28 43 12 35) a j1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a w
+Ruled (20 34 49 37 24 39) a j1
+Tried to draw a v
+Ruled (6 48 4 49 39 8) a n1
+Tried to draw a v
+Ruled (6 48 34 49 39 8) a i1
+Tried to draw a i
+Ruled (49 25 9 3) a i1
+Tried to draw a t
+Ruled (18 21 38 26 10 11 53 36 5) a t1
+Tried to draw a v
+Ruled (22 39 8 21 38) a u1
+>>>>>>>> (load "drafter.ss")
+>>>>>>>> (load "sugar.ss")
+>>>>>>>> (draw-cat 'i)
+(i (45) (49 25 9))
+>>>>>>>> (draft-whole-role 'i1 'halfpost)
+(49 25 9)
+>>>>>>>> (draw-init) (draft-init)
+>>>>>>>> >>>>>>>> *tip-1* *tip-2*
+10
+>>>>>>>> 12
+>>>>>>>> (transcript-off)

@@ -1,0 +1,114 @@
+ADJ TESTS:
+
+the "hard" big test
+the variations on part of it
+ three tries per run, different size TRAIN
+complete intrafont tests on Boat, Standard Square, and Benzene Right
+Thematic Focus downloads for all the test fonts
+
+HOW ABOUT (eventually), a DRH vs. LS test?
+ When does it prefer its own work over the human-designed letters?
+
+
+***
+
+
+
+You know what? You could make a confusion matrix of fonts, and do a
+principle component, and show a 2-D chart of styles.
+
+BL BR BT CL HO		(a b c d e f g h i j k l n o p q r t u x y z)
+HU4 SH SLT SN STSQ	(a c d e f g h i j l m n p q r s t u w x y z)
+HI4 CH DBS FLR FNT	(d f q t v y)
+BW BT SAB SLS SQC	(f h i j k l t y)
+BL INT HO SH SN		(b c d f g i j l o q r t x y z)
+HU4 BR SLT CL STSQ	(a c d e f g h i j l m n p q r t u x y z)
+BL WAR HU4 BW HI4	(f i j l u v w y)
+BR WAR SH CH INT	(c d f i l o q r y z)
+BT SLT DBS SAB HO	(c d e f g h i j l n o p q s t y)
+CL SN FLR SLS STSQ	(b c d e f g h i j k l m p q r t y)
+FNT SQC STSQ SH BL	(b d f h n r t w y)
+HU4 BR DBS WAR SLS	(b c d e f g h i j l p q v y)
+HO SN FLR SAB INT	(b c d f g i j l q r t y)
+BT WAR SLT FNT SQC	(d f h n r w y)
+HI4 DBS SLS SLT CL	(c d e f g i j l p q t x y)
+BW HU4 SN INT SAB	(f i j l t y)
+SQC WAR FNT CL CH	(d f h n r y)
+BR CH DBS BW BL		(f h i l t v x y)
+CH BT FLR HI4 FNT	(d f q r t v y)
+HO SAB HI4 SH SQC	(b c d f i j k l n p r s t y)
+BW INT FLR SLS STSQ	(f i j l t y)
+
+Letter Frequencies
+((a 3) (y 21) (b 7) (t 16) (c 11) (l 16) (d 16) (j 14) (e 7) (i 16)
+ (f 21) (s 3) (g 9) (r 12) (h 11) (p 8) (k 4) (n 8) (o 4) (v 5) (q 12)
+ (x 6) (u 4) (w 4) (z 5) (m 3))
+***
+
+easy big-test
+NOTE: ALSO do the hard test, and 'fess up to that
+			TRAIN	TEST	SCORE (%)
+BL BR BT CL HO		bcefg	day	47
+HU4 SH SLT SN STSQ	cefgh	day	33
+HI4 CH DBS FLR FNT	fqtv	dy	33
+BW BT SAB SLS SQC	fhijk	lty	27
+BL INT HO SH SN		bcfgh	doy	40
+HU4 BR SLT CL STSQ	cefgh	day	53
+BL WAR HU4 BW HI4	fijlu	vwy	27
+BR WAR SH CH INT	cfilq	doy	40
+BT SLT DBS SAB HO	cefgh	doy	73
+CL SN FLR SLS STSQ	bcefg	dpy	60
+FNT SQC STSQ SH BL	bfhnr	dty	33
+HU4 BR DBS WAR SLS	bcefg	dpy	47
+HO SN FLR SAB INT	cefgt	dpy	40
+BT WAR SLT FNT SQC	fhnrw	dy	40
+HI4 DBS SLS SLT CL	cefgj	dpy	27
+BW HU4 SN INT SAB	fijl	ty	20
+SQC WAR FNT CL CH	fhnr	dy	10
+BR CH DBS BW BL		fhivx	lty	53
+CH BT FLR HI4 FNT	fqrv	dty	40
+HO SAB HI4 SH SQC	bcfjn	dty	33
+BW INT FLR SLS STSQ	fijl	ty	30
+
+
+ALL WRONG!!!
+
+Correlate SCORE with number of post-and-bowl letters in TRAIN...
+r = 0.500, p=0.022
+
+Mean for number of post-and-bowl letters in TRAIN:
+0	29.6
+1	40.5
+2	48.5
+
+NICE treatise on letter effect, there, smart boy
+
+***
+			TRAIN	TEST
+BL BR BT CL HO		bcnp	agoz
+HU4 SH SLT SN STSQ	dhrs	amsu
+HI4 CH DBS FLR FNT	dfqt	vy
+BW BT SAB SLS SQC	flty	hijk
+BL INT HO SH SN		bdfo	grxz
+HU4 BR SLT CL STSQ	dgiq	amjz
+BL WAR HU4 BW HI4	fily	juvw
+BR WAR SH CH INT	cflr	ioqz
+BT SLT DBS SAB HO	eghi	loqs
+CL SN FLR SLS STSQ	bdgi	klmp
+FNT SQC STSQ SH BL	bdft	hnrw
+HU4 BR DBS WAR SLS	fghi	bcde
+HO SN FLR SAB INT	jlqr	bcdf
+BT WAR SLT FNT SQC	hnry	dfw
+HI4 DBS SLS SLT CL	cdjq	elpx
+BW HU4 SN INT SAB	jlty	fi
+SQC WAR FNT CL CH	dfhn	ry
+BR CH DBS BW BL		fhil	tvxy
+CH BT FLR HI4 FNT	dfry	qtv
+HO SAB HI4 SH SQC	dfil	bnps
+BW INT FLR SLS STSQ	fijl	ty
+
+TEST FREQUENCIES
+
+((a 3) (y 4) (o 3) (t 3) (x 3) (s 3) (z 4) (p 3) (m 3) (n 2) (u 2)
+ (b 3) (v 4) (q 3) (h 2) (r 3) (i 3) (f 3) (j 3) (l 3) (k 2) (e 2) (g 2)
+ (w 3) (c 2) (d 3))

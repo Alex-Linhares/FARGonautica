@@ -1,0 +1,1266 @@
+Chez Scheme Transcript [Sat Nov 27 21:30:26 1999]
+> (try-gridfont 'benzene-right)
+Try t draft t; accepted as g1 score 300.0 beat 10000.0 (4 5 10 11 17 21 26 36 38)
+Try m draft m; accepted as n1 score 300.0 beat 10000.0 (8 22 23 25 37)
+Try s draft s; accepted as s2 score 63.706 beat 10000.0 (5 7 8 9 21 23 25)
+Try a borrow e; accepted as a2 score 60.592 beat 10000.0 (5 7 8 22 36 38 39)
+Try k draft k; accepted as g1 score 300.0 beat 10000.0 (5 8 10 17 20 23 27 36 39 50)
+Try p borrow b; accepted as p1 score 62.161 beat 10000.0 (4 9 20 23 25 26 29 49 50)
+Try y draft y; accepted as u1 score 300.0 beat 10000.0 (12 13 21 24 27 31 42 50)
+Try d draft d; accepted as u1 score 300.0 beat 10000.0 (2 3 11 15 17 18 19 20 21 22 24 27 39)
+Try v draft v; accepted as u1 score 300.0 beat 10000.0 (8 21 22 38 39)
+Try o borrow g; accepted as q2 score 300.0 beat 10000.0 (5 8 22 23 25 36 39)
+Try r borrow c; accepted as i1 score 300.0 beat 10000.0 (5 23 36 39)
+Try w draft w; accepted as g1 score 300.0 beat 10000.0 (4 8 20 23 24 37 39 49)
+Try n draft n; accepted as n1 score 74.269 beat 10000.0 (5 8 22 36 39)
+Try u draft u; accepted as u1 score 75.466 beat 10000.0 (8 23 24 36 37)
+Try j draft j; accepted as j1 score 83.158 beat 10000.0 (10 20 23 25 26 35 41)
+Try q borrow b; accepted as q1 score 5.4 beat 10000.0 (5 8 22 23 25 28 31 36 39)
+Try i draft i; accepted as i1 score 87.298 beat 10000.0 (6 7 8 35 39)
+Try x draft x; accepted as w1 score 300.0 beat 10000.0 (6 11 21 24 27 37)
+Try v draft v; rejected as u1 score 300.0 beaten-by 300.0 (5 8 22 23 39)
+Try h borrow b; accepted as h1 score 38.232 beat 10000.0 (5 14 17 20 22 23 36 39)
+Try z draft z; accepted as z1 score 50.779 beat 10000.0 (5 8 36 37 38 39)
+Try w draft w; rejected as o1 score 300.0 beaten-by 300.0 (8 9 22 23 25 36 37 48)
+Try s draft s; accepted as s2 score 58.652 beat 64.581 (5 6 7 8 36 39)
+Try l draft l; accepted as l1 score 113.469 beat 10000.0 (11 15 18 21 24 27)
+Try w draft w; accepted as w1 score 56.204 beat 300.0 (8 22 23 24 36 39)
+Try r draft r; accepted as r1 score 52.421 beat 300.0 (5 23 36)
+Try m draft m; rejected as n1 score 300.0 beaten-by 300.0 (5 20 21 22 36 38 39)
+Borrowed role
+Try d draft d; accepted as q1 score 179.2275 beat 300.0 (5 8 16 19 22 23 25 28 31 36 39)
+Try d draft d; accepted as d1 score 97.856 beat 179.2275 (4 5 9 18 20 21 22 24 39)
+Try x draft x; accepted as x1 score 79.889 beat 300.0 (6 8 22 39 51)
+Try o draft o; rejected as n1 score 300.0 beaten-by 300.0 (5 18 20 22 25 34)
+Try m draft m; accepted as m1 score 56.168 beat 300.0 (5 21 22 23 36 39)
+Borrowed role
+Try k draft k; accepted as k1 score 48.325 beat 300.0 (5 6 14 17 20 23 36 51)
+Try w draft w; rejected as u1 score 300.0 beaten-by 56.204 (4 8 20 23 24 37)
+Try s draft s; reelected as s2 score 56.27239999999999 scores (54.03 55.261) (54.767 58.691 58.613) (5 6 7 8 36 39)
+Try o borrow b; rejected as o (5 8 20 22 23 36 39)
+promoted as o score 300.0 beat 300.0 with (5 18 20 22 25 34)
+Try y draft y; rejected as g1 score 300.0 beaten-by 300.0 (4 8 20 22 23 27 39 42)
+Try o draft o; accepted as o1 score 74.031 beat 300.0 (5 10 22 23 25 26 36 41)
+Try n draft n; rejected as o1 score 300.0 beaten-by 74.269 (4 5 6 8 20 22 39 51)
+Try v draft v; rejected as v (8 21 22 38 39)
+promoted as v score 300.0 beat 300.0 with (5 8 22 23 39)
+Try o draft o; accepted as o1 score 50.884 beat 74.031 (4 5 8 9 20 22 23 25)
+Borrowed role
+Try t draft t; accepted as t1 score 57.369 beat 300.0 (5 8 18 21 36 38 39)
+Try y draft y; rejected as y (9 10 12 13 21 23 24 26 28 43 55)
+promoted as y score 300.0 beat 300.0 with (4 8 20 22 23 27 39 42)
+Try l draft l; accepted as l1 score 112.049 beat 113.193 (9 15 18 21 24 28)
+Try z draft z; reelected as z1 score 49.28275 scores (48.658 50.058) (47.636 50.779) (5 8 36 37 38 39)
+Try i draft i; accepted as i1 score 65.877 beat 87.298 (22 35 39)
+Try v draft v; rejected as v (5 8 22 23 39)
+promoted as v score 300.0 beat 300.0 with (8 21 22 38 39)
+Try v draft v; rejected as v (8 22 23 36 39)
+promoted as v score 300.0 beat 300.0 with (5 8 22 23 39)
+Try l draft l; rejected as h1 score 300.0 beaten-by 112.049 (15 18 21 24 25 39)
+Try d borrow b; accepted as d1 score 62.407 beat 97.856 (4 9 16 19 20 22 25 49 50)
+Try v draft v; accepted as u1 score 300.0 beat 300.0 (8 21 22 38 39)
+Try u draft u; rejected as y1 score 300.0 beaten-by 75.466 (12 13 21 23 24 26 27 28 29 30 43)
+Try x draft x; rejected as r1 score 300.0 beaten-by 79.889 (5 20 23 36 50)
+Try u draft u; rejected as y2 score 300.0 beaten-by 75.466 (11 12 13 21 23 24 26 27 29 31)
+Borrowed role
+Try k draft k; reelected as k1 score 48.7475 scores (48.544 49.577) (48.544 48.325) (5 6 14 17 20 23 36 51)
+Borrowed role
+Try p draft p; accepted as p1 score 44.549 beat 62.161 (5 8 22 23 26 29 36 39)
+Try u draft u; rejected as i1 score 300.0 beaten-by 75.466 (4 9 20 23 37 39 51)
+Try y draft y; accepted as y1 score 75.531 beat 300.0 (8 9 12 21 23 28 43 51)
+Try p draft p; rejected as g1 score 300.0 beaten-by 44.549 (4 5 6 10 20 22 23 24 25 26 36 41)
+Try o draft o; reelected as o1 score 45.6965 scores (40.509) (50.884) (4 5 8 9 20 22 23 25)
+Try x draft x; accepted as x1 score 58.091 beat 79.889 (8 9 21 22 24 39)
+Try v draft v; reelected as u1 score 300.0 scores (300.0 300.0) (300.0 300.0 300.0) (8 21 22 38 39)
+Try l draft l; rejected as l1 score 110.725 beaten-by 111.83533333333334 (11 15 18 21 24 27)
+Try h draft h; rejected as h1 score 77.1 beaten-by 38.232 (5 8 10 17 20 22 23 25 27 36)
+Try d draft d; accepted as d1 score 15.227 beat 62.407 (5 8 16 19 22 23 36 39)
+Try n draft n; accepted as n1 score 36.061 beat 74.269 (5 22 23 36 39)
+Try v draft v; rejected as u1 score 300.0 beaten-by 300.0 (5 8 20 22 23 39)
+Try z draft z; rejected as z1 score 49.797 beaten-by 49.361599999999996 (5 8 37 38 39)
+Try s draft s; reelected as s2 score 56.582125 scores (57.983 55.468) (57.844 54.03 55.261 54.767 58.691 58.613) (5 6 7 8 36 39)
+Try v draft v; rejected as u1 score 300.0 beaten-by 300.0 (5 8 22 23 39)
+Try l draft l; accepted as l1 score 101.502 beat 111.83533333333334 (11 15 18 21 24 27)
+Try t draft t; reelected as t1 score 56.88325 scores (57.286 55.605) (57.273 57.369) (5 8 18 21 36 38 39)
+Try a draft a; rejected as d1 score 300.0 beaten-by 60.592 (5 7 10 22 25 26 36 38 41)
+Try w draft w; rejected as q1 score 300.0 beaten-by 56.204 (4 8 9 20 23 24 37 39 49)
+Try m draft m; rejected as n1 score 300.0 beaten-by 56.168 (5 21 22 38 39)
+Try v draft v; reelected as u1 score 300.0 scores (300.0 300.0) (300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0) (8 21 22 38 39)
+Try z draft z; rejected as z (5 8 36 37 38 39)
+promoted as z score 49.797 beat 49.183166666666665 with (5 8 37 38 39)
+Try u draft u; rejected as y1 score 300.0 beaten-by 75.466 (9 10 11 21 23 24 26)
+Try s draft s; rejected as r1 score 300.0 beaten-by 56.582125 (5 36)
+Try v draft v; reelected as u1 score 300.0 scores (300.0 300.0) (300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0) (8 21 22 38 39)
+Try a draft a; rejected as x1 score 300.0 beaten-by 60.592 (5 7 22 25 36 38)
+Try v draft v; reelected as u1 score 300.0 scores (300.0 300.0) (300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0 300.0) (8 21 22 38 39)
+Try m draft m; rejected as m1 score 115.786 beaten-by 56.168 (4 5 8 22 23 25 26 38 48)
+Try x draft x; rejected as g1 score 300.0 beaten-by 58.091 (3 8 20 21 23 24 34 37 38)
+Try v draft v; accepted as v1 score 82.632 beat 300.0 (21 23 38)
+Try y draft y; accepted as y1 score 58.29 beat 75.531 (8 13 21 23 24 29 30 40 42)
+Try n draft n; reelected as n1 score 46.933 scores (57.805) (36.061) (5 22 23 36 39)
+Try j draft j; rejected as n1 score 300.0 beaten-by 83.158 (5 10 22 25 41)
+Try d draft d; reelected as d1 score 15.688000000000002 scores (18.472 10.558) (18.495 15.227) (5 8 16 19 22 23 36 39)
+Try z draft z; accepted as z1 score 47.5385 beat 50.47366666666667 (5 8 36 37 38 39)
+Try v draft v; rejected as u1 score 300.0 beaten-by 82.632 (8 21 22 38 39)
+Try x draft x; rejected as y1 score 300.0 beaten-by 58.091 (11 21 24 27 37 38)
+Try n draft n; rejected as n1 score 76.508 beaten-by 46.933 (5 8 22 36 39)
+Try v draft v; rejected as u1 score 300.0 beaten-by 82.632 (5 8 22 23 39)
+Try m draft m; rejected as n1 score 300.0 beaten-by 56.168 (5 21 22 38 39)
+Try i draft i; accepted as i1 score 50.161 beat 65.877 (3 5 15 22 39)
+Try j draft j; rejected as i1 score 300.0 beaten-by 83.158 (1 3 12 17 20 21 23 24 26 27 32 33 42 54)
+Try a draft a; accepted as a1 score 30.214 beat 60.592 (4 5 7 8 9 22 25 38)
+Try l draft l; accepted as l1 score 44.385 beat 101.502 (9 15 18 21 24)
+Borrowed role
+Try k draft k; reelected as k1 score 48.064857142857136 scores (44.45 49.33) (47.684 48.544 49.577 48.544 48.325) (5 6 14 17 20 23 36 51)
+Try r draft r; rejected as r1 score 56.555 beaten-by 48.376999999999995 (5 22 23 36)
+Try j draft j; rejected as j1 score 99.361 beaten-by 83.158 (12 16 21 28 43 51)
+Try x draft x; rejected as y1 score 300.0 beaten-by 58.091 (8 23 37 38 39)
+Try t draft t; rejected as r1 score 300.0 beaten-by 56.88325 (5 18 21 36 38)
+Try z draft z; reelected as z1 score 48.0428 scores (44.068 50.502) (50.567 47.935 47.142) (5 8 36 37 38 39)
+Try n draft n; rejected as n1 score 78.399 beaten-by 46.933 (5 8 20 22 36 39)
+Try x draft x; rejected as y1 score 300.0 beaten-by 58.091 (8 23 36 37 38)
+Try l draft l; rejected as l1 score 112.642 beaten-by 44.385 (11 15 18 21 24 27)
+Try u draft u; rejected as y1 score 300.0 beaten-by 75.466 (10 11 21 23 24 26)
+Try o draft o; reelected as o1 score 43.9294 scores (45.184 43.416) (39.654 40.509 50.884) (4 5 8 9 20 22 23 25)
+Try l draft l; reelected as l1 score 50.977000000000004 scores (57.569) (44.385) (9 15 18 21 24)
+Try w draft w; rejected as j1 score 300.0 beaten-by 56.204 (9 11 23 28 36 38 39 48)
+Try o draft o; reelected as o1 score 42.158125 scores (38.549 44.346) (34.723 45.184 43.416 39.654 40.509 50.884) (4 5 8 9 20 22 23 25)
+Try a draft a; rejected as n1 score 300.0 beaten-by 30.214 (5 22 25 36)
+Try u draft u; rejected as u1 score 108.067 beaten-by 75.466 (9 10 20 21 23 24 26 41)
+Try j draft j; rejected as u1 score 300.0 beaten-by 83.158 (12 21 24 26 27 42 54)
+Try i draft i; rejected as i1 score 111.402 beaten-by 50.161 (19 21 24)
+Try a draft a; rejected as a1 score 35.3445 beaten-by 34.9535 (5 7 8 9 22 25 36 38)
+Try l draft l; rejected as l1 score 101.922 beaten-by 50.977000000000004 (11 15 18 21 24 27)
+Try m draft m; rejected as y1 score 300.0 beaten-by 56.168 (7 11 23 25 36 41 53)
+Try x draft x; rejected as y1 score 300.0 beaten-by 58.091 (21 24 27 37 38)
+Try m draft m; rejected as n1 score 300.0 beaten-by 56.168 (5 8 22 23 25)
+Try u draft u; rejected as w1 score 300.0 beaten-by 75.466 (5 22 23 24 38 39)
+Try i draft i; rejected as u1 score 300.0 beaten-by 50.161 (5 8 22 23 39)
+Try v draft v; accepted as v1 score 69.856 beat 82.632 (5 20 22 39 50)
+Try s draft s; rejected as s2 score 70.069 beaten-by 56.582125 (4 5 7 8 9 23 25 48)
+Try x draft x; rejected as w1 score 300.0 beaten-by 58.091 (8 21 23 24 37 38)
+Try l draft l; rejected as h1 score 300.0 beaten-by 50.977000000000004 (15 18 21 24 25 39)
+Try m draft m; rejected as n1 score 300.0 beaten-by 56.168 (5 8 22 23 25)
+Try u draft u; reelected as u1 score 73.51025 scores (74.964 71.202) (72.409 75.466) (8 23 24 36 37)
+Try n draft n; rejected as n1 score 75.047 beaten-by 46.933 (5 8 22 36 39)
+Try z draft z; reelected as z1 score 49.175875 scores (55.694 50.281) (47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try i draft i; rejected as r1 score 300.0 beaten-by 50.161 (5 22 39)
+Try n draft n; reelected as n1 score 42.98866666666667 scores (35.1) (57.805 36.061) (5 22 23 36 39)
+Try p draft p; rejected as y1 score 300.0 beaten-by 44.549 (7 8 23 25 27 28 30 38)
+Try s draft s; rejected as g1 score 300.0 beaten-by 56.582125 (5 6 7 10 11 25 28 36)
+Try z draft z; rejected as e2 score 300.0 beaten-by 49.175875 (5 8 23 36 37 39 48)
+Try y draft y; rejected as j1 score 300.0 beaten-by 58.29 (12 20 21 22 24 25 26 27 28 34 42 47 54)
+Borrowed role
+Try t draft t; rejected as t1 score 75.513 beaten-by 56.88325 (5 10 11 18 21 26 36 38)
+Borrowed role
+Try h draft h; reelected as h1 score 41.86375 scores (36.129 56.252) (36.842 38.232) (5 14 17 20 22 23 36 39)
+Try l draft l; rejected as l1 score 115.048 beaten-by 50.977000000000004 (11 15 18 21 24 27)
+Try m draft m; rejected as j1 score 300.0 beaten-by 56.168 (7 8 11 12 20 25 26 29 34 36 41 53)
+Try i draft i; rejected as i1 score 94.793 beaten-by 50.161 (5 8 16 22 23 39)
+Try m draft m; reelected as m1 score 55.203 scores (52.74 54.944) (56.96 56.168) (5 21 22 23 36 39)
+Try y borrow g; accepted as y1 score 33.082 beat 58.29 (8 12 22 23 25 28 36 39 43)
+Try w draft w; rejected as j1 score 300.0 beaten-by 56.204 (3 11 19 20 21 24 27 34)
+Try i draft i; rejected as i1 score 54.6575 beaten-by 50.286 (1 5 16 22 25)
+Try u draft u; rejected as u1 score 88.34 beaten-by 73.51025 (4 8 20 23 24 37)
+Try j draft j; rejected as y1 score 300.0 beaten-by 83.158 (3 19 20 21 22 23 24 25 26 27 28 29 34 42)
+Borrowed role
+Try k draft k; rejected as y1 score 300.0 beaten-by 48.064857142857136 (2 3 4 5 6 14 17 19 20 23 36 46 48)
+Try n draft n; reelected as n1 score 45.94375 scores (54.809) (35.1 57.805 36.061) (5 22 23 36 39)
+Try r draft r; rejected as r1 score 60.951 beaten-by 48.376999999999995 (4 5 20 22 23)
+Try w draft w; rejected as i1 score 300.0 beaten-by 56.204 (24 36 37)
+Try j draft j; rejected as j1 score 108.024 beaten-by 83.158 (12 19 21 24 27 31 42 43)
+Try u draft u; rejected as u1 score 106.309 beaten-by 73.51025 (10 21 23 24 26 27)
+Try j draft j; rejected as y1 score 300.0 beaten-by 83.158 (12 13 20 22 25 28 31 36 37 48)
+Try r draft r; rejected as r1 score 59.021 beaten-by 48.376999999999995 (5 22 23 36)
+Try z draft z; reelected as z1 score 49.54900000000001 scores (51.555 49.868) (50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try y draft y; rejected as y1 score 60.25 beaten-by 33.082 (9 12 21 22 24 25 28 43)
+Try a draft a; accepted as a1 score 33.3995 beat 34.449 (5 7 8 9 22 25 36 38)
+Try s draft s; rejected as i1 score 300.0 beaten-by 56.582125 (3 4 5 9 23 24 25 34 38)
+Try x draft x; rejected as x1 score 70.404 beaten-by 58.091 (6 7 37 38 39)
+Borrowed role
+Try t draft t; rejected as g1 score 300.0 beaten-by 56.88325 (5 6 8 18 21 23 36 39)
+Try j draft j; accepted as j1 score 60.679 beat 83.158 (3 12 22 25 28 43)
+Try z draft z; rejected as u1 score 300.0 beaten-by 49.54900000000001 (5 6 8 22 38 39)
+Try o draft o; rejected as o1 score 94.491 beaten-by 42.158125 (4 5 10 20 22 23 25 26 41)
+Try k draft k; rejected as o1 score 300.0 beaten-by 48.064857142857136 (0 5 8 15 17 18 20 21 23 24 36)
+Try l draft l; rejected as h1 score 300.0 beaten-by 50.977000000000004 (15 18 21 24 25 39)
+Borrowed role
+Try p draft p; reelected as p1 score 50.596250000000005 scores (47.572 47.45) (62.814 44.549) (5 8 22 23 26 29 36 39)
+Try n draft n; rejected as u1 score 300.0 beaten-by 45.94375 (5 8 22 23 39)
+Try r draft r; rejected as r1 score 55.3095 beaten-by 48.07366666666667 (5 8 22 23 36)
+Try v draft v; rejected as u1 score 300.0 beaten-by 69.856 (5 8 22 23 39)
+Try r draft r; reelected as r1 score 48.304833333333335 scores (50.176 45.638) (49.794 47.467 44.333 52.421) (5 23 36)
+Borrowed role
+Try h draft h; rejected as b1 score 300.0 beaten-by 41.86375 (5 8 14 17 20 22 23 39)
+Try w draft w; rejected as b1 score 300.0 beaten-by 56.204 (4 8 9 20 23 24 37 39 49)
+Borrowed role
+Try h draft h; rejected as h1 score 42.0055 beaten-by 40.9644 (5 14 17 20 22 23 25 36)
+Try r draft r; rejected as r1 score 56.912 beaten-by 48.20971428571429 (4 5 20 22 23)
+Try v draft v; rejected as u1 score 300.0 beaten-by 69.856 (8 21 22 38 39)
+Try r draft r; reelected as r1 score 48.43909999999999 scores (48.832 49.112) (48.979 47.639 50.176 45.638 49.794 47.467 44.333 52.421) (5 23 36)
+Try j draft j; rejected as j1 score 67.3415 beaten-by 59.164 (3 21 24 27 42)
+Try u draft u; accepted as u1 score 65.898 beat 72.2212 (7 8 23 25 36 37 39)
+Try z draft z; reelected as z1 score 49.67264285714287 scores (49.949 51.587) (48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try u draft u; rejected as w1 score 300.0 beaten-by 65.898 (3 8 9 19 21 22 23 24 39)
+Try n draft n; rejected as u1 score 300.0 beaten-by 45.94375 (5 8 22 23 39)
+Try u draft u; rejected as y1 score 300.0 beaten-by 65.898 (9 10 11 21 23 24 26)
+Try o draft o; reelected as o1 score 42.11536363636364 scores (45.116 40.557) (40.331 38.549 44.346 34.723 45.184 43.416 39.654 40.509 50.884) (4 5 8 9 20 22 23 25)
+Try s draft s; reelected as s2 score 55.77363636363636 scores (52.212 55.662) (52.979 57.983 55.468 57.844 54.03 55.261 54.767 58.691 58.613) (5 6 7 8 36 39)
+Try r draft r; rejected as r1 score 47.7095 beaten-by 48.32727272727273 (5 22 23 36)
+Try v draft v; rejected as u1 score 300.0 beaten-by 69.856 (8 21 22 38 39)
+Try p draft p; rejected as q1 score 300.0 beaten-by 50.596250000000005 (5 8 9 22 23 25 27 30 36)
+Try i draft i; rejected as i1 score 99.674 beaten-by 50.286 (19 21 24)
+Try l draft l; rejected as h1 score 300.0 beaten-by 50.977000000000004 (15 18 21 24 25 39)
+Try q draft q; reelected as q1 score 6.546749999999999 scores (4.999 10.289) (5.499 5.4) (5 8 22 23 25 28 31 36 39)
+Try l draft l; reelected as l1 score 49.99980000000001 scores (51.727 45.714) (50.604 57.569 44.385) (9 15 18 21 24)
+Try k draft k; rejected as k1 score 50.7465 beaten-by 47.738749999999996 (5 9 14 17 20 23 36 50)
+Try h draft h; rejected as k1 score 300.0 beaten-by 40.9644 (5 8 17 18 20 21 22 23 24 25 36)
+Try v draft v; rejected as v1 score 81.653 beaten-by 69.856 (21 23 38)
+Borrowed role
+Try q draft q; rejected as q1 score 37.545 beaten-by 6.546749999999999 (5 8 22 23 27 30 36 39)
+Try m draft m; rejected as h1 score 300.0 beaten-by 55.203 (5 20 21 22 34 36 38 39)
+Try s draft s; rejected as g1 score 300.0 beaten-by 55.77363636363636 (4 5 8 22 39 48)
+Try n draft n; rejected as n1 score 75.274 beaten-by 45.94375 (5 8 20 22 36 39)
+Borrowed role
+Try h draft h; rejected as b1 score 300.0 beaten-by 40.9644 (5 8 14 17 20 22 23 39)
+Try v draft v; rejected as u1 score 300.0 beaten-by 69.856 (5 8 22 23 39)
+Try i draft i; rejected as i1 score 84.658 beaten-by 50.286 (8 22 35 39)
+Try o draft o; rejected as o1 score 99.82 beaten-by 42.11536363636364 (4 5 10 20 22 23 25 26 41)
+Try j draft j; rejected as j1 score 118.472 beaten-by 59.164 (3 12 17 20 21 23 24 26 27 42 54)
+Try d draft d; rejected as q1 score 300.0 beaten-by 15.688000000000002 (0 1 3 4 5 8 9 14 16 17 20 22 23 25 48)
+Try a draft a; reelected as a1 score 31.5796 scores (33.918 29.27) (27.911 33.054 33.745) (5 7 8 9 22 25 36 38)
+Try n draft n; reelected as n1 score 48.519 scores (53.374 36.942) (65.542 54.809 35.1 57.805 36.061) (5 22 23 36 39)
+Try z draft z; reelected as z1 score 49.68435294117647 scores (47.127 52.415) (49.675 49.949 51.587 48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try h draft h; rejected as h1 score 64.693 beaten-by 40.9644 (5 15 18 21 22 38 39)
+Try j draft j; accepted as j1 score 58.1015 beat 59.04666666666666 (12 15 25 28 43 45 49)
+Try v draft v; rejected as u1 score 300.0 beaten-by 69.856 (8 21 22 38 39)
+Borrowed role
+Try t draft t; rejected as r1 score 300.0 beaten-by 56.88325 (5 18 21 36 38)
+Try r draft r; rejected as r1 score 54.269999999999996 beaten-by 48.331916666666665 (5 8 22 23 36)
+Try l draft l; rejected as l1 score 128.222 beaten-by 49.99980000000001 (11 12 13 15 18 21 24 26 27 29 31)
+Try i draft i; rejected as i1 score 80.608 beaten-by 50.286 (4 8 22 35 39)
+Try o draft o; accepted as o1 score 16.64 beat 42.11536363636364 (5 8 9 22 23 25 36)
+Try u draft u; rejected as u1 score 87.904 beaten-by 65.898 (9 21 23 24 41 52)
+Try x draft x; rejected as x1 score 58.2625 beaten-by 56.356 (6 9 20 23 24 36)
+Borrowed role
+Try d draft d; reelected as d1 score 14.563857142857144 scores (14.275 9.313) (15.607 18.472 10.558 18.495 15.227) (5 8 16 19 22 23 36 39)
+Try i draft i; rejected as i1 score 56.3775 beaten-by 51.153333333333336 (0 5 22 39 45)
+Try h draft h; rejected as h1 score 85.241 beaten-by 40.9644 (5 6 8 14 17 20 22 36 39)
+Try p draft p; rejected as y2 score 300.0 beaten-by 50.596250000000005 (4 5 9 22 23 24 25 26 29 38)
+Try y draft y; rejected as y2 score 300.0 beaten-by 33.082 (4 5 20 21 22 23 24 26 39 40)
+Borrowed role
+Try t draft t; reelected as t1 score 57.617571428571424 scores (60.498 56.519) (58.773 57.286 55.605 57.273 57.369) (5 8 18 21 36 38 39)
+Try v draft v; rejected as u1 score 300.0 beaten-by 69.856 (8 21 22 38 39)
+Try m draft m; rejected as n1 score 300.0 beaten-by 55.203 (5 8 22 23 25)
+Try m draft m; reelected as m1 score 55.574285714285715 scores (57.727 54.695) (55.786 52.74 54.944 56.96 56.168) (5 21 22 23 36 39)
+Try m draft m; rejected as m1 score 110.269 beaten-by 55.574285714285715 (5 8 21 22 23 25 48)
+Try l draft l; rejected as l1 score 89.083 beaten-by 49.99980000000001 (15 18 21 24 25 39)
+Try j draft j; rejected as u1 score 300.0 beaten-by 58.1015 (10 23 25 26 41 49)
+Borrowed role
+Try h draft h; rejected as h1 score 52.085 beaten-by 40.9644 (4 5 14 17 20 22 23 39)
+Try n draft n; rejected as u1 score 300.0 beaten-by 48.519 (5 8 22 39)
+Try t draft t; rejected as t1 score 72.512 beaten-by 57.617571428571424 (5 10 11 18 21 26 36 38)
+Try j draft j; rejected as o1 score 300.0 beaten-by 58.1015 (12 25 28 43 49)
+Try w draft w; rejected as u1 score 300.0 beaten-by 56.204 (8 23 24 36 37 39)
+Try m draft m; rejected as m1 score 73.271 beaten-by 55.574285714285715 (5 21 22 36 38 39)
+Try j draft j; accepted as j1 score 57.452 beat 58.183 (12 22 25 28 35 43)
+Try n draft n; rejected as n1 score 51.107 beaten-by 46.489125 (4 5 20 22 23 39)
+Try s draft s; reelected as s2 score 55.622928571428574 scores (50.412 56.929) (57.87 52.212 55.662 52.979 57.983 55.468 57.844 54.03 55.261 54.767 58.691 58.613) (5 6 7 8 36 39)
+Try a draft a; reelected as a1 score 32.510875 scores (29.401 36.037) (36.751 33.918 29.27 27.911 33.054 33.745) (5 7 8 9 22 25 36 38)
+Try l draft l; rejected as h1 score 300.0 beaten-by 49.99980000000001 (15 18 21 24 25 39)
+Try m draft m; rejected as n1 score 300.0 beaten-by 55.574285714285715 (9 22 23 25 36 37)
+Try u draft u; rejected as u1 score 69.91499999999999 beaten-by 67.73933333333333 (8 23 24 36 37)
+Try w draft w; rejected as u1 score 300.0 beaten-by 56.204 (3 22 25 35 36 37 47 48)
+Borrowed role
+Try k draft k; accepted as k1 score 28.753 beat 47.738749999999996 (5 6 9 14 17 20 23 24 36)
+Try o draft o; rejected as o1 score 86.378 beaten-by 16.64 (4 5 10 20 22 23 25 26 41)
+Borrowed role
+Try h draft h; rejected as b1 score 300.0 beaten-by 40.9644 (5 8 14 17 20 22 23 39)
+Try j draft j; rejected as j1 score 103.562 beaten-by 57.452 (8 13 20 21 22 23 24 25 28 29 30 31 34 42 45 47)
+Try z draft z; reelected as z1 score 49.3882 scores (48.52 48.461) (46.149 47.127 52.415 49.675 49.949 51.587 48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try r draft r; reelected as r1 score 47.927933333333335 scores (47.475 44.078) (47.383 48.383 47.209 48.832 49.112 48.979 47.639 50.176 45.638 49.794 47.467 44.333 52.421) (5 23 36)
+Try u draft u; rejected as u1 score 91.973 beaten-by 67.73933333333333 (4 8 20 23 24 37)
+Try p draft p; rejected as y1 score 300.0 beaten-by 50.596250000000005 (8 22 23 24 25 27 30 37)
+Try p draft p; rejected as n1 score 300.0 beaten-by 50.596250000000005 (5 8 20 22 23 25 29 36 40 41)
+Try s draft s; rejected as u1 score 300.0 beaten-by 55.622928571428574 (5 10 11 21 23 24 25 26 28 39)
+Try j draft j; rejected as j1 score 107.299 beaten-by 57.452 (1 3 8 13 19 20 21 22 23 24 25 28 30 31 34)
+Try m draft m; rejected as j1 score 300.0 beaten-by 55.574285714285715 (7 23 25 27 36 41)
+Try a draft a; reelected as a1 score 33.76944444444445 scores (43.838) (29.401 36.037 36.751 33.918 29.27 27.911 33.054 33.745) (5 7 8 9 22 25 36 38)
+Try l draft l; rejected as l1 score 65.555 beaten-by 49.99980000000001 (15 18 21 24)
+Try m draft m; accepted as m1 score 51.59 beat 55.436375 (5 21 22 23 24 25 36)
+Try u draft u; accepted as u1 score 59.2375 beat 70.568 (7 8 23 36 37 39)
+Try w draft w; rejected as y1 score 300.0 beaten-by 56.204 (5 8 21 22 23 39 48)
+Try l draft l; rejected as l1 score 101.335 beaten-by 49.99980000000001 (11 15 18 21 24 27)
+Try m draft m; rejected as m1 score 114.823 beaten-by 51.59 (2 5 8 17 21 22 23 25 48)
+Try l draft l; rejected as l1 score 90.577 beaten-by 49.99980000000001 (15 18 21 24 25 39)
+Try v draft v; rejected as v1 score 84.185 beaten-by 69.856 (5 6 22 25 51)
+Borrowed role
+Try t draft t; reelected as t1 score 57.76090000000001 scores (56.373 60.097) (57.816 60.498 56.519 58.773 57.286 55.605 57.273 57.369) (5 8 18 21 36 38 39)
+Try j draft j; rejected as j1 score 59.415 beaten-by 57.025 (12 15 21 28 43 45 51)
+Try s draft s; rejected as s2 score 57.943 beaten-by 55.7494 (5 6 7 8 9 25 36)
+Try a draft a; rejected as d1 score 300.0 beaten-by 33.76944444444445 (5 7 10 22 25 26 36 38 41)
+Try x draft x; rejected as u1 score 300.0 beaten-by 56.356 (8 9 23 37 38)
+Try x draft x; accepted as x1 score 47.8525 beat 137.57066666666665 (8 9 21 24 39)
+Try h draft h; reelected as h1 score 39.671375 scores (40.023 36.683) (35.843 37.367 36.129 56.252 36.842 38.232) (5 14 17 20 22 23 36 39)
+Try m draft m; rejected as n1 score 300.0 beaten-by 51.59 (5 8 22 23 25)
+Try u draft u; rejected as j1 score 300.0 beaten-by 59.2375 (11 12 13 21 23 24 26 27 29)
+Try m draft m; rejected as m1 score 107.812 beaten-by 51.59 (5 8 21 22 23 25 34 48)
+Borrowed role
+Try t draft t; rejected as t1 score 77.752 beaten-by 57.76090000000001 (5 10 11 18 21 26 36 38)
+Try p draft p; rejected as t1 score 300.0 beaten-by 50.596250000000005 (4 5 6 8 9 20 22 23 25 27 30 48 50)
+Borrowed role
+Try h draft h; reelected as h1 score 41.60366666666667 scores (57.062) (40.023 36.683 35.843 37.367 36.129 56.252 36.842 38.232) (5 14 17 20 22 23 36 39)
+Try u draft u; rejected as u1 score 105.696 beaten-by 59.2375 (9 11 20 21 23 24 28 52)
+Try s draft s; rejected as n1 score 300.0 beaten-by 55.7494 (5 9 24 25 36 37)
+Try p draft p; rejected as n1 score 300.0 beaten-by 50.596250000000005 (4 5 6 8 9 20 22 23 25 27 30 48 50)
+Try i draft i; rejected as s2 score 300.0 beaten-by 51.153333333333336 (8 39 49)
+Try a draft a; accepted as a1 score 28.887 beat 34.6589 (4 5 7 8 9 20 22 25 38)
+Try s draft s; rejected as a1 score 300.0 beaten-by 55.7494 (4 5 6 11 20 24 25 26 28 40 52)
+Try r draft r; reelected as r1 score 48.698750000000004 scores (60.261) (47.475 44.078 47.383 48.383 47.209 48.832 49.112 48.979 47.639 50.176 45.638 49.794 47.467 44.333 52.421) (5 23 36)
+Try s draft s; rejected as s2 score 71.445 beaten-by 55.7494 (4 5 6 8 9 20 51)
+Try j draft j; rejected as j1 score 121.537 beaten-by 57.025 (0 1 14 19 20 21 23 24 26 33 34 40)
+Try z draft z; reelected as z1 score 49.55634782608695 scores (49.481 52.035) (50.516 48.52 48.461 46.149 47.127 52.415 49.675 49.949 51.587 48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try p draft p; rejected as z1 score 300.0 beaten-by 50.596250000000005 (4 5 6 8 9 20 22 23 25 27 30 48 50)
+Try q draft q; rejected as z1 score 300.0 beaten-by 6.546749999999999 (4 5 10 20 22 23 24 25 26 31 37 41 53)
+Try n draft n; rejected as n1 score 51.229 beaten-by 47.256 (5 22 23 25 36)
+Try r draft r; rejected as r1 score 57.0275 beaten-by 48.63182352941177 (4 5 20 22 23)
+Try l draft l; rejected as l1 score 95.886 beaten-by 49.99980000000001 (15 18 21 24 25 39)
+Try n draft n; accepted as n1 score 34.193 beat 47.256 (5 22 23 25 36)
+Try i draft i; rejected as i1 score 58.1875 beaten-by 50.8 (1 5 8 16 22 39)
+Try p draft p; rejected as i1 score 300.0 beaten-by 50.596250000000005 (13 23 24 26 27 28 29 31 38 41 54)
+Try w draft w; reelected as w1 score 117.32775 scores (62.515 300.0) (50.592 56.204) (8 22 23 24 36 39)
+Try z draft z; rejected as j1 score 300.0 beaten-by 49.55634782608695 (5 7 8 9 10 11 28 36 38)
+Try i draft i; rejected as i1 score 91.82 beaten-by 50.8 (5 8 16 22 39)
+Try r draft r; reelected as r1 score 48.84875000000001 scores (53.247 45.453) (51.534 47.561 60.261 47.475 44.078 47.383 48.383 47.209 48.832 49.112 48.979 47.639 50.176 45.638 49.794 47.467 44.333 52.421) (5 23 36)
+Try u draft u; rejected as j1 score 300.0 beaten-by 59.2375 (3 7 8 19 23 36 37)
+Try v draft v; rejected as u1 score 300.0 beaten-by 69.856 (5 8 22 23 39)
+Try s draft s; rejected as y1 score 300.0 beaten-by 55.7494 (6 8 10 11 19 25 28 29 35 36 38)
+Try y draft y; rejected as y2 score 67.856 beaten-by 33.082 (21 22 24 27 39 42)
+Try w draft w; rejected as w1 score 118.08699999999999 beaten-by 107.90799999999999 (8 21 22 23 28 39 48 51)
+Try w draft w; rejected as w1 score 300.0 beaten-by 107.90799999999999 (3 9 19 20 21 22 23 24 25 28 34 36 41)
+Try i draft i; rejected as i1 score 68.354 beaten-by 50.8 (22 35 39)
+Try v draft v; rejected as v1 score 79.14150000000001 beaten-by 70.71549999999999 (21 23 38)
+Try h draft h; reelected as h1 score 40.66583333333333 scores (38.373 36.455) (38.729 57.062 40.023 36.683 35.843 37.367 36.129 56.252 36.842 38.232) (5 14 17 20 22 23 36 39)
+Borrowed role
+Try k draft k; rejected as k1 score 32.4505 beaten-by 27.994 (5 6 9 14 17 20 23 24 25 36)
+Try v draft v; rejected as v1 score 81.1 beaten-by 70.71549999999999 (21 23 38)
+Try x draft x; rejected as x1 score 58.494 beaten-by 47.8525 (8 9 21 22 24 39)
+Try y draft y; rejected as y1 score 62.012 beaten-by 33.082 (8 9 22 23 25 41 42)
+Try i draft i; rejected as i1 score 66.553 beaten-by 50.8 (19 39 47 49)
+Try l draft l; rejected as h1 score 300.0 beaten-by 49.99980000000001 (15 18 21 24 25 39)
+Try j draft j; rejected as j1 score 102.837 beaten-by 57.025 (12 19 21 24 43 53)
+Try w draft w; rejected as y1 score 300.0 beaten-by 107.90799999999999 (11 27 28 36 39 48 51)
+Try x draft x; rejected as x1 score 63.48 beaten-by 47.8525 (6 7 8 22 25 39)
+Try w draft w; rejected as y1 score 300.0 beaten-by 107.90799999999999 (4 8 11 20 23 24 25 27 28)
+Try v draft v; rejected as u1 score 300.0 beaten-by 70.71549999999999 (8 21 22 38 39)
+Try s draft s; rejected as y1 score 300.0 beaten-by 55.7494 (5 8 23 25 36 48 51)
+Try u draft u; rejected as u1 score 82.536 beaten-by 59.2375 (4 8 20 23 24 37)
+Try s draft s; rejected as s2 score 58.968 beaten-by 55.799062500000005 (5 6 8 9 36 51)
+Try v draft v; rejected as v1 score 79.584 beaten-by 70.74166666666666 (21 23 38)
+Try z draft z; reelected as z1 score 49.69711538461537 scores (50.0 50.072) (52.257 49.481 52.035 50.516 48.52 48.461 46.149 47.127 52.415 49.675 49.949 51.587 48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try p draft p; rejected as n1 score 300.0 beaten-by 50.596250000000005 (5 22 23 25 26 29 36)
+Try w draft w; rejected as j1 score 300.0 beaten-by 107.90799999999999 (4 8 20 23 24 25 41)
+Try v draft v; rejected as u1 score 300.0 beaten-by 70.74166666666666 (8 21 22 38 39)
+Try x draft x; rejected as x1 score 76.861 beaten-by 47.8525 (8 9 23 37 38)
+Try t draft t; rejected as r1 score 300.0 beaten-by 57.76090000000001 (5 18 21 36 38)
+Try x draft x; rejected as x1 score 72.794 beaten-by 47.8525 (21 24 37 38)
+Try j draft j; rejected as j1 score 89.19 beaten-by 57.025 (3 20 21 23 24 26 40)
+Try n draft n; rejected as u1 score 300.0 beaten-by 34.193 (5 8 22 23 39)
+Try w draft w; accepted as w1 score 59.945 beat 107.90799999999999 (4 8 20 22 23 24 39)
+Try j draft j; rejected as j1 score 116.333 beaten-by 57.025 (12 16 20 21 23 24 26 27 42 54)
+Try s draft s; reelected as s2 score 55.74526315789474 scores (54.81 54.173) (57.392 56.544 57.52 50.412 56.929 57.87 52.212 55.662 52.979 57.983 55.468 57.844 54.03 55.261 54.767 58.691 58.613) (5 6 7 8 36 39)
+Try z draft z; reelected as z1 score 49.76113793103447 scores (51.189 50.289) (49.47 50.0 50.072 52.257 49.481 52.035 50.516 48.52 48.461 46.149 47.127 52.415 49.675 49.949 51.587 48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try s draft s; rejected as s2 score 56.007 beaten-by 55.692049999999995 (5 6 7 8 9 25 36)
+Try a draft a; rejected as a1 score 31.045499999999997 beaten-by 28.947999999999997 (5 7 8 9 22 25 36 38)
+Try s draft s; rejected as i1 score 300.0 beaten-by 55.692049999999995 (0 2 4 5 9 23 24 25 32 34 38)
+Try z draft z; reelected as z1 score 49.61571874999999 scores (47.628 44.334) (52.668 51.189 50.289 49.47 50.0 50.072 52.257 49.481 52.035 50.516 48.52 48.461 46.149 47.127 52.415 49.675 49.949 51.587 48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try s draft s; rejected as s2 score 60.741 beaten-by 55.75147619047619 (5 6 7 8 9 25 36)
+Try v draft v; rejected as u1 score 300.0 beaten-by 70.74166666666666 (8 21 22 38 39)
+Try u draft u; rejected as j1 score 300.0 beaten-by 59.2375 (4 9 20 22 23 25)
+Try n draft n; rejected as n1 score 48.575 beaten-by 34.193 (5 22 23 36 39)
+Try l draft l; rejected as l1 score 68.772 beaten-by 49.99980000000001 (15 18 21 24 25 39)
+Borrowed role
+Try t draft t; rejected as t1 score 73.182 beaten-by 57.76090000000001 (5 10 11 18 21 26 36 38)
+Try x draft x; rejected as x1 score 60.537000000000006 beaten-by 46.986333333333334 (6 7 25 37 38)
+Try i draft i; rejected as r1 score 300.0 beaten-by 50.8 (5 22 39)
+Try y draft y; rejected as y1 score 47.994 beaten-by 33.082 (8 9 12 20 21 23 24 28 43)
+Try z draft z; reelected as z1 score 49.7734 scores (50.783 53.508) (50.075 47.628 44.334 52.668 51.189 50.289 49.47 50.0 50.072 52.257 49.481 52.035 50.516 48.52 48.461 46.149 47.127 52.415 49.675 49.949 51.587 48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try w draft w; rejected as q1 score 300.0 beaten-by 59.945 (5 8 21 22 23 37 39 48 51)
+Try l draft l; reelected as l1 score 51.510999999999996 scores (53.683 58.17) (50.236 51.727 45.714 50.604 57.569 44.385) (9 15 18 21 24)
+Try r draft r; rejected as r1 score 53.826499999999996 beaten-by 49.466666666666676 (5 8 22 23 36)
+Try v draft v; rejected as u1 score 300.0 beaten-by 70.74166666666666 (8 21 22 38 39)
+Try r draft r; rejected as r1 score 61.241 beaten-by 49.466666666666676 (5 22 23 36)
+Try j draft j; reelected as j1 score 56.95416666666666 scores (56.417 57.281) (56.952 56.171 58.978 55.926) (12 22 25 28 35 43)
+Try x draft x; accepted as x1 score 43.072 beat 47.96375 (4 5 9 21 24 36)
+Try v draft v; rejected as u1 score 300.0 beaten-by 70.74166666666666 (5 8 22 23 39)
+Try j draft j; rejected as j1 score 59.712 beaten-by 56.98028571428572 (3 10 15 21 22 25 29 37 41)
+Try d draft d; rejected as i1 score 300.0 beaten-by 14.563857142857144 (4 19 20 21 22 38 39)
+Try n draft n; rejected as n1 score 38.483000000000004 beaten-by 40.1365 (5 22 23 36 39)
+Try t draft t; accepted as t1 score 54.733 beat 57.721181818181826 (4 5 8 9 17 21 25 36 38)
+Try p draft p; rejected as m1 score 300.0 beaten-by 50.596250000000005 (5 22 23 25 26 29 36)
+Try m draft m; reelected as m1 score 46.9794 scores (43.627 48.081) (40.009 54.262 48.918) (5 21 22 23 24 25 36)
+Try w draft w; rejected as w1 score 103.441 beaten-by 59.945 (5 11 22 23 24 39 52 53)
+Try s draft s; rejected as g1 score 300.0 beaten-by 55.75147619047619 (5 6 7 10 11 25 28 36)
+Try n draft n; rejected as n1 score 47.8595 beaten-by 42.589999999999996 (5 22 23 36 39)
+Try v draft v; rejected as u1 score 300.0 beaten-by 70.74166666666666 (8 21 22 38 39)
+Borrowed role
+Try d draft d; rejected as d1 score 18.7265 beaten-by 14.920750000000002 (5 8 19 22 23 36 39)
+Try a draft a; rejected as a1 score 34.675 beaten-by 30.5325 (5 7 8 9 22 25 36 38)
+Try w draft w; rejected as j1 score 300.0 beaten-by 59.945 (5 8 10 11 13 22 23 25 31 40 51)
+Try w draft w; accepted as w1 score 58.278499999999994 beat 59.7125 (8 9 21 22 23 24 39)
+Try p draft p; accepted as p2 score 34.686 beat 50.596250000000005 (5 8 9 22 23 25 26 29 36)
+Try u draft u; rejected as s2 score 300.0 beaten-by 59.2375 (7 8 21 23 39)
+Try a draft a; rejected as n1 score 300.0 beaten-by 30.5325 (5 22 25 36)
+Try j draft j; rejected as j1 score 60.489000000000004 beaten-by 56.918 (12 25 28 43 45 49)
+Try m draft m; rejected as m1 score 54.8435 beaten-by 50.957 (4 5 20 21 22 23 24 25)
+Try z draft z; rejected as j1 score 300.0 beaten-by 49.7734 (5 8 28 36 39 41 52)
+Try o draft o; rejected as o1 score 37.186 beaten-by 16.64 (4 5 8 9 20 22 23 25)
+Try l draft l; rejected as l1 score 70.529 beaten-by 51.510999999999996 (15 18 25 49)
+Try w draft w; rejected as u1 score 300.0 beaten-by 58.278499999999994 (7 9 11 23 25 37 52 53)
+Try s draft s; rejected as o1 score 300.0 beaten-by 55.75147619047619 (5 6 7 22 36)
+Try v draft v; rejected as v1 score 89.953 beaten-by 70.74166666666666 (6 25 49 51)
+Try u draft u; rejected as u1 score 103.024 beaten-by 59.2375 (7 8 11 23 27 28 36 51)
+Try y draft y; rejected as u1 score 300.0 beaten-by 33.082 (8 10 21 22 23 24 25 26 36 38 39 41 48 53)
+Try v draft v; rejected as v1 score 78.973 beaten-by 72.34675 (20 21 24 50)
+Try z draft z; rejected as e2 score 300.0 beaten-by 49.7734 (5 8 23 36 37 39 48)
+Try w draft w; accepted as w1 score 60.042 beat 60.527666666666654 (4 8 20 22 23 24 39)
+Try q draft q; rejected as j1 score 300.0 beaten-by 6.546749999999999 (3 22 25 28 31 34 35 36 38 48)
+Try x draft x; rejected as x (6 7 25 37 38)
+promoted as x score 47.96375 beat 128.71466666666666 with (8 9 21 24 39)
+Try j draft j; rejected as j1 score 95.643 beaten-by 56.918 (12 19 25 28 43 49)
+Try v draft v; rejected as u1 score 300.0 beaten-by 72.34675 (9 25 49 50)
+Try j draft j; reelected as j1 score 57.09727272727273 scores (56.559 58.938) (57.229 56.482 57.137 56.417 57.281 56.952 56.171 58.978 55.926) (12 22 25 28 35 43)
+Try i draft i; rejected as c1 score 300.0 beaten-by 50.8 (8 21 38)
+Try l draft l; rejected as l1 score 70.165 beaten-by 51.510999999999996 (15 18 25 49)
+Borrowed role
+Try h draft h; rejected as h1 score 43.206 beaten-by 40.01553846153847 (5 14 17 20 22 23 25 36)
+Try z draft z; reelected as z1 score 49.698052631578946 scores (49.163 48.924) (48.37 50.783 53.508 50.075 47.628 44.334 52.668 51.189 50.289 49.47 50.0 50.072 52.257 49.481 52.035 50.516 48.52 48.461 46.149 47.127 52.415 49.675 49.949 51.587 48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Borrowed role
+Try t draft t; rejected as r1 score 300.0 beaten-by 54.733 (5 18 21 36 38)
+Try t draft t; rejected as t1 score 60.2265 beaten-by 54.615 (5 9 18 21 24 25 36)
+Try l draft l; rejected as l1 score 67.04 beaten-by 51.510999999999996 (15 18 21 24 25 39)
+Try p draft p; rejected as z1 score 300.0 beaten-by 34.686 (6 8 10 20 21 23 25 39 41)
+Try a draft a; rejected as a1 score 32.2085 beaten-by 30.8654 (5 7 8 9 22 25 36 38)
+Try r draft r; reelected as r1 score 49.07016666666669 scores (48.636 42.578) (47.67 61.825 53.247 45.453 51.534 47.561 60.261 47.475 44.078 47.383 48.383 47.209 48.832 49.112 48.979 47.639 50.176 45.638 49.794 47.467 44.333 52.421) (5 23 36)
+Try y draft y; rejected as r1 score 300.0 beaten-by 33.082 (8 9 23 28 31 36 48 51)
+Try w draft w; rejected as r1 score 300.0 beaten-by 60.042 (11 20 21 22 24 25 27)
+Try y draft y; rejected as y1 score 70.746 beaten-by 33.082 (7 8 9 12 21 23 25 28 43)
+Try r draft r; reelected as r1 score 48.805703703703706 scores (47.361 45.286) (47.423 48.636 42.578 47.67 61.825 53.247 45.453 51.534 47.561 60.261 47.475 44.078 47.383 48.383 47.209 48.832 49.112 48.979 47.639 50.176 45.638 49.794 47.467 44.333 52.421) (5 23 36)
+Try n draft n; rejected as n1 score 57.209 beaten-by 42.589999999999996 (5 9 22 23 25 36)
+Try u draft u; rejected as r1 score 300.0 beaten-by 59.2375 (7 20 21 22 23 34 47)
+Try v draft v; rejected as u1 score 300.0 beaten-by 72.34675 (8 21 22 38 39)
+Try s draft s; rejected as i1 score 300.0 beaten-by 55.75147619047619 (5 9 24 25 36 38)
+Try u draft u; rejected as y1 score 300.0 beaten-by 59.2375 (8 20 21 23 28 51)
+Try o draft o; rejected as y1 score 300.0 beaten-by 16.64 (4 10 20 21 24 26 27)
+Try l draft l; reelected as l1 score 51.71072727272726 scores (52.174 52.55) (52.006 53.683 58.17 50.236 51.727 45.714 50.604 57.569 44.385) (9 15 18 21 24)
+Try s draft s; rejected as s2 score 77.409 beaten-by 55.75147619047619 (5 6 7 10 25 26 36 41)
+Try s draft s; rejected as i1 score 300.0 beaten-by 55.75147619047619 (3 5 7 20 34 36 38)
+Try x draft x; rejected as x1 score 53.7585 beaten-by 51.30159999999999 (6 7 25 37 38)
+Try i draft i; rejected as s2 score 300.0 beaten-by 50.8 (39 49)
+Try x draft x; rejected as y1 score 300.0 beaten-by 51.30159999999999 (8 21 22 24 27 28 39 41)
+Try v draft v; rejected as y1 score 300.0 beaten-by 72.34675 (8 10 24 25 37 41 49)
+Try p draft p; rejected as y1 score 300.0 beaten-by 34.686 (4 5 8 10 20 23 26 27 31 38 48 50 53)
+Try l draft l; rejected as l1 score 62.2595 beaten-by 52.42374999999999 (3 15 19 22 25)
+Try x draft x; rejected as u1 score 300.0 beaten-by 51.30159999999999 (21 24 38 39 51)
+Try a draft a; rejected as u1 score 300.0 beaten-by 30.8654 (7 9 10 12 13 23 25 26 27 31 38 39 40 42 52)
+Borrowed role
+Try k draft k; rejected as k1 score 49.845 beaten-by 27.994 (5 6 14 17 20 23 36 51)
+Try w draft w; rejected as w1 score 111.136 beaten-by 60.042 (7 22 36 47 48 50)
+Try q draft q; rejected as y1 score 300.0 beaten-by 6.546749999999999 (8 18 20 21 22 25 28 31 34 38 39)
+Try h draft h; rejected as y1 score 300.0 beaten-by 40.01553846153847 (10 19 21 22 24 25 26 27 35 46)
+Borrowed role
+Try t draft t; rejected as t1 score 61.9795 beaten-by 54.65749999999999 (5 8 20 23 34 36 39)
+Try r draft r; reelected as r1 score 49.41130000000001 scores (50.865 50.153) (63.567 47.361 45.286 47.423 48.636 42.578 47.67 61.825 53.247 45.453 51.534 47.561 60.261 47.475 44.078 47.383 48.383 47.209 48.832 49.112 48.979 47.639 50.176 45.638 49.794 47.467 44.333 52.421) (5 23 36)
+Try w draft w; rejected as r1 score 300.0 beaten-by 60.042 (9 11 23 24 28 39 40 49 52)
+Try z draft z; reelected as z1 score 49.602 scores (46.651 49.448) (49.057 49.163 48.924 48.37 50.783 53.508 50.075 47.628 44.334 52.668 51.189 50.289 49.47 50.0 50.072 52.257 49.481 52.035 50.516 48.52 48.461 46.149 47.127 52.415 49.675 49.949 51.587 48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try w draft w; rejected as u1 score 300.0 beaten-by 60.042 (8 9 22 23 25 36 37)
+Borrowed role
+Try p draft p; rejected as p1 score 50.14 beaten-by 34.686 (5 8 22 23 26 29 36 39)
+Try a draft a; rejected as a1 score 42.671 beaten-by 30.8654 (5 7 8 9 22 25 36 38)
+Try l draft l; rejected as l1 score 52.629000000000005 beaten-by 52.726 (3 15 19 22 25)
+Try p draft p; rejected as y1 score 300.0 beaten-by 34.686 (23 24 25 26 29 38 39)
+Borrowed role
+Try t draft t; rejected as t1 score 110.555 beaten-by 54.65749999999999 (5 18 21 26 36 38)
+Try s draft s; rejected as s2 score 69.053 beaten-by 55.75147619047619 (5 6 9 36 51)
+Try w draft w; rejected as i1 score 300.0 beaten-by 60.042 (9 20 21 22 24 25)
+Try z draft z; reelected as z1 score 49.653477272727265 scores (49.757 49.643) (51.671 46.651 49.448 49.057 49.163 48.924 48.37 50.783 53.508 50.075 47.628 44.334 52.668 51.189 50.289 49.47 50.0 50.072 52.257 49.481 52.035 50.516 48.52 48.461 46.149 47.127 52.415 49.675 49.949 51.587 48.842 51.555 49.868 50.209 55.694 50.281 47.218 44.068 50.502 50.567 47.935 47.142) (5 8 36 37 38 39)
+Try l draft l; rejected as l1 score 109.58 beaten-by 52.726 (15 16 19 22 25 33)
+Borrowed role
+Try h draft h; rejected as h1 score 51.885 beaten-by 40.01553846153847 (5 14 17 20 23 36)
+Try l draft l; rejected as l1 score 68.011 beaten-by 52.726 (15 18 19 22 25 35)
+Try y draft y; rejected as y1 score 79.773 beaten-by 33.082 (10 11 12 21 22 25 26 28 38 43)
+Try j draft j; rejected as y1 score 300.0 beaten-by 57.09727272727273 (8 12 23 27 36 42 54)
+Try v draft v; rejected as u1 score 300.0 beaten-by 72.34675 (21 27 41 50 51)
+Try r draft r; reelected as r1 score 49.73622580645162 scores (59.484) (50.865 50.153 63.567 47.361 45.286 47.423 48.636 42.578 47.67 61.825 53.247 45.453 51.534 47.561 60.261 47.475 44.078 47.383 48.383 47.209 48.832 49.112 48.979 47.639 50.176 45.638 49.794 47.467 44.333 52.421) (5 23 36)
+Try i draft i; rejected as r1 score 300.0 beaten-by 50.8 (21 24)
+Try u draft u; rejected as u1 score 72.747 beaten-by 59.2375 (8 23 24 36 37)
+Try h draft h; rejected as i1 score 300.0 beaten-by 40.01553846153847 (5 14 17 22 25 36)
+Try s draft s; rejected as e2 score 300.0 beaten-by 55.75147619047619 (4 6 7 8 20 21 37 39)
+Try r draft r; rejected as r1 score 80.962 beaten-by 49.73622580645162 (6 7 22 23)
+Try s draft s; reelected as s2 score 55.84775 scores (56.575 58.671) (54.319 56.94 54.681 54.81 54.173 57.392 56.544 57.52 50.412 56.929 57.87 52.212 55.662 52.979 57.983 55.468 57.844 54.03 55.261 54.767 58.691 58.613) (5 6 7 8 36 39)
+Try j draft j; rejected as j1 score 59.3005 beaten-by 57.282999999999994 (5 21 28 43 45 51)
+Try s draft s; rejected as j1 score 300.0 beaten-by 55.84775 (5 10 25 26 36 41)
+Try v draft v; rejected as h1 score 300.0 beaten-by 72.34675 (7 8 9 17 20 23 46 51)
+Try v draft v; rejected as u1 score 300.0 beaten-by 72.34675 (8 9 22 23 25 36)
+Try u draft u; rejected as i1 score 300.0 beaten-by 59.2375 (4 5 6 9 37 39)
+Try l draft l; rejected as l1 score 110.973 beaten-by 52.726 (5 19 20 21 23 45 48)
+Try r draft r; rejected as r1 score 50.028499999999994 beaten-by 49.63956250000001 (5 22 23 36)
+Try h draft h; rejected as t1 score 300.0 beaten-by 40.01553846153847 (5 6 8 14 17 20 22 36 39)
+Try h draft h; rejected as t1 score 300.0 beaten-by 40.01553846153847 (2 5 8 20 21 22 23 24 25 34 36)
+Try o draft o; rejected as u1 score 300.0 beaten-by 16.64 (6 8 10 11 24 25 26 28 49)
+Try s draft s; rejected as i1 score 300.0 beaten-by 55.84775 (3 5 6 8 20 21 34 39)
+Try m draft m; rejected as h1 score 300.0 beaten-by 50.957 (5 20 21 22 34 36 38 39)
+Try t draft t; rejected as t1 score 74.195 beaten-by 54.65749999999999 (6 8 9 18 21 25 37 38)
+Try w draft w; rejected as j1 score 300.0 beaten-by 60.042 (7 10 11 12 13 21 23 25 26 31)
+Try u draft u; rejected as v1 score 300.0 beaten-by 59.2375 (21 22 25 51)
+Try z draft z; rejected as n1 score 300.0 beaten-by 49.653477272727265 (5 7 36 37 39)
+Try m draft m; rejected as m1 score 86.328 beaten-by 50.957 (9 21 23 36 49 51)
+Try v draft v; rejected as w1 score 300.0 beaten-by 72.34675 (22 23 26 36 39 40)
+Borrowed role
+Try t draft t; rejected as h1 score 300.0 beaten-by 54.65749999999999 (5 8 9 23 25 34 36 37 48)
+Try m draft m; rejected as y1 score 300.0 beaten-by 50.957 (8 21 23 41 51)
+Try w draft w; rejected as j1 score 300.0 beaten-by 60.042 (5 6 10 11 26 28 38 39 49)
+Try a draft a; rejected as j1 score 300.0 beaten-by 30.8654 (5 7 8 9 22 25 26 36 38)
+Try x draft x; rejected as r1 score 300.0 beaten-by 51.30159999999999 (7 21 36 48 51)
+Try j draft j; rejected as j1 score 57.694500000000005 beaten-by 57.212999999999994 (22 27 35 39 42)
+Borrowed role
+Try p draft p; rejected as p1 score 58.541 beaten-by 34.686 (5 8 22 23 26 29 36 39)
+Try y draft y; rejected as y1 score 60.969 beaten-by 33.082 (8 12 23 39 43 49 53)
+Try v draft v; rejected as w1 score 300.0 beaten-by 72.34675 (8 20 21 22 23 39 48)
+Try m draft m; rejected as m1 score 100.878 beaten-by 50.957 (4 21 25 36 38 49)
+Try w draft w; rejected as w1 score 123.882 beaten-by 60.042 (11 13 19 25 28 30 36 37 48 50)
+Try w draft w; rejected as i1 score 300.0 beaten-by 60.042 (8 23 24 25 48 49)
+Try j draft j; rejected as j1 score 62.4305 beaten-by 57.13664285714285 (9 13 22 25 27 45 55)
+Try r draft r; rejected as r1 score 48.7485 beaten-by 49.496212121212125 (5 22 23 36)
+Try t draft t; rejected as k1 score 300.0 beaten-by 54.65749999999999 (4 5 6 9 17 18 19 22 32 35 37 39)
+Try v draft v; rejected as r1 score 300.0 beaten-by 72.34675 (5 20 22 23 39 48 50)
+Try u draft u; rejected as j1 score 300.0 beaten-by 59.2375 (11 20 21 23 24 26 27 54)
+Try i draft i; rejected as i1 score 91.509 beaten-by 50.8 (5 19 35 39)
+Try z draft z; rejected as c1 score 300.0 beaten-by 49.653477272727265 (5 9 23 24 25 36 38)
+Try x draft x; rejected as y1 score 300.0 beaten-by 51.30159999999999 (8 10 12 13 28 29 36 39 41 50 53)
+Try i draft i; rejected as r1 score 300.0 beaten-by 50.8 (5 22 25)
+Try r draft r; rejected as r1 score 77.794 beaten-by 49.496212121212125 (7 19 23 35 36 37)
+Try r draft r; reelected as r1 score 49.33097222222223 scores (47.211 47.178) (48.151 44.909 46.643 59.484 50.865 50.153 63.567 47.361 45.286 47.423 48.636 42.578 47.67 61.825 53.247 45.453 51.534 47.561 60.261 47.475 44.078 47.383 48.383 47.209 48.832 49.112 48.979 47.639 50.176 45.638 49.794 47.467 44.333 52.421) (5 23 36)
+Try i draft i; rejected as c1 score 300.0 beaten-by 50.8 (36 50)
+Try x draft x; rejected as y1 score 300.0 beaten-by 51.30159999999999 (8 23 37 38 39)
+> *scratchspace*
+((x (8 9 21 24 39)
+    (64.653 50.896 45.254 50.54 45.165)
+    (((8 10 12 13 28 29 36 39 41 50 53) (300.0))
+     ((7 21 36 48 51) (300.0))
+     ((21 24 38 39 51) (300.0))
+     ((8 21 22 24 27 28 39 41) (300.0))
+     ((4 5 9 21 24 36) (300.0 44.954 41.19))
+     ((6 7 25 37 38) (57.929 49.588 47.288 57.102 46.892 74.182))
+     ((21 24 37 38) (72.794))
+     ((6 7 8 22 25 39) (63.48))
+     ((8 9 21 22 24 39) (58.494 300.0 54.621 58.091))
+     ((8 9 23 37 38) (76.861 300.0))
+     ((6 9 20 23 24 36) (58.137 58.388))
+     ((6 7 37 38 39) (70.404))
+     ((8 21 23 24 37 38) (300.0))
+     ((21 24 27 37 38) (300.0))
+     ((8 23 36 37 38) (300.0))
+     ((8 23 37 38 39) (300.0 300.0))
+     ((11 21 24 27 37 38) (300.0))
+     ((3 8 20 21 23 24 34 37 38) (300.0))
+     ((6 8 22 39 51) (79.889))
+     ((5 20 23 36 50) (300.0))
+     ((6 11 21 24 27 37) (300.0))
+     (() (10000.0)))
+    21
+    1)
+ (i (3 5 15 22 39)
+    (49.74 52.888 50.411 50.161)
+    (((36 50) (300.0))
+     ((5 22 25) (300.0))
+     ((5 19 35 39) (91.509))
+     ((21 24) (300.0))
+     ((39 49) (300.0))
+     ((8 21 38) (300.0))
+     ((19 39 47 49) (66.553))
+     ((5 8 16 22 39) (91.82))
+     ((1 5 8 16 22 39) (58.405 57.97))
+     ((8 39 49) (300.0))
+     ((0 5 22 39 45) (58.034 54.721))
+     ((4 8 22 35 39) (80.608))
+     ((8 22 35 39) (84.658))
+     ((1 5 16 22 25) (55.851 53.464))
+     ((5 8 16 22 23 39) (94.793))
+     ((5 22 39) (300.0 300.0))
+     ((5 8 22 23 39) (300.0))
+     ((19 21 24) (99.674 111.402))
+     ((22 35 39) (68.354 65.877))
+     ((6 7 8 35 39) (87.298))
+     (() (10000.0)))
+    21
+    1)
+ (r (5 23 36)
+    (47.211
+      47.178
+      48.151
+      44.909
+      46.643
+      59.484
+      50.865
+      50.153
+      63.567
+      47.361
+      45.286
+      47.423
+      48.636
+      42.578
+      47.67
+      61.825
+      53.247
+      45.453
+      51.534
+      47.561
+      60.261
+      47.475
+      44.078
+      47.383
+      48.383
+      47.209
+      48.832
+      49.112
+      48.979
+      47.639
+      50.176
+      45.638
+      49.794
+      47.467
+      44.333
+      52.421)
+    (((7 19 23 35 36 37) (77.794))
+     ((6 7 22 23) (80.962))
+     ((5 8 22 23 36) (55.156 52.497 54.961 53.579 51.51 59.109))
+     ((4 5 20 22 23) (57.958 56.097 55.51 58.314 60.951))
+     ((5 22 23 36)
+      (50.5 46.997
+            52.205
+            47.852
+            61.241
+            48.035
+            47.384
+            59.021
+            51.127
+            61.983))
+     ((5 23 36 39) (300.0))
+     (() (10000.0)))
+    14)
+ (z (5 8 36 37 38 39)
+    (49.757
+      49.643
+      51.671
+      46.651
+      49.448
+      49.057
+      49.163
+      48.924
+      48.37
+      50.783
+      53.508
+      50.075
+      47.628
+      44.334
+      52.668
+      51.189
+      50.289
+      49.47
+      50.0
+      50.072
+      52.257
+      49.481
+      52.035
+      50.516
+      48.52
+      48.461
+      46.149
+      47.127
+      52.415
+      49.675
+      49.949
+      51.587
+      48.842
+      51.555
+      49.868
+      50.209
+      55.694
+      50.281
+      47.218
+      44.068
+      50.502
+      50.567
+      47.935
+      47.142)
+    (((5 9 23 24 25 36 38) (300.0))
+     ((5 7 36 37 39) (300.0))
+     ((5 8 28 36 39 41 52) (300.0))
+     ((5 7 8 9 10 11 28 36 38) (300.0))
+     ((5 6 8 22 38 39) (300.0))
+     ((5 8 23 36 37 39 48) (300.0 300.0))
+     ((5 8 37 38 39) (51.827 49.052 50.542))
+     ((5 8 36 37 38 39)
+      (54.522 49.952 48.291 49.677 48.658 50.058 47.636 50.779))
+     (() (10000.0)))
+    8
+    1)
+ (u (7 8 23 36 37 39)
+    (59.489 58.986)
+    (((11 20 21 23 24 26 27 54) (300.0))
+     ((21 22 25 51) (300.0))
+     ((4 5 6 9 37 39) (300.0))
+     ((8 20 21 23 28 51) (300.0))
+     ((7 20 21 22 23 34 47) (300.0))
+     ((7 8 11 23 27 28 36 51) (103.024))
+     ((7 8 21 23 39) (300.0))
+     ((4 9 20 22 23 25) (300.0))
+     ((3 7 8 19 23 36 37) (300.0))
+     ((9 11 20 21 23 24 28 52) (105.696))
+     ((11 12 13 21 23 24 26 27 29) (300.0))
+     ((7 8 23 25 36 37 39) (79.054 71.422 64.462 67.334))
+     ((9 21 23 24 41 52) (87.904))
+     ((3 8 9 19 21 22 23 24 39) (300.0))
+     ((8 23 24 36 37)
+      (72.747 71.11 68.72 67.065 74.964 71.202 72.409 75.466))
+     ((10 21 23 24 26 27) (106.309))
+     ((4 8 20 23 24 37) (82.536 91.973 88.34))
+     ((5 22 23 24 38 39) (300.0))
+     ((9 10 20 21 23 24 26 41) (108.067))
+     ((10 11 21 23 24 26) (300.0))
+     ((9 10 11 21 23 24 26) (300.0 300.0))
+     ((4 9 20 23 37 39 51) (300.0))
+     ((11 12 13 21 23 24 26 27 29 31) (300.0))
+     ((12 13 21 23 24 26 27 28 29 30 43) (300.0))
+     (() (10000.0)))
+    27
+    1)
+ (v (5 20 22 39 50)
+    (77.162 70.794 71.575 69.856)
+    (((5 20 22 23 39 48 50) (300.0))
+     ((8 20 21 22 23 39 48) (300.0))
+     ((22 23 26 36 39 40) (300.0))
+     ((8 9 22 23 25 36) (300.0))
+     ((7 8 9 17 20 23 46 51) (300.0))
+     ((21 27 41 50 51) (300.0))
+     ((8 10 24 25 37 41 49) (300.0))
+     ((9 25 49 50) (300.0))
+     ((20 21 24 50) (77.994 79.952))
+     ((6 25 49 51) (89.953))
+     ((5 6 22 25 51) (84.185))
+     ((21 23 38) (79.482 79.686 81.1 78.153 80.13 81.653 82.632))
+     ((5 8 20 22 23 39) (300.0 300.0))
+     ((5 8 22 23 39)
+      (300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0))
+     ((8 22 23 36 39) (300.0 300.0))
+     ((8 21 22 38 39)
+      (300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0
+        300.0))
+     (() (10000.0)))
+    34
+    1)
+ (t (4 5 8 9 17 21 25 36 38)
+    (54.785 54.379 55.98 53.486)
+    (((4 5 6 9 17 18 19 22 32 35 37 39) (300.0))
+     ((5 8 9 23 25 34 36 37 48) (300.0))
+     ((6 8 9 18 21 25 37 38) (74.195))
+     ((5 18 21 26 36 38) (110.555))
+     ((5 8 20 23 34 36 39) (62.956 61.003))
+     ((5 9 18 21 24 25 36) (61.004 59.449))
+     ((5 8 18 21 36 38 39)
+      (57.324
+        56.373
+        60.097
+        57.816
+        60.498
+        56.519
+        58.773
+        57.286
+        55.605
+        57.273
+        57.369))
+     ((5 6 8 18 21 23 36 39) (300.0))
+     ((5 10 11 18 21 26 36 38) (73.182 77.752 72.512 75.513))
+     ((5 18 21 36 38) (300.0 300.0 300.0 300.0))
+     ((4 5 10 11 17 21 26 36 38) (300.0))
+     (() (10000.0)))
+    15
+    1)
+ (j (12 22 25 28 35 43)
+    (56.144
+      56.373
+      59.326
+      56.559
+      58.938
+      57.229
+      56.482
+      57.137
+      56.417
+      57.281
+      56.952
+      56.171
+      58.978
+      55.926)
+    (((9 13 22 25 27 45 55) (62.896 61.965))
+     ((22 27 35 39 42) (59.185 56.204))
+     ((5 21 28 43 45 51) (59.723 58.878))
+     ((8 12 23 27 36 42 54) (300.0))
+     ((12 19 25 28 43 49) (95.643))
+     ((12 25 28 43 45 49) (60.072 60.906))
+     ((3 10 15 21 22 25 29 37 41) (60.026 59.398))
+     ((12 16 20 21 23 24 26 27 42 54) (116.333))
+     ((3 20 21 23 24 26 40) (89.19))
+     ((12 19 21 24 43 53) (102.837))
+     ((0 1 14 19 20 21 23 24 26 33 34 40) (121.537))
+     ((12 15 21 28 43 45 51) (59.62 59.21))
+     ((1 3 8 13 19 20 21 22 23 24 25 28 30 31 34) (107.299))
+     ((8 13 20 21 22 23 24 25 28 29 30 31 34 42 45 47) (103.562))
+     ((12 15 25 28 43 45 49) (58.346 59.012 57.191))
+     ((12 25 28 43 49) (300.0))
+     ((10 23 25 26 41 49) (300.0))
+     ((3 12 22 25 28 43) (58.812 57.649 60.679))
+     ((3 12 17 20 21 23 24 26 27 42 54) (118.472))
+     ((3 21 24 27 42) (65.863 68.82))
+     ((10 20 23 25 26 35 41) (83.158))
+     ((12 13 20 22 25 28 31 36 37 48) (300.0))
+     ((12 19 21 24 27 31 42 43) (108.024))
+     ((3 19 20 21 22 23 24 25 26 27 28 29 34 42) (300.0))
+     ((12 21 24 26 27 42 54) (300.0))
+     ((12 16 21 28 43 51) (99.361))
+     ((1 3 12 17 20 21 23 24 26 27 32 33 42 54) (300.0))
+     ((5 10 22 25 41) (300.0))
+     (() (10000.0)))
+    25
+    1)
+ (w (4 8 20 22 23 24 39)
+    (63.219 56.865)
+    (((8 23 24 25 48 49) (300.0))
+     ((11 13 19 25 28 30 36 37 48 50) (123.882))
+     ((5 6 10 11 26 28 38 39 49) (300.0))
+     ((7 10 11 12 13 21 23 25 26 31) (300.0))
+     ((9 20 21 22 24 25) (300.0))
+     ((8 9 22 23 25 36 37) (300.0))
+     ((9 11 23 24 28 39 40 49 52) (300.0))
+     ((7 22 36 47 48 50) (111.136))
+     ((11 20 21 22 24 25 27) (300.0))
+     ((8 9 21 22 23 24 39) (65.026 56.888 59.669))
+     ((7 9 11 23 25 37 52 53) (300.0))
+     ((4 8 20 22 23 24 39) (59.48 59.945))
+     ((5 8 10 11 13 22 23 25 31 40 51) (300.0))
+     ((5 11 22 23 24 39 52 53) (103.441))
+     ((5 8 21 22 23 37 39 48 51) (300.0))
+     ((8 22 23 24 36 39) (70.229 62.515 300.0 50.592 56.204))
+     ((4 8 20 23 24 25 41) (300.0))
+     ((4 8 11 20 23 24 25 27 28) (300.0))
+     ((11 27 28 36 39 48 51) (300.0))
+     ((3 9 19 20 21 22 23 24 25 28 34 36 41) (300.0))
+     ((8 21 22 23 28 39 48 51) (120.565 115.609))
+     ((5 8 21 22 23 39 48) (300.0))
+     ((3 22 25 35 36 37 47 48) (300.0))
+     ((8 23 24 36 37 39) (300.0))
+     ((24 36 37) (300.0))
+     ((3 11 19 20 21 24 27 34) (300.0))
+     ((9 11 23 28 36 38 39 48) (300.0))
+     ((4 8 9 20 23 24 37 39 49) (300.0 300.0))
+     ((4 8 20 23 24 37) (300.0))
+     ((4 8 20 23 24 37 39 49) (300.0 300.0))
+     ((8 9 22 23 25 36 37 48) (300.0 300.0))
+     (() (10000.0)))
+    28
+    1)
+ (m (5 21 22 23 24 25 36)
+    (70.845 43.627 48.081 40.009 54.262 48.918)
+    (((4 21 25 36 38 49) (100.878))
+     ((8 21 23 41 51) (300.0))
+     ((9 21 23 36 49 51) (86.328))
+     ((4 5 20 21 22 23 24 25) (52.259 57.428))
+     ((5 8 21 22 23 25 34 48) (107.812))
+     ((2 5 8 17 21 22 23 25 48) (114.823))
+     ((5 21 22 23 36 39)
+      (54.471 57.727 54.695 55.786 52.74 54.944 56.96 56.168))
+     ((7 23 25 27 36 41) (300.0))
+     ((9 22 23 25 36 37) (300.0))
+     ((5 21 22 36 38 39) (73.271))
+     ((5 8 21 22 23 25 48) (110.269))
+     ((5 20 21 22 34 36 38 39) (300.0 300.0))
+     ((7 8 11 12 20 25 26 29 34 36 41 53) (300.0))
+     ((5 8 22 23 25) (300.0 300.0 300.0 300.0))
+     ((7 11 23 25 36 41 53) (300.0))
+     ((4 5 8 22 23 25 26 38 48) (115.786))
+     ((5 21 22 38 39) (300.0 300.0))
+     ((8 22 23 25 37) (300.0 300.0))
+     ((5 20 21 22 36 38 39) (300.0 300.0))
+     (() (10000.0)))
+    22
+    1)
+ (y (8 12 22 23 25 28 36 39 43)
+    (33.082)
+    (((8 12 23 39 43 49 53) (60.969))
+     ((10 11 12 21 22 25 26 28 38 43) (79.773))
+     ((7 8 9 12 21 23 25 28 43) (70.746))
+     ((8 9 23 28 31 36 48 51) (300.0))
+     ((8 10 21 22 23 24 25 26 36 38 39 41 48 53) (300.0))
+     ((8 9 12 20 21 23 24 28 43) (47.994))
+     ((8 9 22 23 25 41 42) (62.012))
+     ((21 22 24 27 39 42) (67.856))
+     ((4 5 20 21 22 23 24 26 39 40) (300.0))
+     ((9 12 21 22 24 25 28 43) (60.25))
+     ((8 13 21 23 24 29 30 40 42) (58.29))
+     ((12 20 21 22 24 25 26 27 28 34 42 47 54) (300.0))
+     ((8 9 12 21 23 28 43 51) (75.531))
+     ((4 8 20 22 23 27 39 42) (300.0 300.0))
+     ((9 10 12 13 21 23 24 26 28 43 55) (300.0 300.0))
+     ((12 13 21 24 27 31 42 50) (300.0 300.0 300.0))
+     (() (10000.0)))
+    12
+    1)
+ (p (5 8 9 22 23 25 26 29 36)
+    (34.686)
+    (((23 24 25 26 29 38 39) (300.0))
+     ((4 5 8 10 20 23 26 27 31 38 48 50 53) (300.0))
+     ((6 8 10 20 21 23 25 39 41) (300.0))
+     ((5 8 22 23 26 29 36 39)
+      (58.541 50.14 47.572 47.45 62.814 44.549))
+     ((5 22 23 25 26 29 36) (300.0 300.0))
+     ((13 23 24 26 27 28 29 31 38 41 54) (300.0))
+     ((4 5 6 8 9 20 22 23 25 27 30 48 50) (300.0 300.0 300.0))
+     ((5 8 20 22 23 25 29 36 40 41) (300.0))
+     ((8 22 23 24 25 27 30 37) (300.0))
+     ((4 5 9 22 23 24 25 26 29 38) (300.0))
+     ((5 8 9 22 23 25 27 30 36) (300.0))
+     ((7 8 23 25 27 28 30 38) (300.0))
+     ((4 5 6 10 20 22 23 24 25 26 36 41) (300.0))
+     ((4 9 20 23 25 26 29 49 50) (62.161))
+     (() (10000.0)))
+    17
+    1)
+ (a (4 5 7 8 9 20 22 25 38)
+    (32.197 35.286 29.07 28.354 29.42)
+    (((5 7 8 9 22 25 26 36 38) (300.0))
+     ((7 9 10 12 13 23 25 26 27 31 38 39 40 42 52) (300.0))
+     ((4 5 7 8 9 22 25 38) (33.44 39.693 30.214))
+     ((5 7 8 9 22 25 36 38)
+      (42.671
+        29.176
+        35.241
+        34.269
+        35.081
+        34.156
+        27.935
+        42.664
+        43.838
+        29.401
+        36.037
+        36.751
+        33.918
+        29.27
+        27.911
+        33.054
+        33.745
+        34.75
+        35.939))
+     ((5 22 25 36) (300.0 300.0))
+     ((5 7 8 22 36 38 39) (60.592))
+     ((5 7 22 25 36 38) (300.0))
+     ((5 7 10 22 25 26 36 38 41) (300.0 300.0))
+     (() (10000.0)))
+    12
+    1)
+ (s (5 6 7 8 36 39)
+    (56.575
+      58.671
+      54.319
+      56.94
+      54.681
+      54.81
+      54.173
+      57.392
+      56.544
+      57.52
+      50.412
+      56.929
+      57.87
+      52.212
+      55.662
+      52.979
+      57.983
+      55.468
+      57.844
+      54.03
+      55.261
+      54.767
+      58.691
+      58.613)
+    (((3 5 6 8 20 21 34 39) (300.0))
+     ((5 10 25 26 36 41) (300.0))
+     ((4 6 7 8 20 21 37 39) (300.0))
+     ((5 6 9 36 51) (69.053))
+     ((3 5 7 20 34 36 38) (300.0))
+     ((5 6 7 10 25 26 36 41) (77.409))
+     ((5 9 24 25 36 38) (300.0))
+     ((5 6 7 22 36) (300.0))
+     ((0 2 4 5 9 23 24 25 32 34 38) (300.0))
+     ((5 6 8 9 36 51) (59.708 58.228))
+     ((5 8 23 25 36 48 51) (300.0))
+     ((6 8 10 11 19 25 28 29 35 36 38) (300.0))
+     ((4 5 6 8 9 20 51) (71.445))
+     ((4 5 6 11 20 24 25 26 28 40 52) (300.0))
+     ((5 9 24 25 36 37) (300.0))
+     ((5 6 7 8 9 25 36)
+      (59.514 61.968 57.604 54.41 57.282 58.604))
+     ((5 10 11 21 23 24 25 26 28 39) (300.0))
+     ((4 5 8 22 39 48) (300.0))
+     ((3 4 5 9 23 24 25 34 38) (300.0))
+     ((5 6 7 10 11 25 28 36) (300.0 300.0))
+     ((4 5 7 8 9 23 25 48) (70.069))
+     ((5 36) (300.0))
+     ((5 7 8 9 21 23 25) (65.456 63.706))
+     (() (10000.0)))
+    25
+    1)
+ (o (5 8 9 22 23 25 36)
+    (16.64)
+    (((6 8 10 11 24 25 26 28 49) (300.0))
+     ((4 10 20 21 24 26 27) (300.0))
+     ((4 5 8 9 20 22 23 25)
+      (37.186
+        45.116
+        40.557
+        40.331
+        38.549
+        44.346
+        34.723
+        45.184
+        43.416
+        39.654
+        40.509
+        50.884))
+     ((4 5 10 20 22 23 25 26 41) (86.378 99.82 94.491))
+     ((5 10 22 23 25 26 36 41) (74.031))
+     ((5 18 20 22 25 34) (300.0 300.0))
+     ((5 8 20 22 23 36 39) (300.0 300.0))
+     ((5 8 22 23 25 36 39) (300.0 300.0 300.0))
+     (() (10000.0)))
+    7
+    1)
+ (h (5 14 17 20 22 23 36 39)
+    (32.212
+      38.373
+      36.455
+      38.729
+      57.062
+      40.023
+      36.683
+      35.843
+      37.367
+      36.129
+      56.252
+      36.842
+      38.232)
+    (((2 5 8 20 21 22 23 24 25 34 36) (300.0))
+     ((5 14 17 22 25 36) (300.0))
+     ((5 14 17 20 23 36) (51.885))
+     ((10 19 21 22 24 25 26 27 35 46) (300.0))
+     ((4 5 14 17 20 22 23 39) (52.085))
+     ((5 6 8 14 17 20 22 36 39) (300.0 85.241))
+     ((5 15 18 21 22 38 39) (64.693))
+     ((5 8 17 18 20 21 22 23 24 25 36) (300.0))
+     ((5 14 17 20 22 23 25 36) (40.926 45.486 42.468 41.543))
+     ((5 8 14 17 20 22 23 39) (300.0 300.0 300.0))
+     ((5 8 10 17 20 22 23 25 27 36) (77.1))
+     (() (10000.0)))
+    15
+    1)
+ (l (9 15 18 21 24)
+    (56.353
+      60.267
+      52.174
+      52.55
+      52.006
+      53.683
+      58.17
+      50.236
+      51.727
+      45.714
+      50.604
+      57.569
+      44.385)
+    (((5 19 20 21 23 45 48) (110.973))
+     ((15 18 19 22 25 35) (68.011))
+     ((15 16 19 22 25 33) (109.58))
+     ((3 15 19 22 25) (45.293 59.965 57.878 66.641))
+     ((15 18 25 49) (70.165 70.529))
+     ((15 18 21 24) (65.555))
+     ((11 12 13 15 18 21 24 26 27 29 31) (128.222))
+     ((9 15 18 21 24 28) (111.408 113.358 110.74))
+     ((15 18 21 24 25 39)
+      (67.04
+        68.772
+        300.0
+        95.886
+        90.577
+        300.0
+        89.083
+        300.0
+        300.0
+        300.0
+        300.0))
+     ((11 15 18 21 24 27)
+      (101.335
+        115.048
+        101.922
+        112.642
+        101.502
+        107.546
+        113.904
+        112.917
+        113.469))
+     (() (10000.0)))
+    25
+    1)
+ (q (5 8 22 23 25 28 31 36 39)
+    (4.999 10.289 5.499 5.4)
+    (((8 18 20 21 22 25 28 31 34 38 39) (300.0))
+     ((3 22 25 28 31 34 35 36 38 48) (300.0))
+     ((4 5 10 20 22 23 24 25 26 31 37 41 53) (300.0))
+     ((5 8 22 23 27 30 36 39) (37.545))
+     (() (10000.0)))
+    4
+    1)
+ (k (5 6 9 14 17 20 23 24 36)
+    (27.235 28.753)
+    (((5 6 9 14 17 20 23 24 25 36) (34.863 30.038))
+     ((5 6 14 17 20 23 36 51)
+      (49.845
+        45.456
+        44.45
+        49.33
+        47.684
+        48.544
+        49.577
+        48.544
+        48.325))
+     ((5 9 14 17 20 23 36 50) (52.584 48.909))
+     ((0 5 8 15 17 18 20 21 23 24 36) (300.0))
+     ((2 3 4 5 6 14 17 19 20 23 36 46 48) (300.0))
+     ((5 8 10 17 20 23 27 36 39 50) (300.0))
+     (() (10000.0)))
+    5
+    1)
+ (n (5 22 23 25 36)
+    (47.497 46.08 34.193)
+    (((5 9 22 23 25 36) (57.209))
+     ((5 22 23 36 39)
+      (43.541
+        52.178
+        37.651
+        39.315
+        48.575
+        53.391
+        32.28
+        53.374
+        36.942
+        65.542
+        54.809
+        35.1
+        57.805
+        36.061))
+     ((5 22 23 25 36) (48.602 53.856))
+     ((4 5 20 22 23 39) (53.016 49.198))
+     ((5 8 22 39) (300.0))
+     ((5 8 22 23 39) (300.0 300.0 300.0))
+     ((5 8 20 22 36 39) (75.274 78.399))
+     ((5 8 22 36 39) (75.047 76.508 74.269))
+     ((4 5 6 8 20 22 39 51) (300.0))
+     (() (10000.0)))
+    15
+    1)
+ (d (5 8 16 19 22 23 36 39)
+    (17.419 14.275 9.313 15.607 18.472 10.558 18.495 15.227)
+    (((5 8 19 22 23 36 39) (20.825 16.628))
+     ((4 19 20 21 22 38 39) (300.0))
+     ((0 1 3 4 5 8 9 14 16 17 20 22 23 25 48) (300.0))
+     ((4 9 16 19 20 22 25 49 50) (62.407))
+     ((4 5 9 18 20 21 22 24 39) (97.856))
+     ((5 8 16 19 22 23 25 28 31 36 39) (300.0 58.455))
+     ((2 3 11 15 17 18 19 20 21 22 24 27 39) (300.0 300.0))
+     (() (10000.0)))
+    3
+    1)
+ (g (5 8 12 22 23 25 28 36 39 43) (0.0) () 0)
+ (f (18 21 24 33 36 5) (0.0) () 0)
+ (e (5 6 8 23 36 37 39) (0.0) () 0)
+ (c (5 8 23 36 39) (0.0) () 0)
+ (b (5 8 14 17 20 22 23 36 39) (0.0) () 0))
+> (map list (map car *scratchspace*) (map average (map caddr *scratchspace*)))
+((x 51.30159999999999)
+ (i 50.8)
+ (r 49.33097222222223)
+ (z 49.653477272727265)
+ (u 59.2375)
+ (v 72.34675)
+ (t 54.65749999999999)
+ (j 57.13664285714285)
+ (w 60.042)
+ (m 50.957)
+ (y 33.082)
+ (p 34.686)
+ (a 30.8654)
+ (s 55.84775)
+ (o 16.64)
+ (h 40.01553846153847)
+ (l 52.726)
+ (q 6.546749999999999)
+ (k 27.994)
+ (n 42.589999999999996)
+ (d 14.920750000000002)
+ (g 0.0)
+ (f 0.0)
+ (e 0.0)
+ (c 0.0)
+ (b 0.0))
+> (transcript-off)

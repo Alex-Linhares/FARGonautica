@@ -1,0 +1,6295 @@
+Chez Scheme Transcript [Tue Aug 31 11:15:05 1999]
+>>>>>>>>> (big-test)
+flournoy-ranch b b2 42 rt 81.857 
+flournoy-ranch d d2 2238 rt 37.857 
+flournoy-ranch f f1 3567 rt 45.126 
+flournoy-ranch h h1 52 rt 77.714 
+flournoy-ranch j j1 58 rt 79.014 
+flournoy-ranch l l1 4107 rt 35.379 
+flournoy-ranch n n1 2508 rt 48.652 
+flournoy-ranch p p2 46 rt 82.0 
+flournoy-ranch r r1 724 rt 66.428 
+flournoy-ranch t t1 3239 rt 50.464 
+flournoy-ranch v v1 1049 rt 72.642 
+flournoy-ranch x k1 4520 wr 42.914 
+flournoy-ranch z c1 2414 wr 51.906 
+flournoy-ranch y y1 72 rt 62.858 
+flournoy-ranch w w1 5261 rt 27.895 
+flournoy-ranch u n1 2168 wr 47.951 
+flournoy-ranch s s2 1049 rt 83.619 
+flournoy-ranch q q2 34 rt 50.0 
+flournoy-ranch o q2 8000 qt
+flournoy-ranch m w1 5715 wr 34.61 
+flournoy-ranch k k1 604 rt 73.714 
+flournoy-ranch i i1 4127 rt 63.806 
+flournoy-ranch g g2 41 rt 48.591 
+flournoy-ranch e e1 5806 rt 36.409 
+flournoy-ranch c c1 1672 rt 47.597 
+flournoy-ranch a e2 4325 wr 44.318 
+double-backslash b b1 47 rt 88.952 
+double-backslash d d1 50 rt 91.19 
+double-backslash f f1 506 rt 83.558 
+double-backslash h h1 35 rt 85.858 
+double-backslash j j1 64 rt 86.429 
+double-backslash l l1 23 rt 82.57 
+double-backslash n n1 46 rt 73.43 
+double-backslash p p1 46 rt 85.142 
+double-backslash r c1 33 wr 70.857 
+double-backslash t t1 40 rt 67.429 
+double-backslash v v1 42 rt 96.952 
+double-backslash x x1 43 rt 86.001 
+double-backslash z z1 5064 rt 52.064 
+double-backslash y y2 37 rt 87.514 
+double-backslash w w1 3845 rt 44.291 
+double-backslash u v1 44 wr 87.0 
+double-backslash s s2 43 rt 72.0 
+double-backslash q q1 1632 rt 59.888 
+double-backslash o o1 26 rt 95.321 
+double-backslash m m1 405 rt 81.905 
+double-backslash k k1 1291 rt 75.127 
+double-backslash i i1 44 rt 80.001 
+double-backslash g g1 51 rt 82.273 
+double-backslash e e1 43 rt 88.0 
+double-backslash c c1 30 rt 79.715 
+double-backslash a e2 6402 wr 41.027 
+sabretooth b b1 43 rt 94.143 
+sabretooth d d1 44 rt 94.857 
+sabretooth f f1 44 rt 78.514 
+sabretooth h h1 197 rt 84.143 
+sabretooth j j1 47 rt 76.852 
+sabretooth l l1 119 rt 60.572 
+sabretooth n n1 822 rt 67.763 
+sabretooth p p1 46 rt 92.858 
+sabretooth r r1 58 rt 92.714 
+sabretooth t t1 39 rt 74.143 
+sabretooth v v1 47 rt 76.429 
+sabretooth x u1 57 wr 67.429 
+sabretooth z e2 3014 wr 36.505 
+sabretooth y y2 40 rt 94.182 
+sabretooth w u1 1639 wr 50.578 
+sabretooth u r1 564 wr 66.714 
+sabretooth s s2 50 rt 86.001 
+sabretooth q q1 47 rt 91.571 
+sabretooth o o1 24 rt 98.251 
+sabretooth m m1 65 rt 77.666 
+sabretooth k k1 108 rt 88.667 
+sabretooth i i1 52 rt 78.571 
+sabretooth g g1 1313 rt 66.491 
+sabretooth e e2 304 rt 66.857 
+sabretooth c c1 29 rt 88.857 
+sabretooth a a1 1148 rt 57.464 
+shorts b b1 42 rt 97.762 
+shorts d d1 34 rt 84.047 
+shorts f f1 1049 rt 67.812 
+shorts h h1 44 rt 76.667 
+shorts j j1 1665 rt 63.317 
+shorts l l1 23 rt 79.428 
+shorts n n1 49 rt 70.857 
+shorts p p1 43 rt 91.856 
+shorts r r1 23 rt 83.428 
+shorts t t1 52 rt 62.43 
+shorts v v1 42 rt 76.286 
+shorts x x1 42 rt 99.143 
+shorts z z1 80 rt 88.857 
+shorts y y1 38 rt 75.312 
+shorts w w1 68 rt 85.587 
+shorts u u1 50 rt 77.81 
+shorts s s2 63 rt 67.858 
+shorts q q1 40 rt 80.714 
+shorts o o1 15 rt 98.251 
+shorts m m1 441 rt 67.798 
+shorts k k1 109 rt 89.27 
+shorts i i1 42 rt 78.428 
+shorts g g1 48 rt 91.662 
+shorts e e1 43 rt 88.857 
+shorts c c1 26 rt 91.43 
+shorts a a1 70 rt 88.238 
+benzene-left b b1 35 rt 92.714 
+benzene-left d d1 42 rt 98.429 
+benzene-left f f1 38 rt 96.344 
+benzene-left h h1 39 rt 80.429 
+benzene-left j j1 57 rt 89.025 
+benzene-left l l1 27 rt 63.714 
+benzene-left n n1 53 rt 79.714 
+benzene-left p p1 43 rt 95.286 
+benzene-left r r1 37 rt 96.429 
+benzene-left t t1 71 rt 75.571 
+benzene-left v v1 45 rt 94.095 
+benzene-left x x1 44 rt 79.286 
+benzene-left z z1 1630 rt 62.375 
+benzene-left y y1 50 rt 83.2 
+benzene-left w w1 1216 rt 61.84 
+benzene-left u u1 297 rt 70.142 
+benzene-left s s2 37 rt 76.43 
+benzene-left q q1 63 rt 90.0 
+benzene-left o o1 16 rt 98.251 
+benzene-left m n1 88 wr 84.714 
+benzene-left k k1 61 rt 79.905 
+benzene-left i i1 59 rt 75.143 
+benzene-left g g1 47 rt 82.332 
+benzene-left e e1 786 rt 78.572 
+benzene-left c c1 31 rt 96.858 
+benzene-left a a2 34 rt 84.59 
+boat b b1 40 rt 91.524 
+boat d d1 47 rt 86.857 
+boat f f1 1218 rt 74.348 
+boat h h1 53 rt 76.286 
+boat j j1 56 rt 87.52 
+boat l l1 24 rt 79.429 
+boat n n1 45 rt 72.0 
+boat p p1 55 rt 91.285 
+boat r r1 59 rt 87.143 
+boat t t1 50 rt 67.286 
+boat v v1 43 rt 80.143 
+boat x x1 41 rt 91.572 
+boat z z1 1142 rt 75.623 
+boat y y1 53 rt 91.824 
+boat w w1 70 rt 73.381 
+boat u u1 42 rt 79.0 
+boat s s2 53 rt 77.286 
+boat q q1 40 rt 93.143 
+boat o o1 18 rt 98.251 
+boat m m1 55 rt 86.476 
+boat k k1 78 rt 91.08 
+boat i i1 47 rt 77.714 
+boat g g1 37 rt 76.487 
+boat e e2 48 rt 73.714 
+boat c c1 20 rt 90.858 
+boat a a2 58 rt 80.428 
+slant b d1 38 wr 85.668 
+slant d d1 42 rt 99.334 
+slant f f1 43 rt 70.286 
+slant h h1 326 rt 65.429 
+slant j j1 40 rt 93.292 
+slant l l1 17 rt 79.43 
+slant n n1 61 rt 79.714 
+slant p p1 52 rt 71.714 
+slant r r1 46 rt 78.714 
+slant t t1 44 rt 72.715 
+slant v u1 68 wr 71.429 
+slant x x1 50 rt 72.286 
+slant z z1 46 rt 92.286 
+slant y y1 54 rt 84.363 
+slant w w1 301 rt 77.428 
+slant u u1 42 rt 82.381 
+slant s s2 53 rt 92.857 
+slant q q1 43 rt 98.905 
+slant o o1 24 rt 98.251 
+slant m m1 517 rt 74.286 
+slant k k1 98 rt 77.905 
+slant i i1 44 rt 90.287 
+slant g g1 50 rt 94.558 
+slant e e1 61 rt 90.001 
+slant c c1 58 rt 98.667 
+slant a a1 53 rt 93.857 
+snout b b1 46 rt 95.572 
+snout d d1 49 rt 96.0 
+snout f f1 45 rt 87.435 
+snout h h1 58 rt 95.524 
+snout j j1 48 rt 90.078 
+snout l l1 30 rt 95.999 
+snout n n1 54 rt 85.857 
+snout p p1 49 rt 87.0 
+snout r r1 42 rt 90.286 
+snout t t1 44 rt 85.948 
+snout v z1 1839 wr 62.675 
+snout x x1 40 rt 83.0 
+snout z z1 71 rt 87.905 
+snout y y1 68 rt 84.078 
+snout w w1 69 rt 87.111 
+snout u u1 34 rt 82.381 
+snout s s2 44 rt 84.285 
+snout q q1 69 rt 88.286 
+snout o o1 29 rt 98.251 
+snout m m1 61 rt 94.635 
+snout k k1 67 rt 84.858 
+snout i i1 49 rt 80.714 
+snout g g1 41 rt 84.188 
+snout e e2 701 rt 89.857 
+snout c c1 23 rt 92.858 
+snout a a1 35 rt 90.857 
+funtnip b b1 234 rt 73.713 
+funtnip d d1 4318 rt 50.016 
+funtnip f f1 39 rt 73.644 
+funtnip h h1 694 rt 79.428 
+funtnip j h1 8000 qt
+funtnip l t1 3162 wr 44.914 
+funtnip n n1 157 rt 75.0 
+funtnip p q1 1597 wr 69.411 
+funtnip r r1 1830 rt 52.074 
+funtnip t t1 2766 rt 47.13 
+funtnip v v1 1021 rt 70.067 
+funtnip x k1 5099 wr 42.283 
+funtnip z u1 5604 wr 35.563 
+funtnip y y1 887 rt 56.433 
+funtnip w w1 350 rt 68.81 
+funtnip u r1 43 wr 65.571 
+funtnip s r1 5114 wr 40.61 
+funtnip q q1 197 rt 72.572 
+funtnip o b1 4359 wr 45.996 
+funtnip m m1 464 rt 75.667 
+funtnip k t1 1004 wr 67.289 
+funtnip i t1 8000 qt
+funtnip g t1 8000 qt
+funtnip e z1 5192 wr 31.736 
+funtnip c z1 5407 wr 41.928 
+funtnip a z1 8000 qt
+sluice b j1 4676 wr 58.457 
+sluice d i1 4095 wr 45.319 
+sluice f i1 47 wr 86.857 
+sluice h i1 49 wr 87.572 
+sluice j j1 50 rt 88.123 
+sluice l n1 4827 wr 26.154 
+sluice n i1 345 wr 88.857 
+sluice p j1 104 wr 62.669 
+sluice r i1 2093 wr 52.855 
+sluice t i1 4213 wr 50.631 
+sluice v w1 4139 wr 36.984 
+sluice x w1 3786 wr 49.337 
+sluice z y1 4087 wr 30.123 
+sluice y y1 853 rt 49.394 
+sluice w j1 1698 wr 57.792 
+sluice u i1 1301 wr 66.475 
+sluice s n1 2415 wr 50.918 
+sluice q j1 1060 wr 67.227 
+sluice o j1 4749 wr 58.001 
+sluice m n1 128 wr 61.999 
+sluice k k1 5715 rt 37.579 
+sluice i i1 47 rt 73.286 
+sluice g j1 1539 wr 57.932 
+sluice e i1 4266 wr 48.461 
+sluice c i1 4807 wr 38.443 
+sluice a i1 4039 wr 59.799 
+square-curl b b1 74 rt 76.809 
+square-curl d d1 82 rt 81.237 
+square-curl f f1 3208 rt 34.97 
+square-curl h h1 51 rt 83.19 
+square-curl j j1 981 rt 73.32 
+square-curl l l1 32 rt 60.571 
+square-curl n n1 855 rt 81.858 
+square-curl p p1 1682 rt 53.864 
+square-curl r r1 44 rt 94.143 
+square-curl t t1 40 rt 79.285 
+square-curl v u1 871 wr 65.73 
+square-curl x x1 1093 rt 73.568 
+square-curl z z1 962 rt 74.585 
+square-curl y y1 49 rt 80.084 
+square-curl w w1 75 rt 78.095 
+square-curl u u1 43 rt 69.286 
+square-curl s s2 51 rt 67.858 
+square-curl q q1 1115 rt 60.408 
+square-curl o o1 17 rt 98.251 
+square-curl m m1 690 rt 60.524 
+square-curl k k1 366 rt 84.413 
+square-curl i i1 45 rt 81.428 
+square-curl g n1 5465 wr 35.975 
+square-curl e r1 48 wr 82.714 
+square-curl c c1 220 rt 86.572 
+square-curl a u1 2053 wr 72.078 
+weird-arrow b b1 62 rt 91.858 
+weird-arrow d d1 46 rt 91.144 
+weird-arrow f f1 4037 rt 45.337 
+weird-arrow h h1 35 rt 68.286 
+weird-arrow j j1 50 rt 80.046 
+weird-arrow l l1 24 rt 68.572 
+weird-arrow n n1 152 rt 63.762 
+weird-arrow p p1 49 rt 92.429 
+weird-arrow r r1 41 rt 92.0 
+weird-arrow t k1 1038 wr 54.837 
+weird-arrow v v1 30 rt 68.286 
+weird-arrow x w1 5072 wr 35.845 
+weird-arrow z z1 70 rt 80.381 
+weird-arrow y y1 49 rt 88.239 
+weird-arrow w w1 2305 rt 54.96 
+weird-arrow u u1 1104 rt 64.036 
+weird-arrow s s2 45 rt 71.715 
+weird-arrow q q1 1033 rt 67.898 
+weird-arrow o o1 30 rt 98.251 
+weird-arrow m m1 1841 rt 63.416 
+weird-arrow k f1 1037 wr 52.159 
+weird-arrow i i1 51 rt 79.142 
+weird-arrow g g1 31 rt 78.773 
+weird-arrow e e1 2746 rt 61.661 
+weird-arrow c c1 25 rt 91.43 
+weird-arrow a a1 3522 rt 56.037 
+close b b2 50 rt 92.524 
+close d d1 35 rt 94.619 
+close f f1 54 rt 74.832 
+close h h1 2075 rt 63.599 
+close j j1 53 rt 83.61 
+close l l1 22 rt 79.428 
+close n n1 58 rt 74.429 
+close p p1 2886 rt 60.46 
+close r r1 44 rt 65.857 
+close t t1 46 rt 67.428 
+close v v1 39 rt 87.429 
+close x x1 41 rt 99.143 
+close z z1 65 rt 86.381 
+close y y1 39 rt 74.371 
+close w w1 1053 rt 65.82 
+close u u1 59 rt 82.523 
+close s u1 845 wr 73.997 
+close q q1 45 rt 91.286 
+close o o1 22 rt 98.251 
+close m m1 76 rt 67.286 
+close k k1 86 rt 78.857 
+close i i1 42 rt 86.428 
+close g g1 39 rt 89.968 
+close e e1 69 rt 89.43 
+close c c1 178 rt 92.858 
+close a a1 40 rt 89.428 
+intersect b b2 869 rt 57.582 
+intersect d d2 2314 rt 54.439 
+intersect f f1 52 rt 92.033 
+intersect h k1 4107 wr 36.863 
+intersect j j1 47 rt 88.766 
+intersect l l1 34 rt 82.286 
+intersect n m1 2624 wr 47.275 
+intersect p j1 4009 wr 59.919 
+intersect r r1 483 rt 70.428 
+intersect t t1 51 rt 75.994 
+intersect v z1 5303 wr 32.676 
+intersect x x1 51 rt 91.571 
+intersect z z1 362 rt 86.334 
+intersect y y1 52 rt 65.2 
+intersect w y1 2465 wr 39.301 
+intersect u w1 822 wr 59.994 
+intersect s r1 456 wr 73.142 
+intersect q q2 990 rt 58.463 
+intersect o o1 14 rt 98.251 
+intersect m m1 466 rt 55.38 
+intersect k f1 1097 wr 59.564 
+intersect i i1 40 rt 90.0 
+intersect g g2 49 rt 66.541 
+intersect e o1 181 wr 61.857 
+intersect c c1 30 rt 96.858 
+intersect a o1 96 wr 60.751 
+slash b b2 45 rt 94.286 
+slash d d1 32 rt 96.429 
+slash f f1 58 rt 73.571 
+slash h h1 195 rt 84.143 
+slash j j1 38 rt 97.182 
+slash l l1 157 rt 74.858 
+slash n m1 674 wr 68.143 
+slash p p1 1206 rt 70.881 
+slash r r1 41 rt 65.857 
+slash t t1 38 rt 77.286 
+slash v v1 42 rt 81.286 
+slash x x1 44 rt 99.143 
+slash z z1 67 rt 94.953 
+slash y y1 1138 rt 69.932 
+slash w d1 6554 wr 30.539 
+slash u w1 73 wr 69.381 
+slash s l1 29 wr 62.286 
+slash q q1 46 rt 96.0 
+slash o o1 22 rt 98.251 
+slash m m1 71 rt 82.715 
+slash k k1 892 rt 72.1 
+slash i i1 62 rt 84.143 
+slash g g1 64 rt 90.546 
+slash e e2 99 rt 99.429 
+slash c c1 172 rt 92.858 
+slash a a1 48 rt 95.572 
+hunt4 b b2 41 rt 98.285 
+hunt4 d d2 39 rt 98.285 
+hunt4 f f1 54 rt 80.285 
+hunt4 h h1 36 rt 82.571 
+hunt4 j j1 70 rt 92.78 
+hunt4 l l1 15 rt 63.714 
+hunt4 n n1 36 rt 83.286 
+hunt4 p p2 37 rt 97.0 
+hunt4 r r1 64 rt 97.286 
+hunt4 t t1 35 rt 77.857 
+hunt4 v v1 35 rt 80.143 
+hunt4 x x1 66 rt 99.143 
+hunt4 z z1 66 rt 94.953 
+hunt4 y y1 33 rt 97.785 
+hunt4 w u1 348 wr 63.856 
+hunt4 u u1 39 rt 76.143 
+hunt4 s s2 46 rt 86.286 
+hunt4 q q2 33 rt 97.857 
+hunt4 o a1 1891 wr 59.156 
+hunt4 m m1 63 rt 91.238 
+hunt4 k k1 85 rt 90.762 
+hunt4 i i1 1122 rt 78.335 
+hunt4 g g2 53 rt 98.214 
+hunt4 e e1 31 rt 95.0 
+hunt4 c c1 31 rt 96.858 
+hunt4 a a2 43 rt 94.714 
+benzene-right b b1 38 rt 97.571 
+benzene-right d d1 40 rt 92.429 
+benzene-right f f1 43 rt 78.0 
+benzene-right h h1 43 rt 80.0 
+benzene-right j j1 41 rt 81.525 
+benzene-right l l1 23 rt 78.287 
+benzene-right n n1 43 rt 71.999 
+benzene-right p p1 1172 rt 74.269 
+benzene-right r r1 68 rt 79.0 
+benzene-right t t1 45 rt 79.001 
+benzene-right v v1 50 rt 65.334 
+benzene-right x x1 51 rt 92.285 
+benzene-right z z1 60 rt 86.953 
+benzene-right y y1 39 rt 84.928 
+benzene-right w w1 852 rt 51.802 
+benzene-right u u1 54 rt 83.571 
+benzene-right s s2 48 rt 86.286 
+benzene-right q q1 27 rt 95.001 
+benzene-right o o1 22 rt 98.251 
+benzene-right m m1 71 rt 66.809 
+benzene-right k k1 60 rt 96.001 
+benzene-right i i1 33 rt 79.285 
+benzene-right g g1 45 rt 86.364 
+benzene-right e e2 52 rt 63.018 
+benzene-right c c1 22 rt 90.858 
+benzene-right a a2 37 rt 90.714 
+house b b1 54 rt 95.333 
+house d d1 44 rt 96.619 
+house f f1 41 rt 82.332 
+house h h1 37 rt 80.332 
+house j j1 150 rt 80.338 
+house l l1 24 rt 61.428 
+house n n1 49 rt 87.858 
+house p p1 52 rt 86.143 
+house r r1 38 rt 94.143 
+house t t1 50 rt 78.858 
+house v u1 38 wr 70.143 
+house x x1 34 rt 94.571 
+house z z1 71 rt 80.381 
+house y y1 61 rt 84.74 
+house w u1 1675 wr 56.832 
+house u u1 44 rt 85.238 
+house s s2 46 rt 71.715 
+house q q1 61 rt 82.572 
+house o o1 17 rt 98.251 
+house m m1 398 rt 90.286 
+house k k1 512 rt 92.317 
+house i i1 185 rt 78.905 
+house g g1 41 rt 84.149 
+house e e1 44 rt 95.0 
+house c c1 21 rt 77.142 
+house a a1 52 rt 96.286 
+standard-square b b1 40 rt 100.0 
+standard-square d d1 53 rt 100.19 
+standard-square f f1 40 rt 96.818 
+standard-square h h1 43 rt 84.571 
+standard-square j j1 47 rt 90.585 
+standard-square l l1 27 rt 91.143 
+standard-square n n1 48 rt 82.714 
+standard-square p p1 37 rt 98.715 
+standard-square r r1 46 rt 98.571 
+standard-square t t1 39 rt 81.143 
+standard-square v v1 49 rt 80.143 
+standard-square x x1 60 rt 99.143 
+standard-square z z1 85 rt 86.667 
+standard-square y y1 59 rt 88.928 
+standard-square w w1 65 rt 87.873 
+standard-square u u1 35 rt 87.094 
+standard-square s s2 46 rt 85.858 
+standard-square q q1 31 rt 99.762 
+standard-square o o1 31 rt 98.251 
+standard-square m m1 42 rt 94.19 
+standard-square k k1 377 rt 75.762 
+standard-square i i1 41 rt 96.0 
+standard-square g g1 28 rt 94.688 
+standard-square e e1 57 rt 92.858 
+standard-square c c1 29 rt 77.428 
+standard-square a a1 40 rt 100.0 
+hint4 b b1 70 rt 69.572 
+hint4 d d1 62 rt 68.857 
+hint4 f f1 42 rt 61.572 
+hint4 h l1 24 wr 79.715 
+hint4 j j1 54 rt 92.475 
+hint4 l l1 23 rt 63.714 
+hint4 n n1 34 rt 71.857 
+hint4 p p1 41 rt 71.715 
+hint4 r r1 37 rt 91.0 
+hint4 t t1 39 rt 59.144 
+hint4 v v1 39 rt 80.143 
+hint4 x x1 55 rt 72.856 
+hint4 z z1 56 rt 94.667 
+hint4 y y1 147 rt 81.025 
+hint4 w w1 519 rt 67.476 
+hint4 u u1 36 rt 66.572 
+hint4 s s2 46 rt 80.0 
+hint4 q q1 108 rt 59.239 
+hint4 o v1 52 wr 79.286 
+hint4 m m1 695 rt 68.524 
+hint4 k k1 321 rt 72.62 
+hint4 i i1 3256 rt 57.06 
+hint4 g g1 65 rt 67.967 
+hint4 e e1 306 rt 79.0 
+hint4 c c1 20 rt 71.142 
+hint4 a o1 2437 wr 57.298 
+bowtie b l1 1588 wr 57.192 
+bowtie d l1 833 wr 55.16 
+bowtie f f1 45 rt 61.261 
+bowtie h h1 3648 rt 45.065 
+bowtie j j1 4278 rt 55.322 
+bowtie l l1 38 rt 62.0 
+bowtie n n1 269 rt 83.428 
+bowtie p p1 2477 rt 47.164 
+bowtie r o1 269 wr 60.751 
+bowtie t t1 55 rt 63.429 
+bowtie v v1 42 rt 67.571 
+bowtie x x1 54 rt 80.572 
+bowtie z o1 275 wr 60.751 
+bowtie y y1 1617 rt 56.038 
+bowtie w w1 46 rt 84.254 
+bowtie u u1 189 rt 72.857 
+bowtie s r1 864 wr 66.765 
+bowtie q o1 7715 wr 22.177 
+bowtie o a1 5026 wr 41.264 
+bowtie m m1 3782 rt 45.04 
+bowtie k k1 5669 rt 28.31 
+bowtie i i1 1797 rt 67.596 
+bowtie g q1 5618 wr 36.454 
+bowtie e c1 29 wr 61.751 
+bowtie c o1 418 wr 60.751 
+bowtie a a2 45 rt 68.233 
+checkmark b h1 2192 wr 70.585 
+checkmark d d1 2533 rt 53.488 
+checkmark f f1 62 rt 92.077 
+checkmark h h1 46 rt 85.429 
+checkmark j h1 8000 qt
+checkmark l l1 26 rt 78.573 
+checkmark n n1 43 rt 77.428 
+checkmark p y1 4837 wr 31.329 
+checkmark r r1 43 rt 65.857 
+checkmark t t1 33 rt 85.552 
+checkmark v v1 55 rt 81.286 
+checkmark x x1 42 rt 86.715 
+checkmark z z1 62 rt 88.857 
+checkmark y y2 44 rt 81.39 
+checkmark w u1 184 wr 78.714 
+checkmark u u1 51 rt 85.857 
+checkmark s s2 36 rt 74.858 
+checkmark q q1 510 rt 81.572 
+checkmark o o1 25 rt 95.321 
+checkmark m m1 67 rt 82.715 
+checkmark k k1 5642 rt 31.397 
+checkmark i i1 55 rt 93.857 
+checkmark g y2 58 wr 77.819 
+checkmark e e1 40 rt 80.43 
+checkmark c c1 23 rt 79.715 
+checkmark a n1 1133 wr 70.474 
+flournoy-ranch b b2 59 rt 81.857 
+flournoy-ranch d d2 1462 rt 40.184 
+flournoy-ranch f f1 4899 rt 33.552 
+flournoy-ranch h h1 54 rt 77.714 
+flournoy-ranch j j1 50 rt 79.014 
+flournoy-ranch l l1 4024 rt 35.379 
+flournoy-ranch n n1 2424 rt 48.652 
+flournoy-ranch p p2 33 rt 82.0 
+flournoy-ranch r r1 407 rt 66.428 
+flournoy-ranch t t1 4079 rt 48.63 
+flournoy-ranch v v1 935 rt 72.642 
+flournoy-ranch x k1 4821 wr 32.535 
+flournoy-ranch z c1 2548 wr 51.906 
+flournoy-ranch y y1 56 rt 62.858 
+flournoy-ranch w w1 4146 rt 36.155 
+flournoy-ranch u y1 2502 wr 56.554 
+flournoy-ranch s s2 822 rt 83.619 
+flournoy-ranch q q2 167 rt 50.0 
+flournoy-ranch o q2 8000 qt
+flournoy-ranch m w1 6131 wr 33.206 
+flournoy-ranch k k1 1430 rt 68.035 
+flournoy-ranch i i1 4133 rt 57.303 
+flournoy-ranch g g2 56 rt 48.591 
+flournoy-ranch e e2 5626 rt 30.949 
+flournoy-ranch c c1 1639 rt 47.597 
+flournoy-ranch a e2 7217 wr 37.252 
+double-backslash b b1 29 rt 88.952 
+double-backslash d d1 45 rt 91.19 
+double-backslash f f1 116 rt 83.558 
+double-backslash h h1 38 rt 85.858 
+double-backslash j j1 57 rt 86.429 
+double-backslash l l1 26 rt 82.57 
+double-backslash n n1 28 rt 70.43 
+double-backslash p p1 35 rt 85.142 
+double-backslash r c1 15 wr 70.857 
+double-backslash t t1 34 rt 65.999 
+double-backslash v v1 53 rt 96.952 
+double-backslash x x1 46 rt 86.001 
+double-backslash z n1 5287 wr 35.832 
+double-backslash y y2 47 rt 87.514 
+double-backslash w w1 3067 rt 50.585 
+double-backslash u v1 36 wr 71.571 
+double-backslash s s2 41 rt 72.0 
+double-backslash q q1 1693 rt 59.888 
+double-backslash o o1 23 rt 95.321 
+double-backslash m m1 4500 rt 50.079 
+double-backslash k t1 3968 wr 48.016 
+double-backslash i i1 47 rt 78.143 
+double-backslash g g1 42 rt 82.273 
+double-backslash e e2 36 rt 70.429 
+double-backslash c c1 30 rt 79.715 
+double-backslash a j1 4554 wr 46.733 
+sabretooth b b1 38 rt 94.143 
+sabretooth d d1 53 rt 94.857 
+sabretooth f f1 38 rt 78.514 
+sabretooth h h1 129 rt 84.143 
+sabretooth j j1 48 rt 76.852 
+sabretooth l l1 129 rt 60.572 
+sabretooth n n1 879 rt 67.763 
+sabretooth p p1 52 rt 92.858 
+sabretooth r r1 47 rt 92.714 
+sabretooth t t1 35 rt 74.143 
+sabretooth v v1 30 rt 76.429 
+sabretooth x u1 41 wr 67.429 
+sabretooth z e2 2413 wr 51.548 
+sabretooth y y2 40 rt 94.182 
+sabretooth w u1 1784 wr 51.763 
+sabretooth u r1 93 wr 66.714 
+sabretooth s s2 51 rt 86.001 
+sabretooth q q1 42 rt 91.571 
+sabretooth o o1 28 rt 98.251 
+sabretooth m m1 92 rt 77.666 
+sabretooth k k1 66 rt 84.858 
+sabretooth i i1 50 rt 78.571 
+sabretooth g g1 1097 rt 66.491 
+sabretooth e e2 44 rt 66.857 
+sabretooth c c1 30 rt 88.857 
+sabretooth a a1 828 rt 57.464 
+shorts b b1 50 rt 97.762 
+shorts d d1 50 rt 98.38 
+shorts f f1 1192 rt 67.812 
+shorts h h1 35 rt 76.667 
+shorts j j1 1751 rt 61.003 
+shorts l l1 21 rt 79.428 
+shorts n n1 38 rt 70.857 
+shorts p p1 31 rt 91.856 
+shorts r r1 36 rt 86.286 
+shorts t t1 50 rt 62.43 
+shorts v v1 41 rt 76.286 
+shorts x x1 38 rt 99.143 
+shorts z z1 81 rt 88.857 
+shorts y y1 64 rt 75.312 
+shorts w w1 62 rt 85.587 
+shorts u u1 46 rt 77.81 
+shorts s s2 45 rt 67.858 
+shorts q q1 41 rt 80.714 
+shorts o o1 24 rt 98.251 
+shorts m r1 874 wr 63.358 
+shorts k k1 113 rt 89.27 
+shorts i i1 39 rt 78.428 
+shorts g g1 41 rt 91.662 
+shorts e e1 48 rt 88.857 
+shorts c c1 29 rt 91.43 
+shorts a a1 27 rt 88.238 
+benzene-left b b1 29 rt 92.714 
+benzene-left d d1 53 rt 98.429 
+benzene-left f f1 47 rt 96.344 
+benzene-left h h1 68 rt 80.429 
+benzene-left j j1 50 rt 89.025 
+benzene-left l l1 29 rt 63.714 
+benzene-left n n1 44 rt 63.285 
+benzene-left p p1 49 rt 95.286 
+benzene-left r r1 55 rt 96.429 
+benzene-left t t1 30 rt 75.571 
+benzene-left v v1 48 rt 94.095 
+benzene-left x x1 36 rt 67.999 
+benzene-left z z1 1061 rt 69.48 
+benzene-left y y1 45 rt 83.2 
+benzene-left w w1 88 rt 75.191 
+benzene-left u u1 136 rt 77.142 
+benzene-left s s2 47 rt 76.43 
+benzene-left q q1 43 rt 90.0 
+benzene-left o o1 27 rt 98.251 
+benzene-left m n1 91 wr 84.714 
+benzene-left k k1 65 rt 79.905 
+benzene-left i i1 53 rt 75.143 
+benzene-left g g1 62 rt 82.332 
+benzene-left e e1 1158 rt 74.878 
+benzene-left c c1 16 rt 77.142 
+benzene-left a a2 54 rt 84.59 
+boat b b1 47 rt 91.524 
+boat d d1 65 rt 86.857 
+boat f f1 506 rt 78.37 
+boat h h1 34 rt 76.286 
+boat j j1 50 rt 87.52 
+boat l l1 22 rt 79.429 
+boat n n1 31 rt 72.0 
+boat p p1 44 rt 91.285 
+boat r r1 53 rt 95.0 
+boat t t1 49 rt 65.858 
+boat v v1 58 rt 80.143 
+boat x x1 54 rt 91.572 
+boat z e2 2775 wr 52.016 
+boat y y1 53 rt 91.824 
+boat w w1 56 rt 73.381 
+boat u u1 51 rt 79.0 
+boat s s2 68 rt 77.286 
+boat q q1 46 rt 93.143 
+boat o o1 22 rt 98.251 
+boat m m1 596 rt 68.56 
+boat k k1 59 rt 91.08 
+boat i i1 86 rt 77.714 
+boat g g1 51 rt 76.487 
+boat e e2 34 rt 73.714 
+boat c c1 23 rt 90.858 
+boat a a2 46 rt 80.428 
+slant b d1 37 wr 85.668 
+slant d d1 41 rt 99.334 
+slant f f1 40 rt 70.286 
+slant h h1 248 rt 76.144 
+slant j j1 41 rt 93.292 
+slant l l1 20 rt 79.43 
+slant n n1 51 rt 79.714 
+slant p p1 46 rt 71.714 
+slant r r1 47 rt 78.714 
+slant t t1 46 rt 72.715 
+slant v u1 54 wr 71.429 
+slant x x1 37 rt 72.286 
+slant z z1 62 rt 92.286 
+slant y y1 44 rt 84.363 
+slant w w1 2455 rt 46.754 
+slant u u1 44 rt 82.381 
+slant s s2 52 rt 92.857 
+slant q q1 47 rt 98.905 
+slant o o1 20 rt 98.251 
+slant m n1 1875 wr 54.103 
+slant k k1 418 rt 77.905 
+slant i i1 37 rt 90.287 
+slant g g1 51 rt 94.558 
+slant e e1 33 rt 90.001 
+slant c c1 226 rt 98.667 
+slant a a1 44 rt 93.857 
+snout b b1 37 rt 95.572 
+snout d d1 39 rt 96.0 
+snout f f1 56 rt 87.435 
+snout h h1 38 rt 95.524 
+snout j j1 47 rt 90.078 
+snout l l1 36 rt 95.999 
+snout n n1 51 rt 85.857 
+snout p p1 48 rt 87.0 
+snout r r1 28 rt 90.286 
+snout t t1 34 rt 85.948 
+snout v u1 2361 wr 56.289 
+snout x x1 49 rt 83.0 
+snout z z1 62 rt 87.905 
+snout y y1 46 rt 84.078 
+snout w w1 99 rt 78.719 
+snout u u1 43 rt 82.381 
+snout s s2 54 rt 84.285 
+snout q q1 40 rt 88.286 
+snout o o1 26 rt 98.251 
+snout m m1 58 rt 94.635 
+snout k k1 52 rt 84.858 
+snout i i1 41 rt 80.714 
+snout g g1 37 rt 84.188 
+snout e e2 915 rt 85.246 
+snout c c1 30 rt 92.858 
+snout a a1 22 rt 90.857 
+funtnip b b1 120 rt 73.713 
+funtnip d d1 4474 rt 50.016 
+funtnip f f1 50 rt 73.644 
+funtnip h h1 261 rt 79.428 
+funtnip j h1 8000 qt
+funtnip l t1 2662 wr 44.914 
+funtnip n n1 1437 rt 71.694 
+funtnip p p1 1796 rt 56.803 
+funtnip r r1 910 rt 74.946 
+funtnip t t1 2434 rt 44.576 
+funtnip v v1 1449 rt 68.847 
+funtnip x k1 4657 wr 43.601 
+funtnip z z1 3583 rt 43.088 
+funtnip y y1 1786 rt 72.331 
+funtnip w w1 52 rt 68.81 
+funtnip u r1 42 wr 65.571 
+funtnip s r1 4499 wr 33.738 
+funtnip q q1 90 rt 72.572 
+funtnip o a1 829 wr 61.325 
+funtnip m m1 72 rt 75.667 
+funtnip k k1 497 rt 77.143 
+funtnip i k1 8000 qt
+funtnip g k1 8000 qt
+funtnip e z1 7588 wr 22.68 
+funtnip c n1 5617 wr 37.796 
+funtnip a w1 7837 wr 32.156 
+sluice b j1 5420 wr 54.661 
+sluice d i1 4075 wr 45.319 
+sluice f i1 37 wr 86.857 
+sluice h i1 45 wr 87.572 
+sluice j j1 46 rt 88.123 
+sluice l n1 4843 wr 26.154 
+sluice n i1 491 wr 88.857 
+sluice p j1 130 wr 62.669 
+sluice r i1 2299 wr 52.855 
+sluice t i1 3835 wr 52.039 
+sluice v w1 3215 wr 43.302 
+sluice x w1 3582 wr 49.337 
+sluice z i1 3318 wr 46.619 
+sluice y j1 966 wr 57.932 
+sluice w j1 1974 wr 57.792 
+sluice u i1 1039 wr 66.475 
+sluice s i1 2609 wr 59.334 
+sluice q q2 51 rt 53.667 
+sluice o j1 5041 wr 55.179 
+sluice m n1 43 wr 61.999 
+sluice k k1 5773 rt 38.896 
+sluice i i1 36 rt 73.286 
+sluice g j1 1254 wr 60.66 
+sluice e i1 4407 wr 48.461 
+sluice c m1 4734 wr 38.677 
+sluice a i1 4076 wr 59.799 
+square-curl b b1 58 rt 76.809 
+square-curl d d1 67 rt 81.237 
+square-curl f f1 3239 rt 34.97 
+square-curl h h1 52 rt 83.19 
+square-curl j j1 833 rt 73.32 
+square-curl l l1 26 rt 60.571 
+square-curl n n1 50 rt 85.714 
+square-curl p p1 1741 rt 49.108 
+square-curl r r1 29 rt 94.143 
+square-curl t t1 39 rt 79.285 
+square-curl v u1 394 wr 76.999 
+square-curl x x1 980 rt 73.568 
+square-curl z z1 371 rt 78.381 
+square-curl y y1 58 rt 80.084 
+square-curl w w1 63 rt 81.524 
+square-curl u u1 47 rt 69.286 
+square-curl s s2 58 rt 67.858 
+square-curl q q1 1025 rt 71.558 
+square-curl o o1 19 rt 98.251 
+square-curl m m1 117 rt 80.56 
+square-curl k k1 735 rt 84.413 
+square-curl i i1 49 rt 81.428 
+square-curl g n1 4929 wr 35.975 
+square-curl e r1 72 wr 82.714 
+square-curl c c1 466 rt 86.572 
+square-curl a u1 1651 wr 72.078 
+weird-arrow b b1 41 rt 91.858 
+weird-arrow d d1 43 rt 91.144 
+weird-arrow f t1 3293 wr 39.3 
+weird-arrow h h1 45 rt 66.714 
+weird-arrow j j1 62 rt 80.046 
+weird-arrow l l1 37 rt 68.572 
+weird-arrow n n1 48 rt 63.762 
+weird-arrow p p1 47 rt 92.429 
+weird-arrow r r1 44 rt 92.0 
+weird-arrow t k1 1952 wr 53.147 
+weird-arrow v v1 39 rt 68.286 
+weird-arrow x w1 5598 wr 53.874 
+weird-arrow z z1 48 rt 80.381 
+weird-arrow y y1 44 rt 88.239 
+weird-arrow w w1 4660 rt 36.903 
+weird-arrow u u1 104 rt 64.572 
+weird-arrow s s2 49 rt 71.715 
+weird-arrow q q1 866 rt 67.898 
+weird-arrow o o1 28 rt 98.251 
+weird-arrow m m1 1640 rt 63.416 
+weird-arrow k f1 844 wr 52.973 
+weird-arrow i i1 41 rt 79.142 
+weird-arrow g g1 47 rt 78.773 
+weird-arrow e e1 3772 rt 59.508 
+weird-arrow c c1 27 rt 91.43 
+weird-arrow a a1 3917 rt 63.615 
+close b b2 56 rt 92.524 
+close d d1 46 rt 94.619 
+close f t1 40 wr 74.832 
+close h h1 2609 rt 43.479 
+close j j1 48 rt 83.61 
+close l l1 29 rt 79.428 
+close n n1 63 rt 74.429 
+close p p1 2721 rt 60.46 
+close r r1 49 rt 65.857 
+close t t1 51 rt 67.428 
+close v v1 38 rt 87.429 
+close x x1 49 rt 99.143 
+close z z1 78 rt 94.667 
+close y y1 45 rt 74.371 
+close w u1 1822 wr 53.563 
+close u u1 31 rt 84.81 
+close s u1 844 wr 73.997 
+close q q1 48 rt 91.286 
+close o o1 21 rt 98.251 
+close m m1 62 rt 74.048 
+close k k1 95 rt 78.857 
+close i i1 35 rt 86.428 
+close g g1 35 rt 89.968 
+close e e1 52 rt 89.43 
+close c c1 94 rt 92.858 
+close a a1 42 rt 89.428 
+intersect b b2 952 rt 57.582 
+intersect d d2 1705 rt 54.439 
+intersect f f1 58 rt 92.033 
+intersect h k1 4602 wr 39.48 
+intersect j j1 42 rt 88.766 
+intersect l l1 28 rt 82.286 
+intersect n m1 2763 wr 50.067 
+intersect p j1 4526 wr 59.919 
+intersect r r1 190 rt 70.428 
+intersect t t1 64 rt 75.994 
+intersect v z1 4884 wr 32.676 
+intersect x x1 46 rt 91.571 
+intersect z z1 594 rt 86.334 
+intersect y y1 51 rt 65.2 
+intersect w w1 2692 rt 41.255 
+intersect u u1 853 rt 57.869 
+intersect s r1 161 wr 73.142 
+intersect q q2 818 rt 58.463 
+intersect o o1 30 rt 98.251 
+intersect m m1 740 rt 55.38 
+intersect k f1 111 wr 63.143 
+intersect i i1 51 rt 90.0 
+intersect g g2 47 rt 66.541 
+intersect e o1 86 wr 61.857 
+intersect c c1 26 rt 96.858 
+intersect a o1 139 wr 60.751 
+slash b b2 51 rt 94.286 
+slash d d1 29 rt 96.429 
+slash f f1 37 rt 73.571 
+slash h h1 105 rt 84.143 
+slash j j1 43 rt 97.182 
+slash l l1 87 rt 74.858 
+slash n m1 509 wr 76.715 
+slash p p1 1068 rt 70.881 
+slash r r1 26 rt 65.857 
+slash t t1 38 rt 77.286 
+slash v v1 45 rt 81.286 
+slash x x1 45 rt 99.143 
+slash z z1 62 rt 94.953 
+slash y y1 1117 rt 77.521 
+slash w g1 7524 wr 26.894 
+slash u w1 92 wr 69.381 
+slash s l1 25 wr 62.286 
+slash q q1 52 rt 96.0 
+slash o o1 20 rt 98.251 
+slash m m1 73 rt 82.715 
+slash k k1 56 rt 75.762 
+slash i i1 38 rt 84.143 
+slash g g1 45 rt 90.546 
+slash e e2 256 rt 99.429 
+slash c c1 117 rt 92.858 
+slash a a1 44 rt 96.429 
+hunt4 b b2 32 rt 98.285 
+hunt4 d d2 41 rt 98.285 
+hunt4 f f1 40 rt 80.285 
+hunt4 h h1 51 rt 87.0 
+hunt4 j j1 54 rt 92.78 
+hunt4 l l1 24 rt 63.714 
+hunt4 n n1 42 rt 83.286 
+hunt4 p p2 46 rt 97.0 
+hunt4 r r1 50 rt 97.286 
+hunt4 t t1 54 rt 77.857 
+hunt4 v v1 53 rt 80.143 
+hunt4 x x1 45 rt 93.143 
+hunt4 z z1 64 rt 94.953 
+hunt4 y y1 44 rt 97.785 
+hunt4 w w1 67 rt 71.858 
+hunt4 u u1 40 rt 93.428 
+hunt4 s s2 47 rt 86.286 
+hunt4 q q2 40 rt 97.857 
+hunt4 o a1 2645 wr 57.009 
+hunt4 m m1 1621 rt 70.05 
+hunt4 k k1 82 rt 90.762 
+hunt4 i i1 1633 rt 66.825 
+hunt4 g g2 48 rt 98.214 
+hunt4 e e1 49 rt 95.0 
+hunt4 c c1 21 rt 96.858 
+hunt4 a a2 37 rt 94.714 
+benzene-right b b1 41 rt 97.571 
+benzene-right d d1 43 rt 92.429 
+benzene-right f f1 53 rt 78.0 
+benzene-right h h1 43 rt 80.0 
+benzene-right j j1 46 rt 81.525 
+benzene-right l l1 33 rt 78.287 
+benzene-right n n1 43 rt 72.714 
+benzene-right p p1 1112 rt 74.269 
+benzene-right r r1 32 rt 91.0 
+benzene-right t t1 29 rt 79.001 
+benzene-right v v1 39 rt 65.334 
+benzene-right x x1 48 rt 92.285 
+benzene-right z z1 69 rt 86.953 
+benzene-right y y1 33 rt 84.928 
+benzene-right w w1 825 rt 51.802 
+benzene-right u u1 33 rt 83.571 
+benzene-right s s2 40 rt 86.286 
+benzene-right q q1 52 rt 95.001 
+benzene-right o o1 31 rt 98.251 
+benzene-right m m1 67 rt 67.286 
+benzene-right k k1 292 rt 96.001 
+benzene-right i i1 43 rt 79.285 
+benzene-right g g1 51 rt 74.649 
+benzene-right e e2 68 rt 63.018 
+benzene-right c c1 19 rt 67.429 
+benzene-right a a2 28 rt 90.714 
+house b b1 50 rt 95.333 
+house d d1 44 rt 96.619 
+house f f1 47 rt 82.332 
+house h h1 41 rt 80.332 
+house j j1 153 rt 80.338 
+house l l1 23 rt 61.428 
+house n n1 46 rt 83.286 
+house p p1 42 rt 86.143 
+house r r1 39 rt 94.143 
+house t t1 31 rt 78.858 
+house v u1 47 wr 70.143 
+house x x1 52 rt 94.571 
+house z z1 69 rt 83.238 
+house y y1 57 rt 84.74 
+house w u1 1683 wr 56.832 
+house u u1 48 rt 85.238 
+house s s2 48 rt 71.715 
+house q q1 53 rt 82.572 
+house o o1 26 rt 98.251 
+house m m1 225 rt 90.286 
+house k k1 105 rt 89.365 
+house i i1 316 rt 70.144 
+house g g1 36 rt 84.149 
+house e e1 42 rt 95.0 
+house c c1 29 rt 77.142 
+house a a1 40 rt 96.286 
+standard-square b b1 39 rt 100.0 
+standard-square d d1 170 rt 100.19 
+standard-square f f1 44 rt 96.818 
+standard-square h h1 31 rt 84.571 
+standard-square j j1 46 rt 90.585 
+standard-square l l1 30 rt 91.143 
+standard-square n n1 57 rt 82.714 
+standard-square p p1 49 rt 98.715 
+standard-square r r1 44 rt 98.571 
+standard-square t t1 48 rt 81.143 
+standard-square v v1 48 rt 80.143 
+standard-square x x1 63 rt 99.143 
+standard-square z z1 58 rt 94.953 
+standard-square y y1 61 rt 88.928 
+standard-square w w1 109 rt 87.873 
+standard-square u u1 50 rt 87.094 
+standard-square s s2 63 rt 85.858 
+standard-square q q1 53 rt 99.762 
+standard-square o o1 30 rt 98.251 
+standard-square m m1 67 rt 94.19 
+standard-square k k1 237 rt 75.762 
+standard-square i i1 34 rt 96.0 
+standard-square g g1 47 rt 94.688 
+standard-square e e1 42 rt 92.858 
+standard-square c c1 20 rt 77.428 
+standard-square a a1 59 rt 100.0 
+hint4 b b1 180 rt 69.572 
+hint4 d d1 39 rt 68.857 
+hint4 f f1 60 rt 61.572 
+hint4 h l1 30 wr 79.715 
+hint4 j j1 47 rt 92.475 
+hint4 l l1 22 rt 63.714 
+hint4 n n1 50 rt 71.857 
+hint4 p p1 48 rt 71.715 
+hint4 r r1 47 rt 91.0 
+hint4 t t1 53 rt 59.144 
+hint4 v v1 46 rt 80.143 
+hint4 x x1 37 rt 99.143 
+hint4 z z1 63 rt 94.667 
+hint4 y y1 95 rt 81.025 
+hint4 w w1 1398 rt 64.601 
+hint4 u u1 52 rt 66.572 
+hint4 s s2 56 rt 80.0 
+hint4 q q1 73 rt 76.143 
+hint4 o v1 48 wr 79.286 
+hint4 m i1 866 wr 64.172 
+hint4 k k1 105 rt 72.62 
+hint4 i i1 3243 rt 57.06 
+hint4 g g1 60 rt 71.311 
+hint4 e e1 98 rt 79.0 
+hint4 c c1 38 rt 71.142 
+hint4 a o1 346 wr 67.108 
+bowtie b l1 1228 wr 57.192 
+bowtie d l1 842 wr 55.16 
+bowtie f f1 51 rt 61.261 
+bowtie h h1 3951 rt 45.065 
+bowtie j j1 6341 rt 46.71 
+bowtie l l1 27 rt 62.0 
+bowtie n o1 225 wr 60.751 
+bowtie p y2 2438 wr 40.651 
+bowtie r r1 1025 rt 71.558 
+bowtie t t1 41 rt 63.429 
+bowtie v v1 42 rt 67.571 
+bowtie x x1 62 rt 80.572 
+bowtie z o1 468 wr 60.751 
+bowtie y y1 1643 rt 57.632 
+bowtie w w1 102 rt 84.254 
+bowtie u u1 208 rt 72.857 
+bowtie s r1 1043 wr 73.269 
+bowtie q o1 7555 wr 22.177 
+bowtie o a1 5159 wr 41.264 
+bowtie m m1 3155 rt 49.252 
+bowtie k k1 4948 rt 36.557 
+bowtie i i1 2136 rt 67.596 
+bowtie g y1 4484 wr 41.796 
+bowtie e c1 22 wr 61.751 
+bowtie c o1 336 wr 60.751 
+bowtie a a2 72 rt 68.233 
+checkmark b h1 1139 wr 78.47 
+checkmark d d1 3466 rt 51.755 
+checkmark f f1 35 rt 92.077 
+checkmark h h1 58 rt 85.429 
+checkmark j h1 8000 qt
+checkmark l l1 30 rt 78.573 
+checkmark n n1 39 rt 77.428 
+checkmark p p1 3047 rt 55.849 
+checkmark r r1 41 rt 65.857 
+checkmark t t1 41 rt 85.552 
+checkmark v v1 63 rt 81.286 
+checkmark x x1 40 rt 86.715 
+checkmark z z1 57 rt 88.857 
+checkmark y y2 31 rt 81.39 
+checkmark w u1 226 wr 78.714 
+checkmark u u1 52 rt 85.857 
+checkmark s s2 51 rt 74.858 
+checkmark q q1 1111 rt 77.386 
+checkmark o o1 24 rt 95.321 
+checkmark m m1 129 rt 82.715 
+checkmark k k1 5639 rt 31.464 
+checkmark i i1 46 rt 93.857 
+checkmark g y2 35 wr 77.819 
+checkmark e e1 53 rt 80.43 
+checkmark c c1 29 rt 79.715 
+checkmark a n1 1129 wr 58.953 
+flournoy-ranch b b2 40 rt 81.857 
+flournoy-ranch d d2 1931 rt 37.857 
+flournoy-ranch f f1 6707 rt 27.46 
+flournoy-ranch h h1 49 rt 77.714 
+flournoy-ranch j j1 165 rt 79.014 
+flournoy-ranch l l1 4084 rt 35.379 
+flournoy-ranch n n1 2586 rt 48.652 
+flournoy-ranch p p2 41 rt 82.0 
+flournoy-ranch r r1 1390 rt 64.104 
+flournoy-ranch t t1 3299 rt 50.464 
+flournoy-ranch v v1 843 rt 72.642 
+flournoy-ranch x w1 3247 wr 45.835 
+flournoy-ranch z c1 2427 wr 51.906 
+flournoy-ranch y y1 39 rt 62.858 
+flournoy-ranch w w1 4847 rt 27.895 
+flournoy-ranch u n1 2727 wr 46.166 
+flournoy-ranch s s2 807 rt 83.619 
+flournoy-ranch q q2 57 rt 50.0 
+flournoy-ranch o g1 7083 wr 20.262 
+flournoy-ranch m m1 5020 rt 33.322 
+flournoy-ranch k k1 62 rt 73.714 
+flournoy-ranch i i1 1822 rt 67.211 
+flournoy-ranch g g2 231 rt 48.591 
+flournoy-ranch e e1 5807 rt 36.422 
+flournoy-ranch c c1 1624 rt 47.597 
+flournoy-ranch a e2 4127 wr 44.318 
+double-backslash b b1 41 rt 88.952 
+double-backslash d d1 37 rt 91.19 
+double-backslash f f1 424 rt 83.558 
+double-backslash h h1 62 rt 85.858 
+double-backslash j j1 46 rt 86.429 
+double-backslash l l1 29 rt 82.57 
+double-backslash n n1 75 rt 73.43 
+double-backslash p p1 48 rt 85.142 
+double-backslash r c1 25 wr 70.857 
+double-backslash t t1 32 rt 67.429 
+double-backslash v v1 53 rt 96.952 
+double-backslash x x1 60 rt 86.001 
+double-backslash z y2 5057 wr 28.823 
+double-backslash y y2 56 rt 87.514 
+double-backslash w w1 4145 rt 40.985 
+double-backslash u v1 44 wr 87.0 
+double-backslash s s2 42 rt 72.0 
+double-backslash q q1 1703 rt 59.888 
+double-backslash o o1 26 rt 95.321 
+double-backslash m m1 3125 rt 62.569 
+double-backslash k k1 1055 rt 75.127 
+double-backslash i i1 40 rt 78.143 
+double-backslash g g1 47 rt 82.273 
+double-backslash e e2 43 rt 70.429 
+double-backslash c c1 23 rt 79.715 
+double-backslash a e2 6300 wr 39.828 
+sabretooth b b1 48 rt 84.286 
+sabretooth d d1 41 rt 94.857 
+sabretooth f f1 52 rt 78.514 
+sabretooth h h1 130 rt 84.143 
+sabretooth j j1 41 rt 76.852 
+sabretooth l l1 72 rt 60.572 
+sabretooth n n1 1490 rt 67.763 
+sabretooth p p1 44 rt 92.858 
+sabretooth r r1 46 rt 92.714 
+sabretooth t t1 38 rt 74.143 
+sabretooth v v1 41 rt 76.429 
+sabretooth x u1 45 wr 54.0 
+sabretooth z e2 2696 wr 36.505 
+sabretooth y y2 43 rt 94.182 
+sabretooth w u1 1846 wr 50.578 
+sabretooth u r1 213 wr 63.857 
+sabretooth s s2 57 rt 86.001 
+sabretooth q q1 45 rt 91.571 
+sabretooth o o1 31 rt 98.251 
+sabretooth m n1 40 wr 80.0 
+sabretooth k k1 97 rt 88.667 
+sabretooth i i1 63 rt 78.571 
+sabretooth g g1 1074 rt 66.491 
+sabretooth e e2 49 rt 66.857 
+sabretooth c c1 24 rt 88.857 
+sabretooth a a1 809 rt 57.464 
+shorts b b1 40 rt 97.762 
+shorts d d1 48 rt 98.38 
+shorts f f1 853 rt 67.812 
+shorts h h1 33 rt 76.667 
+shorts j j1 1791 rt 71.27 
+shorts l l1 25 rt 79.428 
+shorts n n1 56 rt 70.857 
+shorts p p1 39 rt 91.856 
+shorts r r1 43 rt 86.286 
+shorts t t1 49 rt 62.43 
+shorts v v1 45 rt 76.286 
+shorts x x1 46 rt 99.143 
+shorts z z1 52 rt 88.857 
+shorts y y1 56 rt 75.312 
+shorts w w1 91 rt 85.587 
+shorts u u1 37 rt 77.81 
+shorts s s2 46 rt 67.858 
+shorts q q1 53 rt 80.714 
+shorts o o1 28 rt 98.251 
+shorts m m1 1652 rt 59.653 
+shorts k k1 111 rt 78.889 
+shorts i i1 47 rt 78.428 
+shorts g g1 61 rt 91.662 
+shorts e e1 43 rt 88.857 
+shorts c c1 21 rt 91.43 
+shorts a a1 57 rt 93.857 
+benzene-left b b1 44 rt 92.714 
+benzene-left d d1 35 rt 98.429 
+benzene-left f f1 44 rt 96.344 
+benzene-left h h1 60 rt 80.429 
+benzene-left j j1 30 rt 89.025 
+benzene-left l l1 27 rt 63.714 
+benzene-left n n1 36 rt 79.714 
+benzene-left p p1 36 rt 95.286 
+benzene-left r r1 45 rt 96.429 
+benzene-left t t1 38 rt 75.571 
+benzene-left v v1 57 rt 94.095 
+benzene-left x x1 47 rt 79.286 
+benzene-left z z1 863 rt 69.48 
+benzene-left y y1 65 rt 78.201 
+benzene-left w w1 1949 rt 62.966 
+benzene-left u u1 882 rt 65.866 
+benzene-left s s2 45 rt 76.43 
+benzene-left q q1 47 rt 90.0 
+benzene-left o o1 21 rt 98.251 
+benzene-left m c1 1039 wr 54.482 
+benzene-left k k1 64 rt 79.905 
+benzene-left i i1 47 rt 75.143 
+benzene-left g g1 59 rt 82.332 
+benzene-left e e1 794 rt 78.572 
+benzene-left c c1 24 rt 96.858 
+benzene-left a a2 57 rt 84.59 
+boat b b1 51 rt 91.524 
+boat d d1 46 rt 86.857 
+boat f f1 1057 rt 74.348 
+boat h h1 68 rt 76.286 
+boat j j1 42 rt 87.52 
+boat l l1 34 rt 79.429 
+boat n n1 47 rt 72.0 
+boat p p1 57 rt 91.285 
+boat r r1 53 rt 87.143 
+boat t t1 65 rt 67.286 
+boat v v1 40 rt 80.143 
+boat x x1 63 rt 91.572 
+boat z z1 726 rt 79.238 
+boat y y1 67 rt 91.824 
+boat w w1 61 rt 71.858 
+boat u u1 43 rt 79.0 
+boat s s2 52 rt 77.286 
+boat q q1 38 rt 93.143 
+boat o o1 24 rt 98.251 
+boat m m1 81 rt 86.476 
+boat k k1 1745 rt 81.972 
+boat i i1 35 rt 77.714 
+boat g g1 71 rt 76.487 
+boat e e2 41 rt 73.714 
+boat c c1 29 rt 90.858 
+boat a a2 49 rt 80.428 
+slant b d1 38 wr 85.668 
+slant d d1 55 rt 99.334 
+slant f f1 61 rt 70.286 
+slant h h1 159 rt 65.429 
+slant j j1 50 rt 93.292 
+slant l l1 15 rt 79.43 
+slant n n1 32 rt 74.857 
+slant p p1 50 rt 71.714 
+slant r r1 63 rt 78.714 
+slant t t1 50 rt 72.715 
+slant v u1 44 wr 71.429 
+slant x x1 43 rt 72.286 
+slant z z1 62 rt 92.286 
+slant y y1 37 rt 84.363 
+slant w w1 3278 rt 40.467 
+slant u u1 47 rt 82.381 
+slant s s2 33 rt 92.857 
+slant q q1 41 rt 98.905 
+slant o o1 29 rt 98.251 
+slant m m1 333 rt 67.19 
+slant k f1 2110 wr 52.451 
+slant i i1 94 rt 90.287 
+slant g g1 45 rt 91.084 
+slant e e1 46 rt 90.001 
+slant c c1 339 rt 98.667 
+slant a a1 40 rt 93.857 
+snout b b1 37 rt 95.572 
+snout d d1 52 rt 96.0 
+snout f f1 53 rt 87.435 
+snout h h1 58 rt 95.524 
+snout j j1 50 rt 80.363 
+snout l l1 18 rt 95.999 
+snout n n1 37 rt 85.857 
+snout p p1 36 rt 87.0 
+snout r r1 49 rt 90.286 
+snout t t1 41 rt 85.948 
+snout v z1 910 wr 65.143 
+snout x x1 51 rt 83.0 
+snout z z1 62 rt 87.905 
+snout y y1 97 rt 84.078 
+snout w w1 52 rt 87.111 
+snout u u1 47 rt 82.381 
+snout s s2 56 rt 84.285 
+snout q q1 52 rt 88.286 
+snout o o1 21 rt 98.251 
+snout m m1 56 rt 94.635 
+snout k k1 79 rt 84.858 
+snout i i1 48 rt 80.714 
+snout g g1 48 rt 84.188 
+snout e e1 330 rt 83.429 
+snout c c1 27 rt 92.858 
+snout a a1 39 rt 89.857 
+funtnip b b1 272 rt 73.713 
+funtnip d d1 4013 rt 41.234 
+funtnip f f1 52 rt 73.644 
+funtnip h h1 270 rt 79.428 
+funtnip j h1 8000 qt
+funtnip l t1 2408 wr 42.36 
+funtnip n n1 487 rt 75.0 
+funtnip p q1 1338 wr 69.411 
+funtnip r r1 1933 rt 52.074 
+funtnip t t1 2735 rt 47.13 
+funtnip v v1 890 rt 70.067 
+funtnip x k1 4786 wr 43.601 
+funtnip z u1 4188 wr 38.406 
+funtnip y y1 1650 rt 72.331 
+funtnip w w1 48 rt 68.81 
+funtnip u r1 57 wr 65.571 
+funtnip s r1 5277 wr 40.61 
+funtnip q q1 370 rt 72.572 
+funtnip o b1 3810 wr 44.306 
+funtnip m m1 209 rt 75.667 
+funtnip k k1 325 rt 85.333 
+funtnip i k1 8000 qt
+funtnip g k1 8000 qt
+funtnip e k1 8000 qt
+funtnip c h1 4824 wr 32.11 
+funtnip a w1 7174 wr 33.264 
+sluice b j1 4820 wr 55.703 
+sluice d i1 4015 wr 45.319 
+sluice f i1 46 wr 86.857 
+sluice h i1 35 wr 87.572 
+sluice j j1 57 rt 88.123 
+sluice l i1 4848 wr 44.967 
+sluice n i1 2596 wr 64.502 
+sluice p j1 216 wr 62.669 
+sluice r i1 2007 wr 52.855 
+sluice t i1 4019 wr 50.631 
+sluice v w1 3555 wr 43.302 
+sluice x w1 3594 wr 49.337 
+sluice z i1 3548 wr 46.619 
+sluice y y1 1047 rt 49.733 
+sluice w y1 1653 wr 49.692 
+sluice u i1 936 wr 66.475 
+sluice s n1 2430 wr 51.65 
+sluice q j1 884 wr 67.227 
+sluice o j1 5069 wr 55.179 
+sluice m n1 156 wr 61.999 
+sluice k k1 5670 rt 37.052 
+sluice i i1 119 rt 73.286 
+sluice g j1 1093 wr 57.932 
+sluice e i1 4131 wr 48.461 
+sluice c i1 5030 wr 38.443 
+sluice a i1 4063 wr 59.799 
+square-curl b b1 67 rt 76.809 
+square-curl d d1 259 rt 81.237 
+square-curl f f1 3436 rt 34.97 
+square-curl h h1 44 rt 83.19 
+square-curl j j1 813 rt 73.32 
+square-curl l l1 21 rt 60.571 
+square-curl n n1 44 rt 85.714 
+square-curl p p1 2587 rt 49.576 
+square-curl r r1 47 rt 94.143 
+square-curl t t1 42 rt 79.285 
+square-curl v u1 57 wr 76.999 
+square-curl x x1 1986 rt 70.66 
+square-curl z z1 654 rt 78.381 
+square-curl y y1 41 rt 80.084 
+square-curl w w1 63 rt 78.095 
+square-curl u u1 46 rt 69.286 
+square-curl s s2 51 rt 67.858 
+square-curl q q1 3719 rt 52.706 
+square-curl o o1 34 rt 98.251 
+square-curl m n1 1651 wr 61.47 
+square-curl k k1 1918 rt 70.81 
+square-curl i i1 55 rt 81.428 
+square-curl g g1 2192 rt 58.384 
+square-curl e r1 31 wr 82.714 
+square-curl c c1 386 rt 86.572 
+square-curl a u1 1734 wr 72.078 
+weird-arrow b b1 49 rt 91.858 
+weird-arrow d d1 38 rt 91.144 
+weird-arrow f f1 3240 rt 39.3 
+weird-arrow h h1 62 rt 66.714 
+weird-arrow j j1 50 rt 80.046 
+weird-arrow l l1 39 rt 68.572 
+weird-arrow n n1 981 rt 63.743 
+weird-arrow p p1 55 rt 92.429 
+weird-arrow r r1 48 rt 92.0 
+weird-arrow t t1 3410 rt 52.575 
+weird-arrow v v1 49 rt 68.286 
+weird-arrow x w1 4865 wr 35.845 
+weird-arrow z z1 69 rt 83.238 
+weird-arrow y y1 49 rt 88.239 
+weird-arrow w w1 4538 rt 35.66 
+weird-arrow u w1 718 wr 62.037 
+weird-arrow s s2 36 rt 71.715 
+weird-arrow q q1 1038 rt 67.898 
+weird-arrow o o1 24 rt 98.251 
+weird-arrow m m1 1628 rt 63.416 
+weird-arrow k f1 2100 wr 51.448 
+weird-arrow i i1 55 rt 79.142 
+weird-arrow g g1 45 rt 78.773 
+weird-arrow e e1 2944 rt 61.661 
+weird-arrow c c1 20 rt 91.43 
+weird-arrow a a1 2952 rt 63.406 
+close b b2 46 rt 92.524 
+close d d1 61 rt 94.619 
+close f f1 149 rt 74.832 
+close h m1 4025 wr 37.549 
+close j j1 39 rt 83.61 
+close l l1 33 rt 79.428 
+close n n1 33 rt 74.429 
+close p p1 3020 rt 60.46 
+close r r1 52 rt 65.857 
+close t t1 39 rt 67.428 
+close v v1 36 rt 87.429 
+close x x1 42 rt 99.143 
+close z z1 68 rt 94.667 
+close y y1 35 rt 74.371 
+close w u1 945 wr 52.448 
+close u u1 45 rt 82.523 
+close s s2 865 rt 73.997 
+close q q1 31 rt 91.286 
+close o o1 26 rt 98.251 
+close m m1 44 rt 74.048 
+close k k1 85 rt 78.857 
+close i i1 38 rt 86.428 
+close g g1 47 rt 89.968 
+close e e1 48 rt 89.43 
+close c c1 341 rt 92.858 
+close a a1 43 rt 89.428 
+intersect b b2 1494 rt 57.582 
+intersect d d2 1935 rt 54.439 
+intersect f f1 47 rt 92.033 
+intersect h k1 3939 wr 47.7 
+intersect j j1 44 rt 88.766 
+intersect l l1 23 rt 82.286 
+intersect n m1 2998 wr 47.275 
+intersect p j1 4012 wr 59.919 
+intersect r r1 365 rt 70.428 
+intersect t t1 27 rt 75.994 
+intersect v z1 4849 wr 32.676 
+intersect x x1 47 rt 91.571 
+intersect z z1 472 rt 86.334 
+intersect y y1 61 rt 65.2 
+intersect w y1 2411 wr 39.301 
+intersect u u1 819 rt 58.954 
+intersect s r1 379 wr 73.142 
+intersect q q2 858 rt 58.463 
+intersect o o1 21 rt 98.251 
+intersect m m1 142 rt 63.38 
+intersect k f1 811 wr 59.564 
+intersect i i1 36 rt 90.0 
+intersect g g2 46 rt 66.541 
+intersect e e1 156 rt 66.715 
+intersect c c1 20 rt 96.858 
+intersect a o1 86 wr 60.751 
+slash b b2 45 rt 94.286 
+slash d d1 59 rt 96.429 
+slash f f1 60 rt 73.571 
+slash h h1 66 rt 84.143 
+slash j j1 46 rt 97.182 
+slash l l1 188 rt 74.858 
+slash n m1 379 wr 68.143 
+slash p p1 982 rt 70.881 
+slash r r1 41 rt 65.857 
+slash t t1 60 rt 77.286 
+slash v v1 45 rt 81.286 
+slash x x1 41 rt 99.143 
+slash z z1 54 rt 94.953 
+slash y y1 879 rt 83.755 
+slash w d1 7298 wr 32.395 
+slash u w1 60 wr 69.381 
+slash s l1 28 wr 62.286 
+slash q q1 47 rt 96.0 
+slash o o1 28 rt 98.251 
+slash m m1 928 rt 78.47 
+slash k k1 69 rt 75.762 
+slash i i1 42 rt 84.143 
+slash g g1 59 rt 90.546 
+slash e e1 281 rt 86.57 
+slash c c1 267 rt 92.858 
+slash a a1 38 rt 95.572 
+hunt4 b b2 59 rt 98.285 
+hunt4 d d2 43 rt 98.285 
+hunt4 f f1 42 rt 80.285 
+hunt4 h h1 39 rt 82.571 
+hunt4 j j1 42 rt 92.78 
+hunt4 l l1 26 rt 63.714 
+hunt4 n n1 43 rt 83.286 
+hunt4 p p2 51 rt 97.0 
+hunt4 r r1 32 rt 97.286 
+hunt4 t t1 44 rt 77.857 
+hunt4 v v1 43 rt 80.143 
+hunt4 x x1 52 rt 99.143 
+hunt4 z z1 56 rt 94.953 
+hunt4 y y1 33 rt 97.785 
+hunt4 w u1 989 wr 54.278 
+hunt4 u u1 28 rt 93.428 
+hunt4 s s2 58 rt 86.286 
+hunt4 q q2 53 rt 97.857 
+hunt4 o a1 2350 wr 59.156 
+hunt4 m m1 66 rt 90.286 
+hunt4 k k1 82 rt 82.572 
+hunt4 i i1 1611 rt 59.111 
+hunt4 g g2 48 rt 98.214 
+hunt4 e e1 48 rt 95.0 
+hunt4 c c1 24 rt 96.858 
+hunt4 a a2 33 rt 94.714 
+benzene-right b b1 28 rt 97.571 
+benzene-right d d1 50 rt 92.429 
+benzene-right f f1 51 rt 78.0 
+benzene-right h h1 44 rt 80.0 
+benzene-right j j1 47 rt 81.525 
+benzene-right l l1 25 rt 78.287 
+benzene-right n n1 41 rt 71.999 
+benzene-right p p1 837 rt 74.269 
+benzene-right r r1 51 rt 91.0 
+benzene-right t t1 47 rt 79.001 
+benzene-right v v1 43 rt 65.334 
+benzene-right x x1 50 rt 92.285 
+benzene-right z z1 62 rt 84.381 
+benzene-right y y1 52 rt 84.928 
+benzene-right w w1 2461 rt 52.188 
+benzene-right u u1 51 rt 83.571 
+benzene-right s s2 41 rt 86.286 
+benzene-right q q1 40 rt 95.001 
+benzene-right o o1 25 rt 98.251 
+benzene-right m m1 1219 rt 64.33 
+benzene-right k k1 119 rt 96.572 
+benzene-right i i1 49 rt 79.285 
+benzene-right g g1 39 rt 86.364 
+benzene-right e e2 34 rt 63.018 
+benzene-right c c1 38 rt 90.858 
+benzene-right a a2 43 rt 90.714 
+house b b1 42 rt 95.333 
+house d d1 50 rt 96.619 
+house f f1 61 rt 82.332 
+house h h1 40 rt 80.332 
+house j j1 326 rt 80.338 
+house l l1 22 rt 61.428 
+house n n1 69 rt 83.286 
+house p p1 51 rt 86.143 
+house r r1 46 rt 94.143 
+house t t1 45 rt 78.858 
+house v u1 54 wr 70.143 
+house x x1 47 rt 85.714 
+house z z1 73 rt 83.238 
+house y y1 61 rt 84.74 
+house w w1 469 rt 85.302 
+house u u1 39 rt 85.238 
+house s s2 42 rt 71.715 
+house q q1 49 rt 82.572 
+house o o1 23 rt 98.251 
+house m m1 353 rt 90.286 
+house k k1 345 rt 89.365 
+house i i1 357 rt 78.905 
+house g g1 44 rt 84.149 
+house e e1 44 rt 95.0 
+house c c1 32 rt 77.142 
+house a a1 38 rt 96.286 
+standard-square b b1 54 rt 100.0 
+standard-square d d1 52 rt 100.19 
+standard-square f f1 39 rt 96.818 
+standard-square h h1 51 rt 84.571 
+standard-square j j1 54 rt 90.585 
+standard-square l l1 19 rt 91.143 
+standard-square n n1 40 rt 82.714 
+standard-square p p1 45 rt 98.715 
+standard-square r r1 39 rt 98.571 
+standard-square t t1 46 rt 81.143 
+standard-square v v1 45 rt 80.143 
+standard-square x x1 40 rt 99.143 
+standard-square z z1 71 rt 94.953 
+standard-square y y1 197 rt 88.928 
+standard-square w w1 69 rt 87.873 
+standard-square u u1 38 rt 87.094 
+standard-square s s2 40 rt 85.858 
+standard-square q q1 39 rt 85.428 
+standard-square o o1 18 rt 98.251 
+standard-square m m1 65 rt 94.19 
+standard-square k k1 1253 rt 82.627 
+standard-square i i1 34 rt 96.0 
+standard-square g g1 58 rt 94.688 
+standard-square e e1 53 rt 92.858 
+standard-square c c1 20 rt 77.428 
+standard-square a a1 47 rt 100.0 
+hint4 b b1 272 rt 69.572 
+hint4 d d1 43 rt 68.857 
+hint4 f f1 57 rt 61.572 
+hint4 h l1 29 wr 79.715 
+hint4 j j1 38 rt 92.475 
+hint4 l l1 34 rt 63.714 
+hint4 n n1 48 rt 71.857 
+hint4 p p1 58 rt 71.715 
+hint4 r r1 36 rt 91.0 
+hint4 t t1 44 rt 59.144 
+hint4 v v1 48 rt 80.143 
+hint4 x x1 97 rt 99.143 
+hint4 z z1 53 rt 94.667 
+hint4 y y1 195 rt 81.025 
+hint4 w w1 173 rt 67.476 
+hint4 u u1 54 rt 66.572 
+hint4 s s2 37 rt 80.0 
+hint4 q q1 84 rt 76.143 
+hint4 o v1 34 wr 79.286 
+hint4 m m1 1051 rt 69.931 
+hint4 k k1 240 rt 72.62 
+hint4 i i1 3212 rt 57.06 
+hint4 g g1 157 rt 67.967 
+hint4 e e1 248 rt 79.0 
+hint4 c c1 25 rt 71.142 
+hint4 a a2 3325 rt 42.104 
+bowtie b l1 1662 wr 49.05 
+bowtie d l1 856 wr 55.16 
+bowtie f f1 57 rt 61.261 
+bowtie h h1 4112 rt 38.516 
+bowtie j j1 5097 rt 49.502 
+bowtie l l1 28 rt 62.0 
+bowtie n n1 812 rt 75.081 
+bowtie p y2 2653 wr 40.651 
+bowtie r r1 980 rt 71.558 
+bowtie t t1 55 rt 63.429 
+bowtie v v1 49 rt 67.571 
+bowtie x x1 49 rt 80.572 
+bowtie z o1 480 wr 60.751 
+bowtie y y1 1907 rt 56.038 
+bowtie w w1 70 rt 73.838 
+bowtie u u1 510 rt 72.857 
+bowtie s o1 383 wr 60.751 
+bowtie q o1 7437 wr 22.177 
+bowtie o a1 5241 wr 41.264 
+bowtie m m1 3796 rt 45.04 
+bowtie k k1 4947 rt 36.557 
+bowtie i i1 1716 rt 67.596 
+bowtie g y1 4075 wr 41.796 
+bowtie e c1 23 wr 61.751 
+bowtie c o1 838 wr 57.634 
+bowtie a a2 36 rt 68.233 
+checkmark b h1 1159 wr 78.47 
+checkmark d d1 1921 rt 65.025 
+checkmark f f1 41 rt 92.077 
+checkmark h h1 49 rt 85.429 
+checkmark j h1 8000 qt
+checkmark l l1 33 rt 78.573 
+checkmark n n1 41 rt 77.428 
+checkmark p y1 5406 wr 31.329 
+checkmark r r1 38 rt 65.857 
+checkmark t t1 45 rt 85.552 
+checkmark v v1 47 rt 81.286 
+checkmark x x1 56 rt 86.715 
+checkmark z z1 59 rt 88.857 
+checkmark y y2 46 rt 81.39 
+checkmark w w1 1077 rt 65.053 
+checkmark u u1 54 rt 85.857 
+checkmark s s2 50 rt 74.858 
+checkmark q q1 34 rt 81.572 
+checkmark o o1 32 rt 95.321 
+checkmark m m1 59 rt 82.715 
+checkmark k m1 7255 wr 28.419 
+checkmark i i1 61 rt 93.857 
+checkmark g y2 41 wr 77.819 
+checkmark e e1 37 rt 80.43 
+checkmark c c1 17 rt 79.715 
+checkmark a n1 807 wr 70.474 
+flournoy-ranch b b2 43 rt 81.857 
+flournoy-ranch d d2 1641 rt 37.857 
+flournoy-ranch f f1 6027 rt 38.735 
+flournoy-ranch h h1 49 rt 77.714 
+flournoy-ranch j j1 51 rt 79.014 
+flournoy-ranch l l1 4412 rt 35.379 
+flournoy-ranch n n1 2700 rt 48.652 
+flournoy-ranch p p2 57 rt 82.0 
+flournoy-ranch r r1 101 rt 66.428 
+flournoy-ranch t t1 3332 rt 50.464 
+flournoy-ranch v v1 1313 rt 72.642 
+flournoy-ranch x k1 4333 wr 42.914 
+flournoy-ranch z c1 2710 wr 51.906 
+flournoy-ranch y y1 48 rt 62.858 
+flournoy-ranch w w1 5588 rt 27.895 
+flournoy-ranch u n1 2134 wr 48.69 
+flournoy-ranch s s2 1110 rt 83.619 
+flournoy-ranch q q2 41 rt 50.0 
+flournoy-ranch o q2 8000 qt
+flournoy-ranch m m1 5052 rt 29.084 
+flournoy-ranch k k1 1994 rt 66.75 
+flournoy-ranch i i1 2924 rt 61.935 
+flournoy-ranch g g2 47 rt 48.591 
+flournoy-ranch e e1 5762 rt 36.422 
+flournoy-ranch c c1 1682 rt 47.597 
+flournoy-ranch a e2 4772 wr 44.318 
+double-backslash b b1 30 rt 88.952 
+double-backslash d d1 50 rt 91.19 
+double-backslash f f1 332 rt 80.13 
+double-backslash h h1 52 rt 85.858 
+double-backslash j j1 57 rt 86.429 
+double-backslash l l1 23 rt 82.57 
+double-backslash n n1 57 rt 73.43 
+double-backslash p p1 49 rt 85.142 
+double-backslash r c1 17 wr 70.857 
+double-backslash t t1 48 rt 67.429 
+double-backslash v v1 38 rt 96.952 
+double-backslash x x1 38 rt 86.001 
+double-backslash z n1 5873 wr 33.161 
+double-backslash y y2 51 rt 87.514 
+double-backslash w w1 3984 rt 44.291 
+double-backslash u v1 67 wr 87.0 
+double-backslash s s2 49 rt 72.0 
+double-backslash q q1 2065 rt 62.608 
+double-backslash o o1 26 rt 95.321 
+double-backslash m m1 1958 rt 65.91 
+double-backslash k k1 36 rt 79.906 
+double-backslash i i1 48 rt 78.143 
+double-backslash g g1 65 rt 82.273 
+double-backslash e e2 44 rt 70.429 
+double-backslash c c1 24 rt 79.715 
+double-backslash a j1 5652 wr 42.892 
+sabretooth b b1 47 rt 94.143 
+sabretooth d d1 51 rt 94.857 
+sabretooth f f1 55 rt 78.514 
+sabretooth h h1 505 rt 84.143 
+sabretooth j j1 45 rt 76.852 
+sabretooth l l1 88 rt 60.572 
+sabretooth n n1 1962 rt 51.458 
+sabretooth p p1 48 rt 92.858 
+sabretooth r r1 30 rt 92.714 
+sabretooth t t1 36 rt 74.143 
+sabretooth v v1 43 rt 76.429 
+sabretooth x u1 49 wr 67.429 
+sabretooth z r1 2781 wr 59.842 
+sabretooth y y2 39 rt 94.182 
+sabretooth w u1 1763 wr 49.054 
+sabretooth u r1 1086 wr 63.832 
+sabretooth s s2 48 rt 86.001 
+sabretooth q q1 49 rt 91.571 
+sabretooth o o1 38 rt 98.251 
+sabretooth m n1 56 wr 80.0 
+sabretooth k k1 67 rt 84.858 
+sabretooth i i1 38 rt 78.571 
+sabretooth g g1 876 rt 66.491 
+sabretooth e e2 630 rt 66.857 
+sabretooth c c1 21 rt 64.285 
+sabretooth a a1 811 rt 57.464 
+shorts b b1 53 rt 97.762 
+shorts d d1 41 rt 98.38 
+shorts f f1 970 rt 67.812 
+shorts h h1 40 rt 76.667 
+shorts j j1 1657 rt 63.317 
+shorts l l1 37 rt 79.428 
+shorts n n1 50 rt 70.857 
+shorts p p1 51 rt 91.856 
+shorts r r1 40 rt 86.286 
+shorts t t1 57 rt 62.43 
+shorts v v1 37 rt 76.286 
+shorts x x1 38 rt 72.856 
+shorts z z1 68 rt 80.571 
+shorts y y1 62 rt 75.312 
+shorts w w1 107 rt 85.587 
+shorts u u1 57 rt 77.81 
+shorts s s2 59 rt 67.858 
+shorts q q1 32 rt 80.714 
+shorts o o1 37 rt 98.251 
+shorts m r1 812 wr 63.358 
+shorts k k1 93 rt 89.27 
+shorts i i1 40 rt 78.428 
+shorts g g1 56 rt 91.662 
+shorts e e1 45 rt 88.857 
+shorts c c1 21 rt 91.43 
+shorts a a1 47 rt 93.857 
+benzene-left b b1 39 rt 92.714 
+benzene-left d d1 58 rt 98.429 
+benzene-left f f1 45 rt 96.344 
+benzene-left h h1 43 rt 80.429 
+benzene-left j j1 43 rt 89.025 
+benzene-left l l1 29 rt 63.714 
+benzene-left n n1 48 rt 79.714 
+benzene-left p p1 32 rt 95.286 
+benzene-left r r1 42 rt 96.429 
+benzene-left t t1 39 rt 75.571 
+benzene-left v v1 57 rt 94.095 
+benzene-left x x1 46 rt 67.999 
+benzene-left z z1 929 rt 69.48 
+benzene-left y y1 55 rt 83.2 
+benzene-left w w1 529 rt 64.322 
+benzene-left u u1 292 rt 77.142 
+benzene-left s s2 39 rt 76.43 
+benzene-left q q1 61 rt 90.0 
+benzene-left o o1 30 rt 98.251 
+benzene-left m m1 346 rt 62.418 
+benzene-left k k1 46 rt 79.905 
+benzene-left i i1 52 rt 75.143 
+benzene-left g g1 46 rt 82.332 
+benzene-left e e2 600 rt 65.018 
+benzene-left c c1 34 rt 96.858 
+benzene-left a a2 31 rt 84.59 
+boat b b1 54 rt 91.524 
+boat d d1 49 rt 86.857 
+boat f f1 1195 rt 72.994 
+boat h h1 47 rt 76.286 
+boat j j1 55 rt 87.52 
+boat l l1 32 rt 79.429 
+boat n n1 62 rt 72.0 
+boat p p1 35 rt 91.285 
+boat r r1 37 rt 95.0 
+boat t t1 42 rt 65.858 
+boat v v1 45 rt 80.143 
+boat x x1 31 rt 91.572 
+boat z e2 2539 wr 52.016 
+boat y y1 39 rt 91.824 
+boat w w1 65 rt 73.381 
+boat u u1 52 rt 79.0 
+boat s s2 36 rt 77.286 
+boat q q1 41 rt 93.143 
+boat o o1 21 rt 98.251 
+boat m m1 99 rt 86.476 
+boat k k1 68 rt 91.08 
+boat i i1 44 rt 77.714 
+boat g g1 54 rt 76.487 
+boat e e2 43 rt 73.714 
+boat c c1 19 rt 67.429 
+boat a a2 23 rt 80.428 
+slant b d1 46 wr 85.668 
+slant d d1 37 rt 99.334 
+slant f f1 42 rt 70.286 
+slant h h1 1000 rt 62.952 
+slant j j1 38 rt 93.292 
+slant l l1 26 rt 79.43 
+slant n n1 37 rt 79.714 
+slant p p1 35 rt 71.714 
+slant r r1 42 rt 78.714 
+slant t t1 59 rt 72.715 
+slant v u1 52 wr 71.429 
+slant x x1 49 rt 72.286 
+slant z z1 56 rt 92.286 
+slant y y1 45 rt 84.363 
+slant w w1 3368 rt 41.239 
+slant u u1 48 rt 82.381 
+slant s s2 47 rt 92.857 
+slant q q1 67 rt 98.905 
+slant o o1 21 rt 98.251 
+slant m m1 73 rt 77.095 
+slant k k1 1363 rt 66.724 
+slant i i1 36 rt 90.287 
+slant g g1 48 rt 94.558 
+slant e e1 49 rt 90.001 
+slant c c1 340 rt 98.667 
+slant a a1 32 rt 93.857 
+snout b b1 46 rt 95.572 
+snout d d1 37 rt 96.0 
+snout f f1 58 rt 87.435 
+snout h h1 43 rt 95.524 
+snout j j1 59 rt 90.078 
+snout l l1 20 rt 95.999 
+snout n n1 52 rt 85.857 
+snout p p1 49 rt 87.0 
+snout r r1 37 rt 90.286 
+snout t t1 30 rt 85.948 
+snout v z1 1153 wr 65.143 
+snout x x1 63 rt 83.0 
+snout z z1 66 rt 87.905 
+snout y y1 54 rt 84.078 
+snout w w1 61 rt 87.111 
+snout u u1 47 rt 82.381 
+snout s s2 54 rt 84.285 
+snout q q1 51 rt 88.286 
+snout o o1 27 rt 98.251 
+snout m m1 65 rt 94.635 
+snout k k1 54 rt 84.858 
+snout i i1 48 rt 80.714 
+snout g g1 48 rt 84.188 
+snout e e1 910 rt 79.148 
+snout c c1 27 rt 92.858 
+snout a a1 45 rt 90.857 
+funtnip b b1 495 rt 73.713 
+funtnip d d1 5083 rt 47.849 
+funtnip f f1 51 rt 73.644 
+funtnip h h1 1135 rt 64.24 
+funtnip j h1 8000 qt
+funtnip l t1 2704 wr 44.914 
+funtnip n n1 463 rt 75.0 
+funtnip p p1 2203 rt 56.803 
+funtnip r r1 1042 rt 72.235 
+funtnip t t1 2456 rt 47.13 
+funtnip v v1 1274 rt 70.067 
+funtnip x k1 5004 wr 34.253 
+funtnip z u1 4666 wr 38.406 
+funtnip y y1 1609 rt 72.331 
+funtnip w w1 118 rt 68.81 
+funtnip u r1 31 wr 65.571 
+funtnip s y1 5175 wr 43.555 
+funtnip q q1 334 rt 72.572 
+funtnip o b1 3019 wr 54.231 
+funtnip m m1 1143 rt 72.146 
+funtnip k k1 616 rt 69.763 
+funtnip i k1 8000 qt
+funtnip g k1 8000 qt
+funtnip e k1 8000 qt
+funtnip c h1 5040 wr 32.11 
+funtnip a w1 7924 wr 32.156 
+sluice b j1 5429 wr 55.703 
+sluice d i1 4146 wr 45.319 
+sluice f i1 50 wr 86.857 
+sluice h i1 59 wr 87.572 
+sluice j j1 43 rt 88.123 
+sluice l n1 5080 wr 26.154 
+sluice n i1 1004 wr 69.932 
+sluice p j1 52 wr 76.258 
+sluice r i1 1632 wr 52.855 
+sluice t i1 4019 wr 50.631 
+sluice v w1 5016 wr 34.927 
+sluice x w1 3998 wr 49.337 
+sluice z i1 3354 wr 46.619 
+sluice y y1 1055 rt 49.394 
+sluice w j1 2096 wr 57.792 
+sluice u w1 2450 wr 52.304 
+sluice s n1 2607 wr 51.65 
+sluice q j1 816 wr 67.227 
+sluice o y1 4818 wr 31.879 
+sluice m n1 56 wr 61.999 
+sluice k k1 5646 rt 45.195 
+sluice i i1 72 rt 73.286 
+sluice g j1 852 wr 57.932 
+sluice e i1 4340 wr 48.461 
+sluice c i1 4874 wr 38.443 
+sluice a i1 4024 wr 59.799 
+square-curl b b1 244 rt 76.809 
+square-curl d d1 77 rt 81.237 
+square-curl f f1 3329 rt 34.97 
+square-curl h h1 50 rt 83.19 
+square-curl j j1 837 rt 73.32 
+square-curl l l1 31 rt 60.571 
+square-curl n n1 75 rt 85.714 
+square-curl p p1 1908 rt 53.864 
+square-curl r r1 29 rt 94.143 
+square-curl t t1 42 rt 79.285 
+square-curl v u1 38 wr 76.999 
+square-curl x x1 1257 rt 73.568 
+square-curl z z1 130 rt 85.714 
+square-curl y y1 62 rt 80.084 
+square-curl w w1 74 rt 78.095 
+square-curl u u1 48 rt 69.286 
+square-curl s s2 50 rt 67.858 
+square-curl q q1 917 rt 60.408 
+square-curl o o1 29 rt 98.251 
+square-curl m m1 74 rt 86.571 
+square-curl k k1 125 rt 84.413 
+square-curl i i1 38 rt 81.428 
+square-curl g n1 5175 wr 38.303 
+square-curl e r1 50 wr 82.714 
+square-curl c c1 110 rt 86.572 
+square-curl a u1 1792 wr 69.763 
+weird-arrow b b1 48 rt 91.858 
+weird-arrow d d1 49 rt 91.144 
+weird-arrow f f1 3232 rt 46.993 
+weird-arrow h h1 41 rt 66.714 
+weird-arrow j j1 47 rt 80.046 
+weird-arrow l l1 25 rt 68.572 
+weird-arrow n n1 779 rt 63.762 
+weird-arrow p p1 40 rt 92.429 
+weird-arrow r r1 60 rt 92.0 
+weird-arrow t u1 2126 wr 55.331 
+weird-arrow v v1 41 rt 68.286 
+weird-arrow x k1 5130 wr 35.845 
+weird-arrow z z1 59 rt 80.381 
+weird-arrow y y1 27 rt 88.239 
+weird-arrow w w1 5441 rt 32.615 
+weird-arrow u u1 746 rt 67.142 
+weird-arrow s s2 39 rt 71.715 
+weird-arrow q q1 1028 rt 62.477 
+weird-arrow o o1 25 rt 98.251 
+weird-arrow m m1 1893 rt 63.416 
+weird-arrow k f1 2340 wr 51.448 
+weird-arrow i i1 55 rt 79.142 
+weird-arrow g g1 58 rt 78.773 
+weird-arrow e q1 2379 wr 67.747 
+weird-arrow c c1 33 rt 91.43 
+weird-arrow a a1 3316 rt 56.037 
+close b b2 61 rt 92.524 
+close d d1 48 rt 94.619 
+close f f1 51 rt 74.832 
+close h h1 2655 rt 43.479 
+close j j1 40 rt 83.61 
+close l l1 24 rt 79.428 
+close n n1 53 rt 74.429 
+close p p1 2471 rt 59.606 
+close r r1 48 rt 65.857 
+close t t1 39 rt 67.428 
+close v v1 38 rt 87.429 
+close x x1 46 rt 99.143 
+close z z1 61 rt 94.667 
+close y y1 47 rt 74.371 
+close w u1 976 wr 66.137 
+close u u1 48 rt 82.523 
+close s s2 1003 rt 73.997 
+close q q1 61 rt 91.286 
+close o o1 24 rt 98.251 
+close m m1 67 rt 74.048 
+close k k1 48 rt 87.047 
+close i i1 48 rt 86.428 
+close g g1 38 rt 89.968 
+close e e1 49 rt 89.43 
+close c c1 171 rt 92.858 
+close a a1 45 rt 89.428 
+intersect b b2 907 rt 57.582 
+intersect d d2 2062 rt 54.439 
+intersect f f1 45 rt 92.033 
+intersect h k1 3719 wr 47.7 
+intersect j j1 34 rt 88.766 
+intersect l l1 20 rt 82.286 
+intersect n m1 2545 wr 47.275 
+intersect p j1 4125 wr 59.919 
+intersect r r1 198 rt 70.428 
+intersect t t1 39 rt 75.994 
+intersect v z1 4909 wr 32.676 
+intersect x x1 55 rt 91.571 
+intersect z z1 225 rt 86.334 
+intersect y y1 51 rt 65.2 
+intersect w y1 2487 wr 39.301 
+intersect u w1 814 wr 59.994 
+intersect s r1 546 wr 73.142 
+intersect q q2 925 rt 55.753 
+intersect o o1 30 rt 98.251 
+intersect m m1 176 rt 55.38 
+intersect k f1 1027 wr 59.564 
+intersect i i1 46 rt 90.0 
+intersect g g2 49 rt 66.541 
+intersect e e1 914 rt 63.63 
+intersect c c1 27 rt 96.858 
+intersect a a2 124 rt 60.946 
+slash b b2 49 rt 94.286 
+slash d d1 58 rt 96.429 
+slash f f1 59 rt 73.571 
+slash h h1 86 rt 84.143 
+slash j j1 45 rt 97.182 
+slash l l1 379 rt 74.858 
+slash n u1 2471 wr 45.922 
+slash p p1 957 rt 70.88 
+slash r r1 43 rt 65.857 
+slash t t1 53 rt 77.286 
+slash v v1 53 rt 81.286 
+slash x x1 48 rt 99.143 
+slash z z1 95 rt 94.953 
+slash y y1 1638 rt 67.429 
+slash w d1 7177 wr 33.724 
+slash u w1 58 wr 69.381 
+slash s l1 29 wr 62.286 
+slash q q1 63 rt 96.0 
+slash o o1 21 rt 98.251 
+slash m m1 1454 rt 72.055 
+slash k k1 702 rt 75.762 
+slash i i1 46 rt 84.143 
+slash g g1 59 rt 90.546 
+slash e e2 99 rt 99.429 
+slash c c1 226 rt 92.858 
+slash a a1 38 rt 95.572 
+hunt4 b b2 44 rt 98.285 
+hunt4 d d2 41 rt 98.285 
+hunt4 f f1 32 rt 80.285 
+hunt4 h h1 50 rt 82.571 
+hunt4 j j1 56 rt 92.78 
+hunt4 l l1 21 rt 63.714 
+hunt4 n n1 44 rt 83.286 
+hunt4 p p2 45 rt 97.0 
+hunt4 r r1 45 rt 97.286 
+hunt4 t t1 61 rt 77.857 
+hunt4 v v1 62 rt 80.143 
+hunt4 x x1 46 rt 99.143 
+hunt4 z z1 73 rt 94.953 
+hunt4 y y1 49 rt 97.785 
+hunt4 w w1 64 rt 73.381 
+hunt4 u u1 40 rt 93.428 
+hunt4 s s2 60 rt 86.286 
+hunt4 q q2 44 rt 97.857 
+hunt4 o a1 1605 wr 59.156 
+hunt4 m m1 176 rt 90.286 
+hunt4 k k1 72 rt 82.572 
+hunt4 i i1 1684 rt 66.825 
+hunt4 g g2 55 rt 98.214 
+hunt4 e e1 38 rt 95.0 
+hunt4 c c1 24 rt 96.858 
+hunt4 a a2 46 rt 94.714 
+benzene-right b b1 53 rt 97.571 
+benzene-right d d1 39 rt 92.429 
+benzene-right f f1 71 rt 74.428 
+benzene-right h h1 60 rt 80.0 
+benzene-right j j1 38 rt 81.525 
+benzene-right l l1 15 rt 78.287 
+benzene-right n n1 51 rt 72.714 
+benzene-right p p1 823 rt 68.847 
+benzene-right r r1 43 rt 91.0 
+benzene-right t t1 45 rt 79.001 
+benzene-right v v1 35 rt 65.334 
+benzene-right x x1 40 rt 86.285 
+benzene-right z z1 61 rt 86.953 
+benzene-right y y1 44 rt 84.928 
+benzene-right w w1 1369 rt 51.802 
+benzene-right u u1 47 rt 83.571 
+benzene-right s s2 44 rt 86.286 
+benzene-right q q1 43 rt 95.001 
+benzene-right o o1 16 rt 98.251 
+benzene-right m m1 146 rt 66.809 
+benzene-right k k1 72 rt 96.001 
+benzene-right i i1 56 rt 79.285 
+benzene-right g g1 57 rt 86.364 
+benzene-right e e2 54 rt 63.018 
+benzene-right c c1 24 rt 90.858 
+benzene-right a a2 42 rt 90.714 
+house b b1 58 rt 95.333 
+house d d1 51 rt 96.619 
+house f f1 37 rt 82.332 
+house h h1 47 rt 80.332 
+house j j1 448 rt 80.338 
+house l l1 23 rt 61.428 
+house n n1 41 rt 83.286 
+house p p1 42 rt 86.143 
+house r r1 45 rt 94.143 
+house t t1 41 rt 78.858 
+house v u1 63 wr 70.143 
+house x x1 33 rt 94.571 
+house z z1 67 rt 83.238 
+house y y1 51 rt 84.74 
+house w w1 52 rt 85.302 
+house u u1 35 rt 85.238 
+house s s2 39 rt 71.715 
+house q q1 45 rt 82.572 
+house o o1 23 rt 98.251 
+house m m1 77 rt 91.238 
+house k k1 1195 rt 84.779 
+house i i1 348 rt 78.905 
+house g g1 39 rt 84.149 
+house e e1 31 rt 95.0 
+house c c1 17 rt 77.142 
+house a a1 48 rt 96.286 
+standard-square b b1 52 rt 100.0 
+standard-square d d1 38 rt 100.19 
+standard-square f f1 47 rt 96.818 
+standard-square h h1 45 rt 84.571 
+standard-square j j1 51 rt 90.585 
+standard-square l l1 18 rt 91.143 
+standard-square n n1 73 rt 82.714 
+standard-square p p1 65 rt 98.715 
+standard-square r r1 36 rt 98.571 
+standard-square t t1 49 rt 81.143 
+standard-square v v1 37 rt 80.143 
+standard-square x x1 49 rt 99.143 
+standard-square z z1 62 rt 94.953 
+standard-square y y1 49 rt 88.928 
+standard-square w w1 59 rt 87.873 
+standard-square u u1 37 rt 87.094 
+standard-square s s2 35 rt 85.858 
+standard-square q q1 38 rt 99.762 
+standard-square o o1 33 rt 98.251 
+standard-square m m1 300 rt 86.19 
+standard-square k k1 411 rt 75.762 
+standard-square i i1 70 rt 96.0 
+standard-square g g1 32 rt 94.688 
+standard-square e e1 49 rt 92.858 
+standard-square c c1 26 rt 77.428 
+standard-square a a1 45 rt 100.0 
+hint4 b b1 440 rt 69.572 
+hint4 d d1 56 rt 68.857 
+hint4 f f1 72 rt 54.142 
+hint4 h l1 19 wr 79.715 
+hint4 j j1 36 rt 92.475 
+hint4 l l1 18 rt 63.714 
+hint4 n n1 40 rt 71.857 
+hint4 p p1 45 rt 71.715 
+hint4 r r1 40 rt 91.0 
+hint4 t t1 52 rt 59.144 
+hint4 v v1 38 rt 80.143 
+hint4 x x1 33 rt 93.143 
+hint4 z z1 65 rt 94.667 
+hint4 y y1 136 rt 81.025 
+hint4 w w1 271 rt 67.476 
+hint4 u u1 57 rt 66.572 
+hint4 s s2 45 rt 80.0 
+hint4 q q1 112 rt 76.143 
+hint4 o v1 57 wr 79.286 
+hint4 m m1 581 rt 73.475 
+hint4 k k1 108 rt 72.62 
+hint4 i i1 3269 rt 57.06 
+hint4 g g1 84 rt 71.311 
+hint4 e e1 168 rt 79.0 
+hint4 c c1 20 rt 71.142 
+hint4 a v1 4131 wr 56.358 
+bowtie b l1 1745 wr 49.05 
+bowtie d l1 920 wr 55.16 
+bowtie f f1 44 rt 61.261 
+bowtie h h1 3789 rt 41.525 
+bowtie j j1 6543 rt 44.87 
+bowtie l l1 29 rt 62.0 
+bowtie n n1 456 rt 83.428 
+bowtie p y2 2425 wr 40.651 
+bowtie r o1 953 wr 57.634 
+bowtie t t1 42 rt 63.429 
+bowtie v v1 86 rt 67.571 
+bowtie x x1 56 rt 80.572 
+bowtie z o1 925 wr 56.107 
+bowtie y y1 1616 rt 56.038 
+bowtie w w1 61 rt 84.254 
+bowtie u u1 152 rt 72.857 
+bowtie s o1 288 wr 60.751 
+bowtie q o1 7742 wr 22.177 
+bowtie o o1 8000 qt
+bowtie m m1 3621 rt 45.04 
+bowtie k k1 4813 rt 36.557 
+bowtie i i1 1759 rt 67.596 
+bowtie g y2 6570 wr 21.967 
+bowtie e c1 31 wr 61.751 
+bowtie c c1 908 rt 58.582 
+bowtie a a2 45 rt 68.233 
+checkmark b h1 414 wr 82.714 
+checkmark d d1 1213 rt 69.593 
+checkmark f f1 48 rt 92.077 
+checkmark h h1 56 rt 85.429 
+checkmark j h1 8000 qt
+checkmark l l1 27 rt 78.573 
+checkmark n n1 49 rt 70.714 
+checkmark p y1 5710 wr 30.691 
+checkmark r r1 41 rt 65.857 
+checkmark t t1 34 rt 85.552 
+checkmark v v1 51 rt 81.286 
+checkmark x x1 49 rt 86.715 
+checkmark z z1 79 rt 88.857 
+checkmark y y2 34 rt 81.39 
+checkmark w u1 171 wr 78.714 
+checkmark u u1 49 rt 85.857 
+checkmark s s2 51 rt 74.858 
+checkmark q q1 51 rt 81.572 
+checkmark o o1 25 rt 95.321 
+checkmark m m1 45 rt 73.0 
+checkmark k m1 5839 wr 28.974 
+checkmark i i1 49 rt 93.857 
+checkmark g y2 36 wr 77.819 
+checkmark e e1 61 rt 80.43 
+checkmark c c1 22 rt 79.715 
+checkmark a n1 923 wr 58.953 
+flournoy-ranch b b2 54 rt 81.857 
+flournoy-ranch d d2 2022 rt 35.542 
+flournoy-ranch f f1 6108 rt 38.735 
+flournoy-ranch h h1 31 rt 77.714 
+flournoy-ranch j j1 64 rt 79.014 
+flournoy-ranch l l1 4167 rt 35.379 
+flournoy-ranch n u1 2449 wr 62.647 
+flournoy-ranch p p2 36 rt 82.0 
+flournoy-ranch r r1 457 rt 66.428 
+flournoy-ranch t t1 3310 rt 50.464 
+flournoy-ranch v v1 889 rt 71.287 
+flournoy-ranch x k1 4161 wr 42.914 
+flournoy-ranch z c1 2453 wr 51.906 
+flournoy-ranch y y1 40 rt 62.858 
+flournoy-ranch w w1 6096 rt 26.743 
+flournoy-ranch u n1 2509 wr 46.166 
+flournoy-ranch s s2 821 rt 83.619 
+flournoy-ranch q q2 58 rt 50.0 
+flournoy-ranch o q2 5733 wr 42.397 
+flournoy-ranch m m1 5037 rt 29.084 
+flournoy-ranch k k1 66 rt 73.714 
+flournoy-ranch i i1 4004 rt 63.806 
+flournoy-ranch g g2 33 rt 45.286 
+flournoy-ranch e e1 4985 rt 37.173 
+flournoy-ranch c c1 1728 rt 51.363 
+flournoy-ranch a e2 4224 wr 44.318 
+double-backslash b b1 64 rt 88.952 
+double-backslash d d1 39 rt 91.19 
+double-backslash f f1 250 rt 83.558 
+double-backslash h h1 36 rt 85.858 
+double-backslash j j1 50 rt 86.429 
+double-backslash l l1 25 rt 82.57 
+double-backslash n n1 37 rt 73.43 
+double-backslash p p1 40 rt 85.142 
+double-backslash r c1 27 wr 70.857 
+double-backslash t t1 53 rt 67.429 
+double-backslash v v1 51 rt 96.952 
+double-backslash x x1 38 rt 86.001 
+double-backslash z y2 5290 wr 30.288 
+double-backslash y y2 39 rt 87.514 
+double-backslash w w1 3306 rt 42.999 
+double-backslash u v1 54 wr 87.0 
+double-backslash s s2 51 rt 72.0 
+double-backslash q q1 1731 rt 59.888 
+double-backslash o o1 28 rt 95.321 
+double-backslash m r1 3940 wr 50.418 
+double-backslash k k1 62 rt 79.906 
+double-backslash i i1 41 rt 78.143 
+double-backslash g g1 38 rt 82.273 
+double-backslash e e2 61 rt 70.429 
+double-backslash c c1 28 rt 79.715 
+double-backslash a e2 4072 wr 46.733 
+sabretooth b b1 56 rt 94.143 
+sabretooth d d1 55 rt 94.857 
+sabretooth f f1 42 rt 78.514 
+sabretooth h h1 1262 rt 65.323 
+sabretooth j j1 41 rt 76.852 
+sabretooth l l1 120 rt 60.572 
+sabretooth n m1 852 wr 64.103 
+sabretooth p p1 42 rt 92.858 
+sabretooth r r1 37 rt 92.714 
+sabretooth t t1 46 rt 74.143 
+sabretooth v v1 29 rt 76.429 
+sabretooth x u1 37 wr 54.0 
+sabretooth z z1 2403 rt 51.058 
+sabretooth y y2 56 rt 94.182 
+sabretooth w u1 2053 wr 49.054 
+sabretooth u u1 1097 rt 81.858 
+sabretooth s s2 45 rt 86.001 
+sabretooth q q1 41 rt 91.571 
+sabretooth o o1 29 rt 98.251 
+sabretooth m n1 41 wr 80.0 
+sabretooth k k1 63 rt 84.858 
+sabretooth i i1 39 rt 78.571 
+sabretooth g g1 919 rt 66.491 
+sabretooth e e2 661 rt 73.715 
+sabretooth c c1 29 rt 88.857 
+sabretooth a a1 818 rt 57.464 
+shorts b b1 50 rt 97.762 
+shorts d d1 40 rt 98.38 
+shorts f f1 1124 rt 67.812 
+shorts h h1 60 rt 76.667 
+shorts j j1 1792 rt 63.317 
+shorts l l1 33 rt 79.428 
+shorts n n1 56 rt 70.857 
+shorts p p1 51 rt 91.856 
+shorts r r1 66 rt 86.286 
+shorts t t1 47 rt 57.857 
+shorts v v1 41 rt 76.286 
+shorts x x1 41 rt 99.143 
+shorts z z1 94 rt 88.857 
+shorts y y1 59 rt 75.312 
+shorts w w1 57 rt 85.587 
+shorts u u1 35 rt 77.81 
+shorts s s2 34 rt 67.858 
+shorts q q1 49 rt 80.714 
+shorts o o1 20 rt 98.251 
+shorts m r1 1145 wr 63.358 
+shorts k k1 73 rt 89.27 
+shorts i i1 49 rt 78.428 
+shorts g g1 40 rt 91.662 
+shorts e e1 38 rt 88.857 
+shorts c c1 25 rt 91.43 
+shorts a a1 29 rt 93.857 
+benzene-left b b1 44 rt 92.714 
+benzene-left d d1 34 rt 98.429 
+benzene-left f f1 41 rt 96.344 
+benzene-left h h1 59 rt 80.429 
+benzene-left j j1 38 rt 84.286 
+benzene-left l l1 27 rt 63.714 
+benzene-left n n1 48 rt 79.714 
+benzene-left p p1 48 rt 95.286 
+benzene-left r r1 39 rt 96.429 
+benzene-left t t1 54 rt 75.571 
+benzene-left v v1 55 rt 94.095 
+benzene-left x x1 34 rt 79.286 
+benzene-left z z1 1286 rt 69.48 
+benzene-left y y1 45 rt 83.2 
+benzene-left w w1 2019 rt 61.102 
+benzene-left u u1 132 rt 70.142 
+benzene-left s s2 47 rt 76.43 
+benzene-left q q1 41 rt 90.0 
+benzene-left o o1 29 rt 98.251 
+benzene-left m n1 153 wr 84.714 
+benzene-left k k1 78 rt 79.905 
+benzene-left i i1 50 rt 75.143 
+benzene-left g g1 42 rt 82.332 
+benzene-left e e2 334 rt 65.018 
+benzene-left c c1 25 rt 96.858 
+benzene-left a a2 54 rt 84.59 
+boat b b1 49 rt 91.524 
+boat d d1 36 rt 86.857 
+boat f f1 122 rt 76.942 
+boat h h1 67 rt 76.286 
+boat j j1 44 rt 87.52 
+boat l l1 26 rt 79.429 
+boat n n1 39 rt 72.0 
+boat p p1 52 rt 91.285 
+boat r r1 46 rt 87.143 
+boat t t1 47 rt 65.858 
+boat v v1 46 rt 80.143 
+boat x x1 40 rt 91.572 
+boat z z1 467 rt 79.238 
+boat y y1 38 rt 91.824 
+boat w w1 51 rt 73.381 
+boat u u1 34 rt 79.0 
+boat s s2 61 rt 77.286 
+boat q q1 60 rt 93.143 
+boat o o1 27 rt 98.251 
+boat m m1 736 rt 68.56 
+boat k k1 56 rt 91.08 
+boat i i1 43 rt 77.714 
+boat g g1 31 rt 76.487 
+boat e e2 45 rt 73.714 
+boat c c1 26 rt 90.858 
+boat a a2 50 rt 80.428 
+slant b d1 38 wr 85.668 
+slant d d1 35 rt 99.334 
+slant f f1 52 rt 70.286 
+slant h h1 303 rt 65.429 
+slant j j1 53 rt 93.292 
+slant l l1 28 rt 79.43 
+slant n n1 60 rt 79.714 
+slant p p1 106 rt 71.714 
+slant r r1 39 rt 78.714 
+slant t t1 43 rt 72.715 
+slant v u1 44 wr 71.429 
+slant x x1 38 rt 72.286 
+slant z z1 62 rt 92.286 
+slant y y1 56 rt 84.363 
+slant w w1 699 rt 77.428 
+slant u u1 44 rt 82.381 
+slant s s2 45 rt 92.857 
+slant q q1 51 rt 98.905 
+slant o o1 26 rt 98.251 
+slant m m1 250 rt 77.095 
+slant k k1 1446 rt 62.235 
+slant i i1 46 rt 90.287 
+slant g g1 38 rt 94.558 
+slant e e1 42 rt 90.001 
+slant c c1 97 rt 98.667 
+slant a a1 48 rt 93.857 
+snout b b1 52 rt 95.572 
+snout d d1 46 rt 96.0 
+snout f f1 51 rt 87.435 
+snout h h1 46 rt 95.524 
+snout j j1 43 rt 90.078 
+snout l l1 27 rt 95.999 
+snout n n1 36 rt 85.857 
+snout p p1 52 rt 87.0 
+snout r r1 30 rt 90.286 
+snout t t1 27 rt 85.948 
+snout v z1 1302 wr 65.143 
+snout x x1 41 rt 83.0 
+snout z z1 63 rt 87.905 
+snout y y1 52 rt 84.078 
+snout w w1 75 rt 87.111 
+snout u u1 46 rt 82.381 
+snout s s2 49 rt 84.285 
+snout q q1 45 rt 88.286 
+snout o o1 24 rt 98.251 
+snout m m1 81 rt 94.635 
+snout k k1 65 rt 84.858 
+snout i i1 45 rt 80.714 
+snout g g1 38 rt 79.227 
+snout e e1 709 rt 74.715 
+snout c c1 20 rt 92.858 
+snout a a1 52 rt 90.857 
+funtnip b b1 203 rt 73.713 
+funtnip d d1 4538 rt 50.016 
+funtnip f f1 28 rt 73.644 
+funtnip h h1 404 rt 79.428 
+funtnip j h1 8000 qt
+funtnip l t1 2416 wr 44.914 
+funtnip n n1 454 rt 72.714 
+funtnip p p1 2252 rt 56.803 
+funtnip r r1 1136 rt 72.235 
+funtnip t t1 2453 rt 47.13 
+funtnip v v1 928 rt 70.067 
+funtnip x k1 4854 wr 42.838 
+funtnip z z1 3445 rt 42.607 
+funtnip y y1 1629 rt 52.715 
+funtnip w u1 1093 wr 48.653 
+funtnip u r1 49 wr 65.571 
+funtnip s r1 4994 wr 40.61 
+funtnip q q1 382 rt 72.572 
+funtnip o a1 287 wr 67.714 
+funtnip m m1 59 rt 75.667 
+funtnip k k1 845 rt 63.201 
+funtnip i k1 8000 qt
+funtnip g k1 8000 qt
+funtnip e z1 7122 wr 22.818 
+funtnip c h1 5075 wr 32.11 
+funtnip a w1 7399 wr 32.156 
+sluice b j1 4883 wr 55.703 
+sluice d i1 4400 wr 43.494 
+sluice f i1 46 wr 86.857 
+sluice h i1 50 wr 87.572 
+sluice j j1 46 rt 71.694 
+sluice l i1 3458 wr 50.723 
+sluice n i1 618 wr 88.857 
+sluice p j1 557 wr 62.669 
+sluice r i1 1718 wr 52.855 
+sluice t i1 4062 wr 50.631 
+sluice v w1 3795 wr 43.302 
+sluice x w1 3526 wr 49.337 
+sluice z i1 3295 wr 46.619 
+sluice y y1 885 rt 49.394 
+sluice w j1 2010 wr 57.792 
+sluice u i1 1129 wr 66.475 
+sluice s i1 2503 wr 59.334 
+sluice q j1 1089 wr 67.227 
+sluice o j1 5166 wr 55.179 
+sluice m n1 326 wr 58.0 
+sluice k k1 5863 rt 38.896 
+sluice i i1 46 rt 73.286 
+sluice g q2 817 wr 42.635 
+sluice e i1 4101 wr 48.461 
+sluice c m1 4943 wr 38.109 
+sluice a i1 4158 wr 59.799 
+square-curl b b1 172 rt 76.809 
+square-curl d d1 92 rt 81.237 
+square-curl f f1 3338 rt 34.97 
+square-curl h h1 62 rt 83.19 
+square-curl j j1 1513 rt 73.32 
+square-curl l l1 36 rt 60.571 
+square-curl n n1 210 rt 85.714 
+square-curl p p1 1857 rt 53.864 
+square-curl r r1 45 rt 94.143 
+square-curl t t1 33 rt 79.285 
+square-curl v u1 45 wr 76.999 
+square-curl x x1 539 rt 76.476 
+square-curl z z1 910 rt 81.315 
+square-curl y y1 59 rt 80.084 
+square-curl w w1 83 rt 78.095 
+square-curl u u1 57 rt 69.286 
+square-curl s s2 49 rt 67.858 
+square-curl q q1 3750 rt 48.098 
+square-curl o o1 26 rt 98.251 
+square-curl m n1 900 wr 63.426 
+square-curl k k1 4250 rt 48.141 
+square-curl i i1 32 rt 81.428 
+square-curl g n1 4952 wr 38.303 
+square-curl e r1 38 wr 82.714 
+square-curl c c1 99 rt 86.572 
+square-curl a a2 1574 rt 61.987 
+weird-arrow b b1 54 rt 91.858 
+weird-arrow d d1 57 rt 91.144 
+weird-arrow f t1 3654 wr 46.993 
+weird-arrow h h1 55 rt 66.714 
+weird-arrow j j1 54 rt 80.046 
+weird-arrow l l1 30 rt 68.572 
+weird-arrow n n1 42 rt 63.762 
+weird-arrow p p1 52 rt 92.429 
+weird-arrow r r1 42 rt 92.0 
+weird-arrow t k1 1008 wr 54.787 
+weird-arrow v v1 45 rt 68.286 
+weird-arrow x w1 5172 wr 53.874 
+weird-arrow z z1 67 rt 83.238 
+weird-arrow y y1 53 rt 88.239 
+weird-arrow w r1 5045 wr 30.394 
+weird-arrow u u1 213 rt 67.142 
+weird-arrow s s2 51 rt 71.715 
+weird-arrow q q1 925 rt 62.477 
+weird-arrow o o1 22 rt 98.251 
+weird-arrow m m1 2025 rt 63.416 
+weird-arrow k f1 1257 wr 52.973 
+weird-arrow i i1 48 rt 79.142 
+weird-arrow g g1 70 rt 78.773 
+weird-arrow e e1 2777 rt 61.661 
+weird-arrow c c1 26 rt 91.43 
+weird-arrow a a1 3261 rt 55.566 
+close b b2 53 rt 92.524 
+close d d1 55 rt 94.619 
+close f f1 60 rt 74.832 
+close h h1 2779 rt 43.479 
+close j j1 56 rt 83.61 
+close l l1 28 rt 79.428 
+close n n1 245 rt 76.428 
+close p p1 2529 rt 60.46 
+close r r1 38 rt 65.857 
+close t t1 35 rt 67.428 
+close v v1 38 rt 87.429 
+close x x1 67 rt 99.143 
+close z z1 59 rt 94.667 
+close y y1 41 rt 78.799 
+close w u1 910 wr 52.448 
+close u u1 45 rt 82.523 
+close s v1 822 wr 63.02 
+close q q1 38 rt 91.286 
+close o o1 19 rt 98.251 
+close m m1 61 rt 74.048 
+close k k1 63 rt 87.047 
+close i i1 34 rt 86.428 
+close g g1 38 rt 89.968 
+close e e1 30 rt 89.43 
+close c c1 343 rt 92.858 
+close a a1 47 rt 89.428 
+intersect b b2 934 rt 57.582 
+intersect d d2 2122 rt 54.439 
+intersect f f1 50 rt 92.033 
+intersect h k1 4008 wr 36.214 
+intersect j j1 47 rt 88.766 
+intersect l l1 25 rt 82.286 
+intersect n m1 2743 wr 50.962 
+intersect p j1 4091 wr 59.919 
+intersect r r1 144 rt 70.428 
+intersect t t1 57 rt 75.994 
+intersect v r1 4438 wr 29.268 
+intersect x x1 40 rt 91.571 
+intersect z z1 2030 rt 54.076 
+intersect y y1 42 rt 65.2 
+intersect w y1 2804 wr 39.301 
+intersect u u1 893 rt 57.869 
+intersect s r1 191 wr 73.142 
+intersect q q2 897 rt 58.463 
+intersect o o1 29 rt 98.251 
+intersect m m1 149 rt 55.38 
+intersect k f1 943 wr 59.564 
+intersect i i1 45 rt 90.0 
+intersect g g2 49 rt 66.541 
+intersect e o1 182 wr 61.857 
+intersect c c1 29 rt 96.858 
+intersect a o1 311 wr 60.751 
+slash b b2 57 rt 94.286 
+slash d d1 33 rt 96.429 
+slash f f1 34 rt 73.571 
+slash h h1 305 rt 84.143 
+slash j j1 50 rt 97.182 
+slash l l1 186 rt 74.858 
+slash n u1 2833 wr 45.922 
+slash p p1 881 rt 70.881 
+slash r r1 47 rt 65.857 
+slash t t1 53 rt 77.286 
+slash v v1 37 rt 81.286 
+slash x x1 44 rt 99.143 
+slash z z1 84 rt 94.953 
+slash y y1 1138 rt 83.755 
+slash w e1 6333 wr 30.021 
+slash u w1 63 wr 69.381 
+slash s l1 25 wr 62.286 
+slash q q1 44 rt 96.0 
+slash o o1 37 rt 98.251 
+slash m m1 1397 rt 78.47 
+slash k k1 394 rt 75.762 
+slash i i1 42 rt 84.143 
+slash g g1 47 rt 90.546 
+slash e e1 57 rt 86.57 
+slash c c1 190 rt 92.858 
+slash a a1 38 rt 95.572 
+hunt4 b b2 52 rt 98.285 
+hunt4 d d2 51 rt 98.285 
+hunt4 f f1 39 rt 80.285 
+hunt4 h h1 40 rt 82.571 
+hunt4 j j1 53 rt 92.78 
+hunt4 l l1 28 rt 63.714 
+hunt4 n n1 54 rt 83.286 
+hunt4 p p2 45 rt 97.0 
+hunt4 r r1 53 rt 97.286 
+hunt4 t t1 54 rt 77.857 
+hunt4 v v1 40 rt 80.143 
+hunt4 x x1 38 rt 99.143 
+hunt4 z z1 67 rt 94.953 
+hunt4 y y1 53 rt 97.785 
+hunt4 w w1 51 rt 73.381 
+hunt4 u u1 31 rt 93.428 
+hunt4 s s2 44 rt 86.286 
+hunt4 q q2 37 rt 97.857 
+hunt4 o a1 1770 wr 59.156 
+hunt4 m m1 889 rt 75.127 
+hunt4 k k1 67 rt 90.762 
+hunt4 i i1 1614 rt 66.825 
+hunt4 g g2 38 rt 98.214 
+hunt4 e e1 36 rt 95.0 
+hunt4 c c1 22 rt 96.858 
+hunt4 a a2 35 rt 94.714 
+benzene-right b b1 49 rt 97.571 
+benzene-right d d1 48 rt 92.429 
+benzene-right f f1 41 rt 78.0 
+benzene-right h h1 45 rt 80.0 
+benzene-right j j1 53 rt 81.525 
+benzene-right l l1 22 rt 78.287 
+benzene-right n n1 55 rt 72.714 
+benzene-right p p1 1001 rt 74.269 
+benzene-right r r1 59 rt 79.0 
+benzene-right t t1 27 rt 78.0 
+benzene-right v v1 53 rt 65.334 
+benzene-right x x1 48 rt 92.285 
+benzene-right z z1 74 rt 86.953 
+benzene-right y y1 56 rt 84.928 
+benzene-right w w1 1519 rt 51.802 
+benzene-right u u1 48 rt 83.571 
+benzene-right s s2 44 rt 86.286 
+benzene-right q q1 37 rt 95.001 
+benzene-right o o1 24 rt 98.251 
+benzene-right m m1 63 rt 66.809 
+benzene-right k k1 275 rt 96.572 
+benzene-right i i1 61 rt 79.285 
+benzene-right g g1 43 rt 86.364 
+benzene-right e e2 37 rt 63.018 
+benzene-right c c1 31 rt 90.858 
+benzene-right a a2 47 rt 90.714 
+house b b1 59 rt 95.333 
+house d d1 46 rt 96.619 
+house f f1 51 rt 82.332 
+house h h1 45 rt 80.332 
+house j j1 353 rt 80.338 
+house l l1 21 rt 61.428 
+house n n1 38 rt 83.286 
+house p p1 53 rt 86.143 
+house r r1 46 rt 94.143 
+house t t1 39 rt 78.858 
+house v u1 42 wr 70.143 
+house x x1 65 rt 94.571 
+house z z1 76 rt 80.381 
+house y y1 40 rt 84.74 
+house w w1 83 rt 85.302 
+house u u1 64 rt 85.238 
+house s s2 55 rt 71.715 
+house q q1 43 rt 82.572 
+house o o1 25 rt 98.251 
+house m m1 330 rt 90.286 
+house k k1 495 rt 92.317 
+house i i1 506 rt 78.905 
+house g g1 51 rt 84.149 
+house e e1 47 rt 95.0 
+house c c1 30 rt 77.142 
+house a a1 54 rt 96.286 
+standard-square b b1 42 rt 100.0 
+standard-square d d1 49 rt 100.19 
+standard-square f f1 36 rt 96.818 
+standard-square h h1 47 rt 84.571 
+standard-square j j1 42 rt 90.585 
+standard-square l l1 25 rt 91.143 
+standard-square n n1 52 rt 82.714 
+standard-square p p1 43 rt 98.715 
+standard-square r r1 36 rt 98.571 
+standard-square t t1 32 rt 81.143 
+standard-square v v1 43 rt 80.143 
+standard-square x x1 39 rt 93.143 
+standard-square z z1 73 rt 94.953 
+standard-square y y1 140 rt 88.928 
+standard-square w w1 86 rt 87.873 
+standard-square u u1 48 rt 87.094 
+standard-square s s2 35 rt 85.858 
+standard-square q q1 39 rt 99.762 
+standard-square o o1 30 rt 98.251 
+standard-square m m1 79 rt 94.19 
+standard-square k k1 67 rt 75.762 
+standard-square i i1 50 rt 96.0 
+standard-square g g1 42 rt 94.688 
+standard-square e e1 43 rt 92.858 
+standard-square c c1 25 rt 77.428 
+standard-square a a1 55 rt 100.0 
+hint4 b b1 51 rt 69.572 
+hint4 d d1 30 rt 68.857 
+hint4 f f1 61 rt 61.572 
+hint4 h l1 20 wr 79.715 
+hint4 j j1 47 rt 92.475 
+hint4 l l1 20 rt 63.714 
+hint4 n n1 37 rt 71.857 
+hint4 p p1 46 rt 71.715 
+hint4 r r1 33 rt 79.0 
+hint4 t t1 37 rt 59.144 
+hint4 v v1 38 rt 80.143 
+hint4 x x1 39 rt 99.143 
+hint4 z z1 102 rt 94.667 
+hint4 y y1 219 rt 63.597 
+hint4 w j1 2021 wr 53.228 
+hint4 u u1 52 rt 66.572 
+hint4 s s2 242 rt 70.84 
+hint4 q q1 69 rt 59.239 
+hint4 o v1 35 wr 82.429 
+hint4 m m1 354 rt 68.524 
+hint4 k k1 63 rt 77.191 
+hint4 i i1 3222 rt 57.06 
+hint4 g g1 151 rt 71.311 
+hint4 e e1 809 rt 74.946 
+hint4 c c1 21 rt 71.142 
+hint4 a a2 3439 rt 42.104 
+bowtie b l1 1938 wr 49.05 
+bowtie d l1 865 wr 55.16 
+bowtie f f1 55 rt 61.261 
+bowtie h h1 4053 rt 35.06 
+bowtie j j1 5496 rt 52.777 
+bowtie l l1 36 rt 62.0 
+bowtie n n1 1103 rt 61.461 
+bowtie p y2 3654 wr 39.436 
+bowtie r o1 752 wr 60.751 
+bowtie t t1 47 rt 63.429 
+bowtie v v1 29 rt 67.09 
+bowtie x x1 54 rt 80.572 
+bowtie z o1 747 wr 60.751 
+bowtie y y1 1822 rt 56.038 
+bowtie w w1 99 rt 84.254 
+bowtie u u1 644 rt 72.857 
+bowtie s o1 597 wr 60.751 
+bowtie q o1 7348 wr 22.177 
+bowtie o g1 7203 wr 31.134 
+bowtie m n1 3910 wr 39.464 
+bowtie k k1 6617 rt 27.59 
+bowtie i i1 1876 rt 67.596 
+bowtie g q1 6700 wr 24.539 
+bowtie e c1 31 wr 61.751 
+bowtie c o1 29 wr 60.751 
+bowtie a a2 41 rt 68.233 
+checkmark b h1 1062 wr 77.115 
+checkmark d d1 154 rt 73.0 
+checkmark f f1 52 rt 92.077 
+checkmark h h1 38 rt 85.429 
+checkmark j h1 8000 qt
+checkmark l l1 24 rt 78.573 
+checkmark n n1 34 rt 77.428 
+checkmark p y1 4824 wr 31.329 
+checkmark r r1 45 rt 65.857 
+checkmark t t1 64 rt 85.552 
+checkmark v v1 44 rt 81.286 
+checkmark x x1 53 rt 86.715 
+checkmark z z1 83 rt 88.857 
+checkmark y y2 63 rt 81.39 
+checkmark w u1 149 wr 78.714 
+checkmark u u1 61 rt 85.857 
+checkmark s s2 46 rt 74.858 
+checkmark q q1 207 rt 81.572 
+checkmark o o1 31 rt 95.321 
+checkmark m m1 1378 rt 72.055 
+checkmark k k1 5843 rt 31.464 
+checkmark i i1 52 rt 93.857 
+checkmark g y2 50 wr 77.819 
+checkmark e e1 61 rt 80.43 
+checkmark c c1 22 rt 79.715 
+checkmark a n1 812 wr 70.474 
+flournoy-ranch b b2 34 rt 81.857 
+flournoy-ranch d d2 2045 rt 37.857 
+flournoy-ranch f f1 4817 rt 39.8 
+flournoy-ranch h h1 39 rt 77.714 
+flournoy-ranch j j1 52 rt 79.014 
+flournoy-ranch l l1 4329 rt 35.379 
+flournoy-ranch n u1 2733 wr 62.647 
+flournoy-ranch p p2 52 rt 82.0 
+flournoy-ranch r r1 613 rt 66.428 
+flournoy-ranch t t1 3460 rt 50.464 
+flournoy-ranch v v1 1225 rt 72.642 
+flournoy-ranch x k1 4581 wr 35.76 
+flournoy-ranch z z1 2479 rt 59.081 
+flournoy-ranch y y1 45 rt 62.858 
+flournoy-ranch w m1 5648 wr 43.303 
+flournoy-ranch u n1 2506 wr 51.988 
+flournoy-ranch s s2 845 rt 83.619 
+flournoy-ranch q q2 54 rt 50.0 
+flournoy-ranch o q2 6428 wr 40.558 
+flournoy-ranch m m1 5007 rt 36.967 
+flournoy-ranch k k1 1783 rt 64.851 
+flournoy-ranch i i1 4024 rt 63.806 
+flournoy-ranch g g2 59 rt 48.591 
+flournoy-ranch e e1 4835 rt 37.354 
+flournoy-ranch c c1 1655 rt 51.363 
+flournoy-ranch a e2 4079 wr 44.318 
+double-backslash b b1 48 rt 88.952 
+double-backslash d d1 44 rt 91.19 
+double-backslash f f1 342 rt 83.558 
+double-backslash h h1 42 rt 85.858 
+double-backslash j j1 50 rt 86.429 
+double-backslash l l1 19 rt 82.57 
+double-backslash n n1 56 rt 73.43 
+double-backslash p p1 42 rt 85.142 
+double-backslash r c1 25 wr 70.857 
+double-backslash t t1 45 rt 67.429 
+double-backslash v v1 41 rt 96.952 
+double-backslash x x1 37 rt 86.001 
+double-backslash z y2 5324 wr 30.288 
+double-backslash y y2 41 rt 87.514 
+double-backslash w w1 4105 rt 40.985 
+double-backslash u v1 46 wr 87.0 
+double-backslash s s2 49 rt 72.0 
+double-backslash q q1 1885 rt 59.888 
+double-backslash o o1 30 rt 95.321 
+double-backslash m r1 3619 wr 50.418 
+double-backslash k k1 1181 rt 75.127 
+double-backslash i i1 45 rt 78.143 
+double-backslash g g1 45 rt 82.273 
+double-backslash e e2 35 rt 70.429 
+double-backslash c c1 28 rt 79.715 
+double-backslash a j1 3961 wr 47.535 
+sabretooth b b1 55 rt 94.143 
+sabretooth d d1 37 rt 94.857 
+sabretooth f f1 59 rt 78.514 
+sabretooth h h1 624 rt 84.143 
+sabretooth j j1 48 rt 76.852 
+sabretooth l l1 87 rt 60.572 
+sabretooth n m1 968 wr 63.2 
+sabretooth p p1 47 rt 92.858 
+sabretooth r r1 45 rt 92.714 
+sabretooth t t1 66 rt 74.143 
+sabretooth v v1 36 rt 76.429 
+sabretooth x u1 41 wr 67.429 
+sabretooth z r1 2954 wr 59.842 
+sabretooth y y2 53 rt 94.182 
+sabretooth w u1 1873 wr 50.578 
+sabretooth u w1 852 wr 75.127 
+sabretooth s s2 35 rt 86.001 
+sabretooth q q1 41 rt 91.571 
+sabretooth o o1 23 rt 98.251 
+sabretooth m m1 79 rt 77.666 
+sabretooth k k1 543 rt 88.667 
+sabretooth i i1 48 rt 78.571 
+sabretooth g q1 874 wr 66.491 
+sabretooth e e2 615 rt 66.857 
+sabretooth c c1 31 rt 88.857 
+sabretooth a a1 1503 rt 57.464 
+shorts b b1 57 rt 97.762 
+shorts d d1 60 rt 98.38 
+shorts f f1 963 rt 67.812 
+shorts h h1 41 rt 76.667 
+shorts j j1 1749 rt 63.317 
+shorts l l1 35 rt 79.428 
+shorts n n1 52 rt 70.857 
+shorts p p1 42 rt 91.856 
+shorts r r1 51 rt 86.286 
+shorts t t1 50 rt 62.43 
+shorts v v1 37 rt 76.286 
+shorts x x1 42 rt 99.143 
+shorts z z1 78 rt 88.857 
+shorts y y1 50 rt 75.312 
+shorts w w1 74 rt 85.587 
+shorts u u1 35 rt 77.81 
+shorts s s2 59 rt 67.858 
+shorts q q1 45 rt 80.714 
+shorts o o1 25 rt 98.251 
+shorts m m1 1276 rt 62.93 
+shorts k k1 79 rt 89.27 
+shorts i i1 36 rt 78.428 
+shorts g g1 34 rt 91.662 
+shorts e e1 43 rt 88.857 
+shorts c c1 25 rt 91.43 
+shorts a a1 44 rt 93.857 
+benzene-left b b1 57 rt 92.714 
+benzene-left d d1 32 rt 98.429 
+benzene-left f f1 45 rt 96.344 
+benzene-left h h1 55 rt 80.429 
+benzene-left j j1 50 rt 89.025 
+benzene-left l l1 24 rt 63.714 
+benzene-left n n1 42 rt 79.714 
+benzene-left p p1 43 rt 95.286 
+benzene-left r r1 37 rt 96.429 
+benzene-left t t1 43 rt 75.571 
+benzene-left v v1 43 rt 94.095 
+benzene-left x x1 36 rt 67.999 
+benzene-left z z1 1124 rt 69.48 
+benzene-left y y1 51 rt 83.2 
+benzene-left w w1 139 rt 65.286 
+benzene-left u u1 150 rt 77.142 
+benzene-left s s2 36 rt 76.43 
+benzene-left q q1 35 rt 90.0 
+benzene-left o o1 13 rt 98.251 
+benzene-left m c1 1083 wr 54.482 
+benzene-left k k1 66 rt 79.905 
+benzene-left i i1 46 rt 75.143 
+benzene-left g g1 56 rt 82.332 
+benzene-left e e2 335 rt 65.018 
+benzene-left c c1 17 rt 96.858 
+benzene-left a a2 35 rt 84.59 
+boat b b1 39 rt 91.524 
+boat d d1 46 rt 86.857 
+boat f f1 331 rt 78.37 
+boat h h1 40 rt 76.286 
+boat j j1 48 rt 87.52 
+boat l l1 28 rt 79.429 
+boat n n1 33 rt 72.0 
+boat p p1 43 rt 91.285 
+boat r r1 41 rt 87.143 
+boat t t1 48 rt 65.858 
+boat v v1 36 rt 80.143 
+boat x x1 68 rt 91.572 
+boat z z1 54 rt 79.238 
+boat y y1 38 rt 91.824 
+boat w w1 51 rt 73.381 
+boat u u1 51 rt 79.0 
+boat s s2 47 rt 77.286 
+boat q q1 50 rt 93.143 
+boat o o1 21 rt 98.251 
+boat m m1 259 rt 68.56 
+boat k k1 80 rt 91.08 
+boat i i1 45 rt 77.714 
+boat g g1 57 rt 76.487 
+boat e e2 50 rt 73.714 
+boat c c1 26 rt 90.858 
+boat a a2 54 rt 80.428 
+slant b d1 34 wr 85.668 
+slant d d1 46 rt 99.334 
+slant f f1 34 rt 70.286 
+slant h h1 348 rt 65.429 
+slant j j1 40 rt 93.292 
+slant l l1 22 rt 79.43 
+slant n n1 29 rt 79.714 
+slant p p1 35 rt 71.714 
+slant r r1 56 rt 78.714 
+slant t t1 42 rt 72.715 
+slant v u1 39 wr 71.429 
+slant x x1 47 rt 72.286 
+slant z z1 176 rt 92.286 
+slant y y1 44 rt 84.363 
+slant w w1 437 rt 77.428 
+slant u u1 66 rt 82.381 
+slant s s2 38 rt 92.857 
+slant q q1 43 rt 98.905 
+slant o o1 29 rt 98.251 
+slant m m1 52 rt 77.095 
+slant k k1 277 rt 69.715 
+slant i i1 47 rt 90.287 
+slant g g1 43 rt 94.558 
+slant e e1 37 rt 90.001 
+slant c c1 146 rt 98.667 
+slant a a1 59 rt 93.857 
+snout b b1 54 rt 95.572 
+snout d d1 54 rt 96.0 
+snout f f1 32 rt 87.435 
+snout h h1 44 rt 95.524 
+snout j j1 58 rt 90.078 
+snout l l1 24 rt 95.999 
+snout n n1 79 rt 85.857 
+snout p p1 50 rt 87.0 
+snout r r1 39 rt 90.286 
+snout t t1 65 rt 85.948 
+snout v u1 2708 wr 47.361 
+snout x x1 50 rt 83.0 
+snout z z1 98 rt 87.905 
+snout y y1 52 rt 84.078 
+snout w w1 884 rt 59.104 
+snout u u1 51 rt 82.381 
+snout s s2 59 rt 84.285 
+snout q q1 62 rt 88.286 
+snout o o1 25 rt 98.251 
+snout m m1 478 rt 94.635 
+snout k k1 43 rt 84.858 
+snout i i1 47 rt 80.714 
+snout g g1 36 rt 84.188 
+snout e e1 1044 rt 77.792 
+snout c c1 27 rt 92.858 
+snout a a1 44 rt 90.857 
+funtnip b b1 239 rt 73.713 
+funtnip d d1 2498 rt 50.553 
+funtnip f f1 65 rt 73.644 
+funtnip h h1 255 rt 79.428 
+funtnip j h1 8000 qt
+funtnip l t1 3316 wr 43.707 
+funtnip n n1 62 rt 75.0 
+funtnip p q1 943 wr 69.411 
+funtnip r r1 1895 rt 52.074 
+funtnip t t1 2725 rt 47.13 
+funtnip v v1 821 rt 70.067 
+funtnip x k1 4831 wr 42.838 
+funtnip z z1 5877 rt 31.273 
+funtnip y y1 1824 rt 72.331 
+funtnip w w1 75 rt 67.095 
+funtnip u r1 38 wr 65.571 
+funtnip s r1 4417 wr 33.738 
+funtnip q q1 241 rt 72.572 
+funtnip o a1 415 wr 67.714 
+funtnip m m1 78 rt 75.667 
+funtnip k k1 250 rt 77.143 
+funtnip i k1 8000 qt
+funtnip g k1 8000 qt
+funtnip e z1 7371 wr 22.68 
+funtnip c u1 5664 wr 33.735 
+funtnip a w1 7282 wr 32.156 
+sluice b j1 4330 wr 58.457 
+sluice d i1 4040 wr 45.319 
+sluice f i1 53 wr 86.857 
+sluice h i1 58 wr 87.572 
+sluice j j1 54 rt 88.123 
+sluice l i1 4812 wr 32.715 
+sluice n i1 230 wr 88.857 
+sluice p j1 129 wr 62.669 
+sluice r i1 1640 wr 52.855 
+sluice t i1 4006 wr 50.631 
+sluice v w1 4180 wr 36.984 
+sluice x w1 3240 wr 49.337 
+sluice z i1 4164 wr 37.039 
+sluice y y1 873 rt 49.733 
+sluice w y1 2137 wr 49.692 
+sluice u i1 847 wr 66.475 
+sluice s i1 1063 wr 73.251 
+sluice q j1 870 wr 67.227 
+sluice o j1 4813 wr 51.638 
+sluice m n1 405 wr 58.0 
+sluice k k1 5834 rt 38.896 
+sluice i i1 52 rt 73.286 
+sluice g j1 1266 wr 57.932 
+sluice e i1 4372 wr 48.461 
+sluice c i1 4191 wr 37.104 
+sluice a i1 4396 wr 59.799 
+square-curl b b1 1216 rt 73.207 
+square-curl d d1 379 rt 81.237 
+square-curl f r1 4020 wr 34.76 
+square-curl h h1 58 rt 83.19 
+square-curl j j1 833 rt 73.32 
+square-curl l l1 20 rt 60.571 
+square-curl n n1 65 rt 85.714 
+square-curl p p1 1725 rt 52.578 
+square-curl r r1 60 rt 94.143 
+square-curl t t1 34 rt 79.285 
+square-curl v u1 974 wr 65.73 
+square-curl x x1 318 rt 76.476 
+square-curl z z1 1173 rt 74.585 
+square-curl y y1 41 rt 80.084 
+square-curl w w1 71 rt 78.095 
+square-curl u u1 55 rt 69.286 
+square-curl s s2 48 rt 67.858 
+square-curl q q1 1428 rt 70.203 
+square-curl o o1 32 rt 98.251 
+square-curl m m1 332 rt 62.524 
+square-curl k k1 295 rt 84.413 
+square-curl i i1 40 rt 81.428 
+square-curl g g1 4506 rt 39.771 
+square-curl e r1 54 wr 82.714 
+square-curl c c1 378 rt 86.572 
+square-curl a u1 1693 wr 72.078 
+weird-arrow b b1 34 rt 91.858 
+weird-arrow d d1 74 rt 91.144 
+weird-arrow f f1 3443 rt 46.993 
+weird-arrow h h1 41 rt 66.714 
+weird-arrow j j1 55 rt 80.046 
+weird-arrow l l1 24 rt 68.572 
+weird-arrow n n1 46 rt 63.762 
+weird-arrow p p1 41 rt 92.429 
+weird-arrow r r1 50 rt 92.0 
+weird-arrow t k1 2511 wr 51.379 
+weird-arrow v v1 56 rt 68.286 
+weird-arrow x k1 4851 wr 35.845 
+weird-arrow z z1 74 rt 80.381 
+weird-arrow y y1 45 rt 88.239 
+weird-arrow w w1 4058 rt 33.976 
+weird-arrow u u1 922 rt 64.036 
+weird-arrow s s2 37 rt 71.715 
+weird-arrow q q1 1242 rt 67.898 
+weird-arrow o o1 19 rt 98.251 
+weird-arrow m m1 1985 rt 63.416 
+weird-arrow k f1 840 wr 52.973 
+weird-arrow i i1 54 rt 79.142 
+weird-arrow g g1 40 rt 78.773 
+weird-arrow e e1 2562 rt 61.661 
+weird-arrow c c1 19 rt 91.43 
+weird-arrow a a1 3540 rt 56.037 
+close b b2 41 rt 92.524 
+close d d1 54 rt 94.619 
+close f t1 41 wr 74.832 
+close h h1 2435 rt 43.479 
+close j j1 36 rt 83.61 
+close l l1 21 rt 79.428 
+close n n1 46 rt 74.429 
+close p p1 2586 rt 60.46 
+close r r1 52 rt 65.857 
+close t t1 37 rt 67.428 
+close v v1 56 rt 87.429 
+close x x1 33 rt 99.143 
+close z z1 87 rt 94.667 
+close y y1 49 rt 74.371 
+close w u1 1064 wr 52.448 
+close u u1 39 rt 82.523 
+close s v1 862 wr 63.02 
+close q q1 48 rt 91.286 
+close o o1 21 rt 98.251 
+close m m1 447 rt 67.286 
+close k k1 55 rt 87.047 
+close i i1 41 rt 86.428 
+close g g1 46 rt 89.968 
+close e e1 60 rt 89.43 
+close c c1 261 rt 92.858 
+close a a1 56 rt 89.428 
+intersect b b2 858 rt 57.582 
+intersect d d2 1910 rt 54.439 
+intersect f f1 30 rt 92.033 
+intersect h k1 3480 wr 47.7 
+intersect j j1 54 rt 88.766 
+intersect l l1 22 rt 82.286 
+intersect n m1 2628 wr 47.275 
+intersect p j1 4280 wr 59.919 
+intersect r r1 131 rt 70.428 
+intersect t t1 43 rt 75.994 
+intersect v u1 4452 wr 30.737 
+intersect x x1 52 rt 91.571 
+intersect z z1 371 rt 86.334 
+intersect y y1 51 rt 65.2 
+intersect w y1 2509 wr 41.296 
+intersect u u1 815 rt 49.738 
+intersect s r1 149 wr 73.142 
+intersect q q2 969 rt 58.463 
+intersect o o1 31 rt 98.251 
+intersect m m1 227 rt 55.38 
+intersect k f1 948 wr 59.564 
+intersect i i1 38 rt 90.0 
+intersect g g2 62 rt 66.541 
+intersect e e2 314 rt 66.697 
+intersect c c1 30 rt 96.858 
+intersect a o1 335 wr 60.751 
+slash b b2 38 rt 94.286 
+slash d d1 42 rt 96.429 
+slash f f1 57 rt 73.571 
+slash h h1 176 rt 84.143 
+slash j j1 52 rt 97.182 
+slash l l1 157 rt 74.858 
+slash n m1 927 wr 62.823 
+slash p p1 1378 rt 70.881 
+slash r r1 56 rt 65.857 
+slash t t1 52 rt 77.286 
+slash v v1 52 rt 81.286 
+slash x x1 35 rt 99.143 
+slash z z1 52 rt 94.953 
+slash y y1 986 rt 83.755 
+slash w d1 7944 wr 32.395 
+slash u w1 65 wr 69.381 
+slash s l1 39 wr 62.286 
+slash q q1 46 rt 96.0 
+slash o o1 28 rt 98.251 
+slash m m1 57 rt 82.715 
+slash k k1 615 rt 75.762 
+slash i i1 27 rt 84.143 
+slash g g1 57 rt 90.546 
+slash e e2 971 rt 94.326 
+slash c c1 335 rt 92.858 
+slash a a1 52 rt 95.572 
+hunt4 b b2 37 rt 98.285 
+hunt4 d d2 59 rt 98.285 
+hunt4 f f1 33 rt 80.285 
+hunt4 h h1 57 rt 82.571 
+hunt4 j j1 43 rt 92.78 
+hunt4 l l1 26 rt 63.714 
+hunt4 n n1 29 rt 83.286 
+hunt4 p p2 40 rt 97.0 
+hunt4 r r1 42 rt 97.286 
+hunt4 t t1 47 rt 77.857 
+hunt4 v v1 43 rt 80.143 
+hunt4 x x1 50 rt 99.143 
+hunt4 z z1 79 rt 94.953 
+hunt4 y y1 52 rt 97.785 
+hunt4 w u1 280 wr 63.856 
+hunt4 u u1 44 rt 93.428 
+hunt4 s s2 49 rt 86.286 
+hunt4 q q2 46 rt 97.857 
+hunt4 o a1 1720 wr 59.156 
+hunt4 m m1 302 rt 90.286 
+hunt4 k k1 66 rt 90.762 
+hunt4 i i1 1733 rt 66.825 
+hunt4 g g2 36 rt 98.214 
+hunt4 e e1 50 rt 95.0 
+hunt4 c c1 23 rt 96.858 
+hunt4 a a2 37 rt 94.714 
+benzene-right b b1 41 rt 97.571 
+benzene-right d d1 54 rt 92.429 
+benzene-right f f1 49 rt 78.0 
+benzene-right h h1 58 rt 80.0 
+benzene-right j j1 42 rt 81.525 
+benzene-right l l1 21 rt 78.287 
+benzene-right n n1 42 rt 72.714 
+benzene-right p p1 865 rt 74.269 
+benzene-right r r1 46 rt 91.0 
+benzene-right t t1 47 rt 79.001 
+benzene-right v v1 40 rt 65.334 
+benzene-right x x1 39 rt 92.285 
+benzene-right z z1 57 rt 84.381 
+benzene-right y y1 47 rt 84.928 
+benzene-right w w1 846 rt 51.802 
+benzene-right u u1 50 rt 83.571 
+benzene-right s s2 31 rt 86.286 
+benzene-right q q1 48 rt 95.001 
+benzene-right o o1 21 rt 98.251 
+benzene-right m m1 63 rt 66.809 
+benzene-right k k1 311 rt 83.048 
+benzene-right i i1 46 rt 79.285 
+benzene-right g g1 56 rt 86.364 
+benzene-right e e2 34 rt 63.018 
+benzene-right c c1 17 rt 90.858 
+benzene-right a a2 40 rt 90.714 
+house b b1 45 rt 95.333 
+house d d1 37 rt 96.619 
+house f f1 37 rt 82.332 
+house h h1 38 rt 80.332 
+house j j1 242 rt 80.338 
+house l l1 24 rt 61.428 
+house n n1 41 rt 83.286 
+house p p1 45 rt 86.143 
+house r r1 47 rt 94.143 
+house t t1 40 rt 78.858 
+house v u1 66 wr 70.143 
+house x x1 44 rt 94.571 
+house z z1 95 rt 80.381 
+house y y1 44 rt 84.74 
+house w w1 842 rt 80.021 
+house u u1 47 rt 85.238 
+house s s2 39 rt 71.715 
+house q q1 58 rt 82.572 
+house o o1 30 rt 98.251 
+house m m1 94 rt 91.238 
+house k k1 479 rt 89.365 
+house i i1 467 rt 78.905 
+house g g1 38 rt 84.149 
+house e e1 64 rt 95.0 
+house c c1 26 rt 77.142 
+house a a1 41 rt 96.286 
+standard-square b b1 49 rt 100.0 
+standard-square d d1 45 rt 100.19 
+standard-square f f1 48 rt 96.818 
+standard-square h h1 56 rt 84.571 
+standard-square j j1 49 rt 90.585 
+standard-square l l1 21 rt 91.143 
+standard-square n n1 48 rt 82.714 
+standard-square p p1 52 rt 98.715 
+standard-square r r1 48 rt 98.571 
+standard-square t t1 64 rt 81.143 
+standard-square v v1 38 rt 80.143 
+standard-square x x1 39 rt 99.143 
+standard-square z z1 66 rt 94.953 
+standard-square y y1 31 rt 88.928 
+standard-square w w1 61 rt 87.873 
+standard-square u u1 45 rt 87.094 
+standard-square s s2 60 rt 85.858 
+standard-square q q1 42 rt 99.762 
+standard-square o o1 26 rt 98.251 
+standard-square m m1 82 rt 89.714 
+standard-square k k1 315 rt 87.096 
+standard-square i i1 43 rt 96.0 
+standard-square g g1 46 rt 94.688 
+standard-square e e1 40 rt 92.858 
+standard-square c c1 33 rt 77.428 
+standard-square a a1 47 rt 100.0 
+hint4 b b1 599 rt 69.572 
+hint4 d d1 55 rt 68.857 
+hint4 f f1 58 rt 61.572 
+hint4 h l1 22 wr 79.715 
+hint4 j j1 57 rt 92.475 
+hint4 l l1 27 rt 63.714 
+hint4 n n1 63 rt 76.429 
+hint4 p p1 53 rt 71.715 
+hint4 r r1 45 rt 91.0 
+hint4 t t1 53 rt 51.714 
+hint4 v v1 49 rt 80.143 
+hint4 x x1 35 rt 99.143 
+hint4 z z1 84 rt 94.667 
+hint4 y y1 99 rt 81.025 
+hint4 w j1 1741 wr 53.228 
+hint4 u u1 37 rt 66.572 
+hint4 s s2 48 rt 80.0 
+hint4 q q1 179 rt 76.143 
+hint4 o v1 49 wr 79.286 
+hint4 m m1 670 rt 72.523 
+hint4 k k1 71 rt 77.191 
+hint4 i i1 3297 rt 57.06 
+hint4 g g1 63 rt 71.311 
+hint4 e e1 341 rt 79.0 
+hint4 c c1 28 rt 71.142 
+hint4 a a2 1432 rt 54.804 
+bowtie b l1 1612 wr 49.05 
+bowtie d l1 906 wr 55.16 
+bowtie f f1 38 rt 61.261 
+bowtie h h1 3522 rt 45.065 
+bowtie j j1 5606 rt 46.71 
+bowtie l l1 31 rt 62.0 
+bowtie n o1 361 wr 60.751 
+bowtie p y2 3053 wr 40.651 
+bowtie r r1 1883 rt 60.056 
+bowtie t t1 41 rt 63.429 
+bowtie v v1 33 rt 67.571 
+bowtie x x1 43 rt 80.572 
+bowtie z o1 808 wr 56.107 
+bowtie y y1 1821 rt 56.038 
+bowtie w w1 53 rt 84.254 
+bowtie u u1 291 rt 72.857 
+bowtie s o1 285 wr 60.751 
+bowtie q y2 7331 wr 21.955 
+bowtie o y2 8000 qt
+bowtie m m1 3396 rt 45.04 
+bowtie k k1 4859 rt 36.557 
+bowtie i i1 908 rt 72.506 
+bowtie g y1 4037 wr 41.796 
+bowtie e c1 21 wr 61.751 
+bowtie c o1 224 wr 60.751 
+bowtie a a2 46 rt 68.233 
+checkmark b h1 207 wr 82.714 
+checkmark d d1 245 rt 73.0 
+checkmark f f1 51 rt 92.077 
+checkmark h h1 33 rt 77.571 
+checkmark j h1 8000 qt
+checkmark l l1 21 rt 78.573 
+checkmark n n1 45 rt 77.428 
+checkmark p y1 4985 wr 40.504 
+checkmark r r1 45 rt 65.857 
+checkmark t t1 43 rt 85.552 
+checkmark v v1 49 rt 81.286 
+checkmark x x1 46 rt 86.715 
+checkmark z z1 74 rt 88.857 
+checkmark y y2 53 rt 81.39 
+checkmark w w1 2035 rt 61.134 
+checkmark u u1 61 rt 85.857 
+checkmark s s2 39 rt 74.858 
+checkmark q q1 44 rt 81.572 
+checkmark o o1 35 rt 95.321 
+checkmark m x1 3543 wr 52.162 
+checkmark k m1 5709 wr 28.974 
+checkmark i i1 48 rt 93.857 
+checkmark g y2 44 wr 77.819 
+checkmark e e1 41 rt 80.43 
+checkmark c c1 24 rt 79.715 
+checkmark a n1 1083 wr 70.474 
+flournoy-ranch b b2 51 rt 81.857 
+flournoy-ranch d d2 1741 rt 37.857 
+flournoy-ranch f f1 4309 rt 43.6 
+flournoy-ranch h h1 55 rt 77.714 
+flournoy-ranch j j1 31 rt 79.014 
+flournoy-ranch l l1 4095 rt 35.379 
+flournoy-ranch n n1 2438 rt 52.646 
+flournoy-ranch p p2 46 rt 82.0 
+flournoy-ranch r r1 322 rt 66.428 
+flournoy-ranch t t1 2763 rt 52.889 
+flournoy-ranch v v1 1172 rt 72.642 
+flournoy-ranch x w1 5228 wr 43.155 
+flournoy-ranch z c1 2408 wr 51.906 
+flournoy-ranch y y1 52 rt 62.858 
+flournoy-ranch w m1 5625 wr 43.303 
+flournoy-ranch u n1 2461 wr 47.874 
+flournoy-ranch s s2 937 rt 83.619 
+flournoy-ranch q q2 59 rt 50.0 
+flournoy-ranch o g1 4195 wr 40.481 
+flournoy-ranch m m1 5550 rt 29.084 
+flournoy-ranch k k1 76 rt 73.714 
+flournoy-ranch i i1 4010 rt 63.806 
+flournoy-ranch g g2 111 rt 48.591 
+flournoy-ranch e e2 5522 rt 35.176 
+flournoy-ranch c c1 1802 rt 47.597 
+flournoy-ranch a e2 4407 wr 42.122 
+double-backslash b b1 47 rt 88.952 
+double-backslash d d1 39 rt 91.19 
+double-backslash f f1 131 rt 83.558 
+double-backslash h h1 47 rt 85.858 
+double-backslash j j1 52 rt 86.429 
+double-backslash l l1 30 rt 82.57 
+double-backslash n n1 53 rt 73.43 
+double-backslash p p1 55 rt 85.142 
+double-backslash r c1 31 wr 70.857 
+double-backslash t t1 43 rt 67.429 
+double-backslash v v1 48 rt 96.952 
+double-backslash x x1 61 rt 86.001 
+double-backslash z y2 5507 wr 28.823 
+double-backslash y y2 59 rt 87.514 
+double-backslash w w1 4275 rt 43.108 
+double-backslash u v1 44 wr 87.0 
+double-backslash s s2 39 rt 72.0 
+double-backslash q q2 360 rt 87.143 
+double-backslash o o1 18 rt 95.321 
+double-backslash m m1 718 rt 81.905 
+double-backslash k k1 178 rt 78.953 
+double-backslash i i1 56 rt 78.143 
+double-backslash g g1 48 rt 82.273 
+double-backslash e e2 36 rt 70.429 
+double-backslash c c1 24 rt 79.715 
+double-backslash a d1 6647 wr 30.893 
+sabretooth b b1 42 rt 94.143 
+sabretooth d d1 42 rt 94.857 
+sabretooth f f1 61 rt 78.514 
+sabretooth h h1 921 rt 65.323 
+sabretooth j j1 51 rt 76.852 
+sabretooth l l1 178 rt 60.572 
+sabretooth n n1 1040 rt 67.763 
+sabretooth p p1 64 rt 92.858 
+sabretooth r r1 53 rt 92.714 
+sabretooth t t1 37 rt 74.143 
+sabretooth v v1 39 rt 76.429 
+sabretooth x u1 41 wr 67.429 
+sabretooth z r1 2974 wr 59.842 
+sabretooth y y2 37 rt 94.182 
+sabretooth w u1 1976 wr 50.578 
+sabretooth u r1 409 wr 66.714 
+sabretooth s s2 33 rt 86.001 
+sabretooth q q1 39 rt 91.571 
+sabretooth o o1 25 rt 98.251 
+sabretooth m m1 65 rt 77.666 
+sabretooth k k1 1155 rt 84.117 
+sabretooth i i1 60 rt 78.571 
+sabretooth g g1 946 rt 66.491 
+sabretooth e e2 75 rt 66.857 
+sabretooth c c1 35 rt 88.857 
+sabretooth a a1 2326 rt 55.555 
+shorts b b1 57 rt 97.762 
+shorts d d1 36 rt 98.38 
+shorts f f1 834 rt 67.812 
+shorts h h1 45 rt 76.667 
+shorts j j1 1756 rt 63.317 
+shorts l l1 27 rt 79.428 
+shorts n n1 39 rt 70.857 
+shorts p p1 53 rt 91.856 
+shorts r r1 79 rt 86.286 
+shorts t t1 40 rt 62.43 
+shorts v v1 51 rt 76.286 
+shorts x x1 36 rt 99.143 
+shorts z z1 101 rt 88.857 
+shorts y y1 50 rt 75.312 
+shorts w w1 94 rt 85.587 
+shorts u u1 37 rt 77.81 
+shorts s s2 35 rt 67.858 
+shorts q q1 35 rt 80.714 
+shorts o o1 22 rt 98.251 
+shorts m m1 361 rt 67.798 
+shorts k k1 59 rt 84.02 
+shorts i i1 36 rt 78.428 
+shorts g g1 45 rt 91.662 
+shorts e e1 46 rt 88.857 
+shorts c c1 25 rt 91.43 
+shorts a a1 42 rt 93.857 
+benzene-left b b1 60 rt 92.714 
+benzene-left d d1 45 rt 98.429 
+benzene-left f f1 56 rt 96.344 
+benzene-left h h1 46 rt 80.429 
+benzene-left j j1 43 rt 89.025 
+benzene-left l l1 24 rt 63.714 
+benzene-left n n1 40 rt 79.714 
+benzene-left p p1 53 rt 95.286 
+benzene-left r r1 35 rt 96.429 
+benzene-left t t1 41 rt 75.571 
+benzene-left v v1 62 rt 94.095 
+benzene-left x x1 44 rt 79.286 
+benzene-left z z1 1156 rt 69.48 
+benzene-left y y1 52 rt 83.2 
+benzene-left w w1 410 rt 75.191 
+benzene-left u u1 139 rt 77.142 
+benzene-left s s2 55 rt 76.43 
+benzene-left q q1 44 rt 90.0 
+benzene-left o o1 24 rt 98.251 
+benzene-left m n1 205 wr 80.429 
+benzene-left k k1 83 rt 83.619 
+benzene-left i i1 52 rt 75.143 
+benzene-left g g1 50 rt 82.332 
+benzene-left e e2 856 rt 62.698 
+benzene-left c c1 26 rt 96.858 
+benzene-left a a2 35 rt 84.59 
+boat b b1 46 rt 91.524 
+boat d d1 30 rt 86.857 
+boat f r1 1183 wr 55.227 
+boat h h1 52 rt 76.286 
+boat j j1 55 rt 87.52 
+boat l l1 25 rt 79.429 
+boat n n1 44 rt 72.0 
+boat p p1 37 rt 91.285 
+boat r r1 58 rt 87.143 
+boat t t1 63 rt 65.858 
+boat v v1 44 rt 80.143 
+boat x x1 39 rt 91.572 
+boat z z1 84 rt 79.238 
+boat y y1 43 rt 91.824 
+boat w w1 593 rt 73.381 
+boat u u1 50 rt 79.0 
+boat s s2 57 rt 77.286 
+boat q q1 59 rt 93.143 
+boat o o1 31 rt 98.251 
+boat m m1 46 rt 72.084 
+boat k k1 447 rt 92.793 
+boat i i1 45 rt 77.714 
+boat g g1 45 rt 76.487 
+boat e e2 44 rt 73.714 
+boat c c1 21 rt 90.858 
+boat a a2 47 rt 80.428 
+slant b d1 42 wr 85.668 
+slant d d1 42 rt 99.334 
+slant f f1 71 rt 70.286 
+slant h h1 127 rt 65.429 
+slant j j1 68 rt 93.292 
+slant l l1 29 rt 79.43 
+slant n n1 47 rt 79.714 
+slant p p1 42 rt 71.714 
+slant r r1 43 rt 78.714 
+slant t t1 51 rt 72.715 
+slant v u1 49 wr 71.429 
+slant x x1 55 rt 72.286 
+slant z z1 73 rt 92.286 
+slant y y1 50 rt 84.363 
+slant w w1 818 rt 66.634 
+slant u u1 66 rt 82.381 
+slant s s2 33 rt 92.857 
+slant q q1 39 rt 98.905 
+slant o o1 31 rt 98.251 
+slant m m1 3649 rt 42.361 
+slant k k1 216 rt 77.905 
+slant i i1 45 rt 90.287 
+slant g g1 58 rt 82.415 
+slant e e1 35 rt 90.001 
+slant c c1 191 rt 98.667 
+slant a a1 77 rt 88.238 
+snout b b1 41 rt 95.572 
+snout d d1 58 rt 96.0 
+snout f f1 32 rt 88.72 
+snout h h1 49 rt 95.524 
+snout j j1 61 rt 90.078 
+snout l l1 26 rt 95.999 
+snout n n1 27 rt 90.429 
+snout p p1 54 rt 87.0 
+snout r r1 38 rt 90.286 
+snout t t1 40 rt 85.948 
+snout v z1 1488 wr 65.143 
+snout x x1 37 rt 83.0 
+snout z z1 53 rt 87.905 
+snout y y1 51 rt 84.078 
+snout w w1 57 rt 87.111 
+snout u u1 46 rt 82.381 
+snout s s2 57 rt 84.285 
+snout q q1 46 rt 88.286 
+snout o o1 25 rt 98.251 
+snout m m1 68 rt 94.635 
+snout k k1 55 rt 84.858 
+snout i i1 46 rt 74.428 
+snout g g1 50 rt 84.188 
+snout e e1 160 rt 74.715 
+snout c c1 27 rt 92.858 
+snout a a1 53 rt 89.857 
+funtnip b b1 142 rt 68.142 
+funtnip d d1 4203 rt 50.016 
+funtnip f f1 46 rt 73.644 
+funtnip h h1 52 rt 79.428 
+funtnip j h1 8000 qt
+funtnip l t1 3351 wr 43.707 
+funtnip n n1 1328 rt 69.526 
+funtnip p p1 1341 rt 61.935 
+funtnip r r1 1678 rt 52.074 
+funtnip t t1 2514 rt 47.13 
+funtnip v v1 1062 rt 70.067 
+funtnip x k1 4898 wr 34.253 
+funtnip z z1 4731 rt 41.55 
+funtnip y y1 1779 rt 72.331 
+funtnip w w1 65 rt 68.81 
+funtnip u r1 46 wr 65.571 
+funtnip s r1 4357 wr 33.738 
+funtnip q q1 82 rt 72.572 
+funtnip o a1 1765 wr 66.112 
+funtnip m m1 47 rt 75.667 
+funtnip k k1 794 rt 69.763 
+funtnip i k1 8000 qt
+funtnip g k1 8000 qt
+funtnip e z1 7412 wr 22.68 
+funtnip c z1 5166 wr 43.465 
+funtnip a w1 7686 wr 32.156 
+sluice b j1 4221 wr 58.457 
+sluice d i1 4072 wr 45.319 
+sluice f i1 48 wr 86.857 
+sluice h i1 53 wr 87.572 
+sluice j j1 39 rt 88.123 
+sluice l i1 4807 wr 44.967 
+sluice n i1 269 wr 88.857 
+sluice p j1 188 wr 62.669 
+sluice r i1 2484 wr 51.527 
+sluice t i1 4077 wr 50.631 
+sluice v w1 3372 wr 43.302 
+sluice x w1 4544 wr 37.455 
+sluice z i1 3625 wr 46.619 
+sluice y y1 1062 rt 49.394 
+sluice w y1 1923 wr 54.118 
+sluice u i1 1584 wr 59.293 
+sluice s n1 2900 wr 50.918 
+sluice q j1 897 wr 67.227 
+sluice o j1 5069 wr 55.179 
+sluice m n1 151 wr 61.999 
+sluice k k1 5674 rt 35.454 
+sluice i i1 49 rt 73.286 
+sluice g j1 880 wr 57.932 
+sluice e i1 4017 wr 48.461 
+sluice c i1 4906 wr 38.443 
+sluice a i1 4090 wr 59.799 
+square-curl b b1 1539 rt 73.207 
+square-curl d d1 78 rt 81.237 
+square-curl f f1 3387 rt 34.97 
+square-curl h h1 51 rt 83.19 
+square-curl j j1 918 rt 73.32 
+square-curl l l1 23 rt 60.571 
+square-curl n n1 43 rt 85.714 
+square-curl p p1 1654 rt 53.864 
+square-curl r r1 54 rt 94.143 
+square-curl t t1 56 rt 79.285 
+square-curl v u1 433 wr 68.714 
+square-curl x x1 978 rt 73.568 
+square-curl z z1 425 rt 85.714 
+square-curl y y1 49 rt 80.084 
+square-curl w w1 69 rt 78.095 
+square-curl u u1 49 rt 69.286 
+square-curl s s2 49 rt 67.858 
+square-curl q u1 5651 wr 31.384 
+square-curl o o1 31 rt 98.251 
+square-curl m m1 355 rt 62.524 
+square-curl k k1 2154 rt 71.752 
+square-curl i i1 48 rt 81.428 
+square-curl g n1 4907 wr 33.502 
+square-curl e r1 76 wr 82.714 
+square-curl c c1 228 rt 86.572 
+square-curl a u1 2134 wr 72.078 
+weird-arrow b b1 53 rt 91.858 
+weird-arrow d d1 53 rt 91.144 
+weird-arrow f f1 1946 rt 46.28 
+weird-arrow h h1 51 rt 66.714 
+weird-arrow j j1 50 rt 80.046 
+weird-arrow l l1 30 rt 68.572 
+weird-arrow n n1 56 rt 63.762 
+weird-arrow p p1 47 rt 92.429 
+weird-arrow r r1 47 rt 92.0 
+weird-arrow t k1 3001 wr 50.566 
+weird-arrow v v1 51 rt 68.286 
+weird-arrow x k1 4823 wr 35.845 
+weird-arrow z z1 57 rt 80.381 
+weird-arrow y y1 41 rt 88.239 
+weird-arrow w r1 5064 wr 30.394 
+weird-arrow u u1 209 rt 67.142 
+weird-arrow s s2 40 rt 71.715 
+weird-arrow q q1 1206 rt 67.898 
+weird-arrow o o1 19 rt 98.251 
+weird-arrow m m1 3020 rt 62.627 
+weird-arrow k f1 995 wr 52.973 
+weird-arrow i i1 55 rt 79.142 
+weird-arrow g g1 47 rt 78.773 
+weird-arrow e e1 2659 rt 61.661 
+weird-arrow c c1 27 rt 91.43 
+weird-arrow a a1 4345 rt 52.018 
+close b b2 35 rt 92.524 
+close d d1 58 rt 94.619 
+close f f1 62 rt 74.832 
+close h h1 3810 rt 31.343 
+close j j1 45 rt 83.61 
+close l l1 15 rt 79.428 
+close n n1 45 rt 74.429 
+close p p1 3405 rt 58.032 
+close r r1 37 rt 65.857 
+close t t1 39 rt 67.428 
+close v v1 55 rt 87.429 
+close x x1 39 rt 99.143 
+close z z1 72 rt 94.667 
+close y y1 62 rt 74.371 
+close w w1 1086 rt 65.278 
+close u u1 265 rt 82.523 
+close s v1 1679 wr 60.828 
+close q q1 46 rt 91.286 
+close o o1 25 rt 98.251 
+close m m1 61 rt 64.333 
+close k k1 57 rt 87.047 
+close i i1 49 rt 86.428 
+close g g1 37 rt 89.968 
+close e e1 52 rt 89.43 
+close c c1 150 rt 92.858 
+close a a1 53 rt 89.428 
+intersect b b2 853 rt 50.467 
+intersect d d2 1659 rt 54.439 
+intersect f f1 44 rt 92.033 
+intersect h k1 3957 wr 47.7 
+intersect j j1 61 rt 88.766 
+intersect l l1 24 rt 82.286 
+intersect n m1 2799 wr 50.962 
+intersect p j1 4115 wr 59.919 
+intersect r r1 127 rt 70.428 
+intersect t t1 36 rt 75.994 
+intersect v z1 4954 wr 32.676 
+intersect x x1 51 rt 91.571 
+intersect z z1 1229 rt 81.903 
+intersect y y1 54 rt 65.2 
+intersect w y1 2457 wr 39.301 
+intersect u w1 818 wr 65.414 
+intersect s r1 137 wr 73.142 
+intersect q q2 831 rt 58.463 
+intersect o o1 26 rt 98.251 
+intersect m m1 147 rt 63.38 
+intersect k f1 220 wr 61.857 
+intersect i i1 28 rt 81.286 
+intersect g g2 37 rt 66.541 
+intersect e o1 98 wr 61.857 
+intersect c c1 10 rt 77.142 
+intersect a o1 180 wr 60.751 
+slash b b2 42 rt 94.286 
+slash d d1 37 rt 96.429 
+slash f f1 45 rt 73.571 
+slash h h1 446 rt 84.143 
+slash j j1 43 rt 97.182 
+slash l l1 79 rt 74.858 
+slash n m1 130 wr 68.143 
+slash p p1 1313 rt 69.525 
+slash r r1 43 rt 65.857 
+slash t t1 60 rt 77.286 
+slash v v1 37 rt 81.286 
+slash x x1 36 rt 99.143 
+slash z z1 90 rt 94.953 
+slash y y1 1060 rt 83.755 
+slash w d1 7481 wr 32.395 
+slash u w1 52 wr 69.381 
+slash s l1 29 wr 62.286 
+slash q q1 47 rt 96.0 
+slash o o1 37 rt 98.251 
+slash m m1 57 rt 82.715 
+slash k k1 80 rt 75.762 
+slash i i1 49 rt 84.143 
+slash g g1 43 rt 90.546 
+slash e e1 47 rt 86.57 
+slash c c1 745 rt 92.858 
+slash a a1 46 rt 95.572 
+hunt4 b b2 44 rt 98.285 
+hunt4 d d2 50 rt 98.285 
+hunt4 f f1 45 rt 80.285 
+hunt4 h h1 58 rt 82.571 
+hunt4 j j1 47 rt 92.78 
+hunt4 l l1 25 rt 63.714 
+hunt4 n n1 41 rt 83.286 
+hunt4 p p2 48 rt 97.0 
+hunt4 r r1 34 rt 97.286 
+hunt4 t t1 35 rt 77.857 
+hunt4 v v1 43 rt 80.143 
+hunt4 x x1 40 rt 99.143 
+hunt4 z z1 102 rt 94.953 
+hunt4 y y1 30 rt 97.785 
+hunt4 w w1 70 rt 73.381 
+hunt4 u u1 42 rt 93.428 
+hunt4 s s2 41 rt 86.286 
+hunt4 q q2 46 rt 97.857 
+hunt4 o a1 2195 wr 59.156 
+hunt4 m m1 77 rt 91.238 
+hunt4 k k1 55 rt 90.762 
+hunt4 i i1 1662 rt 66.825 
+hunt4 g g2 38 rt 98.214 
+hunt4 e e1 36 rt 95.0 
+hunt4 c c1 19 rt 77.142 
+hunt4 a a2 44 rt 94.714 
+benzene-right b b1 49 rt 97.571 
+benzene-right d d1 37 rt 92.429 
+benzene-right f f1 49 rt 78.0 
+benzene-right h h1 50 rt 80.0 
+benzene-right j j1 38 rt 81.525 
+benzene-right l l1 31 rt 78.287 
+benzene-right n n1 54 rt 72.714 
+benzene-right p p1 859 rt 64.782 
+benzene-right r r1 58 rt 79.0 
+benzene-right t t1 44 rt 79.001 
+benzene-right v v1 49 rt 65.334 
+benzene-right x x1 39 rt 92.285 
+benzene-right z z1 71 rt 86.953 
+benzene-right y y1 44 rt 84.928 
+benzene-right w w1 2321 rt 54.004 
+benzene-right u u1 43 rt 83.571 
+benzene-right s s2 39 rt 86.286 
+benzene-right q q1 41 rt 95.001 
+benzene-right o o1 26 rt 98.251 
+benzene-right m m1 334 rt 66.809 
+benzene-right k k1 50 rt 96.001 
+benzene-right i i1 41 rt 79.285 
+benzene-right g g1 56 rt 86.364 
+benzene-right e e2 48 rt 63.018 
+benzene-right c c1 29 rt 90.858 
+benzene-right a a2 47 rt 90.714 
+house b b1 46 rt 95.333 
+house d d1 28 rt 96.619 
+house f f1 52 rt 82.332 
+house h h1 49 rt 80.332 
+house j j1 112 rt 80.338 
+house l l1 25 rt 61.428 
+house n n1 40 rt 83.286 
+house p p1 35 rt 86.143 
+house r r1 46 rt 94.143 
+house t t1 38 rt 78.858 
+house v u1 55 wr 70.143 
+house x x1 41 rt 94.571 
+house z z1 106 rt 80.381 
+house y y1 45 rt 84.74 
+house w w1 385 rt 85.302 
+house u u1 42 rt 85.238 
+house s s2 30 rt 71.715 
+house q q1 39 rt 66.085 
+house o o1 37 rt 98.251 
+house m m1 278 rt 90.286 
+house k k1 1378 rt 84.779 
+house i i1 437 rt 78.905 
+house g g1 38 rt 84.149 
+house e e1 37 rt 95.0 
+house c c1 18 rt 77.142 
+house a a1 74 rt 90.668 
+standard-square b b1 66 rt 100.0 
+standard-square d d1 42 rt 100.19 
+standard-square f f1 44 rt 96.818 
+standard-square h h1 42 rt 84.571 
+standard-square j j1 39 rt 90.585 
+standard-square l l1 24 rt 91.143 
+standard-square n n1 40 rt 82.714 
+standard-square p p1 61 rt 98.715 
+standard-square r r1 43 rt 98.571 
+standard-square t t1 36 rt 81.143 
+standard-square v v1 42 rt 80.143 
+standard-square x x1 38 rt 93.143 
+standard-square z z1 66 rt 94.953 
+standard-square y y1 66 rt 88.928 
+standard-square w w1 48 rt 87.873 
+standard-square u u1 55 rt 87.094 
+standard-square s s2 52 rt 85.858 
+standard-square q q1 45 rt 99.762 
+standard-square o o1 27 rt 98.251 
+standard-square m m1 66 rt 94.19 
+standard-square k k1 448 rt 75.762 
+standard-square i i1 49 rt 96.0 
+standard-square g g1 74 rt 94.688 
+standard-square e e1 38 rt 92.858 
+standard-square c c1 19 rt 77.428 
+standard-square a a1 42 rt 100.0 
+hint4 b b1 688 rt 69.572 
+hint4 d d1 42 rt 68.857 
+hint4 f f1 38 rt 54.142 
+hint4 h l1 30 wr 79.715 
+hint4 j j1 61 rt 92.475 
+hint4 l l1 27 rt 63.714 
+hint4 n n1 35 rt 71.857 
+hint4 p p1 41 rt 71.715 
+hint4 r r1 73 rt 79.0 
+hint4 t t1 45 rt 59.144 
+hint4 v v1 45 rt 80.143 
+hint4 x x1 36 rt 99.143 
+hint4 z z1 97 rt 86.381 
+hint4 y y1 446 rt 81.025 
+hint4 w j1 1923 wr 53.228 
+hint4 u u1 46 rt 66.572 
+hint4 s s2 61 rt 80.0 
+hint4 q q1 130 rt 76.143 
+hint4 o v1 44 wr 79.286 
+hint4 m n1 899 wr 61.326 
+hint4 k k1 498 rt 72.62 
+hint4 i i1 2009 rt 67.447 
+hint4 g g1 53 rt 71.311 
+hint4 e c1 1836 wr 47.597 
+hint4 c c1 27 rt 71.142 
+hint4 a a2 2928 rt 44.322 
+bowtie b l1 1752 wr 49.05 
+bowtie d l1 1048 wr 55.16 
+bowtie f f1 34 rt 61.261 
+bowtie h h1 3587 rt 41.525 
+bowtie j j1 5212 rt 50.694 
+bowtie l l1 21 rt 62.0 
+bowtie n o1 130 wr 60.751 
+bowtie p y2 3766 wr 39.436 
+bowtie r o1 485 wr 60.751 
+bowtie t t1 42 rt 63.429 
+bowtie v v1 53 rt 67.571 
+bowtie x x1 64 rt 80.572 
+bowtie z o1 968 wr 56.107 
+bowtie y y1 1651 rt 56.038 
+bowtie w w1 78 rt 73.838 
+bowtie u u1 123 rt 72.857 
+bowtie s r1 889 wr 73.269 
+bowtie q o1 7413 wr 22.177 
+bowtie o a1 6943 wr 31.426 
+bowtie m m1 3263 rt 45.04 
+bowtie k k1 4851 rt 36.557 
+bowtie i i1 1739 rt 67.596 
+bowtie g o1 3577 wr 37.647 
+bowtie e c1 28 wr 61.751 
+bowtie c c1 1063 rt 54.616 
+bowtie a a2 44 rt 68.233 
+checkmark b h1 912 wr 74.539 
+checkmark d d1 641 rt 73.0 
+checkmark f f1 42 rt 92.077 
+checkmark h h1 49 rt 85.429 
+checkmark j h1 8000 qt
+checkmark l l1 21 rt 78.573 
+checkmark n n1 48 rt 77.428 
+checkmark p y1 4995 wr 31.329 
+checkmark r r1 52 rt 65.857 
+checkmark t t1 38 rt 85.552 
+checkmark v v1 59 rt 81.286 
+checkmark x x1 54 rt 86.715 
+checkmark z z1 49 rt 88.857 
+checkmark y y2 49 rt 81.39 
+checkmark w u1 578 wr 78.714 
+checkmark u u1 56 rt 85.857 
+checkmark s s2 49 rt 63.715 
+checkmark q q1 53 rt 81.572 
+checkmark o o1 25 rt 95.321 
+checkmark m m1 838 rt 72.055 
+checkmark k m1 6301 wr 28.974 
+checkmark i i1 48 rt 93.857 
+checkmark g y2 30 wr 77.819 
+checkmark e e1 47 rt 80.43 
+checkmark c c1 28 rt 79.715 
+checkmark a n1 1241 wr 58.953 
+flournoy-ranch b b2 56 rt 81.857 
+flournoy-ranch d d2 1647 rt 37.857 
+flournoy-ranch f f1 5250 rt 39.8 
+flournoy-ranch h h1 54 rt 77.714 
+flournoy-ranch j j1 51 rt 79.014 
+flournoy-ranch l l1 1693 rt 51.327 
+flournoy-ranch n n1 2596 rt 48.652 
+flournoy-ranch p p2 47 rt 82.0 
+flournoy-ranch r r1 107 rt 66.428 
+flournoy-ranch t t1 3214 rt 50.464 
+flournoy-ranch v v1 1521 rt 72.642 
+flournoy-ranch x w1 4852 wr 43.155 
+flournoy-ranch z c1 2432 wr 51.906 
+flournoy-ranch y y1 52 rt 62.858 
+flournoy-ranch w w1 4275 rt 36.155 
+flournoy-ranch u n1 2432 wr 46.166 
+flournoy-ranch s s2 1336 rt 83.619 
+flournoy-ranch q q2 35 rt 50.0 
+flournoy-ranch o b1 5641 wr 33.394 
+flournoy-ranch m m1 5542 rt 33.322 
+flournoy-ranch k k1 226 rt 73.714 
+flournoy-ranch i i1 1240 rt 71.151 
+flournoy-ranch g g2 60 rt 48.591 
+flournoy-ranch e e2 4857 rt 35.176 
+flournoy-ranch c c1 1759 rt 47.597 
+flournoy-ranch a e2 4319 wr 44.318 
+double-backslash b b1 50 rt 88.952 
+double-backslash d d1 44 rt 91.19 
+double-backslash f f1 939 rt 76.018 
+double-backslash h h1 51 rt 85.858 
+double-backslash j j1 52 rt 86.429 
+double-backslash l l1 24 rt 82.57 
+double-backslash n n1 60 rt 73.43 
+double-backslash p p1 40 rt 85.142 
+double-backslash r c1 30 wr 70.857 
+double-backslash t t1 53 rt 67.429 
+double-backslash v v1 38 rt 96.952 
+double-backslash x x1 43 rt 82.429 
+double-backslash z y2 4940 wr 28.823 
+double-backslash y y2 47 rt 87.514 
+double-backslash w y1 3323 wr 36.815 
+double-backslash u v1 31 wr 87.0 
+double-backslash s s2 42 rt 72.0 
+double-backslash q q1 1637 rt 59.888 
+double-backslash o o1 22 rt 95.321 
+double-backslash m m1 4131 rt 39.031 
+double-backslash k k1 67 rt 79.906 
+double-backslash i i1 35 rt 78.143 
+double-backslash g g1 39 rt 82.273 
+double-backslash e e2 50 rt 70.429 
+double-backslash c c1 30 rt 79.715 
+double-backslash a e2 5439 wr 43.755 
+sabretooth b b1 45 rt 94.143 
+sabretooth d d1 63 rt 94.857 
+sabretooth f f1 57 rt 78.514 
+sabretooth h h1 595 rt 84.143 
+sabretooth j j1 43 rt 76.852 
+sabretooth l l1 80 rt 60.572 
+sabretooth n n1 844 rt 67.763 
+sabretooth p p1 50 rt 83.0 
+sabretooth r r1 49 rt 92.714 
+sabretooth t t1 45 rt 74.143 
+sabretooth v v1 43 rt 76.429 
+sabretooth x u1 49 wr 67.429 
+sabretooth z e2 2430 wr 51.548 
+sabretooth y y2 43 rt 94.182 
+sabretooth w u1 2507 wr 52.578 
+sabretooth u u1 821 rt 81.858 
+sabretooth s s2 43 rt 86.001 
+sabretooth q q1 50 rt 91.571 
+sabretooth o o1 21 rt 98.251 
+sabretooth m m1 60 rt 77.666 
+sabretooth k k1 69 rt 88.667 
+sabretooth i i1 64 rt 78.571 
+sabretooth g q1 1077 wr 66.491 
+sabretooth e e2 102 rt 66.857 
+sabretooth c c1 21 rt 88.857 
+sabretooth a a1 1048 rt 57.464 
+shorts b b1 44 rt 97.762 
+shorts d d1 51 rt 98.38 
+shorts f f1 1104 rt 67.812 
+shorts h h1 39 rt 76.667 
+shorts j j1 1710 rt 63.317 
+shorts l l1 21 rt 79.428 
+shorts n n1 50 rt 70.857 
+shorts p p1 37 rt 91.856 
+shorts r r1 38 rt 86.286 
+shorts t t1 48 rt 62.43 
+shorts v v1 42 rt 76.286 
+shorts x x1 59 rt 72.856 
+shorts z z1 79 rt 88.857 
+shorts y y1 51 rt 75.312 
+shorts w w1 105 rt 77.397 
+shorts u u1 56 rt 77.81 
+shorts s s2 44 rt 67.858 
+shorts q q1 45 rt 80.714 
+shorts o o1 20 rt 98.251 
+shorts m r1 1255 wr 63.358 
+shorts k k1 53 rt 84.02 
+shorts i i1 46 rt 78.428 
+shorts g g1 48 rt 91.662 
+shorts e e1 45 rt 88.857 
+shorts c c1 30 rt 91.43 
+shorts a a1 46 rt 93.857 
+benzene-left b b1 43 rt 92.714 
+benzene-left d d1 63 rt 98.429 
+benzene-left f f1 55 rt 96.344 
+benzene-left h h1 45 rt 80.429 
+benzene-left j j1 37 rt 89.025 
+benzene-left l l1 27 rt 63.714 
+benzene-left n n1 49 rt 79.714 
+benzene-left p p1 44 rt 95.286 
+benzene-left r r1 43 rt 96.429 
+benzene-left t t1 59 rt 75.571 
+benzene-left v v1 69 rt 94.095 
+benzene-left x x1 38 rt 79.286 
+benzene-left z z1 1665 rt 63.951 
+benzene-left y y1 59 rt 83.2 
+benzene-left w w1 72 rt 75.191 
+benzene-left u u1 528 rt 72.857 
+benzene-left s s2 48 rt 76.43 
+benzene-left q q1 37 rt 90.0 
+benzene-left o o1 27 rt 98.251 
+benzene-left m n1 450 wr 84.714 
+benzene-left k k1 70 rt 79.905 
+benzene-left i i1 52 rt 75.143 
+benzene-left g g1 39 rt 82.332 
+benzene-left e e1 1062 rt 74.878 
+benzene-left c c1 19 rt 96.858 
+benzene-left a a2 34 rt 84.59 
+boat b b1 37 rt 91.524 
+boat d d1 54 rt 86.857 
+boat f f1 273 rt 78.37 
+boat h h1 45 rt 76.286 
+boat j j1 54 rt 87.52 
+boat l l1 25 rt 79.429 
+boat n n1 48 rt 72.0 
+boat p p1 37 rt 91.285 
+boat r r1 58 rt 87.143 
+boat t t1 50 rt 65.858 
+boat v v1 64 rt 80.143 
+boat x x1 34 rt 91.572 
+boat z z1 353 rt 79.238 
+boat y y1 54 rt 91.824 
+boat w w1 55 rt 71.858 
+boat u u1 30 rt 79.0 
+boat s s2 59 rt 77.286 
+boat q q1 53 rt 93.143 
+boat o o1 25 rt 98.251 
+boat m m1 324 rt 78.476 
+boat k k1 779 rt 91.08 
+boat i i1 39 rt 77.714 
+boat g g1 41 rt 76.487 
+boat e e2 45 rt 73.714 
+boat c c1 28 rt 90.858 
+boat a a2 43 rt 80.428 
+slant b d1 38 wr 85.668 
+slant d d1 40 rt 99.334 
+slant f f1 46 rt 70.286 
+slant h h1 300 rt 76.144 
+slant j j1 66 rt 93.292 
+slant l l1 22 rt 79.43 
+slant n n1 38 rt 79.714 
+slant p p1 44 rt 71.714 
+slant r r1 38 rt 78.714 
+slant t t1 53 rt 72.715 
+slant v u1 45 wr 71.429 
+slant x x1 33 rt 72.286 
+slant z z1 75 rt 92.286 
+slant y y1 47 rt 84.363 
+slant w w1 362 rt 77.428 
+slant u u1 48 rt 82.381 
+slant s s2 59 rt 92.857 
+slant q q1 44 rt 98.905 
+slant o o1 23 rt 98.251 
+slant m m1 91 rt 70.714 
+slant k k1 611 rt 77.905 
+slant i i1 40 rt 90.287 
+slant g g1 47 rt 94.558 
+slant e e1 44 rt 90.001 
+slant c c1 86 rt 98.667 
+slant a a1 70 rt 93.857 
+snout b b1 45 rt 95.572 
+snout d d1 37 rt 96.0 
+snout f f1 36 rt 87.435 
+snout h h1 40 rt 95.524 
+snout j j1 36 rt 90.078 
+snout l l1 22 rt 95.999 
+snout n n1 45 rt 85.857 
+snout p p1 48 rt 87.0 
+snout r r1 29 rt 90.286 
+snout t t1 43 rt 85.948 
+snout v u1 1904 wr 56.289 
+snout x x1 52 rt 83.0 
+snout z z1 86 rt 87.905 
+snout y y1 286 rt 84.078 
+snout w w1 75 rt 87.111 
+snout u u1 43 rt 82.381 
+snout s s2 39 rt 84.285 
+snout q q1 56 rt 88.286 
+snout o o1 32 rt 98.251 
+snout m m1 78 rt 94.635 
+snout k k1 83 rt 88.667 
+snout i i1 54 rt 80.714 
+snout g g1 37 rt 84.188 
+snout e e2 967 rt 85.246 
+snout c c1 32 rt 92.858 
+snout a a1 32 rt 90.857 
+funtnip b b1 134 rt 73.713 
+funtnip d d1 4023 rt 50.016 
+funtnip f f1 48 rt 73.644 
+funtnip h h1 448 rt 79.428 
+funtnip j h1 8000 qt
+funtnip l t1 2663 wr 44.914 
+funtnip n n1 744 rt 72.714 
+funtnip p q1 1937 wr 66.872 
+funtnip r r1 2246 rt 57.407 
+funtnip t t1 2873 rt 47.13 
+funtnip v u1 1944 wr 53.543 
+funtnip x k1 4265 wr 43.601 
+funtnip z z1 4181 rt 41.55 
+funtnip y y1 1764 rt 72.331 
+funtnip w w1 62 rt 68.81 
+funtnip u r1 41 wr 65.571 
+funtnip s r1 4644 wr 33.738 
+funtnip q q1 125 rt 72.572 
+funtnip o i1 4914 wr 54.231 
+funtnip m m1 71 rt 75.667 
+funtnip k k1 308 rt 85.333 
+funtnip i k1 8000 qt
+funtnip g k1 8000 qt
+funtnip e z1 6744 wr 22.818 
+funtnip c z1 5502 wr 39.567 
+funtnip a w1 7282 wr 32.156 
+sluice b j1 4870 wr 55.703 
+sluice d i1 4377 wr 45.319 
+sluice f i1 54 wr 86.857 
+sluice h i1 59 wr 87.572 
+sluice j j1 48 rt 88.123 
+sluice l i1 4840 wr 32.715 
+sluice n i1 1103 wr 69.932 
+sluice p j1 65 wr 62.669 
+sluice r i1 2183 wr 52.855 
+sluice t i1 4069 wr 50.631 
+sluice v w1 3899 wr 38.886 
+sluice x w1 4475 wr 37.455 
+sluice z i1 3581 wr 46.619 
+sluice y y1 1062 rt 49.733 
+sluice w j1 1935 wr 57.792 
+sluice u i1 1289 wr 66.475 
+sluice s i1 2462 wr 65.228 
+sluice q j1 1135 wr 67.227 
+sluice o j1 4890 wr 55.179 
+sluice m n1 252 wr 58.0 
+sluice k k1 5801 rt 38.896 
+sluice i i1 44 rt 73.286 
+sluice g j1 1206 wr 60.66 
+sluice e i1 4283 wr 48.461 
+sluice c i1 4828 wr 38.443 
+sluice a i1 4709 wr 59.799 
+square-curl b b1 297 rt 76.809 
+square-curl d d1 629 rt 81.237 
+square-curl f f1 3341 rt 34.97 
+square-curl h h1 47 rt 83.19 
+square-curl j j1 1054 rt 73.32 
+square-curl l l1 24 rt 60.571 
+square-curl n n1 594 rt 85.714 
+square-curl p p1 1637 rt 53.864 
+square-curl r r1 40 rt 94.143 
+square-curl t t1 48 rt 79.285 
+square-curl v u1 346 wr 76.999 
+square-curl x x1 173 rt 76.476 
+square-curl z z1 155 rt 85.714 
+square-curl y y1 49 rt 80.084 
+square-curl w w1 81 rt 78.095 
+square-curl u u1 56 rt 69.286 
+square-curl s s2 56 rt 67.858 
+square-curl q q1 2215 rt 68.348 
+square-curl o o1 15 rt 98.251 
+square-curl m n1 1644 wr 51.317 
+square-curl k k1 1885 rt 71.752 
+square-curl i i1 44 rt 81.428 
+square-curl g g1 4214 rt 39.771 
+square-curl e r1 47 wr 82.714 
+square-curl c c1 447 rt 86.572 
+square-curl a u1 2166 wr 72.078 
+weird-arrow b b1 47 rt 91.858 
+weird-arrow d d1 53 rt 91.144 
+weird-arrow f f1 3404 rt 46.993 
+weird-arrow h h1 56 rt 66.714 
+weird-arrow j j1 57 rt 80.046 
+weird-arrow l l1 30 rt 68.572 
+weird-arrow n n1 641 rt 63.762 
+weird-arrow p p1 57 rt 92.429 
+weird-arrow r r1 37 rt 92.0 
+weird-arrow t k1 3007 wr 49.802 
+weird-arrow v v1 46 rt 68.286 
+weird-arrow x w1 5028 wr 35.845 
+weird-arrow z z1 54 rt 83.238 
+weird-arrow y y1 63 rt 88.239 
+weird-arrow w r1 5366 wr 31.852 
+weird-arrow u u1 118 rt 67.142 
+weird-arrow s s2 43 rt 71.715 
+weird-arrow q q1 831 rt 67.898 
+weird-arrow o o1 17 rt 98.251 
+weird-arrow m k1 1750 wr 70.989 
+weird-arrow k f1 985 wr 52.973 
+weird-arrow i i1 45 rt 79.142 
+weird-arrow g g1 42 rt 78.773 
+weird-arrow e e1 2689 rt 61.661 
+weird-arrow c c1 31 rt 91.43 
+weird-arrow a a1 3238 rt 50.937 
+close b b2 128 rt 92.524 
+close d d1 40 rt 94.619 
+close f f1 48 rt 74.832 
+close h h1 2510 rt 43.479 
+close j j1 47 rt 83.61 
+close l l1 21 rt 79.428 
+close n n1 48 rt 74.429 
+close p p1 3041 rt 60.46 
+close r r1 53 rt 65.857 
+close t t1 45 rt 67.428 
+close v v1 68 rt 87.429 
+close x x1 40 rt 72.856 
+close z z1 72 rt 94.667 
+close y y1 56 rt 74.371 
+close w u1 1641 wr 51.145 
+close u u1 49 rt 82.523 
+close s u1 810 wr 73.997 
+close q q1 49 rt 91.286 
+close o o1 31 rt 98.251 
+close m m1 94 rt 74.048 
+close k k1 93 rt 78.857 
+close i i1 27 rt 86.428 
+close g g1 43 rt 89.968 
+close e e1 37 rt 89.43 
+close c c1 148 rt 92.858 
+close a a1 46 rt 89.428 
+intersect b b2 926 rt 57.582 
+intersect d d2 1115 rt 52.373 
+intersect f f1 48 rt 92.033 
+intersect h k1 3947 wr 47.7 
+intersect j j1 49 rt 88.766 
+intersect l l1 15 rt 82.286 
+intersect n m1 2092 wr 50.232 
+intersect p j1 4112 wr 59.919 
+intersect r r1 495 rt 70.428 
+intersect t t1 62 rt 75.994 
+intersect v z1 4898 wr 32.676 
+intersect x x1 38 rt 91.571 
+intersect z z1 3117 rt 52.367 
+intersect y y1 68 rt 65.2 
+intersect w y1 2534 wr 40.344 
+intersect u u1 812 rt 57.869 
+intersect s r1 120 wr 73.142 
+intersect q q2 820 rt 58.463 
+intersect o o1 29 rt 98.251 
+intersect m m1 200 rt 63.38 
+intersect k f1 843 wr 59.564 
+intersect i i1 44 rt 90.0 
+intersect g g2 48 rt 66.541 
+intersect e o1 513 wr 61.857 
+intersect c c1 23 rt 96.858 
+intersect a o1 97 wr 60.751 
+slash b b2 35 rt 94.286 
+slash d d1 46 rt 96.429 
+slash f f1 43 rt 73.571 
+slash h h1 87 rt 84.143 
+slash j j1 52 rt 97.182 
+slash l l1 362 rt 74.858 
+slash n m1 140 wr 76.715 
+slash p p1 1463 rt 70.881 
+slash r r1 55 rt 65.857 
+slash t t1 50 rt 77.286 
+slash v v1 45 rt 81.286 
+slash x x1 43 rt 99.143 
+slash z z1 54 rt 94.953 
+slash y y1 921 rt 78.581 
+slash w d1 6423 wr 33.724 
+slash u w1 73 wr 69.381 
+slash s l1 36 wr 62.286 
+slash q q1 41 rt 96.0 
+slash o o1 24 rt 98.251 
+slash m m1 62 rt 75.952 
+slash k k1 333 rt 75.762 
+slash i i1 39 rt 84.143 
+slash g g1 54 rt 90.546 
+slash e e2 114 rt 99.429 
+slash c c1 273 rt 92.858 
+slash a a1 27 rt 96.429 
+hunt4 b b2 73 rt 98.285 
+hunt4 d d2 44 rt 98.285 
+hunt4 f f1 32 rt 80.285 
+hunt4 h h1 56 rt 82.571 
+hunt4 j j1 56 rt 92.78 
+hunt4 l l1 21 rt 63.714 
+hunt4 n n1 49 rt 83.286 
+hunt4 p p2 43 rt 97.0 
+hunt4 r r1 64 rt 97.286 
+hunt4 t t1 39 rt 77.857 
+hunt4 v v1 45 rt 80.143 
+hunt4 x x1 41 rt 72.856 
+hunt4 z z1 90 rt 94.953 
+hunt4 y y1 34 rt 80.357 
+hunt4 w w1 86 rt 73.381 
+hunt4 u u1 45 rt 93.428 
+hunt4 s s2 59 rt 86.286 
+hunt4 q q2 52 rt 97.857 
+hunt4 o a1 1862 wr 59.156 
+hunt4 m m1 904 rt 75.127 
+hunt4 k k1 308 rt 82.572 
+hunt4 i i1 1695 rt 66.825 
+hunt4 g g2 45 rt 98.214 
+hunt4 e e1 44 rt 95.0 
+hunt4 c c1 30 rt 96.858 
+hunt4 a a2 51 rt 94.714 
+benzene-right b b1 55 rt 97.571 
+benzene-right d d1 51 rt 92.429 
+benzene-right f f1 38 rt 78.0 
+benzene-right h h1 47 rt 80.0 
+benzene-right j j1 45 rt 81.525 
+benzene-right l l1 34 rt 78.287 
+benzene-right n n1 53 rt 71.999 
+benzene-right p p1 1046 rt 74.269 
+benzene-right r r1 54 rt 91.0 
+benzene-right t t1 51 rt 79.001 
+benzene-right v v1 53 rt 65.334 
+benzene-right x x1 43 rt 92.285 
+benzene-right z z1 53 rt 86.953 
+benzene-right y y1 36 rt 84.928 
+benzene-right w w1 804 rt 57.825 
+benzene-right u u1 50 rt 83.571 
+benzene-right s s2 44 rt 86.286 
+benzene-right q q1 44 rt 95.001 
+benzene-right o o1 15 rt 98.251 
+benzene-right m m1 1791 rt 58.308 
+benzene-right k k1 801 rt 91.616 
+benzene-right i i1 47 rt 79.285 
+benzene-right g g1 36 rt 86.364 
+benzene-right e e2 68 rt 63.018 
+benzene-right c c1 23 rt 90.858 
+benzene-right a a2 45 rt 90.714 
+house b b1 59 rt 95.333 
+house d d1 37 rt 96.619 
+house f f1 44 rt 82.332 
+house h h1 35 rt 87.619 
+house j j1 163 rt 80.338 
+house l l1 27 rt 61.428 
+house n n1 40 rt 87.858 
+house p p1 59 rt 86.143 
+house r r1 43 rt 94.143 
+house t t1 37 rt 78.858 
+house v u1 54 wr 70.143 
+house x x1 37 rt 94.571 
+house z z1 87 rt 83.238 
+house y y1 40 rt 84.74 
+house w u1 871 wr 58.343 
+house u u1 41 rt 85.238 
+house s s2 63 rt 71.715 
+house q q1 57 rt 82.572 
+house o o1 14 rt 98.251 
+house m m1 1105 rt 75.127 
+house k k1 807 rt 84.779 
+house i i1 548 rt 78.905 
+house g g1 38 rt 84.149 
+house e e1 39 rt 95.0 
+house c c1 33 rt 77.142 
+house a a1 25 rt 96.286 
+standard-square b b1 44 rt 100.0 
+standard-square d d1 49 rt 100.19 
+standard-square f f1 28 rt 96.818 
+standard-square h h1 35 rt 84.571 
+standard-square j j1 45 rt 90.585 
+standard-square l l1 25 rt 91.143 
+standard-square n n1 43 rt 82.714 
+standard-square p p1 57 rt 98.715 
+standard-square r r1 45 rt 98.571 
+standard-square t t1 45 rt 81.143 
+standard-square v v1 44 rt 80.143 
+standard-square x x1 46 rt 99.143 
+standard-square z z1 83 rt 94.953 
+standard-square y y1 58 rt 88.928 
+standard-square w w1 55 rt 87.873 
+standard-square u u1 33 rt 87.094 
+standard-square s s2 38 rt 85.858 
+standard-square q q1 35 rt 99.762 
+standard-square o o1 22 rt 98.251 
+standard-square m m1 616 rt 86.19 
+standard-square k k1 62 rt 75.762 
+standard-square i i1 51 rt 96.0 
+standard-square g g1 63 rt 94.688 
+standard-square e e1 41 rt 92.858 
+standard-square c c1 27 rt 77.428 
+standard-square a a1 31 rt 100.0 
+hint4 b b1 656 rt 69.572 
+hint4 d d1 40 rt 68.857 
+hint4 f f1 46 rt 61.572 
+hint4 h l1 16 wr 79.715 
+hint4 j j1 48 rt 92.475 
+hint4 l l1 27 rt 63.714 
+hint4 n n1 49 rt 71.857 
+hint4 p p1 54 rt 68.0 
+hint4 r r1 53 rt 91.0 
+hint4 t t1 49 rt 59.144 
+hint4 v v1 52 rt 80.143 
+hint4 x x1 24 rt 72.856 
+hint4 z z1 95 rt 94.667 
+hint4 y y1 686 rt 63.597 
+hint4 w w1 1072 rt 57.689 
+hint4 u u1 55 rt 66.572 
+hint4 s s2 60 rt 80.0 
+hint4 q q1 186 rt 76.143 
+hint4 o v1 46 wr 82.429 
+hint4 m m1 215 rt 73.475 
+hint4 k k1 58 rt 77.191 
+hint4 i i1 3217 rt 46.993 
+hint4 g g1 54 rt 71.311 
+hint4 e e1 109 rt 79.0 
+hint4 c c1 23 rt 71.142 
+hint4 a a2 2507 rt 44.322 
+bowtie b l1 1606 wr 49.05 
+bowtie d l1 912 wr 55.16 
+bowtie f f1 38 rt 61.261 
+bowtie h h1 4411 rt 38.516 
+bowtie j j1 5857 rt 46.71 
+bowtie l l1 31 rt 62.0 
+bowtie n n1 338 rt 79.143 
+bowtie p y2 5232 wr 28.648 
+bowtie r o1 1847 wr 54.676 
+bowtie t t1 41 rt 63.429 
+bowtie v v1 37 rt 67.571 
+bowtie x x1 42 rt 80.572 
+bowtie z o1 21 wr 60.751 
+bowtie y y1 1664 rt 56.038 
+bowtie w w1 58 rt 84.254 
+bowtie u u1 282 rt 72.857 
+bowtie s o1 594 wr 60.751 
+bowtie q o1 7443 wr 22.177 
+bowtie o g1 6838 wr 32.133 
+bowtie m m1 4021 rt 46.709 
+bowtie k k1 5396 rt 36.557 
+bowtie i i1 1619 rt 67.596 
+bowtie g g1 7190 rt 35.572 
+bowtie e c1 26 wr 61.751 
+bowtie c c1 1034 rt 58.582 
+bowtie a a2 55 rt 68.233 
+checkmark b h1 1127 wr 78.47 
+checkmark d d1 1172 rt 69.593 
+checkmark f f1 44 rt 92.077 
+checkmark h h1 41 rt 85.429 
+checkmark j h1 8000 qt
+checkmark l l1 25 rt 78.573 
+checkmark n n1 60 rt 77.428 
+checkmark p y1 4978 wr 31.329 
+checkmark r r1 50 rt 65.857 
+checkmark t t1 44 rt 85.552 
+checkmark v v1 36 rt 81.286 
+checkmark x x1 48 rt 86.715 
+checkmark z z1 62 rt 88.857 
+checkmark y y2 33 rt 81.39 
+checkmark w u1 96 wr 78.714 
+checkmark u u1 40 rt 85.857 
+checkmark s s2 49 rt 74.858 
+checkmark q q1 262 rt 81.572 
+checkmark o o1 26 rt 95.321 
+checkmark m m1 182 rt 82.715 
+checkmark k k1 5410 rt 50.86 
+checkmark i i1 52 rt 93.857 
+checkmark g y2 43 wr 77.819 
+checkmark e e1 39 rt 80.43 
+checkmark c c1 27 rt 79.715 
+checkmark a n1 881 wr 70.474 
+flournoy-ranch b b2 39 rt 81.857 
+flournoy-ranch d d2 2197 rt 37.857 
+flournoy-ranch f f1 6552 rt 26.136 
+flournoy-ranch h h1 42 rt 77.714 
+flournoy-ranch j j1 55 rt 79.014 
+flournoy-ranch l l1 4429 rt 35.379 
+flournoy-ranch n u1 2737 wr 62.647 
+flournoy-ranch p p2 64 rt 82.0 
+flournoy-ranch r r1 630 rt 66.428 
+flournoy-ranch t t1 2378 rt 51.016 
+flournoy-ranch v v1 1543 rt 72.642 
+flournoy-ranch x k1 4833 wr 32.535 
+flournoy-ranch z c1 2417 wr 51.906 
+flournoy-ranch y y1 47 rt 62.858 
+flournoy-ranch w w1 4312 rt 36.801 
+flournoy-ranch u y1 3333 wr 42.84 
+flournoy-ranch s s2 1035 rt 83.619 
+flournoy-ranch q q2 47 rt 50.0 
+flournoy-ranch o q2 5156 wr 42.018 
+flournoy-ranch m m1 5377 rt 29.084 
+flournoy-ranch k k1 80 rt 73.714 
+flournoy-ranch i i1 4007 rt 63.806 
+flournoy-ranch g g2 45 rt 48.591 
+flournoy-ranch e e2 4907 rt 35.176 
+flournoy-ranch c c1 1765 rt 47.597 
+flournoy-ranch a e2 5171 wr 42.505 
+double-backslash b b1 74 rt 88.952 
+double-backslash d d1 43 rt 91.19 
+double-backslash f f1 136 rt 83.558 
+double-backslash h h1 62 rt 85.858 
+double-backslash j j1 59 rt 86.429 
+double-backslash l l1 30 rt 82.57 
+double-backslash n n1 55 rt 73.43 
+double-backslash p p1 32 rt 85.142 
+double-backslash r c1 26 wr 70.857 
+double-backslash t t1 39 rt 67.429 
+double-backslash v v1 39 rt 96.952 
+double-backslash x x1 38 rt 86.001 
+double-backslash z y2 5196 wr 28.823 
+double-backslash y y2 65 rt 87.514 
+double-backslash w w1 3935 rt 44.291 
+double-backslash u v1 82 wr 87.0 
+double-backslash s s2 49 rt 72.0 
+double-backslash q q1 1889 rt 54.746 
+double-backslash o o1 25 rt 95.321 
+double-backslash m m1 3739 rt 58.748 
+double-backslash k k1 1410 rt 75.127 
+double-backslash i i1 35 rt 80.001 
+double-backslash g g1 36 rt 82.273 
+double-backslash e e2 286 rt 71.715 
+double-backslash c c1 29 rt 79.715 
+double-backslash a c1 8000 qt
+sabretooth b b1 57 rt 94.143 
+sabretooth d d1 50 rt 94.857 
+sabretooth f f1 51 rt 78.514 
+sabretooth h h1 329 rt 84.143 
+sabretooth j j1 45 rt 76.852 
+sabretooth l l1 80 rt 60.572 
+sabretooth n n1 1165 rt 67.763 
+sabretooth p p1 43 rt 92.858 
+sabretooth r r1 59 rt 92.714 
+sabretooth t t1 45 rt 74.143 
+sabretooth v v1 52 rt 76.429 
+sabretooth x u1 51 wr 67.429 
+sabretooth z z1 3428 rt 47.536 
+sabretooth y y2 44 rt 94.182 
+sabretooth w u1 2058 wr 50.578 
+sabretooth u u1 1089 rt 81.858 
+sabretooth s s2 57 rt 86.001 
+sabretooth q q1 37 rt 91.571 
+sabretooth o o1 29 rt 98.251 
+sabretooth m m1 54 rt 77.666 
+sabretooth k k1 51 rt 84.858 
+sabretooth i i1 41 rt 78.571 
+sabretooth g g1 878 rt 66.491 
+sabretooth e e2 43 rt 66.857 
+sabretooth c c1 27 rt 88.857 
+sabretooth a a1 809 rt 57.464 
+shorts b b1 48 rt 97.762 
+shorts d d1 55 rt 98.38 
+shorts f f1 1537 rt 67.812 
+shorts h h1 43 rt 76.667 
+shorts j j1 1771 rt 63.317 
+shorts l l1 21 rt 79.428 
+shorts n n1 50 rt 70.857 
+shorts p p1 35 rt 91.856 
+shorts r r1 52 rt 86.286 
+shorts t t1 55 rt 62.43 
+shorts v v1 67 rt 76.286 
+shorts x x1 38 rt 99.143 
+shorts z z1 68 rt 88.857 
+shorts y y1 64 rt 75.312 
+shorts w w1 75 rt 85.587 
+shorts u u1 37 rt 77.81 
+shorts s s2 43 rt 67.858 
+shorts q q1 29 rt 80.714 
+shorts o o1 23 rt 98.251 
+shorts m m1 64 rt 83.809 
+shorts k k1 58 rt 84.02 
+shorts i i1 47 rt 78.428 
+shorts g g1 65 rt 91.662 
+shorts e e1 52 rt 88.857 
+shorts c c1 21 rt 91.43 
+shorts a a1 36 rt 93.857 
+benzene-left b b1 39 rt 92.714 
+benzene-left d d1 48 rt 98.429 
+benzene-left f f1 38 rt 96.344 
+benzene-left h h1 41 rt 80.429 
+benzene-left j j1 37 rt 89.025 
+benzene-left l l1 26 rt 63.714 
+benzene-left n n1 42 rt 63.285 
+benzene-left p p1 44 rt 95.286 
+benzene-left r r1 42 rt 96.429 
+benzene-left t t1 51 rt 75.571 
+benzene-left v v1 50 rt 94.095 
+benzene-left x x1 27 rt 74.714 
+benzene-left z e1 2467 wr 46.603 
+benzene-left y y1 50 rt 83.2 
+benzene-left w w1 75 rt 75.191 
+benzene-left u u1 931 rt 65.866 
+benzene-left s s2 41 rt 76.43 
+benzene-left q q1 41 rt 90.0 
+benzene-left o o1 20 rt 98.251 
+benzene-left m m1 123 rt 68.429 
+benzene-left k k1 49 rt 79.905 
+benzene-left i i1 55 rt 75.143 
+benzene-left g g1 41 rt 80.637 
+benzene-left e e2 218 rt 65.018 
+benzene-left c c1 27 rt 96.858 
+benzene-left a a2 48 rt 84.59 
+boat b b1 55 rt 91.524 
+boat d d1 47 rt 86.857 
+boat f f1 347 rt 78.37 
+boat h h1 31 rt 76.286 
+boat j j1 45 rt 87.52 
+boat l l1 24 rt 79.429 
+boat n n1 43 rt 72.0 
+boat p p1 35 rt 91.285 
+boat r r1 70 rt 87.143 
+boat t t1 35 rt 65.858 
+boat v v1 46 rt 80.143 
+boat x x1 49 rt 91.572 
+boat z z1 65 rt 79.238 
+boat y y1 52 rt 91.824 
+boat w w1 76 rt 73.381 
+boat u u1 51 rt 79.0 
+boat s s2 41 rt 77.286 
+boat q q1 51 rt 93.143 
+boat o o1 22 rt 98.251 
+boat m m1 46 rt 86.476 
+boat k k1 224 rt 92.793 
+boat i i1 51 rt 77.714 
+boat g g1 42 rt 76.487 
+boat e e2 42 rt 73.714 
+boat c c1 22 rt 90.858 
+boat a a2 38 rt 80.428 
+slant b d1 48 wr 85.668 
+slant d d1 42 rt 99.334 
+slant f f1 40 rt 70.286 
+slant h h1 1179 rt 62.952 
+slant j j1 62 rt 93.292 
+slant l l1 25 rt 79.43 
+slant n n1 41 rt 79.714 
+slant p p1 41 rt 71.714 
+slant r r1 233 rt 78.714 
+slant t t1 43 rt 72.715 
+slant v u1 55 wr 71.429 
+slant x x1 49 rt 72.286 
+slant z z1 70 rt 92.286 
+slant y y1 50 rt 84.363 
+slant w w1 1194 rt 66.634 
+slant u u1 49 rt 82.381 
+slant s s2 33 rt 92.857 
+slant q q1 58 rt 98.905 
+slant o o1 24 rt 98.251 
+slant m m1 1325 rt 60.204 
+slant k k1 447 rt 69.715 
+slant i i1 37 rt 90.287 
+slant g g1 59 rt 82.415 
+slant e e1 56 rt 90.001 
+slant c c1 303 rt 98.667 
+slant a a1 44 rt 93.857 
+snout b b1 55 rt 95.572 
+snout d d1 49 rt 96.0 
+snout f f1 45 rt 87.435 
+snout h h1 54 rt 95.524 
+snout j j1 57 rt 90.078 
+snout l l1 23 rt 95.999 
+snout n n1 52 rt 85.857 
+snout p p1 38 rt 87.0 
+snout r r1 48 rt 90.286 
+snout t t1 34 rt 85.948 
+snout v z1 819 wr 65.143 
+snout x x1 56 rt 83.0 
+snout z z1 50 rt 87.905 
+snout y y1 49 rt 84.078 
+snout w w1 68 rt 87.111 
+snout u u1 35 rt 82.381 
+snout s s2 75 rt 84.285 
+snout q q1 62 rt 88.286 
+snout o o1 27 rt 98.251 
+snout m m1 77 rt 94.635 
+snout k k1 54 rt 84.858 
+snout i i1 58 rt 80.714 
+snout g g1 31 rt 84.188 
+snout e e2 292 rt 89.857 
+snout c c1 32 rt 92.858 
+snout a a1 39 rt 90.857 
+funtnip b b1 374 rt 73.713 
+funtnip d d1 5547 rt 47.849 
+funtnip f f1 52 rt 73.644 
+funtnip h h1 1172 rt 64.24 
+funtnip j h1 8000 qt
+funtnip l t1 2774 wr 44.914 
+funtnip n n1 857 rt 71.694 
+funtnip p q1 1560 wr 69.411 
+funtnip r r1 967 rt 72.235 
+funtnip t t1 2412 rt 47.13 
+funtnip v v1 1126 rt 70.067 
+funtnip x k1 4414 wr 43.601 
+funtnip z z1 3636 rt 43.088 
+funtnip y y1 1048 rt 56.433 
+funtnip w w1 79 rt 68.81 
+funtnip u r1 44 wr 65.571 
+funtnip s r1 4884 wr 25.154 
+funtnip q q1 352 rt 72.572 
+funtnip o b1 5096 wr 40.117 
+funtnip m m1 115 rt 75.667 
+funtnip k k1 763 rt 69.763 
+funtnip i k1 8000 qt
+funtnip g k1 8000 qt
+funtnip e k1 5697 wr 35.756 
+funtnip c h1 4953 wr 32.11 
+funtnip a h1 8000 qt
+sluice b j1 4900 wr 55.703 
+sluice d i1 4325 wr 45.319 
+sluice f i1 50 wr 86.857 
+sluice h i1 62 wr 87.572 
+sluice j j1 50 rt 88.123 
+sluice l i1 4979 wr 32.715 
+sluice n i1 513 wr 88.857 
+sluice p j1 368 wr 62.669 
+sluice r i1 1613 wr 52.855 
+sluice t i1 3238 wr 61.131 
+sluice v i1 1629 wr 54.29 
+sluice x w1 3374 wr 40.262 
+sluice z i1 3446 wr 46.619 
+sluice y y1 1165 rt 49.394 
+sluice w j1 1812 wr 57.792 
+sluice u i1 948 wr 66.475 
+sluice s i1 2938 wr 59.334 
+sluice q j1 1110 wr 67.227 
+sluice o y1 4899 wr 48.618 
+sluice m n1 41 wr 61.999 
+sluice k k1 5741 rt 35.454 
+sluice i i1 42 rt 73.286 
+sluice g j1 1061 wr 57.932 
+sluice e i1 4993 wr 46.835 
+sluice c m1 5190 wr 38.109 
+sluice a i1 4303 wr 59.799 
+square-curl b b1 70 rt 76.809 
+square-curl d d1 81 rt 81.237 
+square-curl f f1 3522 rt 34.97 
+square-curl h h1 47 rt 83.19 
+square-curl j j1 817 rt 73.32 
+square-curl l l1 25 rt 60.571 
+square-curl n n1 519 rt 85.714 
+square-curl p p1 1697 rt 53.864 
+square-curl r r1 51 rt 94.143 
+square-curl t t1 39 rt 79.285 
+square-curl v u1 580 wr 79.857 
+square-curl x x1 369 rt 76.476 
+square-curl z z1 189 rt 78.381 
+square-curl y y1 59 rt 80.084 
+square-curl w w1 104 rt 78.095 
+square-curl u u1 48 rt 76.714 
+square-curl s s2 46 rt 67.858 
+square-curl q q1 2908 rt 55.202 
+square-curl o o1 17 rt 98.251 
+square-curl m m1 110 rt 88.571 
+square-curl k k1 124 rt 84.413 
+square-curl i i1 48 rt 81.428 
+square-curl g n1 5050 wr 33.502 
+square-curl e r1 27 wr 82.714 
+square-curl c c1 296 rt 86.572 
+square-curl a u1 1750 wr 72.078 
+weird-arrow b b1 51 rt 91.858 
+weird-arrow d d1 57 rt 91.144 
+weird-arrow f f1 3302 rt 39.3 
+weird-arrow h h1 43 rt 66.714 
+weird-arrow j j1 45 rt 80.046 
+weird-arrow l l1 25 rt 68.572 
+weird-arrow n n1 290 rt 63.762 
+weird-arrow p p1 38 rt 92.429 
+weird-arrow r r1 48 rt 92.0 
+weird-arrow t k1 2679 wr 51.379 
+weird-arrow v v1 56 rt 68.286 
+weird-arrow x k1 5490 wr 35.348 
+weird-arrow z z1 90 rt 80.381 
+weird-arrow y y1 57 rt 88.239 
+weird-arrow w w1 4094 rt 36.903 
+weird-arrow u u1 350 rt 67.142 
+weird-arrow s s2 38 rt 71.715 
+weird-arrow q q1 1183 rt 67.898 
+weird-arrow o o1 23 rt 98.251 
+weird-arrow m m1 1744 rt 63.416 
+weird-arrow k f1 956 wr 52.973 
+weird-arrow i i1 38 rt 79.142 
+weird-arrow g g1 61 rt 78.773 
+weird-arrow e e1 2859 rt 61.661 
+weird-arrow c c1 25 rt 91.43 
+weird-arrow a a1 3380 rt 56.037 
+close b b2 39 rt 92.524 
+close d d1 55 rt 94.619 
+close f f1 43 rt 74.832 
+close h h1 4349 rt 30.31 
+close j j1 57 rt 83.61 
+close l l1 30 rt 79.428 
+close n n1 49 rt 67.715 
+close p p1 4612 rt 55.63 
+close r r1 316 rt 84.858 
+close t t1 378 rt 67.571 
+close v v1 56 rt 87.429 
+close x x1 39 rt 99.143 
+close z z1 79 rt 94.667 
+close y y1 32 rt 74.371 
+close w w1 960 rt 65.278 
+close u u1 59 rt 82.523 
+close s v1 831 wr 63.02 
+close q q1 35 rt 91.286 
+close o o1 34 rt 98.251 
+close m m1 82 rt 64.333 
+close k k1 74 rt 87.047 
+close i i1 39 rt 86.428 
+close g g1 35 rt 89.968 
+close e e1 43 rt 89.43 
+close c c1 152 rt 92.858 
+close a a1 36 rt 89.428 
+intersect b b2 1020 rt 57.582 
+intersect d d2 1752 rt 54.439 
+intersect f f1 42 rt 92.033 
+intersect h k1 5356 wr 35.654 
+intersect j j1 49 rt 88.766 
+intersect l l1 25 rt 82.286 
+intersect n m1 2478 wr 47.275 
+intersect p j1 4153 wr 59.919 
+intersect r r1 480 rt 70.428 
+intersect t t1 54 rt 75.994 
+intersect v z1 4867 wr 32.676 
+intersect x x1 39 rt 91.571 
+intersect z z1 1606 rt 49.012 
+intersect y y1 58 rt 65.2 
+intersect w w1 2632 rt 41.255 
+intersect u u1 840 rt 49.738 
+intersect s r1 533 wr 73.142 
+intersect q q2 1040 rt 58.463 
+intersect o o1 16 rt 98.251 
+intersect m m1 211 rt 55.38 
+intersect k f1 926 wr 59.564 
+intersect i i1 45 rt 90.0 
+intersect g g2 72 rt 66.541 
+intersect e o1 105 wr 61.857 
+intersect c c1 27 rt 96.858 
+intersect a o1 190 wr 60.751 
+slash b b2 35 rt 94.286 
+slash d d1 33 rt 96.429 
+slash f f1 35 rt 73.571 
+slash h h1 782 rt 84.143 
+slash j j1 67 rt 97.182 
+slash l l1 129 rt 74.858 
+slash n m1 1463 wr 62.823 
+slash p p1 125 rt 75.572 
+slash r r1 247 rt 65.857 
+slash t t1 65 rt 77.286 
+slash v v1 67 rt 81.286 
+slash x x1 41 rt 99.143 
+slash z z1 223 rt 94.953 
+slash y y1 912 rt 77.521 
+slash w d1 6472 wr 33.724 
+slash u w1 117 wr 69.381 
+slash s l1 30 wr 62.286 
+slash q q1 50 rt 96.0 
+slash o o1 26 rt 98.251 
+slash m m1 49 rt 82.715 
+slash k k1 93 rt 75.762 
+slash i i1 56 rt 84.143 
+slash g g1 44 rt 90.546 
+slash e e1 40 rt 86.57 
+slash c c1 320 rt 92.858 
+slash a a1 40 rt 95.572 
+hunt4 b b2 102 rt 98.285 
+hunt4 d d2 45 rt 98.285 
+hunt4 f f1 45 rt 80.285 
+hunt4 h h1 41 rt 82.571 
+hunt4 j j1 41 rt 92.78 
+hunt4 l l1 21 rt 63.714 
+hunt4 n n1 48 rt 87.858 
+hunt4 p p2 36 rt 97.0 
+hunt4 r r1 30 rt 97.286 
+hunt4 t t1 39 rt 77.857 
+hunt4 v v1 53 rt 80.143 
+hunt4 x x1 34 rt 93.143 
+hunt4 z z1 66 rt 94.953 
+hunt4 y y1 79 rt 97.785 
+hunt4 w w1 64 rt 73.381 
+hunt4 u u1 34 rt 76.143 
+hunt4 s s2 41 rt 86.286 
+hunt4 q q2 36 rt 97.857 
+hunt4 o a1 861 wr 67.627 
+hunt4 m m1 1199 rt 86.556 
+hunt4 k k1 71 rt 90.762 
+hunt4 i i1 1620 rt 66.825 
+hunt4 g g2 46 rt 98.214 
+hunt4 e e1 45 rt 95.0 
+hunt4 c c1 26 rt 96.858 
+hunt4 a a2 53 rt 94.714 
+benzene-right b b1 45 rt 97.571 
+benzene-right d d1 46 rt 92.429 
+benzene-right f f1 45 rt 78.0 
+benzene-right h h1 33 rt 80.0 
+benzene-right j j1 52 rt 81.525 
+benzene-right l l1 24 rt 78.287 
+benzene-right n n1 53 rt 72.714 
+benzene-right p p2 183 rt 92.142 
+benzene-right r r1 41 rt 91.0 
+benzene-right t t1 47 rt 79.001 
+benzene-right v v1 44 rt 65.334 
+benzene-right x x1 42 rt 92.285 
+benzene-right z z1 50 rt 86.953 
+benzene-right y y1 59 rt 84.928 
+benzene-right w w1 1209 rt 51.802 
+benzene-right u u1 38 rt 83.571 
+benzene-right s s2 52 rt 86.286 
+benzene-right q q1 41 rt 95.001 
+benzene-right o o1 27 rt 98.251 
+benzene-right m m1 83 rt 66.809 
+benzene-right k k1 64 rt 96.001 
+benzene-right i i1 37 rt 79.285 
+benzene-right g g1 36 rt 86.364 
+benzene-right e e2 48 rt 63.018 
+benzene-right c c1 17 rt 67.429 
+benzene-right a a2 33 rt 90.714 
+house b b1 41 rt 95.333 
+house d d1 48 rt 96.619 
+house f f1 44 rt 82.332 
+house h h1 47 rt 80.332 
+house j j1 193 rt 80.338 
+house l l1 28 rt 61.428 
+house n n1 38 rt 83.286 
+house p p1 54 rt 86.143 
+house r r1 47 rt 94.143 
+house t t1 32 rt 78.858 
+house v u1 34 wr 70.143 
+house x x1 57 rt 94.571 
+house z z1 50 rt 80.381 
+house y y1 59 rt 84.74 
+house w u1 1390 wr 51.431 
+house u u1 50 rt 85.238 
+house s s2 62 rt 71.715 
+house q q1 44 rt 82.572 
+house o o1 25 rt 98.251 
+house m m1 742 rt 90.286 
+house k k1 467 rt 89.365 
+house i i1 283 rt 78.905 
+house g g1 60 rt 84.149 
+house e e1 43 rt 95.0 
+house c c1 19 rt 77.142 
+house a a1 55 rt 96.286 
+standard-square b b1 53 rt 100.0 
+standard-square d d1 31 rt 100.19 
+standard-square f f1 38 rt 96.818 
+standard-square h h1 46 rt 84.571 
+standard-square j j1 67 rt 90.585 
+standard-square l l1 27 rt 91.143 
+standard-square n n1 47 rt 82.714 
+standard-square p p1 36 rt 98.715 
+standard-square r r1 38 rt 98.571 
+standard-square t t1 49 rt 81.143 
+standard-square v v1 47 rt 80.143 
+standard-square x x1 37 rt 99.143 
+standard-square z z1 58 rt 94.953 
+standard-square y y1 68 rt 88.928 
+standard-square w w1 39 rt 87.873 
+standard-square u u1 44 rt 87.094 
+standard-square s s2 41 rt 85.858 
+standard-square q q1 78 rt 99.762 
+standard-square o o1 25 rt 98.251 
+standard-square m m1 82 rt 86.19 
+standard-square k k1 143 rt 75.762 
+standard-square i i1 58 rt 80.714 
+standard-square g g1 56 rt 94.688 
+standard-square e e1 36 rt 92.858 
+standard-square c c1 32 rt 77.428 
+standard-square a a1 39 rt 100.0 
+hint4 b b1 184 rt 69.572 
+hint4 d d1 40 rt 68.857 
+hint4 f f1 55 rt 61.572 
+hint4 h l1 17 wr 79.715 
+hint4 j j1 49 rt 92.475 
+hint4 l l1 23 rt 63.714 
+hint4 n n1 38 rt 71.857 
+hint4 p p1 47 rt 71.715 
+hint4 r r1 32 rt 91.0 
+hint4 t t1 39 rt 59.144 
+hint4 v v1 47 rt 80.143 
+hint4 x x1 41 rt 99.143 
+hint4 z z1 55 rt 94.667 
+hint4 y y1 187 rt 81.025 
+hint4 w w1 1337 rt 57.689 
+hint4 u u1 42 rt 66.572 
+hint4 s s2 44 rt 80.0 
+hint4 q q1 72 rt 59.239 
+hint4 o v1 34 wr 79.286 
+hint4 m n1 808 wr 64.51 
+hint4 k k1 71 rt 77.191 
+hint4 i i1 3223 rt 57.06 
+hint4 g g1 68 rt 71.311 
+hint4 e e1 392 rt 79.0 
+hint4 c c1 27 rt 71.142 
+hint4 a a2 2931 rt 48.206 
+bowtie b l1 1614 wr 49.05 
+bowtie d l1 855 wr 55.16 
+bowtie f f1 57 rt 61.261 
+bowtie h f1 4729 wr 35.635 
+bowtie j j1 3399 rt 57.952 
+bowtie l l1 28 rt 62.0 
+bowtie n o1 228 wr 60.751 
+bowtie p p1 3663 rt 45.42 
+bowtie r o1 177 wr 60.751 
+bowtie t t1 56 rt 63.429 
+bowtie v v1 44 rt 67.571 
+bowtie x x1 37 rt 80.572 
+bowtie z o1 414 wr 60.751 
+bowtie y y1 1650 rt 56.038 
+bowtie w w1 65 rt 84.254 
+bowtie u u1 287 rt 72.857 
+bowtie s o1 1178 wr 57.634 
+bowtie q y2 7387 wr 21.955 
+bowtie o a1 5324 wr 41.264 
+bowtie m m1 3479 rt 46.729 
+bowtie k k1 4828 rt 36.557 
+bowtie i i1 1806 rt 67.596 
+bowtie g o1 6381 wr 27.69 
+bowtie e c1 28 wr 61.751 
+bowtie c o1 240 wr 60.751 
+bowtie a a2 62 rt 68.233 
+checkmark b h1 1605 wr 74.443 
+checkmark d d1 867 rt 69.593 
+checkmark f f1 48 rt 92.077 
+checkmark h h1 47 rt 85.429 
+checkmark j h1 8000 qt
+checkmark l l1 27 rt 78.573 
+checkmark n n1 59 rt 77.428 
+checkmark p y1 6059 wr 30.691 
+checkmark r r1 42 rt 65.857 
+checkmark t t1 43 rt 85.552 
+checkmark v v1 45 rt 81.286 
+checkmark x x1 52 rt 86.715 
+checkmark z z1 69 rt 88.857 
+checkmark y y2 35 rt 71.39 
+checkmark w w1 1205 rt 65.053 
+checkmark u u1 51 rt 85.857 
+checkmark s s2 47 rt 74.858 
+checkmark q q1 50 rt 81.572 
+checkmark o o1 23 rt 95.321 
+checkmark m m1 229 rt 82.715 
+checkmark k m1 7167 wr 28.799 
+checkmark i i1 50 rt 93.857 
+checkmark g y2 45 wr 77.819 
+checkmark e e1 46 rt 80.43 
+checkmark c c1 21 rt 79.715 
+checkmark a n1 804 wr 58.953 
+flournoy-ranch b b2 48 rt 81.857 
+flournoy-ranch d d2 2028 rt 35.542 
+flournoy-ranch f d2 8000 qt
+flournoy-ranch h h1 52 rt 77.714 
+flournoy-ranch j j1 48 rt 79.014 
+flournoy-ranch l l1 3369 rt 47.617 
+flournoy-ranch n n1 2517 rt 48.652 
+flournoy-ranch p p2 43 rt 82.0 
+flournoy-ranch r r1 1438 rt 64.104 
+flournoy-ranch t t1 3284 rt 50.464 
+flournoy-ranch v v1 1074 rt 72.642 
+flournoy-ranch x k1 4448 wr 42.914 
+flournoy-ranch z c1 3045 wr 51.906 
+flournoy-ranch y y1 72 rt 62.858 
+flournoy-ranch w w1 5845 rt 26.743 
+flournoy-ranch u n1 2469 wr 46.166 
+flournoy-ranch s s2 1018 rt 83.619 
+flournoy-ranch q q2 58 rt 50.0 
+flournoy-ranch o b1 7133 wr 26.167 
+flournoy-ranch m m1 4892 rt 29.084 
+flournoy-ranch k k1 60 rt 73.714 
+flournoy-ranch i i1 4010 rt 55.986 
+flournoy-ranch g g2 25 rt 45.286 
+flournoy-ranch e e1 4812 rt 37.354 
+flournoy-ranch c c1 1668 rt 51.363 
+flournoy-ranch a e2 4639 wr 44.318 
+double-backslash b b1 55 rt 88.952 
+double-backslash d d1 73 rt 91.19 
+double-backslash f f1 510 rt 83.558 
+double-backslash h h1 35 rt 85.858 
+double-backslash j j1 47 rt 86.429 
+double-backslash l l1 26 rt 82.57 
+double-backslash n n1 46 rt 73.43 
+double-backslash p p1 45 rt 85.142 
+double-backslash r c1 25 wr 70.857 
+double-backslash t t1 43 rt 67.429 
+double-backslash v v1 51 rt 96.952 
+double-backslash x x1 48 rt 86.001 
+double-backslash z y2 4870 wr 26.123 
+double-backslash y y2 71 rt 76.513 
+double-backslash w w1 2794 rt 50.585 
+double-backslash u v1 41 wr 87.0 
+double-backslash s s2 37 rt 72.0 
+double-backslash q q2 1546 rt 82.671 
+double-backslash o o1 29 rt 95.321 
+double-backslash m m1 784 rt 81.905 
+double-backslash k k1 48 rt 79.906 
+double-backslash i i1 50 rt 78.143 
+double-backslash g g1 44 rt 82.273 
+double-backslash e e1 177 rt 88.0 
+double-backslash c c1 25 rt 79.715 
+double-backslash a e2 5037 wr 44.796 
+sabretooth b b1 47 rt 94.143 
+sabretooth d d1 49 rt 94.857 
+sabretooth f f1 43 rt 81.942 
+sabretooth h h1 155 rt 84.143 
+sabretooth j j1 42 rt 76.852 
+sabretooth l l1 82 rt 60.572 
+sabretooth n n1 1154 rt 67.763 
+sabretooth p p1 50 rt 92.858 
+sabretooth r r1 43 rt 92.714 
+sabretooth t t1 38 rt 74.143 
+sabretooth v v1 42 rt 76.429 
+sabretooth x u1 32 wr 67.429 
+sabretooth z r1 2597 wr 59.842 
+sabretooth y y2 49 rt 94.182 
+sabretooth w u1 1641 wr 49.366 
+sabretooth u r1 212 wr 66.714 
+sabretooth s s2 47 rt 86.001 
+sabretooth q q1 41 rt 91.571 
+sabretooth o o1 22 rt 98.251 
+sabretooth m m1 76 rt 77.666 
+sabretooth k k1 199 rt 88.667 
+sabretooth i i1 41 rt 78.571 
+sabretooth g q1 1200 wr 66.491 
+sabretooth e e2 158 rt 66.857 
+sabretooth c c1 24 rt 88.857 
+sabretooth a a1 863 rt 57.464 
+shorts b b1 37 rt 97.762 
+shorts d d1 47 rt 98.38 
+shorts f f1 1070 rt 67.812 
+shorts h h1 40 rt 76.667 
+shorts j j1 1620 rt 63.317 
+shorts l l1 16 rt 79.428 
+shorts n n1 42 rt 70.857 
+shorts p p1 40 rt 91.856 
+shorts r r1 35 rt 86.286 
+shorts t t1 46 rt 62.43 
+shorts v v1 37 rt 76.286 
+shorts x x1 78 rt 99.143 
+shorts z z1 66 rt 88.857 
+shorts y y1 48 rt 75.312 
+shorts w w1 63 rt 85.587 
+shorts u u1 56 rt 77.81 
+shorts s s2 58 rt 67.858 
+shorts q q1 53 rt 80.714 
+shorts o o1 31 rt 98.251 
+shorts m m1 75 rt 83.809 
+shorts k k1 54 rt 84.02 
+shorts i i1 39 rt 78.428 
+shorts g g1 37 rt 91.662 
+shorts e e1 65 rt 78.0 
+shorts c c1 33 rt 91.43 
+shorts a a1 52 rt 93.857 
+benzene-left b b1 44 rt 92.714 
+benzene-left d d1 49 rt 98.429 
+benzene-left f f1 50 rt 96.344 
+benzene-left h h1 53 rt 80.429 
+benzene-left j j1 49 rt 84.286 
+benzene-left l l1 35 rt 63.714 
+benzene-left n n1 46 rt 79.714 
+benzene-left p p1 35 rt 95.286 
+benzene-left r r1 40 rt 96.429 
+benzene-left t t1 37 rt 75.571 
+benzene-left v v1 47 rt 94.095 
+benzene-left x x1 51 rt 79.286 
+benzene-left z o1 1049 wr 55.836 
+benzene-left y y1 47 rt 83.2 
+benzene-left w w1 648 rt 75.191 
+benzene-left u u1 540 rt 77.142 
+benzene-left s s2 120 rt 76.43 
+benzene-left q q1 37 rt 90.0 
+benzene-left o o1 31 rt 98.251 
+benzene-left m n1 110 wr 80.429 
+benzene-left k k1 98 rt 80.667 
+benzene-left i i1 51 rt 75.143 
+benzene-left g g1 45 rt 82.332 
+benzene-left e e1 126 rt 78.572 
+benzene-left c c1 29 rt 96.858 
+benzene-left a a2 44 rt 84.59 
+boat b b1 43 rt 91.524 
+boat d d1 46 rt 86.857 
+boat f r1 1802 wr 47.514 
+boat h h1 51 rt 76.286 
+boat j j1 40 rt 87.52 
+boat l l1 17 rt 79.429 
+boat n n1 49 rt 72.0 
+boat p p1 33 rt 91.285 
+boat r r1 44 rt 95.0 
+boat t t1 50 rt 65.858 
+boat v v1 44 rt 80.143 
+boat x x1 46 rt 91.572 
+boat z z1 557 rt 79.238 
+boat y y1 42 rt 91.824 
+boat w u1 487 wr 63.856 
+boat u u1 39 rt 79.0 
+boat s s2 66 rt 77.286 
+boat q q1 31 rt 93.143 
+boat o o1 29 rt 98.251 
+boat m m1 61 rt 86.476 
+boat k k1 63 rt 91.08 
+boat i i1 53 rt 77.714 
+boat g g1 50 rt 76.487 
+boat e e2 58 rt 73.714 
+boat c c1 26 rt 90.858 
+boat a a2 32 rt 80.428 
+slant b d1 65 wr 85.668 
+slant d d1 39 rt 99.334 
+slant f f1 52 rt 70.286 
+slant h h1 279 rt 65.429 
+slant j j1 111 rt 93.292 
+slant l l1 21 rt 79.43 
+slant n n1 44 rt 79.714 
+slant p p1 47 rt 71.714 
+slant r r1 67 rt 78.714 
+slant t t1 50 rt 72.715 
+slant v u1 43 wr 71.429 
+slant x x1 47 rt 72.286 
+slant z z1 73 rt 92.286 
+slant y y1 58 rt 84.363 
+slant w w1 2644 rt 46.754 
+slant u u1 70 rt 82.381 
+slant s s2 43 rt 92.857 
+slant q q1 38 rt 98.905 
+slant o o1 29 rt 98.251 
+slant m m1 60 rt 77.095 
+slant k k1 1552 rt 74.133 
+slant i i1 41 rt 90.287 
+slant g g1 50 rt 94.558 
+slant e e1 45 rt 90.001 
+slant c c1 516 rt 98.667 
+slant a a1 39 rt 88.238 
+snout b b1 29 rt 95.572 
+snout d d1 60 rt 96.0 
+snout f f1 68 rt 87.435 
+snout h h1 48 rt 95.524 
+snout j j1 52 rt 90.078 
+snout l l1 34 rt 95.999 
+snout n n1 49 rt 85.857 
+snout p p1 51 rt 87.0 
+snout r r1 44 rt 90.286 
+snout t t1 33 rt 85.948 
+snout v u1 2795 wr 54.585 
+snout x x1 38 rt 83.0 
+snout z z1 75 rt 87.905 
+snout y y1 145 rt 84.078 
+snout w w1 111 rt 78.719 
+snout u u1 58 rt 82.381 
+snout s s2 54 rt 84.285 
+snout q q1 48 rt 88.286 
+snout o o1 21 rt 98.251 
+snout m m1 696 rt 83.429 
+snout k k1 60 rt 84.858 
+snout i i1 44 rt 80.714 
+snout g g1 33 rt 84.188 
+snout e e1 954 rt 79.148 
+snout c c1 513 rt 92.858 
+snout a a1 50 rt 90.857 
+funtnip b b1 786 rt 73.713 
+funtnip d d1 4054 rt 50.016 
+funtnip f f1 50 rt 73.644 
+funtnip h h1 231 rt 79.428 
+funtnip j h1 8000 qt
+funtnip l t1 3023 wr 42.36 
+funtnip n n1 640 rt 75.0 
+funtnip p p1 2319 rt 56.803 
+funtnip r r1 1123 rt 72.235 
+funtnip t t1 3265 rt 45.47 
+funtnip v v1 1585 rt 70.067 
+funtnip x k1 5172 wr 42.838 
+funtnip z u1 5416 wr 36.989 
+funtnip y y1 1785 rt 72.331 
+funtnip w w1 878 rt 62.748 
+funtnip u r1 56 wr 65.571 
+funtnip s r1 4207 wr 33.738 
+funtnip q q1 280 rt 72.572 
+funtnip o i1 4962 wr 51.344 
+funtnip m m1 66 rt 75.667 
+funtnip k k1 755 rt 77.143 
+funtnip i k1 8000 qt
+funtnip g k1 8000 qt
+funtnip e z1 6501 wr 22.818 
+funtnip c x1 6111 wr 38.577 
+funtnip a w1 7832 wr 31.563 
+sluice b j1 5332 wr 55.703 
+sluice d i1 4223 wr 45.319 
+sluice f i1 43 wr 86.857 
+sluice h i1 42 wr 87.572 
+sluice j j1 50 rt 88.123 
+sluice l i1 4942 wr 32.715 
+sluice n i1 779 wr 88.857 
+sluice p j1 191 wr 62.669 
+sluice r i1 1613 wr 52.855 
+sluice t i1 4043 wr 48.655 
+sluice v w1 3868 wr 38.886 
+sluice x w1 3836 wr 49.337 
+sluice z i1 3400 wr 46.619 
+sluice y j1 1098 wr 57.932 
+sluice w y1 1883 wr 49.692 
+sluice u i1 1837 wr 63.931 
+sluice s i1 2525 wr 59.334 
+sluice q j1 964 wr 67.227 
+sluice o j1 5012 wr 55.179 
+sluice m n1 44 wr 61.999 
+sluice k k1 6305 rt 38.896 
+sluice i i1 63 rt 73.286 
+sluice g j1 835 wr 57.932 
+sluice e i1 4614 wr 48.461 
+sluice c i1 4840 wr 37.61 
+sluice a i1 4029 wr 59.799 
+square-curl b b1 135 rt 76.809 
+square-curl d d1 155 rt 81.237 
+square-curl f f1 3492 rt 34.97 
+square-curl h h1 43 rt 83.19 
+square-curl j j1 1095 rt 73.32 
+square-curl l l1 23 rt 60.571 
+square-curl n n1 52 rt 85.714 
+square-curl p p1 1638 rt 53.864 
+square-curl r r1 35 rt 94.143 
+square-curl t t1 41 rt 79.285 
+square-curl v u1 312 wr 76.999 
+square-curl x x1 1303 rt 73.568 
+square-curl z z1 212 rt 85.714 
+square-curl y y1 53 rt 80.084 
+square-curl w u1 2391 wr 58.375 
+square-curl u u1 45 rt 69.286 
+square-curl s s2 29 rt 67.858 
+square-curl q q1 3105 rt 49.84 
+square-curl o o1 24 rt 98.251 
+square-curl m m1 567 rt 62.524 
+square-curl k k1 4622 rt 48.141 
+square-curl i i1 52 rt 81.428 
+square-curl g n1 4859 wr 34.89 
+square-curl e r1 624 wr 82.714 
+square-curl c c1 98 rt 86.572 
+square-curl a u1 1914 wr 69.506 
+weird-arrow b b1 54 rt 91.858 
+weird-arrow d d1 52 rt 91.144 
+weird-arrow f f1 3745 rt 42.365 
+weird-arrow h h1 33 rt 66.714 
+weird-arrow j j1 47 rt 80.046 
+weird-arrow l l1 22 rt 68.572 
+weird-arrow n n1 56 rt 63.762 
+weird-arrow p p1 44 rt 92.429 
+weird-arrow r r1 41 rt 92.0 
+weird-arrow t k1 2367 wr 51.034 
+weird-arrow v v1 56 rt 68.286 
+weird-arrow x w1 4936 wr 42.799 
+weird-arrow z z1 106 rt 80.381 
+weird-arrow y y1 32 rt 88.239 
+weird-arrow w w1 4597 rt 36.903 
+weird-arrow u w1 1168 wr 53.276 
+weird-arrow s s2 47 rt 71.715 
+weird-arrow q q1 958 rt 67.898 
+weird-arrow o o1 19 rt 98.251 
+weird-arrow m m1 1988 rt 63.416 
+weird-arrow k f1 1166 wr 52.973 
+weird-arrow i i1 48 rt 79.142 
+weird-arrow g g1 67 rt 78.773 
+weird-arrow e e1 2436 rt 61.661 
+weird-arrow c c1 26 rt 91.43 
+weird-arrow a a1 4245 rt 53.075 
+close b b2 66 rt 92.524 
+close d d1 48 rt 94.619 
+close f f1 53 rt 74.832 
+close h h1 3119 rt 42.381 
+close j j1 44 rt 83.61 
+close l l1 30 rt 79.428 
+close n n1 45 rt 74.429 
+close p p1 2763 rt 60.46 
+close r r1 42 rt 65.857 
+close t t1 41 rt 67.428 
+close v v1 32 rt 87.0 
+close x x1 40 rt 99.143 
+close z z1 77 rt 86.381 
+close y y1 39 rt 74.371 
+close w w1 1143 rt 65.278 
+close u u1 48 rt 82.523 
+close s s2 814 rt 73.997 
+close q q1 53 rt 91.286 
+close o o1 35 rt 98.251 
+close m m1 50 rt 74.048 
+close k k1 53 rt 87.047 
+close i i1 62 rt 86.428 
+close g g1 40 rt 89.968 
+close e e1 37 rt 89.43 
+close c c1 95 rt 92.858 
+close a a1 31 rt 89.428 
+intersect b b2 877 rt 57.582 
+intersect d d2 1929 rt 54.439 
+intersect f f1 51 rt 92.033 
+intersect h k1 4358 wr 36.863 
+intersect j j1 70 rt 88.766 
+intersect l l1 19 rt 82.286 
+intersect n m1 2426 wr 47.275 
+intersect p j1 4166 wr 59.919 
+intersect r r1 244 rt 70.428 
+intersect t t1 44 rt 75.994 
+intersect v z1 4886 wr 32.676 
+intersect x x1 53 rt 91.571 
+intersect z z1 331 rt 86.334 
+intersect y y1 49 rt 65.2 
+intersect w y1 2973 wr 39.301 
+intersect u w1 818 wr 64.872 
+intersect s r1 217 wr 73.142 
+intersect q q2 677 rt 62.34 
+intersect o o1 22 rt 98.251 
+intersect m m1 178 rt 55.38 
+intersect k f1 1186 wr 59.564 
+intersect i i1 46 rt 90.0 
+intersect g g2 56 rt 66.541 
+intersect e o1 72 wr 61.857 
+intersect c c1 17 rt 77.142 
+intersect a o1 80 wr 60.751 
+slash b b2 55 rt 94.286 
+slash d d1 52 rt 96.429 
+slash f f1 44 rt 73.571 
+slash h h1 162 rt 84.143 
+slash j j1 51 rt 97.182 
+slash l l1 161 rt 74.858 
+slash n m1 299 wr 76.715 
+slash p p1 1558 rt 69.525 
+slash r r1 41 rt 65.857 
+slash t t1 38 rt 77.286 
+slash v v1 42 rt 81.286 
+slash x x1 41 rt 99.143 
+slash z z1 63 rt 86.667 
+slash y y1 805 rt 83.755 
+slash w d1 6793 wr 33.724 
+slash u w1 55 wr 69.381 
+slash s l1 32 wr 62.286 
+slash q q1 53 rt 96.0 
+slash o o1 22 rt 98.251 
+slash m m1 68 rt 82.715 
+slash k k1 454 rt 75.762 
+slash i i1 41 rt 84.143 
+slash g g1 47 rt 90.546 
+slash e e1 58 rt 86.57 
+slash c c1 398 rt 92.858 
+slash a a1 49 rt 95.572 
+hunt4 b b2 53 rt 98.285 
+hunt4 d d2 46 rt 98.285 
+hunt4 f f1 65 rt 80.285 
+hunt4 h h1 37 rt 82.571 
+hunt4 j j1 33 rt 92.78 
+hunt4 l l1 26 rt 63.714 
+hunt4 n n1 43 rt 83.286 
+hunt4 p p2 34 rt 97.0 
+hunt4 r r1 38 rt 97.286 
+hunt4 t t1 56 rt 77.857 
+hunt4 v v1 45 rt 80.143 
+hunt4 x x1 39 rt 99.143 
+hunt4 z z1 64 rt 86.667 
+hunt4 y y1 49 rt 97.785 
+hunt4 w w1 84 rt 73.381 
+hunt4 u u1 39 rt 76.143 
+hunt4 s s2 43 rt 86.286 
+hunt4 q q2 41 rt 97.857 
+hunt4 o a1 2204 wr 59.156 
+hunt4 m m1 582 rt 90.286 
+hunt4 k k1 60 rt 90.762 
+hunt4 i i1 1620 rt 66.825 
+hunt4 g g2 51 rt 98.214 
+hunt4 e e1 633 rt 95.0 
+hunt4 c c1 28 rt 96.858 
+hunt4 a a2 31 rt 94.714 
+benzene-right b b1 52 rt 97.571 
+benzene-right d d1 45 rt 92.429 
+benzene-right f f1 46 rt 78.0 
+benzene-right h h1 47 rt 80.0 
+benzene-right j j1 79 rt 81.525 
+benzene-right l l1 16 rt 78.287 
+benzene-right n n1 49 rt 71.999 
+benzene-right p p1 1174 rt 74.269 
+benzene-right r r1 43 rt 91.0 
+benzene-right t t1 53 rt 78.0 
+benzene-right v v1 33 rt 65.334 
+benzene-right x x1 58 rt 92.285 
+benzene-right z z1 95 rt 86.953 
+benzene-right y y1 59 rt 84.928 
+benzene-right w w1 1043 rt 51.802 
+benzene-right u u1 63 rt 83.571 
+benzene-right s s2 48 rt 86.286 
+benzene-right q q1 45 rt 95.001 
+benzene-right o o1 31 rt 98.251 
+benzene-right m m1 624 rt 66.809 
+benzene-right k k1 912 rt 91.616 
+benzene-right i i1 48 rt 79.285 
+benzene-right g g1 40 rt 74.649 
+benzene-right e e2 37 rt 63.018 
+benzene-right c c1 19 rt 90.858 
+benzene-right a a2 33 rt 90.714 
+house b b1 43 rt 95.333 
+house d d1 37 rt 96.619 
+house f f1 55 rt 82.332 
+house h h1 38 rt 80.332 
+house j j1 230 rt 80.338 
+house l l1 29 rt 61.428 
+house n n1 53 rt 83.286 
+house p p1 55 rt 86.143 
+house r r1 38 rt 94.143 
+house t t1 47 rt 78.858 
+house v u1 58 wr 70.143 
+house x x1 55 rt 94.571 
+house z z1 62 rt 83.238 
+house y y1 52 rt 84.74 
+house w u1 1809 wr 56.832 
+house u u1 44 rt 85.238 
+house s s2 70 rt 71.715 
+house q q1 62 rt 82.572 
+house o o1 32 rt 98.251 
+house m m1 539 rt 90.286 
+house k k1 663 rt 89.365 
+house i i1 525 rt 78.905 
+house g g1 47 rt 84.149 
+house e e1 33 rt 95.0 
+house c c1 21 rt 77.142 
+house a a1 44 rt 96.286 
+standard-square b b1 61 rt 100.0 
+standard-square d d1 60 rt 100.19 
+standard-square f f1 31 rt 96.818 
+standard-square h h1 38 rt 84.571 
+standard-square j j1 58 rt 90.585 
+standard-square l l1 26 rt 91.143 
+standard-square n n1 52 rt 82.714 
+standard-square p p1 61 rt 98.715 
+standard-square r r1 47 rt 98.571 
+standard-square t t1 46 rt 81.143 
+standard-square v v1 63 rt 80.143 
+standard-square x x1 43 rt 99.143 
+standard-square z z1 58 rt 94.953 
+standard-square y y1 50 rt 88.928 
+standard-square w w1 62 rt 87.873 
+standard-square u u1 34 rt 87.094 
+standard-square s s2 50 rt 85.858 
+standard-square q q1 60 rt 99.762 
+standard-square o o1 23 rt 98.251 
+standard-square m m1 378 rt 94.19 
+standard-square k k1 68 rt 75.762 
+standard-square i i1 48 rt 96.0 
+standard-square g g1 48 rt 94.688 
+standard-square e e1 40 rt 92.858 
+standard-square c c1 29 rt 77.428 
+standard-square a a1 40 rt 100.0 
+hint4 b b1 622 rt 69.572 
+hint4 d d1 44 rt 68.857 
+hint4 f f1 38 rt 61.572 
+hint4 h l1 29 wr 79.715 
+hint4 j j1 51 rt 92.475 
+hint4 l l1 25 rt 63.714 
+hint4 n n1 43 rt 71.857 
+hint4 p p1 55 rt 71.715 
+hint4 r r1 48 rt 79.0 
+hint4 t t1 36 rt 59.144 
+hint4 v v1 37 rt 80.143 
+hint4 x x1 48 rt 99.143 
+hint4 z z1 57 rt 94.667 
+hint4 y y1 380 rt 81.025 
+hint4 w w1 439 rt 67.476 
+hint4 u u1 51 rt 66.572 
+hint4 s s2 42 rt 80.0 
+hint4 q q1 85 rt 76.143 
+hint4 o v1 43 wr 79.286 
+hint4 m n1 907 wr 64.51 
+hint4 k k1 59 rt 77.191 
+hint4 i i1 3213 rt 61.729 
+hint4 g g1 94 rt 67.967 
+hint4 e e1 676 rt 79.0 
+hint4 c c1 22 rt 71.142 
+hint4 a a2 3236 rt 42.104 
+bowtie b l1 1029 wr 57.192 
+bowtie d l1 846 wr 55.16 
+bowtie f f1 64 rt 61.261 
+bowtie h f1 4009 wr 35.635 
+bowtie j j1 5518 rt 49.545 
+bowtie l l1 34 rt 62.0 
+bowtie n o1 107 wr 60.751 
+bowtie p y2 2741 wr 40.651 
+bowtie r r1 874 rt 71.558 
+bowtie t t1 51 rt 63.429 
+bowtie v v1 44 rt 67.571 
+bowtie x x1 52 rt 80.572 
+bowtie z o1 894 wr 56.107 
+bowtie y y1 2205 rt 56.038 
+bowtie w w1 89 rt 73.838 
+bowtie u u1 1802 rt 66.182 
+bowtie s o1 801 wr 57.634 
+bowtie q o1 8000 qt
+bowtie o o1 8000 qt
+bowtie m n1 4205 wr 37.212 
+bowtie k k1 5115 rt 36.557 
+bowtie i i1 2146 rt 67.596 
+bowtie g q1 6680 wr 23.27 
+bowtie e c1 29 wr 61.751 
+bowtie c c1 916 rt 54.616 
+bowtie a a2 47 rt 68.233 
+checkmark b h1 2209 wr 74.443 
+checkmark d d1 982 rt 69.593 
+checkmark f f1 46 rt 92.077 
+checkmark h h1 52 rt 85.429 
+checkmark j h1 8000 qt
+checkmark l l1 32 rt 78.573 
+checkmark n n1 53 rt 77.428 
+checkmark p y1 5247 wr 31.329 
+checkmark r r1 47 rt 65.857 
+checkmark t t1 43 rt 85.552 
+checkmark v v1 47 rt 81.286 
+checkmark x x1 50 rt 86.715 
+checkmark z z1 80 rt 88.857 
+checkmark y y2 38 rt 81.39 
+checkmark w u1 1921 wr 61.847 
+checkmark u u1 114 rt 85.857 
+checkmark s s2 66 rt 74.858 
+checkmark q q1 290 rt 81.572 
+checkmark o o1 23 rt 95.321 
+checkmark m m1 74 rt 82.715 
+checkmark k k1 6237 rt 31.464 
+checkmark i i1 43 rt 93.857 
+checkmark g y2 57 wr 77.819 
+checkmark e e1 45 rt 80.43 
+checkmark c c1 27 rt 79.715 
+checkmark a n1 1767 wr 49.751 
+((#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>)
+ (#<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>
+   #<void>))
+>>>>>>>>> (transcript-off)

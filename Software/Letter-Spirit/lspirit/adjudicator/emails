@@ -1,0 +1,198 @@
+From rehling Tue Sep  9 13:53:40 1997
+Received: by horsie.cogsci.indiana.edu.cogsci.indiana.edu
+	(4.1/9.2jsm) id AA21583; Tue, 9 Sep 97 13:53:21 EST
+From: John Rehling <rehling>
+Subject: Adjudicator Innards
+To: dughof (Douglas Hofstadter)
+Date: Tue, 9 Sep 1997 13:53:20 -0500 (EST)
+Cc: rehling (John Rehling)
+X-Mailer: ELM [version 2.4 PL24]
+Mime-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Content-Length: 4808      
+Status: RO
+
+	Hey, Hey,
+	How's the surfing? During a brief interlude between
+conferences, I'm trying to get significant programming done on the
+Adjudicator. I don't foresee any major revisions from what I'd
+presented, but there are a few details here an there, plus
+nomenclature decisions. I'm including a tentative name for a number of
+things, but I'm making some up right here and right now, so
+suggestions are welcome.
+
+	To start off with, I've been calling it the "Adjudicator", but
+the same thing has been called the "Abstractor". I think around early
+1994, the name just changed without me ever hearing Gary or you or
+anyone else pronounce the new name aloud, and I actually never
+noticed. (May as well have been "Axxxxxxtor".) Although the latter
+name hits the nail more on the head, I sort of like it less, because
+it's not the only place in LS where abstract things are dealt
+with. Does it bother you a lot to have the name flip-flop? Ideally, it
+would have been the same all along, but there's already some
+inconsistency on it. Anyway...
+
+	The Thematic Focus will have a row for each letter. In
+addition, there will be 2 (maybe 3, but I think 2 is good) rows called
+the Gridfont Themes. These are culled from the letter-rows. Basically,
+this allows for 3 levels of enforcement, like the different strength
+links in Copycat. Something in a letter row is the lowest
+level... it's been seen in just one letter. These things may be
+spurious, and not really part of the style. The first row of the
+Gridfont Themes (hence, GT) will be those things seen in more than one
+letter. Maybe that row should be called "Gridfont Trends". Then, the
+second row of GT (maybe just call this one "Gridfont Themes", or
+"Gridfont Properties") will have things that have been seen in enough
+places to be sure that they ARE part of the style. Such as if they
+occur in 4 of 4 gridletters seen so far, or 12 of 16.
+
+	Adjudicator Codelets:
+
+1) Archiver: Places information from the Examiner (the exact
+gridletter, and its role fillers) into the Thematic Focus. Will just
+run once for each run of Adjudicator.
+2) Primer: Gives a small perk of activation (potentially either
+positive or negative) to style concepts based on what stylistic
+properties have already been put into Gridfont Themes.
+3) Comparer: Takes the labels of a given role filler, and comparing
+them to the expected labels for that role, comes up with the norm
+violations this implies. For example, if a part is expected to be very
+tall, and it only comes up tall, then SHORTER is reified in the
+Workspace. Maybe this will activate appropriate style concepts, but
+that could be done elsewhere.
+4) Unlacer: Find the tips/endpoints of a role-filler, and note the
+difference between where they are and where you'd expect them. Another
+type of norm violation. Could just be dumped into the Comparer type.
+5) Matcher: Note how the role-fillers touch in relation to how the
+whole's r-roles dictate. Whether they should touch and don't, or
+vice-versa, etc. Again, a norm violation, and this could be heaped
+together with #4 under the Comparer name.
+6) Constable: See if an abstract rule is being adhered to, and if so,
+reify that in the Workspace.
+7) Worm (alternate: "Termite"): Start from a random junction on the
+gridletter, and crawl around for a few quanta, making random turns as
+we go. Record these as motifs in the Workspace. These may be either
+stored as literal sequences of quanta, or compass directions (North,
+Northeast, East) or as angles (0, +45, +45). Each of the three will be
+employed.
+8) Promoter: Compare a stylistic entity in the Workspace (Norm
+Violation, Abstract Rule or Motif) and try to form a link between it
+and a corresponding entity in the other rows of the Thematic
+Focus. This may lead to the property being promoted (or demoted) to a
+different place in the hierarchy. This will affect activations and
+temperature, and be affected by prior activations. Sort of a major
+codelet. Maybe best to just do the noticing here, and the
+promoting/demoting elsewhere?
+9) Spread-style-activation: Like is the Examiner. If a concept for
+HEIGHT has high activation, that should activate or inhibit
+appropriately related concepts.
+
+	Whew. That's a mouthful. I'll table discussion about which
+codelets should post which others (not too hard to figure out), and
+what the specifics of the stylistic concepts network look like for
+now.
+
+	Basically, this module should not be of quite the scope of the
+Examiner. And, I'm also working on the Drafter at the same time. Some
+code has been written for the Adjudicator, while Drafter things remain
+on paper. I doubt now if it'll be producing gridfonts in December, but
+not too long after that, I hope.
+	-JAR
+-- 
+I've tried all season to put my thumb on it, but perhaps the problem
+is bigger than my thumb.
+	-Reyna Thompson
+
+From rehling Wed Sep 24 15:52:37 1997
+Received: by horsie.cogsci.indiana.edu.cogsci.indiana.edu
+	(4.1/9.2jsm) id AA11231; Wed, 24 Sep 97 15:52:27 EST
+From: John Rehling <rehling>
+Subject: Adjudictor Outards
+To: dughof (Douglas Hofstadter), rehling (John Rehling)
+Date: Wed, 24 Sep 1997 15:52:26 -0500 (EST)
+X-Mailer: ELM [version 2.4 PL24]
+Mime-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Content-Length: 3815      
+Status: O
+
+	In a nutshell, here's how I see the Adjudicator working. Of
+course, my description is very serial while the real workings will be
+all Coderacked and parallel-like.
+
+	The Examiner hands us its output, the gridletter having been
+identified as a particular role-set, with the gridletter parsed into a
+set of role-fillers, with each role having a bunch of labels attached.
+
+	A first quick phase will look at the Gridfont Themes row of
+the Thematic Focus... the stylistic properties found in previously-
+Adjudicatored letters. This will lightly activate stylistic concepts
+(positively or negatively), to allow them to influence what happens
+throughout the Adjudicator.
+
+	In the second phase, we begin to identify the stylistic
+properties of the gridletter.
+	To detect norm violations in role-fillers, we compare the
+various labels to what we expect to find for that role. If we see
+VERY-TALL, and we expected TALL, then we reify the stylistic property
+TALLER. If we expect RIGHT and CENTER, and we see LEFT and CENTER,
+then we reify SHIFTED-LEFT. These reified stylistic properties are
+placed into the Workspace for the time being.
+	In addition, there are r-role norm violations possible:
+something along the lines of SHOULD-TOUCH-BUT-DONT,
+DONT-TOUCH-BUT-SHOULD, etc.
+	Finally, for norm violations, there are those regarding
+locations of tips. Every role without closure will have norms for two
+endpoints. Endpoint norm violations will note any straying from the
+normal positions of these.
+	To detect adherence to an abstract rule, we run a check on the
+entire gridletter. NO-DIAGONALS, for instance. These are also added to
+the Workspace.
+	To find motifs, a few Worms are dropped onto random locations
+of the Gridletter, and random walks along its quanta are
+performed. The paths the Worms follow are recorded as motifs, again,
+in the Workspace. Some Worms will record their motifs in terms of the
+exact quanta involved. Example: (36, 49, 39). Some will record them in
+terms of compass directions. Example: (Northeast, Southeast,
+Southwest). Some will record them in terms of angles of turns made
+after each quantum. Example: (90-right, 90-right).
+
+	That all is more or less one phase (the second). The norm
+violations and abstract rules will activate concepts in the perceptual
+memory, whose influence will in turn influence future activity, in
+this phase in others. So, when it's noticed that one thing is TALLER,
+there'll be a slight prejudice for TALLER being noticed in other
+contexts.
+
+	In the third phase, the stylistic properties in the Workspace
+will be mapped with those in the Thematic Focus. A mapping will be
+made between the Workspace stylistic properties and compatible
+stylistic properties in either the rows of the Thematic Focus
+corresponding to other letters, or directly to the Gridfont Themes
+row.
+	For example, let's say we've noticed an abstract rule for
+NO-DIAGONALS and it's been reified in the Workspace. That could map to
+NO-DIAGONALS in another, previously-Adjudicatored letter's row of the
+Thematic Focus or the Gridfont Themes row, or it could map to the
+less-general NO-BACKSLASHES or NO-FORESLASHES. These mappings will
+show how the gridfont's style (as seen so far) is realized in the
+gridletter now being Adjudicated.
+
+	In the fourth phase, the mapping will be evaluated. When we
+notice a mapping to something already in the Thematic Focus, the
+temperature falls. When we see something in the Workspace that doesn't
+correspond to anything in the TF, or vice-versa, the temperature goes
+up. During this phase, or perhaps in the third one (the two will
+actually be quite intertwined), stylistic properties in the Thematic
+Focus may be promoted to a higher level of enforcement.
+
+	[END NUTSHELL]
+
+	Come ti sembra?
+	-JAR
+-- 
+All cases are unique and very similar to others.
+	-T.S. Eliot
+

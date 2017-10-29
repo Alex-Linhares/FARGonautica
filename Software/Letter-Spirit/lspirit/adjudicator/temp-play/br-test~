@@ -1,0 +1,29 @@
+trained on br:
+
+ ((*turn-90-motifs*
+    ((*sw* *w*) (*w*) (*n* *w*) (*n* *sw*) (*n* *n*) (*s*)))
+  (*literal-motifs* ((36) (39) (22 39) (22) (36 5)))
+  (*translate-motifs* ((*n* *n* *n* *n*) (*sw*) (*ne*)))
+  (*turn-180-motifs* ((*sw*) (*n* *ne*)))
+  (*relative-nvs* ())
+  (*abstract-rules* ())
+  (*map-nvs* ())
+  (*turn-45-motifs* ()))
+ ((*translate-motifs*
+    ((*ne* *s*) (*ne*) (*s* *sw*) (*e* *ne*)))
+  (*literal-motifs* ((5) (36) (39) (22 39) (8 39)))
+  (*abstract-rules* (at-most-3 ban-backslash-quanta))
+  (*turn-180-motifs* ((*ne* *e*)))
+  (*relative-nvs* ())
+  (*map-nvs* ())
+  (*turn-90-motifs* ())
+  (*turn-45-motifs* ())))
+
+ss-s 7
+
+br-s 0
+
+bl-s 11
+
+h4-s 3
+

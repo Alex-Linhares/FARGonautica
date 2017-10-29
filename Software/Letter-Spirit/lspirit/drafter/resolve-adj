@@ -1,0 +1,27 @@
+we have THREE! ways of calculating adjusted-level-scores
+that is bad
+
+one is defined in
+set-adjusted-level-scores
+and accessed via
+*adjusted-level-scores*
+and used in (importance), but nowhere else
+this in turn, is used in setting Adjudicator thermostat (and nowhere
+else)
+range from 1 to 13
+
+the other is defined in
+adjusted-level-scores
+and accessed by calling that function
+and used in
+ rule-scores (drafter tip location)
+ AND
+ tip-nv-match-score (drafter tip location)
+ but nowhere else
+
+and draft-level-score is also used 
+motif-scores (drafter tip location)
+all draft sugars
+
+this should all be reduced to one, if there's no good reason not to,
+and computed once per adj/draft run

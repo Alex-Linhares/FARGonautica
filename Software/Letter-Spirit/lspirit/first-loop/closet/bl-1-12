@@ -1,0 +1,87 @@
+Chez Scheme Transcript [Wed Jan 12 12:19:21 2000]
+>  (try-gridfont 'benzene-left)
+Accepted, as a seed for b, (4 9 14 17 20 25 49 50)
+Accepted, as a seed for c, (4 9 20 49 50)
+Accepted, as a seed for e, (4 7 9 20 48 49 50)
+Accepted, as a seed for f, (0 4 5 14 21 24 45 46)
+Accepted, as a seed for g, (4 9 13 20 25 28 31 49 50 54)
+(nada () ((*turn-180-motifs* ((*e* *n*) (*w* *s* *se*))) (*literal-motifs* ((4))) (*translate-motifs* ((*se*) (*nw*) (*n* *e* *se*)))) ((*literal-motifs* ((4 49) (49) (20 4) (4 20 50))) (*turn-180-motifs* ((*w*) (*n*))) (*translate-motifs* ((*nw* *n*) (*w*) (*w* *nw*))) (*abstract-rules* (ban-foreslash-quanta))) 21 24 39)
+Try k draft k; seed margin 91.421 21.05
+accepted as k1 score 91.421 beat 299.99 (3 5 14 21 24 46 47 49)
+Try x draft x; seed margin 84.604 24.495561428571428
+accepted as x1 score 84.604 beat 299.99 (2 3 7 19 22 24 46 48 51)
+Try l draft l; seed margin 51.501 26.79853125
+accepted as l1 score 51.501 beat 299.99 (4 14 17 25 49)
+Try l draft l; rejected as l1 score 56.7905 beaten-by 52.4465 (15 22 25 47)
+Try o borrow g; seed margin 18.439 27.41064
+seedified as o1 score 18.439 beat 299.99 (4 9 20 25 49 50)
+Try y borrow g; seed margin 51.726 51.300000000000004
+accepted as y1 score 51.726 beat 299.99 (9 13 20 25 28 31 49 50 54)
+Try i draft i; seed margin 81.005 41.68479
+accepted as i1 score 81.005 beat 299.99 (4 19 20 25 49)
+Borrowed role Try t draft t; seed margin 42.215 41.70041
+accepted as t1 score 42.215 beat 299.99 (4 5 6 8 9 18 21 23)
+Borrowed role Try y draft y; rejected as g1 score 300.0 beaten-by 51.726 (4 9 13 20 25 28 31 49 50 54)
+Try w draft w; rejected as u1 score 300.0 beaten-by 299.99 (9 20 24 25 37 49 50)
+Try p borrow b; seed margin 78.1 38.508045
+accepted as p1 score 78.1 beat 299.99 (5 8 22 23 26 29 36 39)
+Try n borrow o; seed margin 29.753 38.961036
+seedified as n1 score 29.753 beat 299.99 (4 20 25 49 50)
+Try w draft w; seed margin 14.255 51.300000000000004
+seedified as w1 score 14.255 beat 299.99 (9 20 24 25 49 50)
+Borrowed role Try s draft s; rejected as quit score 300.0 beaten-by 299.99 (4 5 6 7 9 25 50)
+Try d borrow b; seed margin 59.678 51.300000000000004
+accepted as d1 score 59.678 beat 299.99 (5 8 16 19 22 23 36 39)
+Borrowed role Borrowed role Try r draft r; seed margin 5.284 42.99687
+seedified as r1 score 5.284 beat 299.99 (4 5 20 50)
+Try q borrow b; seed margin 10.998 51.300000000000004
+seedified as q1 score 10.998 beat 299.99 (4 9 20 25 28 31 49 50)
+Try d borrow q; reelected as d1 score 49.39725 scores (46.24 52.539) (39.132 59.678) (5 8 16 19 22 23 36 39)
+Try s draft s; rejected as j1 score 300.0 beaten-by 299.99 (4 9 10 11 20 25 26 50)
+Try s draft s; rejected as i1 score 300.0 beaten-by 299.99 (2 9 17 22 47 48 50)
+Try a borrow e; seed margin 26.408 41.300505
+seedified as a2 score 26.408 beat 299.99 (4 6 9 25 49 50 51)
+Try h borrow b; seed margin 20.569 51.300000000000004
+seedified as h1 score 20.569 beat 299.99 (4 14 17 20 25 49 50)
+Try x draft x; rejected as g1 score 300.0 beaten-by 84.604 (5 6 9 20 21 22 25 38 51)
+Try p borrow q; reelected as p1 score 68.00649999999999 scores (57.913) (78.1) (5 8 22 23 26 29 36 39)
+Try v draft v; seed margin 28.636 43.887209999999996
+seedified as v1 score 28.636 beat 299.99 (4 6 25 49 51)
+Try p draft p; seed margin 9.712 51.300000000000004
+seedified as p1 score 9.712 beat 68.00649999999999 (4 9 20 23 25 30 49 50 52)
+Try s draft s; rejected as n1 score 300.0 beaten-by 299.99 (4 9 25 49 50)
+Try u borrow o; seed margin 26.971 51.300000000000004
+seedified as u1 score 26.971 beat 299.99 (9 20 25 49 50)
+Try m borrow w; seed margin 25.398 51.300000000000004
+seedified as m1 score 25.398 beat 299.99 (4 20 21 25 49 50)
+Try l draft l; rejected as l1 score 42.179 beaten-by 41.958 (18 25 49)
+Borrowed role Borrowed role Try s draft s; seed margin 30.556 40.07307
+seedified as s2 score 30.556 beat 299.99 (4 5 7 9 25 48 50)
+Borrowed role Try z draft z; seed margin 20.601 51.300000000000004
+seedified as z1 score 20.601 beat 299.99 (4 5 6 7 9 22 50)
+Try y borrow h; seed margin 32.122 51.300000000000004
+seedified as y1 score 32.122 beat 51.726 (9 20 25 28 31 49 50)
+Borrowed role Try i draft i; rejected as r1 score 300.0 beaten-by 81.005 (4 21)
+Try k draft k; seed margin 93.44200000000001 46.515825
+accepted as k1 score 93.44200000000001 beat 195.7105 (4 9 15 20 34 49)
+Borrowed role Try j draft j; seed margin 8.888 46.28917
+seedified as j1 score 8.888 beat 299.99 (13 25 28 31 45 49 54)
+Borrowed role Try k draft k; seed margin 90.9085 51.300000000000004
+accepted as k1 score 90.9085 beat 94.12766666666666 (4 14 17 20 23 36 38 49 50)
+Borrowed role Try x draft x; seed margin 32.276 48.149985
+seedified as x1 score 32.276 beat 84.604 (6 7 22 25 49)
+Try i borrow j; seed margin 16.066 51.300000000000004
+seedified as i1 score 16.066 beat 81.005 (25 45 49)
+Borrowed role Try k draft k; seed margin 20.836 51.300000000000004
+seedified as k1 score 20.836 beat 90.9085 (4 5 7 14 17 20 48)
+Try l draft l; rejected as l1 score 70.725 beaten-by 41.958 (19 22 25 45)
+Borrowed role Try t draft t; seed margin 22.437 40.07307
+seedified as t1 score 22.437 beat 42.215 (4 5 6 9 18 21 50)
+Borrowed role Try d draft d; rejected as d1 score 80.45 beaten-by 49.39725 (4 9 19 20 24 25 37 49 50)
+Try l draft l; rejected as l1 score 77.915 beaten-by 41.958 (15 22 47)
+Try l draft l; rejected as l1 score 53.491 beaten-by 40.286 (15 22 25 47)
+Try d borrow p; seed margin 14.759 39.79719
+seedified as d1 score 14.759 beat 49.39725 (4 9 15 20 22 25 47 49 50)
+Try l draft l; seed margin 28.0885 51.300000000000004
+seedified as l1 score 28.0885 beat 39.5438 (4 9 14 20 46 50)
+> (transcript-off)

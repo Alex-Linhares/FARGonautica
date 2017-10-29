@@ -1,0 +1,61 @@
+FINAL version of Examiner
+(inquiry/lspirit/final-examiner/output/final-run)
+
+dataset		Size	Pct	Codelets
+A: TRAIN	130	99.6%	85
+B: NO-TRAIN	259	98.0%	180
+A+B: NORMALS	389	98.5%	148
+NORMALS*	388	98.8%	146
+C: FONTS	156	81.7%	980
+D: MAJORS	286	94.7%	255
+B+C: PSYCH-TR	415	91.9%	481
+PSYCH-TR* (k)	414	92.1%	
+A+B+C+D: TOTAL	831	94.0%	341 (93 codelets per second)
+
+SHORT		52	
+
+	Fixed last-minute problem in max-label count (off by one).
+
+NORMALS = 389 letters from psych experiment; GEM used 388, discarding
+a difficult 'k', which is indeed difficult
+
+FONTS = 156 the gridletters of the 6 relatively difficult gridfonts
+used in the psych experiment: Bowtie, Close, Double Backslash,
+Flournoy Ranch, Hint Four and Sabretooth
+
+MAJORS = 286 letters from 11 fonts: Standard Square, House, Shorts,
+Slash, Slant, Snout, Benzene Right, Benzene Left, Square Curl, Hunt
+Four, Boat
+
+* = omit the 'k' that can't be parsed (hex 04004100880090)
+
+With Examiner Version 2, the numbers were:
+
+dataset		Correct		Codelets
+NORMALS		96.8%		391
+FONTS		56.8%		1207
+MAJORS		79.2%		787
+TOTAL (831)	83.2%		680
+
+GEM-reported numbers may average category averages
+
+With GEM's Examiner Version 1:
+NO-TRAIN*	93.8
+NORMALS*	
+FONTS		51.4
+PSYCH-TR*	76.6
+PSYCH*		
+
+Netrec+:
+
+NO-TRAIN*	89.7
+FONTS		63.0
+PSYCH-TR*	79.2
+
+People		
+TRAIN		
+NO-TRAIN*	85.0
+NORMALS*	90.1
+FONTS		68.7
+PSYCH-TR*	80.1
+PSYCH*		84.0

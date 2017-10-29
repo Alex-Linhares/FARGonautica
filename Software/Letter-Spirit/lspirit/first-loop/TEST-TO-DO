@@ -1,0 +1,108 @@
+Drafter:
+
+How to present output? 
+
+***
+
+All tests:
+
+Examiner:
+correlation analyses with psych data and theoretical matrics
+What to make of them? Suggestion: Fess up to the worse correlation
+with people, explain why, and chalk it up to the extent to which the
+devil is in the details. Cogsci '99 cite on that?
+
+Adjudicator:
+tf-dumps: some alternates, maybe, to reveal variety?
+
+Scatterplot of Exam/Adj by fonts
+
+***
+
+changes I'd like to make:
+
+harsher score for touch<->nontouch r-role NVs
+fewer bridges in Adjudicator
+many fewer when TF has only one level
+ maybe have a max based on contents of highest level
+
+***
+
+Drafter:
+
+using standard seeds per gridfont
+ multiple generations of each category
+ 1) a couple/three each for all gridfonts and categories
+ 2) many for isolated examples
+
+
+
+
+
+
+ADJUDICATOR
+
+you failed, because the seeding algorithm only took 4 seeds when there
+were 5; make the damn thing score itself!
+Mr. Bonerhead also forgot to clean out the TF per run
+
+LOOP TEST, 4:20:20 by my watch
+
+short motifs, and crash-proof Examiner
+
+***
+
+With Drafter, ought to have mode that looks very impressive,
+letter-quality-wise, and then we can show later that it isn't what you
+want.
+
+With Adjudicator, just run three
+Print:
+train-font phase test-letter test-font score-one score-mean-of-three
+(1 2 3)
+
+TRAIN sets:
+
+benz-l, benz-r, boat, close, house CDFIQY, CFY, D
+hunt4, shorts, slant, snout, st-sq CDFIQY, CFY, D
+bowtie, chckmrk, dub-bs, fl-rnch, funtnip FHMTVY, FMY, H
+boat, close, fl-rnch, hint4, hunt4 CDFIQY, CFY, D
+inters, sabtth, slash, sq-curl, w-arrow CDFIQY, CFY, D
+
+TEST sets:
+
+benz-l, benz-r, boat, close, house AKOXZ
+hunt4, shorts, slant, snout, st-sq HLNSU
+bowtie, chckmrk, dub-bs, fl-rnch, funtnip KN
+boat, close, fl-rnch, hint4, hunt4 EGKPT
+inters, sabtth, slash, sq-curl, w-arrow BJLMR
+
+TESTed letters: ABEGHJKLMNOPRSTUY
+Letters not TESTed or TRAINed: VW
+
+***
+
+In one of the three full sets,
+three phases, times five TRAIN, times five letters, times five TEST
+375 lines (two scorings)
+
+Three of these, and one 40% the size
+3.4 * 2 * 375 / 5 per multiple choice = 510 data points... good test!
+
+NOTE: This could take weeks to finish!!!
+Probably ought to only do the triple thing on one set, to explore the
+need for it
+Maybe ditto with phases... then we cut run time on the other sets by a
+factor of NINE, baby!
+
+big-test:
+3 runs, times 5 train, times 5 letters, times 5 test, times 3 phase
+1125 runs per slate
+
+Maybe 60 hours!
+
+more reasonable:
+1 run, times 5 train, times 5 letters, times 5 test, times 1 phase
+125 runs per slate
+
+< 24 hours

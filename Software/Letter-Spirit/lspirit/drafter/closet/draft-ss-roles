@@ -1,0 +1,280 @@
+Chez Scheme Transcript [Mon May 10 17:48:56 1999]
+>>>>>>>>>>>> (map draft *roles*)
+Drawing backslash
+
+Error: variable score-list-multiply is not bound.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>>  (load "draft-setup.ss")
+>>>>>>>>>>>>  (map draft *roles*)
+Drawing backslash
+Drew  4
+Drew  5
+Drew  22
+Drew  25
+Drew  9
+
+debug> n
+>>>>>>>>>>>>> *tip-2*
+18
+>>>>>>>>>>>>> (load "drafter.ss")
+>>>>>>>>>>>>>  (map draft *roles*)
+Drawing backslash
+Drew  20
+Drew  23
+Drew  8
+Drew  9
+Drew  25
+Drawing cap
+
+Error in lookup: item 37 not found..
+Type (debug) to enter the debugger.
+>>>>>>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in map1>                                    : s
+  continuation:          #<continuation in two-points-coords>
+  free variables:
+  0: (10 37)
+  1: #<system procedure map1>
+#<system continuation in map1>                                    : d
+#<continuation in two-points-coords>                              : s
+  continuation:          #<continuation in points-dist-sq>
+  procedure code:        (lambda (p-ls) ((...) (...)))
+  call code:             (map point-coords p-ls)
+#<continuation in two-points-coords>                              : d
+#<continuation in points-dist-sq>                                 : s
+  continuation:          #<continuation in point-line-error>
+  procedure code:        (lambda (p1 p2) (apply dist-sq ...))
+  call code:             (two-points-coords (list p1 p2))
+  free variables:
+  0: #<procedure dist-sq>
+#<continuation in points-dist-sq>                                 : d
+#<continuation in point-line-error>                               : s
+  continuation:          #<continuation in point-dist>
+  procedure code:        (lambda (end1 mid end2) (if ((...) (...)) 0 ...))
+  call code:             (points-dist-sq end1 end2)
+  free variables:
+  0. end2:               37
+  1. mid:                2
+  2. end1:               10
+  3. len-a-sq:           2
+#<continuation in point-line-error>                               : q
+
+debug> e
+>>>>>>>>>>>>> *tip-2*
+37
+>>>>>>>>>>>>> (role-tips-2 *the-role*)
+((37 0) (9 0) (10 212) (17 500) (16 2) (18 58) (11 14))
+>>>>>>>>>>>>> *tip-1*
+10
+>>>>>>>>>>>>> (list (list *tip-1* 0))
+((10 0))
+>>>>>>>>>>>>> (score-lists-product
+	   *tip-2s*
+	   (list (list *tip-1* 0)))
+
+Error: incorrect number of arguments to #<procedure score-lists-product>.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>>> (score-lists-product '(*tip-2s*
+	   (list (list *tip-1* 0)))
+)
+
+Error in map: *tip-2s* is not a proper list.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>>> *tip-2s*
+((37 0) (9 0) (17 0) (16 0) (18 0) (11 0) (10 0))
+>>>>>>>>>>>>> (load "draft-setup.ss")
+>>>>>>>>>>>>>  (map draft *roles*)
+Drawing backslash
+Drew  20
+Drew  23
+Drew  8
+Drew  9
+Drawing cap
+Drew  4
+Drew  5
+Drew  22
+Drew  7
+
+debug> n
+>>>>>>>>>>>>>> (draw-init)
+>>>>>>>>>>>>>> (take-step) (take-step)
+Drew  4
+>>>>>>>>>>>>>> Drew  5
+>>>>>>>>>>>>>> *quit-drawing*
+#f
+>>>>>>>>>>>>>> (choice-info)
+((46 -42314.069 -193294.841)
+ (35 -39063.16 -144459.388)
+ (49 3366.386 1885.158)
+ (36 -31193.615 -79799.387)
+ (21 6006.384 -42049.388)
+ (5 10603.952 -11977.276)
+ (18 -21379.525 -172360.297))
+>>>>>>>>>>>>>> *tip-2*
+10
+>>>>>>>>>>>>>> *choice-weights*
+((46 1584.25 -250.0 -3000.0 -174829.09 10350.0 -16800.001 0)
+ (35 1584.25 40.0 0 -118210.91 10350.0 -27872.728 0)
+ (49 1584.25 1580.0 0 10939.09 11250.0 -12218.182 0)
+ (36 1584.25 -250.0 -3000.0 -45679.09 11250.0 -32454.547 0)
+ (21 1584.25 300.0 0 -45679.09 11250.0 0 1745.452)
+ (5 2500.0 10000.0 0 -25960.91 11250.0 0 1483.634)
+ (18 1584.25 -250.0 0 -174829.09 10350.0 0 1134.543))
+>>>>>>>>>>>>>> (load "draft-setup.ss")
+>>>>>>>>>>>>>>  (draw-init) (take-step) (take-step)
+>>>>>>>>>>>>>> Drew  4
+>>>>>>>>>>>>>> Drew  5
+>>>>>>>>>>>>>> (choice-info)
+((46 -8900.388 -23327.434)
+ (35 -11389.843 -21521.071)
+ (49 -8395.299 -10316.527)
+ (36 -3614.932 -10931.978)
+ (21 16697.794 9850.748)
+ (5 17738.498 31077.27)
+ (18 12121.431 -2305.615))
+>>>>>>>>>>>>>>  (map draft *roles*)
+Drawing backslash
+Drew  4
+Drew  5
+Drew  22
+Drew  25
+Drawing cap
+Drew  4
+Drew  5
+Not drawing circle
+Not drawing dot
+Not drawing down-circle
+Drawing e-crossbar
+Drew  6
+Drew  7
+Not drawing f-post
+Drawing halfpost
+Drew  5
+Drew  22
+Drew  25
+Drawing left-downbowl
+Drew  7
+Drew  24
+Drew  9
+Drawing left-halfarch
+Drew  4
+Drew  21
+Drew  24
+Drawing left-post
+Drew  14
+Drew  17
+Drew  20
+Drew  23
+Drawing left-uparc
+Drew  20
+Drew  23
+Drew  8
+Drew  9
+Drawing left-wing
+Drew  4
+Drew  21
+Drew  24
+Drew  8
+Drawing right-buttress
+Drew  4
+Drew  5
+Drew  22
+Drew  25
+Drawing right-downbowl
+Drew  7
+Drew  25
+Drew  9
+Drew  8
+Drawing right-halfarch
+Drew  5
+Drew  22
+Drew  25
+Not drawing right-hook
+Drawing right-tail
+Drew  22
+Drew  25
+Drew  28
+Drawing s-base
+Drew  23
+Drew  6
+Drew  7
+Drew  25
+Not drawing t-post
+Not drawing up-circle
+Drawing z-cap
+Drew  5
+Drew  22
+Drew  7
+Drew  6
+Drew  20
+Drew  4
+Drew  21
+Drew  24
+Drew  9
+Drew  25
+Drew  49
+Drew  18
+Drew  3
+Drew  19
+Drawing up-arm
+Drew  4
+Drew  5
+Drawing s-crossbar
+Drew  6
+Drew  7
+Drawing right-wing
+Drew  5
+Drew  22
+Drew  25
+Drew  9
+Drawing right-post
+Drew  16
+Drew  19
+Drew  22
+Drew  25
+Drawing right-halfpost
+Drew  5
+Drew  22
+Drew  25
+Drawing right-halfarc
+Drew  21
+Drew  7
+Drew  25
+Not drawing right-curl
+Drawing right-bowl
+Drew  4
+Drew  5
+Drew  22
+Drew  25
+Drew  9
+Drew  8
+Drawing left-upbowl
+Drew  5
+Drew  21
+Drew  6
+Drawing left-tail
+Drew  20
+Drew  23
+Drew  26
+Drew  29
+Drawing left-halfpost
+
+Error in lookup: item 9 not found..
+Type (debug) to enter the debugger.
+>>>>>>>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in new-item>                                       : s
+  continuation:          #<system continuation in map1>
+  procedure code:        (lambda (head) (list (...) ...))
+  call code:             (lookup (caar head) biased-norms)
+  free variables:
+  0. head:               ((9 *e*) -70)
+  1. biased-norms:       ((23 229.48) (24 16.0) (50 4.68) (20 26.84) ...)
+  2: (9 *e*)
+#<continuation in new-item>                                       : q
+
+debug> e
+>>>>>>>>>>>>>> (load "draft-setup.ss")
+>>>>>>>>>>>>>> (transcript-off)

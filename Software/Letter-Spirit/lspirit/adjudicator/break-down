@@ -1,0 +1,40 @@
+trained on Hunt 4
+
+ ((*turn-90-motifs* ((*sw*) (*e*) (*ne* *e*)))
+  (*translate-motifs* ((*se*) (*s* *ne*) (*sw* *n*)))
+ ((*translate-motifs* ((*sw*) (*ne*) (*ne* *se*)))
+  (*turn-90-motifs* ((*nw* *n*)))
+  (*turn-45-motifs* ())))
+
+Hunt 4 'd': Temp 31
+
+		TOT	let	two-tm	occ	comm	freq	univ
+ahead-yes	
+ahead-no	
+back-yes	
+back-no		22	7	9	2	3	1
+
+Benzene Right 'd': Temp 24
+
+		TOT	let	two-tm	occ	comm	freq	univ
+ahead-yes	
+ahead-no	
+back-yes	
+back-no		15	2	7	4	1	1
+
+Where is BR beating H4 here!?
+
+More ahead-yeses, mid-levels
+Fewer back-nos, low and mid levels
+Slight edge in back-yeses, mid-levels
+
+The message is clear -- de-emphasize mid-levels
+Maybe just a bigger power curve in importance?
+
+wc zozo
+cat zozo | grep lett | wc
+cat zozo | grep two- | wc
+cat zozo | grep occ | wc
+cat zozo | grep com | wc
+cat zozo | grep freq | wc
+cat zozo | grep univ | wc

@@ -1,0 +1,164 @@
+150 of each type of bridge
+
+explore-font 'sl
+start	8:57:20
+b	    :39	19s
+c	8:58:48	69s
+e	9:05:20 392s
+f	9:05:47 27s
+g	9:21:23 936s
+
+
+>> (explore-font 'sl)
+Temperature 22
+Temperature 21
+Temperature 22
+Temperature 46
+Temperature 10
+>> *frequent-sps*
+((*literal-motifs* ((37 38) (38 37) (37) (38)))
+ (*translate-motifs* ((*ne* *ne*) (*ne*)))
+ (*relative-nvs* ())
+ (*val-to-val-nvs* ())
+ (*abstract-rules* ())
+ (*turn-180-motifs* ())
+ (*turn-90-motifs* ())
+ (*turn-45-motifs* ()))
+
+***
+
+75 of each type of bridge
+
+explore-font 'sl
+start	9:25:15
+b	9:25:30 15s
+c	9:26:00	30s
+e	9:29:29	209s
+f	9:29:44 15s
+g	9:31:22 98s
+
+>> (explore-font 'sl)
+Temperature 24
+Temperature 30
+Temperature 24
+Temperature 49
+Temperature 18
+>> *frequent-sps*
+((*literal-motifs* ((38) (37)))
+ (*relative-nvs* ())
+ (*val-to-val-nvs* ())
+ (*abstract-rules* ())
+ (*translate-motifs* ())
+ (*turn-180-motifs* ())
+ (*turn-90-motifs* ())
+ (*turn-45-motifs* ()))
+
+***
+
+150 bridges
+
+streamlined TF search
+start	10:53:13
+b	10:53:30	17
+c	10:54:15	45
+e	10:56:50	155
+f	10:57:11	21
+g	11:08:13	662
+
+***
+
+150, streamlined, cache all sublists, but clear per-letter
+start	11:11:00
+b	11:11:14	14
+c	11:12:15	61
+e	11:14:14	119
+f	11:14:45?	31?
+g	11:15:31	45?
+
+SAME THING
+150, streamlined, cache all sublists, but clear per-letter
+start	11:16:00
+b	11:16:13	13
+c	11:16:53	40
+e	11:19:37	164
+f	11:19:52	15
+g	11:22:00	128
+
+***
+
+150, streamlined, cache all sublists, don't clear cache
+start	11:23:30
+b	11:23:43	13
+c	11:24:30	47
+e	11:27:10	160
+f	11:27:34	24
+g	11:30:01	147
+
+SAME THING
+150, streamlined, cache all sublists, don't clear cache
+start	11:33:30
+b	11:33:44	14
+c	11:34:26	42
+e	11:38:19	233
+f	11:38:36	17
+g	11:40:46	130
+
+***
+
+150, streamlined, cache all sublists, don't clear per-letter,
+cache all motif bridges
+
+start	12:12:00
+b	12:12:14	14
+c	12:12:48	24
+e	12:1?		SLOW!
+
+***
+
+150, streamlined, cache all sublists, don't clear per-letter,
+cache motif bridges of size greater than 4
+
+start	12:19:05
+b	12:19:20	15 (note: temps WAY up)
+c	12:19:53	33
+e	12:22:59	186
+f	12:23:10	11
+g	12:27:10	240
+
+***
+
+150, streamlined, cache all sublists, don't clear per-letter,
+cache motif bridges of size greater than 6
+
+start	12:27:40
+b	12:27:53	13
+c	12:28:24	31
+e	12:33:34	310
+f	12:33:44	10
+g	12:36:24	160
+
+**
+
+back to basics:
+
+150, streamlined, cache all sublists, clear per-letter,
+don't cache any bridges
+
+start	12:38:00
+b	12:38:15	15
+c	12:39:13	58
+e	12:40:31	78
+f	12:40:45	14
+g	12:42:11	86
+
+AGAIN
+
+start	12:43:00
+b	12:43:13	13
+c	12:44:10	57
+e	12:45:55	105
+f	12:46:13	18
+g	12:50:59	286
+
+
+

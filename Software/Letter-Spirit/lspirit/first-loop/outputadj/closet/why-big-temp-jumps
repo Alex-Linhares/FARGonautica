@@ -1,0 +1,177 @@
+Chez Scheme Transcript [Thu Nov 11 23:06:34 1999]
+>>>>>> (big-adj-test)
+TestSet0 benzene-right g benzene-left 62.833
+TestSet0 benzene-right z benzene-left 66.467
+TestSet0 benzene-right o benzene-left 61.581
+TestSet0 benzene-right a benzene-left 66.44
+TestSet0 benzene-right g benzene-right 26.097
+TestSet0 benzene-right z benzene-right 44.712
+TestSet0 benzene-right o benzene-right 22.146
+TestSet0 benzene-right a benzene-right 31.655
+TestSet0 benzene-right g boat 56.501
+TestSet0 benzene-right z boat 55.032
+
+debug> n
+>>>>>>> (load "thematic-focus.ss")
+>>>>>>>  (big-adj-test)
+
+Error: attempt to apply non-procedure ((ahead-not-found *abstract-rules* ban-backslash-quanta) (ahead-not-found *literal-motifs* (14 17 20 23 8 39 ...)) (ahead-not-found *turn-90-motifs* (*e* *ne* *n* *w* *sw* *n* ...)) (ahead-not-found *val-to-val-nvs* (tips (...))) (ahead-not-found *literal-motifs* (20 23 8 39)) (ahead-not-found *relative-nvs* (tips (...))) ...).
+Type (debug) to enter the debugger.
+>>>>>>>  (load "thematic-focus.ss")
+>>>>>>>  (big-adj-test)
+Blast 40.156983577205665 to 39.14913439834538 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 39.14913439834538 to 38.90977021836606 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 38.90977021836606 to 38.67339809063649 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 38.67339809063649 to 38.67279737398478 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 38.67279737398478 to 38.598106184488834 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 38.598106184488834 to 38.374835919744044 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 38.374835919744044 to 37.772049427396844 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 37.772049427396844 to 37.24733855407767 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 37.24733855407767 to 37.2231977992503 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 37.2231977992503 to 37.19640112140073 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 37.19640112140073 to 36.98144610738323 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 36.98144610738323 to 36.76917803104094 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 36.76917803104094 to 36.702101318916775 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 36.702101318916775 to 36.64023005479098 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 36.64023005479098 to 36.573669134571816 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 36.573669134571816 to 36.569316733678924 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 36.569316733678924 to 36.503039466744205 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 36.503039466744205 to 36.501137166886586 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 36.501137166886586 to 36.4968038135684 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 36.4968038135684 to 37.171963622889976 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+Blast 37.171963622889976 to 37.813365441745475 by (ahead-not-found *relative-nvs* (tips (tip *inward*)))
+
+debug> n
+>>>>>>>>  (load "thematic-focus.ss")
+>>>>>>>>  (big-adj-test)
+TestSet0 benzene-right g benzene-left 68.167
+TestSet0 benzene-right z benzene-left 73.542
+TestSet0 benzene-right o benzene-left 75.765
+TestSet0 benzene-right a benzene-left 77.964
+TestSet0 benzene-right g benzene-right 42.493
+TestSet0 benzene-right z benzene-right 52.247
+TestSet0 benzene-right o benzene-right 60.216
+TestSet0 benzene-right a benzene-right 57.758
+TestSet0 benzene-right g boat 55.306
+TestSet0 benzene-right z boat 66.704
+TestSet0 benzene-right o boat 69.467
+TestSet0 benzene-right a boat 71.09
+TestSet0 benzene-right g close 73.498
+TestSet0 benzene-right z close 62.279
+TestSet0 benzene-right o close 72.314
+TestSet0 benzene-right a close 66.656
+TestSet0 benzene-right g house 68.64
+TestSet0 benzene-right z house 65.808
+TestSet0 benzene-right o house 66.37
+TestSet0 benzene-right a house 74.147
+TestSet0 close g benzene-left 69.253
+TestSet0 close z benzene-left 67.607
+TestSet0 close o benzene-left 65.709
+TestSet0 close a benzene-left 66.955
+TestSet0 close g benzene-right 40.761
+TestSet0 close z benzene-right 46.997
+TestSet0 close o benzene-right 36.554
+TestSet0 close a benzene-right 38.486
+TestSet0 close g boat 64.6
+TestSet0 close z boat 59.413
+TestSet0 close o boat 60.883
+TestSet0 close a boat 63.043
+TestSet0 close g close 33.756
+TestSet0 close z close 39.847
+TestSet0 close o close 25.382
+TestSet0 close a close 37.248
+TestSet0 close g house 63.052
+TestSet0 close z house 57.436
+TestSet0 close o house 61.035
+TestSet0 close a house 54.308
+TestSet0 house g benzene-left 72.922
+TestSet0 house z benzene-left 69.418
+TestSet0 house o benzene-left 75.862
+TestSet0 house a benzene-left 74.063
+TestSet0 house g benzene-right 62.36
+TestSet0 house z benzene-right 65.575
+TestSet0 house o benzene-right 60.934
+TestSet0 house a benzene-right 71.475
+TestSet0 house g boat 72.773
+TestSet0 house z boat 76.507
+TestSet0 house o boat 74.81
+TestSet0 house a boat 77.713
+TestSet0 house g close 73.313
+TestSet0 house z close 71.738
+TestSet0 house o close 78.014
+TestSet0 house a close 72.674
+TestSet0 house g house 66.235
+TestSet0 house z house 60.624
+TestSet0 house o house 63.87
+TestSet0 house a house 68.704
+TestSet0 boat g benzene-left 55.674
+TestSet0 boat z benzene-left 62.735
+TestSet0 boat o benzene-left 60.162
+TestSet0 boat a benzene-left 72.759
+TestSet0 boat g benzene-right 71.621
+TestSet0 boat z benzene-right 65.466
+TestSet0 boat o benzene-right 75.451
+TestSet0 boat a benzene-right 77.211
+TestSet0 boat g boat 29.807
+TestSet0 boat z boat 59.595
+TestSet0 boat o boat 58.848
+TestSet0 boat a boat 62.642
+TestSet0 boat g close 76.469
+TestSet0 boat z close 67.729
+TestSet0 boat o close 76.877
+TestSet0 boat a close 65.45
+TestSet0 boat g house 68.909
+TestSet0 boat z house 67.56
+TestSet0 boat o house 77.837
+TestSet0 boat a house 67.066
+TestSet0 benzene-left g benzene-left 30.945
+TestSet0 benzene-left z benzene-left 21.239
+TestSet0 benzene-left o benzene-left 23.454
+TestSet0 benzene-left a benzene-left 39.188
+TestSet0 benzene-left g benzene-right 66.655
+TestSet0 benzene-left z benzene-right 64.434
+TestSet0 benzene-left o benzene-right 61.771
+TestSet0 benzene-left a benzene-right 63.761
+TestSet0 benzene-left g boat 44.848
+TestSet0 benzene-left z boat 56.748
+TestSet0 benzene-left o boat 34.038
+TestSet0 benzene-left a boat 62.95
+TestSet0 benzene-left g close 66.163
+TestSet0 benzene-left z close 62.693
+TestSet0 benzene-left o close 63.442
+TestSet0 benzene-left a close 64.401
+TestSet0 benzene-left g house 62.358
+TestSet0 benzene-left z house 62.821
+TestSet0 benzene-left o house 57.738
+TestSet0 benzene-left a house 66.971
+TestSet1 shorts m hunt4 74.484
+TestSet1 shorts u hunt4 63.453
+TestSet1 shorts s hunt4 61.034
+TestSet1 shorts a hunt4 64.154
+TestSet1 shorts m shorts 52.952
+TestSet1 shorts u shorts 63.138
+TestSet1 shorts s shorts 61.539
+TestSet1 shorts a shorts 50.173
+TestSet1 shorts m slant 51.231
+TestSet1 shorts u slant 62.111
+TestSet1 shorts s slant 51.916
+TestSet1 shorts a slant 50.523
+TestSet1 shorts m snout 64.687
+TestSet1 shorts u snout 65.816
+TestSet1 shorts s snout 65.26
+TestSet1 shorts a snout 56.123
+TestSet1 shorts m standard-square 56.295
+TestSet1 shorts u standard-square 61.193
+TestSet1 shorts s standard-square 53.715
+TestSet1 shorts a standard-square 50.873
+TestSet1 snout m hunt4 53.846
+TestSet1 snout u hunt4 45.513
+TestSet1 snout s hunt4 72.214
+TestSet1 snout a hunt4 67.305
+TestSet1 snout m shorts 9.797
+TestSet1 snout u shorts 59.324
+TestSet1 snout s shorts 58.282
+TestSet1 snout a shorts 56.655
+
+debug> n
+>>>>>>>>> (transcript-off)

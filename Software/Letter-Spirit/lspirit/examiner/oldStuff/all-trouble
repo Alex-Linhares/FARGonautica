@@ -1,0 +1,116 @@
+	If I ask a question, I want to try to fix it. Otherwise, I'm
+OK with the error / error-rate.
+
+a 00C00300050020	fixed, role-defs
+a 020000C00000B0	usually gets it, eventually
+a 0A000000010060	sometimes gets it
+b 00024800010060	usually gets it, eventually
+b 04C02640420000	systematically 'd'; break zigzag right-post?
+b 0A014000830060	systematically 'l'
+d 05011000090430	systematically 'l'
+e 01400000080060	correct 6 of 10
+e 014000000C0060	systematically 'c'
+e 040003000A0040	correct half the time; better e parses?
+e 048001000f0000	usually gets it, eventually
+e 0D800B00000000	sometimes gets it
+e 0c800900070000	usually gets it
+f 04000480100000	usually gets it
+f 20010480000720	usually gets it
+f 2C004900000000	usually gets it
+g 00000048081060	fixed, role-defs
+g 0140000A0C1060	sometimes gets it
+g 0C000D49020041	amazingly, bisegment curves were flipped
+g 0C900BC8000000	sometimes gets it
+h 00024840080040	usually gets it
+h 00404B40060000	usually gets it
+h 080140C08A0060	easier as 'l'
+i 14008000460000	i tip gestalt norms decreased
+k 00404900080060	usually gets it
+k 02424980040000	usually gets it
+k 04004100880090	flaw in notion of indivisible quanta
+k 080048400000B0	usually gets it; tinker with role-defs?
+k 080249000000D0	usually gets it
+k 0C404DC0000000	slow to parse, more time? role-defs?
+m 000001C0080040	sometimes gets it
+m 000001c00800c0	flaw in notion of indivisible quanta
+m 000002C0060000	parses it right; role-defs?
+m 000005C00000E0	sometimes gets it
+m 000005c0080040	usually gets it
+m 000007000D0000	usually gets it
+m 000007400C0000	usually gets it
+m 00000C000000F0	usually gets it
+m 00000C400000E0	usually gets it
+m 00000DC0080040	usually gets it
+m 00000d400000c0	usually gets it
+m 00000fc00c0000	usually gets it
+m 020003C0040000	usually gets it
+m 040007c0080000	usually gets it
+m 04800AC0040080	usually gets it
+m 080003C00C0080	flaw in notion of indivisible quanta
+m 080007000D0000	fix how? how?
+m 080007000d0000	usually gets it
+m 0C400F40000000	can get it, but extremely unlikely to parse
+n 000000C00A0060	
+n 00000240060000	
+n 000004C00000E0	
+n 000006C0060000	
+n 04000340080080	
+n 048002C0040000	
+o 020000000900E0	
+o 08000000010060	
+o 08000000090060	
+o 0C000D00020000	
+p 028000220900C2	
+q 014400080C1061	
+q 02840548011040	
+q 0C000D12031040	
+q 0C800BC8000000	
+r 000002800A0060	
+r 080002000000D0	
+r 0c000900000000	
+s 00000300060000	
+s 00C00600000050	
+s 04000000160000	
+s 06000000030060	
+u 000000400000D0	
+u 000006c0010000	
+u 00000C40050060	
+u 00000C80000030	
+u 00000D80060000	
+u 04800D00020000	
+v 00800300090000	
+v 00800600030000	
+v 008006000B0000	
+v 04000D00020000	
+v 06400AC0000000	
+w 000003800B0000	
+w 000003800b0000	
+w 000006C00000B0	
+w 00000B80030000	
+w 00000D00060000	
+w 00000E00010020	
+w 00000E80000060	
+w 00000E80010020	
+w 00000F80070000	
+w 00000a80010020	
+w 00000ac0000030	
+w 00000b40020010	
+w 00000e80010020	
+w 00800B80010000	
+w 00800f80010000	
+w 00C003C0080000	
+w 04800D40020010	
+x 00000000060090	
+x 028002000E0010	
+x 08000600020050	
+x 0B000780000000	
+y 00880348091000	
+y 00C00240024000	
+z 00C00C000A0000	
+z 00D00800000098	
+z 01C00800020080	
+z 07800300000000	
+z 08c00000060040	
+z 09000000090030	
+z 0B400000000060	
+z 0CC00840060000	

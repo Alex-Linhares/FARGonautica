@@ -1,0 +1,145 @@
+	LOOP
+
+	Seedify in other parts of try-cat, not just the one
+
+***
+
+	THINGS YOU WON'T ADDRESS
+	Examine to force role-set choice (b2 vs. b1)
+	role borrowing with transformation (left post -> right post)
+	NVs for curvature and touching to influence drafting directly
+
+***
+
+new eval routine:
+
+eval new gridletter once
+cond
+	way the best: keep it
+	way worse: ditch it
+	within margin: eval new one again and old one again
+	 then keep or ditch based on means
+	
+***
+
+	Make the Library work.
+
+	EXAMINER
+	hangs when only one part of i is drawn!
+
+	ADJUDICATOR (horror of horrors!)
+
+	experimenting on 11/11 with tightening up
+	scale on Adj thermo, to avoid "edge effects" of 0 & 100
+	Calibration counts normal thermostats as 1/10 of old scale,
+	but role-filler matches still big (though smaller than in old
+	adj tests)
+
+	ADJUDICATOR
+	AND, library should count in the score
+	r-role NVs in the score, right?
+	make massive addition of sets of weights to govern temperature
+settings? Drafter has this, in addition to level-expect...
+
+	Get Examiner and Adjudicator scores scales MUCH better
+	style knob has to turn down much faster; maybe randomize it,
+so that low-style settings get tried earlier, but without disabling
+possibility of high-style later
+RANDOMIZE IT ANYWAY! all the time! hi/lo style
+
+DRAFTER
+
+	draw from both ends
+	DRH: make loop motifs higher-priority (nix)
+	let motifs be a bit longer than now
+	Borrow with non-identical role fillers (like cap and crossbar)
+
+LOOP
+
+cache ALL former tries, and don't Examine/Adj any
+allow borrowing only once per category
+punish r-role NVs more
+borrow role fillers sometimes
+	I'd like to:
+
+	Make it a bigger penalty of r-role violations
+	 update role-defs touching info
+	Make the Adjudicator run fewer bridges
+	 especially when only one item is in TF (OK?)
+
+***
+
+	ADJUDICATOR
+	just seems to work crummy; at least for the multiple-choice
+font-test
+	after 9 of 21 proposed test sets, correct 57 of 170 (34%)
+
+	TOO SLOW on second letter... FIX!
+
+	Possible fixes:
+	1) Return to old values for temperature-setting
+	2) Larger motifs
+	3) More codelets
+
+	bug in (roulette *fillers*) when the latter is null
+
+
+	DRAFTER
+	Bigger randomness budget for TIPS as well as QUANTA
+		*tip-randomness* * 0.99 per draft (in coderack.ss)
+	make all motifs higher priority?
+		when house `o' is not House-y, that's bad
+	more random in tip selection; it won't bite you!
+	enforce touching even more in tip selection?
+
+	even more random?
+	fewer codelets?
+
+	! more random as it goes
+	canonicalize old gridletters, so that order diffs != diff identity
+	text/graphics bells and whistles
+
+	NOW: Why the anomalous BIG thermos?
+	Example: TestSet0 house z benzene-left 10.377
+	It was when the Examiner failed; Exm temp was reported
+
+	filler reward from library matches does not work!
+	doesn't identify old filler correctly
+	doesn't canonicalize quanta lists for correct ID
+	small influence, anyway -- far too small
+	More sugar per motif? (Remember j)
+	Tip flips for bisegments -- seems to work
+	Test it! The randomness thing (loop issue) shouldn't matter,
+though you need to write routines for separate Exam/Adj scores and
+mass testing with same seeds
+
+
+
+LOOP
+	weight Exam vs. Adj better?
+	what to do with "bad seeds"??? let the program stink
+	make margin for comparing old champ again bigger
+	OR: have multiple modes! (meta-roulette)
+		pick worst OR pick by roulette
+	incorporating new letters' style
+		raise threshold as time goes by
+		OR, just gradually slide it down
+		fix it so that the second of two is recognized iff good
+	CHOICE OF NEXT CAT: maybe subtract some points first, or raise
+	to power; and of course, relativize
+	if everything's a seed, quit!
+	Bigger probability of borrowing (use new n-percent function)
+
+	stingier in seedifying
+
+	after every update-tf, sweep to see if anything else can be
+	seedified (or as cats are re-tried later, seedify old champ,
+	where applicable)?
+
+	Seedifying
+		add percentilage?
+	Cat-choice -- favor borrowable categories?
+	role borrowing
+		halfposts, arcs and arches
+		right tail and right curl?
+	text output for seed-approval

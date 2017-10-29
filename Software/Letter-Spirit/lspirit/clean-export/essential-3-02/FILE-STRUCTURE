@@ -1,0 +1,115 @@
+This directory contains the Scheme files in the implementation of
+Letter Spirit, completed by John Rehling, April, 2000.
+
+This README file offers a quick overview of the code.
+
+Most files are needed to run Letter Spirit. Some are purely for the
+purposes of testing the program, and those are not required for all
+runs.
+
+loader.ss is the only file that needs to be loaded directly. It loads
+all the other essential ones (some of the "load" commands are issued
+by the files "loader.ss" loads). Thus, the Scheme command
+(load "loader.ss")
+is the first step (once SXM or Scheme are running) needed to run LS.
+
+The following files are not essential to runs of the full LS program,
+and exist for tests, runs of the Examiner only, etc.
+demo.ss
+evolve.ss            Collects stats
+draft-test.ss
+model.ss             A non-LS mini-model of creativity
+sim.ss               More mini-model
+test-loop.ss
+tf-test.ss
+tf-test2.ss
+routines.ss          A loader used in some experiments
+lobby.ss             Obsolete version of scratchpad.ss
+
+DATABASES OF GRIDFONTS
+fonts.ss             Database of several gridfonts plus test support tools
+gridfonts.ss         Database of gridfonts from psych experiment
+ls-out.ss            Some LS-generated gridfonts
+
+Used anymore???
+get-mystery.ss
+
+ESSENTIAL FILES
+
+LETTER/ROLE DEFINITION
+(CONCEPTUAL MEMORY, CONCEPTUAL NETWORK)
+blurred-proto.ss      Letter category norms, used by Examiner's gestalt
+role-defs.ss          Definition of all roles; essential to everything
+quickact.ss           Defines Conceptual Network structure and dynamics
+r-roles.ss            Implements the three r-role types
+memory.ss             Several essential Conceptual network routines
+whole-defs.ss         Defines each role-set, or "whole"
+
+STYLE/TRAIT DEFINITION
+(CONCEPTUAL MEMORY)
+curves.ss             Calculations of part/role curvature values
+motif.ss              Motif definitions
+string.ss             Motif (strings of quanta) mathematics
+norm-viols.ss         Norm violation definitions
+rules.ss              Abstract rule definitions
+thematic-focus.ss     Creates and modifies Thematic Focus
+
+INFORMATION ABOUT THE GRID
+gridmath.ss           Math for points and paths on the LS grid
+know.ss               Pre-compiled information about the grid
+touching.ss           Math to decide what touches what else
+zones.ss              Defines several zones within the grid
+
+EXAMINER CODE
+exam-setup.ss         Loader, flag setter, tester for Examiner-only runs
+examiner.ss           Examiner codelet definitions
+labeler.ss            Support for part labels and Examiner's Workspace
+labels.ss             Support for part labels and Examiner's Workspace
+recog.ss              Top-level call, support for Examiner
+scores.ss             Calculates Examiner goodness scores
+smartparse.ss         Segments input based on suspected letter category
+topdown.ss            Gestalt function code
+
+stats.ss              Can be used to do Examiner-only runs
+
+ADJUDICATOR CODE
+adj-setup.ss          Code to initialize an Adjudicator run
+adjudicator.ss        Adjudicator codelet definitions
+
+DRAFTER CODE
+anticipate.ss         Compute traits for parts in progress
+borrow.ss             Defines when and how borrowing can take place
+draft-setup.ss        Drafter run setup on level of role or quantum
+drafter.ss            Drafter codelet definitions
+draw.ss               Drafter run setup on level of letter
+sugar.ss              Rewards/punishments used in Coderack Drafting
+
+OTHER CODE COMMON TO ALL THREE MODULES
+coderack.ss           Top-level of each module, plus general Coderack code
+loader.ss             Allows loading of compiled OR uncompiled files
+tools.ss              General helpers, 99% non-LS-specific
+
+LETTER SPIRIT LOOP CODE
+loop.ss               LS top-level loop
+ls-load.ss            Loading this loads everything necessary
+
+GUI CODE
+display.ss            One function for entering gridletter with SXM GUI
+scratchpad.ss         Graphics for LS program
+sgl-d.ss              SGL/SXM code by John Zuckerman
+
+OLD GEM FUNCTIONS ONLY SLIGHTLY USED?
+bond.ss               Used by Examiner, but minimally
+get-mystery.ss        I think this no longer has any essential code
+glom.ss               Used by Examiner only when coderack becomes empty
+graphics.ss           Examiner-only runs may call this; LS runs do not
+gtools.ss             Examiner-only runs call this; I don't think LS does
+shaker.ss             99% unused, but a little creeps in
+
+In summary, bond.ss, shaker.ss, and glom.ss are used in very narrow
+situations, and they could probably be replaced with something much
+slimmer than the 430 lines they now comprise. get-mystery seems to be
+unneeded. The two graphics files are not needed by LS-only runs,
+although having an Examiner-only mode of running is nice for demos.
+
+

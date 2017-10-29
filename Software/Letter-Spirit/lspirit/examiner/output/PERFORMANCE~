@@ -1,0 +1,90 @@
+Examiner 2: JAR's version of 1996-1997
+
+Test set	Pct	Speed
+NORMALS		96.8	390.9
+FONT		56.8	1206.7
+
+
+	NORMALS
+Version		Pct	Speed	Comments
+normal-test	83.8	264
+phase-normals	84.6	237
+post-birthday	88.8	183
+some-changes	91.6	192
+bond-long	93.7	235	quit at 3000 now, not 1500; more bonds
+long-phase	94.2	225	despite going to 6000 (didn't happen once!)
+strict-eval	96.2	204	max-1 labels to spark: max-1; axed m2
+zero-tolerance	96.9	181	16 labels before we spark
+few-bugs	96.1	258
+new-years-eve	96.8	175	m, v, w still the problems
+less-absorb	97.7	178	less likely to absorb whiners ASAP
+camel-humps	98.5	162	u/v/w fixed by outlawing humps on u&v
+phases-800	
+
+NOTE! phases-800 actually has phases of 600!
+
+
+camel-fonts	76.1	933
+
+1/4/99
+Note on phases, the camel version (phases keep getting softer), on
+runs over 2500 codelets was:
+NORMALS 10 of 13
+FONTS 30 of 66
+MAJORS 2 of 16
+
+The second-coming (resets phases at 2500) is worse on NORMALS, so bag
+it.
+
+Let's add norm-viols, trim phases where we can, consider making
+sparker pick a random part (still!) and wrap this sucker up.
+
+(NORMALS-TRAIN) 259
+GEM's		93.8
+Netrec+		89.7
+camel-humps	97.8
+phases-800	97.7
+
+	FONT 156
+GEM's		51.4
+Netrec+		63.0
+camel-fonts	76.1
+phases-800	81.0
+
+PSYCH-TRAIN (JAR didn't exclude the tricky k)
+
+People		77.6%
+GEM's		77.9%
+Netrec+		79.7%
+JAR 1997	80.9%
+JAR 1999	91.4%
+
+HORRIBLES
+		CORRECT	SPEED
+JAR 1999	95.0%	226.6
+
+I still need to:
+ work out bugs with 'w'
+ run on FONTs, and try that
+ make test set without TRAIN
+
+camel-humps also included shapes to deal with closure, to eliminate
+errors where 'o' is the attractor
+
+finally, camel-humps, after fixing w, fixed m by -- and this is an act
+of genius -- making its smart-parse just like w's, but rotated 180
+degrees
+
+JAR's version of 12/23
+is 92.3 % on NORMALS-TRAIN (make testfile out of minus-train, which was
+concocted from long-phase), and 72.2% on FONTS, with average of 1027
+codelets
+
+Thus, we're at 84.7% overall, to Netrec+'s 79.2% (p. 321 of GEM thesis)
+
+SHORT-TEST
+(output/shorty-final)
+		
+GEM	1427.8	89.0%
+JAR-97	430.2	90.8%
+JAR-99	276.7	95.5%

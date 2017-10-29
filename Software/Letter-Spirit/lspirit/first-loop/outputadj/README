@@ -1,0 +1,15 @@
+real-test: output lines of final (mid-Nov) adj hard test
+brief: TRAIN font, TEST cat, RT/RW of real-test
+
+(RW= WRONG; transposed to make greps easier)
+
+***
+
+Didn't rigrously go through all the graded files of medium-arnv and
+thermo-down, but my conclusion is that heavy-arnv is the best
+
+Namely, thermostat changes should be multiplied my 6, and that the
+weights for importance of ar, vtv-nv, and rel-nv should be 10-10-1
+
+var-*-graded has the graded (RT/WR) output of variations on the same
+test set with 6, 3, or 1 letters in the TRAINing set

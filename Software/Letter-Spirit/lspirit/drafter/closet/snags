@@ -1,0 +1,46 @@
+SS weirdos, 5-25
+
+right-downbowl  7  25  28
+right-tail  22  25  28
+z-cap  5
+s-crossbar  7  22
+right-halfarc  21  7  22
+e-tail  26  29  12  13
+e-bowl  5  4  20  23  26  10
+center-post  18  21  24  27  11
+
+rerun on those, with no new compilation
+
+right-tail  22  25  28  31
+s-crossbar  6  7
+e-tail  23  8  9
+center-post  15  18  21  24  9
+e-bowl  5  4  20  23  8  9
+right-halfarc  21  51
+z-cap  4  5
+right-downbowl  7  25  9
+
+all impeccable besides
+
+right-halfarc  21  51
+right-downbowl  7  25  9
+
+third try
+
+right-halfarc  21  24  9
+right-downbowl  7  25  9
+
+***
+
+after serious parameter and code revision:
+
+left-downbowl  7  6  23  26  10  11
+left-halfarch  4  21
+s-base  8  9  25  7  24  27
+e-tail  26  10  11  28
+e-bowl  5  4  20  23  26  10
+
+yucky on the second try:
+
+s-base  23  6  7  25
+left-downbowl  7  6  23  26  40  39  25

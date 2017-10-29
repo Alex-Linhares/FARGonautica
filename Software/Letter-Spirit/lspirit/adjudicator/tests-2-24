@@ -1,0 +1,67 @@
+*universal-sps* level after running on all 26
+
+ss
+
+ ((*literal-motifs* ((4 5) (20 23)))
+  (*turn-45-motifs* ((180)))
+  (*abstract-rules*
+    (at-least-2
+      ban-diagonal-quanta
+      ban-backslash-quanta
+      ban-foreslash-quanta
+      ban-135-angle
+      ban-45-135-angle))
+  (*translate-motifs* ((*w* *s*) (*n* *n*) (*e*)))
+  (*turn-90-motifs* ((*s* *s* *w*)))
+  (*relative-nvs* ())
+  (*map-nvs* ())
+  (*turn-180-motifs* ())))
+
+br
+
+ ((*abstract-rules*
+    (at-most-2 at-most-3 ban-backslash-quanta))
+  (*literal-motifs* ((36 5) (36 23)))
+  (*relative-nvs* ((tips (down-tip *inward*))))
+  (*translate-motifs* ((*sw* *s*)))
+
+bt
+
+ ((*turn-90-motifs* ((*sw* *nw*)))
+  (*relative-nvs*
+    ((tips (down-tip *inward*))
+     (tips (down-tip *n*))
+     (floor more)
+     (curve more)))
+  (*literal-motifs* ((39 50 20) (25 22) (50 20 4) (20 50)))
+  (*translate-motifs* ((*w* *n*)))
+  (*abstract-rules*
+    (ban-corners at-most-2 ban-topbox at-most-3))
+
+sh
+
+ ((*turn-90-motifs*
+    ((*s* *w* *w* *n*) (*w* *s* *s*) (*s* *s*)))
+  (*literal-motifs* ((23 8) (25 22)))
+  (*relative-nvs*
+    ((height less) (right-edge less) (width less)))
+  (*abstract-rules*
+    (at-most-2
+      ban-45-135-angle
+      ban-foreslash-quanta
+      ban-diagonal-quanta
+      ban-45-angle
+      at-most-3
+      ban-135-angle))
+  (*translate-motifs* ((*e* *n* *n*) (*w* *n* *n*)))
+  (*turn-45-motifs* ((-90)))
+
+sl
+
+ ((*turn-180-motifs* ((*sw* *sw*)))
+  (*abstract-rules*
+    (at-most-2 at-most-3 ban-backslash-quanta))
+  (*literal-motifs* ((23 38 37) (38 37)))
+  (*turn-45-motifs* ((-45)))
+
+after running on only a-f good SPs were in levels 3 and 4 of the TF

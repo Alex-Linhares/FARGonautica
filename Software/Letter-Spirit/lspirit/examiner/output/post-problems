@@ -1,0 +1,87 @@
+	Out of 131 errors, 111 were in one of these categories:
+	m, u, v, w, ran out of time
+	Ran out of time was 57, of which 28 had something at act 100
+	On letters besides m, u, v, w and ran out of time, 97.8%
+
+	70 gridletters had a problem once or more
+	26 only had one type of problem: running out of time
+	13, after review, have problems that won't be solved tonight
+		(12/22/98)
+
+
+	Also, why are *joints* so short? We could use that info!
+
+Made corrections here as I went, so the later benefited from the
+earlier
+
+			Diagnosis
+e 0fc00b00000000	Can get fast
+e 0d400a000000a0	Gestalt parse bombs; Slow to parse; Got in 707
+e 0c800900070000	Gestalt parse bombs; Slow to parse; Got in 214
+e 0cc00900060000	What problem? Got in <100
+e 0c0008000500a0	Gestalt parse bombs; Slow to parse; Got in 366
+g 08400A48001062	Role-def: right-hook's touch omitted 2ms
+i 04000480400000	What problem? Got in <100
+i 14000480000000	What problem? Got in <100
+k 04004100880090	Unparseable; thinks it's an 'f'
+l 00012480800000	Role-def: tips weird
+m 0c000fc0000000	What problem? Got in <100
+m 000007c00c0000	What problem? Got in 101
+m 000005c0080040	What problem? Got in 127 (second parse)
+m 080007000d0000	Better n than m
+m 000007000D0000	Better n than m
+m 00000bc0040080	Doesn't hate tips as n enough; I increased this
+m 000001c00800c0	Just weird; got in 1000, though
+m 040007c0080000	Still doesn't hate n tips; never parsed right
+m 08000dc0000040	What problem? Got in <100
+m 00000d400000c0	Better n than m; Can get it as m
+m 000007400C0000	Better n than m; Can get it as m
+m 010009C0000080	What problem? Got in <100
+m 020003C0040000	What problem? Got in <100
+n 04000340080080	Unparseable
+q 00840348091040	Got it after a few parses
+q 00840248071000	What problem? Got in <100
+q 064402c8081000	What problem? Got in <100
+r 00000100080040	Role-def: tips weird
+r 0c000900040000	Role-def: different tips weird
+s 07800000090000	What problem? Got in <100
+s 06c00000080010	What problem? Got in <100
+s 00400400000070	What problem? Got in <100
+s 08c000000000d0	What problem? Got in <100
+t 0C002480000000	Role-def: tips weird
+t 04002480080000	Role-def: allow straight t-post
+t 0c012480000000	Role-def: allow tall, straight t-post
+u 00c00b40000000	What problem? Got in <100
+u 00800B00010000	What problem? Got in <100
+u 00400a40000020	What problem? Got in <100
+u 00400240080020	Role-def: disallow horiz v tips
+v 00000880040020	Already fixed by previous changes!
+v 00000200090020	Already fixed by previous changes!
+v 000000800c0020	Already fixed by previous changes!
+v 02000280090000	Already fixed by previous changes!
+v 01000880000060	Already fixed by previous changes!
+w 00000f80030000	Got it in <500
+w 00c00fc0000000	What problem? Got in <100
+w 00c00bc0000000	Can get it, but has trouble parsing
+w 00000EC0000030	Got it in <500
+w 00000F40020010	What problem? Got in <100
+w 00000b40020010	Better u than w
+w 000008c0000070	What problem? Got in <100
+w 000003800b0000	Better u than w
+w 00000ac0000030	Better u than w
+w 00000B80030000	Better u than w
+w 00000e80010020	Better u than w
+w 00000a80010020	What problem? Got in <100
+w 00400ec0000020	What problem? Got in <100
+w 00800B80010000	Got it in <500
+w 00C009C0000040	What problem? Got in <100
+w 00C003C0080000	Got it in 1467
+x 08400780060000	Role-def: tips weird
+x 04800840060090	Role-def: different tips weird
+y 00040249000092	SW-forbid to make u work broke y
+y 00800348091002	SW-forbid to make u work broke y
+z 0CC00840060000	What problem? Got in <100
+z 0cc00040060000	Saw this as u once!!!
+z 0CC00800060000	What problem? Got in <100
+z 0C800800070000	What problem? Got in <100
+z 08c00000060040	Won't parse right usually (mid-q cross?)

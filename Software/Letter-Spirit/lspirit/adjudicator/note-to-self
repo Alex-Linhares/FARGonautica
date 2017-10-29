@@ -1,0 +1,31 @@
+Examiner
+big slips = big punish DONE, longer phases DONE, complete tip role
+defs, allow one fewer label to spark in later phases DONE, get rid of
+inelegant 2-offset in phases DONE, Goodness measure DONE
+
+dimension-punish and longer phases does a bit for correctness, but
+mainly just slows things down (how much?)
+
+Adjudicator
+compute temperate, save old letter information in Library, do not
+focus bridge postings on empty levels, more SP detectors DONE, fewer
+bridges DONE, have role-filler [mis]match with Library affect Temperature,
+routines for removing bad letter, at-mosts need to be excluded from
+several category norm lists DONE
+
+HEY: mismatch with Library affects Temperature; mid-level NVs
+currently count too much; importance of motifs depends upon size
+
+gotcha -- did that and more, 3/17/99
+
+NOW -- maybe give temperature reward not only for fillers found in
+Library, but even for mirror images (etc?) of fillers in Library?
+
+library fillers: (apply append (map cadr *library*))
+
+Drafter
+
+
+Glue
+letter and role reflections and rotations, selection, activations for
+decision-making (Drafter)

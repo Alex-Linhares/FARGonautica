@@ -1,0 +1,393 @@
+Chez Scheme Transcript [Tue Sep 28 15:42:08 1999]
+>>>>>>>>>>>> (try-gridfont 'flournoy-ranch)
+Choices: ()  Tried j Ruled (22 25 28 43 12) a y2
+Choices: ()  Tried j Ruled (22 25 28 43 12 35) a j1 score of 62.209
+Choices: (b)  Tried d Ruled (1 20 34 3 19 22 7) a j1
+Choices: ()  Tried i Ruled (35) a j1
+Choices: ()  Tried x Ruled (38 37 48 51) a x1 score of 75.652
+Choices: (c)  Tried r Ruled (4 5 22 20 23) a r1 score of 80.346
+Choices: ()  Tried k Ruled (14 17 20 23 36 5 50 9) a k1 score of 72.783
+Choices: ()  Tried m Ruled (4 21 24 20 23 5 22 25) a m1 score of 85.872
+Choices: ()  Tried z Ruled (8 9 38 37 36 5) a z1 score of 64.546
+Choices: ()  Tried v Ruled (4 21 24 22 39) a v1 score of 100.513
+Choices: ()  Tried t Ruled (18 21 38 36 5) a r1
+Choices: ()  Tried n Ruled (20 23 34 33) a l1
+Choices: ()  Tried w Ruled (20 23 8 9 49 25 51) a w1 score of 92.901
+Choices: (g)  Tried y Ruled (20 23 8 9 22 25 28 43 12) a y1 score of 55.833
+Choices: (b)  Tried p Ruled (36 5 22 25 9 8 20 23 26 29) a p1 score of 80.742
+Choices: (b)  Tried q Ruled (20 34 3 35 21 24 22 25 28 31) a p1
+Choices: (b)  Borrow 
+Error: attempt to apply non-procedure 0.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> (borrow-execute '(chop o *rightedge-zone*))
+
+Error in car: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> (borrow-execute '(chop o (eval *rightedge-zone*)))
+
+Error in car: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> (borrow-execute '(steal b (eval *horiz-flip-list*)))
+
+Error: attempt to apply non-procedure 0.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> (eval *horiz-flip-list*)
+
+Error: attempt to apply non-procedure 0.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> *rightedge-zone*
+(16 19 22 25 28 31)
+>>>>>>>>>>>>  (load "borrow.ss")
+>>>>>>>>>>>> (borrow-execute '(steal b  *horiz-flip-list*))
+
+Error in caar: incorrect list structure *horiz-flip-list*.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> (load "borrow.ss")
+
+Error in read: unexpected end-of-file on #<input port borrow.ss>.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> (load "borrow.ss")
+>>>>>>>>>>>> (borrow-execute '(chop o *rightedge-zone*))
+
+Error in car: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>>  (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in borrow-execute>                                 : s
+  continuation:          #<top level continuation>
+  procedure code:        (lambda (borrow-string) ((...) (...)))
+  call code:             (car (lookup-list cat *library*))
+  free variables:
+  0. borrow-string:      (chop o *rightedge-zone*)
+  1. operation:          chop
+#<continuation in borrow-execute>                                 : d
+#<top level continuation>                                         : s
+Invalid command.  Type ? for options.
+#<top level continuation>                                         : q
+
+debug> e
+>>>>>>>>>>>> (cadr '(chop o *rightedge-zone*))
+o
+>>>>>>>>>>>> (caddr '(chop o *rightedge-zone*))
+*rightedge-zone*
+>>>>>>>>>>>> (subtract '(1 2 3 4) '(1 3))
+(2 4)
+>>>>>>>>>>>>  (load "borrow.ss")
+>>>>>>>>>>>>  (caddr '(chop o *rightedge-zone*))
+*rightedge-zone*
+>>>>>>>>>>>>  (borrow-execute '(chop o *rightedge-zone*))
+
+Error in car: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> (debug) 
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in borrow-execute>                                 : s
+  continuation:          #<top level continuation>
+  procedure code:        (lambda (borrow-string) ((...) (...)))
+  call code:             (car (lookup-list cat *library*))
+  free variables:
+  0. borrow-string:      (chop o *rightedge-zone*)
+  1. operation:          chop
+#<continuation in borrow-execute>                                 : d
+#<top level continuation>                                         : q
+
+debug> e
+>>>>>>>>>>>> (lookup-list 'b *library*)
+((8 9 14 17 20 22 24 25 37 44 50)
+ b2
+ ((left-post (44 14 17 20 50 8)) (circle (22 37 24 9 25)))
+ ((*relative-nvs*
+    ((left-post
+       ((tips (tip *se*))
+        (tips (up-tip *se*))
+        (tips (up-tip *inward*))
+        (tips (tip *inward*))
+        (curve more)
+        (width more)
+        (weight more)
+        (right-edge more)))
+     (circle ((width less) (left-edge less)))))
+  (*val-to-val-nvs*
+    ((left-post
+       ((tips (up-tip (1 9)))
+        (width (skinny half-wide))
+        (tips (tip (1 9)))
+        (curve (*slight-right* *straight*))
+        (right-edge (r-edge-lf r-edge-md))
+        (weight (medium-wt heavy))))
+     (circle
+       ((left-edge (l-edge-lf l-edge-md))
+        (width (wide half-wide))))))
+  (*abstract-rules* (at-most-3))
+  (*literal-motifs*
+    ((9 25 22)
+     (25 22 37)
+     (44 14 17 20)
+     (8 9 25)
+     (17 20)
+     (8 50 20 17 14)
+     (8 24)
+     (8 9 25 22)
+     (22 37)
+     (25 9 50 20 17)
+     (9 24 37 22 25)
+     (25 9 24)
+     (25 9)
+     (24 8)
+     (22 37 24 50 20)
+     (9 24)
+     (25 22 37 24 9)
+     (20 50 24 37 22)
+     (50 20 17 14 44)
+     (14 44)
+     (50 9)
+     (22 37 24 8)
+     (17 20 50 9 25)
+     (37 22 25 9 24)
+     (37 22 25 9 8)
+     (20 17)
+     (14 17 20 50 24)
+     (24 50 20 17 14)
+     (22 37 24 9 25)
+     (37 22 25)
+     (17 14 44)
+     (14 17 20 50 8)
+     (22 25 9 24 37)
+     (8 24 37 22 25)
+     (50 24 37 22 25)
+     (37 24 9 25 22)
+     (25 9 24 37 22)
+     (14 17 20 50 9)
+     (37 24 8)
+     (8 24 37 22)
+     (50 9 25 22)
+     (44 14 17 20 50)
+     (50 9 25)
+     (20 17 14 44)
+     (22 25 9 8)
+     (8 9 25 22 37)
+     (22 25)
+     (9 25 22 37 24)))
+  (*translate-motifs*
+    ((*n* *sw* *s* *e*)
+     (*nw* *n* *n*)
+     (*s* *s* *se* *e* *n*)
+     (*s* *s*)
+     (*s* *e* *n* *n*)
+     (*ne* *s* *s* *w*)
+     (*sw* *s* *nw* *n* *n*)
+     (*n* *sw* *s* *e* *n*)
+     (*nw* *s* *s* *s*)
+     (*e* *n* *n* *sw* *s*)
+     (*nw* *s* *s*)
+     (*sw* *s* *e* *n* *n*)
+     (*w* *n* *ne* *s* *s*)
+     (*s* *e* *n* *n* *sw*)
+     (*nw* *n* *n* *n* *se*)
+     (*e* *nw* *n* *n* *n*)
+     (*n* *sw* *s* *nw* *n*)
+     (*s* *w* *nw* *n* *n*)
+     (*s* *e*)
+     (*se* *n* *ne* *s* *s*)
+     (*ne* *s* *s* *w* *nw*)
+     (*n* *se*)
+     (*ne* *s* *s* *w* *n*)
+     (*sw* *s* *w*)
+     (*s* *s* *se* *w*)
+     (*se* *n*)
+     (*ne* *s* *s*)
+     (*n* *n* *sw* *s* *w*)
+     (*se* *e* *n* *n* *sw*)
+     (*se* *e* *n* *n*)
+     (*w* *n* *ne* *s*)
+     (*s* *s* *w*)
+     (*s* *s* *w* *n* *ne*)
+     (*s* *w* *n*)
+     (*e* *e* *n* *n* *sw*)
+     (*n* *n* *n* *se*)
+     (*w* *w*)
+     (*n* *ne* *s*)
+     (*e* *n* *ne* *s* *s*)
+     (*n* *n* *se*)
+     (*w* *nw* *n* *n* *n*)
+     (*s* *se* *e* *n* *n*)
+     (*s* *nw* *n* *n* *n*)
+     (*nw* *s* *s* *s* *se*)
+     (*s* *w*)))
+  (*turn-180-motifs*
+    ((*n* *sw*)
+     (*s* *nw* *n*)
+     (*s* *s* *se*)
+     (*n* *sw* *s* *e*)
+     (*n* *sw* *s* *nw* *n*)
+     (*n* *n* *sw* *s* *w*)
+     (*s* *s* *s* *se* *e*)
+     (*n* *n* *sw* *s* *nw*)
+     (*s* *s* *s* *se* *n*)
+     (*se* *n* *ne* *s* *s*)
+     (*s* *nw* *n* *n* *n*)
+     (*n* *n*)
+     (*se* *w*)
+     (*ne* *s* *s* *w* *w*)
+     (*s* *e* *n* *n* *sw*)
+     (*nw* *n*)
+     (*s* *s* *w*)
+     (*nw* *s* *s* *s* *se*)
+     (*e* *e* *n* *n* *sw*)
+     (*w* *nw* *n* *n* *n*)
+     (*n* *n* *se*)
+     (*e* *nw*)
+     (*n* *se*)
+     (*ne* *s* *s* *w* *n*)
+     (*se* *e* *n* *n* *sw*)
+     (*n* *sw* *s* *e* *n*)
+     (*s* *s* *w* *n* *ne*)
+     (*n* *ne*)
+     (*s* *s* *w* *w*)
+     (*s* *w* *nw* *n* *n*)
+     (*w* *w*)
+     (*s* *s* *s* *se* *w*)
+     (*n* *n* *n* *se*)
+     (*e* *n* *n* *sw* *s*)
+     (*ne* *s* *s*)
+     (*se* *e* *n* *n*)
+     (*s* *s* *se* *w*)
+     (*n* *n* *sw*)
+     (*s* *s* *se* *e* *n*)
+     (*w* *n* *ne* *s* *s*)
+     (*s* *w* *w*)
+     (*e* *n* *ne* *s* *s*)
+     (*nw* *n* *n* *n* *se*)
+     (*s* *s* *se* *n* *ne*)
+     (*e* *nw* *n* *n* *n*)
+     (*s* *w*)
+     (*sw* *s* *nw* *n* *n*)
+     (*n* *ne* *s* *s* *w*)))
+  (*turn-90-motifs*
+    ((*se* *e* *n* *n* *sw*)
+     (*s* *nw* *n* *n*)
+     (*n* *ne*)
+     (*ne* *s* *s* *w* *nw*)
+     (*e* *n* *ne* *s* *s*)
+     (*s* *s* *w* *w*)
+     (*s* *s* *s* *se* *n*)
+     (*se* *w*)
+     (*e* *e* *n* *n* *sw*)
+     (*s* *nw* *n* *n* *n*)
+     (*e* *n*)
+     (*s* *e* *n* *n*)
+     (*s* *se*)
+     (*s* *w*)
+     (*nw* *n* *n* *n* *se*)
+     (*w* *n* *ne*)
+     (*n* *sw* *s*)
+     (*s* *w* *n*)
+     (*s* *s*)
+     (*nw* *s* *s* *s*)
+     (*n* *sw* *s* *w*)
+     (*s* *se* *w*)
+     (*s* *se* *e*)
+     (*n* *sw* *s* *nw*)
+     (*s* *s* *s* *se* *e*)
+     (*w* *w*)
+     (*s* *s* *se* *w*)
+     (*s* *w* *n* *ne* *s*)
+     (*s* *e*)
+     (*e* *n* *n* *sw* *s*)
+     (*s* *s* *w* *n* *ne*)
+     (*w* *nw* *n* *n* *n*)
+     (*e* *nw* *n* *n* *n*)
+     (*n* *n* *sw* *s* *e*)
+     (*n* *n* *sw* *s* *nw*)
+     (*sw* *s* *w*)
+     (*n* *n* *n* *se*)
+     (*sw* *s* *e* *n*)
+     (*s* *w* *nw* *n* *n*)
+     (*n* *ne* *s* *s* *w*)
+     (*n* *n* *se*)
+     (*w* *n* *ne* *s* *s*)
+     (*s* *se* *e* *n* *n*)
+     (*sw* *s* *nw* *n* *n*)
+     (*nw* *s* *s* *s* *se*)
+     (*n* *se*)
+     (*s* *w* *w*)
+     (*n* *n*)
+     (*n* *sw* *s* *nw* *n*)
+     (*se* *e* *n*)
+     (*s* *s* *w* *nw* *n*)
+     (*s* *s* *se* *e* *n*)
+     (*ne* *s* *s* *w* *n*)))
+  (*turn-45-motifs*
+    ((-135 -45 135 45)
+     (180 -135 -45 135)
+     (180 -135 -135 -90)
+     (-90 135 45 180)
+     (180 -90)
+     (-135)
+     (90 180)
+     (-45 135 45 180)
+     (-90 135)
+     (180 -45 -135 90)
+     (180 180 -135 -45)
+     (180 -90 180 -45)
+     (-45 -135 90)
+     (-45)
+     (180 90 90 135)
+     (-135 45 135 180)
+     (180 90)
+     (-45 180 180)
+     (45 180 90 180)
+     (-135 -90 -90)
+     (180 -135 45)
+     (-135 -90 180 -45)
+     (180 180 -135 45)
+     (135)
+     (-135 -135 -90 180)
+     (90 135 45)
+     (-135 45)
+     (180 90 180)
+     (-90 135 45)
+     (90 135 45 180)
+     (135 45 180 90)
+     (-90 -90 180 -45)
+     (180 45)
+     (180)
+     (135 135 180 180)
+     (-90 180 -45 -135)
+     (-135 90)
+     (-45 180 180 -135)
+     (90 90 135 45)
+     (45 180 90 90)
+     (45)
+     (-45 135 180 180)
+     (180 180 45)))))
+>>>>>>>>>>>> (car (lookup-list 'b *library*))
+(8 9 14 17 20 22 24 25 37 44 50)
+>>>>>>>>>>>>  (borrow-execute '(chop o *rightedge-zone*))
+
+Error in car: () is not a pair.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> (borrow-execute '(chop g *ascender-zone*))
+(4 5 20 21 23 25 28 31 38 49 55)
+>>>>>>>>>>>> (load "borrow.ss")
+>>>>>>>>>>>>  (borrow-execute '(chop g *x-bar*))
+
+Error: variable *x-bar* is not bound.
+Type (debug) to enter the debugger.
+>>>>>>>>>>>> (load "know.ss")
+>>>>>>>>>>>>  (borrow-execute '(chop g *x-bar*))
+(20 21 23 25 28 31 38 49 55)
+>>>>>>>>>>>> (try-cats)
+Choices: ()  Tried n Ruled (4 5 22 25 20 23) a n1 score of 85.763
+Choices: ()  Tried u Ruled (22 25 20 23 8 9) a u1 score of 77.511
+Choices: (b)  Tried h Ruled (4 5 22 25 14 17 20 23) a h1 score of 85.107
+Choices: ()  Tried i Ruled (6 7 25 9 8 26 10 11 35) a j1
+>>>>>>>>>>>> (define try-cats
+  (lambda ()
+    (if (< *total-draws* 300)
+	(begin
+	  (try-cat (pick-category))
+	  (try-cats)))))
+>>>>>>>>>>>> (transcript-off)

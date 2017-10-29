@@ -1,0 +1,564 @@
+unit ExternalMemoryUnit;
+
+
+{Uses BoardViewerUnit;}
+
+interface
+uses graphics, classes;
+
+const Queenvalue = 20; KingValue=100;
+
+type
+    TPiecetype = (None, Pawn, Knight, Rook, King, Queen, Bishop);
+
+    Tsquare = record
+                 X: integer;
+                 Y: Integer;
+              end;
+
+    PTsquare = ^Tsquare;
+
+    TTerrain = record
+                 white: boolean;
+                 piece: tpiecetype;
+                 distance:integer;
+                 previous:Tsquare;
+                 blockedness:integer;
+               end;
+
+    TpieceMobility = array [1..8,1..8] of TTerrain;
+
+    TPiece = class
+                 sq: Tsquare;
+                 PPosition: ^Tsquare;
+                 White: boolean;
+                 Pwhite: ^boolean;
+                 PieceType: TPieceType;
+                 PieceBitmap: TBitmap;
+                 Mobility: TPieceMobility;
+                 DynamicValue:integer;
+                 PieceName, Fullname: string;
+                                                    
+                 AbstractRoles: Tlist;
+
+                 Safety: integer; {Reachable by enemy? Guarded by friends?} {use scale of 1 to 1000}
+                 UnsafeMobility: integer;
+                 {SafeMobility1, SafeMobility2, etc}
+                 Jewlery:integer;
+                 Reaches: integer; {Value of /link to the pieces reached by this piece}
+
+                 Constructor create (P: Tsquare; W:Boolean; Tp:TPieceType);
+                 Procedure Display (Canvas:Tcanvas);
+                 Procedure Display2 (Canvas:Tcanvas);
+                 function getnextmoves(P:TSquare):Tlist; virtual; abstract;
+                 function GetThreathenedSquares(P:Tsquare):Tlist; virtual; abstract;
+                 procedure ComputeMobility;
+                 function FullId:string;
+                 Destructor destroy;
+            end;
+
+    PTPiece = ^TPiece;
+
+    TPawn = class (Tpiece)
+                  function getnextmoves(P:Tsquare):Tlist; override;
+                  function GetThreathenedSquares(P:Tsquare):Tlist; override;
+            end;
+    TKing = class (Tpiece)
+                  function getnextmoves(P:Tsquare):Tlist; override;
+                  function GetThreathenedSquares(P:Tsquare):Tlist; override;
+            end;
+
+    TBishop = class (Tpiece)
+                  function getnextmoves(P:Tsquare):Tlist; override;
+                  function GetThreathenedSquares(P:Tsquare):Tlist; override;
+            end;
+
+    TQueen = class (Tpiece)
+                  function getnextmoves(P:Tsquare):Tlist; override;
+                  function GetThreathenedSquares(P:Tsquare):Tlist; override;
+            end;
+
+   TExternalPiece = class (TPiece)
+                       constructor create(P: Tsquare; W:Boolean; Tp:TPieceType);
+                   end;
+
+
+   TExternalMemory = class
+                         square:Array[1..8,1..8] of Tpiecetype;
+                         white:Array[1..8,1..8] of boolean;
+                         found:array[1..8,1..8] of boolean;
+                         flood:Array[1..8,1..8]of integer;
+                         Constructor create;
+                    end;
+
+   TExternalmemorypiece = class (TexternalMemory)
+                               Piece: TPiece;
+                               constructor create(P: Tsquare; W:Boolean; Tp:TPieceType);
+                           end;
+
+function convertsquare(x,y:integer):string;
+
+var     ExternalMemory:  TExternalMemory;
+
+
+implementation
+
+function convertsquare(x,y:integer):string;
+var y1:integer; s1,s2,s:string;
+begin
+     Case x of
+          1:s1:='A';
+          2:s1:='B';
+          3:s1:='C';
+          4:s1:='D';
+          5:s1:='E';
+          6:s1:='F';
+          7:s1:='G';
+          8:s1:='H';
+     end;
+     if (x<1) or (x>8) then
+     begin
+          s:='error';
+     end else
+     begin
+          y1:=9-Y;
+          str(y1,s2);
+          S:=s1+s2;
+     end;
+     result:=s;
+end;
+
+Procedure TPiece.ComputeMobility;
+var x,y,count1,count2:integer;
+begin
+     count1:=0;
+     count2:=0;
+     for x:=1 to 8 do
+         for y:= 1 to 8 do
+         begin
+              if (mobility[x,y].distance<>10000) and (mobility[x,y].distance>0) then
+              begin
+                   count1:=count1+1;
+                   {
+                   jewlery: contando os valores das pecas acessiveis
+                   count2:=count2+Jewlery?;
+                   }
+              end;
+         end;
+     UnsafeMobility:=Count1;
+end;
+
+
+function TPiece.FullId:string;
+var s:string;
+begin
+     if white then
+        s:= 'White ' else s:='Black ';
+     s:=s+piecename+' at '+convertsquare(sq.x,sq.y);
+     Fullname:=s;
+     result:=s;
+end;
+
+
+
+{=========================================================================}
+function TQueen.getnextmoves(P:Tsquare):Tlist;
+var Moves:Tlist; Move:^tsquare; t,ty:integer;
+    x,y,deltax,deltay:integer;
+begin
+     Moves:=Tlist.create;
+     x:= P.x; y:= p.y;
+
+     {down-right}
+     deltax:=1; deltay:=1;
+     t:=1; {unbounded:=true;}
+     while (x+deltax*t<9) and (y+deltay*t<9) do
+     begin
+          new(move);
+          Move^.x:=x+deltax*t;
+          MOve^.y:=y+deltay*t;
+          Moves.add(Move);
+          if (externalMemory.square[x+deltax*t,y+deltay*t]<>none) then break;
+          t:=t+1;
+     end;
+     {up-right}
+     deltax:=1; deltay:=-1;
+     t:=1;
+     while (x+deltax*t<9) and (y+deltay*t>0) do
+     begin
+          new(move);
+          Move^.x:=x+deltax*t;
+          MOve^.y:=y+deltay*t;
+          Moves.add(Move);
+          if (externalMemory.square[x+deltax*t,y+deltay*t]<>none) then break;
+          t:=t+1;
+     end;
+     {down-left}
+     deltax:=-1; deltay:=1;
+     t:=1;
+     while (x+deltax*t>0) and (y+deltay*t<9) do
+     begin
+          new(move);
+          Move^.x:=x+deltax*t;
+          MOve^.y:=y+deltay*t;
+          Moves.add(Move);
+          if (externalMemory.square[x+deltax*t,y+deltay*t]<>none) then break;
+          t:=t+1;
+     end;
+     {up-Left}
+     deltax:=-1; deltay:=-1;
+     t:=1;
+     while (x+deltax*t>0) and (y+deltay*t>0) do
+     begin
+          new(move);
+          Move^.x:=x+deltax*t;
+          MOve^.y:=y+deltay*t;
+          Moves.add(Move);
+          if (externalMemory.square[x+deltax*t,y+deltay*t]<>none) then break;
+          t:=t+1;
+     end;
+     result:=moves;
+end;
+
+function TQueen.GetThreathenedSquares(P:Tsquare):Tlist;
+begin
+     result:=Getnextmoves(p);
+end;
+
+function TPawn.getnextmoves(P:Tsquare):Tlist;
+var Moves:Tlist; Move:^tsquare; t,ty:integer;
+begin
+     Moves:=Tlist.create;
+     if (white) then
+     begin
+          if (P.y>1) then
+          begin
+               t:=p.x;
+               ty:=p.y-1;
+
+               if (externalmemory.square[P.x,ty]=none) then
+               begin
+                    new(move);
+                    Move^.x:=t;
+                    MOve^.y:=ty;
+                    Moves.add(Move);
+               end;
+               t:=p.x-1;
+               while (t<=p.x+1) do
+               begin
+                   if (t>0) and (t<9) then
+                   begin
+                      if (externalmemory.square[t,ty]<>none) and (externalmemory.white[t,ty]=false) then
+                      begin
+                           new(move);
+                           Move^.x:=t;
+                           MOve^.y:=ty;
+                           Moves.add(Move);
+                      end;
+                   end;
+                   t:=t+2;
+               end;
+          end;
+     end
+     else
+     begin
+          if (P.y<8) then
+          begin
+               t:=p.x;
+               ty:=p.y+1;
+
+               if (externalmemory.square[P.x,ty]=none) then
+               begin
+                    new(move);
+                    Move^.x:=t;
+                    MOve^.y:=ty;
+                    Moves.add(Move);
+               end;
+
+               t:=p.x-1;
+               while (t<=p.x+1) do
+               begin
+                   if (t>0) and (t<9) then
+                   begin
+                      if (externalmemory.square[t,ty]<>none) and (externalmemory.white[t,ty]=true) then
+                      begin
+                           new(move);
+                           Move^.x:=t;
+                           MOve^.y:=ty;
+                           Moves.add(Move);
+                      end;
+                   end;
+                   t:=t+2;
+               end;
+          end;
+     end;
+     result:=Moves;
+end;
+
+
+{=========================================================================}
+function TBishop.getnextmoves(P:Tsquare):Tlist;
+var Moves:Tlist; Move:^tsquare; t,ty:integer;
+    x,y,deltax,deltay:integer;
+begin
+     Moves:=Tlist.create;
+     x:= P.x; y:= p.y;
+
+     {down-right}
+     deltax:=1; deltay:=1;
+     t:=1; {unbounded:=true;}
+     while (x+deltax*t<9) and (y+deltay*t<9) do
+     begin
+          new(move);
+          Move^.x:=x+deltax*t;
+          MOve^.y:=y+deltay*t;
+          Moves.add(Move);
+          if (externalMemory.square[x+deltax*t,y+deltay*t]<>none) then break;
+          t:=t+1;
+     end;
+     {up-right}
+     deltax:=1; deltay:=-1;
+     t:=1;
+     while (x+deltax*t<9) and (y+deltay*t>0) do
+     begin
+          new(move);
+          Move^.x:=x+deltax*t;
+          MOve^.y:=y+deltay*t;
+          Moves.add(Move);
+          if (externalMemory.square[x+deltax*t,y+deltay*t]<>none) then break;
+          t:=t+1;
+     end;
+     {down-left}
+     deltax:=-1; deltay:=1;
+     t:=1;
+     while (x+deltax*t>0) and (y+deltay*t<9) do
+     begin
+          new(move);
+          Move^.x:=x+deltax*t;
+          MOve^.y:=y+deltay*t;
+          Moves.add(Move);
+          if (externalMemory.square[x+deltax*t,y+deltay*t]<>none) then break;
+          t:=t+1;
+     end;
+     {up-Left}
+     deltax:=-1; deltay:=-1;
+     t:=1;
+     while (x+deltax*t>0) and (y+deltay*t>0) do
+     begin
+          new(move);
+          Move^.x:=x+deltax*t;
+          MOve^.y:=y+deltay*t;
+          Moves.add(Move);
+          if (externalMemory.square[x+deltax*t,y+deltay*t]<>none) then break;
+          t:=t+1;
+     end;
+     result:=moves;
+end;
+
+function TBishop.GetThreathenedSquares(P:Tsquare):Tlist;
+begin
+     result:=Getnextmoves(p);
+end;
+
+
+{===========================================================================}
+
+
+function TKing.getnextmoves(P:Tsquare):Tlist;
+var Moves:Tlist; x1,y1,t1,t2:integer;    Move:^tsquare;
+begin
+     Moves:=Tlist.create;
+
+     for t1:=-1 to 1 do
+         for t2:= -1 to 1 do
+             if (not ((t1=0) and (t2=0))) then
+             begin
+                  x1:=P.x+t1;
+                  y1:=P.y+t2;
+                  if (y1>0) and (y1<9) and (x1>0) and (x1<9)then
+                  begin
+                       new(move);
+                       Move^.x:=x1;
+                       Move^.y:=y1;
+                       Moves.Add(move);
+                  end;
+         end;
+     result:=Moves;
+end;
+
+function TPawn.GetThreathenedSquares(P:Tsquare):Tlist;
+var Moves:Tlist; Move:^tsquare; t,ty:integer;
+begin
+     Moves:=Tlist.create; {incluir um dia threathens adicionais com movimento de 'capture en passant'}
+     if (white) then
+     begin
+          if (P.y>1) then
+          begin
+               t:=p.x;
+               ty:=p.y-1;
+
+               t:=p.x-1;
+               while (t<=p.x+1) do
+               begin
+                   if (t>0) and (t<9) then
+                   begin
+                        new(move);
+                        Move^.x:=t;
+                        MOve^.y:=ty;
+                        Moves.add(Move);
+                   end;
+                   t:=t+2;
+               end;
+          end;
+     end
+     else
+     begin
+          if (P.y<8) then
+          begin
+               t:=p.x;
+               ty:=p.y+1;
+
+               t:=p.x-1;
+               while (t<=p.x+1) do
+               begin
+                   if (t>0) and (t<9) then
+                   begin
+                        new(move);
+                        Move^.x:=t;
+                        MOve^.y:=ty;
+                        Moves.add(Move);
+                   end;
+                   t:=t+2;
+               end;
+          end;
+     end;
+     result:=Moves;
+end;
+
+
+
+function TKing.GetThreathenedSquares(P:Tsquare):Tlist;
+begin
+     result:=GetNextMoves(p);
+end;
+
+constructor TExternalMemory.create;
+var x,y:integer;
+begin
+     for x:= 1 to 8 do  {initializes with an empty board}
+         for y:= 1 to 8 do
+         begin
+              square[x,y]:=None;
+              found[x,y]:=false;
+              flood[x,y]:=-1;
+         end;
+end;
+constructor TExternalmemorypiece.create (P: Tsquare; W:Boolean; Tp:TPieceType);
+begin
+     tpiece.create (P,W,tp);
+     square[P.x,p.y]:=Tp;
+end;
+
+
+Constructor TexternalPiece.create(P: Tsquare; W:Boolean; Tp:TPieceType);
+begin
+     inherited;
+
+     Externalmemory.square[p.x,p.y]:=tp;
+     Externalmemory.white[p.x,p.y]:=W;
+end;
+
+Constructor TPiece.create (P: Tsquare; W:Boolean; Tp:TPieceType);
+var x,y:integer;
+begin
+     sq:=P;
+     pposition:=Addr(sq);
+     White:=w;
+     PieceType:=Tp;
+     PieceBitmap:=TBitmap.create;
+     Case PieceType of
+          King: begin
+                     if white then Piecebitmap.LoadFromFile('White_King.bmp')
+                     else PieceBitmap.LoadFromFile('Black_King.bmp');
+                     DynamicValue:=KingValue;
+                     PieceName:= 'King';
+                 end;
+          Queen: begin
+                      if white then Piecebitmap.LoadFromFile('White_Queen.bmp')
+                      else PieceBitmap.LoadFromFile('Black_Queen.bmp');
+                      DynamicValue:=QueenValue;
+                      PieceName:= 'Queen';
+                  end;
+          Knight: begin
+                       if white then Piecebitmap.LoadFromFile('White_Knight.bmp')
+                       else PieceBitmap.LoadFromFile('Black_Knight.bmp');
+                       PieceName:= 'Knight';
+                       DynamicValue:=8;
+                   end;
+          Bishop: begin
+                       if white then Piecebitmap.LoadFromFile('White_Bishop.bmp')
+                       else PieceBitmap.LoadFromFile('Black_Bishop.bmp');
+                       DynamicValue:=12;
+                       PieceName:= 'Bishop';
+                   end;
+          Rook: begin
+                     if white then Piecebitmap.LoadFromFile('White_Rook.bmp')
+                     else PieceBitmap.LoadFromFile('Black_Rook.bmp');
+                     DynamicValue:=12;
+                     Piecename:='Rook';
+                   end;
+          Pawn: begin
+                     if white then Piecebitmap.LoadFromFile('White_Pawn.bmp')
+                     else PieceBitmap.LoadFromFile('Black_Pawn.bmp');
+                     DynamicValue:=1;
+                     Piecename:='Pawn';
+                  end;
+     end;
+
+     for x:= 1 to 8 do
+         for y:= 1 to 8 do
+         begin
+              Mobility[x,y].distance:=10000;
+              Mobility[x,y].Blockedness:=0;
+              Mobility[x,y].Previous.x:=10000;
+              Mobility[x,y].Previous.y:=10000;
+         end;
+
+     AbstractRoles:=Tlist.create;   
+end;
+
+
+Procedure TPiece.Display (Canvas:Tcanvas);
+var x,y: integer; Color:Tcolor;
+begin
+     Canvas.Pen.Color:=clblack;
+
+     x:=50*(sq.X-1)+7;
+     y:=50*(sq.y-1)+7;
+
+     Canvas.Draw(x,y,PieceBitmap);
+     if ((sq.x+sq.y) mod 2)=1 then Color:= clDkGray else color:= clltGray;
+     Canvas.Brush.Color:=color;
+     Canvas.FloodFill(x+1,y+1,clwhite,fsSurface);
+end;
+
+Procedure TPiece.Display2 (Canvas:Tcanvas);
+var x,y: integer; Color:Tcolor;
+begin
+     Canvas.Pen.Color:=clblack;
+
+     x:=50*(sq.X-1)+7;
+     y:=50*(sq.y-1)+7;
+     Canvas.Copymode:=cmSrcAnd;	
+     Canvas.Draw(x,y,PieceBitmap);
+     if ((sq.x+sq.y) mod 2)=1 then Color:= clDkGray else color:= clltGray;
+     Canvas.Brush.Color:=color;
+end;
+
+Destructor TPiece.destroy;
+begin
+     PieceBitmap.free;
+end;
+
+
+end.

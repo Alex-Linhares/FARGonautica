@@ -1,0 +1,175 @@
+Chez Scheme Transcript [Mon Apr 24 03:19:56 2000]
+> *temperature*
+15.892717129660744
+> *promotions*
+((promote *turn-45-motifs* *two-time-sps* (180) (180))
+ (promote
+   *relative-nvs*
+   *occasional-sps*
+   (tips (tip *inward*))
+   (tips (tip *inward*)))
+ (promote
+   *val-to-val-nvs*
+   *letter-rows*
+   (height (tall medium-ht))
+   (height (tall medium-ht)))
+ (promote *literal-motifs* *frequent-sps* (49 36 23) (36 23))
+ (promote *literal-motifs* *frequent-sps* (36) (36))
+ (promote
+   *translate-motifs*
+   *common-sps*
+   (*n* *ne*)
+   (*sw* *s*))
+ (promote *literal-motifs* *frequent-sps* (23) (23))
+ (add *val-to-val-nvs* (tips (up-tip (15 16))))
+ (promote *literal-motifs* *frequent-sps* (36 49) (36 49))
+ (promote *translate-motifs* *frequent-sps* (*n*) (*s*))
+ (promote
+   *abstract-rules*
+   *occasional-sps*
+   at-most-3
+   at-most-3)
+ (promote
+   *turn-180-motifs*
+   *two-time-sps*
+   (*se* *s* *w* *w*)
+   (*se* *s*))
+ (add *val-to-val-nvs* (tips (tip (15 16))))
+ (promote *literal-motifs* *frequent-sps* (23 36) (36 23))
+ (promote
+   *turn-90-motifs*
+   *two-time-sps*
+   (*e* *e* *n* *nw* *sw*)
+   (*e* *e* *n* *nw* *sw*))
+ (promote *turn-45-motifs* *occasional-sps* (-90) (-90))
+ (promote *literal-motifs* *frequent-sps* (49 36) (49 36))
+ (promote *literal-motifs* *frequent-sps* (36 49) (49))
+ (promote
+   *relative-nvs*
+   *two-time-sps*
+   (tips (tip *s*))
+   (tips (tip *s*)))
+ (promote
+   *literal-motifs*
+   *frequent-sps*
+   (49 36 23)
+   (49 36 23))
+ (promote *literal-motifs* *frequent-sps* (49) (49))
+ (promote
+   *turn-180-motifs*
+   *two-time-sps*
+   (*se* *s* *w* *w*)
+   (*s* *w* *w*))
+ (promote *literal-motifs* *common-sps* (36 23 8 9) (8 9))
+ (promote
+   *val-to-val-nvs*
+   *letter-rows*
+   (roof (roof-top roof-t-height))
+   (roof (roof-top roof-t-height)))
+ (promote *translate-motifs* *frequent-sps* (*n*) (*n*))
+ (promote
+   *translate-motifs*
+   *occasional-sps*
+   (*nw* *sw*)
+   (*nw* *sw*))
+ (promote
+   *abstract-rules*
+   *occasional-sps*
+   ban-vertboxes
+   ban-vertboxes)
+ (promote
+   *translate-motifs*
+   *common-sps*
+   (*n* *ne*)
+   (*n* *ne*))
+ (promote *turn-90-motifs* *common-sps* (*e* *e*) (*n* *n*))
+ (promote
+   *turn-180-motifs*
+   *two-time-sps*
+   (*ne* *se* *s* *w* *w*)
+   (*ne* *se* *s* *w* *w*))
+ (promote *turn-45-motifs* *two-time-sps* (90 180) (90 180))
+ (promote
+   *relative-nvs*
+   *two-time-sps*
+   (height less)
+   (height less))
+ (promote
+   *relative-nvs*
+   *letter-rows*
+   (roof less)
+   (roof less))
+ (promote
+   *turn-90-motifs*
+   *two-time-sps*
+   (*e* *e* *n* *nw* *sw*)
+   (*e* *e* *n* *nw*))
+ (promote *turn-90-motifs* *common-sps* (*e* *e*) (*e* *e*))
+ (promote
+   *turn-180-motifs*
+   *letter-rows*
+   (*w* *n* *ne* *se* *s* *w* *w*)
+   (*n* *ne* *se* *s* *w* *w*))
+ (promote
+   *literal-motifs*
+   *common-sps*
+   (49 36 23 8)
+   (49 36 23 8))
+ (promote
+   *abstract-rules*
+   *letter-rows*
+   ban-topright
+   ban-topright)
+ (promote
+   *translate-motifs*
+   *letter-rows*
+   (*s* *s* *ne* *se*)
+   (*s* *s*))
+ (promote
+   *val-to-val-nvs*
+   *letter-rows*
+   (tips (up-tip (17 18)))
+   (tips (up-tip (17 18))))
+ (promote
+   *val-to-val-nvs*
+   *letter-rows*
+   (tips (tip (17 18)))
+   (tips (tip (17 18))))
+ (promote
+   *translate-motifs*
+   *two-time-sps*
+   (*s* *e* *e*)
+   (*s* *e* *e*))
+ (promote
+   *abstract-rules*
+   *two-time-sps*
+   ban-corners
+   ban-corners)
+ (promote
+   *abstract-rules*
+   *two-time-sps*
+   ban-topbox
+   ban-topbox)
+ (promote *literal-motifs* *frequent-sps* (36 49) (49 36))
+ (demote *relative-nvs* *occasional-sps* (tips (up-tip *s*)))
+ (demote
+   *relative-nvs*
+   *common-sps*
+   (tips (up-tip *inward*)))
+ (promote *translate-motifs* *common-sps* (*n*) (*s*))
+ (promote
+   *literal-motifs*
+   *common-sps*
+   (36 23 8 9)
+   (36 23 8 9))
+ (promote
+   *relative-nvs*
+   *common-sps*
+   (tips (up-tip *inward*))
+   (tips (up-tip *inward*)))
+ (promote
+   *turn-180-motifs*
+   *two-time-sps*
+   (*ne* *se* *s* *w* *w*)
+   (*ne* *se* *s*)))
+> (transcript-off)

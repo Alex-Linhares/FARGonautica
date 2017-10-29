@@ -1,0 +1,7 @@
+smart-parse is called:
+
+	1) At the beginning of a run
+	2) By the activation-spreader if every part has been sparked,
+	with probability 1/9
+	3) By the sparker if the part has been labeled but nothing
+	sparks, with probability 1/3

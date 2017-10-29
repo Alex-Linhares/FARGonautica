@@ -1,0 +1,62 @@
+In summary, hone has slower deadlines and hack for g/q
+changes in recog, stat-recog, coderack, roles, r-roles
+
+Also made sure that gestalt is positive; that is in topdown
+
+Also can make sure that a graphics flush is executed on a window only
+if it is necessary (if draws have been made to the window).
+
+
+Postmortem, 1/20/97:
+Average codelets on Normals (388) + Fonts (156) (testNormals5JAR and
+testFonts5JAR)
+
+JAR's Examiner, January '97
+Set	Time	Correct
+ALL	508.0	82.9%
+NORMAL	363.5	93.7%
+FONTS	867.3	55.9%
+
+GEM's Examiner (files testNormalsGEM and testFontsGEM)
+
+Set	Time	Correct
+ALL	1381.3	82.6%
+NORMAL	770.2	95.7%
+FONTS	2901.1	49.9%
+
+JAN 97
+	Speedup	Improvement
+ALL	2.70	0.3%
+NORMAL	2.12	-2%
+FONTS	3.34	6%
+
+JAR's Examiner, May '97
+Set	Time	Correct
+ALL	624.8	85.3%
+NORMAL	390.9	96.8%
+FONTS	1206.7	56.8%
+
+JAR's Examiner, Dec. '98
+Set	Time	Correct
+ALL	454.7	87.9%
+NORMAL	225.2	94.2%
+FONTS	1027.1	72.2%
+
+MAY 97- JARnew from GEM
+	Speedup	Improvement
+ALL	2.2	2.7%
+NORMAL	2.0	1.1%
+FONTS	2.4	6.9%
+-----
+SHORT	3.3	1.8%
+
+MAY 97- JARnew from JARold
+	Speedup	Improvement
+ALL	0.81	2.4%
+NORMAL	0.93	3.1%
+FONTS	0.72	0.9%
+
+
+	Comparison on tuning set
+JAR-97	430.2	90.8%
+GEM	1427.8	89.0%

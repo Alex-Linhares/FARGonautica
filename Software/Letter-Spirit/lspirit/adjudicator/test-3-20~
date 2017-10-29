@@ -1,0 +1,32 @@
+
+Runs many bridges on each, then averages three runs
+15 of 18 right, with second place right the other three times
+Average temperature, all runs, 49.98
+Average of correct letters: 24.8
+
+Test on 'a'
+	SS	SH	BT	H4	BL	BR	Correct?
+SS	10	14	67	71	64	60	y
+SH	12	31	71	76	44	74	n
+BT	65	79	27	41	45	65	y
+H4	74	73	51	50	62	55	y
+BL	44	58	43	39	27	62	y
+BR	51	54	58	68	65	24	y
+
+Test on 'd'
+	SS	SH	BT	H4	BL	BR
+SS	7	14	54	82	45	61	y
+SH	14	12	51	88	18	68	y
+BT	53	51	16	44	43	33	y
+H4	71	71	60	36	61	59	y
+BL	43	48	42	58	22	62	y
+BR	51	54	59	50	64	24	y
+
+Test on 'y'
+	SS	SH	BT	H4	BL	BR
+SS	13	26	83	71	64	63	y
+SH	17	26	78	70	33	73	n
+BT	64	70	17	13	32	48	n
+H4	72	76	56	49	62	52	y
+BL	55	58	57	52	29	57	y
+BR	64	62	61	61	70	27	y

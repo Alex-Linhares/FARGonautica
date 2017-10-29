@@ -1,0 +1,68 @@
+Chez Scheme Transcript [Thu Jan 27 01:57:26 2000]
+> (design-init)
+> (try-cats)
+Trying h by drafting h; rejected as f1, score 300.0 (0 8 14 17 18 19 20 21 22 23 24 25 35)
+Trying a by drafting a; 
+Error: incorrect number of arguments to #<procedure promotion-cutoff>.
+Type (debug) to enter the debugger.
+> (load "loop.ss")
+>  (design-init)
+> (try-cats)
+Trying x by drafting x; seed margin 89.35 68
+accepted as x1 score 89.35 beat 299.99 (4 5 6 22 39 51)
+Trying w by drafting w; rejected as quit, score 300.0 (5 9 11 20 22 24 25 27 28 36)
+Trying n by drafting n; seed margin 75.224 68
+accepted as n1 score 75.224 beat 299.99 (4 5 9 20 22 24 25)
+Trying v by drafting v; seed margin 86.81 68
+accepted as v1 score 86.81 beat 299.99 (24 39 48 49)
+Trying i by drafting i; seed margin 81.015 68
+accepted as i1 score 81.015 beat 299.99 (35 51)
+Trying c by drafting c; rejected as r1, score 300.0 (4 5 20 22 23)
+Trying i by drafting i; rejected as c1, score 300.0 (38)
+Trying d by drafting d; rejected as l1, score 300.0 (18 21 51)
+Trying u by drafting u; rejected as i1, score 300.0 (8 9 20 22 23)
+Trying q by drafting q; rejected as y2, score 300.0 (4 8 20 21 22 25 28 31 38 39)
+Trying e by drafting e; seed margin 66.409 68
+seedified as e2 score 66.409 beat 299.99 (5 20 36 37 39 48 50)
+Trying x by drafting x; seed margin 51.271 52
+seedified as x1 score 51.271 beat 89.35 (37 38 48 51)
+
+debug> i
+#<continuation in biggest-overlap>                                : d
+#<continuation in biggest-overlap>                                : q
+
+debug> n
+>> (try-cats)
+Trying w by drafting w; 
+Error: incorrect number of arguments to #<procedure average>.
+Type (debug) to enter the debugger.
+>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in promotion-cutoff>                               : s
+  continuation:          #<continuation in cat-mean-low?>
+  procedure code:        (lambda (cat) ((...) (...)))
+  call code:             (average (prevs cat) 10)
+  free variables:
+  0. cat:                w
+#<continuation in promotion-cutoff>                               : q
+
+debug> e
+>> (load "loop.ss")
+>> (re-draw 'w)
+>> (try-cats)
+Trying a by borrowing e; seed margin 99.561 60
+accepted as a2 score 99.561 beat 299.99 (8 25 36 38 39 49 51)
+Trying j by drafting j; seed margin 57.84 74.7805
+seedified as j1 score 57.84 beat 299.99 (4 5 20 23 26 29 45)
+Trying d by drafting d; seed margin 88.209 60
+accepted as d1 score 88.209 beat 299.99 (8 9 19 20 22 23 25)
+Trying h by drafting h; seed margin 68.925 69.1045
+seedified as h1 score 68.925 beat 299.99 (4 5 14 17 20 22 23 25)
+Trying q by drafting q; seed margin 126.296 60
+accepted as q1 score 126.296 beat 299.99 (4 5 9 11 20 21 22 25 26 30 31 38 50 54)
+Trying b by drafting b; rejected as l1, score 300.0 (8 9 14 17 20 22 23 25)
+Trying m by drafting m; rejected as n1, score 300.0 (5 20 21 22 23 24 25)
+
+debug> n
+>>> (transcript-off)

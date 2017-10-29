@@ -1,0 +1,42 @@
+Activations
+ As motifs are sketched
+ 
+
+Bridges and Promotions
+
+Temperature
+
+Combining motifs
+
+( . . . . . . a b c d e . . . . . )
+
+( . . a b c d e . . . . . . . . . )
+
+Remember, reverse order is possible
+
+Also, add mirror-relative motifs (easy)
+
+Levels of Enforcement:
+
+Implicit in the Letter Rows: Occurred once.
+Three rows of promotions:
+Occurred twice.
+Occurs "some" of the time. (about 5 of 26 or more)
+Occurs virtually all of the time. (about 18 of 26 or more)
+
+	Keep track of this info how?
+
+Let's say the seeds have SP-X in 5 of 8. Then SP-X's frequency goes:
+
+6 of 9
+7 of 10
+7 of 11
+8 of 12
+9 of 13
+10 of 14
+11 of 15
+12 of 16
+13 of 17
+
+HEY: Besides motifs, run the first-pass on all the gridletters of an
+(entire) font, and do a histogram on the resulting info.

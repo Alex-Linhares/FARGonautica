@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RhythmCat.Relationship" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAQAAQAAAABQAAAAQCBAEAQAAAA=</HashCode>
+      <FileName>Relationships\Relationship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipIdentical">
+    <Position X="6.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipIdentical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipSimilar">
+    <Position X="2.25" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipSimilar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipStartSimilar">
+    <Position X="0.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipStartSimilar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipStartIdentical">
+    <Position X="5.25" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipStartIdentical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipMetricPosition">
+    <Position X="13" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipMetricPosition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipParameterIncreasing">
+    <Position X="7.75" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipParameterIncreasing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipParameter">
+    <Position X="9.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipParameterDecreasing">
+    <Position X="11" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipParameterDecreasing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipMelodyContour">
+    <Position X="15.75" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipMelodyContour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipAnalogy">
+    <Position X="3" Y="4.5" Width="2" />
+    <InheritanceLine Type="RhythmCat.RelationshipSimilar" FixedToPoint="true">
+      <Path>
+        <Point X="3.125" Y="3.425" />
+        <Point X="3.125" Y="4.125" />
+        <Point X="4.438" Y="4.125" />
+        <Point X="4.438" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIACAACAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipAnalogy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythmCat.RelationshipAntecedentConsequentTonality">
+    <Position X="18.5" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Relationships\RelationshipAntecedentConsequentTonality.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

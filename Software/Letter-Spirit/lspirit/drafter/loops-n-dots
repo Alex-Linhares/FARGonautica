@@ -1,0 +1,25 @@
+down-circle
+ left-point: (4 20) (5 20) (12 1) (11 1)
+ right-point: (18 20) (19 20) (12 1) (11 1)
+
+up-circle
+ left-point: (4 20) (3 20) (10 1) (11 1)
+ right-point: (18 20) (17 20) (10 1) (11 1)
+
+circle
+ left-point: (4 20) (3 1) (5 1) (10 1) (11 1) (12 1)
+ right-point: (18 20) (17 1) (19 1) (10 1) (11 1) (12 1)
+
+dot
+ start-point (16 20) (9 10) (15 5) (10 1) (17 1) (3 1) (18 1)
+ finish-point anywhere reasonable
+
+***
+
+loops: pick one point, draw to it, *norm-curve* = *full-left*
+ swap endpoints, draw back w/ *full-right*
+ but DO NOT TOUCH the other half until the end, when you MUST!
+
+dot: start at start, and draw, extremely eager to quit, not much
+compunction about touching self (at quit) or crossing self
+

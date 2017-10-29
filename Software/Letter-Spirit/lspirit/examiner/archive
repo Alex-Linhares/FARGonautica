@@ -1,0 +1,54 @@
+; functions not integral to the code anymore
+
+
+; how far is a point from the line between two endpoints?
+; more to the point, how far from the line segment?
+(define point-error
+  (lambda (end1 mid end2)
+    (if
+	(or (eq? end1 mid) (eq? end2 mid))
+	0
+	(let*
+	  ([len-a-sq (points-dist-sq end1 mid)]
+	   [len-b-sq (points-dist-sq end1 end2)]
+	   [len-c-sq (points-dist-sq end2 mid)]
+	   [len-a (sqrt len-a-sq)]
+	   [len-b (sqrt len-b-sq)]
+	   [len-c (sqrt len-c-sq)]
+	   [len-s (/ (+ len-a len-b len-c) 2)])
+	  (cond
+	   [(>= len-a-sq (+ len-b-sq len-c-sq 0.001)) len-c]
+	   [(>= len-c-sq (+ len-b-sq len-a-sq 0.001)) len-a]
+	   [else
+	    (/ (sqrt
+	     (* len-s (- len-s len-a) (- len-s len-b) (- len-s len-c)))
+	(* 0.5 len-b len-b))])))))
+
+
+; different version in actual program
+(define find-sum-curve
+  (lambda (q-ls)
+    (let*
+	([p-ls (quanta-to-points q-ls)]
+	 [end1 (car p-ls)]
+	 [end2 (tail p-ls)]
+	 [point-dist (lambda (x)
+		       (point-error end1 x end2))])
+      (average (mapcar point-dist p-ls)))))
+
+(define find-signed-curve
+  (lambda (q-ls)
+    (let*
+	([p-ls (quanta-to-points q-ls)]
+	 [end1 (car p-ls)]
+	 [end2 (tail p-ls)]
+	 [point-dist (lambda (x)
+		       (*
+			(curve-sign end1 x end2)
+			(point-error end1 x end2)))])
+      (average (mapcar point-dist p-ls)))))
+
+(define find-part-curve
+  (lambda (q-ls)
+    (round-3 (* (find-sum-curve q-ls) (sgn (find-signed-curve q-ls))))))
+

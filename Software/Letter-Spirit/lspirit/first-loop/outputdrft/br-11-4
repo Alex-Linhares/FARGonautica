@@ -1,0 +1,479 @@
+Chez Scheme Transcript [Thu Nov  4 01:29:00 1999]
+>>>> (try-gridfont 'benzene-right)
+
+Error in -: (m1 59.457) is not a number.
+Type (debug) to enter the debugger.
+>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in try-cat>                                        : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda (category) ((...) (...)))
+  call code:             (- first-check old-best)
+  free variables:
+  0. category:           m
+  1. old-version:        (() (10000.0) () 0)
+  2. old-stuff:          ()
+  3. old-losers:         ()
+  4. old-scores:         (10000.0)
+  5. old-best:           10000.0
+  6. tries:              1
+  7. first-check:        (m1 59.457)
+#<continuation in try-cat>                                        : q
+
+debug> e
+>>>>  (load "loop.ss")
+>>>> (try-cats)
+
+Error in cadr: incorrect list structure (c1).
+Type (debug) to enter the debugger.
+>>>>  (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in cadr>                                    : s
+  continuation:          #<continuation in try-cat>
+#<system continuation in cadr>                                    : d
+#<continuation in try-cat>                                        : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda (category) ((...) (...)))
+  call code:             (cadr first-check)
+  free variables:
+  0. category:           s
+  1. old-version:        (() (10000.0) () 0)
+  2. old-stuff:          ()
+  3. old-losers:         ()
+  4. old-scores:         (10000.0)
+  5. old-best:           10000.0
+  6. tries:              1
+  7. first-check:        (c1)
+#<continuation in try-cat>                                        : q
+
+debug> e
+>>>> (load "loop.ss")
+
+Error in read: unexpected close bracket on #<input port loop.ss>.
+Type (debug) to enter the debugger.
+>>>>  (load "loop.ss")
+
+Error in read: unexpected close bracket on #<input port loop.ss>.
+Type (debug) to enter the debugger.
+>>>>  (load "loop.ss")
+>>>> (map re-draw alphabet)
+(#<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>)
+>>>> (try-cats)
+Trying m
+Error in apply: #<void> is not a proper list.
+Type (debug) to enter the debugger.
+>>>>  (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in apply>                                   : s
+  continuation:          #<continuation in average>
+  free variables:
+  0: #<void>
+  1: #<system procedure +>
+#<system continuation in apply>                                   : d
+#<continuation in average>                                        : s
+  continuation:          #<continuation in try-cat>
+  procedure code:        (lambda (ls) (/ (apply + ls) (length ls)))
+  call code:             (apply + ls)
+  free variables:
+  0. ls:                 #<void>
+#<continuation in average>                                        : d
+#<continuation in try-cat>                                        : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda (category) ((...) (...)))
+  call code:             (average new-old-scores)
+  free variables:
+  0. category:           m
+  1. old-version:        (() (10000.0) () 0)
+  2. old-stuff:          ()
+  3. old-losers:         ()
+  4. old-scores:         (10000.0)
+  5. old-best:           10000.0
+  6. tries:              1
+  7. evaluate:           (n1 -100.0)
+  8. margin:             10100.0
+  9. second-check:       (n1 -100.0)
+  10. new-old-scores:    #<void>
+  11: -100.0
+#<continuation in try-cat>                                        : q
+
+debug> n
+>>>>> (load "loop.ss")
+>>>>> (re-draw 'm)
+>>>>> (set! *total-draws* 0)
+>>>>> (try-cats)
+Borrow b Trying h
+Error in apply: #<void> is not a proper list.
+Type (debug) to enter the debugger.
+>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in apply>                                   : s
+  continuation:          #<continuation in average>
+  free variables:
+  0: #<void>
+  1: #<system procedure +>
+#<system continuation in apply>                                   : d
+#<continuation in average>                                        : s
+  continuation:          #<continuation in list-quantity>
+  procedure code:        (lambda (ls) (/ (apply + ls) (length ls)))
+  call code:             (apply + ls)
+  free variables:
+  0. ls:                 #<void>
+#<continuation in average>                                        : d
+#<continuation in list-quantity>                                  : s
+  continuation:          #<continuation in try-cat>
+  procedure code:        (lambda (ls) (if (null? ls) 0.0 (* 1.0 (average ls))))
+  call code:             (average ls)
+  free variables:
+  0. ls:                 #<void>
+#<continuation in list-quantity>                                  : d
+#<continuation in try-cat>                                        : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda (category) ((...) (...)))
+  call code:             (list-quantity new-old-scores)
+  free variables:
+  0. category:           h
+  1. old-version:        (() (10000.0) () 0)
+  2. old-stuff:          ()
+  3. old-losers:         ()
+  4. old-scores:         (10000.0)
+  5. old-best:           10000.0
+  6. tries:              1
+  7. evaluate:           (h1 42.992)
+  8. margin:             9957.008
+  9. second-check:       (h1 42.992)
+  10. new-old-scores:    #<void>
+  11: 42.992
+#<continuation in try-cat>                                        : q
+
+debug> n
+>>>>>> (exit)
+debug> e
+>>>>> (load "loop.ss")
+>>>>> (try-cats)
+Trying x; ruled (38 37 23 8 39) a w1 score of -100.0
+
+debug> n
+>>>>>> (load "loop.ss")
+>>>>>> (try-cats)
+Trying i; ruled (45 0 14 5 22 39) a i1 score of 66.185
+Trying n; ruled (5 22 25 9 36 23) a n1 score of 64.649
+Trying u; ruled (20 23 8 21 24) a u1 score of 98.708
+
+debug> n
+>>>>>>>  (load "loop.ss")
+>>>>>>> (try-gridfont 'benzene-right)
+Trying s; ruled (20 34 3 38 7 36 5) a i1 score of 1000.0
+Trying p; ruled (23 26 29 36 5 22 25) a p1 score of 99.159
+Borrow g Trying o; ruled (5 8 22 23 25 36 39) a q1 score of 1000.0
+Trying u; ruled (37 24 36 23 8) a u1 score of 86.389
+Borrow c Trying r; ruled (5 23 36 39) a i1 score of 1000.0
+
+debug> n
+>>>>>>>> *scratchspace*
+((r (5 23 36 39) (1000.0) (()) 0)
+ (u (37 24 36 23 8) (86.389) (()) 0)
+ (o (5 8 22 23 25 36 39) (1000.0) (()) 0)
+ (p (23 26 29 36 5 22 25) (99.159) (()) 0)
+ (s (20 34 3 38 7 36 5) (1000.0) (()) 0)
+ (g (5 8 12 22 23 25 28 36 39 43) (0.0) () 0)
+ (f (18 21 24 33 36 5) (0.0) () 0)
+ (e (5 6 8 23 36 37 39) (0.0) () 0)
+ (c (5 8 23 36 39) (0.0) () 0)
+ (b (5 8 14 17 20 22 23 36 39) (0.0) () 0)
+ (a () (10000.0) () 0)
+ (d () (10000.0) () 0)
+ (h () (10000.0) () 0)
+ (i () (10000.0) () 0)
+ (j () (10000.0) () 0)
+ (k () (10000.0) () 0)
+ (l () (10000.0) () 0)
+ (m () (10000.0) () 0)
+ (n () (10000.0) () 0)
+ (q () (10000.0) () 0)
+ (t () (10000.0) () 0)
+ (v () (10000.0) () 0)
+ (w () (10000.0) () 0)
+ (x () (10000.0) () 0)
+ (y () (10000.0) () 0)
+ (z () (10000.0) () 0))
+>>>>>>>> (load "loop.ss")
+>>>>>>>>  (try-gridfont 'benzene-right)
+Trying y; ruled (23 8 39 21 24 27 42 12 43 31) a y1 score of 82.768
+Trying k; ruled (36 5 23 8 17 20 6 21 18 15 0) a k1 score of 118.097
+Trying v; ruled (24 8 23 20 5 22 25 28 11) a y1
+Trying n; ruled (5 22 39 36 23) a n1 score of 54.582
+Borrow c Trying r; ruled (5 23 36 39) a i1
+Trying s; ruled (25 28 11 10 26 5 36 6 7) a s2 score of 75.796
+Trying w; ruled (23 26 10 11 31 13 12 21 24 9 22 25) a j1
+Trying r; ruled (5 22 36 23) a r1 score of 62.233
+Trying i; ruled (5 22 25 3 15) a i1 score of 74.075
+Trying z; ruled (36 5 8 39 38 37) a z1 score of 61.239
+Trying x; ruled (6 37 21 24 27 11) a y1
+Trying u; ruled (37 24 4 20 23 8) a u1 score of 99.458
+Tried (6 37 21 24 27 11) as x before
+Trying m; ruled (21 51 41 36 23 5 22 39) a k1
+Trying j; ruled (22 25 28 43 12 35) a j1 score of 73.361
+Borrow b Trying h; ruled (5 14 17 20 22 23 36 39) a h1 score of 48.374
+Trying o; ruled (20 4 5 22 25 9 8 23) a o1 score of 68.659
+Trying m; ruled (36 23 5 22 25 21 24) a m1 score of 53.073
+Trying q; ruled (37 24 53 31 20 4 5 22 25 41 10 26 23) a q1 score of 129.373
+Borrow e Trying a; ruled (8 7 5 22 39 38 36) a a1 score of 76.17
+Trying d; ruled (36 23 8 39 18 21 24) a d1 score of 100.671
+Trying v; ruled (22 25 41 10 4 21 24 8) a j1
+Trying w; ruled (36 23 8 37 24) a u1
+Trying l; ruled (15 18 36 23 8 39) a l1 score of 54.649
+Trying w; ruled (20 50 5 22 39 23 38 48) a w1 score of 127.323
+Trying t; ruled (36 5 18 21 38 8 39) a t1 score of 66.91
+Trying v; ruled (23 8 21 24) a u1
+Trying m; ruled (6 48 34 23 8 5 22 25) a i1
+Borrow b Trying p; ruled (9 4 29 26 23 25 20 50 49) a p1 score of 85.66
+Trying v; ruled (23 5 22 39 8) a u1
+Trying x; ruled (21 24 9 38 37) a x1 score of 56.705
+Trying v; ruled (21 38 23) a v1 score of 91.866
+Trying d; ruled (16 3 15 0 14 17 48 24 50 20 4 5 22 25 41 10 26 23) a v1
+Trying i; ruled (22 39 8 35) a i1
+Trying u; ruled (23 8 5 22 39) a u1 score of 87.797
+Trying w; ruled (23 8 39 22 21 24 9) a w1 score of 81.849
+Trying w; ruled (23 8 24 5 22 39) a u1
+Borrow g Trying o; ruled (5 8 22 23 25 36 39) a q2
+
+Error: incorrect number of arguments to #<system procedure cons>.
+Type (debug) to enter the debugger.
+>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<continuation in try-cat>                                        : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda (category) ((...) (...)))
+  call code:             (cons (cadr (check-gridletter category old-stuff)))
+  free variables:
+  0. category:           t
+  1. old-version:        ((36 5 18 21 38 8 39) (66.91) (()) 0)
+  2. old-stuff:          (36 5 18 21 38 8 39)
+  3. old-losers:         (())
+  4. old-scores:         (66.91)
+  5. old-best:           66.91
+  6. tries:              1
+  7. evaluate:           (t1 62.369)
+  8. margin:             4.540999999999997
+  9. second-check:       (t1 65.905)
+#<continuation in try-cat>                                        : q
+
+debug> n
+>>>>>>>>> (exit)
+debug> e
+>>>>>>>> (load "loop.ss")
+>>>>>>>> (cat re-draw alphabet)
+
+Error: variable cat is not bound.
+Type (debug) to enter the debugger.
+>>>>>>>> (map re-draw alphabet)
+(#<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>)
+>>>>>>>> (try-cats)
+Borrow b Trying q
+Error in apply: #<void> is not a proper list.
+Type (debug) to enter the debugger.
+>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in apply>                                   : s
+  continuation:          #<continuation in average>
+  free variables:
+  0: #<void>
+  1: #<system procedure +>
+#<system continuation in apply>                                   : d
+#<continuation in average>                                        : s
+  continuation:          #<continuation in try-cat>
+  procedure code:        (lambda (ls) (/ (apply + ls) (length ls)))
+  call code:             (apply + ls)
+  free variables:
+  0. ls:                 #<void>
+#<continuation in average>                                        : d
+#<continuation in try-cat>                                        : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda (category) ((...) (...)))
+  call code:             (average new-old-scores)
+  free variables:
+  0. category:           q
+  1. old-version:        ((37 24 53 31 20 4 5 22 25 41 10 ...) (129.373) (()) 0)
+  2. old-stuff:          (37 24 53 31 20 4 5 22 25 41 10 26 23)
+  3. old-losers:         (())
+  4. old-scores:         (129.373)
+  5. old-best:           129.373
+  6. tries:              1
+  7. evaluate:           (q1 22.22)
+  8. margin:             107.15299999999999
+  9. second-check:       (q1 22.22)
+  10. new-old-scores:    #<void>
+  11: 22.22
+#<continuation in try-cat>                                        : q
+
+debug> n
+>>>>>>>>> (exit)
+debug> e
+>>>>>>>> (load "loop.ss")
+
+Error in let*: invalid syntax (let* ((evaluate (...)) (margin (...)) (second-check (...)) (new-old-scores (...) (...))) (set! *total-draws* (+ 1 *total-draws*)) (set! *choose-rand* (* 0.99 *choose-rand*)) (printf "Trying ~s" category) (if (and (...) (...) (...)) (begin (...) (...) (...)) (begin (...) (...) (...)))).
+Type (debug) to enter the debugger.
+>>>>>>>>  (load "loop.ss")
+>>>>>>>> (re-draw 'a)
+>>>>>>>> (try-cats)
+Trying j
+Error in /: undefined for 0.
+Type (debug) to enter the debugger.
+>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in #/>                                      : s
+  continuation:          #<continuation in try-cat>
+  free variables:
+  0: 0
+  1: 0
+  2: /
+  3: #<system procedure #/>
+#<system continuation in #/>                                      : d
+#<continuation in try-cat>                                        : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda (category) ((...) (...)))
+  call code:             (average new-old-scores)
+  free variables:
+  0. category:           j
+  1. old-version:        ((22 25 28 43 12 35) (73.361) (()) 0)
+  2. old-stuff:          (22 25 28 43 12 35)
+  3. old-losers:         (())
+  4. old-scores:         (73.361)
+  5. old-best:           73.361
+  6. tries:              1
+  7. evaluate:           (y1 100000.0)
+  8. margin:             99926.639
+  9. second-check:       (y1 100000.0)
+  10. new-old-scores:    ()
+  11: 100000.0
+#<continuation in try-cat>                                        : q
+
+debug> e
+>>>>>>>> (load "loop.ss")
+>>>>>>>> (map re-draw alphabet)
+(#<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>
+  #<void>)
+>>>>>>>> (try-cats)
+Borrow b Trying d
+Error: variable list-quantify is not bound.
+Type (debug) to enter the debugger.
+>>>>>>>> (load "loop.ss")
+>>>>>>>> *the-whole*
+j1
+>>>>>>>> (try-cats)
+Trying s; ruled (25 28 11 10 26 5 36 6 7) a s2
+Trying s; ruled (5 4 20 25 9 24 38 23) a c1
+
+Error in /: undefined for 0.
+Type (debug) to enter the debugger.
+>>>>>>>> (debug)
+debug> i
+#<system continuation in error>                                   : d
+#<system continuation in #/>                                      : s
+  continuation:          #<system continuation in map1>
+  free variables:
+  0: 0
+  1: 0
+  2: /
+  3: #<system procedure #/>
+#<system continuation in #/>                                      : d
+#<system continuation in map1>                                    : s
+  continuation:          #<continuation in pick-category>
+  free variables:
+  0: (() (68.659) (81.849) (87.797) (74.075) (100.671) (91.866) (56.705) ...)
+  1: #<system procedure map1>
+  2: (81.849 87.797 74.075 100.671 91.866 56.705 85.66 53.073 66.91 54.649 ...)
+  3: 68.659
+#<system continuation in map1>                                    : d
+#<continuation in pick-category>                                  : s
+  continuation:          #<continuation in try-cats>
+  procedure code:        (lambda () ((...) (...)))
+  call code:             (map average (map caddr *scratchspace*))
+  free variables:
+  0: (s o w u i d v x p m t l a q h j z r n k y g f e c b)
+#<continuation in pick-category>                                  : a
+Invalid command.  Type ? for options.
+#<continuation in pick-category>                                  : q
+
+debug> a
