@@ -1,13 +1,22 @@
 # FARGonautica
 
 
-[**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
+a project in loving memory of Helga Keller
 
-![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
+---
 
 **Repository News: Letter Spirit sourcecode just added, Seek-Whence coming soon!**
 
-Research carried out at CRCC has been described in detail in the book Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought, written by Douglas Hofstadter and members of the Fluid Analogies Research Group. Hofstadter's first two books, Goedel, Escher, Bach and Metamagical Themas discussed a number of ideas relevant to artificial intelligence and cognitive science, such as recursivity and emergent behavior, but this new book looks back from the perspective of having grappled with those ideas in the course of implementing actual computer models. Programs that model creativity and analogy-making have been designed by Hofstadter and his graduate students, and the story of their past, present and future development is the subject of the book, co-authored by the students in the Fluid Analogies Research Group (FARG). There is an incredible wealth of information in this book.
+
+![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
+
+[**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
+
+
+
+Research carried out at the Center of Research on Concepts and Cognition (CRCC) has been described in detail in the book _Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought_, written by Douglas Hofstadter and members of the Fluid Analogies Research Group. Hofstadter's first two books, _Gödel, Escher, Bach_ and _Metamagical Themas_ previously discussed a number of ideas relevant to artificial intelligence and cognitive science, such as recursivity, subcognition, and emergent behavior, but this new book looks back from the perspective of having grappled with those ideas in the course of implementing actual computer models. Programs that model creativity and analogy-making have been designed by Hofstadter and his graduate students, and the story of their past, present and future development is the subject of the book, co-authored by the students in the Fluid Analogies Research Group (FARG).
+
+---
 
 This repository has a number of goals:  
 
@@ -25,9 +34,8 @@ This repository has a number of goals:
     would be able to study the principles of this school of thought, **see those principles in action**,
     and **compare those principles with different approaches**.   Moving to more advanced stuff,
     Graduate students, now with easy access to the code, could have a complete course on the computer
-    science of building these architectures; they could, for instance, play with their own ideas, and
-    find out whether or not they make sense.  (Linhares is going to try to teach 5 classes in 2017; if
-    "reasonably successful", these classes will be posted here).
+    science of building these architectures; they might, for instance, play with their own ideas, and
+    find out whether or not they make sense.
 
 
 We hope that, after this repository is complete (or close to), it will be cloned and hosted at a [Indiana University Github:IU page](https://kb.iu.edu/d/bagk), where it will be easily found by the interested community.
@@ -51,9 +59,9 @@ As of right now, this repo is considered, in open-source fashion, to be in versi
 
 
 
-This repo can not only be a library but also a source for undergraduate courses and a set of research questions... don't you wish your teachers at university (or even high school) had something like this?  [Here's where we are and here's where we're going!](repo-version.md)
+This repo can not only be a library but also a source for undergraduate courses and a set of research questions... hopefully this will enable wider discussions of the scientific concepts presented in this project. Here's where we are and here's [where we're going!](repo-version.md)
 
-Long ways to go to get there, hah?  Not really, as contributors can speed things up. If you would like to contribute please see [how you can contribute to this repository](contributing.md). You do **not** necessarily have to be someone who has earned the Ph.D. working with Hofstadter. If you have ideas for undergraduate exercises, research questions, programming challenges, or something else altogether... please get in [here](contributing.md)!  
+Here's how you can [contribute to this repository](contributing.md).
 
 
 
@@ -70,8 +78,8 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
  | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | **Yes** |  
  | Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet (email sent 2017-08-29) |
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  **Yes** (McGraw's work was extended by Rehling) |
- | Letter Spirit | [John Rehling](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=) | Chez Scheme |  **Yes** |
- | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Chez Scheme |  **Yes** |
+ | Letter Spirit | [John Rehling](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=) |  Scheme |  **Yes** |
+ | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Scheme |  **Yes** |
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Closed-source |
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | **Yes** |
@@ -116,33 +124,6 @@ Selected publications regarding Copycat:
  - Mitchell, M. and Hofstadter, D. R. (1990). [The emergence of understanding in a computer model of concepts and analogy-making](/Literature/Copycat-Mitchell.and.Hofstadter-1990-Physica%20D%20Nonlinear%20Phenomena.pdf). Physica D, 42, 322--334, https://doi.org/10.1016/0167-2789(90)90086-5.
  - Chalmers, French, and Hofstadter (1992) [High-level perception, representation, and analogy: a critique of artificial intelligence methodology](/Literature/Foundations-Chalmers.French.and.Hofstadter-1992-Journal%20of%20Experimental%20and%20Theoretical%20Artificial%20Intelligence.pdf), Journal of Experimental and Theoretical Artificial Intelligence 4  185--211.
 
-
-**Undergraduate exercises**:
-1. Install Copycat on your machine and run some of the examples discussed in the literature.
-1. Create three copycat problems that are not discussed in the above literature
-1. Consider the SME (Structure-Mapping Engine) discussed in the literature.  Could it solve the following problems? If so, how? If not, why not?
-    - **abc : abd  ::  ijk : ?**
-    - **abc : abd  ::  iijjkk : ?**
-    - **abc : abd  ::  rppkkk : ?**
-    - **abc : abd  ::  ijkl : ?**
-    - **abc : abd  ::  xyz : ?**
-1. Why is it claimed that analogy-making is part of perception?
-1. How do analogy-making and perception interact in Copycat?  Are they different modules? If so, why?  If not, Why not?
-1. What does the slipnet do?  Why the term "*slip*"?
-1. What does the temperature do?  Do codelets regulate the temperature? Does temperature regulate the codelets?
-
-**Programming challenges**:
-1. Make the code in Python **robust**: can it solve a large number of interesting problems, with different random seeds, without breaking?
-1. Design a GUI for the project co.py.cat.. maybe taking from Joseph Aaron Hager's project?
-1. Integrate the best implementation ideas from Joseph Aaron Hager's project and co.py.cat.  
-
-**Open Research Projects**:
-1. Implement Copycat in Dr. [Abhijit Mahabal's Fluid Concepts framework](https://github.com/amahabal/Pyseqsee).
-     - document how the implementation is done
-     - document how others may use the framework in their own projects
-     - document what, if anything, becomes easier/simpler under the framework
-     - document necessary changes *to the framework itself* to accommodate *both* Copycat and SeqSee
-     - Write up a paper, and teach us how to make the development of a FARG architecture easier.
 
 
 
@@ -236,58 +217,21 @@ Find Linhares in  [Homepage](http://ebape.fgv.br/en/faculty/alexandre-linhares) 
 A chess system based on Active Symbols / Fluid Concepts.  [Here](https://youtu.be/5h67WwfuQDg) is the sample run of it described in the [Information Sciences paper](https://github.com/Alex-Linhares/Fluid-Concepts-and-Creative-Analogies/blob/master/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf).
 
 Most chess programs consist of nothing but tree search. Can a program have ideas; perceive abstractions;
-and grasp a very simple, but high-level understanding of situations? If so, how?
-
-Capyblanca has been developed in Delphi. As of May 7th, 2008, the codebase compiles and runs in free (as in beer)
-turbodelphi for windows.
-
-Sourcecode:
- - previously on https://code.google.com/archive/p/capyblanca/
- - now available here, in the [Software folder](/Software/Capyblanca).
-
- Publications in Capyblanca & Analogies in Chess:
-  - [Linhares, A. (2005) An Active Symbols Theory of Chess Intuition.  *Minds and Machines* 15 131--181.](/Literature/Chess-Capyblanca-2005-Linhares-Minds_and_Machines.pdf)
-  - [Linhares, A., & Brum, P. (2007) Understanding our understanding of strategic scenarios: What roles do chunks play?  *Cognitive Science* 31 989--1007](/Literature/Chess-Capyblanca-Linhares.and.Brum-2007-Cognitive%20Science.pdf)
-  - [Linhares, A., & Brum, P. (2009) How can experts see the invisible? Reply to Bilali & Gobet, *Cognitive Science* 33 748--751](/Literature/Chess-Capyblanca-Linhares.and.Brum-2009-Cognitive%20Science.pdf)
-  - [Linhares, A. & A.E.T.A. Freitas (2010) Questioning Chase and Simon's (1973) "Perception in Chess": The "experience recognition" hypothesis, *New Ideas in Psychology* 28 64--78](/Literature/Chess-Capyblanca-Linhares.and.Freitas-2010-New%20Ideas%20in%20Psychology.pdf)
-  - [Linhares, A., A.E.T.A. Freitas, A. Mendes, & J.S. Silva (2012) Entanglement of Perception and Reasoning in Chess: differential errors of strategic reconstruction *Cognitive Systems Research* 13 72--86](/Literature/Chess-Capyblanca-Linhares%20et%20al-2012-Cognitive%20Systems%20Research.pdf)
-  - [Linhares, A., and Chada, D. (2013) What is the nature of the mind's pattern recognition in chess? *New Ideas in Psychology* 31 108--121](/Literature/Chess-Capyblanca-Linhares.Chada-2013-New%20Ideas%20in%20Psychology.pdf)
-  - [Linhares, A. (2014) The Emergence of Choice: decision-making and strategic thinking through analogies, *Information Sciences* 259 36--56](/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf)
-
-Future and ongoing activities:
-  - A review paper, containing the major findings in analogies in chess and of the Capyblanca architecture, is being written--perhaps for publication as a chapter in the sequel of *Fluid Concepts and Creative Analogies*.
-  - Linhares plans to rewrite a number of AI/cogsci projects that may be of relevance to a future architecture, such as [ENTROPICA](https://www.ted.com/talks/alex_wissner_gross_a_new_equation_for_intelligence), [KT-Forms](http://www.pnas.org/content/105/31/10687), and complex Clusterings.
-  - A rewrite of Daniel Defays "Numbo" in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans
-  - A rewrite of Capyblanca in [Dr. Mahabal's Fluid Concepts framework](https://github.com/amahabal/PySeqsee) is in the plans
-  - An original, Fluid-Concepts-based, re-write of Kemp and Tenembaum's Forms in Mahabal's Framework is in the plans
-  - ...as is the idea of a book/(free e-book) on the computer science of building Fluid concepts architectures
-  - The long-term goal is to create a computational architecture that, without knowing the rules or goals of a game, can come to understand and play combinatorics games like checkers, chess, or go.
-  - Another long-term goal is to create a computational architecture that is able to solve Bongard problems and Raven's matrices. Extending Phaeaco beyond what is currently possible.
-  - A paper on a "measure of human intuition" is in the plans, after Dr. Eric Nichols agreed that the idea and the methodology seems to make sense.
-  - Some ideas on a technical, mathematical, definition of what is commonly called *strong AI* or *AI-Complete* are being sketched. They use mostly combinatorics and information theory... but they stem from the solving of Bongard problems.
-
-If you are interested in joining these future activities, please get in touch!
-
-**Undergraduate exercises**:
-1. Computer chess programs basically expand the decision tree.  Explain why people play in a fundamentally different form.  Cite the evidence for the human approach.
-1. Consider the model of chunking proposed by the computational cognitive science CHREST.  What are the arguments that it falls short?
-1. How can Capyblanca "see abstractions"?  Can CHREST do the same?
-1. Why is it claimed that Chase and Simon did a mistake in their classic paper "Perception in chess"?  What is the evidence for that claim?
-1. A master chess player made loads of mistakes in reconstructing the board (after seeing it twice for 5 seconds only). Why does Linhares claim that Figure 4 of [this paper](/Literature/Chess-Capyblanca-Linhares%20et%20al-2012-Cognitive%20Systems%20Research.pdf) is "remarkable"?
-1. What is meant by "strategically equivalent" chess positions?
-1. What is meant by "abstract representational invariance"?
-1. What is meant by "the abstraction is the *most efficent* level of description"?
-
-**Programming challenges**
-1. Port to python 3.  To be started soon. [Progress will be posted on this repo](https://github.com/Alex-Linhares/Capyblanca).  
-1. Afterwards, a port to [Abhijit Mahabal's Fluid Concepts Framework](https://github.com/amahabal/Pyseqsee).
-
-**Open research problems**
-1. How can Capyblanca learn by observing?  What kinds of new architectural elements are needed?
+and grasp a very simple, but high-level understanding of situations? If so, how? In this project we will
+study an architecture for chess playing which is based on the Hofstadter school of cognitive science.
 
 
 
+ Publications regarding Capyblanca & Analogies in Chess:
+  - Linhares, A. (2005) An Active Symbols Theory of Chess Intuition.  [*Minds and Machines* 15 131--181.](/Literature/Chess-Capyblanca-2005-Linhares-Minds_and_Machines.pdf)
+  - Linhares, A., & Brum, P. (2007) Understanding our understanding of strategic scenarios: What roles do chunks play?  [*Cognitive Science* 31 989--1007](/Literature/Chess-Capyblanca-Linhares.and.Brum-2007-Cognitive%20Science.pdf)
+  - Linhares, A., & Brum, P. (2009) How can experts see the invisible? Reply to Bilali & Gobet, [*Cognitive Science* 33 748--751](/Literature/Chess-Capyblanca-Linhares.and.Brum-2009-Cognitive%20Science.pdf)
+  - Linhares, A. & A.E.T.A. Freitas (2010) Questioning Chase and Simon's (1973) "Perception in Chess": The "experience recognition" hypothesis, [*New Ideas in Psychology* 28 64--78](/Literature/Chess-Capyblanca-Linhares.and.Freitas-2010-New%20Ideas%20in%20Psychology.pdf)
+  - Linhares, A., A.E.T.A. Freitas, A. Mendes, & J.S. Silva (2012) Entanglement of Perception and Reasoning in Chess: differential errors of strategic reconstruction [*Cognitive Systems Research* 13 72--86](/Literature/Chess-Capyblanca-Linhares%20et%20al-2012-Cognitive%20Systems%20Research.pdf)
+  - Linhares, A., and Chada, D. (2013) What is the nature of the mind's pattern recognition in chess? [*New Ideas in Psychology* 31 108--121](/Literature/Chess-Capyblanca-Linhares.Chada-2013-New%20Ideas%20in%20Psychology.pdf)
+  - Linhares, A. (2014) The Emergence of Choice: decision-making and strategic thinking through analogies, [*Information Sciences* 259 36--56](/Literature/Chess-Capyblanca-2014-Linhares-Information%20Sciences.pdf)
 
+For additional info, please see the [project's page](capyblanca.md).
 
 
 PROJECT: MUSICAT
