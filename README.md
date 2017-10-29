@@ -125,7 +125,7 @@ Selected publications regarding Copycat:
  - Chalmers, French, and Hofstadter (1992) [High-level perception, representation, and analogy: a critique of artificial intelligence methodology](/Literature/Foundations-Chalmers.French.and.Hofstadter-1992-Journal%20of%20Experimental%20and%20Theoretical%20Artificial%20Intelligence.pdf), Journal of Experimental and Theoretical Artificial Intelligence 4  185--211.
 
 
-
+Our recommended version is the one currently maintained by [Lucas Saldyt](https://github.com/LSaldyt); For more information on the code, please see the [project's page](copycat.md). 
 
 
 
