@@ -59,7 +59,7 @@ As of right now, this repo is considered, in open-source fashion, to be in versi
 
 
 
-This repo can not only be a library but also a source for undergraduate courses and a set of research questions... hopefully this will enable wider discussions of the scientific concepts presented in this project. Here's where we are and here's [where we're going!](repo-version.md)
+This repo can not only be a library but also a source for undergraduate courses and a set of research questions... hopefully this will enable wider discussions of the scientific concepts presented in this project. An ambitious long-term goal would be to have these projects running in a browser, as recommended by [Bob French](http://onlinelibrary.wiley.com/doi/10.1111/j.1756-8765.2012.01206.x/full)--hopefully in [Jupyter Notebooks](https://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261) and the upcoming [Jupyter Lab](https://medium.com/@boyanangelov/is-this-the-best-data-science-ide-jupyter-lab-review-fdd165470f13). Well, here's where we are and here's [where we're going!](repo-version.md)
 
 Here's how you can [contribute to this repository](contributing.md).
 
@@ -125,7 +125,7 @@ Selected publications regarding Copycat:
  - Chalmers, French, and Hofstadter (1992) [High-level perception, representation, and analogy: a critique of artificial intelligence methodology](/Literature/Foundations-Chalmers.French.and.Hofstadter-1992-Journal%20of%20Experimental%20and%20Theoretical%20Artificial%20Intelligence.pdf), Journal of Experimental and Theoretical Artificial Intelligence 4  185--211.
 
 
-Our recommended version is the one currently maintained by [Lucas Saldyt](https://github.com/LSaldyt); For more information on the code, please see the [project's page](copycat.md). 
+Our recommended version is the one currently maintained by [Lucas Saldyt](https://github.com/LSaldyt); For more information on the code, please see the [project's page](copycat.md).
 
 
 

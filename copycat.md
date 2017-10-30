@@ -1,4 +1,6 @@
-# Recommended version
+# Copycat
+
+## Recommended version
 
 Our recommended copycat version is the one currently maintained by [Lucas Saldyt]((https://github.com/LSaldyt/copycat/) in Python 3. There you will find how to install and run copycat.  Note that Lucas and Alex are playing with the code in a new experiment; and contact us for info regarding how to participate.
 
