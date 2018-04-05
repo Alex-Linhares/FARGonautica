@@ -304,4 +304,4 @@ John Rehling & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.p
 
 Find Dr. Rehling in  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=).
 
-Dr. Rehling's thesis is available [here](http://goosie.cogsci.indiana.edu/farg/mcgrawg/thesis.html) and his sourcecode is available in the [/Software/Letter-Spirit folder](/Software/Letter-Spirit).
+Dr. Rehling's thesis is available [here](http://goosie.cogsci.indiana.edu/farg/mcgrawg/thesis.html) and his sourcecode is available in the [/Software/Letter-Spirit](/Software/Letter-Spirit) folder.
