@@ -1,58 +1,52 @@
-# Code of Conduct
+# Code of Merit
 
-## 1. Purpose
+1. The project creators, lead developers, core team, constitute
+the managing members of the project and have final say in every decision
+of the project, technical or otherwise, including overruling previous decisions.
+There are no limitations to this decisional power.
 
-A primary goal of FARGonautica is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof).
+2. Contributions are an expected result of your membership on the project.
+Don't expect others to do your work or help you with your work forever. 
 
-This code of conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.
+3. All members have the same opportunities to seek any challenge they want
+within the project. 
 
-We invite all those who participate in FARGonautica to help us create a cool experiences for everyone.
+4. Authority or position in the project will be proportional
+to the accrued contribution. Seniority must be earned.
 
-## 2. Open Source Citizenship
+5. Software is evolutive: the better implementations must supersede lesser
+implementations. Technical advantage is the primary evaluation metric.
 
-A supplemental goal of this Code of Conduct is to increase open source citizenship by encouraging participants to focus on the work.
+6. This is a space for technical prowess; topics outside of the project
+will not be tolerated.
 
-Debates will labeled as intrigue between TROLL#1 and TROLL#2, and sorted out based on merit of the arguments (and not on the people involved, or their supposed intentions by others).
+7. Non technical conflicts will be discussed in a separate space. Disruption
+of the project will not be allowed.
 
+8. Individual characteristics, including but not limited to,
+body, sex, sexual preference, race, language, religion, nationality,
+or political preferences are irrelevant in the scope of the project and
+will not be taken into account concerning your value or that of your contribution
+to the project.
 
-## 3. Expected Behavior
+9. Discuss or debate the idea, not the person.
 
-The following behaviors are expected and requested of all community members:
+10. There is no room for ambiguity: Ambiguity will be met with questioning;
+further ambiguity will be met with silence. It is the responsibility
+of the originator to provide requested context.
 
-*   Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community.
-*   Attempt collaboration before conflict.
+11. If something is illegal outside the scope of the project, it is illegal
+in the scope of the project. This Code of Merit does not take precedence over
+governing law.
 
-## 4. Unacceptable Behavior
+12. This Code of Merit governs the technical procedures of the project not the 
+activities outside of it. 
 
-The following behaviors are are not that cool:
+13. Participation on the project equates to agreement of this Code of Merit.
 
-*   Posting or displaying sexually explicit or violent material.
-*   Posting or threatening to post other people’s personally identifying information ("doxing").
-*   Inappropriate photography or recording.
-*   Deliberate intimidation.
-*   Concern trolling. 
-*   Spamming of any form (especially spamming projects that are NOT extremely influenced by Copycat, FARG, Hofstadter, etc.)
-*   Advocating for, or encouraging, any of the above behavior.
+14. No objectives beyond the stated objectives of this project are relevant
+to the project. Any intent to deviate the project from its original purpose
+of existence will constitute grounds for remedial action which may include
+expulsion from the project.
 
-
-## 5. Consequences of Unacceptable Behavior
-
-Unacceptable behavior from anybody is bad.  Anyone asked to stop unacceptable behavior is expected to keep it cool.
-
-
-## 6. Addressing Grievances
-
-Post an issue, let others discuss it, then see a therapist if you're not satisfied with the outcome.
-
-## 7. Scope
-
-We expect all community participants (contributors, paid or otherwise; sponsors; and other guests) to abide by this Code of Conduct in all venues.
-
-
-## 8. Contact info
-
-linhares@clubofrome.org.brbutrememberthenospammingrule
-
-## 9. License and attribution
-
-This Code of Conduct is distributed under a [Creative Commons Attribution-ShareAlike license](http://creativecommons.org/licenses/by-sa/3.0/).
+This document is the Code of Merit (http://code-of-merit.org), version 1.0.
