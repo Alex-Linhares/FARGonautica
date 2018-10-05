@@ -1,5 +1,11 @@
 # Code of Merit
 
+FARGonautica, as a project, is merely the librarian's task of recovering precious code... and attempting to make it run in current technology.  The intention is to create a hub where those with a deep interest in Fluid Cognition can obtain a rich resource. 
+
+One should contact the author of each individual project contained herein to figure out the proper code of conduct within that project.  
+
+FARGonautica operates with the following code of merit. 
+
 1. The project creators, lead developers, core team, constitute
 the managing members of the project and have final say in every decision
 of the project, technical or otherwise, including overruling previous decisions.
