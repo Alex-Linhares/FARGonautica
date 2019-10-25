@@ -274,7 +274,7 @@ Dr. Foundalis said about them:
     fundamental for cognitive science as Newton’s laws are for physics. Bongard problems themselves
     are solved primarily as a consequence of following some fundamental principles of cognition."
 
-Dr. Foundalis is not sharing the code at this time, but his thesis is found in [the Software Folder](/Software).
+Dr. Foundalis is not sharing the code at this time, but his thesis is found in [the Literature Folder](/Literature).
 
 
 
