@@ -150,7 +150,7 @@ PROJECT: NUMBO
 Find Dr. Defays in [Homepage](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369)  |  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=daniel+defays&btnG=&as_sdt=1%2C5&as_sdtp=)
 
 Daniel Defays sent in 2006 a printed version of the sourcecode to Alex Linhares.  This will be scanned
-and archived in this repo---eventually.  Moreover, a port to python 3 and a [port to Abhijit Mahabal's Fluid Concepts Frameowrk](https://github.com/amahabal/Pyseqsee) will be gradually appearing [here](https://github.com/Alex-Linhares/Capyblanca/).
+and archived in this repo---eventually.  Moreover, a port to python 3 and a [port to Abhijit Mahabal's Fluid Concepts Framework](https://github.com/amahabal/Pyseqsee) will be gradually appearing [here](https://github.com/Alex-Linhares/Capyblanca/).
 
 
 PROJECT: SEQSEE
