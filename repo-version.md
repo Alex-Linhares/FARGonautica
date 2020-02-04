@@ -41,7 +41,7 @@ Because when we get there, here's what we can do:
 
 That's right: we can do a full-blown book/free e-book with *a course on the computer science of building FARG architectures*.  But two things:  First, this book would be the subject of *another* repository; and second, Don't worry about the details now... Whether or not Hofstadter will join... whether or not it will be published anywhere fancy: if you're like me and you feel that this is something that should exist, join us and let's make it happen!  
 
-#0.2.0
+#0.2.1
 ---
 Here is how this repository stands:
 
@@ -51,7 +51,7 @@ Here is how this repository stands:
 | Project | Sourcecode | Literature | Exercises | Programming challenges | Research challenges |
 |---------| --------- | ----------| ----------|  ----------| ----------|
 | Seek-Whence & SeqSee | Yes (Seek-Whence coming soon, SeqSee complete) | Yes | 0 | 0 | 0 |
-| Numbo | Yes (Coming soon) | FCCA | 0 | 0 | 0 |
+| Numbo | Yes | FCCA | 0 | 0 | 0 |
 | Copycat & Metacat | Yes | Yes | **6** | **3** | **2** |
 | Tabletop | No | Yes | 0 | 0 | 0 |
 | Letter Spirit | Yes | Yes | 0 | 0 | 0 |

@@ -5,7 +5,7 @@ a project in loving memory of Helga Keller
 
 ---
 
-**Repository News: Letter Spirit sourcecode just added, Seek-Whence coming soon!**
+**Repository News: Numbo source-code just added, Seek-Whence should really be coming soon now!**
 
 
 ![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
@@ -47,7 +47,7 @@ Welcome!  Join us.  This will be insanely fun.
 REPOSITORY VERSION & HOW YOU CAN CONTRIBUTE
 ---
 
-As of right now, this repo is considered, in open-source fashion, to be in version **0.2.0**:
+As of right now, this repo is considered, in open-source fashion, to be in version **0.2.1**:
 
 **Goals for version 1.0.0**:
 - Each project should contain:
@@ -149,7 +149,9 @@ PROJECT: NUMBO
 
 Find Dr. Defays in [Homepage](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369)  |  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=daniel+defays&btnG=&as_sdt=1%2C5&as_sdtp=)
 
-Daniel Defays sent in 2006 a [printed version of the sourcecode to Alex Linhares](/Software/Numbo/numbo.Daniel.Defays.1987.pdf).  This has been just scanned and archived in this repo.  Moreover, a port to python 3 and a [port to Abhijit Mahabal's Fluid Concepts Framework](https://github.com/amahabal/Pyseqsee) will be gradually appearing, in a repo to be announced.
+Daniel Defays sent in 2006 a [printed version of the sourcecode to Alex Linhares](/Software/Numbo/numbo.Daniel.Defays.1987.pdf).  This has been just scanned and archived in this repo.  We are looking for a kind soul with amazong OCR skills that could help us make the code editable, and hence solve [issue #10](https://github.com/Alex-Linhares/FARGonautica/issues/10).  
+s
+Moreover, a port to python 3 and a [port to Abhijit Mahabal's Fluid Concepts Framework](https://github.com/amahabal/Pyseqsee) will be gradually appearing, in a repo to be announced.
 
 
 
