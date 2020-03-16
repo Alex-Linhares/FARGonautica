@@ -1,0 +1,102 @@
+;; May 21 09:22 1987  start.l Page 1
+
+(defvar *iteration* 0 "This is the iteration counter we use at top level")
+
+(defun config (t1 b1 b2 b3 b4 b5)
+    (initialize-pnet)
+    (send result+ :set-instances '(("5g" "result+")))
+    (send resultx :set-instances '(("5g" "resultx")))
+    (send operand :set-instances '(("5g" "operand")))
+    (send similar :set-instances '(("5g" "similar")))
+    (send operation :set-instances '(("6g" "operation")))
+    (send instance :set-instances '(("6g" "instance")))
+    (send node-add :set-instances '(("6g" "node-add")))
+    (send node-subtract :set-instances '(("6g" "node-subtract")))
+    (send node-multiply :set-instances '(("6g" "node-multiply")))
+    (init-cytoplasm t1 b1 b2 b3 b4 b5)
+    (format t "Le jeu des chiffres")(terpri)
+    (setq t1 (send *cytoplasm* :target)) (format t "Initial configuration :")
+    (terpri)(format t "   Target : ~a" t1)(terpri)
+    (setq b1 (send *cytoplasm* :brick1))
+    (setq b2 (send *cytoplasm* :brick2))
+    (setq b3 (send *cytoplasm* :brick3))
+    (setq b4 (send *cytoplasm* :brick4))
+    (setq b5 (send *cytoplasm* :brick5))
+    (format t " Bricks : ~a ~a ~a ~a ~a" b1 b2 b3 b4 b5)(terpri)
+    (setq retry t)
+;Graphics
+   (cond
+    (%graphics% (init-pnet-graphics *pnet*) (display-pnet *pnet*)))
+;Initialization of the target and start of the outer loop
+    (setq *problem-solved* 0)
+    (cr-empty-coderack *coderack*)
+    (read-target)
+    (eval (cr-choose *coderack*))
+    (eval (cr-choose *coderack*))
+    (eval (cr-choose *coderack*))
+    (setq %resultx% 200)
+    (setq %result+% 100)
+    (setq %operand% 50)
+    (repump)
+;Initialization of the bricks and first processing
+    (read-brick 1)
+    (eval (cr-choose *coderack*))
+    (eval (cr-choose *coderack*))
+    (read-brick 2)
+    (eval (cr-choose *coderack*))
+    (eval (cr-choose *coderack*))
+    (read-brick 3)
+    (eval (cr-choose *coderack*))
+    (eval (cr-choose *coderack*))
+    (read-brick 4)
+    (eval (cr-choose *coderack*))
+    (eval (cr-choose *coderack*))
+    (read-brick 5)
+;I start at x = 11 to have an early spreading of activation in the
+;pnet (after 9 iterations).
+;;
+;; May 21 09:22 1987  start.l Page 2
+;;
+    (setq x  11)
+    (do ((y 0 (add1 y)))
+     ((= 1 *problem-solved*)(format t "Done : ") (decompose 'cyto-target))
+     (setq *iteration* y)
+     (setq x (add1 x))
+     (cond
+         ((and (> x 400) (> (temperature) %temperature-threshold%))
+          (cr-empty-coderack *coderack*) (setq x 39))
+         ((= 0 (mod x 40))
+         (refresh-everything)(reactivate-ctyo))
+         ((= 0 (mod x 20))
+          (refresh-everything))
+;         (terpri) (terpri) (print (temperature)) (terpri))
+         ((= 0 (mod x 5))
+        (cr-hang *coderack* '(look-for-new-block) %fourth-urgency%)
+          (decrease-interest) (check-temperature))
+         (t (setq rescod (if (cr-empty? *coderack*)
+                          then nil
+;                         else (cr-choose *coderack* t)))
+                          else (cr-choose *coderack*)))
+;If there is no more codelets, a last activation of the pnet is tried.
+     (if (null rescod) then
+         (cond
+             (retry
+                  (cr-hang *coderack* '(look-for-new-block)
+              %fourth-urgency%)
+                  (cr-hang *coderack* '(look-for-new-block)
+              %fourth-urgency%)
+                  (cr-hang *coderack* '(look-for-new-block)
+              %fourth-urgency%)
+                  (cr-hang *coderack* '(look-for-new-block)
+              %fourth-urgency%)
+                  (spread-activation-in-pnet)
+                  (cond
+                     (%graphics% (update-pnet-display *pnet*)
+                                (setq nn (get-pname (concat 'gr x)))
+                                (dump-window  nn)))
+                  (setq retry nil)
+                  (populate-coderack) (reactivate-cyto))
+             (t (return))))
+   (eval rescod)))))
+;  (print rescod) (terpri)
+ ;  (eval (car rescod))))))

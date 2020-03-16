@@ -1,0 +1,64 @@
+;; May 19 17:05 1987  trace3.31 Page 1
+
+(config 31 3 5 24 3 14)
+Le jeu des chiffres
+Initial configuration :
+   Target : 31
+   Bricks : 3 5 24 3 14
+Node cyto-target created
+Node cyto-brick1 created
+Node cyto-brick2 created
+Node cyto-brick4 created
+Node cyto-brick5 created
+About to post codelet look-for-blx (30 3 10)
+About to post codelet look-for-blx (30 5 6)
+Node cyto-brick3 created
+Node cyto-block9-v1 created
+Node times3-3-v1 created
+Node times3-3-v1 killed
+Node cyto-block9-v1 killed
+About to post codelet look-for-blx (30 3 10)
+About to post codelet look-for-blx (30 5 6)
+Node cyto-block27-v2 created
+Node plus3-24-v2 created
+Node cyto-target-4-v3 created
+Node plus27-4-v3 created
+Node cyto-target-1-v4 created
+Node plus4-1-v4 created
+;; gc: flonum +25 (135)
+Node cyto-target-2-v5 created
+Node plus1-2-v5 created
+About to post codelet look-for-diff (0)
+Node plus1-2-v5 killed
+Node cyto-target-2-v5 killed
+Node plus4-1-v4 killed
+Node cyto-target-1-v4 killed
+Node cyto-target-1-v6 created
+Node plus4-1-v6 created
+Node plus4-1-v6 killed
+Node cyto-target-1-v6 killed
+Node cyto-target-1-v7 created
+Node plus4-1-v7 created
+Node plus27-4-v3 killed
+Node cyto-target-4-v3 killed
+Node plus4-1-v7 killed
+Node cyto-target-1-v7 killed
+Node plus3-24-v2 killed
+Node cyto-block27-v2 killed
+Node cyto-target-7-v8 created
+Node plus24-7-v8 created
+Node cyto-target-7-v9 created
+Node plus7-7-v9 created
+Node cyto-target-2-v10 created
+Node plus5-2-v10 created
+Node plus5-2-v10 killed
+Node cyto-target-2-v10 killed
+Node cyto-block2-v11 created
+Node plus2-3-v11 created
+Node cyto-target-5-v12 created
+;;
+;; May 19 17:05 1987  trace3.31 Page 2
+;;
+Node plus2-5-v12 created
+Node cyto-target-2-v13 created
+Node plus3-2-v13 created
