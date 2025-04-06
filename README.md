@@ -153,8 +153,7 @@ Find Dr. Defays in [Homepage](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?
 
 Daniel Defays sent in 2006 a [printed version of the sourcecode to Alex Linhares](/Software/Numbo/numbo.Daniel.Defays.1987.pdf).  This has been just scanned and archived in this repo, and a [digitized version](Software/Numbo/numbo-digitized/) is now available.
 
-Moreover, a port to python 3 and a [port to Abhijit Mahabal's Fluid Concepts Framework](https://github.com/amahabal/Pyseqsee) will be gradually appearing, in a repo to be announced.
-
+Linhares is developing a verson of Numbo in python.  There seems to be a [version in Clojure](https://github.com/twhume/numbo),, by [twhume](https://github.com/twhume) but it has not beern tested by us. 
 
 
 
