@@ -107,7 +107,8 @@ Copycat's architecture is tripartite, consisting of a slipnet, a working area (a
 
 | Author  |  Language/Sourcecode |  Note  |
 |--------|------------------------|-------|
-| Melanie Mitchell |  [LISP](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html) | Bitrotten |  
+| Melanie Mitchell |  [LISP](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html) | Bitrotten, but see below: |  
+| Scott Burson (& Melanie Mitchell) |  [LISP](https://github.com/slburson/copycat) | Seems to be running! |  
 | Scott Boland  | [Java](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) | (SB's email lost?) |
 | ["speakeasy"](https://github.com/speakeasy)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland's code |
 | [Greg Detre](https://github.com/gregdetre) | [Clojure](https://github.com/gregdetre/copycat-clojure)  | Not tested  |
