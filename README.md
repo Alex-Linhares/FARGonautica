@@ -154,7 +154,7 @@ Find Dr. Defays in [Homepage](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?
 
 Daniel Defays sent in 2006 a [printed version of the sourcecode to Alex Linhares](/Software/Numbo/numbo.Daniel.Defays.1987.pdf).  This has been just scanned and archived in this repo, and a [digitized version](Software/Numbo/numbo-digitized/) is now available.
 
-Linhares is developing a verson of Numbo in python. There seems to be a [version in Clojure](https://github.com/twhume/numbo), by [Tom Hume](https://www.tomhume.org/numbo/), but it has not beern tested by me. 
+Linhares is developing a verson of Numbo in python. There is a [version in Clojure](https://github.com/twhume/numbo), by [Tom Hume](https://www.tomhume.org/numbo/), but it has not been tested by me. 
 
 
 
