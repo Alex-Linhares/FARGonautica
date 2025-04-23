@@ -113,7 +113,7 @@ Copycat's architecture is tripartite, consisting of a slipnet, a working area (a
 | ["speakeasy"](https://github.com/speakeasy)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland's code |
 | [Greg Detre](https://github.com/gregdetre) | [Clojure](https://github.com/gregdetre/copycat-clojure)  | Not tested  |
 | [Arthur O'Dwyer](https://github.com/Quuxplusone), [J Alan Brogan](https://github.com/jalanb),others | [Python 2](https://github.com/Quuxplusone/co.py.cat)  | Multiple forks, no graphics  |
-| [Lucas Saldyt](https://github.com/LSaldyt) | [Python 3](https://github.com/LSaldyt/copycat/commit/bc848e8f2d7dd922b96bd0118ba4adf2fc033e55)  | Above repo patch to Python 3  |
+| [Lucas Saldyt](https://github.com/LSaldyt) | [Python 3](https://github.com/fargonauts/copycat)  | Above repo patch to Python 3  |
 | [Joseph Aaron Hager](https://github.com/ajhager) | [Python 3](https://github.com/ajhager/copycat) | [OpenGL graphics](https://youtu.be/v7Eotp-XKVA) |
 | [Paul Geiger](https://github.com/Paul-G2) | [JavaScript](https://github.com/Paul-G2/copycat-js) | [Demo runs in a browser](https://paul-g2.github.io/copycat-js/) |
 
