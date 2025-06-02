@@ -12,6 +12,8 @@ a project in loving memory of Helga Keller
 
 [**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
 
+[Fuid Concepts & Creative Analogies at the Internet Archive](https://archive.org/details/fluidconceptscre0000hofs_w7o9/mode/2up).
+
 
 
 Research carried out at the Center of Research on Concepts and Cognition (CRCC) has been described in detail in the book _Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought_, written by Douglas Hofstadter and members of the Fluid Analogies Research Group. Hofstadter's first two books, _Gödel, Escher, Bach_ and _Metamagical Themas_ previously discussed a number of ideas relevant to artificial intelligence and cognitive science, such as recursivity, subcognition, and emergent behavior, but this new book looks back from the perspective of having grappled with those ideas in the course of implementing actual computer models. Programs that model creativity and analogy-making have been designed by Hofstadter and his graduate students, and the story of their past, present and future development is the subject of the book, co-authored by the students in the Fluid Analogies Research Group (FARG).
@@ -145,6 +147,13 @@ Find Dr. Marshall in [Sarah Lawrence College](https://www.sarahlawrence.edu/facu
 
 Dr. Marshall is maintaining [the Metacat Project page](http://science.slc.edu/~jmarshall/metacat/).
 
+
+
+PROJECT: TABLETOP
+---
+Find Bob French [Homepage](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | [Google Scholar](https://scholar.google.com/citations?user=38ihKBAAAAAJ&hl=en) | [Wikipedia](https://en.wikipedia.org/wiki/Robert_M._French)
+
+Read [The Subtlety of Sameness](https://archive.org/details/subtletyofsamene0000fren/page/n5/mode/2up) on the Internet Archive!
 
 
 PROJECT: NUMBO
