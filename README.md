@@ -311,6 +311,8 @@ Dr. McGraw implemented Letter Spirit's gridletter recognizer (the Examiner also 
 Find Dr. McGraw in  [Personal page](https://www.garymcgraw.com/)  |  [Google Scholar](https://scholar.google.com.br/scholar?q=mcgraw+letter+spirit&btnG=&hl=en&as_sdt=0%2C5)  |  [Amazon Author's page](https://www.amazon.com/Gary-McGraw/e/B000APFZ2S/ref=sr_ntt_srch_lnk_1?qid=1503736392&sr=8-1)  
 
 
+There is an incredible javascrpt implementation of the examiner by [Paul Geiger](https://github.com/Paul-G2).  Run it [here](https://paul-g2.github.io/letter-spirit-examiner-js/), or check out the source [here](https://github.com/Paul-G2/letter-spirit-examiner-js?tab=readme-ov-file). 
+
 LETTER SPIRIT, PART II
 ---
 
