@@ -215,9 +215,11 @@ Publications:
 - Lara-Dammer & Hofstadter, [*Perception of Direction and its Influence on Geometric Discoveries*](https://cogsci.indiana.edu/pub/lara-dammer.perception-of-direction-2006.pdf)
 - [Lara-Dammer, Hofstadter & Goldstone (2017) A computer model of context-dependent perception in a very simple world, *Journal of Experimental and Theoretical Artificial Intelligence* 1--36](http://www.tandfonline.com/eprint/hNcJzAjrviqTaWjzR235/full)
 
-2017-08-29. Dr. Lara-Dammer's Thesis is not available here as he is working on a book on the subject.  We'll stay tuned and link to it as soon as more information is available.
+2017-08-29. Dr. Lara-Dammer's Thesis is not available here as he and Prof. Hofstadter are working on a book on the subject.  
 
 2017-08-29. Dr. Lara-Dammer desires to clean up the code before a wider release.  
+
+2026-08-12: We regret to inform Dr. Lara-Dammer has passed away.
 
 
 PROJECT: CAPYBLANCA
@@ -321,3 +323,6 @@ John Rehling & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.p
 Find Dr. Rehling in  [Google Scholar](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=).
 
 Dr. Rehling's thesis is available [here](http://goosie.cogsci.indiana.edu/farg/mcgrawg/thesis.html) and his sourcecode is available in the [/Software/Letter-Spirit](/Software/Letter-Spirit) folder.
+
+Once again, there is an incredibly beautiful javascrpt implementation of this work by [Dr. Paul Geiger](https://github.com/Paul-G2).  Run it [here](https://paul-g2.github.io/letter-spirit-2-js/index.html), or check out the source [here](https://github.com/Paul-G2/letter-spirit-2-js). 
+
