@@ -672,6 +672,7 @@ The checker accepts whichever relation holds.
    - On seed 16, brick 4's `link-to-pnet` codelet (urgency 600) was still on the coderack at that point, so its `plinks` was nil.
    - `(send (eval nil) :set-activation ...)` then signals "SEND: NIL does not handle the message :SET-ACTIVATION".
    - Franz Flavors `send` on nil would also have failed, so this is a scheduling race in the 1987 code, hit about 1 time in 100 here. The coderack's selection rule is a reconstruction (item 5), so the exact frequency depends on it. Not changed.
+   - In oracle mode (shared RNG) the race has a second form. If a brick's `read-brick` codelet has not run yet either, `(eval 'cyto-brickN)` fails first, with "The variable CYTO-BRICK3 is unbound." (puzzle 1, oracle seed 323). Over oracle seeds 1–400 of the 11 puzzles, 4 runs error, all at x = 40: puzzle 1 seed 40 and puzzle 3 seeds 162 and 272 in the SEND form, and seed 323 in this one. `python/tests/test_full_runs.py` runs seeds 40 and 323.
 
 **Tests:** `tests/solution-tests.lisp` has 25 checks and is wired into `run-tests.sh`. It covers:
 - The checker on hand-written decompositions: a valid one; a brick used twice; a wrong brick value; bad arithmetic; the wrong target; no "Done :"; nothing after it; a truncated paragraph; seed 93's dangling block; division through a TIMES dtarget; and the "Obvious." root block.
@@ -740,3 +741,138 @@ So the trace was made with earlier versions of codelets.l, start.l and init.l th
   - How *often* that random codelet runs relative to Pnet-driven ones depends on the coderack's selection rule, which is reconstructed (item 5). The chapter gives no rate. The difference is one of degree. No porting bug found.
 - **#6 (146)** is solved 1/20. The chapter only reports human data for #6, so there is no Numbo claim to compare with.
 - **#10 (127)**: the chapter's 4 x 30 + 7 (via 6 x 5) never appeared in 20 seeds; the "more obvious" 6 x 22 - 5 dominates (13/17), which matches the chapter's description of the obvious routes. ((6 x 4) x 5) + 7 appeared once.
+
+## Oracle hooks (loop0002)
+
+loop0002 translates Numbo to Python and uses this port as the oracle: the
+Python must produce the same event stream, run for run. These hooks make that
+possible. **They are opt-in.** In default mode none of them is loaded, and the
+port behaves exactly as before: all loop0001 test groups pass unchanged, and
+README's seed-18 run still solves puzzle 3 in 1328 iterations.
+
+**No ported source file was edited.** Everything is in `src/oracle.lisp` (new)
+and `src/load.lisp`.
+
+### Turning it on
+
+- Set `(defvar cl-user::*numbo-oracle* t)` before loading `src/load.lisp`, or
+  set the environment variable `NUMBO_ORACLE` to anything except `""` or `"0"`.
+- `load.lisp` then loads `oracle.lisp` right after `package.lisp`, before
+  `franz-compat`, so every later file reads the symbols it shadows.
+- Once every file has loaded, `load.lisp` calls `numbo::oracle-install`.
+- Run with `(numbo::oracle-run-config problem :seed s :max-iterations n :trace "file.jsonl")`.
+  - It takes the same keys as `run-config`, plus `:rng-events` and `:float-check`.
+  - It returns `run-config`'s plist, plus `:single-floats` and `:doubles-seen`.
+  - A Lisp error ends the run with `:outcome :error` and `:error` holding the message.
+
+### The hooks
+
+| Hook | Where | Original behavior | Oracle mode | Reason |
+|---|---|---|---|---|
+| Double floats | `load.lisp` `numbo-load-file` | SBCL reads `0.9` as a single float | `*read-default-float-format*` is bound to `double-float` **only while each numbo file is loaded**. Afterwards the global value is still `single-float` (tested). | Franz flonums were doubles, and so are Python floats. The audit's top risk: threshold comparisons on activations would diverge. |
+| `FLOAT`, `SQRT` shadowed | `oracle.lisp` | `(float 1)` and `(sqrt 16)` give single floats in CL, even when the literals are doubles | `(float x)` gives a double. `(sqrt r)` of a rational gives a double. Otherwise these are CL's functions. | Floats computed from integers: `:link-length` `(quotient (float 1) %length%)`, `activate`'s `(sqrt val)`, `ratio`, `sim`. `franz-compat`'s `quotient` also uses this `float`, because `franz-compat` loads after the shadowing. |
+| `RANDOM` shadowed | `oracle.lisp` | the 7 `(random n)` calls (coderack x2, codelets x5) use CL's `*random-state*` | splitmix64, with rejection sampling for `n` (specification below). It is seeded by `oracle-run-config` with the run's seed, before `init-chiffre`. | A generator that both languages can implement bit for bit. CL's `*random-state*` plays no part (tested). |
+| Copying `SORTCAR` | `oracle-install` replaces `franz-compat`'s `sortcar` | destructive `sort`. It can reorder or truncate a pnode's `instances` slot (item 11: about 1 run in 40) | `(stable-sort (copy-list list) ...)`. The caller's list is untouched. | Python's `sorted` never mutates. Same order as before: SBCL's list `sort` is already a stable merge sort. |
+| JSON-lines trace | `sb-int:encapsulate` on `config`, `cr-choose`, `cr-hang`, `mod`, `cr-empty-coderack`, `create-cyto-node`, `create-op-node`, `disconnect`, `spread-activation-in-pnet`, `decompose` | none | One JSON object per line (events below). With no trace open, each encapsulation just calls through. | Comparing structured events instead of printed text. |
+
+### The RNG, bit for bit
+
+- **State.** An unsigned 64-bit integer. `(oracle-seed s)` sets it to `s mod 2^64`.
+- **Next output** (all arithmetic mod 2^64):
+  1. `state += 0x9E3779B97F4A7C15`
+  2. `z = state`
+  3. `z = (z ^ (z >> 30)) * 0xBF58476D1CE4E5B9`
+  4. `z = (z ^ (z >> 27)) * 0x94D049BB133111EB`
+  5. return `z ^ (z >> 31)`
+- **`(random n)`.** `n` must be an integer with 1 <= n <= 2^64; anything else is an error, as `(random 0)` already is in CL.
+  1. `limit = 2^64 - (2^64 mod n)`
+  2. Draw until `x < limit`.
+  3. Return `x mod n`.
+  - Even `(random 1)` draws.
+- **Check value.** Seed 0's first output is `0xE220A8397B1DCDAF`, Vigna's reference value.
+- **Test vectors.** `tests/oracle/rng-vectors.lisp` writes `python/fixtures/rng_vectors.json`:
+  - the first 20 outputs for seeds 0, 1 and 18;
+  - for each of those seeds, 20 `(random n)` calls, with `n` from 1 up to 2^64. They include `2^63 + 1`, where about half the draws are rejected; seeds 0 and 1 really do reject.
+- **Cross-check.** An independent Python implementation of the specification above (a scratch check, not committed) reproduced the whole file.
+- `tests/oracle-tests.lisp` checks that the committed file is what the oracle writes now.
+
+### Trace events
+
+- **Encoding of Lisp data** (codelet args, decomposition values):
+  - integer → number; double → number, printed as the shortest round-trip form;
+  - `nil` → `null`; `t` → `true`;
+  - symbol → its upper-case name (`"CYTO-BLOCK27-V2"`); keyword → `":NAME"`;
+  - string → `{"str": "..."}`, so `"free"` and the symbol `free` stay distinct;
+  - list → array; dotted pair → `{"cons": [a, b]}`;
+  - flavor instance → `{"obj": "cyto-node", "name": ...}`.
+  - Any other value (a single float, a ratio, ...) is an **error**.
+- **Plain JSON strings.** Fields that are always names or type strings (`name`, `type`, `codelet`, `op`, ...).
+- **`args`.** Always an array (`[]` for `(look-for-new-block)`).
+
+| Event | Fields | Written when |
+|---|---|---|
+| `start` | `problem`, `seed`, `max_iterations`, `rng`, `pnet` (the 88 `*pnet*` names in order) | first |
+| `setup-choose` | `codelet`, `args`, `urgency`, `rack` | each of the 13 `(eval (cr-choose *coderack*))` before config's main loop |
+| `iteration` | `n` (config's `y`), `x`, `temperature`, `rack` (`[[urgency, count], ...]`), `codelet`, `args`, `urgency` (null if the iteration chose nothing) | each main-loop iteration |
+| `post` | `codelet`, `args`, `urgency` | every `cr-hang` |
+| `node-created` | `name`, `type`, `value` | `create-cyto-node`, `create-op-node` (type `"5g"`, value null) |
+| `node-killed` | `name`, `type`, `value` | `disconnect`: the op node, then the cyto node |
+| `pnet` | `act`: the 88 activations, in `start`'s order | after each `spread-activation-in-pnet` |
+| `rack-emptied` | | every `cr-empty-coderack` |
+| `rng` | `n`, `value` | each draw, only with `:rng-events t`. Draws made inside `cr-choose` go into the choosing event's `rng` field instead. |
+| `done` | `iterations`, `decomposition` (`[{op, a, va, b, vb, result}]`, parsed from what `decompose` printed) | "Done :" |
+| `gave-up` / `capped` / `error` | `iterations` (as `run-config`); `error` adds `message` | last |
+
+**How the main loop is detected.** `config` itself is not edited.
+- **Iteration start.** As in `harness.lisp`, the first call to `mod` or `cr-empty-coderack` that sees a new `*iteration*` starts an iteration. This only counts after the set-up phase.
+- **End of set-up.** The set-up phase ends after its 13th `cr-choose`, and only once that codelet has been evaluated. The 13th codelet can call `mod` itself (seed 14: `compare-b-to-t` → `digits-in-common`), which the first version mistook for iteration 0. For that one choice, the hook hands `config` the form `(oracle-end-setup 'form)`. It evaluates the codelet as `config`'s `eval` would, then switches phase.
+- **Cap order.** The harness's iteration-cap encapsulation is installed *outside* the oracle's, so the iteration it stops at is never begun in the trace.
+
+**What gets written when.**
+- An `iteration` event is held until its choice is known: either `cr-choose` fills in the codelet, or the next event or the end of the run writes it with null.
+- The `rack` and `temperature` fields are taken at the start of the iteration.
+
+**`temperature` without side effects.**
+- `temperature` → `collect-misfortune` SETQs the free global `current-target`, which `look-for-blx` reads.
+- The hook therefore calls it inside `oracle-call-without-global-effects`, which restores any NUMBO symbol value it changed.
+- Tested: the printed output of a run is byte-identical with the trace, RNG events and float checks on, and with no trace at all. The test includes puzzle 3, which passes x = 400, where `config` calls `temperature` itself.
+
+### Every float is a double (tested)
+
+- **The world walk.** `oracle-find-single-floats` walks everything reachable from the run's state, and returns any float that is not a double:
+  - every NUMBO symbol's value and property list (the coderack lives on `my-coderack`'s plist);
+  - from those: conses, vectors, hash tables, and every slot of pnodes, cyto-nodes and structures.
+- **When it runs.** With `:float-check t`, at the start of every main-loop iteration and at the end of the run.
+- **The trace writer.** It refuses any non-double float.
+- **Results.** `tests/oracle-tests.lisp` runs the 11 chapter puzzles × seeds 1, 2 and 14 (cap 3000) with the float check on. No single float was found, and doubles were seen in every run.
+- **Controls:**
+  - a single float planted in a global is found;
+  - the writer rejects `2.5f0`;
+  - with `numbo::float` reverted to CL behavior (by hand, not in the suite), the first `pnet` event fails with "149.1228 (SINGLE-FLOAT) is not ... a finite double-float".
+
+### Oracle-mode results
+
+The 11 chapter puzzles × seeds 1–20, capped at 20000 iterations, take about 30 s:
+
+- 184 solved, 34 gave up, 2 capped, **0 errors**.
+- Traces are up to 7.6 MB per run (96 MB for all 220). They are not committed.
+- No printed output contains a `d0` float.
+
+The rates differ from `src/RESULTS.md` because the RNG is different, and so are the float precision and the sortcar behavior. Python item 13 compares them.
+
+### Tests
+
+- `tests/oracle-tests.lisp` (833 checks), in `run-tests.sh` as "oracle hooks". It covers:
+  - the mode;
+  - RNG reference values, rejection, errors, and the fixture;
+  - the copying sortcar;
+  - trace structure on 33 runs (every line is valid JSON for a Lisp parser, and, on the 11 seed-1 traces, for python3's `json` too; event types; the outcome; iteration numbering; 13 set-up choices; node events equal to the printed `Node ...` lines; decomposition);
+  - doubles only;
+  - determinism;
+  - hooks that only observe.
+- `tests/oracle-mode-tests.sh`, in `run-tests.sh` as "oracle mode is opt-in". In a default load (and with `NUMBO_ORACLE=0` or empty):
+  - `RANDOM`, `FLOAT` and `SQRT` are CL's;
+  - there is no `*oracle*` and no `oracle-install`;
+  - `%first-decay-rate%` is a single float.
+
+  `NUMBO_ORACLE=1` and `*numbo-oracle*` both turn oracle mode on.

@@ -75,6 +75,15 @@ run "validation vs trace3.31 + chapter puzzles" sbcl --noinform --non-interactiv
 # --- the README's commands, run as written (item 12) --------------------------
 run "src/README.md commands" bash tests/readme-test.sh
 
+# --- loop0002 item 1: opt-in oracle hooks (src/oracle.lisp) --------------------
+run "oracle mode is opt-in (default load unchanged)" bash tests/oracle-mode-tests.sh
+
+run "oracle hooks: RNG, doubles, sortcar, JSON trace" sbcl --noinform --non-interactive --no-userinit --no-sysinit \
+    --load tests/oracle-tests.lisp
+
+# --- loop0002 item 2 on: the Python translation (python/), checked against the oracle
+run "python tests" python3 -m pytest python/tests -q
+
 if [ "$fail" -ne 0 ]; then
     echo "SOME TESTS FAILED"
     exit 1
