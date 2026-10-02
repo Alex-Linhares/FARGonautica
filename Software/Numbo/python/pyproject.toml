@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numbo"
+version = "0.0.1"
+description = "Numbo (Defays, 1987) translated to Python, test-driven against the SBCL port in ../lisp/src/"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+# The live GUI (python3 -m numbo.gui, or numbo-gui). The engine and the CLI
+# need only the standard library.
+gui = ["PySide6>=6.6"]
+# The GUI tests skip when PySide6 is missing.
+test = ["pytest>=7.4", "pytest-qt>=4.5"]
+
+[project.scripts]
+numbo = "numbo.__main__:main"
+numbo-gui = "numbo.gui.app:run"
+
+[tool.setuptools]
+packages = ["numbo", "numbo.models", "numbo.gui"]
+
+[tool.pytest.ini_options]
+# Run from Software/Numbo/ as `python3 -m pytest python/tests -q`, or from here.
+testpaths = ["tests"]
+pythonpath = [".", "tests"]
+addopts = "-p no:cacheprovider"
+xfail_strict = true
