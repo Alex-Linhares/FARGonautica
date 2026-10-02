@@ -7,7 +7,8 @@ from conftest import FIXTURES_DIR, regenerate_fixtures, requires_sbcl
 
 
 def _files(d):
-    return sorted(p.name for p in d.iterdir() if p.is_file())
+    # python/fixtures/README.md documents the fixtures; it is not one of them.
+    return sorted(p.name for p in d.iterdir() if p.is_file() and p.name != "README.md")
 
 
 @requires_sbcl

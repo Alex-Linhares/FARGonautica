@@ -57,7 +57,7 @@ MAX_FIT_SCALE = 1.5
 ZOOM_STEP = 1.25
 MARGIN = 16                # around the layout, in scene units
 
-TYPE_COLORS = {"1t": "#f4b183", "3dt": "#ffe699", "4bl": "#9dc3e6", "2b": "#c5e0b4",
+TYPE_COLORS = {"1t": "#f4b183", "3dt": "#e8141c", "4bl": "#9dc3e6", "2b": "#c5e0b4",
                OP_TYPE: "#e4e4e4"}
 TYPE_NAMES = {"1t": "target", "3dt": "derived target", "4bl": "block", "2b": "brick",
               OP_TYPE: "operation"}
@@ -65,6 +65,10 @@ OTHER_COLOR = "#ffffff"
 BORDER = "#333333"
 CURRENT_BORDER = "#c55a11"
 TEXT = "#1a1a1a"
+# Derived targets (what Numbo still needs to build) stand out: bright red,
+# with bold white text.
+BOLD_TYPES = {"3dt"}
+TYPE_TEXT = {"3dt": "#ffffff"}
 BAR = "#4a4a4a"
 BAR_TRACK = "#22000000"    # #AARRGGBB: a faint track under the bar
 EDGE = "#8c8c8c"
@@ -79,10 +83,11 @@ HALO = 4                   # room outside the box for the halo
 
 
 class Label(NamedTuple):
-    """A node's text, and whether it is an operation's (drawn round, with
-    no activation bar)."""
+    """A node's text, whether it is an operation's (drawn round, with no
+    activation bar), and whether it is drawn bold (which makes it wider)."""
     text: str
     op: bool
+    bold: bool = False
 
 
 def view_label(node):
@@ -94,7 +99,7 @@ def view_label(node):
     text = node_label(node)
     if node.children and node.expression:
         text += "\n" + node.expression
-    return Label(text, False)
+    return Label(text, False, node.type in BOLD_TYPES)
 
 
 @dataclasses.dataclass(frozen=True)
@@ -108,6 +113,8 @@ class Style:
     opacity: float
     bar: object
     highlight: object = None
+    text: str = TEXT
+    bold: bool = False
 
 
 def node_style(node, ghost_age, highlight):
@@ -130,16 +137,18 @@ def node_style(node, ghost_age, highlight):
         bar = 0 if not isinstance(a, (int, float)) else min(1, max(0, a / MAX_ACTIVATION))
     return Style(fill=TYPE_COLORS.get(node.type, OTHER_COLOR), border=border,
                  border_width=width, dashed=dashed, opacity=opacity, bar=bar,
-                 highlight=highlight)
+                 highlight=highlight, text=TYPE_TEXT.get(node.type, TEXT),
+                 bold=node.type in BOLD_TYPES)
 
 
 class NodeItem(QGraphicsItem):
     """A node's box at its layout position: RECT is (0, 0, width, height)."""
 
-    def __init__(self, name, font):
+    def __init__(self, name, font, bold_font=None):
         super().__init__()
         self.name = name
         self.font = font
+        self.bold_font = bold_font or font
         self.node = None
         self.label = None
         self.style = None
@@ -202,8 +211,8 @@ class NodeItem(QGraphicsItem):
                 painter.setBrush(QColor(BAR))
                 painter.drawRect(QRectF(track.x(), track.y(), track.width() * s.bar,
                                         BAR_HEIGHT))
-        painter.setFont(self.font)
-        painter.setPen(QColor(TEXT))
+        painter.setFont(self.bold_font if s.bold else self.font)
+        painter.setPen(QColor(s.text))
         painter.drawText(text_rect, Qt.AlignmentFlag.AlignCenter, self.label)
 
 
@@ -249,6 +258,9 @@ class TreeView(QGraphicsView):
         self.node_font = QFont(self.font())
         self.node_font.setPointSizeF(9)
         self._metrics = QFontMetricsF(self.node_font)
+        self.bold_font = QFont(self.node_font)
+        self.bold_font.setBold(True)
+        self._bold_metrics = QFontMetricsF(self.bold_font)
         self.model = TreeModel()
         self.layouter = self.make_layouter()
         self.layout = None
@@ -265,8 +277,9 @@ class TreeView(QGraphicsView):
 
     def measure(self, label):
         lines = label.text.split("\n")
-        w = max(self._metrics.horizontalAdvance(line) for line in lines) + 2 * PAD_X
-        h = self._metrics.height() * len(lines) + 2 * PAD_Y
+        metrics = self._bold_metrics if label.bold else self._metrics
+        w = max(metrics.horizontalAdvance(line) for line in lines) + 2 * PAD_X
+        h = metrics.height() * len(lines) + 2 * PAD_Y
         if label.op:
             return (max(w, h), h)
         return (w, h + BAR_HEIGHT + 2)
@@ -346,7 +359,7 @@ class TreeView(QGraphicsView):
             node = nodes[name]
             item = self.node_items.get(name)
             if item is None:
-                item = self.node_items[name] = NodeItem(name, self.node_font)
+                item = self.node_items[name] = NodeItem(name, self.node_font, self.bold_font)
                 scene.addItem(item)
             highlight = self.highlight(name)
             if highlight:

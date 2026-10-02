@@ -16,6 +16,22 @@ Lisp function, with the same names (`look-for-new-block` is
 Each place that reproduces a 1987 quirk has a `# 1987:` comment citing
 `lisp/src/PORTING_NOTES.md`.
 
+## Screenshots
+
+The GUI (`python3 -m numbo.gui`) after puzzle 1 with seed 1 is solved,
+114 = (6 × 20) − (7 − 1). The center shows the tree canvas. Controls and stats
+are on the left, the coderack on the right, and the Pnet, event log and
+timeline along the bottom:
+
+![The window after puzzle 1 with seed 1](docs/gui-window.png)
+
+The canvas at the end of puzzle 3 with seed 8, the `kill-block` gap run. Its
+"Done :" goes through the block 11, which was killed earlier (dashed, faded,
+under `8 = [11] - 3`), so the window's banner and the check say the solution
+is invalid:
+
+![The canvas at the end of puzzle 3 with seed 8](docs/gui-gap-run.png)
+
 ## Requirements
 
 - **Python 3.12** (`python3`). The engine and the CLI use only the standard
@@ -136,9 +152,8 @@ stream. `observers` get the run's typed events (see
 
 `python3 -m numbo.gui` (or `numbo-gui` once installed) opens a window where
 you pick a puzzle and a seed, press Play, and watch the cytoplasm's
-arithmetic trees being built, killed and rebuilt, one event at a time:
-
-![The window after puzzle 1 with seed 1](docs/gui-window.png)
+arithmetic trees being built, killed and rebuilt, one event at a time
+(see [Screenshots](#screenshots)):
 
 - **The canvas** (center) draws the cytoplasm as trees: the target with
   its derived targets, the blocks, and the free bricks. Each node shows its
@@ -170,13 +185,6 @@ a second for the whole window). Keys (the Run menu): Space play/pause,
 → step, Shift+→ step an iteration, Esc stop, ← one event back. The window's
 size, docks, inputs and speed are remembered between sessions (QSettings
 `numbo`/`numbo-gui`).
-
-The canvas at the end of puzzle 3 with seed 8, the `kill-block` gap run. Its
-"Done :" goes through the block 11, which was killed earlier (dashed, faded,
-under `8 = [11] - 3`), so the window's banner and the check say the solution
-is invalid:
-
-![The canvas at the end of puzzle 3 with seed 8](docs/gui-gap-run.png)
 
 Options: `--puzzle N` (1–11) or `--custom "T B B B B B"`, `--seed S`,
 `--max-iterations N`, `--play` to start at once. `--smoke` runs the puzzle

@@ -16,6 +16,8 @@ port of the original Lisp, and a Python implementation with a live GUI.
 | [`docs/`](docs/) | The audit and plan the Python translation followed. |
 | [`bricks.py`](bricks.py) | An earlier arithmetic-tree sketch. |
 
+Every folder of the ports has a README.md describing what is in it.
+
 ## Quick start
 
 ```sh

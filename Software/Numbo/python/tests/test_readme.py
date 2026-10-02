@@ -109,8 +109,8 @@ def test_the_gui_section_runs_the_smoke_command_and_the_cli():
 
 
 def test_the_screenshots_are_committed_small_pngs():
-    images = re.findall(r"!\[[^\]]+\]\(([^)]+)\)", section("The GUI"))
-    assert 1 <= len(images) <= 2, images
+    images = re.findall(r"!\[[^\]]+\]\(([^)]+)\)", section("Screenshots"))
+    assert len(images) == 2, images
     for image in images:
         path = (PYTHON_DIR / image).resolve()
         assert path.parent == PYTHON_DIR / "docs", image
