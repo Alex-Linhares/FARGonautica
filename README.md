@@ -76,7 +76,7 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
  | Project | Author | Language | Available? |
  |---------| --------- | ----------| ----------|
  | Seek-Whence | [Marsha Meredith](https://scholar.google.com.br/scholar?hl=en&q=marsha+meredith&btnG=&as_sdt=1%2C5&as_sdtp=) | Franz Lisp | **Yes  (coming soon)** |
- | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp | **Yes** (Finally!) |
+ | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp (also SBCL port, Python & Clojure) | **Yes** (Finally!) |
  | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | **Yes** |  
  | Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet (email sent 2017-08-29) |
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  **Yes** (McGraw's work was extended by Rehling) |
@@ -163,7 +163,14 @@ Find Dr. Defays in [Homepage](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?
 
 Daniel Defays sent in 2006 a [printed version of the sourcecode to Alex Linhares](/Software/Numbo/numbo.Daniel.Defays.1987.pdf).  This has been just scanned and archived in this repo, and a [digitized version](Software/Numbo/numbo-digitized/) is now available.
 
-Linhares is developing a verson of Numbo in python. There is a [version in Clojure](https://github.com/twhume/numbo), by [Tom Hume](https://www.tomhume.org/numbo/), but it has not been tested by me. 
+Numbo finally runs again, in two implementations that live in [`Software/Numbo/`](Software/Numbo/):
+
+- **[A port of the 1987 Lisp to SBCL](Software/Numbo/lisp/)**: the original Franz Lisp + Flavors source, running almost exactly as printed. It needed compatibility layers for Franz Lisp and Flavors, and a coderack reconstructed from Defays' chapter, since that part is missing from the printout. Every change is logged in [`PORTING_NOTES.md`](Software/Numbo/lisp/src/PORTING_NOTES.md). On the chapter's puzzles it behaves as the chapter reports: it solves the easy ones, and like the 1987 program, it rarely solves 31 from 3 5 24 3 14.
+- **[A Python implementation](Software/Numbo/python/)**, translated test-first against the SBCL port: given the same seed, the two make the same codelet choices, build the same nodes and print the same text, checked on all of the chapter's 11 puzzles × 20 seeds. It comes with a PySide6 GUI that redraws the cytoplasm's arithmetic trees after every event, alongside the Pnet, the coderack and an event log, and that can replay saved runs.
+
+There is also a [version in Clojure](https://github.com/twhume/numbo), by [Tom Hume](https://www.tomhume.org/numbo/), but it has not been tested by me.
+
+![Numbo's Python GUI: puzzle 1, 114 from 11 20 7 1 6, solved as (6 x 20) - (7 - 1)](/Software/Numbo/python/docs/gui-window.png)
 
 
 
