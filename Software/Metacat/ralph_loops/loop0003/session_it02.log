@@ -1,0 +1,195 @@
+# session it02 started 2026-10-04 15:37:26
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cat ralph_loops/loop0003/iterations.md && ls docs/ python python/metacat python/metacat/gui python/tests python/fixtures python/fixtures/sgl-tcl | head -150 && 
+  > $ cd /home/al/dev/metacat/python && cat pyproject.toml run-tests.sh tests/conftest.py && ls tests tests/data && git status --short .. && wc -l ../docs/qt-gui-plan
+  > $ git log --stat -1 | head -30
+
+Item 00 was mostly done. Let me read the plan for what it says about item 01 and the canvas command inventory.
+  > $ cd /home/al/dev/metacat && grep -n "^#" docs/qt-gui-plan.md; grep -n -i "inventor\|command" docs/qt-gui-plan.md | head -60
+  > $ sed -n 385,559p docs/qt-gui-plan.md
+  > $ cd /home/al/dev/metacat/python && grep -rn "tcl(" metacat --include=*.py | grep -v "^metacat/gui/hosts.py.*def " | head -80; grep -rn "tcl(" metacat --include=*
+  > $ sed -n 1,200p metacat/gui/swl.py
+  > $ grep -rn "swl_tcl_eval\|\.tcl(" metacat --include=*.py | grep -v "def \|^metacat/gui/swl.py:\(9\|10\)" 
+  > $ grep -n "tcl_eval\|tcl(" metacat/gui/*.py | grep -v "^metacat/gui/swl.py" ; sed -n 60,140p metacat/gui/sgl.py
+
+Item 00's plan is in place; I'm now gathering exactly which Tk canvas commands the panels send (they all funnel through `sgl.py` and `fonts.py`).
+  > $ sed -n 170,345p metacat/gui/sgl.py; sed -n 195,220p metacat/gui/fonts.py; sed -n 1,100p metacat/gui/hosts.py
+  > $ grep -rn '"\(create\|itemconfigure\|itemconfig\|coords\|lower\|raise\|bbox\|canvasx\|canvasy\|scale\|move\|delete\|find\|gettags\|addtag\|dtag\|configure\|xview
+  > $ cat fixtures/sgl-tcl/*.txt | awk '{print $1,$3,($3=="create"?$4:"")}' | sort | uniq -c; cat fixtures/sgl-tcl/*.txt | grep -o '\\x2D;[a-z]*' | sort | uniq -c; di
+  > $ sed -n 1,140p metacat/gui/views.py; grep -n "def test\|slow\|skip" tests/test_views.py | head -30
+  > $ sed -n 1,76p tests/test_views.py; sed -n 100,200p metacat/gui/hosts.py
+  > $ grep -n "def run_problem" -A40 metacat/headless.py | head -60; grep -n "def set_window_host_maker\|def tk_host_maker\|g_window_host_maker\|def make_window_host"
+  > $ grep -n "packages\|metacat.gui\|import" tests/test_install.py | head -20; python3 -c "import PySide6; print(PySide6.__version__)"; echo $QT_QPA_PLATFORM; sed -n
+  > $ time python3 -c "
+from metacat import headless
+from metacat.gui import views
+headless.run_problem(['abc','abd','xyz'], 3852097033, views=views.attach_views)
+" |
+  > $ cd /home/al/dev/metacat && ls tests/golden | head -5; ls tests/golden | awk -F_ '{print $1}' | awk -F- 'NF==4' | sort -u | head; ls tests/golden | wc -l
+  > $ ls tests/golden | grep "abc-abd-xyz-wyz\|abc-abd-xyz_3852\|abc-abd-mrrjjj-mrrjjjj"
+
+Now writing the tests first. The inventory test:
+  > Write /home/al/dev/metacat/python/tests/test_tk_canvas_inventory.py
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+p='tests/test_tk_canvas_inventory.py'
+s=open(p).read()
+s=s.replace('''def test_every_listed_entry_has_a_sour
+
+Now the Qt skeleton tests and the conftest fixtures.
+  > Write /home/al/dev/metacat/python/tests/test_qt_skeleton.py
+  > $ python3 - <<'EOF'
+p='tests/test_qt_skeleton.py'
+s=open(p).read()
+s=s.replace('''    assert proc.returncode == 5 or "skipped" in proc.stdout, proc.stdout + proc.
+  > $ cd /home/al/dev/metacat && echo "python/tests/screenshots-qt/" >> .gitignore && cd python && timeout 600 python3 -m pytest -q tests/test_qt_skeleton.py tests/te
+  > $ timeout 600 python3 -m pytest -q tests/test_qt_skeleton.py 2>&1 | tail -15
+
+Failing first, as expected. Checking why the skip test failed already (it shouldn't depend on new code):
+  > $ timeout 600 python3 -m pytest -q tests/test_qt_skeleton.py -k skip_without 2>&1 | grep -v "^  " | head -30
+  > $ pip show pytest-qt 2>/dev/null | head -2; python3 - <<'EOF'
+p='pyproject.toml'
+s=open(p).read()
+s=s.replace('''test = ["pytest>=7.4"]
+''','''test = ["pytest>=7.
+
+Now the package itself.
+  > $ cat metacat/gui/__init__.py metacat/gui/__main__.py; sed -n 1,30p metacat/gui/app.py
+  > $ mkdir -p /home/al/dev/metacat/python/metacat/qt && cd /home/al/dev/metacat/python/metacat/qt && cat > __init__.py <<'EOF'
+"""The single-window GUI: every panel 
+  > $ timeout 600 python3 -m pytest -q tests/test_qt_skeleton.py -k skip_without 2>&1 | grep -E "^E" | head -20
+  > $ cat $(python3 -c "import importlib.metadata as m; d=m.distribution('pytest-qt'); print(d._path)")/entry_points.txt
+  > $ sed -i 's/addopts = "-p no:pytestqt"/addopts = "-p no:pytest-qt"/' pyproject.toml && timeout 600 python3 -m pytest -q tests/test_qt_skeleton.py 2>&1 | tail -4
+  > $ timeout 600 python3 -m pytest -q tests/test_qt_skeleton.py -k skip_without 2>&1 | grep -E "^E" | head -30
+
+The Qt skeleton passes; fixing the skip test's exit-code expectation (pytest returns 5 when a module-level skip leaves nothing collected), then wiring `run-tests.sh`.
+  > $ python3 - <<'EOF'
+p='tests/test_qt_skeleton.py'
+s=open(p).read()
+s=s.replace('''    assert proc.returncode == 0, proc.stdout + proc.stderr
+''','''    # 5: a mod
+
+Now the inventory builder, `tests/tk_canvas_inventory.py`.
+  > $ python3 -c "
+from metacat import chez; s=chez.String('- '); print(repr(str(s)), isinstance(s,str))"; sed -n 1,40p tests/test_sgl.py | sed -n 1,30p; grep -n "^de
+  > Write /home/al/dev/metacat/python/tests/tk_canvas_inventory.py
+  > $ sed -i 's/^    functions = \[\]\n//' tests/tk_canvas_inventory.py && python3 - <<'EOF'
+import sys; sys.path.insert(0,'tests')
+import tk_canvas_inventory as inv,
+  > $ python3 - <<'EOF'
+p='tests/tk_canvas_inventory.py'
+s=open(p).read()
+s=s.replace('''    import io
+    from contextlib import redirect_stdout
+    from metacat imp
+  > $ sed -i 's/^    fonts.g_hidden_canvas = RecordingHidden()$/    hosts.install_offscreen_fonts()             # the fixed metric and families\n    fonts.g_hidden_ca
+
+Runs record 120k commands in 3.3 s. Checking which forms `-tags` values take (a word or a list), useful for item 02:
+  > $ python3 - <<'EOF' 2>&1 | tail -5
+import sys, collections, io, contextlib; sys.path.insert(0,'tests'); sys.path.insert(0,'.')
+from metacat import headless
+from m
+
+All tags are single words. I'll record the tag words too (a list would show as `(list)`), then generate the JSON.
+  > $ python3 - <<'EOF'
+p='tests/tk_canvas_inventory.py'
+s=open(p).read()
+s=s.replace('''        self.methods = set()
+        self.problems = []''','''        self.me
+  > $ sed -i 's/found.record(\[w if isinstance(w, str) else "(...)" for w in words\])/found.record([w if isinstance(w, str) else "(list)" for w in words])/' tests/tk_
+
+All 20 pass. A quick mutation check (drop an option from the committed list → the code test must fail), and a look at the screenshot:
+  > $ python3 - <<'EOF'
+import sys, json; sys.path.insert(0,'tests')
+import tk_canvas_inventory as inv
+d=json.load(open('tests/data/tk-canvas-commands.json'))
+d['comm
+  > $ python3 -c "
+from PySide6.QtWidgets import QApplication
+from metacat.qt.mainwindow import MainWindow
+from metacat.qt.grab import grab_png
+app=QApplication([]); 
+  > Read /home/al/dev/metacat/python/tests/screenshots-qt/test_the_grab_fixture/label.png
+  > Read /tmp/qt-empty.png
+
+Empty window as expected. Now docs: the tests README rows, the plan's canvas section, and an anomalies entry for the pytest-qt crash.
+  > $ cd /home/al/dev/metacat && grep -n "test_tk_gui\|^| \`test_install\|^## " python/tests/README.md | head; grep -n "^## \|^### " docs/anomalies_and_quirks.md | ta
+  > $ grep -n "^## " docs/anomalies_and_quirks.md; sed -n 1205,1222p docs/anomalies_and_quirks.md
+  > $ python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+entry='''### pytest-qt stops the whole pytest run when no Qt binding imports
+- **Seen:** loo
+  > $ python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+s=s.replace('''- **Evidence:** `PYTHONPATH=<dir with a PySide6/__init__.py that raises Impor
+  > $ python3 - <<'EOF'
+p='tests/README.md'
+s=open(p).read()
+s=s.replace("| `conftest.py` | Puts `tests/` and `oracle/` on `sys.path` |",
+"| `conftest.py` | Puts `tes
+  > $ python3 - <<'EOF'
+p='tests/README.md'
+s=open(p).read()
+s=s.replace("Totals: 1412 tests, 990 fast and 422 slow.","Totals: 1438 tests, 1013 fast and 425 slow.")
+s
+
+Docs nearly done; fixing one sentence, then adding the inventory summary to the plan and running the gate.
+  > $ sed -i '38s/so they need no X server. They run their scripts under/so they need no X server. The tkinter tests run their scripts under/' tests/README.md && sed 
+  > $ time bash run-tests.sh --fast 2>&1 | tail -3
+
+Fast tier green. Now the full gate (about 7 minutes):
+  > $ cd /home/al/dev/metacat && (time timeout 590 python3 ralph_loops/loop0003/gate.py) > /tmp/gate-it02.log 2>&1; tail -15 /tmp/gate-it02.log
+
+Gate passed, but 32 new `fork()`-in-multi-threaded-process warnings in `test_rules.py` look like a side effect of the session `QApplication` staying alive. Checking:
+  > $ cd /home/al/dev/metacat/python && QT_QPA_PLATFORM=offscreen python3 -c "
+import os
+print(len(os.listdir('/proc/self/task')))
+from PySide6.QtWidgets import QAppl
+  > $ cat >> tests/test_qt_skeleton.py <<'EOF'
+
+
+def test_qt_tests_run_after_the_others(request):
+    """the QApplication starts a thread of its own, and many tests f
+  > $ python3 - <<'EOF'
+p='tests/conftest.py'
+s=open(p).read()
+s=s.replace('''SCREENSHOTS = HERE / "screenshots-qt"     # grab()'s pictures (not committed)
+''','''SCR
+  > $ python3 -m pytest -q --collect-only 2>&1 | tail -1; python3 -m pytest -q --collect-only -m "not slow" 2>&1 | tail -1; sed -i 's/Totals: 1438 tests, 1013 fast an
+
+Rerunning the gate:
+  > $ cd /home/al/dev/metacat && (time timeout 590 python3 ralph_loops/loop0003/gate.py) > /tmp/gate-it02.log 2>&1; tail -8 /tmp/gate-it02.log; grep -c "fork()" /tmp/
+
+Gate passed (1439 tests, no warnings). Now PROGRESS.md and iterations.md.
+  > $ cd /home/al/dev/metacat/ralph_loops/loop0003 && date "+%Y-%m-%d %H:%M:%S" && sed -i 's/^- \[ \] \*\*01 Skeleton and test harness.\*\*/- [x] **01 Skeleton and te
+  > $ cat >> PROGRESS.md <<'EOF'
+
+## Iteration 2 — 2026-10-04 16:02:02
+Item **01 Skeleton and test harness**: SOLVED.
+
+### Completed
+- **Tests first, and they failed 
+
+Item 01 (skeleton and test harness) is done and marked `[x]`. The gate passes: all 1439 tests pass with no warnings, and `racket/` is unchanged. Nothing is committed; the driver will commit and push.
+
+**What was built**
+- **`python/metacat/qt/`**: `python3 -m metacat.qt` opens an empty window titled "Metacat" (1366×768). `--quit-after MS` makes it close by itself, for tests. `grab_png(widget, path)` saves a screenshot to a PNG. I looked at the grab of the empty window and it looks right. Importing the package doesn't need PySide6.
+- **Test setup**: `pyproject.toml` has the `qt` extra and lists the `metacat.qt` package. `conftest.py` has a session `qapp` fixture that always runs offscreen and quits at the end, and a `grab` fixture. `run-tests.sh` keeps Qt offscreen and has a new `--qt` flag. Qt tests run in the normal fast and slow tiers.
+- **Skipping without PySide6**: every `test_qt_*.py` starts with `pytest.importorskip("PySide6...")`. One test runs a fresh pytest with PySide6 hidden and checks that every Qt file is skipped.
+- **Canvas command list**: `python/tests/data/tk-canvas-commands.json`, built by `tests/tk_canvas_inventory.py` from three sources: a scan of every place the code sends a canvas command, the two `sgl-tcl` fixture streams, and recording canvases in run 7 plus a justify run (120,344 commands). It has 14 commands:
+  - creating rectangles, lines, ovals, arcs, polygons and text, each with its options;
+  - `delete`, `move`, `itemconfigure` (with `-state` and `-tags`) and `bbox`;
+  - `raise` and `scale`, which appear only in the fixtures, never in a run;
+  - `canvasx` and `canvasy`, used only by the mouse handlers.
+
+  It also lists the allowed values of some options (such as `-anchor`), what each command targets (an item id, `all` or a tag), the tag names (always single words) and the canvas methods. A test fails if any module sends something missing from the list, and also if a command name is computed rather than written out (apart from three known pass-through functions). A summary table is now in `docs/qt-gui-plan.md`.
+
+**Two test-harness fixes, both logged in `docs/anomalies_and_quirks.md`**
+- The pytest-qt plugin installed on this machine stops the whole pytest run when PySide6 can't be imported. I turned it off with `-p no:pytest-qt` in the pytest options. The similar-looking `-p no:pytestqt` is accepted but has no effect.
+- The offscreen `QApplication` starts an extra thread, and later test files fork. The first gate run printed 32 warnings that this can deadlock. `conftest.py` now runs the `test_qt_*.py` files last, and a test checks the order; the second gate run had no warnings.
+
+**Item 00 is still marked `[!]`.** Its session lost its API connection while the gate was running, but its files had already been committed, and their tests pass in this gate. I noted this in PROGRESS.md and didn't change the item; you or a later session can check it and mark it `[x]`.
+
+# result: success in 1505s, 63 turns, cost $3.76

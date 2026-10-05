@@ -1,0 +1,270 @@
+# session it09 started 2026-10-03 21:24:37
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; cat ralph_loops/loop0002/iterations.md | head -60; ls python/metacat python/tests; wc -l chez_scheme/original/bridges.ss chez_scheme/or
+  > $ cd /home/al/dev/metacat; cat tests/diff/bridge-battery.scm; cat python/fixtures/bridge/MANIFEST | head -60
+  > $ cd /home/al/dev/metacat; cat tests/diff/codelet-harness.scm
+  > $ cd /home/al/dev/metacat; cat python/tests/codelet_harness.py
+  > $ cd /home/al/dev/metacat; cat python/tests/test_codelets.py; cat python/run-tests.sh; cat python/tests/conftest.py
+  > $ cd /home/al/dev/metacat; awk '{print NF-1}' tests/problems.txt | paste -sd+ | bc; head -5 tests/problems.txt; sed -n 1,80p python/metacat/bonds.py; grep -rn "_m
+
+Starting item 08: I'll have a subagent translate bridges.ss/breakers.ss into a staging dir while I write the harness extension and failing tests.
+  > $ cd /home/al/dev/metacat; grep -n "^(define" chez_scheme/original/bridges.ss chez_scheme/original/breakers.ss | wc -l; grep -n "^(define" chez_scheme/original/br
+  > Agent {"description": "Translate bridges.ss and breakers.ss", "subagent_type": "general-purpose", "run_in_background": true, "
+  > $ cd /home/al/dev/metacat; ls python/metacat/ python/tests; wc -l python/metacat/*.py chez_scheme/original/bridges.ss chez_scheme/original/breakers.ss racket/engi
+  > Read /home/al/dev/metacat/python/metacat/bonds.py
+  > Read /home/al/dev/metacat/chez_scheme/original/bridges.ss
+  > $ cd /home/al/dev/metacat; grep -on "monitor-[a-z-]*\|\*[a-z-]*\*\|%[a-z-]*%\|add-theme[a-z-]*\|bridge-graphics\|\*EEG\*" chez_scheme/original/bridges.ss chez_sch
+  > Read /home/al/dev/metacat/chez_scheme/original/bridges.ss
+  > Read /home/al/dev/metacat/chez_scheme/original/breakers.ss
+  > Read /home/al/dev/metacat/racket/engine/bridges.rktl
+  > Read /home/al/dev/metacat/racket/engine/breakers.rktl
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/bridges.ss racket/engine/bridges.rktl; diff chez_scheme/original/breakers.ss racket/engine/breakers.rktl
+  > $ cd /home/al/dev/metacat; grep -n "^def map_\|^def for_each\|^def filter\b\|^def filter_" python/metacat/chez.py python/metacat/utilities.py; grep -n "def group_
+  > Read /home/al/dev/metacat/python/metacat/groups.py
+  > $ cd /home/al/dev/metacat; grep -n "group?\|bridge?\|letter?" chez_scheme/original/utilities.ss | head; grep -n "^def .*_p(" python/metacat/utilities.py | head -4
+  > $ cd /home/al/dev/metacat/python/metacat; cat engine.py names.py group_graphics.py; grep -n "^def \|^class \|^[a-zA-Z_]* = " sugar.py objects.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \|^class \|^[a-zA-Z_0-9]* = " utilities.py chez.py | cut -c1-150
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 160,395p sugar.py; sed -n 600,830p utilities.py; sed -n 395,520p utilities.py
+  > $ cd /home/al/dev/metacat; wc -l docs/python-translation-plan.md; grep -n "^#" docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 63,280p docs/python-translation-plan.md; sed -n 412,672p docs/python-translation-plan.md
+  > Read /home/al/.claude/projects/-home-al-dev-metacat/d2a849ed-a760-4bbf-93f6-18b5adbfbd9a/tool-results/b5kjj262m.txt
+  > $ cd /home/al/dev/metacat/python/tests && python3 - <<'EOF'
+import re
+p='codelet_harness.py'
+s=open(p).read()
+s=s.replace('''them.  Item 07 uses only the bonds-an
+  > $ cd /home/al/dev/metacat/chez_scheme/original; for n in bridge-type-\>theme-type check-descriptions conflicts-with-theme? supported-by-theme? descriptions-affect
+
+Harness extended with the bridges setting; now writing `test_bridges.py` (battery cases + bridge matrix).
+  > $ python3 - <<'EOF'
+p='codelet_harness.py'
+s=open(p).read()
+s=s.replace('''def trace_lines(strings_, seed, k):
+    prefix''','''def trace_lines(strings_, seed, k)
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^g_top_strings\|^g_vertical\|^g_bottom\|g_top_strings =\|^def lone_spanning\|^def both_spanning\|^def slip_link
+  > $ cd /home/al/dev/metacat/python/metacat; cat concept_mappings.py | sed -n 1,60p; sed -n 280,311p concept_mappings.py; sed -n 120,154p workspace_structures.py; gr
+  > $ cd /home/al/dev/metacat; sed -n 1,60p chez_scheme/original/workspace-structures.ss | grep -n "set!\|define" ; grep -n "set!" chez_scheme/original/concept-mappin
+  > $ cd /home/al/dev/metacat/python/tests; grep -n "define\|def test\|bridges\|breakers\|MODULES\|FILES" test_codelets.py | head -60
+  > $ cd /home/al/dev/metacat/python/tests; sed -n 1,120p test_codelets.py; sed -n 180,300p test_codelets.py
+  > $ cd /home/al/dev/metacat/python/tests; grep -n "STAND_INS" -A30 codelet_harness.py | head -60; grep -n "bridge" codelet_harness.py | head -30
+  > $ cd /home/al/dev/metacat; grep -n "^## \|^### " docs/anomalies_and_quirks.md | head -150; grep -n "bridges.ss\|breakers.ss" docs/anomalies_and_quirks.md docs/por
+  > $ cd /home/al/dev/metacat; sed -n 95,106p docs/anomalies_and_quirks.md; sed -n 230,305p docs/anomalies_and_quirks.md; sed -n 710,750p docs/anomalies_and_quirks.md
+  > Write /home/al/dev/metacat/python/tests/test_bridges.py
+  > $ cd /home/al/dev/metacat; grep -n "bridge-scout\|breaker\|description-" chez_scheme/original/coderack.ss | head -20; cd python && python3 - <<'EOF'
+import sys,re
+  > $ cd /home/al/dev/metacat; grep -n "bridge-scout\|bridge-evaluator\|bridge-builder" chez_scheme/original/coderack.ss | sed -n 1,30p | grep "codelet-type\|^6[0-9][
+  > $ cd /home/al/dev/metacat; grep -n "define-codelet-procedure\*" -A0 chez_scheme/original/bridges.ss chez_scheme/original/breakers.ss
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+p='tests/test_bridges.py'
+s=open(p).read()
+s=s.replace('''    for name in ["bottom-up-bridge-scout", "import
+  > $ timeout 900 python3 -m pytest -q tests/test_bridges.py -m "not slow" 2>&1 | tail -15
+  > $ timeout 900 python3 -m pytest -q tests/test_bridges.py -k "bridge_battery" 2>&1 | tail -3; timeout 600 python3 -m pytest -q tests/test_codelets.py -m "not slow"
+  > $ cd /home/al/dev/metacat; grep -n "bridge\|breaker" python/metacat/coderack.py | head; grep -n "^(define entries\|^(define (entries" -A5 chez_scheme/original/tra
+  > $ cd /home/al/dev/metacat; sed -n 895,1000p chez_scheme/original/bridges.ss
+  > $ cd /home/al/dev/metacat; sed -n 1000,1340p chez_scheme/original/bridges.ss
+
+Still waiting on the translation subagent; meanwhile reviewing bridges.ss so I can check its output.
+  > $ cd /home/al/dev/metacat; sed -n 1340,1480p chez_scheme/original/bridges.ss; cat chez_scheme/original/breakers.ss | sed -n 18,47p
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+  > $ ls -la /tmp/stage08/ 2>&1; wc -l /tmp/stage08/*.py 2>/dev/null
+  > $ timeout 580 bash -c 'until [ -f /tmp/stage08/bridges.py ] && [ -f /tmp/stage08/breakers.py ]; do sleep 10; done'; ls -la /tmp/stage08/ 2>&1
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 900,923p workspace_objects.py; sed -n 430,445p slipnet.py; sed -n 545,595p slipnet.py; sed -n 25,40p formulas.py;
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,187p objects.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 436,450p slipnet.py; sed -n 101,125p sugar.py; sed -n 50,62p utilities.py; sed -n 890,900p utilities.py; sed -n 2
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "@message" workspace_structures.py; grep -n "get-weakness" -A8 workspace_structures.py | head -20
+  > $ cd /home/al/dev/metacat; grep -n "(define cross-product-for-each\|(define say\b\|(define-syntax say\|say$" -A6 chez_scheme/original/utilities.ss chez_scheme/ori
+  > $ mkdir -p /tmp/stage08
+  > Write /tmp/stage08/bridges.py
+  > $ timeout 590 bash -c 'until [ -f /tmp/stage08/bridges.py ] && [ -f /tmp/stage08/breakers.py ]; do sleep 10; done'; ls -la /tmp/stage08/ 2>&1
+  > $ cd /tmp/stage08 && python3 - <<'EOF'
+p='bridges.py'
+s=open(p).read()
+s=s.replace('''    graphics_p = setup.p_workspace_graphics is not False
+    if setup.p_verb
+  > Write /tmp/stage08/breakers.py
+  > $ cd /tmp && python3 -m py_compile stage08/*.py && rm -rf stage08_copy && cp -r /home/al/dev/metacat/python stage08_copy && find stage08_copy -name __pycache__ -p
+  > $ cd /tmp/stage08_copy && timeout 900 python3 -m pytest -x -q -m 'not slow' tests/ 2>&1 | tail -15
+  > $ cd /home/al/dev/metacat/python && cp /tmp/stage08/bridges.py /tmp/stage08/breakers.py metacat/ && timeout 900 python3 -m pytest -q tests/test_bridges.py -m "not
+  > $ cd /tmp && rm -rf stage08_repo && mkdir stage08_repo && for d in /home/al/dev/metacat/*; do n=$(basename $d); [ "$n" != python ] && ln -s $d stage08_repo/$n; do
+  > $ grep -on "_metacat\.[a-z_]*\.[A-Za-z_]*" metacat/bridges.py metacat/breakers.py metacat/descriptions.py | awk -F: '{print $3}' | sort | uniq -c; grep -n "bridge
+  > $ cd /home/al/dev/metacat/python/tests; sed -n 1,80p test_bridges.py; grep -n "themes\|STAND_INS\|pending" test_bridges.py codelet_harness.py | head -30
+  > $ cd /home/al/dev/metacat && grep -n "trace.entries\|remove_whole_or_single\|bridge_theme_compatibility_sigmoid\|descriptions_affect" python/metacat/bridges.py; f
+  > $ cd /home/al/dev/metacat/chez_scheme/original; for n in bridge-type-\>theme-type descriptions-affect-themespace? ignore-descriptions? beta bridge-theme-compatibi
+  > $ cd /home/al/dev/metacat && sed -n 290,420p python/metacat/bridges.py; grep -n "beta" chez_scheme/original/themes.ss | head -3; grep -rn "remove-whole-or-single-
+  > $ cd /home/al/dev/metacat; sed -n 41,60p python/tests/codelet_harness.py; grep -n "fake-themespace" -A16 tests/diff/codelet-harness.scm | head -30; grep -n "pendi
+
+Now add temporary themes stand-ins to the copy's harness (copy only) and run the fast tier.
+  > $ grep -n "(define both-spanning\|(define ignore-desc\|(define remove-whole" chez_scheme/original/*.ss; grep -n "both_spanning" python/metacat/*.py | head -3
+  > $ cd /home/al/dev/metacat/python && python3 -c "
+from metacat.names import scheme_to_python as s
+print(s('remove-whole/single-concept-mappings'), s('bridge-type->
+
+Fine. Adding the themes.ss helpers the bridges call to the harness's stand-ins (themes.py is a later item).
+  > $ cd /home/al/dev/metacat/python/tests && python3 - <<'EOF'
+p='codelet_harness.py'
+s=open(p).read()
+s=s.replace('''# Globals of files not translated yet that the 
+  > $ cd /home/al/dev/metacat/python/tests && grep -n "^def \(exp\|mul\|div\|add1\|sub1\|add\|sub\)\b" ../metacat/chez.py && python3 - <<'EOF'
+p='codelet_harness.py'
+
+
+First 300 codelets of problem 0 match Chez. Running the full bridge battery now.
+  > $ time timeout 1500 python3 -m pytest -q tests/test_bridges.py 2>&1 | tail -30
+  > $ time python3 - <<'EOF'
+import sys; sys.path[:0]=['tests','oracle']
+import pytest
+from metacat import engine
+engine.load()
+import test_bridges as t, codelet_harn
+  > $ cmp /tmp/stage08/bridges.py metacat/bridges.py; cmp /tmp/stage08/breakers.py metacat/breakers.py; echo done
+  > $ time timeout 1500 bash run-tests.sh 2>&1 | tail -5
+  > $ cd /tmp/stage08_repo/python/tests && python3 - <<'EOF'
+p='codelet_harness.py'
+s=open(p).read()
+helpers='''
+def _st_bridge_type_to_theme_type(t):
+    return {"to
+
+The fast tier passes, including test_bridges' first-seed run against Chez. Next I'll run the full slow bridge battery and the codelet battery in the copy.
+  > $ cd /tmp/stage08_repo/python && timeout 1800 python3 -m pytest -q tests/test_bridges.py tests/test_codelets.py 2>&1 | tail -15
+
+I've written `/tmp/stage08/bridges.py` and `/tmp/stage08/breakers.py`; nothing in the repo was touched. In a sandbox copy of the repo they pass everything, including the full slow bridge and codelet batteries against the Chez fixtures, but only after I added temporary themes stand-ins to that copy's test harness. The real harness doesn't have them yet, so `tests/test_bridges.py` will fail in the repo until you add them (point 1 below).
+
+**Checks:**
+- Both files compile.
+- Every `(define …)` name in both `.ss` files (34 in bridges.ss) and all five codelet procedures exist under their mapped names.
+- Every public docstring starts with "bridges.ss:" or "breakers.ss:".
+- `engine.load()` installs all five codelet procedures.
+- The sandbox is `/tmp/stage08_repo/`: symlinks to the repo plus a copy of `python/` with my two files added. There, `pytest -m 'not slow' tests/` gives 639 passed, and `tests/test_bridges.py` plus `tests/test_codelets.py` with the slow cases give 146 passed. `tests/test_bridges.py` was already in the repo when I started.
+
+**What you need to do:**
+1. **Add the themes stand-ins to the real harness.** In `python/tests/codelet_harness.py`, `STAND_INS["themes"]` currently only provides `g_themespace`. Bridges also need `bridge_type_to_theme_type`, `descriptions_affect_themespace_p` and `bridge_theme_compatibility_sigmoid`. I wrote copies of these themes.ss helpers (`beta` = 4 inlined) as `_st_*` in `/tmp/stage08_repo/python/tests/codelet_harness.py`. Other names are only reached with an active theme or from later files: `check_descriptions`, `conflicts_with_theme_p`, `supported_by_theme_p`, `trace.entries`, `justify.remove_whole_or_single_concept_mappings`.
+2. **`engine.py` needs no change.** "bridges" and "breakers" are already in `LOAD_ORDER`, and each module's `load()` installs its codelet procedures with `define_codelet_procedure_star`, as bonds.py does.
+3. **Add the modules to the test lists if you want them covered** by the import-no-gui test and the codelet-procedure list in `test_codelets.py`.
+
+**Structure:** the clauses the two bridge closures share word for word are written once in a private base class, `_BridgeClauses`. `HorizontalBridge` and `VerticalBridge` inherit it and hold the clauses that differ. Otherwise the code follows the file definition by definition. Modules that already exist are imported directly; later ones (themes, trace, justify, bridge_graphics) are read through `_metacat.` at call time.
+
+**Evaluation-order sites:** none needed reordering. Every draw sits in a `let*`, a body or an `and`/`or`/`cond`. The multi-argument calls and multi-binding `let`s below only read state, so Chez's order can't be observed; each has a comment saying so.
+- bridges.ss:
+  - 326–338: append in `get-incompatible-bridges`
+  - 340–345: let of `bond1`/`bond2`
+  - 828–866: let and 4-part append in `group-incompatible-bridges`
+  - 875–878: 4-binding let in `direction-incompatible-bridges`
+  - 925–927 and 1023–1025: arguments of `all-possible-bridge-CMs`
+  - 1092–1097: `propose-bridge`
+  - 1195–1198: 4-binding let in `bridge-builder`
+  - 1250–1254: `wins-all-fights?` arguments
+  - 1374–1378 and 1408–1410: `make-concept-mapping` arguments
+  - 1404–1405 and 1441–1443: lets in `build-bridge` and `break-bridge`
+  - 1566–1580 and 1658–1668: lets in the `incompatible-*-bridges?` predicates
+  - 1605–1608 and 1693–1696: 4-binding lets in the `incompatible-*-CMs?` predicates
+  - 1605–1608 and 1693–1696: 4-binding lets in the `incompatible-*-CMs?` predicates
+- breakers.ss 34–37: let of `p1`/`p2`.
+- **`stochastic-if*`** (coin drawn first, marked `# chez:`): bridges.ss 935, 1029, 1166, 1432; breakers.ss 22, 38, 41.
+- **`map` → `chez.map_`**: bridges.ss 277, 281, 902, 929, 934, 973, 1027. `tell-all` already uses Chez's map order, and `cross-product-*` keep utilities.ss's order (this matters at 298 `boost-themes` and 1497 `all-possible-bridge-CMs`).
+
+**`# 1.2:` quirks:**
+- `letter-category-mappable-objects?` compares `object1`'s group category with itself (line 1521; already in anomalies).
+- `calculate-external-strength` uses a one-argument `*`.
+- `propose-singleton-group` and `try-to-propose-singleton-group` are never called.
+- `direction-incompatible-bridges`: the `cond` has no `else`, so a label other than identity/opposite gives void, which `partition` would try to apply.
+- `boost-themespace-activations` messages `*themespace-window*` without a graphics gate.
+
+There are also unmarked faithful oddities: `case` forms without `else` give `None` (bridge type, `bridge-type->orientation`, the strings, `propose-bridge`), and `bridge-evaluator` binds `bridge-orientation` without using it.
+
+**Ungated calls (always made, not behind `%workspace-graphics%`):**
+- `_metacat.themes.bridge_type_to_theme_type` on every bridge made.
+- `_metacat.themes.bridge_theme_compatibility_sigmoid` via `get-thematic-compatibility`.
+- `_metacat.themes.descriptions_affect_themespace_p` and `g_themespace` in `bridge-builder` → `boost-themes`.
+- `_metacat.trace.monitor_new_concept_mappings` in `build-bridge` and `bridge-builder`.
+- `tell(setup.g_themespace_window, "update-graphics", …)`.
+
+Every `bridge_graphics` call (`bridge_graphics`, `draw_bridge_grope`, `new_bridge_label_number`) and the `group_graphics` call in `bridge-builder` is behind `%workspace-graphics%`, as in the original.
+
+**Uncertain:** nothing showed up in the batteries. The vertical-bridge graphics paths (`activate-concept-mapping-graphics`, `set-concept-mapping-pexps`, graphics on) aren't exercised by any test, since the harness runs with graphics off.
+
+All 46 bridge cases match Chez, and the full suite passes (754 tests). Next: review the translation and run mutation checks.
+  > $ grep -n "if not \|^\s*if [a-z_.()\" ,]*:$\| or \| and " metacat/bridges.py metacat/breakers.py | grep -v "is not False\|is False\|#\|\"\"\"" | head -40; grep -c
+  > $ grep -n "chez.map_\|stochastic_if_star\|random_pick\|wins_fight_p\|wins_all_fights_p\|chez.mul(2\|0\.8\|1\.2\|1\.6\|2\.5\|0\.1\b\|percent(\|round_\|cross_produc
+  > $ sed -n 40,62p metacat/breakers.py; grep -n "wins_fight_p\|ObjCtgy\|delete-bridge\|leftmost-in-string\|get-letter-span\|mapping_strength\|100\b" metacat/bridges.
+  > $ sed -n 1383,1390p metacat/bridges.py; sed -n 1486,1494p metacat/bridges.py; grep -n '"delete-bridge"\|"add-bridge"\|"update-bridge"' metacat/bridges.py
+  > $ mkdir -p /tmp/mut8 && cat > /tmp/mut8/mutate.py <<'EOF'
+import subprocess, sys, pathlib
+root = pathlib.Path("/home/al/dev/metacat/python")
+B, K = "metacat/bridg
+  > $ sed -n 645,670p metacat/bridges.py
+
+Mutation run: 13 of 15 caught. Searching for a case where the survivor (internal-coherence factor 2.5) changes a result, to pin it with a local battery.
+  > $ cat > /tmp/mut8/search.py <<'EOF'
+import sys; sys.path[:0]=['tests','oracle']
+from metacat import engine; engine.load()
+import codelet_harness as h, test_bridge
+  > $ PYTHONPATH=. timeout 900 python3 /tmp/mut8/search.py 2>&1 | head -20
+  > $ cd /home/al/dev/metacat && grep -n "get-strength" -A12 chez_scheme/original/concept-mappings.ss | head -30
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+import re
+s=open('/tmp/mut8/search.py').read()
+s=s.replace('''    out = []
+''','''    out = []
+    from meta
+  > $ grep -n "^class " metacat/bridges.py; ls oracle/batteries/; head -40 oracle/batteries/codelet-extra-battery.scm
+  > $ sed -i 's/for orient, other in (("horizontal", "\*modified-string\*"), ("vertical", "\*target-string\*")):/for orient, other in (("horizontal", "*modified-strin
+
+No horizontal case exists in any reachable state searched; the vertical one (abc abd glz, seed 2) does. Writing a local battery for it.
+  > $ cat > oracle/batteries/bridge-extra-battery.scm <<'EOF'
+;;; bridge-extra-battery.scm -- bridges.ss cases that tests/diff/bridge-battery.scm
+;;; does not pin (lo
+  > $ cat fixtures/bridge-extra/000*.txt | head -c 2500; echo; grep -n "codelet-extra" tests/test_fixtures.py
+  > $ sed -n 25,32p tests/test_fixtures.py && cat >> tests/test_bridges.py <<'EOF'
+
+
+# python/oracle/batteries/bridge-extra-battery.scm (local, written after the code
+  > $ sed -i 's/    assert local == \["chez", "codelet-extra", "coderack-extra", "slipnet-extra",/    assert local == ["bridge-extra", "chez", "codelet-extra", "coder
+  > $ cp metacat/bridges.py /tmp/mut8/b.bak && python3 - <<'EOF'
+p='metacat/bridges.py'; s=open(p).read()
+i=s.index("(2.5 if tell(self", s.index("class VerticalBridge
+  > $ cd /home/al/dev/metacat && grep -n "^## \|^### " docs/anomalies_and_quirks.md | grep -i "bridge\|direction-incompat\|letter-category-mappable\|python" | head -3
+  > $ sed -n 700,770p docs/anomalies_and_quirks.md; sed -n 975,995p python/metacat/bridges.py
+  > $ grep -n "bonds\|concept_mappings\|codelet_harness\|test_codelets" python/README.md
+  > $ sed -n 105,130p python/README.md
+  > $ python3 - <<'EOF'
+p='python/README.md'; s=open(p).read()
+anchor="supports (rounded, not floored) and group-builder flipping several bonds in map's order.\n"
+add
+
+Docs updated. Running the gate.
+  > $ time timeout 1700 python3 ralph_loops/loop0002/gate.py 2>&1 | tail -8
+
+Gate passed (759 tests). Writing PROGRESS.md and marking the item.
+  > $ cd /home/al/dev/metacat/ralph_loops/loop0002 && sed -i 's/^- \*\*Current\*\*: 8\/18 SOLVED/- **Current**: 9\/18 SOLVED/' PROGRESS.md && sed -i 's/^- \[ \] \*\*0
+  > $ cat >> PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 9 — 2026-10-03 21:57
+
+### Completed
+Item 08, bridges and breakers: **SOLVED**.
+- **Tests first.**
+  - `python/test
+  > $ cd /home/al/dev/metacat && git status --short | head -20
+
+Item 08 (bridges and breakers) is done: all 46 tests of `bridge-battery.scm` match Chez byte for byte, and the gate passes (759 tests, 63 s).
+
+- **Tests first:** `python/tests/codelet_harness.py` now has the harness's bridges setting. The new `python/tests/test_bridges.py` covers the whole battery: 1000-codelet traces for every problem and seed, plus nine bridge matrices. I ran it before the code existed and it failed: 9 of 10 fast and structural tests, and 45 of 46 battery cases. The full battery runs in parallel in the slow tier (14 s); the fast tier runs the first 300 codelets of problem 0.
+- **Code:** `python/metacat/bridges.py` and `python/metacat/breakers.py`, translated by a subagent while I wrote the tests. The only fix needed came from how the original is loaded: every bridge calls three helpers from themes.ss, which isn't translated yet. The test harness now carries copies of those three until `themes.py` exists in item 10. After that, all 46 cases matched on the first run.
+- **Mutation checks (16 mutants):**
+  - The frozen battery caught 13.
+  - One, the vertical bridge's internal-coherence factor (2.5 → 2.0), survived it. I added a local battery, `python/oracle/batteries/bridge-extra-battery.scm` (one case: abc abd glz, seed 2, 1500 codelets), captured through the unedited Chez harness, and it now fails that mutant.
+  - **Two still survive:**
+    - The same factor on horizontal bridges never shows: I searched every problem and seed at seven points of the run and found no case where it changes a result. It's logged in `docs/anomalies_and_quirks.md`.
+    - The spanning-bridge theme boost (×2 → ×1) can't be seen yet, because the harness's fake themes module never returns a theme. Item 10 will cover it.
+- **Evaluation order:** no site needed reordering, which agrees with the Racket port.
+- **Docs:** updated `docs/anomalies_and_quirks.md` (one update, one new entry), `docs/python-translation-plan.md`, `python/README.md` and `test_fixtures.py`.
+- **Loop files:** PROGRESS.md has the Iteration 9 entry and reads 9/18 SOLVED, and the item is marked `[x]` in `iterations.md`. Nothing was committed.
+
+Not exercised yet: the theme and graphics code in `bridges.py`. Item 10 also has to supply the real themes helpers that the test harness currently fakes.
+
+# result: success in 1982s, 67 turns, cost $10.04

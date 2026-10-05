@@ -1,0 +1,315 @@
+# session it16 started 2026-10-03 03:28:10
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ git status --short | head; wc -l chez_scheme/original/gui.ss racket/gui/*.rkt racket/gui/*.rktl racket/headless.rkt racket/main.rkt racket/engine/pending.rktl; 
+  > $ cat chez_scheme/original/gui.ss
+  > Read /home/al/.claude/projects/-home-al-dev-metacat/24ca627b-aba6-4dc7-abc8-65dc01dca97f/tool-results/b6zk2y2e7.txt
+  > $ cat racket/gui/views.rkt racket/engine/pending.rktl racket/main.rkt racket/gui/engine-route.rkt; cat racket/engine.rkt | grep -n include
+  > $ cat chez_scheme/original/metacat.ss | sed -n 18,200p; grep -n "define (setup\|define setup\|enable-resizing\|mcat-logo\|control-panel" -n chez_scheme/original/*
+  > $ sed -n 20,160p chez_scheme/original/setup.ss; sed -n 25,140p chez_scheme/original/fonts.ss; cat chez_scheme/original/demos.ss | head -80; wc -l chez_scheme/orig
+
+Reading the original `gui.ss`, `setup.ss`, and the port's current views and headless driver, to plan the control-panel port.
+  > $ grep -n "valid-token-list\|define step-mode\|define demo\|start-resize-listener\|toplevel-destroy-action\|get-scrollbar-from-frame" chez_scheme/original/*.ss | 
+  > $ sed -n 1,140p racket/gui/general-graphics.rktl
+  > $ grep -n "define\|provide" racket/headless.rkt | head -80; cat racket/tests/run-test.rkt | sed -n 1,120p
+  > $ sed -n 140,330p racket/gui/general-graphics.rktl; sed -n 1,80p racket/tests/views-harness.rkt
+  > $ which import xwd convert xdotool scrot magick 2>&1 | grep -v "no "; grep -n "define/public\|init-field\|define (\|resize" racket/gui/sgl.rkt | head -80; grep -n
+  > $ python3 -c "import PIL; print(PIL.__version__); from PIL import ImageGrab; print(ImageGrab)" 2>&1; ls /usr/bin | grep -i -E "xwd|screenshot|xdpyinfo|xwininfo|ff
+  > $ cd /tmp && xvfb-run -a -s "-screen 0 1280x1024x24" python3 -c "
+from PIL import ImageGrab; im=ImageGrab.grab(xdisplay=None); print(im.size)" 2>&1 | tail -2; ls 
+
+Planning done; checking how the test runner handles GUI tests, then writing the control panel.
+  > $ cat tests/run-tests.sh; grep -n "reset-handler\|define (reset\|define reset" racket/compat.rkt | head; grep -n "make-workspace-window\|set-position\|window-size
+  > $ git show 4efc169 --stat; git show 4efc169 | head -80; sed -n 40,120p racket/gui/constants.rktl
+  > $ grep -n "set-position\|geometry" chez_scheme/original/*.ss | grep -v "^chez_scheme/original/gui.ss" | head -20; grep -n "help.txt" -r chez_scheme/original | hea
+  > $ grep -n "(resize (w h)\|set-size!\|(resize " racket/gui/*.rktl | head -20; sed -n 330,488p racket/gui/general-graphics.rktl
+  > $ sed -n 60,100p racket/gui/workspace-graphics.rktl; grep -n "thread-break\|\*running?\*" racket/gui/*.rktl
+  > $ grep -n "provide" -A12 racket/gui/fonts.rkt | head -30; grep -n "logo" racket/gui/*.rkt* | head; grep -n "define (set-global!\|settable\|'(\*" racket/engine.rkt
+  > $ sed -n 80,175p racket/engine.rkt; sed -n 115,135p racket/gui/fonts.rkt; grep -n "swl-font%\|define/public" racket/gui/fonts.rkt | head -20; grep -n "valid-token
+
+Now writing: demos.ss into the engine, small hooks in views/fonts, then the GUI module.
+  > $ head -3 racket/engine/run.rktl && sed -n 18,22p racket/engine/run.rktl && sed -n 76,80p racket/engine.rkt && sed -n 80,122p chez_scheme/original/demos.ss
+  > $ { sed -n 1,18p chez_scheme/original/demos.ss; cat <<'EOF'
+;; Ported to Racket, 2026: included by racket/engine.rkt, unchanged.  demos.ss
+;; loads after the grap
+  > $ head -30 racket/engine/view-globals.rktl; tail -5 racket/engine/view-globals.rktl
+  > $ python3 - <<'EOF'
+p='racket/engine/pending.rktl'
+s=open(p).read()
+old=''';; Graphics (the GUI items)
+;; gui.ss
+(pending-variables %num-of-flashes% %flash-pause%
+  > $ python3 - <<'EOF'
+p='racket/gui/fonts.rkt'
+s=open(p).read()
+s=s.replace('''(define *scrollbar-width* #f)
+(define *scrollbar-height* #f)
+''','''(define *scrollba
+  > $ cd /tmp && racket -e '(require racket/gui/base racket/class) (displayln (interface->method-names (class->interface message%))) (displayln (member (quote set-fie
+  > $ ls tests/golden | head -3; f=$(ls tests/golden/abc-abd-xyz-* | head -1); echo $f; grep -E '"ev":"(answer|end|halt)"' $f | cut -c1-400; head -1 $f | cut -c1-300;
+  > $ for f in tests/golden/*.jsonl; do tail -1 $f | python3 -c "import json,sys; d=json.loads(sys.stdin.read()); print(d['t'], d['reason'], d.get('answers'), '$f')";
+  > $ grep -n "mcat-logo\*\|define \*theme-edit-mode?\*\|define %comment-window-font%\|define \*hidden-canvas\*" racket/gui/*.rkt* racket/engine/*.rktl; grep -n "dele
+  > $ grep -n "against-background\|make-clamp-event\|top-down-codelet-pattern%" racket/engine/*.rktl | grep define | head
+
+Now extending engine-route to also route views globals, then writing the GUI module.
+  > $ python3 - <<'EOF'
+p='racket/gui/engine-route.rkt'
+s=open(p).read()
+old='''(define-syntax (view-set! stx)
+  (syntax-case stx ()
+    [(_ name value)
+     (if (eng
+  > $ sed -n 28,40p racket/gui/engine-route.rkt && cat >> racket/gui/views.rkt <<'EOF'
+
+;; port: (set-view-global! 'name value), set! of a variable of the graphics
+;;
+  > $ sed -i '36s/(path->string name))))))))))/(path->string name)))))))))/' racket/gui/engine-route.rkt && raco make racket/gui/views.rkt && echo ok
+  > $ sed -i '36s/(path->string name)))*$/(path->string name)))))))))/' racket/gui/engine-route.rkt && sed -n 36p racket/gui/engine-route.rkt && raco make racket/gui/
+  > $ sed -i '36s/(path->string name)))*$/(path->string name))))))))/' racket/gui/engine-route.rkt && raco make racket/gui/views.rkt && echo ok
+
+Writing the GUI support module (`racket/gui/gui.rkt`): on-screen window hosts, the engine thread, and SWL stand-ins.
+  > $ grep -n "file-dialog-directory\|define \*platform\*\|metacat-directory" racket/gui/*.rkt racket/*.rkt | head; grep -n "^(define (%\|define %$\|(define % " racke
+  > Write /home/al/dev/metacat/racket/gui/gui.rkt
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rkt'
+s=open(p).read()
+s=s.replace("(place *memory-window* (min xd (+ x4 0)) (max y2 (+ (ht *comment-window*) %window-gap%)))
+
+Now the port of `gui.ss` itself (`racket/gui/gui.rktl`).
+  > Write /home/al/dev/metacat/racket/gui/gui.rktl
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rktl'
+s=open(p).read()
+s=s.replace('''    (let* ((control-panel
+	     (new control-panel-frame%''','''    ;; port: letrec*, 
+  > $ { sed -n 1,18p chez_scheme/original/setup.ss; cat <<'EOF'
+;; Ported to Racket, 2026: setup.ss's setup and enable-resizing, included by
+;; racket/gui/gui.rkt (th
+  > $ sed -i 's/g:checkable-menu-item<%>/g:checkable-menu-item%/g' racket/gui/gui.rktl && raco make racket/gui/gui.rkt 2>&1 | head -5
+  > $ sed -i 's/;; port: letrec\*, since/;; port: letrec (left to right, like letrec*), since/; s/(letrec\* ((control-panel/(letrec ((control-panel/' racket/gui/gui.r
+
+Compiles. Trying it live under Xvfb with a scratch script.
+  > $ mkdir -p /tmp/gt && cat > /tmp/gt/try.rkt <<'EOF'
+#lang racket/base
+(require racket/class (prefix-in g: racket/gui/base) racket/system
+         (file "/home/al/
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rkt'
+s=open(p).read()
+s=s.replace('''         (only-in "sgl.rkt" [*platform* sgl:*platform*])
+''','')
+s=s.replace('''(define
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rkt'
+s=open(p).read()
+s=s.replace("(send canvas init-manual-scrollbars (and h-style? 0) (and v-style? 0) 1 1 0 0)","(send ca
+  > $ sleep 5; cat /tmp/claude-1000/-home-al-dev-metacat/24ca627b-aba6-4dc7-abc8-65dc01dca97f/tasks/bu8rjjods.output; pkill -f gt/try.rkt; pkill Xvfb; true
+  > $ sed -i 's/^(setup)$/(setup)(printf "setup done\\n")(flush-output)/; s/^(click (W .go-button))$/(click (W (quote go-button)))(printf "clicked ~a\\n" (engine-busy
+  > $ grep -n "critical-section" racket/gui/*.rktl | head
+
+Found a deadlock in the port's SWL message-queue stand-in (resize queue); fixing it with atomic receive.
+  > $ python3 - <<'EOF'
+p='racket/gui/views.rkt'
+s=open(p).read()
+old=''';; SWL thread message queues (general-graphics.ss's resize listener)
+(define thread-make-msg-
+
+Faithful behaviour: entering a problem initializes and waits; a second Go runs. Updating the script.
+  > $ python3 - <<'EOF'
+p='/tmp/gt/try.rkt'
+s=open(p).read()
+s=s.replace('''(wait-idle 30)
+(printf "count''','''(wait-idle 30)
+(click (W 'go-button))
+(wait-idle 60)
+(
+
+Full run through the GUI matches the golden (395 codelets, same RNG state). Viewing the screenshot.
+  > Read /tmp/gt/screen.png
+  > $ sed -i 's|(system "python3 -c .*$|(system "xwininfo -root -tree \| head -30; echo $DISPLAY; which python3")(system "python3 -c \x27from PIL import ImageGrab; im
+  > $ env | grep -i -E "wayland|gdk|display|xdg_session"
+  > $ timeout 120 env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1920x1200x24" racket /tmp/gt/try.rkt 2>&1 | grep -v "^ *0x" | tail -12
+  > Read /tmp/gt/screen.png
+
+Works end to end. Layout needs a reflow (Trace falls off the bottom). Fixing the layout, then writing the GUI test.
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rkt'
+s=open(p).read()
+i=s.index(';; port: where the windows go.')
+j=s.index(';;---------------------------------------------
+  > $ cat racket/info.rkt; ls tests/golden | grep -E "abc-abd-xyz_3852097033|abc-abd-mrrjjj_2"; tail -1 tests/golden/abc-abd-xyz_3852097033.jsonl
+
+Writing the GUI test (tests first for the remaining behaviours; the core already ran in the scratch script).
+  > Write /home/al/dev/metacat/racket/gui-tests/control-panel-test.rkt
+  > $ raco make racket/gui-tests/control-panel-test.rkt && time (timeout 300 env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1920x1200x24" raco test 
+  > $ sed -i 's|         (only-in "../compat.rkt" random-seed))|         (only-in "../gui/fonts.rkt" *scrollbar-width* *scrollbar-height*)\n         (only-in "../comp
+
+While it runs: wiring the GUI tests into `run-tests.sh` (under Xvfb, Wayland unset), excluding them from plain `raco test racket/`, and the real `main.rkt`.
+  > $ python3 - <<'EOF'
+p='racket/info.rkt'
+s=open(p).read()
+s+=''';; racket/gui-tests opens windows: tests/run-tests.sh runs it on a virtual
+;; display (xvfb-run, wi
+  > $ python3 - <<'EOF'
+p='racket/main.rkt'
+s=open(p).read()
+s=s.replace('''(provide metacat-version main)''','''(require racket/runtime-path)
+
+(provide metacat-versi
+  > $ sleep 30; cat /tmp/claude-1000/-home-al-dev-metacat/24ca627b-aba6-4dc7-abc8-65dc01dca97f/tasks/bksxtcgcy.output; ps aux | grep -c "raco test racket/gui-tests"
+  > $ pkill -f "gui-tests/control-panel-test" ; pkill Xvfb; cd /home/al/dev/metacat && (timeout 280 env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1
+  > $ timeout 280 env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1920x1200x24" raco test racket/gui-tests/control-panel-test.rkt > /tmp/gt/test.txt 
+  > Monitor {"command": "until grep -q \"^exit\" /tmp/gt/test.txt 2>/dev/null; do sleep 3; done; head -c 3000 /tmp/gt/test.txt"}
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+
+The GUI test is running in the background; I'll read its output as it arrives.
+  > $ until grep -q "^exit" /tmp/gt/test.txt 2>/dev/null; do sleep 3; done; head -c 4000 /tmp/gt/test.txt
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rkt'
+s=open(p).read()
+s=s.replace("         start-gui-refresh!)","         start-gui-refresh! stop-gui-refresh!)")
+s=s.repla
+  > $ python3 - <<'EOF'
+p='racket/gui-tests/control-panel-test.rkt'
+s=open(p).read()
+s=s.replace('''(module+ test
+''','''(module+ test
+  (current-print void)   ; the 
+  > $ sed -i 's/(define (take-output!) (get-output-string engine-out #t))/(define (take-output!) (bytes->string\/utf-8 (get-output-bytes engine-out #t)))/' racket/gui
+  > $ python3 - <<'EOF'
+p='racket/gui/setup.rktl'
+s=open(p).read()
+old='''      (set! *control-panel* (make-control-panel))
+'''
+new='''      (set! *control-panel* (ma
+
+All 105 checks pass in 8.5 s. Running a few mutation checks on the GUI code.
+  > $ cp racket/gui/gui.rktl /tmp/gt/gui.rktl.bak && cp racket/gui/gui.rkt /tmp/gt/gui.rkt.bak
+run() { raco make racket/gui-tests/control-panel-test.rkt 2>&1 | tail -
+
+Mutations caught 5 of 6; the sixth is equivalent (`switch-to-input-mode` clears the command line anyway). Now a screenshot script for inspecting the whole screen.
+  > Write /home/al/dev/metacat/tests/gui-screenshot.rkt
+  > $ raco make tests/gui-screenshot.rkt && timeout 120 env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1920x1200x24" racket tests/gui-screenshot.rkt
+  > $ sed -i 's/(require racket\/class racket\/system racket\/string racket\/list/(require racket\/class racket\/system racket\/string/' tests/gui-screenshot.rkt && r
+  > Read /tmp/gt/mrrjjj-513.png
+
+Workspace matches item 13's 513-codelet picture, and the Trace is now on screen. The Commentary text looks clipped at the right; zooming in.
+  > $ cd /tmp/gt && python3 -c "
+from PIL import Image; im=Image.open('mrrjjj-513.png'); im.crop((1490,520,1810,600)).resize((960,240)).save('crop.png')"
+  > Read /tmp/gt/crop.png
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rkt'
+s=open(p).read()
+old='''        (when (or h-style? v-style?) (sync-scrollbars))'''
+new='''        (when (or h-style? v-
+  > Read /tmp/gt/crop.png
+
+Text now fits the width. There's a blank band under the last paragraph; checking the comment window's scroll state.
+  > $ sed -i 's|^(printf "codelets run: ~a\\n" \*codelet-count\*)|(printf "codelets run: ~a\\n" *codelet-count*)\n(let ((vp (tell *comment-window* (quote get-vp)))) (
+
+A spurious GTK scroll event during the scrollbar re-init overwrites the program's scroll position with a stale value. Ignoring scroll events while the host itself re-inits the scrollbars:
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rkt'
+s=open(p).read()
+old='''    (define/public (user-scrolled)
+      (send viewport set-scroll-position!'''
+new='''    (def
+  > $ grep -n "resize\|reposition" racket/gui/commentary-graphics.rktl | head
+  > $ timeout 120 env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1920x1200x24" racket tests/gui-screenshot.rkt /tmp/gt/xyz.png abc abd xyz 385209703
+  > $ grep -n "make-resizable\|set-resize-handler" racket/gui/*.rktl | head; sed -n 1,40p racket/gui/commentary-graphics.rktl | grep -n "lambda\|make-" 
+  > $ cp tests/gui-screenshot.rkt /tmp/gt/shot.bak && sed -i 's|^(system (format "python3|(tell *comment-window* (quote reposition-vertical-scrollbar))(let ((vp (tell
+  > $ cp racket/gui/general-graphics.rktl /tmp/gt/gg.bak && sed -i 's|	  (let ((resize (thread-receive-msg \*resize-message-queue\*)))|	  (let ((resize (thread-receiv
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rkt'
+s=open(p).read()
+old='''    (define/public (set-resizable! w h) (set! resizable? (and w h)))'''
+new='''    ;; Tk's scro
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rkt'
+s=open(p).read()
+old='''      (when (or h-style? v-style?) (sync-scrollbars))
+      (send frame reflow-container)'''
+ne
+
+Comment window now keeps its size and scroll position. Viewing the full screenshot.
+  > $ cp /tmp/gt/shot.bak /home/al/dev/metacat/tests/gui-screenshot.rkt; cd /home/al/dev/metacat && raco make tests/gui-screenshot.rkt && timeout 120 env -u WAYLAND_D
+  > Read /tmp/gt/xyz.png
+
+The screen matches the offscreen pictures from items 13–14 (run 7's `wyz`, crossed bridges, snag and clamp events in the Trace, two Memory entries). Re-running the GUI test, then the gate.
+  > $ date; cd /home/al/dev/metacat && raco make racket/gui-tests/control-panel-test.rkt && timeout 280 env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen
+  > $ python3 ralph_loops/loop0001/gate.py > /tmp/gt/gate.txt 2>&1; echo "exit $?" >> /tmp/gt/gate.txt
+
+While the gate runs (~8 min), writing the docs.
+  > $ sed -n 1,40p docs/anomalies_and_quirks.md; tail -30 docs/divergences.md; grep -n "^## " docs/porting-notes.md | tail -3
+  > $ grep -n "^## \|^### " docs/anomalies_and_quirks.md | tail -15
+  > $ grep -n "^## ⚙️\|^## 🔗\|^## 🌀" docs/anomalies_and_quirks.md; sed -n 520,560p docs/anomalies_and_quirks.md | head -20
+  > $ python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+quirks='''### GTK ignores Xvfb when `WAYLAND_DISPLAY` is set
+- **Seen:** iteration 16 (item 
+
+Now porting-notes item 15 and the CLAUDE.md command list.
+  > $ cat >> docs/porting-notes.md <<'EOF'
+
+## The control panel and windows (item 15)
+
+### Where the code went
+- `racket/gui/gui.rkt` (requires racket/gui) holds wha
+  > $ cat /home/al/.claude/projects/-home-al-dev-metacat/memory/MEMORY.md; cat > /home/al/.claude/projects/-home-al-dev-metacat/memory/gui-tests-wayland.md <<'EOF'
+--
+  > $ grep -n -A3 "gui/gui.rkt\|gui/gui.rktl\|setup.rktl" /tmp/gt/gate.txt | head
+  > $ cd /tmp && env -u DISPLAY -u WAYLAND_DISPLAY racket -e '(require racket/gui/base) (display "loaded")' 2>&1 | tail -2
+
+Loading is fine without a display. Waiting for the gate.
+  > $ until grep -q "^exit" /tmp/gt/gate.txt; do sleep 5; done; tail -15 /tmp/gt/gate.txt
+  > $ grep -n "gui-tests\|105 tests\|tests passed" /tmp/gt/gate.txt | head; git status --short | head -30; grep -n "15 The control panel" ralph_loops/loop0001/iterati
+
+Gate passed (2557 Racket tests, 105 GUI tests, the Chez checks). Writing PROGRESS.md and marking the item.
+  > $ sed -i '109s/- \[ \] \*\*15 The control panel/- [x] **15 The control panel/' ralph_loops/loop0001/iterations.md && sed -i 's/^- \*\*Current\*\*: 15\/18 SOLVED/-
+  > $ python3 - <<'EOF'
+p='ralph_loops/loop0001/PROGRESS.md'
+s=open(p).read()
+s=s.replace('''  - The gate is about 8–9 min.
+EOF''','')
+s=s.rstrip('\n')+'''
+  - demos.
+
+Item 15 (the control panel and windows) is done and the gate passes: 2557 Racket tests, the 105 new GUI tests, and the Chez checks. `chez_scheme/original/` and `tests/golden/` are untouched. Nothing is committed.
+
+**One thing you should know first.** Your session sets `WAYLAND_DISPLAY`, and with it GTK ignores Xvfb. So my first three scratch GUI runs, a few seconds each, opened windows on your real screen before I noticed. Every GUI run now goes through `env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run` (in `tests/run-tests.sh` and the command in CLAUDE.md), and the GUI test refuses to start if `WAYLAND_DISPLAY` is set. It's logged in `docs/anomalies_and_quirks.md` and in my memory notes.
+
+**What exists now**
+- `racket racket/main.rkt` opens the control panel and every Metacat window as frames tiled on the screen. The control panel has the problem entry, Step/Go/Stop/Reset, the speed slider, and the Help, Demos, Windows, Options and Memory menus (Save commentary to file is under Options).
+- `gui.ss` is ported as `racket/gui/gui.rktl`. The button actions, the control panel's messages and the window controllers are copied from the original. The widgets themselves had to be rewritten for racket/gui.
+- The engine runs in its own thread, standing in for the original's REPL thread. The panel hands it work; each job runs until the model stops itself.
+- `demos.ss` is ported too, because the Demos menu needs it. Item 16 now only needs its tests.
+
+**Tests** (`racket/gui-tests/control-panel-test.rkt`, about 9 s on Xvfb, in the gate). It clicks the panel's real widgets. Every run driven this way ends at the golden's codelet count and random-generator state:
+- a full run (395 codelets);
+- a run in step mode, with the step size set through the Options dialog;
+- a run stopped at a breakpoint and resumed by clicking the Workspace;
+- run 7 (2170 codelets) stopped with Stop, resumed with Go, and run again after Reset.
+
+It also covers Save commentary, Clear Memory, showing and hiding windows, self-watching off and on, resizing a window, and a Demos item. Five of six deliberate breakages of the GUI code were caught; the sixth changes nothing, because the command line gets cleared again anyway.
+
+The tests were not written first: a scratch script drove the first runs and found two of the bugs below, and the test came after.
+
+**Bugs found and fixed**
+- My stand-in for SWL's message queue could freeze the GUI thread.
+- A scrollbar appearing after layout covered the right edge of the Commentary text.
+- The original has one resize queue for all windows and keeps only the last of simultaneous resizes. At startup several windows resized at once, so the Commentary never redrew.
+
+**Screenshots.** I captured the whole virtual screen with `tests/gui-screenshot.rkt`. At codelet 513 of `abc abd mrrjjj` the Workspace matches item 13's offscreen picture. Run 7's `wyz` screen shows the commentary wrapped and scrolled to the newest paragraph, plus the Trace's snag and clamp events. One layout issue remains: the Vertical Themes window ends about 30 px below the bottom of a 1200 px screen.
+
+**Differences from the original** (in `docs/divergences.md`)
+- racket/gui can't colour native widgets or set fonts on menu items, so highlighted menu items are shown as checked instead.
+- Help and Clear Memory are in their own menus, because racket/gui's menu bar holds only menus.
+- The original left window placement to the window manager; the port tiles the windows itself.
+- The item's "Run" and "Pause" are the original's Go and Stop. I kept its four buttons.
+
+**Not tested:** clamping a theme pattern (Options ▸ Clamp theme pattern) is ported but has no automated test yet.
+
+PROGRESS.md (now 16/18) and iterations.md are updated.
+
+# result: success in 2421s, 108 turns, cost $9.40

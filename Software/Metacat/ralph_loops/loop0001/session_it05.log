@@ -1,0 +1,198 @@
+# session it05 started 2026-10-02 21:43:51
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; ls racket racket/tests chez_scheme/oracle chez_scheme/oracle/tests tests docs; wc -l chez_scheme/original/{constants,setup,coderack,des
+  > $ cd /home/al/dev/metacat; grep -n "constants.ss\|setup.ss\|coderack.ss\|descriptions.ss" docs/code-map.md | head; awk '/^\*\*constants.ss/,/^$/' docs/code-map.md
+
+Now read the four source files.
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/coderack.ss
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/setup.ss chez_scheme/original/descriptions.ss
+  > $ cd /home/al/dev/metacat; grep -n "^(define\|^;;" chez_scheme/original/constants.ss | head -300
+  > $ cd /home/al/dev/metacat; sed -n 1035,1074p chez_scheme/original/constants.ss; sed -n 960,996p chez_scheme/original/constants.ss
+  > $ cd /home/al/dev/metacat; sed -n 1,140p racket/compat.rkt
+  > $ cd /home/al/dev/metacat; sed -n 140,864p racket/compat.rkt | grep -n "define-syntax\|^;;\|^(define" | head -150
+  > $ cd /home/al/dev/metacat; sed -n 590,864p racket/compat.rkt; grep -n "codelet-type-list\|post-codelet\|define-codelet-procedure" -A12 chez_scheme/original/syntac
+  > $ cd /home/al/dev/metacat; sed -n 50,400p docs/porting-notes.md
+
+Reading the existing differential-test harness so the coderack test can follow the same pattern.
+  > $ cd /home/al/dev/metacat; cat racket/tests/utilities-diff-test.rkt; cat chez_scheme/oracle/diff-eval.ss; head -60 tests/diff/utilities-battery.scm; grep -n "stoc
+  > $ cd /home/al/dev/metacat; grep -n "define load-metacat" -A60 chez_scheme/oracle/prelude.ss | head -120; sed -n 60,140p tests/diff/utilities-battery.scm
+  > $ cd /home/al/dev/metacat; sed -n 241,300p chez_scheme/oracle/prelude.ss; grep -n "install-headless-windows!" chez_scheme/oracle/*.ss
+
+Writing the coderack battery now (tests first), then running it under Chez.
+  > $ cd /home/al/dev/metacat; sed -n 140,200p tests/diff/utilities-battery.scm; grep -n "^(define (%\|^(define %\b\|(define 100-\|define tell-all\|define filter-meth
+  > $ cd /home/al/dev/metacat; grep -n "^;;;-----\|^;;; Shared\|^;;; The generator" tests/diff/utilities-battery.scm | head -5
+  > $ cd /home/al/dev/metacat/tests/diff; grep -n "b:seeds\|make-fake" utilities-battery.scm | head -3; sed -n 1,20p utilities-battery.scm
+  > $ cd /home/al/dev/metacat/tests/diff; python3 - <<'EOF'
+src=open('utilities-battery.scm').read().split('\n')
+# lines are 1-indexed; helpers = 23..81 (after header
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='tests/diff/utilities-battery.scm'
+s=open(p).read()
+s=s.replace(";;; Each runner defines (b:capture thunk) -> the s
+  > Write /home/al/dev/metacat/racket/tests/diff-runner.rkt
+  > Write /home/al/dev/metacat/racket/tests/utilities-diff-test.rkt
+  > $ cd /home/al/dev/metacat; time raco test racket/tests/utilities-diff-test.rkt 2>&1 | tail -3
+
+Refactored runner still passes (198). Now writing the coderack battery.
+  > Write /home/al/dev/metacat/tests/diff/coderack-battery.scm
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='tests/diff/coderack-battery.scm'
+s=open(p).read()
+old=s[s.index("    (let* ((r (list (eliza-mode-off)"):s.index(" 
+
+Chez passes everything except `codelet-run-and-fizzle`. Debugging that one.
+  > $ cd /home/al/dev/metacat; cat > /tmp/dbg.ss <<'EOF'
+(define b:set-global! set-top-level-value!)
+(b:set-global! '%coderack-graphics% #f)
+(define w (lambda msg 'do
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='tests/diff/coderack-battery.scm'
+s=open(p).read()
+s=s.replace("""        (log! (list 'breaker x y))
+        (if (>
+
+The Chez side of the battery is complete (72 tests). Now the engine: a module language that discards top-level expression values, plus `engine.rkt` that includes the per-file pieces.
+  > Write /home/al/dev/metacat/racket/engine-lang.rkt
+  > $ cd /home/al/dev/metacat; mkdir -p racket/engine; O=chez_scheme/original
+hdr() { sed -n 1,18p $O/$1; echo ";; Ported to Racket, 2026: $2"; echo ";;==============
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/engine/coderack.rktl'
+s=open(p).read()
+old="""(define *codelet-types*
+  (codelet-type-list*
+    (bottom-up-
+
+Now `engine.rkt` and an initially empty `pending.rktl`; I'll compile repeatedly to collect the unbound names.
+  > $ cd /home/al/dev/metacat; cat > racket/engine.rkt <<'EOF'
+#lang s-exp "engine-lang.rkt"
+;;=======================================================================
+  > $ cd /home/al/dev/metacat; sed -i 's|^(require "compat.rkt" "utilities.rkt")|(require racket/include "compat.rkt" "utilities.rkt")|' racket/engine.rkt; for i in $
+
+Chez's `case` accepts a bare datum as a clause key (`(rule-scout ...)`); Racket's doesn't. Adding a Chez `case` to compat.
+  > $ cd /home/al/dev/metacat; grep -n "chez-if" racket/compat.rkt | head; grep -c "" racket/compat.rkt
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/compat.rkt'
+s=open(p).read()
+s=s.replace("(rename-out [chez-if if] [chez-map map]","(rename-out [chez-if if
+
+Compiles. Now organizing `pending.rktl` by source file and kind (procedure vs variable).
+  > $ cd /home/al/dev/metacat/chez_scheme/original; for n in $(grep -o "pending-variables [^)]*" ../../racket/engine/pending.rktl | cut -d' ' -f2); do f=$(grep -l -E 
+  > $ cd /home/al/dev/metacat/chez_scheme/original; grep -n "%num-of-flashes%\|%flash-pause%\|%snag-pause%\|coderack-codelet-count-font%\|define \*memory\*\|define \*
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/engine/pending.rktl'
+s=open(p).read()
+s=s[:s.index("(pending-variables *display-mode?*)")]
+s+=""";; run.ss
+
+
+Engine loads silently. Now the Racket side of the differential test.
+  > $ cd /home/al/dev/metacat; cat > racket/tests/coderack-diff-test.rkt <<'EOF'
+#lang racket/base
+;; Item 04: differential checks of the engine's constants.ss, setup
+
+Failing as expected before fixes. Let me dump both outputs and diff them.
+  > $ cd /home/al/dev/metacat; sed -i 's|^(provide check-battery)|(provide check-battery chez-output racket-output)|' racket/tests/diff-runner.rkt; cat > /tmp/dump.rk
+
+The battery's namespace instantiates its own copy of the engine, so `set-global!` from the test module hits a different instance. I'll have the runner take `set-global!` from inside the namespace.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/tests/diff-runner.rkt'
+s=open(p).read()
+s=s.replace(""";; modules: module paths required into the namespace
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='tests/diff/coderack-battery.scm'
+s=open(p).read()
+s=s.replace("""                  (list %very-low-translation-tem
+
+All match. Checking the test count is right, and that the test actually catches breakage (mutation checks).
+  > $ cd /home/al/dev/metacat; grep -c "^(test" tests/diff/coderack-battery.scm; grep -c " => " /tmp/cr-chez.txt; grep "^post-30\|^choose-by-seed" /tmp/cr-chez.txt | 
+  > $ cd /home/al/dev/metacat; f=racket/engine/coderack.rktl; cp $f /tmp/coderack.bak
+mut() { cp /tmp/coderack.bak $f; python3 -c "
+import sys;p='$f';s=open(p).read()
+
+Mutations are caught and the restored file matches again. Adding a differential test for the new Chez `case` to the utilities battery, then running the full suite.
+  > $ cd /home/al/dev/metacat; grep -n "^(test" tests/diff/utilities-battery.scm | grep -i "if\|record-case" | head -5
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='tests/diff/utilities-battery.scm'
+s=open(p).read()
+a="(test record-case-no-else (record-case (list 'zz) (one () 'o
+  > $ cd /home/al/dev/metacat; bash tests/run-tests.sh 2>&1 | grep -i "raco\|tests passed\|fail" | head
+
+Adding a small engine structure test (no output at load, `set-global!` behaviour, pending stand-ins, no `racket/gui` dependency).
+  > $ cd /home/al/dev/metacat; cat > racket/tests/engine-test.rkt <<'EOF'
+#lang racket/base
+;; Item 04: the structure of racket/engine.rkt (one module including the
+;
+
+The dependency walk compiles everything from source and is far too slow. I'll replace it with a check that loading the engine into a fresh namespace never declares `racket/gui/base`.
+  > $ cd /home/al/dev/metacat; pkill -f "engine-test.rkt"; python3 - <<'EOF'
+p='racket/tests/engine-test.rkt'
+s=open(p).read()
+a=s.index(";; the engine never requires
+
+That exit was my own `pkill -f` matching the shell running it. Rerunning.
+  > $ cd /home/al/dev/metacat; timeout 100 raco test racket/tests/engine-test.rkt 2>&1 | tail -5
+  > $ cd /home/al/dev/metacat; sed -n 36,60p racket/tests/engine-test.rkt
+
+The edit never ran (it was in the killed shell). Applying it again.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/tests/engine-test.rkt'
+s=open(p).read()
+a=s.index(";; the engine never requires racket/gui")
+s=s[:a]+""";; 
+
+Tests pass. Now the docs: porting-notes (module organisation and its reasoning), the oracle README for `diff-eval.ss`.
+  > $ cd /home/al/dev/metacat; grep -n "diff-eval" -A6 chez_scheme/oracle/README.md; cat docs/divergences.md | head -30
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='chez_scheme/oracle/README.md'
+s=open(p).read()
+old=s[s.index("- `diff-eval.ss BATTERY`"):s.index("- `tests/` holds
+  > $ cd /home/al/dev/metacat; rm -f racket/compiled/engine_rkt.*; time raco make racket/engine.rkt; git status --short
+  > $ cd /home/al/dev/metacat; sed -i 's/compiles all included files together (about\n  1 s now/X/' docs/porting-notes.md; python3 - <<'EOF'
+p='docs/porting-notes.md'
+
+Gate passes. Writing PROGRESS.md and marking the item.
+  > $ cd /home/al/dev/metacat; date "+%Y-%m-%d %H:%M"; grep -n "04 Constants" ralph_loops/loop0001/iterations.md; grep -n "Current:" ralph_loops/loop0001/PROGRESS.md
+  > $ cd /home/al/dev/metacat; grep -n "Current" ralph_loops/loop0001/PROGRESS.md | head -3; sed -i '49s/^- \[ \] \*\*04/- [x] **04/' ralph_loops/loop0001/iterations.
+  > $ cd /home/al/dev/metacat; sed -i '6s|4/18 SOLVED|5/18 SOLVED|' ralph_loops/loop0001/PROGRESS.md; cat >> ralph_loops/loop0001/PROGRESS.md <<'EOF'
+
+---
+
+## Iterati
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='ralph_loops/loop0001/PROGRESS.md'
+s=open(p).read()
+s=s.replace("""The first Racket run after porting failed 40 of 
+
+Item 04 is solved: the gate passes, I've written the PROGRESS.md entry, and the item is marked `[x]` in iterations.md. I haven't committed or pushed.
+
+**How the engine is organised.** It is one module, `racket/engine.rkt`, that `include`s the ported files (`racket/engine/*.rktl`) in the same load order as `metacat.ss`. The original's files call each other in both directions and `set!` each other's globals. Racket doesn't allow module cycles or `set!` on imported variables, so one module is the closest match to Chez loading everything into a single global scope. Each `.rktl` stays a line-for-line copy of its `.ss` file. The full reasoning is in `docs/porting-notes.md`. Three pieces support this:
+- **`racket/engine-lang.rkt`**: a small module language that throws away the values of top-level expressions, as Chez does. Plain `racket/base` would print every `'done`.
+- **`racket/engine/pending.rktl`**: placeholders for names from files not ported yet, grouped by original file. Each later item deletes its names there; a leftover name becomes a duplicate definition, which Racket refuses to compile.
+- **`set-global!`**: the way tests, and later the CLI and GUI, set engine globals, since code outside a module can't `set!` its variables.
+
+**What was ported:**
+- **`constants.ss`**: only the probability distributions. Colours, fonts and window sizes wait for the GUI items.
+- **`setup.ss`**: the globals and user commands. `setup` and `enable-resizing` create windows, so they move to the GUI layer.
+- **`coderack.ss`**: unchanged except that the codelet-type list uses the module-level form of its macro.
+- **`descriptions.ss`**: unchanged.
+- **`compat.rkt`**: gained Chez's `case`, which accepts a bare symbol as a clause key; `coderack.ss` relies on it.
+
+**Tests:**
+- **The coderack check** (`tests/diff/coderack-battery.scm`, 43 tests): the same tests run under Chez with the original loaded and under Racket with the engine, and the outputs must match line for line. They cover bins, urgencies, posting, deletion, deferred posting, clamping, and codelet selection across 8 seeds × 7 temperatures, with the random-number state recorded after every choice. Stand-in objects play the Workspace, Themespace, Trace and Slipnet. All 43 match.
+- **Written first:** I wrote the battery and ran it under Chez before any engine code existed. The first Racket runs failed because of two problems on the test side, not in the ported model code:
+  - the test namespace was loading its own copy of the engine;
+  - one test mapped over a literal list, which Chez's compiler handles in its own order.
+- **The check catches real breakage:** I made five deliberate changes to `coderack.rktl`, one at a time. Each made between 1 and 17 tests fail, and the restored file matches again.
+- **Engine structure** (`racket/tests/engine-test.rkt`, written after the code): loading prints nothing, `set-global!` works, and loading the engine pulls in no `racket/gui` or `racket/draw`.
+
+**Limits:**
+- **Description codelets are untested.** Making a description needs the Workspace, Slipnet and formulas, none of which are ported yet. Only `descriptions-equal?` and `description-member?` are tested now. The codelets will be checked by the golden traces once those files exist.
+- **The headless driver has a requirement.** As in the oracle, it must give every codelet type an empty Coderack window, or running a codelet fails.
+
+I also reorganised the test plumbing:
+- The shared battery helpers moved to `tests/diff/helpers.scm`.
+- `diff-eval.ss` now takes several files and defines `b:set-global!`.
+- Both differential tests now share one Racket runner, `racket/tests/diff-runner.rkt`.
+
+# result: success in 935s, 58 turns, cost $3.31

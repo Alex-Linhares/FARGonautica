@@ -1,0 +1,55 @@
+# Problems and seeds for the golden traces (tests/golden/), written by
+# chez_scheme/oracle/make-golden.ss.  Format (see make-golden.ss):
+#   INITIAL MODIFIED TARGET [ANSWER] | SEED ... | CAP [| keep-going]
+# A fourth string makes it a justify run.  CAP is the codelet cap
+# (run.ss --max-codelets).  A run ends at the first answer or give-up
+# (where the original pauses for Go), at CAP, or if the original halts;
+# keep-going runs continue past answers until CAP.  Every run takes well
+# under 30 s (most 1-3 s; the longest, 17000 codelets, about 7 s).
+#
+# Seeds: the seeds documented in chez_scheme/original/demos.ss come first;
+# the others (small integers) were added to make 3-5 seeds per problem.
+
+#--- demos.ss: sample runs, section 5.2 (run1-run8) and 5.2.3 families
+abc abd mrrjjj mrrjjjj   | 1092119323 1 2                          | 10000   # run1, abc-mrrjjjj
+xqc xqd mrrjjj mrrkkk    | 1248075611 1 2                          | 10000   # run2, xqc-mrrkkk
+rst rsu xyz uyz          | 2330176791 1 3                          | 10000   # run3, rst-uyz
+abc abd xyz dyz          | 2836825623 2107869027 7                 | 10000   # run4, abc-dyz
+xqc xqd mrrjjj mrrjjjj   | 3729474543 1 2                          | 10000   # run5, xqc-mrrjjjj
+eqe qeq abbbc aaabccc    | 789090523 1 2                           | 10000   # run6, eqe-aaabccc
+abc abd xyz              | 3852097033 3009318743 2006188493 692549763 | 10000 # run7, fig5.10, fig5.11, misc9
+eqe qeq abbbc            | 3557912874 2302461154 4089168737        | 10000   # run8, eqe-qeeeq, misc6
+abc abd xyz xyd          | 1760747975 1 2                          | 10000   # abc-xyd
+abc abd xyz wyz          | 3100511611 1 2                          | 10000   # abc-wyz
+rst rsu xyz xyu          | 939480183 1 2                           | 10000   # rst-xyu
+rst rsu xyz wyz          | 720286361 1 2                           | 10000   # rst-wyz
+abc abd mrrjjj mrrkkk    | 4211806334 1 2                          | 10000   # abc-mrrkkk
+eqe qeq abbba baaab      | 3635369418 1 2                          | 10000   # eqe-baaab
+# seed 3: the original halts (report-error-and-halt) in answer-justifier
+eqe qeq abbba aaabaaa    | 4209674874 3 7                          | 17000   # eqe-aaabaaa
+#--- demos.ss: implausible rules (5.3.1), poor thematic characterizations (5.3.2)
+eeqee qeeq xxixx         | 698282038 175910650 4109591222          | 10000   # fig5.4/5.5
+aabc aabd ijkk ijll      | 2351730219 1 2                          | 10000   # fig5.7
+aabc aabd ijkk hjkk      | 1810079903 1 2                          | 10000   # fig5.8
+#--- demos.ss: other sample runs (misc1-misc8)
+abc cba mrrjjj mmmrrj    | 3538780671 6 11                         | 10000   # misc1
+abc abd ijk abd          | 3386544399 1 2                          | 10000   # misc2
+abc aabbcc kkjjii        | 912835776 1 2                           | 1500  | keep-going  # misc3
+a b z                    | 3861033416 1 2                          | 1000  | keep-going  # misc4
+abc abd glz              | 1108779034 1 2                          | 1800  | keep-going  # misc5
+eqe qeq bxxxb xbbbx      | 3227071918 1 2                          | 10000   # misc7
+eqe qeq bxxxb bbbxbbb    | 4244517374 1 2                          | 10000   # misc8
+
+#--- the classic problems discussed in the dissertation (not in demos.ss)
+abc abd mrrjjj           | 1 2 3                                   | 10000
+abc abd ijk              | 1 2 3                                   | 10000
+abc abd iijjkk           | 1 2 3                                   | 10000
+abc abd kji              | 1 2 3                                   | 10000
+abc abd kkjjii           | 1 2 3                                   | 10000
+rst rsu xyz              | 1 2 3                                   | 10000
+xqc xqd mrrjjj           | 1 2 3                                   | 10000
+eqe qeq abbba            | 1 2 3                                   | 10000
+apc abc opc              | 1 2 3                                   | 10000
+# seed 3 raises a Chez error in the original (transcribe-to-english, rules.ss)
+abc ccbbaa ijk           | 1 2 4                                   | 10000
+abc aabbdd ijkl          | 1 2 3                                   | 10000

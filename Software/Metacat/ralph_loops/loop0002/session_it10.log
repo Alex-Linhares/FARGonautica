@@ -1,0 +1,399 @@
+# session it10 started 2026-10-03 21:58:52
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; cat ralph_loops/loop0002/iterations.md | head -80; ls python/metacat python/tests; wc -l chez_scheme/original/rules.ss chez_scheme/orig
+  > $ cd /home/al/dev/metacat; cat tests/diff/rule-battery.scm; cat tests/diff/codelet-harness.scm
+  > Read /home/al/dev/metacat/tests/diff/rule-battery.scm
+  > Read /home/al/dev/metacat/tests/diff/codelet-harness.scm
+  > Read /home/al/dev/metacat/python/tests/codelet_harness.py
+  > $ cd /home/al/dev/metacat; cat python/tests/test_bridges.py; cat python/run-tests.sh; ls racket/engine/ | head -60; grep -n "rules\|answers" docs/anomalies_and_qu
+  > $ cd /home/al/dev/metacat; sed -n 25,60p docs/anomalies_and_quirks.md; sed -n 610,630p docs/anomalies_and_quirks.md; sed -n 770,810p docs/anomalies_and_quirks.md;
+
+Item 09 is rules and answers. I'm reading the Racket port and the rule-battery harness now. Next I'll hand the two module translations to subagents and write the tests myself.
+  > $ cd /home/al/dev/metacat; grep -n "port:" racket/engine/rules.rktl racket/engine/answers.rktl racket/engine/pending.rktl | head -50; wc -l racket/engine/rules.rk
+  > $ cd /home/al/dev/metacat; cat python/metacat/engine.py | head -80; sed -n 1,80p python/metacat/bridges.py; grep -n "^def \|^class " python/metacat/bridges.py | h
+  > $ cd /home/al/dev/metacat; grep -n "_metacat\.\(rules\|answers\|trace\|themes\|general_graphics\|memory\|run\|justify\)\.[a-zA-Z_]*" -o python/metacat/*.py | sort
+  > $ cd /home/al/dev/metacat; grep -n "find-next-space-position" -A12 chez_scheme/original/general-graphics.ss | head -20; grep -n "define equivalent-workspace-objec
+  > $ cd /home/al/dev/metacat; grep -n "As built" docs/python-translation-plan.md; grep -n "^def \|^class " python/metacat/objects.py python/metacat/sugar.py | head -
+  > $ cd /home/al/dev/metacat; cd chez_scheme/original; grep -n "post-initial-codelets\|update-everything" rules.ss answers.ss; grep -ln "(define \*comment-window\*\|
+
+Two subagents will translate rules.ss and answers.ss into a staging directory. While they work, I'll write the failing tests and the harness extension.
+  > Agent {"description": "Translate rules.ss to Python", "subagent_type": "general-purpose", "run_in_background": true, "prompt":
+
+I'll start by reading the specification and the conventions.
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/original/rules.ss racket/engine/rules.rktl python/metacat/*.py docs/python-translation-plan.md; grep -n "rules" pytho
+  > Read /home/al/dev/metacat/chez_scheme/original/rules.ss
+  > Read /home/al/dev/metacat/chez_scheme/original/rules.ss
+  > $ cd /home/al/dev/metacat; grep -n "chez\|port\|1.2:\|caddr\|order" racket/engine/rules.rktl | head -60
+  > Read /home/al/dev/metacat/python/metacat/bridges.py
+  > Read /home/al/dev/metacat/python/metacat/bridges.py
+  > $ cd /home/al/dev/metacat/python/metacat; cat objects.py names.py sugar.py __init__.py engine.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \|^class \|^[A-Za-z_]* = " chez.py utilities.py | cut -c1-150
+  > Agent {"description": "Translate answers.ss to Python", "subagent_type": "general-purpose", "run_in_background": true, "prompt
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,160p chez.py; sed -n 690,800p chez.py; sed -n 955,1060p chez.py; sed -n 1300,1368p chez.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,240p utilities.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 390,1000p utilities.py
+  > $ cd /home/al/dev/metacat; wc -l racket/tests/rule-diff-test.rkt; sed -n 1,200p racket/tests/rule-diff-test.rkt
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/original/answers.ss racket/engine/answers.rktl python/metacat/*.py docs/python-translation-plan.md; ls /tmp/stage9 2>
+  > Read /home/al/dev/metacat/chez_scheme/original/answers.ss
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 63,280p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 412,700p docs/python-translation-plan.md
+  > Read /home/al/dev/metacat/chez_scheme/original/answers.ss
+  > $ cd /home/al/dev/metacat; grep -n "define add-bottom-up-codelets" -A40 chez_scheme/original/run.ss; grep -n "check-if-rules-possible" python/metacat/workspace.py
+  > $ cd /home/al/dev/metacat; grep -n "^## \|^### " docs/anomalies_and_quirks.md | grep -i -n "caddr\|strings from symbols\|lean on later\|never removed\|format-slip
+  > $ cd /home/al/dev/metacat; diff <(sed 's/;.*//' chez_scheme/original/answers.ss) <(sed 's/;.*//' racket/engine/answers.rktl) | head -300
+  > $ cd /home/al/dev/metacat; grep -rn "define add-bottom-up-codelets\|define (add-bottom-up-codelets" chez_scheme/original/; 
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,200p bridges.py
+  > $ cd /home/al/dev/metacat; sed -n 32,60p docs/anomalies_and_quirks.md; sed -n 613,640p docs/anomalies_and_quirks.md; sed -n 772,895p docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat; grep -n "def add_bottom_up_codelets" -A25 python/metacat/coderack.py; grep -n "g_bottom_up_codelet_types\|answer_justifier\|post_codele
+  > $ cd /home/al/dev/metacat/python/metacat; cat objects.py names.py engine.py; sed -n 1,80p sugar.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 80,395p sugar.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "def load\|define_codelet_procedure_star\|^def \|chez: \|coin\|sugar.fizzle\|_metacat\.\|setup\.\|view_globals" 
+  > $ cd /home/al/dev/metacat; sed -n 995,1092p python/metacat/utilities.py; grep -n "1st\|2nd\|3rd\|caddr" chez_scheme/original/utilities.ss | head; grep -rn "caddr\
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 985,1062p bridges.py; sed -n 1800,1865p bridges.py
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 63,280p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 412,700p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; grep -n "define 3rd\|define 2nd\|define (3rd\|define 1st" chez_scheme/original/*.ss; grep -n "caddr\|3rd\|BondFacet" racket/engine/rule
+  > $ cd /home/al/dev/metacat; grep -n "^## \|^### " docs/anomalies_and_quirks.md | grep -in "rules and answers\|tell strings\|answer\|map applies\|left to right\|pun
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/rules.ss racket/engine/rules.rktl
+  > $ cd /home/al/dev/metacat/chez_scheme/original; grep -n "(define apply-rule\|(define ignore-snag\|(define translate\b\|(define translate$\|(define check-if-rules-
+  > $ cd /home/al/dev/metacat; sed -n 234,280p docs/anomalies_and_quirks.md; sed -n 613,640p docs/anomalies_and_quirks.md; sed -n 772,810p docs/anomalies_and_quirks.m
+  > $ cd /home/al/dev/metacat/python/metacat; cat view_globals.py; grep -n "^[a-zA-Z_]* *=" setup.py constants.py
+
+I'm writing the rule harness (extending `codelet_harness.py`) and `test_rules.py` while the translations run.
+  > $ cd /home/al/dev/metacat/python; grep -n "^def [a-z_]*_p\b\|^def [a-z_]*_p(" metacat/utilities.py | head -30; grep -n "codelet_proc" metacat/coderack.py | head
+  > $ cd /home/al/dev/metacat/python/metacat; grep -rn "g_temperature_clamped_p\|g_initial_string\b\|g_trace\b\|g_memory\b\|p_built\b\|make_bridge_pexp\|initialize_ru
+  > $ cd /home/al/dev/metacat/python/metacat; for n in g_initial_string g_target_string g_modified_string g_answer_string p_justify_mode p_workspace_graphics g_themes
+  > $ cd /home/al/dev/metacat/python; grep -n "^letter_p\|^group_p\|^bridge_p\|^workspace_string_p\|^concept_mapping_p\|^rule_p\|letter_p =\|group_p =\|bridge_p =\|wo
+  > $ cd /home/al/dev/metacat/python; grep -n "^class Pair" -A15 metacat/chez.py; grep -n "def type_tester" -A8 metacat/utilities.py
+  > $ cd /home/al/dev/metacat/chez_scheme/original; for n in update-everything suspend make-answer-event make-snag-event abstract-answer-description abstract-snag-des
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "p_max_activation\|^def platonic\|^platonic\|^def related_p\|^    global" slipnet.py | head -20; grep -n "def at
+  > $ cd /home/al/dev/metacat; grep -n "(define punctuate\b\|(define (punctuate\b\|(define average\b\|(define group?\|(define workspace-string?\|define-codelet-proced
+  > $ cd /home/al/dev/metacat/python; ls tests/ | head -50; grep -rn "__doc__" tests/*.py | head
+  > $ cd /home/al/dev/metacat/python/metacat; for n in partition select_extreme filter_ map_compress compress flatmap intersect_pred remove_elements remove_duplicates
+  > $ cd /home/al/dev/metacat/python; sed -n 280,320p tests/test_bridges.py
+  > $ python3 - <<'EOF'
+import re
+p='tests/codelet_harness.py'
+s=open(p).read()
+s=s.replace('''setting (`enable_bridges`, b:enable-bridges!).  b:rules? (item 09) stay
+  > $ cd /home/al/dev/metacat; grep -n -A8 "^(define filter$\|^(define filter \|^(define remove-duplicates\|^(define remq-duplicates\|^(define map-compress\|^(define 
+  > $ cd /home/al/dev/metacat/python; cat tests/engine_stubs.py | sed -n 1,80p
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+import re,sys
+sys.path.insert(0,'.')
+from metacat.names import scheme_to_python as s
+t=re.sub(r';[^\n]*','',open('.
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \|^class \|^[a-z_A-Z]* = " chez.py | head -150; grep -n -A25 "^def format_" chez.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "fail" images.py | head -20; grep -n "def \|@message" workspace_strings.py | grep -i "reference-objects\|object-
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,154p workspace_structures.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def get_all_nested_groups\|^def attach_length_description\|^def new_workspace_string\|^def make_concept_mappin
+  > $ cd /home/al/dev/metacat; grep -n "caddr" chez_scheme/original/rules.ss | head -30; grep -n "(define transcribe-to-english" chez_scheme/original/rules.ss
+  > $ cd /home/al/dev/metacat; sed -n 1700,1800p chez_scheme/original/rules.ss; grep -n "third\b\|(third " chez_scheme/original/rules.ss | head
+  > $ cd /home/al/dev/metacat; timeout 120 scheme --script chez_scheme/oracle/run.ss abc ccbbaa ijk --seed 3 2>&1 | tail -30
+  > $ cd /home/al/dev/metacat; grep -n "(define (\?initialize-rule-graphics\|(define (\?find-next-space-position\|(define (\?monitor-new-rules\|(define (\?equivalent-
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+s=open('chez_scheme/original/rules.ss','rb').read()
+for off in (71194,67689):
+    line=s[:off].count(b'\n')+1
+    pri
+  > $ cd /home/al/dev/metacat; sed -n 1840,1900p chez_scheme/original/rules.ss
+  > $ cd /home/al/dev/metacat; sed -n 545,565p chez_scheme/original/general-graphics.ss; sed -n 15,40p chez_scheme/original/rule-graphics.ss
+  > $ cd /home/al/dev/metacat; grep -o "(new-rule (rule top [^)]*) ((intrinsic[^\"]\{0,300\}" python/fixtures/rule/001-rules-00.txt | head -3; grep -o "(intrinsic [^\
+
+Next I'll pin the `caddr`-of-`#f` crash with a small local Chez battery. The crash comes from `get-change-phrase`, which calls `(3rd BondFacet-change)` when there is no BondFacet change.
+  > $ cd /home/al/dev/metacat; cat python/fixtures/slipnet/*relationship-between-one*; echo; head -30 python/oracle/batteries/bridge-extra-battery.scm; ls python/orac
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n -A40 '@message("apply-slippages")' slipnet.py | head -60; grep -n "list\b.*left to right\|evaluation order" ../.
+  > $ cd /home/al/dev/metacat; grep -n -i "answers" docs/porting-notes.md | head -30
+  > $ cd /home/al/dev/metacat; sed -n 751,850p docs/porting-notes.md
+  > $ cd /home/al/dev/metacat; sed -n 1,40p python/oracle/capture.py | grep -v "^$"; grep -n "x:\|test " python/oracle/batteries/codelet-extra-battery.scm | head -20;
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 797,830p chez.py; grep -n "nested-member?\|singleton-group?\|get-left-string-pos\|get-descriptions-for-rule\|choo
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 679,700p bridges.py; grep -n "def make_workspace_structure" -A15 workspace_structures.py | head -25
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n -A4 '"get-lowercase-name"\|"get-short-name"\|"get-name-symbol"\|"get-related-node"\|"get-conceptual-depth"' slip
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 700,800p bridges.py
+  > Write /home/al/dev/metacat/python/oracle/batteries/rule-extra-battery.scm
+  > $ cd /home/al/dev/metacat; timeout 300 python3 python/oracle/capture.py rule-extra 2>&1 | tail -5; for f in python/fixtures/rule-extra/*.txt; do echo "== $f"; cat
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/oracle/batteries/rule-extra-battery.scm'
+s=open(p).read()
+s=s.replace('''                      (list 'subob
+  > $ cd /home/al/dev/metacat; cat > /tmp/t9.ss <<'EOF'
+(load "tests/diff/helpers.scm")
+(load "tests/diff/workspace-dump.scm")
+(b:init-problem '(abc ccbbaa ijk) 3)
+(d
+
+Still on the crash battery. One case errors for a reason I don't understand yet, so I'm splitting it into single-change tests to find which change causes it.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/oracle/batteries/rule-extra-battery.scm'
+s=open(p).read()
+i=s.index('(test transcribe-long-lines')
+j=s.inde
+  > $ cd /home/al/dev/metacat; grep -n "(define get-dimension-phrase" -A25 chez_scheme/original/rules.ss
+  > $ cd /home/al/dev/metacat; grep -n "plato-first\|plato-last\|alphabetic-first" chez_scheme/original/slipnet.ss | head -5
+  > $ cd /home/al/dev/metacat; sed -i 's/plato-alphabetic-position-category plato-first/plato-alphabetic-position-category plato-alphabetic-first/' python/oracle/batt
+  > $ cd /home/al/dev/metacat; grep -n "subprocess\|cmd\b\|cmd =" python/oracle/capture.py | head; grep -n "\"scheme\"\|'scheme'" -A5 python/oracle/capture.py | head 
+  > $ cd /home/al/dev/metacat; sed -n 100,140p python/oracle/capture.py
+
+I'm checking whether the rule-battery harness itself reaches the crash on `abc ccbbaa ijk`, seed 3.
+  > $ cd /home/al/dev/metacat; { sed -n 39,224p tests/diff/rule-battery.scm; echo "(test crash-run (let ((t (b:run-problem '(abc ccbbaa ijk) 3 2500))) (list (length t
+
+The harness doesn't reach the crash in 2500 codelets, so the crash is pinned at the `transcribe-to-english` level only. I'm updating the battery header to say so.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/oracle/batteries/rule-extra-battery.scm'
+s=open(p).read()
+s=s.replace(''';;;   - change-phrase-*: get-chang
+  > $ cd /home/al/dev/metacat/python; grep -n "bridge-extra" tests/*.py | head
+  > $ cd /home/al/dev/metacat/python; sed -n 1,80p tests/test_workspace.py | sed -n 60,80p; grep -n "^def nm\|^PROBLEMS\|^def init_problem" -A3 tests/test_workspace.p
+  > $ cd /home/al/dev/metacat/python; sed -n 20,35p tests/test_fixtures.py; grep -n "def first_line_difference\|def lines_of" -A15 tests/test_codelets.py | head -40
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_fixtures.py'
+s=open(p).read()
+s=s.replace('''"coderack-extra", "slipnet-extra",
+                
+
+Writing `python/tests/test_rules.py` now.
+  > $ cd /home/al/dev/metacat/python/metacat; grep -rn "select_extreme(" *.py | head; sed -n 655,672p slipnet.py; grep -n -B2 -A12 "^def _insert" utilities.py; grep -
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "_meth\b\|_meth =\|def make_list_method_procedure" -A6 utilities.py | head -40; grep -n "def tell_all\|tell_all"
+  > $ cd /home/al/dev/metacat; sed -n 1810,1830p chez_scheme/original/rules.ss; grep -n "english-name\|print-name" python/metacat/concept_mappings.py | head
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from metacat import chez
+print(chez.mul(), chez.add(), chez.exp(0), chez.eq_p(False,[]), chez.eq_p([],[]))
+"; grep 
+  > $ cd /home/al/dev/metacat; ls tests/diff/ 2>/dev/null; grep -o "(\(b:\)\?[a-zA-Z*%?>/:-]\+" tests/diff/rule-battery.scm 2>/dev/null | sort | uniq -c | sort -rn | 
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "answer-finder\|answer_finder" *.py | head; grep -n "g_temperature =\|g_temperature_clamped" *.py | head; ls ../
+  > $ cd /home/al/dev/metacat; grep -o "plato-[a-z-]*" chez_scheme/original/rules.ss | sort -u | tr '\n' ' '; echo; for n in samegrp whole letter group one successor 
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1245,1270p groups.py; sed -n 1015,1030p groups.py; grep -n "def say_object" -A5 utilities.py; grep -n "^def last\
+  > $ mkdir -p /tmp/stage9; ls /tmp/stage9
+
+Now I have enough context. Let me check a couple of remaining details before writing.
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "full_lowercase_name =\|short_name =" slipnet.py | head; grep -n "def sort_by_method" -A8 utilities.py; grep -n 
+  > Write /home/al/dev/metacat/python/tests/test_rules.py
+  > $ cd /home/al/dev/metacat; grep -n "(define %built%\|(define %proposed%\|(define %evaluated%" chez_scheme/original/*.ss; grep -n "^p_built\|^p_proposed" python/me
+
+Writing the module now.
+  > $ cd /home/al/dev/metacat/python; grep -n "^def andmap\|^def top_level_value\|^def define_top_level_value" metacat/chez.py; ls /tmp/stage9/ 2>/dev/null; timeout 6
+
+Before the modules exist, the fast tier gives 23 failed and 2 passed, as expected. Now the slow battery, also before the code:
+  > $ cd /home/al/dev/metacat/python; time timeout 900 python3 -m pytest -q -m slow tests/test_rules.py 2>&1 | tail -5; python3 -m pytest -q --fast 2>/dev/null | tail
+  > $ cd /home/al/dev/metacat/python; grep -o "(comment add-comment .\{0,80\}" ../python/fixtures/rule/0*.txt | head -5; grep -c "Uh-oh" ../python/fixtures/rule/0*.tx
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_rules.py'
+s=open(p).read()
+s=s.replace(r'''r'\(comment add-comment \(\\"The answer ', r'\(commen
+
+Both translations are still running in the background. I'll ask each agent to write a done-marker file, then wait for the markers in the foreground.
+  > ToolSearch {"query": "select:SendMessage", "max_results": 1}
+  > SendMessage {"to": "aafa5b9f13b187558", "summary": "ask rules agent for done marker", "message": "When rules.py is completely finish
+  > SendMessage {"to": "a972ead777014211e", "summary": "ask answers agent for done marker", "message": "When answers.py is completely fi
+  > $ for i in $(seq 1 115); do [ -e /tmp/stage9/rules.done ] && [ -e /tmp/stage9/answers.done ] && break; sleep 5; done; ls -la /tmp/stage9/
+  > Write /tmp/stage9/rules.py
+  > $ cd /tmp/stage9 && python3 - <<'EOF'
+import re
+s=open('rules.py').read()
+s=s.replace("""    return chez.exact_round(chez.mul(""","""    return round_(chez.mul(""
+  > Write /tmp/stage9/answers.py
+  > $ cd /tmp/stage9; python3 -m pyflakes --version 2>&1|head -1; python3 -m flake8 --version 2>&1 | head -1; cd /home/al/dev/metacat/python && python3 -c "
+import sy
+
+Imports and checks pass. Now a functional smoke test against the loaded engine.
+  > $ cd /home/al/dev/metacat/python && grep -n "^def \|b:rules\|rules" tests/codelet_harness.py | head -40; ls metacat/ | grep -i run
+  > $ cd /home/al/dev/metacat/python && sed -n 1,34p tests/codelet_harness.py; sed -n 140,165p tests/codelet_harness.py; sed -n 390,520p tests/codelet_harness.py
+  > $ cd /home/al/dev/metacat/python && sed -n 100,140p tests/codelet_harness.py; sed -n 355,390p tests/codelet_harness.py; grep -n "STAND_INS\|def stand_ins\|engine_
+  > $ cd /home/al/dev/metacat/python && sed -n 55,90p tests/test_bridges.py; sed -n 41,57p tests/codelet_harness.py
+  > $ cd /tmp/stage9 && python3 - <<'EOF'
+p='answers.py'; s=open(p).read()
+old=s[s.index('    value = None\n    for ot in object_transforms:'):s.index('def make_trans
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+import sys, types, importlib.util
+import metacat
+m=types.ModuleType('metacat.rules'); sys.modules['metacat.r
+  > $ cd /home/al/dev/metacat/python/tests && timeout 600 python3 - <<'EOF' 2>&1 | tail -60
+import sys, importlib.util as u
+sys.path.insert(0,'/tmp/stage9')
+import me
+  > $ touch /tmp/stage9/answers.done
+  > $ cd /home/al/dev/metacat/python && grep -n "set-codelet-procedure\|get-codelet-procedure\|@message(\"run\")" -A3 metacat/coderack.py | head -30; cat tests/confte
+  > $ cd /home/al/dev/metacat/python/tests && timeout 900 python3 - <<'EOF' 2>&1 | tail -60
+import sys, importlib.util as u, traceback, collections
+sys.path[:0]=['/ho
+
+I've written `/tmp/stage9/answers.py` (82,737 bytes). It compiles, and every one of the 42 `(define …)` names in answers.ss is present under its `scheme_to_python` name. Every public callable's docstring starts with `answers.ss: <name>`. A few pure functions gave correct output (`punctuate_with_commas`, `answer_quality_phrase`, `coherence_phrase`). Nothing else has been run: rules.py isn't in the package yet, so for these checks I put an empty stand-in `metacat.rules` in its place. I changed nothing in the repository, and `/tmp/stage9/answers.done` is touched.
+
+**Structure**
+- The slippage log is a `SlippageLog` class (built by `make_slippage_log`) that delegates to `base_object`.
+- `load()` installs `answer_finder` with `sugar.define_codelet_procedure_star`, the same way bridges.py does.
+- rules.ss names are reached through a direct `from metacat import rules`, read at call time (`rules.punctuate`, `rules.apply_rule`, `rules.ignore_snag`, `rules.make_rule`, `rules.verbatim_clause_p`, `rules.extrinsic_clause_p`, `rules.intrinsic_clause_p`, `rules.select_change`).
+- Every string passed to `add-comment` or returned is a `chez.String`, via a private `_fmt` (which wraps `format_`) and `_string_append`.
+- Where a `cond` with no matching clause is a `format` argument, it passes `None`, which prints `#<void>` as in Chez.
+
+**Evaluation-order sites (answers.ss line numbers)**
+- **1513–1518 `apply-to-change` and 1527–1533 `apply-to-object-description`:** two or three `apply-slippages` calls inside one `(list …)`. These draw (`prob?` for coattail slippages) and write to the slippage log. I made them sequential statements, left to right, because the plan says Chez's `list` goes left to right. The Racket port's item 09 audit says "no call has two drawing arguments", which overlooks these two sites, though its left-to-right order is the same.
+- **933 and 951:** both `stochastic-if*` in answer-finder draw the coin before the probability.
+- **1301, 1356 and 1382:** the maps over clauses, object descriptions and the translator use `chez.map_`, since they draw and can escape through `fail`.
+- **1365:** the `filter`/`prob? 0.4` goes through `utilities.filter_`, which tests first to last.
+- **1109–1121 `make-translated-rule-bridges`:** the `(append (map …) (map …))` is left as written. Making bridges draws nothing and touches no shared state, so the order can't be seen headless (and Racket has it this way).
+- All other multi-argument calls and multi-binding `let`s only read.
+
+**Names read through `_metacat` at call time**
+- `run`: `update_everything`, `suspend`, `post_initial_codelets`, and `g_temperature_clamped_p`, which is assigned (`= True`).
+- `trace`: `g_trace`, `make_answer_event`, `make_snag_event`, `entries`, `theme_pattern_entries_equal_p`.
+- `memory`: `g_memory`, `abstract_answer_description`, `abstract_snag_description`.
+- `themes`: `g_themespace`, `diff`.
+- `justify`: `remove_whole_or_single_concept_mappings`, `compare_rule_clause_lists`.
+- Graphics-gated only: `bridge_graphics.make_bridge_pexp` and `rule_graphics.initialize_rule_graphics`.
+- Not through `_metacat` but also read at call time: the setup globals (`g_comment_window`, `g_workspace_window`, `g_temperature_window`, `g_temperature`, `p_justify_mode`, `p_workspace_graphics`, `p_verbose`), the workspace strings and `p_built` from `workspace`, `coderack.g_coderack`, and the four slippage colours from `view_globals`.
+
+**Uncertain or worth checking**
+- The left-to-right order for the two `list` sites (1513–1533) rests on the plan's statement about Chez, not on a test here. If rule-battery traces diverge inside `translate`, check there first.
+- In the original, `make-translated-rule-bridges` only calls `update-proposal-level %built%` on translated-rule bridges when `%workspace-graphics%` is on, so graphics changes model state. I kept it as written.
+- Most `case` forms without an `else` give `None` (void). For `make-translated-string`'s string type, this matches the original.
+- `pick-most-recent-event` passes `chez.min_` as `min`.
+- I added a `setup.p_verbose` guard around answer-finder's `say` of `(round degree-of-support)`, because the Scheme `say` only evaluates its arguments when verbose. It makes no difference to behaviour.
+  > $ cd /home/al/dev/metacat/python/tests && timeout 900 python3 - <<'EOF' 2>&1 | tail -80
+import sys, importlib.util as u, traceback, collections, io
+from contextli
+  > $ cd /home/al/dev/metacat/python/tests && timeout 900 python3 - <<'EOF' 2>&1 | tail -80
+import sys, importlib.util as u, traceback, collections, io
+from contextli
+
+Rules build and transcribe without errors. Now the crash path and a multi-line transcription check.
+  > $ cd /home/al/dev/metacat/python/tests && timeout 300 python3 - <<'EOF' 2>&1 | tail -20
+import sys, importlib.util as u
+sys.path[:0]=['/home/al/dev/metacat/python
+  > $ wc -l -c /tmp/stage9/rules.py; cd /tmp/stage9 && python3 -m flake8 --max-line-length 110 rules.py | head; touch /tmp/stage9/rules.done
+
+Both translations are done. I'm copying them into the package and running the fast tier.
+  > $ cd /home/al/dev/metacat/python; cp /tmp/stage9/rules.py /tmp/stage9/answers.py metacat/; timeout 900 python3 -m pytest -q -m "not slow" tests/test_rules.py 2>&1
+
+The fast tier passes, including the crash cases. Now the full rule battery:
+  > $ cd /home/al/dev/metacat/python; time timeout 1800 python3 -m pytest -q -x -m slow tests/test_rules.py 2>&1 | tail -30
+
+`/tmp/stage9/rules.py` is finished and checked: 2707 lines, 124,737 bytes. Nothing in the repository was edited, and `/tmp/stage9/rules.done` is touched. It has not been run against `tests/diff/rule-battery.scm`, so equivalence with Chez is not yet shown.
+
+**Checks that passed:**
+- Your import sanity command prints `ok`.
+- The define regex plus `scheme_to_python` finds every `(define ...)` of `rules.ss`; none are missing.
+- Every public callable defined in the module, including the classes `Rule`, `ExtrinsicChangeDescription` and `IntrinsicChangeDescription`, has a docstring starting with `rules.ss`.
+- pyflakes is clean. flake8 only flags three loop variables named `l`, kept to match the original's names.
+- After `engine.load()`, the top-level value `format-slipnode` is `rules.format_slipnode`.
+- A smoke run I wrote (not a file in the repo): the codelet harness's stand-ins, in the bridges setting, ran 10 problems × 4 seeds for 600 codelets each. It then ran `rule-scout` 80 times, plus the evaluators and builders it posted. Result: 79 rules built (verbatim, literal and abstract), no exceptions. `show-all`, `get-concept-pattern`, `get-degree-of-support` and `rule-characterization` all ran on every rule, and every English line is a `chez.String`. Long clauses are split into lines correctly.
+
+**Evaluation order:** I reordered no sites. `rules.rktl` is identical to `rules.ss` apart from its header, and my own audit agrees: every call or `let` has at most one argument with side effects. That includes the `list`s built in `instantiate-rule-clause-template` and the remaining-swaps call, whose only draw (`prob?`) is its last argument. Every `stochastic-if*` draws its coin before the probability, written inline as in `bridges.py`. Maps with effects go through `chez.map_`; the ones that matter are `instantiate-rule-clause-template` (draws), `get-dimension-transforms` (`attach-length-description`) and the extrinsic-transform maps (escapes). Sorts go through `chez.sort`. The module docstring records the audit.
+
+**The crash path:** in `get_change_phrase`, a GroupCtgy `self` change with no BondFacet change calls `_caddr(BondFacet_change)`. That raises `chez.SchemeError("caddr", "incorrect list structure ~s", False)`, which prints as `caddr: incorrect list structure #f`. I triggered it in the test. The site has a `# 1.2:` comment citing the anomalies entry.
+
+**Later-file names, all read through `_metacat` at call time:**
+- `_metacat.themes.g_themespace`
+- `_metacat.trace.monitor_new_rules`
+- `_metacat.general_graphics.find_next_space_position`
+- `_metacat.rule_graphics.initialize_rule_graphics` (only with `%workspace-graphics%` on)
+
+`get-real-object` already reaches `trace.equivalent_workspace_objects_p` inside `workspace.py`, so `rules.py` doesn't touch it. The globals are read at call time: `workspace.g_workspace`, the four strings and `p_proposed`/`p_evaluated`/`p_built` from `workspace`; `setup.p_justify_mode` and `setup.p_workspace_graphics`; `slipnet.p_max_activation`.
+
+**What `load()` does, in the file's order:**
+1. Installs the three codelet procedures (`rule-scout`, `rule-evaluator`, `rule-builder`).
+2. Builds `g_rule_dimension_order` (it is `None` before load).
+3. Builds the "an" letter list that `new_object_phrase` closes over (as `_an_letters`).
+4. Registers `format-slipnode` with your `if ... not in chez.TOP_LEVEL` guard.
+
+**Uncertain:**
+- I couldn't confirm Chez's exact `caddr` error text; `"incorrect list structure ~s"` is my best guess. The same goes for a second latent crash I added: `apply-transforms` takes the `cadr` of `#f` when a GroupCtgy transform has no BondFacet transform, so it raises a `cadr` `SchemeError` the same way.
+- `intrinsic-implies-intrinsic?`, the sort predicates and `rule-describable-bridge?` return Python booleans where Chez's `and`/`or` might return another true value. Every caller only tests the result, but the battery would show it if one were printed.
+- `unsupported-self-change?`, `schema-*` and `swap-*` are aliases of `1st`/`2nd`/... in the original. They are separate small functions here, so they can carry their own `rules.ss` docstrings.
+
+The whole rule battery matches Chez byte for byte on the first run: 51 passed in 38 s. Next I'll run mutation checks, starting with the evaluation-order site the answers agent flagged.
+  > $ cd /home/al/dev/metacat; sed -n 1505,1540p chez_scheme/original/answers.ss; grep -n "def apply_to_change\|def apply_to_object_description" -A30 python/metacat/a
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "0\.4\|p_maximum_rule_line_length = \|< 60\|>= 85\|g_temperature_clamped_p = True\|random_pick\|prob_p(\|chez.ra
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 660,700p rules.py; sed -n 955,990p answers.py; grep -n "exp(\|mul(5\|cohesion" rules.py | head
+  > $ mkdir -p /tmp/mut9; cat > /tmp/mut9/mutate.py <<'EOF'
+import subprocess, sys, shutil
+ROOT='/home/al/dev/metacat/python/'
+M=[
+ ("answers.py","""        descripto
+
+Four mutants survived. Mutants 0 and 1 swap the order of the `apply-slippages` calls inside `(list ...)`. I'll ask Chez directly which order it uses there.
+  > $ cd /tmp; cat > /tmp/ord.ss <<'EOF'
+(define log '())
+(define t (lambda (x) (set! log (cons x log)) x))
+(define 2nd cadr) (define 3rd caddr)
+(define apply-to-chan
+  > $ cd /home/al/dev/metacat/python; sed -n 2140,2180p metacat/rules.py; grep -n "abstractness\b\|get-abstractness\|calculate-abstractness" ../chez_scheme/original/r
+  > $ cd /home/al/dev/metacat/python; sed -n 2125,2140p metacat/rules.py; grep -n "rule_abstractness\b\|def rule_abstractness\|calculate_rule_abstractness\|(define .*
+  > $ cd /home/al/dev/metacat; grep -n "compute-rule-intrinsic-quality" chez_scheme/original/*.ss
+  > $ cd /home/al/dev/metacat; sed -n 190,215p chez_scheme/original/rules.ss; grep -n "intrinsic-quality" chez_scheme/original/*.ss
+  > $ cd /home/al/dev/metacat; grep -n "'get-intrinsic-quality" chez_scheme/original/*.ss; cat >> python/oracle/batteries/rule-extra-battery.scm <<'EOF'
+
+;;; Written 
+
+The quality cases are captured. Next I add their Python side and re-run mutant 7 against them.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_rules.py'
+s=open(p).read()
+s=s.replace('''def test_every_extra_test_is_translated():
+    assert 
+
+Mutant 7 is now killed, and mutant 3 is equivalent: a tie needs the coin to equal the probability exactly. Next, a few more mutants in the commentary and snag code:
+  > $ cd /home/al/dev/metacat/python; grep -n "\"again\"\|\" again\"\|\"another\"\|\"also \"\|def punctuate\|tell_all(unjustified" metacat/answers.py metacat/rules.py
+  > $ cd /home/al/dev/metacat/python; sed -n 136,141p metacat/answers.py; sed -n 1176,1186p metacat/answers.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='/tmp/mut9/mutate.py'
+s=open(p).read()
+s=s.replace(''']
+only =''',''' ("answers.py",'''                     
+  > Edit /tmp/mut9/mutate.py
+  > $ cd /home/al/dev/metacat/python; python3 /tmp/mut9/mutate.py 11 12 13 14; git status --short metacat
+
+All four are caught. Now the gate:
+  > $ cd /home/al/dev/metacat; time timeout 1800 python3 ralph_loops/loop0002/gate.py 2>&1 | tail -15
+
+The gate fails on test isolation: an earlier test file leaves a fake `breaker` codelet procedure installed. I'm finding which one.
+  > $ cd /home/al/dev/metacat/python; grep -n "breaker" tests/test_coderack.py tests/test_utilities.py tests/test_codelets.py | head
+  > $ cd /home/al/dev/metacat/python; grep -n "pytest.fixture" -A25 tests/test_coderack.py | head -50
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_coderack.py'
+s=open(p).read()
+s=s.replace('''        saved = {k: getattr(setup, k) for k in vars
+  > $ cd /home/al/dev/metacat; time timeout 1800 python3 ralph_loops/loop0002/gate.py 2>&1 | tail -6
+
+The gate passes: 842 tests in 102 s. Now the docs, starting with the entry formats in the anomalies file and the plan.
+  > $ cd /home/al/dev/metacat; sed -n 1,20p docs/anomalies_and_quirks.md; grep -n "^## \|^### " docs/anomalies_and_quirks.md | tail -30; sed -n 578,640p docs/python-t
+  > $ cd /home/al/dev/metacat; sed -n 118,145p python/README.md; sed -n 571,586p docs/anomalies_and_quirks.md; sed -n 749,757p docs/anomalies_and_quirks.md; head -60 
+
+The modules' own docs are good. Next, the comment counts for the progress notes, and a check that the `diff` stand-in is actually used:
+  > $ cd /home/al/dev/metacat/python; grep -c "# chez:\|# 1.2:" metacat/rules.py metacat/answers.py; wc -l metacat/rules.py metacat/answers.py tests/test_rules.py; gr
+
+Now the doc updates: the anomalies entries, the plan's "As built (item 09)" section, and the README.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+old='''  racket/tests/golden-test.rkt runs the oracle on this probl
+
+Now the PROGRESS entry and the iterations checkbox.
+  > $ cd /home/al/dev/metacat; sed -i 's/^- \[ \] \*\*09 Rules and answers/- [x] **09 Rules and answers/' ralph_loops/loop0002/iterations.md; sed -i 's/^- \*\*Current
+  > $ cd /home/al/dev/metacat; cat >> ralph_loops/loop0002/PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 10 — 2026-10-03 22:28
+
+### Completed
+Item 09, rules and answers: **S
+
+Final gate run after the doc edits:
+  > $ cd /home/al/dev/metacat; timeout 1800 python3 ralph_loops/loop0002/gate.py 2>&1 | tail -3
+
+Item 09 (rules and answers) is solved. The Python translations of `rules.ss` and `answers.ss` match Chez byte for byte on all 50 tests of `tests/diff/rule-battery.scm` (94 MB of traces). The gate passes: 842 tests in about 100 s.
+
+- **Tests before code:** I extended `codelet_harness.py` with the battery's rules setting and wrote `python/tests/test_rules.py` before either module existed. Run then, they failed: 23 failed and 2 passed in the fast tier, and 50 failed and 1 passed in the full battery. The tests that passed only check fixtures and test names. The full battery runs in parallel worker processes in the slow tier (38 s); the fast tier runs the first 300 codelets of problem 0.
+- **Code:** two subagents translated `metacat/rules.py` and `metacat/answers.py` while I wrote the tests. All 50 battery cases passed on the first run, and none of the evaluation-order sites needed reordering.
+- **The `caddr`-of-`#f` crash:** it comes from `get-change-phrase` at rules.ss:1868, and Python raises a `chez.SchemeError` at the same place. The battery never reaches it, and the harness doesn't hit it on abc ccbbaa ijk seed 3 either (I checked under Chez). So I wrote a local battery first, `python/oracle/batteries/rule-extra-battery.scm`, which pins the crash and the English phrases. The crash in a full run is left to the golden-run items.
+- **Mutation checks:** of 15 mutants, the frozen battery caught 10. One more, in a rule's intrinsic quality, survived because the original computes that value and never reads it. I added four quality tests to the local battery (written after the code) and they kill it. The other 3 change nothing a run can observe, and I checked one with a Chez probe.
+- **Fix outside the item:** `test_coderack.py` left a fake `breaker` codelet procedure installed in the shared test engine. That broke `test_rules.py` in the full run. The coderack tests now restore every codelet procedure when they finish.
+- **Docs:** I added two entries to `docs/anomalies_and_quirks.md` (the leaked test procedure and the unread intrinsic quality) and updated two others. I also added "As built (item 09)" to the translation plan and updated `python/README.md`. PROGRESS.md has the iteration 10 section, the count is now 10/18, and item 09 is marked `[x]`. Nothing is committed.
+
+Until items 10 and 11 translate trace, memory, themes, general-graphics and run, `test_rules.py` stands in for those modules: the battery's fakes, plus copies of `equivalent-workspace-objects?`, `find-next-space-position` and `diff`.
+
+# result: success in 1949s, 89 turns, cost $13.66

@@ -1,0 +1,286 @@
+# session it10 started 2026-10-05 01:32:16
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cat ralph_loops/loop0003/iterations.md | head -80 && git status --short | head && git log --stat -3 | head -60 && tail -50 ralph_loops/loop0003/session_it09.log
+  > $ grep -n "^- \[" ralph_loops/loop0003/iterations.md; sed -n '/07 Mouse/,/08 /p' ralph_loops/loop0003/iterations.md; tail -30 ralph_loops/loop0003/loop.log; cat r
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+import json
+d=json.load(open('tests/data/tk-gui-inventory.json'))
+print(d.keys())
+for k,v in d.items():
+    
+  > $ python3 - <<'EOF'
+import json
+d=json.load(open('tests/data/tk-gui-inventory.json'))
+for w in d['windows']:
+    print(w['name'], w['left_press'], w['shift_left_p
+  > $ python3 - <<'EOF'
+import json
+d=json.load(open('tests/data/tk-gui-inventory.json'))
+seqs={}
+for b in d['bindings']:
+    seqs.setdefault((b['class'],b['sequence'
+
+Item 06 is committed; I'm on item 07 (mouse/keyboard). Reading the Qt hosts now.
+  > $ wc -l metacat/qt/*.py && grep -n "class \|def \|mouse\|Press" metacat/qt/hosts.py | head -100
+  > $ sed -n 1,250p metacat/qt/hosts.py
+  > $ grep -n "def mouse_press" -A25 metacat/gui/*.py | head -60; grep -n "def workspace_window_press_handler\|def trace_window_press_handler\|def memory_window_press
+  > $ grep -n "def my_screen_to_canvas_x" -A12 metacat/gui/sgl.py; grep -rn "def pause\b\|def pause(" metacat/ | head; grep -n "thread_break" metacat/gui/*.py metacat
+  > $ wc -l tests/drive_gui.py tests/drive_qt_gui.py tests/drive_qt_menus.py tests/test_qt_engine.py tests/test_gui.py; grep -n "^def \|clamp\|click\|mouse_press\|_pr
+  > $ sed -n 1,130p tests/drive_gui.py; sed -n 370,480p tests/drive_gui.py; sed -n 596,635p tests/drive_gui.py
+  > $ sed -n 1,140p tests/drive_qt_gui.py; grep -n "^def \|^class " tests/drive_qt_gui.py
+
+Studying the drivers to design a shared click scenario for tkinter and Qt.
+  > $ sed -n 140,260p tests/drive_qt_gui.py; sed -n 440,474p tests/drive_qt_gui.py; sed -n 130,260p tests/drive_gui.py
+  > $ grep -n "get-mouse-selected-event\|get-mouse-selected-answer\|\"clicked?\"\|'clicked?'" -r metacat | head; 
+  > $ sed -n 150,175p metacat/trace.py; sed -n 160,185p metacat/memory.py; sed -n 925,950p metacat/themes.py; grep -n "def pixel_to_x\|def pixel_to_y\|def x_to_pixel\
+  > $ grep -n "within-bounding-box" -A12 metacat/*.py | head -60; sed -n 100,162p metacat/gui/sgl.py
+  > $ grep -n "Return\|returnPressed\|Key_\|keyPress\|Escape\|Shortcut\|QShortcut" metacat/qt/*.py | head -30; ls ../tests/golden | head -50; ls ../tests/golden | wc 
+  > $ cd /home/al/dev/metacat/tests/golden && for f in abc-abd-ijk_1 abc-abd-ijk_2 abc-abd-ijk_3 abc-abd-kji_1 abc-abd-mrrjjj_1 a-b-z_1 abc-abd-xyz-wyz_1; do echo "$f
+
+Designing the click scenario now; checking the theme-edit flow in both GUIs.
+  > $ cd /home/al/dev/metacat/python && grep -n "ready-to-edit\|edit-theme-type\|Clamp Themes\|def theme_edit\|theme-edit-mode" metacat/gui/gui.py metacat/qt/controls
+  > $ sed -n 1205,1310p metacat/gui/gui.py; sed -n 540,600p tests/drive_qt_menus.py
+  > $ grep -n "get-vp\|get-toplevel\|\"get-width\"\|get-height\|host" metacat/gui/general_graphics.py | head -30; grep -n "class OffscreenHost" -A40 metacat/gui/hosts
+  > $ grep -n "def install_recorders" -A40 metacat/headless.py | head -60; grep -n "@message(\"get-\|@message(\"highlighted" metacat/trace.py | head -30
+
+Now writing the Qt mouse handling (tests first: the shared scenario module and drivers).
+  > $ grep -n "PAINT_GATE =" -B2 -A5 metacat/qt/canvas.py; grep -n "breakpoint\|def test_" tests/test_qt_engine.py | head -40; grep -n "drive_gui" tests/test_gui.py |
+  > $ sed -n 1,52p tests/test_qt_engine.py; sed -n 330,360p tests/test_qt_engine.py; sed -n 245,267p tests/test_gui.py
+  > Write /home/al/dev/metacat/python/tests/click_scenario.py
+  > $ grep -n "get-panel\|def get_panel\|@message" metacat/gui/theme_graphics.py | head -40; grep -n "def select_meth" -r metacat | head -3; grep -n "@message(\"get-"
+  > $ sed -n 440,460p metacat/gui/theme_graphics.py; grep -n "select_meth" metacat/gui/theme_graphics.py | head -3; grep -n "^from\|^import" metacat/gui/theme_graphic
+  > $ grep -n "Top Themes\|top-bridge" metacat/gui/app.py metacat/qt/app.py metacat/gui/views.py metacat/gui/theme_graphics.py | head; sed -n 180,215p metacat/gui/app
+
+Fixing up the scenario module (window lookup, a single-scan pixel map).
+  > $ python3 - <<'EOF'
+p='tests/click_scenario.py'
+s=open(p).read()
+s=s.replace('''            "eeg": setup.g_eeg_window,
+            "top": tell(setup.g_themespace_
+  > $ sed -i 's/  # noqa: E501$//' tests/click_scenario.py && grep -n "def responsive\|def screenshot\|def timing" -A3 tests/drive_gui.py | head; grep -n "ANSWERS" te
+  > $ sed -i 's/        setup.g_codelet_count = 0\n        trace_writer.trace_start(\["abc", "abd", "ijk"\], 1/&/' tests/click_scenario.py && python3 - <<'EOF'
+p='tes
+
+Now the tkinter adapter in drive_gui.py.
+  > $ python3 - <<'EOF'
+p='tests/drive_gui.py'
+s=open(p).read()
+add='''def clicks():
+    """the mouse and keyboard scenario of click_scenario.py (loop0003 item 07), f
+  > $ sed -n 200,215p metacat/trace.py; grep -n "clamp_type\b\|\"manual-clamp\"\|'manual-clamp'" metacat/trace.py | head
+  > $ sed -i 's/        "clamps": tell(m.trace.g_trace, "get-num-of-clamps"),/        "clamps": tell(m.trace.g_trace, "get-num-of-events", "clamp"),/' tests/click_sce
+
+Meanwhile, the Qt side: mouse events on `PaneView`.
+  > $ python3 - <<'EOF'
+p='metacat/qt/hosts.py'
+s=open(p).read()
+s=s.replace('''        self.paints += 1
+        with PAINT_GATE:
+            super().paintEvent(event
+  > $ sed -n 150,180p metacat/qt/controls.py; sed -n 675,690p metacat/qt/controls.py; sed -n 1,60p metacat/qt/controls.py | grep -n "import"
+  > $ sleep 30; grep -v "^Comment\|^Codelets\|^stopped" /tmp/claude-1000/-home-al-dev-metacat/ed0a8daa-673c-4bba-858d-a2c782ab19bb/tasks/biyw1po0m.output | tail -30
+  > $ grep -v "^Comment\|^Codelets\|^stopped" /tmp/claude-1000/-home-al-dev-metacat/ed0a8daa-673c-4bba-858d-a2c782ab19bb/tasks/biyw1po0m.output | tail -30
+  > $ tail -c 1500 /tmp/claude-1000/-home-al-dev-metacat/ed0a8daa-673c-4bba-858d-a2c782ab19bb/tasks/biyw1po0m.output; ls -la /tmp/tkclicks; pgrep -af drive_gui | head
+  > $ F=/tmp/claude-1000/-home-al-dev-metacat/ed0a8daa-673c-4bba-858d-a2c782ab19bb/tasks/biyw1po0m.output; grep -v "^Comment\|^Codelets\|^stopped" $F | cut -c1-300 | 
+  > $ F=/tmp/claude-1000/-home-al-dev-metacat/ed0a8daa-673c-4bba-858d-a2c782ab19bb/tasks/biyw1po0m.output; wc -l $F; cut -c1-200 $F | grep -v "^Comment" | tail -30
+  > $ ps aux | grep -E "drive_gui|xvfb|Xvfb" | grep -v grep | cut -c1-200
+  > $ pkill -f "drive_gui.py /tmp/tkclicks"; cd /home/al/dev/metacat/python && env -u WAYLAND_DISPLAY PYTHONFAULTHANDLER=1 xvfb-run -a -s "-screen 0 2560x1600x24" tim
+  > $ env -u WAYLAND_DISPLAY PYTHONFAULTHANDLER=1 xvfb-run -a -s "-screen 0 2560x1600x24" timeout -s ABRT 90 python3 -u tests/drive_gui.py /tmp/tkclicks invalid_input
+  > $ sed -n 270,280p tests/click_scenario.py; grep -n "ok \|Traceback\|Error" /tmp/tkc.log | head; sed -n 130,150p metacat/run.py; grep -n "def engine_busy_p" -A10 m
+  > $ python3 - <<'EOF'
+p='tests/click_scenario.py'
+s=open(p).read()
+s=s.replace('''    def snap(step):
+        a.wait_idle()
+        steps.append([step, a.on_main(sn
+  > $ cd /tmp/tkclicks && python3 - <<'EOF'
+import json
+d=json.load(open('clicks.json'))
+prev=None
+for name,snap in d['steps']:
+    if isinstance(snap,dict):
+        
+  > $ cd /home/al/dev/metacat/python && grep -n "def _name\|def name_of\|short-name\|print-name" metacat/trace_writer.py | head
+  > $ sed -n 105,140p metacat/trace_writer.py
+
+Using `trace_writer.name` for slipnodes, and adding keyboard steps.
+  > $ python3 - <<'EOF'
+p='tests/click_scenario.py'
+s=open(p).read()
+s=s.replace('''    def themes(kind):
+        return sorted([str(tell(t, "get-dimension")), str(te
+  > $ python3 - <<'EOF'
+p='tests/click_scenario.py'
+s=open(p).read()
+s=s.replace('''    n = trace_writer.name(x)
+    return None if n is trace_writer.NULL else n''','
+
+Tk side works (27 steps). Now the Qt adapter in drive_qt_gui.py.
+  > $ sed -n 420,446p tests/drive_qt_gui.py; grep -n "def press\b\|def press(" -A15 tests/drive_qt_menus.py | head -20
+  > $ python3 - <<'EOF'
+p='tests/drive_qt_gui.py'
+s=open(p).read()
+add='''def clicks():
+    """the mouse and keyboard scenario of click_scenario.py (loop0003 item 07)
+
+Without the mouse code the Qt run fails as expected (the click doesn't resume). Restoring it and adding the Return-key parity.
+  > $ git apply /tmp/hosts-mouse.patch && python3 - <<'EOF'
+p='metacat/qt/controls.py'
+s=open(p).read()
+s=s.replace('''    input_field.returnPressed.connect(action)''
+  > $ python3 - <<'EOF'
+p='metacat/qt/controls.py'
+s=open(p).read()
+s=s.replace('''exists_p
+
+
+
+class _ReturnKey''','''exists_p
+
+
+class _ReturnKey''')
+s=s.replace(''' 
+  > $ sed -i 's/        super().__init__(scene, pane)\n/&/' metacat/qt/hosts.py && python3 - <<'EOF'
+p='metacat/qt/hosts.py'
+s=open(p).read()
+s=s.replace('''        s
+  > $ cat > /tmp/dc.py <<'EOF'
+import os; os.environ["QT_QPA_PLATFORM"]="offscreen"
+from PySide6.QtWidgets import QApplication, QWidget
+from PySide6.QtTest import QTe
+  > $ cat >> /tmp/dc.py <<'EOF'
+print("--- window-level clicks")
+h=w.windowHandle()
+QTest.mouseClick(h, Qt.LeftButton, Qt.NoModifier, QPoint(5,5))
+QTest.mouseClick(h,
+  > $ python3 - <<'EOF'
+p='tests/drive_qt_gui.py'
+s=open(p).read()
+old=s[s.index('    @staticmethod\n    def press(win, x, y, kind):'):s.index('SCENARIOS = [')]
+new='
+
+Qt and tkinter give identical steps and traces. Now regenerating the tkinter reference and checking its size.
+  > $ time env -u WAYLAND_DISPLAY xvfb-run -a -s "-screen 0 2560x1600x24" timeout -s ABRT 250 python3 -u tests/drive_gui.py /tmp/tkclicks invalid_input clicks > /tmp/
+  > $ python3 - <<'EOF'
+p='tests/click_scenario.py'
+s=open(p).read()
+s=s.replace('''def comparable(result):
+    """the part both toolkits must give equally (the pixel
+  > $ grep -n "QtHost(\|make_canvas\|show_viewport\|def test_" tests/test_qt_panes.py | head -30; sed -n 1,60p tests/conftest.py | grep -n "def \|fixture"
+  > $ sed -n 85,116p tests/test_qt_panes.py; sed -n 270,286p tests/test_qt_panes.py
+  > Write /home/al/dev/metacat/python/tests/test_qt_clicks.py
+  > $ python3 - <<'EOF'
+p='tests/test_qt_clicks.py'
+s=open(p).read()
+s=s.replace('''    viewport = host.pane.view.viewport()
+    handle = viewport.window().windowHand
+
+Without the implementation: 10 failed, 2 passed (the inventory checks). Now with it:
+  > $ QT_QPA_PLATFORM=offscreen timeout 900 python3 -m pytest -q -p no:cacheprovider tests/test_qt_clicks.py 2>&1 | tail -15
+  > $ QT_QPA_PLATFORM=offscreen timeout 900 python3 -m pytest -q -p no:cacheprovider tests/test_qt_clicks.py 2>&1 | grep -v "site-packages\|frozen" | head -40
+  > $ python3 - <<'EOF'
+p='metacat/qt/hosts.py'
+s=open(p).read()
+s=s.replace('''        super().__init__(scene, pane)
+        self.pane = pane
+''','''        super().
+  > $ sed -n 40,70p tests/conftest.py; for t in test_a_pane_hands test_a_double test_the_press_is test_a_letterboxed test_a_handler test_the_wheel; do echo "== $t"; Q
+  > $ QT_QPA_PLATFORM=offscreen timeout 120 python3 -m pytest -q -p no:cacheprovider tests/test_qt_clicks.py -k "test_a_pane_hands or test_a_double" 2>&1 | tail -1; s
+  > $ cat > /tmp/repro.py <<'EOF'
+import os, sys, gc, faulthandler; faulthandler.enable()
+os.environ["QT_QPA_PLATFORM"]="offscreen"
+sys.path.insert(0,'tests')
+from Py
+
+Bisecting a segfault in the garbage collector after the pane click tests.
+  > $ for m in none widget window; do echo "== $m"; PYTHONPATH=. timeout 60 python3 /tmp/repro.py $m 2>&1 | grep -v "^  File" | tail -4; done
+  > $ cp metacat/qt/hosts.py /tmp/hosts.new && git show HEAD:python/metacat/qt/hosts.py > metacat/qt/hosts.py && PYTHONPATH=. timeout 60 python3 /tmp/repro.py none 2>
+  > $ PYTHONPATH=. timeout 60 python3 /tmp/repro.py none 2>&1 | head -12
+  > $ cat > /tmp/repro2.py <<'EOF'
+import os, sys, gc, faulthandler; faulthandler.enable()
+os.environ["QT_QPA_PLATFORM"]="offscreen"
+from PySide6.QtWidgets import QAp
+  > $ sed -i 's/^del host$/vp=host.pane.view.viewport() if mode=="vp" else None\nview=host.pane.view if mode=="view" else None\ndel host, vp, view/' /tmp/repro2.py &&
+  > $ sed -i 's/^app=QApplication(\[\])$/app=QApplication([])\nif "qtest" in sys.argv: from PySide6.QtTest import QTest/' /tmp/repro2.py && for m in "plain qtest" "vp
+  > $ sed -i 's/^print("gc...")/app.processEvents()\nprint("gc...")/' /tmp/repro2.py && for m in "plain" "vp"; do echo "== $m"; PYTHONPATH=. timeout 60 python3 /tmp/r
+  > $ sed 's/^sys.path.insert(0,.tests.)$//' /tmp/repro.py > /tmp/repro3.py && PYTHONPATH=. timeout 60 python3 /tmp/repro3.py none 2>&1 | grep -v "^  File\|^Extension
+  > $ sed -n '/^class _Feeder/,/^def resize_listener_running/p' metacat/qt/hosts.py
+  > $ python3 - <<'EOF'
+p='tests/test_qt_clicks.py'
+s=open(p).read()
+s=s.replace('''def shown_host(qapp, scrolling="none", w=300, h=200):
+    from metacat.gui.colors 
+  > $ sed -i 's/    assert "returnPressed" not in source/    assert "returnPressed.connect" not in source/' tests/test_qt_clicks.py && QT_QPA_PLATFORM=offscreen timeo
+
+All 12 pass. Running the whole Qt suite to check nothing else broke.
+  > $ time timeout 1700 bash run-tests.sh --qt -o faulthandler_timeout=300 2>&1 | grep -v "site-packages\|frozen" | tail -15
+  > $ sed -n '/^def grab_png/,/^def screenshot/p' tests/drive_gui.py | head -12 && python3 - <<'EOF'
+p='tests/click_scenario.py'
+s=open(p).read()
+s=s.replace('''     
+  > Read /tmp/qtclicks/clicks-trace-event.png
+  > Read /tmp/qtclicks/clicks-memory-compare.png
+  > Read /tmp/qtclicks/clicks-theme-edit.png
+  > $ env -u WAYLAND_DISPLAY xvfb-run -a -s "-screen 0 2560x1600x24" timeout -s ABRT 250 python3 -u tests/drive_gui.py /tmp/tkclicks invalid_input clicks > /tmp/tkc.l
+  > Read /tmp/tkclicks/clicks-theme-edit.png
+
+The Tk and Qt screenshots agree: the same themes are selected (red −100 dots on Object Type/iden and Bond Facet/diff) and the Bottom Themes pane is blank in edit mode. Now the docs.
+  > $ cd /home/al/dev/metacat && sed -n 1,40p docs/anomalies_and_quirks.md; grep -n "^## \|^### " docs/anomalies_and_quirks.md | tail -15; grep -n "^## \|^### " docs/
+  > $ sed -n 1484,1503p docs/anomalies_and_quirks.md; sed -n 189,215p docs/divergences.md; sed -n 363,375p docs/qt-gui-plan.md
+  > $ python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+entry='''### Collecting fake `QtHost`s one after another crashes the cycle collector
+- **See
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+p='tests/README.md'
+lines=open(p).read().split('\n')
+out=[]
+for l in lines:
+    out.append(l)
+    if l.start
+
+Now the gate.
+  > $ cd /home/al/dev/metacat && time timeout 1800 python3 ralph_loops/loop0003/gate.py > /tmp/gate10.txt 2>&1; echo rc=$?; tail -8 /tmp/gate10.txt | cut -c1-300
+
+While the gate runs, I'll write the PROGRESS entry.
+  > $ cd /home/al/dev/metacat && grep -n "Current\|GATE_PLACEHOLDER" ralph_loops/loop0003/PROGRESS.md | head; date "+%Y-%m-%d %H:%M:%S"
+  > $ timeout 590 bash -c 'until grep -q "rc=" /tmp/gate10.txt 2>/dev/null || grep -qE "GATE (PASSED|FAILED)" /tmp/gate10.txt; do sleep 10; done'; tail -5 /tmp/gate10
+
+Gate passed (1597 tests). Writing PROGRESS.md and marking the item.
+  > $ python3 - <<'EOF'
+p='ralph_loops/loop0003/PROGRESS.md'
+s=open(p).read()
+s=s.replace('- **Current**: 6/12 SOLVED','- **Current**: 7/12 SOLVED')
+s=s.replace('- Ga
+
+Item 07 (mouse and keyboard parity) is done and marked `[x]`. The gate passes: 1597 tests in 10:25, and racket/ is unchanged. Nothing is committed; the driver does that.
+
+**What changed in the Qt GUI**
+- **Clicks on panes:** a mouse press on a pane now reaches the panel's own click handler on the GUI thread, as it does in the tkinter GUI. The modifiers follow Tk's rules: Shift+left is a shift click, any other left press (Control too) is a left click, and any right press is a right click. Other buttons do nothing. A double click counts as two presses, as in Tk. The wheel doesn't scroll a canvas, though the scrollbars still take it.
+- **Enter:** the command line and the input dialog act on Return with any modifiers, but not on the keypad's Enter. Tk behaves the same way.
+- The Slipnet and Coderack have no click handlers in the inventory, so clicks there do nothing in either GUI.
+
+**How it was checked**
+- I wrote one 27-step scenario and ran it in both GUIs: real Qt events offscreen, and Tk events under `xvfb-run`. It covers:
+  - Return, keypad Enter and Shift+Return;
+  - a Workspace click resuming a run stopped at a breakpoint;
+  - selecting events in the Trace and answers in the Memory, including the comparison of two answers;
+  - clicks that should do nothing;
+  - a theme-pattern clamp made with left, right and shift clicks on the Themes panes, then 150 more codelets.
+- Both GUIs give identical model states at every step and identical traces (504, 911, 721 and 176 lines). The resumed run matches its golden trace.
+- Each click is aimed at a model object (an event, an answer, a theme) using the model's own hit test, so the different pane sizes don't affect the result.
+- The tkinter result is committed as `python/tests/data/tk-clicks.json`. A slow test regenerates it under Xvfb and compares.
+- With the new code reverted, the test file failed 10 of 12. The 2 that passed only check the inventory.
+- I compared the theme-edit screenshot with the tkinter one: the same themes are selected in both.
+
+**Found along the way** (both logged in `docs/anomalies_and_quirks.md`)
+- Dropping test-only Qt panes and garbage-collecting them one after another segfaults in the collector. This happens with the previously committed code too, so it isn't caused by this change. It's not yet explained; the new tests work around it by keeping one pane per kind for the whole session.
+- Qt's test helper for double clicks, sent straight to a widget, delivers only the double-click event with no press before it. Sent through the window, it delivers what a real mouse does, so the tests send clicks that way.
+
+**For you:** item 06 is still marked `[!]`. Its session died before marking it, but its work passed the gate and is committed as be3c001, so you can mark it `[x]`. That's why PROGRESS.md says 7/12 solved. I also filled in item 06's leftover "GATE_PLACEHOLDER" line with that fact.
+
+The new files are `python/tests/test_qt_clicks.py`, `click_scenario.py` and `data/tk-clicks.json`. The code changes are in `python/metacat/qt/hosts.py` and `controls.py`.
+
+# result: success in 2227s, 99 turns, cost $6.30

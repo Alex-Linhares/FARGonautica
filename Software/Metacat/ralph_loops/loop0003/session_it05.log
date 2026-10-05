@@ -1,0 +1,288 @@
+# session it05 started 2026-10-04 17:16:50
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; sed -n 1,200p ralph_loops/loop0003/iterations.md | head -120; ls python/metacat/qt python/metacat/gui python/tests | head -150
+  > $ cd /home/al/dev/metacat; cat python/metacat/gui/hosts.py; cat python/metacat/qt/mainwindow.py python/metacat/qt/app.py
+  > $ cd /home/al/dev/metacat; wc -l docs/qt-gui-plan.md; grep -n '^#' docs/qt-gui-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 26,76p docs/qt-gui-plan.md; sed -n 227,450p docs/qt-gui-plan.md; sed -n 591,618p docs/qt-gui-plan.md
+  > $ cd /home/al/dev/metacat; ls python/tests/snapshots/views | head -50; sed -n 1,200p python/tests/render_views.py
+  > $ cd /home/al/dev/metacat; grep -n "def \|^[A-Z_]* =" python/metacat/headless.py | head -40; sed -n 1,80p python/metacat/gui/views.py; grep -n "run_problem\|golde
+
+Reading the existing hosts, views and test harness to design the Qt host for item 04.
+  > $ cd /home/al/dev/metacat; sed -n 80,200p python/metacat/gui/views.py; sed -n 25,110p python/tests/test_views.py; sed -n 249,330p python/metacat/headless.py
+  > $ cd /home/al/dev/metacat; grep -n "host\b\|host\.\|make_window_host\|def make_graphics_window\|def make_resizable\|resize_listener\|enable_resizing" python/metac
+  > $ cd /home/al/dev/metacat; sed -n 40,360p python/metacat/gui/general_graphics.py
+  > $ cd /home/al/dev/metacat; grep -n "def \|digest" python/tests/golden_harness.py | head -60; ls tests/golden | grep 3852097033
+  > $ cd /home/al/dev/metacat; sed -n 1,135p python/tests/golden_harness.py; grep -n "3852097033" tests/problems.txt; head -c 600 tests/golden/abc-abd-xyz_3852097033.
+  > $ cd /home/al/dev/metacat; grep -n "^def \|^class \|    def \|^[A-Z_]* =" python/metacat/qt/canvas.py python/metacat/qt/fonts.py; sed -n '/^def install/,/^def /p'
+  > $ cd /home/al/dev/metacat; sed -n 1,108p python/metacat/qt/canvas.py; grep -n "scrollbar" python/metacat/gui/fonts.py | head; grep -n "def get_scrollbar_from_fram
+  > $ cd /home/al/dev/metacat; grep -n "resiz\|def \|start_resize" python/metacat/gui/app.py | head -60
+  > $ cd /home/al/dev/metacat; sed -n 155,240p python/metacat/gui/app.py; grep -n "class Viewport" -A60 python/metacat/gui/sgl.py | grep -n "def \|configure" | head -
+  > $ cd /home/al/dev/metacat; grep -n "make-resizable\|make_resizable" -B2 -A10 python/metacat/gui/theme_graphics.py | head -40; grep -n "def make_.*window\|make_.*g
+  > $ cd /home/al/dev/metacat; grep -n "resizeq\|resize-listener" -A8 chez_scheme/original/general-graphics.ss | head -60; grep -n "resize" docs/anomalies_and_quirks.
+  > $ cd /home/al/dev/metacat; sed -n 1270,1320p docs/anomalies_and_quirks.md; sed -n 455,480p docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat; sed -n 120,200p ralph_loops/loop0003/iterations.md
+  > $ cd /home/al/dev/metacat; grep -n "1366\|768\|DEFAULT_SIZE\|MainWindow" python/tests/test_qt_*.py | head; sed -n 1,80p python/tests/conftest.py | grep -n "qapp\|
+
+Now I have the picture. Writing the tests first (`test_qt_panes.py` plus a scene script), then `qt/hosts.py` and the splitter tree.
+  > $ cd /home/al/dev/metacat; sed -n 1,60p python/tests/test_qt_canvas.py; cat python/tests/conftest.py | sed -n 1,70p; cat python/metacat/qt/grab.py | sed -n 1,40p
+  > Write /home/al/dev/metacat/python/tests/render_qt_panes.py
+  > $ cd /home/al/dev/metacat; grep -n "    def [a-z]" python/metacat/qt/displaylist.py | head -50; grep -n "self\.[a-z_]* = " python/metacat/qt/displaylist.py | head
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/tests/render_qt_panes.py'
+s=open(p).read()
+s=s.replace('''            "items": host.canvas.display_list.ite
+  > Write /home/al/dev/metacat/python/tests/test_qt_panes.py
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen timeout 600 python3 -m pytest -x -q tests/test_qt_panes.py -m "not slow" 2>&1 | tail -5; QT_QPA_PLATFO
+  > Write /home/al/dev/metacat/python/metacat/qt/hosts.py
+  > Write /home/al/dev/metacat/python/metacat/qt/mainwindow.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import re
+p='metacat/qt/mainwindow.py'
+s=open(p).read()
+s=s.replace("    # _row put the rounding on the second
+  > $ cd /home/al/dev/metacat/python; sed -i 's/show(tell(w, \\"get-toplevel\\"), /show(tell(w, "get-toplevel"), /' tests/test_qt_panes.py; sed -n 225,229p tests/test
+  > $ cd /home/al/dev/metacat/python; sed -i 's/    show(host, 200, 600)/    show(host, 300, 600)/' tests/test_qt_panes.py; QT_QPA_PLATFORM=offscreen timeout 900 pyth
+
+Fast tests pass (including a golden run in the panes). Now looking at the grabbed pictures.
+  > $ cd /home/al/dev/metacat/python; time QT_QPA_PLATFORM=offscreen python3 tests/render_qt_panes.py /tmp/qtp run7-answer | python3 -c "import json,sys; d=json.load(
+  > Read /tmp/qtp/window-run7-answer.png
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from PIL import Image
+" 2>&1; ls /tmp/qtp; python3 - <<'EOF'
+# compose side-by-side: tk snapshot | qt pane
+import o
+  > Read /tmp/qtp/cmp-vertical-themes.png
+  > Read /tmp/qtp/cmp-commentary.png
+  > $ cd /home/al/dev/metacat/python; sed -n 595,760p metacat/gui/general_graphics.py
+  > Read /tmp/qtp/cmp-trace.png
+  > Read /tmp/qtp/cmp-memory.png
+  > Read /tmp/qtp/cmp-top-themes.png
+
+The panes match the tkinter snapshots. Next I'm running the slow run7 tests (codelets 300, 800 and the answer).
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen timeout 900 python3 -m pytest -q tests/test_qt_panes.py -m slow 2>&1 | tail -20
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen timeout 900 python3 - <<'EOF'
+import sys; sys.path.insert(0,'tests')
+import os
+from pathlib import Pat
+
+Only black fails: it's the text colour, and Qt antialiases text while Tk's core fonts are 1-bit (a divergence already recorded). The test will skip black and check backgrounds and fills.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_qt_panes.py'
+s=open(p).read()
+s=s.replace('''    drawn without antialiasing, so they are exact)"
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen timeout 900 python3 -m pytest -q tests/test_qt_panes.py -k colours 2>&1 | grep "^E  .*Assert"
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen timeout 900 python3 -m pytest -q tests/test_qt_panes.py -k colours 2>&1 | grep -E "^E " | head
+  > $ cd /home/al/dev/metacat/python; sed -i 's/    assert checked >= 9/    assert checked >= 8/' tests/test_qt_panes.py; QT_QPA_PLATFORM=offscreen timeout 900 python
+
+Let me look at the 300 and 800 window grabs.
+  > Read /home/al/dev/metacat/python/tests/screenshots-qt/panes/window-run7-300.png
+  > $ cd /home/al/dev/metacat/python; sed -n 196,248p metacat/headless.py
+
+Adding a check that resizing the window during a run (engine in a worker thread) leaves the trace unchanged.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/render_qt_panes.py'
+s=open(p).read()
+s=s.replace('''  QT_QPA_PLATFORM=offscreen python3 python/tests/
+  > $ cd /home/al/dev/metacat/python; sed -i 's/        while worker.is_alive():\n/&/' tests/render_qt_panes.py; python3 - <<'EOF'
+p='tests/render_qt_panes.py'
+s=open
+  > $ cd /home/al/dev/metacat/python; grep -rn "setswitchinterval\|setrecursionlimit" metacat | head
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen python3 tests/render_qt_panes.py /tmp/qtr run7-answer --resize 2>/tmp/pe.txt | python3 -c "import json
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/render_qt_panes.py'
+s=open(p).read()
+s=s.replace('''            app.processEvents()
+            impor
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/render_qt_panes.py'
+s=open(p).read()
+s=s.replace('''            app.processEvents(QEventLoop.AllEvent
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen python3 tests/render_qt_panes.py /tmp/qtr run7-answer --resize 2>&1 >/dev/null | grep -v "^pe" | grep 
+  > $ cd /home/al/dev/metacat/python; sed -i 's/faulthandler.dump_traceback_later(1.0, exit=False)/faulthandler.dump_traceback_later(1.0, exit=False, file=open("\/tmp
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/render_qt_panes.py'
+s=open(p).read()
+s=s.replace('''            import faulthandler; faulthandler.dum
+
+The main thread is stuck in Qt's C++ painting, and each Python `paint` callback waits up to 5 ms for the engine thread to release the GIL. Trying a shorter switch interval to confirm.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/render_qt_panes.py'
+s=open(p).read()
+s=s.replace('''        worker = threading.Thread(target=work, da
+  > $ cd /home/al/dev/metacat/python; grep -n "def run_mcat" -A40 metacat/run.py | head -60
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/render_qt_panes.py'
+s=open(p).read()
+a=s.index("    if not resize_during:")
+b=s.index('    info["run_
+  > Read /tmp/qtr/window-run7-answer.png
+
+The commentary pane isn't scrolled to its bottom after the resizes. Debugging.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/render_qt_panes.py'
+s=open(p).read()
+s=s.replace('''            "canvas": [host.width, host.height],'
+  > $ cd /home/al/dev/metacat/python; cat > /tmp/dbg.py <<'EOF'
+import sys, runpy, threading
+sys.argv = ["render_qt_panes.py", "/tmp/qtr", "run7-answer", "--resize"]
+
+  > $ cd /home/al/dev/metacat/python; tail -5 /tmp/dbg.txt; grep -c . /tmp/dbg.txt
+  > $ cd /home/al/dev/metacat/python; grep -n "reposition-vertical-scrollbar\|reposition_vertical" -r metacat/gui/*.py | head
+  > $ cd /home/al/dev/metacat/python; PYTHONPATH=. QT_QPA_PLATFORM=offscreen python3 /tmp/dbg.py 2>/tmp/dbg.txt >/dev/null; grep "^V" /tmp/dbg.txt | awk '{print $2}' 
+  > $ cd /home/al/dev/metacat/python; grep " 144 " /tmp/dbg.txt | tail -30
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/qt/hosts.py'
+s=open(p).read()
+s=s.replace('''        self.pane.view.setGeometry(x, y, w, h)
+       
+
+Adding a regression test for that bounce, then checking it fails without the fix.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_qt_panes.py'
+s=open(p).read()
+s=s.replace('''def test_tiny_panes_send_no_configure(qapp):''','''
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_qt_panes.py'
+s=open(p).read()
+s=s.replace('''def run_scenes(names, size=None):
+    """render_qt_
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/render_qt_panes.py'
+s=open(p).read()
+s=s.replace('''    info.update(reason=reason,''','''    from met
+
+All 27 pass. Next I'm timing each panel's resize method, to settle the live-drag question that plan 2.4 leaves to this item.
+  > $ cd /home/al/dev/metacat/python; cat > /tmp/rt.py <<'EOF'
+import sys, time, io, os
+sys.path.insert(0, "tests")
+os.environ["QT_QPA_PLATFORM"]="offscreen"
+from con
+  > $ cd /home/al/dev/metacat/python; PYTHONPATH=. QT_QPA_PLATFORM=offscreen python3 /tmp/rt.py 2>&1 | grep -v plugin
+
+Every resize method takes under 30 ms, so the original protocol is fast enough for live dragging and no panel needs the `fitInView` fallback. Now wiring `python3 -m metacat.qt` to show the panes.
+  > $ cd /home/al/dev/metacat/python; grep -n "quit-after\|metacat.qt\b\|subprocess\|main(" tests/test_qt_skeleton.py | head
+  > $ cd /home/al/dev/metacat/python; cat >> tests/test_qt_panes.py <<'EOF'
+
+
+def test_the_program_opens_every_pane(tmp_path):
+    """python3 -m metacat.qt: the windo
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/qt/app.py'
+s=open(p).read()
+s=s.replace('''itself.  Translated to Python (2026).  Item 01 of loop00
+  > $ cd /home/al/dev/metacat/python; sed -i '/    headless.install_recorders()/d' metacat/qt/app.py; QT_QPA_PLATFORM=offscreen timeout 600 python3 -m pytest -q tests
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/qt/mainwindow.py'
+s=open(p).read()
+s=s.replace('''# the panes of each splitter''','''# the panes, i
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen python3 -m metacat.qt --quit-after 2500 --screenshot /tmp/start.png 2>&1 | tail -3
+  > Read /tmp/start.png
+
+The window opens with every pane; the remaining panels are still redrawing at 2.5 s, one per 250 ms listener pause, as designed. Now the docs.
+  > $ cd /home/al/dev/metacat; grep -n "Python Qt GUI" -A40 docs/divergences.md | head -60; grep -n "^### " docs/anomalies_and_quirks.md | tail -8; sed -n 1,30p docs/
+  > $ cd /home/al/dev/metacat; sed -n 138,175p docs/divergences.md; grep -n "^## " docs/anomalies_and_quirks.md; tail -30 docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+new='''### Qt paints the panes slowly while the engine runs in anot
+
+Now the plan's "as built" note and the tests README.
+  > $ cd /home/al/dev/metacat; sed -n 351,356p docs/qt-gui-plan.md; grep -n "fitInView" docs/qt-gui-plan.md; grep -n "test_qt_fonts\|render_small_text\|Totals\|1518\|
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen python3 -m pytest --collect-only -q tests/test_qt_panes.py -m slow 2>/dev/null | tail -1; QT_QPA_PLATF
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/tests/README.md'
+s=open(p).read()
+s=s.replace("all 1518 tests","all 1546 tests").replace("fast tier: 1091 t
+
+Docs done. Running the gate (about 8 minutes).
+  > $ cd /home/al/dev/metacat; timeout 1500 python3 ralph_loops/loop0003/gate.py 2>&1 | tail -15
+
+Gate passed (1546 tests). Checking the fast tier's time for the README.
+  > $ cd /home/al/dev/metacat; timeout 600 bash python/run-tests.sh --fast 2>&1 | tail -2; git status --short
+  > $ cd /home/al/dev/metacat; timeout 600 bash python/run-tests.sh --fast 2>&1 | grep -E "FAILED|Error|^E " | head -20
+  > $ cd /home/al/dev/metacat; for i in 1 2 3; do timeout 600 bash python/run-tests.sh --fast > /tmp/fast$i.txt 2>&1; tail -1 /tmp/fast$i.txt; done; grep -h -B5 -A30 
+
+One fast-tier run out of four failed and I didn't capture which test. Hunting for the flake.
+  > $ cd /home/al/dev/metacat/python; for i in $(seq 1 12); do QT_QPA_PLATFORM=offscreen timeout 300 python3 -m pytest -q -x tests/test_qt_panes.py tests/test_qt_skel
+  > $ grep -E "^(E |FAILED|tests/)" /tmp/fl7.txt /tmp/fl2.txt | head -30
+
+The flake is in my new program test: the grab timer and the close timer can come due together, and close sometimes wins. Fix: grab, close and quit in one callback.
+  > $ cd /home/al/dev/metacat/python; grep -n "quit_after" -A12 metacat/qt/app.py | sed -n 1,30p
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/qt/app.py'
+s=open(p).read()
+s=s.replace('''        if args.screenshot:
+            from metacat.qt.
+
+15 out of 15 pass now. Checking the slow pane tests for flakiness too, then rerunning the gate.
+  > $ cd /home/al/dev/metacat/python; for i in 1 2 3; do QT_QPA_PLATFORM=offscreen timeout 600 python3 -m pytest -q tests/test_qt_panes.py -m slow 2>&1 | tail -1; don
+  > $ cd /home/al/dev/metacat/python; for i in 1 2 3 4 5 6; do QT_QPA_PLATFORM=offscreen timeout 600 python3 -m pytest -q tests/test_qt_panes.py -m slow > /tmp/sl$i.t
+  > $ grep -h -A60 "run7-answer failed" /tmp/sl6.txt | grep -E "^E  " | tail -15
+  > $ cd /home/al/dev/metacat; sed -n 195,225p python/metacat/gui/fonts.py; grep -n "get-pixel-size" -B3 -A25 chez_scheme/original/fonts.ss | head -50
+  > $ cd /home/al/dev/metacat/python; cat >> tests/test_qt_panes.py <<'EOF'
+
+
+def test_fonts_measure_from_several_threads_at_once(qapp):
+    """fonts.ss's get-pixel-s
+
+It passed, so the race didn't trigger. Forcing interleaving with a tiny GIL switch interval.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_qt_panes.py'
+s=open(p).read()
+s=s.replace('''    threads = [threading.Thread(target=worker) for 
+
+Fails reliably now. Implementing the per-thread display list.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/qt/canvas.py'
+s=open(p).read()
+old='''class HiddenCanvas(QtCanvas):
+    """port: fonts.ss's *hidden
+
+Fixed. Logging it, then re-running the slow resize test a few times.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+new='''### Two threads measuring text on the one hidden canvas
+- **
+
+8 of 8 pass. Updating counts and docs, then the final gate.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/tests/README.md'
+s=open(p).read()
+s=s.replace("all 1546 tests","all 1547 tests").replace("fast tier: 1111 t
+
+The gate passed (1547 tests). Writing PROGRESS.md and marking the item.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+import datetime
+p='ralph_loops/loop0003/PROGRESS.md'
+s=open(p).read()
+s=s.replace("- **Current**: 3/12 SOLVED","- **C
+
+Item 04 (Panels in panes) is solved. `python3 ralph_loops/loop0003/gate.py` passes with 1547 tests, and I've marked the item `[x]` and written the iteration 5 entry in PROGRESS.md. Nothing is committed.
+
+**What was built**
+- **`python/metacat/qt/hosts.py`:** each graphics window becomes a pane of the main window, showing its Qt canvas. The pane belongs to no window of its own until the main window places it.
+  - Windows that don't scroll keep Tk's aspect ratio and are centred in their pane (the Temperature at the top), with the margins in the panel's background colour.
+  - The scrolling windows fill the pane beside a scroll bar that is always shown.
+  - When a pane changes size, the panel redraws itself through the original's own resize protocol. No panel needs the fallback of just scaling the picture: each panel's resize takes 1–26 ms.
+- **`python/metacat/qt/mainwindow.py`:** the splitter layout from item 00, sized for 1080p (the default window is now 1920×1010). The EEG pane is hidden at start, and a 50 ms timer updates every pane.
+- **`python/metacat/qt/app.py`:** `python3 -m metacat.qt` now opens with every panel in place. There is no run yet; that is item 05.
+
+**Results**
+- Run 7, driven directly with every window in one window, gives exactly its golden trace at the answer. At 300 and 800 codelets the trace matches the golden up to the cap.
+- Every pane has items, except the Bottom Themes, which are empty outside justify runs, as in the tkinter snapshots.
+- Run 7 with the window resized 14 times during the run still gives its golden trace.
+- I looked at the grabs at codelets 300 and 800 and at the answer, pane by pane, next to the tkinter snapshots in `python/tests/snapshots/views/`. They are the same pictures at the panes' sizes, with antialiased text.
+- Run 7 to the answer takes 6.8 s with every pane drawn.
+
+**Bugs found and fixed** (each has a test that failed before the fix, and all three are logged in `docs/anomalies_and_quirks.md`)
+- **Panels skipped redraws.** The original keeps only one waiting resize for all windows, so most panes would never redraw when they all change size at once. Pane sizes are now passed on one at a time, which makes the startup redraw take about 3 s.
+- **Commentary not at its last line.** A pane that grew and shrank back between two updates kept a scroll position Qt had clamped. It now gets a fresh resize in that case.
+- **A crash in one resize run out of six.** The engine and the resize thread measure text at the same time on one shared hidden canvas and deleted each other's items. The original and the tkinter GUI have the same race. The Qt hidden canvas now keeps separate items for each thread.
+
+**Open problem for item 05:** with the engine in a separate thread, Qt's drawing stalls for seconds. Each drawn item is a Python call that has to wait for the engine thread to release the GIL. This is why the resize test runs the engine on the GUI thread and resizes every 150 codelets. Mouse clicks on the panes aren't connected yet; that is item 07.
+
+I also updated `docs/divergences.md`, `docs/qt-gui-plan.md` and `python/tests/README.md`.
+
+# result: success in 2812s, 106 turns, cost $7.08

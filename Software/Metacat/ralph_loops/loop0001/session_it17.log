@@ -1,0 +1,240 @@
+# session it17 started 2026-10-03 04:16:11
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ ls; ls racket racket/gui racket/tests racket/gui-tests tests; cat racket/main.rkt racket/info.rkt; ls README* ; sed -n 1,80p ralph_loops/loop0001/iterations.md 
+  > $ cat tests/run-tests.sh; cat ralph_loops/loop0001/gate.py | head -80; grep -n "seed\|misc\|run[0-9]" chez_scheme/original/demos.ss | head -60
+  > $ cat README.md; cat chez_scheme/original/demos.ss | sed -n 1,140p; cat racket/engine/demos.rktl | head -60; grep -n demo racket/gui/gui.rktl | head -30; grep -rn
+  > $ head -60 tests/problems.txt; grep -n -i "caveat\|demo seed\|replay" docs/*.md | head -40
+  > $ sed -n 60,90p docs/trace-format.md; sed -n 140,165p docs/anomalies_and_quirks.md; sed -n 110,130p docs/porting-notes.md; cat chez_scheme/oracle/tests/demo-repla
+  > $ grep -rn "runtime-path\|open-input-file\|file->\|call-with-input-file\|dynamic-require\|collection-file-path" racket --include=*.rkt --include=*.rktl | grep -v 
+  > $ sed -n 30,120p racket/gui/gui.rkt; grep -n "define (setup\|define setup" racket/gui/*.rkt*; raco exe 2>&1 | head; raco distribute 2>&1 | head -3
+  > Write /home/al/dev/metacat/racket/metacat.rkt
+  > $ python3 - <<'E'
+p='racket/cli.rkt'; s=open(p).read()
+s=s.replace('''         "headless.rkt")
+''','''         "headless.rkt")
+
+;; racket/metacat.rkt (the standal
+  > $ python3 - <<'E'
+p='racket/metacat.rkt'; s=open(p).read()
+s=s.replace("  (run (vector->list (current-command-line-arguments))))","  (void (run (vector->list (cur
+  > $ cat > make-dist.sh <<'E'
+#!/usr/bin/env bash
+# Builds the standalone Metacat program (racket/metacat.rkt) with raco exe and
+# raco distribute.  The result needs
+
+The distribution builds (70 MB, about 6 s). Next I'm checking that it runs from a clean directory.
+  > $ cd /tmp && rm -rf mc-clean && mkdir mc-clean && cp -r /home/al/dev/metacat/build/metacat mc-clean/ && cd mc-clean && ls metacat/lib/plt/metacat/exts/ert/r1 -la;
+  > $ which bwrap strace unshare; cd /tmp/mc-clean && strace -f -e trace=openat,stat,execve -o st.txt ./metacat/bin/metacat abc abd xyz --seed 7 >/dev/null 2>&1; grep
+  > $ cd /tmp/mc-clean && wc -l st.txt; grep -c ENOENT st.txt; grep -E "share/racket|lib/racket|dev/metacat" st.txt | head -5; bwrap --ro-bind /usr /usr --symlink usr
+  > $ ls -d /usr/share/racket /usr/lib/racket /usr/lib/x86_64-linux-gnu/racket 2>&1; cd /tmp && bwrap --ro-bind /usr /usr --symlink usr/lib /lib --symlink usr/lib64 /
+  > $ which xwininfo xdotool import xwd; cd /tmp && cat > /tmp/gui-smoke.sh <<'E'
+/tmp/mc-clean/metacat/bin/metacat > /tmp/gui-out.txt 2> /tmp/gui-err.txt &
+pid=$!
+sl
+
+The GUI also opens from the executable: all 13 windows appear on Xvfb. Now I'm writing the distribution test.
+  > $ ls tests/golden | grep "^abc_abd_xyz\|abc-abd-xyz" | head; sed -n 1,60p racket/gui-tests/control-panel-test.rkt
+  > $ for f in abc-abd-mrrjjj-mrrjjjj_1092119323 xqc-xqd-mrrjjj-mrrkkk_1248075611 rst-rsu-xyz-uyz_2330176791 abc-abd-xyz-dyz_2836825623 xqc-xqd-mrrjjj-mrrjjjj_3729474
+
+I'm handing the dissertation lookup to a subagent so I can keep writing tests. It will check what Chapter 5 reports for each demo.
+  > Agent {"description": "Dissertation Chapter 5 demo facts", "subagent_type": "general-purpose", "prompt": "Read-only research t
+
+Meanwhile, the demos test: definitions vs the original, coverage in problems.txt, and the port replaying the documented demo runs.
+  > $ cd /tmp && pdftotext -layout /home/al/dev/metacat/docs/reference/dissertation.pdf diss.txt && wc -l diss.txt && grep -n -i "chapter 5\|^ *5\.[0-9]" diss.txt | h
+  > $ sed -n 1,40p racket/tests/golden-pool.rkt; grep -n "provide\|define (run-problem" racket/headless.rkt | head; grep -n "demo-menu-item\|define (figure" -A6 racke
+  > $ cd /tmp && awk 'BEGIN{p=1} {n=gsub(/\f/,"\f"); if(NR>=5850 && NR<=7320) print p": "NR": "$0; p+=n}' diss.txt > ch5.txt; grep -n -i -E "codelet|time ?step|[0-9],
+  > $ sed -n 255,300p racket/gui-tests/control-panel-test.rkt; grep -n "define demo-menu-item\|define (demo-menu-item" -A15 racket/gui/gui.rktl
+  > $ cd /tmp && sed -n 140,180p ch5.txt; echo ----; sed -n 255,300p ch5.txt; echo ---; sed -n 325,340p ch5.txt; sed -n 380,400p ch5.txt
+  > $ sed -n 534,560p racket/gui/gui.rktl; grep -n "demo-menu-item" chez_scheme/original/gui.ss | wc -l; grep -n "demo-menu-item" racket/gui/gui.rktl | wc -l
+  > $ grep -n "provide" racket/engine.rkt | head; racket -e '(require (file "/home/al/dev/metacat/racket/engine.rkt")) (displayln run1) (displayln misc5)' 2>&1 | head
+  > $ cd /tmp && grep -n -E "^(22[0-9]|23[0-9]): [0-9]+: .*(Sample Runs|Performance of the Model)" ch5.txt | head -20
+
+Now the demos test (headless, in `racket/tests/`).
+  > $ cd /tmp && awk '/^[0-9]+: [0-9]+: *([0-9]+ +Performance of the Model|5\.[0-9] .* +[0-9]+|[0-9]+ +Problems|.*Problems with the Model +[0-9]+)$/{print "#HDR " $0}
+  > $ cd /tmp && sed -n 560,830p ch5.txt | cut -d: -f2- | grep -v "^ [0-9]*: *$"
+  > Write /home/al/dev/metacat/racket/tests/demos-test.rkt
+  > $ cd /tmp && sed -n 830,1360p ch5.txt | cut -d: -f2- | grep -v "^ [0-9]*: *$" | grep -i -E -B2 -A2 "[0-9]{3,}|Figure 5\.(4|5|7|8|10|11)|run|time" | head -200
+  > $ cd /tmp && sed -n 1045,1062p ch5.txt | cut -d: -f2-; sed -n 1215,1345p ch5.txt | cut -d: -f2- | grep -v "^ [0-9]*: *$"
+  > $ python3 - <<'E'
+p='racket/tests/demos-test.rkt'; s=open(p).read()
+a=s.index('(define engine-ns'); b=s.index('(test-case "the engine')
+s=s[:a]+'''(define-runtime
+  > $ cd /tmp && for p in 257 258 264 266 268 269; do q=$((p+16)); pdftoppm -f $q -l $q -r 80 -png /home/al/dev/metacat/docs/reference/dissertation.pdf /tmp/pg$p 2>/d
+  > Read /tmp/pg257-273.png
+  > Read /tmp/pg258-274.png
+  > $ sed 's/("y" 945)/("y" 946)/; s/(check-equal? (length original-demos-alist) 35)/(check-equal? (length original-demos-alist) 35) (check-equal? (engine-value (quot
+  > Read /tmp/pg264-280.png
+  > Read /tmp/pg266-282.png
+  > Read /tmp/pg268-284.png
+  > Read /tmp/pg269-285.png
+
+The demos test passes and catches mutations. Now I'm extending the GUI test so that every Demos menu item initializes its problem and seed.
+  > $ cd /tmp && pdftoppm -f 280 -l 280 -r 200 -x 700 -y 340 -W 500 -H 120 -png /home/al/dev/metacat/docs/reference/dissertation.pdf /tmp/z57
+  > Read /tmp/z57-280.png
+  > Edit /home/al/dev/metacat/racket/gui-tests/control-panel-test.rkt
+  > $ grep -n "racket/list\|append\*" racket/gui-tests/control-panel-test.rkt | head -3; raco make racket/gui-tests/control-panel-test.rkt && time env -u WAYLAND_DISP
+  > $ cd /tmp && pdftoppm -f 280 -l 280 -r 200 -x 650 -y 520 -W 400 -H 100 -png /home/al/dev/metacat/docs/reference/dissertation.pdf /tmp/z57b 2>/dev/null; pdftoppm -
+  > Read /tmp/z57b-280.png
+  > Read /tmp/z58-282.png
+  > $ python3 - <<'E'
+p='racket/gui-tests/control-panel-test.rkt'; s=open(p).read()
+old='''  (check-true (send run7-item is-checked?) "the demo chosen is highlighted"
+  > $ sed -i 's/(is-a? i g:checkable-menu-item<%>)/(is-a? i g:checkable-menu-item%)/' racket/gui-tests/control-panel-test.rkt && raco make racket/gui-tests/control-pa
+
+Most runs agree with the dissertation. There are four clear mismatches: Run 6, Run 8, Fig 5.11 and Fig 5.5-bottom. One more needs a closer look: Fig 5.4-bottom and Fig 5.5-bottom both stopped at 2899 in the oracle. Page numbers below are the printed ones; the PDF page is the printed page + 16. The working files are in /tmp (diss.txt, ch5.txt, pg*.png); nothing in the repo was touched.
+
+| Demo | Dissertation says (answer, time, page) | Oracle | Match? |
+|---|---|---|---|
+| run1 abc/mrrjjjj | mrrjjjj. "a bridge is built between ... abc and mrrjjj at time step 2688 ... Finally, just a few time steps later, an Answer-justifier codelet runs, this time successfully unifying the rules" (p.213). It gives no exact final step. | mrrjjjj 2692 | yes (consistent) |
+| run2 xqc/mrrkkk | "successful justification of mrrkkk at time step 1747" (p.217) | mrrkkk 1747 | yes |
+| run3 rst/uyz | "successful justification of the answer uyz at time 3163" (p.220) | uyz 3163 | yes |
+| run4 abc/dyz | No answer. Rule clamps at 1882, 2354 and 2892; "By time step 3228 ... the program has still not discovered this rule", then a Jootser ends the run (p.224/226) | no answer, gives up 3228 | yes |
+| run5 xqc/mrrjjjj | Gives up: "at time step 4493, it decides to give up ... creates an unjustified answer description for mrrjjjj" (p.229) | mrrjjjj 4493 | yes, if the oracle's 4493 is the give-up and not a real justification |
+| run6 eqe/aaabccc | Clamps at 2874, 3379 and 3889, then "leading the program to finally give up at time step 6196" (p.234). The answer stays unjustified. | aaabccc 5976 | **no** (5976 vs 6196) |
+| run7 abc/xyz | "discovery of the answer wyz at time step 2170" (p.240) | wyz 2170 | yes |
+| run8 eqe/abbbc | No answer. Snags at 1104, Jootser clamps at 4280 and 5040, more snags at 5487 and 5904; "at time step 5933, a Jootser codelet notices the three clamp events ... ends the run" (p.244) | qeeeq 1013 | **no** (the dissertation's Run 8 never answers) |
+| fig5.4 top eeqee/xxixx | Figure shows answer qeeq. Rule: change leftmost group's letter-category to q / decrease its length by one / change middle group to e / change middle length to two / change rightmost group to the letter q. No time given (p.257). | qeeq 1383 | answer yes, time can't tell |
+| fig5.4 bottom | Figure shows qeeq with a six-line rule. No time given (p.257). | qeeq 2899 | answer yes, time can't tell |
+| fig5.5 top | Figure shows **ixxq** ("Change letter-category of rightmost group to 'q' / Decrease length of rightmost group by one / Swap letter-categories and lengths of leftmost group and middle group"). No time given (p.258). | not provided | n/a |
+| fig5.5 bottom | Figure shows **qeeq** (rule ends "Swap lengths of middle group and rightmost group"). No time given (p.258). | qxeeq 2899 | **no** |
+| fig5.7 aabc/ijkk | ijll. The figure's Workspace shows "(Codelets run: 1172)" (p.264). The text gives no step. | ijll 1172 | yes |
+| fig5.8 aabc/hjkk | "after 520 codelets have run ... at time step 541 ... at time step 730, a symmetric c–i bridge is built, leading quickly to a successful justification of hjkk at time step 733" (p.265). The figure shows 520 and 733. | hjkk 733 | yes |
+| fig5.10 abc/xyz | Answer wyz. "Metacat hit the usual z-snag several times and then negatively clamped ... String-Position: identity". No time given; the trace shows no first⇒last slippage (p.267–268). | wyz 1489 | answer yes, time can't tell |
+| fig5.11 abc/xyz | Answer **yyz**: "a different run of the same problem, in which the answer yyz was found. (This run is actually a continuation of the run shown in Figure 4.12 of Chapter 4.)" No time given (p.268–269). | xyd 1558 | **no** (and it is a continuation of another run) |
+
+**5.2.3 answer-comparison runs (pp.247–255).** Figure 5.3 and its text give no time steps or codelet counts for any of these runs: xyd, wyz, dyz, xyu, mrrkkk, baaab, aaabaaa, qeeeq, aaabccc. The only run described in prose is the eqe/abbbc one: "it hit the snag a couple of times and then answered qeeeq" (p.249), again with no number. So none of the oracle times (abc-xyd 555, abc-wyz 953, abc-dyz 3874, rst-xyu 799, rst-wyz 1322, abc-mrrkkk 1554, eqe-baaab 3201, eqe-aaabaaa 16668) can be checked. The eqe-qeeeq demo is documented as giving qeeeq, but the oracle gives qcccb, so that answer does not match. The others don't contradict the dissertation.
+
+Things worth looking at:
+1. Fig 5.4-bottom and Fig 5.5-bottom both stop at 2899 in the oracle with different answers (qeeq and qxeeq). The two demos may share a seed, or one may be mislabelled. A qeeq answer at 2899 would fit Fig 5.5-bottom.
+2. Fig 5.11 can't be reproduced by seeding alone, because it continues the Figure 4.12 run.
+3. The Run 6 and Run 8 seeds don't reproduce what the dissertation describes. They probably came from a different code version or random-number generator than Metacat 1.2 under Chez 10.
+  > $ cmp tests/golden/eeqee-qeeq-xxixx_175910650.jsonl tests/golden/eeqee-qeeq-xxixx_4109591222.jsonl | head -2; head -c 300 tests/golden/eeqee-qeeq-xxixx_175910650.
+
+They're different runs that both happen to stop at codelet 2899. Now the distribution test, which builds the executable and runs it in a sandbox that hides the Racket installation and the repo.
+  > Write /home/al/dev/metacat/racket/gui-tests/dist-test.rkt
+  > $ raco make racket/gui-tests/dist-test.rkt && time env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1920x1200x24" raco test racket/gui-tests/dist-
+  > $ sed -i 's|         racket/runtime-path)|         racket/path\n         racket/runtime-path)|' racket/gui-tests/dist-test.rkt && raco make racket/gui-tests/dist-
+
+The test hung, so I'm checking which process is stuck.
+  > $ ps -ef --forest | grep -E "metacat|bwrap|raco|make-dist" | grep -v grep | head -20
+  > $ ps -eo pid,ppid,etime,args | grep -E "opt/metacat|dist-test|make-dist|bin/metacat|raco (exe|distribute|make)" | grep -v grep | cut -c1-200
+
+The sandboxed GUI process outlived its killed `bwrap` parent and kept the pipe open. I'm adding `--die-with-parent` and cleaning up the stray process.
+  > $ kill 1591173; sleep 2; cat /tmp/claude-1000/-home-al-dev-metacat/3fd20e69-05b9-4bea-9776-80cdea51be10/tasks/bq6k9ov3u.output | tail; cd /home/al/dev/metacat && 
+  > $ grep -B5 -A12 FAILURE /tmp/claude-1000/-home-al-dev-metacat/3fd20e69-05b9-4bea-9776-80cdea51be10/tasks/bq6k9ov3u.output | head -60
+
+The trace differed only because the golden was made with `--max-codelets 10000`. Rerunning with that cap.
+  > $ sed -i 's|"--seed" "3852097033" "--trace"|"--seed" "3852097033" "--max-codelets" "10000" "--trace"|; s|(list (path->string cli) "abc" "abd" "xyz" "--seed" "3852
+
+The startup line is lost because stdout is buffered when the process is SIGKILLed. Dropping that check and keeping the empty-stderr check.
+  > $ python3 - <<'E'
+p='racket/gui-tests/dist-test.rkt'; s=open(p).read()
+s=s.replace('''  (check-equal? (get-output-string o) "Initializing windows...done\\n")
+''',
+
+All three pass. To show the test catches a real problem, I'm checking it against HEAD's `main.rkt`, which used `dynamic-require`.
+  > $ cp racket/main.rkt /tmp/main.new && git show HEAD:racket/main.rkt > racket/main.rkt && sleep 1 && raco make racket/metacat.rkt && timeout 300 env -u WAYLAND_DIS
+
+With HEAD's `main.rkt`, the distributed GUI exits with status 1 and the test fails 2 of 3, so lazy-require is what makes the executable work. Next, README screenshots.
+  > $ sed -n 50,90p tests/gui-screenshot.rkt; mkdir -p docs/screenshots && time env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1920x1200x24" racket 
+  > Read /home/al/dev/metacat/docs/screenshots/run7-wyz.png
+
+The full-screen shot looks right: Run 7's `wyz`, as in Figs. 5.10/5.11. I'm cropping a Workspace close-up for the README too.
+  > $ python3 -c "
+from PIL import Image
+im=Image.open('docs/screenshots/run7-wyz.png')
+im.crop((455,0,1255,600)).save('docs/screenshots/run7-workspace.png', optimize
+  > Read /home/al/dev/metacat/docs/screenshots/mrrjjj-513-workspace.png
+
+The 513-codelet Workspace matches the dissertation's figure. I'm extending the port's replay test with the runs whose times the dissertation itself gives.
+  > $ racket racket/cli.rkt abc abd xyz dyz --seed 2836825623 --max-codelets 10000 | tail -6; racket racket/cli.rkt xqc xqd mrrjjj mrrjjjj --seed 3729474543 --max-cod
+  > $ python3 - <<'E'
+p='racket/tests/demos-test.rkt'; s=open(p).read()
+a=s.index(';; the documented runs that replay'); b=s.index(';; the (answer codelet) of each')
+
+
+The replay test passes for all 12 documented runs. Now `docs/demos.md`, which explains the seed caveat.
+  > Write /home/al/dev/metacat/docs/demos.md
+
+Now the README.
+  > $ ls chez_scheme/original/ | head -50; ls docs; sed -n 1,30p docs/divergences.md | head -30; grep -c "^###" docs/divergences.md
+  > Write /home/al/dev/metacat/README.md
+
+Checking a few README claims against the repo:
+  > $ ls ralph_loops/; grep -n "Clear memory\|Clear Memory\|\"Memory\"" racket/gui/gui.rktl | head -5; grep -n "Step interval\|step interval" racket/gui/gui.rktl | he
+  > $ sed -i 's/(Memory menu → Clear memory)/(Memory → Clear Memory)/' docs/demos.md && grep -n "Clear Memory" docs/demos.md
+
+Now the docs updates. First, the anomalies entry format:
+  > $ sed -n 1,40p docs/anomalies_and_quirks.md; grep -n "^## \|^### " docs/anomalies_and_quirks.md | tail -15
+  > $ grep -n "^## " docs/anomalies_and_quirks.md; sed -n 569,600p docs/anomalies_and_quirks.md
+
+Updating the demo-seeds anomaly entry and adding new entries:
+  > $ python3 - <<'E'
+p='docs/anomalies_and_quirks.md'; s=open(p).read()
+old_start=s.index('### Most documented demo seeds replay exactly; a few don\'t')
+old_end=s.in
+  > $ sed -n 117,124p docs/porting-notes.md; tail -40 docs/porting-notes.md | head -40 | cut -c1-120
+
+Next, mutation checks before writing the porting notes. First, one changed seed in `demos.rktl`:
+  > $ cp racket/engine/demos.rktl /tmp/demos.bak && sleep 1 && sed -i 's/(define run2 .(xqc xqd mrrjjj mrrkkk 1248075611))/(define run2 (quote (xqc xqd mrrjjj mrrkkk 
+
+Expected: the GUI test reads the engine's own `run2`, so only the demos test catches it. Next, swapping two menu items in `gui.rktl`:
+  > $ cp racket/gui/gui.rktl /tmp/gui.bak && sleep 1 && sed -i 's/"Run 3:  rst -> rsu; xyz -> uyz" run3)/"Run 3:  rst -> rsu; xyz -> uyz" run4)/' racket/gui/gui.rktl 
+
+Caught (2 failures). Last mutation: breaking the executable's GUI dispatch in `metacat.rkt`.
+  > $ cp racket/metacat.rkt /tmp/mc.bak && sleep 1 && sed -i 's/(or (null? args)/(or #f/' racket/metacat.rkt && timeout 300 env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvf
+
+All three mutations are caught. Now the porting notes and `CLAUDE.md`.
+  > $ python3 - <<'E'
+p='docs/porting-notes.md'; s=open(p).read()
+old='''- **Seeds that do not replay.** Besides misc3 (item 01), run4
+  (`abc abd xyz dyz` 2836825623
+
+Docs are done. Running the full gate now (about 9–10 minutes).
+  > $ python3 ralph_loops/loop0001/gate.py > /tmp/gate17.log 2>&1; echo exit $?; tail -5 /tmp/gate17.log
+
+While the gate runs, I'm checking what the last item is:
+  > $ grep -n "^- \[" ralph_loops/loop0001/iterations.md | cut -c1-120 | tail -4
+  > $ sleep 540; tail -5 /tmp/gate17.log
+
+I'll wait for the gate's notification. Meanwhile, here are the first lines of its log:
+  > $ head -20 /tmp/gate17.log
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+  > Monitor {"command": "until grep -qE \"GATE (PASSED|FAILED)\" /tmp/gate17.log; do sleep 5; done; grep -E \"GATE|FAIL|failure\" /t
+
+Waiting for the gate; I'll write PROGRESS.md once it reports.
+  > $ until grep -qE "GATE (PASSED|FAILED)" /tmp/gate17.log; do sleep 5; done; grep -E "GATE|FAIL|failure|tests passed" /tmp/gate17.log | tail -8
+  > Monitor {"command": "until grep -qE \"GATE (PASSED|FAILED)\" /tmp/gate17.log; do sleep 5; done; grep -E \"GATE\" /tmp/gate17.log
+
+The gate is still running; I'll report when it finishes.
+
+# result: success in 759s, 69 turns, cost $3.92
+  > $ grep -E "GATE|tests passed|failure" /tmp/gate17.log | tail -40 | sort | uniq -c | sort -rn | head; grep -E "gui-tests|dist-test|control-panel" -A1 /tmp/gate17.l
+
+Gate passed. Writing PROGRESS.md and marking the item.
+  > $ rm -rf build && python3 - <<'E'
+p='ralph_loops/loop0001/iterations.md'; s=open(p).read()
+s=s.replace('- [ ] **16 Demos, packaging, README.**','- [x] **16 Demos,
+
+Item 16 (Demos, packaging, README) is done and the gate passes. The standalone program, built with `raco exe` + `raco distribute`, runs `abc abd xyz` from an empty directory in a sandbox that hides the Racket installation and the repo. Its output matches `racket/cli.rkt`, and the trace it writes is byte-identical to the Run 7 golden.
+
+- **Standalone program:** `bash make-dist.sh` builds `build/metacat/` in about 6 s (70 MB, gitignored). `bin/metacat` with no arguments (or just a scale) opens the GUI; with a problem it runs headless, with the CLI's arguments and exit codes.
+- **Bug found:** the distributed GUI exited with status 1 because `raco exe` doesn't bundle a module loaded via `dynamic-require`. `racket/main.rkt` and the new `racket/metacat.rkt` now use `lazy-require`, and requiring either still doesn't load racket/gui.
+- **Demos and the seed caveat:** `docs/demos.md` compares each demo with what demos.ss's comments or the dissertation's Chapter 5 report (a subagent read the chapter):
+  - **Replay:** Runs 1–5 and 7, Figs. 5.7/5.8, and misc1, 2, 4, 5 and 9.
+  - **Correction:** item 01 had listed Run 4 as not replaying. It does: the dissertation's Run 4 also gives up at codelet 3228.
+  - **Don't replay:** Runs 6 and 8, Fig. 5.5 (bottom), Fig. 5.11 (it continues another run, so a seed alone can't reproduce it), the eqe-qeeeq demo (it answers qcccb), misc3 and misc6–8.
+  - Where the dissertation and the original disagree, the port follows the original.
+- **README:** what Metacat is, credit to Marshall and to Mitchell's Copycat, the GPL, how to run the GUI, the CLI and the standalone program, how the oracle works, and three screenshots, which I looked at.
+- **Tests:**
+  - `racket/gui-tests/dist-test.rkt` builds the distribution and runs it headless and as a GUI (all 11 windows open, nothing on stderr).
+  - `racket/tests/demos-test.rkt` checks that all 35 demo definitions equal the original's, that every demo seed is a golden run, and that 12 documented outcomes replay in the port.
+  - The control-panel test now checks that each of the 35 Demos menu items loads its problem and seed.
+- **Tests weren't written first.** I built the launcher and script by hand before writing the tests. I then checked that each test fails against broken code: HEAD's `main.rkt` fails 2 of 3 distribution checks, and the mutations to the GUI dispatch, a demo seed and a menu item are each caught.
+
+The gate now takes about 10 minutes and builds the 70 MB distribution in a temporary directory each time. Only Linux was built and tested. The tests need `xwininfo` (`x11-utils`), and use `bwrap` (bubblewrap) if it's installed.
+
+`PROGRESS.md` is updated (17/18 solved) and item 16 is marked `[x]`. Nothing is committed: the driver will do that.
+
+# result: success in 42s, 3 turns, cost $4.87

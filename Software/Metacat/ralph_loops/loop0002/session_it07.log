@@ -1,0 +1,326 @@
+# session it07 started 2026-10-03 20:40:29
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; ls python/metacat python/tests python/oracle python/fixtures; wc -l chez_scheme/original/{workspace,workspace-objects,workspace-structu
+  > $ cd /home/al/dev/metacat; cat tests/diff/workspace-dump.scm; sed -n 1,80p tests/diff/workspace-battery.scm
+  > $ cd /home/al/dev/metacat; sed -n 80,936p tests/diff/workspace-battery.scm
+  > $ cd /home/al/dev/metacat; sed -n 155,520p tests/diff/workspace-battery.scm
+  > $ cd /home/al/dev/metacat; sed -n 520,936p tests/diff/workspace-battery.scm
+  > $ cd /home/al/dev/metacat; cat tests/diff/helpers.scm | head -150; cat python/tests/engine_stubs.py; cat python/metacat/engine.py
+  > $ cd /home/al/dev/metacat; wc -l python/metacat/*.py python/tests/*.py; sed -n 1,200p python/tests/test_slipnet.py
+
+Reading the workspace battery and existing Python modules to plan the item 06 translation.
+  > $ cd /home/al/dev/metacat; sed -n 1000,1121p python/tests/test_slipnet.py; sed -n 1,120p python/metacat/slipnet.py
+  > $ cd /home/al/dev/metacat; cat python/metacat/objects.py; sed -n 120,330p python/metacat/slipnet.py
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/workspace.ss
+  > $ cd /home/al/dev/metacat; sed -n 19,700p chez_scheme/original/workspace-objects.ss
+  > $ cd /home/al/dev/metacat; sed -n 19,500p chez_scheme/original/workspace-strings.ss; sed -n 19,100p chez_scheme/original/workspace-structures.ss; sed -n 19,80p ch
+  > $ cd /home/al/dev/metacat; ls racket/engine/; grep -n "port:" racket/engine/{workspace,workspace-objects,workspace-structures,workspace-strings,workspace-structur
+
+Still reading: checking porting notes for workspace-specific traps before writing code.
+  > $ cd /home/al/dev/metacat; grep -n -i "workspace\|formulas\|tanh\|weighted-average\|average\b" docs/porting-notes.md | head -60; diff <(sed -n 19,999p chez_scheme
+  > $ cd /home/al/dev/metacat; sed -n 440,545p docs/porting-notes.md; grep -n "^##\|^###" docs/python-translation-plan.md | head -60
+  > $ cd /home/al/dev/metacat; sed -n 400,620p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; cat python/fixtures/workspace/MANIFEST | tr '\n' ' '; ls -la python/fixtures/workspace | head -5; du -sh python/fixtures/workspace; hea
+  > $ cd /home/al/dev/metacat; sed -n 140,156p tests/diff/workspace-battery.scm; cat python/fixtures/workspace/038-ws-problem-rest.txt | head -c 300; echo; cat python
+  > $ cd /home/al/dev/metacat; ls python/fixtures/workspace | sed -n 35,45p; cat python/fixtures/workspace/*ws-problem-rest.txt | head -c 300; echo; grep -v '^#' test
+
+Now checking which free names these six files use and where they're defined.
+  > $ cd /home/al/dev/metacat/chez_scheme/original; for n in symbol-\>letter-categories make-probability-distribution %justify-mode% \*codelet-count\* \*temperature-c
+  > $ cd /home/al/dev/metacat/python/metacat; for n in symbol_to_letter_categories make_probability_distribution p_justify_mode g_codelet_count g_temperature_clamped_
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,140p descriptions.py; grep -n "^def \(weighted_average\|average\|group_p\|letter_p\|make_table\|table_ref\|tabl
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 130,170p utilities.py; sed -n 230,430p utilities.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 465,700p utilities.py; sed -n 880,940p utilities.py; sed -n 1040,1060p utilities.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n -A8 "^def \(select_meth\|filter_meth\|ormap_meth\|remq_duplicates\|group_p\|letter_p\|workspace_p\|tell_all\)\b"
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "select_meth\|filter_meth\|ormap_meth\|remq_duplicates\|^def group_p\|^def letter_p\|^def workspace_p\|^from\|^i
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 60,130p utilities.py; sed -n 770,800p utilities.py; sed -n 940,970p utilities.py
+  > $ cd /home/al/dev/metacat/python; grep -n "^def format_\|^def andmap\|^def ormap\|^def map_\|^class String\|^def string_append\|^def sqrt\|^def expt\|^def tanh\|^
+  > $ cd /home/al/dev/metacat/python; grep -rn "String(" metacat/*.py | grep -v "^metacat/chez.py" | head -20; grep -n "strings=True" tests/*.py | head
+  > $ cd /home/al/dev/metacat/python; grep -n "fixture\|def test_slipnet_battery\|ExitStack\|engine_module\|first_difference" -A3 tests/test_slipnet.py | sed -n 1,120
+  > $ cd /home/al/dev/metacat/python; sed -n 930,1000p tests/test_slipnet.py; grep -n "def seeded\|def repeat\|^SEEDS" -A8 tests/test_chez.py | head -30
+  > $ cd /home/al/dev/metacat/chez_scheme/original; grep -n "contains?\|\*EEG\*\|full-workspace-object-name\|equivalent-workspace-objects?\|rule-describable-bridge?\|
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 140,200p descriptions.py
+  > $ cd /home/al/dev/metacat/chez_scheme/original; grep -n "(define (\?\(break-bridge\|equivalent-workspace-objects?\|rule-describable-bridge?\|bridge-between?\|verb
+  > $ cd /home/al/dev/metacat/chez_scheme/original; grep -n "equivalent-workspace-objects?\|rule-describable-bridge?\|bridge-between?\|verbatim-clause?\|same-bond-cat
+
+Launching two background agents to translate the modules into a staging directory while I write the tests first.
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "g_workspace_window\|g_temperature\b\|p_workspace_graphics" setup.py | head; grep -n "^def make_letter_image\|^d
+  > Agent {"description": "Translate workspace objects/strings", "subagent_type": "general-purpose", "prompt": "You are helping tr
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/original/workspace-objects.ss chez_scheme/original/workspace-strings.ss python/metacat/*.py; cat chez_scheme/original
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/workspace-strings.ss
+  > $ cd /home/al/dev/metacat/python/metacat; cat descriptions.py; cat objects.py; cat names.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,80p slipnet.py; grep -n "^def \|^class \|^[a-zA-Z_]* = " utilities.py sugar.py constants.py images.py | head -2
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 120,140p sugar.py; sed -n 130,170p utilities.py; sed -n 225,270p utilities.py; sed -n 300,420p utilities.py; sed 
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/python-translation-plan.md | head -60; grep -n "^def \|^class \|^[A-Za-z_]* = " python/metacat/chez.py | head -150
+  > $ cd /home/al/dev/metacat; sed -n 95,280p docs/python-translation-plan.md; sed -n 412,620p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; diff <(sed 's/;.*//' chez_scheme/original/workspace-objects.ss) <(sed 's/;.*//' racket/engine/workspace-objects.rktl) | head -30; diff 
+  > $ cd /home/al/dev/metacat; sed -n 175,200p docs/anomalies_and_quirks.md; sed -n 390,400p docs/porting-notes.md; sed -n 1,60p python/metacat/images.py; sed -n 20,5
+  > Agent {"description": "Translate workspace/formulas modules", "subagent_type": "general-purpose", "prompt": "You are helping t
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/original/{workspace,workspace-structures,workspace-structure-formulas,formulas}.ss python/metacat/*.py; ls /tmp/ws_st
+  > Read /home/al/dev/metacat/python/metacat/descriptions.py
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/workspace.ss
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/workspace-structures.ss chez_scheme/original/workspace-structure-formulas.ss chez_scheme/original/formulas.ss
+  > $ cd /home/al/dev/metacat; cat python/metacat/objects.py; grep -n "^def \|^class \|^g_\|^p_" python/metacat/utilities.py python/metacat/chez.py python/metacat/sug
+  > $ cd /home/al/dev/metacat; cat python/metacat/engine.py python/metacat/__init__.py; sed -n 1,80p python/metacat/slipnet.py; grep -n "load\|^def \|^class " python/
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,32p utilities.py; sed -n 175,260p utilities.py; sed -n 390,500p utilities.py; sed -n 590,670p utilities.py; sed
+  > $ cd /home/al/dev/metacat; sed -n 700,800p python/metacat/chez.py; sed -n 120,185p python/metacat/sugar.py; sed -n 954,965p python/metacat/chez.py
+  > $ cd /home/al/dev/metacat; awk '/^## .*item 06/,/^## .*item 07/' docs/porting-notes.md | head -150
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/python-translation-plan.md; awk '/^## Numbers/,/^## [A-MO-Z]/' docs/python-translation-plan.md | head -80
+  > $ cd /home/al/dev/metacat; sed -n 63,212p docs/python-translation-plan.md; sed -n 412,620p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat/python; sed -n 536,580p metacat/utilities.py; grep -rn "sort_by_method(" metacat/*.py | grep -v "def " | head; grep -n "^from\|^import" 
+
+While the agents translate, I'll write `python/tests/test_workspace.py` (tests first).
+  > $ cd /home/al/dev/metacat/python; sed -n 1,80p tests/test_coderack.py | head -80; grep -n "class SchemeError" -A10 metacat/chez.py; grep -n "def printf\|def newli
+  > $ cd /home/al/dev/metacat/chez_scheme/original; grep -n "(define (\?\(equivalent-workspace-objects?\|bridge-between?\|rule-describable-bridge?\|group-graphics\|br
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 33,50p utilities.py; sed -n 100,115p utilities.py; sed -n 225,240p ../../racket/engine/workspace.rktl 2>/dev/null
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n '@message("frozen?")' -A3 slipnet.py; grep -n "_var\b\|_v\b\|_value\b" slipnet.py coderack.py images.py | head
+  > $ mkdir -p /tmp/ws_staging
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 541,565p utilities.py; sed -n 136,156p utilities.py; sed -n 620,630p chez.py; sed -n 334,356p chez.py
+  > $ mkdir -p /tmp/ws_staging; ls -la /tmp/ws_staging
+  > Write /tmp/ws_staging/workspace_objects.py
+  > Edit /tmp/ws_staging/workspace_objects.py
+  > Write /tmp/ws_staging/workspace.py
+  > Write /tmp/ws_staging/workspace_structures.py
+  > Write /home/al/dev/metacat/python/tests/test_workspace.py
+  > $ cd /home/al/dev/metacat/python; cat fixtures/workspace/*ws-string-names.txt; echo; cat fixtures/workspace/*ws-objects-helpers.txt; echo; cat fixtures/workspace/
+  > Write /tmp/ws_staging/workspace_structure_formulas.py
+  > Edit /home/al/dev/metacat/python/tests/test_workspace.py
+  > $ cd /home/al/dev/metacat/python; ls /tmp/ws_staging/ 2>/dev/null; timeout 600 python3 -m pytest -x -q tests/test_workspace.py 2>&1 | tail -15; timeout 600 python
+  > Write /tmp/ws_staging/formulas.py
+  > $ cd /home/al/dev/metacat/python; wc -l tests/test_workspace.py; wc -l fixtures/workspace/MANIFEST; sed -i 's/assert len(CASES) == 77/assert len(CASES) == 75/' te
+  > $ cd /tmp/ws_staging && python3 -m py_compile workspace.py workspace_structures.py workspace_structure_formulas.py formulas.py && echo OK; ls; cat > /tmp/ws_check
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^@case\|^CASES\|^# " tests/test_workspace.py | head -150; git status --short
+  > Write /tmp/ws_staging/workspace_strings.py
+
+Tests-first run done: with no modules, 90 fail. Checking which 7 pass:
+  > $ rm -f /tmp/ws_staging/__pycache__/{workspace,workspace_structures,workspace_structure_formulas,formulas}.*; rmdir /tmp/ws_staging/__pycache__ 2>/dev/null; rm -r
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest -q -rp tests/test_workspace.py 2>&1 | grep PASSED
+  > $ cd /tmp/ws_staging && python3 - <<'EOF'
+import re
+p='workspace_strings.py'
+s=open(p).read()
+s=s.replace('if _metacat.utilities.letter_p(object_):','if letter_p(
+
+While the agents finish, fixing `descriptions.py`'s `print-name` to return a Scheme string (the dump prints it as `"StringPos:lmost"`).
+  > $ cd /tmp/ws_staging && (python3 -m pyflakes --version || ruff --version || flake8 --version) 2>&1 | head -3; grep -n "workspace.g_workspace\|letter_p" workspace_
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/descriptions.py'
+s=open(p).read()
+old='''        return chez.format_("~a:~a",
+                     
+  > $ cd /tmp && cat > /tmp/f.ss <<'EOF'
+(load "/home/al/dev/metacat/chez_scheme/oracle/prelude.ss")
+(load "/home/al/dev/metacat/chez_scheme/original/utilities.ss")
+(
+  > $ cd /tmp/ws_staging && wc -l *.py && grep -c "@message" *.py && grep -n "^def \|^class " workspace_strings.py
+  > $ cd /tmp && sed -i 's|(load "/home/al/dev/metacat/chez_scheme/original/utilities.ss")|(load "/home/al/dev/metacat/chez_scheme/original/syntactic-sugar.ss")\n(loa
+  > $ cd /home/al/dev/metacat; grep -n "define %update-cycle-length%\|temperature-clamped" chez_scheme/original/run.ss | head
+  > $ cd /tmp/ws_staging && head -3 workspace_objects.py workspace_strings.py && grep -n "^def \|^class " workspace_objects.py && md5sum workspace_*.py
+  > $ cd /home/al/dev/metacat; grep -n "^## \|^### " docs/anomalies_and_quirks.md | tail -12; tail -30 docs/anomalies_and_quirks.md
+
+Now the define-coverage check.
+  > $ cd /tmp/ws_staging && PYTHONPATH=/home/al/dev/metacat/python python3 - <<'EOF'
+import re, ast
+from metacat.names import scheme_to_python
+for ss, py in [("worksp
+
+Waiting for the staged files to appear (polling, foreground).
+  > $ python3 - <<'EOF'
+import os,time
+names=["workspace.py","workspace_objects.py","workspace_structures.py","workspace_strings.py","workspace_structure_formulas.py"
+
+I've written the four files to `/tmp/ws_staging/`, and nothing under `/home/al/dev/metacat` was touched:
+- `/tmp/ws_staging/workspace.py`
+- `/tmp/ws_staging/workspace_structures.py`
+- `/tmp/ws_staging/workspace_structure_formulas.py`
+- `/tmp/ws_staging/formulas.py`
+
+The other agent's `workspace_objects.py` is in the same directory; I left it alone.
+
+**Checks:**
+- All four files pass `py_compile`.
+- The define check (regex on each `.ss`, mapped with `scheme_to_python`, looked up in the file's AST) finds no missing names: workspace 21 of 21, workspace_structures 3 of 3, workspace_structure_formulas 4 of 4, formulas 4 of 4.
+- In a throwaway copy of the package under `/tmp` (deleted afterwards), `engine.load()` creates `g_workspace` and loads the slipnet. At temperature 50, `temp_adjusted_probability` (inputs 0, 1/10, 0.3, 1/2, 0.7, 1) and `temp_adjusted_values` (inputs 0, 10, 5/2, 100) print exactly what the original prints under Chez.
+
+**Class names:** `Workspace` (with `make_workspace()`) and `WorkspaceStructure` (with `make_workspace_structure()`). `g_workspace = False` at import, and `load()` sets it with `make_workspace()`. The other three files are plain functions.
+
+**Places where I was unsure about order or semantics:**
+- **`group-graphics` / `bridge-graphics`:** these are procedures in the original, called `(group-graphics 'erase struc)`. I call them as `_metacat.group_graphics.group_graphics("erase", struc)` and the same for bridges, so the graphics items must keep that signature.
+- **`*EEG*`:** `initialize` calls `tell(_metacat.eeg_graphics.g_EEG, "initialize")` every time it runs. Tests will need a stub module until `eeg_graphics` exists.
+- **`*temperature-clamped?*`:** `update_temperature` always reads `_metacat.run.g_temperature_clamped_p`, because the original evaluates it unconditionally. Tests need a `run` stub.
+- **`equivalent-workspace-objects?`:** I followed your brief and read it from `_metacat.trace`; the original also defines it in trace.ss (line 917). porting-notes.md says bridges.ss, which is a small error in the notes.
+- **The `drawn?` message:** its method is named `drawn_p_`, because the slot is called `drawn_p`. Only the message string matters for dispatch.
+- **Cases with no match:** a `case` with no `else` returns `None`. Where the original would then hit an error (`(apply append <void>)` and similar), the Python fails with a TypeError at the same point. These are marked `# 1.2:`.
+- **Evaluation order:** I found no site with two arguments that both have side effects. The `let` bindings in `update-average-unhappiness-values`, `get-equivalent-bridge` and `spanning-group-possible?` are all pure, and are commented `# chez:`.
+- **Where the order of random draws matters:**
+  - `rough_num_of_objects` draws `(~ 4)` only when the first test fails.
+  - `choose-object` gets its weights through `tell_all`, in Chez's `map` order.
+  - `wins_all_fights_p` uses `chez.andmap`, so it stops drawing at the first lost fight.
+  - `wins_fight_p` updates the challenger's strength, then the defender's, before `stochastic_pick`.
+- **`get-proposed-bridges` / `get-all-proposed-bridges`:** table rows are turned into plain lists before `flatten`. `utilities._list_p` doesn't count a `chez.Vector` as a list, so without the conversion each row would be taken as a single leaf.
+  > $ cd /tmp/ws_staging && python3 - <<'EOF'
+import re
+for ss, py in [("workspace-objects","workspace_objects"),("workspace-strings","workspace_strings")]:
+    src=o
+
+I wrote both files in `/tmp/ws_staging/`, and nothing under `/home/al/dev/metacat` was changed. Both compile, pyflakes reports nothing, and both checks pass, but nothing has been imported or run yet.
+
+**Files and classes**
+- `/tmp/ws_staging/workspace_objects.py` has `Letter` (the `new-letter` closure) and `WorkspaceObject` (the `make-workspace-object` closure). It also has `make_letter`, `new_letter`, `make_workspace_object`, `lowest_level_object`, `highest_level_object`, `disjoint_objects_p`, `lone_spanning_object_p`, `both_spanning_groups_p` and `both_spanning_objects_p`, plus a private `_proposal_level_name`.
+- `/tmp/ws_staging/workspace_strings.py` has `WorkspaceString` (the `new-workspace-string` closure), `make_workspace_string` and `new_workspace_string`, plus a private `_lt` (Scheme's `<`, used by `sort_by_method`).
+
+**Checks**
+- **Defines:** your regex check passes: all 9 defines in `workspace-objects.ss` and both in `workspace-strings.ss` exist at module top level under their mapped names.
+- **Docstrings:** every public docstring starts with the right `.ss` file name.
+- **Messages:** every record-case clause has a method, with none missing and none extra (107 in workspace-objects, 90 in workspace-strings).
+- **Imports:** both files import `chez`, `setup`, `slipnet`, `images`, `formulas` and `workspace` qualified. workspace_objects also imports `descriptions`; workspace_strings also imports `constants` and `workspace_objects`. bonds, groups, bridges, rules and trace are reached through `_metacat.` at call time. No `load()` was needed.
+- **Name clashes:** where a slot and a message share a name, the method gets a trailing `_`, following slipnet's `frozen_p_`: `print_name_`, `ascii_name_`, `translated_p_`.
+
+**Spots where I was unsure about order or semantics**
+1. **`map` calls with no side effects:** `get-concept-pattern`, `get-all-reference-objects` and `get-reference-objects` all use `chez.map_` anyway, to be safe. None of them draws.
+2. **Cases the original doesn't handle:**
+   - `distinguishing-descriptor?`: on an object that is neither a letter nor a group, the `cond` has no `else`. I set `other_objects = None`, so `tell_all` then fails, as Chez would.
+   - `update-average-unhappiness` / `update-average-salience`: an unknown string type gives `round_(None)`, which raises, as Chez would.
+   
+   Both carry `# 1.2:` comments.
+3. **`choose-object-with-description-type`:** the weights are computed with `tell_all` before the empty-list test, as in the original. They draw nothing, so this doesn't change any draws.
+4. **`get-relevance`:** with exactly one non-spanning object it divides by zero. I kept that, so `chez.div` raises.
+5. **`expand-internal-storage`:** `workspace.g_workspace` is read only inside the branch that matches the string type, as in the original.
+6. **`delete-all-proposed-bonds` / `delete-all-proposed-groups`:** these loop with `ascending_index_list(len(table))`, which keeps the infinite loop on an empty table (`# 1.2:` comment).
+7. **Strings:**
+   - The letter's `ascii-name` and the string's `print-name`, `ascii-name` and `generic-name` are `chez.String`.
+   - The letter's `print-name` is whatever `get-lowercase-name` returns, without re-wrapping.
+   - `symbol-name` returns a plain `str` copy.
+8. **Letter vector:** `letter-vector` uses `chez.make_vector(n)` with the default fill of 0.
+9. **`make-workspace-string`'s loop:** it is `for position in range(0, n)`. That covers the original's inclusive 0 to n-1 range, and does nothing when n is 0. With n = 0, though, `new-workspace-string` would already have looped forever in `ascending-index-list`.
+10. **Predicates from other files:** results of `same-bond-category?` and the similar bonds/groups predicates are tested with `is not False` rather than plain truthiness.
+
+The staging directory now also holds other files (`workspace.py`, `workspace_structures.py`, `formulas.py`, `workspace_structure_formulas.py`). Those aren't mine and I didn't touch them.
+
+Both agents are done. Installing the staged modules and running the battery.
+  > $ cd /home/al/dev/metacat/python; cp /tmp/ws_staging/*.py metacat/; timeout 600 python3 -m pytest -q tests/test_workspace.py 2>&1 | tail -30
+
+All 97 pass on the first run. Now the full suite for regressions:
+  > $ cd /home/al/dev/metacat/python; timeout 900 bash run-tests.sh 2>&1 | tail -8
+
+Full suite green (593). Now reviewing the translated modules myself, starting with `workspace_objects.py`.
+  > $ cd /home/al/dev/metacat/python; sed -n 1,140p metacat/workspace_objects.py
+  > $ cd /home/al/dev/metacat/python; grep -n "update-raw-importance" -A200 metacat/workspace_objects.py | sed -n 1,200p
+
+Code looks faithful. Next: a mutation run to see what the battery actually pins. Let me view formulas and the workspace averages first to pick targets.
+  > $ cd /home/al/dev/metacat/python; sed -n 20,200p metacat/formulas.py; grep -n "def update_average_unhappiness_values" -A95 metacat/workspace.py
+  > $ cd /home/al/dev/metacat/python; grep -n "def _mapping_strength" -A22 metacat/workspace.py; grep -n "def spanning_group_possible_p" -A60 metacat/workspace.py
+
+Writing the mutation script (not kept in the repo):
+  > $ mkdir -p /tmp/mut6; cat > /tmp/mut6/mutate.py <<'EOF'
+import subprocess, sys, pathlib
+ROOT = pathlib.Path("/home/al/dev/metacat/python")
+M = [
+ ("workspace_obje
+  > $ cd /tmp/mut6; python3 - <<'EOF'
+p='mutate.py'; s=open(p).read()
+s=s.replace("""'stochastic_pick_by_method(\\n                    left_neighbors', 'stochastic_pi
+
+Six real survivors (the `compat >= 0` one is equivalent: at compatibility 0 the thematic weight is 0). I'll add a local Chez battery to pin them. Checking an existing extra battery's conventions:
+  > $ cd /home/al/dev/metacat; sed -n 1,40p python/oracle/batteries/slipnet-extra-battery.scm; grep -n "batteries\|def main\|argparse\|--all" python/oracle/capture.py
+
+Writing the local battery `python/oracle/batteries/workspace-extra-battery.scm` for the survivors:
+  > Write /home/al/dev/metacat/python/oracle/batteries/workspace-extra-battery.scm
+  > $ cd /home/al/dev/metacat; timeout 300 python3 python/oracle/capture.py workspace-extra 2>&1 | tail -5; ls python/fixtures/workspace-extra; for f in python/fixtur
+
+Chez confirms a real quirk: densities exactly 1/5, 2/5 and 4/5 fall in the next-hotter class (the double nearest 0.2 is above 1/5), while 3/5 doesn't. Now the Python side of the extra battery:
+  > $ cd /home/al/dev/metacat/python; cat >> tests/test_workspace.py <<'EOF'
+
+
+# python/oracle/batteries/workspace-extra-battery.scm --------------------------------
+
+
+Extra battery passes. Re-running the mutation script:
+  > $ timeout 1200 python3 /tmp/mut6/mutate.py 2>&1 | grep -v "^CAUGHT"; git status --short metacat
+
+Both survivors are equivalent (3/5 never equals the double 0.6; at compatibility 0 the weight is 0). A second batch of mutations on other areas:
+  > $ cd /home/al/dev/metacat/python; grep -n "def get_activity" -A6 metacat/workspace.py; grep -n "def get_youngest_structures_average_age" -A12 metacat/workspace.py
+  > $ cd /tmp/mut6; python3 - <<'EOF'
+s=open('mutate.py').read()
+start=s.index('M = [')+len('M = [\n'); end=s.index('\n]\npytest')
+new='''("formulas", 'if bond_densit
+  > $ cd /home/al/dev/metacat; cat >> python/oracle/batteries/workspace-extra-battery.scm <<'EOF'
+
+;; the Workspace's activity as structures (fake top rules) of diffe
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_workspace.py'; s=open(p).read()
+anchor='EXTRA["group-vertical-bridge"] = x_group_vertical_bridge
+
+Checking whether the remaining `min 1.0` vs exact mutant is truly equivalent:
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from fractions import Fraction as F
+from metacat import chez
+from metacat.utilities import times_100
+bad=[]
+for k i
+
+Not equivalent: two average ages (545/2 and 575/2) round differently. Adding a test that pins them:
+  > $ cd /home/al/dev/metacat; cat >> python/oracle/batteries/workspace-extra-battery.scm <<'EOF'
+
+;; average ages whose 100*(age/500) is a tie only exactly: 545/2 an
+
+All mutants in the second batch are now caught. Updating `test_fixtures.py` for the new local battery, then the full suite:
+  > $ cd /home/al/dev/metacat/python; grep -n "slipnet-extra" tests/test_fixtures.py
+  > $ cd /home/al/dev/metacat/python; sed -i '28s/.*/    assert local == ["chez", "coderack-extra", "slipnet-extra", "utilities-extra",\n                     "workspa
+
+Gate passes (605 tests). Quick timing numbers for item 12, then the docs:
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF' 2>&1 | tail -5
+import sys, time, timeit
+sys.path.insert(0,'tests'); sys.path.insert(0,'oracle')
+import test_wo
+  > $ cd /home/al/dev/metacat; grep -n "^## " docs/anomalies_and_quirks.md; grep -n "Python's \`bool\` is an\|### Python" docs/anomalies_and_quirks.md | head; sed -n 
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'; s=open(p).read()
+bug='''### Exact bond densities meet flonum thresholds: 1/5, 2/5 a
+  > $ cd /home/al/dev/metacat; sed -n 462,470p docs/porting-notes.md
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/porting-notes.md'; s=open(p).read()
+old='''  `bridge-between?`, `equivalent-workspace-objects?`, `rule-descri
+  > $ cd /home/al/dev/metacat; sed -n 70,100p python/README.md
+
+Updating the README and translation plan with the new modules.
+  > $ cd /home/al/dev/metacat; cat >> python/README.md <<'EOF'
+- `metacat/workspace.py`: workspace.ss (the Workspace: strings, bridge tables, rules,
+  averages and ma
+
+Adding `# 1.2:` comments at the two quirk sites the new anomalies entry describes:
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/formulas.py'; s=open(p).read()
+old='    if bond_density >= 0.8:\n'
+new='''    # 1.2: the exact dens
+
+Final gate run:
+  > $ cd /home/al/dev/metacat && timeout 900 python3 ralph_loops/loop0002/gate.py 2>&1 | tail -4; git status --short
+
+Gate passed. Writing PROGRESS.md and marking the item.
+  > $ cd /home/al/dev/metacat; date "+%Y-%m-%d %H:%M"; grep -n "06 Workspace" ralph_loops/loop0002/iterations.md; sed -i 's/^- \[ \] \*\*06 Workspace\.\*\*/- [x] **06
+  > $ cd /home/al/dev/metacat; cat >> ralph_loops/loop0002/PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 7 — 2026-10-03 21:04
+
+### Completed
+Item 06, the Workspace: **SOLVED
+
+Item 06 (the Workspace) is solved. The gate passes: 605 tests in 37 s. The item is marked `[x]` in `iterations.md`, PROGRESS.md has the Iteration 7 section, and the counter now reads 7/18 SOLVED. Nothing is committed.
+
+**Tests first.** `python/tests/test_workspace.py` translates all 75 tests of `workspace-battery.scm`, plus the setup procedures from `workspace-dump.scm`. It reads `tests/problems.txt` at run time, so the initial workspace of all 36 problems is compared with Chez for every seed. Run before any module existed, it gave 90 failed and 7 passed. The 7 were the bookkeeping tests, the empty `ws-problem-rest`, and the three `tanh` tests, which only exercise the existing `chez.py`.
+
+**Code.** I added the six modules: `workspace.py`, `workspace_objects.py`, `workspace_strings.py`, `workspace_structures.py`, `workspace_structure_formulas.py` and `formulas.py`. Two subagents translated them into a staging directory while I wrote the tests. I moved them into the package only after the failing run, then reviewed them against the originals. They passed all 97 tests on the first run. I also fixed one bug from item 04: `descriptions.py`'s `print-name` returned a plain Python string, which the dumps print as a symbol, not a string.
+
+**Mutation checks.** I tried 38 deliberate code changes:
+- 25 were caught by the existing tests.
+- 8 survived at first. I added a local Chez battery, `python/oracle/batteries/workspace-extra-battery.scm` (8 tests, fixtures captured in `python/fixtures/workspace-extra/`), and now all 8 are caught.
+- 2 can't change any result, so no test can catch them; the reasons are in PROGRESS.md.
+
+**A quirk in the original.** The new battery found that the bond-density thresholds compare an exact fraction with decimal constants like `0.8`. The stored value of `0.8` is slightly above 4/5, and the same holds for 0.4 and 0.2, so a density of exactly 1/5, 2/5 or 4/5 picks the next-hotter temperature class (3/5 doesn't). The Workspace's activity measure has the same kind of edge case. Both are logged in `docs/anomalies_and_quirks.md` and reproduced with `# 1.2:` comments in the code. I also updated the translation plan, `porting-notes.md` (a correction on where three helper functions are defined) and `python/README.md`.
+
+**Left for later items, by design:** a few methods are translated but not run yet, because they call bond, group, bridge, rule or trace code that doesn't exist yet. Items 07–09 will exercise them. `run.py` (item 10) must also define `*temperature-clamped?*`, which the formulas currently read from a test stand-in.
+
+# result: success in 1473s, 83 turns, cost $10.33

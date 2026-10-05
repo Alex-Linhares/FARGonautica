@@ -1,0 +1,526 @@
+{
+ "about": "The Tk canvas commands and options the panels send, from the code, the sgl-tcl fixtures and recorded runs (python/tests/tk_canvas_inventory.py; checked by test_tk_canvas_inventory.py).  Keys are commands, 'create <kind>' for create.  Do not edit by hand.",
+ "commands": {
+  "bbox": {
+   "options": [],
+   "sources": [
+    "code",
+    "fixtures",
+    "runs"
+   ]
+  },
+  "canvasx": {
+   "options": [],
+   "sources": [
+    "code"
+   ]
+  },
+  "canvasy": {
+   "options": [],
+   "sources": [
+    "code"
+   ]
+  },
+  "create arc": {
+   "options": [
+    "-dash",
+    "-extent",
+    "-fill",
+    "-outline",
+    "-start",
+    "-style",
+    "-tags",
+    "-width"
+   ],
+   "sources": [
+    "code",
+    "fixtures",
+    "runs"
+   ]
+  },
+  "create line": {
+   "options": [
+    "-dash",
+    "-fill",
+    "-tags",
+    "-width"
+   ],
+   "sources": [
+    "code",
+    "fixtures",
+    "runs"
+   ]
+  },
+  "create oval": {
+   "options": [
+    "-dash",
+    "-fill",
+    "-outline",
+    "-tags",
+    "-width"
+   ],
+   "sources": [
+    "code",
+    "fixtures",
+    "runs"
+   ]
+  },
+  "create polygon": {
+   "options": [
+    "-dash",
+    "-fill",
+    "-outline",
+    "-tags",
+    "-width"
+   ],
+   "sources": [
+    "code",
+    "fixtures",
+    "runs"
+   ]
+  },
+  "create rectangle": {
+   "options": [
+    "-dash",
+    "-fill",
+    "-outline",
+    "-state",
+    "-tags",
+    "-width"
+   ],
+   "sources": [
+    "code",
+    "fixtures",
+    "runs"
+   ]
+  },
+  "create text": {
+   "options": [
+    "-anchor",
+    "-fill",
+    "-font",
+    "-tags",
+    "-text"
+   ],
+   "sources": [
+    "code",
+    "fixtures",
+    "runs"
+   ]
+  },
+  "delete": {
+   "options": [],
+   "sources": [
+    "code",
+    "fixtures",
+    "runs"
+   ]
+  },
+  "itemconfigure": {
+   "options": [
+    "-state",
+    "-tags"
+   ],
+   "sources": [
+    "code",
+    "fixtures",
+    "runs"
+   ]
+  },
+  "move": {
+   "options": [],
+   "sources": [
+    "code",
+    "fixtures",
+    "runs"
+   ]
+  },
+  "raise": {
+   "options": [],
+   "sources": [
+    "code",
+    "fixtures"
+   ]
+  },
+  "scale": {
+   "options": [],
+   "sources": [
+    "code",
+    "fixtures"
+   ]
+  }
+ },
+ "values": {
+  "-anchor": [
+   "nw",
+   "s"
+  ],
+  "-dash": [
+   "",
+   "- ",
+   ". "
+  ],
+  "-state": [
+   "hidden",
+   "normal"
+  ],
+  "-style": [
+   "arc",
+   "pieslice"
+  ]
+ },
+ "targets": {
+  "bbox": [
+   "id"
+  ],
+  "delete": [
+   "all",
+   "tag"
+  ],
+  "itemconfigure": [
+   "all",
+   "tag"
+  ],
+  "move": [
+   "all",
+   "tag"
+  ],
+  "raise": [
+   "tag"
+  ],
+  "scale": [
+   "tag"
+  ]
+ },
+ "methods": [
+  "get_background_color",
+  "set_background_color_bang"
+ ],
+ "tags": [
+  "activation",
+  "all",
+  "bar",
+  "blue",
+  "count",
+  "doomed",
+  "eraser",
+  "garbage",
+  "hidden-1",
+  "hidden-2",
+  "highlight",
+  "label",
+  "mover",
+  "no-such-tag",
+  "pixel-mover",
+  "renamed",
+  "skeleton",
+  "sum",
+  "title",
+  "total",
+  "urgency",
+  "value"
+ ],
+ "parts": {
+  "code": {
+   "commands": {
+    "bbox": [],
+    "canvasx": [],
+    "canvasy": [],
+    "create arc": [
+     "-dash",
+     "-extent",
+     "-fill",
+     "-outline",
+     "-start",
+     "-style",
+     "-tags",
+     "-width"
+    ],
+    "create line": [
+     "-dash",
+     "-fill",
+     "-tags",
+     "-width"
+    ],
+    "create oval": [
+     "-dash",
+     "-fill",
+     "-outline",
+     "-tags",
+     "-width"
+    ],
+    "create polygon": [
+     "-dash",
+     "-fill",
+     "-outline",
+     "-tags",
+     "-width"
+    ],
+    "create rectangle": [
+     "-dash",
+     "-fill",
+     "-outline",
+     "-state",
+     "-tags",
+     "-width"
+    ],
+    "create text": [
+     "-anchor",
+     "-fill",
+     "-font",
+     "-tags",
+     "-text"
+    ],
+    "delete": [],
+    "itemconfigure": [
+     "-state",
+     "-tags"
+    ],
+    "move": [],
+    "raise": [],
+    "scale": []
+   },
+   "values": {
+    "-anchor": [
+     "nw",
+     "s"
+    ],
+    "-state": [
+     "hidden",
+     "normal"
+    ],
+    "-style": [
+     "arc",
+     "pieslice"
+    ]
+   },
+   "targets": {},
+   "methods": [
+    "get_background_color",
+    "set_background_color_bang"
+   ],
+   "tags": []
+  },
+  "fixtures": {
+   "commands": {
+    "bbox": [],
+    "create arc": [
+     "-dash",
+     "-extent",
+     "-fill",
+     "-outline",
+     "-start",
+     "-style",
+     "-tags",
+     "-width"
+    ],
+    "create line": [
+     "-dash",
+     "-fill",
+     "-tags",
+     "-width"
+    ],
+    "create oval": [
+     "-dash",
+     "-fill",
+     "-outline",
+     "-tags",
+     "-width"
+    ],
+    "create polygon": [
+     "-dash",
+     "-fill",
+     "-outline",
+     "-tags",
+     "-width"
+    ],
+    "create rectangle": [
+     "-dash",
+     "-fill",
+     "-outline",
+     "-state",
+     "-tags",
+     "-width"
+    ],
+    "create text": [
+     "-anchor",
+     "-fill",
+     "-font",
+     "-tags",
+     "-text"
+    ],
+    "delete": [],
+    "itemconfigure": [
+     "-state",
+     "-tags"
+    ],
+    "move": [],
+    "raise": [],
+    "scale": []
+   },
+   "values": {
+    "-anchor": [
+     "nw",
+     "s"
+    ],
+    "-dash": [
+     "",
+     "- ",
+     ". "
+    ],
+    "-state": [
+     "hidden",
+     "normal"
+    ],
+    "-style": [
+     "arc",
+     "pieslice"
+    ]
+   },
+   "targets": {
+    "bbox": [
+     "id"
+    ],
+    "delete": [
+     "all",
+     "tag"
+    ],
+    "itemconfigure": [
+     "tag"
+    ],
+    "move": [
+     "tag"
+    ],
+    "raise": [
+     "tag"
+    ],
+    "scale": [
+     "tag"
+    ]
+   },
+   "methods": [
+    "set_background_color_bang"
+   ],
+   "tags": [
+    "all",
+    "blue",
+    "doomed",
+    "eraser",
+    "hidden-1",
+    "hidden-2",
+    "mover",
+    "no-such-tag",
+    "pixel-mover",
+    "renamed"
+   ]
+  },
+  "runs": {
+   "commands": {
+    "bbox": [],
+    "create arc": [
+     "-dash",
+     "-extent",
+     "-fill",
+     "-outline",
+     "-start",
+     "-style",
+     "-tags",
+     "-width"
+    ],
+    "create line": [
+     "-dash",
+     "-fill",
+     "-tags",
+     "-width"
+    ],
+    "create oval": [
+     "-fill",
+     "-outline",
+     "-tags"
+    ],
+    "create polygon": [
+     "-dash",
+     "-fill",
+     "-outline",
+     "-tags",
+     "-width"
+    ],
+    "create rectangle": [
+     "-dash",
+     "-fill",
+     "-outline",
+     "-state",
+     "-tags",
+     "-width"
+    ],
+    "create text": [
+     "-anchor",
+     "-fill",
+     "-font",
+     "-tags",
+     "-text"
+    ],
+    "delete": [],
+    "itemconfigure": [
+     "-state",
+     "-tags"
+    ],
+    "move": []
+   },
+   "values": {
+    "-anchor": [
+     "nw",
+     "s"
+    ],
+    "-dash": [
+     "",
+     "- "
+    ],
+    "-state": [
+     "hidden",
+     "normal"
+    ],
+    "-style": [
+     "arc",
+     "pieslice"
+    ]
+   },
+   "targets": {
+    "bbox": [
+     "id"
+    ],
+    "delete": [
+     "all",
+     "tag"
+    ],
+    "itemconfigure": [
+     "all",
+     "tag"
+    ],
+    "move": [
+     "all"
+    ]
+   },
+   "methods": [
+    "get_background_color",
+    "set_background_color_bang"
+   ],
+   "tags": [
+    "activation",
+    "all",
+    "bar",
+    "count",
+    "eraser",
+    "garbage",
+    "highlight",
+    "label",
+    "skeleton",
+    "sum",
+    "title",
+    "total",
+    "urgency",
+    "value"
+   ]
+  }
+ }
+}

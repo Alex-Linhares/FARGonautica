@@ -1,0 +1,683 @@
+# session it11 started 2026-10-03 22:33:25
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; sed -n 1,200p ralph_loops/loop0002/iterations.md | grep -n "" | sed -n 1,200p | head -120; ls python/metacat python/tests python/oracle
+  > $ cd /home/al/dev/metacat; date; ls tests/diff; ls tests/golden | head; ls tests/golden | wc -l; grep -l -i "theme\|justify\|trace\|jootsing\|memory" tests/diff/*
+  > $ cd /home/al/dev/metacat; ls racket racket/tests racket/engine; grep -n "prefix" -ri racket/tests/*.rkt | head -30; sed -n 1,80p docs/trace-format.md
+  > $ cd /home/al/dev/metacat; sed -n 80,400p docs/trace-format.md
+  > $ cd /home/al/dev/metacat; wc -l racket/tests/golden-harness.rkt racket/tests/golden-test.rkt racket/tests/golden-pool.rkt racket/headless.rkt racket/engine/run.r
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/oracle/*.ss chez_scheme/original/run.ss; grep -n "Iteration 10\b" -A60 ralph_loops/loop0001/PROGRESS.md | head -120
+  > $ cd /home/al/dev/metacat; grep -n "^## Iteration 11" -A90 ralph_loops/loop0001/PROGRESS.md | head -130
+
+I'm reading the oracle's harness and the Racket port's golden harness, then I'll have subagents translate the five model files while I write the test harness.
+  > $ cd /home/al/dev/metacat; cat chez_scheme/oracle/trace.ss
+  > $ cd /home/al/dev/metacat; cat chez_scheme/oracle/prelude.ss chez_scheme/oracle/run.ss
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/run.ss; cat tests/problems.txt | head -20
+  > $ cd /home/al/dev/metacat; cat python/metacat/engine.py; grep -n "As built" docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 412,640p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; cat racket/engine/pending.rktl; sed -n 1,505p racket/headless.rkt | grep -v "^\s*;;" | head -330
+  > $ cd /home/al/dev/metacat; sed -n 330,505p racket/headless.rkt
+  > $ cd /home/al/dev/metacat; cat python/tests/engine_stubs.py; sed -n 1,80p python/metacat/view_globals.py; grep -n "STAND_INS\|engine_module" python/tests/test_rul
+
+Launching four subagents now to translate themes, trace, justify+jootsing and memory into a staging directory; meanwhile I'll write the golden harness and tests.
+  > $ cd /home/al/dev/metacat; sed -n 1,60p python/metacat/answers.py; grep -n "UnboundVariable" python/metacat/*.py | head -5; grep -n "^(define" chez_scheme/origina
+  > Agent {"description": "Translate themes.ss to Python", "subagent_type": "general-purpose", "run_in_background": true, "prompt"
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/original/themes.ss racket/engine/themes.rktl docs/python-translation-plan.md python/metacat/*.py; ls python/tests
+  > Read /home/al/dev/metacat/chez_scheme/original/themes.ss
+  > Read /home/al/dev/metacat/racket/engine/themes.rktl
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/themes.ss racket/engine/themes.rktl; grep -n "relation-name" -A15 chez_scheme/original/theme-graphics.ss | he
+  > $ cd /home/al/dev/metacat; sed -n 1,400p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 400,806p docs/python-translation-plan.md
+
+Now the style models.
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,200p answers.py
+  > Agent {"description": "Translate trace.ss to Python", "subagent_type": "general-purpose", "run_in_background": true, "prompt":
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "class \|def otherwise\|^def load" -A3 answers.py | head -80; grep -n "def load" -A40 answers.py | head -60
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1214,1330p answers.py; grep -n "def answer_finder" -A80 answers.py | head -120
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/original/trace.ss racket/engine/trace.rktl racket/engine/trace-graphics.rktl docs/python-translation-plan.md python/m
+  > Read /home/al/dev/metacat/chez_scheme/original/trace.ss
+  > Read /home/al/dev/metacat/chez_scheme/original/trace.ss
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \|^[a-zA-Z_]* = " utilities.py | awk '{print $0}' | tr '\n' ' ' ; echo; grep -n "themes\.\|_metacat.themes
+  > Read /home/al/dev/metacat/racket/engine/trace.rktl
+  > Read /home/al/dev/metacat/racket/engine/trace-graphics.rktl
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/trace.ss racket/engine/trace.rktl; grep -n "group-event-pexp-text-string" -A25 chez_scheme/original/trace-gra
+  > Agent {"description": "Translate justify and jootsing", "subagent_type": "general-purpose", "run_in_background": true, "prompt
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,80p bridges.py; sed -n 320,420p bridges.py; sed -n 150,175p utilities.py; sed -n 229,245p utilities.py; sed -n 
+  > $ cd /home/al/dev/metacat; grep -rn "complement-codelet-pattern\b" racket/ docs/ | grep -v "get-complement-codelet-pattern" | head; grep -n "trace\|complement" do
+  > $ cd /home/al/dev/metacat/python/tests; grep -n "STAND_INS" -A60 codelet_harness.py | grep -n "themes" -A40 | head -90
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/original/justify.ss chez_scheme/original/jootsing.ss racket/engine/justify.rktl racket/engine/jootsing.rktl docs/pyth
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/justify.ss
+  > $ cd /home/al/dev/metacat; sed -n 350,370p docs/anomalies_and_quirks.md; sed -n 660,720p docs/anomalies_and_quirks.md; sed -n 740,850p docs/anomalies_and_quirks.m
+  > $ cd /home/al/dev/metacat/python/tests; grep -n "def bridge_type_to_theme_type\|def descriptions_affect\|def ignore_desc\|def bridge_theme_comp\|^diff\|\"diff\"" 
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/jootsing.ss; cat python/metacat/names.py
+
+Now the translation plan.
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; cat racket/engine/justify.rktl racket/engine/jootsing.rktl | grep -n "port:" -A4
+  > $ cd /home/al/dev/metacat; grep -n "^## \|^### " docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat/python/metacat; cat objects.py | sed -n 1,187p; cat engine.py; cat group_graphics.py
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/justify.ss racket/engine/justify.rktl; diff chez_scheme/original/jootsing.ss racket/engine/jootsing.rktl; sed
+  > $ cd /home/al/dev/metacat; sed -n 63,300p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n '/(define relation-name/,/^$/p;/(define dimension-name/,/^$/p' chez_scheme/original/theme-graphics.ss; grep -rn "relation-name" 
+  > $ cd /home/al/dev/metacat; sed -n 354,730p docs/python-translation-plan.md
+  > Agent {"description": "Translate memory.ss to Python", "subagent_type": "general-purpose", "run_in_background": true, "prompt"
+  > $ cd /home/al/dev/metacat; sed -n 412,806p docs/python-translation-plan.md
+
+Now the style model, answers.py.
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1488,1495p ../../chez_scheme/original/trace.ss; grep -n "^g_\|^p_\|^def " setup.py; grep -n "^def \|^fizzle\|^[a-
+  > $ cd /home/al/dev/metacat/python; grep -rn "_metacat\.trace\.\|metacat\.trace\b\|trace_graphics" metacat tests | grep -v "^metacat/.*#" | head -60
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/original/memory.ss racket/engine/memory.rktl python/metacat/*.py docs/python-translation-plan.md; grep -rn "_metacat.
+  > Read /home/al/dev/metacat/chez_scheme/original/memory.ss
+  > $ cd /home/al/dev/metacat; sed -n 1,140p python/metacat/answers.py; grep -n "def load\|define_codelet_procedure_star" -A12 python/metacat/answers.py | tail -40
+  > $ cd /home/al/dev/metacat; wc -l python/tests/codelet_harness.py python/tests/test_rules.py; sed -n 1,140p python/tests/codelet_harness.py
+  > $ cd /home/al/dev/metacat/python; sed -n 1,140p metacat/answers.py
+  > $ cd /home/al/dev/metacat/python; cat metacat/objects.py; cat metacat/group_graphics.py; cat metacat/engine.py; cat metacat/view_globals.py
+  > $ cd /home/al/dev/metacat; grep -n "^def answer_finder" python/metacat/answers.py; sed -n "$(grep -n '^def answer_finder' python/metacat/answers.py | cut -d: -f1)
+  > Read /home/al/dev/metacat/racket/engine/memory.rktl
+  > $ cd /home/al/dev/metacat; grep -n "As built" docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def build_description\|^def make_description\|^def propose_bridge\|^def bridge_type_to_orientation\|^def lone_
+  > $ cd /home/al/dev/metacat/python; cat metacat/setup.py | sed -n 1,157p; cat metacat/constants.py | sed -n 20,70p
+  > $ cd /home/al/dev/metacat; sed -n 1,120p docs/python-translation-plan.md; echo -----; sed -n 400,806p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 400,806p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; for n in "%grace-period%" "%max-clamp-period%" "%max-theme-activation%" "%max-activation%" "%very-high-urgency%" "%extremely-high-urgen
+  > $ cd /home/al/dev/metacat; grep -n "^def \|^    def \|^[a-zA-Z_]* = " python/metacat/sugar.py; sed -n "$(grep -n '^def post_codelet_star' python/metacat/sugar.py 
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "post_codelet_star\|define_codelet_procedure_star" bridges.py descriptions.py | head; grep -n "^def load" -A20 b
+  > $ cd /home/al/dev/metacat; grep -n "^## \|^### " docs/anomalies_and_quirks.md | grep -i "theme\|spread\|dominant" ; grep -n -i "themes.ss" docs/anomalies_and_quir
+  > $ cd /home/al/dev/metacat/chez_scheme/original; for n in rule-clause-lists-equal? compare-rule-clause-lists get-snag-justified-themes answer-incoherent? intersect
+  > $ cd /home/al/dev/metacat; grep -n "define punctuate" -A12 chez_scheme/original/answers.ss chez_scheme/original/rules.ss; grep -n "def punctuate" -B2 -A6 python/m
+  > $ cd /home/al/dev/metacat; sed -n 740,830p docs/anomalies_and_quirks.md; grep -n -i "theme" docs/porting-notes.md | head -40
+  > $ cd /home/al/dev/metacat; grep -rn "post_codelet_star(" python/metacat | head -5; grep -n "answer.justifier\|progress.watcher\|jootser" python/metacat/*.py | hea
+  > $ cd /home/al/dev/metacat; sed -n 40,70p python/metacat/utilities.py; sed -n 130,215p python/metacat/utilities.py; sed -n 400,700p python/metacat/utilities.py
+  > $ cd /home/al/dev/metacat; sed -n 894,1000p docs/porting-notes.md
+  > $ cd /home/al/dev/metacat/chez_scheme/original; grep -n "(define (\?\(rule-clause-lists-equal?\|answer-incoherent?\|exists?\|member?\|intersect\|print\|select\)[ 
+  > $ cd /home/al/dev/metacat/python; grep -n "^from metacat\.\|^    from metacat\." metacat/*.py | grep -v "import chez\|from metacat import" | head -30; grep -n "_m
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \|^[a-zA-Z_]* = " utilities.py | awk -F'[ (]' '{print $2}' | tr '\n' ' '; echo; grep -n "^def \(sets_equal
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \|^class \|^[a-zA-Z_]* = " objects.py utilities.py | grep -i "meth\|intersect\|entries\|append\|string_app
+  > $ cd /home/al/dev/metacat/python; grep -n "def update_temperature\|def update_slipnet_activations\|def build_bond\|def break_bond\|def build_group\|def break_grou
+
+Now answers.py for style (header and a class example).
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 95,175p utilities.py; sed -n 395,450p utilities.py; sed -n 535,570p utilities.py; sed -n 620,690p utilities.py; s
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,200p answers.py
+  > $ cd /home/al/dev/metacat/chez_scheme/original; for n in select-meth filter-meth filter-out-meth remq-duplicates remove-duplicates partition against-background en
+  > $ cd /home/al/dev/metacat; grep -n "define make-comment-window" -A80 chez_scheme/original/commentary-graphics.ss | head -120
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 840,890p utilities.py; grep -n "^print_\|^def print_\|^def say\b\|^def vprintf\|^def vprint\b" -A15 utilities.py 
+  > $ cd /home/al/dev/metacat/chez_scheme/original; grep -n "make-concept-mapping\|theme-pattern-entries-equal\|(define slip-linked\|(define verbatim-clause\|(define 
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "class SlippageLog" -A60 answers.py | head -90; grep -n "^def load" -A30 answers.py; cat setup.py | sed -n 1,157
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "select_meth\|filter_meth\|make_list_method_procedure" utilities.py | head; grep -n "^def \|^class \|^[a-zA-Z_]*
+  > $ cd /home/al/dev/metacat; grep -n "theme-pattern-entries-equal\|justify\|jootsing\|jootser\|progress-watcher" docs/anomalies_and_quirks.md | head -40; grep -rn "
+  > $ cd /home/al/dev/metacat; grep -n "\*this-run\*\|define \*display-mode?\*\|define \*themespace\*\|define \*initial-string\*" chez_scheme/original/*.ss | head; gr
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 115,150p chez.py; grep -n "same_direction_p" -B3 -A12 bonds.py | head -50; sed -n 770,790p utilities.py
+  > $ cd /home/al/dev/metacat; sed -n 900,930p docs/anomalies_and_quirks.md; grep -n "theme-pattern-entries-equal" chez_scheme/original/trace.ss; sed -n 1450,1470p ra
+  > $ cd /home/al/dev/metacat; sed -n 240,275p chez_scheme/oracle/prelude.ss; grep -n -i "memory" docs/anomalies_and_quirks.md | head -30
+  > $ cd /home/al/dev/metacat; grep -n "(define member?" -A4 chez_scheme/original/utilities.ss; sed -n 895,900p python/metacat/utilities.py; grep -n "^def mul\|^def t
+
+Writing the golden-trace harness (headless windows, JSON trace writer, run.ss driver) while the subagents translate.
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^class " metacat/chez.py | head -120; grep -n "^def \|^class \|^[A-Za-z_]* = " metacat/objects.py
+  > $ cd /home/al/dev/metacat; sed -n 645,680p docs/anomalies_and_quirks.md; sed -n 860,900p docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 240,360p chez.py; sed -n 585,640p chez.py; sed -n 755,782p chez.py; sed -n 955,975p chez.py
+  > $ cd /home/al/dev/metacat/python; sed -n 30,135p metacat/objects.py; grep -n "printf\b" -A6 metacat/chez.py | sed -n 1,12p; sed -n 1,60p metacat/setup.py
+  > $ cd /home/al/dev/metacat/python; grep -n "trace\|equivalent_workspace" tests/test_rules.py | head -40; grep -n "trace" tests/codelet_harness.py | head -30
+  > $ cd /home/al/dev/metacat; sed -n 160,250p python/metacat/sugar.py; grep -n "vprintf\|define-syntax\|extend-syntax (if\*\|stochastic-if\|post-codelet" chez_scheme
+  > $ cd /home/al/dev/metacat/python; sed -n 230,255p tests/test_rules.py; sed -n 75,100p tests/codelet_harness.py; sed -n 770,790p metacat/coderack.py; sed -n 300,31
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 55,70p utilities.py; sed -n 130,140p utilities.py; sed -n 436,450p utilities.py; sed -n 536,560p utilities.py; se
+  > $ cd /home/al/dev/metacat/python; grep -n "g_EEG\b" metacat/*.py | head; grep -n "\*EEG\*" ../chez_scheme/original/*.ss | grep -v eeg-graphics | head
+  > $ cd /home/al/dev/metacat; grep -n "define \*EEG\*\|define make-EEG\|define make-eeg" -A30 chez_scheme/original/eeg-graphics.ss | head -60
+  > $ cd /home/al/dev/metacat; grep -n "^[a-zA-Z_]* = \|^def " python/metacat/setup.py; grep -n "^[a-zA-Z_]* = \|^g_\|^def give_up\|^def translate\b" python/metacat/w
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+import re
+from metacat.names import scheme_to_python as s
+src=open('../chez_scheme/original/trace.ss').read()
+for m
+  > $ cd /home/al/dev/metacat; grep -n "select_meth\|filter_meth\|filter_out_meth\|remq_duplicates\|remove_duplicates\b\|^def partition\|^def remove_elements\|^def fl
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "p_very_high_urgency\|p_extremely_high_urgency\|^def urgency_name\|g_codelet_types =\|codelet_type_list_star\|^d
+  > $ cd /home/al/dev/metacat; sed -n 770,790p python/metacat/utilities.py; grep -n "def eq_p\|def equal_p\|def remq\b\|def assq\|def assoc\b\|def map_\|def String\|^
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 915,948p coderack.py; sed -n 1210,1245p groups.py; sed -n 636,670p slipnet.py; sed -n 1130,1150p groups.py; sed -
+  > $ cd /home/al/dev/metacat; sed -n 20,80p tests/problems.txt; ls tests/golden | grep ccbb; sed -n 1,80p chez_scheme/oracle/make-golden.ss | grep -v "^;;;" | head -
+  > $ cd /home/al/dev/metacat; grep -n "get-english-transcription\|(get-abstractness\|(get-theme-pattern\|(get-rule-clauses" chez_scheme/original/rules.ss | head; gre
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1325,1340p bridges.py; sed -n 1525,1535p bridges.py; grep -n "def if_star\|def for_star\b" -A14 sugar.py
+  > $ cd /home/al/dev/metacat; sed -n 360,410p chez_scheme/original/trace.ss; sed -n 932,945p python/metacat/answers.py
+  > $ cd /home/al/dev/metacat/python; grep -n "^g_\w* =\|^p_\w* =" metacat/workspace.py metacat/slipnet.py metacat/coderack.py metacat/formulas.py metacat/constants.p
+  > $ cd /home/al/dev/metacat; ls tests/golden | head -3; grep -h '"ev":"event"' tests/golden/*.jsonl | head -5; grep -h '"ev":"event"' tests/golden/*.jsonl | python3
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def printf\|^def say\|^def vprintf" -A8 sugar.py; grep -n "^def \(format_\|printf\|min_\|div\)" -A12 chez.py |
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^g_\|^p_\|^def load" -A3 workspace.py coderack.py | head -30; grep -n "class Rule(" -B2 -A40 rules.py | head -6
+  > $ cd /home/al/dev/metacat; grep -n "make-flipped-version" -A25 chez_scheme/original/groups.ss | head -50; grep -n "flipped\|conditions-for-bridge\|theme" docs/por
+  > $ cd /home/al/dev/metacat/python; grep -n "set-graphics-parameters" -A8 metacat/coderack.py | head -20; grep -n "def stochastic_if_star" -A15 metacat/sugar.py; gr
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "def otherwise" -A3 answers.py rules.py | head; grep -n "def make_slippage_log\|def make_rule\b" -A4 answers.py 
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "def make_group\b\|def make_group(" -A10 groups.py; grep -n "def attach_length_description" -A15 groups.py; grep
+
+Now the test-side run.ss translation.
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \(_check\|num_eq\|lt\|le\|ge\|gt\|num_\w*\|less\w*\)" -A8 chez.py | head -40; grep -n "class SchemeError" 
+  > $ cd /home/al/dev/metacat; grep -n "'(SWAP\|'SWAP\|SWAP\|'swap\|CONFLICT\|'conflict\|'CHANGE\|(list 'change" chez_scheme/original/rules.ss chez_scheme/original/an
+  > $ cd /home/al/dev/metacat; grep -n -i "case-sensitive\|case.fold\|fold-case" chez_scheme/oracle/*.ss docs/*.md | head; grep -n -i "snag-type\|'swap\|SWAP" docs/an
+  > $ cd /home/al/dev/metacat; grep -n "for\*" -A12 chez_scheme/original/syntactic-sugar.ss | head -30; grep -n "def for_star" -A15 python/metacat/sugar.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "def if_star" -A10 sugar.py; grep -n "def for_each" -A15 chez.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 296,306p utilities.py; grep -n "get-lowercase-name\|get-short-name\|get-uppercase-name" -A3 slipnet.py | head -30
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^class SlippageLog" -A40 answers.py | head -60; grep -n "def load" -A30 answers.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 54,92p utilities.py; sed -n 400,440p utilities.py; sed -n 776,830p utilities.py; sed -n 940,966p utilities.py
+  > $ cd /home/al/dev/metacat; grep -n "(define print\b\|(define (print\b\|(define print " chez_scheme/original/*.ss; grep -n "(define intersect\b\|(define intersect 
+  > Write /home/al/dev/metacat/python/tests/golden_run.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "same name\|clash\|conflict" *.py | head
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "@message(\"get-quality\")" -A3 rules.py; grep -n "@message(\"\(get-abstractness\|get-theme-pattern\|clamped?\|t
+  > $ cd /home/al/dev/metacat/chez_scheme/original; grep -n "get-dominant-theme-pattern" -A25 themes.ss | head -50; grep -n "(get-concept-pattern" -A12 rules.ss
+  > $ mkdir -p /tmp/stage10; cd /home/al/dev/metacat/python/metacat; sed -n 193,200p answers.py; sed -n 351,365p answers.py; grep -n "^def rule_clause_lists_equal_p" 
+  > $ cd /home/al/dev/metacat; cat python/metacat/engine.py | sed -n 1,83p; sed -n 1,60p python/metacat/rules.py | grep -n "import"; grep -n "^def give_up" -A8 python
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 20,60p utilities.py; grep -n "^from\|^import\|printf" sugar.py | head; sed -n 352,357p chez.py; sed -n 1360,1368p
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "this\.[a-z_]*_p_\b\|this\._[a-z]" *.py | head -10; grep -n "spanning_bridge_p\|\"spanning-bridge?\"" bridges.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 130,140p bridges.py; grep -rn "conflict\|collide" ../../docs/python-translation-plan.md | head
+  > $ ls /tmp/stage* 2>/dev/null; ls /home/al/dev/metacat/python/metacat/
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,80p rules.py | head -90; grep -n "^from\|^import" rules.py bridges.py
+  > $ cd /home/al/dev/metacat; sed -n 290,311p python/metacat/concept_mappings.py; grep -n "^def remove_duplicate_CMs" python/metacat/concept_mappings.py; sed -n 1,80
+  > $ mkdir -p /tmp/stage10; cd /home/al/dev/metacat; grep -n "slippage?\|CM-type?" chez_scheme/original/concept-mappings.ss | head -4; grep -n "^def \(member_p\|sum_
+
+Now writing justify.py.
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "def get_label" -A12 slipnet.py; grep -n "def bridge_type_to_orientation" -A8 bridges.py; grep -n "def make_desc
+  > Write /home/al/dev/metacat/python/tests/golden_harness.py
+  > Edit /home/al/dev/metacat/python/tests/golden_harness.py
+  > Edit /home/al/dev/metacat/python/tests/golden_harness.py
+  > $ cd /home/al/dev/metacat; time scheme --script chez_scheme/oracle/run.ss abc ccbbaa ijk --seed 3 --max-codelets 10000 --trace /tmp/crash3.jsonl > /tmp/crash3.out
+  > $ cd /home/al/dev/metacat/python; grep -n "def test_\|^def \|^[A-Z_]* = " tests/test_rules.py | head -60; sed -n '/def test_every_define/,/^def test_[a-z_]*doc/p'
+  > Write /tmp/stage10/justify.py
+  > $ cd /home/al/dev/metacat/python; sed -n 455,552p tests/test_rules.py; sed -n 56,75p tests/test_rules.py; cat run-tests.sh; cat tests/conftest.py
+  > $ cd /home/al/dev/metacat; sed -n 955,1030p python/metacat/chez.py
+  > $ cd /tmp/stage10 && python3 - <<'EOF'
+p='justify.py'; s=open(p).read()
+s=s.replace('''def setup_verbose_p():
+    """%verbose% (setup.ss), as vprintf tests it."""
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import re
+p='tests/golden_harness.py'
+s=open(p).read()
+old=s[s.index('def run_in_forks'):s.index('def first_di
+  > Write /tmp/stage10/memory.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/golden_harness.py'
+s=open(p).read()
+s=s.replace('''            "sys.stdout.buffer.write(pickle.dumps(
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \(num_eq\|eq_p\|exact_round\)" chez.py; grep -n "def entries\|def impose_theme_pattern" ../../racket/engin
+  > $ cd /home/al/dev/metacat/python; wc -l tests/golden_harness.py; grep -n "^def \|^class " tests/golden_harness.py
+  > $ cd /tmp/stage10 && python3 - <<'EOF'
+import re
+s=open('memory.py').read()
+s=s.replace("chez.num_eq(cd(first(nodes)), cd(second(nodes)))","cd(first(nodes)) == cd
+  > $ cd /home/al/dev/metacat; grep -n "define-codelet-procedure\*" chez_scheme/original/*.ss | awk -F: '{print $1}' | sort | uniq -c; grep -n "define-codelet-procedu
+  > $ rm -rf /tmp/scratch10_memory; cp -r /home/al/dev/metacat/python /tmp/scratch10_memory; cp /tmp/stage10/memory.py /tmp/scratch10_memory/metacat/; cd /tmp/scratch
+  > $ cd /tmp/scratch10_memory && python3 - <<'EOF' 2>&1 | tail -20
+import sys, types
+sys.path.insert(0,'.')
+import metacat
+from metacat import engine, setup, chez
+en
+  > Write /home/al/dev/metacat/python/tests/test_golden.py
+
+I've translated `memory.ss` to `/tmp/stage10/memory.py`. Nothing in the repo was touched and I ran no git commands.
+
+**Checks run**
+- It byte-compiles.
+- Every `(define` in `memory.ss` has a Python counterpart under the name `names.scheme_to_python` gives: `make_memory`, `make_answer_description`, `make_snag_description`, `abstract_answer_description`, `abstract_snag_description`, `p_distance_threshold`, `calculate_answer_distance`, `g_memory`. `g_memory` is `False` at import and `load()` creates it.
+- In a scratch copy (`/tmp/scratch10_memory`), `engine.load()` works and `engine.get_global("*memory*")` returns the Memory object.
+- A smoke test also passed, using stubs for the run, trace and justify modules and for the windows. Two answers were added; the first got its icon redrawn and a reminding comment at strength 80, with the right text.
+- No golden or battery test has run it, because run, trace, themes and justify don't exist in Python yet.
+
+**Structure**
+- The three closures are the classes `Memory`, `AnswerDescription` and `SnagDescription`. Each passes unknown messages on to `base_object`.
+- Two names are used both as a closure variable and as a message: `highlighted?`, and the answer description's `get-normal-icon-pexp`. The variable keeps the mapped name and the method gets a trailing `_`, following `rules.py`'s `translated_p_`.
+- Messages to `*memory-window*` (`initialize`, `add-memory-icon`, `erase-memory-icon`, `draw`) are sent ungated, exactly as the original does. The icon procedure installed by `set-graphics-info` is called the same way. Only the two `make-*-description-pexp` calls depend on `setup.p_workspace_graphics`.
+
+**Evaluation order**
+`memory.ss` makes no random draws and calls nothing that draws, so no site needed reordering. These sites have more than one effect, and each runs in Chez's order:
+1. The bindings of `make-answer-description`, `make-snag-description`, `abstract-answer-description`, `abstract-snag-description` and `calculate-answer-distance` run as statements in order.
+2. `add-answer-description`: set the activation to 100, send `add-memory-icon`, compare against every stored answer (newest first, first to last), then add the new answer to the lists.
+3. `add-snag-description` adds the snag to the lists before sending `add-memory-icon`.
+4. In both `display` clauses, the themespace and window messages and the `impose-theme-pattern` calls run in order.
+5. `compare`: `update-activation` first, then `add-comment` if the activation is above 0.
+
+These only read, so their order can't be observed. I kept them left to right, as the Racket port does:
+- the 17 arguments to `make-answer-description` and the 6 to `make-snag-description`. I checked the event and rule getters, and `get-quality` is computed purely;
+- the `equal?` calls in `snag-present?`, `get-equivalent-snag`, `answer-present?` and `answers-equal?`;
+- the two lists passed to `add-comment`;
+- the `eq?` comparing the two `answer-incoherent?` results.
+
+`tell-all` of the print names goes through `chez.map_`. `partition` uses the utilities version, which keeps the original's ordering.
+
+**Names read from other modules**
+- **Imported directly (loaded before memory):**
+  - `rules.rule_clause_lists_equal_p`
+  - from `answers`: `abstract_answer_description_theme_pattern`, `most_recent_group_and_concept_mapping_events`, `get_unjustified_theme_pattern`, `get_theme_supporting_concept_mappings`, `get_snag_justified_themes`, `intersect_themes`, `answer_incoherent_p`
+  - from `setup`: `g_memory_window`, `g_comment_window`, `g_workspace_window`, `g_slipnet_window`, `g_coderack_window`, `g_temperature_window`, `p_workspace_graphics`
+  - from `workspace`: `g_workspace`, `g_initial_string`, `g_modified_string`, `g_target_string`
+  - from utilities, objects, sugar and chez: the usual helpers.
+- **Read through the package at call time:**
+  - `_metacat.run.g_this_run`, read when a description is created.
+  - `_metacat.run.g_display_mode_p`, set by `display`.
+  - `_metacat.themes.g_themespace`, only in `display`.
+  - `_metacat.justify.compare_rule_clause_lists`.
+  - `_metacat.trace.entries` and `_metacat.trace.impose_theme_pattern`.
+- So `run.py` must define `g_this_run` and `g_display_mode_p`, `trace.py` must define `entries` and `impose_theme_pattern`, and `justify.py` must define `compare_rule_clause_lists`.
+
+**Doubts, marked in the code where relevant**
+- **Bounding-box compare.** `within-bounding-box?` gets a small `_check_reals` guard, marked `# chez:`. Without it, Python would compare against an unset `#f` bounding box quietly (a bool is an int), where Chez raises. It only matters in the GUI.
+- **Missing icon procedure.** If `add-memory-icon` never ran, an answer description's icon procedure is still `False`. `update-activation` and `unhighlight` then fail with a `TypeError`, where Chez fails with "attempt to apply non-procedure". It is still an error either way, and the headless window always installs the procedure first.
+- **`exists?` on the rule differences.** `compare-rule-clause-lists` can return `[]` or `#f`, and `exists_p` correctly treats `[]` as present. `justify.py` must return Python `False`, not `None`, for the `#f` case.
+- **Return values.** `print` and `unhighlight-all-answers-except` return what `for*` returns, via `sugar.for_star`/`if_star`. So the value depends on the last element, as in Chez.
+
+Harness and tests written; running them now before the translated modules exist, to record the failing baseline.
+  > $ cd /home/al/dev/metacat/python; ls /tmp/stage10/ 2>/dev/null; ls metacat | grep -E "themes|justify|trace|jootsing|memory"; timeout 600 python3 -m pytest -q test
+  > Write /tmp/stage10/jootsing.py
+  > $ cd /home/al/dev/metacat; sed -n 1,40p docs/anomalies_and_quirks.md; grep -n "^## \|^### " docs/anomalies_and_quirks.md | tail -15
+  > $ cd /home/al/dev/metacat; wc -l /tmp/stage10/*.py; grep -n "def load" -A12 /tmp/stage10/memory.py
+  > $ cd /home/al/dev/metacat; sed -n 298,310p python/metacat/utilities.py; cd /tmp/stage10 && python3 - <<'EOF'
+p='jootsing.py'; s=open(p).read()
+s=s.replace('''def 
+  > $ cd /home/al/dev/metacat; sed -n 1,80p /tmp/stage10/memory.py | grep -n "import"; grep -n "g_memory_window\|g_comment_window" /tmp/stage10/memory.py | head
+
+Tidy the import block, then compile and check names.
+  > $ cd /tmp/stage10 && python3 - <<'EOF'
+p='jootsing.py'; s=open(p).read()
+start=s.index("from metacat.utilities import (average")
+end=s.index("quoted_string)",star
+  > $ cd /home/al/dev/metacat; grep -n "item 10\|Item 10" docs/porting-notes.md | head; awk '/^## .*[Ii]tem 10/,/^## .*[Ii]tem 11/' docs/porting-notes.md | head -80
+  > $ timeout 900 bash -c 'until [ -f /tmp/stage10/themes.py ] && [ -f /tmp/stage10/trace.py ] && [ -f /tmp/stage10/trace_graphics.py ] && [ -f /tmp/stage10/theme_gra
+  > $ rm -rf /tmp/scratch10_justify && cp -r /home/al/dev/metacat/python /tmp/scratch10_justify && cp /tmp/stage10/*.py /tmp/scratch10_justify/metacat/ && cd /tmp/scr
+  > $ cd /tmp/scratch10_justify && grep -n "justify\|jootsing" tests/*.py | head -20; python3 -c "import xdist" 2>&1
+  > $ cd /tmp/scratch10_justify && sed -n 1,60p tests/test_golden.py; grep -n "justify\|jootsing\|compare_rule\|remove_whole" tests/test_rules.py tests/engine_stubs.p
+  > $ ls -la /tmp/stage10/ /tmp/ | grep -i "stage\|scratch\|\.py"
+  > $ cd /tmp/stage10; wc -l justify.py jootsing.py; grep -n "^def \|^from\|^import" justify.py jootsing.py
+  > $ cd /tmp/scratch10_justify && cat pytest.ini setup.cfg pyproject.toml 2>/dev/null | head -20; timeout 900 python3 -m pytest tests -x -q --ignore=tests/test_golde
+  > $ R=/tmp/scratch10_justify_repo; rm -rf $R; mkdir $R; for d in chez_scheme tests racket docs; do ln -s /home/al/dev/metacat/$d $R/$d; done; cp -r /tmp/scratch10_j
+  > Write /tmp/stage10/themes.py
+  > Write /tmp/stage10/theme_graphics.py
+
+Now verify: compile, name coverage, and load in a scratch copy.
+  > $ cd /tmp/stage10 && python3 -m py_compile themes.py theme_graphics.py && echo OK; cd /home/al/dev/metacat/python && python3 - <<'EOF'
+import re, sys
+sys.path.ins
+  > $ rm -rf /tmp/scratch10_themes && cp -r /home/al/dev/metacat/python /tmp/scratch10_themes && cp /tmp/stage10/themes.py /tmp/stage10/theme_graphics.py /tmp/scratch
+  > $ ls /home/al/dev/metacat/chez_scheme/oracle/ /home/al/dev/metacat/python/oracle | head -40; head -40 /home/al/dev/metacat/chez_scheme/oracle/run.ss
+  > $ cd /home/al/dev/metacat; sed -n 40,80p chez_scheme/oracle/run.ss | grep -n "load\|prelude" 
+  > Write /tmp/stage10/trace.py
+  > $ cd /home/al/dev/metacat; grep -n "metacat.ss\|define (load-metacat\|original" chez_scheme/oracle/prelude.ss | head -20
+  > $ mkdir -p /tmp/stage10chk && cat > /tmp/stage10chk/t.ss <<'EOF'
+(define $oracle-directory "/home/al/dev/metacat/chez_scheme/oracle")
+(load (string-append $oracle
+  > $ cd /home/al/dev/metacat; sed -n 175,200p chez_scheme/oracle/prelude.ss
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 253,275p chez.py; sed -n 698,760p chez.py
+  > $ cd /tmp/stage10chk && sed -i 's|^(define ts \*themespace\*)|(load-metacat)\n(define ts *themespace*)|' t.ss && scheme --script t.ss 2>&1 | tail -22
+  > $ cd /tmp/stage10chk && sed -i 's|^(define ts \*themespace\*)|(define ts *themespace*)\n(set! *themespace-window* (lambda msg (quote done)))|' t.ss && scheme --sc
+  > $ cd /tmp/stage10 && python3 - <<'EOF'
+p='trace.py'
+s=open(p).read()
+s=s.replace("from metacat.utilities import (abs_ if False else average, bond_p, bridge_p, cd,
+  > $ cd /tmp/scratch10_themes && python3 - <<'EOF'
+import sys; sys.path.insert(0,'.')
+import types, metacat
+run = types.ModuleType("metacat.run"); run.g_display_mode
+  > Write /tmp/stage10/trace_graphics.py
+  > $ cd /tmp/scratch10_themes && timeout 600 python3 -m pytest -x -q tests 2>&1 | tail -15
+  > $ rm -rf /tmp/scratch10repo && mkdir /tmp/scratch10repo && cd /home/al/dev/metacat && for f in *; do [ "$f" != python ] && ln -s /home/al/dev/metacat/$f /tmp/scra
+
+All five translations are now staged (two agents still verifying). Trying a scratch integration of one golden run outside the repo.
+  > $ rm -rf /tmp/scratch10_trace; cp -r /home/al/dev/metacat/python /tmp/scratch10_trace; cp /tmp/stage10/*.py /tmp/scratch10_trace/metacat/; cd /tmp/scratch10_trace
+  > $ rm -rf /tmp/int10 && cp -r /home/al/dev/metacat/python /tmp/int10 && cp /tmp/stage10/*.py /tmp/int10/metacat/ && cd /tmp/int10 && sed -i 's#^ROOT = .*#ROOT = "/
+  > $ cd /tmp/int10 && timeout 300 python3 -c "
+import sys; sys.path[:0]=['tests','.']
+import golden_harness as g, traceback
+g.prepare()
+try: g.run_problem(['a','b','
+  > $ cd /tmp/scratch10_trace; sed -n 1,80p tests/engine_stubs.py; sed -n 100,200p tests/codelet_harness.py
+  > $ cd /home/al/dev/metacat; grep -n "define find-next-space-position" -A12 chez_scheme/original/general-graphics.ss; sed -n '/^def find_next_space_position/,/^STAN
+  > $ cd /tmp/scratch10_trace; grep -n "def fake_themespace_fn" -A25 tests/codelet_harness.py; grep -n "def run_codelets\|def setup_problem\|def init_problem" -A30 te
+  > $ cd /tmp/scratch10_trace; sed -n 1,40p tests/test_rules.py; sed -n 140,230p tests/test_rules.py; sed -n 255,350p tests/test_rules.py
+  > $ cat > /tmp/stage10/general_graphics.py <<'EOF'
+"""general-graphics.ss: the drawing helpers shared by the panels (the engine's part).
+
+Metacat is copyright (c) 1
+
+The first golden (a b z, seed 1) matches byte for byte. Running all 109 in the scratch copy.
+  > $ cd /tmp/int10 && time timeout 1200 python3 -c "
+import sys, os; sys.path[:0]=['tests','.']
+import golden_harness as g
+runs=g.golden_runs()
+runs.sort(key=lambda 
+  > $ cd /tmp/scratch10_justify_repo/python && sed -n 60,200p tests/test_golden.py
+  > $ mkdir -p /tmp/scratch10_trace/scratch && cat > /tmp/scratch10_trace/scratch/drive.py <<'EOF'
+import sys
+sys.path.insert(0, "/tmp/scratch10_trace/tests"); sys.pa
+  > $ cd /tmp/scratch10_justify_repo/python && cp /tmp/stage10/justify.py /tmp/stage10/jootsing.py metacat/ && python3 -m pytest tests/test_golden.py -q -p no:cachepr
+  > $ cat > /tmp/scratch10_trace/scratch/drive.py <<'EOF'
+import sys
+sys.path[:0] = ["/tmp/scratch10_trace/tests", "/tmp/scratch10_trace/oracle", "/tmp/scratch10_trac
+  > $ mkdir -p /tmp/scratch10_repo && cd /tmp/scratch10_repo && for d in tests chez_scheme docs racket; do ln -sfn /home/al/dev/metacat/$d $d; done; rm -rf python; mv
+  > $ cd /tmp/scratch10_repo/python && timeout 900 python3 scratch/drive.py abc abd ijk 1 2500 2>&1 | grep -v "^Exception ignored\|Traceback\|File\|KeyError" | tail -
+
+I've written both translations to `/tmp/stage10/`. Nothing in the repo was touched. I couldn't run the goldens: they need `trace.py`, `themes.py` and `memory.py`, which don't exist in the package yet.
+
+**What I checked:**
+- Both files byte-compile.
+- My name-check script confirms every `(define …)` and `define-codelet-procedure*` in both files has a Python function or constant under the name `names.scheme_to_python` gives. That's 14 names in `justify.ss` and 12 in `jootsing.ss`.
+- In a scratch repo (a copy of `python/` plus symlinks to the other directories), `engine.load()` installs the procedures for `answer-justifier`, `jootser` and `progress-watcher`. `pytest tests --ignore=tests/test_golden.py` passes (842 tests). The justify/jootsing cases of `test_golden.py` also pass: every definition present, docstrings name their origin, no GUI import.
+- Spot checks: `compare_rule_clause_lists` returns the differing pairs in Chez's order (first to last), gives `#f` on a length or symbol mismatch, and `retention_probability` stays exact (`3/20`).
+- `bridges.py` and `answers.py` call `remove_whole_or_single_concept_mappings(cms)` and `compare_rule_clause_lists(rc1, rc2)`; both are defined with those signatures.
+
+**Evaluation-order sites:**
+- **`stochastic-if*`, coin first:** all five sites draw `chez.random(1.0)` before computing the probability, marked `# chez:`. They are the jootser's clamp and snag checks, `joots-from-justify-clamps` (`1 - 1/n`), and the progress-watcher's two (`% progress-achieved` and the clamp probability).
+- **`traverse-rule-clauses`:** the inner walk over the rest is an argument of the outer walk, so it runs first. A length mismatch therefore fails before any element is visited, and the elements are visited last to first. I wrote it as a length check followed by a reverse loop. This matters because `concept-mapping-proc` builds concept mappings and `fail` escapes.
+- **Last `clamp-rules` call in `answer-justifier`:** only `get-vertical-theme-pattern-to-clamp` draws (its `prob?` filter runs first to last). I compute it first; the other arguments only read. `get-dominant-theme-pattern` and `get-concept-pattern` (checked in `themes.ss` and `rules.ss`) also only read.
+- **Other draws:** `stochastic-pick-by-method`, `stochastic-pick` (its weights go through `chez.map_`), `answers.translate`, and the jootser's `stochastic-filter`. All of them sit in `let*` forms or bodies, so they are already in order.
+- **Read-only sites, no reordering needed:** the three-binding `let` of mapping strengths, the rule1/rule2 lets, the appends of supporting groups, `make-concept-mapping`'s arguments, `clamp-rules`' append, and the lets in the jootser and in `get-clamp-jootsing-probability` / `joots-from-justify-clamps`. Also `add-comment`, `make-clamp-event`, `report-new-answer`, `post-codelet*` and `format`.
+- **Effectful maps:** these use `chez.map_` (`tell_all`, `flatmap`). `partition` and `select-extreme` use the utilities versions.
+- **`vprintf`/`vprint`:** these are macros, so their arguments are only evaluated with `%verbose%` on. The calls whose arguments compute something are gated on `setup.p_verbose`: retention probabilities, snag and clamp probabilities, the `reveal(entry)` line, and the progress lists.
+
+**Original 1.2 bugs reproduced, each marked `# 1.2:`:**
+- `compare-rule-clause-lists` tests `rc-list1` twice and never `rc-list2`.
+- `get-vertical-theme-pattern-to-clamp` prints `None.` when the pattern exists, which is always.
+- `remove-whole/single-concept-mappings` removes only the first match found by `select`.
+- `get-unifying-slippages` passes `#f` as `fail`. Rules that can't be unified would raise a Python `TypeError` where Chez raises its own error.
+
+**Doubts:**
+- `case` forms without `else` give `None` (void): an unknown clamp type in `get-clamp-jootsing-probability` makes `chez.mul` raise, as Chez's `*` would.
+- I left the unused locals in place for fidelity, marked `noqa`: the mapping strengths and `translated_rule_ref_objects`.
+- `clamp_rules` keeps the Scheme parameter name `rules`, which shadows the imported `rules` module inside that function only. It's harmless there.
+- `trace.py` must define `make_clamp_event`, `against_background`, `negate_theme_pattern_entry` and the four `p_*_codelet_pattern` constants under exactly these names.
+
+**Names read from other modules:**
+- **Imported directly (earlier modules):**
+  - `answers`: `translate`, `report_new_answer`, `get_rule_supporting_groups`, `make_translated_string`, `give_up`.
+  - `concept_mappings`: `make_concept_mapping`, `remove_duplicate_CMs`.
+  - `rules`: `verbatim_clause_p`.
+  - `slipnet`: `slip_linked_p`, `plato_string_position_category`, `plato_single`, `plato_whole`, `plato_group`, `plato_identity`, `plato_direction_category`, `plato_bond_category`, `plato_group_category`.
+  - `setup`: `p_verbose`, `p_self_watching_enabled`, `p_justify_mode`, `g_codelet_count`, `g_comment_window`.
+  - `workspace`: `g_workspace`, `g_initial_string`, `g_modified_string`, `g_target_string`, `g_answer_string`.
+  - `coderack`: `answer_justifier`, `answer_finder`, `p_extremely_high_urgency`, `p_very_low_urgency`.
+  - `justify` (from `jootsing`): `get_unifying_slippages`.
+  - Plus the `utilities`, `sugar` and `chez` helpers.
+- **Read through `_metacat` at call time:**
+  - `_metacat.trace`: `g_trace`, `make_clamp_event`, `monitor_new_rules`, `entries`, `theme_pattern_entries_equal_p`, `negate_theme_pattern_entry`, `against_background`, `p_top_down_codelet_pattern`, `p_thematic_codelet_pattern`, `p_bottom_up_codelet_pattern`, `p_rule_codelet_pattern`.
+  - `_metacat.themes.g_themespace`.
+  - `_metacat.memory.g_memory`.
+
+Files are in /tmp/stage10:
+- justify.py
+- jootsing.py
+  > $ cd /home/al/dev/metacat; grep -ho '"type":"group","number":[0-9]*,"name":"[^"]*"' tests/golden/*.jsonl | sed 's/.*"name"://' | sort | uniq -c | sort -rn | head 
+  > $ cd /tmp/scratch10_repo/python && cat >> scratch/drive.py <<'EOF'
+print("---- clamp test")
+setup.g_comment_window = Lambda(lambda self, msg, *a: print("COMMENT",
+  > $ cd /home/al/dev/metacat/python; sed -n 230,300p tests/test_rules.py; sed -n 140,175p tests/codelet_harness.py
+  > $ cat /tmp/scratch10_repo/python/metacat/__init__.py; cd /tmp/scratch10_repo/python && python3 -c "
+import metacat; from metacat import engine; engine.load(); pri
+  > $ ls -la /home/al/dev/metacat/python/metacat/ | grep -v pyc; ls -la /tmp/scratch10_repo/python/metacat/*.py | awk '{print $6,$7,$8,$9}' | tail -12; ls /tmp/stage*
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_rules.py'
+s=open(p).read()
+a=s.index('# The real definitions of later files that the oracle has 
+  > $ cd /home/al/dev/metacat/python; sed -n 14,30p tests/test_rules.py
+  > $ cd /tmp/stage10; grep -n "^p_max_theme_activation\|^g_themespace\|^def bridge_type_to_theme_type\|^def get_unifying_slippages\|^p_grace_period\|^p_max_clamp_per
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_rules.py'
+s=open(p).read()
+s=s.replace('''Commentary window, suspend, answer-justifier's procedu
+  > $ cd /tmp/stage10; grep -oh "_metacat\.trace\.[A-Za-z_]*" *.py /home/al/dev/metacat/python/metacat/*.py | sort -u | sed 's/_metacat.trace.//' | while read n; do g
+  > $ timeout 1200 bash -c 'prev=""; stable=0; while [ $stable -lt 12 ]; do cur=$(stat -c %Y /tmp/stage10/themes.py /tmp/stage10/trace.py /tmp/stage10/trace_graphics.
+  > $ cd /tmp/stage10; python3 -m pyflakes trace.py trace_graphics.py 2>&1 | head; python3 -m py_compile trace.py trace_graphics.py && echo compiled; wc -l trace.py t
+  > $ cd /tmp/stage10; ls -la; grep -n "^def load\|^class \|^\"\"\"" trace.py | head -40; head -3 trace.py
+  > $ cd /tmp/stage10; sed -i 's/    object1 = tell(bridge, "get-object1")    # noqa: F841 (bound, never used, as in the original)/    _object1 = tell(bridge, "get-ob
+  > $ cd /tmp/stage10; grep -c "" trace.py; grep -n "^def " trace.py | awk -F'[ (]' '{print $2}' | sort | uniq -d; awk 'length==0' trace.py | wc -l
+  > $ cd /tmp/scratch10repo/python && timeout 1800 python3 -m pytest -q tests --deselect tests/test_golden.py -p no:cacheprovider 2>&1 | tail -8
+
+I wrote both files to `/tmp/stage10/` and changed nothing in the repository. In a scratch copy, a small driver ran several problems through to the first answer or the codelet cap, using the real trace in place of the test stand-ins, and every event print name came out in the goldens' format.
+
+**Files**
+- `/tmp/stage10/trace.py`: the whole of trace.ss.
+- `/tmp/stage10/trace_graphics.py`: only `group-event-pexp-text-string`, translated verbatim. Its docstring says the rest of trace-graphics.ss belongs to the panels item, following `group_graphics.py`.
+
+Other agents are writing into `/tmp/stage10/` at the same time (`themes.py`, `justify.py`, `jootsing.py`, `memory.py`, `theme_graphics.py`, `general_graphics.py`). I didn't touch their files.
+
+**Verification**
+- Both files byte-compile and pyflakes is clean, apart from two locals that the original binds and never uses.
+- Every `(define ...)` in trace.ss has its `names.scheme_to_python` counterpart in the module. After `engine.load()` in the scratch copy, the codelet patterns and `g_trace` are built.
+- Every `_metacat.trace.X` that existing or staged modules call is defined, with the same signature. That covers the monitors, `entries`, `equivalent_workspace_objects_p`, `make_answer_event`, `make_snag_event`, `make_clamp_event`, `theme_pattern_entries_equal_p`, `negate_theme_pattern_entry`, `impose_theme_pattern`, `against_background`, `full_workspace_object_name`, the `p_*_codelet_pattern` values and `g_trace`.
+- The driver used test_rules' harness setup with the real trace in place of the stand-ins. On `abc abd xyz` (seed 3, 1500 codelets), `abc abd ijk` (seed 1) and `abc abd iijjkk` (seed 2) it produced events such as `(Identity)`, `<a-b-c<`, `>i-j-k>`, `<I-J-K<`, `[Top Rule]`, `[Snag]` and `[Answer ijl]`.
+- No concept-mapping event came up in those runs, so the `T:`/`V:`/`B:` names went untested.
+- In the same runs, snag periods began and ended through the real `undo-snag-condition` (which deactivates the snag and unclamps the temperature), and snag explanations printed correctly.
+- A clamp event was tested by hand: added, activated, then `undo-last-clamp`. That tested the comments, the grace period, `print-pattern`, `against-background`, and the Temporal Trace's `print`.
+- Reading `complement-codelet-pattern` raises `chez.UnboundVariable("complement-codelet-pattern")`. It is a function, as `same_direction_p` is in `bonds.py`, called by the `get-complement-codelet-pattern` message.
+
+**Evaluation order**
+Nothing in trace.ss draws a random number, so no call needed reordering. The sites I checked all only read:
+- `make-generic-event`'s snapshot `let`;
+- the `let`s in `make-group-event` and `make-concept-activation-event`;
+- `undo-last-clamp`'s two bindings and its `add-comment` lists;
+- `get-new-structures-since-last`;
+- the six bindings and the weighted-average list in `concept-mapping-importance`;
+- the two `select-meth` calls passed to `get-unifying-slippages`;
+- `against-background`'s two bindings;
+- every `format` call.
+
+They are kept left to right, as in Racket. The `let*`s (clamp, concept-mapping, rule and snag events) are sequential. All maps go through `chez.map_`. trace.rktl is verbatim, with no `port:` changes.
+
+**Names read from other modules**
+- **Imported directly:**
+  - `coderack`: `g_codelet_types`, the codelet types, `p_very_high_urgency`, `p_extremely_high_urgency`, `urgency_name`
+  - `concept_mappings.CMs_equal_p`
+  - `groups`: `same_letter_category_p`, `same_group_category_p`, `same_group_direction_p`
+  - `rules`: `rules_equal_p`, `punctuate`
+  - `setup`: `g_codelet_count`, `g_temperature`, all the windows, `p_verbose`, `p_justify_mode`, `p_self_watching_enabled`, `p_slipnet_graphics`, `p_coderack_graphics`, `p_codelet_count_graphics`
+  - `slipnet`: `p_max_activation`, the `plato_*` nodes, `platonic_relation_p`, `platonic_number_p`, `platonic_number_to_number`
+  - `workspace`: `g_workspace`, `g_initial_string`, `g_target_string`
+  - `view_globals`: all the event colours, plus `g_fg_color`, `p_default_fg_color`, `p_bridge_label_background_color`, `p_faded_bridge_label_background_color`
+- **Read through the package at call time:**
+  - `run`: `g_display_mode_p`, `g_temperature_clamped_p`
+  - `themes`: `g_themespace`, `p_max_theme_activation`, `bridge_type_to_theme_type`
+  - `justify.get_unifying_slippages`
+  - `jootsing`: `p_grace_period`, `p_max_clamp_period`
+  - `trace_graphics.group_event_pexp_text_string`
+  - `theme_graphics.relation_name`
+
+All of these match what the staged themes, justify, jootsing and theme_graphics modules define.
+
+**Doubts and a quirk to log**
+- **A new 1.2 bug.** It isn't in `docs/anomalies_and_quirks.md` yet, and I didn't edit the docs. rules.ss tags failure results `SWAP`, `CONFLICT` and `CHANGE` in upper case, and Chez 10 is case-sensitive. So the snag event's `print` message (`(case snag-type (swap ...) ...)`) never matches, and it prints `#<void>-snag involving objects:`, always with the plural "s". `record-case` in `get-explanation` and the constructor use the upper-case keys, so they work. I reproduced the bug and marked it with a `# 1.2:` comment. It only shows in printed output.
+- **Strings.** `case`/`cond` forms without an `else` return `None`, as the original's void. Every print name, comment and window string is a `chez.String`. The extra tag arguments to `draw-string-letters` are passed on unchanged, as the original does.
+- **Return values.** The monitors return the `add-event` value (`"done"`) or `None`, as `if*` does. The scratch run also showed that the harness's `engine_module` stand-ins now patch the real `metacat.trace`, then restore it when the tests finish. When trace.py lands, test_rules.py and codelet_harness.py will still override it unless their trace stand-ins are removed.
+  > $ ls /home/al/dev/metacat/python/metacat/ /home/al/dev/metacat/python/tests/; ls /tmp/stage* -d
+
+The trace agent is done; the themes agent's file has been unchanged for minutes. Copying the staged modules into the package and running the golden tests and full suite.
+  > $ cd /home/al/dev/metacat/python; for f in themes justify trace jootsing memory theme_graphics trace_graphics general_graphics; do cp /tmp/stage10/$f.py metacat/$
+
+I've written `/tmp/stage10/themes.py` and the minimal `/tmp/stage10/theme_graphics.py`. Both compile, `engine.load()` builds the real Themespace, and a small activation check matches the Chez original exactly. The real thematic-bridge-scout codelet has not been run: that needs run.py, trace.py and memory.py.
+
+**What I checked**
+- **Names:** all 61 `(define …)` and `define-codelet-procedure*` names in themes.ss have a function or global under their `names.scheme_to_python` name.
+- **Load:** in a scratch copy of the package (`/tmp/scratch10_themes`, with a stub `metacat.run`), `engine.load()` makes `g_themespace` with 9 dimensions and 27 clusters. The cluster relations come out in the same order as Chez prints them (e.g. LetterCtgy: pred diff succ iden). The thematic-bridge-scout procedure is installed.
+- **Against Chez:** `/tmp/stage10chk/t.ss` loads the original through `prelude.ss`, sets themes, runs `spread-activation` nine times, plus `boost-activation`, the percentage of dominant themes, and the sigmoid at 0 and 1/2. The Python gives identical numbers at every step, including negative and "different" themes.
+- **Existing tests:** in a scratch repo (`/tmp/scratch10repo`) with the staged files dropped in, 842 tests pass. I left out `test_golden.py`, which appeared in the repo while I worked: it fails because `metacat.memory` doesn't exist yet, not because of themes.
+
+**Doubts and choices**
+- **Same name for a variable and a message:** the cluster's and the generic theme's `frozen?` is both. The attribute is `frozen_p` and the message's method is `frozen_p_`, as bridges.py does it.
+- **`alpha`:** it is computed once when a cluster is made, from sensitivity 1.0, so `set-sensitivity` never changes it. That is how the original behaves; it's marked `# 1.2:`.
+- **`(apply max '())`** in the codelet can't be reached, because with no applicable themes no other object qualifies and the codelet fizzles first. I made it raise `chez.SchemeError`.
+- **Restore after initialize:** `initialize` clears the saved state, so `restore-current-state` after it does nothing. That is faithful.
+- **Abbreviations:** `top`, `bot`, `ver` and `diff` (= `False`) are plain module constants. `lcat`, `len_`, `dir_`, `spos`, `apos`, `otype`, `gtype`, `btype`, `facet`, `iden`, `succ`, `pred` and `opp` are `False` until `load()` sets them.
+- **`relation_name`** returns `chez.String`s, or `False` for any other relation.
+
+**Evaluation-order sites**
+- **`spread-activation-to-slipnet`:** two `stochastic-if*`s, each drawing its coin before the probability (marked `# chez:`).
+- **thematic-bridge-scout:** the draws come in this order, all inside a `let*`, a loop body, a filter or `map-compress`, so Python's order is Chez's:
+  1. the `stochastic-pick` of the theme type;
+  2. the cluster `filter` with `prob?`, first to last;
+  3. `tell_all(clusters, "pick-positive-theme")`, one pick per cluster in `chez.map_` order;
+  4. the `stochastic-pick-by-method` of the chosen object;
+  5. `propose-description-based-on-theme`'s pick, once per non-applicable theme, in loop order;
+  6. `conditions-for-bridge`'s `prob?`, once per candidate inside `map-compress`, first to last;
+  7. the `stochastic-select`;
+  8. `look-for-auxiliary-slippages`' `prob?`.
+- **`(themes-support? (flipped object1) (flipped object2))`:** both arguments make a flipped group, but that neither draws nor changes shared state, so I kept left to right, as the Racket port does.
+- **`make-themespace`'s three maps:** they only create clusters; I used `chez.map_` anyway.
+- **Everything else** only reads: the theme-type weights, `get-complete-state`'s list, the multi-binding lets, and the arguments to `post-codelet*`, `make-concept-mapping` and `make-description`.
+
+**Names read from other modules (for the harness)**
+- **slipnet:** `g_slipnet_nodes`, `get_label`, and `plato_identity`, `plato_opposite`, `plato_successor`, `plato_predecessor`, `plato_middle`, `plato_direction_category`, `plato_string_position_category`, `plato_object_category`, `plato_letter_category`, `plato_length`, `plato_alphabetic_position_category`, `plato_group_category`, `plato_bond_category`, `plato_bond_facet`.
+- **setup:** `g_themespace_window` (sent ungated: `update-thematic-pressure`, `update-graphics`, `erase-theme`, `erase-all-themes`, `set-theme-graphics-parameters-and-draw`), `p_justify_mode`, `p_self_watching_enabled`.
+- **workspace:** `g_workspace`, `p_proposed`.
+- **workspace_objects:** `lone_spanning_object_p`, `both_spanning_groups_p`, `both_spanning_objects_p`.
+- **bridges:** `propose_bridge`, `bridge_type_to_orientation`.
+- **descriptions:** `make_description`, `build_description`, called through the module so a trace wrapper reaches them.
+- **concept_mappings:** `make_concept_mapping`.
+- **coderack:** `bridge_evaluator`, `description_evaluator`, `p_very_high_urgency`, `p_extremely_high_urgency`; the `thematic-bridge-scout` top-level value is used by `load()`.
+- **Read through the package at call time:** `_metacat.run.g_display_mode_p` (only read when self-watching is disabled) and `_metacat.trace.entries` (only in `get-nonzero-theme-pattern`).
+- **theme_graphics.py** reads only slipnet's five relation nodes.
+
+The stand-in helpers in codelet_harness.py and test_rules.py (`bridge_type_to_theme_type`, `descriptions_affect_themespace_p`, `ignore_descriptions_p`, `bridge_theme_compatibility_sigmoid`, `diff`) now have real definitions in `themes.py` with the same behaviour.
+
+Files are in `/tmp/stage10`:
+- `themes.py`
+- `theme_graphics.py`
+
+All golden runs pass in the repo. One docstring test fails (the stand-in for the never-defined `complement-codelet-pattern`); fixing.
+  > $ cd /home/al/dev/metacat/python; grep -n "def complement_codelet_pattern" -A8 metacat/trace.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/trace.py'
+s=open(p).read()
+s=s.replace('''    """complement-codelet-pattern: read by the clamp even
+
+Full suite green: 976 passed in 2m24s. Next: mutation checks on the five modules, then docs. Checking the anomalies log for the quirks the agents reported.
+  > $ cd /home/al/dev/metacat; grep -n "complement-codelet-pattern\|SWAP\|upper.case\|uppercase\|#<void>-snag" docs/anomalies_and_quirks.md | head; grep -c "# chez:\|
+  > $ cd /home/al/dev/metacat; grep -n "snag-type\|'swap\|(swap\|SWAP" chez_scheme/original/trace.ss | head; grep -n "'SWAP\|'CONFLICT\|'CHANGE\|SWAP" chez_scheme/ori
+
+Next, mutation checks. Picking mutation sites in the five modules.
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "chez.random(1.0)\|map_\|tell_all\|reversed\|range(len" themes.py justify.py jootsing.py trace.py memory.py | he
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1155,1175p themes.py; sed -n 305,320p justify.py; grep -n "chez.random(1.0)" -A3 jootsing.py | head -30
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "def retention_probability" -A14 justify.py; cat trace_graphics.py | sed -n 20,60p
+  > $ mkdir -p /tmp/mut10 && cat > /tmp/mut10/mutate.py <<'EOF'
+import subprocess, sys, os, shutil
+P = "/home/al/dev/metacat/python/metacat/"
+MUTANTS = [
+ ("themes.py
+
+Three survivors (theme→slipnet cube→square, two importance thresholds). Investigating whether they're equivalent on these runs.
+  > $ date; cd /home/al/dev/metacat; python3 - <<'EOF'
+import json,glob,collections
+c=collections.Counter()
+for f in glob.glob('tests/golden/*.jsonl'):
+    for line i
+  > $ cd /home/al/dev/metacat; grep -n "spread-activation-to-slipnet" chez_scheme/original/*.ss; grep -n "define monitor-new-groups\|define monitor-new-concept-mappin
+  > $ cd /home/al/dev/metacat; sed -n 365,390p chez_scheme/original/slipnet.ss; sed -n 1345,1420p chez_scheme/original/trace.ss
+  > $ cd /home/al/dev/metacat; sed -n 1300,1344p chez_scheme/original/trace.ss; grep -n "define make-concept-mapping-event\|define make-group-event" -A25 chez_scheme/
+  > $ cd /home/al/dev/metacat; grep -n "define make-generic-event" -A40 chez_scheme/original/trace.ss | head -50; grep -n "define make-concept-mapping\b\|define make-
+  > $ cd /home/al/dev/metacat; sed -n 1,60p python/oracle/batteries/workspace-extra-battery.scm; grep -n "define (b:set-global\|define b:set-global\|define (b:seeded\
+  > $ cd /home/al/dev/metacat; grep -n "activate-from-workspace" -A4 chez_scheme/original/slipnet.ss | head; grep -n "define make-group$\|define make-group\b" -A4 che
+  > $ cd /home/al/dev/metacat; sed -n 640,700p chez_scheme/original/themes.ss; grep -n "get-activation-buffer\|activation-buffer ()" chez_scheme/original/slipnet.ss |
+  > $ cd /home/al/dev/metacat; grep -n "^(test" python/oracle/batteries/workspace-extra-battery.scm | head -3; sed -n '/^(test "group-vertical-bridge"/,/^$/p' python/
+  > $ cd /home/al/dev/metacat; sed -n 60,125p python/oracle/batteries/workspace-extra-battery.scm; sed -n 20,35p python/tests/test_fixtures.py
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+import sys; sys.path.insert(0,'.')
+from metacat import engine, slipnet; engine.load()
+print([n for n in dir(slipnet
+
+Writing the local battery `trace-extra-battery.scm`.
+  > Write /home/al/dev/metacat/python/oracle/batteries/trace-extra-battery.scm
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/oracle/batteries/trace-extra-battery.scm'
+s=open(p).read()
+a=s.index('(define x:group-as\n'); b=s.index('(d
+
+CM importance 63 and group strength 99 are reached, so those two mutants will die. The theme-spread test errors; debugging it in Chez.
+  > $ cd /home/al/dev/metacat; cat > /tmp/dbg.ss <<'EOF'
+(load "chez_scheme/oracle/prelude.ss")
+(load-metacat)
+(define t (tell *themespace* 'get-theme 'vertical-bridg
+  > $ cd /home/al/dev/metacat; sed -n 180,200p chez_scheme/original/themes.ss; grep -n "define get-possible-relations" -A20 chez_scheme/original/themes.ss | head -25
+  > $ cd /home/al/dev/metacat; cat > /tmp/dbg.ss <<'EOF'
+(load "chez_scheme/oracle/prelude.ss")
+(load-metacat)
+(display (map (lambda (r) (if r (tell r 'get-short-name
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/oracle/batteries/trace-extra-battery.scm'
+s=open(p).read()
+s=s.replace('''    (let* ((theme (tell *themespa
+
+The battery now reaches intermediate theme activations too. Capturing it into the fixtures and writing its Python side.
+  > $ cd /home/al/dev/metacat; timeout 300 python3 python/oracle/capture.py trace-extra 2>&1 | tail -2; grep -n "workspace-extra\|def test_workspace_extra\|EXTRA" pyt
+  > $ cd /home/al/dev/metacat/python; sed -n 1565,1600p tests/test_workspace.py; grep -n "def init_problem\|^def set_global\|^def get_global\|^def g(\|^def ws(" tests
+  > $ cd /home/al/dev/metacat/python; cat >> tests/test_golden.py <<'EOF'
+
+
+# python/oracle/batteries/trace-extra-battery.scm (local, written after the code, to
+# rea
+
+Passes at once (written after the code). Checking it kills the three survivors.
+  > $ cd /home/al/dev/metacat/python; md5sum metacat/*.py > /tmp/mut10/before.md5; for spec in 'themes.py|if coin_flip < cube(percent(tell(self, "get-absolute-activat
+
+All three killed. Updating the fixture-list test, then logging the snag-type case quirk the trace agent found.
+  > $ cd /home/al/dev/metacat; sed -i 's/                     "workspace-extra"\]   # python\/oracle\/batteries\/ (items 02-09)/                     "trace-extra", "w
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/tests/test_fixtures.py'
+s=open(p).read()
+s=s.replace('''                     "slipnet-extra", "utilities-ex
+  > $ cd /home/al/dev/metacat; grep -n "'swap\|'conflict\|(swap \|(conflict \|'change)" chez_scheme/original/*.ss | head; cat > /tmp/dbg2.ss <<'EOF'
+(display (case 'S
+
+Confirmed in Chez. Writing the anomalies entries now.
+  > $ cd /home/al/dev/metacat; grep -n "^## " docs/anomalies_and_quirks.md; grep -n "^### " docs/anomalies_and_quirks.md | sed -n 1,200p | awk -F: '$1>60' | head -80
+  > $ cd /home/al/dev/metacat; sed -n 40,68p docs/anomalies_and_quirks.md; sed -n 663,700p docs/anomalies_and_quirks.md; sed -n 743,770p docs/anomalies_and_quirks.md;
+
+Now writing the doc updates (anomalies entries and updates).
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+
+def after(anchor_title, next_marker, text):
+    global s
+    i=s.i
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+i=s.index("### `complement-codelet-pattern` is never defined"); j=s
+  > $ cd /home/al/dev/metacat; sed -n 1,16p python/README.md; sed -n 125,170p python/README.md
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/README.md'
+s=open(p).read()
+s=s.replace("""  strength stays under 100. Until themes.py exists, the harness'
+  > $ cd /home/al/dev/metacat; grep -n "^## \|^- \`metacat/themes" python/README.md
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/python-translation-plan.md'
+s=open(p).read()
+text = """### As built (item 10)
+
+- **Modules**: themes.py (`The
+
+Docs updated. Quick review of the new modules' headers, then the gate.
+  > $ cd /home/al/dev/metacat/python; for f in themes justify trace jootsing memory theme_graphics trace_graphics general_graphics; do echo "== $f"; sed -n 1,9p metac
+
+Fast tier: 706 passed in 4.6 s. Running the gate.
+  > $ cd /home/al/dev/metacat; time timeout 1500 python3 ralph_loops/loop0002/gate.py 2>&1 | tail -8
+
+Gate passed (983 tests, 2m12s). Writing PROGRESS.md and marking the item.
+  > $ cd /home/al/dev/metacat; date "+%Y-%m-%d %H:%M"; git status --short | head -30
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='ralph_loops/loop0002/PROGRESS.md'
+s=open(p).read()
+s=s.replace("- **Current**: 10/18 SOLVED","- **Current**: 11/18
+
+Item 10 is done and the gate passes (983 tests in 2 min 12 s). All 109 golden traces now match the Chez oracle byte for byte, as whole runs rather than prefixes.
+
+**What I added**
+- **The five model files.** `python/metacat/themes.py`, `justify.py`, `trace.py`, `jootsing.py` and `memory.py` are the Python versions of the original files. Subagents translated them into a staging directory and I reviewed them before copying them in; no model line needed a fix afterwards.
+- **Three small graphics helpers** that the model and the trace need: `find-next-space-position`, `group-event-pexp-text-string` and `relation-name`. Each is in a partial module (`general_graphics.py`, `trace_graphics.py`, `theme_graphics.py`), the same pattern `group_graphics.py` already uses. The panels item adds the rest of each file.
+- **A test-side run driver.** `python/tests/golden_harness.py` reproduces the oracle's headless windows (including each codelet type's coderack window and the Memory's icon procedure), its trace writer and its driver. `python/tests/golden_run.py` is a copy of run.ss's run loop, kept in the tests until item 11 moves it into the package. Each golden runs in a fresh fork of a fresh Python process, because the Memory carries over from one run to the next, as it does in the oracle.
+
+**Tests**
+- I wrote `test_golden.py` before the modules existed and ran it: 23 failed, 2 passed, 109 errors. The two that passed only read the golden files.
+- With the modules in place, the slow tier runs all 109 goldens in about 35 s on 32 cores. It also runs the oracle live on `abc ccbbaa ijk` seed 3, where the original crashes, and checks that Python raises the same `caddr` error after the same 1062 trace lines.
+- The fast tier runs `a b z` seed 1 (1000 codelets); the whole fast tier takes 4.6 s.
+
+**Mutation checks:** 12 deliberate code changes across the five modules. The goldens catch 9. The other 3 change behaviour only in cases the goldens never reach: a partly active theme spreading to the Slipnet, and values just under two of the trace's importance thresholds. I wrote a small Chez battery after the code, `python/oracle/batteries/trace-extra-battery.scm`, that reaches those cases; it catches all 3.
+
+**Things worth knowing**
+- **Bug in the original:** the snag event's `print` compares lower-case `swap`/`conflict`/`change` against the upper-case tags that rules.ss produces. Chez 10 is case-sensitive, so it always prints `#<void>-snag involving objects:`. Python reproduces this, and it's logged in `docs/anomalies_and_quirks.md`.
+- **Naming clash for item 11:** iterations.md and TASK.md also call the golden-trace writer `trace.py`, but that name now belongs to the translation of trace.ss. Item 11 will need another name for the writer; I noted this in `docs/python-translation-plan.md`.
+- **Removed test copies:** the copies of these files' functions that the earlier test harnesses carried are gone. Their own fakes stay, and those test suites still pass.
+
+PROGRESS.md has the iteration 11 entry, the count now reads 11/18 SOLVED, and item 10 is marked `[x]` in iterations.md. Nothing was committed.
+
+# result: success in 1900s, 105 turns, cost $18.77

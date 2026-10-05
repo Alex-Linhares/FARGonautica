@@ -1,0 +1,77 @@
+# session it01 started 2026-10-03 18:20:07
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; ls; ls ralph_loops/loop0002; cat ralph_loops/loop0002/gate.py; ls tests/diff | head -50; cat chez_scheme/oracle/diff-eval.ss
+  > $ cd /home/al/dev/metacat; ls -la python; cat ralph_loops/loop0002/iterations.md | head -30; grep -rn "diff-eval" racket/tests/*.rkt tests/run-tests.sh chez_schem
+  > $ cd /home/al/dev/metacat; git status --short; cat ralph_loops/loop0002/status.json
+  > $ cd /home/al/dev/metacat; cat racket/tests/diff-runner.rkt; grep -n "run-chez\|diff-runner\|setup\|\.scm\|\.ss\"" racket/tests/*-diff-test.rkt | head -60
+  > $ cd /home/al/dev/metacat; grep -n "chez-setup" racket/tests/*.rkt; grep -n "^(load\|(load " tests/diff/*.scm | head; for f in tests/diff/*-battery.scm; do echo "
+  > $ cd /home/al/dev/metacat; time (for b in tests/diff/*-battery.scm; do s=""; [[ $b == *sgl* ]] && s=tests/diff/sgl-chez-setup.ss; ( scheme --script chez_scheme/or
+
+All ten batteries run cleanly under Chez in about 32 s. Next I'm writing the Chez script that lists test names, then the capture script.
+  > $ mkdir -p /home/al/dev/metacat/python/{oracle,fixtures,tests,metacat}; cat > /home/al/dev/metacat/python/oracle/list-tests.ss <<'EOF'
+;;; list-tests.ss -- print 
+  > $ cd /home/al/dev/metacat; scheme --script python/oracle/list-tests.ss tests/diff/utilities-battery.scm | sort | uniq -d; grep -n "(test ~" tests/diff/utilities-b
+  > $ cd /home/al/dev/metacat; scheme --script python/oracle/list-tests.ss tests/diff/utilities-battery.scm | LC_ALL=C sort | LC_ALL=C uniq -d; for b in tests/diff/*-
+  > Write /home/al/dev/metacat/python/oracle/capture.py
+
+Now the tests (written before capturing any fixture, so they fail first), plus a small Python-side reader that counts tests independently of Chez.
+  > $ cd /home/al/dev/metacat; grep -c '#;' tests/diff/*.scm; grep -c '#|' tests/diff/*.scm; grep -n '#\\' tests/diff/*-battery.scm | head
+  > $ cd /home/al/dev/metacat/python; cat > tests/chez_fixtures.py <<'EOF'
+"""Access to the frozen Chez outputs in python/fixtures/ (see oracle/capture.py).
+
+Part of 
+  > $ cd /home/al/dev/metacat/python; cat > tests/test_fixtures.py <<'EOF'
+"""Item 00: the fixture pipeline (python/oracle/capture.py, python/fixtures/).
+
+Part of the
+  > $ cd /home/al/dev/metacat/python; cat > tests/conftest.py <<'EOF'
+# Part of the Python translation of Metacat (GPL v2 or later, like Metacat itself).
+# Makes pyth
+  > $ cd /home/al/dev/metacat/python; python3 -m pytest -q -m "not slow" 2>&1 | tail -3; time python3 oracle/capture.py --all; ls fixtures/utilities | head -5; cat fi
+  > $ cd /home/al/dev/metacat/python; du -sh fixtures/*; ls -lS fixtures/rule | head -5; ls -lS /tmp/raw-*; head -c 600 fixtures/rule/$(ls -S fixtures/rule | head -1)
+
+Fixtures are captured (604 tests, 168 MB of text, mostly rule/bridge/codelet). Now I'm checking how well they compress before deciding to commit them as plain text.
+  > $ cd /home/al/dev/metacat/python; tar c fixtures | gzip -6 | wc -c; cmp <(cat /tmp/raw-rule-battery.txt) <(python3 -c "
+import sys; sys.path.insert(0,'oracle'); s
+
+Gzipped they're 13 MB, so plain text is fine to commit. Running the full suite, including the slow re-capture test:
+  > $ cd /home/al/dev/metacat; time bash python/run-tests.sh 2>&1 | tail -5
+  > $ cd /home/al/dev/metacat; sed -i 's/capture.split(raw, \["a", "c"\])/capture.split(raw, ["a", "b?", "d"])/' python/tests/test_fixtures.py; time bash python/run-t
+
+All 37 pass, including the 53 s re-capture. Now the README, .gitignore check and the gate.
+  > $ cd /home/al/dev/metacat; cat .gitignore 2>/dev/null; cat > python/README.md <<'EOF'
+# Metacat 1.2 in Python
+
+A test-driven translation of James B. Marshall's Me
+
+Gate passed. Updating PROGRESS.md and iterations.md:
+  > $ cd /home/al/dev/metacat/ralph_loops/loop0002; sed -i 's/^- \*\*Started\*\*: (not started)/- **Started**: 2026-10-03/; s/^- \*\*Current\*\*: 0\/18 SOLVED/- **Cur
+  > $ cd /home/al/dev/metacat; grep -n "^- \[" ralph_loops/loop0002/iterations.md | head -3; find python -name __pycache__ -o -name .pytest_cache | head
+
+Item 00 is done and the gate passes (`GATE PASSED`: the original and the frozen references are unchanged, and all 37 Python tests pass in about 55 s).
+
+**What exists now**
+- **The `python/` skeleton:**
+  - `pyproject.toml`: package `metacat`, no runtime dependencies, pytest as a `test` extra, and a `slow` test marker.
+  - A stub `metacat/__init__.py` with the GPL and "translated to Python" lines.
+  - `README.md`.
+  - `run-tests.sh`, which stops at the first failure. With no arguments it runs everything, and that is what the gate runs. `--fast` skips the slow tests and finishes in under a second.
+- **The capture script, `python/oracle/capture.py BATTERY... | --all`:** it runs `chez_scheme/oracle/diff-eval.ss` unedited, in the same order the Racket test runner uses (helpers first, an extra setup file for sgl, then the battery). It writes each battery's output, split per test, to `python/fixtures/<battery>/`.
+  - Values can span many lines, so the split doesn't guess where one ends. The test names come in order from Chez's own reader, through a new `python/oracle/list-tests.ss`.
+  - Before writing anything, it checks that joining the pieces gives back Chez's output byte for byte. It fails if Chez exits non-zero or writes anything to stderr.
+- **All 10 batteries captured:** 604 tests. Each battery directory has a `MANIFEST` listing the test names, one `NNN-NAME.txt` per test, and a `SOURCES` file with the Chez version and a hash of every input file.
+- **Fixtures size:** 168 MB of plain text, mostly from three batteries (rule 94 MB, bridge 47 MB, codelet 23 MB). It gzips to about 13 MB and the largest file is 4 MB, so committing and pushing it is fine. I kept it as plain text so it stays readable.
+- **Helpers for later items:** `chez("utilities", "prob?")` in `python/tests/chez_fixtures.py` returns the value Chez printed for a test. A small Scheme reader in Python counts each battery's tests without Chez.
+
+**Tests** (`python/tests/test_fixtures.py`)
+- One fixture per test in every battery, counted by the Python reader.
+- Split then join gives back the original output, on every battery and on synthetic edge cases.
+- The recorded input hashes still match (the fast freshness check).
+- The slow freshness check captures every battery again under Chez and requires byte-identical files. It takes about 53 s and runs in the gate.
+
+I wrote the capture script in the same step as these tests, not strictly after them. The tests did fail before any fixture existed: 33 failed and 3 passed. One case also caught a wrong expectation in the test itself, which I fixed.
+
+PROGRESS.md now has the Iteration 1 entry and reads 1/18 SOLVED, and item 00 is marked `[x]` in iterations.md. I didn't commit or push, and I didn't add LOOP_COMPLETE because 17 items remain.
+
+# result: success in 393s, 23 turns, cost $0.86

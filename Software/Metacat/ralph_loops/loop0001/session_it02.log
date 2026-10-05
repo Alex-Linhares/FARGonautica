@@ -1,0 +1,244 @@
+# session it02 started 2026-10-02 20:34:17
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ ls -R chez_scheme racket tests docs | head -80 && cat chez_scheme/original/metacat.ss && cat ralph_loops/loop0001/gate.py | head -60 && cat tests/run-tests.sh
+  > $ cat docs/code-map.md | head -250
+  > $ sed -n 250,600p docs/code-map.md; cat chez_scheme/original/run.ss
+  > $ cd /home/al/dev/metacat/chez_scheme/original && sed -n 19,200p setup.ss; sed -n 19,253p syntactic-sugar.ss
+  > $ cd /tmp && echo '(random-seed 7) (display (list (random 1.0) (random 100) (random 1.0) (random 4294967087))) (newline)' > r.ss && scheme --script r.ss; racket -
+  > $ cd /tmp && cat > r2.ss <<'EOF'
+(define g (make-pseudo-random-generator))
+(display (pseudo-random-generator->vector g)) (newline)
+(pseudo-random-generator-seed! 
+
+Comparing Chez 10's and Racket's RNGs to settle the randomness plan; next I'll write the prelude.
+  > $ ls /usr/share/doc/chezscheme/examples/; zcat /usr/share/doc/chezscheme/examples/compat.ss.gz | grep -n "extend-syntax" | head
+  > $ zcat /usr/share/doc/chezscheme/examples/compat.ss.gz | head -150
+  > $ cd /tmp && cat > r3.ss <<'EOF'
+(random-seed 7)
+(display (random-seed)) (newline)
+(random 10)
+(display (random-seed)) (newline)
+(random 1.0)
+(display (random-see
+  > $ cd /tmp && cat > r4.ss <<'EOF'
+(define (st s) (random-seed s) (random 2) (random-seed))
+(for-each (lambda (s) (display (list s (st s)))(newline)) '(1 2 3 7 100 
+  > $ cd /tmp && cat > r5.ss <<'EOF'
+(define (show . xs) (for-each (lambda (x) (display x) (display " ")) xs) (newline))
+(random-seed 1)
+(let* ((a (random 4294967295)
+  > $ cd /tmp && cat > r6.ss <<'EOF'
+(define (show . xs) (for-each (lambda (x) (display x) (display " ")) xs) (newline))
+(for-each (lambda (s)
+ (random-seed s)
+ (let*
+  > $ python3 -c "
+d=[(1,2034697578,2034701013),(2,3058632043,3058664478),(3,4082566508,4082627943),(4,811599213,811624112),(1000,2771978689,2771986100),(123456789,11
+  > $ python3 -c "
+A=1023963465;C=1010737548;M=2**32
+f=lambda s:(A*s+C)%M
+d=[(1,2034697578,2034701013),(2,3058632043,3058664478),(3,4082566508,4082627943),(4,81159921
+  > $ cd /tmp && for f in s/5_3.ss s/prims.ss s/library.ss s/mathprims.ss c/number.c c/prim5.c s/5_4.ss s/random.ss; do curl -sfL "https://raw.githubusercontent.com/c
+  > $ cd /tmp && grep -n -i "random" cz_5_3.ss | head -60; grep -n -i random cz_prim5.c
+  > $ cd /tmp && sed -n 1080,1125p cz_prim5.c; sed -n 3230,3265p cz_5_3.ss; for f in c/number.c c/types.h c/externs.h c/random.c; do curl -sfL "https://raw.githubuser
+
+Found Chez 10's actual `random` source: it's a 32-bit LCG that's easy to reproduce in Racket, so the oracle won't need a PRNG swap. Checking the later items so I don't overstep.
+  > $ sed -n 1,60p ralph_loops/loop0001/iterations.md; cat chez_scheme/oracle/README.md; cat chez_scheme/oracle/tests/reader-check.ss | head -50
+  > $ cd /home/al/dev/metacat/chez_scheme/original && grep -ohE "\(tell \*[A-Za-z-]*(window|panel)\*[^)]*" *.ss | sed -E "s/^\(tell (\*[^ ]*\*) ('?[^ ]*).*/\1 \2/" | 
+  > $ grep -n "comment-window\|control-panel\|terminate\|break)\|quiet-break\|%workspace-graphics%" answers.ss jootsing.ss memory.ss trace.ss justify.ss rules.ss them
+  > $ sed -n 19,100p answers.ss; sed -n 300,440p answers.ss
+  > $ sed -n 19,104p commentary-graphics.ss; grep -n "run-new-problem\|init-new-problem\|define tokenize\|resume-current\|reset-current" gui.ss | head -20
+  > $ grep -n "(random\|randomize\|prob?\|random-pick\|stochastic" *graphics*.ss gui.ss sgl-interpreter.ss fonts.ss constants.ss | head -30; grep -n "^(define\|^(set!
+  > $ sed -n 730,800p gui.ss; grep -n "define randomize" -A8 utilities.ss
+  > $ grep -n "get-lines\|'get-window\|add-memory-icon\|'add-event" *.ss | grep -v "^gui.ss.*send" | head; grep -n "define tell" -A12 utilities.ss
+  > $ grep -n "^	      ([a-z-]* (" trace.ss | head -60; grep -n "define make-answer-event" -A40 trace.ss | grep -n "(get-\|print-name" | head
+
+Now writing the prelude (extend-syntax via syntax-case, SWL stubs, config vars) and iterating on load errors.
+  > $ grep -n "swl:\|(send \|(make <\|(create <\|define-class\|define-swl\|thread-" fonts.ss constants.ss setup.ss | head -40; grep -n "^(define [^(]* *(\(make-mfont\
+  > $ mkdir -p /home/al/dev/metacat/chez_scheme/oracle && cat > /home/al/dev/metacat/chez_scheme/oracle/prelude.ss <<'EOF'
+;;; prelude.ss -- make the unmodified Metac
+  > $ cat >> /home/al/dev/metacat/chez_scheme/oracle/prelude.ss <<'EOF'
+
+;;;---------------------------------------------------------------------------
+;;; 2. The SWL
+  > $ cd /home/al/dev/metacat/chez_scheme/original && sed -n 100,175p sgl-interpreter.ss; grep -n "define-class\|define-swl-class\|send-base\|(method\|(ivars\|(inheri
+  > $ cd /home/al/dev/metacat && python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=open(p).read()
+s=s.replace("""(define $swl-create-args""",""";; SWL class defin
+  > $ cd /home/al/dev/metacat/chez_scheme/original && grep -n "thread-[a-z-]*\|swl:[a-z>-]*" -o *.ss | sort -t: -k3 -u | awk -F: '{print $3}' | sort -u
+  > $ cd /home/al/dev/metacat && grep -ohE "swl:[a-z>-]+" chez_scheme/original/*.ss | sort -u | tr '\n' ' '; python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=ope
+  > $ python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=open(p).read()
+old=s[s.index(";; (create <class> arg ... with"):s.index("(define-syntax send")]
+new=""";; 
+  > $ python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=open(p).read()
+s=s.replace("""(define-syntax send""",""";; SWL class definitions (sgl-interpreter.ss: <vie
+  > $ cd /home/al/dev/metacat/chez_scheme/original && sed -n 19,32p fonts.ss; sed -n 75,92p fonts.ss
+
+Returns multiple values; fix the stub.
+  > $ cd /home/al/dev/metacat && sed -i 's|((get-actual-values) (if (swl-stub? obj) (swl-stub-args obj) (quote ())))|X|; s|((get-actual-values) (if (swl-stub? obj) (s
+  > $ METACAT_ORACLE_DIR=$PWD/chez_scheme/oracle scheme --script /tmp/load-test.ss; echo "exit=$?"
+  > $ echo '(flush-output-port (current-output-port))' >> /tmp/load-test.ss && METACAT_ORACLE_DIR=$PWD/chez_scheme/oracle scheme --script /tmp/load-test.ss; echo "exi
+  > $ cd /home/al/dev/metacat/chez_scheme/original && grep -n "abstract-answer-description\|(suspend)\|(give-up)\|(break)" *.ss | head -20; sed -n 333,343p trace.ss; 
+  > $ cd /home/al/dev/metacat && python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=open(p).read()
+old=s[s.index("(define $oracle-directory"):s.index("(define *pla
+  > $ cd /tmp && cat > p.ss <<'EOF'
+(define p (make-custom-textual-output-port "x" (lambda (s st c) (put-string (console-output-port) s st c) c) #f #f #f))
+(set-textu
+
+Metacat now loads unmodified under Chez 10. Next: headless window stand-ins and the `run.ss` driver.
+  > $ python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=open(p).read()
+s=s.replace("""    (lambda () (flush-output-port $stdout))))
+(current-output-port $muteable
+  > $ sed -i "s|(make-null-window 'trace '())|(make-null-window 'trace '(initialize))|" chez_scheme/oracle/prelude.ss && scheme --script chez_scheme/oracle/run.ss abc
+  > $ cd /home/al/dev/metacat/chez_scheme/original && grep -n -B4 "themespace-window\* 'erase-all-themes\|memory-window\* '\|trace-window\* '" themes.ss memory.ss tra
+  > $ cd /home/al/dev/metacat && for i in $(seq 1 30); do out=$(for p in "abc abd xyz" "abc abd ijk" "eqe qeq abbbc" "abc abd mrrjjj"; do for s in 1 2 3; do scheme --
+  > $ time scheme --script chez_scheme/oracle/run.ss abc abd xyz --seed 1 --max-codelets 5000 --keep-going 2>&1 | tail -30
+  > $ cd /home/al/dev/metacat/chez_scheme/original && grep -n "(define \*\(memory\|trace\|themespace\|EEG\|coderack\|workspace\)\*\|(set! \*\(memory\|trace\|themespac
+  > $ cd /home/al/dev/metacat && python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=open(p).read()
+s+=r'''
+;;;-----------------------------------------------------
+  > TaskStop {"task_id": "bdwylg4mk"}
+  > $ cd /home/al/dev/metacat && timeout 20 scheme --script chez_scheme/oracle/run.ss abc abd xyz --seed 1 --max-codelets 5000 --keep-going 2>&1 | head -30
+  > $ python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=open(p).read()
+s=s.replace("""               (src (guard (e (#t #f)) (o 'source-path))))
+          (fprint
+  > $ cd /home/al/dev/metacat/chez_scheme/original && python3 -c "
+s=open('coderack.ss').read(); i=8157; print(s[i-600:i+300])"
+  > $ grep -n "coderack-window" coderack.ss | head; grep -n "coderack-window\b\|set-coderack-window\|'set-window" *.ss | grep -v "^coderack.ss\|\*coderack-window\*" |
+  > $ sed -n 75,140p coderack.ss; grep -n "set-graphics-window\|'set-coderack-window\|tell type 'set\|codelet-type 'set" *.ss | head
+  > $ sed -n 140,150p coderack.ss; grep -n "set-last-codelet-type" *.ss; sed -n 180,200p coderack-graphics.ss
+  > $ sed -n 205,222p coderack.ss
+  > $ cd /home/al/dev/metacat && python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=open(p).read()
+s=s.replace("""    (set! *control-panel*""",""";; Each codelet t
+
+The engine is running codelets now; I'm working through the display messages a headless run still sends.
+  > $ cat > /tmp/iter.sh <<'XEOF'
+for i in $(seq 1 40); do
+out=""
+for p in "abc abd xyz" "abc abd ijk" "eqe qeq abbbc" "abc abd mrrjjj"; do for s in 1 2 3; do
+  o=$(t
+  > $ timeout 100 scheme --script chez_scheme/oracle/run.ss abc abd xyz --seed 1 --max-codelets 4000 --keep-going 2>&1 | tail -22; grep -n "set-theme-graphics-paramet
+  > $ cd /home/al/dev/metacat/chez_scheme/original && python3 -c "
+s=open('memory.ss').read()
+for i in (8189,8556,3868): print('-----',i, s.count('\n',0,i)+1); print(
+  > $ sed -n 95,135p memory-graphics.ss; grep -n "get-normal-icon-pexp\|set-graphics-parameters\|icon-pexp" memory.ss | head -20
+  > $ cd /home/al/dev/metacat && grep -n "memory 'add-memory-icon\|make-null-window 'memory" chez_scheme/oracle/prelude.ss && python3 - <<'EOF'
+import re
+p='chez_sche
+  > $ grep -n "make-null-window '" chez_scheme/oracle/prelude.ss; cd chez_scheme/original && grep -n "workspace-window\* 'caching-on\|workspace-window\* 'flush\|theme
+  > $ sed -n 930,1020p groups.ss
+  > $ sed -n 395,420p theme-graphics.ss; grep -n "set-graphics-parameters\|graphics-pexp\|get-pexp" themes.ss | head
+  > $ cd /home/al/dev/metacat && time scheme --script chez_scheme/oracle/run.ss abc abd xyz --seed 1 --max-codelets 4000 --keep-going; time scheme --script chez_schem
+  > $ cd /home/al/dev/metacat/chez_scheme/original && grep -n "real-time\|cpu-time\|current-time\|(time \|date-and-time\|eq-hashtable\|make-hashtable\|(collect" *.ss 
+  > $ cd /tmp && cat > ord.ss <<'EOF'
+(define (f a b c) (list a b c))
+(define (show x) (display x) x)
+(f (show 1) (show 2) (show 3)) (newline)
+(list (show 1) (show 2)
+  > $ for p in "abc abd xyz" "abc abd ijk" "eqe qeq abbbc" "abc abd mrrjjj"; do for s in 1 2 3; do echo "$p $s: $( { /usr/bin/time -f %es scheme --script chez_scheme/
+  > $ timeout 100 scheme --script chez_scheme/oracle/run.ss abc abd xyz wyz --seed 5 --max-codelets 20000 | tail -6; scheme --script chez_scheme/oracle/run.ss abc abd
+
+Runs are deterministic-looking and fast (~1 s each). Now the tests: an RNG-spec check and the headless-run check.
+  > $ cat > chez_scheme/oracle/tests/rng-check.ss <<'EOF'
+;; Item 01: the randomness plan.  The oracle uses Chez 10's own random and
+;; random-seed; docs/trace-format
+  > $ sed 's/90763387/90763389/' chez_scheme/oracle/tests/rng-check.ss > /tmp/rng-bad.ss && scheme --script /tmp/rng-bad.ss | tail -2; sed 's/(modulo (hi s1) 16)/(mod
+  > $ cat > chez_scheme/oracle/tests/headless-run-check.ss <<'EOF'
+;; Item 01: the original runs headless under Chez 10.  For each problem and
+;; seed, chez_scheme/or
+  > $ python3 - <<'EOF'
+p='chez_scheme/oracle/tests/headless-run-check.ss'
+s=open(p).read()
+s=s.replace('''(define scheme-program
+  (let ((p (car (command-line))))   
+  > $ sed -n 19,122p chez_scheme/original/demos.ss
+  > $ R="scheme --script chez_scheme/oracle/run.ss"; $R abc aabbcc kkjjii --seed 912835776 --max-codelets 1600 --keep-going | grep -E "^Answer"; echo ---; $R a b z --
+
+Remarkable: the `demos.ss` seeds replay under Chez 10 (misc1, misc4, misc5, misc9 match their documented answers and time steps exactly). Checking the rest.
+  > $ R="scheme --script chez_scheme/oracle/run.ss"; $R abc abd ijk abd --seed 3386544399 --max-codelets 3000 | grep -E "^Answer|^Codelets|Comment: (Aha|Okay, I'm)"; 
+  > $ cat > chez_scheme/oracle/tests/demo-replay-check.ss <<'EOF'
+;; Item 01: the demo seeds in chez_scheme/original/demos.ss still replay.
+;; Chez 10's random/random
+  > $ sed -i 's/--max-codelets 1721 --keep-going/--max-codelets 1800 --keep-going/; s/692549763 --max-codelets 2257/692549763 --max-codelets 3000/' chez_scheme/oracle
+  > $ python3 - <<'EOF'
+p='chez_scheme/oracle/run.ss'
+s=open(p).read()
+s=s.replace(""";;; until K codelets have run.  --max-codelets K uses the original's own
+;;; bre
+
+Now the docs: the randomness spec in `docs/trace-format.md`, plus porting notes.
+  > Write /home/al/dev/metacat/docs/trace-format.md
+  > $ rm -rf /tmp/oc && mkdir -p /tmp/oc/oracle && ln -s $PWD/chez_scheme/original /tmp/oc/original && cp chez_scheme/oracle/run.ss /tmp/oc/oracle/ && for m in "works
+  > $ for p in "abc abd ijk" "eqe qeq abbbc" "abc abd mrrjjj" "abc abd xyz"; do for s in 1 2 3; do  sed "s/workspace '(garbage-collect caching-on flush)/workspace '(g
+  > $ cd /home/al/dev/metacat/chez_scheme/original && python3 -c "
+s=open('groups.ss').read(); i=30121; print(s.count('\n',0,i)+1); print(s[i-500:i+100])"; sed -n 25,
+  > $ cd /home/al/dev/metacat && cat >> docs/porting-notes.md <<'EOF'
+
+## The headless oracle (item 01)
+How `chez_scheme/oracle/prelude.ss` gets the unmodified origin
+  > $ sed -n 95,175p chez_scheme/oracle/prelude.ss && sed -n 225,290p chez_scheme/oracle/prelude.ss
+
+Tidying the prelude, then running the gate.
+  > $ python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=open(p).read()
+s=s.replace(""";; Each codelet type keeps its own reference to the Coderack window,
+    ;; 
+  > $ git status --short
+
+Now PROGRESS.md and iterations.md.
+  > $ sed -i 's/- \*\*Current\*\*: 1\/18 SOLVED/- **Current**: 2\/18 SOLVED/' ralph_loops/loop0001/PROGRESS.md && sed -i 's/^- \[ \] \*\*01 The original, headless, un
+  > $ cat >> ralph_loops/loop0001/PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 2 — 2026-10-02 20:52
+Item 01 (The original, headless, under Chez 10): **SOLVED**.
+
+### Comple
+
+Item 01 is done and the gate passes. The unmodified Metacat 1.2 source now loads and runs headless under Chez 10. Nothing in `chez_scheme/original/` was touched, and nothing is committed.
+
+**What was built**
+- **`chez_scheme/oracle/prelude.ss`** loads `metacat.ss` and all 44 files as they are. It supplies `extend-syntax` as a `syntax-case` macro (including its guard expressions and `with` bindings), empty modules for the five `swl:*` imports, inert stand-ins for the toolkit widgets, no-op threads, and the three settings `metacat.ss` expects.
+- **Window stand-ins:** each window is replaced by an object that ignores the specific messages a headless run sends and raises an error on anything else. That way a display call that could feed a value back into the model can't slip through unnoticed.
+- **Commentary** comes from the original Commentary window code, recording its paragraphs instead of drawing them. The prelude also prints a backtrace on errors.
+- **`chez_scheme/oracle/run.ss abc abd xyz --seed N --max-codelets K [--keep-going]`** prints the commentary, each answer with its quality, codelet count and temperature, and a summary. By default it stops at the first answer, where the original pauses for Go; `--keep-going` continues as if Go were pressed. Justify runs (four strings) also work. A run takes about 1 second.
+
+**Randomness plan** (written up in `docs/trace-format.md`): the oracle keeps Chez 10's own `random`, with no generator swapped in. I read Chez v10's C source: it is a 32-bit linear congruential generator (`S := S·72931 + 90763387 mod 2³²`) with a simple, exact way of turning the state into integers and floats. The spec is precise enough for item 03 to port to Racket.
+- `rng-check.ss` compares the spec with Chez's built-ins draw for draw. Changing a constant or a bit field makes it fail, so the check has teeth.
+- Racket's own `random` is a different generator and must not be used for this.
+
+**Findings that change assumptions in TASK.md**
+1. **The `demos.ss` seeds do replay**, contrary to what the item expected. Five documented runs come out exactly as the comments in `demos.ss` say, answers and time steps alike: misc1, misc2, misc4, misc5 and the commented-out misc9. misc3 and the unused misc6–8 do not. `demo-replay-check.ss` locks the five in.
+2. **Chez doesn't evaluate arguments left to right.** For example, `(f a b c)` was observed to evaluate c, then a, then b, and `let` goes right to left. Racket goes left to right, so every place where two or more arguments draw random numbers (or have other order-dependent side effects) must be ported in Chez's order. This is recorded in `docs/trace-format.md` and `docs/porting-notes.md`.
+3. **Some model code depends on things only the windows set up, even with the display off.** Each codelet type messages its own reference to the Coderack window on every run, and memory entries call icon procedures that the Memory window installs. In the other direction, some graphics-only code changes model objects (for example `set-shrunk-singleton?` on groups). Later GUI items need to check this never changes a run. Details are in `porting-notes.md`.
+
+**Tests** (now part of `tests/run-tests.sh`; the Chez part takes about 25 s):
+- `headless-run-check.ss`: the four required problems with seeds 1–3 all reach an answer, and each repeated run gives byte-identical output.
+- `rng-check.ss`: the generator spec, as above.
+- `demo-replay-check.ss`: the five demo runs.
+
+On tests-first: I built a first rough version of the prelude before writing the checks, to find out what loading needed. I've said so in PROGRESS.md. The run check failed without `run.ss` (12 failures). The demo check first failed on how the codelet cap counts, and that is now documented in `run.ss`.
+
+PROGRESS.md now has an Iteration 2 entry and reads 2/18 SOLVED, and item 01 is marked `[x]` in `iterations.md`.
+
+# result: success in 1152s, 92 turns, cost $4.24

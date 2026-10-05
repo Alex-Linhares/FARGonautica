@@ -1,0 +1,241 @@
+# session it16 started 2026-10-04 02:09:28
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; sed -n '/^- \[ \] \*\*15/,/^- \[ \] \*\*16/p' ralph_loops/loop0002/iterations.md; tail -30 ralph_loops/loop0002/iterations.md; ls pytho
+  > $ cd /home/al/dev/metacat; cat python/metacat/gui/views.py; sed -n 1,80p python/metacat/gui/hosts.py; cat python/tests/render_views.py | head -150
+  > $ cd /home/al/dev/metacat; wc -l racket/gui/gui.rktl racket/gui/gui.rkt racket/gui/setup.rktl racket/gui/engine-route.rkt racket/main.rkt racket/gui-tests/control
+  > $ cd /home/al/dev/metacat; sed -n 80,419p racket/gui/gui.rkt; cat racket/gui/engine-route.rkt racket/gui/setup.rktl racket/main.rkt
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/gui.ss
+  > Read /home/al/dev/metacat/chez_scheme/original/gui.ss
+  > $ cd /home/al/dev/metacat; grep -n "port" racket/gui/gui.rktl | head -80; cat chez_scheme/original/demos.ss | sed -n 18,122p
+
+I'm working on item 15 (the Tkinter control panel). I've read `gui.ss` and `demos.ss` and am now checking the Racket port's translation and the Python run loop before I write tests.
+  > $ cd /home/al/dev/metacat; sed -n 1,140p racket/gui-tests/control-panel-test.rkt
+  > $ cd /home/al/dev/metacat; grep -n "^def \|^g_\|^p_\|^class \|^    def " python/metacat/run.py | head -80; grep -n "def \|^g_\|^p_" python/metacat/setup.py | head
+  > $ cd /home/al/dev/metacat; sed -n 55,380p python/metacat/run.py; sed -n 440,520p python/metacat/run.py
+  > $ cd /home/al/dev/metacat; sed -n 1,200p python/metacat/gui/swl.py; grep -n "class TkHost" -A80 python/metacat/gui/hosts.py | head -140
+  > $ cd /tmp; cat > /tmp/tkthr.py <<'EOF'
+import tkinter, threading, time
+root=tkinter.Tk()
+print("threaded", root.tk.call('set','tcl_platform(threaded)'))
+c=tkinter
+  > $ cd /home/al/dev/metacat/python; cat > /tmp/count.py <<'EOF'
+import sys, io, time
+from contextlib import redirect_stdout
+sys.path.insert(0,'tests')
+from metacat 
+  > $ cd /home/al/dev/metacat/python; PYTHONPATH=. python3 /tmp/count.py
+  > $ cd /home/al/dev/metacat/python; grep -n '"get-toplevel"\|"restore-position"\|"remember-position"\|"make-resizable"\|def start_resize_listener\|"get-lines"\|"new
+  > $ cd /home/al/dev/metacat/python; sed -n 1,260p metacat/gui/general_graphics.py; sed -n 150,175p metacat/chez.py; sed -n 460,480p metacat/utilities.py; sed -n 109
+  > $ cd /home/al/dev/metacat/python; grep -n "def configure\|def mouse_press\|def set_resize_handler\|def set_mouse_handlers\|resize_handler\b" -A14 metacat/gui/sgl.
+  > $ cd /home/al/dev/metacat; sed -n 20,60p racket/gui/gui.rktl; sed -n 430,520p racket/gui/gui.rktl; sed -n 670,800p racket/gui/gui.rktl
+  > $ cd /home/al/dev/metacat/python; grep -n "thread_break\|g_repl_thread" -r metacat | head; grep -n "def set_thread_break_handler" -B5 -A30 metacat/gui/workspace_g
+  > $ cd /home/al/dev/metacat/python; grep -n "gui\|logo" metacat/gui/constants.py | head -30; grep -n "^def \|^g_\|^p_\|^class " metacat/gui/fonts.py; grep -n "def c
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^    def \|^class " metacat/headless.py metacat/trace_writer.py; sed -n '/^def run_problem/,/^def [a-z_]*(/p' me
+  > $ cd /home/al/dev/metacat/python; sed -n 100,250p metacat/headless.py; sed -n 186,260p metacat/trace_writer.py; sed -n 320,400p metacat/trace_writer.py; head -3 .
+  > $ cd /home/al/dev/metacat/python; sed -n 1,120p metacat/view_globals.py; grep -n "def report_error_and_halt" -A15 metacat/objects.py
+  > $ cd /home/al/dev/metacat; grep -rn "valid-token-list?" chez_scheme/original/*.ss | head -3; grep -n "gui\|load" chez_scheme/oracle/diff-eval.ss | head -20; grep 
+  > $ cd /home/al/dev/metacat; grep -rn "valid-token-list" racket/ docs/ | grep -v compiled | head; grep -n "tokenize\|speed-slider\|gui.ss" chez_scheme/oracle/prelud
+  > $ cd /home/al/dev/metacat; sed -n 65,80p docs/code-map.md; grep -n "def valid_token_list_p" -A25 python/metacat/*.py | head -40
+  > $ cd /home/al/dev/metacat; sed -n 40,80p python/oracle/batteries/coderack-extra-battery.scm; grep -n "num-of-flashes\|define %flash-pause%" chez_scheme/original/*
+
+Writing the Chez battery for the GUI's pure parts now.
+  > Write /home/al/dev/metacat/python/oracle/batteries/gui-battery.scm
+  > $ cd /home/al/dev/metacat; python3 python/oracle/capture.py --help 2>&1 | head; python3 python/oracle/capture.py gui 2>&1 | tail -5; ls python/fixtures/gui; for f
+  > $ cd /home/al/dev/metacat; grep -n "(get-name\|(print-name\|(object-type" chez_scheme/original/coderack.ss | head
+  > $ cd /home/al/dev/metacat; sed -n 60,110p chez_scheme/original/coderack.ss
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/oracle/batteries/gui-battery.scm'
+s=open(p).read()
+s=s.replace("""(test clamp-codelet-patterns
+  (list %top
+  > $ cd /home/al/dev/metacat/python; grep -n "LOCAL\|extra\|sgl-tcl" tests/test_fixtures.py | head -20; sed -n 1,60p tests/test_panels.py; grep -n "def canon\|def ch
+  > $ cd /home/al/dev/metacat/python; sed -n 30,75p tests/scheme_canon.py; grep -n "def scheme_to_python" -A5 metacat/names.py; grep -n "def defines\|def original_def
+  > $ cd /home/al/dev/metacat/python; sed -n 120,175p tests/test_run.py; cat tests/conftest.py | head -40; cat run-tests.sh
+  > $ cd /home/al/dev/metacat/python; grep -n "xvfb" -B3 -A25 tests/test_views.py | head -60
+  > $ cd /home/al/dev/metacat; grep -n "file-dialog-directory\|\*repl-thread\*\|(define \*platform\|swl:screen-height" chez_scheme/original/*.ss | head; grep -n "clas
+  > $ cd /home/al/dev/metacat; sed -n 20,60p chez_scheme/original/metacat.ss; grep -n "def grab\|^def " python/tests/render_sgl_fixture.py
+
+I have what I need. I'm writing the tests first: `test_gui.py` (the Chez fixtures, structure checks, and a slow-tier run of a GUI driver under xvfb), then `drive_gui.py`.
+  > Write /home/al/dev/metacat/python/tests/test_gui.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import re
+from pathlib import Path
+for s in ("gui","demos"):
+    t=re.sub(r";[^\n]*","",Path(f"../chez_scheme/
+  > $ cd /home/al/dev/metacat/python; sed -i 's/("gui", "gui.gui", 54)/("gui", "gui.gui", 61)/; s/            vg.p_text_scroll_pause, gui.p_codelet_highlight_pause, g
+  > $ cd /home/al/dev/metacat/python; sed -n 90,150p tests/render_sgl_fixture.py; sed -n 150,200p tests/render_views.py
+
+Now the driver script, `tests/drive_gui.py`.
+  > Write /home/al/dev/metacat/python/tests/drive_gui.py
+  > $ cd /home/al/dev/metacat/python; grep -n '"get-clamp-type"\|"get-last-event"\|"undo-last-clamp"' metacat/trace.py | head; grep -n "p_comment_window_font\|\"new-f
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/drive_gui.py'
+s=open(p).read()
+s=s.replace('''    check(cg.p_comment_window_font is not False and "18
+
+Tests written. Running them before any code exists, to record the failures:
+  > $ cd /home/al/dev/metacat/python; python3 -m pytest -q tests/test_gui.py 2>&1 | tail -25
+
+Before the code: 18 failed, 2 passed (the manifest check and the no-engine-imports check). Now `metacat/demos.py`:
+  > $ cd /home/al/dev/metacat/python; head -20 metacat/run.py; grep -n "EXCEPTIONS" -A15 metacat/names.py | head -30; python3 -c "
+from metacat.names import scheme_to
+  > Write /home/al/dev/metacat/python/metacat/demos.py
+  > $ cd /home/al/dev/metacat/python; grep -n "LOAD_ORDER" -A20 metacat/engine.py | head -40; grep -n "def translated_modules" -A10 metacat/engine.py
+  > $ cd /home/al/dev/metacat/python; cat metacat/gui/__init__.py | head -30; grep -n "def otherwise" -A3 metacat/gui/general_graphics.py | head -8; grep -n "^def del
+  > $ cd /home/al/dev/metacat; sed -n 225,330p racket/gui/gui.rktl
+  > $ cd /home/al/dev/metacat; grep -n "define swl-font" -A12 chez_scheme/original/fonts.ss; sed -n 60,90p python/metacat/gui/fonts.py; grep -n "g_platform" python/me
+  > $ cd /home/al/dev/metacat; sed -n 930,966p racket/gui/gui.rktl; sed -n 1040,1060p racket/gui/gui.rktl
+  > Write /home/al/dev/metacat/python/metacat/gui/gui.py
+  > $ cd /home/al/dev/metacat/python; grep -n "^def char_\|^def string_to_number\|^def number_to_string\|^def format_" metacat/chez.py; grep -n "^def member_p\|^def p
+  > $ cd /home/al/dev/metacat; grep -n "isalpha" -r python/metacat | head; grep -n "str.isalpha" -A12 docs/anomalies_and_quirks.md | head -30
+  > $ cd /home/al/dev/metacat; python3 -c "
+t=open('python/fixtures/gui/000-tokenize-string.txt').read()
+i=t.find('-12'); print(t[i-10:])"
+
+Still on item 15: `gui.py` is written. I'm fixing the Unicode character classes in the tokenizer, then writing `app.py` (setup, the engine thread, window layout).
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/gui/gui.py'
+s=open(p).read()
+s=s.replace('''def _alphabetic_p(c):
+    # Chez's char-alphabetic? (an
+  > $ cd /home/al/dev/metacat/python; sed -n 825,870p metacat/chez.py; python3 -m pytest -q tests/test_gui.py -k "tokenize" 2>&1 | grep Failed
+
+Python's `\d` matches Arabic-Indic digits and Chez's `string->number` doesn't. Fixing `chez.string_to_number` with ASCII-only patterns:
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/chez.py'
+s=open(p).read()
+s=s.replace('''    exponents; #f for anything else.  Only gui.ss uses it 
+  > $ cd /home/al/dev/metacat; sed -n '/define create-mcat-logo/,/^$/p' chez_scheme/original/fonts.ss; grep -n "def set_window_size_defaults\|def make_window_host\|de
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/gui/fonts.py'
+s=open(p).read()
+old=s[s.index('def create_mcat_logo'):s.index('# positive size value
+
+Now the Tk window host: show/hide, the real geometry, window-manager close, resize events and mouse clicks to the viewport.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/gui/hosts.py'
+s=open(p).read()
+s=s.replace('''    def set_scroll_region_bang(self, x1, y1, x2, y2):
+  > $ cd /home/al/dev/metacat/python; grep -rn "def make_canvas\|set_window_host_maker" tests/ metacat/ | grep -v "hosts.py" | head
+  > $ cd /home/al/dev/metacat/python; sed -n 145,165p tests/test_gui_windows.py
+
+Now `metacat/gui/app.py`: setup, `enable-resizing`, the engine (REPL) thread, and the window layout.
+  > $ cd /home/al/dev/metacat/python; grep -n "^def load" -A14 metacat/gui/constants.py; grep -n "def load" -A12 metacat/gui/general_graphics.py | head -20
+  > Write /home/al/dev/metacat/python/metacat/gui/app.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/gui/app.py'
+s=open(p).read()
+s=s.replace("from metacat import chez, engine, run, setup\n","from met
+  > $ cd /home/al/dev/metacat/python; python3 -m pytest -q tests/test_gui.py -m "not slow" 2>&1 | grep -B3 "AssertionError" | head
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/gui/gui.py'
+s=open(p).read()
+s=s.replace('''def _default_file_dialog(title, mode, default_dir):
+   
+
+A segfault during the full run, almost certainly a Tk call from the engine thread. Running with faulthandler to find it:
+  > $ env -u WAYLAND_DISPLAY timeout 600 xvfb-run -a -s "-screen 0 2560x1600x24" python3 -X faulthandler python/tests/drive_gui.py /tmp/dg windows full_run 2>&1 | gre
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/gui/swl.py'
+s=open(p).read()
+s=s.replace('''def swl_tcl_eval(win, *args):''','''class ThreadSafeTk:
+
+The full run matches its golden byte for byte. The step-mode failure is in my test: the trace's start line takes `t` from the previous run's codelet count. Fixing the test:
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/drive_gui.py'
+s=open(p).read()
+s=s.replace('''        trace_writer.PORT = self.port
+        trace_wri
+  > $ env -u WAYLAND_DISPLAY timeout 600 xvfb-run -a -s "-screen 0 2560x1600x24" python3 -X faulthandler python/tests/drive_gui.py /tmp/dg windows breakpoint_click 2>
+  > $ env -u WAYLAND_DISPLAY timeout 600 xvfb-run -a -s "-screen 0 2560x1600x24" python3 -X faulthandler python/tests/drive_gui.py /tmp/dg windows breakpoint_click 2>
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/drive_gui.py'
+s=open(p).read()
+s=s.replace('''        e.delete(0, "end")
+        e.insert(0, text)
+  
+  > $ env -u WAYLAND_DISPLAY timeout 600 xvfb-run -a -s "-screen 0 2560x1600x24" python3 -X faulthandler python/tests/drive_gui.py /tmp/dg 2>&1 | grep -v "^Comment:\|
+
+Every scenario now passes up to the screenshot. The remaining crash is in my own ctypes screen grab. Debugging that on its own:
+  > $ cd /home/al/dev/metacat/python; sed -n 535,550p tests/drive_gui.py; cat > /tmp/g.py <<'EOF'
+import sys; sys.path.insert(0,'tests')
+import drive_gui
+EOF
+cat > /t
+
+`XCloseDisplay` had no argtypes, so ctypes passed the 64-bit display pointer as a 32-bit int. Fixing:
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/drive_gui.py'
+s=open(p).read()
+s=s.replace('''    display = x11.XOpenDisplay(None)
+    image = x11.XG
+
+All scenarios pass, and each GUI run's trace equals its golden. Now looking at the screenshot:
+  > Read /tmp/dg/screen.png
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/drive_gui.py'
+s=open(p).read()
+s=s.replace('''def screenshot():
+    on_main(lambda: root.update_idlet
+  > Read /tmp/dg/screen-run7.png
+  > $ cd /home/al/dev/metacat/python; mkdir -p tests/snapshots && cp /tmp/dg/screen-run7.png tests/snapshots/gui-run7.png && cp /tmp/dg/screen.png tests/snapshots/gui
+
+All 87 pass, including the GUI drive. A few quick mutation checks on `gui.py`:
+  > $ cd /home/al/dev/metacat/python; cp metacat/gui/gui.py /tmp/gui.py.orig; cat > /tmp/mut15.py <<'EOF'
+import subprocess, shutil, os, sys
+P='metacat/gui/gui.py'; o
+
+All 6 mutants were caught. Now the docs: three anomaly entries, the plan's "As built (item 15)", the README and the tier comment.
+  > $ cd /home/al/dev/metacat; tail -20 docs/anomalies_and_quirks.md; grep -n "^## \|^### As built" docs/python-translation-plan.md | tail -5; grep -n "gui\|## " pyth
+  > $ cd /home/al/dev/metacat; grep -n "As built (item 14)" docs/python-translation-plan.md; sed -n 225,260p python/README.md; grep -n "^### Python" docs/anomalies_an
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+entries='''### Python: tkinter's cross-thread Tk calls crash; the G
+
+Docs are updated. Running the gate:
+  > $ cd /home/al/dev/metacat; time python3 ralph_loops/loop0002/gate.py 2>&1 | tail -8
+
+Gate passed: 1397 tests in 6 min 46 s. Quick smoke test of the entry point under Xvfb, then PROGRESS:
+  > $ cd /home/al/dev/metacat/python; env -u WAYLAND_DISPLAY timeout 8 xvfb-run -a python3 -m metacat.gui; echo "rc=$?"; cd ..; git status --short | head -30
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='ralph_loops/loop0002/iterations.md'
+s=open(p).read()
+s=s.replace("- [ ] **15 The control panel and windows.**","- 
+
+Item 15 (the control panel and windows) is solved, and the gate passed: 1397 tests in 6 min 46 s.
+
+**What changed**
+- **New files:**
+  - `metacat/gui/gui.py`: gui.ss, with all 61 definitions (control panel, menus, dialogs, window controllers).
+  - `metacat/demos.py`: demos.ss.
+  - `metacat/gui/app.py`: `setup`, `enable-resizing`, the engine thread and the window layout.
+  - `python3 -m metacat.gui`: opens the windows; I checked under Xvfb that it starts and waits for input.
+- **Engine thread, not `after` stepping:** suspend can break from inside a codelet, and only a parked thread can resume there. The engine thread stands in for the original's REPL thread and runs each command through item 11's break/go mechanism, so the GUI keeps answering during a run (the main thread replied within 0.002 s).
+- **A crash I fixed:** tkinter's own cross-thread Tk calls segfaulted during the first GUI run. Every Tk call from another thread now goes to the main thread through a queue and a pipe (`swl.ThreadSafeTk`). This is logged in the anomalies doc.
+- **A smaller fix in `chez.py`:** `string_to_number` now reads only ASCII digits. Python's `int()` accepted Arabic-Indic digits where Chez gives `#f`.
+
+**Tests**
+- **Written first:** 18 failed and 2 passed before any code existed. Expected values come from a new Chez battery, `gui-battery.scm`: the command-line parser, the speed slider at every value, the demo problems and the clamp patterns.
+- **The GUI under Xvfb:** `drive_gui.py` uses the real widgets for:
+  - a full run;
+  - step mode (40-codelet steps);
+  - a demo with Stop and Go;
+  - a breakpoint resumed by a click on the Workspace;
+  - Reset;
+  - the menus and dialogs;
+  - saving the commentary;
+  - a resize.
+
+  Each of the five GUI runs wrote a trace identical to its golden, byte for byte.
+- **Mutation checks:** all 6 mutants of `gui.py` were caught.
+- **Screenshot:** I looked at the whole-screen grab after run 7's answer (`python/tests/snapshots/gui-run7.png`); it has the same content as `docs/screenshots/run7-wyz.png`.
+
+**Notes**
+- The Help window reads `help.txt` from `chez_scheme/original/`. Item 16's packaging needs to make it reachable from an installed package.
+- An error in the model during a GUI run puts the panel back in input mode with an "Error: ..." line, as the Racket port does. The original left it in run mode.
+
+PROGRESS.md has the iteration 16 entry and now reads 16/18 SOLVED, and item 15 is marked `[x]` in iterations.md. I haven't committed anything; the driver does that.
+
+# result: success in 1845s, 93 turns, cost $9.33

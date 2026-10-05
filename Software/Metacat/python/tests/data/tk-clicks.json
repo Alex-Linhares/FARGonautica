@@ -1,0 +1,1955 @@
+{
+ "steps": [
+  [
+   "keypad Enter on the command line",
+   "Please enter a problem:"
+  ],
+  [
+   "Return on the command line",
+   " abc -> abd; ijk -> ?       seed:  1 "
+  ],
+  [
+   "at the breakpoint",
+   {
+    "t": 100,
+    "rng": 111381001,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 1,
+    "highlighted_events": [],
+    "answers": 0,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "LetterCtgy",
+       "Identity",
+       17
+      ],
+      [
+       "StringPos",
+       "Identity",
+       15
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "LetterCtgy",
+       null,
+       14
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": 100
+   }
+  ],
+  [
+   "workspace right, shift, middle and shift-right clicks at the breakpoint",
+   {
+    "t": 100,
+    "rng": 111381001,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 1,
+    "highlighted_events": [],
+    "answers": 0,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "LetterCtgy",
+       "Identity",
+       17
+      ],
+      [
+       "StringPos",
+       "Identity",
+       15
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "LetterCtgy",
+       null,
+       14
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": 100
+   }
+  ],
+  [
+   "workspace left click resumes",
+   {
+    "t": 395,
+    "rng": 516131081,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 5,
+    "highlighted_events": [],
+    "answers": 1,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "LetterCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       65
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       54
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       58
+      ],
+      [
+       "LetterCtgy",
+       null,
+       99
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       0
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "shift-Return on the command line",
+   " abc -> abd; ijk -> ?       seed:  2 "
+  ],
+  [
+   "second run",
+   {
+    "t": 734,
+    "rng": 2209905282,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 6,
+    "highlighted_events": [],
+    "answers": 2,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "LetterCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       98
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       97
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "Length",
+       "Identity",
+       68
+      ],
+      [
+       "LetterCtgy",
+       null,
+       99
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "visible trace events",
+   [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  ],
+  [
+   "trace left click selects an event",
+   {
+    "t": 734,
+    "rng": 2209905282,
+    "running": false,
+    "display_mode": true,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 6,
+    "highlighted_events": [
+     5
+    ],
+    "answers": 2,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [],
+     "vertical-bridge": [],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "trace right and shift clicks",
+   {
+    "t": 734,
+    "rng": 2209905282,
+    "running": false,
+    "display_mode": true,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 6,
+    "highlighted_events": [
+     5
+    ],
+    "answers": 2,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [],
+     "vertical-bridge": [],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "trace left click again unselects it",
+   {
+    "t": 734,
+    "rng": 2209905282,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 6,
+    "highlighted_events": [],
+    "answers": 2,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "LetterCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       98
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       97
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "Length",
+       "Identity",
+       68
+      ],
+      [
+       "LetterCtgy",
+       null,
+       99
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "trace control click selects another event",
+   {
+    "t": 734,
+    "rng": 2209905282,
+    "running": false,
+    "display_mode": true,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 6,
+    "highlighted_events": [
+     0
+    ],
+    "answers": 2,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "ObjectCtgy",
+       "Identity",
+       100
+      ],
+      [
+       "StringPos",
+       "Identity",
+       100
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       100
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       100
+      ],
+      [
+       "StringPos",
+       "Identity",
+       100
+      ]
+     ],
+     "bottom-bridge": [
+      [
+       "LetterCtgy",
+       "succ",
+       100
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       100
+      ]
+     ]
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "workspace left click restores the current state",
+   {
+    "t": 734,
+    "rng": 2209905282,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 6,
+    "highlighted_events": [],
+    "answers": 2,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "LetterCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       98
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       97
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "Length",
+       "Identity",
+       68
+      ],
+      [
+       "LetterCtgy",
+       null,
+       99
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "answers",
+   [
+    "ijl",
+    "ijd"
+   ]
+  ],
+  [
+   "memory left click selects an answer",
+   {
+    "t": 734,
+    "rng": 2209905282,
+    "running": false,
+    "display_mode": true,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 6,
+    "highlighted_events": [],
+    "answers": 2,
+    "highlighted_answers": [
+     0
+    ],
+    "themes": {
+     "top-bridge": [
+      [
+       "ObjectCtgy",
+       "Identity",
+       100
+      ],
+      [
+       "StringPos",
+       "Identity",
+       100
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       100
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       100
+      ],
+      [
+       "StringPos",
+       "Identity",
+       100
+      ]
+     ],
+     "bottom-bridge": [
+      [
+       "LetterCtgy",
+       "succ",
+       100
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       100
+      ]
+     ]
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "memory left click on a second answer compares them",
+   {
+    "t": 734,
+    "rng": 2209905282,
+    "running": false,
+    "display_mode": true,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 6,
+    "highlighted_events": [],
+    "answers": 2,
+    "highlighted_answers": [
+     1
+    ],
+    "themes": {
+     "top-bridge": [
+      [
+       "StringPos",
+       "Identity",
+       100
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       100
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       100
+      ],
+      [
+       "StringPos",
+       "Identity",
+       100
+      ]
+     ],
+     "bottom-bridge": [
+      [
+       "LetterCtgy",
+       null,
+       100
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       100
+      ]
+     ]
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "memory double click: two presses",
+   {
+    "t": 734,
+    "rng": 2209905282,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 6,
+    "highlighted_events": [],
+    "answers": 2,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "LetterCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       98
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       97
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "Length",
+       "Identity",
+       68
+      ],
+      [
+       "LetterCtgy",
+       null,
+       99
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "memory right and shift clicks",
+   {
+    "t": 734,
+    "rng": 2209905282,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 6,
+    "highlighted_events": [],
+    "answers": 2,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "LetterCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       98
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       97
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "Length",
+       "Identity",
+       68
+      ],
+      [
+       "LetterCtgy",
+       null,
+       99
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "workspace left click, not in display mode, continues the run",
+   {
+    "t": 1343,
+    "rng": 1017500326,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 7,
+    "highlighted_events": [],
+    "answers": 3,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "LetterCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       98
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       94
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "Length",
+       "Identity",
+       99
+      ],
+      [
+       "LetterCtgy",
+       null,
+       99
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "clicks on the panes without press handlers",
+   {
+    "t": 1343,
+    "rng": 1017500326,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 7,
+    "highlighted_events": [],
+    "answers": 3,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "LetterCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       98
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "Direction",
+       "Identity",
+       94
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       98
+      ],
+      [
+       "Length",
+       "Identity",
+       99
+      ],
+      [
+       "LetterCtgy",
+       null,
+       99
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       97
+      ],
+      [
+       "StringPos",
+       "Identity",
+       98
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "theme edit mode",
+   {
+    "t": 1343,
+    "rng": 1017500326,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": true,
+    "events": 7,
+    "highlighted_events": [],
+    "answers": 3,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [],
+     "vertical-bridge": [],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "workspace, trace and memory clicks raise the dialog",
+   {
+    "t": 1343,
+    "rng": 1017500326,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": true,
+    "events": 7,
+    "highlighted_events": [],
+    "answers": 3,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [],
+     "vertical-bridge": [],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "first clicks edit the theme types (not the bottom one outside justify mode)",
+   {
+    "t": 1343,
+    "rng": 1017500326,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": true,
+    "events": 7,
+    "highlighted_events": [],
+    "answers": 3,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "AlphaPos",
+       "Identity",
+       0
+      ],
+      [
+       "AlphaPos",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       null,
+       0
+      ],
+      [
+       "BondFacet",
+       "Identity",
+       0
+      ],
+      [
+       "BondFacet",
+       null,
+       0
+      ],
+      [
+       "Direction",
+       "Identity",
+       0
+      ],
+      [
+       "Direction",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       null,
+       0
+      ],
+      [
+       "Length",
+       "Identity",
+       0
+      ],
+      [
+       "Length",
+       "pred",
+       0
+      ],
+      [
+       "Length",
+       "succ",
+       0
+      ],
+      [
+       "Length",
+       null,
+       0
+      ],
+      [
+       "LetterCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "pred",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       0
+      ],
+      [
+       "LetterCtgy",
+       null,
+       0
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       0
+      ],
+      [
+       "StringPos",
+       "Opposite",
+       0
+      ],
+      [
+       "StringPos",
+       null,
+       0
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "AlphaPos",
+       "Identity",
+       0
+      ],
+      [
+       "AlphaPos",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       null,
+       0
+      ],
+      [
+       "BondFacet",
+       "Identity",
+       0
+      ],
+      [
+       "BondFacet",
+       null,
+       0
+      ],
+      [
+       "Direction",
+       "Identity",
+       0
+      ],
+      [
+       "Direction",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       null,
+       0
+      ],
+      [
+       "Length",
+       "Identity",
+       0
+      ],
+      [
+       "Length",
+       "pred",
+       0
+      ],
+      [
+       "Length",
+       "succ",
+       0
+      ],
+      [
+       "Length",
+       null,
+       0
+      ],
+      [
+       "LetterCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "pred",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       0
+      ],
+      [
+       "LetterCtgy",
+       null,
+       0
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       0
+      ],
+      [
+       "StringPos",
+       "Opposite",
+       0
+      ],
+      [
+       "StringPos",
+       null,
+       0
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "theme left, right and shift clicks",
+   {
+    "t": 1343,
+    "rng": 1017500326,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": true,
+    "events": 7,
+    "highlighted_events": [],
+    "answers": 3,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "AlphaPos",
+       "Identity",
+       0
+      ],
+      [
+       "AlphaPos",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       null,
+       0
+      ],
+      [
+       "BondFacet",
+       "Identity",
+       0
+      ],
+      [
+       "BondFacet",
+       null,
+       -100
+      ],
+      [
+       "Direction",
+       "Identity",
+       0
+      ],
+      [
+       "Direction",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       null,
+       0
+      ],
+      [
+       "Length",
+       "Identity",
+       0
+      ],
+      [
+       "Length",
+       "pred",
+       0
+      ],
+      [
+       "Length",
+       "succ",
+       0
+      ],
+      [
+       "Length",
+       null,
+       0
+      ],
+      [
+       "LetterCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "pred",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       0
+      ],
+      [
+       "LetterCtgy",
+       null,
+       0
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       -100
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       0
+      ],
+      [
+       "StringPos",
+       "Opposite",
+       0
+      ],
+      [
+       "StringPos",
+       null,
+       0
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "AlphaPos",
+       "Identity",
+       0
+      ],
+      [
+       "AlphaPos",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       null,
+       0
+      ],
+      [
+       "BondFacet",
+       "Identity",
+       0
+      ],
+      [
+       "BondFacet",
+       null,
+       -100
+      ],
+      [
+       "Direction",
+       "Identity",
+       0
+      ],
+      [
+       "Direction",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       null,
+       0
+      ],
+      [
+       "Length",
+       "Identity",
+       0
+      ],
+      [
+       "Length",
+       "pred",
+       0
+      ],
+      [
+       "Length",
+       "succ",
+       0
+      ],
+      [
+       "Length",
+       null,
+       0
+      ],
+      [
+       "LetterCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "pred",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       0
+      ],
+      [
+       "LetterCtgy",
+       null,
+       0
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       0
+      ],
+      [
+       "StringPos",
+       "Opposite",
+       0
+      ],
+      [
+       "StringPos",
+       null,
+       0
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "second clicks unselect, a third selects again",
+   {
+    "t": 1343,
+    "rng": 1017500326,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": true,
+    "events": 7,
+    "highlighted_events": [],
+    "answers": 3,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "AlphaPos",
+       "Identity",
+       0
+      ],
+      [
+       "AlphaPos",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       null,
+       0
+      ],
+      [
+       "BondFacet",
+       "Identity",
+       0
+      ],
+      [
+       "BondFacet",
+       null,
+       0
+      ],
+      [
+       "Direction",
+       "Identity",
+       0
+      ],
+      [
+       "Direction",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       null,
+       0
+      ],
+      [
+       "Length",
+       "Identity",
+       0
+      ],
+      [
+       "Length",
+       "pred",
+       0
+      ],
+      [
+       "Length",
+       "succ",
+       0
+      ],
+      [
+       "Length",
+       null,
+       0
+      ],
+      [
+       "LetterCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "pred",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       0
+      ],
+      [
+       "LetterCtgy",
+       null,
+       0
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       -100
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       0
+      ],
+      [
+       "StringPos",
+       "Opposite",
+       0
+      ],
+      [
+       "StringPos",
+       null,
+       0
+      ]
+     ],
+     "vertical-bridge": [
+      [
+       "AlphaPos",
+       "Identity",
+       0
+      ],
+      [
+       "AlphaPos",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "BondCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "BondCtgy",
+       null,
+       0
+      ],
+      [
+       "BondFacet",
+       "Identity",
+       0
+      ],
+      [
+       "BondFacet",
+       null,
+       0
+      ],
+      [
+       "Direction",
+       "Identity",
+       0
+      ],
+      [
+       "Direction",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "GroupCtgy",
+       "Opposite",
+       0
+      ],
+      [
+       "GroupCtgy",
+       null,
+       0
+      ],
+      [
+       "Length",
+       "Identity",
+       0
+      ],
+      [
+       "Length",
+       "pred",
+       0
+      ],
+      [
+       "Length",
+       "succ",
+       0
+      ],
+      [
+       "Length",
+       null,
+       0
+      ],
+      [
+       "LetterCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "pred",
+       0
+      ],
+      [
+       "LetterCtgy",
+       "succ",
+       0
+      ],
+      [
+       "LetterCtgy",
+       null,
+       0
+      ],
+      [
+       "ObjectCtgy",
+       "Identity",
+       0
+      ],
+      [
+       "ObjectCtgy",
+       null,
+       0
+      ],
+      [
+       "StringPos",
+       "Identity",
+       0
+      ],
+      [
+       "StringPos",
+       "Opposite",
+       0
+      ],
+      [
+       "StringPos",
+       null,
+       0
+      ]
+     ],
+     "bottom-bridge": []
+    },
+    "clamps": 0,
+    "last_clamp": false,
+    "break_time": false
+   }
+  ],
+  [
+   "Clamp Themes",
+   {
+    "t": 1343,
+    "rng": 1017500326,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 8,
+    "highlighted_events": [],
+    "answers": 3,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "ObjectCtgy",
+       "Identity",
+       -100
+      ]
+     ],
+     "vertical-bridge": [],
+     "bottom-bridge": []
+    },
+    "clamps": 1,
+    "last_clamp": [
+     "manual-clamp",
+     [
+      [
+       "vertical-bridge"
+      ],
+      [
+       "top-bridge",
+       [
+        "ObjectCtgy",
+        "Identity",
+        -100
+       ]
+      ]
+     ]
+    ],
+    "break_time": false
+   }
+  ],
+  [
+   "the run goes on with the clamp",
+   {
+    "t": 1493,
+    "rng": 3850017878,
+    "running": false,
+    "display_mode": false,
+    "interrupt": false,
+    "theme_edit_mode": false,
+    "events": 8,
+    "highlighted_events": [],
+    "answers": 3,
+    "highlighted_answers": [],
+    "themes": {
+     "top-bridge": [
+      [
+       "ObjectCtgy",
+       "Identity",
+       -100
+      ]
+     ],
+     "vertical-bridge": [],
+     "bottom-bridge": []
+    },
+    "clamps": 1,
+    "last_clamp": [
+     "manual-clamp",
+     [
+      [
+       "vertical-bridge"
+      ],
+      [
+       "top-bridge",
+       [
+        "ObjectCtgy",
+        "Identity",
+        -100
+       ]
+      ]
+     ]
+    ],
+    "break_time": 1493
+   }
+  ]
+ ],
+ "traces": {
+  "run1": {
+   "lines": 504,
+   "sha256": "3ce39e0c2040bd3ef250bdbb70b6783677e3378ac6d51e2943a86216bd3d9048",
+   "last": "{\"t\":395,\"ev\":\"end\",\"reason\":\"suspend\",\"temperature\":21,\"answers\":[\"ijd\"],\"rng\":516131081}"
+  },
+  "run2": {
+   "lines": 911,
+   "sha256": "e9d84a87eb5ebce5a7f89507aae2814dadb206920eefae1584bba681ad1eb287",
+   "last": "{\"t\":734,\"ev\":\"comment\",\"text\":\"This answer reminds me somewhat of the answer ijd to the problem \\\"abc -> abd, ijk -> ?\\\".\"}"
+  },
+  "trace-and-memory": {
+   "lines": 721,
+   "sha256": "c050dfc80eef21032523f94d0e3fbdcba95fe7aa4bc65ed4cee073646d994ac2",
+   "last": "{\"t\":1343,\"ev\":\"answer\",\"answer\":\"ijk\",\"quality\":55,\"temperature\":29}"
+  },
+  "theme-clamp": {
+   "lines": 176,
+   "sha256": "293bc5de056bd1185f4800d2d9d0265f6439b9564becf90b92e9bfb5e20484cc",
+   "last": "{\"t\":1493,\"ev\":\"comment\",\"text\":\"That last suggestion of yours resulted in zero progress.  Guess it was a pretty useless idea, in retrospect.\"}"
+  }
+ },
+ "generated_by": "python/tests/drive_gui.py OUT invalid_input clicks (the tkinter GUI, under xvfb-run)"
+}

@@ -1,0 +1,400 @@
+# session it15 started 2026-10-05 05:50:09
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; cat ralph_loops/loop0003/iterations.md | head -120; git status --short | head; git diff --stat HEAD~1 | tail -3
+  > $ cd /home/al/dev/metacat; sed -n 120,200p ralph_loops/loop0003/iterations.md; grep -n "racket" ralph_loops/loop0003/gate.py | head -20; ls docs/; wc -l docs/qt-g
+  > $ cd /home/al/dev/metacat; sed -n 1,140p ralph_loops/loop0003/gate.py
+  > $ cd /home/al/dev/metacat; python3 -c "
+import json;d=json.load(open('python/tests/data/tk-gui-inventory.json'))
+print(d.keys())
+for k,v in d.items():
+  print(k, 
+
+Probably header/comment mentions; check actual imports.
+  > $ cd /home/al/dev/metacat; grep -n -E "^\s*(import|from)\s+(PySide6|tkinter|_tkinter|Tkinter)|import_module\(|__import__" python/metacat/*.py | head; grep -n -E "
+  > $ cd /home/al/dev/metacat; sed -n 40,60p python/metacat/engine.py; sed -n 90,120p python/tests/test_gui_windows.py; grep -rn "def test.*engine.*import\|sys.module
+  > $ cd /home/al/dev/metacat; sed -n 130,170p python/tests/test_qt_skeleton.py
+  > $ cd /home/al/dev/metacat; python3 -c "
+import json;d=json.load(open('python/tests/data/tk-gui-inventory.json'))
+for w in d['windows']: print({k:v for k,v in w.it
+  > $ cd /home/al/dev/metacat; grep -n "inventory\|INVENTORY" python/tests/test_qt_*.py python/tests/drive_qt_*.py python/tests/click_scenario.py | head -50
+  > $ cd /home/al/dev/metacat; wc -l python/metacat/qt/*.py python/tests/test_qt_*.py; grep -n "^def \|^@pytest.fixture\|^    def " python/tests/test_qt_panes.py | he
+  > $ cd /home/al/dev/metacat; sed -n 1,140p python/tests/drive_qt_menus.py
+  > $ cd /home/al/dev/metacat; sed -n 140,300p python/tests/drive_qt_menus.py; sed -n 600,700p python/tests/drive_qt_menus.py
+  > $ cd /home/al/dev/metacat; grep -n "def \|slider\|_action" python/metacat/qt/controls.py | head -150
+  > $ cd /home/al/dev/metacat; sed -n 143,260p python/metacat/qt/controls.py; grep -n "def speed_slider_action" -A25 python/metacat/gui/gui.py; grep -n "closeEvent" -
+  > $ cd /home/al/dev/metacat; grep -n "left_press\|scrolling\|scrollbars\|aspect\|visible_at_start\|resize_method\|panel_class\|def window" python/tests/tk_gui_inven
+  > $ cd /home/al/dev/metacat; sed -n 140,225p python/tests/tk_gui_inventory.py; grep -n "self.panes\|self.hosts\|def place\|window_controllers\|controllers" python/m
+
+Writing the audit driver now (reusing `drive_qt_menus.py`'s GUI and helpers).
+  > $ cd /home/al/dev/metacat; sed -n 1,127p python/metacat/qt/mainwindow.py | grep -n "PANES\|TITLES\|=" | head -30; grep -n "WINDOW_GLOBALS" -A16 python/tests/tk_gu
+  > $ cd /home/al/dev/metacat; grep -n "title" python/metacat/gui/hosts.py python/metacat/qt/hosts.py | head; grep -n "def closure\|def fn_name\|def plain" -A8 python
+  > Write /home/al/dev/metacat/python/tests/drive_qt_audit.py
+  > $ cd /home/al/dev/metacat; sed -n 706,725p python/metacat/qt/controls.py
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='python/metacat/qt/controls.py'
+s=open(p).read()
+s=s.replace("""            b.setEnabled(False)
+            b.click
+  > $ cd /home/al/dev/metacat; sed -n 586,612p python/metacat/qt/controls.py; sed -n 940,960p python/metacat/qt/controls.py
+
+The View texts are the window names themselves; fixing the driver.
+  > $ cd /home/al/dev/metacat; sed -i 's/    controllers = {tell(c, "get-text").split(" ", 1)\[1\]: c/    controllers = {tell(c, "get-text"): c/' python/tests/drive_q
+  > $ cd /home/al/dev/metacat; grep -n "Icon\|icon" python/metacat/qt/app.py python/metacat/qt/icon.py | head
+  > $ cd /home/al/dev/metacat; grep -rn "app_icon\|setWindowIcon" python/metacat/qt/ python/tests/test_qt_layout.py python/tests/drive_qt_layout.py | head; grep -n "i
+  > $ cd /home/al/dev/metacat; sed -n 20,66p python/tests/test_qt_menus.py; sed -i 's/        "application": not QApplication.windowIcon().isNull(),\n//' python/tests
+  > $ cd /home/al/dev/metacat/python; grep -n "slow" tests/test_qt_menus.py tests/test_qt_clicks.py | head -5; time (timeout 300 python3 tests/drive_qt_audit.py /tmp/
+  > Write /home/al/dev/metacat/python/tests/test_qt_audit.py
+
+Audit test written; checking the headless API it calls, then running it.
+  > $ cd /home/al/dev/metacat/python; ls metacat/ | head -80 | tr '\n' ' '; grep -n "^def " metacat/headless.py 2>/dev/null | head; grep -rn "^def " metacat/cli.py me
+  > $ cd /home/al/dev/metacat/python; sed -n 36,60p metacat/__main__.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_qt_audit.py'
+s=open(p).read()
+s=s.replace('''        "from metacat import headless\\n"
+        "
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+import sys, pathlib, importlib, contextlib, io
+names = sorted(p.stem for p in pathlib.Path('metacat').glob('*.py') 
+  > Agent {"description": "Audit qt-gui-plan.md vs code", "subagent_type": "general-purpose", "run_in_background": true, "prompt":
+  > $ cd /home/al/dev/metacat; cat docs/follow-ups.md | head -60; grep -n "^## \|^### " docs/follow-ups.md
+  > Read /home/al/dev/metacat/docs/qt-gui-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 104,180p docs/follow-ups.md; grep -n "^## \|^### " docs/anomalies_and_quirks.md | tail -50; sed -n 1,40p docs/anomalies_and_quir
+  > $ cd /home/al/dev/metacat/python; wc -l metacat/qt/*.py tests/test_qt_*.py tests/drive_qt_*.py
+
+Let me read the core files: mainwindow.py, app.py, engine_bridge.py, and hosts.py.
+  > $ cd /home/al/dev/metacat/python/metacat/qt; cat -n mainwindow.py app.py engine_bridge.py __init__.py __main__.py
+
+Agent is reviewing the plan doc; meanwhile I'm checking which Qt anomaly entries are still open or stale.
+  > $ cd /home/al/dev/metacat; grep -n "Status:" docs/anomalies_and_quirks.md | awk -F: '$1>935' ; sed -n 1520,1660p docs/anomalies_and_quirks.md
+  > Read /home/al/.claude/projects/-home-al-dev-metacat/e89baa86-7f53-4b6f-8b94-d45b8d7dcb29/tool-results/bjs5sxdzr.txt
+  > $ cd /home/al/dev/metacat; sed -n 1056,1145p docs/anomalies_and_quirks.md; grep -n "gc\.\|collect" python/tests/conftest.py | head
+  > $ cd /home/al/dev/metacat/python; grep -n "def resize" -A25 metacat/gui/eeg_graphics.py | head -40
+  > $ cd /home/al/dev/metacat/python; sed -n 260,330p metacat/qt/hosts.py
+  > $ cd /home/al/dev/metacat/python; cat > /tmp/eegprobe.py <<'EOF'
+import sys, os
+sys.path.insert(0, "tests"); sys.argv = ["x", "/tmp/qt-audit-probe"]
+import thread
+  > $ cd /home/al/dev/metacat/python; sed -i 's/M.WINDOW.hosts\["EEG"\].pane.size().toTuple()))$/M.WINDOW.hosts["EEG"].pane.size().toTuple()), flush=True)/' /tmp/eegp
+  > $ cd /home/al/dev/metacat/python/metacat/qt; cat -n hosts.py canvas.py | grep -v '^\s*[0-9]*\s*$' 
+  > Read /home/al/.claude/projects/-home-al-dev-metacat/e89baa86-7f53-4b6f-8b94-d45b8d7dcb29/tool-results/bw3n88mw4.txt
+
+Probe done: the hidden EEG pane still gets a configure (harmless, I'll log it). Now editing the anomalies doc.
+  > $ cd /home/al/dev/metacat/python/metacat/qt; sed -n 1,80p displaylist.py; grep -n "RLock\|def \|dirty\|restack\|\"find\"\|'find'\|gettags\|itemcget\|coords\|\"typ
+  > $ cd /home/al/dev/metacat/python/metacat/qt; sed -n 1,80p controls.py; grep -n "QMenu(\|addMenu\|menu-bar\|\"Help\|\"Memory\|\"View\|\"Demos\|\"Options\|Reset lay
+  > $ cd /home/al/dev/metacat/python/metacat/qt; sed -n 85,140p controls.py; sed -n 250,420p controls.py; sed -n 640,1000p controls.py
+  > $ cd /home/al/dev/metacat; git diff --stat python/metacat/qt/controls.py; git diff python/metacat/qt/controls.py | head -60
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+old="""- **Status:** open, for item 05 (the engine thread). Item 04
+  > $ cd /home/al/dev/metacat; grep -n "Enter starts\|greyed out" README.md python/README.md python/metacat/qt/README.md racket/README.md 2>/dev/null; grep -n "def go
+  > $ cd /home/al/dev/metacat/python/metacat/qt; sed -n 140,250p controls.py; grep -n "PANE_TITLES" -A 14 controls.py | head -30; grep -n "def menu_item" -A 25 contro
+  > $ cd /home/al/dev/metacat; sed -n 78,100p README.md; grep -n "def init_new_problem" -A14 python/metacat/gui/gui.py | head -20
+  > $ cd /home/al/dev/metacat/python/metacat/qt; cat icon.py grab.py; grep -n "96\|72\|0.5\|TkDefaultFont\|def " fontspec.py | head -30; grep -n "def \|horizontalAdva
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='README.md'
+s=open(p).read()
+old="""**Using the GUI.** Type a problem into the control panel's box and press **Ente
+  > $ cd /home/al/dev/metacat/python/tests; ls test_qt_* drive_qt_* click_scenario.py conftest.py 2>&1; grep -n "METACAT_QT_SETTINGS" conftest.py; grep -n "50\b\|togg
+  > $ cd /home/al/dev/metacat; sed -i 's/^sets the problem up (the Workspace shows its strings) and waits; \*\*Go\*\* starts the run.$/sets the problem up and waits; 
+  > $ cd /home/al/dev/metacat/python/tests; sed -n 1,45p test_qt_layout.py; sed -n 60,110p test_qt_layout.py; sed -n 175,243p test_qt_layout.py; sed -n 1,40p test_qt_
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='README.md'; s=open(p).read()
+s=s.replace("sets the problem up and waits; **Go** starts the run.\nThen:\n","sets th
+  > $ cd /home/al/dev/metacat/python/tests; python3 -c "
+import json;d=json.load(open('data/tk-clicks.json'));print(d.keys() if isinstance(d,dict) else len(d))
+for k,
+
+Checking whether the panes are still blank right after start (an open note from earlier iterations).
+
+Let me run the "start" and "minimum" scenarios to check the measured numbers (offscreen, read-only aside from temp output).
+  > $ cd /home/al/dev/metacat/python; for t in 700 2500; do QT_QPA_PLATFORM=offscreen METACAT_QT_SETTINGS=/tmp/aud-$t.ini timeout 60 python3 -m metacat.qt --quit-afte
+  > $ cd /home/al/dev/metacat/python/tests; T=$(mktemp -d); for s in start minimum; do timeout 120 python3 drive_qt_layout.py $T $s --screen 1920x1080 >/dev/null 2>&1
+  > Read /tmp/start-700.png
+  > Read /tmp/start-2500.png
+  > $ cd /home/al/dev/metacat/python/tests; grep -n "print\|RESULT\[\|json.dump" drive_qt_layout.py | head -20; T=$(mktemp -d); timeout 120 python3 drive_qt_layout.py
+
+Startup screenshots inspected: panels draw at their default sizes at once and settle to pane sizes within ~2.5 s (not blank, as older notes said). Writing the follow-ups section now.
+  > $ cd /home/al/dev/metacat/python/tests; T=$(mktemp -d); timeout 120 python3 drive_qt_layout.py $T start --screen 1920x1080 2>&1 | tail -1 | python3 -c "
+import js
+  > $ cd /home/al/dev/metacat/python/tests; T=$(mktemp -d); time timeout 500 python3 drive_qt_layout.py $T run --screen 1920x1080 2>&1 | tail -1 | python3 -c "
+import
+  > $ cd /home/al/dev/metacat; cat >> docs/follow-ups.md <<'EOF'
+
+## Python Qt GUI (loop0003)
+
+Written by the final audit of loop0003 (item 11, 2026-10-05). `python3 
+
+Running the Qt test tier on its own to verify the time claim and the new test file in context.
+  > $ cd /home/al/dev/metacat; time (timeout 1200 bash python/run-tests.sh --qt 2>&1 | tail -5)
+  > $ cd /home/al/dev/metacat/python; grep -o '@message("[^"]*")' metacat/qt/controls.py | sort | tr '\n' ' '; echo; grep -n "parked_hook" metacat/qt/*.py; grep -n "d
+  > $ cd /home/al/dev/metacat/python; grep -rn "get-relative-position" metacat/ | head; grep -n -i "thread\|xcb" tests/test_qt_fonts.py | head; grep -n "def _set_butt
+  > $ cd /home/al/dev/metacat/python/tests; grep -ln "Bond builders\|worker thread\|threads" test_qt_*.py; grep -n "Bond builders\|xcb" test_qt_*.py | head; sed -n 11
+  > $ cd /home/al/dev/metacat/python/tests; sed -n 158,180p test_qt_fonts.py; grep -n "setStyleSheet" ../metacat/qt/controls.py | sed -n 1,40p
+  > $ cd /home/al/dev/metacat/python; grep -n "Button(" metacat/gui/gui.py | head; grep -n "activebackground\|button_color\|button.*color" metacat/gui/gui.py metacat/
+  > $ cd /home/al/dev/metacat/python; sed -n 800,815p metacat/gui/gui.py; grep -n "button\b\|colour\|color" ../docs/divergences.md | grep -i "button" | head -5; sed -
+  > $ cd /home/al/dev/metacat; sed -n 190,260p docs/divergences.md | grep -n -i "button\|active\|colour" | head
+
+I found 24 places where the doc no longer matches the code, all listed below. Most of them are in the item-00 text (2.1, 2.2, 2.3, 2.5, 2.6, 2.7, 2.8) that the later "As built" paragraphs contradict but never replaced. No files were edited.
+
+To check the measured numbers, I ran `drive_qt_layout.py` offscreen for `start`, `minimum` and `run` at 1920×1080. Its output went to a temp dir. The run's pane sizes match the 1080p row of the 2.1 table exactly. The minimum is 1692×800, the strip is 1684 px wide, and the run ends at its golden's codelet count.
+
+## Discrepancies
+
+**1. L239–260, the 2.1 diagram: control strip.**
+- Doc: two strip lines, `Problem: [abc abd xyz …] [Step][Go][Stop][Reset]  Slow [====|====] Fast`, then a second line with the info label.
+- Code: one line, left to right (controls.py:737–751):
+  - the info label;
+  - the command line, with no "Problem:" label;
+  - a speed box: the slider with "Slow / Speed / Fast" labels *under* it (controls.py:660–674), then Step, Go, Stop, Reset;
+  - the breakpoint label and the self-watching warning, stacked.
+- Suggest: redraw it as one line: `abc -> abd; xyz -> ? seed: … | [command line] | [slider over Slow Speed Fast] [Step][Go][Stop][Reset] | breakpoint / warning (stacked)`.
+
+**2. L248–258, the 2.1 diagram: pane sizes.**
+- Doc: Temp 110, Workspace 746×560, Coderack 216×560, Vert. Themes 153, Commentary ~670×560, Slipnet 608×290, Themes 602×142, Memory ~700×290, Trace 1920×78.
+- Code: these match neither `default_sizes` nor any measurement. At 1920×1080 (maximised, offscreen, EEG hidden) I measured:
+  - Temperature 115×593, Workspace 790×593, Coderack 229×593, Vertical Themes 162×593, Commentary 608×593;
+  - Slipnet 642×306, Themes 640×151 each, Memory 630×306;
+  - Trace 1920×89.
+- Suggest: drop the numbers from the diagram (the table below it has the measured ones), or replace them with the figures above.
+
+**3. L239, "about 1920×1010 of client area; panes 1920×≈930".**
+- Code: offscreen at 1920×1080 the central widget is 1920×996 (rows 593/306/89 plus 2×4 px of handles).
+- Suggest: "on a real desktop the panes get about 1920×930; offscreen (no window frame) 1920×996". This is a borderline item.
+
+**4. L306–308, "The minimum window size is 1600×800, or wider … (1692 px …)".**
+- Code: correct, measured `minimum: [1692, 800]`. But the source comment it relies on is stale: mainwindow.py:36 says `MINIMUM_SIZE = (1600, 800)  # the control strip is 1600 wide`, and the strip is actually 1684 px.
+- The doc is fine; the fix belongs in that code comment.
+
+**5. L332–337, the original QSettings plan.**
+- Doc: the `layout/rows…bottom` states are always saved; `view/hidden` is "the list"; saving happens "500 ms after the last `splitterMoved`".
+- Code:
+  - splitter states are saved only when `layout/custom` is 1 (mainwindow.py:284–289);
+  - `view/hidden` is a space-separated string (mainwindow.py:283);
+  - the save timer also starts on any View show or hide (mainwindow.py:216–217).
+- Suggest: replace the list with the item 08 key list, or add "(superseded by As built, item 08)".
+
+**6. L341–343, "Reset layout removes the `layout/*` and `view/hidden` keys".**
+- Code: mainwindow.py:234–238 removes `layout/<5 splitters>`, `layout/custom` and `view/hidden`. It keeps `layout/version` and `window/geometry`.
+- Suggest: "removes `layout/custom`, the five splitter states and `view/hidden`; `layout/version` and `window/geometry` stay".
+
+**7. L384, item 08: "Reset layout removes every key but the version."**
+- Code: `window/geometry` is also kept (mainwindow.py:227–238).
+- Suggest: "…removes every key but `layout/version` and `window/geometry`".
+
+**8. L459–461, item 04: "At 1920×1010 it gives rows 601/311/90 …".**
+- The numbers check out for `default_sizes(1920, 1010)`. But that function takes the *central area*, while 1920×1010 is `DEFAULT_SIZE`, the window size.
+- Suggest: "For a central area of 1920×1010, `default_sizes` gives…".
+
+**9. L480–489, 2.5 "Canvas commands": a journal drained on a 50 ms timer, with scene rebuilds when it grows too long.**
+- Code: there is no journal and no rebuild.
+  - `DisplayList` keeps `_dirty` ids and a `_restacked` flag (displaylist.py:437–438, 550).
+  - `QtCanvas.sync` calls `take_changes()` and updates each changed item once (canvas.py:528–551).
+  - `MainWindow.sync` runs every 50 ms under `PAINT_GATE` (mainwindow.py:333–340).
+  - `canvas.tcl` takes `PAINT_GATE` for every command (canvas.py:510).
+- Suggest: "…updates it synchronously and records the ids it changed. Every 50 ms (`SYNC_INTERVAL`) the GUI thread, holding `PAINT_GATE`, calls each host's `sync()`, which updates one `TkItem` per changed id. Canvas commands wait at the gate meanwhile."
+
+**10. L497, "text extents come from `QFontMetricsF`".**
+- Code: `QFontMetrics.horizontalAdvance`, which returns whole pixels and is cached per (font, line) (fonts.py:100–104).
+- Suggest: "`QFontMetrics.horizontalAdvance`".
+
+**11. L499–501, "Item 03 repeats that check as a test, also under xcb".**
+- Code: the threaded check is `test_qt_panes.py::test_fonts_measure_from_several_threads_at_once` (around L525). It runs 4 threads, offscreen only; no test uses xcb.
+- Suggest: "test_qt_panes.py measures from 4 threads at once (offscreen)".
+
+**12. L503–506, the blocking-call fallback for measurement.**
+- Code: not built. No canvas query ever blocks (engine_bridge.py:502–509, and item 05 at L547).
+- Suggest: delete the bullet, or mark it "(not needed; not built)".
+
+**13. L517, "Their drawing goes straight to the display list and the journal."**
+- Suggest: "…to the display list (its dirty ids)".
+
+**14. L519–523, the deadlock rules.**
+- Doc: "The GUI thread never waits … never takes a lock that is held across a wait" and "At quit, a flag makes any pending blocking query return at once".
+- Code:
+  - The GUI thread does wait on `PAINT_GATE` (an RLock) in `MainWindow.sync` and `PaneView.paintEvent`. The gate is held for at most one canvas command (canvas.py:482–490).
+  - There is no quit flag and no blocking query. At quit, `app.main` calls `os._exit` if the engine is busy (app.py:478–483).
+- Suggest: "The GUI thread waits only on `PAINT_GATE`, which a worker holds for one canvas command that never waits for the GUI thread. At quit, if the engine is mid-run, `main` leaves with `os._exit` (the engine thread is a daemon)."
+
+**15. L531–533, "the bridge flushes at once".**
+- Code: `switch-to-input-mode` calls the control panel's `parked_hook`, which is `MainWindow.sync` (controls.py:1137, mainwindow.py:198).
+- Suggest: "the control panel calls `MainWindow.sync` at once (`parked_hook`)".
+
+**16. L566–567 and L582–594, 2.6 "`qt/canvas.py` has … two layers" and the per-kind Qt items.**
+- Doc: one item class per kind (`QGraphicsRectItem`, `EllipseItem`, `PathItem`, `PolygonItem`, `SimpleTextItem`), "flat caps for lines and miter joins for rectangles", and "no antialiasing by default (a View option can turn it on)".
+- Code:
+  - Layer 1 is `displaylist.py`.
+  - Every kind is drawn by one `TkItem(QGraphicsRectItem)`, which records its painter calls at the first paint and replays them (canvas.py:597–668).
+  - Lines and polygons use flat caps with **round** joins; rectangles use miter (canvas.py:646, 735, 757).
+  - Antialiasing is off except for text, which is always antialiased (canvas.py:671, 770). There is no View option.
+- Suggest: rewrite to match item 02: "the scene: one `TkItem` per item, painted as Tk's X11 code does; butt caps, round joins for lines and polygons; antialiasing only for text (no option)".
+
+**17. L640–641, "`hosts.set_window_host_maker(qt_host_maker(main_window))`".**
+- Code: `qt_host_maker()` takes no argument and returns the `QtHost` class. `install()` calls `ghosts.set_window_host_maker(qt_host_maker())` (hosts.py:429–443). Panes are placed later by window *name* in `MainWindow.place_hosts` (mainwindow.py:148–151), not "by the window's title" (L638).
+- Suggest: "`hosts.install()` calls `set_window_host_maker(qt_host_maker())`; `MainWindow.place_hosts` puts each pane in the tree by window name".
+
+**18. L643–645, "a `QtCanvas` without a view for measurement".**
+- Code: `HiddenCanvas` keeps one display list per thread and drops its changes at each `delete` (canvas.py:554–584).
+- Suggest: "a `HiddenCanvas` (one display list per thread)".
+
+**19. L676–682, 2.7 control strip order.**
+- Doc: command line, buttons, slider, info label, breakpoint, warning.
+- Code: info label, command line, then the speed box (slider, then Step/Go/Stop/Reset), then the breakpoint and warning stacked (controls.py:731–751).
+- Suggest: list it in that order.
+
+**20. L678, "`QPushButton`s, with gui.ss's colours when active".**
+- Code: the buttons get no colours (controls.py:711–717). gui.py gives them `activebackground` green, green, red (gui.py:806–815). I found no recorded divergence for this.
+- Suggest: "plain `QPushButton`s (the Tk active colours are not reproduced)", and record it in `docs/divergences.md`.
+
+**21. L686–693, 2.7 menu bar.**
+- Doc: order Demos, View, Options, Memory, Help; Help holds "Metacat Help…" in a `QPlainTextEdit`; Memory holds "Clear Memory…".
+- Code:
+  - The order is **Help, Demos, View, Options, Memory** (controls.py:931).
+  - Help's item is "Metacat help" (controls.py:789), in a `QTextEdit` (controls.py:333).
+  - Memory's item is "Clear Memory", with no ellipsis (controls.py:924).
+- Suggest: fix the order, labels and widget class.
+
+**22. L223, 1.6 lists `get-relative-position` as a message the Qt panel must answer.**
+- Code: `QtControlPanel` has no such message. Dialog placement uses the module function `controls._place` (controls.py:307).
+- Suggest: drop it from the list, or note "replaced by `controls._place`".
+
+**23. L709–720, 2.8 module plan.**
+- `__main__.py … [problem…]`: wrong. There are no positional problems. The options are `--quit-after MS`, `--screenshot PNG` and `--settings INI` (app.py:364–374).
+- `canvas.py DisplayList … (journal → QGraphicsScene)`: the display list is in `displaylist.py`, and there is no journal.
+- `mainwindow.py … View menu`: the View menu is built by `QtControlPanel.attach_windows` (controls.py:942).
+- `engine_bridge.py the 50 ms flush timer, …, blocking queries, quit`: the timer is `MainWindow.sync_timer`. `engine_bridge.py` holds only `GuiInvoker` (`post`/`call`) and `EngineBridge`.
+- `fonts.py … the hidden canvas`: the `HiddenCanvas` class is in `canvas.py`; `fonts.install` creates it.
+- Missing modules: `app.py`, `displaylist.py`, `fontspec.py`, `icon.py`, `grab.py`.
+- Tests: there are also `drive_qt_*.py` drivers and `click_scenario.py`.
+- Suggest: rewrite the module list to match the code.
+
+**24. L731–732, "The Qt strip should follow the same rule".**
+- Code: it does. `select_control_panel_fonts` uses 14/12/10-point fonts when the primary screen is taller than 1024 px (controls.py:93–102).
+- Suggest: "The Qt strip follows the same rule."
+
+The "Item 05 must solve this" (L451–453) and "There is no run yet" (L448–450) bullets are history that later items resolved. They are not wrong as a record, but could be marked "(solved: PAINT_GATE, item 05)".
+
+## Verified correct
+- **Constants:** `DEFAULT_SIZE` 1920×1010, `HANDLE` 4, `SYNC_INTERVAL` 50, `SAVE_DELAY` 500, `SETTINGS_VERSION` 1, `MIN_REST` 200 and `MINIMUM_SIZE` 1600×800 widened to the strip's width all match mainwindow.py:33–60, 190.
+- **2.2 splitter tree:** the names (rows, top, middle, themes, bottom), the vertical ones, children order, and EEG hidden at start all match `TREE`/`VERTICAL`.
+- **2.2 proportions:**
+  - 60/31/9, Trace at least 50, EEG 18% at least 104 (100 + handle) with 60:91 kept;
+  - Temperature `max(60, 0.06·W)`;
+  - proportional shrink to keep a 200 px rest;
+  - stretch factors 1 for Commentary, Memory and Trace;
+  - pane minimums 40×40 and 120 wide;
+  - `setChildrenCollapsible(False)`.
+  The aspect ratios match `ASPECT` (the same ratios, written as w+2:h+2).
+- **2.1 measured table:** the 1080p row matches my run exactly (711×534, 206×534, 579×276, 726×534, 756×276, 1920×87).
+- **2.3:**
+  - View menu order and items match `PANE_TITLES` plus the separators;
+  - `update_splitters` behaves as described;
+  - self-watching hides the themes through the controllers;
+  - Reset layout leaves the EEG and (with self-watching off) the themes hidden;
+  - the `QSettings("fargonauts","metacat-qt")`, `--settings`, `$METACAT_QT_SETTINGS` (set by conftest), maximise rule, restore order, `PassThrough` rounding and icon claims (light sky blue, 55,50 anchor s, sizes 16–256) all hold.
+- **Item 06:** the menus, the stacked messages and `test_qt_menus.py` (Hide X/Show X mapping) match.
+- **Item 07:** `press_modifiers`, double click as a second press, `bind_return` ignoring KP_Enter, `click_scenario.py`, and `tk-clicks.json` with 27 steps and 4 traces all match.
+- **2.4 and item 04:** letterboxing at Tk's (w+2):(h+2), Temperature top-aligned, always-on scroll bars, `PM_ScrollBarExtent`, the feeder, the under-3 px rule and the per-thread `HiddenCanvas` match.
+- **Item 05:** `GuiInvoker.post`/`call`, `EngineBridge`, the fixed `QToolBar`, `PAINT_GATE` in `paintEvent` and the recorded painter ops match. The 50 Go/Stop toggles test exists (test_qt_engine.py), the engine thread is a daemon, and `collect_on_gui_thread` is called by `hosts.install`.
+- **Items 02 and 03:** the `RLock` per command, the extra queries, dirty ids plus the restacked flag, the `(int)(pt·96/72+0.5)` conversion, `QRawFont` ink extents, the 97% figure and the 752 colour names match.
+- **2.7 dialogs and keyboard:** the dialogs are modeless, Escape acts as close, 700 ms red "Invalid input!", `QFileDialog.getSaveFileName` replaceable through `controls.set_file_dialog`, and there are no shortcuts.
+
+Qt tier: 209 passed in 2:58. The agent found 24 stale spots in the plan doc; I'll verify the key ones and correct the doc.
+  > $ cd /home/al/dev/metacat; sed -i 's/- The Qt tests are about 2 minutes of the gate/- The Qt tests are about 3 minutes (209 tests) of the gate/' docs/follow-ups.m
+  > $ cd /home/al/dev/metacat; sed -n 262,345p docs/qt-gui-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 214,300p python/metacat/qt/mainwindow.py; sed -n 726,760p python/metacat/qt/controls.py; grep -n "activebackground" python/metac
+  > $ cd /home/al/dev/metacat; sed -n 800,818p python/metacat/gui/gui.py; grep -n "^## Python Qt" docs/divergences.md
+  > $ cd /home/al/dev/metacat; sed -n 376,392p docs/qt-gui-plan.md; echo -----; sed -n 440,540p docs/qt-gui-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 556,600p docs/qt-gui-plan.md; echo ----; sed -n 630,734p docs/qt-gui-plan.md
+
+Applying the corrections to `docs/qt-gui-plan.md` now.
+  > $ cd /home/al/dev/metacat; python3 - <<'PYEOF'
+p='docs/qt-gui-plan.md'
+s=open(p).read()
+R=[]
+def r(old,new):
+    global s
+    assert s.count(old)==1, old[:80]
+   
+  > $ cd /home/al/dev/metacat; grep -n "Help  Demos  View" -A3 docs/qt-gui-plan.md | head; awk 'NR>=240 && NR<=246 {print length($0)": "$0}' docs/qt-gui-plan.md
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/qt-gui-plan.md'; L=open(p).read().split('\n')
+w=len(L[247])  # line 248
+a="| abc -> abd; xyz -> ?  seed: 3852
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/qt-gui-plan.md'; L=open(p).read().split('\n')
+w=len(L[247])
+a="| abc -> abd; xyz -> ?  seed: 3852097033  [abc
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/qt-gui-plan.md'; L=open(p).read().split('\n')
+w=len(L[246]); print(w, len(L[247]))
+a="| abc->abd; xyz->? seed
+  > $ cd /home/al/dev/metacat; sed -i '248s/Memory                                                                |/Memory                                            
+
+Plan doc corrected. Now the small code-comment fix, the divergences entry, and the tests README rows.
+  > $ cd /home/al/dev/metacat; sed -i 's|^MINIMUM_SIZE = (1600, 800)      # the control strip is 1600 wide; rows of 430/220/65 or more|MINIMUM_SIZE = (1600, 800)     
+  > $ cd /home/al/dev/metacat; cat >> docs/divergences.md <<'EOF'
+
+## Python Qt GUI: found by the final audit (loop0003 item 11)
+- **What:** `python/tests/test_qt_aud
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen python3 -m pytest --collect-only -q tests 2>/dev/null | tail -1; QT_QPA_PLATFORM=offscreen python3 -m 
+  > $ cd /home/al/dev/metacat/python; sed -i '223s/there are 1618: 1176 fast and 442 slow/there are 1640: 1198 fast and 442 slow/' README.md; sed -i '160s/35 test fil
+  > $ cd /home/al/dev/metacat/python; grep -n "test_qt_" metacat/qt/README.md | head -20
+  > $ cd /home/al/dev/metacat/python; sed -i '149a | `test_qt_audit.py` | The final audit: every entry of the tkinter inventory mapped to its Qt test; the windows as 
+
+Docs updated. Running the full gate now (Python suite plus the Racket suite, since `racket/` differs from the freeze point): about 18 minutes.
+  > $ cd /home/al/dev/metacat; date; timeout 1800 python3 ralph_loops/loop0003/gate.py > /tmp/gate-it15.log 2>&1; echo exit=$?; date; grep -E "^==|GATE|passed|failed|
+
+The gate got moved to the background by the 10-minute tool limit; I'll watch it with Monitor and draft the PROGRESS entry meanwhile.
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+  > Monitor {"description": "loop0003 gate steps and result", "timeout_ms": 600000, "command": "tail -n +1 -f /tmp/gate-it15.log | g
+
+Drafting the PROGRESS entry while the gate runs.
+  > $ cd /home/al/dev/metacat; tail -5 ralph_loops/loop0003/PROGRESS.md; grep -n "Current:" ralph_loops/loop0003/PROGRESS.md
+
+Gate is in the Python suite; waiting for the next events.
+  > Monitor {"description": "loop0003 gate result (python+racket)", "timeout_ms": 600000, "command": "tail -n 0 -f /tmp/gate-it15.lo
+  > TaskStop {"task_id": "bqjhkajp0"}
+
+Python suite: 1640 passed. Racket suite running (~7 min).
+  > Monitor {"description": "loop0003 gate final result", "timeout_ms": 600000, "command": "until grep -q \"^GATE\" /tmp/gate-it15.l
+  > TaskStop {"task_id": "bjxeokecr"}
+
+Waiting on the Racket part of the gate.
+  > Monitor {"description": "loop0003 gate final result (re-arm)", "timeout_ms": 600000, "command": "until grep -q \"^GATE\" /tmp/ga
+  > TaskStop {"task_id": "bm0xh2cat"}
+
+The other monitor (b09h9h5e3) is still armed for the result; waiting for it.
+  > $ tail -3 /tmp/gate-it15.log
+  > $ timeout 580 bash -c 'until grep -q "^GATE" /tmp/gate-it15.log; do sleep 5; done'; grep -E "^==|^GATE" /tmp/gate-it15.log | tail -8
+
+GATE PASSED. Writing PROGRESS, marking the item, and adding LOOP_COMPLETE.
+  > $ cd /home/al/dev/metacat; head -3 /tmp/gate-it15.log; grep -n "Current" ralph_loops/loop0003/PROGRESS.md | head -2; grep -c "^- \[x\]" ralph_loops/loop0003/itera
+  > $ cd /home/al/dev/metacat; sed -i '6s/11\/12 SOLVED/12\/12 SOLVED/' ralph_loops/loop0003/PROGRESS.md; sed -i 's/^- \[ \] \*\*11 Final audit/- [x] **11 Final audit
+
+Item 11, the final audit, is done and the gate passed. Every item in `iterations.md` is now checked: PROGRESS.md says 12/12 SOLVED and ends with `LOOP_COMPLETE`. I didn't commit, as the loop rules require.
+
+- **Tests re-run:** the gate passed. The Python suite gave 1640 passed in 10 min 21 s. Because `racket/` changed in item 10, the gate also ran the Racket suite, which passed: 2640 tests, the 1317 GUI checks under Xvfb, and the Chez checks. The Qt tests alone gave 209 passed in about 3 minutes.
+- **Qt GUI against the inventory, entry by entry:** the menus, dialogs and mouse/key bindings were already compared by earlier tests. For the rest I added `python/tests/test_qt_audit.py` (22 tests) and its driver `drive_qt_audit.py`. They cover every window as a pane, the icon, the speed slider's settings, both Input dialogs, the four buttons and closing the window. They also check that every inventory entry is mapped to a test that checks it, so a new entry without a Qt test will fail.
+  - Every compared entry matches.
+  - Two visual differences remain, now recorded in `docs/divergences.md`: the buttons don't turn green or red under the mouse as Tk's do, and panels are drawn at their pane's size rather than the old window size.
+  - Most of these tests passed the first time they ran, because they check a GUI that already existed. The one code change (`controls.py` now records each button's action so a test can read it) does fail 3 tests when reverted.
+- **Engine imports:** no engine module imports PySide6 or tkinter. A new test also checks this at run time: it imports all 42 engine modules, makes a short headless run, and finds no GUI module loaded.
+- **`docs/qt-gui-plan.md`:** a helper agent listed 24 places where the doc no longer matched the code. I checked the important ones and corrected them:
+  - the 1080p wireframe and control-strip order;
+  - the saved settings keys and what Reset layout keeps;
+  - how drawing reaches the screen, the deadlock rules and the drawing details, rewritten as built;
+  - the menu order and the module list.
+- **Anomalies and follow-ups:**
+  - In `docs/anomalies_and_quirks.md`, two stale entries are updated (one still said "open"). One new entry: the hidden EEG pane gets one resize at start; it's harmless.
+  - `docs/follow-ups.md` has a new section on the Qt GUI.
+  - Screenshots at 0.7 s and 2.5 s show the panes aren't blank right after start, as an older note said: they draw at their original sizes and reach their pane sizes within about 2.5 s.
+- **Also fixed:**
+  - The top-level README wrongly said Enter starts the run; in the code, Enter sets the problem up and Go starts it.
+  - A stale comment on the minimum window size in `mainwindow.py` now gives the strip's real width.
+
+The gate took longer than the 10-minute tool limit and was moved to the background. I waited for it in the foreground and read its log before writing PROGRESS.md.
+
+# result: success in 1738s, 85 turns, cost $7.38

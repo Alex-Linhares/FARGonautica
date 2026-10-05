@@ -1,0 +1,243 @@
+# session it08 started 2026-10-02 22:31:24
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; cat ralph_loops/loop0001/iterations.md | sed -n 1,200p | grep -n "" | sed -n 1,80p; ls racket racket/engine racket/tests tests/diff; wc
+  > $ cd /home/al/dev/metacat; cat racket/engine/pending.rktl; cat racket/tests/workspace-diff-test.rkt; cat racket/tests/diff-runner.rkt | head -80
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/bonds.ss
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/groups.ss
+  > $ cd /home/al/dev/metacat; grep -n "^(define\|break-\|bridge\|graphics\|\*trace\*\|\*themespace\*\|\*memory\*" chez_scheme/original/groups.ss chez_scheme/original
+  > $ cd /home/al/dev/metacat; grep -n "define group-graphics" -A40 chez_scheme/original/group-graphics.ss | head -60; sed -n 700,800p chez_scheme/original/groups.ss
+
+Porting bonds/groups/concept-mappings now; first checking how the oracle handles the ungated `group-graphics 'erase` headless.
+  > $ cd /home/al/dev/metacat; grep -n -i "group-graphics\|null window\|null-window" docs/porting-notes.md chez_scheme/oracle/prelude.ss chez_scheme/oracle/run.ss | h
+  > $ cd /home/al/dev/metacat; sed -n 195,275p chez_scheme/oracle/prelude.ss; sed -n 30,60p docs/porting-notes.md; sed -n 440,520p docs/porting-notes.md
+  > $ cd /home/al/dev/metacat; grep -n "drawn" racket/engine/*.rktl | head; grep -n "load" chez_scheme/original/metacat.ss | head -50; cat chez_scheme/original/group-
+  > $ cd /home/al/dev/metacat; grep -n "define-codelet-type-list\*\|define-codelet-procedure\*" -A12 racket/compat.rkt | head -60; grep -n "define-codelet-type-list" 
+  > $ cd /home/al/dev/metacat; grep -n "define step-mcat\|define update-everything\|define init-mcat\|define run-mcat" -A45 chez_scheme/original/run.ss | head -230
+  > $ cd /home/al/dev/metacat; sed -n 222,294p chez_scheme/original/run.ss; grep -n "define add-bottom-up-codelets\|define add-top-down-codelets" -A40 racket/engine/c
+  > $ cd /home/al/dev/metacat; grep -n "define post-codelet-probability\|define num-of-codelets-to-post\|define \*bottom-up-codelet-types\*\|define \*thematic" -A30 r
+  > $ cd /home/al/dev/metacat; grep -n "attempt-to-post-top-down-codelets" -A25 racket/engine/slipnet.rktl | head -40; grep -n "top-down-codelet\|\*top-down-slipnodes
+  > $ cd /home/al/dev/metacat; sed -n 480,560p racket/engine/slipnet.rktl
+  > $ cd /home/al/dev/metacat; grep -n "define update-temperature\|define update-slipnet-activations" -A25 racket/engine/*.rktl | head -70; grep -n "\*trace\*\|\*them
+  > $ cd /home/al/dev/metacat; head -25 racket/engine/workspace.rktl; diff <(tail -n +21 chez_scheme/original/workspace.ss) <(tail -n +23 racket/engine/workspace.rktl
+
+Creating the three ported files now.
+  > $ cd /home/al/dev/metacat; for f in bonds groups concept-mappings; do { head -18 chez_scheme/original/$f.ss; printf ';; Ported to Racket, 2026: included by racket
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/engine.rkt'; s=open(p).read()
+s=s.replace('''(include "engine/descriptions.rktl")   ; descriptions.ss
+''','
+  > $ cd /home/al/dev/metacat; sed -n 1,31p chez_scheme/original/group-graphics.ss | sed -n 19,31p; { head -18 chez_scheme/original/group-graphics.ss; cat <<'EOF'
+;; 
+  > $ cd /home/al/dev/metacat; for f in bridges breakers rules answers themes justify trace jootsing memory run; do echo "== $f"; grep -o "^(define [^ ()]*" chez_sche
+  > $ cd /home/al/dev/metacat; grep -n "monitor-new-groups" chez_scheme/original/*.ss; grep -n "define monitor-new-groups" -A30 chez_scheme/original/trace.ss | head -
+  > $ cd /home/al/dev/metacat; grep -n "(define break-bridge\|(define incompatible-.*CMs?" chez_scheme/original/*.ss; python3 - <<'EOF'
+p='/home/al/dev/metacat/racket
+  > $ cd /home/al/dev/metacat; grep -n "same-direction?" chez_scheme/original/*.ss; grep -n "bonds-equal?" chez_scheme/original/*.ss
+
+Found an original bug: `bonds-equal?` calls `same-direction?`, which is never defined (and `bonds-equal?` is never called). Adding a stand-in that errors like Chez would.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/racket/engine/pending.rktl'; s=open(p).read()
+s=s.replace(''';; bridges.ss
+''',''';; Never de
+  > $ cd /home/al/dev/metacat; cp racket/engine/pending.rktl /tmp/pending.bak; names=""; for i in $(seq 1 40); do out=$(raco make racket/engine.rkt 2>&1 | head -1); [
+  > $ cd /home/al/dev/metacat; grep -n "%group-letter-category-font%\|%relevant-group-length-font%\|%small-group-arrowhead-length%\|%group-arrowhead-angle%" chez_sche
+  > $ cd /home/al/dev/metacat; grep -rn "group-letter-category-font\|relevant-group-length-font" chez_scheme/original/ | grep -v "groups.ss" | head
+  > $ cd /home/al/dev/metacat; cp /tmp/pending.bak racket/engine/pending.rktl; python3 - <<'EOF'
+p='/home/al/dev/metacat/racket/engine/pending.rktl'; s=open(p).read()
+  > $ cd /home/al/dev/metacat; sed -n 1,80p tests/diff/workspace-battery.scm; grep -n "^(define" tests/diff/helpers.scm; sed -n 120,200p tests/diff/workspace-dump.scm
+  > $ cd /home/al/dev/metacat; sed -n 1,70p tests/diff/helpers.scm; grep -n "(run ()" -A12 racket/engine/coderack.rktl; cat chez_scheme/oracle/diff-eval.ss | sed -n 1
+  > $ cd /home/al/dev/metacat; grep -n "initial-slipnode-clamp-cycles\|self-watching-enabled% \|define %verbose%\|initially-clamped" racket/engine/*.rktl chez_scheme/
+  > Write /home/al/dev/metacat/tests/diff/codelet-battery.scm
+  > $ cd /home/al/dev/metacat; grep -no "(get-proposed-[a-z-]* \|(get-bonds \|(get-groups \|(get-internal-strength \|(get-external-strength \|(get-constituent-[a-z]* 
+  > $ cd /home/al/dev/metacat; sed -n 100,200p racket/engine/workspace-strings.rktl | grep -n "^	    (" | head -60; grep -n "^	    (" racket/engine/workspace-structur
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/tests/diff/codelet-battery.scm'; s=open(p).read()
+s=s.replace("""                            
+  > $ cd /home/al/dev/metacat; cat > /tmp/probe.scm <<'EOF'
+(load "tests/diff/codelet-battery.scm")
+(define (summ strings seed k)
+  (let* ((tr (b:run-codelets strings
+  > $ cd /home/al/dev/metacat; git status --short; tail -15 tests/diff/codelet-battery.scm; grep -n "get-all-bonds\|get-time-stamp" tests/diff/codelet-battery.scm
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/tests/diff/codelet-battery.scm'; s=open(p).read()
+i=s.index(';;;-----------------------------
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/tests/diff/codelet-harness.scm'; s=open(p).read()
+s=s.replace("(b:map-objects b:dump-object)"
+  > $ cd /home/al/dev/metacat; sed -n 80,200p racket/tests/diff-runner.rkt; grep -n "workspace-problem\|(test " tests/diff/workspace-battery.scm | head
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+hdr=''';;; codelet-battery.scm -- the codelet-level differential checks of item 07:
+;;; bonds.ss, groups.ss and conce
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/tests/diff/codelet-harness.scm'; s=open(p).read()
+s=s.replace("""                            
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/tests/diff/codelet-harness.scm'; s=open(p).read()
+s=s.replace(""";;;-------------------------
+  > Write /home/al/dev/metacat/racket/tests/codelet-diff-test.rkt
+
+Now the tests-first check: run it against the engine with the new includes taken out.
+  > $ cd /home/al/dev/metacat; cp racket/engine.rkt /tmp/engine.new; cp racket/engine/pending.rktl /tmp/pending.new; git show HEAD:racket/engine.rkt > racket/engine.r
+  > $ cd /home/al/dev/metacat; cp /tmp/engine.new racket/engine.rkt; cp /tmp/pending.new racket/engine/pending.rktl; sleep 1; time raco test racket/tests/codelet-diff
+
+Passes on the first run. Now mutation checks to make sure the harness actually exercises the code. Looking at key formulas in groups.ss and concept-mappings.ss:
+  > $ cd /home/al/dev/metacat; sed -n 340,420p racket/engine/groups.rktl; sed -n 545,660p racket/engine/groups.rktl
+  > $ cd /home/al/dev/metacat; grep -n "define make-concept-mapping" -A60 racket/engine/concept-mappings.rktl | grep -n "strength\|round\|%\|average" | head -20; grep
+  > $ cd /home/al/dev/metacat; sed -n 20,120p racket/engine/concept-mappings.rktl; grep -n "make-concept-mapping\|CMs-equal\|remove-duplicate-CMs" chez_scheme/origina
+  > $ cd /home/al/dev/metacat; sed -n 120,190p racket/engine/concept-mappings.rktl
+
+Concept mappings are only made inside the bridge-incompatibility tests, which never fire with bridges disabled, so I'm adding direct concept-mapping tests to the battery.
+  > $ cd /home/al/dev/metacat; grep -n "get-instances\|get-category-links\|(get-short-name\|get-CM-short-name\|get-lowercase-name" racket/engine/slipnet.rktl | head; 
+  > $ cd /home/al/dev/metacat; grep -n "instance-links\|(get-instance" racket/engine/slipnet.rktl | head; grep -n "slipnode-instances\|get-instances" tests/diff/slipn
+
+Now writing the concept-mapping tests into the battery.
+  > $ cd /home/al/dev/metacat; cat >> tests/diff/codelet-battery.scm <<'EOF'
+
+;;;---------------------------------------------------------------------------
+;;; Conce
+  > $ cd /home/al/dev/metacat; sed -i '/cm-categories-09\|cm-categories-1[0-2]/d' tests/diff/codelet-battery.scm; scheme --script chez_scheme/oracle/diff-eval.ss test
+  > $ cd /home/al/dev/metacat; sed -n 40,100p racket/engine/slipnet.rktl | grep -n "buffer"; grep -n "buffer" racket/engine/slipnet.rktl | head
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/tests/diff/codelet-battery.scm'; s=open(p).read()
+s=s.replace(""";; active) description types
+  > $ cd /home/al/dev/metacat; time raco test racket/tests/codelet-diff-test.rkt 2>&1 | tail -8 | cut -c1-1500
+
+Now the mutation checks (each edit applied, test run, file restored).
+  > $ cd /home/al/dev/metacat; cat > /tmp/mutate.py <<'EOF'
+import subprocess, time, sys, re
+R='/home/al/dev/metacat/racket/engine/'
+M=[
+ ('bonds','(round (* 11 (sqrt
+
+All but one mutation are caught. Checking how the failure message reads, for the record:
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+import re
+s=open('/tmp/mutate.py').read()
+s=s.replace("""    m=re.search(r'traces differ at line (\\d+)\\n  Chez:   (
+  > $ cd /home/al/dev/metacat; sed -i 's/(round (\* 11 (sqrt/(round (* 10 (sqrt/' racket/engine/bonds.rktl; sleep 1.1; raco test racket/tests/codelet-diff-test.rkt 2>
+
+Diagnostics name problem, seed and codelet. Verifying the ported files are verbatim and running the whole suite plus gate:
+  > $ cd /home/al/dev/metacat; for f in bonds groups concept-mappings; do diff <(tail -n +22 racket/engine/$f.rktl) <(tail -n +19 chez_scheme/original/$f.ss) >/dev/nu
+
+Gate passes. Adding a few load-level checks to engine-test.rkt, then the docs.
+  > $ cd /home/al/dev/metacat; tail -30 racket/tests/engine-test.rkt
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/racket/tests/engine-test.rkt'; s=open(p).read()
+s=s.replace(""";; names from files not ported
+  > $ cd /home/al/dev/metacat; raco test racket/tests/engine-test.rkt 2>&1 | grep -v "^   " | head -20
+  > $ cd /home/al/dev/metacat; sed -i 's/#rx"same-direction\\?\\? is not bound"/#rx"same-direction[?] is not bound"/; s/#rx"same-direction\\? is not bound"/#rx"same-d
+  > $ cd /home/al/dev/metacat; sed -i "s/  (check-equal? (tell bond 'calculate-internal-strength) 95)/  (check-equal? (tell bond 'calculate-internal-strength)\n      
+
+Now the docs. Checking the anomalies entry format:
+  > $ cd /home/al/dev/metacat; sed -n 1,40p docs/anomalies_and_quirks.md; grep -n "^## \|^### " docs/anomalies_and_quirks.md | tail -8; tail -20 docs/porting-notes.md
+  > $ cd /home/al/dev/metacat; sed -n 40,50p chez_scheme/oracle/README.md; sed -n 160,200p docs/anomalies_and_quirks.md; grep -n "^## " docs/porting-notes.md | tail -
+  > $ cd /home/al/dev/metacat; grep -a -o "(window [a-z-]*)" /tmp/chez-codelets.txt | sort | uniq -c; grep -a -o "(new-group ([^)]*)[^#]*#[tf]" /tmp/chez-codelets.txt
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/tests/diff/codelet-harness.scm'; s=open(p).read()
+old=""";; the Workspace window with the dis
+  > $ cd /home/al/dev/metacat; cut -d'|' -f1 tests/problems.txt | grep -v "^#" | tr '\n' ';'; cat > /tmp/probe2.scm <<'EOF'
+(load "tests/diff/codelet-harness.scm")
+(d
+
+The sameness-group consolidation path (the ungated `group-graphics 'erase`) rarely shows up in 400 codelets. Looking for runs that reach it so the battery covers it:
+  > $ cd /home/al/dev/metacat; { sed -n '1,8p' /tmp/probe2.scm; i=0; for p in "eqe qeq abbba aaabaaa" "abc abd kkjjii" "abc abd iijjkk" "abc aabbcc kkjjii" "eqe qeq b
+
+Consolidation shows up in 2000-codelet runs, so I'm adding long runs to the battery and a coverage check to the test.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/tests/diff/codelet-battery.scm'; s=open(p).read()
+i=s.index(';;;-----------------------------
+
+A real divergence: `abc abd iijjkk` seed 3, at the update after codelet 735. Dumping both traces to find what differs:
+  > $ cd /home/al/dev/metacat; cat > /tmp/dump.rkt <<'EOF'
+#lang racket/base
+(require (file "/home/al/dev/metacat/racket/tests/diff-runner.rkt") racket/file)
+(define 
+  > $ cd /home/al/dev/metacat; sed -i 's|(list (string-append d "compat.rkt") (string-append d "utilities.rkt") (string-append d "engine.rkt"))|(map (lambda (f) (stri
+  > $ cd /home/al/dev/metacat; diff <(sed -n 785p /tmp/chez-out.txt | tr ')' '\n') <(sed -n 785p /tmp/rkt-out.txt | tr ')' '\n') | head; sed -n 784p /tmp/chez-out.txt
+  > $ cd /home/al/dev/metacat; diff <(sed -n 785p /tmp/chez-out.txt | sed 's/(activation/\n(activation/g' | cut -c1-60) <(sed -n 785p /tmp/rkt-out.txt | sed 's/(activ
+
+Everything before the jump phase of `update-slipnet-activations` matches; the nodes that jump to full activation differ under the same RNG state. Instrumenting that update in both runners:
+  > $ cd /home/al/dev/metacat; grep -n "define partially-active?" -A4 racket/engine/slipnet.rktl; grep -n "define prob?\|define %\b\|define ^3" -A3 racket/utilities.r
+
+My probe used `map`, which Chez applies in its own order; redoing it with an in-order map:
+  > $ cd /home/al/dev/metacat; sed -i 's/(map (lambda (node)\n                   (let\* ((a/X/' /tmp/dbg-battery.scm; python3 - <<'EOF'
+p='/tmp/dbg-battery.scm'; s=op
+
+The draws are shifted by one: Racket makes one extra draw somewhere earlier in this update. Narrowing it down step by step:
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/tmp/dbg-battery.scm'; s=open(p).read()
+s=s.replace("""          (b:update-workspace-values)
+          (for-each (
+  > $ cd /home/al/dev/metacat; paste <(sed 's/ \. (/\n/g' /tmp/chez-out.txt | tr -d ')(' | grep -v '^$') <(sed 's/ \. (/\n/g' /tmp/rkt-out.txt | tr -d ')(' | grep -v 
+  > $ cd /tmp; cat > /tmp/order.ss <<'EOF'
+(define (show x) (display x) (list x))
+(define (f) (append (show 1) (show 2)))
+(f) (newline)
+(define g (lambda (o) (let ((s
+  > $ cd /home/al/dev/metacat; sed -n 230,258p docs/porting-notes.md
+
+Chez evaluates `append`'s second argument first (`RL`). Fixing that site, then auditing the three files for other calls with two drawing arguments.
+  > $ cd /home/al/dev/metacat; grep -n "choose-\|random-pick\|stochastic-pick\|prob?\|stochastic-if\|wins-\|get-local-\|update-strength\|get-num-of-bonds-to-scan\|cho
+  > $ cd /home/al/dev/metacat; sed -n 53,68p racket/engine/workspace-structures.rktl; sed -n 440,545p racket/engine/groups.rktl; sed -n 655,700p racket/engine/groups.
+
+Only the group `get-local-density` site has two drawing arguments. Fixing it:
+  > Edit /home/al/dev/metacat/racket/engine/groups.rktl
+  > $ cd /home/al/dev/metacat; sleep 1; time raco test racket/tests/codelet-diff-test.rkt 2>&1 | tail -4 | cut -c1-700
+  > $ cd /home/al/dev/metacat; sed 's/(define b:codelet-cap 400)/(define b:codelet-cap 2000)/' tests/diff/codelet-battery.scm | grep -v "^(test cm-\|^(test codelets-l
+
+The sweep is byte-identical: all 109 runs × 2000 codelets (about 90 MB of trace). Now the docs.
+  > $ cd /home/al/dev/metacat; cat >> docs/porting-notes.md <<'EOF'
+
+## Bonds, groups and concept mappings (item 07)
+
+**Changes**: `bonds.ss`, `groups.ss` and `concep
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='/home/al/dev/metacat/chez_scheme/oracle/README.md'; s=open(p).read()
+s=s.replace("""  `tests/diff/workspace-batter
+  > $ cd /home/al/dev/metacat; sed -n 19,80p racket/engine/pending.rktl
+
+Running the gate:
+  > $ cd /home/al/dev/metacat; time python3 ralph_loops/loop0001/gate.py 2>&1 | grep -i "tests passed\|fail\|GATE\|raco test:" | tail -15
+
+Gate passes (451 Racket tests). Writing PROGRESS.md and marking the item.
+  > $ cd /home/al/dev/metacat; sed -i 's/^- \[ \] \*\*07 Bonds, groups, concept mappings.\*\*/- [x] **07 Bonds, groups, concept mappings.**/' ralph_loops/loop0001/ite
+  > $ cd /home/al/dev/metacat; cat >> ralph_loops/loop0001/PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 8 — 2026-10-02 22:56
+Item 07 (Bonds, groups, concept mappings): **SO
+
+Item 07 (bonds, groups, concept mappings) is done and the gate passes (451 Racket tests plus the Chez checks). `chez_scheme/original/` is untouched, and nothing is committed.
+
+**What was ported**
+- `bonds.ss`, `groups.ss` and `concept-mappings.ss` are now `racket/engine/*.rktl`, included in the original load order. Apart from the headers they are copied verbatim, with one exception, explained below.
+- `group-graphics` is now in the engine too (`racket/engine/group-graphics.rktl`). `groups.ss` calls it even with graphics off, so a headless run needs it. It only sends messages to the Workspace window.
+
+**The test harness**
+- `tests/diff/codelet-harness.scm` is a copy of the original's run loop with only the 10 bond and group codelet types turned on. It runs under Chez with the original loaded and under Racket with the port.
+- The trace has one line per codelet and one per update cycle: codelet type, urgency, random-generator state, structures built and broken, temperature, activations and Workspace objects.
+- `racket/tests/codelet-diff-test.rkt` compares the two traces line by line and names the problem, seed and codelet where they first differ.
+- It covers all 109 runs in `tests/problems.txt` for 400 codelets, plus 7 runs of 2000 codelets that reach the merging of sameness groups. It takes about 22 s.
+- A one-off sweep outside the gate (all 109 runs × 2000 codelets) gave byte-identical traces.
+- 15 of 16 deliberate edits to the ported code made the test fail. The one it missed (swapping the arguments of an `intersect`) doesn't change behaviour here.
+
+**A real divergence, now fixed**
+- In `abc abd iijjkk` seed 3, the port parted from the original after codelet 735.
+- The cause: in `groups.ss`, `get-local-density` passes two arguments to `append` that both make random draws. Chez evaluates the second argument first and Racket the first.
+- The fix is the one changed line in `groups.rktl`, marked `port:`. No other call in the three files has two arguments that draw.
+- The 400-codelet runs never reached it; only a 2000-codelet run did. That's why the long runs are now part of the test.
+
+**Found in the original** (logged in `docs/anomalies_and_quirks.md`)
+- `bonds-equal?` calls `same-direction?`, which no file defines. Nothing calls `bonds-equal?`, so it never fails. The port's stand-in raises an error, as Chez would.
+- Two group fonts are read but never defined; the Workspace window creates them at run time.
+
+**Not covered yet**
+- Concept mappings are only created through bridges, so a run with bridges off never makes one. The battery tests them directly instead: every message, for all pairs of instances of each slipnet category and for real letter and group descriptions.
+- Bridge-related paths in bonds and groups wait for item 08.
+- The golden traces can't be compared yet: real runs post bridge scouts from the very first codelets.
+
+PROGRESS.md has the details and notes for item 08.
+
+# result: success in 1550s, 96 turns, cost $5.44

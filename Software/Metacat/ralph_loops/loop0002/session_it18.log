@@ -1,0 +1,289 @@
+# session it18 started 2026-10-04 03:05:50
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; sed -n 1,400p ralph_loops/loop0002/iterations.md | tail -30; wc -l docs/python-translation-plan.md docs/follow-ups.md docs/anomalies_an
+  > $ cd /home/al/dev/metacat; cat python/run-tests.sh; sed -n 1,80p ralph_loops/loop0002/gate.py | grep -n -i 'timeout\|subprocess\|run-tests' ; ls python/tests/*.py
+  > $ cd /home/al/dev/metacat/python; time python3 -m pytest -q -p no:cacheprovider tests/test_golden.py tests/test_extra_seeds.py tests/test_views.py --durations=8 2
+  > $ cd /home/al/dev/metacat/python; echo "== tkinter imports in package:"; grep -rln 'tkinter' metacat --include=*.py; echo "== imports of metacat.gui outside gui:"
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import ast,pathlib
+for p in sorted(pathlib.Path('metacat').rglob('*.py')):
+    t=ast.parse(p.read_text())
+    
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import sys, pkgutil, importlib, metacat
+names=[m.name for m in pkgutil.iter_modules(metacat.__path__,'metacat.
+
+Audit in progress: the goldens, extra seeds and view runs all pass (256 tests). Now I'm checking which engine module pulls in `metacat.gui` at run time.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import sys, pkgutil, importlib, metacat
+names=[m.name for m in pkgutil.iter_modules(metacat.__path__,'metacat.
+  > $ cd /home/al/dev/metacat/python; sed -n 25,75p metacat/engine.py
+  > $ cd /home/al/dev/metacat/python; cat metacat/gui/__init__.py | grep -v '^#' ; grep -rn 'translated_modules\|LOAD_ORDER' --include=*.py . | grep -v '^./metacat/en
+  > $ cd /home/al/dev/metacat/python; grep -n 'def test_\|^import\|^from' tests/test_gui.py | head -40; grep -n -A25 'def test_no_engine_module_imports' tests/test_gu
+  > Edit /home/al/dev/metacat/python/tests/test_gui.py
+  > $ cd /home/al/dev/metacat/python; grep -n 'def run_problem' -A3 metacat/headless.py; python3 -m pytest -q -p no:cacheprovider tests/test_gui.py -k headless_run 2>
+
+Fails as expected (`['metacat.gui']`). Now the fix: skip packages in `translated_modules`.
+  > Edit /home/al/dev/metacat/python/metacat/engine.py
+  > $ cd /home/al/dev/metacat/python; python3 -m pytest -q -p no:cacheprovider tests/test_gui.py -k 'headless_run or engine_module' tests/test_codelets.py tests/test_
+
+Now the rest of the suite (GUI driver, Tk renders, installs, CLI vs oracle, batteries), in the foreground:
+  > $ cd /home/al/dev/metacat/python; time python3 -m pytest -q -p no:cacheprovider --deselect tests/test_golden.py --ignore tests/test_golden.py --ignore tests/test_
+  > Agent {"description": "Audit plan against code", "subagent_type": "general-purpose", "run_in_background": true, "prompt": "Rea
+  > $ cd /home/al/dev/metacat/python; grep -rn -A2 '# chez:\|# 1.2:' metacat/rules.py | head -40; grep -rn '# chez:\|# 1.2:' metacat | awk -F: '{print length($0)}' | 
+  > $ cd /home/al/dev/metacat; wc -l docs/python-translation-plan.md; ls python python/metacat python/metacat/gui python/tests python/oracle; wc -l python/metacat/*.p
+  > Read /home/al/dev/metacat/docs/python-translation-plan.md
+  > Read /home/al/dev/metacat/docs/python-translation-plan.md
+  > Read /home/al/dev/metacat/docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \|^class \|^[A-Za-z_]* = " chez.py | awk -F: '{print $3}' | tr '\n' ' ' | head -c 6000; echo; echo ---; gr
+  > $ cd /home/al/dev/metacat/python/metacat; grep -no "^def [a-zA-Z_0-9]*\|^class [A-Za-z_0-9]*\|^[A-Za-z_0-9]* =" chez.py | sed 's/^\([0-9]*\):/\1 /' | tr '\n' ';';
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def round\|^def floor\|^def ceiling\|^def truncate\|^round_\|^floor\|^def first\b\|^def rough\|^def filter_\|^
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 180,205p utilities.py; sed -n 1050,1060p utilities.py; grep -n "radian\|degree\|theme_help\|def eighth\|^def seco
+  > Write /home/al/dev/metacat/python/tests/quirk_sites.py
+  > $ cd /home/al/dev/metacat/python; python3 tests/quirk_sites.py | head -80; python3 tests/quirk_sites.py | grep -c '^- '
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "180\|theme_help\|eighth\|hundred_minus\|_or_\|_to_\|__\b\|keyword\|builtin" names.py | head -30; python3 -c "
+i
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+import sys; sys.path.insert(0,'tests'); import quirk_sites as q
+for s in q.sites():
+    if s[2]=='chez' and q.kind(
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from metacat.names import scheme_to_python as s
+for n in ['180/pi','?','1st','100-','100*','%','20%','^2','~','fig5
+  > $ cd /home/al/dev/metacat/python; head -30 tests/name_mapping.py; grep -n "import" tests/test_name_mapping.py | head; grep -n "injective\|def test" tests/test_nam
+  > $ cd /home/al/dev/metacat/python; grep -n '# chez:\|# 1.2:' metacat/groups.py | head -3; sed -n 1,30p metacat/groups.py | grep -n 'chez:\|1.2:'
+
+Now engine.py.
+  > $ cd /home/al/dev/metacat/python; cat metacat/engine.py; git -C /home/al/dev/metacat diff --stat python/metacat/engine.py
+  > $ cd /home/al/dev/metacat; grep -n "load" chez_scheme/original/metacat.ss | head -50; ls python/metacat/*.py | xargs -n1 basename | tr '\n' ' '
+  > $ cd /home/al/dev/metacat/python; grep -rn "ast\.\|import_module\|alone\|from-import\|ImportFrom" tests/*.py | grep -v "^tests/scheme" | head -20; echo ---; grep 
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+from pathlib import Path
+p=Path('tests/quirk_sites.py'); s=p.read_text()
+old_start=s.index('def sites():'); ol
+  > $ cd /home/al/dev/metacat/python; sed -n 955,980p tests/test_coderack.py; sed -n 150,170p tests/test_golden.py; sed -n 785,810p tests/test_graphics.py; sed -n 195
+
+I'm building the generated list of quirk sites for the plan: 242 real comment sites (the 243rd hit was text inside a docstring). Now I'll tidy the generator and add its sync test.
+  > $ cd /home/al/dev/metacat/python; grep -rn "from-import\|from metacat\.\(bonds\|x\)\|startswith(\"metacat\.\")\|n.module.startswith\|module.startswith\|-c.*import
+  > $ cd /home/al/dev/metacat/python; sed -i 's/names.get(m and comments\[k\]\[0\], "(module level)")/names.get(comments[k][0], "(module level)")/' tests/quirk_sites.
+  > $ cd /home/al/dev/metacat/python; sed -n 30,200p metacat/objects.py
+
+The test fails because the plan has no list yet. I'll add the audit section to the plan.
+  > $ cd /home/al/dev/metacat; sed -n 855,875p docs/python-translation-plan.md; sed -n 1,25p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^class \|StopRun\|keep.going\|setrecursionlimit\|^[A-Za-z_]* = " metacat/headless.py metacat/run.py metacat/__ma
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^class \|^[A-Za-z_]* = \|raise " metacat/headless.py | head -60; grep -rn "setrecursionlimit" metacat | head
+  > $ cd /home/al/dev/metacat/python; grep -rn "setrecursionlimit" --include=*.py . | grep -v pycache; grep -n "views=" metacat/headless.py; sed -n 249,262p metacat/h
+  > Edit /home/al/dev/metacat/docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat/python; grep -n "caddr" metacat/*.py | head; sed -n 86,96p metacat/__main__.py
+  > $ cd /home/al/dev/metacat/python; sed -n 97,130p metacat/__main__.py; ls tests/snapshots python 2>/dev/null; ls oracle/batteries; ls fixtures
+  > $ cd /home/al/dev/metacat/python; python3 tests/quirk_sites.py --write && python3 -m pytest -q -p no:cacheprovider tests/test_quirk_sites.py 2>&1 | tail -2; grep 
+
+The site list is in the plan and its test passes. Next: the Python section of `docs/follow-ups.md`.
+  > $ cd /home/al/dev/metacat; cat docs/follow-ups.md; sed -n 1,40p docs/anomalies_and_quirks.md; grep -n '^## \|^### ' docs/anomalies_and_quirks.md | tail -40
+  > $ cd /home/al/dev/metacat/python; grep -n "def engine_module\|engine_module" tests/*.py | head -8; grep -n "STAND_INS" tests/codelet_harness.py | head -3; grep -n
+  > $ cd /home/al/dev/metacat/python; grep -n "engine_module\|engine_stubs" tests/test_utilities.py | head -5; sed -n 90,110p tests/codelet_harness.py; grep -n "metac
+  > $ cd /home/al/dev/metacat/python; grep -n "continuation_point_star\|apply-rule\|\"apply\|fail" metacat/rules.py | head -20
+  > $ cd /home/al/dev/metacat/python; grep -n "format-slipnode\|rule-dimension-order" metacat/rules.py | head -5; grep -n "same-direction\|same_direction_p\|complemen
+  > $ cd /home/al/dev/metacat; sed -n 820,838p docs/anomalies_and_quirks.md; grep -n 'Speed-ups\|^#' docs/python-run-times.md | head; grep -n 'STAND_INS\|stand-in' py
+  > $ cd /home/al/dev/metacat/python; grep -rn "complement" metacat/*.py | head -5; grep -n "complement-codelet-pattern" ../chez_scheme/original/*.ss | head -3
+  > $ cd /home/al/dev/metacat/python; sed -n 362,400p metacat/sugar.py; grep -n "define_codelet_procedure_star" metacat/bonds.py | head -3
+  > Edit /home/al/dev/metacat/docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat; sed -n 60,110p docs/python-run-times.md; sed -n 1,30p docs/python-run-times.md
+
+Now the Python section of follow-ups.md:
+  > $ cd /home/al/dev/metacat/python/metacat/gui; grep -n "^def \|^class " views.py hosts.py swl.py app.py | head -80; grep -n "^def \|^class " fonts.py sgl.py | grep
+  > $ cd /home/al/dev/metacat/python/metacat/gui; grep -n "def get_actual_values\|init_env\b\|^init_env\|serif\b =\|^serif\|^sans_serif\|^fancy" fonts.py sgl.py | hea
+  > $ cd /home/al/dev/metacat/python/metacat/gui; grep -n "\"engine-error\"\|\"visible?\"\|\"get-widgets\"" gui.py | head; grep -n "ThreadSafeTk" app.py swl.py | head
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^top\|^bot\|^ver\|^diff\|^lcat\|^iden\|global lcat\|lcat =" themes.py | head; grep -n "^class " themes.py justi
+  > $ cd /home/al/dev/metacat/python/metacat/gui; sed -n 60,120p sgl.py | grep -n "tcl_eval\|def \|=" | head; grep -n "sync_display\|hook" swl.py | head -5
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|digest" tests/golden_harness.py | head -20; grep -n "maxtasksperchild\|fork" tests/golden_harness.py | head -5; 
+  > $ cd /home/al/dev/metacat; cat >> docs/follow-ups.md <<'EOF'
+
+## Python (loop0002)
+
+Written by the final audit of loop0002 (item 17, 2026-10-04). The Python port 
+  > $ cd /home/al/dev/metacat/python/metacat; for f in *.py; do grep -q "^def load" $f && echo -n "$f "; done; echo; grep -n "^g_[a-zA-Z_]* = make\|^g_[a-zA-Z_]* = [A
+  > $ cd /home/al/dev/metacat; sed -i 's/The `--fast` tier (about 10 s) runs no golden in full. A middle/The `--fast` tier (about 10 s) runs one short golden (a b z s
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \|^[a-z_A-Z]* = " group_graphics.py | head -20; grep -n "^def " general_graphics.py | wc -l; grep -n "^def
+
+While the plan audit runs, I'll check the fast tier with the engine fix:
+  > $ cd /home/al/dev/metacat; bash python/run-tests.sh --fast -p no:cacheprovider 2>&1 | tail -2
+  > $ cd /home/al/dev/metacat/python/metacat; grep -rn "set_thread_break_handler" --include=*.py . | grep -v "def " | head; sed -n 125,145p gui/views.py
+  > $ cd /home/al/dev/metacat/python; grep -n "def test.*import\|walk" tests/test_sgl.py | head; grep -n "Python 3\|3.12\|3.1[0-9]" ../docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; wc -l docs/python-translation-plan.md; git status --short docs/; git log -1 --format=%cd -- docs/python-translation-plan.md; grep -n "^
+  > $ cd /home/al/dev/metacat; git diff docs/python-translation-plan.md | head -60; git diff --stat docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 925,1211p docs/python-translation-plan.md | grep -v "^| \`metacat\|^| \`metacat" | grep -v "^|.*| [0-9]* |$" | head -150
+
+Running the gate now (about 7 min). The plan audit is still running and only docs will change after it:
+  > $ cd /home/al/dev/metacat; time python3 ralph_loops/loop0002/gate.py 2>&1 | tail -8
+  > $ cd /home/al/dev/metacat; ls python/tests/ | grep -i quirk; sed -n 1150,1212p docs/python-translation-plan.md | grep -v "^- \`metacat"; cat ralph_loops/loop0002/
+  > $ cd /home/al/dev/metacat; grep -n "Python ≥ 3.7\|imports every engine\|syntactic-sugar,$\|utilities, constants, setup\|Never \`from metacat.bonds\|from metacat.u
+  > $ cd /home/al/dev/metacat/python; grep -n "^g_temperature\b\|^g_temperature =" metacat/*.py; grep -rn "\"\*temperature\*\"" metacat tests | head -3; grep -n "Item
+  > $ cd /home/al/dev/metacat; grep -rn "272[,.]\?[89]57\|272957\|272857" docs/ python/ --include=*.md --include=*.py | head; grep -n "Chez\b.*\*\*9×\|9×" docs/python
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 953,967p chez.py; sed -n 861,870p chez.py; sed -n 1062,1076p chez.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 161,224p chez.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n -A3 "^def exists_p" utilities.py; grep -n "^def symbol_p\|^symbol_p\|def symbol_p" *.py | head; grep -n "string-
+  > $ cd /home/al/dev/metacat/python/metacat; grep -rn "symbol_p\b\|def _symbol_p\|isinstance(.*, str)" --include=*.py . | grep -v pycache | head -10
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 807,825p utilities.py; sed -n 380,406p run.py; grep -n "def rough" -A12 utilities.py | head -16
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n -A2 "\"draw-string-letters\"" gui/workspace_graphics.py | head -6; grep -rn "_ignored" --include=*.py . | head -
+  > $ cd /home/al/dev/metacat/python/metacat/gui; sed -n 27,97p swl.py | grep -v "^\s*$" | head -50; grep -n "threading.Event\|Event()" ../run.py | head
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 160,200p headless.py; sed -n 200,216p headless.py
+  > $ cd /home/al/dev/metacat/python; grep -n "bridges?\|rules?\|bridges_p\|rules_p" tests/codelet_harness.py | head -8; grep -n "golden_run\b\|golden_run.py" -r test
+  > $ cd /home/al/dev/metacat; grep -c "^(define" chez_scheme/original/gui.ss; grep -n "^def _\|^class _" python/metacat/gui/gui.py | wc -l
+
+I found 9 statements that are wrong or stale and 13 future-tense statements that are now done. Your doc is changing while I read it, though. A Ralph session (`status.json`: session it18, item 17 "Final audit") is editing `docs/python-translation-plan.md` right now. It has inserted a new "### Audit (item 17)" section at lines 873–1211 (339 lines), so the file is now 1382 lines.
+
+Line numbers below are for the file as it is now. Lines 1–872 haven't moved. Everything from "## Names" onward is 339 lines lower than in the committed version. The new section says "corrections are made in place, each marked (item 17)". When I looked, the diff only had additions, so some of what follows may get fixed by that session. I didn't edit anything.
+
+## (a) Wrong or stale statements
+
+1. **L242** "`sugar.continuation_point(body)`": the function is `sugar.continuation_point_star` (sugar.py:194). Line 434 already uses the right name.
+2. **L259–261** "The engine sets `sys.setrecursionlimit(10000)`": only the CLI does this (`metacat/__main__.py:99`). `engine.load`, `headless.run_problem`, `gui/app.main` and the golden harness don't raise the limit.
+3. **L256–257** views "must only queue drawing for Tk's thread (`after` polling)": that's not how it was built. `swl.ThreadSafeTk` (gui/swl.py:27–97) sends each Tcl call to the main thread through a queue and a pipe that Tk watches, and the engine thread waits for the result. Nothing polls with `after`. Item 15 (L845) describes it correctly.
+4. **L1259–1261 and L1273–1275** (rule 2 says modules need nothing but `chez`/`objects`/`sugar`/`utilities` at import time; rule 4 says "Never `from metacat.bonds import build_bond`"): engine modules do from-import from each other.
+   - `bridge_graphics.py:30` imports `both_spanning_groups_p` from `workspace_objects`.
+   - `bridge_graphics.py:24`, `group_graphics.py:24` and `rule_graphics.py:27` import names from `general_graphics`.
+5. **L1359–1363** (Risk 6 mitigation: "a test that imports each engine module alone … and an AST check that engine modules don't `from`-import names from each other"): neither test exists. The only AST checks in tests/ are the no-tkinter/no-`metacat.gui` ones (test_coderack.py:962, test_golden.py:156, test_graphics.py:797, test_gui.py:223, test_sgl.py:598). That is why item 4 above isn't caught.
+6. **L1371–1373** "Python's exception for the crash is a `TypeError`/`IndexError` where Chez says `caddr`": the port raises `chez.SchemeError("caddr", …)` (rules.py:92–96). The CLI prints the oracle's own first line, `Error: Exception in caddr: …` (`__main__.py:86–95`, 116), which matches item 11 (L705).
+7. **L1316** "decorators (`define_codelet_procedure_star`)": it's a plain function, `(name, proc)`, called inside each `load()` (sugar.py:370, e.g. bonds.py:670).
+8. **L1323** "**11** run.ss, `trace.py`, …": the trace writer is `trace_writer.py`, since `trace.py` is trace.ss (L647, L686).
+9. **L669, L675–676** (item 10: "golden_harness.py, golden_run.py"; run.ss's loop "translated in the tests and registered as `metacat.run`"): `golden_run.py` no longer exists and the loop is now `metacat/run.py`. Item 11 says so at L688, but item 10's text was never marked as superseded.
+
+Minor:
+- **L83**: utilities' `floor`/`ceiling`/`truncate`/`round_` don't use `math.*` or Python `round`. They call `chez.exact_floor`/`exact_ceiling`/`exact_truncate`/`exact_round` (utilities.py:184–201).
+- **L151 and L146–147**: `chez.eq_p` also counts equal `Char`s, and any two empty lists, as eq (chez.py:1062–1075). So `'()` isn't compared by identity.
+- **L184–185** "`symbol_p(x)` is `isinstance(x, str)`": there's no public `symbol_p`. There are two private `_symbol_p` helpers that disagree: `justify.py:74` is plain `isinstance(str)`, while `sugar.py:74` excludes `chez.String`/`Char`.
+- **L87** "Must accept an `int` only (normalise Fractions first)": `chez.random` normalises a Fraction with denominator 1 itself (chez.py:192).
+- **L678 vs L708**: the golden codelet total is 272,957 in one place and 272,857 in the other. `docs/python-run-times.md:64` says 272,857 and `docs/extra-seeds.md:32` says 272,957.
+- **L1263–1264**: the listed load order leaves out `fonts` (between utilities and constants) and `sgl_interpreter`, but `engine.LOAD_ORDER` has both (engine.py:27). Neither has an engine module, so `find_spec` skips them.
+
+## (b) Future-tense statements now done (or done differently)
+
+1. **L446–448** "Those modules don't exist yet; tests provide them with `engine_module(...)` in test_utilities.py": `setup`/`coderack`/`slipnet` all exist now. `engine_module` is defined in `tests/engine_stubs.py`.
+2. **L489** "`setup` and `enable-resizing` are the GUI's (item 15)": done in `gui/app.py:171, 224`.
+3. **L515** "rules.py will pass its escape": done, `apply_rule` passes its `fail` closures inside `continuation_point_star` (rules.py:1734–1793).
+4. **L229** and **L538** ("rules.py must register" `format-slipnode`; "run.py must define" `*temperature-clamped?*`): both done (rules.py:18/2681; run.py:55).
+5. **L559–564** "group_graphics.py holds only `group-graphics` … the rest is the panels item's": it now also holds `make_group_pexp`, `draw_group_grope`, `make_group_grope_pexp` and the arrowhead constants (group_graphics.py:29–129).
+6. **L573–574** "`b:bridges?`/`b:rules?` paths wait for items 08–09": both now exist (codelet_harness.py:287, 289).
+7. **L592–593** themes.ss stand-ins "until item 10's themes.py": removed (L656 says so). The old sentence was left unmarked.
+8. **L647–650** "item 11 must put the writer under another name (for example `tracing.py` or inside `headless.py`)": it's `metacat/trace_writer.py`.
+9. **L651–655** "the panels item adds the rest of each file": done differently. The engine's `theme_graphics.py` and `trace_graphics.py` still hold one function each. The rest went into `gui/theme_graphics.py`, `gui/trace_graphics.py` and `gui/general_graphics.py`.
+10. **L700–701** "Item 15 can call `go` from a GUI worker": done, `gui/app.py:44` `EngineThread` runs the queued thunks through `run.toplevel`.
+11. **L805–806** thread-break "raises until item 15 installs a handler": installed at `gui/app.py:217` (`views.set_thread_break_handler(gui.thread_break)`).
+12. **L409** "Item 12 may speed up dispatch further (local aliases …, caching the parent's table)": item 12 did something else. It inlined `tell_all`, cached `sort-by-method`'s keys, and added fast paths to chez.py's arithmetic and `memq`/`remq` (objects.py:131–145, L718–727). There is no parent-table cache.
+13. **L1325 and L1343–1349** (speed: "Expected hot spots …"; "2–5 ms per codelet"; "Item 12 measures and decides"): measured at 1.23 ms per codelet, about 9× Chez. The goldens take about 35 s on 32 cores (L708; python-run-times.md:16).
+
+## Sections that check out
+
+- **Numbers, Evaluation order, Lists/map/sort, Printing, Top-level values, Booleans**: chez.py has every named function (`norm`, `div`, `mul`, `add`, `sub`, `max_`, `min_`, `sqrt`, `expt`, `inexact`, `map_`, `sort(pred, ls)`, `for_each`, `remq`, `memq`, `eqv_p`, `equal_p`, `Pair`, `String`, `Char`, `Vector`, `ExactComplex`, the top-level table, `UnboundVariable`, `number_to_string`, `format_`, `printf`). The order-sensitive sites are as described: `pairwise_map`, `init_workspace`, `rough`, groups' `get_local_density`.
+- **Objects / Decision C3 / As built (item 03)**: `SchemeObject`, `message`, `tell`, `delegate`, `delegate_to_all`, `tell_all`, `Lambda`, `Forwarder`, `BASE_OBJECT`, `INVALID` and `Reset` match. `stochastic_if_star(prob_thunk, exps_thunk)` really does draw the coin before the probability (sugar.py:174–182). `draw-string-letters` takes `*_ignored` (gui/workspace_graphics.py:466).
+- **Names**: every example in the table maps as stated through `metacat.names.scheme_to_python`, and `test_name_mapping.py` has the injectivity test.
+- **As built, items 08, 09, 11, 12, 13, 14, 15, 16**: the names, files and behaviours check out: `run.toplevel`, `Breakpoint`, `_Abandoned`, `headless.run_problem(views=…)`, `StopRun`, `trace_writer.PORT`/`wrap_trace_window`, `golden_harness.run_in_fresh_process(digest=…)`, hosts, `ThreadSafeTk`, pyproject scripts and package data. Every test file named in the plan exists.
+- **Python-specific traps; What makes it easier**: nothing contradicted.
+
+The gate passed (1409 tests). The plan audit found 9 stale claims and 13 resolved future-tense statements. I'll fix them in the plan, each marked "(item 17)".
+  > $ cd /home/al/dev/metacat; f=docs/python-translation-plan.md; for r in 80,90 144,152 182,186 226,231 238,262 405,410 444,449 487,490 513,516 535,540 557,565 570,5
+
+Most of these are quick text edits. One factual question first: is the golden codelet total 272,957 or 272,857?
+  > $ cd /home/al/dev/metacat; tail -1 tests/golden/a-b-z_1.jsonl | cut -c1-300; python3 - <<'EOF'
+import json,glob
+tot=0
+for f in glob.glob('tests/golden/*.jsonl'):
+
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+import json,glob
+tot=0; tot2=0
+for f in glob.glob('tests/golden/*.jsonl'):
+    lines=open(f).read().splitlines()
+    
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+from pathlib import Path
+p=Path('docs/python-translation-plan.md'); s=p.read_text()
+R=[
+("| `round_` (Python `round`:
+
+Next I'll check the "100 runs that suspend" claim and look at the later sections (Module rules, Order of work, Risks).
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+import json,glob,collections
+c=collections.Counter(); d=collections.Counter()
+for f in glob.glob('tests/golden/*.json
+  > $ cd /home/al/dev/metacat; sed -i 's/to 272,857, because the 100 runs that suspend do it inside a codelet, before the count/to 272,857, because the 99 runs that s
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import ast,pathlib
+ok={'chez','objects','sugar','utilities','names'}
+for p in sorted(pathlib.Path('metacat').g
+  > $ cd /home/al/dev/metacat/python; grep -rn 'both_spanning_groups_p\|general_graphics\.\(dashed_box\|outline_box\|arrowhead\|zigzag\)' --include=*.py metacat tests
+
+Nothing rebinds those names, so the four existing `from`-imports are safe. I'll add the two tests from Risk 6, with those four sites as an explicit allow-list:
+  > Write /home/al/dev/metacat/python/tests/test_engine_modules.py
+  > $ cd /home/al/dev/metacat/python; grep -n '^def random_state\|^def get_state\|^_state\|^def random_seed\|^STATE\|^_s1' metacat/chez.py | head
+  > $ cd /home/al/dev/metacat/python; sed -n 140,200p metacat/chez.py | grep -n 'global\|def \|= ' | head -20
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+from pathlib import Path
+p=Path('tests/test_engine_modules.py'); s=p.read_text()
+s=s.replace("""        "state
+
+Mutation checks for the new tests: a forbidden `from`-import, and cross-module work at import time.
+  > $ cd /home/al/dev/metacat/python; cp metacat/rules.py /tmp/rules.bak; cp metacat/memory.py /tmp/memory.bak
+export PYTHONDONTWRITEBYTECODE=1
+sed -i '0,/^from metac
+  > $ cd /home/al/dev/metacat/python; export PYTHONDONTWRITEBYTECODE=1; cat /tmp/line >> metacat/memory.py; python3 -m pytest -q -p no:cacheprovider tests/test_engine
+
+Two tests failed where I expected one. Checking which:
+  > $ cd /home/al/dev/metacat/python; export PYTHONDONTWRITEBYTECODE=1; cat /tmp/line >> metacat/memory.py; python3 -m pytest -q -p no:cacheprovider tests/test_engine
+
+All three mutants are caught. Now the remaining plan corrections (the module rules, Order of the work, Risks 3, 6 and 9):
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+from pathlib import Path
+p=Path('docs/python-translation-plan.md'); s=p.read_text()
+R=[
+("   because nothing rebinds 
+
+Done. Next I'll check the README for test counts that may now be stale:
+  > $ cd /home/al/dev/metacat; grep -n '14[0-9][0-9] tests\|720\|109 golden' python/README.md README.md | head; grep -n 'test_quirk\|test_engine_modules\|quirk_sites'
+  > $ cd /home/al/dev/metacat; sed -n 87,96p python/README.md; sed -n 330,360p python/README.md
+  > $ cd /home/al/dev/metacat; cat >> python/README.md <<'EOF'
+
+Final audit (item 17): `tests/test_engine_modules.py` checks the module rules of
+docs/python-translati
+
+I'll check whether anomalies.md already explains the codelet-count difference:
+  > $ cd /home/al/dev/metacat; grep -n 'uncounted\|count is still\|272,857\|272,957' docs/*.md | head
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+from pathlib import Path
+p=Path('docs/anomalies_and_quirks.md'); s=p.read_text()
+anchor="### Python: `engine.load()` 
+
+Now the final gate run:
+  > $ cd /home/al/dev/metacat; time python3 ralph_loops/loop0002/gate.py 2>&1 | tail -4; git status --short
+
+The gate passed with 1412 tests. Last step: record the results.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+from pathlib import Path
+p=Path('docs/python-translation-plan.md'); s=p.read_text()
+a="GUI driven through its widgets
+  > $ cd /home/al/dev/metacat/python; python3 -m pytest -q -p no:cacheprovider tests/test_quirk_sites.py tests/test_engine_modules.py 2>&1 | tail -1
+
+Item 17, the final audit, is solved, and loop0002 is finished: all 18 items are solved, `LOOP_COMPLETE` is in PROGRESS.md, and the gate passes with 1412 tests in about 7 minutes.
+
+**Re-runs:**
+- The 109 goldens, the 720 extra seeds and the 109 goldens with every window attached all passed (256 tests, 4 min 47 s).
+- Everything else passed too (1151 tests): the batteries, the command line against the live original, the Tk rendering, the GUI driven through its widgets under xvfb-run with every GUI run's trace equal to its golden, and the installs into fresh venvs.
+
+**No engine module imports tkinter.** No module outside `metacat/gui/` imports tkinter or `metacat.gui`. A run-time check did find one leak: `engine.load()` imported the empty `metacat.gui` package, because `LOAD_ORDER`'s entry for gui.ss has the same name. It loaded no tkinter and changed no run. I wrote a test that failed on this (a fresh headless run must leave no tkinter or `metacat.gui*` modules loaded), then fixed `translated_modules()` to skip packages. It's logged in `docs/anomalies_and_quirks.md`.
+
+**Translation plan:**
+- **Corrections:** a subagent checked every name, path and behaviour the plan states, and I verified what it found. It found 9 stale or wrong statements and 13 "will do" statements that have since been done, some differently. Each is corrected in place and marked "item 17".
+- **Missing tests:** the plan's Risk 6 promised two tests that never existed. They are now in `tests/test_engine_modules.py`: each engine module imports alone in a fresh interpreter, and an AST check restricts cross-module `from`-imports. Three deliberately broken versions of the code each make it fail.
+- **The `# chez:` and `# 1.2:` sites:** the plan now lists all 242 (167 `# chez:`, 75 `# 1.2:`), by module and function. The list is generated from the code by `python/tests/quirk_sites.py --write`, and `tests/test_quirk_sites.py` fails if the two drift apart.
+
+**Docs:**
+- **`docs/follow-ups.md`:** a new Python section (safety net, clean-up, performance, features).
+- **`docs/anomalies_and_quirks.md`:** two new entries. One is the gui leak above. The other explains why the plan quoted two codelet totals for the goldens. Both are right: 272,957 codelets ran, but the final counts sum to 272,857, because the 99 suspends and 1 halt stop inside a codelet before it is counted.
+
+**Not done:** I didn't re-run the timing table in `docs/python-run-times.md`. The machine's load average was about 30 the whole time, so the numbers wouldn't be meaningful. It's listed in follow-ups.md.
+
+Nothing is committed; the driver commits and pushes.
+
+# result: success in 1696s, 59 turns, cost $5.79

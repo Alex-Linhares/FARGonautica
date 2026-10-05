@@ -1,0 +1,233 @@
+# session it13 started 2026-10-03 01:38:12
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/original/sgl-interpreter.ss chez_scheme/original/fonts.ss chez_scheme/original/general-graphics.ss; ls racket racket/
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/sgl-interpreter.ss
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/fonts.ss; sed -n 85,110p docs/code-map.md; sed -n 355,385p docs/code-map.md
+  > $ cd /home/al/dev/metacat; grep -n "viewport\|x->pixel\|pixel->x\|define make-graphics-window\|set-background-color\|get-background-color" chez_scheme/original/ge
+  > $ cd /home/al/dev/metacat; sed -n 60,330p chez_scheme/original/general-graphics.ss; sed -n 60,100p chez_scheme/original/constants.ss
+  > $ cd /home/al/dev/metacat; sed -n 330,420p chez_scheme/original/general-graphics.ss; grep -n "color\|font" racket/engine/pending.rktl | head -60; grep -n "color\|
+
+Reading the original SGL interpreter and fonts code; next I'll check the tools and fetch the dissertation.
+  > $ cd /home/al/dev/metacat; which pdfimages pdftoppm pdftotext mutool python3 convert; python3 -c "import fitz" 2>&1; grep -n "send\|define-class\|make \|create" c
+  > $ cd /home/al/dev/metacat; mkdir -p docs/reference; curl -sSL -o docs/reference/dissertation.pdf https://science.slc.edu/~jmarshall/metacat/dissertation.pdf; ls -
+  > $ cd /home/al/dev/metacat/docs/reference; pdfinfo dissertation.pdf; pdftotext -l 3 dissertation.pdf - | head -60; pdfimages -list dissertation.pdf | head
+  > $ cd /home/al/dev/metacat/docs/reference; pdfimages -list dissertation.pdf 2>/dev/null | awk 'NR>2 && $4>100 && $5>100' | head -60; pdftotext dissertation.pdf /tm
+  > $ cd /home/al/dev/metacat/docs/reference; mkdir -p /tmp/diss-img && pdfimages -png -p dissertation.pdf /tmp/diss-img/img 2>/dev/null; ls /tmp/diss-img | wc -l; py
+  > $ cd /home/al/dev/metacat/docs/reference; mkdir -p figures; python3 - <<'EOF'
+from PIL import Image
+import glob,os,re,shutil
+for f in sorted(glob.glob('/tmp/diss-
+
+Let me look at a few to identify panels.
+  > Read /home/al/dev/metacat/docs/reference/figures/p077-093.png
+  > Read /home/al/dev/metacat/docs/reference/figures/p150-280.png
+  > Read /home/al/dev/metacat/docs/reference/figures/p224-541.png
+  > $ cd /home/al/dev/metacat/docs/reference/figures; python3 - <<'EOF'
+from PIL import Image, ImageDraw
+import glob
+fs=sorted(glob.glob('p*.png'))
+def sheet(fs,out,c
+  > Read /tmp/sheet1.png
+  > Read /tmp/sheet2.png
+  > $ cd /home/al/dev/metacat; cat chez_scheme/oracle/diff-eval.ss | head -80; sed -n 1,200p racket/tests/diff-runner.rkt; head -60 tests/diff/helpers.scm; cat racket
+  > $ cd /home/al/dev/metacat; sed -n '/(provide/,/^$/p' racket/compat.rkt | head -80; grep -n "define-syntax (record-case\|define-syntax record-case\|define-syntax (
+  > $ cd /home/al/dev/metacat; grep -ho "(make-mfont [^)]*)\|(swl-font [^)]*)\|(make-fixed-font [^)]*)" chez_scheme/original/*.ss | sort | uniq -c | sort -rn | head -
+
+Now writing the port: colours, fonts and the SGL interpreter as `racket/gui/` modules (racket/draw only).
+  > $ cd /home/al/dev/metacat; awk 'NR>=81 && NR<=846' chez_scheme/original/constants.ss | grep -n "^$\|^(\|^;" | head; sed -n 825,848p chez_scheme/original/constants
+  > $ cd /home/al/dev/metacat; mkdir -p racket/gui; head -30 racket/engine/constants.rktl; head -25 racket/utilities.rkt
+  > $ cd /home/al/dev/metacat; { sed -n 1,18p chez_scheme/original/constants.ss | sed '1s/^/#lang racket\/base\n/' ; cat <<'EOF'
+;; Ported to Racket, 2026: the colour
+  > $ cd /home/al/dev/metacat; grep -n "define base-object\|define delegate\|define-syntax delegate\|define tell\|(provide" racket/utilities.rkt | head; grep -rn "get
+  > $ cd /home/al/dev/metacat; { echo '#lang racket/base'; sed -n 1,18p chez_scheme/original/fonts.ss; cat <<'EOF'
+;; Ported to Racket, 2026: fonts.ss on racket/draw.
+  > $ cd /home/al/dev/metacat; sed -i '/^         racket\/list$/d' racket/gui/fonts.rkt; racket -e '(require (file "/home/al/dev/metacat/racket/gui/fonts.rkt") (file 
+  > $ cd /home/al/dev/metacat; sed -n 90,125p chez_scheme/oracle/prelude.ss; head -40 tests/diff/coderack-battery.scm
+  > $ cd /home/al/dev/metacat; cat > tests/diff/sgl-chez-setup.ss <<'EOF'
+;;; sgl-chez-setup.ss -- Chez side of the SGL battery (item 12).
+;;;
+;;; Part of the Racket 
+  > $ cd /home/al/dev/metacat; scheme --script chez_scheme/oracle/diff-eval.ss tests/diff/helpers.scm tests/diff/sgl-chez-setup.ss tests/diff/sgl-battery.scm 2>&1 | c
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/tests/diff-runner.rkt'
+s=open(p).read()
+s=s.replace('''(define (chez-output battery)''','''(define (chez-ou
+  > $ cd /home/al/dev/metacat; raco test racket/tests/sgl-diff-test.rkt 2>&1 | head -5
+
+Battery fails as expected (no `sgl.rkt` yet). Now writing `racket/gui/sgl.rkt`.
+  > $ cd /home/al/dev/metacat; { echo '#lang racket/base'; sed -n 1,64p chez_scheme/original/sgl-interpreter.ss; cat <<'EOF'
+;;=======================================
+  > $ cd /home/al/dev/metacat; sed -i 's|^         racket/math$|         (only-in racket/math pi)|' racket/gui/sgl.rkt; raco make racket/gui/sgl.rkt && raco test rack
+  > $ cd /home/al/dev/metacat; grep -n "(define filter" -A6 racket/utilities.rkt | head
+
+The interpreter agrees with the original on all 50 battery tests. Next: the render fixture and snapshot test.
+  > $ cd /home/al/dev/metacat; mkdir -p racket/tests/snapshots; cat > racket/tests/sgl-fixture.rkt <<'EOF'
+#lang racket/base
+;; Item 12: a fixture of every SGL form, 
+  > $ cd /home/al/dev/metacat; sed -i 's|     (text (100 100) "cleared")|     (let-sgl ((font ,label-font)) (text (100 100) "cleared"))|' racket/tests/sgl-fixture.rkt
+  > Read /tmp/sgl-fixture.png
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/tests/sgl-fixture.rkt'
+s=open(p).read()
+for a,b in [('330 "','335 "'),('215 "','225 "'),('100 "','115 "')]:
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/tests/sgl-fixture.rkt'
+s=open(p).read()
+s=s.replace("""(draw! vp '(let-sgl ((origin (320 5)) (foreground-co
+  > Read /tmp/sgl-fixture.png
+
+The fixture renders correctly. Zooming in to check pixel-level details.
+  > $ cd /tmp; python3 -c "
+from PIL import Image
+im=Image.open('/tmp/sgl-fixture.png')
+im.crop((0,40,320,150)).resize((960,330),Image.NEAREST).save('/tmp/crop1.png')
+  > Read /tmp/crop1.png
+  > $ cd /home/al/dev/metacat; sed -i "s|                 #:underlined? (and (memq 'underline style) #t)))|                 #:underlined? (and (memq 'underline style)
+  > Read /tmp/crop2.png
+  > $ cd /home/al/dev/metacat; grep -n "racket/gui\|racket/draw" -B3 -A12 racket/tests/engine-test.rkt | head -40
+  > $ cd /home/al/dev/metacat; cat > racket/tests/sgl-test.rkt <<'EOF'
+#lang racket/base
+;; Item 12: the SGL interpreter's viewport, painting and fonts
+;; (racket/gui
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/tests/sgl-test.rkt'
+s=open(p).read()
+s=s.replace('''(define (items vp)
+  (for/list ([it (send vp get-items)
+  > $ cd /home/al/dev/metacat; racket -e '
+(require racket/draw racket/class)
+(define bm (make-bitmap 20 20 #f)) (define dc (new bitmap-dc% [bitmap bm]))
+(send dc set
+
+Racket's unsmoothed 1-pixel lines include their end point, unlike X11's butt-capped lines. I'll shorten width-1 segments by one pixel step to match Tk.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/gui/sgl.rkt'
+s=open(p).read()
+old_dashed_start=''';; draw an open path through points with a Tk dash patter
+  > $ cd /home/al/dev/metacat; grep -n "^(draw!" racket/tests/sgl-test.rkt
+  > $ cd /home/al/dev/metacat; sed -i '111,113s/^(draw! \(.*\))$/(void (draw! \1))/; 136s/^(draw! \(.*\))$/(void (draw! \1))/; 140s/^(draw! /(void (draw! /; 141s/$/)/
+  > Read /tmp/crop1.png
+  > $ cd /home/al/dev/metacat; python3 -c "
+from PIL import Image
+im=Image.open('/tmp/sgl-fixture.png').convert('RGB')
+c=0
+for x in range(0,80):
+  for y in range(42,5
+  > $ cd /home/al/dev/metacat; sed -i "s|                 #:smoothing 'smoothed))|                 #:smoothing 'partly-smoothed))|" racket/gui/fonts.rkt; racket racke
+
+Text is now grey-level antialiased. Checking the text and origin cells up close.
+  > Read /tmp/crop3.png
+  > $ cd /home/al/dev/metacat; METACAT_UPDATE_SNAPSHOTS=1 raco test racket/tests/sgl-test.rkt 2>&1 | tail -2; raco test racket/tests/sgl-test.rkt racket/tests/sgl-dif
+  > Read /home/al/dev/metacat/racket/tests/snapshots/sgl-fixture.png
+
+The arcs broke: shortening every tiny segment of a flattened arc erases it. Fix: draw each run (whole path or each dash) as one polyline and shorten only its end.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/gui/sgl.rkt'
+s=open(p).read()
+start=s.index(';; X11 draws a butt-capped line of width 1')
+end=s.index('(def
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/gui/sgl.rkt'
+s=open(p).read()
+start=s.index('(define shorten-end')
+end=s.index('(define stroke')
+new='''(de
+  > Read /tmp/sgl-fixture.png
+  > $ cd /home/al/dev/metacat; python3 -c "
+from PIL import Image
+im=Image.open('/tmp/sgl-fixture.png')
+im.crop((320,60,480,150)).resize((640,360),Image.NEAREST).save
+  > Read /tmp/crop4.png
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/gui/sgl.rkt'
+s=open(p).read()
+old='''           (if (opt 'fill)
+               (fill-shape dc (opt 'fill)
+ 
+  > Read /tmp/crop4.png
+  > $ cd /home/al/dev/metacat; METACAT_UPDATE_SNAPSHOTS=1 raco test racket/tests/sgl-test.rkt 2>&1 | tail -1; raco test racket/tests/sgl-test.rkt racket/tests/sgl-dif
+
+Tests pass. Now running mutation checks on the interpreter and renderer.
+  > $ cd /home/al/dev/metacat; cp racket/gui/sgl.rkt /tmp/sgl.bak; 
+mut() { python3 - "$1" "$2" <<'EOF'
+import sys
+p='racket/gui/sgl.rkt'; s=open(p).read(); a,b=sys.a
+
+One survivor: filled ovals ignore their outline colour. Fixing so Tk's outline is honoured.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='racket/gui/sgl.rkt'
+s=open(p).read()
+old='''(define fill-shape
+  (lambda (dc color thunk)
+    (send dc set-pen (ma
+
+Both mutations are now caught. Labelling the remaining dissertation figures for the reference index.
+  > Read /tmp/sheet3.png
+  > $ cd /home/al/dev/metacat/docs/reference; cat > README.md <<'EOF'
+# Reference figures
+
+`dissertation.pdf` is James B. Marshall's dissertation, *Metacat: A Self-Wa
+  > $ cd /home/al/dev/metacat; head -40 docs/anomalies_and_quirks.md; tail -30 docs/anomalies_and_quirks.md; cat docs/divergences.md | head -30; grep -n "^## " docs/p
+  > $ cd /home/al/dev/metacat; grep -n "^## \|^### " docs/anomalies_and_quirks.md | head -50
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+bug='''### `init-env`'s default font is a bare SWL font, which `dra
+  > $ cd /home/al/dev/metacat; cat >> docs/porting-notes.md <<'EOF'
+
+## The SGL interpreter on racket/draw (item 12)
+
+**Files**: `racket/gui/sgl.rkt` (sgl-interpreter
+
+Docs written. Running the full gate now (about 6 minutes).
+  > $ cd /home/al/dev/metacat; grep -n "battery" chez_scheme/oracle/README.md | tail -3; timeout 1200 python3 ralph_loops/loop0001/gate.py > /tmp/gate.log 2>&1; echo 
+  > $ cd /home/al/dev/metacat; sed -n 45,56p chez_scheme/oracle/README.md; grep -n "tests passed" /tmp/gate.log | head
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='chez_scheme/oracle/README.md'
+s=open(p).read()
+a="each run's first answer, with fakes for the Trace and Memory, it
+  > $ cd /home/al/dev/metacat; git check-ignore -v racket/gui/compiled racket/tests/compiled; git status --short -uall racket/gui docs/reference | head -5; git status
+
+Now PROGRESS.md and iterations.md.
+  > $ cd /home/al/dev/metacat; sed -i 's/^- \*\*Current\*\*: 12\/18 SOLVED/- **Current**: 13\/18 SOLVED/' ralph_loops/loop0001/PROGRESS.md; sed -i 's/^- \[ \] \*\*12 
+  > $ cd /home/al/dev/metacat; cat >> ralph_loops/loop0001/PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 13 — 2026-10-03 02:01
+Item 12 (The SGL interpreter on racket/draw): 
+
+Item 12 is done and marked `[x]`. The gate passes: 1112 Racket tests plus the Chez checks, with `chez_scheme/original/` and the goldens untouched. Per the loop rules I haven't committed or pushed.
+
+**What was built**
+- **The dissertation:** the PDF is in `docs/reference/`. I extracted all 197 screenshots from it into `figures/`, and `README.md` lists them by panel. None shows the Temperature or EEG windows on their own.
+- **The SGL interpreter:** `racket/gui/sgl.rkt` is `sgl-interpreter.ss` on racket/draw.
+  - The interpreter itself (`draw!`, `erase!`, `draw-exp`, the environment) is line for line the original's.
+  - The original created Tk canvas items. `viewport%` records the same items in a display list and supports Tk's tag operations: move, raise, delete, retag, rescale, hide/unhide.
+  - `render` paints that list on any drawing surface, imitating Tk on X11. It never loads racket/gui, so it works offscreen.
+- **Fonts and colours:** `racket/gui/fonts.rkt` and `racket/gui/colors.rkt` port `fonts.ss` and the colour part of `constants.ss`.
+
+**Tests**
+- **Against the original (50 tests):** the Chez side reloads the unmodified `sgl-interpreter.ss` with a `send` that records every call. Every drawing message and argument the port sends must match. This test was written first and failed until the port existed; once it did, all 50 matched on the first run.
+- **`sgl-test.rkt` (71 checks):** fonts, dash patterns, the recorded items, tag operations, individual pixels, and a pixel-for-pixel snapshot of a fixture covering every SGL form. Set `METACAT_UPDATE_SNAPSHOTS=1` to regenerate the snapshot. It depends on the fonts installed on this machine, so a font update will make it fail.
+- **Mutation checks:** all 14 mutations of `sgl.rkt` are caught. The last one exposed a real bug: filled circles ignored their outline colour, which matters for rings. It's fixed.
+
+**What I saw in the PNGs**
+Looking at the renderings found three problems, now fixed:
+- Text had coloured fringes (subpixel antialiasing); it is now greyscale.
+- Dashes were 7 pixels instead of Tk's 6, because racket/draw's thin lines include their end point.
+- My first fix for the dashes wiped out the dashed arcs, and the width-2 circle looked octagonal.
+
+The final fixture matches the style of the dissertation's Workspace screenshots: thin jagged lines, bold italic serif letters, short-dash rule boxes.
+
+**Recorded in the docs**
+- **`divergences.md` (its first entry):** pixels won't match Tk exactly. Font sizes use a fixed 96 dpi, and text is measured without the logo window.
+- **`anomalies_and_quirks.md`, three new entries:**
+  - The original's default font can't actually measure text, so a `text` drawn without a font binding fails. The port fails the same way.
+  - racket/draw's thin lines include their end point.
+  - Erasing doesn't delete anything: it draws more items in the background colour, so a window only grows until it's cleared.
+
+**Not done here:** the logo window (`create-mcat-logo`) needs racket/gui and waits for the control panel. The panels' colour and font constants come with the panels in later items.
+
+# result: success in 1467s, 83 turns, cost $5.96

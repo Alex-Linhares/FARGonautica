@@ -5,7 +5,7 @@ a project in loving memory of Helga Keller
 
 ---
 
-**Repository News: Numbo source-code just added, Seek-Whence should really be coming soon now!**
+**Repository News: Metacat runs again, in Racket and Python, alongside the classic version. Numbo source-code just added, Seek-Whence should really be coming soon now!**
 
 
 ![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
@@ -81,7 +81,7 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
  | Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet (email sent 2017-08-29) |
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  **Yes** (McGraw's work was extended by Rehling) |
  | Letter Spirit | [John Rehling](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=) |  Scheme |  **Yes** |
- | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Scheme |  **Yes** |
+ | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Scheme (also Racket & Python ports) |  **Yes** (runs again!) |
  | Phaeaco | [Harry Foundalis](http://www.foundalis.com/) | C++ | Closed-source |
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | **Yes** |
@@ -146,6 +146,40 @@ PROJECT: METACAT
 Find Dr. Marshall in [Sarah Lawrence College](https://www.sarahlawrence.edu/faculty/marshall-james.html)  |  [Personal Website](http://science.slc.edu/~jmarshall/)  |  [Google Scholar](https://scholar.google.com.br/scholar?q=james+marshall+metacat&btnG=&hl=en&as_sdt=0%2C5&oq=james+marshall+)
 
 Dr. Marshall is maintaining [the Metacat Project page](http://science.slc.edu/~jmarshall/metacat/).
+
+*Above: the classic Metacat GUI (Chez Scheme and SWL on macOS), answering `abc → abd; rkkccc → ?` with `rkkddd`.*
+
+Metacat runs again on today's systems. The classic distribution is still in
+[`Software/Metacat/`](Software/Metacat/), and next to it are two faithful ports of
+Marshall's last release, **Metacat 1.2**:
+
+- **[A Racket port](Software/Metacat/racket/)** with a native `racket/gui` interface, in
+  separate windows like the original's or in a single window.
+- **[A Python port](Software/Metacat/python/)**, translated test-first, using only the
+  standard library. It has a tkinter GUI and a one-window Qt (PySide6) GUI.
+
+Given the same seed, both ports make exactly the same run as the original: the same
+codelets, structures, temperatures, answers and commentary. This was checked event for event
+against Metacat 1.2 itself, running headless under Chez Scheme 10, on 109 recorded runs plus
+720 more seeds. See [`Software/Metacat/README.md`](Software/Metacat/README.md) for how to
+run them. The full repository, with all its test data, is
+[github.com/fargonauts/metacat](https://github.com/fargonauts/metacat).
+
+![Metacat's Python port, one window (Qt): Run 7 of Marshall's dissertation, abc → abd; xyz → ?, answered wyz](/Software/Metacat/docs/screenshots/qt-run7-wyz.png)
+
+> *"The answer "wyz" occurs to me. I think this answer is great!"*
+>
+> — Metacat, Run 7 of the dissertation, in the Python port's one-window Qt GUI
+
+![Metacat's Racket port, separate windows like the original's, on the same run](/Software/Metacat/docs/screenshots/run7-wyz.png)
+
+*The same run in the Racket port, with the original's separate windows.*
+
+![Metacat's Qt GUI justifying the answer abd to abc → abd; ijk → ?](/Software/Metacat/docs/screenshots/qt-justify-ijk-abd.png)
+
+> *"Aha! I see why this answer makes sense. I think it's a pretty dumb answer."*
+>
+> — Metacat, asked to justify `ijk → abd` for `abc → abd`
 
 
 

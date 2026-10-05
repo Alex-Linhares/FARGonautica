@@ -1,0 +1,898 @@
+# session it15 started 2026-10-04 01:08:22
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ sed -n 1,200p ralph_loops/loop0002/iterations.md | grep -n "" | sed -n 1,200p | cut -c1-300 | tail -60; ls python/metacat python/metacat/gui python/tests python
+  > $ cat python/fixtures/graphics/MANIFEST python/fixtures/panels/MANIFEST | head -100; du -sh python/fixtures/graphics python/fixtures/panels; ls racket racket/gui 
+  > $ wc -l tests/diff/graphics-battery.scm tests/diff/panels-battery.scm tests/diff/*.ss tests/diff/*.scm racket/tests/graphics-diff-test.rkt racket/tests/panels-dif
+  > $ cat tests/diff/graphics-battery.scm
+  > $ cat tests/diff/panels-battery.scm
+  > $ cat racket/gui/views.rkt racket/tests/views-harness.rkt; sed -n 1,151p racket/tests/views-test.rkt
+
+Surveying the existing Python graphics stubs and the Racket port's split between engine and views before planning.
+  > $ ls racket/engine; wc -l python/metacat/general_graphics.py python/metacat/group_graphics.py python/metacat/theme_graphics.py python/metacat/trace_graphics.py py
+  > $ wc -l racket/engine/*graphics*.rktl racket/engine/view-globals.rktl; grep -n "^(define" racket/engine/eeg-graphics.rktl racket/engine/theme-graphics.rktl racket
+  > $ sed -n 1180,1420p docs/porting-notes.md
+  > $ cat python/metacat/general_graphics.py python/metacat/group_graphics.py python/metacat/gui/swl.py python/metacat/gui/__init__.py; grep -n "def \|^class " python
+  > $ grep -n "^(define" chez_scheme/original/general-graphics.ss | head -80; grep -n "def make_viewport\|class Recording\|class Fake\|def \|^class" python/tests/test
+  > $ sed -n 81,400p chez_scheme/original/general-graphics.ss
+  > $ sed -n 260,420p python/tests/test_sgl.py; grep -n "hidden\|def get_pixel_size\|g_hidden\|def load\|def create_mcat_logo" python/metacat/gui/fonts.py | head -30
+
+Mapping how the Python engine already reaches the graphics modules, so translations slot into the existing hooks.
+  > $ cd /home/al/dev/metacat/python/metacat && grep -oh "_metacat\.[a-z_]*graphics\.[a-zA-Z_0-9]*" *.py | sort | uniq -c; grep -oh "_metacat\.eeg[a-z_]*\.[a-zA-Z_]*\
+  > $ sed -n 1,80p engine.py; sed -n 100,260p headless.py
+  > $ sed -n 1,100p headless.py; grep -n "trace-window\|trace_window\|comment" trace_writer.py | head -30
+  > $ sed -n 280,360p trace_writer.py; grep -n "install-recorders\|define (run-problem" -A30 ../../racket/headless.rkt | head -90
+  > $ sed -n 110,180p gui/sgl.py; sed -n 1,80p objects.py | head -80; ls ../tests/snapshots; sed -n 1,60p ../tests/render_sgl_fixture.py
+  > $ grep -n "^g_\|^p_" setup.py | head -60; grep -n "^(define\|^(set!" ../../chez_scheme/original/constants.ss | sed -n 1,400p | awk -F: '$1>0' | wc -l; grep -n "gr
+  > $ cd /home/al/dev/metacat && sed -n 1,40p racket/gui/constants.rktl; grep -c "" python/metacat/constants.py; grep -n "^def\|^[a-zA-Z_]* =" python/metacat/gui/colo
+  > $ sed -n 80,215p python/metacat/gui/fonts.py; sed -n 270,291p python/metacat/gui/fonts.py
+
+Writing the shared window-host contract (offscreen and Tk) first, so the translating agents build on one interface.
+  > Write /home/al/dev/metacat/python/metacat/gui/hosts.py
+  > $ cat tests/diff/helpers.scm | sed -n 1,67p; grep -ln "with_log" python/tests/*.py
+  > Agent {"description": "Engine graphics + graphics battery", "subagent_type": "general-purpose", "run_in_background": true, "pr
+  > $ cd /home/al/dev/metacat; python3 -m metacat abc abd xyz --seed 3852097033 > /tmp/before_run.txt 2>&1; echo $?; wc -l /tmp/before_run.txt; ls python/metacat pyth
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/python-translation-plan.md | head -80
+  > $ cd /home/al/dev/metacat; cat /tmp/before_run.txt; cd python && python3 -m metacat abc abd xyz --seed 3852097033 > /tmp/before_run.txt 2>&1; echo $?; wc -l /tmp/
+  > $ cd /home/al/dev/metacat; sed -n 60,280p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 400,800p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/porting-notes.md | sed -n 1,200p | grep -n -i "item 1[34]\|graphics\|panels"
+  > $ cd /home/al/dev/metacat; sed -n 1209,1420p docs/porting-notes.md
+  > $ cd /home/al/dev/metacat; cat tests/diff/graphics-battery.scm
+  > $ cd /home/al/dev/metacat; cat python/fixtures/graphics/MANIFEST python/fixtures/graphics/SOURCES; cat python/fixtures/graphics/037-group-pexps.txt | head -c 3000
+  > $ cd /home/al/dev/metacat/python/tests; cat chez_fixtures.py; sed -n 1,80p scheme_canon.py; wc -l test_sgl.py test_utilities.py test_workspace.py engine_stubs.py
+  > $ cd /home/al/dev/metacat/python/tests; sed -n 1,140p test_workspace.py; cat engine_stubs.py; cat conftest.py
+  > $ cd /home/al/dev/metacat/python/tests; sed -n 140,400p test_workspace.py | grep -n "fixture\|with_log\|log_\|def \|MANIFEST\|manifest" | head -60; grep -n "fixtu
+  > $ cd /home/al/dev/metacat/python/tests; sed -n 30,120p test_sgl.py; sed -n 236,260p test_sgl.py; sed -n 540,610p test_sgl.py
+  > Agent {"description": "GUI windows part 1", "subagent_type": "general-purpose", "run_in_background": true, "prompt": "You are 
+  > $ cd /home/al/dev/metacat/python/tests; grep -n "def with_log\|def log_bang\|LOG\b\|_LOG" test_utilities.py | head; grep -n "with-log\|log!" ../../tests/diff/help
+  > $ cd /home/al/dev/metacat; ls python/metacat python/metacat/gui python/tests; cat racket/gui/constants.rktl; wc -l racket/gui/*.rktl racket/gui/views.rkt python/m
+  > $ cd /home/al/dev/metacat/python/tests; sed -n 30,50p ../../tests/diff/helpers.scm; grep -n "^LOG\|^def log\|^def with_log" -A10 test_chez.py | head -40
+  > $ cd /home/al/dev/metacat; cat python/metacat/gui/hosts.py; cat python/metacat/gui/colors.py | head -80
+
+Now the existing Python graphics modules and Racket engine sources.
+  > $ cd /home/al/dev/metacat/python/metacat; cat general_graphics.py group_graphics.py trace_graphics.py
+  > $ cd /home/al/dev/metacat/racket/engine; cat general-graphics.rktl
+  > $ cd /home/al/dev/metacat; cat python/metacat/view_globals.py | head -150; grep -n "def set_global" -A30 python/metacat/engine.py; cat python/metacat/gui/swl.py
+  > $ cd /home/al/dev/metacat; cat python/metacat/gui/fonts.py
+  > $ cd /home/al/dev/metacat; grep -n "^(define" chez_scheme/original/general-graphics.ss chez_scheme/original/eeg-graphics.ss chez_scheme/original/group-graphics.ss
+  > $ cd /home/al/dev/metacat; cat racket/gui/views.rkt; grep -n "screen" python/metacat/gui/*.py python/metacat/*.py | head
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "^def \|^class \|^    def " chez.py | head -150; wc -l chez.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 83,117p chez.py; sed -n 220,350p chez.py; sed -n 540,710p chez.py
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from metacat.names import scheme_to_python as s
+for n in ['%default-trace-width%','=white=','*fg-color*','%theme-ba
+  > Agent {"description": "GUI windows part 2", "subagent_type": "general-purpose", "run_in_background": true, "prompt": "You are 
+  > $ cd /home/al/dev/metacat; ls python/metacat python/metacat/gui python/tests; wc -l chez_scheme/original/{slipnet,temperature,coderack,commentary,eeg}-graphics.ss
+  > $ cd /home/al/dev/metacat/python; sed -n 60,120p metacat/engine.py; grep -n "screen\|logo" metacat/gui/*.py | grep -v "^metacat/gui/fonts" | head
+  > $ cd /home/al/dev/metacat; sed -n 1,140p docs/python-translation-plan.md | head -5; grep -n "^#" docs/python-translation-plan.md | tail -30; sed -n 682,800p docs/
+  > $ cd /home/al/dev/metacat; grep -n "other panels (item 14)" -A80 docs/porting-notes.md
+  > $ cd /home/al/dev/metacat/python; grep -n "platform" -r metacat/*.py metacat/gui/*.py | head; diff <(sed -n '/Default window sizes/,$p' ../chez_scheme/original/co
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/slipnet-graphics.ss; cat racket/gui/slipnet-graphics.rktl
+  > $ cd /home/al/dev/metacat; cat python/metacat/gui/hosts.py; sed -n 1,80p python/metacat/gui/sgl.py; grep -n "^def \|^class \|^    def " python/metacat/gui/sgl.py 
+  > $ cd /home/al/dev/metacat/python; grep -rn "magnitude\|make_polar\|def angle\|acos\|x_coord" metacat/ | head -20; grep -n "x-coord\|y-coord" ../chez_scheme/origin
+  > $ cd /home/al/dev/metacat/python; grep -n "^c_\|^def \|^g_" metacat/gui/colors.py | head; grep -n "constants\|logo" metacat/gui/sgl.py | head
+  > $ cd /home/al/dev/metacat; cat racket/gui/temperature-graphics.rktl | sed -n 18,210p
+  > $ cd /home/al/dev/metacat; sed -n 18,400p racket/gui/coderack-graphics.rktl
+
+Now I'll generate constants.py with a script from the rktl lines, then edit.
+  > $ cd /home/al/dev/metacat; sed -n 18,120p racket/gui/commentary-graphics.rktl; sed -n 18,150p racket/gui/eeg-graphics.rktl; diff <(sed -n 18,400p chez_scheme/orig
+  > $ locate 5_3.ss 2>/dev/null | head; find / -name "5_3.ss" -not -path "*/proc/*" 2>/dev/null | head; which scheme chezscheme
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import re,sys
+sys.path.insert(0,'.')
+from metacat.names import scheme_to_python as s
+src=open('../racket/gui/c
+  > Agent {"description": "Theme/trace/memory panels + battery", "subagent_type": "general-purpose", "run_in_background": true, "p
+  > $ cd /home/al/dev/metacat; grep -n "^(define" chez_scheme/original/{slipnet,temperature,coderack,commentary,eeg}-graphics.ss; cat python/metacat/view_globals.py; 
+  > $ cd /home/al/dev/metacat; sed -n 1,200p python/metacat/objects.py
+  > $ cd /home/al/dev/metacat/racket/engine; sed -n 18,200p group-graphics.rktl
+  > $ cd /home/al/dev/metacat/racket/engine; sed -n 18,400p bridge-graphics.rktl
+  > $ cd /home/al/dev/metacat/racket/engine; sed -n 18,200p rule-graphics.rktl; sed -n 18,200p eeg-graphics.rktl
+
+I'll start by reading the plan and the relevant sources.
+  > $ cd /home/al/dev/metacat; ls python/metacat python/metacat/gui python/tests python/fixtures python/fixtures/panels | head -150; wc -l docs/python-translation-pla
+  > $ cd /home/al/dev/metacat/python; grep -n "^def round_" -A12 metacat/utilities.py
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/python-translation-plan.md | head -80
+
+Now write constants.py.
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n -i "eeg" headless.py run.py workspace.py engine.py setup.py view_globals.py | head -40
+  > $ cd /home/al/dev/metacat; sed -n 280,470p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; grep -n "row_dimension\|column_dimension\|def table_ref\|slipnet_layout_table\|def make_table\|def ascending_index_list\|def filter_map
+  > $ cd /home/al/dev/metacat; sed -n 470,940p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 680,800p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 195,225p headless.py; cat engine.py; sed -n 455,470p run.py
+
+While the agents work, I'll add the `views=` hook to the headless driver (recorders around whichever Commentary/Trace windows are installed).
+  > $ cd /home/al/dev/metacat; sed -n 1,73p python/metacat/engine.py; sed -n 260,300p python/metacat/sugar.py; grep -n "for_each_table\|def for_star" python/metacat/*
+  > $ cd /home/al/dev/metacat/python && grep -n "^def install_trace" -A12 metacat/trace_writer.py; grep -rn "run_problem(" --include=*.py . | grep -v "def run_problem
+  > $ cd /home/al/dev/metacat; sed -n 800,870p docs/python-translation-plan.md; grep -n "other panels" -A80 docs/porting-notes.md | head -150
+
+Now I'll refactor the trace-window wrapper into a reusable function and add the views hook.
+  > $ cd /home/al/dev/metacat; cat tests/diff/panels-battery.scm
+  > $ cd /home/al/dev/metacat; grep -n "^def \|^class \|^g_\|^[a-z_]* = \|    def " python/metacat/gui/fonts.py python/metacat/gui/colors.py | head -60; sed -n 1,40p 
+  > $ cd /home/al/dev/metacat; cat python/fixtures/panels/MANIFEST python/fixtures/panels/SOURCES; cat python/tests/chez_fixtures.py; cat tests/diff/helpers.scm | hea
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "p_proposed\|p_evaluated\|p_built\b\|^p_built" constants.py | head; grep -n "^def letter_p\|^def both_spanning_g
+  > $ python3 - <<'EOF'
+import re
+p='metacat/trace_writer.py'
+s=open(p).read()
+old=s[s.index("    window = setup.g_trace_window\n"):s.index("    setup.g_trace_window 
+  > $ cd /home/al/dev/metacat; grep -n "graphics\|view_globals\|_metacat\.\(general\|gui\)" python/metacat/coderack.py | head -80
+  > $ cd /home/al/dev/metacat; cat python/tests/scheme_canon.py; sed -n 1,200p python/tests/test_workspace.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "proposed\|evaluated\|built%\|p_built" *.py | grep "=" | head -5; grep -n "def letter_p\|def group_p" *.py; sed 
+  > $ cd /home/al/dev/metacat; sed -n 1,140p python/tests/test_sgl.py; grep -n "def test_every\|MANIFEST\|manifest" python/tests/test_*.py | head
+  > $ cd /home/al/dev/metacat; grep -n "p_highlight_last_codelet\|p_codelet_count_graphics\|p_slipnet_graphics\|p_eliza_mode\|p_justify_mode\|g_slipnet_nodes\b\|g_pla
+  > $ cd /home/al/dev/metacat/python/metacat; grep -rn "p_proposed\b" *.py | head -3; grep -n "letter_p\b\|group_p\b" utilities.py workspace_objects.py | head; grep -
+  > $ cd /home/al/dev/metacat; grep -n "^def \|^@pytest\|^class \|fixture" python/tests/test_workspace.py | tail -40; tail -120 python/tests/test_workspace.py
+  > $ cd /home/al/dev/metacat/python/metacat; ls gui; grep -rn "general_graphics\|rule_graphics\|update_rule_pexps\|nice_graphics\|eeg_graphics\|bridge_graphics\|grou
+  > $ cd /home/al/dev/metacat; sed -n 1240,1320p python/tests/test_workspace.py; cat python/tests/conftest.py | head -60
+  > $ python3 - <<'EOF'
+p='metacat/trace_writer.py'
+s=open(p).read()
+s=s.replace("    return setup.g_trace_window\n\ndef trace_start","    return setup.g_trace_window
+
+Now the original sources.
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/theme-graphics.ss
+  > $ cd /home/al/dev/metacat; sed -n 1,60p python/metacat/theme_graphics.py; grep -n "def \(div\|mul\|add\|sub\|ceiling\|round_\|exact_round\|format_\|printf\|modulo
+  > $ cd /home/al/dev/metacat/python/metacat; grep -rn "_metacat\.\(general\|rule\|bridge\|group\)_graphics\.\(solid_box\|initialize_rule\|make_bridge\|new_bridge\|dr
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import re,sys
+sys.path.insert(0,'.')
+from metacat.names import scheme_to_python as s
+src=open('../racket/gui/c
+  > Read /home/al/dev/metacat/racket/gui/theme-graphics.rktl
+  > $ cat tests/golden_harness.py; sed -n 1,80p tests/test_golden.py
+  > $ cd /home/al/dev/metacat; sed -n 185,215p python/metacat/utilities.py; sed -n 570,580p python/metacat/utilities.py; sed -n 700,720p python/metacat/utilities.py; 
+  > $ cd /home/al/dev/metacat; for f in theme trace memory; do echo "=== $f"; diff chez_scheme/original/$f-graphics.ss racket/gui/$f-graphics.rktl; done
+  > $ cd /home/al/dev/metacat; cat racket/gui/general-graphics.rktl
+
+Good, the Racket files are near-verbatim. Now trace and memory originals.
+  > $ cd /home/al/dev/metacat; cat python/metacat/gui/sgl.py
+  > $ cd /home/al/dev/metacat; sed -n 19,474p chez_scheme/original/trace-graphics.ss
+  > $ cd /home/al/dev/metacat; sed -n 19,226p chez_scheme/original/memory-graphics.ss
+  > $ cd /home/al/dev/metacat; grep -n "(define punctuate\|(define filter-map\|(define maximum" chez_scheme/original/*.ss; sed -n 2295,2315p python/metacat/rules.py; 
+  > $ cd /home/al/dev/metacat; cat python/metacat/theme_graphics.py python/metacat/trace_graphics.py; cat python/metacat/view_globals.py
+  > $ cd /home/al/dev/metacat; grep -n "(define " chez_scheme/original/general-graphics.ss; grep -n "(define \|^(define" python/metacat/general_graphics.py | head -80
+  > $ cd /home/al/dev/metacat; grep -n "^## \|^### " docs/anomalies_and_quirks.md | grep -i "temperat\|slipnet window\|coderack window\|EEG\|comment\|icon\|thermom\|p
+  > $ cd /home/al/dev/metacat; grep -n "^def \|^[a-z_A-Z]* = " python/metacat/general_graphics.py | head -80; ls -la python/metacat/gui/ python/metacat/*.py | head -6
+  > $ cd /home/al/dev/metacat; sed -n 1,140p chez_scheme/original/general-graphics.ss; sed -n 300,400p chez_scheme/original/general-graphics.ss; head -40 python/metac
+  > $ python3 - <<'EOF'
+p='tests/golden_harness.py'
+s=open(p).read()
+s=s.replace('''def prepare():
+    headless.prepare()
+
+
+def run_problem(strings, seed, cap, keep_g
+  > $ cd /home/al/dev/metacat; grep -n -i "temperature window\|icon-label\|EEG window\|plot?\|draw-paragraph\|Selection Probability\|slipnet-window\|coderack-window" 
+  > $ cd /home/al/dev/metacat; sed -n 1,200p python/metacat/objects.py
+  > $ cd /home/al/dev/metacat; grep -rn "(define (\?\(disk\|arrowhead\|filled-centered-ovaloid\|centered-ovaloid\|solid-box\|outline-box\|centered-octagon\|centered-r
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/porting-notes.md | sed -n 1,200p | grep -n -i "item 1[34]\|graphics\|panels" 
+  > $ cd /home/al/dev/metacat; sed -n 1209,1420p docs/porting-notes.md
+
+Now the workspace graphics files.
+  > $ cd /home/al/dev/metacat; sed -n 1,420p racket/gui/workspace-graphics.rktl
+  > $ cd /home/al/dev/metacat; sed -n 1,80p python/metacat/gui/constants.py; grep -n "^[a-zA-Z_]* *=\|^def " python/metacat/gui/constants.py | head -150
+  > $ cd /home/al/dev/metacat; sed -n 420,840p racket/gui/workspace-graphics.rktl
+  > $ cd /home/al/dev/metacat; sed -n 216,290p python/metacat/gui/constants.py; sed -n 320,400p python/metacat/gui/constants.py
+  > $ sed -n 60,200p tests/render_sgl_fixture.py; grep -n "render_sgl\|xvfb" tests/test_sgl.py | head
+  > $ cd /home/al/dev/metacat; diff <(sed -n '/define %workspace-arrow-length%/,$p' chez_scheme/original/workspace-graphics.ss) <(sed -n '/define %workspace-arrow-len
+  > $ cd /home/al/dev/metacat; grep -rn "group-arrowhead-angle%\|define \*fg-color\*\|define %default-fg-color%\|define \*running?\*\|define \*control-panel\*\|define
+  > $ cd /home/al/dev/metacat; grep -n -i "slipnet\|temperature\|coderack\|comment\|EEG\|last-codelet\|thermometer\|slipnode" chez_scheme/original/constants.ss | grep
+  > $ cd /tmp; cat > probe1.ss <<'EOF'
+(define (show x) (write x) (newline))
+(for-each show
+ (list (angle 1/2) (angle 0.5) (angle -0.5) (angle -1/2) (angle 0) (angle 
+  > $ cd /home/al/dev/metacat; grep -rn "(define \(%group-arrowhead-angle%\|\*running?\*\|\*control-panel\*\|compare-answers\|\*comment-window\*\|snag-description?\|r
+  > $ cd /tmp; sed -i 's/ (angle 0) / /; s/(make-polar 0 1.0)//' probe1.ss; scheme --script probe1.ss 2>&1 | cat -n
+  > $ cd /home/al/dev/metacat; grep -n "p_default\|background_color\|icon\|window_title" python/metacat/constants.py python/metacat/setup.py | head; ls python/metacat
+
+G1's constants.py just appeared. Let me look at it.
+  > $ cd /home/al/dev/metacat; sed -n 1,60p python/metacat/gui/constants.py; grep -n "^def \|slipnet\|temperature\|coderack\|comment\|EEG\|last_codelet\|thermometer\|
+  > $ cd /home/al/dev/metacat; grep -n "^def \(exists_p\|select_meth\|map_compress\|percent\|hundred_minus\|snag_description_p\|tell_all\|ascending_index_list\|round_
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from metacat import engine, headless
+headless.prepare()
+for n in ['*running?*','*interrupt?*','*theme-edit-mode?*',
+  > $ cd /home/al/dev/metacat; sed -n 225,250p python/metacat/gui/constants.py; sed -n 320,340p python/metacat/gui/constants.py
+  > $ cd /home/al/dev/metacat; cat python/metacat/group_graphics.py | sed -n 1,200p; sed -n 130,200p python/metacat/utilities.py
+
+Now the rendering harness: scenes of run7 and a justify run drawn on real Tk canvases under Xvfb, grabbed to PNG.
+  > $ cd /home/al/dev/metacat && ls tests/golden | grep -i "xyd\|abc-abd-xyz_\|glz_1108" ; grep -n "xyz\|glz" tests/problems.txt | head
+  > $ cd /home/al/dev/metacat; grep -n "(define disk\|(define circle\|(define solid-box" -A8 chez_scheme/original/general-graphics.ss; grep -n "def disk\|def circle\|
+  > $ cd /home/al/dev/metacat; grep -n "^def \|^class \|^[a-z_A-Z]* = " python/metacat/gui/fonts.py python/metacat/gui/colors.py python/metacat/gui/sgl.py python/meta
+  > $ cd /home/al/dev/metacat/python; grep -n "^def pause" -A12 metacat/utilities.py; grep -n "def prepare\|def run_problem" -A30 metacat/headless.py | head -80
+  > $ cd /home/al/dev/metacat; cat python/tests/conftest.py | head -40; grep -n "^def " python/tests/scheme_forms.py python/tests/name_mapping.py | head -20
+  > $ cd /tmp; cat > probe2.ss <<'EOF'
+(random-seed 12345)
+(define (r) (- (* 2.0 (random 1.0)) 1.0))
+(let loop ((i 0))
+  (when (< i 20000)
+    (let* ((x (* (r) (expt 
+  > $ cd /tmp; cat > probe2.ss <<'EOF'
+(random-seed 12345)
+(define (r) (- (* 2.0 (random 1.0)) 1.0))
+(let loop ((i 0))
+  (when (< i 20000)
+    (let* ((x (* (r) (expt 
+  > $ cd /home/al/dev/metacat; grep -n "^def \|^class \|^[a-zA-Z_]* = " python/metacat/chez.py | head -150
+  > $ cd /tmp; sed -i "s/m = re.fullmatch.*/m = re.fullmatch(r'([-+]?[0-9.]+(?:e-?[0-9]+)?)([-+][0-9.]+(?:e-?[0-9]+)?)i', s)/" probe2.py; python3 probe2.py
+  > Write /home/al/dev/metacat/python/tests/render_views.py
+  > $ cd /home/al/dev/metacat; grep -n "^class String\|^def max_\|^def min_\|^def exists\|^def num_eq\|^def string_append" -A6 python/metacat/chez.py python/metacat/u
+  > $ cd /home/al/dev/metacat; cat racket/tests/panels-diff-test.rkt | head -120
+  > $ cd /home/al/dev/metacat/python && grep -n "^g_\|^    global g_" metacat/memory.py metacat/trace.py metacat/themes.py | head; grep -n "get-last-event\|get-answer
+  > $ cd /home/al/dev/metacat/python; cat tests/conftest.py | head -50; sed -n 1,60p tests/test_sgl.py
+
+Now writing the tests.
+  > $ cd /tmp; cat > probe3.py <<'EOF'
+import math
+rows=[]
+for line in open('/tmp/probe2.out'):
+    t = line.strip()[1:-1].split()
+    rows.append((float(t[0]), float
+  > $ cd /home/al/dev/metacat; for n in theme-edit-mode make-themespace-window make-bridge-themes-window make-trace-window make-memory-window memory-icon-activation-c
+  > $ cd /home/al/dev/metacat; grep -rn "theme_edit_mode\|theme-edit-mode" python/ racket/gui/views.rkt racket/engine/*.rktl | grep -v "/fixtures/" | head; grep -n "e
+  > $ cd /home/al/dev/metacat; sed -n 1,120p racket/gui/views.rkt; sed -n 200,330p racket/gui/views.rkt
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from metacat.names import scheme_to_python as s
+for n in ['*13x5-layout-table*','%EEG-title-font%','make-EEG-window
+  > $ cd /home/al/dev/metacat/python/fixtures/panels; for f in 005* 006* 012* 015* 016* 019* 025* 031* 032*; do echo "== $f"; head -c 1500 $f; echo; done
+  > Write /home/al/dev/metacat/python/tests/test_views.py
+  > $ timeout 600 python3 -m pytest tests/test_views.py -q -x -k short 2>&1 | tail -5; ls metacat/gui metacat/*graphics*
+  > $ cd /home/al/dev/metacat/python/fixtures/panels; head -c 3000 026*; echo; echo; head -c 1500 030*; echo; cat 001* 008* 009* 034*; echo; head -c 600 003*
+
+Tests fail as expected before the views exist. While the agents translate, I'll wait on their files with a foreground monitor.
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+  > $ cd /home/al/dev/metacat/python; sed -n 105,240p metacat/coderack.py; grep -n "g_coderack\b\|^g_codelet_types\|def load" metacat/coderack.py | head; grep -n "__s
+  > $ timeout 590 python3 -c "
+import os,time
+want=['metacat/gui/views.py','metacat/gui/general_graphics.py','metacat/gui/workspace_graphics.py','metacat/gui/theme_gr
+  > Write /home/al/dev/metacat/python/tests/test_gui_windows.py
+  > $ cd /home/al/dev/metacat/python; grep -n "platform\|tcl_or_tk\|8_3" metacat/gui/*.py metacat/*.py | head; python3 -c "
+from metacat.names import scheme_to_python
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest -q tests/test_gui_windows.py 2>&1 | tail -25
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 85,105p utilities.py; grep -n "class Lambda" -A25 objects.py; grep -n "^def tell\b" -A25 objects.py; grep -n "def
+  > $ cd /home/al/dev/metacat; sed -n 60,90p chez_scheme/original/rule-graphics.ss; grep -rn "update-rule-pexps" chez_scheme/original/*.ss; sed -n 1,60p python/tests/
+  > $ cd /home/al/dev/metacat; grep -n "reposition-vertical-scrollbar ()" -A12 chez_scheme/original/general-graphics.ss; grep -n "set-window-title\|set-mouse-handlers
+  > $ cd /home/al/dev/metacat; sed -n 555,600p chez_scheme/original/general-graphics.ss; grep -n "define sort-wrt-order\|define row-dimension\|define column-dimension
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^class " metacat/chez.py | head -100; grep -n "^def exists_p\|^def repeat\|^def max_\|^def min_\|^def ceiling\|^
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^class " metacat/chez.py | sed -n 100,200p; sed -n 185,200p metacat/utilities.py; sed -n 520,540p metacat/chez.p
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from metacat import chez; print(repr(chez.exact_floor(33.3)), repr(chez.exact_floor(__import__('fractions').Fractio
+
+Now general_graphics.py.
+  > $ cd /home/al/dev/metacat; grep -rn "max-EEG-window-cycles%" racket/engine racket/gui | head -3; grep -n "def set_global" -A25 python/metacat/engine.py; grep -n "
+  > $ cd /home/al/dev/metacat; sed -n 1,73p python/metacat/engine.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,77p objects.py; grep -n "g_temperature =" *.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "class .*SchemeObject\|base_object\|def otherwise" memory.py | head; grep -n "class Memory" -A40 memory.py | hea
+  > $ cd /home/al/dev/metacat/chez_scheme/original; for f in theme trace memory; do grep -o "^(define [^ ]*" $f-graphics.ss | sed 's/(define //'; done > /tmp/mydefs.t
+  > Write /home/al/dev/metacat/python/tests/test_gui_panels_a.py
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+import re
+p='tests/test_gui_panels_a.py'
+s=open(p).read()
+s=s.replace('''    msgs = [e[0] for e in text.log]
+  > $ cd /home/al/dev/metacat; grep -n "    def " python/metacat/gui/sgl.py | head -50; grep -n "def make_mfont" -A5 python/metacat/gui/fonts.py; grep -n "class MFont
+
+Before code: 12 failed, 11 errors, 1 passed. Now the modules.
+  > $ cd /home/al/dev/metacat; sed -n 1,35p python/metacat/gui/fonts.py; grep -n "1.2:\|port:" python/metacat/*.py | head -10; grep -n "relation-names-pexp" -B2 -A12 
+  > $ cd /home/al/dev/metacat; sed -n 535,555p python/metacat/bonds.py; sed -n 118,141p python/metacat/chez.py
+  > $ cd /home/al/dev/metacat; ls python/metacat/gui/ python/metacat/ python/tests/ | grep -v pycache | tr '\n' ' '; sed -n 1,60p python/metacat/gui/hosts.py
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 905,925p workspace_objects.py; grep -n "both-spanning-groups?" -A6 ../../chez_scheme/original/workspace-objects.s
+  > $ cd /home/al/dev/metacat; head -60 python/tests/test_views.py; grep -n "load_views\|attach_views\|def \|fixture" python/tests/test_views.py python/tests/test_gui
+  > $ cd /home/al/dev/metacat; sed -n 130,175p python/tests/test_gui_windows.py; sed -n 330,360p python/tests/test_gui_windows.py
+  > Write /home/al/dev/metacat/python/metacat/gui/commentary_graphics.py
+  > $ cd /home/al/dev/metacat; sed -n 84,100p python/metacat/gui/hosts.py; grep -n "def prepare" -A25 python/metacat/headless.py
+  > $ cd /home/al/dev/metacat; ls python/fixtures/; ls python/fixtures/panels 2>/dev/null | grep -i eeg; grep -n -i "eeg" tests/diff/panels-battery.scm | head -30
+  > $ cd /home/al/dev/metacat; sed -n 385,430p tests/diff/panels-battery.scm; cat python/fixtures/panels/033-EEG-table.txt python/fixtures/panels/034-EEG-constants.tx
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+p='metacat/gui/commentary_graphics.py'
+s=open(p).read()
+s=s.replace('''from __future__ import annotations
+
+f
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from metacat.names import scheme_to_python as s
+for n in ['*13x5-layout-table*','%EEG-table%','%max-EEG-window-cycl
+  > $ cd /home/al/dev/metacat/python/tests; grep -n "def test_every\|def defines\|ORIGINAL\b" test_utilities.py test_workspace.py | head; grep -n "^ORIGINAL\|^def " n
+  > $ cd /home/al/dev/metacat/python/tests; sed -n 1280,1345p test_workspace.py; sed -n 1540,1577p test_workspace.py
+  > $ cd /home/al/dev/metacat/python/tests; grep -n "engine.load\|autouse\|def setup_module\|scope=\"module\"" test_workspace.py test_rules.py test_bridges.py | head
+  > $ cd /home/al/dev/metacat; sed -n 95,130p docs/python-translation-plan.md
+
+Now I'll write the test file first.
+  > Write /home/al/dev/metacat/python/metacat/gui/temperature_graphics.py
+  > $ cd /home/al/dev/metacat/python; grep -n "^def num_eq\|^def for_each\|^def add1\|^def lt\b\|^def map_" metacat/chez.py; grep -n "def chez_num_eq\|chez_num_eq =" 
+  > $ cd /home/al/dev/metacat/python; sed -n 296,306p metacat/coderack.py; grep -n "^def .*eq\|^def lt\|^def num" metacat/chez.py
+  > Write /home/al/dev/metacat/python/metacat/gui/general_graphics.py
+  > $ cd /home/al/dev/metacat/python; sed -i 's/not chez.num_eq(new_value, this.current_value)/new_value != this.current_value/; s/if chez.num_eq(left, right):/if lef
+  > $ cd /home/al/dev/metacat/python; grep -n "^def compress\|^def char_index" -A8 metacat/utilities.py
+  > Write /home/al/dev/metacat/python/metacat/gui/slipnet_graphics.py
+  > $ cd /home/al/dev/metacat; grep -n "slipnet-layout-table\*" -A8 chez_scheme/original/syntactic-sugar.ss | head -12
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \(group_p\|concept_mapping_p\|vertical_bridge_p\|workspace_string_p\|coord\|sum_\)" metacat/utilities.py; grep -n 
+  > $ cd /home/al/dev/metacat/python; grep -n "group_p\b\|concept_mapping_p\b\|workspace_string_p\b" metacat/*.py | grep "def \|^.*= " | head; grep -n "group?\|concep
+  > $ cd /home/al/dev/metacat/python; sed -n 95,135p metacat/utilities.py
+
+Now workspace_graphics.py.
+  > Write /home/al/dev/metacat/python/tests/test_panels.py
+  > Write /home/al/dev/metacat/python/tests/test_graphics.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import re
+p='tests/test_panels.py'
+s=open(p).read()
+s=s.replace('''    try:
+        eeg = engine.get_global("*
+  > $ cd /home/al/dev/metacat/python; grep -n "^def read" tests/scheme_reader.py; timeout 600 python3 -m pytest tests/test_graphics.py -q -x 2>&1 | tail -5; timeout 6
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest tests/test_graphics.py -q 2>&1 | grep -E "PASS|passed" ; timeout 600 python3 -m pytest tests/test_
+  > $ cd /home/al/dev/metacat/python; sed -i 's/^def test_case(name):/def battery_test(name):/; s/^@test_case(/@battery_test(/' tests/test_panels.py; grep -c "@batter
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 1,60p chez.py; sed -n 349,480p chez.py
+  > Write /home/al/dev/metacat/python/metacat/gui/coderack_graphics.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "test_chez\|__all__" ../tests/test_chez.py | head -5; grep -n "__all__" -A3 ../tests/*.py | head
+
+Now edit chez.py.
+  > $ cd /home/al/dev/metacat/python; sed -i '/from metacat.gui import general_graphics as _unused/d' metacat/gui/coderack_graphics.py; sed -n 129,235p ../chez_scheme
+
+Now the EEG window.
+  > $ cd /home/al/dev/metacat/python; grep -n "^p_justify_mode\|^g_running_p\|^def set_themes" metacat/*.py; grep -n "def ascending_index_list" -A8 metacat/utilities.
+  > $ cd /home/al/dev/metacat/python/metacat; python3 - <<'EOF'
+import re
+p='chez.py'; s=open(p).read()
+s=s.replace('''    def __repr__(self):
+        return f"ExactC
+  > $ cd /home/al/dev/metacat/python; sed -n 1,44p metacat/gui/general_graphics.py; sed -n 585,600p metacat/gui/general_graphics.py; sed -n 745,800p metacat/gui/gener
+  > $ cd /home/al/dev/metacat/python; sed -n 1,140p metacat/gui/temperature_graphics.py
+
+Now writing gui/theme_graphics.py.
+  > Write /home/al/dev/metacat/python/metacat/gui/eeg_graphics.py
+  > Edit /home/al/dev/metacat/python/metacat/chez.py
+  > $ cd /home/al/dev/metacat/python && ls metacat/gui metacat/eeg_graphics.py 2>&1; python3 -m pytest -q tests/test_gui_panels_a.py 2>&1 | tail -40
+  > $ cd /home/al/dev/metacat/python && sed -i 's/    assert len(labels) == 3 and len(labels\[2\]) == 2 + 59/    assert len(labels) == 2 + 59/' tests/test_gui_panels_
+  > $ cd /home/al/dev/metacat/python/metacat; sed -i 's/"sqrt", "exp", "log", "tanh", "expt", "atan", "make_rectangular", "real_part", "imag_part",/"sqrt", "exp", "lo
+  > $ cd /home/al/dev/metacat; git diff --stat python/metacat/chez.py; grep -n '"magnitude", "angle"' python/metacat/chez.py
+  > $ cd /home/al/dev/metacat/python && grep -n "^def disk\|^def circle\|^def solid_box" metacat/general_graphics.py; ls metacat/gui; timeout 120 python3 -c "
+from me
+  > $ cd /home/al/dev/metacat/python && timeout 120 python3 -c "
+from metacat import engine, headless
+headless.prepare()
+from metacat.gui import hosts, constants as K
+  > $ cd /home/al/dev/metacat/python && sed -n 1,44p metacat/gui/general_graphics.py; sed -n 106,140p metacat/gui/general_graphics.py; sed -n 571,600p metacat/gui/gen
+  > $ cd /home/al/dev/metacat/python && sed -n 120,140p metacat/gui/sgl.py
+
+Now add an integration test with the real windows on offscreen hosts.
+  > $ cd /home/al/dev/metacat/python && cat >> tests/test_gui_panels_a.py <<'EOF'
+
+
+# ---------------------------------------------------------------------------
+# Th
+  > Write /home/al/dev/metacat/python/metacat/gui/workspace_graphics.py
+  > $ cd /home/al/dev/metacat/python && python3 -m pytest -q tests/test_gui_panels_a.py -k real 2>&1 | grep Error | head
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+p='tests/test_gui_panels_a.py'
+s=open(p).read()
+s=s.replace('''    g = window.graphics_window
+    g = getatt
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_gui_windows.py'
+s=open(p).read()
+s=s.replace("""        if (inspect.isfunction(obj) or inspect.i
+  > $ cd /home/al/dev/metacat; grep -n -i "icon" docs/anomalies_and_quirks.md | head; sed -n 1,40p docs/anomalies_and_quirks.md | head -40; grep -n "Temp\.\|Temperatu
+  > $ cd /home/al/dev/metacat; grep -n "^## " docs/anomalies_and_quirks.md; grep -n "^### " docs/anomalies_and_quirks.md | awk -F: '$1<400' | tail -3
+  > $ cd /home/al/dev/metacat; cat python/fixtures/graphics/047-bridge-label-numbers.txt; echo; grep -n "def repeat_star_until" -A12 python/metacat/sugar.py; grep -n 
+  > Read /home/al/dev/metacat/docs/anomalies_and_quirks.md
+  > Edit /home/al/dev/metacat/docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat; sed -n 45,80p chez_scheme/original/temperature-graphics.ss | grep -n "set-icon-label\|new-temperature-window"
+  > $ cd /home/al/dev/metacat/python; sed -i 's|    # 1.2: title is still #f here, so the icon label is #f (racket/gui keeps it)|    # 1.2: title is still #f here, so
+  > $ cd /home/al/dev/metacat/python; sed -i 's/^from metacat.chez import add, div, mul, sub$/from metacat.chez import div, mul, sub/' metacat/gui/eeg_graphics.py; se
+  > Write /home/al/dev/metacat/python/metacat/gui/views.py
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest -q tests/test_gui_windows.py 2>&1 | tail -30
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/gui/workspace_graphics.py'
+s=open(p).read()
+s=s.replace('''def _no_thread_break_handler(thread, ign
+  > $ cd /home/al/dev/metacat/python; until [ -f metacat/gui/views.py ] && [ -f metacat/eeg_graphics.py ] && grep -q "^def break_into_lines" metacat/general_graphics.
+
+Waiting for the other agents' engine pieces (`disk`, `break_into_lines`, engine `eeg_graphics.py`, `gui/views.py`).
+  > $ cd /home/al/dev/metacat/python; ls metacat/*graphics*.py; timeout 300 python3 -c "
+from metacat import headless
+headless.prepare()
+from metacat.gui import views
+  > $ sleep 1; cat /tmp/claude-1000/-home-al-dev-metacat/bb5250fd-2c3e-490b-9e00-58510f4146ba/tasks/b7gtgm5y7.output; ls /home/al/dev/metacat/python/metacat/gui /home
+  > $ cd /home/al/dev/metacat/python; grep -n "def \|_graphics\|import" metacat/gui/views.py | head -80
+  > $ cd /home/al/dev/metacat; grep -n "start-resize-listener\|make-resizable" chez_scheme/original/*.ss | head
+  > $ cd /home/al/dev/metacat/python; sed -n 36,160p metacat/gui/views.py
+  > $ cd /home/al/dev/metacat; sed -n 60,100p chez_scheme/original/setup.ss
+  > $ cd /home/al/dev/metacat/python; until [ -f metacat/eeg_graphics.py ] && grep -q "^def break_into_lines" metacat/general_graphics.py && grep -q "^def disk" metac
+  > $ cd /home/al/dev/metacat/python; timeout 580 bash -c 'until grep -q "def centered_double_arrow" metacat/general_graphics.py && [ -f metacat/rule_graphics.py ] &&
+  > Write /home/al/dev/metacat/python/metacat/gui/theme_graphics.py
+  > $ cd /home/al/dev/metacat/python; sed -n 281,290p metacat/chez.py; grep -n "^def \|^p_\|^g_" metacat/general_graphics.py | head -60
+  > Write /home/al/dev/metacat/python/metacat/general_graphics.py
+
+Now the trace module.
+  > $ cd /home/al/dev/metacat/python/metacat; python3 - <<'EOF'
+p='general_graphics.py'; s=open(p).read()
+old='''    laid along the real axis, rotated onto l and move
+  > $ cd /home/al/dev/metacat/python/metacat; python3 - <<'EOF'
+p='group_graphics.py'; s=open(p).read()
+old_doc=s[s.index('Only group-graphics is translated here'):s.
+  > $ cd /home/al/dev/metacat/python/metacat; sed -i 's/^from metacat import setup, slipnet, workspace$/from metacat import chez, setup, slipnet, workspace/; s/    re
+  > Write /home/al/dev/metacat/python/metacat/gui/trace_graphics.py
+  > Write /home/al/dev/metacat/python/metacat/bridge_graphics.py
+  > $ sleep 100; cat /tmp/claude-1000/-home-al-dev-metacat/bb5250fd-2c3e-490b-9e00-58510f4146ba/tasks/bn0nia33r.output; ls /home/al/dev/metacat/python/metacat/*graphi
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+  > $ cd /home/al/dev/metacat/python/metacat; python3 - <<'EOF'
+p='bridge_graphics.py'; s=open(p).read()
+s=s.replace('''    window = setup.g_workspace_window
+    prop
+  > $ cd /home/al/dev/metacat/python; timeout 590 bash -c 'until grep -q "def centered_double_arrow" metacat/general_graphics.py && [ -f metacat/rule_graphics.py ] &&
+  > Write /home/al/dev/metacat/python/metacat/gui/memory_graphics.py
+  > Write /home/al/dev/metacat/python/metacat/rule_graphics.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/gui/memory_graphics.py'
+s=open(p).read()
+s=s.replace('''                result = tell(selected_answ
+  > $ cd /home/al/dev/metacat/python; grep -n "def update_rule_pexps_bang" -A25 metacat/rule_graphics.py | head -40; timeout 600 python3 -m pytest -q tests/test_gui_w
+  > $ cd /home/al/dev/metacat; git status --short; ls python/metacat/gui; grep -c "^def " python/metacat/general_graphics.py
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest tests/test_graphics.py -q 2>&1 | grep -i "rule\|passed"
+  > $ cd /home/al/dev/metacat/python; cat > /tmp/smoke.py <<'EOF'
+import sys, io, contextlib
+from metacat import headless
+headless.prepare()
+mode = sys.argv[1]
+if mod
+  > $ cd /home/al/dev/metacat/python; grep -n "theme_graphics\|trace_graphics\|memory_graphics\|theme_edit\|def load_views\|def attach_views" -n metacat/gui/views.py 
+  > $ cd /home/al/dev/metacat; sed -n 1,70p chez_scheme/original/eeg-graphics.ss | sed -n 15,70p; grep -n "def for_star\b" -A10 python/metacat/sugar.py | head -14; gr
+  > $ cd /home/al/dev/metacat/python; sed -n 20,160p metacat/gui/views.py
+  > $ cd /home/al/dev/metacat/python; cat > /tmp/smoke.py <<'EOF'
+import sys, io, contextlib
+from metacat import headless
+headless.prepare()
+mode = sys.argv[1]
+W = {}
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest tests/test_views.py -q -k short_golden 2>&1 | tail -30
+  > $ cd /home/al/dev/metacat/python; grep -n "views" tests/golden_harness.py | head -20
+  > $ cd /home/al/dev/metacat/python; timeout 590 bash -c 'until [ -f metacat/eeg_graphics.py ]; do sleep 15; done'; echo rc=$?
+  > $ cd /home/al/dev/metacat/python; sed -n 25,100p tests/golden_harness.py
+  > $ cd /home/al/dev/metacat/python; cat > /tmp/smoke_panels.py <<'EOF'
+import sys
+sys.path.insert(0, "tests"); sys.path.insert(0, "oracle")
+import golden_harness as
+  > $ cd /home/al/dev/metacat/python; timeout 900 python3 /tmp/smoke_panels.py abc-abd-xyz_3852097033.jsonl abc-abd-xyz-dyz_7.jsonl 2>&1 | tail -30
+  > Write /home/al/dev/metacat/python/metacat/eeg_graphics.py
+  > $ cd /home/al/dev/metacat/python; sed -i '2i sys.path.insert(0, ".")' /tmp/smoke_panels.py; timeout 900 python3 /tmp/smoke_panels.py abc-abd-xyz_3852097033.jsonl 
+  > $ cd /home/al/dev/metacat/python; sed -n '/^def make_vector/,/^def /p' metacat/chez.py | head -10; timeout 600 python3 -m pytest tests/test_graphics.py -q 2>&1 | 
+  > $ cd /home/al/dev/metacat/python; export PYTHONPATH=$PWD; sleep 5; timeout 600 python3 /tmp/smoke.py none 2>&1 | tail -3; timeout 600 python3 /tmp/smoke.py ws 2>&
+  > $ cd /home/al/dev/metacat/python; python3 -m metacat abc abd xyz --seed 3852097033 > /tmp/after_run.txt 2>&1; echo $?; cmp /tmp/before_run.txt /tmp/after_run.txt 
+  > $ cd /home/al/dev/metacat/python; for r in abc-abd-xyz_3852097033.jsonl rst-rsu-xyz-uyz_1.jsonl abc-abd-xyz_692549763.jsonl; do timeout 900 python3 /tmp/smoke_pan
+
+Now the golden tests (non-slow) and the fast tier.
+  > $ cd /home/al/dev/metacat/python; timeout 1200 python3 -m pytest tests/test_golden.py -q -x -k "not slow" 2>&1 | tail -3
+
+All module files now exist. Trying the short golden with every view attached:
+  > $ time timeout 600 python3 -m pytest tests/test_views.py -q -x -k short 2>&1 | tail -15
+  > $ cd /home/al/dev/metacat/python; export PYTHONPATH=$PWD; timeout 600 python3 /tmp/smoke.py all 2>&1 | tail -15; cmp /tmp/smoke-none.out /tmp/smoke-all.out && ech
+  > $ cd /home/al/dev/metacat/python; python3 -m pytest -q tests/test_gui_panels_a.py 2>&1 | tail -15; grep -n "^p_EEG_table\|^g_EEG\|^def make_EEG\|^p_EEG_buffer\|^d
+  > $ cd /home/al/dev/metacat/python; export PYTHONPATH=$PWD; sed -i 's/3852097033, 600,/3852097033, int(sys.argv[2]) if len(sys.argv)>2 else 600,/' /tmp/smoke.py; ti
+
+The Workspace window is still being finished by its agent. I'll re-run the short test periodically until it passes.
+  > $ cd /home/al/dev/metacat/python; sed -n 1,60p run-tests.sh | grep -n "fast" ; timeout 1800 bash run-tests.sh --fast 2>&1 | tail -15
+  > $ timeout 590 python3 -c "
+import subprocess,time
+t=time.time()
+while time.time()-t<540:
+    p=subprocess.run(['python3','-m','pytest','tests/test_views.py','-q',
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_gui_panels_a.py'
+s=open(p).read()
+s=s.replace('''    tell(w, "update-graphics")
+    assert items
+  > $ cd /home/al/dev/metacat/python; sed -n 1,40p run-tests.sh
+  > $ cd /home/al/dev/metacat/python; sed -n 254,262p metacat/headless.py; grep -n "views" metacat/headless.py | head
+  > $ cd /home/al/dev/metacat/python; cat >> /tmp/smoke_panels.py <<'EOF'
+if "--extra" in sys.argv or True:
+    from metacat import chez
+    import io, contextlib
+   
+  > $ cd /home/al/dev/metacat/python; sed -n 835,870p metacat/trace.py; grep -n "extra arguments\|ignored)" ../docs/anomalies_and_quirks.md | head
+  > $ cd /home/al/dev/metacat/python; timeout 1800 python3 -m pytest -q -m "not slow" -p no:cacheprovider 2>&1 | tail -15
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -c "
+from metacat import headless
+headless.run_problem(['abc','abd','xyz'], 3852097033, 600)
+" > /tmp/pa_nov
+  > $ cd /home/al/dev/metacat; sed -n 405,440p docs/anomalies_and_quirks.md; grep -rn "_ignored\|\*_extra" python/metacat/*.py | head -5
+  > $ cd /home/al/dev/metacat; grep -n "(define set-themes" -A25 chez_scheme/original/themes.ss | head -30; sed -n 1630,1660p python/metacat/themes.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/gui/workspace_graphics.py'
+s=open(p).read()
+old='''    @message("draw-string-letters")
+    def draw
+  > $ cd /home/al/dev/metacat/python; timeout 900 python3 -c "
+from metacat import headless
+headless.run_problem(['abc','abd','xyz'], 3852097033, 4000)
+" > /tmp/pa_no
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest -q -p no:cacheprovider "tests/test_run.py::test_break_outside_toplevel_resets" "tests/test_utiliti
+  > $ cd /home/al/dev/metacat/python; cat >> /tmp/smoke_panels.py <<'EOF'
+    from metacat.gui import theme_graphics as tg, trace_graphics as trg, memory_graphics as 
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest -q -p no:cacheprovider tests/test_graphics.py tests/test_run.py tests/test_utilities.py 2>&1 | tai
+  > $ cd /home/al/dev/metacat/python; for v in 0 1; do timeout 900 python3 -c "
+import io, sys, hashlib
+from metacat import headless
+kw={}
+if $v:
+    from metacat.gui
+  > $ cd /home/al/dev/metacat/python; export PYTHONPATH=$PWD; head -20 ../tests/problems.txt; cat > /tmp/smoke2.py <<'EOF'
+import sys, io, contextlib
+from metacat imp
+  > $ cd /home/al/dev/metacat; grep -n "clicked?" -A6 chez_scheme/original/themes.ss | head -12
+  > $ cd /home/al/dev/metacat/python; ls tests/test_panels.py 2>&1; python3 -m pytest -q tests/test_gui_panels_a.py tests/test_panels.py 2>&1 | tail -5
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='/tmp/smoke_panels.py'
+s=open(p).read()
+i=s.index('    t = th[0]')
+j=s.index('    print(lh("w", *c)')
+s=s[:i
+  > $ cd /home/al/dev/metacat/python; python3 -m pyflakes metacat/gui/{slipnet,temperature,coderack,commentary,eeg}_graphics.py tests/test_gui_panels_a.py; python3 -m
+  > $ cd /home/al/dev/metacat/python; timeout 900 python3 -m pytest -q -m "not slow" -p no:cacheprovider --ignore tests/test_graphics.py 2>&1 | tail -5
+  > $ cd /home/al/dev/metacat/python; cat >> /tmp/smoke_panels.py <<'EOF'
+    tg.g_theme_edit_mode_p = True
+    hits = 0
+    for panel in tell(W["top"], "get-all-pane
+  > $ cd /home/al/dev/metacat/python; export PYTHONPATH=$PWD; sed -i 's/int(seed), False, views=attach)/int(seed), 6000, keep_going=True, views=attach)/' /tmp/smoke2.
+  > $ cd /home/al/dev/metacat/python; sed -n 1,112p tests/test_gui_panels_a.py
+
+All five panel windows are translated and the tests pass. With every window attached, a run's printed output and its trace are byte-identical to the same run without windows.
+
+**Files created**
+- `/home/al/dev/metacat/python/metacat/gui/slipnet_graphics.py`: the Slipnet window. `load()` builds `*13x5-layout-table*` after the slipnet exists.
+- `/home/al/dev/metacat/python/metacat/gui/temperature_graphics.py`: the Temperature window, `mercury_pexp` and `draw_thermometer`.
+- `/home/al/dev/metacat/python/metacat/gui/coderack_graphics.py`: the Coderack window. It gives each codelet type its slot through `set-graphics-parameters`.
+- `/home/al/dev/metacat/python/metacat/gui/commentary_graphics.py`: the Commentary window. `load()` makes its two fonts. It handles `new-problem` and `add-comment` paragraphs the same way `HeadlessCommentWindow` does.
+- `/home/al/dev/metacat/python/metacat/gui/eeg_graphics.py`: the EEG window only. It reads `%EEG-table%` and `*EEG*` from the engine's `metacat/eeg_graphics.py` when called.
+- `/home/al/dev/metacat/python/tests/test_gui_panels_a.py`: 25 tests.
+  - **Structure:** every `define` in the five `.ss` files has its Python name, with the EEG engine names looked up in `metacat/eeg_graphics.py`; every docstring names its origin; nothing imports tkinter at import time; no engine module imports these modules.
+  - **Behaviour against a recording fake window:** the Commentary window in Eliza and plain mode, justify mode, `switch-modes` and `clear`; the Temperature window's `initialize` and `update-graphics`, including the "Temp." title for narrow windows; `mercury_pexp`; the Coderack window's `initialize`, `display-patterns` and `clear`; the Slipnet layout and `update-graphics`; the EEG window's title and `plot-current-values`.
+  - **One test with G1's real windows on offscreen hosts.**
+
+Every test restores the engine state it touches: codelet-type and slipnode fields, the graphics switches, and the view globals.
+
+**Results**
+- **Before the code:** 12 failed, 11 errors, 1 passed (out of 24).
+- **Now:** all 25 pass. `test_panels.py` (37 tests) and `test_sgl.py` also still pass.
+- **Smoke run:** `headless.run_problem(['abc','abd','xyz'], 3852097033, 600, views=views.attach_views)` prints exactly what the run without views prints.
+  - I also ran it to 4000 codelets. It finds answer wyz at codelet 2170 and stops there, and the output was again identical.
+  - The traces' sha256 hashes match too.
+  - Every window was drawn into (canvas item counts): slipnet 8214, coderack 12416, commentary 39, temperature 228, EEG 298.
+
+**Port changes**
+- The fonts that the `select-...-fonts` functions create with `set!` are module globals in my files.
+- The exception is `%coderack-codelet-count-font%`, which the engine's codelet types read: it is set with `engine.set_global` and read from `view_globals`.
+- Window sizes, colours and titles are read from G1's `gui/constants.py` when called. `disk`, `circle` and `solid_box` come from the engine's `general_graphics.py`, and `punctuate` from `rules.py`.
+- Each window is a `SchemeObject` class that passes any message it doesn't handle on to its graphics or text window.
+- The commented-out `check-for-label-overlap` is not translated.
+
+**Quirk logged**
+- I added "The Temperature window's icon label is `#f`" to `/home/al/dev/metacat/docs/anomalies_and_quirks.md`, and it is cited in a `# 1.2:` comment in the code.
+- `new-temperature-window` sets the icon label before the title has been chosen, so the label is `#f`. It is kept as the original has it.
+
+**Unfinished:** nothing. I found no crashes in the other agents' files.
+  > $ cd /home/al/dev/metacat/python; export PYTHONPATH=$PWD; cat > /tmp/tk.py <<'EOF'
+import tkinter
+from metacat import headless; headless.prepare()
+from metacat.gu
+  > $ cd /home/al/dev/metacat/python; cat >> tests/test_panels.py <<'EOF'
+
+
+# Beyond the battery: the structure of this item's three modules ---------------------
+
+im
+  > $ cd /home/al/dev/metacat/python; mkdir -p /tmp/mut; cp metacat/chez.py metacat/general_graphics.py metacat/rule_graphics.py metacat/bridge_graphics.py metacat/ee
+  > $ cd /home/al/dev/metacat/python; python3 -m pyflakes metacat/gui/constants.py metacat/gui/general_graphics.py metacat/gui/workspace_graphics.py metacat/gui/views
+  > $ cd /home/al/dev/metacat/python; sed -i 's/^    screen_width = swl_screen_width()$/    screen_width = swl_screen_width()     # noqa: F841 (1.2: read, never used)
+
+Now mutation checks.
+  > $ cd /home/al/dev/metacat/python; mkdir -p /tmp/mutbak; cp metacat/gui/{theme,trace,memory}_graphics.py /tmp/mutbak/
+cat > /tmp/mutate.py <<'EOF'
+import subproces
+
+The backup failed; I'll revert the applied mutation by hand.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p="metacat/gui/theme_graphics.py"
+s=open(p).read()
+old="mul(add(i, F(1, 3)), full_activation_diameter))"
+asser
+
+I've written the four modules and the test file. With all views attached, runs print exactly what they print without views, and every window gets drawn into. Nothing is committed, and I ran only `tests/test_gui_windows.py` plus the smoke runs.
+
+**Files created** (all under `/home/al/dev/metacat/python/`):
+- `metacat/gui/constants.py`: the graphics part of constants.ss. `load()` installs the colours the model reads into the engine, and makes `%logo-font%` once fonts.ss's sans-serif has been chosen.
+- `metacat/gui/general_graphics.py`: the windows part of general-graphics.ss, with `GraphicsWindow` handling every message, the scrollable text window, and the resize listener.
+- `metacat/gui/workspace_graphics.py`: workspace-graphics.ss, with `WorkspaceWindow`. `load()` installs `restore-current-state` in the engine.
+- `metacat/gui/views.py`: `load_views`, `attach_workspace_view`, `attach_views`, `window_items`, `set_view_global` and `set_thread_break_handler`.
+- `tests/test_gui_windows.py`: 17 tests.
+
+**Tests before the code:** 6 failed, 8 errors, 3 passed. The 3 that passed were the constants checks and the "engine never imports gui" check, because I wrote `constants.py` first as you asked. **Now:** 17 passed. Two of the structure tests depended on the engine agent's `metacat/general_graphics.py` and only passed once that file was finished.
+
+**Smoke tests** (`headless.run_problem` with `views=lambda: views.attach_views()`, compared with the same run without views):
+- The output is byte-identical for all of these:
+  - run7 at 600 codelets and uncapped (answer `wyz`)
+  - `abc abd mrrjjj` seed 1
+  - the justify run `abc abd xyz xyd` seed 7
+  - `abc abd glz` seed 1108779034, both normal and keep-going to 6000 codelets (`flz`, `dlz`, `hlz`)
+  - `abc abd ijkk` seed 5
+  - `rst rsu xyz` seed 2
+  - the known crash run `abc ccbbaa ijk` seed 3, which still fails in `caddr` at the same point
+- On uncapped run7 every window was drawn into: workspace 18716 items, slipnet 8214, coderack 12416, top themes 512, bottom themes 16, vertical themes 670, memory 46, commentary 39, trace 98, temperature 228, EEG 298.
+- Under xvfb with real Tk windows (`hosts.tk_host_maker`), an 800-codelet run7 ended normally (it hit the codelet cap) and its Workspace canvas had 868 items, so both hosts work.
+
+**Port changes (each marked `# port:` in the code):**
+- The toplevel and frame are one host from `hosts.make_window_host`. Scroll region, title, geometry, raise/lower and destroy all go to the host.
+- `get-scrollbar-from-frame` asks the host instead of waiting for a scrollbar to appear.
+- `reposition-vertical-scrollbar` calls `host.set_vertical_view(fraction)`, because the Python `Viewport` has no scroll position.
+- `swl:sync-display` is `sgl.g_flush_event_queue()`. The resize queue is a `queue.Queue`, and SWL's critical section is a lock.
+- Clicking the Workspace window to start a run goes through `workspace_graphics.thread_break`. Until item 15 installs a handler, it raises.
+- `update-rule-pexps` stores the returned pexp, as the Racket port does. The engine's `update_rule_pexps_bang` edits in place and returns the pexp, so both styles agree.
+- `draw-string-letters` now accepts and ignores extra arguments, as Chez's `record-case` does. trace.ss sends it a tag. Without this, every run crashed at its first answer once all views were attached.
+- The screen size, `%default-scrollable-text-window-font%` and `%logo-font%` are made in `load()`, because the font faces are chosen only when the views start.
+- Several of the original's `case` forms have no `else`; I kept that behaviour and marked them `# 1.2:`.
+- I did not add any of this to `docs/porting-notes.md` or `docs/divergences.md`.
+
+**Problems in files that aren't mine:**
+- **headless.py:** with only the Workspace window attached (`attach_workspace_view`), the run fails. The headless EEG window rejects `plot-current-values`, the message the model sends once workspace graphics are on. The Racket notes say its headless null windows accept it, so `make_null_window("EEG", ...)` in headless.py needs it in its allowed list. `attach_views` is unaffected because it replaces that window.
+- **constants.py lint:** pyflakes still warns about the two unused screen-size variables in `set_window_size_defaults`. The original reads them and never uses them; the `# noqa` comments silence flake8 but not pyflakes.
+
+Not done:
+- `TkHost` doesn't forward window resizes to the viewport, so the resize code only runs if something calls `vp.configure`.
+- The scrollable text window has no unit test of its own, though the smoke runs exercise it.
+  > $ cd /tmp; python3 -c "
+import math
+n=0
+for line in open('/tmp/probe2.out'):
+    t=line.strip()[1:-1].split(); x,y,m=float(t[0]),float(t[1]),float(t[3])
+    if ma
+  > $ cd /home/al/dev/metacat/python; wc -l metacat/gui/{theme,trace,memory}_graphics.py; head -40 metacat/gui/theme_graphics.py
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^class " metacat/gui/theme_graphics.py; grep -c "" metacat/gui/theme_graphics.py
+  > $ cd /tmp; cat > probe4.ss <<'EOF'
+(for-each (lambda (x) (write x) (newline))
+  (list (magnitude (make-rectangular 0.8455286293882489 -0.5842277562918272))
+      
+
+The file is intact (just longer than I estimated). Rerunning the mutations with a proper backup directory.
+  > $ cd /home/al/dev/metacat/python; mkdir -p /tmp/panelmut && cp metacat/gui/{theme,trace,memory}_graphics.py /tmp/panelmut/ && sed -i 's#/tmp/mutbak/#/tmp/panelmut
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from metacat import chez as c
+from fractions import Fraction as F
+mr=c.make_rectangular
+print(c.write_string([c.sub
+
+Printing handles it. Adding a probed-values test to test_graphics.py.
+  > Edit /home/al/dev/metacat/python/tests/test_graphics.py
+
+The grey-level rounding mutation slips past because b:clean hides colours. I'll add a small direct check.
+  > $ cd /home/al/dev/metacat/python; sed -n 19,48p metacat/gui/colors.py; cat >> tests/test_panels.py <<'EOF'
+
+
+def test_memory_icon_colours():
+    """memory-graphic
+  > $ cd /home/al/dev/metacat/python; cp tests/test_graphics.py /tmp/mut/; timeout 600 python3 -m pytest -q -p no:cacheprovider tests/test_graphics.py 2>&1 | tail -1
+
+  > $ cd /home/al/dev/metacat/python; cp metacat/gui/memory_graphics.py /tmp/panelmut/memory_graphics.py; sed -i 's/round_(mul(percent(activation),/chez.exact_ceiling
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest -q -p no:cacheprovider tests/test_graphics.py 2>&1 | grep -E "^E" | head -8
+
+All my cases pass, and the EEG ones now pass too. Final checks: the whole panels file, plus the short golden run with every view attached.
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest tests/test_panels.py -q 2>&1 | tail -1; timeout 900 python3 -m pytest tests/test_views.py -q -k sh
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest -q -p no:cacheprovider tests/test_graphics.py 2>&1 | grep -E "FAILED"; cd ..; git diff --stat; dif
+  > $ cd /home/al/dev/metacat/python; timeout 900 python3 -m pytest tests/test_views.py -q -k short_golden 2>&1 | grep -E "Error|assert" | head -8
+  > $ cd /home/al/dev/metacat/python; for i in 1 2 3; do timeout 600 python3 -m pytest -q -p no:cacheprovider tests/test_graphics.py 2>&1 | tail -1; done; timeout 600
+  > $ cd /home/al/dev/metacat/python; sed -n 56,70p tests/test_views.py; timeout 900 python3 -m pytest tests/test_views.py -q -k short_golden -vv 2>&1 | grep -A12 "As
+  > $ cd /home/al/dev/metacat/python; grep -n "sign = \|opp = " metacat/bridge_graphics.py metacat/general_graphics.py; ls -la metacat/bridge_graphics.py /tmp/mut/bri
+  > $ cd /home/al/dev/metacat/python; python3 -c "
+from metacat import engine; engine.load()
+from metacat import bridge_graphics as b, chez, general_graphics as g
+top
+  > $ cd /home/al/dev/metacat/python; sed -n '/^def angle/,/^def cos/p' metacat/chez.py; diff /tmp/mut/chez.py metacat/chez.py && echo same; cd ..; git diff python/me
+
+I wrote the three modules and the test file. All 47 tests in `test_panels.py` pass, including the 36 battery tests, and attaching my windows doesn't change a run.
+
+**Files created**
+- `/home/al/dev/metacat/python/tests/test_panels.py`, written first. It runs the battery's 36 tests in order in one engine, with the battery's in-between forms and its fakes translated. `run_through(name)` evaluates everything up to a given test, so a single test also works under `pytest -k`. The module fixture restores every engine global the battery changes. Beyond the battery there are 11 more tests: every `define` of the three files is translated, docstrings name their origin, no tkinter at import, the engine never imports these modules, `get-relation-names-pexp` raises Chez's unbound-variable error, and the Memory icon colours.
+- `/home/al/dev/metacat/python/metacat/gui/theme_graphics.py`: everything in `theme-graphics.ss` except `relation-name`, which it uses from the engine module. `load()` builds `*panel-order*` and `*panel-theme-order*`; `views.load_views()` already calls it. `*theme-edit-mode?*` lives here as `g_theme_edit_mode_p`, and G1's `workspace_graphics` and `views.set_view_global` already read it from this module.
+- `/home/al/dev/metacat/python/metacat/gui/trace_graphics.py`: everything in `trace-graphics.ss` except `group-event-pexp-text-string`, which it uses from the engine module.
+- `/home/al/dev/metacat/python/metacat/gui/memory_graphics.py`: all of `memory-graphics.ss`.
+
+**Before the modules existed:** 33 failed, 4 passed (`relation-names`, `group-event-text-strings`, `mercury-pexp` and the manifest check). Collection also errored once because I had named a helper `test_case`; I renamed it.
+
+**Final results**
+- **`test_panels.py`:** 47 passed. That includes all 36 battery tests, so the others' parts pass too (slipnet table, mercury and thermometer, the EEG ones).
+- **Golden runs with my windows attached:** `abc-abd-xyz_3852097033`, `abc-abd-xyz_692549763`, `abc-abd-xyz-dyz_7` and `rst-rsu-xyz-uyz_1` give traces identical to `tests/golden/`, and all five of my windows were drawn into. Each run was in its own process; two runs in one process differ because the Memory carries over between runs, as expected.
+- **Interactive paths:** I also exercised resize, redraw, garbage-collect, show-fonts, erasing a Memory icon, and theme clicks in edit mode (right click goes 100 → -100 → 0, left click → 100) on a finished run. They work.
+
+**Mutations** (each applied, `test_panels.py` run, then restored; `cmp` against a backup confirms all three files are restored):
+
+| Module | Mutation | Failures |
+|---|---|---|
+| theme | horizontal panel x offset 1/2 → 1/3 | 9 |
+| theme | `add-relation` appends instead of consing | 4 |
+| theme | vertical name-y sign flipped | 1 |
+| theme | `draw-absolute-activation` doesn't reset `*fg-color*` | 1 |
+| theme | `update-graphics` loses its same-dominant branch | 1 |
+| trace | arrowhead direction swapped | 3 |
+| trace | press handler skips `unhighlight-all-answers` | 1 |
+| trace | rule icon border 1/10 → 1/8 | 2 |
+| memory | icon centre placed above next-y | 1 |
+| memory | press handler comments on snags too | 1 |
+| memory | icon grey level rounded up | 0 at first |
+
+The last one got past the battery because `b:clean` turns colours into `'obj`. I added `test_memory_icon_colours`, and it now catches it.
+
+**Port changes:** the only deviation from the original is `get-relation-names-pexp`, which raises `chez.UnboundVariable("relation-names-pexp")` as Chez would. That case is already in the anomalies file, so I didn't edit any docs. Everything else follows the original line for line.
+
+**Failures in others' parts:** one. `test_views.py::test_a_short_golden_with_views` (G1's) fails on its own assertion, not on the run: the trace matches the golden and every window draws. Line 63 compares `sorted(items) == sorted(MINIMUM) + ["bottom-themes"]`, and the right side isn't sorted, so it first differs at index 1 (`'bottom-themes'` vs `'coderack'`). It should be `sorted(list(MINIMUM) + ["bottom-themes"])`.
+
+**Unfinished:** nothing on my side.
+  > $ cd /home/al/dev/metacat; git status --short python/fixtures tests | head; ls -la --time-style=full-iso python/fixtures/graphics | head -5; ls -la --time-style=f
+  > $ cd /home/al/dev/metacat/python; ls -lt --time-style=full-iso metacat/*.py metacat/gui/*.py tests/*.py | head -12; date
+  > $ cd /home/al/dev/metacat/python; rm -f metacat/__pycache__/{chez,general_graphics,group_graphics,bridge_graphics,rule_graphics,eeg_graphics}.*.pyc; timeout 600 p
+
+Stale bytecode from a same-size mutant restored within the same second. Rerunning all mutations with bytecode writing disabled.
+  > $ cd /home/al/dev/metacat/python; export PYTHONDONTWRITEBYTECODE=1; cp metacat/chez.py metacat/general_graphics.py metacat/rule_graphics.py metacat/bridge_graphic
+  > $ cd /home/al/dev/metacat; grep -n "^## \|^### " docs/anomalies_and_quirks.md | sed -n 1,200p | grep -n "" | awk -F: '$1>0' | tail -40; git diff docs/anomalies_an
+  > $ cd /home/al/dev/metacat; sed -n 586,597p docs/anomalies_and_quirks.md; sed -n 1021,1033p docs/anomalies_and_quirks.md
+
+Adding updates to the two relevant anomaly entries and one new quirk entry.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'; s=open(p).read()
+old='''  `real_part`, `imag_part`, printed by `number_to_string`. 
+  > $ cd /home/al/dev/metacat/python; export PYTHONDONTWRITEBYTECODE=1; timeout 600 python3 -m pytest -q -p no:cacheprovider tests/test_graphics.py 2>&1 | tail -1; py
+  > $ cd /home/al/dev/metacat/python; export PYTHONDONTWRITEBYTECODE=1; for f in tests/test_gui_panels_a.py tests/test_gui_windows.py tests/test_panels.py tests/test_
+  > $ cd /home/al/dev/metacat/python; export PYTHONDONTWRITEBYTECODE=1; timeout 600 python3 -m pytest -q -p no:cacheprovider -m 'not slow' tests/test_gui_windows.py t
+
+I've written the engine side of the graphics and its tests. All 71 tests in `test_graphics.py` pass, the CLI output for `abc abd xyz --seed 3852097033` is byte-identical to the run I saved before starting, and the real EEG now replaces headless.py's stand-in. The fast tier fails at one test: `test_run.py::test_break_outside_toplevel_resets`. That failure comes from another agent's test file, not from this work (details at the end).
+
+**Files created**
+- `python/tests/test_graphics.py`: one case for each of the 48 tests in the MANIFEST. The battery header says 50, but the MANIFEST and fixtures have 48. It translates the battery's fakes, plus:
+  - two EEG checks against the panels fixtures (`EEG-table`, `EEG-recording`);
+  - an in-place check for `update_rule_pexps_bang`;
+  - a test of the complex-number rules using values Chez printed;
+  - structural tests: every engine-side `define` has its Python name, the window parts stay out, docstrings name their origin, no tkinter or `metacat.gui` imports, every `_metacat.*_graphics.*` name the model uses exists, and `engine.load()` picks the modules up.
+- `python/metacat/bridge_graphics.py`: the whole file.
+- `python/metacat/rule_graphics.py`: `update_rule_pexps_bang` updates in place, as the original's `set-car!` does. It also returns the pexp itself, so a caller written after the Racket port (which stores the return value) still works.
+- `python/metacat/eeg_graphics.py`: `p_EEG_table`, `p_EEG_buffer_size`, `make_EEG` and `g_EEG`. `g_EEG` is made when the module is imported, since it only needs `objects.py`.
+
+**Files changed**
+- `python/metacat/general_graphics.py`: the whole non-window part, including `grid`, `pi`, `pi/180`, `180/pi`, `g_platform` and `g_tcl_or_tk_version_8_3_p`. `%nice-graphics%` is read from `setup.p_nice_graphics` when each shape is built.
+- `python/metacat/group_graphics.py`: the constants, `group_dashed_line_density`, `make_group_pexp`, `draw_group_grope` and `make_group_grope_pexp`.
+- `python/metacat/chez.py`: `+ - * /` now work on exact and flonum complex numbers. I added `magnitude`, `angle`, `make_polar`, `cos`, `sin`, `tan`, `acos` and a negation for exact complex numbers. The int and flonum fast paths are unchanged.
+- `docs/anomalies_and_quirks.md`: a new entry on Chez's complex arithmetic, a new entry on the stale-bytecode trap below, and updates to the "exact complex" and "shared rule pexps" entries.
+
+**Before writing the code:** 65 failed, 5 passed (70 tests at that point).
+
+**Final results**
+- `test_graphics.py`: 71 passed.
+- `test_golden.py -k "not slow"`: 28 passed. That selection only takes 0.6 s; the CLI comparison covers a real run.
+- Fast tier, leaving out the other agents' four new test files (`test_gui_windows.py`, `test_views.py`, `test_panels.py`, `test_gui_panels_a.py`): 866 passed.
+
+**Mutation checks** (each file restored and checked with `cmp`):
+
+| Mutant | Result |
+|---|---|
+| `angle` of a positive flonum gives `0.0` instead of exact 0 | 1 failure |
+| `angle` of a positive exact number gives `0.0` | 7 failures |
+| `magnitude` uses `math.hypot` | 1 failure |
+| complex subtraction through Python `complex` | 4 failures |
+| `(acos 1)` gives `0.0` | 2 failures |
+| dotted line drops its last point | 10 failures |
+| centered zigzag `opp` swapped | 4 failures |
+| rule clause widths mapped first to last, not in Chez's order | 1 failure |
+| `update_rule_pexps_bang` doesn't recurse into `erase` | 2 failures |
+| bridge label counter starts at 0 | 1 failure |
+| vertical grope sign swapped | 1 failure |
+| group dash density 2/50 changed to 1/50 | 3 failures |
+| EEG previous values off by one | 1 failure |
+| octagon `(* a (/ 1 k))` changed to `(/ a k)` | survived (same values on these inputs) |
+| EEG thunks mapped first to last | survived (the thunks only read, so order can't show) |
+
+**Quirks found**
+- **Complex arithmetic.** Chez combines a real and a complex number part by part, keeping signed zeros: `(- 0.5 0.1+0.0i)` is `0.4-0.0i`, and `(* 0 z)` is exact 0 while `(* 0.0 z)` is `0.0+0.0i`.
+- **`magnitude`.** Chez uses libm's `hypot`, which is what Python's `abs(complex)` gives. `math.hypot` differs in the last bit on 36 of 20,000 random arguments I probed.
+- **`angle` and friends.** `(angle 0.5)` is exact 0, `(angle -0.0)` is pi, `(make-polar 1/2 0)` is `1/2`, and `(cos 0)` is exact 1. This is what keeps exact horizontal lines exact.
+- **Testing trap: stale bytecode.** A mutant the same size as the original, restored with `cp` within the same second, ran from its stale `.pyc`. A correct file then failed a test. Mutation checks need `PYTHONDONTWRITEBYTECODE=1` and the module's `__pycache__` entry removed after each restore.
+
+**Left undone or for others**
+- **Fast-tier failure (not caused by this work).** `test_gui_windows.py` calls `headless.prepare()`, which replaces `run.break_` for the rest of the pytest process. `test_run.py::test_break_outside_toplevel_resets` and `test_utilities.py[tell-invalid]` then fail. They pass when run alone or without the other agents' files, and fail the same way with my test file removed. The fast tier stops at the first failure, which this time was the `test_run.py` one.
+- **Another agent's failing test.** `test_views.py::test_a_short_golden_with_views` fails with `WorkspaceWindow.draw_string_letters() takes 3 positional arguments but 4 were given`. That is the Trace window's extra-tag call, which the plan says needs an ignored extra parameter.
+- **Docs.** I didn't write an "As built" section in `docs/python-translation-plan.md` or porting notes for this item.
+
+All four agents are done. Fixing the integration issues they reported: my test's sort bug, the null EEG window, and the test-isolation leak from `headless.prepare()`.
+  > $ sed -i 's/    assert sorted(items) == sorted(MINIMUM) + \["bottom-themes"\]/    assert sorted(items) == sorted(list(MINIMUM) + ["bottom-themes"])/' tests/test_v
+  > $ sed -n 120,200p tests/test_gui_windows.py
+  > $ sed -i '140s/    headless.prepare()/    engine.load()/; 138s/from metacat import headless, setup, view_globals/from metacat import engine, setup, view_globals/'
+  > $ grep -n "types\." metacat/headless.py || sed -i '/^import types$/d' metacat/headless.py; time timeout 1200 python3 -m pytest tests/test_views.py -q -k "not rend
+
+All 109 goldens match with every window attached (and the crash run crashes identically), in 38 s. Now the renders under Xvfb:
+  > $ mkdir -p tests/snapshots/views && time env -u WAYLAND_DISPLAY timeout 900 xvfb-run -a -s "-screen 0 3000x2000x24" python3 tests/render_views.py tests/snapshots/
+
+Every scene rendered in 7 s. Inspecting the pictures against the reference screenshots:
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/workspace-run7-answer.png
+  > Read /home/al/dev/metacat/docs/screenshots/run7-wyz.png
+
+The Workspace matches the reference closely. Now the other panels:
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/slipnet-run7-answer.png
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/coderack-run7-answer.png
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/commentary-run7-answer.png
+
+These match the reference panels. Checking the Trace, themes, Memory, EEG and Temperature:
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/trace-run7-answer.png
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/top-themes-run7-answer.png
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/memory-run7-answer.png
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/EEG-run7-answer.png
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/temperature-run7-answer.png
+
+All match the reference screenshot. Checking the action scenes (snag view, Memory comparison, justify run):
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/workspace-run7-snag-event.png
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/workspace-glz-compare.png
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/workspace-xyd-justify.png
+
+Comparing the Memory-comparison scene with the Racket port's snapshot:
+  > Read /home/al/dev/metacat/racket/tests/snapshots/workspace-glz-compare.png
+
+Pictures match the Racket port's (only Tk's text metrics differ). Running the full gate now:
+  > $ cd /home/al/dev/metacat && git status --short | head -40; time python3 ralph_loops/loop0002/gate.py 2>&1 | tail -15
+
+Gate passed (1374 tests, 6 min 26 s). A quick check that the views test catches a view that touches the generator:
+  > $ cd /home/al/dev/metacat/python && cp metacat/gui/temperature_graphics.py /tmp/tg.bak && grep -n '@message("update-graphics")' -A2 metacat/gui/temperature_graphi
+  > $ sed -i '159a\        chez.random(2)' metacat/gui/temperature_graphics.py && grep -q "^from metacat import.*chez\|^from metacat import chez" metacat/gui/temperat
+
+The mutant (a view drawing one random number) is caught at trace line 3. Now the docs:
+  > $ cd /home/al/dev/metacat && grep -n "^## \|^### " docs/python-translation-plan.md | tail -8; grep -n "^#\|gui/" python/README.md | tail -25; grep -n "fast\|full"
+  > $ sed -n 729,769p docs/python-translation-plan.md; sed -n 200,240p python/README.md; sed -n 1,25p python/run-tests.sh
+
+Writing the docs updates (plan, README, tier comment):
+  > $ python3 - <<'EOF'
+p='docs/python-translation-plan.md'
+s=open(p).read()
+add='''
+### As built (item 14)
+
+- **Split between engine and views**, as in the Racket po
+
+Now the PROGRESS entry and the item mark:
+  > $ python3 - <<'EOF'
+p='ralph_loops/loop0002/PROGRESS.md'
+s=open(p).read()
+s=s.replace("- **Current**: 14/18 SOLVED","- **Current**: 15/18 SOLVED")
+s=s.rstrip("\n"
+
+Item 14 (the panels) is solved, and the gate passed on its final run: 1374 tests in 6 min 32 s.
+
+**What the panels do now**
+- Every graphics file is translated:
+  - The parts the model calls with or without a window stay in the engine, which still never imports tkinter: the drawing helpers and the group, bridge, rule and EEG code.
+  - The windows live in `python/metacat/gui/`.
+- `python/metacat/gui/hosts.py` decides where windows go: offscreen, where they draw nothing and need no display, or real Tk windows.
+- `headless.run_problem(..., views=attach_views)` runs a problem with every window attached.
+
+**Tests**
+- Each test file failed before its code existed. For example, the graphics battery started at 65 failed and 5 passed; the panels battery started at 33 failed and 4 passed.
+- Both Chez batteries pass against their frozen fixtures. They hold 48 and 36 tests, not the 50 and 38 their headers say; the tests cover every one of them.
+- With every window attached, all 109 goldens still match their traces exactly. The known crash run (`abc ccbbaa ijk`, seed 3) fails with the same error after the same trace. Each window drew more than 1000 items across the runs.
+- I checked that this test bites: a view that draws a single random number makes it fail at trace line 3.
+
+**Pictures**
+- `tests/render_views.py` draws 56 windows under Xvfb, over 8 scenes:
+  - `abc abd xyz` seed 3852097033 at 300 codelets, at 800 codelets and at its answer;
+  - its snag view, its answer description, and a click on its last clamp event;
+  - one justify run;
+  - two answers compared in the Memory window.
+- One rendering of each is kept in `python/tests/snapshots/views/`.
+- I looked at them. At the answer, every panel matches `docs/screenshots/run7-wyz.png` item for item, and the Memory comparison matches the Racket port's snapshot. The only difference is Tk's text sizes: fonts come out a little larger, so the list of concept mappings touches a rule box.
+
+**Small fixes I made while integrating**
+- A test helper called `headless.prepare()` inside the shared test session, which broke `test_run.py`. It now only loads the engine.
+- The stand-in EEG window now accepts `plot-current-values`, so a run with only the Workspace window attached works.
+
+**Left for item 15 (noted in PROGRESS.md)**
+- Real Tk windows don't yet pass resize or mouse events to their viewports.
+- Clicking the Workspace window to continue a run raises an error until the control panel exists.
+
+`PROGRESS.md` (now 15/18) and `iterations.md` are updated, and the docs (translation plan, quirks log, README) cover the item. Nothing is committed.
+
+# result: success in 2435s, 69 turns, cost $26.57

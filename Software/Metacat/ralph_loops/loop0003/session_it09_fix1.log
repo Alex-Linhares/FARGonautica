@@ -1,0 +1,49 @@
+# session it09_fix1 started 2026-10-04 23:52:50
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cat python/run-tests.sh; cd python && python3 -m pytest --collect-only -q 2>/dev/null | sed -n '1570,1580p'; python3 -m pytest --collect-only -q 2>/dev/null | t
+  > $ python3 -m pytest --collect-only -q 2>/dev/null | grep '::' | nl | sed -n '1560,1585p'
+  > $ python3 -m pytest --collect-only -q 2>/dev/null | grep '::' | nl | grep -E 'test_qt_(menus|engine)' | head -60; cat ../ralph_loops/loop0003/status.json 2>/dev/n
+  > $ cd /home/al/dev/metacat && grep -n "Iteration 8" -A40 ralph_loops/loop0003/PROGRESS.md | head -80; tail -40 ralph_loops/loop0003/session_it09_fix1.log | cut -c1
+  > $ grep -n "^## Iteration" ralph_loops/loop0003/PROGRESS.md | tail -5; sed -n "$(grep -n '^## Iteration 8' ralph_loops/loop0003/PROGRESS.md | cut -d: -f1),\$p" ral
+
+The hang is in `test_qt_panes.py::test_fonts_measure_from_several_threads_at_once` (test #1574). Now reading the notes and the font code.
+  > $ sed -n 542,575p ralph_loops/loop0003/PROGRESS.md; grep -n "test_fonts_measure_from_several_threads_at_once" -A50 python/tests/test_qt_panes.py
+  > $ ls ralph_loops/loop0003/; cat ralph_loops/loop0003/hang-it07-faulthandler.log | head -120
+  > $ cd /home/al/dev/metacat/python && sed -n 1,160p metacat/qt/canvas.py; sed -n 430,520p metacat/qt/displaylist.py
+  > $ sed -n 495,502p metacat/qt/displaylist.py; sed -n 40,90p metacat/gui/app.py; sed -n 50,70p metacat/gui/general_graphics.py
+  > $ export QT_QPA_PLATFORM=offscreen; unset WAYLAND_DISPLAY; timeout 600 python3 -m pytest -x -q -o faulthandler_timeout=60 tests/test_qt_menus.py "tests/test_qt_pa
+  > $ export QT_QPA_PLATFORM=offscreen; unset WAYLAND_DISPLAY; timeout 900 python3 -m pytest -x -q -o faulthandler_timeout=60 tests/test_qt_*.py 2>&1 | tail -80 | cut
+
+Reproducing the hang with the full Qt test set under a faulthandler timeout; meanwhile reading the engine-side tests that could leave a run going.
+  > $ grep -n "toplevel" -A25 metacat/run.py | head -50
+  > $ sleep 100; cat /tmp/claude-1000/-home-al-dev-metacat/256f32ec-7a2b-4515-aa30-bc535507e55f/tasks/bgcm8fld8.output | cut -c1-200 | head -150
+  > $ F=/tmp/claude-1000/-home-al-dev-metacat/256f32ec-7a2b-4515-aa30-bc535507e55f/tasks/bgcm8fld8.output; timeout 600 bash -c "until grep -qE 'Timeout|passed|failed'
+  > $ ps aux | grep -c "pytest -x -q -o faulthandler" ; ps -eo pid,etime,args | grep "pytest" | grep -v grep
+  > $ which py-spy gdb; F=/tmp/claude-1000/-home-al-dev-metacat/256f32ec-7a2b-4515-aa30-bc535507e55f/tasks/bgcm8fld8.output; timeout 300 bash -c "until ! pgrep -f 'fa
+  > $ export QT_QPA_PLATFORM=offscreen; unset WAYLAND_DISPLAY; T="tests/test_qt_panes.py::test_fonts_measure_from_several_threads_at_once"
+for s in canvas engine font
+
+Running the hanging test after each Qt test file separately to find which earlier file leaves state behind.
+  > $ timeout 590 bash -c 'until [ $(grep -lE "Timeout|passed|failed" /tmp/hang_*.log 2>/dev/null | wc -l) -ge 5 ]; do sleep 5; done'; for f in /tmp/hang_*.log; do ec
+  > $ grep -v "site-packages\|pluggy\|threading.py" /tmp/hang_panes.log | cut -c1-200 | head -80
+  > $ pgrep -af "test_qt_panes.py tests" ; tail -c 600 /tmp/hang_panes.log
+  > $ timeout 60 gdb -p 2205305 -batch -ex "thread apply all bt 25" 2>&1 | grep -v "^\[New LWP\|^$" | head -200 | cut -c1-180
+  > $ grep -n "^Thread\|^Current" /tmp/hang_panes.log; grep -n "Thread 0x" -A3 /tmp/hang_panes.log | grep -v pluggy | head -40
+  > $ grep -rn "SetAsyncExc\|_thread\.\|os\._exit\|signal\.\|faulthandler\|settrace\|setprofile\|setswitchinterval" metacat/qt metacat/gui tests/test_qt_*.py tests/co
+
+Found a second, quicker hang in `test_qt_panes.py` (a thread stuck starting). Inspecting the stuck process's threads from /proc.
+  > $ P=$(pgrep -f "^python3 -m pytest -x -q -p no:cacheprovider -o faulthandler_timeout=45 tests/test_qt_panes.py"); echo $P; for t in /proc/$P/task/*; do echo "$(ba
+  > $ grep -rn "QThread\|QThreadPool\|QMutex\|QWaitCondition\|QSemaphore\|__del__\|weakref\|finalize\|gc\." metacat/qt tests/test_qt_*.py tests/conftest.py | head -30
+  > $ sed -n 44,60p metacat/qt/hosts.py; grep -rn "currentThread\|on_gui_thread\|_gui_thread\b" metacat/qt | head -30; grep -n "def get_pixel_size" -A15 metacat/gui/f
+  > $ cat /proc/sys/kernel/yama/ptrace_scope; cd /home/al/dev/metacat/python && sed -n 200,260p tests/test_qt_panes.py; sed -n 280,310p metacat/qt/hosts.py
+  > $ pkill -f "faulthandler_timeout=45" ; cd /home/al/dev/metacat/python && export QT_QPA_PLATFORM=offscreen; unset WAYLAND_DISPLAY; for i in 1 2 3; do (gdb -q -batc
+  > $ export QT_QPA_PLATFORM=offscreen; unset WAYLAND_DISPLAY; for i in 1 2 3; do (setsid gdb -q -batch -ex "set pagination off" -ex "handle SIGPIPE nostop noprint" -
+
+Running `test_qt_panes.py` under gdb (3 copies) so I can get C-level stacks when it hangs.
+  > $ timeout 240 bash -c 'until [ $(grep -lE "passed|failed|error" /tmp/gdb_panes_*.log 2>/dev/null | wc -l) -ge 3 ]; do sleep 5; done'; for f in /tmp/gdb_panes_*.lo
+  > $ for f in /tmp/gdb_panes_*.log; do echo "== $f"; grep -E "passed|failed|^\.+|F" $f | grep -v "^\[" | tail -3 | cut -c1-200; done; pgrep -af "pytest -x -q -p no:c
+  > $ rm -f /tmp/gdb_*.log; export QT_QPA_PLATFORM=offscreen; unset WAYLAND_DISPLAY; for i in 1 2 3 4 5 6; do (setsid gdb -q -batch -ex "set debuginfod enabled off" -
+
+Now a watchdog: after any pytest process runs >180 s, interrupt it so gdb dumps all thread stacks.
+  > $ timeout 590 bash -c 'while true; do for p in $(pgrep -f "^/home/al/anaconda3/bin/python3 -m pytest -x -q -p no:cacheprovider|^python3 -m pytest -x -q -p no:cach

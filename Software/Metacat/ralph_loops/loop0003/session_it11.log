@@ -1,0 +1,185 @@
+# session it11 started 2026-10-05 02:19:20
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; cat ralph_loops/loop0003/iterations.md | sed -n '/08 Layout/,$p' | head -50; wc -l python/metacat/qt/*.py; git status --short | head
+  > $ cd /home/al/dev/metacat; cat python/metacat/qt/mainwindow.py
+  > $ cd /home/al/dev/metacat; cat python/metacat/qt/app.py; grep -n "1366\|768\|2\.2\|^#" docs/qt-gui-plan.md | head -60
+  > $ cd /home/al/dev/metacat; sed -n 20,35p docs/qt-gui-plan.md; sed -n 227,450p docs/qt-gui-plan.md; sed -n 685,760p docs/qt-gui-plan.md
+  > $ cd /home/al/dev/metacat; grep -rn -i "logo" python/metacat/gui/*.py python/metacat/qt/*.py | grep -v "^.*#" | head -40; grep -n -i "logo\|about" python/tests/da
+  > $ cd /home/al/dev/metacat; sed -n 85,125p python/metacat/gui/fonts.py; grep -n -B2 -A12 "create-mcat-logo" chez_scheme/original/fonts.ss | head -40; grep -n "Logo
+
+Reading the existing panes test and hosts module to plan the QSettings, icon and layout tests.
+  > $ cd /home/al/dev/metacat; sed -n 1,80p python/tests/test_qt_panes.py; grep -n "^def \|^    def \|subprocess\|slow" python/tests/test_qt_panes.py | head -60
+  > $ cd /home/al/dev/metacat; sed -n 295,525p python/tests/test_qt_panes.py; sed -n 1,200p python/tests/render_qt_panes.py
+  > $ cd /home/al/dev/metacat; ls tests/golden/ | head -50; ls tests/golden | wc -l
+  > $ cd /home/al/dev/metacat; grep -n "reset_layout\|Reset layout\|def attach_windows\|set_pane_visible\|window_controller\|Show all\|Hide all" python/metacat/qt/con
+  > $ cd /home/al/dev/metacat; sed -n 575,700p python/metacat/qt/controls.py; sed -n 935,985p python/metacat/qt/controls.py
+  > $ cd /home/al/dev/metacat; sed -n 205,220p python/metacat/gui/constants.py; sed -n 318,340p python/metacat/gui/constants.py; sed -n 370,404p python/metacat/qt/hos
+
+Probing the main window's natural minimum size before writing the tests.
+  > $ cd /home/al/dev/metacat/python; cat > /tmp/probe.py <<'EOF'
+import os; os.environ["QT_QPA_PLATFORM"]="offscreen"
+from PySide6.QtWidgets import QApplication
+app=
+  > $ cd /home/al/dev/metacat/python; PYTHONPATH=. timeout 120 python3 /tmp/probe.py 2>&1 | tail -5
+  > $ cd /home/al/dev/metacat/python; sed -i 's/^os._exit(0)/import sys; sys.stdout.flush(); os._exit(0)/' /tmp/probe.py; PYTHONPATH=. timeout 120 python3 /tmp/probe.
+  > $ cd /home/al/dev/metacat/python; grep -n "QT_QPA\|def qapp\|def grab\|environ" tests/conftest.py | head; grep -rn "app.main\|metacat.qt\"\|\"-m\", \"metacat.qt" 
+  > $ cd /home/al/dev/metacat/python; sed -n 1,80p tests/conftest.py; grep -n "MainWindow\|app.setup\|import app" tests/drive_qt_gui.py tests/drive_qt_menus.py | head
+  > $ cd /home/al/dev/metacat/python; grep -n "1200\|configfile\|offscreen" tests/drive_qt_menus.py | head
+  > $ cd /home/al/dev/metacat/python; sed -n 38,60p tests/drive_qt_menus.py
+  > $ cd /home/al/dev/metacat/python; sed -n 60,200p tests/drive_qt_gui.py
+  > $ cd /home/al/dev/metacat/python; sed -n 1,58p tests/drive_qt_gui.py; grep -n "^def main\|^if __name__" -A40 tests/drive_qt_gui.py | tail -50
+  > $ cd /home/al/dev/metacat/python; sed -n 50,145p metacat/qt/canvas.py
+
+Now writing the tests first: a driver script that runs layout scenarios in fresh processes, and the test file.
+  > Write /home/al/dev/metacat/python/tests/drive_qt_layout.py
+  > $ cd /home/al/dev/metacat/python; sed -i 's/hosts.settle_resizes(QAPP.processEvents, timeout=60)/hosts.settle_resizes(QAPP.processEvents, timeout=30)/' tests/driv
+  > Write /home/al/dev/metacat/python/tests/test_qt_layout.py
+  > $ cd /home/al/dev/metacat/python; export QT_QPA_PLATFORM=offscreen; timeout 600 python3 -m pytest -q -x tests/test_qt_layout.py -m "not slow" 2>&1 | tail -15
+  > $ cd /home/al/dev/metacat/python; export QT_QPA_PLATFORM=offscreen; timeout 600 python3 -m pytest -q tests/test_qt_layout.py -m "not slow" 2>&1 | tail -16 | cut -
+
+Tests fail first as expected (5 failed, 9 errors). Now the implementation: the icon module.
+  > Write /home/al/dev/metacat/python/metacat/qt/icon.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+import re
+p='metacat/qt/icon.py'; s=open(p).read()
+s=s.replace("from PySide6.QtCore import QRectF, Qt\nfrom Py
+  > $ cd /home/al/dev/metacat/python; sed -n 60,84p metacat/gui/fonts.py; grep -n "sans_serif" metacat/gui/fonts.py | head -5
+
+Now the main window: settings, delayed save, restore, minimum size.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/qt/mainwindow.py'; s=open(p).read()
+s=s.replace("""follow the window's size (`default_sizes`).  A 5
+
+Now `app.py`: `make_application`, `open_window`, `--settings`, the icon and the maximise rule.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/qt/app.py'; s=open(p).read()
+s=s.replace("""the menus and dialogs (docs/qt-gui-plan.md).
+\"\"\"""",
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/conftest.py'; s=open(p).read()
+s=s.replace("""SCREENSHOTS = HERE / "screenshots-qt"     # grab()'s pi
+  > $ cd /home/al/dev/metacat/python; export QT_QPA_PLATFORM=offscreen; timeout 900 python3 -m pytest -q tests/test_qt_layout.py -m "not slow" -k "dragging or hiding"
+  > $ cd /tmp; for d in 2 2.0; do echo "{\"screens\":[{\"name\":\"o\",\"x\":0,\"y\":0,\"width\":1920,\"height\":1080,\"logicalDpi\":96,\"logicalBaseDpi\":96,\"dpr\":$
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/drive_qt_layout.py'; s=open(p).read()
+s=s.replace("""_screens = OUT / ("screens-%s.json" % ARGS.scena
+  > $ cd /home/al/dev/metacat/python; PYTHONPATH=.:tests QT_QPA_PLATFORM=offscreen timeout 60 python3 /tmp/dbg.py 2>&1 | grep -v propagate
+
+The drag helper accumulated moves (the handle moves under it). Fixing the helper to compute global positions once.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/drive_qt_layout.py'; s=open(p).read()
+old=s[s.index("        def send(kind, pos, button, buttons):"):
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/qt/mainwindow.py'; s=open(p).read()
+old="""        self.addToolBar(Qt.TopToolBarArea, bar)
+"""
+new=
+
+Fast layout tests pass. Now the slow run tests at 1080p and 1440p.
+  > $ cd /home/al/dev/metacat/python; export QT_QPA_PLATFORM=offscreen; time timeout 900 python3 -m pytest -q tests/test_qt_layout.py -m "slow" 2>&1 | grep -E "^E|pas
+  > $ cd /home/al/dev/metacat/python; grep -n "speed-slider\|slider" tests/drive_qt_gui.py | head -5; ls tests/screenshots-qt/layout/ | head -50
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/drive_qt_layout.py'; s=open(p).read()
+s=s.replace('''_screens = OUT / ("screens-%s.json" % ARGS.scena
+  > Read /tmp/lay/window-run-1920x1080.png
+
+Looks right. One weakness: showing the EEG halves the 9% bottom row, leaving the Trace 40 px high. I'll give the bottom row twice the height when the EEG is shown in the default layout.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='metacat/qt/mainwindow.py'; s=open(p).read()
+old='''def default_sizes(width, height, handle=HANDLE):
+    """
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/drive_qt_layout.py'; s=open(p).read()
+s=s.replace('''        return default_sizes(c.width(), c.height
+  > $ cd /home/al/dev/metacat/python; sed -i 's/RESIZES = \[(1600, 900), (2200, 1200), (1300, 1000)\]/RESIZES = [(1600, 900), (2200, 1200), (1650, 1000)]   # the wind
+  > Read /tmp/lay/window-run-2560x1440.png
+
+The 1440p layout looks right, and the Trace is readable now. Next, the high-DPI start screen.
+  > Read /tmp/lay/window-start-1920x1080@2.png
+
+The layout is right in logical pixels. Next I'm checking that the small Coderack text is sharp at 2× by cropping it at full resolution.
+  > $ cd /tmp; python3 -c "
+from PySide6.QtGui import QImage
+i=QImage('/tmp/lay/window-start-1920x1080@2.png'); i.copy(1820,340,420,320).save('/tmp/crop2x.png')
+i=QIm
+  > Read /tmp/crop2x.png
+
+The text is sharp at 2×, with every thin letter there. Next I'm checking the icon and the window at its minimum size.
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen python3 -c "
+from PySide6.QtWidgets import QApplication
+a=QApplication([])
+from metacat.qt import host
+  > Read /tmp/icon256.png
+  > Read /tmp/lay/window-minimum.png
+
+The minimum-size grab was taken before the panels redrew at their new sizes. I'll wait for the resize queue in that scenario and grab again.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/drive_qt_layout.py'; s=open(p).read()
+old='''    on_main(lambda: WINDOW.resize(1000, 500))
+    settle
+  > Read /tmp/lay/window-minimum.png
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/qt-gui-plan.md'; s=open(p).read()
+a=s.index("**1366×768** (client area")
+b=s.index("### 2.2 The splitter tree
+  > $ cd /home/al/dev/metacat; grep -n "About" docs/qt-gui-plan.md docs/divergences.md | head; grep -n "^## \|^### " docs/divergences.md | tail -8; grep -n "^## \|^##
+  > $ cd /home/al/dev/metacat; sed -n 314,320p docs/qt-gui-plan.md; sed -n 684,690p docs/qt-gui-plan.md; sed -n 226,260p docs/divergences.md; grep -n "^## ⚙️\|^## 🔗\|
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/qt-gui-plan.md'; s=open(p).read()
+s=s.replace("""The Logo becomes the
+  window icon and Help > About Metacat,
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'; s=open(p).read()
+anchor="\n## ⚙️ Chez / Racket quirks"
+new="""
+### Qt's offscreen s
+
+Updating the tests README, then running the gate.
+  > $ cd /home/al/dev/metacat/python; QT_QPA_PLATFORM=offscreen python3 -m pytest --collect-only -q tests/test_qt_layout.py 2>&1 | tail -2; QT_QPA_PLATFORM=offscreen 
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/README.md'; s=open(p).read()
+lines=s.split("\n")
+i=next(k for k,l in enumerate(lines) if l.startswith
+
+The gate was moved to the background by the tool's default timeout. I'll wait for it in the foreground.
+  > $ F=/tmp/claude-1000/-home-al-dev-metacat/79032041-f6cc-44ad-befe-a1fdd918b2b8/tasks/beo427aiz.output; for i in $(seq 1 115); do grep -q "GATE PASSED\|GATE FAILED
+  > $ F=/tmp/claude-1000/-home-al-dev-metacat/79032041-f6cc-44ad-befe-a1fdd918b2b8/tasks/beo427aiz.output; for i in $(seq 1 110); do grep -q "GATE PASSED\|GATE FAILED
+  > $ F=/tmp/claude-1000/-home-al-dev-metacat/79032041-f6cc-44ad-befe-a1fdd918b2b8/tasks/beo427aiz.output; cat $F | head -40; cd /home/al/dev/metacat/python; grep -n 
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/test_qt_skeleton.py'; s=open(p).read()
+s=s.replace("""    from metacat.qt.mainwindow import MainWindo
+
+Rerunning the gate in the foreground.
+  > $ cd /home/al/dev/metacat; timeout 1800 python3 ralph_loops/loop0003/gate.py > /tmp/gate11.log 2>&1; tail -6 /tmp/gate11.log
+
+Foreground calls are capped at 10 minutes, so I'm writing the PROGRESS entry while the gate runs, then waiting for its result.
+  > $ cd /home/al/dev/metacat; date "+%Y-%m-%d %H:%M:%S"; git status --short | grep -v loop.log
+  > $ F=/tmp/gate11.log; for i in $(seq 1 115); do grep -q "GATE PASSED\|GATE FAILED" $F && break; sleep 5; done; tail -6 $F
+
+The gate passed. Now the PROGRESS entry and the item mark.
+  > $ cd /home/al/dev/metacat/ralph_loops/loop0003; sed -i 's/^- \*\*Current\*\*: 7\/12 SOLVED/- **Current**: 8\/12 SOLVED/' PROGRESS.md; sed -i 's/^- \[ \] \*\*08 La
+
+Item 08 (layout polish) is done and the gate passes: 1614 tests in about 10 minutes, `racket/` unchanged. The item is marked `[x]` and PROGRESS.md now reads 8/12 solved. The first gate run failed on one skeleton test that resized the window to 400×300, which the new minimum size no longer allows. I changed that test to a size the window accepts, and the second run passed.
+
+**What changed**
+- **Saving the layout:** the window saves its geometry, the hidden panes and, once a splitter handle has been dragged, the splitter sizes. It saves 500 ms after the last drag or View change, and when the window closes. At the next start it puts them back, with the View menu's checkmarks matching.
+  - An older saved layout version is ignored.
+  - View → Reset layout forgets the saved layout, so the panes again follow the window's size.
+- **Where it's saved:** `python3 -m metacat.qt` uses your normal Qt settings, or an INI file given with `--settings INI` or `$METACAT_QT_SETTINGS`. The test suite always uses a throw-away file, so it never touches your settings.
+- **Window size:** on a screen larger than 1080p the window opens maximised and every pane grows with it. The minimum size is 1600×800, widened to 1692 px with the 1080p fonts so the control strip is never cut off.
+- **EEG:** showing it in the default layout now doubles the bottom row's height. Before, the Temporal Trace was squeezed to 40 px.
+- **High DPI:** at 200 % the window keeps the 1080p layout and draws at twice the resolution.
+- **Icon:** the window and app icon is the original's Logo, drawn with its own Tk command. I left out the "About Metacat" item the plan mentioned, so Help keeps its single original item.
+
+**Testing**
+- I wrote `python/tests/test_qt_layout.py` and its driver `drive_qt_layout.py` first; the first run gave 5 failures and 9 errors. One check, the EEG row-height test, was written together with its fix rather than before it; PROGRESS.md says so.
+- The tests cover the save/restore round trip, the reset, the minimum size, the 200 % screen and the icon.
+- After a full run at both 1920×1080 and 2560×1440, every pane is visible and drawn. The run ends at the same codelet count and random state as its golden trace.
+- I looked at the screenshots at both sizes, the 200 % screen with a full-resolution crop of the small Coderack labels (all letters present), the window at its minimum size, and the icon.
+
+The docs are updated: the 1366×768 layout is gone from `docs/qt-gui-plan.md` and replaced by pane sizes at 1080p and 1440p, plus new entries in `docs/divergences.md`, `docs/anomalies_and_quirks.md` and the tests README.
+
+Item 06 is still marked `[!]` in iterations.md, even though its work passed the gate and was committed as be3c001. You can mark it `[x]`. Nothing was committed or pushed, and LOOP_COMPLETE isn't added because items 09–11 remain.
+
+# result: success in 2278s, 73 turns, cost $4.94

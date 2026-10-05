@@ -1,0 +1,36 @@
+# session it12_fix1 started 2026-10-05 03:46:21
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat/python && env -u WAYLAND_DISPLAY python3 tests/drive_qt_layout.py /tmp/lay save --screen 1920x1080 --settings /tmp/lay.ini; echo rc=$?; 
+  > $ git diff tests/drive_qt_layout.py; grep -n "exit\|xvfb\|DISPLAY\|subprocess\|def main" tests/drive_qt_layout.py | head -50; tail -30 ../ralph_loops/loop0003/ses
+  > $ sed -n 55,100p tests/drive_qt_layout.py; sed -n 325,350p tests/drive_qt_layout.py
+  > $ for i in 1 2 3 4 5 6; do env -u WAYLAND_DISPLAY python3 tests/drive_qt_layout.py /tmp/lay save --screen 1920x1080 --settings /tmp/lay$i.ini >/tmp/o$i 2>/tmp/e$i
+  > $ cat run-tests.sh; sed -n 1,80p tests/test_qt_layout.py; grep -n "def scenario_save" -A40 tests/drive_qt_layout.py
+  > $ python3 - <<'EOF'
+p='tests/drive_qt_layout.py'
+s=open(p).read()
+old='''    threading.Thread(target=driver, daemon=True).start()
+    QAPP.exec()
+    sys.stdout.f
+  > $ grep -n "def ini_keys" -A6 tests/drive_qt_layout.py; sed -n 555,570p tests/drive_qt_gui.py; sed -n 655,670p tests/drive_qt_menus.py
+  > $ grep -n "\.close\b\|\.close)\|quit" tests/drive_qt_gui.py tests/drive_qt_menus.py | head
+  > $ for i in $(seq 1 12); do (env -u WAYLAND_DISPLAY python3 tests/drive_qt_layout.py /tmp/lay$i save --screen 1920x1080 --settings /tmp/p$i.ini >/tmp/o$i 2>/tmp/e$
+
+Those all pass. Now the full gate:
+  > $ cd /home/al/dev/metacat && python3 ralph_loops/loop0003/gate.py 2>&1 | tail -8
+  > $ cd /home/al/dev/metacat && tail -40 ralph_loops/loop0003/PROGRESS.md; grep -n "^##\|^- \*\*" docs/anomalies_and_quirks.md | tail -5
+
+While the gate runs, I'll log this in the anomalies file as CLAUDE.md requires.
+  > $ sed -n 1585,1610p docs/anomalies_and_quirks.md; wc -l docs/anomalies_and_quirks.md
+  > $ cat >> docs/anomalies_and_quirks.md <<'EOF'
+
+### `drive_qt_layout.py save` exits 1 with no output, now and then
+- **Seen:** 2026-10-05, in the loop0003 gate aft
+
+The gate takes about 10 minutes; I'll wait for it to finish.
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+  > $ until grep -q "GATE" /tmp/claude-1000/-home-al-dev-metacat/9346ce27-d734-40fd-853b-d6964a24f198/tasks/bxlvqhapr.output; do sleep 5; done; cat /tmp/claude-1000/-
+
+The gate is still running; I'll report when it finishes.
+
+# result: success in 68s, 16 turns, cost $0.32

@@ -1,0 +1,200 @@
+# session it12 started 2026-10-03 23:07:39
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ ls python/metacat python/tests && wc -l python/tests/golden_harness.py python/tests/golden_run.py python/tests/test_golden.py chez_scheme/oracle/run.ss chez_sch
+  > $ cat chez_scheme/oracle/run.ss
+  > $ cat python/tests/golden_run.py && cat python/tests/golden_harness.py
+  > $ sed -n 40,400p python/tests/golden_run.py
+  > $ cat python/tests/golden_harness.py
+  > $ cat chez_scheme/original/run.ss
+  > $ cat racket/tests/cli-test.rkt && grep -n "break\|go" racket/tests/run-test.rkt | head -40
+
+Reading the existing harness and the Racket port's run/CLI tests so I can move the driver and trace writer into the package.
+  > $ cat racket/tests/run-test.rkt && cat python/tests/test_golden.py | head -150 && cat racket/cli.rkt | head -80
+  > $ sed -n 80,200p racket/cli.rkt; sed -n 150,360p python/tests/test_golden.py; grep -rn "golden_run\|golden_harness" python/tests/*.py | grep -v "^python/tests/gol
+  > $ grep -n '"run"\|metacat.run\|_metacat.run' python/tests/*.py | head -30; grep -rn "_metacat.run\.\|eeg_graphics" python/metacat/*.py | awk -F: '{print $1}' | so
+  > $ grep -n "\*EEG\*" chez_scheme/original/*.ss | head; cat python/tests/engine_stubs.py | head -80; grep -n "EEG" racket/headless.rkt racket/engine/*.rkt* | head
+  > $ sed -n '/\*\*12/,$p' ralph_loops/loop0002/iterations.md | head -60
+  > $ grep -n -i -A25 "^#* *Continuations\|break.*go" docs/python-translation-plan.md | head -120; grep -n "class Reset" -A15 python/metacat/objects.py
+  > $ grep -n "finally\|except BaseException\|except:" python/metacat/*.py | head; grep -n "swl:version\|waiter-prompt\|define (reset\|reset" chez_scheme/oracle/prelu
+  > $ sed -n 190,225p python/metacat/sugar.py; grep -n "def reset\|Reset" python/metacat/*.py | head
+  > $ sed -n 110,135p python/metacat/objects.py; grep -n "def exists_p\|def valid_number_p\|def randomize\|def random_seed" -A6 python/metacat/utilities.py python/met
+
+Now writing `metacat/run.py` (run.ss in full, with a thread-backed resumable `break`/`go`).
+  > $ head -20 python/metacat/jootsing.py; grep -n "def printf\|def format_\|sys.stdout" python/metacat/chez.py | head; grep -n "^(define" chez_scheme/original/run.ss
+  > $ python3 - <<'EOF'
+src = open("python/tests/golden_run.py").read()
+start = src.index("def step_mcat():")
+body = src[start:]
+open("/tmp/run_body.py","w").write(bo
+  > $ grep -n "restore-current-state" chez_scheme/original/*.ss | head -3; grep -n "def restore_current_state" python/metacat/*.py
+  > $ sed -n 60,90p python/metacat/view_globals.py; grep -n "g_codelet_count\|^p_justify" python/metacat/setup.py | head -3
+
+Now writing run.py.
+  > $ cat > /tmp/run_head.py <<'EOF'
+"""run.ss: the run loop (init-mcat, run-mcat, step-mcat, update-everything ...)
+and the REPL commands that drive it (ss, runtil, 
+  > $ sed -i 's/ends by calling objects.reset_ (raising Reset)/ends with (reset), which raises objects.Reset/' python/metacat/run.py && cat chez_scheme/oracle/trace.s
+  > $ scheme -q <<'EOF'
+(display (format "\\u~4,'0x" 27)) (newline)
+EOF
+  > $ python3 - <<'EOF'
+src = open("python/tests/golden_harness.py").read()
+def between(a, b):
+    i = src.index(a); j = src.index(b, i)
+    return src[i:j]
+json_part
+  > $ sed -n 200,340p python/metacat/trace_writer.py
+  > $ python3 - <<'EOF'
+p="python/metacat/trace_writer.py"
+s=open(p).read()
+s=s.replace('''def emit_structure(ev, kind, s, *extra):
+    """trace.ss: emit-structure"""
+
+Trace writer done; now `metacat/headless.py` (headless windows + run.ss driver).
+  > $ python3 - <<'EOF'
+src = open("python/tests/golden_harness.py").read()
+def between(a, b):
+    i = src.index(a); j = src.index(b, i)
+    return src[i:j]
+windows =
+  > $ cat > python/metacat/__main__.py <<'EOF'
+"""python3 -m metacat: run one problem headless, as chez_scheme/oracle/run.ss does.
+
+Part of the Python translation of 
+  > $ grep -rn "valid.number" python/metacat/*.py chez_scheme/original/*.ss | head -5; grep -n "char-alphabetic\|isalpha" racket/compat.rkt | head -3
+  > $ sed -i 's/    if utilities.valid_number_p(seed) is False:/    if sugar.valid_number_p(seed) is False:/; s/    from metacat import headless, utilities/    from m
+
+First CLI run matches the oracle byte for byte. Checking `--trace` against a golden and the other cases.
+  > $ cd /home/al/dev/metacat/python && python3 -m metacat abc abd xyz --seed 3852097033 --max-codelets 10000 --trace /tmp/t.jsonl > /dev/null; cmp /tmp/t.jsonl ../te
+  > $ head -5 /tmp/o.err; grep -n "class SchemeError" -A15 python/metacat/chez.py; grep -n "install-error-handler" -A25 chez_scheme/oracle/prelude.ss | head -40
+  > $ head -c 600 /tmp/o.err; echo; wc -l /tmp/o.err
+  > $ scheme --script chez_scheme/oracle/run.ss abc ccbbaa ijk --seed 3 --max-codelets 10000 2>&1 >/dev/null | head -4
+  > $ python3 - <<'EOF'
+p="python/metacat/__main__.py"
+s=open(p).read()
+s=s.replace('''    except Exception:   # noqa: BLE001 - the original's own errors (exit 1, lik
+  > $ cd /home/al/dev/metacat && python3 - <<'EOF'
+p="python/metacat/__main__.py"
+s=open(p).read()
+s=s.replace('''        return str(e).join(("Exception in ", "")) if
+
+All CLI cases agree with the oracle (answers, cap, justify, keep-going, verbose, halt, crash, usage errors). Now rewiring the test harness onto the package and writing the CLI and break/go tests.
+  > $ python3 - <<'EOF'
+p="python/tests/golden_harness.py"
+s=open(p).read()
+i = s.index('NULL = object()')
+j = s.index("# --------------------------------------------
+  > $ python3 - <<'EOF'
+p="python/tests/test_golden.py"
+s=open(p).read()
+s=s.replace('''    import golden_run
+    import metacat as _metacat''','''    import metacat 
+
+All 109 goldens pass through the package driver. Writing the break/go scenarios and the CLI tests.
+  > $ mkdir -p /tmp/stage && cd /home/al/dev/metacat/python && cat > tests/run_scenarios.py <<'EOF'
+"""break/go scenarios for test_run.py, each run in a fresh Python 
+  > $ timeout 120 python3 tests/run_scenarios.py break_in_a_codelet | python3 -c "import json,sys; r=json.load(sys.stdin); print(r['count1'], r['state'], r['modes']);
+  > $ python3 - <<'EOF'
+p="tests/run_scenarios.py"
+s=open(p).read()
+s=s.replace('''    r = {"out1": out1, "count1": setup.g_codelet_count}
+    run.g_break_time = 3000
+
+break inside a codelet + go reaches the same state as the keep-going run. Now the test files.
+  > $ cat > tests/test_run.py <<'EOF'
+"""run.ss (metacat/run.py): break, go and step mode, and the file's definitions
+(loop0002 item 11).
+
+Part of the Python translat
+  > $ cat > tests/test_cli.py <<'EOF'
+"""python3 -m metacat against the live oracle, chez_scheme/oracle/run.ss (loop0002
+item 11).
+
+Part of the Python translation of 
+  > $ python3 - <<'EOF'
+p="tests/test_cli.py"
+s=open(p).read()
+s=s.replace('''    assert "Beginning justify run" not in out["justify"]   # the eliza paragraph is prin
+  > $ mv metacat/run.py metacat/headless.py metacat/trace_writer.py metacat/__main__.py /tmp/aside/ && timeout 900 python3 -m pytest -q tests/test_cli.py 2>&1 | tail 
+
+Tests fail without the new modules (collection errors / 6 failed + 24 errors), pass with them. Now measuring per-problem run times for `docs/python-run-times.md`.
+  > $ cd /home/al/dev/metacat && ls docs/; head -30 docs/run-times.md 2>/dev/null
+  > $ cat > python/oracle/bench_runs.py <<'EOF'
+"""Run times of the Python CLI against the oracle (loop0002 item 11).
+
+Part of the Python translation of Metacat (GPL 
+  > $ sed -i 's/| Chez ms\/1000 codelets | Python ms\/1000 codelets |/| Chez ms\/codelet | Python ms\/codelet |/' /tmp/bench.md && python3 - <<'EOF'
+p="python/oracle/
+
+Now docs updates, then the gate.
+  > $ grep -n "As built (item 10)" -A40 docs/python-translation-plan.md | head -60; grep -n "^## \|^### " python/README.md | head -30; grep -n "^## " docs/anomalies_a
+  > $ sed -n 676,720p docs/python-translation-plan.md; sed -n 40,120p python/README.md; sed -n 282,300p docs/anomalies_and_quirks.md; grep -n "^### " docs/anomalies_a
+  > $ sed -n 1,16p python/README.md; sed -n 120,200p python/README.md
+  > $ python3 - <<'EOF'
+p="python/README.md"
+s=open(p).read()
+old_start = s.index("  Tests: `tests/test_golden.py`, the 109 golden traces")
+old_end = s.index("themes 
+  > $ sed -n 660,672p docs/anomalies_and_quirks.md
+  > $ python3 - <<'EOF'
+p="docs/anomalies_and_quirks.md"
+s=open(p).read()
+add = '''### Python: a break inside a codelet can only be resumed from a parked thread
+- **S
+
+Gate is running (≈3 min). Waiting for it before doing mutation checks, since those edit the modules under test.
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+  > $ F=/tmp/claude-1000/-home-al-dev-metacat/8edf59c1-e341-4d4b-9dc2-e69401385d7d/tasks/b2mb86hn3.output; for i in $(seq 1 110); do grep -q "GATE\|real" $F && break;
+
+The gate passed. Now a few quick mutation checks on the new code.
+  > $ grep -o "[0-9]* passed[^=]*" /tmp/claude-1000/-home-al-dev-metacat/8edf59c1-e341-4d4b-9dc2-e69401385d7d/tasks/b2mb86hn3.output | tail -1
+cat > /tmp/mut11.py <<'
+  > $ F=/tmp/claude-1000/-home-al-dev-metacat/8edf59c1-e341-4d4b-9dc2-e69401385d7d/tasks/buttnvy1r.output; for i in $(seq 1 115); do grep -q "trace_writer" $F && brea
+
+One mutant survived (`go` not setting `*running?*`). Adding an observation of `*running?*` during the resumed run.
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+p="tests/run_scenarios.py"
+s=open(p).read()
+s=s.replace('''    run.g_break_time = 300
+    r["out2"] = until_
+
+Mutant now killed. Rerunning the gate, then writing PROGRESS.
+  > $ cd /home/al/dev/metacat && timeout 1500 python3 ralph_loops/loop0002/gate.py 2>&1 | tail -4
+  > $ sed -i 's/^- \[ \] \*\*11 Full runs/- [x] **11 Full runs/' ralph_loops/loop0002/iterations.md && grep -n "\*\*11 " ralph_loops/loop0002/iterations.md && sed -i 
+  > $ cat >> ralph_loops/loop0002/PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 12 — 2026-10-03 23:34
+
+### Completed
+Item 11, full runs, the trace writer and the CLI: **SOLV
+
+Item 11 is done: the Python port now runs full problems headless through a CLI that matches the Chez oracle, writes golden traces byte for byte, and can stop and resume a run. The gate passes (1027 tests, about 3 minutes). I marked the item `[x]` and logged iteration 12 in PROGRESS.md; nothing is committed.
+
+**What was added:**
+- **`metacat/run.py`**: all of `run.ss`, including the REPL commands. `break` captures a continuation that `go` resumes, possibly from the middle of a codelet, and Python can't do that. So a command runs in a separate thread, `break` pauses that thread, and `go` releases it.
+- **`metacat/headless.py`**: the oracle's headless windows and run driver, moved out of the test helpers.
+- **`metacat/trace_writer.py`**: the JSON trace writer. The item asked for `metacat/trace.py`, but that name is already taken by the translation of `trace.ss`, so the writer has a different name.
+- **`metacat/__main__.py`**: `python3 -m metacat` with the oracle's arguments, output and exit codes.
+
+**Tests:**
+- **All 109 goldens** match event for event through the new driver, run in parallel (about 35 s).
+- **CLI against the live oracle** (`test_cli.py`): stdout and exit code match on every case in the Racket CLI test. That covers an answer, no cap, a cap, justify, keep-going, verbose, the halt run, the crash run, 12 bad argument lists, two `--trace` runs against goldens, and a clock seed that the oracle replays.
+- **break/go** (`test_run.py`): a run stopped at 150, 300 and 450 ends in the same state as one run straight to 450. A break during codelet 2428 of `abc abd xyz` seed 3, resumed to 3000, ends in the same state as a `--keep-going` run. Step mode and the other cases are covered too.
+
+**Tests-first was only partly followed.** I wrote the four modules before the new tests, because most of their code had already been checked against the 109 goldens in the previous item. I compared the CLI with the oracle by hand first, then wrote the tests. Without the new modules, `test_cli.py` gives 6 failures and 24 errors, and the other two test files fail to load.
+
+**Mutation checks:** 10 of 11 changes to the new code were caught. The one that survived (`go` not marking the run as running again) is now caught by an added check.
+
+**Run times** are in `docs/python-run-times.md`: Python takes 1.23 ms per codelet against Chez's 0.13 ms, about 9× slower. Because Python starts up much faster (0.05 s against 0.71 s), short runs finish first in Python.
+
+**Left open:**
+- The EEG object is still a do-nothing stand-in until the panels item (14).
+- A stopped run can be resumed only once. Chez can re-enter a used continuation, but nothing in the original does.
+- When the GUI is built (item 15), it should call `go` off Tk's main thread, because `go` waits until the next break.
+
+Next is item 12 (extra seeds and speed).
+
+# result: success in 1669s, 63 turns, cost $4.46

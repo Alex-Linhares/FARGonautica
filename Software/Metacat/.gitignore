@@ -1,0 +1,13 @@
+*.tgz
+*.zip
+compiled/
+__pycache__/
+*.pyc
+ralph_loops/*/session_*.jsonl
+ralph_loops/*/status.json
+ralph_loops/*/nohup.out
+build/
+.pytest_cache/
+*.egg-info/
+python/tests/screenshots-qt/
+.claude/worktrees/

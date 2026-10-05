@@ -1,0 +1,188 @@
+# session it07 started 2026-10-02 22:12:08
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; ls racket racket/engine racket/tests tests/diff chez_scheme/oracle; wc -l chez_scheme/original/{workspace,workspace-objects,workspace-s
+  > $ cd /home/al/dev/metacat; grep -n load chez_scheme/original/metacat.ss | head -60
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/slipnet.ss racket/engine/slipnet.rktl | head -40; diff chez_scheme/original/coderack.ss racket/engine/coderac
+
+Now read the six files.
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/workspace.ss
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/workspace-objects.ss | sed -n 19,700p
+  > $ cd /home/al/dev/metacat; for f in workspace-structures workspace-strings workspace-structure-formulas formulas; do echo "=== $f"; sed -n 19,600p chez_scheme/ori
+  > $ cd /home/al/dev/metacat; grep -n "define\|make-workspace-string\|initialize\|update" chez_scheme/original/run.ss | head -120
+  > $ cd /home/al/dev/metacat; sed -n 170,340p chez_scheme/original/run.ss
+  > $ cd /home/al/dev/metacat; grep -n "make-description" -A80 chez_scheme/original/descriptions.ss | sed -n 1,120p; grep -rn "define \*EEG\*\|(define \*EEG" chez_sch
+
+Porting the six workspace files now: I've read them and am checking which other names the initial-workspace path needs (themespace, `contains?`, `*EEG*`).
+  > $ cd /home/al/dev/metacat; grep -n "(define contains?" -A12 chez_scheme/original/groups.ss; grep -n "(define maximum\|(define sum\|(define average\|(define weight
+  > $ cd /home/al/dev/metacat; cat tests/diff/helpers.scm; sed -n 1,80p tests/diff/slipnet-battery.scm; grep -n "(define group?\|(define letter?\|(define bridge?\|(de
+  > $ cd /home/al/dev/metacat; for f in workspace workspace-objects workspace-structures workspace-strings workspace-structure-formulas formulas; do python3 - "$f" <<
+  > $ cd /home/al/dev/metacat; cat chez_scheme/oracle/diff-eval.ss; cat tests/problems.txt | head -50; grep -n "symbol->letter-categories" chez_scheme/original/*.ss |
+  > $ cd /home/al/dev/metacat; sed -n 1,200p chez_scheme/oracle/run.ss | grep -v "^;;" | head -150
+  > $ cd /home/al/dev/metacat; grep -n "temperature-clamped\|initially-clamped-slipnodes\|define %max-activation%" chez_scheme/original/*.ss | head; grep -n "install-
+
+Writing the test battery first (shared Chez/Racket), with a dump of every initial workspace.
+  > Write /home/al/dev/metacat/tests/diff/workspace-dump.scm
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="tests/diff/workspace-dump.scm"
+s=open(p).read()
+s=s.replace("""          (tell d 'get-time-stamp)
+          (eq? (
+  > $ cd /home/al/dev/metacat; sed -n 80,200p tests/diff/slipnet-battery.scm; grep -n "b:set-global!" tests/diff/slipnet-battery.scm | head; grep -n "full-workspace-o
+  > Write /home/al/dev/metacat/tests/diff/workspace-battery.scm
+  > $ cd /home/al/dev/metacat; time scheme --script chez_scheme/oracle/diff-eval.ss tests/diff/helpers.scm tests/diff/workspace-battery.scm > /tmp/ws-chez.txt 2>&1; e
+  > $ cd /home/al/dev/metacat; cat > /tmp/dbg.ss <<'EOF'
+(load "chez_scheme/oracle/prelude.ss")
+(load-metacat)
+(define b:capture (lambda (th) (th) ""))
+(define b:set-
+  > $ cd /home/al/dev/metacat; grep -n "plato-first\|plato-last\|AlphaPos" chez_scheme/original/slipnet.ss | head -5; python3 - <<'EOF'
+p="tests/diff/workspace-batter
+  > $ cd /home/al/dev/metacat; sed -n 405,470p chez_scheme/original/slipnet.ss | grep -o "(plato-[a-z-]*" | tr '\n' ' '
+  > $ cd /home/al/dev/metacat; sed -i 's/plato-alphabetic-position-category plato-last))/plato-alphabetic-position-category plato-alphabetic-last))/' tests/diff/works
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="tests/diff/workspace-battery.scm"
+s=open(p).read()
+s=s.replace("""            (lambda (s) (list (tell (tell *works
+  > $ cd /home/al/dev/metacat; scheme --script /tmp/dbg.ss ws-queries-00 2>&1 | tail -3; scheme --script chez_scheme/oracle/diff-eval.ss tests/diff/helpers.scm tests/
+
+Chez side of the battery runs clean (682 KB of output). Now a Chez-only check that my copy of init-mcat's workspace steps matches the real `init-mcat`.
+  > $ cd /home/al/dev/metacat; ls chez_scheme/oracle/tests/; sed -n 1,40p chez_scheme/oracle/tests/demo-replay-check.ss
+  > $ cd /home/al/dev/metacat; cat tests/run-tests.sh | head -40
+  > Write /home/al/dev/metacat/chez_scheme/oracle/tests/workspace-init-check.ss
+  > $ cd /home/al/dev/metacat; time scheme --script chez_scheme/oracle/tests/workspace-init-check.ss 2>&1 | tail
+  > $ cd /home/al/dev/metacat; cp tests/diff/workspace-dump.scm /tmp/wd.bak; sed -i "s/(tell descriptor 'set-activation %max-activation%))/(tell descriptor 'set-activ
+
+Cross-check passes and catches mutations. Now the Racket side of the test, run before the port is wired in:
+  > $ cd /home/al/dev/metacat; cat > racket/tests/workspace-diff-test.rkt <<'EOF'
+#lang racket/base
+;; Item 06: differential checks of the engine's workspace.ss,
+;; w
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="racket/tests/diff-runner.rkt"
+s=open(p).read()
+s=s.replace("""  (parameterize ([current-namespace ns])
+    (namesp
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="racket/engine.rkt"
+s=open(p).read()
+s=s.replace("""(include "engine/descriptions.rktl")   ; descriptions.ss
+""",""
+  > $ cd /home/al/dev/metacat; cp racket/engine/pending.rktl /tmp/pending.bak; echo ";; TEMP" >> racket/engine/pending.rktl; names=""; for k in $(seq 1 60); do out=$(
+  > $ cd /home/al/dev/metacat; grep -n "vm-eval\|ffi\|racket/math" racket/compat.rkt racket/utilities.rkt | head; grep -n "(define 100\*\|(define 100-\|(define %\b\|(
+  > $ cd /tmp; racket -e '(require ffi/unsafe/vm) (define t (vm-eval (quote tanh))) (displayln (list (t 0.5) (t 1/2) (t 1) (t 0) (vm-eval (quote (scheme-version)))))'
+  > $ cd /home/al/dev/metacat; cp /tmp/pending.bak racket/engine/pending.rktl; python3 - <<'EOF'
+p="racket/engine/pending.rktl"
+s=open(p).read()
+s=s.replace(""";; run
+  > $ cd /home/al/dev/metacat; sed -n 20,57p racket/compat.rkt; sed -n 280,296p racket/compat.rkt
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="racket/compat.rkt"
+s=open(p).read()
+s=s.replace("""(require (for-syntax racket/base)
+         (prefix-in rkt: rack
+
+71 of 72 tests agree on the first run. The remaining one calls `get-real-object`, which needs bridges.ss (not ported yet), so I'm dropping that call and adding a `tanh` test.
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="tests/diff/workspace-battery.scm"
+s=open(p).read()
+s=s.replace("""            (b:ascii (tell *workspace* 'get-real
+  > $ cd /home/al/dev/metacat; scheme --script chez_scheme/oracle/diff-eval.ss tests/diff/helpers.scm tests/diff/workspace-battery.scm > /tmp/ws-chez.txt; grep -c "" 
+
+No errors on either side. Now mutation checks on the ported code:
+  > $ cd /home/al/dev/metacat; mut() { f=$1; from=$2; to=$3; cp $f /tmp/mut.bak; python3 -c "
+import sys;p,a,b=sys.argv[1:];s=open(p).read();assert s.count(a)>=1,a;op
+
+All mutations survived, which is suspicious. Likely cause: the runner's fresh namespace loads the compiled `engine_rkt.zo` without checking the included `.rktl` files, so it ran stale code. Checking:
+  > $ cd /home/al/dev/metacat; E=racket/engine; cp $E/formulas.rktl /tmp/mut.bak; sed -i 's/(list 70 30)/(list 60 40)/' $E/formulas.rktl; raco test racket/tests/works
+
+Confirmed: stale compiled engine. Fixing the shared runner to compile through the compilation manager (this also affected the item 04/05 batteries):
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="racket/tests/diff-runner.rkt"
+s=open(p).read()
+s=s.replace("""(require rackunit
+         racket/runtime-path""",""
+  > $ cd /home/al/dev/metacat; cat racket/compiled/engine_rkt.dep | tr ' ' '\n' | grep -c rktl; cat racket/compiled/engine_rkt.dep | head -c 600
+  > $ cd /home/al/dev/metacat; E=racket/engine; cp $E/formulas.rktl /tmp/mut.bak; sed -i 's/(list 70 30)/(list 60 40)/' $E/formulas.rktl; ls -la --time-style=full-iso
+
+The handler must be created inside the new namespace (it skips modules from a different registry). Fixing:
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="racket/tests/diff-runner.rkt"
+s=open(p).read()
+old="""  ;; the compilation manager recompiles a module whose inclu
+
+Fixed. Now the mutation checks again:
+  > $ cd /home/al/dev/metacat; mut() { f=$1; from=$2; to=$3; cp $f /tmp/mut.bak; python3 -c "
+import sys;p,a,b=sys.argv[1:];s=open(p).read();assert s.count(a)>=1,a;op
+
+Some counts repeat suspiciously and two mutations didn't compile. Rerunning each with an explicit `raco make` and a baseline check after restoring:
+  > $ cd /home/al/dev/metacat; mut() { f=$1; from=$2; to=$3; cp $f /tmp/mut.bak; python3 -c "
+import sys;p,a,b=sys.argv[1:];s=open(p).read();assert s.count(a)>=1,a;op
+
+Second-granularity timestamps: edits within the same second as the last compile go unnoticed. Adding a 1 s pause around each mutation:
+  > $ cd /home/al/dev/metacat; mut() { f=$1; from=$2; to=$3; cp $f /tmp/mut.bak; sleep 1.1; python3 -c "
+import sys;p,a,b=sys.argv[1:];s=open(p).read();assert s.count
+
+Remaining survivors: raw importance is always 0 at init (description types aren't fully active), and the `tanh` branch needs a maximal non-spanning mapping. Adding tests for both:
+  > $ cd /home/al/dev/metacat; cat >> tests/diff/workspace-battery.scm <<'EOF'
+
+;; raw and relative importance with fully active description types (at the
+;; start of
+  > $ cd /home/al/dev/metacat; mut() { f=$1; from=$2; to=$3; cp $f /tmp/mut.bak; sleep 1.1; python3 -c "
+import sys;p,a,b=sys.argv[1:];s=open(p).read();assert s.count
+
+All mutations caught now. Adding a few engine-test checks, then the full suite.
+  > $ cd /home/al/dev/metacat; tail -30 racket/tests/engine-test.rkt
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="racket/tests/engine-test.rkt"
+s=open(p).read()
+s=s.replace(""";; names from files not ported yet raise when called
+
+My expected value was wrong (exponent 0.5 at temperature 100 gives √); fixing the check:
+  > $ cd /home/al/dev/metacat; sed -i "s/(check-equal? ((engine 'temp-adjusted-values) '(1 2 3)) '(1 4 8))/(check-equal? ((engine 'temp-adjusted-values) '(1 2 3)) '(1
+
+All 424 Racket tests pass. Running the gate:
+  > $ cd /home/al/dev/metacat; time python3 ralph_loops/loop0001/gate.py 2>&1 | tail -8
+
+Gate passes. Now the docs: porting notes, anomalies, oracle README.
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/porting-notes.md | tail -20; sed -n 1,60p docs/anomalies_and_quirks.md | head -70; grep -n "^##\|^###" docs/anomalies
+  > $ cd /home/al/dev/metacat; sed -n 373,460p docs/porting-notes.md; sed -n 85,160p docs/anomalies_and_quirks.md; sed -n 30,70p chez_scheme/oracle/README.md
+  > $ cd /home/al/dev/metacat; cat >> docs/porting-notes.md <<'EOF'
+
+## The Workspace, its objects and strings, and the formulas (item 06)
+
+- **Ported unchanged**: `w
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="docs/anomalies_and_quirks.md"
+s=open(p).read()
+anomaly='''### Every raw importance is 0 at the start of a run
+- **
+
+Docs done. Updating iterations.md and PROGRESS.md, then a final gate run.
+  > $ cd /home/al/dev/metacat; grep -n "06 Workspace objects" ralph_loops/loop0001/iterations.md; sed -i 's/^- \[ \] \*\*06 Workspace objects and strings\.\*\*/- [x] 
+  > $ cd /home/al/dev/metacat; cat >> ralph_loops/loop0001/PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 7 — 2026-10-02 22:28
+Item 06 (Workspace objects and strings): **SOLV
+  > $ cd /home/al/dev/metacat; git status --short
+
+Item 06 is solved, and the gate passes (`raco test racket/`: 424 tests, plus every Chez check). Nothing is committed; that's left to the driver.
+
+**What was ported:** `workspace.ss`, `workspace-objects.ss`, `workspace-structures.ss`, `workspace-strings.ss`, `workspace-structure-formulas.ss` and `formulas.ss` are now `racket/engine/*.rktl`, with no change to the model code. `racket/engine.rkt` includes them in the original's load order. Getting them to compile took three other changes:
+- **`tanh`:** racket/base has none, so `compat.rkt` uses Chez's own primitive (via `vm-primitive`) to keep results bit-identical.
+- **Stand-ins:** `engine/pending.rktl` gets stand-ins for the names these files use from files not ported yet (bonds, groups, bridges, breakers, rules, trace, graphics, `*EEG*`).
+- **`*temperature-clamped?*`:** the original never defines it; `init-mcat` creates it with `set!`. The port defines it as `#f` in `pending.rktl` for now.
+
+**Tests (written and run under Chez before any port code was included):**
+- **`tests/diff/workspace-battery.scm`**: 77 tests that must print identical output under Chez and Racket. The main ones check, for every problem and seed in `tests/problems.txt` (109 runs), the initial workspace: letters, descriptions, salience, importance and unhappiness values, workspace averages, slipnet activations, and the random-generator state afterwards. Others cover the formulas, seeded choices, and fake bonds, groups, bridges and rules. Before the port the Racket side failed. After it, 71 of 72 tests agreed on the first run; the one failure was my test calling something that needs `bridges.ss`, so I removed that call.
+- **`chez_scheme/oracle/tests/workspace-init-check.ss`**: since `run.ss` isn't ported, the battery builds the workspace with its own copy of `init-mcat`'s steps. This Chez-only check confirms that copy gives the same result as the real `init-mcat` for all 36 problems and draws no random numbers.
+
+**Bug found in the test runner:** at first, no deliberate change to the ported code made any test fail. The shared differential runner (`racket/tests/diff-runner.rkt`) was running a stale compiled engine, because edits to the included `.rktl` files weren't noticed. It now recompiles when they change. The earlier mutation checks from items 04 and 05 recompiled between edits, so they still hold. After the fix, all 19 mutations I tried are caught, including three that needed new tests.
+
+**Finding worth knowing:** at the start of every run, every raw importance is 0. `init-mcat` fully activates each letter's descriptors but not the description types, and only descriptions whose type is fully active count. So the starting saliences come from unhappiness alone. This is the original's behaviour and is ported as is.
+
+A few parts of these files can't be tested until bonds, groups, bridges, breakers and trace are ported; PROGRESS.md lists them. It also has notes for item 07, and `docs/porting-notes.md` and `docs/anomalies_and_quirks.md` are updated.
+
+# result: success in 1095s, 65 turns, cost $3.95

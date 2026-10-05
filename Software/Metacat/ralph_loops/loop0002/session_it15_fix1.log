@@ -1,0 +1,39 @@
+# session it15_fix1 started 2026-10-04 01:55:28
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat/python; grep -n "run7\|SCENES\|temperature" tests/render_views.py | head -50; grep -n "ncolours\|def \|getcolors\|colours" tests/render_
+  > $ cd /home/al/dev/metacat/python; sed -n 1,200p tests/render_views.py; cat metacat/gui/temperature_graphics.py
+  > $ cd /home/al/dev/metacat/python; for i in 1 2; do env -u WAYLAND_DISPLAY xvfb-run -a -s "-screen 0 3000x2000x24" python3 tests/render_views.py /tmp/rv run7-300; 
+  > $ cd /home/al/dev/metacat/python; grep -n "def grab" -A40 tests/render_sgl_fixture.py; sed -n 100,135p tests/test_views.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p='tests/render_views.py'
+s=open(p).read()
+s=s.replace("""    for _ in range(3):
+        root.update()
+    for
+
+I've added a lock so the parallel scene processes take turns grabbing their windows. Next I'm checking that the lock file doesn't trip any other test, then running the full render test.
+  > $ cd /home/al/dev/metacat/python; grep -rn "render_views\|iterdir\|listdir\|glob" tests/test_views.py | head; for i in 1 2; do python3 -m pytest -x -q tests/test_
+
+The render test passes twice now. Next I'm running the full gate and adding the race to the anomalies log while it runs.
+  > $ cd /home/al/dev/metacat; python3 ralph_loops/loop0002/gate.py > /tmp/gate.log 2>&1; echo exit $? >> /tmp/gate.log
+  > $ cd /home/al/dev/metacat; head -40 docs/anomalies_and_quirks.md; grep -n "^## \|^### " docs/anomalies_and_quirks.md | tail -8; git diff docs/anomalies_and_quirks
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+anchor="### Python's `bool` is an `int`"
+entry='''### Parallel scen
+
+I logged the race in `docs/anomalies_and_quirks.md`. Now I'm waiting for the gate to finish (about 7 minutes).
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+  > $ until grep -q "^exit" /tmp/gate.log; do sleep 5; done; tail -8 /tmp/gate.log
+
+The gate passes now: 1374 tests passed and it printed `GATE PASSED`.
+
+**Cause:** the failure came from the test harness racing with itself, not from the port. `python/tests/render_views.py` renders its eight scenes as parallel processes on one Xvfb display. Each process moves its windows to `+0+0`, raises them, and copies their pixels with XGetImage, which reads whatever is on screen at that spot. Sometimes another scene's window was raised over the Temperature window between our raise and our copy, so the copy showed only that window's plain background ("blank", one colour). The `run7-300` scene renders correctly when run by itself (5 colours, twice in a row). The failure only shows up under the full suite's load.
+
+**Fix:** in `python/tests/render_views.py`, each process now takes an exclusive file lock (`OUTDIR/.grab-lock`) before it raises and copies its windows, so only one scene does this at a time. The runs themselves still go in parallel. I moved that loop into a small `grab_windows` function. No test was removed, skipped or weakened; the "not blank" check still applies to every picture. Nothing under `chez_scheme/`, `racket/`, `tests/golden/`, `tests/diff/` or `python/fixtures/` was touched.
+
+I also logged the race in `docs/anomalies_and_quirks.md`, as the repo's rules ask. Nothing was committed or pushed.
+
+# result: success in 451s, 12 turns, cost $0.47

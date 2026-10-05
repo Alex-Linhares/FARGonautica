@@ -1,0 +1,205 @@
+# session it12 started 2026-10-03 01:02:01
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ sed -n '/\*\*11/,/\*\*12/p' ralph_loops/loop0001/iterations.md; ls racket racket/engine racket/tests; wc -l racket/tests/golden-harness.rkt racket/tests/golden-
+  > $ cat chez_scheme/original/run.ss
+  > $ cat racket/tests/golden-harness.rkt
+  > $ cat racket/tests/golden-test.rkt racket/engine.rkt racket/engine/pending.rktl
+  > $ cat chez_scheme/oracle/run.ss
+  > $ grep -n "load" chez_scheme/original/metacat.ss | head -60; grep -n "(go)\|'go\b\|suspend\|quiet-break\|(break)\|\*running?\*\|\*interrupt?\*\|\*step-mode?\*\|\*
+  > $ grep -n "reset\|continuation-point\|call/ec\|call/cc\|collect\|printf" racket/compat.rkt | head -40; grep -n "report-error-and-halt" -A12 racket/utilities.rkt |
+  > $ time scheme --script chez_scheme/oracle/run.ss abc abd xyz --seed 3 --max-codelets 10000; head -20 tests/problems.txt; grep -n "define-syntax.*say\|(define (say
+
+Porting `run.ss` into the engine now, then moving the headless driver out of the test harness so the CLI can share it.
+  > $ head -30 racket/engine/answers.rktl; grep -n "valid-number?\|randomize" racket/utilities.rkt | head; grep -n "prelude\|switch-to\|control-panel" chez_scheme/ora
+  > $ sed -n 400,430p racket/utilities.rkt; grep -n "valid-number" chez_scheme/original/*.ss | head -3; sed -n 255,300p chez_scheme/oracle/prelude.ss
+  > $ grep -n "define restore-current-state\|define say-object\|define update-all-graphics" chez_scheme/original/*.ss racket/engine/*.rktl racket/*.rkt
+
+Now writing `racket/engine/run.rktl`.
+  > $ python3 - <<'EOF'
+src = open('chez_scheme/original/run.ss').read()
+header_end = src.index(';;=====', 10)
+header_end = src.index('\n', header_end) + 1
+body = src
+  > $ python3 - <<'EOF'
+p='racket/engine/pending.rktl'
+s=open(p).read()
+old=""";; run.ss
+(pending-variables *display-mode?* *step-mode?* %step-cycles%)
+;; memory.ss r
+  > $ python3 - <<'EOF'
+p='racket/engine.rkt'
+s=open(p).read()
+s=s.replace("""    *step-mode?* %step-cycles% break quiet-break))""","""    *step-mode?* %step-cycles% 
+  > $ grep -n "initial-slipnode-unclamp-time\|initially-clamped" chez_scheme/original/*.ss | grep -v "run.ss"; grep -n "initial-slipnode-unclamp" racket/engine/*.rktl
+  > $ python3 - <<'EOF'
+p='racket/engine/pending.rktl'
+s=open(p).read()
+old=""";; *temperature-clamped?* has no definition in the original: init-mcat
+;; (run.ss) crea
+  > $ grep -n "commentary-hook" -B3 -A10 chez_scheme/oracle/prelude.ss | head -60; grep -n "commentary-hook\|comment" chez_scheme/oracle/trace.ss | head
+  > $ grep -n "valid-number?" racket/compat.rkt | head -3; sed -n 60,75p chez_scheme/original/syntactic-sugar.ss; grep -n "~n\|#\\\\n" racket/compat.rkt | head
+  > $ python3 - <<'EOF'
+h=open('racket/tests/golden-harness.rkt').read()
+start=h.index(';;;---------------------------------------------------------------------------
+  > $ python3 - <<'EOF'
+m=open('/tmp/middle.rkt').read()
+old="""              (emit 'comment (cons 'text (if %eliza-mode% paragraph1 paragraph2)))"""
+new="""         
+  > Write /home/al/dev/metacat/racket/tests/golden-harness.rkt
+  > $ raco make racket/tests/golden-harness.rkt && racket -e '
+(require (file "/home/al/dev/metacat/racket/tests/golden-harness.rkt") racket/file)
+(define-values (t s
+
+Stdout already matches the oracle on that run. Now writing the tests: all 109 runs' stdout vs the live oracle (in golden-test), and a CLI subprocess test.
+  > $ nproc; cd /home/al/dev/metacat && cat tests/run-tests.sh | head -40; cat chez_scheme/oracle/make-golden.ss | grep -n "subprocess\|process\|nproc" | head
+
+Now editing golden-test.rkt to also compare each run's stdout with the oracle's, run live.
+  > $ python3 - <<'EOF'
+p='racket/tests/golden-test.rkt'
+s=open(p).read()
+old=""";; Item 10: the port against the golden traces."""
+new=""";; Items 10-11: the port ag
+  > $ time raco test racket/tests/golden-test.rkt 2>&1 | tail -30
+  > $ grep -c "" tests/problems.txt; scheme --script chez_scheme/oracle/run.ss abc abd xyz --seed 1 --max-codelets 200 | tail -6; grep -n "keep-going" tests/problems.
+  > $ sed -i 's|#rx"\\nCodelets run: 10000\\n"|#rx"\\nCodelets run: [0-9]+\\n"|' racket/tests/golden-test.rkt && grep -n 'Codelets run' racket/tests/golden-test.rkt
+
+Now the CLI test, written before `cli.rkt` exists.
+  > Write /home/al/dev/metacat/racket/tests/cli-test.rkt
+  > $ raco test racket/tests/cli-test.rkt 2>&1 | tail -15; scheme --script chez_scheme/oracle/run.ss abc ccbbaa ijk --seed 3 --max-codelets 10000 | tail -3; echo "exi
+  > $ sed -i 's|^  (same-as-oracle "abc" "abd" "xyz" "--seed" "3")|  (void (same-as-oracle "abc" "abd" "xyz" "--seed" "3"))|; s|^  (same-as-oracle "abc" "abd" "mrrjjj
+  > Write /home/al/dev/metacat/racket/cli.rkt
+  > $ raco make racket/cli.rkt && time racket racket/cli.rkt abc abd xyz --seed 3 | tail -3 && time raco test racket/tests/cli-test.rkt 2>&1 | tail -15
+  > $ sed -i 's|^  (main (vector->list (current-command-line-arguments))))|  (void (main (vector->list (current-command-line-arguments)))))|' racket/cli.rkt && raco m
+  > $ sed -i 's|(and (string-port? out) (get-output-string out)))|(and out (string-port? out) (get-output-string out)))|' racket/headless.rkt && raco make racket/cli.
+
+CLI test passes (69/69). Running the full Racket suite now.
+  > $ time raco test racket/ 2>&1 | grep -v "^raco test:" | tail -30
+  > $ sed -n 75,95p racket/tests/engine-test.rkt
+  > $ grep -n "call/cc\|rackunit" docs/porting-notes.md | head; sed -n 1,40p racket/tests/engine-test.rkt
+  > $ python3 - <<'EOF'
+p='racket/tests/engine-test.rkt'
+s=open(p).read()
+old="""(check-exn #rx"not ported yet" (lambda () ((engine 'post-initial-codelets))))
+"""
+new
+
+Now a test that the engine's own `break` and `go` resume a run (needed later by the GUI).
+  > Write /home/al/dev/metacat/racket/tests/run-test.rkt
+  > $ python3 - <<'EOF'
+p='racket/tests/run-test.rkt'
+s=open(p).read()
+s=s.replace("""  (check-equal? out1 "Comment: Okay, if \\"abc\\" changes to \\"abd\\", what doe
+  > $ python3 - <<'EOF'
+p='racket/tests/run-test.rkt'
+s=open(p).read()
+s=s.replace("""(define (state get)
+  (list ((get 'random-seed))""","""(define (state get compat
+
+Break/go via `call/cc` works. Now mutation checks on `run.rktl` against the golden test.
+  > $ cp racket/engine/run.rktl /tmp/run.rktl.orig && cat > /tmp/mutate.py <<'EOF'
+import subprocess, time, shutil, sys, re
+orig = open('/tmp/run.rktl.orig').read()
+m
+
+Mutations are caught (two equivalent ones noted). Now the timing benchmark, Racket CLI vs the oracle, per problem.
+  > Write /home/al/dev/metacat/tests/bench-runs.rkt
+  > $ raco make tests/bench-runs.rkt racket/cli.rkt && (racket tests/bench-runs.rkt /tmp/run-times.md > /tmp/bench.log 2>&1; echo done >> /tmp/bench.log)
+
+While the benchmark runs, I'll update the docs.
+  > $ cat .gitignore; grep -n "^## \|^### " docs/porting-notes.md | tail -15; grep -n "^## \|^### " docs/anomalies_and_quirks.md | head -60; sed -n 1,40p docs/anomali
+  > $ sed -n 40,45p docs/anomalies_and_quirks.md; sed -n 255,275p docs/anomalies_and_quirks.md; sed -n 885,1000p docs/porting-notes.md; cat docs/divergences.md | head
+  > $ grep -n "golden-harness\|port's traces" -A6 docs/trace-format.md | head -30; grep -rn "golden-harness" docs/ chez_scheme/oracle/README.md CLAUDE.md | grep -v "p
+  > $ cat /tmp/bench.log | tail -5
+  > $ python3 - <<'EOF'
+p='docs/trace-format.md'
+s=open(p).read()
+old="""### The port's traces (item 10)
+`racket/tests/golden-harness.rkt` writes the same format from
+  > $ python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+old="""## 🔗 Hidden couplings
+"""
+new="""### `go` is the one place the original re-enters a c
+  > $ sed -i 's|racket racket/cli.rkt abc abd xyz --seed 7 # headless entry point (once ported)|racket racket/cli.rkt abc abd xyz --seed 7 # headless entry point (sam
+
+Benchmark is running (13/109 so far). Writing the porting-notes section meanwhile.
+  > $ cat >> docs/porting-notes.md <<'EOF'
+
+## Full runs and the CLI (item 11)
+
+**Changes**: `run.ss` → `racket/engine/run.rktl`, included by engine.rkt right
+after w
+  > $ cat >> docs/porting-notes.md <<'EOF'
+- Mutation checks on run.rktl, against golden-test.rkt, each restored
+  afterwards (1 s pauses around the edits):
+
+  | Muta
+  > $ grep -n "golden-test\|racket/tests" chez_scheme/oracle/README.md | head
+  > $ sed -n 1,30p chez_scheme/oracle/README.md
+  > $ python3 - <<'EOF'
+p='chez_scheme/oracle/README.md'
+s=open(p).read()
+old="""  JSON-lines trace (`docs/trace-format.md`) without changing the run.
+"""
+new="""  JS
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+
+Still waiting on the timing benchmark; I'll get a notification when it finishes.
+  > $ until grep -q "^done" /tmp/bench.log; do sleep 5; done; tail -3 /tmp/bench.log; cat /tmp/run-times.md
+
+Both programs print identical output on all 109 runs. Writing `docs/run-times.md`, then running the gate.
+  > $ { cat <<'EOF'
+# Run times: the port against the oracle (item 11)
+
+Produced by `racket tests/bench-runs.rkt docs/run-times.md` on 2026-10-03 (32-core Linux
+machi
+
+Gate passed. Writing PROGRESS.md and marking the item.
+  > $ sed -i 's|^- \*\*Current\*\*: 11/18 SOLVED|- **Current**: 12/18 SOLVED|' ralph_loops/loop0001/PROGRESS.md && sed -i 's|^- \[ \] \*\*11 Full runs and the CLI.\*\
+  > $ cat >> ralph_loops/loop0001/PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 12 — 2026-10-03 01:31
+Item 11 (Full runs and the CLI): **SOLVED**. The engine now runs on its
+
+Item 11 (full runs and the CLI) is solved, and the regression gate passes (about 6 minutes). The port now runs on its own copy of the original's `run.ss`. All 109 golden runs match the original trace event for event. On those same 109 runs, `racket racket/cli.rkt` prints byte-for-byte what `chez_scheme/oracle/run.ss` prints, compared against the original run live.
+
+**What was added**
+- **`racket/engine/run.rktl`**: `run.ss`, line for line, except three marked changes:
+  - The SWL prompt workaround and display sync are left out.
+  - `break` and `quiet-break` use Racket's full `call/cc`. That is what lets `go` resume a stopped run. The compatibility layer's version can only escape, and `go` is the one place the original jumps back into a stopped computation.
+  - The four workspace strings are created in Chez's order. A mutation check shows the order makes no difference to any run.
+- **`racket/headless.rkt`**: the shared headless driver, moved out of the test harness. It prints the same output as the original's headless runner and can also write the trace.
+- **`racket/cli.rkt`**: takes the original's arguments (`--seed`, `--max-codelets`, `--keep-going`, `--trace`). It prints the same output and uses the same exit codes: 2 for bad arguments, 1 when the run crashes.
+- `run.ss` uses a variable, `*initial-slipnode-unclamp-time*`, that the original never defines; Racket refused to compile without it. It is now defined alongside `*temperature-clamped?*`, which has the same problem, and both are logged in the anomalies file.
+
+**Tests**
+- **`golden-test.rkt`**: all 109 traces match the golden files, and each run's printed output matches the original run live.
+- **`cli-test.rkt`**: 69 checks running the CLI as a program against the original. They cover:
+  - an answer, a run with no cap, a cap, a justify run, keep-going, and the run where the original halts;
+  - `--trace` producing the golden file;
+  - a clock seed that the original then replays;
+  - the known crash run failing the same way in both;
+  - 9 bad argument lists, all exiting with code 2.
+- **`run-test.rkt`**: stopping a run at codelets 150, 300 and 450 and resuming it with `go` gives exactly the same run as one never stopped. Step mode is covered too.
+- 8 of 10 deliberate code changes (mutations) in `run.rktl` were caught. The 2 that weren't have no effect on any run.
+- On test-first order: `cli-test.rkt` was written before `cli.rkt` and failed 39 of 69 checks. `run.rktl` came before its own tests, as PROGRESS.md records.
+
+**Run times** (full table per problem in `docs/run-times.md`, made by `tests/bench-runs.rkt`, which is not in the suite)
+
+| | Original (Chez) | Port (Racket) |
+| --- | ---: | ---: |
+| All 109 runs, one process each | 104 s | 70 s |
+| Startup | 0.71 s | 0.14 s |
+| Per 1,000 codelets | about 97 ms | about 200 ms |
+
+The port is about twice as slow per codelet, but the original recompiles its sources on every start, so short runs finish sooner in the port. On the longest problem (34,601 codelets over 3 seeds) the port takes 1.35 times as long in total.
+
+For the GUI item: it must call `run-mcat` and `go` each inside their own continuation prompt and set the reset handler directly rather than through `parameterize`. `run-test.rkt` shows how, and the details are in the anomalies log and the Next section of PROGRESS.md.
+
+PROGRESS.md is updated (12/18 solved) and item 11 is marked `[x]`. Nothing is committed; the loop driver does that.
+
+# result: success in 1825s, 62 turns, cost $4.29

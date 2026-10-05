@@ -1,0 +1,195 @@
+# session it14 started 2026-10-04 00:39:18
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; sed -n '/13 The SGL/,/^- \[ \] \*\*14/p' ralph_loops/loop0002/iterations.md; wc -l chez_scheme/original/sgl-interpreter.ss chez_scheme/
+  > $ cd /home/al/dev/metacat; ls chez_scheme/oracle chez_scheme/oracle/tests; grep -n "tcl-eval\|swl:" chez_scheme/oracle/prelude.ss | head -60
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/sgl-interpreter.ss
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/fonts.ss tests/diff/sgl-chez-setup.ss
+  > $ cd /home/al/dev/metacat; cat tests/diff/sgl-battery.scm; grep -n "b:canon\|define (b:" tests/diff/helpers.scm | head -40
+  > $ cd /home/al/dev/metacat; grep -n "define-class\|<canvas>\|<font>\|create\b\|define-syntax" chez_scheme/oracle/prelude.ss | head -40; cat racket/tests/sgl-fixtur
+  > $ cd /home/al/dev/metacat; sed -n 1,200p chez_scheme/oracle/prelude.ss; grep -rn "tcl/tk-version-8_3\|define \*platform\*\|define swl-color\|%nice-graphics%" chez
+  > $ cd /home/al/dev/metacat; grep -rn "tcl/tk-version-8_3\|swl-color\b\|define swl-color\|color-names" chez_scheme/original/*.ss chez_scheme/oracle/*.ss | grep -v "
+
+Reading the original and the Racket port to plan the SGL translation; next I'll write the Chez Tcl-stream capture script and tests.
+  > $ cd /home/al/dev/metacat; grep -rn "tcl/tk-version" chez_scheme/ racket/gui/*.rkt | grep -v "general-graphics.ss" | head; sed -n 200,400p chez_scheme/oracle/prel
+  > $ cd /home/al/dev/metacat; sed -n 1,420p racket/gui/sgl.rkt
+  > $ cd /home/al/dev/metacat; sed -n 420,728p racket/gui/sgl.rkt; sed -n 1,246p racket/gui/fonts.rkt
+  > $ cd /home/al/dev/metacat; which gs xwd convert import magick pnmtopng xwdtopnm ps2pdf pdftoppm 2>&1; python3 -c "import PIL" 2>&1; python3 -c "import tkinter; pr
+  > $ cd /home/al/dev/metacat/python; for f in fixtures/sgl/000* fixtures/sgl/019* fixtures/sgl/029* fixtures/sgl/042* fixtures/sgl/044*; do echo "== $f"; cat $f; ech
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^class \|^[A-Z_a-z]* = " metacat/chez.py | head -150; cat tests/scheme_forms.py | head -40
+  > $ cd /home/al/dev/metacat/python; grep -rn "def .*datum\|def sx\|def S(\|def quote" tests/*.py metacat/*.py | head; grep -n "string_p\|def string" metacat/chez.py
+
+Writing a small Scheme reader for the tests, then the capture script. Checking existing colour support first.
+  > $ cd /home/al/dev/metacat/python; grep -n "color_names\|swl_color\|def " metacat/constants.py | head -20; grep -n "swl_color\|=black=\|g_black\|black" metacat/vie
+  > $ cd /home/al/dev/metacat/python; sed -n 1,60p metacat/constants.py; grep -n "^def \|^class " metacat/objects.py; grep -n "init-env\|init_env\|get-swl-font\|hidde
+  > $ cd /home/al/dev/metacat; sed -n 1,30p docs/divergences.md; sed -n 1095,1180p docs/porting-notes.md; sed -n 135,160p docs/anomalies_and_quirks.md
+
+Now writing the shared fixture data and the Chez capture script.
+  > $ mkdir -p /home/al/dev/metacat/python/oracle && cat > /home/al/dev/metacat/python/oracle/sgl-fixture.scm <<'EOF'
+;;; sgl-fixture.scm -- a fixture of every SGL fo
+  > $ cat > /home/al/dev/metacat/python/oracle/sgl-tcl.ss <<'EOF'
+;;; sgl-tcl.ss -- the Tcl command stream of the original's SGL interpreter (item 13).
+;;;
+;;; Part o
+  > $ sed -i 's/(newline \$stdout)/(put-string $stdout "\\n")/' python/oracle/sgl-tcl.ss && scheme --script python/oracle/sgl-tcl.ss python/oracle/sgl-fixture.scm > /
+  > $ cd /home/al/dev/metacat && grep -E "^\(tcl v. (move|raise|itemconfigure|scale|delete)" /tmp/sgltcl.out; grep -c "" /tmp/sgltcl.out; grep "hidden-" /tmp/sgltcl.o
+  > $ cd /home/al/dev/metacat/python && cat fixtures/sgl/SOURCES; grep -n "def \|SOURCES\|version" oracle/capture_extra_seeds.py | head -30; grep -n "extra-seeds\|def
+  > $ sed -n 1,50p oracle/capture_extra_seeds.py; sed -n 85,92p oracle/capture_extra_seeds.py; sed -n 109,140p oracle/capture_extra_seeds.py; sed -n 20,40p tests/test
+
+Writing the capture driver and freezing the Tcl stream fixture.
+  > $ cat > oracle/capture_sgl_tcl.py <<'EOF'
+"""Capture the Tcl command stream of the original's SGL interpreter (loop0002 item 13).
+
+Part of the Python translation 
+  > $ grep -rn "iterdir\|extra-seeds" tests/*.py oracle/capture.py | grep -v "^tests/test_extra" | head; grep -n "^def \|^LOCAL\|^DIFF" oracle/capture.py | head -20; 
+  > $ grep -n "def test_every_define\|def test_.*docstring\|def test_no_tkinter" -A14 tests/test_golden.py | head -70; grep -n "^def " metacat/names.py
+  > $ sed -n 100,146p tests/test_golden.py; sed -n 20,80p metacat/names.py
+  > $ cat > tests/scheme_reader.py <<'EOF'
+"""A small Scheme reader: Scheme text -> Python data in metacat/chez.py's representation.
+
+Part of the Python translation o
+
+Now the test file (written before any `metacat/gui` code exists).
+  > Write /home/al/dev/metacat/python/tests/test_sgl.py
+  > $ python3 - <<'EOF'
+p='tests/test_sgl.py'
+s=open(p).read()
+s=s.replace('''        "draws-exps-direct": None,   # placeholder, replaced below
+''','')
+s=s.replace('
+  > $ timeout 300 python3 -m pytest -q tests/test_sgl.py -p no:cacheprovider 2>&1 | grep -E "PASS|passed" ; timeout 300 python3 -m pytest -q tests/test_sgl.py -p no:c
+
+Tests fail as expected (9 failed, 4 passed, 56 errors — all `ModuleNotFoundError`). Now the code: colors first (generated from constants.ss's table).
+  > $ mkdir -p metacat/gui && sed -n 1,25p metacat/trace_writer.py && python3 - <<'EOF'
+import sys; sys.path.insert(0,'tests')
+import scheme_reader
+text=open('../chez
+  > $ sed -n 960,995p metacat/chez.py; sed -n 1062,1075p metacat/chez.py
+  > $ python3 - <<'EOF'
+import sys; sys.path.insert(0,'tests')
+import scheme_reader
+text=open('../chez_scheme/original/constants.ss').read()
+block=text[text.index("(d
+  > $ grep -rn "nice_graphics\|g_platform\b\|g_platform =" metacat/*.py | head; grep -n "^def round\|^round_\|^def floor" metacat/utilities.py
+  > $ cat > metacat/gui/__init__.py <<'EOF'
+"""The views: Metacat's graphics on tkinter (items 13-15).
+
+Metacat is copyright (c) 1999, 2003 by James B. Marshall; this
+  > $ sed -n 1,60p metacat/objects.py | grep -n "def message\|class SchemeObject" ; sed -n 43,80p metacat/objects.py; grep -n "def printf\|def format_" -A6 metacat/ch
+
+Writing `metacat/gui/fonts.py` (fonts.ss) now.
+  > Write /home/al/dev/metacat/python/metacat/gui/fonts.py
+  > Write /home/al/dev/metacat/python/metacat/gui/sgl.py
+  > $ python3 - <<'EOF'
+p='metacat/gui/sgl.py'
+s=open(p).read()
+s=s.replace('if not (chez.eqv_p(x1, x2) or x1 == x2 or y1 == y2):','if not (x1 == x2 or y1 == y2):')
+s
+
+The 48 battery cases and both Tcl streams (624 commands) match Chez on the first run. Three failures left, looking at them:
+  > $ timeout 600 python3 -m pytest -q tests/test_sgl.py -p no:cacheprovider -k mouse 2>&1 | grep -E "^E" | head
+  > $ python3 - <<'EOF'
+p='tests/test_sgl.py'
+s=open(p).read()
+s=s.replace('''    vp.set_mouse_handlers_bang(False, False)
+    vp.mouse_press(1, 1, {"left-button"})
+ 
+  > $ timeout 600 python3 -m pytest -q tests/test_sgl.py -p no:cacheprovider -k docstrings 2>&1 | grep -E "^E" | head -3
+  > $ timeout 600 python3 -m pytest -q tests/test_sgl.py -p no:cacheprovider -m "not slow" 2>&1 | grep -E "^E" | head -3
+  > $ grep -n "def test_docstrings_name_their_origin" -A8 tests/test_sgl.py; git status --short | head
+  > Edit /home/al/dev/metacat/python/tests/test_sgl.py
+
+Both streams and the battery pass. Now the real-Tk rendering script (Xvfb → canvas PostScript → ghostscript PNG/PPM, plus pixel checks).
+  > Write /home/al/dev/metacat/python/tests/render_sgl_fixture.py
+  > $ python3 - <<'EOF'
+p='tests/render_sgl_fixture.py'
+s=open(p).read()
+s=s.replace('''    ((380, 45), "ivory", "and the retagged text"),
+''','')
+s=s.replace('''    
+  > $ sed -i 's|^sys.path.insert(0, str(HERE.parent))$|sys.path.insert(0, str(HERE.parent))\nsys.path.insert(0, str(HERE.parent / "oracle"))|' tests/render_sgl_fixtur
+  > $ python3 -c "import ctypes.util; print(ctypes.util.find_library('X11'))"; ls /usr/lib/x86_64-linux-gnu/libX11.so* 2>/dev/null
+  > $ python3 - <<'EOF'
+p='tests/render_sgl_fixture.py'
+s=open(p).read()
+start=s.index('def render(')
+end=s.index('if __name__ ==')
+new_doc_old = s[:start]
+new_doc_ol
+  > Read /tmp/it14/sgl-fixture.png
+  > Read /home/al/dev/metacat/racket/tests/snapshots/sgl-fixture.png
+
+The Tk rendering matches the Racket snapshot closely (only text metrics differ slightly). Fixing the one wrong check point (it fell inside the inner ivory triangle):
+  > $ sed -i 's|((40, 255), "light blue", "an open polygon.s fill"),|((66, 238), "light blue", "an open polygon'"'"'s fill"),|' tests/render_sgl_fixture.py && grep -n
+  > $ python3 - <<'EOF'
+p='tests/test_sgl.py'
+s=open(p).read()
+a=s.index('def _xvfb():')
+s=s[:a]+'''@pytest.mark.slow
+def test_render_on_tk(tmp_path):
+    """render_s
+
+All 69 pass. Now mutation checks on the new modules:
+  > $ mkdir -p /tmp/mut13 && cat > /tmp/mut13/mutate.py <<'EOF'
+import subprocess, sys, shutil
+from pathlib import Path
+PY = Path("/home/al/dev/metacat/python")
+M = [
+
+Three survivors: degenerate-shape guards, exact modifier matching, and symbol-vs-string colours. I'll extend the fixture (offscreen extras) and recapture from Chez, and tighten the mouse test.
+  > $ python3 - <<'EOF'
+p='oracle/sgl-fixture.scm'
+s=open(p).read()
+old='''  (draw (let-sgl ((origin (1/3 2/3))) (line (700 700) (701 701))) no-such-tag))'''
+new=''' 
+
+All mutants are now caught. Updating docs next; checking the doc formats.
+  > $ cd /home/al/dev/metacat && grep -n "Python" docs/divergences.md | head; sed -n 1,30p docs/anomalies_and_quirks.md; grep -n "^### " docs/anomalies_and_quirks.md 
+  > $ sed -n 700,730p docs/python-translation-plan.md; tail -30 python/README.md; sed -n 1010,1040p docs/anomalies_and_quirks.md; grep -n "^## " docs/anomalies_and_qu
+  > $ python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+entry='''### Text items at half pixels: the original sends Tk exact ratios
+- **Seen:** itera
+  > $ sed -n 736,760p docs/anomalies_and_quirks.md
+  > Edit /home/al/dev/metacat/docs/anomalies_and_quirks.md
+  > Edit /home/al/dev/metacat/docs/python-translation-plan.md
+
+Now the README and run-tests.sh tier comment, then the gate.
+  > $ cat >> python/README.md <<'EOF'
+
+The SGL interpreter on tkinter (item 13):
+- `metacat/gui/sgl.py`: sgl-interpreter.ss. `draw_bang`, `erase_bang`, `draw_exp`, th
+
+Fast tier green (796). Running the full gate now.
+  > $ cd /home/al/dev/metacat && timeout 1500 python3 ralph_loops/loop0002/gate.py 2>&1 | tail -8
+
+Gate passed (1101 tests, 5 min 42 s). Writing PROGRESS.md and marking the item.
+  > $ git status --short && date "+%Y-%m-%d %H:%M"
+  > $ sed -i 's/^- \*\*Current\*\*: 13\/18 SOLVED/- **Current**: 14\/18 SOLVED/' ralph_loops/loop0002/PROGRESS.md && sed -i 's/^- \[ \] \*\*13 The SGL interpreter on 
+
+Item 13 (the SGL interpreter on tkinter) is done and the gate passes: 1101 tests in 5 min 42 s. The item is marked `[x]`, PROGRESS.md has the Iteration 14 entry and says 14/18 SOLVED, and 4 items remain, so there is no `LOOP_COMPLETE`. Nothing is committed.
+
+**What's new**
+- **`python/metacat/gui/`**:
+  - `sgl.py` translates `sgl-interpreter.ss`. Its viewport sends the original's Tcl canvas commands argument for argument, to a real tkinter Canvas or to a recording one in tests.
+  - `fonts.py` translates `fonts.ss`. Text is measured on a hidden Tk canvas, as in the original.
+  - `colors.py` holds the colour part of `constants.ss`; its 752-name table is checked against that file.
+  - `swl.py` turns Scheme values into Tcl arguments and wraps the tkinter Canvas.
+- **Capturing the original's Tcl output.** The oracle never sent Tcl before. `python/oracle/sgl-tcl.ss` loads the unedited original, records every `swl:tcl-eval` call, gives `<viewport>` a working class definition, and reloads the unedited `sgl-interpreter.ss`. It draws `python/oracle/sgl-fixture.scm` (the Racket port's fixture plus a few off-canvas extras) on two viewports, at 1:1 and 2:1 scale. `capture_sgl_tcl.py` freezes the result as `python/fixtures/sgl-tcl/` (318 commands per viewport).
+
+**Tests** (`python/tests/test_sgl.py`, 69 tests)
+- They were written before any `metacat/gui` code existed. That first run gave 9 failed, 4 passed and 56 errors, all from the missing module; the 4 that passed only read fixtures.
+- Once the code was in, all 48 `sgl-battery.scm` cases and both command streams matched Chez on the first run.
+- Under `xvfb-run`, `render_sgl_fixture.py` draws the fixture on a real Canvas, captures the window with Xlib and checks 16 pixels. I looked at the PNG next to the Racket snapshot: it matches cell for cell, and only text positions shift by a few pixels because the fonts measure differently. The rendering is saved at `python/tests/snapshots/sgl-fixture.png`.
+- I applied 23 deliberate bugs to the new modules. 20 were caught at once. For the other 3 I added degenerate shapes and a colour given as a symbol to the fixture (recaptured from Chez), plus control-clicks to the mouse test. All 23 are caught now.
+
+**Logged in `docs/anomalies_and_quirks.md`**
+- The original sends Tk fractional text positions such as `249/2`. Python keeps the fraction in the recorded stream and passes a float to Tk.
+- Tk's PostScript export drops the canvas background. That is why the rendering test captures the screen instead of using PostScript and ghostscript.
+
+**Two loose ends for items 14 and 15**
+- The logo window uses white and Times 24 bold italic until the panels item translates the logo's real colour and font.
+- Font sizes assume 96 dpi, as in the Racket port. The render script sets Tk's scaling to match, and the GUI should do the same so that drawings don't depend on the display.
+
+# result: success in 1389s, 69 turns, cost $6.90

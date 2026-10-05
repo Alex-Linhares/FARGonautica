@@ -1,0 +1,157 @@
+# session it12 started 2026-10-05 03:19:46
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cat python/pyproject.toml && ls python python/metacat/qt python/tests | head -100 && cat ralph_loops/loop0003/iterations.md | sed -n '/09/,$p'
+  > $ cat python/tests/test_install.py && cat python/metacat/qt/__main__.py && sed -n 1,80p python/metacat/qt/app.py && grep -n "def main" -A40 python/metacat/qt/app.
+  > $ which python3; python3 -c "import PySide6,setuptools,sys;print(PySide6.__file__, setuptools.__file__, sys.prefix, sys.base_prefix)"; python3 -m pip --version; s
+  > $ python - <<'EOF'
+import re
+p='python/tests/test_install.py'
+s=open(p).read()
+s=s.replace('''    assert scripts == {"metacat": "metacat.__main__:main",
+         
+
+Now the slow venv tests.
+  > $ cat >> python/tests/test_install.py <<'EOF'
+
+
+# ------------------------------------------------------------------
+# slow: the Qt GUI's extra (loop0003 item 09)
+
+Both fail as expected (no `metacat-qt`). Adding the console script:
+  > $ sed -i 's|^metacat-gui = "metacat.gui.app:main"      # the GUI: python3 -m metacat.gui|&\nmetacat-qt = "metacat.qt.app:main"        # the one-window GUI: python
+
+Installed and running. Now the screenshots and docs. Let me see what exists.
+  > $ cd /home/al/dev/metacat && ls docs/screenshots docs/screenshots/* | head -60; cat docs/screenshots/README.md | head -80; grep -n "screenshot\|png\|Quick\|^#" RE
+  > $ cd /home/al/dev/metacat/python && sed -n 1,60p tests/drive_qt_layout.py; grep -n "def \|argv\|problem\|\"run\"" tests/drive_qt_layout.py | head -60
+  > $ sed -n 280,345p tests/drive_qt_layout.py
+
+I'll add a `run7` scenario (default layout, Run 7) for the docs screenshots, reusing the run code.
+  > $ python3 - <<'EOF'
+p='tests/drive_qt_layout.py'
+s=open(p).read()
+s=s.replace('''def scenario_run():
+    common()
+    view("Show all panes")
+    on_main(lambda: W
+  > $ rm -rf /tmp/qtshots && for s in 1920x1080 2560x1440; do timeout 400 python3 tests/drive_qt_layout.py /tmp/qtshots run7 --screen $s 2>&1 | tail -1 | python3 -c "
+
+Ends at Run 7's golden (codelet 2170, same RNG state). Let me look at the window.
+  > Read /tmp/qtshots/window-run7-1920x1080.png
+
+Matches the Racket/Python Run 7 pictures (crossed bridges, three snags, `wyz`, temperature 15). Checking the 1440p one:
+  > Read /tmp/qtshots/window-run7-2560x1440.png
+
+Both good. (At 1440p the Trace is scrolled to its end, so "Identity" is cut at the left edge; that's the Trace's own scroll-to-latest, not a layout fault.) Copying them into the gallery:
+  > $ cd /home/al/dev/metacat && cp /tmp/qtshots/window-run7-1920x1080.png docs/screenshots/qt-run7-wyz.png && cp /tmp/qtshots/window-run7-2560x1440.png docs/screensh
+  > $ sed -n 120,260p python/README.md; grep -n "^#" docs/divergences.md | tail -20; grep -n "^#" docs/qt-gui-plan.md; head -30 python/metacat/gui/README.md; wc -l py
+  > $ sed -n 229,330p docs/qt-gui-plan.md; sed -n 243,290p docs/divergences.md
+
+Now the Qt package README.
+  > Write /home/al/dev/metacat/python/metacat/qt/README.md
+
+Let me verify the threading claims against the code before keeping them.
+  > $ cd /home/al/dev/metacat/python && grep -n "PAINT_GATE\|invoker\|\.call(" metacat/qt/canvas.py metacat/qt/hosts.py metacat/qt/fonts.py | head -30; grep -n "setti
+  > Edit /home/al/dev/metacat/python/metacat/qt/README.md
+
+Now `python/README.md`.
+  > $ python3 - <<'EOF'
+p='README.md'
+s=open(p).read()
+def rep(a,b):
+    global s
+    assert s.count(a)==1, a
+    s=s.replace(a,b)
+rep('''A translation of James B. Ma
+  > $ ls tests/test_*.py | wc -l; grep -n "test_install\|1614\|1174\|440\|drive_qt_layout" tests/README.md
+  > $ python3 - <<'EOF'
+p='tests/README.md'
+s=open(p).read()
+s=s.replace('''| `test_install.py` | 5 + 4 | Packaging. Fast: the declared commands, packages and help te
+
+Top-level README: quick start and screenshot.
+  > $ cd /home/al/dev/metacat && python3 - <<'EOF'
+p='README.md'
+s=open(p).read()
+def rep(a,b):
+    global s
+    assert s.count(a)==1, a
+    s=s.replace(a,b)
+rep('''T
+  > $ cd /home/al/dev/metacat/python && grep -n "def _enter\|def enter\|init_new_problem\|run_problem\|def go_action\|def _go" metacat/gui/gui.py | head -20
+  > $ grep -n "return_action\|def .*return\|Key-Return" metacat/gui/gui.py | head; 
+  > $ sed -n 1100,1160p metacat/gui/gui.py
+  > $ grep -n '"run-new-problem"\|"init-new-problem"' metacat/gui/gui.py metacat/qt/controls.py | head; grep -n "def .*command_line_action\|def process_command" -A25 
+  > $ sed -n 405,452p metacat/gui/gui.py
+
+Enter sets up the problem and Go runs it, so my "Enter, then Go" is right. Now the gallery README:
+  > $ cd /home/al/dev/metacat && grep -n "^## \|^### \|small-text" docs/screenshots/README.md
+  > $ sed -n 1,12p docs/screenshots/README.md; sed -n 30,40p docs/screenshots/README.md; sed -n 64,77p docs/screenshots/README.md; sed -n 205,230p docs/screenshots/RE
+  > $ python3 - <<'EOF'
+p='docs/screenshots/README.md'
+s=open(p).read()
+def rep(a,b):
+    global s
+    assert s.count(a)==1, a
+    s=s.replace(a,b)
+rep('''This galler
+  > $ python3 -c "
+from PIL import Image; print(Image.open('docs/screenshots/run7-workspace.png').size, Image.open('docs/screenshots/panels/slipnet-run7-answer.png').
+  > $ python3 - <<'EOF'
+p='docs/screenshots/README.md'
+s=open(p).read()
+a='''window's aspect ratio, so the Workspace and Slipnet are a little smaller than their own
+w
+  > $ python3 -c "
+from PIL import Image
+for n in ['workspace','slipnet']: print(n, Image.open('/tmp/qtshots/%s-run7-1920x1080.png'%n).size)"
+
+Docs nearly done; fixing one size claim in the gallery, then divergences and the gate.
+  > $ python3 - <<'EOF'
+p='docs/screenshots/README.md'
+s=open(p).read()
+a='''window's aspect ratio, so at 1080p the Workspace is a little smaller than its own window
+
+  > $ sed -i 's/window.s aspect ratio and are scaled to fit their pane (at 1080p/window'"'"'s aspect ratio and are redrawn at their pane'"'"'s size (at 1080p/' docs/s
+  > $ sed -n 1,6p docs/divergences.md; grep -rn "metacat-gui" docs/*.md python/metacat/gui/README.md | grep -v divergences | head
+
+Running the gate.
+  > $ timeout 1800 python3 ralph_loops/loop0003/gate.py 2>&1 | tail -15
+
+Gate is running (over 10 min). Meanwhile I'll draft the PROGRESS entry.
+  > $ grep -n "Current" ralph_loops/loop0003/PROGRESS.md | head -3; grep -n "^- \[" ralph_loops/loop0003/iterations.md
+  > $ F=/tmp/claude-1000/-home-al-dev-metacat/2b7a7bd3-bc15-4e02-bded-8a7c6393ef72/tasks/b859jno4b.output; timeout 580 bash -c "until grep -q 'GATE' $F; do sleep 15; 
+
+Gate passed: 1618 tests. Getting the fast/slow split for the docs:
+  > $ cd /home/al/dev/metacat/python && python3 -m pytest --collect-only -q -m "not slow" 2>/dev/null | tail -1; python3 -m pytest --collect-only -q -m slow 2>/dev/nu
+  > $ python3 -m pytest --collect-only -q tests/test_install.py -m "not slow" 2>/dev/null | tail -2; git stash -q && python3 -m pytest --collect-only -q -m "not slow"
+
+HEAD already had 1615 (the owner's GC test), so this item adds 1 fast and 2 slow tests. Updating totals:
+  > $ sed -i 's/all 1614 tests, about 8 min/all 1618 tests, about 10 min/; s/^Totals: 1614 tests, 1174 fast and 440 slow\./Totals: 1618 tests, 1176 fast and 442 slow.
+  > $ sed -i 's/# full tier, what the gate runs: about 7 min on 32 idle cores/# full tier, what the gate runs: about 10 min on 32 idle cores/' README.md && grep -rln 
+
+Fast tier still green after the doc-only edits. Writing PROGRESS and marking the item.
+  > $ cd /home/al/dev/metacat/ralph_loops/loop0003 && sed -i 's/^- \*\*Current\*\*: 9\/12 SOLVED/- **Current**: 10\/12 SOLVED/' PROGRESS.md && sed -i 's/^- \[ \] \*\*
+
+Item 09 (packaging and docs) is done and marked `[x]`. The gate passed: 1618 tests in 10 min 25 s, and `racket/` didn't change.
+
+- **Command:** `pip install -e 'python[qt]'` now also installs a `metacat-qt` command; the only code change for it is one line in `python/pyproject.toml`.
+- **Tests:** I wrote these first, and all three failed before that line went in. Two new slow tests in `python/tests/test_install.py` both pass:
+  - **With the `qt` extra:** in a fresh venv, the extra installs offline and `metacat-qt` opens the window headlessly, saves a screenshot and the layout, and quits by itself.
+  - **Without it:** in a venv where PySide6 can't be imported, Run 7 still gives the oracle's output and the golden trace, and the tkinter GUI still opens. `metacat-qt` exits 1 and says it needs PySide6.
+- **Screenshots:** a new `run7` scenario in `drive_qt_layout.py` runs Run 7 in the Qt window. At both 1920×1080 and 2560×1440 it stops at the golden's codelet count (2170) and random state. I looked at both images: they show the same picture as the existing Racket and tkinter Run 7 screenshots. They are now `docs/screenshots/qt-run7-wyz.png` and `qt-run7-wyz-1440p.png`.
+- **Docs:**
+  - a new `python/metacat/qt/README.md`, with both screenshots;
+  - a Qt section in `python/README.md`;
+  - a quick-start entry and the screenshot in the top-level `README.md`;
+  - a Run 7 section in `docs/screenshots/README.md`;
+  - a packaging entry in `docs/divergences.md`;
+  - updated test counts in the READMEs.
+
+After the gate I only edited Markdown (counts and wording), and the fast tests still pass.
+
+I left one existing error for the final audit (item 11): the top-level README says Enter starts the run. In the code, Enter sets up the problem and Go starts it. It's noted under Next in PROGRESS.md.
+
+PROGRESS.md now reads 10/12 solved. Items 10 and 11 are still open, so I didn't add `LOOP_COMPLETE`. Nothing is committed.
+
+# result: success in 1027s, 47 turns, cost $2.47

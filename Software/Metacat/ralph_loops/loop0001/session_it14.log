@@ -1,0 +1,397 @@
+# session it14 started 2026-10-03 02:08:47
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cat ralph_loops/loop0001/iterations.md | sed -n '1,200p' | grep -n "13\|14" | head; wc -l chez_scheme/original/{general-graphics,workspace-graphics,bridge-graph
+  > $ cat racket/engine.rkt && cat racket/engine/pending.rktl
+  > $ cat chez_scheme/original/general-graphics.ss
+  > Read /home/al/dev/metacat/chez_scheme/original/general-graphics.ss
+  > Read /home/al/dev/metacat/chez_scheme/original/general-graphics.ss
+  > $ sed -n 19,500p chez_scheme/original/workspace-graphics.ss
+
+I'm reading the five original graphics files (about 2,500 lines) so I can plan how the views attach to the engine.
+  > $ sed -n 500,830p chez_scheme/original/workspace-graphics.ss
+  > $ sed -n 19,400p chez_scheme/original/bridge-graphics.ss; sed -n 19,200p chez_scheme/original/group-graphics.ss; sed -n 19,200p chez_scheme/original/rule-graphics
+  > $ cd /home/al/dev/metacat/racket/engine && grep -n "%workspace-graphics%\|bridge-graphics\|group-graphics\|make-group-pexp\|draw-group-grope\|draw-bridge-grope\|n
+  > $ grep -n "graphics%" *.rktl | grep -v "^pending\|^trace\|^setup" | awk -F: '{print $1}' | sort | uniq -c; sed -n 35,50p descriptions.rktl; grep -n "graphics" set
+  > $ cd /home/al/dev/metacat && sed -n 1,200p racket/headless.rkt
+  > $ cd /home/al/dev/metacat && sed -n 200,475p racket/headless.rkt
+  > $ cd /home/al/dev/metacat/racket/engine && grep -n -A6 "%workspace-graphics%" bridges.rktl groups.rktl workspace-objects.rktl rules.rktl | head -250
+
+Reading done; now checking the SGL viewport API and the remaining items' plans so the window layer fits them.
+  > $ cd /home/al/dev/metacat && sed -n 90,140p ralph_loops/loop0001/iterations.md; grep -n "define\|init-field\|public\|(define/public" racket/gui/sgl.rkt | head -12
+  > $ sed -n 1,135p racket/gui/sgl.rkt; sed -n 1,60p racket/gui/fonts.rkt; grep -n "provide" racket/gui/*.rkt; cat racket/tests/sgl-fixture.rkt | head -80
+  > $ cd /home/al/dev/metacat/chez_scheme/original && grep -n "workspace\|bridge\|rule-color\|snag-color\|=white=\|=black=\|define =\|faded\|slippage-color\|%default-
+  > $ sed -n 19,120p constants.ss; sed -n 820,1000p constants.ss
+  > $ cd /home/al/dev/metacat/racket/engine && grep -n -B2 -A8 "%workspace-graphics%" run.rktl memory.rktl workspace.rktl answers.rktl coderack.rktl rules.rktl trace.
+  > $ sed -n 500,560p bridges.rktl; sed -n 130,175p groups.rktl; grep -n "graphics" workspace-objects.rktl workspace-strings.rktl | head -60
+
+Plan settled: pure pexp code goes into the engine, the window/font parts into a `racket/gui` module. Now checking how `init-mcat` drives the window.
+  > $ sed -n 140,345p run.rktl
+  > $ cd /home/al/dev/metacat && sed -n 136,330p racket/gui/sgl.rkt; sed -n 520,545p racket/gui/sgl.rkt
+  > $ cat racket/tests/golden-harness.rkt | sed -n 1,200p; sed -n 1,80p racket/tests/golden-test.rkt
+  > $ sed -n 80,260p racket/tests/golden-test.rkt; cat tests/run-tests.sh; cat ralph_loops/loop0001/gate.py | head -60
+  > $ cd /home/al/dev/metacat/racket/engine && sed -n 430,485p memory.rktl; sed -n 1050,1065p answers.rktl; sed -n 1120,1135p answers.rktl; sed -n 1170,1200p answers.
+  > $ cd /home/al/dev/metacat && sed -n 395,440p chez_scheme/original/gui.ss; grep -n "record-case" -A30 racket/compat.rkt | head -60
+
+Checking a suspected original bug: trace.ss sends `draw-string-letters` with two arguments, but the window method takes one.
+  > $ grep -n "draw-string-letters" chez_scheme/original/*.ss; sed -n 425,520p racket/engine/trace.rktl
+  > $ cd /tmp && echo "(display (record-case '(a 1 2) [(a) (x) x] [else 'no])) (newline) (display (expand '(record-case r [(a) (x) x])))" | scheme -q 2>&1 | head
+  > $ sed -n 549,585p racket/compat.rkt; grep -n "record-case" racket/tests/compat-test.rkt | head
+  > $ sed -n 25,45p racket/tests/compat-test.rkt
+  > Edit /home/al/dev/metacat/racket/tests/compat-test.rkt
+  > $ raco test racket/tests/compat-test.rkt 2>&1 | tail -15
+
+Fails as expected. Now the fix:
+  > $ python3 - <<'EOF'
+p='racket/compat.rkt'
+s=open(p).read()
+old=""";; (record-case exp (key formals body ...) ... (else body ...)): dispatch on
+;; (car exp), bindi
+
+Compat fixed (37/37). Now the item's own tests, written before the views exist. Picking golden runs for the renders:
+  > $ cat tests/problems.txt | head -60; ls docs/reference/figures | head -50; grep -n "Workspace\|workspace" docs/reference/README.md | head -30
+  > Read /home/al/dev/metacat/docs/reference/figures/p224-541.png
+
+Target figure noted (Fig. 5.x, `abc abd mrrjjj` at 513 codelets). Now looking at the differential battery format so the pure pexp builders can be checked against Chez too.
+  > $ sed -n 1,60p tests/diff/sgl-battery.scm; cat racket/tests/sgl-diff-test.rkt; grep -n "define (check-battery\|provide\|chez-setup\|define (" racket/tests/diff-ru
+  > $ grep -n "^(define\|^;;" chez_scheme/original/constants.ss | awk -F: '$1<120 || $1>780' | head -80; wc -l chez_scheme/original/constants.ss; grep -n "^(define" r
+  > $ sed -n 1000,1074p chez_scheme/original/constants.ss; sed -n 60,80p racket/engine/constants.rktl
+
+Writing the engine-side files now, starting with general-graphics.ss split into its pure part:
+  > $ O=chez_scheme/original && {
+sed -n 1,18p $O/general-graphics.ss
+cat <<'EOF'
+;; Ported to Racket, 2026: the engine's part of general-graphics.ss, i.e.
+;; the pro
+  > $ grep -n "platform\|tcl" chez_scheme/oracle/prelude.ss | head
+  > $ sed -i "s/^(define \*platform\* 'unix)$/(define *platform* 'linux)/" racket/engine/general-graphics.rktl && grep -n "platform" racket/engine/general-graphics.rk
+
+Engine files in place. Writing the functional `update-rule-pexps!` (Racket pairs are immutable), then checking which pending names the engine still reads:
+  > $ python3 - <<'EOF'
+p='racket/engine/rule-graphics.rktl'
+s=open(p).read()
+old="""(define update-rule-pexps!
+  (lambda (pexp)
+    (record-case pexp
+      (rule (ru
+  > $ grep -n -B3 -A3 "flash-pause\|num-of-flashes" setup.rktl | head -40
+
+Writing `engine/view-globals.rktl`: the variables the views install, moved out of pending.rktl.
+  > $ cat > view-globals.rktl <<'EOF'
+;; Part of the Racket port of Metacat (GPL v2 or later, like Metacat itself).
+;;
+;; Globals that the model code reads but whose 
+  > $ cd /home/al/dev/metacat && grep -n "load" chez_scheme/original/metacat.ss | sed -n 1,60p | grep -n "graphics\|sgl\|fonts\|memory\|demos\|gui"
+  > $ python3 - <<'EOF'
+p='racket/engine.rkt'
+s=open(p).read()
+old="""(include "engine/group-graphics.rktl") ; group-graphics.ss (group-graphics only)
+(include "engin
+
+The engine compiles with the graphics code in it. Next, the differential battery for these pure builders (Chez original vs port). Checking how existing batteries make fakes:
+  > $ grep -n "define b:fake-structure" -A25 tests/diff/workspace-battery.scm | head -40; grep -n "(define-syntax test\|define test\|b:capture" tests/diff/helpers.scm
+  > $ sed -n 40,130p tests/diff/helpers.scm; sed -n 30,110p racket/tests/diff-runner.rkt; grep -n "define (letter?\|define letter?\|define group?\|define coord\|defin
+  > $ grep -n "define both-spanning-groups?" -A6 racket/engine/*.rktl racket/utilities.rkt; grep -n "define type-tester" -A5 racket/utilities.rkt; grep -n "nice-graph
+
+Now writing the battery:
+  > Write /home/al/dev/metacat/tests/diff/graphics-battery.scm
+  > $ cat racket/tests/slipnet-diff-test.rkt | grep -v "^;;" ; cat > racket/tests/graphics-diff-test.rkt <<'EOF'
+#lang racket/base
+;; Item 13: differential checks of 
+
+49/49 agree on the first run. That's suspicious, so I'm checking the outputs carry real content and aren't all `ERROR`:
+  > $ racket -e '(require (file "/home/al/dev/metacat/racket/tests/diff-runner.rkt")) (define s (chez-output "tests/diff/graphics-battery.scm")) (display (string-leng
+
+Four tests are `ERROR` on both sides, which proves nothing. Finding why:
+  > $ METACAT_DIFF_DEBUG=1 racket -e '(require (file "/home/al/dev/metacat/racket/tests/diff-runner.rkt")) (void (racket-output "tests/diff/graphics-battery.scm" (lis
+  > $ cat > /tmp/dbg.rkt <<'EOF'
+#lang racket/base
+(require (file "/home/al/dev/metacat/racket/compat.rkt") (file "/home/al/dev/metacat/racket/utilities.rkt") (file "
+
+The fake treats slipnode values (which are procedures) as methods and calls them. Fixing the battery with an explicit `b:const` for object values:
+  > $ python3 - <<'EOF'
+p='tests/diff/graphics-battery.scm'
+s=open(p).read()
+s=s.replace(""";; a fake object answering messages from an alist (symbol . value-or-proce
+
+No more `ERROR`s or unexpected messages: 49/49 identical, flonums bit for bit. Now the GUI side. Checking the font object's messages and what render needs:
+  > $ sed -n 120,243p racket/gui/fonts.rkt | grep -n "(\(resize\|get-pixel\|get-swl\|object-type\|define make-mfont\)" ; sed -n 440,455p racket/gui/sgl.rkt; grep -n "
+
+First, two viewport changes in sgl.rkt. The display list now prepends instead of appending (appending is O(n²) over a long run), and `set-scroll-region!` is added:
+  > $ python3 - <<'EOF'
+p='racket/gui/sgl.rkt'
+s=open(p).read()
+reps=[
+("""    ;; port: the display list, oldest item first, and the scroll position
+    ;; (the canva
+
+SGL tests still pass (121). Now `racket/gui/general-graphics.rktl`, the window part, from the original with marked `port:` edits:
+  > $ O=chez_scheme/original && { sed -n 1,18p $O/general-graphics.ss; cat <<'EOF'
+;; Ported to Racket, 2026: the window part of general-graphics.ss, included
+;; by r
+  > $ sed -n 253,262p racket/gui/general-graphics.rktl | cat -A | cut -c1-90
+
+The original indents with tabs. Redoing the edits with whitespace-tolerant matching:
+  > $ mkdir -p /tmp/port && cat > /tmp/port/rep.py <<'EOF'
+import re, sys
+def rep(s, old, new):
+    parts = re.split(r'(\s+)', old.strip())
+    rx = ''.join(r'\s+' if
+
+Now `racket/gui/workspace-graphics.rktl`:
+  > $ O=chez_scheme/original && { sed -n 1,18p $O/workspace-graphics.ss; cat <<'EOF'
+;; Ported to Racket, 2026: included by racket/gui/views.rkt.  Verbatim but
+;; for
+  > $ cd /home/al/dev/metacat/chez_scheme/original && grep -n "define \*theme-edit-mode?\*\|define \*repl-thread\*\|define thread-break" *.ss; grep -n "repl-thread" .
+  > $ cd /home/al/dev/metacat && O=chez_scheme/original && grep -n "Probability distributions" $O/constants.ss && { sed -n 1,18p $O/constants.ss; cat <<'EOF'
+;; Porte
+
+Now the routing macros (`define`/`set!` that install engine-owned names through `set-global!`) and `views.rkt` itself:
+  > $ cat > racket/gui/engine-route.rkt <<'EOF'
+#lang racket/base
+;; Part of the Racket port of Metacat (GPL v2 or later, like Metacat itself).
+;;
+;; define and set! 
+  > Write /home/al/dev/metacat/racket/gui/views.rkt
+  > $ raco make racket/gui/views.rkt 2>&1 | head -20
+
+It compiles. Now hooking it into the headless driver: an optional `#:views` thunk run after the headless windows are installed, plus the EEG messages that turning workspace graphics on adds.
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='racket/headless.rkt'
+s=open(p).read()
+s=rep(s,"""(set-global! '*EEG-window* (make-null-window 'EEG
+  > $ sed -i 's|^(require (file "/home/al/dev/metacat/racket/headless.rkt")|(require racket/class (file "/home/al/dev/metacat/racket/headless.rkt")|' /tmp/try.rkt && 
+
+It runs with the view attached and doesn't fail. First look at the picture:
+  > Read /tmp/ws1.png
+  > $ cat > /tmp/try2.rkt <<'EOF'
+#lang racket/base
+(require racket/file racket/port (file "/home/al/dev/metacat/racket/headless.rkt") (file "/home/al/dev/metacat/rac
+
+Identical traces on both. Now the test infrastructure: I'm factoring golden-test.rkt's place pool into a shared module so the views test can run all 109 goldens the same way.
+  > $ cat > racket/tests/golden-pool.rkt <<'EOF'
+#lang racket/base
+;; Running golden runs (tests/problems.txt) in parallel, each in a fresh
+;; engine: shared by golde
+
+Next, the views harness and the test. Finding a golden run with an early snag, for the event-view rendering:
+  > $ cd /home/al/dev/metacat/tests/golden && grep -l '"type":"snag"' *.jsonl | head -20; for f in $(grep -l '"type":"snag"' *.jsonl | head -8); do echo "$f $(grep -m
+  > $ cd /home/al/dev/metacat && sed -n 262,292p racket/engine/memory.rktl
+
+`display-workspace` draws the description pexp on the Workspace window, so the scene can use it directly. Writing the harness:
+  > Write /home/al/dev/metacat/racket/tests/views-harness.rkt
+  > $ for s in mrrjjj-answer xyz-snag-event xyz-answer xyz-answer-description xyd-justify; do racket racket/tests/views-harness.rkt $s /tmp/$s.png 2>&1 | tail -3; don
+  > Read /tmp/mrrjjj-answer.png
+  > Read /tmp/xyz-answer.png
+  > $ grep -n "smooth" racket/gui/sgl.rkt racket/tests/sgl-test.rkt docs/divergences.md | head
+  > $ grep -n "partly\|'text" racket/gui/sgl.rkt racket/gui/fonts.rkt | head; grep -n "partly\|subpixel\|hue" racket/tests/sgl-test.rkt docs/porting-notes.md | head
+  > $ sed -n 80,100p racket/gui/fonts.rkt; sed -n 1140,1155p docs/porting-notes.md
+
+I'm switching text to aliased (`'unsmoothed`). That is what the dissertation's screenshots show, and it is what makes the original's erase-by-overpainting clean.
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='racket/gui/fonts.rkt'
+s=open(p).read()
+s=rep(s,""";; grey-level antialiasing, as Xft draws Tk's te
+  > Read /tmp/mrrjjj-answer.png
+
+Clean now: no fringes, and the text is aliased like the dissertation's figures. One oddity: bridge label "3" has no yellow box, though 1 and 2 do. Looking at the other scenes:
+  > Read /tmp/xyz-snag-event.png
+  > Read /tmp/xyz-answer-description.png
+  > Read /tmp/xyd-justify.png
+
+The justify render predates the font change, so I'll redo it. The snag event view has "Event 5: Snag" drawn over "Workspace", so I'm checking whether the event's `display` clears first:
+  > $ sed -n 1168,1200p racket/engine/trace.rktl; grep -n "'display-workspace\|(display ()" racket/engine/trace.rktl | head
+
+The event's `display` clears the window first; I can't call `display` itself yet (it also drives Slipnet and Themespace windows from item 14), so the scene does the clear itself:
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='racket/tests/views-harness.rkt'
+s=open(p).read()
+s=rep(s,"""[(snag-event) (tell (tell *trace* 'get
+  > Read /tmp/xyd-justify.png
+
+The justify scene is clean. The bridge labels' yellow boxes look narrower than their digits, so here is a 4× crop:
+  > $ cat > /tmp/crop.rkt <<'EOF'
+#lang racket/base
+(require racket/draw racket/class)
+(define args (current-command-line-arguments))
+(define src (read-bitmap (vector
+  > Read /tmp/crop1.png
+
+Label "3" does have its yellow box; it only looked white at full size. Italic glyphs overhang the box slightly, as Tk's image-mode text does. Re-checking the snag view:
+  > Read /tmp/xyz-snag-event.png
+
+That matches the dissertation's event views: faded grey structures, the snag object and translated rule in orange, "???". Comparing with one of the dissertation's event figures:
+  > Read /home/al/dev/metacat/docs/reference/figures/p233-621.png
+  > Write /home/al/dev/metacat/racket/tests/workspace-view-test.rkt
+  > $ time raco test racket/tests/workspace-view-test.rkt 2>&1 | tail -25
+
+A stale `.zo`: golden-harness is loaded dynamically, outside raco's compilation. I'll load it through the compilation manager, as the pool does:
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='racket/tests/workspace-view-test.rkt'
+s=open(p).read()
+s=rep(s,"""    (parameterize ([current-name
+
+The bitmap belongs to a different `racket/class` instance (the fresh namespace has its own). Attaching racket/draw to the fresh namespaces fixes that; the engine modules stay fresh:
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='racket/tests/workspace-view-test.rkt'
+s=open(p).read()
+s=rep(s,""";; Pictures of the Workspace win
+
+Now the only failure is the missing snapshot files. Generating them, then checking a re-run passes (deterministic):
+  > $ METACAT_UPDATE_SNAPSHOTS=1 raco test racket/tests/workspace-view-test.rkt 2>&1 | grep -v "^raco" | tail -8; raco test racket/tests/workspace-view-test.rkt 2>&1 
+  > Read /tmp/sgl-fixture-actual.png
+
+All cells still correct, with aliased text. Updating that snapshot and checking the rest of the affected tests (engine-test expects the old pending names):
+  > $ METACAT_UPDATE_SNAPSHOTS=1 raco test racket/tests/sgl-test.rkt 2>&1 | tail -2; raco test racket/tests/sgl-test.rkt racket/tests/engine-test.rkt racket/tests/com
+  > $ sed -n 70,100p racket/tests/engine-test.rkt; grep -n "group-graphics\|find-next-space\|pending" racket/tests/engine-test.rkt | head -20
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='racket/tests/engine-test.rkt'
+s=open(p).read()
+s=rep(s,""";; names from files not ported yet raise
+  > $ grep -n "pending-procedures\|pending-variables" racket/engine/pending.rktl
+
+No pending procedures remain, so the check becomes one on a pending variable:
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='racket/tests/engine-test.rkt'
+s=open(p).read()
+s=rep(s,""";; names from files not ported yet raise
+
+Engine test passes (119). Now mutation checks, to show the new tests catch real changes, each restored afterwards. First the four engine-side builders, against the differential battery:
+  > $ cat > /tmp/port/mut.py <<'EOF'
+import sys, subprocess, time, shutil
+f, old, new, test = sys.argv[1:5]
+s = open(f).read()
+assert s.count(old) >= 1, "pattern not 
+
+Two findings. The `max 3` mutation wasn't caught: every dashed line in the battery already has n ≥ 3, so I'll add a short one. And the final clean run shows 1 failure. Checking what fails:
+  > $ git status --short racket/engine/ | head; raco test racket/tests/graphics-diff-test.rkt 2>&1 | grep -A6 FAIL | head -20
+  > $ grep -n "repeat\* until" racket/engine/bridge-graphics.rktl; ls -la --time-style=full-iso racket/engine/bridge-graphics.rktl racket/compiled/engine_rkt.zo
+
+The restored source and the mutated `.zo` share a timestamp second, the whole-second quirk already logged in anomalies. Touching the source fixes it; I'll also make the script wait before restoring:
+  > $ sleep 1 && touch racket/engine/bridge-graphics.rktl && raco test racket/tests/graphics-diff-test.rkt 2>&1 | tail -1 && sed -i 's|^    shutil.copy("/tmp/port/bac
+
+Caught now (battery at 50 tests). Next, the GUI-side mutations against the views test, about 50 s each, running in the background while I write the docs:
+  > $ T=racket/tests/workspace-view-test.rkt && {
+python3 /tmp/port/mut.py racket/gui/workspace-graphics.rktl "(desired-letter-height (round (* 28/600 win-height)))" 
+
+While those run, the docs. Checking the entry formats first:
+  > $ sed -n 1,40p docs/anomalies_and_quirks.md; tail -30 docs/anomalies_and_quirks.md; cat docs/divergences.md | head -50; grep -n "^## \|^### " docs/porting-notes.m
+  > $ grep -n "smooth\|antialias\|greyscale" docs/*.md | head
+
+Updating those mentions and adding the new divergence entry:
+  > $ sed -n 253,258p docs/anomalies_and_quirks.md; sed -n 1146,1150p docs/porting-notes.md
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+s=rep(s,"""dash) stops one pixel step short of its 
+
+Now the anomalies entries. Checking the section names:
+  > $ grep -n "^## " docs/anomalies_and_quirks.md
+  > $ python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+quirk = """### Chez's `record-case` ignores extra arguments; the port's raised
+- **Seen:** i
+
+The first GUI mutation is caught: all 6 snapshots differ. While the rest run, the porting-notes section:
+  > $ cat >> docs/porting-notes.md <<'EOF'
+
+## Workspace, bridge, group and rule graphics (item 13)
+
+**Where the graphics code goes.** In the original, the graphics f
+  > $ grep -n "sgl-battery\|battery" chez_scheme/oracle/README.md | tail -5
+  > $ sed -n 50,58p chez_scheme/oracle/README.md
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='chez_scheme/oracle/README.md'
+s=open(p).read()
+s=rep(s,"""`sgl-interpreter.ss` against it; diff-ev
+
+Three of five caught so far (6, 3 and 5 failures). Waiting for the RNG and `record-case` mutations:
+  > $ sleep 100; cat /tmp/port/mut-gui.log
+
+The background job will notify me when it finishes. Meanwhile, checking that every new file is in place for the driver's commit:
+  > $ git status --short
+
+All present. Waiting for the last two mutations, then the gate.
+  > $ until [ $(wc -l < /tmp/port/mut-gui.log) -ge 5 ]; do sleep 5; done; cat /tmp/port/mut-gui.log; cd /home/al/dev/metacat && git diff --stat racket/compat.rkt rack
+  > $ sleep 1 && touch racket/compat.rkt racket/engine/bridge-graphics.rktl racket/gui/general-graphics.rktl racket/gui/workspace-graphics.rktl && time python3 ralph_
+
+While the gate runs (about 7 minutes), the PROGRESS entry is drafted. Waiting for the result:
+  > $ until grep -q "GATE" /tmp/port/gate.log; do sleep 10; done; grep -n "GATE\|FAIL\|failures\|tests passed\|== " /tmp/port/gate.log | tail -25
+
+The gate failed with 39 failures. Looking at which tests:
+  > $ grep -n "raco test:\|location\|message" /tmp/port/gate.log | head -40; sed -n 160,180p /tmp/port/gate.log
+
+The cause is a stale `cli_rkt.zo`. `run-problem` gained a keyword, but plain `racket racket/cli.rkt` (which cli-test runs as a subprocess) doesn't recompile dependents. Checking the first error:
+  > $ sed -n 1,17p /tmp/port/gate.log; cat .gitignore 2>/dev/null | head
+
+`raco test` doesn't recompile dependents either. I'll make `tests/run-tests.sh` run `raco make` on every module first, so no test can ever see a stale `.zo`, and rerun the gate:
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='tests/run-tests.sh'
+s=open(p).read()
+s=rep(s,"""echo "== raco test racket/"
+raco test racket/""","
+
+While it runs, I'm extending the existing stale-`.zo` entry in anomalies:
+  > $ grep -n "stale" docs/anomalies_and_quirks.md | head; 
+  > $ grep -n "^### .*\.zo\|^### .*compil\|whole seconds\|whole-second" docs/anomalies_and_quirks.md | head
+  > $ sed -n 191,210p docs/anomalies_and_quirks.md
+  > $ PYTHONPATH=/tmp/port python3 - <<'EOF'
+from rep import rep
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+s=rep(s,"""- **Status:** worked around in `racket/t
+
+Drafting the PROGRESS entry while the gate runs:
+  > $ cat > /tmp/port/progress.md <<'EOF'
+
+---
+
+## Iteration 14 — 2026-10-03 03:00
+Item 13 (Workspace, bridge, group and rule graphics): **SOLVED**.
+
+### Completed
+- 
+  > $ until grep -q "GATE" /tmp/port/gate.log; do sleep 10; done; grep -n "GATE\|failures\|== " /tmp/port/gate.log | tail -15; cat /tmp/port/gate.time
+
+**The gate passed** (about 6 min). Getting the test count, then writing PROGRESS.md and marking the item:
+  > $ sed -n 36,42p /tmp/port/gate.log; git status --short tests/golden chez_scheme/original | head -3
+  > $ sed -i 's/^- `python3 ralph_loops\/loop0001\/gate.py`: GATE_RESULT\./- `python3 ralph_loops\/loop0001\/gate.py`: **GATE PASSED** (`raco test racket\/`: 1438 tes
+
+Fixing the entry's timestamp to the real time:
+  > $ now=$(date '+%Y-%m-%d %H:%M') && sed -i "s/^## Iteration 14 — 2026-10-03 03:00$/## Iteration 14 — $now/" ralph_loops/loop0001/PROGRESS.md && grep -n "^## Iterat
+
+Item 13 (Workspace, bridge, group and rule graphics) is done and the gate passes: 1438 Racket tests plus the Chez checks, in about 6 minutes. `chez_scheme/original/` and `tests/golden/` are untouched. I've marked the item `[x]`, written PROGRESS.md (now 14/18 solved) and left everything uncommitted for the driver.
+
+**Watching changes nothing.** All 109 golden runs give byte-identical traces with the Workspace window attached and drawing. The run where the original crashes also crashes at the same point, with the same trace up to the crash. I checked that the test would notice a change: making one graphics procedure draw a single random number breaks 119 checks.
+
+**How it's split:**
+- **Engine side:** the code the model calls directly when workspace graphics are on, which only builds drawing expressions, moved into the engine verbatim. That is general-graphics.ss's shape builders plus group-, bridge- and rule-graphics.ss. The engine still doesn't load racket/draw.
+- **View side:** the windows, fonts and colours are in `racket/gui/views.rkt`, which uses racket/draw but not racket/gui. Its `define` and `set!` pass any name the engine owns to the engine's `set-global!`, so the ported files stay verbatim.
+- **Windows:** windows are offscreen for now; item 15 can swap in real ones.
+
+**Pictures.** I rendered six moments of golden runs to PNG and looked at each. `abc abd mrrjjj` at 513 codelets matches the dissertation's figure taken at the same moment. The others are an answer, a snag shown as a Trace event, run7's `wyz` answer and its Memory description, and a justify run; they match the dissertation's style. All six are now pixel-snapshot tests.
+
+**Problems found on the way, all fixed:**
+- **`record-case`:** compat's version raised an error on extra arguments; Chez ignores them. trace.ss relies on that, so every run with graphics on crashed at its first answer.
+- **Text erasing:** the graphics erase text by drawing it again in white, which left grey ghosts around smoothed text. Text is now drawn unsmoothed, as in the dissertation's screenshots; this is recorded in `docs/divergences.md`. I regenerated item 12's SGL snapshot for this after inspecting it.
+- **Display list:** the SGL viewport added each item in a way that got quadratically slower over a run; that's fixed.
+- **Stale compiled files:** my first gate run failed (39 failures in `cli-test.rkt`) because a changed module left other modules' compiled files stale. `tests/run-tests.sh` now compiles every module before testing.
+
+The engine-side drawing code is also checked against the original in Chez by a new 50-test battery; all coordinates agree to the last bit. Of 11 deliberate code changes I made to check the new tests, 10 were caught at once. The eleventh was caught after I added one more battery case.
+
+One thing that looks odd but I've left alone: italic digits stick out of their yellow label boxes by a pixel. The box arithmetic is the original's.
+
+The main new files are `racket/gui/views.rkt`, `racket/gui/engine-route.rkt` and `racket/tests/workspace-view-test.rkt`. To render a moment by hand: `racket racket/tests/views-harness.rkt SCENE OUT.png`.
+
+# result: success in 2275s, 135 turns, cost $13.14

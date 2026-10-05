@@ -1,0 +1,241 @@
+# session it04 started 2026-10-04 16:49:57
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cat python/metacat/qt/fonts.py && wc -l python/metacat/qt/*.py python/tests/test_qt_canvas.py && ls python/metacat/gui/ && grep -n "font\|Font" docs/qt-gui-plan
+  > $ cat python/metacat/gui/fonts.py | head -150; wc -l python/metacat/gui/fonts.py python/metacat/gui/colors.py; grep -n "UFO\|Coderack label\|i.s and\|Xft\|taller"
+  > $ sed -n 940,975p docs/anomalies_and_quirks.md; sed -n 1300,1360p docs/anomalies_and_quirks.md; sed -n 150,299p python/metacat/gui/fonts.py; sed -n 525,545p docs/
+  > $ sed -n 1,80p python/tests/test_qt_canvas.py; grep -n "TOLERANCE\|metrics\|font" python/tests/test_qt_canvas.py | sed -n 1,60p; grep -n "font\|Font" python/metac
+
+Now let me experiment with Qt metrics vs Tk's for the fonts used.
+  > $ python3 - <<'EOF'
+import json
+d=json.load(open('python/tests/data/tk-display-lists.json'))
+for s,v in d.items():
+    m=v['metrics']
+    print(s, m['linespace'])
+  > $ python3 - <<'EOF'
+import json
+d=json.load(open('python/tests/data/tk-display-lists.json'))
+print(d.keys())
+for s,v in d['streams'].items() if 'streams' in d els
+  > $ cat > /tmp/tkm.py <<'EOF'
+import tkinter, json
+root=tkinter.Tk(); root.withdraw(); root.tk.call("tk","scaling",96/72)
+out={}
+for fam in ["helvetica","times","co
+  > $ fc-match helvetica; fc-match times; fc-match "nimbus sans l" file; fc-list | grep -i nimbus | head -30; cat > /tmp/qtm.py <<'EOF'
+import json,sys
+from PySide6.Q
+  > $ cat > /tmp/tab.py <<'EOF'
+import struct
+from PySide6.QtWidgets import QApplication
+from PySide6.QtGui import QFont,QRawFont
+app=QApplication([])
+for fam in ["he
+  > $ which fc-list fc-match python3; ls /usr/share/fonts/type1 2>/dev/null | head; fc-list | grep -i "nimbus sans l\|n019" | head; ls /usr/share/fonts/; python3 -c "
+
+Checking which font engine the Tk reference uses (it decides how metrics must be matched).
+  > $ ldd /home/al/anaconda3/lib/libtk8.6.so | grep -iE "xft|fontconfig|freetype|X11"; ls /usr/share/fonts/X11/ /usr/share/fonts/X11/Type1 2>/dev/null | head -30; xvf
+
+Found it: Anaconda's Tk is built without Xft, so it draws with X core fonts (Type 1 rasterised by the X server). Now testing whether Tk's ascent/descent can be reproduced from glyph extents in Qt.
+  > $ cat > /tmp/fit.py <<'EOF'
+import json,sys,re,math
+from PySide6.QtWidgets import QApplication
+from PySide6.QtGui import QFont,QFontMetrics,QFontMetricsF,QRawFont
+  > $ cat >> /tmp/fit.py <<'EOF'
+from collections import Counter
+c1=Counter();c2=Counter()
+for k,(a,dd,x,y,px) in res.items():
+    m=re.match(r"(.*?) (-?\d+)(.*)",k);
+  > $ sed -n 1,60p python/metacat/gui/colors.py; grep -n "^def \|^[a-z_]* = " python/metacat/gui/colors.py | head -80; grep -n "def color_rgb" -A40 python/metacat/qt/
+  > $ sed -n 60,88p python/metacat/qt/displaylist.py; grep -n "font\|Font" python/metacat/gui/swl.py | head -20; grep -rn "make_mfont\|make_fixed_font\|swl_font(" pyt
+  > $ xvfb-run -a python3 -c "
+import tkinter,tkinter.font;r=tkinter.Tk();fs=sorted(set(f.lower() for f in tkinter.font.families()));print(len(fs),fs)
+import sys;sys.
+  > $ QT_QPA_PLATFORM=offscreen python3 -c "
+from PySide6.QtWidgets import QApplication;from PySide6.QtGui import QFontDatabase,QFont,QFontInfo
+a=QApplication([])
+for
+
+Mapping decided (fontconfig families, ink-extent metrics). Now reading the text bbox and painting code before writing tests.
+  > $ sed -n 270,320p python/metacat/qt/displaylist.py; sed -n 225,254p python/metacat/qt/canvas.py; xvfb-run -a python3 -c "
+import tkinter;r=tkinter.Tk();r.tk.call(
+  > $ sed -n 615,635p python/metacat/qt/displaylist.py; sed -n 665,690p python/metacat/qt/displaylist.py; grep -n "^class TclError\|^def split_list" -A12 python/metac
+
+Now the UFO check: rendering the Coderack labels at small pixel sizes in Tk (Xvfb) and in Qt.
+  > $ sed -n 25,66p python/metacat/gui/coderack_graphics.py
+  > $ mkdir -p /tmp/ufo && cd /home/al/dev/metacat && cat > /tmp/ufo/tk.py <<'EOF'
+import tkinter
+r=tkinter.Tk(); r.tk.call('tk','scaling',96/72)
+c=tkinter.Canvas(r,w
+  > $ grep -rn "def .*screenshot\|xwd\|ImageGrab\|def grab" python/tests/*.py python/metacat/gui/*.py | head
+  > $ sed -n 85,130p python/tests/render_sgl_fixture.py
+  > $ cat > /tmp/ufo/tk.py <<'EOF'
+import sys, tkinter
+sys.path.insert(0,'python/tests'); sys.path.insert(0,'python')
+import render_sgl_fixture as R
+from pathlib impo
+  > Read /tmp/ufo/tk3.png
+
+Reproduced in Tk: at 8–9 px the `i`s and `l`s vanish (X server's core-font rasteriser). Now the same in Qt.
+  > $ cat > /tmp/ufo/qt.py <<'EOF'
+import sys
+sys.path.insert(0,'python')
+from PySide6.QtWidgets import QApplication
+from PySide6.QtGui import QImage, QPainter, QColo
+  > Read /tmp/ufo/qt3.png
+
+Qt draws every letter at the same widths. Now writing the tests. First, the text bbox formula and the Tk reference data I'll need.
+  > $ grep -n '"text"' python/metacat/qt/displaylist.py | head; grep -n 'if kind == "text"' -A16 python/metacat/qt/displaylist.py | head -30; sed -n 40,60p python/tes
+  > $ grep -n 'text_layout(measure)' -B3 -A12 python/metacat/qt/displaylist.py | head -40
+  > $ sed -n 80,100p python/tests/test_qt_canvas.py; sed -n 136,170p python/tests/test_qt_canvas.py; sed -n 405,440p python/tests/canvas_streams.py
+  > Write /home/al/dev/metacat/python/tests/tk_fonts_colors.py
+  > $ cd /home/al/dev/metacat/python && env -u WAYLAND_DISPLAY xvfb-run -a -s "-screen 0 1280x1024x24" python3 tests/tk_fonts_colors.py tests/data/tk-fonts-colors.jso
+
+Reference recorded. Writing the test file before the code.
+  > $ grep -n "_qcolor" metacat/qt/canvas.py | head -3; grep -n "^def tcl_word" -A30 metacat/gui/swl.py | head -40; grep -n "Rgb\|swl_color" metacat/gui/constants.py 
+  > Write /home/al/dev/metacat/python/tests/test_qt_fonts.py
+  > $ QT_QPA_PLATFORM=offscreen timeout 600 python3 -m pytest -q -x --no-header -p no:cacheprovider tests/test_qt_fonts.py 2>&1 | tail -5; QT_QPA_PLATFORM=offscreen t
+
+40 failed, 24 passed before any code. Looking at the failures that aren't just missing modules:
+  > $ QT_QPA_PLATFORM=offscreen timeout 600 python3 -m pytest -q --no-header tests/test_qt_fonts.py -k "widths or bbox_is or drawn or tiny" 2>&1 | grep -E "^E  " | he
+  > $ sed -i 's/        assert c.tcl("bbox", item) == (9, 20,/        assert list(c.tcl("bbox", item)) == [9, 20,/; s/20 + metrics().linespace(font) \* len(lines))$/2
+  > Edit /home/al/dev/metacat/python/tests/test_qt_fonts.py
+  > $ cd /tmp && env -u WAYLAND_DISPLAY xvfb-run -a python3 -c "
+import tkinter;r=tkinter.Tk()
+for f in ['-family courier -weight heavy','-family courier -slant x','-
+  > Write /home/al/dev/metacat/python/metacat/qt/fontspec.py
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+import re
+p='metacat/qt/displaylist.py'
+s=open(p).read()
+old='''    if option == "-font":
+        return tup
+
+Writing `qt/fonts.py` now (ink-extent metrics, fontconfig families, `install()`).
+  > $ sed -n 36,100p metacat/qt/canvas.py; grep -n "dirty\|restacked" metacat/qt/displaylist.py | head -20
+  > $ python3 - <<'EOF'
+p='metacat/qt/canvas.py'
+s=open(p).read()
+old='''def _qcolor(word):'''
+new='''class HiddenCanvas(QtCanvas):
+    """port: fonts.ss's *hidden-ca
+  > Write /home/al/dev/metacat/python/metacat/qt/fonts.py
+  > $ grep -rn "fonts\.\(DEFAULT_FONT\|font_words\)" metacat tests | head; QT_QPA_PLATFORM=offscreen timeout 600 python3 -m pytest -q --no-header tests/test_qt_fonts.
+  > $ sed -i 's/    assert c.tcl("find", "all") == ()$/    assert not c.tcl("find", "all")/; s/        assert hidden.tcl("find", "all") == ()$/        assert not hidd
+  > $ grep -n "def test_tiny_coderack" -A22 tests/test_qt_fonts.py
+  > $ python3 - <<'EOF'
+p='tests/test_qt_fonts.py'
+s=open(p).read()
+i=s.index('def test_tiny_coderack_labels_keep_their_thin_letters')
+j=s.index('# ------------------
+  > $ QT_QPA_PLATFORM=offscreen python3 - <<'EOF'
+import sys; sys.path.insert(0,'tests')
+from PySide6.QtWidgets import QApplication
+app=QApplication([])
+from test_qt_
+  > $ python3 - <<'EOF'
+p='tests/test_qt_fonts.py'
+s=open(p).read()
+old='''        if size >= 7:
+            strokes = sum(1 for x in range(1, 60) if dark[x] and not 
+
+All 64 pass. Now tightening the Qt-vs-Tk text tolerance in `test_qt_canvas.py`:
+  > $ for t in 0 1 2 3 4; do sed -i "s/^TEXT_TOLERANCE = .*/TEXT_TOLERANCE = $t/" tests/test_qt_canvas.py; echo "tol $t: $(QT_QPA_PLATFORM=offscreen timeout 600 pytho
+  > $ sed -i "s/^TEXT_TOLERANCE = .*/TEXT_TOLERANCE = 2/" tests/test_qt_canvas.py && python3 - <<'EOF'
+p='tests/test_qt_canvas.py'
+s=open(p).read()
+old='''# Qt's font
+  > $ grep -n "QT_SCREENSHOT" -B3 -A12 tests/test_qt_canvas.py | sed -n 1,60p | grep -v "^--$" | tail -40; QT_QPA_PLATFORM=offscreen timeout 900 python3 -m pytest -q 
+  > $ grep -n "QT_SCREENSHOT\|SCREENSHOT\b\|def test_sgl\|match\|0.9" tests/test_qt_canvas.py | sed -n 1,30p
+  > $ sed -n 280,335p tests/test_qt_canvas.py
+  > $ QT_QPA_PLATFORM=offscreen python3 - <<'EOF'
+import sys; sys.path.insert(0,'tests')
+from PySide6.QtWidgets import QApplication
+app=QApplication([])
+import test_q
+
+Pixel match vs the tkinter fixture rose from 97.7% to 97.8%. Looking at the new picture:
+  > Read /tmp/ufo/sgl-qt-new.png
+  > Read /home/al/dev/metacat/docs/screenshots/panels/sgl-fixture-python.png
+
+The pictures agree. Updating the committed Qt fixture screenshot, then adding a small script for the Tk/Qt small-text comparison pictures.
+  > $ cp /tmp/ufo/sgl-qt-new.png ../docs/screenshots/panels/sgl-fixture-qt.png && cat > tests/render_small_text.py <<'EOF'
+"""The Coderack's small labels drawn by Tk 
+  > Read /home/al/dev/metacat/docs/screenshots/panels/small-text-tk.png
+  > Read /home/al/dev/metacat/docs/screenshots/panels/small-text-qt.png
+
+Tk drops `i`/`l` at 8–10 px; Qt keeps every letter. Checking the Coderack's real label size, then the docs.
+  > $ grep -rn "coderack.*height\|coderack.*width" metacat/gui/constants.py | head -5; grep -n "Python Qt" -A30 ../docs/divergences.md | head -50
+  > $ grep -n "select_coderack_fonts(" metacat/gui/*.py | head; grep -n "coderack" metacat/gui/constants.py | head
+  > $ cd /home/al/dev/metacat && python3 -c "
+from PIL import Image
+for f in ['docs/screenshots/panels/coderack-run7-answer.png']: im=Image.open(f); print(f, im.size,
+
+Default Coderack labels are 8 px, exactly where Tk loses them. Updating the docs now.
+  > $ sed -n 1,30p docs/anomalies_and_quirks.md; sed -n 180,240p docs/screenshots/README.md; grep -n "Fonts\*\* (item 03)" -A8 docs/qt-gui-plan.md
+
+Now the doc edits (screenshots README, plan, divergences, anomalies).
+  > $ python3 - <<'EOF'
+import re
+def rep(p, old, new):
+    s=open(p).read(); assert s.count(old)==1,(p,old[:50]); open(p,'w').write(s.replace(old,new))
+
+# screenshot
+  > $ cd /home/al/dev/metacat/python && QT_QPA_PLATFORM=offscreen python3 -c "
+from PySide6.QtWidgets import QApplication;a=QApplication([])
+from metacat.qt import fo
+  > $ cd /home/al/dev/metacat && python3 - <<'EOF'
+def rep(p, old, new):
+    s=open(p).read(); assert s.count(old)==1,(p,old[:60]); open(p,'w').write(s.replace(old,ne
+  > $ cd /home/al/dev/metacat/python && QT_QPA_PLATFORM=offscreen python3 - <<'EOF'
+import json,sys
+sys.path.insert(0,'tests')
+from PySide6.QtWidgets import QApplicat
+  > $ cd /home/al/dev/metacat && sed -i 's/from the ink of the font.s printable Latin-1 glyphs: over 336 fonts/from the ink of the font'"'"'s printable Latin-1 glyphs
+
+Now `python/tests/README.md` rows, then the fast Qt + inventory tests.
+  > $ cd /home/al/dev/metacat/python && grep -n "test_qt_canvas\|canvas_streams\|1454\|1028\|426" tests/README.md
+  > $ QT_QPA_PLATFORM=offscreen python3 -m pytest -q --no-header tests/test_qt_fonts.py --collect-only -q 2>&1 | tail -1; QT_QPA_PLATFORM=offscreen python3 -m pytest 
+  > $ QT_QPA_PLATFORM=offscreen python3 -m pytest --no-header tests/test_qt_fonts.py --collect-only -q 2>&1 | tail -2; QT_QPA_PLATFORM=offscreen python3 -m pytest --n
+  > $ python3 - <<'EOF'
+p='tests/README.md'
+s=open(p).read()
+def rep(old,new):
+    global s; assert s.count(old)==1,old[:40]; s=s.replace(old,new)
+rep("all 1454 tests
+
+Fast tier green. Running the gate (about 8 minutes).
+  > $ cd /home/al/dev/metacat && timeout 1500 python3 ralph_loops/loop0003/gate.py 2>&1 | tail -15
+
+Gate passed (1518 tests). Writing PROGRESS.md and marking the item.
+  > $ cd /home/al/dev/metacat/ralph_loops/loop0003 && grep -n "03 Fonts and colours" iterations.md && sed -i 's/^- \[ \] \*\*03 Fonts and colours\.\*\*/- [x] **03 Fon
+  > $ cat >> PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 4 — 2026-10-04 17:08:35
+Item **03 Fonts and colours**: SOLVED.
+
+### Completed
+- **Tests first, and they failed fir
+
+Item 03 (fonts and colours) is done and marked `[x]`. The gate passed: 1518 tests in 7:37, and `racket/` is unchanged. Eight items are still open, so there's no `LOOP_COMPLETE` line. I haven't committed anything.
+
+**The Coderack question:** in Qt, the `i`s and `l`s render. The cause on the Tk side is that the Tk tkinter loads here (Anaconda's) is built without Xft (Linux's antialiased-font library). It draws with old X core fonts, which the X server turns into black-and-white bitmaps from Type 1 font files. At 8, 9 and 10 pixels those bitmaps give the thin strokes of `i` and `l` no pixels; at 7 and 11 pixels they survive. The default Coderack is 598 pixels high, so its labels are exactly 8 pixels. A real screen with this same Tk would lose them too. I put a side-by-side comparison in `docs/screenshots/panels/small-text-tk.png` and `small-text-qt.png` (I looked at both), and updated the anomalies entry to "explained". The tkinter GUI is left as it is.
+
+**What changed:**
+- **Font mapping:** a new file, `qt/fontspec.py`, reads Tk font descriptions the way Tk 8.6 does, in all their forms, and gives Tk's own error messages. The canvas now rejects a bad font as Tk does.
+- **Text measurement:** `qt/fonts.py` measures with the same Qt font it draws with.
+  - Widths: 97% of the sample widths are exactly Tk's. The worst case is 22-pixel bold Helvetica, up to 6 pixels apart, because the two programs round the letters differently.
+  - Heights: Qt's own font heights were up to 7 pixels taller than Tk's. I now take them from the letters' actual extents, the way X core fonts work. All heights are now within 3 pixels of Tk's, and the baseline is within 1.
+- **Panels use the Qt fonts:** a new `install()` makes the panels' font code choose its fonts from what Qt has and measure text on a Qt canvas. Item 04 needs to call it at startup.
+- **Text tolerance:** the allowed difference between Qt's and Tk's text boxes in `test_qt_canvas.py` went from 6 pixels to 2.
+- **Colours:** all 752 colour names in `colors.py` are read as Tk reads them, and Qt paints exactly those colours. Five standard names (gray, grey, green, maroon, purple) come out with Tk's values rather than `colors.py`'s; that was already logged in item 02.
+- **Tests:** written first in `python/tests/test_qt_fonts.py`; the first run gave 40 failed, 24 passed. The Tk reference data was recorded under Xvfb into `python/tests/data/tk-fonts-colors.json`.
+
+**One visible difference you might not expect:** the Qt GUI picks Liberation Serif for the "serif" font where the tkinter GUI uses Nimbus Roman. That's because fontconfig maps the original's first choice, "times new roman", to Liberation Serif. The two fonts have about the same letter widths, but serif text sits a little differently from the tkinter screenshots. It's recorded in `docs/divergences.md`, along with the antialiased text.
+
+All of this is written up in `PROGRESS.md` (iteration 4), `docs/anomalies_and_quirks.md`, `docs/qt-gui-plan.md` and the two test/screenshot READMEs.
+
+# result: success in 1150s, 78 turns, cost $3.97

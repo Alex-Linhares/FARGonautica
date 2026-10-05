@@ -1,0 +1,74 @@
+# session it09_fix2 started 2026-10-05 00:53:19
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cat python/run-tests.sh; cd python && python3 -m pytest --collect-only -q 2>/dev/null | sed -n '1565,1600p'; python3 -m pytest --collect-only -q 2>/dev/null | t
+  > $ python3 -m pytest --collect-only -q 2>/dev/null | grep -n '' | sed -n '1500,1585p' | grep -v test_qt_engine | head -80; python3 -m pytest --collect-only -q 2>/d
+  > $ QT_QPA_PLATFORM=offscreen timeout 300 python3 -m pytest -x -q tests/test_qt_panes.py 2>&1 | tail -5; echo rc=$?
+  > $ grep -n "def test_fonts_measure_from_several_threads_at_once" -A40 tests/test_qt_panes.py
+  > $ QT_QPA_PLATFORM=offscreen timeout 400 python3 -m pytest -x -q tests/test_qt_menus.py tests/test_qt_panes.py 2>&1 | tail -5; echo rc=$?
+
+Narrowed the hang to test #1574 (`test_fonts_measure_from_several_threads_at_once`); it passes in isolation, so now running all Qt tests together to reproduce.
+  > $ QT_QPA_PLATFORM=offscreen timeout 900 python3 -m pytest -x -q -o faulthandler_timeout=200 tests/test_qt_*.py 2>&1 | tail -60; echo rc=$?
+  > $ git diff --stat; grep -rn "thread" metacat/qt/canvas.py metacat/qt/hosts.py | head -40
+  > $ sed -n 30,80p metacat/qt/canvas.py; sed -n 110,200p metacat/qt/canvas.py; git diff metacat/qt/hosts.py metacat/qt/app.py metacat/qt/mainwindow.py
+  > $ which py-spy gdb; sleep 1; ps aux | grep pytest | grep -v grep | head
+  > $ kill -ABRT 2217879; sleep 3; cat /tmp/claude-1000/-home-al-dev-metacat/74ccf7bc-d9ac-46e2-a87f-8508246e51f2/tasks/bqzkxegd7.output | head -150
+  > $ grep -v "site-packages\|frozen" /tmp/claude-1000/-home-al-dev-metacat/74ccf7bc-d9ac-46e2-a87f-8508246e51f2/tasks/bqzkxegd7.output | head -80; grep -c Thread /tm
+
+Got a partial thread dump: the main thread is stuck garbage-collecting inside `join()` while the font-measuring workers are blocked. Re-running to capture the full dump.
+  > $ QT_QPA_PLATFORM=offscreen timeout 900 python3 -m pytest -x -q -o faulthandler_timeout=150 tests/test_qt_*.py > /tmp/qt_hang.txt 2>&1; echo rc=$?
+  > $ cat metacat/qt/fonts.py | sed -n 1,400p | grep -n "def \|Lock\|lock\|thread\|QFontMetrics\|QTextLayout\|QFont(" | head -60
+  > $ sed -n 40,135p metacat/qt/fonts.py
+  > $ grep -n "QThread\|Blocking\|__del__\|QTimer\|QEventLoop\|exec()\|\.exec\b\|weakref\|destroyed" metacat/qt/*.py | head -40
+  > $ sed -n 130,275p metacat/qt/controls.py
+  > $ sleep 200; grep -n "Thread\|File \"/home/al/dev\|Garbage\|Timeout" /tmp/qt_hang.txt | head -80
+  > $ timeout 500 bash -c 'until grep -q "Timeout\|passed\|failed" /tmp/qt_hang.txt; do sleep 5; done'; grep -n "Thread\|File \"/home/al/dev\|Garbage\|Timeout\|passed
+  > $ P=$(pgrep -f "pytest -x -q -o faulthandler_timeout=150" | head -1); echo $P; timeout 120 gdb -p $P -batch -ex "thread apply 1 bt 40" 2>&1 | grep -v "^\[New\|^wa
+  > $ P=2220059; for t in /proc/$P/task/*; do echo "$(basename $t) $(cat $t/comm) $(cat $t/wchan) $(awk '{print $3}' $t/stat)"; done
+  > $ P=$(pgrep -f "python3 -m pytest -x -q -o faulthandler_timeout=150"); echo $P; for t in /proc/$P/task/*; do echo "$(basename $t) $(cat $t/comm) $(cat $t/wchan) $
+  > $ P=2220061; for t in /proc/$P/task/*; do echo "$(basename $t) $(cat $t/comm) $(cat $t/wchan) $(awk '{print $3, $14, $15}' $t/stat)"; done; cat /proc/$P/task/$P/s
+  > $ pkill -f "faulthandler_timeout=150"; cd /home/al/dev/metacat/python && (QT_QPA_PLATFORM=offscreen timeout 600 python3 -m pytest -x -q -p no:cacheprovider -o fau
+
+Bisecting which earlier test file triggers the hang (running two test-file combinations in parallel).
+  > $ (QT_QPA_PLATFORM=offscreen timeout 600 python3 -m pytest -x -q -p no:cacheprovider -o faulthandler_timeout=100 tests/test_qt_canvas.py tests/test_qt_engine.py t
+  > $ timeout 580 bash -c 'until grep -q "Timeout\|passed\|failed\|error" /tmp/h_nomenus.txt && grep -q "Timeout\|passed\|failed\|error" /tmp/h_engmenus.txt; do sleep
+  > $ grep -n "Error\|assert\|^E " /tmp/h_engmenus.txt | head -30
+  > $ sed -n 1,80p /tmp/h_engmenus.txt
+
+That failure came from my two parallel runs writing to the same screenshot directory, so it doesn't count. Without the menus tests, everything passed. Now running engine + menus + panes on their own.
+  > $ QT_QPA_PLATFORM=offscreen timeout 500 python3 -m pytest -x -q -p no:cacheprovider -o faulthandler_timeout=100 tests/test_qt_engine.py tests/test_qt_menus.py tes
+
+Passed this time, so it depends on GC timing. Looking at what `test_qt_menus` leaves behind in-process.
+  > $ grep -n "^def \|^@\|subprocess\|qapp\|fixture" tests/test_qt_menus.py | head -60
+  > $ sed -n 130,150p metacat/qt/displaylist.py; sed -n 105,125p metacat/qt/fontspec.py; head -40 tests/test_qt_menus.py | grep import
+  > $ sed -n 55,75p metacat/gui/app.py; sed -n 55,66p metacat/gui/general_graphics.py; sed -n 60,80p /tmp/qt_hang.txt
+  > $ sed -n 80,86p /tmp/qt_hang.txt; sed -n 1,4p /tmp/qt_hang.txt | cut -c1-200
+  > $ mkdir -p /tmp/gcprobe && cat > /tmp/gcprobe/gcprobe.py <<'EOF'
+import gc, collections
+def pytest_runtest_setup(item):
+    if item.name == "test_fonts_measure_fr
+  > $ grep -n "MainWindow\|make_host\|QtHost(\|def test_\|close()\|deleteLater\|gc\.\|setup(" tests/test_qt_panes.py | head -80
+
+Those 11 hosts come from the in-process `MainWindow` tests in `test_qt_panes.py` (closed but never collected). Checking the conftest for an existing teardown hook.
+  > $ grep -n "def \|gc\|fixture" tests/conftest.py | head -40; sed -n 300,360p tests/test_qt_panes.py; sed -n 96,116p tests/test_qt_panes.py
+
+I'll fix it in `conftest.py`: after each test that uses the Qt application, run a cycle collection on the GUI thread so leftover widgets are always freed there.
+  > $ cat tests/conftest.py
+  > Edit /home/al/dev/metacat/python/tests/conftest.py
+
+Now verifying with the garbage probe over the full Qt test set.
+  > $ PYTHONPATH=/tmp/gcprobe QT_QPA_PLATFORM=offscreen timeout 500 python3 -m pytest -x -q -s -p no:cacheprovider -p gcprobe tests/test_qt_*.py 2>&1 | grep -a "GARBA
+
+No Qt garbage is left before the threaded test now. Next, logging the anomaly per the project rules.
+  > $ cd /home/al/dev/metacat && sed -n 1,30p docs/anomalies_and_quirks.md; git diff docs/anomalies_and_quirks.md | head -50
+  > Edit /home/al/dev/metacat/docs/anomalies_and_quirks.md
+
+Now running the full gate.
+  > $ timeout 2400 python3 ralph_loops/loop0003/gate.py > /tmp/gate_out.txt 2>&1; echo rc=$? >> /tmp/gate_out.txt
+  > $ timeout 2350 bash -c 'until grep -q "^rc=" /tmp/gate_out.txt; do sleep 10; done'; tail -8 /tmp/gate_out.txt
+  > $ tail -30 ralph_loops/loop0003/PROGRESS.md
+  > $ git diff ralph_loops/loop0003/iterations.md ralph_loops/loop0003/PROGRESS.md; grep -n "GATE_PLACEHOLDER" ralph_loops/loop0003/PROGRESS.md
+  > $ grep -n "\[!\]\|\[x\]\|\[ \]" ralph_loops/loop0003/iterations.md | head; grep -n "'\[!\]'\|\[!\]\|\\\\\[x" ralph_loops/loop0003/loop.py | head; sed -n 515,535p 
+
+The gate is still running. Once it passes I'll fill in item 06's gate line and add the fix to PROGRESS.md.
+  > $ timeout 2300 bash -c 'until grep -q "^rc=" /tmp/gate_out.txt; do sleep 10; done'; tail -8 /tmp/gate_out.txt | cut -c1-300

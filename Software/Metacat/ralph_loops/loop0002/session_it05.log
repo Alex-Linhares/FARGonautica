@@ -1,0 +1,203 @@
+# session it05 started 2026-10-03 19:32:25
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; ls python/metacat python/tests python/oracle; wc -l chez_scheme/original/{constants,setup,coderack,descriptions}.ss tests/diff/coderack
+  > $ cd /home/al/dev/metacat; cat tests/diff/coderack-battery.scm
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/setup.ss; cat chez_scheme/original/coderack.ss
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/descriptions.ss; grep -n "define\|^;" chez_scheme/original/constants.ss | head -150
+  > $ cd /home/al/dev/metacat; sed -n 995,1074p chez_scheme/original/constants.ss; sed -n 40,169p chez_scheme/original/setup.ss
+  > $ cd /home/al/dev/metacat; sed -n 19,400p chez_scheme/original/coderack.ss
+  > $ cd /home/al/dev/metacat; sed -n 400,655p chez_scheme/original/coderack.ss
+  > $ cd /home/al/dev/metacat; wc -l python/metacat/*.py python/tests/*.py; ls racket/; grep -n "port:" racket/coderack.rkt racket/setup.rkt racket/constants.rkt rack
+  > $ cd /home/al/dev/metacat; ls racket/engine racket/tests | head -80; grep -n "port:" racket/engine/coderack* racket/engine/setup* racket/engine/constants* racket/
+
+Reading the original coderack/setup/constants/descriptions and the Racket port before writing tests.
+  > $ cd /home/al/dev/metacat; diff <(sed -n 19,700p chez_scheme/original/coderack.ss) racket/engine/coderack.rktl | head -120; grep -n "port" racket/engine/constants
+  > $ cd /home/al/dev/metacat; cat tests/diff/helpers.scm | grep -v "^;;" | head -150; cat racket/tests/coderack-diff-test.rkt | head -80
+  > $ cd /home/al/dev/metacat; cat python/metacat/sugar.py
+  > $ cd /home/al/dev/metacat; sed -n 1,200p python/tests/test_utilities.py
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/python-translation-plan.md; sed -n '/## Module structure/,/## Names/p' docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 143,240p docs/python-translation-plan.md; sed -n 354,552p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 19,120p racket/engine/constants.rktl; grep -n "swl-color\|make <rgb>\|swl-font" chez_scheme/oracle/prelude.ss | head; sed -n 1,8
+
+Checking where the coderack's free names (display/step globals, colours) live.
+  > $ cd /home/al/dev/metacat; for n in '\*display-mode?\*' '\*step-mode?\*' '%step-cycles%' '%codelet-highlight-pause%' '%coderack-codelet-count-font%' 'define pause
+  > $ cd /home/al/dev/metacat; cat racket/engine/view-globals.rktl | sed -n 1,80p
+  > $ cd /home/al/dev/metacat; sed -n 43,90p chez_scheme/original/constants.ss; sed -n 960,995p chez_scheme/original/constants.ss; grep -n "rgb\|swl-font\|platform" c
+  > $ cd /home/al/dev/metacat; cat ralph_loops/loop0002/iterations.md; cat python/run-tests.sh; cat ralph_loops/loop0002/gate.py | head -60
+  > $ cd /home/al/dev/metacat; grep -n "def test_\|parametrize\|codelet-type-list\|codelet_type_list\|define_codelet\|engine_module(" python/tests/test_utilities.py |
+  > $ cd /home/al/dev/metacat/python/fixtures/coderack; ls -S | head; for f in 001* 002* 003* 012* 014* 015* 029* 033* 034* 035* 041*; do echo "== $f"; head -c 1500 $
+
+Now checking the utilities.py API names I'll call.
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^[a-zA-Z_]* = " metacat/utilities.py | awk -F'[ (]' '{printf "%s ", $2}'; echo; grep -n "^def \|^class \|^[A-Za-
+  > $ cd /home/al/dev/metacat/python; sed -n 1,60p metacat/utilities.py; grep -n "^def make_table\|^def table_ref\|^def stochastic_pick\|^def random_pick\|^def percen
+  > $ cd /home/al/dev/metacat/python; grep -n "^def \|^class " metacat/chez.py | awk '{print $2}' | cut -d'(' -f1 | tr '\n' ' '; echo; sed -n '/^def printf/,/^def [a-
+  > $ cd /home/al/dev/metacat/python/fixtures/coderack; for f in 000* 004* 006* 007* 010* 011* 013* 019* 027* 028* 030* 031* 032* 038* 039* 040* 042*; do echo "== $f"
+  > $ cd /home/al/dev/metacat/chez_scheme/original; for n in 'letter?' 'workspace?' 'contains?' 'fully-active?' 'temp-adjusted-probability' '%built%' '%proposed%' '%e
+  > $ cd /home/al/dev/metacat/python; sed -n 30,187p metacat/objects.py; sed -n 1,80p tests/test_chez.py | sed -n 20,80p
+  > $ cd /home/al/dev/metacat/python/fixtures/coderack; head -c 3000 016*; echo; grep -o "))))) . ((1[05] \|)))) . ((0 . (#t" 015* | head -3
+
+Writing the tests first. Getting the load order from metacat.ss for `engine.py`.
+  > $ cd /home/al/dev/metacat; grep -o '(load "[^"]*")' chez_scheme/original/metacat.ss | tr '\n' ' '; echo; grep -n "fizzle\|define-codelet-procedure" -A12 chez_sche
+
+Now the shared test helper (moving `engine_module` out of test_utilities.py so both batteries use it):
+  > $ cd /home/al/dev/metacat/python/tests; cat > engine_stubs.py <<'EOF'
+"""Stand-ins for engine modules that are not translated yet (test helper).
+
+Part of the Pyth
+  > $ cd /home/al/dev/metacat/python/tests; sed -n 1395,1530p test_utilities.py
+
+Now the coderack battery test file:
+  > Write /home/al/dev/metacat/python/tests/test_coderack.py
+  > $ cd /home/al/dev/metacat/python && sed -i 's/coderack\.utilities\.print_/utilities.print_/g; s/^from metacat import chez, sugar$/from metacat import chez, sugar,
+  > $ python3 -m pytest -x -q tests/test_coderack.py 2>&1 | grep -m3 Error; python3 -m pytest -q tests/test_utilities.py 2>&1 | tail -2
+
+Tests fail as expected (`ImportError: cannot import name 'engine'`). Now the code — `view_globals.py` first:
+  > Write /home/al/dev/metacat/python/metacat/view_globals.py
+  > Write /home/al/dev/metacat/python/metacat/constants.py
+  > Write /home/al/dev/metacat/python/metacat/setup.py
+  > $ python3 - <<'EOF'
+p='metacat/setup.py'
+s=open(p).read()
+s=s.replace('\n\nfrom metacat.chez import String as _String  # noqa: E402\n','\n')
+s=s.replace('from met
+
+Now `coderack.py`:
+  > Write /home/al/dev/metacat/python/metacat/coderack.py
+  > $ sed -i 's/i = _metacat.utilities.floor(/i = floor(/; s/^                               first, hundred_minus,/                               first, floor, hundre
+
+Now `descriptions.py`:
+  > Write /home/al/dev/metacat/python/metacat/descriptions.py
+  > $ sed -i 's/    if not tell(_metacat.workspace.g_workspace, "object-exists?", object_):/    if tell(_metacat.workspace.g_workspace, "object-exists?", object_) is 
+
+Now `engine.py`:
+  > Write /home/al/dev/metacat/python/metacat/engine.py
+  > $ python3 -m pytest -x -q tests/test_coderack.py 2>&1 | tail -30
+  > $ sed -i 's/    assert list(CASES) == manifest("coderack")/    assert list(CASES) == list(manifest("coderack"))/' tests/test_coderack.py && python3 -m pytest -q t
+
+All 50 pass on the first run. Running the full suite, then mutation checks to make sure the cases really bite.
+  > $ bash run-tests.sh --fast 2>&1 | tail -3
+  > $ python3 -m pytest -q tests/test_utilities.py tests/test_coderack.py 2>&1 | tail -2; python3 -m pytest -q -p no:randomly tests/test_coderack.py tests/test_utilit
+
+Now mutation checks — a script that applies each mutation, runs the coderack tests, and restores:
+  > $ mkdir -p /tmp/mut && cat > /tmp/mut/mutate.py <<'EOF'
+import subprocess, sys, pathlib
+root = pathlib.Path("/home/al/dev/metacat/python")
+M = [
+ ("coderack", "th
+
+The mutation run spilled into the background; I'll wait for it in the foreground before touching any file (it rewrites modules as it goes).
+  > $ pid=$(pgrep -f /tmp/mut/mutate.py | head -1); echo $pid; timeout 580 tail --pid=$pid -f /dev/null; cat /tmp/claude-1000/-home-al-dev-metacat/e3dc8c22-b39b-4fb9-
+  > $ pgrep -f /tmp/mut/mutate.py; cat /tmp/claude-1000/-home-al-dev-metacat/e3dc8c22-b39b-4fb9-a51c-8513984af811/tasks/btz677f9o.output; ps aux | grep pytest | grep 
+  > $ timeout 590 bash -c 'while pgrep -f /tmp/mut/mutate.py >/dev/null; do read -t 5 < /dev/zero 2>/dev/null || true; done'; pgrep -f /tmp/mut/mutate.py; cat /tmp/cl
+  > $ cd /tmp/mut && python3 - <<'EOF'
+import re
+s=open('mutate.py').read()
+s=s.replace('"-q", "tests/test_coderack.py"]','"-q", "-x", "--tb=no", "tests/test_coderack
+
+The remaining TIMEOUTs are pytest's assertion rewriting diffing multi-MB strings. I'll make the battery assertion report the first divergence instead (useful anyway), then re-check:
+  > $ python3 - <<'EOF'
+p='tests/test_coderack.py'
+s=open(p).read()
+old='''    assert canon(CASES[name]()) == fixture("coderack", name)
+'''
+new='''    got = canon(CAS
+  > $ sed -n 1,40p oracle/batteries/utilities-extra-battery.scm; grep -n "b:set-global" ../chez_scheme/oracle/diff-eval.ss ../tests/diff/helpers.scm | head -3; grep -
+  > $ cat > oracle/batteries/coderack-extra-battery.scm <<'EOF'
+;;; coderack-extra-battery.scm -- coderack.ss cases that
+;;; tests/diff/coderack-battery.scm does not 
+
+Chez's answers are in. Now the Python side of these two cases, plus updating test_fixtures' expected list of local batteries:
+  > $ cat >> tests/test_coderack.py <<'EOF'
+
+
+# python/oracle/batteries/coderack-extra-battery.scm ------------------------------------
+# Written after the code (a mu
+
+Passes. Confirming the surviving mutant now dies:
+  > $ cd /tmp/mut && python3 - <<'EOF'
+s=open('mutate2.py').read()
+lines=[l for l in s.split('\n') if not l.startswith(' ("') or 'adjust-urgency python min/max' in l]
+
+Caught. Removing the `Fraction` import I'd added to coderack.py only for a mutant, then checking the evaluation-order sites against Racket's notes:
+  > $ sed -i '/^from fractions import Fraction as F$/d' metacat/coderack.py && grep -n "Fraction" metacat/coderack.py; grep -n -i "coderack\|descriptions.ss\|setup.ss
+  > $ cd /home/al/dev/metacat && sed -n 300,395p docs/porting-notes.md
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+p='metacat/descriptions.py'
+s=open(p).read()
+old='''        # chez: a two-binding let inside a lambda evalua
+
+I'll log the pytest trap (a Python-specific surprise) in the anomalies file. Checking the entry format:
+  > $ cd /home/al/dev/metacat && sed -n 1,18p docs/anomalies_and_quirks.md; sed -n 483,507p docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat/python && grep -n "def _is_number" -A5 metacat/chez.py; python3 -c "
+from metacat import chez
+try: print(chez.sub(5, False))
+except Exce
+  > $ cd /home/al/dev/metacat && python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+anchor='\n## 🔗 Hidden couplings'
+entry='''
+### Python's `bool` is
+
+Now the plan's "As built" notes and the README:
+  > $ grep -n "" python/README.md | sed -n 1,200p | grep -n "utilities\|sugar\|objects\|##" | head -20; grep -n "^## Names" docs/python-translation-plan.md
+  > $ sed -n 40,70p python/README.md
+  > $ cat >> python/README.md <<'EOF'
+- `metacat/engine.py`: metacat.ss's load order. `engine.load()` calls each translated
+  module's `load()` once (the top-level de
+
+Running the gate:
+  > $ python3 ralph_loops/loop0002/gate.py 2>&1 | tail -8
+
+Gate passes (435 tests, 33 s, including the slow re-capture). A quick speed figure for item 12:
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+import timeit
+from metacat import engine, coderack, setup, chez
+from metacat.objects import tell
+engine.load
+
+Now PROGRESS.md and iterations.md:
+  > $ cd /home/al/dev/metacat/ralph_loops/loop0002 && sed -i 's/^- \*\*Current\*\*: 4\/18 SOLVED/- **Current**: 5\/18 SOLVED/' PROGRESS.md && sed -i 's/^- \[ \] \*\*0
+  > $ cat >> PROGRESS.md <<'EOF'
+
+---
+
+## Iteration 5 — 2026-10-03 20:19
+
+### Completed
+Item 04, constants, setup, coderack and descriptions: **SOLVED**.
+- **Tests fi
+
+Final gate run after the doc edits:
+  > $ cd /home/al/dev/metacat && python3 ralph_loops/loop0002/gate.py 2>&1 | tail -3; git status --short
+
+Item 04 (constants, setup, coderack, descriptions) is done: all 43 tests of `coderack-battery.scm` match their Chez fixtures, and the gate passes (435 tests, about 35 s). I marked the item `[x]`, added the Iteration 5 entry to PROGRESS.md and set the count to 5/18. Nothing is committed.
+
+**Test-first:** I wrote `python/tests/test_coderack.py` before any of the new modules existed, and it failed on import (`cannot import name 'engine'`). Once the code was written, all the battery cases passed on the first run. The only failure was a mistake in the test itself.
+
+**New modules in `python/metacat/`:**
+- `constants.py`: the five threshold distributions. The window sizes, colours and fonts are left to the GUI items, as in the Racket port.
+- `view_globals.py`: the colours, fonts and speed settings the model reads. They stay `#f` until the views set them.
+- `setup.py`: the globals and the user commands. `setup` and `enable-resizing` open windows, so they wait for the control-panel item (15).
+- `coderack.py`: codelet types, codelets, bins, the coderack, and bottom-up and top-down posting.
+- `descriptions.py`: the description object and its four codelets.
+- `engine.py`: the original's load order, a `load()` that runs once, and `set_global` to set a global by its Scheme name.
+
+**Mutation checks:** I made 37 deliberate one-line breakages to see whether the tests catch them. All were caught except a handful that change no observable behaviour, plus one real gap: the frozen battery never pushes a decimal urgency past 0 or 100, so clipping it with Python's `min`/`max` instead of Chez's went unnoticed. I added a small local battery, `python/oracle/batteries/coderack-extra-battery.scm`, captured its expected output from Chez, and that mutation now fails. This battery was written after the code, and PROGRESS.md says so.
+
+**Other changes:**
+- I moved the stand-in helper for untranslated modules out of `test_utilities.py` into `tests/engine_stubs.py`, so both test files share it.
+- I logged two Python traps in `docs/anomalies_and_quirks.md`:
+  - `100 - False` is 100 in Python, where Chez raises an error, so arithmetic on values that may be `#f` goes through the checked `chez` functions.
+  - pytest takes minutes to diff two multi-megabyte strings, so the battery assertions now report the first differing character instead.
+- I added an "As built (item 04)" section to `docs/python-translation-plan.md` and listed the new modules in `python/README.md`.
+
+**Translated but not yet exercised** (listed under Blockers in PROGRESS.md):
+- **Description codelets:** `make-description` and the four codelets need the Workspace and Slipnet, so the workspace and codelet batteries (items 06–07) will test them.
+- **Codelet types' drawing methods:** these wait for the panels item (14).
+- **Headless window:** each codelet type's coderack window stays `#f` until a driver installs a null window, which the headless run (items 10–11) has to do.
+
+One process note: my first mutation run spilled into the background, so I waited for it to finish before editing anything, and checked afterwards that every source file was restored.
+
+# result: success in 2917s, 73 turns, cost $8.00

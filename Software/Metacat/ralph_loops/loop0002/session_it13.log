@@ -1,0 +1,239 @@
+# session it13 started 2026-10-03 23:38:15
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; cat tests/extra-seeds.py; ls python/tests python/oracle; cat python/run-tests.sh; cat ralph_loops/loop0002/gate.py | head -80; sed -n 1
+  > $ cd /home/al/dev/metacat; du -sh tests/golden; ls tests/golden | wc -l; head -30 docs/python-run-times.md; sed -n 1,60p python/oracle/bench_runs.py; cat python/t
+  > $ cd /home/al/dev/metacat; cat python/metacat/__main__.py; sed -n 1,80p python/tests/test_golden.py; grep -n "def \|slow" python/tests/test_cli.py | head -40
+  > $ cd /home/al/dev/metacat; grep -n "LOCAL\|listdir\|iterdir\|expects\|def test" python/tests/test_fixtures.py | head -40; cat tests/problems.txt | head -50
+  > $ cd /home/al/dev/metacat; sed -n 1,80p python/oracle/capture.py | grep -n "SOURCES\|def \|sha" ; sed -n 20,35p python/tests/test_fixtures.py; sed -n 76,90p pytho
+  > $ cd /home/al/dev/metacat; grep -n "def sources_text" -A30 python/oracle/capture.py; grep -n "def chez_version" -A8 python/oracle/capture.py
+
+Writing the oracle capture script for the 720 extra-seed runs (stores hashes + stdout, not full traces).
+  > Write /home/al/dev/metacat/python/oracle/capture_extra_seeds.py
+  > $ cd /home/al/dev/metacat; grep -n "def scheme" -A4 python/oracle/capture.py; time python3 python/oracle/capture_extra_seeds.py 2>&1 | tail -5; ls -la python/fixt
+  > $ cd /home/al/dev/metacat; python3 - <<'E'
+import json
+rs=[json.loads(l) for l in open('python/fixtures/extra-seeds/runs.jsonl')]
+import collections
+c=collections
+
+Now the Python side: a CLI-mode worker in the harness and the test.
+  > $ cd /home/al/dev/metacat; python3 - <<'E'
+p='python/tests/golden_harness.py'
+s=open(p).read()
+s=s.replace('''def run_in_forks(jobs, processes=None):
+    """Run e
+  > Write /home/al/dev/metacat/python/tests/test_extra_seeds.py
+  > $ cd /home/al/dev/metacat/python; time python3 -m pytest -x -q tests/test_extra_seeds.py 2>&1 | tail -15
+
+While that runs, profiling a typical run:
+  > $ cd /home/al/dev/metacat/python; time python3 -m metacat abc abd xyz --seed 3 --max-codelets 3000 >/dev/null; python3 -m cProfile -s tottime -m metacat abc abd x
+  > $ cd /home/al/dev/metacat/python; sed -n 100,330p metacat/chez.py; sed -n 55,160p metacat/objects.py
+  > $ cd /home/al/dev/metacat/python; sed -n 360,400p metacat/coderack.py; sed -n 480,495p metacat/coderack.py; sed -n 615,630p metacat/coderack.py; grep -n "removal-
+  > $ cd /home/al/dev/metacat/python; sed -n 690,760p metacat/chez.py; grep -n "def stochastic_pick_by_method" -A25 metacat/utilities.py; grep -n "def weighted_index"
+  > $ sleep 60; cat /tmp/claude-1000/-home-al-dev-metacat/b2cbc1cd-a11d-4edd-ae65-9c4d2c106968/tasks/btt0p5qsj.output
+  > $ cat /tmp/claude-1000/-home-al-dev-metacat/b2cbc1cd-a11d-4edd-ae65-9c4d2c106968/tasks/btt0p5qsj.output
+
+Extra-seed test still running (Python side of 720 runs). Meanwhile I'm getting a baseline timing for speed-ups.
+  > $ cd /home/al/dev/metacat/python; for a in "abc abd xyz --seed 3 --max-codelets 3000" "eqe qeq abbba aaabaaa --seed 7 --max-codelets 17000" "abc abd mrrjjj mrrjjj
+
+All 720 extra-seed runs match the oracle (3 min wall). Now profiling the long run:
+  > $ cd /home/al/dev/metacat/python; python3 -m cProfile -s tottime -m metacat eqe qeq abbba aaabaaa --seed 7 --max-codelets 17000 2>&1 | sed -n '/Ordered/,+40p'
+  > $ cd /home/al/dev/metacat/python; sed -n 885,1000p metacat/chez.py; sed -n 180,215p metacat/trace_writer.py; sed -n 85,100p metacat/utilities.py; sed -n 235,245p 
+
+Applying the first speed-ups: arithmetic fast paths in chez.py.
+  > $ cd /home/al/dev/metacat/python; python3 - <<'E'
+p='metacat/chez.py'
+s=open(p).read()
+def rep(a,b):
+    global s
+    assert s.count(a)==1, a
+    s=s.replace(a,b)
+  > $ cd /home/al/dev/metacat/python; python3 - <<'E'
+p='metacat/chez.py'
+s=open(p).read()
+s=s.replace('''        if type(a) not in _NUMBER_TYPES:
+            _check(
+
+Now memq/remq identity fast paths, ormap/andmap, weighted_index:
+  > $ cd /home/al/dev/metacat/python; sed -n 770,800p metacat/chez.py; grep -n "def first\b\|def first(" -A5 metacat/utilities.py; grep -n "_car_error" -A5 metacat/ut
+  > $ cd /home/al/dev/metacat/python; python3 - <<'E'
+p='metacat/chez.py'
+s=open(p).read()
+def rep(a,b):
+    global s
+    assert s.count(a)==1, a
+    s=s.replace(a,b)
+  > $ cd /home/al/dev/metacat/python; for a in "abc abd xyz --seed 3 --max-codelets 3000" "eqe qeq abbba aaabaaa --seed 7 --max-codelets 17000" "abc abd mrrjjj mrrjjj
+
+Batch 1 gives ~25%. Let me write a reproducible speed benchmark so each speed-up's gain can be recorded.
+  > Write /home/al/dev/metacat/python/oracle/bench_speed.py
+  > $ cd /home/al/dev/metacat; cp python/metacat/chez.py /tmp/chez.b1; cp python/metacat/utilities.py /tmp/util.b1; git stash push python/metacat/chez.py python/metac
+  > $ f=/tmp/claude-1000/-home-al-dev-metacat/b2cbc1cd-a11d-4edd-ae65-9c4d2c106968/tasks/bwzjb615w.output; until [ "$(grep -c total $f)" -ge 2 ]; do sleep 5; done; ca
+
+Batch 1: 31.6 s → 23.4 s total CPU. Re-profiling the long run:
+  > $ cd /home/al/dev/metacat/python; python3 -m cProfile -s tottime -m metacat eqe qeq abbba aaabaaa --seed 7 --max-codelets 17000 2>&1 | sed -n '/Ordered/,+30p'
+  > $ cd /home/al/dev/metacat/python; python3 -m cProfile -o /tmp/p.prof -m metacat eqe qeq abbba aaabaaa --seed 7 --max-codelets 17000 >/dev/null; python3 - <<'E'
+im
+  > $ cd /home/al/dev/metacat/python; sed -n 215,330p metacat/trace_writer.py
+  > $ cd /home/al/dev/metacat/python; python3 - <<'E'
+p='metacat/trace_writer.py'
+s=open(p).read()
+def rep(a,b):
+    global s
+    assert s.count(a)==1, a
+    s=s.repl
+  > $ cd /home/al/dev/metacat/python; sed -n 225,245p metacat/utilities.py; grep -n "def filter_\b\|def filter_(" -A15 metacat/utilities.py
+  > $ cd /home/al/dev/metacat/python; grep -n "sort_by_method(" metacat/*.py | grep -v "def "
+
+Continuing with speed-ups: checking that sort-by-method keys are pure getters before caching them.
+  > $ cd /home/al/dev/metacat/python; grep -n '"get-quality"\|"get-age"\|"get-left-string-pos"\|"get-absolute-activation")' -A6 metacat/rules.py metacat/workspace_str
+  > $ cd /home/al/dev/metacat/python; python3 - <<'E'
+p='metacat/utilities.py'
+s=open(p).read()
+a='''    return chez.sort(lambda v1, v2: pred_p(tell(v1, method_name),
+  > $ cd /home/al/dev/metacat/python; python3 -m pytest -q -x tests/test_utilities.py tests/test_object_prototype.py 2>&1 | tail -15; grep -n "sort-by-method" ../test
+  > $ cd /home/al/dev/metacat/python; python3 -m pytest -q -x tests/test_golden.py 2>&1 | tail -2; python3 oracle/bench_speed.py
+
+Timings look noisy; checking load and rerunning:
+  > $ uptime; cd /home/al/dev/metacat/python; python3 oracle/bench_speed.py
+  > $ ps -eo pcpu,etime,args --sort=-pcpu | head -15
+
+Another user's job is loading ~20 cores, so I'll measure gains later with interleaved A/B runs. One more profile:
+  > $ cd /home/al/dev/metacat/python; python3 -m cProfile -o /tmp/p2.prof -m metacat eqe qeq abbba aaabaaa --seed 7 --max-codelets 17000 >/dev/null; python3 -c "
+impo
+  > $ cd /home/al/dev/metacat/python; python3 - <<'E'
+p='metacat/chez.py'
+s=open(p).read()
+a='''def _check(x, who):
+    if not _is_number(x):'''
+assert s.count(a)==1
+
+
+Now measuring each speed-up's gain. Listing the diff hunks to build cumulative variants:
+  > $ cd /home/al/dev/metacat; git diff -U3 python/metacat | grep -n "^@@\|^diff" 
+  > $ cd /home/al/dev/metacat; python3 - <<'E'
+p='python/oracle/bench_speed.py'
+s=open(p).read()
+s=s.replace('''  python3 python/oracle/bench_speed.py [--repeat R]
+
+R
+  > $ cd /home/al/dev/metacat; sed -i 's/    """(CPU seconds, codelets) of one run; resource.getrusage of the waited child,/    """(CPU seconds, codelets) of one run:
+  > $ cd /home/al/dev/metacat; sed -i 's/\["git","apply","--directory=.","-"\]/["patch","-p1","-s"]/' /tmp/mkvariants.py && python3 /tmp/mkvariants.py; diff -r /tmp/v
+  > $ cd /home/al/dev/metacat; uptime; python3 python/oracle/bench_speed.py --repeat 3 --jobs 8 /tmp/var/S{0..7}/python 2>&1 | grep -v "^ .*codelets" ; python3 python
+
+CPU-time under the other job's load is too noisy (±15%). Checking whether `perf` instruction counts are available as a stabler measure:
+  > $ which perf valgrind 2>&1; perf stat -e instructions:u -x, python3 -c "pass" 2>&1 | tail -2; cat /proc/sys/kernel/perf_event_paranoid
+  > $ cd /home/al/dev/metacat; python3 python/oracle/bench_speed.py --repeat 6 --jobs 8 /tmp/var/S{0..7}/python > /tmp/bench6.txt 2>&1; grep -B6 total /tmp/bench6.txt
+
+Wall/CPU timing stays noisy under the shared load, so I'll also record a deterministic measure: total Python function calls per variant (cProfile).
+  > $ cd /tmp; cat > /tmp/calls.sh <<'E'
+d=$1; shift
+cd /tmp/var/$d/python && python3 -m cProfile -s calls -m metacat "$@" 2>&1 | grep -m1 "function calls" | sed "s/^
+
+Function calls fall 36% on the short run and 29% on the long one. For the steps that don't change call counts (andmap/ormap, weighted_index), I'll add micro-benchmarks run in both S0 and S7:
+  > $ cat > /tmp/micro.py <<'E'
+import timeit, sys
+from fractions import Fraction
+from metacat import chez, utilities, objects
+class O(objects.SchemeObject):
+    @obj
+  > $ for s in S0 S7; do (cd /tmp/var/$s/python && PYTHONPATH=. python3 /tmp/micro.py > /tmp/micro.$s); done; paste /tmp/micro.S0 /tmp/micro.S7 | awk -F'\t' '{printf 
+  > $ cd /home/al/dev/metacat/python; time python3 -m pytest -x -q tests/test_extra_seeds.py 2>&1 | tail -3
+
+720/720 still identical after the speed-ups (2:04 wall, 41 CPU-min vs 54 before). Now finding golden-surviving mutant sites:
+  > $ cd /home/al/dev/metacat/python; grep -n "65\b" metacat/trace.py | head; grep -n "\b100\b" metacat/trace.py | head; grep -n "cube\|\^3\|expt" metacat/themes.py |
+  > $ cd /home/al/dev/metacat/python; sed -n 395,410p metacat/bridges.py; grep -n "2.5\|2\.0\b" metacat/bridges.py | head
+  > $ cd /home/al/dev/metacat/python; sed -n 660,666p metacat/bridges.py; sed -n 873,879p metacat/bridges.py; sed -n 1160,1170p metacat/themes.py
+cat > /tmp/mut12.py 
+  > $ cd /home/al/dev/metacat/python; python3 /tmp/mut12.py theme-spread-square cm-importance-60; git diff --stat metacat/themes.py metacat/trace.py
+  > $ cd /home/al/dev/metacat/python; sed -i 's/if "of 720 runs differ" in l\]/if l.startswith("E ") and "runs differ" in l]/' /tmp/mut12.py; python3 /tmp/mut12.py gr
+  > $ cd /home/al/dev/metacat/python; python3 - <<'E'
+p='tests/test_fixtures.py'
+s=open(p).read()
+a='''    assert sorted(p.name for p in FIXTURES.iterdir() if p.is_di
+  > $ cd /home/al/dev/metacat/python; python3 -m pytest -q -x tests/test_fixtures.py tests/test_extra_seeds.py -m "not slow" 2>&1 | tail -2; sed -n 95,110p tests/test
+
+Checking the oracle capture is deterministic (re-capture into a temp dir and compare):
+  > $ cd /home/al/dev/metacat; time python3 python/oracle/capture_extra_seeds.py --out /tmp/xs2 && cmp /tmp/xs2/runs.jsonl python/fixtures/extra-seeds/runs.jsonl && c
+
+Identical. Adding the slow re-capture test, matching the other fixtures' freshness pattern:
+  > $ cd /home/al/dev/metacat/python; python3 - <<'E'
+p='tests/test_extra_seeds.py'
+s=open(p).read()
+s=s.replace('''import json
+from pathlib import Path
+''','''import
+
+Now the docs. Checking the existing anomalies entry about what the goldens never exercise:
+  > $ cd /home/al/dev/metacat; grep -n "never exercise\|^## \|^### " docs/anomalies_and_quirks.md | tail -30; grep -n "As built (item 11)" -A30 docs/python-translatio
+  > $ cd /home/al/dev/metacat; grep -n "goldens never\|never exercise" docs/anomalies_and_quirks.md; sed -n 560,600p docs/anomalies_and_quirks.md | head -5; grep -n "
+  > $ cd /home/al/dev/metacat; sed -n 255,300p docs/anomalies_and_quirks.md
+  > Edit /home/al/dev/metacat/docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat; tail -40 docs/python-run-times.md; grep -n "test_golden\|test_cli\|bench_runs\|trace_writer" python/README.md | head
+
+Writing the speed-ups section in docs/python-run-times.md:
+  > $ cd /home/al/dev/metacat; cat >> docs/python-run-times.md <<'E'
+
+## Speed-ups (loop0002 item 12)
+
+The table above was measured before these speed-ups. Each one k
+  > $ cd /home/al/dev/metacat; sed -i 's/^So per codelet, Python now takes roughly 0.4–1.2 ms, 4–9× Chez.$/On the five benchmark runs, Python now takes 0.43–1.3 ms pe
+  > $ cd /home/al/dev/metacat; cat >> python/README.md <<'E'
+
+Extra seeds and speed (item 12):
+- `oracle/capture_extra_seeds.py` runs tests/extra-seeds.py's 720 runs 
+
+Now an "As built (item 12)" note in the translation plan, inserted after item 11's section:
+  > Edit /home/al/dev/metacat/docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; time python3 ralph_loops/loop0002/gate.py 2>&1 | tail -8
+
+Gate passed (1032 tests, 5 min 45 s under the shared load). Checking the fast-tier time I quoted:
+  > $ cd /home/al/dev/metacat; time bash python/run-tests.sh --fast 2>&1 | tail -1
+
+Now PROGRESS.md and iterations.md.
+  > $ cd /home/al/dev/metacat; sed -i 's/^- \[ \] \*\*12 Extra seeds and speed\.\*\*/- [x] **12 Extra seeds and speed.**/' ralph_loops/loop0002/iterations.md; grep -n
+  > $ cd /home/al/dev/metacat; cat >> ralph_loops/loop0002/PROGRESS.md <<'E'
+
+---
+
+## Iteration 13 — 2026-10-04 00:32
+
+### Completed
+Item 12, extra seeds and speed: *
+
+Item 12 (extra seeds and speed) is done. All 720 extra-seed runs match the oracle byte for byte, both before and after the speed-ups, and the gate passes (1032 tests, 5 min 45 s).
+
+**Extra seeds**
+- **Oracle side:** `python/oracle/capture_extra_seeds.py` runs the same 720 runs that `tests/extra-seeds.py` uses: 20 non-golden seeds for each of the 36 problem lines. It records each run's exit code, full output, error line and a hash of its trace in `python/fixtures/extra-seeds/`. The traces themselves would be about 300 MB, so only their hashes are kept. A second capture gave identical files.
+- **Python side:** `python/tests/test_extra_seeds.py` runs all 720 through the Python port, each in a fresh process, and requires all five values to match. The gate also re-captures the oracle side each time to check the fixture is still current.
+- **What they catch that the 109 goldens don't:** two deliberate one-value changes (mutants) pass all 109 goldens but fail here: concept-mapping importance threshold 65 → 60 (3 runs differ) and group importance threshold 100 → 99 (5 runs differ). One mutant passes both; only an existing extra Chez test catches it.
+
+**Speed-ups**
+Profiling showed message dispatch (`tell`) and Chez's number type checks dominating. I made seven changes, each marked `speed (item 12)` in the code:
+1. Fast paths for arithmetic when both numbers are plain integers or both floats.
+2. `memq`/`remq` compare by identity where that gives the same answer.
+3. Simpler one-list `andmap`/`ormap`.
+4. `weighted-index` no longer copies the rest of the list at each step.
+5. The trace wrappers pass through the messages they don't watch.
+6. `tell-all` does the `tell` lookup itself instead of calling `tell` once per element.
+7. `sort-by-method` asks for each element's key only once.
+
+Two of these rely on facts about the model: (2) on how `eq?` behaves, and (7) on the four sort keys the model uses having no side effects. Both are written down in `docs/python-translation-plan.md`.
+
+Overall gain:
+
+| Measure | Before | After |
+|---|---|---|
+| Python function calls, short run | 33.8 M | 21.6 M (−36%) |
+| Python function calls, longest run | 350.5 M | 248.8 M (−29%) |
+| The 720 runs, total CPU | 54 min | 41 min (−25%) |
+| The 720 runs, wall clock | 3 min 7 s | 2 min 4 s |
+
+Another user's 20-process job was running the whole time, so CPU timings varied by up to ±15% and couldn't separate the seven steps. Per-step gains are therefore given as micro-benchmarks and call counts in `docs/python-run-times.md`; `python/oracle/bench_speed.py` repeats the measurement. The per-problem table already in that file still shows timings from before the speed-ups. I didn't regenerate it on the loaded machine; the final audit (item 17) should, on an idle machine.
+
+**Test tiers:** `--fast` runs 729 tests in about 7 s. The full tier, which the gate runs, adds the 109 goldens, the CLI against the live oracle, the 720 extra seeds and the Chez re-captures; it took 5 min 45 s under that load, well under the 15-minute limit.
+
+PROGRESS.md (now 13/18) and iterations.md are updated. Nothing is committed, and LOOP_COMPLETE isn't added because items 13–17 remain.
+
+# result: success in 3313s, 77 turns, cost $5.07

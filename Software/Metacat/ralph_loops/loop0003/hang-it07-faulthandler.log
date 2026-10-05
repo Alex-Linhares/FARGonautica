@@ -1,0 +1,123 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-7.4.4, pluggy-1.6.0
+rootdir: /home/al/dev/metacat/python
+configfile: pyproject.toml
+plugins: hypothesis-6.168.3, anyio-4.2.0
+collected 157 items
+
+tests/test_qt_canvas.py ...............                                  [  9%]
+tests/test_qt_engine.py .................                                [ 20%]
+tests/test_qt_fonts.py ................................................. [ 51%]
+...............                                                          [ 61%]
+tests/test_qt_menus.py .....................                             [ 74%]
+tests/test_qt_panes.py ............................Timeout (0:01:00)!
+Thread 0x00007b69fa7fc6c0 (most recent call first):
+  File "/home/al/dev/metacat/python/metacat/qt/canvas.py", line 67 in tcl
+  File "/home/al/dev/metacat/python/metacat/qt/canvas.py", line 138 in tcl
+  File "/home/al/dev/metacat/python/metacat/gui/swl.py", line 109 in swl_tcl_eval
+  File "/home/al/dev/metacat/python/metacat/gui/fonts.py", line 211 in get_pixel_size
+  File "/home/al/dev/metacat/python/metacat/objects.py", line 155 in delegate
+  File "/home/al/dev/metacat/python/metacat/gui/fonts.py", line 144 in otherwise
+  File "/home/al/dev/metacat/python/metacat/objects.py", line 114 in tell
+  File "/home/al/dev/metacat/python/tests/test_qt_panes.py", line 558 in tell_size
+  File "/home/al/dev/metacat/python/tests/test_qt_panes.py", line 540 in worker
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1012 in run
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x00007b69faffd6c0 (most recent call first):
+  File "/home/al/dev/metacat/python/metacat/qt/displaylist.py", line 500 in _configure
+  File "/home/al/dev/metacat/python/metacat/qt/displaylist.py", line 487 in _create
+  File "/home/al/dev/metacat/python/metacat/qt/displaylist.py", line 450 in tcl
+  File "/home/al/dev/metacat/python/metacat/qt/canvas.py", line 68 in tcl
+  File "/home/al/dev/metacat/python/metacat/qt/canvas.py", line 138 in tcl
+  File "/home/al/dev/metacat/python/metacat/gui/swl.py", line 109 in swl_tcl_eval
+  File "/home/al/dev/metacat/python/metacat/gui/fonts.py", line 211 in get_pixel_size
+  File "/home/al/dev/metacat/python/metacat/objects.py", line 155 in delegate
+  File "/home/al/dev/metacat/python/metacat/gui/fonts.py", line 144 in otherwise
+  File "/home/al/dev/metacat/python/metacat/objects.py", line 114 in tell
+  File "/home/al/dev/metacat/python/tests/test_qt_panes.py", line 558 in tell_size
+  File "/home/al/dev/metacat/python/tests/test_qt_panes.py", line 540 in worker
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1012 in run
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x00007b69fb7fe6c0 (most recent call first):
+  File "/home/al/dev/metacat/python/metacat/qt/canvas.py", line 67 in tcl
+  File "/home/al/dev/metacat/python/metacat/qt/canvas.py", line 138 in tcl
+  File "/home/al/dev/metacat/python/metacat/gui/swl.py", line 109 in swl_tcl_eval
+  File "/home/al/dev/metacat/python/metacat/gui/fonts.py", line 217 in get_pixel_size
+  File "/home/al/dev/metacat/python/metacat/objects.py", line 155 in delegate
+  File "/home/al/dev/metacat/python/metacat/gui/fonts.py", line 144 in otherwise
+  File "/home/al/dev/metacat/python/metacat/objects.py", line 114 in tell
+  File "/home/al/dev/metacat/python/tests/test_qt_panes.py", line 558 in tell_size
+  File "/home/al/dev/metacat/python/tests/test_qt_panes.py", line 540 in worker
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1012 in run
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x00007b69fbfff6c0 (most recent call first):
+  File "/home/al/dev/metacat/python/metacat/qt/canvas.py", line 67 in tcl
+  File "/home/al/dev/metacat/python/metacat/qt/canvas.py", line 138 in tcl
+  File "/home/al/dev/metacat/python/metacat/gui/swl.py", line 109 in swl_tcl_eval
+  File "/home/al/dev/metacat/python/metacat/gui/fonts.py", line 210 in get_pixel_size
+  File "/home/al/dev/metacat/python/metacat/objects.py", line 155 in delegate
+  File "/home/al/dev/metacat/python/metacat/gui/fonts.py", line 144 in otherwise
+  File "/home/al/dev/metacat/python/metacat/objects.py", line 114 in tell
+  File "/home/al/dev/metacat/python/tests/test_qt_panes.py", line 558 in tell_size
+  File "/home/al/dev/metacat/python/tests/test_qt_panes.py", line 540 in worker
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1012 in run
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x00007b6a14ff96c0 (most recent call first):
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 355 in wait
+  File "/home/al/anaconda3/lib/python3.12/queue.py", line 171 in get
+  File "/home/al/dev/metacat/python/metacat/gui/general_graphics.py", line 63 in loop
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1012 in run
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x00007b6a167fc6c0 (most recent call first):
+  File "/home/al/dev/metacat/python/metacat/gui/app.py", line 69 in loop
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1012 in run
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x00007b6a2ea87780 (most recent call first):
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1169 in _wait_for_tstate_lock
+  File "/home/al/anaconda3/lib/python3.12/threading.py", line 1149 in join
+  File "/home/al/dev/metacat/python/tests/test_qt_panes.py", line 550 in test_fonts_measure_from_several_threads_at_once
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/python.py", line 194 in pytest_pyfunc_call
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_callers.py", line 121 in _multicall
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_manager.py", line 120 in _hookexec
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_hooks.py", line 512 in __call__
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/python.py", line 1792 in runtest
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/runner.py", line 169 in pytest_runtest_call
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_callers.py", line 121 in _multicall
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_manager.py", line 120 in _hookexec
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_hooks.py", line 512 in __call__
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/runner.py", line 262 in <lambda>
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/runner.py", line 341 in from_call
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/runner.py", line 261 in call_runtest_hook
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/runner.py", line 222 in call_and_report
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/runner.py", line 133 in runtestprotocol
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/runner.py", line 114 in pytest_runtest_protocol
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_callers.py", line 121 in _multicall
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_manager.py", line 120 in _hookexec
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_hooks.py", line 512 in __call__
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/main.py", line 350 in pytest_runtestloop
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_callers.py", line 121 in _multicall
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_manager.py", line 120 in _hookexec
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_hooks.py", line 512 in __call__
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/main.py", line 325 in _main
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/main.py", line 271 in wrap_session
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/main.py", line 318 in pytest_cmdline_main
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_callers.py", line 121 in _multicall
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_manager.py", line 120 in _hookexec
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pluggy/_hooks.py", line 512 in __call__
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/config/__init__.py", line 169 in main
+  File "/home/al/anaconda3/lib/python3.12/site-packages/_pytest/config/__init__.py", line 192 in console_main
+  File "/home/al/anaconda3/lib/python3.12/site-packages/pytest/__main__.py", line 5 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 198 in _run_module_as_main

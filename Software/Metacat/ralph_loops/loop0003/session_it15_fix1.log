@@ -1,0 +1,60 @@
+# session it15_fix1 started 2026-10-05 06:35:59
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ git status --short && git diff --stat && tail -40 ralph_loops/loop0003/PROGRESS.md && sed -n 1,80p ralph_loops/loop0003/gate.py
+  > $ tail -30 ralph_loops/loop0003/session_it15_fix1.log; sed -n 170,240p racket/gui-tests/control-panel-test.rkt
+  > $ sed -n 680,720p racket/gui/gui.rktl; sed -n 360,400p racket/gui/gui.rkt; git log --oneline -3 -- racket/gui/gui.rktl racket/gui/gui.rkt racket/gui-tests/control
+  > $ for i in 1 2 3 4; do env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1920x1200x24" raco test racket/gui-tests/control-panel-test.rkt 2>&1 | tai
+  > $ grep -n "command-line" racket/gui/gui.rktl | head -60; grep -n "running\.\.\." racket/gui/*.rkt*
+
+Found a race: the command line's text gets set from the engine thread while the GUI thread has the editor locked. Looking at how other widget updates are dispatched.
+  > $ sed -n 725,830p racket/gui/gui.rktl; grep -n "queue-callback\|in-gui\|on-gui" racket/gui/*.rkt* | head -30
+  > $ grep -n "switch-to-run-mode\|switch-to-input-mode\|switch-to-disabled-mode" racket/*.rkt racket/gui/*.rkt* | head; grep -n "eventspace\|queue-callback\|edit-seq
+  > $ sed -n 1,80p racket/gui/gui.rkt; grep -n "is-enabled\|get-value\|command-line" racket/gui-tests/control-panel-test.rkt | head -30
+  > $ grep -rn "\*control-panel\* '" racket/*.rkt racket/*.rktl racket/gui/*.rkt* 2>/dev/null | grep -v "^racket/gui/gui.rktl:7[0-9][0-9]" | head -30; cat racket/gui/
+  > $ grep -rn "switch-to\|control-panel" racket/*.rkt racket/*.rktl 2>/dev/null | grep -v "^racket/compat" | head -20
+  > $ grep -rln "control-panel" racket/ | grep -v tests; grep -rn "'switch-to\|run-mode" racket/*.rkt racket/engine/ 2>/dev/null | head
+  > $ sed -n 95,135p racket/engine/run.rktl; grep -n "define (enable-widget" -A12 racket/gui/gui.rkt*
+  > $ sed -n 400,440p racket/gui/gui.rkt; grep -n "define (thread-break\|engine-idle-evt\|sync\b\|(sync " racket/gui/*.rkt racket/gui/*.rktl racket/compat.rkt | head;
+  > $ sed -n 55,120p racket/gui/views.rkt; grep -n "flush-event-queue\|run-on-gui\|gui-eventspace" racket/gui/*.rkt | head -20
+  > $ grep -rn "engine-idle-evt\|engine-busy?" racket/ --include=*.rkt* | grep -v "^racket/gui/gui.rkt:3[67]" | head -20
+  > $ grep -rn "control-panel\*" racket/engine/ racket/compat.rkt racket/gui/*.rktl | grep -v "gui.rktl" ; grep -n "engine-error" -A8 racket/gui/gui.rktl | head -20
+
+No GUI-thread code blocks on the engine, so a synchronous hand-off to the eventspace is safe. Implementing it.
+  > $ sed -n 76,83p racket/gui/gui.rkt; grep -n "make-engine-thread\|current-eventspace" racket/gui/*.rkt racket/gui/*.rktl racket/main.rkt racket/one-window.rkt | he
+  > Edit /home/al/dev/metacat/racket/gui/gui.rkt
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rktl'
+s=open(p).read()
+old_run='''	      (switch-to-run-mode ()
+		(send command-line set-value "running...")'''
+new_run='''	
+  > $ python3 - <<'EOF'
+p='racket/gui/gui.rktl'
+s=open(p).read()
+a='''	      ;; colour; the run-mode look is the background and the text
+'''
+b='''	      ;; colour; th
+
+Now running the GUI tests, then the control-panel test repeatedly to check the flake is gone.
+  > $ raco make racket/main.rkt racket/one-window.rkt 2>&1 | tail -5; env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1920x1200x24" raco test racket/
+  > $ for i in $(seq 1 12); do env -u WAYLAND_DISPLAY GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1920x1200x24" raco test racket/gui-tests/control-panel-test.rkt racket
+
+Stable across 12 runs. Now logging the anomaly, then running the full gate.
+  > $ sed -n 1,40p docs/anomalies_and_quirks.md; git diff docs/anomalies_and_quirks.md | head -50
+  > $ grep -n "^## \|^### " docs/anomalies_and_quirks.md | grep -in "racket\|quirk\|engine thread\|reset handler" | head -20
+  > $ sed -n 1147,1175p docs/anomalies_and_quirks.md
+  > Edit /home/al/dev/metacat/docs/anomalies_and_quirks.md
+  > $ timeout 1800 python3 ralph_loops/loop0003/gate.py > /tmp/gate.log 2>&1; echo exit $?; tail -15 /tmp/gate.log
+
+While the full gate runs (~15 min), I'll add the fix note to PROGRESS.md.
+  > $ grep -n "^## \|LOOP_COMPLETE" ralph_loops/loop0003/PROGRESS.md | tail -5
+  > $ sed -n 964,975p ralph_loops/loop0003/PROGRESS.md
+
+I'll write the PROGRESS.md entry once the gate result is in.
+  > $ sleep 0; tail -3 /tmp/gate.log
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+
+The gate is running in the background (about 15–18 minutes). I'll write the PROGRESS.md entry and report once it finishes.
+
+# result: success in 500s, 32 turns, cost $0.68

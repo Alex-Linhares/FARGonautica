@@ -1,0 +1,35 @@
+# session it09 started 2026-10-04 22:42:28
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; ls ralph_loops/loop0003/; tail -5 ralph_loops/loop0003/PROGRESS.md; grep -n "^- \[" ralph_loops/loop0003/iterations.md; wc -l ralph_loo
+  > $ cd /home/al/dev/metacat; head -150 ralph_loops/loop0003/hang-it07-faulthandler.log
+  > $ cd /home/al/dev/metacat/python; sed -n 1,150p metacat/qt/canvas.py; sed -n 440,510p metacat/qt/displaylist.py; grep -n "PAINT_GATE" -r metacat tests | head -30
+  > $ cd /home/al/dev/metacat/python; sed -n 495,502p metacat/qt/displaylist.py; grep -n "def _convert" -A30 metacat/qt/displaylist.py; sed -n 520,570p tests/test_qt_
+  > $ cd /home/al/dev/metacat/python; export QT_QPA_PLATFORM=offscreen; unset WAYLAND_DISPLAY; time timeout 300 python3 -m pytest -x -q -o faulthandler_timeout=60 tes
+  > $ cd /home/al/dev/metacat/python; export QT_QPA_PLATFORM=offscreen; unset WAYLAND_DISPLAY; time timeout 900 python3 -m pytest -x -q -o faulthandler_timeout=60 tes
+
+Reproducing the hang: I'm running all the Qt test files together with a faulthandler timeout.
+  > $ sleep 100; cat /tmp/claude-1000/-home-al-dev-metacat/ebdb435a-5f52-4d4f-9ec7-9348009d0079/tasks/b3gwjui1q.output | cut -c1-200 | head -80
+  > $ F=/tmp/claude-1000/-home-al-dev-metacat/ebdb435a-5f52-4d4f-9ec7-9348009d0079/tasks/b3gwjui1q.output; timeout 600 bash -c "until grep -qE 'passed|failed|Timeout'
+  > $ cat /tmp/claude-1000/-home-al-dev-metacat/ebdb435a-5f52-4d4f-9ec7-9348009d0079/tasks/b3gwjui1q.output | head; ps aux | grep pytest | grep -v grep | head
+  > $ pgrep -af "pytest" | cut -c1-150; echo ---; F=/tmp/claude-1000/-home-al-dev-metacat/ebdb435a-5f52-4d4f-9ec7-9348009d0079/tasks/b3gwjui1q.output; wc -c $F; head 
+  > $ which py-spy gdb; ps -o pid,stat,pcpu,etime -p 2186552; ps -L -o tid,stat,pcpu,wchan:30 -p 2186552 | head -30
+  > $ timeout 120 gdb -p 2186552 -batch -ex "thread apply all bt 25" 2>/dev/null | grep -E "^Thread|^#" | cut -c1-160 | head -150
+  > $ timeout 120 gdb -p 2186552 -batch -ex "thread apply all bt 25" 2>&1 | tail -150 | cut -c1-180
+
+The hang reproduces (0% CPU, all threads in futex waits). gdb can't attach, so I'll read the faulthandler dump and reason from it.
+  > $ kill 2186552; sleep 2; F=/tmp/claude-1000/-home-al-dev-metacat/ebdb435a-5f52-4d4f-9ec7-9348009d0079/tasks/b3gwjui1q.output; grep -n "Thread\|File" $F | grep -v 
+  > $ cd /home/al/dev/metacat/python; export QT_QPA_PLATFORM=offscreen; unset WAYLAND_DISPLAY; cat > /tmp/ptr_pytest.py <<'EOF'
+import ctypes, sys
+ctypes.CDLL(None).p
+
+Without `test_qt_skeleton.py` it passes (146 vs the hang log's 157 tests). Adding it back:
+  > $ cd /home/al/dev/metacat/python; export QT_QPA_PLATFORM=offscreen; unset WAYLAND_DISPLAY; 
+python3 /tmp/ptr_pytest.py -x -q -p no:cacheprovider tests/test_qt_*.p
+
+Hung again. Reading the C stacks:
+  > $ grep -E "^Thread|^#" /tmp/gdb.out | sed -E 's/0x[0-9a-f]+ in //; s/\(.*\) (at|from)/ \1/' | cut -c1-140 | head -200
+
+API Error: No response from API (waited 3m, then 10m on the retry). If a proxy or gateway on your network holds responses until they complete, raise API_TIMEOUT_MS or CLAUDE_STREAM_FIRST_BYTE_TIMEOUT_MS to wait longer.
+
+# result: success in 2419s, 18 turns, cost $1.10

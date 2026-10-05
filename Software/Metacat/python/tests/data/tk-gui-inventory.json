@@ -1,0 +1,4013 @@
+{
+ "bindings": [
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "Bottom Themes",
+   "widget": ".!toplevel6.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "Bottom Themes",
+   "widget": ".!toplevel6.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "Bottom Themes",
+   "widget": ".!toplevel6.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "Bottom Themes",
+   "widget": ".!toplevel6.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "Coderack",
+   "widget": ".!toplevel4.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "Coderack",
+   "widget": ".!toplevel4.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "Coderack",
+   "widget": ".!toplevel4.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "Coderack",
+   "widget": ".!toplevel4.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "Commentary",
+   "widget": ".!toplevel9.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "Commentary",
+   "widget": ".!toplevel9.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "Commentary",
+   "widget": ".!toplevel9.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "Commentary",
+   "widget": ".!toplevel9.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "EEG",
+   "widget": ".!toplevel12.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "EEG",
+   "widget": ".!toplevel12.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "EEG",
+   "widget": ".!toplevel12.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "EEG",
+   "widget": ".!toplevel12.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "Episodic Memory",
+   "widget": ".!toplevel8.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "Episodic Memory",
+   "widget": ".!toplevel8.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "Episodic Memory",
+   "widget": ".!toplevel8.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "Episodic Memory",
+   "widget": ".!toplevel8.!canvas"
+  },
+  {
+   "class": "Entry",
+   "dialog": "Options > Set breakpoint",
+   "sequence": "<Key-Return>",
+   "toplevel": "Input",
+   "widget": ".!toplevel15.!entry"
+  },
+  {
+   "class": "Entry",
+   "dialog": "Options > Step mode interval",
+   "sequence": "<Key-Return>",
+   "toplevel": "Input",
+   "widget": ".!toplevel16.!entry"
+  },
+  {
+   "class": "Entry",
+   "sequence": "<Key-Return>",
+   "toplevel": "Metacat Control Panel",
+   "widget": ".!toplevel13.!entry"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "Slipnet",
+   "widget": ".!toplevel3.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "Slipnet",
+   "widget": ".!toplevel3.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "Slipnet",
+   "widget": ".!toplevel3.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "Slipnet",
+   "widget": ".!toplevel3.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "Temperature",
+   "widget": ".!toplevel11.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "Temperature",
+   "widget": ".!toplevel11.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "Temperature",
+   "widget": ".!toplevel11.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "Temperature",
+   "widget": ".!toplevel11.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "Temporal Trace",
+   "widget": ".!toplevel10.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "Temporal Trace",
+   "widget": ".!toplevel10.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "Temporal Trace",
+   "widget": ".!toplevel10.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "Temporal Trace",
+   "widget": ".!toplevel10.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "Top Themes",
+   "widget": ".!toplevel5.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "Top Themes",
+   "widget": ".!toplevel5.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "Top Themes",
+   "widget": ".!toplevel5.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "Top Themes",
+   "widget": ".!toplevel5.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "Vertical Themes",
+   "widget": ".!toplevel7.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "Vertical Themes",
+   "widget": ".!toplevel7.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "Vertical Themes",
+   "widget": ".!toplevel7.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "Vertical Themes",
+   "widget": ".!toplevel7.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-1>",
+   "toplevel": "Workspace",
+   "widget": ".!toplevel2.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Button-3>",
+   "toplevel": "Workspace",
+   "widget": ".!toplevel2.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Configure>",
+   "toplevel": "Workspace",
+   "widget": ".!toplevel2.!canvas"
+  },
+  {
+   "class": "Canvas",
+   "sequence": "<Shift-Button-1>",
+   "toplevel": "Workspace",
+   "widget": ".!toplevel2.!canvas"
+  }
+ ],
+ "buttons": {
+  "Go": "metacat.gui.gui.go_button_action",
+  "Reset": "metacat.gui.gui.reset_button_action",
+  "Step": "metacat.gui.gui.step_button_action",
+  "Stop": "metacat.gui.gui.stop_button_action",
+  "semantics": {
+   "Enter": "same as Go in input mode; nothing in run and disabled modes",
+   "Go": "empty line: step mode off, resume; valid problem: init it and park (quiet-break); else 'Invalid input!'",
+   "Reset": "empty line: re-init the current problem (same seed); valid problem: init it; else 'Invalid input!'",
+   "Step": "empty line: step mode on, resume; valid problem: init it in step mode; else 'Invalid input!'",
+   "Stop": "sets *interrupt?*; the run breaks at the next codelet"
+  }
+ },
+ "control_panel": {
+  "close": "gui._exit (quits the application)",
+  "resizable": [
+   0,
+   0
+  ],
+  "title": "Metacat Control Panel",
+  "widgets": {
+   "background": "#ffffff",
+   "children": [
+    {
+     "background": "#ffffff",
+     "class": "Canvas",
+     "height": "5",
+     "mapped": true,
+     "path": ".!toplevel13.!canvas",
+     "relief": "flat",
+     "state": "normal",
+     "width": "350"
+    },
+    {
+     "background": "#ffffff",
+     "class": "Label",
+     "font": "helvetica 14 bold",
+     "foreground": "#ff0000",
+     "height": 0,
+     "justify": "center",
+     "mapped": false,
+     "path": ".!toplevel13.!label",
+     "relief": "flat",
+     "state": "normal",
+     "text": "Warning: Self-watching is disabled",
+     "width": 0
+    },
+    {
+     "background": "#ffffff",
+     "class": "Label",
+     "font": "helvetica 14 bold",
+     "foreground": "#000000",
+     "height": 0,
+     "justify": "center",
+     "mapped": true,
+     "path": ".!toplevel13.!label2",
+     "relief": "flat",
+     "state": "normal",
+     "text": "Please enter a problem:",
+     "width": 0
+    },
+    {
+     "background": "#f0ffff",
+     "bindings": {
+      "<Key-Return>": "python callback"
+     },
+     "class": "Entry",
+     "font": "helvetica 14 bold",
+     "foreground": "#000000",
+     "justify": "left",
+     "mapped": true,
+     "path": ".!toplevel13.!entry",
+     "relief": "sunken",
+     "state": "normal",
+     "text": "",
+     "width": 40
+    },
+    {
+     "background": "#e6e6fa",
+     "children": [
+      {
+       "background": "#e6e6fa",
+       "children": [
+        {
+         "background": "#e6e6fa",
+         "class": "Label",
+         "font": "helvetica 10 italic",
+         "foreground": "#000000",
+         "height": 0,
+         "justify": "center",
+         "mapped": true,
+         "path": ".!toplevel13.!frame.!frame.!label",
+         "relief": "flat",
+         "state": "normal",
+         "text": "Slow",
+         "width": 0
+        },
+        {
+         "background": "#e6e6fa",
+         "class": "Label",
+         "font": "helvetica 10 italic",
+         "foreground": "#000000",
+         "height": 0,
+         "justify": "center",
+         "mapped": true,
+         "path": ".!toplevel13.!frame.!frame.!label2",
+         "relief": "flat",
+         "state": "normal",
+         "text": "Fast",
+         "width": 0
+        },
+        {
+         "background": "#e6e6fa",
+         "class": "Label",
+         "font": "helvetica 10 bold",
+         "foreground": "#000000",
+         "height": 0,
+         "justify": "center",
+         "mapped": true,
+         "path": ".!toplevel13.!frame.!frame.!label3",
+         "relief": "flat",
+         "state": "normal",
+         "text": "Speed",
+         "width": 0
+        },
+        {
+         "background": "#e6e6fa",
+         "class": "Scale",
+         "font": "TkDefaultFont",
+         "foreground": "#000000",
+         "from": 0.0,
+         "length": 80,
+         "mapped": true,
+         "orient": "horizontal",
+         "path": ".!toplevel13.!frame.!frame.!scale",
+         "relief": "flat",
+         "resolution": 1.0,
+         "showvalue": 0,
+         "state": "normal",
+         "to": 100.0,
+         "width": 12
+        }
+       ],
+       "class": "Frame",
+       "height": 0,
+       "mapped": true,
+       "path": ".!toplevel13.!frame.!frame",
+       "relief": "flat",
+       "width": 0
+      },
+      {
+       "background": "#d9d9d9",
+       "class": "Button",
+       "font": "helvetica 10 bold",
+       "foreground": "#000000",
+       "height": 0,
+       "justify": "center",
+       "mapped": true,
+       "path": ".!toplevel13.!frame.!button",
+       "relief": "raised",
+       "state": "disabled",
+       "text": "Step",
+       "width": 0
+      },
+      {
+       "background": "#d9d9d9",
+       "class": "Button",
+       "font": "helvetica 10 bold",
+       "foreground": "#000000",
+       "height": 0,
+       "justify": "center",
+       "mapped": true,
+       "path": ".!toplevel13.!frame.!button2",
+       "relief": "raised",
+       "state": "disabled",
+       "text": "Go",
+       "width": 0
+      },
+      {
+       "background": "#d9d9d9",
+       "class": "Button",
+       "font": "helvetica 10 bold",
+       "foreground": "#000000",
+       "height": 0,
+       "justify": "center",
+       "mapped": true,
+       "path": ".!toplevel13.!frame.!button3",
+       "relief": "raised",
+       "state": "disabled",
+       "text": "Stop",
+       "width": 0
+      },
+      {
+       "background": "#d9d9d9",
+       "class": "Button",
+       "font": "helvetica 10 bold",
+       "foreground": "#000000",
+       "height": 0,
+       "justify": "center",
+       "mapped": true,
+       "path": ".!toplevel13.!frame.!button4",
+       "relief": "raised",
+       "state": "disabled",
+       "text": "Reset",
+       "width": 0
+      },
+      {
+       "background": "#e6e6fa",
+       "class": "Frame",
+       "height": 0,
+       "mapped": true,
+       "path": ".!toplevel13.!frame.!frame2",
+       "relief": "flat",
+       "width": 10
+      }
+     ],
+     "class": "Frame",
+     "height": 0,
+     "mapped": true,
+     "path": ".!toplevel13.!frame",
+     "relief": "flat",
+     "width": 0
+    },
+    {
+     "background": "#ffffff",
+     "class": "Label",
+     "font": "helvetica 10 bold",
+     "foreground": "#ff0000",
+     "height": 0,
+     "justify": "center",
+     "mapped": true,
+     "path": ".!toplevel13.!label3",
+     "relief": "flat",
+     "state": "normal",
+     "text": "",
+     "width": 0
+    },
+    {
+     "background": "#ffffff",
+     "class": "Frame",
+     "height": 0,
+     "mapped": true,
+     "path": ".!toplevel13.!frame2",
+     "relief": "flat",
+     "width": 15
+    },
+    {
+     "background": "#ffffff",
+     "class": "Frame",
+     "height": 0,
+     "mapped": true,
+     "path": ".!toplevel13.!frame3",
+     "relief": "flat",
+     "width": 15
+    },
+    {
+     "background": "#ffffff",
+     "class": "Frame",
+     "height": 5,
+     "mapped": true,
+     "path": ".!toplevel13.!frame4",
+     "relief": "flat",
+     "width": 0
+    },
+    {
+     "background": "#ffffff",
+     "class": "Frame",
+     "height": 15,
+     "mapped": true,
+     "path": ".!toplevel13.!frame5",
+     "relief": "flat",
+     "width": 0
+    }
+   ],
+   "class": "Toplevel",
+   "height": 0,
+   "mapped": true,
+   "path": ".!toplevel13",
+   "relief": "flat",
+   "width": 0
+  }
+ },
+ "dialogs": [
+  {
+   "geometry_offset_from_control_panel": null,
+   "opened_by": "Help",
+   "resizable": [
+    1,
+    1
+   ],
+   "text_first_line": "Version 1.0: December 2003",
+   "text_lines": 102,
+   "text_wrap": "word",
+   "title": "Help",
+   "widgets": {
+    "background": "#d9d9d9",
+    "children": [
+     {
+      "background": "#d9d9d9",
+      "children": [
+       {
+        "background": "#ffe4c4",
+        "class": "Text",
+        "font": "courier 14",
+        "foreground": "#000000",
+        "height": 24,
+        "mapped": true,
+        "path": ".!toplevel14.!frame.!text",
+        "relief": "sunken",
+        "state": "disabled",
+        "width": 80
+       },
+       {
+        "background": "#d9d9d9",
+        "class": "Scrollbar",
+        "mapped": true,
+        "orient": "vertical",
+        "path": ".!toplevel14.!frame.!scrollbar",
+        "relief": "sunken",
+        "width": "11"
+       }
+      ],
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel14.!frame",
+      "relief": "flat",
+      "width": 0
+     }
+    ],
+    "class": "Toplevel",
+    "height": 0,
+    "mapped": true,
+    "path": ".!toplevel14",
+    "relief": "flat",
+    "width": 0
+   }
+  },
+  {
+   "enter": "empty: close; not a number >= 1: 'Invalid input!' in red for 700 ms; otherwise set the value and close",
+   "geometry_offset_from_control_panel": [
+    20,
+    80
+   ],
+   "opened_by": "Options > Set breakpoint",
+   "resizable": [
+    0,
+    0
+   ],
+   "title": "Input",
+   "widgets": {
+    "background": "#d9d9d9",
+    "children": [
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 15,
+      "mapped": true,
+      "path": ".!toplevel15.!frame",
+      "relief": "flat",
+      "width": 200
+     },
+     {
+      "background": "#ffffff",
+      "class": "Label",
+      "font": "helvetica 14 bold",
+      "foreground": "#000000",
+      "height": 0,
+      "justify": "center",
+      "mapped": true,
+      "path": ".!toplevel15.!label",
+      "relief": "flat",
+      "state": "normal",
+      "text": "Enter new breakpoint:",
+      "width": 0
+     },
+     {
+      "background": "#ffffff",
+      "bindings": {
+       "<Key-Return>": "python callback"
+      },
+      "class": "Entry",
+      "font": "helvetica 14 bold",
+      "foreground": "#000000",
+      "justify": "left",
+      "mapped": true,
+      "path": ".!toplevel15.!entry",
+      "relief": "sunken",
+      "state": "normal",
+      "text": "",
+      "width": 10
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 15,
+      "mapped": true,
+      "path": ".!toplevel15.!frame2",
+      "relief": "flat",
+      "width": 0
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel15.!frame3",
+      "relief": "flat",
+      "width": 15
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel15.!frame4",
+      "relief": "flat",
+      "width": 15
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 20,
+      "mapped": true,
+      "path": ".!toplevel15.!frame5",
+      "relief": "flat",
+      "width": 0
+     }
+    ],
+    "class": "Toplevel",
+    "height": 0,
+    "mapped": true,
+    "path": ".!toplevel15",
+    "relief": "flat",
+    "width": 0
+   }
+  },
+  {
+   "enter": "empty: close; not a number >= 1: 'Invalid input!' in red for 700 ms; otherwise set the value and close",
+   "geometry_offset_from_control_panel": [
+    80,
+    80
+   ],
+   "opened_by": "Options > Step mode interval",
+   "resizable": [
+    0,
+    0
+   ],
+   "title": "Input",
+   "widgets": {
+    "background": "#d9d9d9",
+    "children": [
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 15,
+      "mapped": true,
+      "path": ".!toplevel16.!frame",
+      "relief": "flat",
+      "width": 200
+     },
+     {
+      "background": "#ffffff",
+      "class": "Label",
+      "font": "helvetica 14 bold",
+      "foreground": "#000000",
+      "height": 0,
+      "justify": "center",
+      "mapped": true,
+      "path": ".!toplevel16.!label",
+      "relief": "flat",
+      "state": "normal",
+      "text": "Enter new step interval:",
+      "width": 0
+     },
+     {
+      "background": "#ffffff",
+      "bindings": {
+       "<Key-Return>": "python callback"
+      },
+      "class": "Entry",
+      "font": "helvetica 14 bold",
+      "foreground": "#000000",
+      "justify": "left",
+      "mapped": true,
+      "path": ".!toplevel16.!entry",
+      "relief": "sunken",
+      "state": "normal",
+      "text": "",
+      "width": 10
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 15,
+      "mapped": true,
+      "path": ".!toplevel16.!frame2",
+      "relief": "flat",
+      "width": 0
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel16.!frame3",
+      "relief": "flat",
+      "width": 15
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel16.!frame4",
+      "relief": "flat",
+      "width": 15
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 20,
+      "mapped": true,
+      "path": ".!toplevel16.!frame5",
+      "relief": "flat",
+      "width": 0
+     }
+    ],
+    "class": "Toplevel",
+    "height": 0,
+    "mapped": true,
+    "path": ".!toplevel16",
+    "relief": "flat",
+    "width": 0
+   }
+  },
+  {
+   "buttons": {
+    "Cancel": "close",
+    "Yes": "memory clear, close"
+   },
+   "geometry_offset_from_control_panel": [
+    20,
+    70
+   ],
+   "opened_by": "Clear Memory",
+   "resizable": [
+    0,
+    0
+   ],
+   "title": "Confirm",
+   "while_open": "control panel in disabled mode; back to input mode on close",
+   "widgets": {
+    "background": "#d9d9d9",
+    "children": [
+     {
+      "background": "#ffffff",
+      "class": "Label",
+      "font": "helvetica 14 bold",
+      "foreground": "#ff0000",
+      "height": 0,
+      "justify": "center",
+      "mapped": true,
+      "path": ".!toplevel17.!label",
+      "relief": "flat",
+      "state": "normal",
+      "text": "Really delete all answers\nfrom the Episodic Memory?",
+      "width": 0
+     },
+     {
+      "background": "#d9d9d9",
+      "children": [
+       {
+        "background": "#d9d9d9",
+        "class": "Button",
+        "font": "TkDefaultFont",
+        "foreground": "#000000",
+        "height": 0,
+        "justify": "center",
+        "mapped": true,
+        "path": ".!toplevel17.!frame.!button",
+        "relief": "raised",
+        "state": "normal",
+        "text": "Yes",
+        "width": 0
+       },
+       {
+        "background": "#d9d9d9",
+        "class": "Button",
+        "font": "TkDefaultFont",
+        "foreground": "#000000",
+        "height": 0,
+        "justify": "center",
+        "mapped": true,
+        "path": ".!toplevel17.!frame.!button2",
+        "relief": "raised",
+        "state": "normal",
+        "text": "Cancel",
+        "width": 0
+       },
+       {
+        "background": "#d9d9d9",
+        "class": "Frame",
+        "height": 0,
+        "mapped": true,
+        "path": ".!toplevel17.!frame.!frame",
+        "relief": "flat",
+        "width": 20
+       }
+      ],
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel17.!frame",
+      "relief": "flat",
+      "width": 0
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 15,
+      "mapped": true,
+      "path": ".!toplevel17.!frame2",
+      "relief": "flat",
+      "width": 0
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 15,
+      "mapped": true,
+      "path": ".!toplevel17.!frame3",
+      "relief": "flat",
+      "width": 0
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel17.!frame4",
+      "relief": "flat",
+      "width": 15
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel17.!frame5",
+      "relief": "flat",
+      "width": 15
+     },
+     {
+      "background": "#d9d9d9",
+      "class": "Frame",
+      "height": 20,
+      "mapped": true,
+      "path": ".!toplevel17.!frame6",
+      "relief": "flat",
+      "width": 0
+     }
+    ],
+    "class": "Toplevel",
+    "height": 0,
+    "mapped": true,
+    "path": ".!toplevel17",
+    "relief": "flat",
+    "width": 0
+   }
+  },
+  {
+   "buttons": {
+    "Cancel": "theme-edit-mode-off #f, close",
+    "Clamp Themes": "theme-edit-mode-off #t, close"
+   },
+   "geometry_offset_from_control_panel": [
+    10,
+    20
+   ],
+   "opened_by": "Options > Clamp theme pattern",
+   "resizable": [
+    0,
+    0
+   ],
+   "title": "Confirm",
+   "while_open": "control panel in disabled mode; *theme-edit-mode?* on; theme windows take left (+100) and right/shift-left (-100) clicks",
+   "widgets": {
+    "background": "#ffff00",
+    "children": [
+     {
+      "background": "#ffff00",
+      "class": "Label",
+      "font": "helvetica 14",
+      "foreground": "#000000",
+      "height": 0,
+      "justify": "left",
+      "mapped": true,
+      "path": ".!toplevel18.!label",
+      "relief": "flat",
+      "state": "normal",
+      "text": "To clamp a theme-pattern, click on one or more\ntheme windows, select the themes to include in\nthe pattern, and then click Clamp Themes.\n\nLeft-clicking on a theme selects maximum\npositive theme activation.  Right-clicking selects\nmaximum negative activation.  Clicking on an\nalready-selected theme unselects it.",
+      "width": 0
+     },
+     {
+      "background": "#ffff00",
+      "children": [
+       {
+        "background": "#d9d9d9",
+        "class": "Button",
+        "font": "TkDefaultFont",
+        "foreground": "#000000",
+        "height": 0,
+        "justify": "center",
+        "mapped": true,
+        "path": ".!toplevel18.!frame.!button",
+        "relief": "raised",
+        "state": "normal",
+        "text": "Clamp Themes",
+        "width": 0
+       },
+       {
+        "background": "#d9d9d9",
+        "class": "Button",
+        "font": "TkDefaultFont",
+        "foreground": "#000000",
+        "height": 0,
+        "justify": "center",
+        "mapped": true,
+        "path": ".!toplevel18.!frame.!button2",
+        "relief": "raised",
+        "state": "normal",
+        "text": "Cancel",
+        "width": 0
+       },
+       {
+        "background": "#ffff00",
+        "class": "Frame",
+        "height": 0,
+        "mapped": true,
+        "path": ".!toplevel18.!frame.!frame",
+        "relief": "flat",
+        "width": 20
+       }
+      ],
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel18.!frame",
+      "relief": "flat",
+      "width": 0
+     },
+     {
+      "background": "#ffff00",
+      "class": "Frame",
+      "height": 15,
+      "mapped": true,
+      "path": ".!toplevel18.!frame2",
+      "relief": "flat",
+      "width": 0
+     },
+     {
+      "background": "#ffff00",
+      "class": "Frame",
+      "height": 15,
+      "mapped": true,
+      "path": ".!toplevel18.!frame3",
+      "relief": "flat",
+      "width": 0
+     },
+     {
+      "background": "#ffff00",
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel18.!frame4",
+      "relief": "flat",
+      "width": 15
+     },
+     {
+      "background": "#ffff00",
+      "class": "Frame",
+      "height": 0,
+      "mapped": true,
+      "path": ".!toplevel18.!frame5",
+      "relief": "flat",
+      "width": 15
+     },
+     {
+      "background": "#ffff00",
+      "class": "Frame",
+      "height": 20,
+      "mapped": true,
+      "path": ".!toplevel18.!frame6",
+      "relief": "flat",
+      "width": 0
+     }
+    ],
+    "class": "Toplevel",
+    "height": 0,
+    "mapped": true,
+    "path": ".!toplevel18",
+    "relief": "flat",
+    "width": 0
+   }
+  },
+  {
+   "kind": "file dialog (tkinter.filedialog.asksaveasfilename)",
+   "mode": "save",
+   "opened_by": "Options > Save commentary to file",
+   "title": "Save Commentary to File",
+   "writes": "the Commentary's get-lines, one per line; a number n is n blank lines"
+  },
+  {
+   "does": "the info label shows the message in red for 700 ms ('Invalid input!', 'No current problem!')",
+   "kind": "inline",
+   "opened_by": "control panel display-error",
+   "title": null
+  }
+ ],
+ "generated_by": "python/tests/tk_gui_inventory.py",
+ "menus": [
+  {
+   "accelerator": "",
+   "action": "metacat.gui.gui.help_action",
+   "activeforeground": "",
+   "background": "#d9d9d9",
+   "font": [
+    "helvetica",
+    12
+   ],
+   "foreground": "",
+   "kind": "command",
+   "label": "Help",
+   "state": "normal"
+  },
+  {
+   "accelerator": "",
+   "activeforeground": "",
+   "background": "#d9d9d9",
+   "font": [
+    "helvetica",
+    12
+   ],
+   "foreground": "",
+   "items": [
+    {
+     "accelerator": "",
+     "action": "init-new-problem",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Run 1:  abc -> abd; mrrjjj -> mrrjjjj",
+     "problem": [
+      "abc",
+      "abd",
+      "mrrjjj",
+      "mrrjjjj",
+      1092119323
+     ],
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "init-new-problem",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Run 2:  xqc -> xqd; mrrjjj -> mrrkkk",
+     "problem": [
+      "xqc",
+      "xqd",
+      "mrrjjj",
+      "mrrkkk",
+      1248075611
+     ],
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "init-new-problem",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Run 3:  rst -> rsu; xyz -> uyz",
+     "problem": [
+      "rst",
+      "rsu",
+      "xyz",
+      "uyz",
+      2330176791
+     ],
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "init-new-problem",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Run 4:  abc -> abd; xyz -> dyz",
+     "problem": [
+      "abc",
+      "abd",
+      "xyz",
+      "dyz",
+      2836825623
+     ],
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "init-new-problem",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Run 5:  xqc -> xqd; mrrjjj -> mrrjjjj",
+     "problem": [
+      "xqc",
+      "xqd",
+      "mrrjjj",
+      "mrrjjjj",
+      3729474543
+     ],
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "init-new-problem",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Run 6:  eqe -> qeq; abbbc -> aaabccc",
+     "problem": [
+      "eqe",
+      "qeq",
+      "abbbc",
+      "aaabccc",
+      789090523
+     ],
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "init-new-problem",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Run 7:  abc -> abd; xyz -> ?",
+     "problem": [
+      "abc",
+      "abd",
+      "xyz",
+      3852097033
+     ],
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "init-new-problem",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Run 8:  eqe -> qeq; abbbc -> ?",
+     "problem": [
+      "eqe",
+      "qeq",
+      "abbbc",
+      3557912874
+     ],
+     "state": "normal"
+    },
+    {
+     "kind": "separator"
+    },
+    {
+     "accelerator": "",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "items": [
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "abc / xyd",
+       "problem": [
+        "abc",
+        "abd",
+        "xyz",
+        "xyd",
+        1760747975
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "abc / wyz",
+       "problem": [
+        "abc",
+        "abd",
+        "xyz",
+        "wyz",
+        3100511611
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "abc / dyz",
+       "problem": [
+        "abc",
+        "abd",
+        "xyz",
+        "dyz",
+        2107869027
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "rst / xyu",
+       "problem": [
+        "rst",
+        "rsu",
+        "xyz",
+        "xyu",
+        939480183
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "rst / wyz",
+       "problem": [
+        "rst",
+        "rsu",
+        "xyz",
+        "wyz",
+        720286361
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "rst / uyz",
+       "problem": [
+        "rst",
+        "rsu",
+        "xyz",
+        "uyz",
+        2330176791
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "abc / mrrkkk",
+       "problem": [
+        "abc",
+        "abd",
+        "mrrjjj",
+        "mrrkkk",
+        4211806334
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "abc / mrrjjjj",
+       "problem": [
+        "abc",
+        "abd",
+        "mrrjjj",
+        "mrrjjjj",
+        1092119323
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "xqc / mrrkkk",
+       "problem": [
+        "xqc",
+        "xqd",
+        "mrrjjj",
+        "mrrkkk",
+        1248075611
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "xqc / mrrjjjj",
+       "problem": [
+        "xqc",
+        "xqd",
+        "mrrjjj",
+        "mrrjjjj",
+        3729474543
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "eqe / baaab",
+       "problem": [
+        "eqe",
+        "qeq",
+        "abbba",
+        "baaab",
+        3635369418
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "eqe / aaabaaa",
+       "problem": [
+        "eqe",
+        "qeq",
+        "abbba",
+        "aaabaaa",
+        4209674874
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "eqe / qeeeq",
+       "problem": [
+        "eqe",
+        "qeq",
+        "abbbc",
+        2302461154
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "eqe / aaabccc",
+       "problem": [
+        "eqe",
+        "qeq",
+        "abbbc",
+        "aaabccc",
+        789090523
+       ],
+       "state": "normal"
+      }
+     ],
+     "kind": "cascade",
+     "label": "Answer comparison and reminding",
+     "state": "normal"
+    },
+    {
+     "kind": "separator"
+    },
+    {
+     "accelerator": "",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "items": [
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Figure 5.4 (top)",
+       "problem": [
+        "eeqee",
+        "qeeq",
+        "xxixx",
+        698282038
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Figure 5.4 (bottom)",
+       "problem": [
+        "eeqee",
+        "qeeq",
+        "xxixx",
+        175910650
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Figure 5.5 (top)",
+       "problem": [
+        "eeqee",
+        "qeeq",
+        "xxixx",
+        698282038
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Figure 5.5 (bottom)",
+       "problem": [
+        "eeqee",
+        "qeeq",
+        "xxixx",
+        4109591222
+       ],
+       "state": "normal"
+      }
+     ],
+     "kind": "cascade",
+     "label": "Implausible rules",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "items": [
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Figure 5.7",
+       "problem": [
+        "aabc",
+        "aabd",
+        "ijkk",
+        "ijll",
+        2351730219
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Figure 5.8",
+       "problem": [
+        "aabc",
+        "aabd",
+        "ijkk",
+        "hjkk",
+        1810079903
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Figure 5.10",
+       "problem": [
+        "abc",
+        "abd",
+        "xyz",
+        3009318743
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Figure 5.11",
+       "problem": [
+        "abc",
+        "abd",
+        "xyz",
+        2006188493
+       ],
+       "state": "normal"
+      }
+     ],
+     "kind": "cascade",
+     "label": "Poor thematic characterizations",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "items": [
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "abc -> cba; mrrjjj -> mmmrrj",
+       "problem": [
+        "abc",
+        "cba",
+        "mrrjjj",
+        "mmmrrj",
+        3538780671
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "abc -> abd; ijk -> abd",
+       "problem": [
+        "abc",
+        "abd",
+        "ijk",
+        "abd",
+        3386544399
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "abc -> aabbcc; kkjjii -> ?",
+       "problem": [
+        "abc",
+        "aabbcc",
+        "kkjjii",
+        912835776
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "a -> b; z -> ?",
+       "problem": [
+        "a",
+        "b",
+        "z",
+        3861033416
+       ],
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "init-new-problem",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "abc -> abd; glz -> ?",
+       "problem": [
+        "abc",
+        "abd",
+        "glz",
+        1108779034
+       ],
+       "state": "normal"
+      }
+     ],
+     "kind": "cascade",
+     "label": "Other sample runs",
+     "state": "normal"
+    }
+   ],
+   "kind": "cascade",
+   "label": "Demos",
+   "state": "normal"
+  },
+  {
+   "accelerator": "",
+   "activeforeground": "",
+   "background": "#d9d9d9",
+   "font": [
+    "helvetica",
+    12
+   ],
+   "foreground": "",
+   "items": [
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#000000",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "command",
+     "label": "Hide Workspace",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#000000",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "command",
+     "label": "Hide Slipnet",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#000000",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "command",
+     "label": "Hide Coderack",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#000000",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "command",
+     "label": "Hide Temperature",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#000000",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "command",
+     "label": "Hide Temporal Trace",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#000000",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "command",
+     "label": "Hide Commentary",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#000000",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "command",
+     "label": "Hide Episodic Memory",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#000000",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "command",
+     "label": "Hide Top Themes",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#000000",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "command",
+     "label": "Hide Bottom Themes",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#000000",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "command",
+     "label": "Hide Vertical Themes",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#8c8c8c",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#8c8c8c",
+     "kind": "command",
+     "label": "Show EEG",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "toggle window",
+     "activeforeground": "#8c8c8c",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#8c8c8c",
+     "kind": "command",
+     "label": "Show Logo",
+     "state": "normal"
+    },
+    {
+     "kind": "separator"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.create_windows_menu.<locals>.show_all",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Show all windows",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.create_windows_menu.<locals>.hide_all",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Hide all windows",
+     "state": "normal"
+    }
+   ],
+   "kind": "cascade",
+   "label": "Windows",
+   "state": "normal"
+  },
+  {
+   "accelerator": "",
+   "activeforeground": "",
+   "background": "#d9d9d9",
+   "font": [
+    "helvetica",
+    12
+   ],
+   "foreground": "",
+   "items": [
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.set_breakpoint_action",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Set breakpoint",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.clear_breakpoint_action",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Clear breakpoint",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.set_step_interval_action",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Step mode interval",
+     "state": "normal"
+    },
+    {
+     "kind": "separator"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.ControlPanel.__init__.<locals>.eliza",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "check",
+     "label": "Eliza mode",
+     "selected": true,
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.ControlPanel.__init__.<locals>.slipnet_graphics",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "check",
+     "label": "Slipnet graphics",
+     "selected": true,
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.ControlPanel.__init__.<locals>.coderack_graphics",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "check",
+     "label": "Coderack graphics",
+     "selected": true,
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.ControlPanel.__init__.<locals>.codelet_counts",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "check",
+     "label": "Show codelet counts",
+     "selected": true,
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.ControlPanel.__init__.<locals>.last_codelet",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "check",
+     "label": "Show last codelet type",
+     "selected": true,
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.ControlPanel.__init__.<locals>.self_watching",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#000000",
+     "kind": "check",
+     "label": "Self-watching mode",
+     "selected": true,
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.ControlPanel.__init__.<locals>.<lambda>",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "#8c8c8c",
+     "kind": "check",
+     "label": "Verbose mode",
+     "selected": false,
+     "state": "normal"
+    },
+    {
+     "kind": "separator"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.ControlPanel.__init__.<locals>.<lambda>",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Clamp theme pattern",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "items": [
+      {
+       "accelerator": "",
+       "action": "clamp codelet pattern",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Top-down codelet pattern",
+       "state": "normal",
+       "structure_type": "top-down"
+      },
+      {
+       "accelerator": "",
+       "action": "clamp codelet pattern",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Bottom-up codelet pattern",
+       "state": "normal",
+       "structure_type": "bottom-up"
+      },
+      {
+       "accelerator": "",
+       "action": "clamp codelet pattern",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Rule codelet pattern",
+       "state": "normal",
+       "structure_type": "rule"
+      },
+      {
+       "accelerator": "",
+       "action": "clamp codelet pattern",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Bridge codelet pattern",
+       "state": "normal",
+       "structure_type": "bridge"
+      },
+      {
+       "accelerator": "",
+       "action": "clamp codelet pattern",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "Group codelet pattern",
+       "state": "normal",
+       "structure_type": "group"
+      }
+     ],
+     "kind": "cascade",
+     "label": "Clamp codelet pattern",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.ControlPanel.__init__.<locals>.<lambda>",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Undo last clamp",
+     "state": "normal"
+    },
+    {
+     "kind": "separator"
+    },
+    {
+     "accelerator": "",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "items": [
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "times",
+        12
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "serif",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "times",
+        12,
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "serif italic",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "times",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "serif bold",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "times",
+        12,
+        "bold",
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "serif bold italic",
+       "state": "normal"
+      },
+      {
+       "kind": "separator"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "sans-serif",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "sans-serif italic",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "sans-serif bold",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#ffffff",
+       "font": [
+        "helvetica",
+        12,
+        "bold",
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "sans-serif bold italic",
+       "state": "normal"
+      },
+      {
+       "kind": "separator"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "palatino",
+        12
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "fancy",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "palatino",
+        12,
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "fancy italic",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "palatino",
+        12,
+        "bold"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "fancy bold",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.face_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "palatino",
+        12,
+        "bold",
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "fancy bold italic",
+       "state": "normal"
+      }
+     ],
+     "kind": "cascade",
+     "label": "Commentary font face",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "items": [
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.size_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        8,
+        "bold",
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "tiny",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.size_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        10,
+        "bold",
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "small",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.size_action",
+       "activeforeground": "",
+       "background": "#ffffff",
+       "font": [
+        "helvetica",
+        12,
+        "bold",
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "medium",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.size_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        18,
+        "bold",
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "large",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.size_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        24,
+        "bold",
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "larger",
+       "state": "normal"
+      },
+      {
+       "accelerator": "",
+       "action": "metacat.gui.gui.set_comment_font_menu_actions.<locals>.size_action",
+       "activeforeground": "",
+       "background": "#d9d9d9",
+       "font": [
+        "helvetica",
+        34,
+        "bold",
+        "italic"
+       ],
+       "foreground": "",
+       "kind": "command",
+       "label": "huge",
+       "state": "normal"
+      }
+     ],
+     "kind": "cascade",
+     "label": "Commentary font size",
+     "state": "normal"
+    },
+    {
+     "accelerator": "",
+     "action": "metacat.gui.gui.save_commentary_action",
+     "activeforeground": "",
+     "background": "#d9d9d9",
+     "font": [
+      "helvetica",
+      12,
+      "bold"
+     ],
+     "foreground": "",
+     "kind": "command",
+     "label": "Save commentary to file",
+     "state": "normal"
+    }
+   ],
+   "kind": "cascade",
+   "label": "Options",
+   "state": "normal"
+  },
+  {
+   "accelerator": "",
+   "action": null,
+   "activeforeground": "",
+   "background": "#d9d9d9",
+   "font": null,
+   "foreground": "",
+   "kind": "command",
+   "label": "  ",
+   "state": "disabled"
+  },
+  {
+   "accelerator": "",
+   "action": "clear-memory",
+   "activeforeground": "#ff0000",
+   "background": "#d9d9d9",
+   "font": [
+    "helvetica",
+    12
+   ],
+   "foreground": "",
+   "kind": "command",
+   "label": "Clear Memory",
+   "state": "normal"
+  }
+ ],
+ "platform": "linux",
+ "screen": [
+  1920,
+  1200
+ ],
+ "speed_slider": {
+  "action": "metacat.gui.gui.speed_slider_action",
+  "from": 0.0,
+  "initial": 50,
+  "labels": [
+   "Speed",
+   "Slow",
+   "Fast"
+  ],
+  "length": 80,
+  "sets": {
+   "0": {
+    "p_codelet_highlight_pause": 100,
+    "p_flash_pause": 100,
+    "p_num_of_flashes": 5,
+    "p_snag_pause": 5000,
+    "p_text_scroll_pause": 20
+   },
+   "1": {
+    "p_codelet_highlight_pause": 100,
+    "p_flash_pause": 99,
+    "p_num_of_flashes": 5,
+    "p_snag_pause": 4950,
+    "p_text_scroll_pause": 20
+   },
+   "100": {
+    "p_codelet_highlight_pause": 100,
+    "p_flash_pause": 1,
+    "p_num_of_flashes": 1,
+    "p_snag_pause": 1,
+    "p_text_scroll_pause": 1
+   },
+   "25": {
+    "p_codelet_highlight_pause": 100,
+    "p_flash_pause": 75,
+    "p_num_of_flashes": 4,
+    "p_snag_pause": 3750,
+    "p_text_scroll_pause": 20
+   },
+   "50": {
+    "p_codelet_highlight_pause": 100,
+    "p_flash_pause": 50,
+    "p_num_of_flashes": 2,
+    "p_snag_pause": 2500,
+    "p_text_scroll_pause": 20
+   },
+   "75": {
+    "p_codelet_highlight_pause": 100,
+    "p_flash_pause": 25,
+    "p_num_of_flashes": 2,
+    "p_snag_pause": 1250,
+    "p_text_scroll_pause": 20
+   },
+   "99": {
+    "p_codelet_highlight_pause": 100,
+    "p_flash_pause": 10,
+    "p_num_of_flashes": 2,
+    "p_snag_pause": 250,
+    "p_text_scroll_pause": 20
+   }
+  },
+  "to": 100.0
+ },
+ "state_messages": {
+  "switch-to-disabled-mode": "everything disabled (dialogs open)",
+  "switch-to-input-mode": "command line, Step, Go, Reset and the menus enabled; Stop disabled; Enter = Go",
+  "switch-to-run-mode": "only Stop enabled; the command line shows 'running...' in green on black, centred; Enter does nothing"
+ },
+ "states": {
+  "disabled": {
+   "breakpoint-label": "",
+   "command-line": "disabled",
+   "command-line-background": "#f0ffff",
+   "command-line-font": "helvetica 14 bold",
+   "command-line-foreground": "#000000",
+   "command-line-justify": "left",
+   "command-line-text": "",
+   "enter-action": "metacat.gui.gui.nop_event_handler",
+   "go-button": "disabled",
+   "info-label": " abc -> abd; xyz -> ?       seed:  7 ",
+   "menus": {
+    "  ": "disabled",
+    "Clear Memory": "disabled",
+    "Demos": "disabled",
+    "Demos > Answer comparison and reminding": "normal",
+    "Demos > Answer comparison and reminding > abc / dyz": "normal",
+    "Demos > Answer comparison and reminding > abc / mrrjjjj": "normal",
+    "Demos > Answer comparison and reminding > abc / mrrkkk": "normal",
+    "Demos > Answer comparison and reminding > abc / wyz": "normal",
+    "Demos > Answer comparison and reminding > abc / xyd": "normal",
+    "Demos > Answer comparison and reminding > eqe / aaabaaa": "normal",
+    "Demos > Answer comparison and reminding > eqe / aaabccc": "normal",
+    "Demos > Answer comparison and reminding > eqe / baaab": "normal",
+    "Demos > Answer comparison and reminding > eqe / qeeeq": "normal",
+    "Demos > Answer comparison and reminding > rst / uyz": "normal",
+    "Demos > Answer comparison and reminding > rst / wyz": "normal",
+    "Demos > Answer comparison and reminding > rst / xyu": "normal",
+    "Demos > Answer comparison and reminding > xqc / mrrjjjj": "normal",
+    "Demos > Answer comparison and reminding > xqc / mrrkkk": "normal",
+    "Demos > Implausible rules": "normal",
+    "Demos > Implausible rules > Figure 5.4 (bottom)": "normal",
+    "Demos > Implausible rules > Figure 5.4 (top)": "normal",
+    "Demos > Implausible rules > Figure 5.5 (bottom)": "normal",
+    "Demos > Implausible rules > Figure 5.5 (top)": "normal",
+    "Demos > Other sample runs": "normal",
+    "Demos > Other sample runs > a -> b; z -> ?": "normal",
+    "Demos > Other sample runs > abc -> aabbcc; kkjjii -> ?": "normal",
+    "Demos > Other sample runs > abc -> abd; glz -> ?": "normal",
+    "Demos > Other sample runs > abc -> abd; ijk -> abd": "normal",
+    "Demos > Other sample runs > abc -> cba; mrrjjj -> mmmrrj": "normal",
+    "Demos > Poor thematic characterizations": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.10": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.11": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.7": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.8": "normal",
+    "Demos > Run 1:  abc -> abd; mrrjjj -> mrrjjjj": "normal",
+    "Demos > Run 2:  xqc -> xqd; mrrjjj -> mrrkkk": "normal",
+    "Demos > Run 3:  rst -> rsu; xyz -> uyz": "normal",
+    "Demos > Run 4:  abc -> abd; xyz -> dyz": "normal",
+    "Demos > Run 5:  xqc -> xqd; mrrjjj -> mrrjjjj": "normal",
+    "Demos > Run 6:  eqe -> qeq; abbbc -> aaabccc": "normal",
+    "Demos > Run 7:  abc -> abd; xyz -> ?": "normal",
+    "Demos > Run 8:  eqe -> qeq; abbbc -> ?": "normal",
+    "Help": "normal",
+    "Options": "disabled",
+    "Options > Clamp codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Bottom-up codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Bridge codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Group codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Rule codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Top-down codelet pattern": "normal",
+    "Options > Clamp theme pattern": "normal",
+    "Options > Clear breakpoint": "normal",
+    "Options > Coderack graphics": "normal",
+    "Options > Commentary font face": "normal",
+    "Options > Commentary font face > fancy": "normal",
+    "Options > Commentary font face > fancy bold": "normal",
+    "Options > Commentary font face > fancy bold italic": "normal",
+    "Options > Commentary font face > fancy italic": "normal",
+    "Options > Commentary font face > sans-serif": "normal",
+    "Options > Commentary font face > sans-serif bold": "normal",
+    "Options > Commentary font face > sans-serif bold italic": "normal",
+    "Options > Commentary font face > sans-serif italic": "normal",
+    "Options > Commentary font face > serif": "normal",
+    "Options > Commentary font face > serif bold": "normal",
+    "Options > Commentary font face > serif bold italic": "normal",
+    "Options > Commentary font face > serif italic": "normal",
+    "Options > Commentary font size": "normal",
+    "Options > Commentary font size > huge": "normal",
+    "Options > Commentary font size > large": "normal",
+    "Options > Commentary font size > larger": "normal",
+    "Options > Commentary font size > medium": "normal",
+    "Options > Commentary font size > small": "normal",
+    "Options > Commentary font size > tiny": "normal",
+    "Options > Eliza mode": "normal",
+    "Options > Save commentary to file": "normal",
+    "Options > Self-watching mode": "normal",
+    "Options > Set breakpoint": "normal",
+    "Options > Show codelet counts": "normal",
+    "Options > Show last codelet type": "normal",
+    "Options > Slipnet graphics": "normal",
+    "Options > Step mode interval": "normal",
+    "Options > Undo last clamp": "normal",
+    "Options > Verbose mode": "normal",
+    "Windows": "normal",
+    "Windows > Hide Bottom Themes": "normal",
+    "Windows > Hide Coderack": "normal",
+    "Windows > Hide Commentary": "normal",
+    "Windows > Hide Episodic Memory": "normal",
+    "Windows > Hide Slipnet": "normal",
+    "Windows > Hide Temperature": "normal",
+    "Windows > Hide Temporal Trace": "normal",
+    "Windows > Hide Top Themes": "normal",
+    "Windows > Hide Vertical Themes": "normal",
+    "Windows > Hide Workspace": "normal",
+    "Windows > Hide all windows": "normal",
+    "Windows > Show EEG": "normal",
+    "Windows > Show Logo": "normal",
+    "Windows > Show all windows": "normal"
+   },
+   "note": "from input mode (the look of the command line is kept)",
+   "reset-button": "disabled",
+   "self-watching-warning-visible": false,
+   "speed-slider": "normal",
+   "step-button": "disabled",
+   "stop-button": "disabled"
+  },
+  "initial": {
+   "breakpoint-label": "",
+   "command-line": "normal",
+   "command-line-background": "#f0ffff",
+   "command-line-font": "helvetica 14 bold",
+   "command-line-foreground": "#000000",
+   "command-line-justify": "left",
+   "command-line-text": "",
+   "enter-action": "metacat.gui.gui.go_button_action",
+   "go-button": "disabled",
+   "info-label": "Please enter a problem:",
+   "menus": {
+    "  ": "disabled",
+    "Clear Memory": "normal",
+    "Demos": "normal",
+    "Demos > Answer comparison and reminding": "normal",
+    "Demos > Answer comparison and reminding > abc / dyz": "normal",
+    "Demos > Answer comparison and reminding > abc / mrrjjjj": "normal",
+    "Demos > Answer comparison and reminding > abc / mrrkkk": "normal",
+    "Demos > Answer comparison and reminding > abc / wyz": "normal",
+    "Demos > Answer comparison and reminding > abc / xyd": "normal",
+    "Demos > Answer comparison and reminding > eqe / aaabaaa": "normal",
+    "Demos > Answer comparison and reminding > eqe / aaabccc": "normal",
+    "Demos > Answer comparison and reminding > eqe / baaab": "normal",
+    "Demos > Answer comparison and reminding > eqe / qeeeq": "normal",
+    "Demos > Answer comparison and reminding > rst / uyz": "normal",
+    "Demos > Answer comparison and reminding > rst / wyz": "normal",
+    "Demos > Answer comparison and reminding > rst / xyu": "normal",
+    "Demos > Answer comparison and reminding > xqc / mrrjjjj": "normal",
+    "Demos > Answer comparison and reminding > xqc / mrrkkk": "normal",
+    "Demos > Implausible rules": "normal",
+    "Demos > Implausible rules > Figure 5.4 (bottom)": "normal",
+    "Demos > Implausible rules > Figure 5.4 (top)": "normal",
+    "Demos > Implausible rules > Figure 5.5 (bottom)": "normal",
+    "Demos > Implausible rules > Figure 5.5 (top)": "normal",
+    "Demos > Other sample runs": "normal",
+    "Demos > Other sample runs > a -> b; z -> ?": "normal",
+    "Demos > Other sample runs > abc -> aabbcc; kkjjii -> ?": "normal",
+    "Demos > Other sample runs > abc -> abd; glz -> ?": "normal",
+    "Demos > Other sample runs > abc -> abd; ijk -> abd": "normal",
+    "Demos > Other sample runs > abc -> cba; mrrjjj -> mmmrrj": "normal",
+    "Demos > Poor thematic characterizations": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.10": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.11": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.7": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.8": "normal",
+    "Demos > Run 1:  abc -> abd; mrrjjj -> mrrjjjj": "normal",
+    "Demos > Run 2:  xqc -> xqd; mrrjjj -> mrrkkk": "normal",
+    "Demos > Run 3:  rst -> rsu; xyz -> uyz": "normal",
+    "Demos > Run 4:  abc -> abd; xyz -> dyz": "normal",
+    "Demos > Run 5:  xqc -> xqd; mrrjjj -> mrrjjjj": "normal",
+    "Demos > Run 6:  eqe -> qeq; abbbc -> aaabccc": "normal",
+    "Demos > Run 7:  abc -> abd; xyz -> ?": "normal",
+    "Demos > Run 8:  eqe -> qeq; abbbc -> ?": "normal",
+    "Help": "normal",
+    "Options": "normal",
+    "Options > Clamp codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Bottom-up codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Bridge codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Group codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Rule codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Top-down codelet pattern": "normal",
+    "Options > Clamp theme pattern": "normal",
+    "Options > Clear breakpoint": "normal",
+    "Options > Coderack graphics": "normal",
+    "Options > Commentary font face": "normal",
+    "Options > Commentary font face > fancy": "normal",
+    "Options > Commentary font face > fancy bold": "normal",
+    "Options > Commentary font face > fancy bold italic": "normal",
+    "Options > Commentary font face > fancy italic": "normal",
+    "Options > Commentary font face > sans-serif": "normal",
+    "Options > Commentary font face > sans-serif bold": "normal",
+    "Options > Commentary font face > sans-serif bold italic": "normal",
+    "Options > Commentary font face > sans-serif italic": "normal",
+    "Options > Commentary font face > serif": "normal",
+    "Options > Commentary font face > serif bold": "normal",
+    "Options > Commentary font face > serif bold italic": "normal",
+    "Options > Commentary font face > serif italic": "normal",
+    "Options > Commentary font size": "normal",
+    "Options > Commentary font size > huge": "normal",
+    "Options > Commentary font size > large": "normal",
+    "Options > Commentary font size > larger": "normal",
+    "Options > Commentary font size > medium": "normal",
+    "Options > Commentary font size > small": "normal",
+    "Options > Commentary font size > tiny": "normal",
+    "Options > Eliza mode": "normal",
+    "Options > Save commentary to file": "normal",
+    "Options > Self-watching mode": "normal",
+    "Options > Set breakpoint": "normal",
+    "Options > Show codelet counts": "normal",
+    "Options > Show last codelet type": "normal",
+    "Options > Slipnet graphics": "normal",
+    "Options > Step mode interval": "normal",
+    "Options > Undo last clamp": "normal",
+    "Options > Verbose mode": "normal",
+    "Windows": "normal",
+    "Windows > Hide Bottom Themes": "normal",
+    "Windows > Hide Coderack": "normal",
+    "Windows > Hide Commentary": "normal",
+    "Windows > Hide Episodic Memory": "normal",
+    "Windows > Hide Slipnet": "normal",
+    "Windows > Hide Temperature": "normal",
+    "Windows > Hide Temporal Trace": "normal",
+    "Windows > Hide Top Themes": "normal",
+    "Windows > Hide Vertical Themes": "normal",
+    "Windows > Hide Workspace": "normal",
+    "Windows > Hide all windows": "normal",
+    "Windows > Show EEG": "normal",
+    "Windows > Show Logo": "normal",
+    "Windows > Show all windows": "normal"
+   },
+   "reset-button": "disabled",
+   "self-watching-warning-visible": false,
+   "speed-slider": "normal",
+   "step-button": "disabled",
+   "stop-button": "disabled"
+  },
+  "input": {
+   "breakpoint-label": "",
+   "command-line": "normal",
+   "command-line-background": "#f0ffff",
+   "command-line-font": "helvetica 14 bold",
+   "command-line-foreground": "#000000",
+   "command-line-justify": "left",
+   "command-line-text": "",
+   "enter-action": "metacat.gui.gui.go_button_action",
+   "go-button": "normal",
+   "info-label": " abc -> abd; xyz -> ?       seed:  7 ",
+   "menus": {
+    "  ": "disabled",
+    "Clear Memory": "normal",
+    "Demos": "normal",
+    "Demos > Answer comparison and reminding": "normal",
+    "Demos > Answer comparison and reminding > abc / dyz": "normal",
+    "Demos > Answer comparison and reminding > abc / mrrjjjj": "normal",
+    "Demos > Answer comparison and reminding > abc / mrrkkk": "normal",
+    "Demos > Answer comparison and reminding > abc / wyz": "normal",
+    "Demos > Answer comparison and reminding > abc / xyd": "normal",
+    "Demos > Answer comparison and reminding > eqe / aaabaaa": "normal",
+    "Demos > Answer comparison and reminding > eqe / aaabccc": "normal",
+    "Demos > Answer comparison and reminding > eqe / baaab": "normal",
+    "Demos > Answer comparison and reminding > eqe / qeeeq": "normal",
+    "Demos > Answer comparison and reminding > rst / uyz": "normal",
+    "Demos > Answer comparison and reminding > rst / wyz": "normal",
+    "Demos > Answer comparison and reminding > rst / xyu": "normal",
+    "Demos > Answer comparison and reminding > xqc / mrrjjjj": "normal",
+    "Demos > Answer comparison and reminding > xqc / mrrkkk": "normal",
+    "Demos > Implausible rules": "normal",
+    "Demos > Implausible rules > Figure 5.4 (bottom)": "normal",
+    "Demos > Implausible rules > Figure 5.4 (top)": "normal",
+    "Demos > Implausible rules > Figure 5.5 (bottom)": "normal",
+    "Demos > Implausible rules > Figure 5.5 (top)": "normal",
+    "Demos > Other sample runs": "normal",
+    "Demos > Other sample runs > a -> b; z -> ?": "normal",
+    "Demos > Other sample runs > abc -> aabbcc; kkjjii -> ?": "normal",
+    "Demos > Other sample runs > abc -> abd; glz -> ?": "normal",
+    "Demos > Other sample runs > abc -> abd; ijk -> abd": "normal",
+    "Demos > Other sample runs > abc -> cba; mrrjjj -> mmmrrj": "normal",
+    "Demos > Poor thematic characterizations": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.10": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.11": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.7": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.8": "normal",
+    "Demos > Run 1:  abc -> abd; mrrjjj -> mrrjjjj": "normal",
+    "Demos > Run 2:  xqc -> xqd; mrrjjj -> mrrkkk": "normal",
+    "Demos > Run 3:  rst -> rsu; xyz -> uyz": "normal",
+    "Demos > Run 4:  abc -> abd; xyz -> dyz": "normal",
+    "Demos > Run 5:  xqc -> xqd; mrrjjj -> mrrjjjj": "normal",
+    "Demos > Run 6:  eqe -> qeq; abbbc -> aaabccc": "normal",
+    "Demos > Run 7:  abc -> abd; xyz -> ?": "normal",
+    "Demos > Run 8:  eqe -> qeq; abbbc -> ?": "normal",
+    "Help": "normal",
+    "Options": "normal",
+    "Options > Clamp codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Bottom-up codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Bridge codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Group codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Rule codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Top-down codelet pattern": "normal",
+    "Options > Clamp theme pattern": "normal",
+    "Options > Clear breakpoint": "normal",
+    "Options > Coderack graphics": "normal",
+    "Options > Commentary font face": "normal",
+    "Options > Commentary font face > fancy": "normal",
+    "Options > Commentary font face > fancy bold": "normal",
+    "Options > Commentary font face > fancy bold italic": "normal",
+    "Options > Commentary font face > fancy italic": "normal",
+    "Options > Commentary font face > sans-serif": "normal",
+    "Options > Commentary font face > sans-serif bold": "normal",
+    "Options > Commentary font face > sans-serif bold italic": "normal",
+    "Options > Commentary font face > sans-serif italic": "normal",
+    "Options > Commentary font face > serif": "normal",
+    "Options > Commentary font face > serif bold": "normal",
+    "Options > Commentary font face > serif bold italic": "normal",
+    "Options > Commentary font face > serif italic": "normal",
+    "Options > Commentary font size": "normal",
+    "Options > Commentary font size > huge": "normal",
+    "Options > Commentary font size > large": "normal",
+    "Options > Commentary font size > larger": "normal",
+    "Options > Commentary font size > medium": "normal",
+    "Options > Commentary font size > small": "normal",
+    "Options > Commentary font size > tiny": "normal",
+    "Options > Eliza mode": "normal",
+    "Options > Save commentary to file": "normal",
+    "Options > Self-watching mode": "normal",
+    "Options > Set breakpoint": "normal",
+    "Options > Show codelet counts": "normal",
+    "Options > Show last codelet type": "normal",
+    "Options > Slipnet graphics": "normal",
+    "Options > Step mode interval": "normal",
+    "Options > Undo last clamp": "normal",
+    "Options > Verbose mode": "normal",
+    "Windows": "normal",
+    "Windows > Hide Bottom Themes": "normal",
+    "Windows > Hide Coderack": "normal",
+    "Windows > Hide Commentary": "normal",
+    "Windows > Hide Episodic Memory": "normal",
+    "Windows > Hide Slipnet": "normal",
+    "Windows > Hide Temperature": "normal",
+    "Windows > Hide Temporal Trace": "normal",
+    "Windows > Hide Top Themes": "normal",
+    "Windows > Hide Vertical Themes": "normal",
+    "Windows > Hide Workspace": "normal",
+    "Windows > Hide all windows": "normal",
+    "Windows > Show EEG": "normal",
+    "Windows > Show Logo": "normal",
+    "Windows > Show all windows": "normal"
+   },
+   "note": "after init-new-problem 'abc abd xyz 7' (parked)",
+   "reset-button": "normal",
+   "self-watching-warning-visible": false,
+   "speed-slider": "normal",
+   "step-button": "normal",
+   "stop-button": "disabled"
+  },
+  "run": {
+   "breakpoint-label": "",
+   "command-line": "disabled",
+   "command-line-background": "#000000",
+   "command-line-font": "helvetica 14 bold italic",
+   "command-line-foreground": "#00ff00",
+   "command-line-justify": "center",
+   "command-line-text": "running...",
+   "enter-action": "metacat.gui.gui.nop_event_handler",
+   "go-button": "disabled",
+   "info-label": " abc -> abd; xyz -> ?       seed:  7 ",
+   "menus": {
+    "  ": "disabled",
+    "Clear Memory": "disabled",
+    "Demos": "disabled",
+    "Demos > Answer comparison and reminding": "normal",
+    "Demos > Answer comparison and reminding > abc / dyz": "normal",
+    "Demos > Answer comparison and reminding > abc / mrrjjjj": "normal",
+    "Demos > Answer comparison and reminding > abc / mrrkkk": "normal",
+    "Demos > Answer comparison and reminding > abc / wyz": "normal",
+    "Demos > Answer comparison and reminding > abc / xyd": "normal",
+    "Demos > Answer comparison and reminding > eqe / aaabaaa": "normal",
+    "Demos > Answer comparison and reminding > eqe / aaabccc": "normal",
+    "Demos > Answer comparison and reminding > eqe / baaab": "normal",
+    "Demos > Answer comparison and reminding > eqe / qeeeq": "normal",
+    "Demos > Answer comparison and reminding > rst / uyz": "normal",
+    "Demos > Answer comparison and reminding > rst / wyz": "normal",
+    "Demos > Answer comparison and reminding > rst / xyu": "normal",
+    "Demos > Answer comparison and reminding > xqc / mrrjjjj": "normal",
+    "Demos > Answer comparison and reminding > xqc / mrrkkk": "normal",
+    "Demos > Implausible rules": "normal",
+    "Demos > Implausible rules > Figure 5.4 (bottom)": "normal",
+    "Demos > Implausible rules > Figure 5.4 (top)": "normal",
+    "Demos > Implausible rules > Figure 5.5 (bottom)": "normal",
+    "Demos > Implausible rules > Figure 5.5 (top)": "normal",
+    "Demos > Other sample runs": "normal",
+    "Demos > Other sample runs > a -> b; z -> ?": "normal",
+    "Demos > Other sample runs > abc -> aabbcc; kkjjii -> ?": "normal",
+    "Demos > Other sample runs > abc -> abd; glz -> ?": "normal",
+    "Demos > Other sample runs > abc -> abd; ijk -> abd": "normal",
+    "Demos > Other sample runs > abc -> cba; mrrjjj -> mmmrrj": "normal",
+    "Demos > Poor thematic characterizations": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.10": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.11": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.7": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.8": "normal",
+    "Demos > Run 1:  abc -> abd; mrrjjj -> mrrjjjj": "normal",
+    "Demos > Run 2:  xqc -> xqd; mrrjjj -> mrrkkk": "normal",
+    "Demos > Run 3:  rst -> rsu; xyz -> uyz": "normal",
+    "Demos > Run 4:  abc -> abd; xyz -> dyz": "normal",
+    "Demos > Run 5:  xqc -> xqd; mrrjjj -> mrrjjjj": "normal",
+    "Demos > Run 6:  eqe -> qeq; abbbc -> aaabccc": "normal",
+    "Demos > Run 7:  abc -> abd; xyz -> ?": "normal",
+    "Demos > Run 8:  eqe -> qeq; abbbc -> ?": "normal",
+    "Help": "normal",
+    "Options": "disabled",
+    "Options > Clamp codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Bottom-up codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Bridge codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Group codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Rule codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Top-down codelet pattern": "normal",
+    "Options > Clamp theme pattern": "normal",
+    "Options > Clear breakpoint": "normal",
+    "Options > Coderack graphics": "normal",
+    "Options > Commentary font face": "normal",
+    "Options > Commentary font face > fancy": "normal",
+    "Options > Commentary font face > fancy bold": "normal",
+    "Options > Commentary font face > fancy bold italic": "normal",
+    "Options > Commentary font face > fancy italic": "normal",
+    "Options > Commentary font face > sans-serif": "normal",
+    "Options > Commentary font face > sans-serif bold": "normal",
+    "Options > Commentary font face > sans-serif bold italic": "normal",
+    "Options > Commentary font face > sans-serif italic": "normal",
+    "Options > Commentary font face > serif": "normal",
+    "Options > Commentary font face > serif bold": "normal",
+    "Options > Commentary font face > serif bold italic": "normal",
+    "Options > Commentary font face > serif italic": "normal",
+    "Options > Commentary font size": "normal",
+    "Options > Commentary font size > huge": "normal",
+    "Options > Commentary font size > large": "normal",
+    "Options > Commentary font size > larger": "normal",
+    "Options > Commentary font size > medium": "normal",
+    "Options > Commentary font size > small": "normal",
+    "Options > Commentary font size > tiny": "normal",
+    "Options > Eliza mode": "normal",
+    "Options > Save commentary to file": "normal",
+    "Options > Self-watching mode": "normal",
+    "Options > Set breakpoint": "normal",
+    "Options > Show codelet counts": "normal",
+    "Options > Show last codelet type": "normal",
+    "Options > Slipnet graphics": "normal",
+    "Options > Step mode interval": "normal",
+    "Options > Undo last clamp": "normal",
+    "Options > Verbose mode": "normal",
+    "Windows": "normal",
+    "Windows > Hide Bottom Themes": "normal",
+    "Windows > Hide Coderack": "normal",
+    "Windows > Hide Commentary": "normal",
+    "Windows > Hide Episodic Memory": "normal",
+    "Windows > Hide Slipnet": "normal",
+    "Windows > Hide Temperature": "normal",
+    "Windows > Hide Temporal Trace": "normal",
+    "Windows > Hide Top Themes": "normal",
+    "Windows > Hide Vertical Themes": "normal",
+    "Windows > Hide Workspace": "normal",
+    "Windows > Hide all windows": "normal",
+    "Windows > Show EEG": "normal",
+    "Windows > Show Logo": "normal",
+    "Windows > Show all windows": "normal"
+   },
+   "reset-button": "disabled",
+   "self-watching-warning-visible": false,
+   "speed-slider": "normal",
+   "step-button": "disabled",
+   "stop-button": "normal"
+  },
+  "self-watching-off": {
+   "breakpoint-label": "",
+   "command-line": "normal",
+   "command-line-background": "#f0ffff",
+   "command-line-font": "helvetica 14 bold",
+   "command-line-foreground": "#000000",
+   "command-line-justify": "left",
+   "command-line-text": "",
+   "enter-action": "metacat.gui.gui.go_button_action",
+   "go-button": "normal",
+   "hidden_windows": [
+    "Top Themes",
+    "Bottom Themes",
+    "Vertical Themes",
+    "EEG",
+    "Logo"
+   ],
+   "info-label": " abc -> abd; xyz -> ?       seed:  7 ",
+   "menus": {
+    "  ": "disabled",
+    "Clear Memory": "normal",
+    "Demos": "normal",
+    "Demos > Answer comparison and reminding": "normal",
+    "Demos > Answer comparison and reminding > abc / dyz": "normal",
+    "Demos > Answer comparison and reminding > abc / mrrjjjj": "normal",
+    "Demos > Answer comparison and reminding > abc / mrrkkk": "normal",
+    "Demos > Answer comparison and reminding > abc / wyz": "normal",
+    "Demos > Answer comparison and reminding > abc / xyd": "normal",
+    "Demos > Answer comparison and reminding > eqe / aaabaaa": "normal",
+    "Demos > Answer comparison and reminding > eqe / aaabccc": "normal",
+    "Demos > Answer comparison and reminding > eqe / baaab": "normal",
+    "Demos > Answer comparison and reminding > eqe / qeeeq": "normal",
+    "Demos > Answer comparison and reminding > rst / uyz": "normal",
+    "Demos > Answer comparison and reminding > rst / wyz": "normal",
+    "Demos > Answer comparison and reminding > rst / xyu": "normal",
+    "Demos > Answer comparison and reminding > xqc / mrrjjjj": "normal",
+    "Demos > Answer comparison and reminding > xqc / mrrkkk": "normal",
+    "Demos > Implausible rules": "normal",
+    "Demos > Implausible rules > Figure 5.4 (bottom)": "normal",
+    "Demos > Implausible rules > Figure 5.4 (top)": "normal",
+    "Demos > Implausible rules > Figure 5.5 (bottom)": "normal",
+    "Demos > Implausible rules > Figure 5.5 (top)": "normal",
+    "Demos > Other sample runs": "normal",
+    "Demos > Other sample runs > a -> b; z -> ?": "normal",
+    "Demos > Other sample runs > abc -> aabbcc; kkjjii -> ?": "normal",
+    "Demos > Other sample runs > abc -> abd; glz -> ?": "normal",
+    "Demos > Other sample runs > abc -> abd; ijk -> abd": "normal",
+    "Demos > Other sample runs > abc -> cba; mrrjjj -> mmmrrj": "normal",
+    "Demos > Poor thematic characterizations": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.10": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.11": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.7": "normal",
+    "Demos > Poor thematic characterizations > Figure 5.8": "normal",
+    "Demos > Run 1:  abc -> abd; mrrjjj -> mrrjjjj": "normal",
+    "Demos > Run 2:  xqc -> xqd; mrrjjj -> mrrkkk": "normal",
+    "Demos > Run 3:  rst -> rsu; xyz -> uyz": "normal",
+    "Demos > Run 4:  abc -> abd; xyz -> dyz": "normal",
+    "Demos > Run 5:  xqc -> xqd; mrrjjj -> mrrjjjj": "normal",
+    "Demos > Run 6:  eqe -> qeq; abbbc -> aaabccc": "normal",
+    "Demos > Run 7:  abc -> abd; xyz -> ?": "normal",
+    "Demos > Run 8:  eqe -> qeq; abbbc -> ?": "normal",
+    "Help": "normal",
+    "Options": "normal",
+    "Options > Clamp codelet pattern": "disabled",
+    "Options > Clamp codelet pattern > Bottom-up codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Bridge codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Group codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Rule codelet pattern": "normal",
+    "Options > Clamp codelet pattern > Top-down codelet pattern": "normal",
+    "Options > Clamp theme pattern": "disabled",
+    "Options > Clear breakpoint": "normal",
+    "Options > Coderack graphics": "normal",
+    "Options > Commentary font face": "normal",
+    "Options > Commentary font face > fancy": "normal",
+    "Options > Commentary font face > fancy bold": "normal",
+    "Options > Commentary font face > fancy bold italic": "normal",
+    "Options > Commentary font face > fancy italic": "normal",
+    "Options > Commentary font face > sans-serif": "normal",
+    "Options > Commentary font face > sans-serif bold": "normal",
+    "Options > Commentary font face > sans-serif bold italic": "normal",
+    "Options > Commentary font face > sans-serif italic": "normal",
+    "Options > Commentary font face > serif": "normal",
+    "Options > Commentary font face > serif bold": "normal",
+    "Options > Commentary font face > serif bold italic": "normal",
+    "Options > Commentary font face > serif italic": "normal",
+    "Options > Commentary font size": "normal",
+    "Options > Commentary font size > huge": "normal",
+    "Options > Commentary font size > large": "normal",
+    "Options > Commentary font size > larger": "normal",
+    "Options > Commentary font size > medium": "normal",
+    "Options > Commentary font size > small": "normal",
+    "Options > Commentary font size > tiny": "normal",
+    "Options > Eliza mode": "normal",
+    "Options > Save commentary to file": "normal",
+    "Options > Self-watching mode": "normal",
+    "Options > Set breakpoint": "normal",
+    "Options > Show codelet counts": "normal",
+    "Options > Show last codelet type": "normal",
+    "Options > Slipnet graphics": "normal",
+    "Options > Step mode interval": "normal",
+    "Options > Undo last clamp": "disabled",
+    "Options > Verbose mode": "normal",
+    "Windows": "normal",
+    "Windows > Hide Coderack": "normal",
+    "Windows > Hide Commentary": "normal",
+    "Windows > Hide Episodic Memory": "normal",
+    "Windows > Hide Slipnet": "normal",
+    "Windows > Hide Temperature": "normal",
+    "Windows > Hide Temporal Trace": "normal",
+    "Windows > Hide Workspace": "normal",
+    "Windows > Hide all windows": "normal",
+    "Windows > Show Bottom Themes": "normal",
+    "Windows > Show EEG": "normal",
+    "Windows > Show Logo": "normal",
+    "Windows > Show Top Themes": "normal",
+    "Windows > Show Vertical Themes": "normal",
+    "Windows > Show all windows": "normal"
+   },
+   "reset-button": "normal",
+   "self-watching-warning-visible": true,
+   "speed-slider": "normal",
+   "step-button": "normal",
+   "stop-button": "disabled"
+  }
+ },
+ "windows": [
+  {
+   "aspect": [
+    401,
+    301,
+    401,
+    301
+   ],
+   "background": "Rgb(255, 255, 255)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    800,
+    600
+   ],
+   "default_size": [
+    800,
+    600
+   ],
+   "draws_in": "metacat.gui.workspace_graphics",
+   "geometry": "800x600+484+0",
+   "global": "g_workspace_window",
+   "left_press": "metacat.gui.workspace_graphics.workspace_window_press_handler",
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "Workspace",
+   "panel_class": "metacat.gui.workspace_graphics.WorkspaceWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.workspace_graphics.WorkspaceWindow.resize",
+   "right_press": null,
+   "scrollbars": [],
+   "scrolling": "none",
+   "shift_left_press": null,
+   "title": "Workspace",
+   "visible_at_start": true
+  },
+  {
+   "aspect": [
+    652,
+    311,
+    652,
+    311
+   ],
+   "background": "Rgb(255, 250, 205)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    650,
+    309
+   ],
+   "default_size": [
+    650,
+    309
+   ],
+   "draws_in": "metacat.gui.slipnet_graphics",
+   "geometry": "650x309+0+638",
+   "global": "g_slipnet_window",
+   "left_press": null,
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "Slipnet",
+   "panel_class": "metacat.gui.slipnet_graphics.SlipnetWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.slipnet_graphics.SlipnetWindow.resize",
+   "right_press": null,
+   "scrollbars": [],
+   "scrolling": "none",
+   "shift_left_press": null,
+   "title": "Slipnet",
+   "visible_at_start": true
+  },
+  {
+   "aspect": [
+    29,
+    75,
+    29,
+    75
+   ],
+   "background": "Rgb(255, 228, 225)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    230,
+    598
+   ],
+   "default_size": [
+    230,
+    598
+   ],
+   "draws_in": "metacat.gui.coderack_graphics",
+   "geometry": "230x598+1294+0",
+   "global": "g_coderack_window",
+   "left_press": null,
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "Coderack",
+   "panel_class": "metacat.gui.coderack_graphics.CoderackWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.coderack_graphics.CoderackWindow.resize",
+   "right_press": null,
+   "scrollbars": [],
+   "scrolling": "none",
+   "shift_left_press": null,
+   "title": "Coderack",
+   "visible_at_start": true
+  },
+  {
+   "aspect": [
+    24,
+    59,
+    24,
+    59
+   ],
+   "background": "Rgb(209, 238, 238)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    70,
+    175
+   ],
+   "default_size": [
+    70,
+    175
+   ],
+   "draws_in": "metacat.gui.temperature_graphics",
+   "geometry": "70x175+0+171",
+   "global": "g_temperature_window",
+   "left_press": null,
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "Temperature",
+   "panel_class": "metacat.gui.temperature_graphics.TemperatureWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.temperature_graphics.TemperatureWindow.resize",
+   "right_press": null,
+   "scrollbars": [],
+   "scrolling": "none",
+   "shift_left_press": null,
+   "title": "Temperature",
+   "visible_at_start": true
+  },
+  {
+   "aspect": null,
+   "background": "Rgb(127, 255, 212)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    7000,
+    69
+   ],
+   "default_size": [
+    1000,
+    69
+   ],
+   "draws_in": "metacat.gui.trace_graphics",
+   "geometry": "1000x82+0+985",
+   "global": "g_trace_window",
+   "left_press": "metacat.gui.trace_graphics.trace_window_press_handler",
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "Temporal Trace",
+   "panel_class": "metacat.gui.trace_graphics.TraceWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.trace_graphics.TraceWindow.resize",
+   "right_press": null,
+   "scrollbars": [
+    "horizontal"
+   ],
+   "scrolling": "horizontal",
+   "shift_left_press": null,
+   "title": "Temporal Trace",
+   "visible_at_start": true
+  },
+  {
+   "aspect": null,
+   "background": "Rgb(255, 192, 203)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    300,
+    4000
+   ],
+   "default_size": [
+    300,
+    600
+   ],
+   "draws_in": "metacat.gui.commentary_graphics",
+   "geometry": "313x600+1534+0",
+   "global": "g_comment_window",
+   "left_press": null,
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "Commentary",
+   "panel_class": "metacat.gui.commentary_graphics.CommentWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.general_graphics.ScrollableTextWindow.resize",
+   "right_press": null,
+   "scrollbars": [
+    "vertical"
+   ],
+   "scrolling": "vertical",
+   "shift_left_press": null,
+   "title": "Commentary",
+   "visible_at_start": true
+  },
+  {
+   "aspect": null,
+   "background": "Rgb(127, 127, 127)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    260,
+    2000
+   ],
+   "default_size": [
+    260,
+    400
+   ],
+   "draws_in": "metacat.gui.memory_graphics",
+   "geometry": "273x400+1440+638",
+   "global": "g_memory_window",
+   "left_press": "metacat.gui.memory_graphics.memory_window_press_handler",
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "Episodic Memory",
+   "panel_class": "metacat.gui.memory_graphics.MemoryWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.memory_graphics.MemoryWindow.resize",
+   "right_press": null,
+   "scrollbars": [
+    "vertical"
+   ],
+   "scrolling": "vertical",
+   "shift_left_press": null,
+   "title": "Episodic Memory",
+   "visible_at_start": true
+  },
+  {
+   "aspect": [
+    301,
+    71,
+    301,
+    71
+   ],
+   "background": "Rgb(190, 190, 190)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    600,
+    140
+   ],
+   "default_size": [
+    600,
+    140
+   ],
+   "draws_in": "metacat.gui.theme_graphics",
+   "geometry": "600x140+660+638",
+   "global": "g_top_themes_window",
+   "left_press": "metacat.gui.theme_graphics.theme_window_left_press_handler.<locals>.handler(top-bridge)",
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "Top Themes",
+   "panel_class": "metacat.gui.theme_graphics.BridgeThemesWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.theme_graphics.BridgeThemesWindow.resize",
+   "right_press": "metacat.gui.theme_graphics.theme_window_right_press_handler.<locals>.handler(top-bridge)",
+   "scrollbars": [],
+   "scrolling": "none",
+   "shift_left_press": "metacat.gui.theme_graphics.theme_window_right_press_handler.<locals>.handler(top-bridge)",
+   "title": "Top Themes",
+   "visible_at_start": true
+  },
+  {
+   "aspect": [
+    301,
+    71,
+    301,
+    71
+   ],
+   "background": "Rgb(190, 190, 190)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    600,
+    140
+   ],
+   "default_size": [
+    600,
+    140
+   ],
+   "draws_in": "metacat.gui.theme_graphics",
+   "geometry": "600x140+660+816",
+   "global": "g_bottom_themes_window",
+   "left_press": "metacat.gui.theme_graphics.theme_window_left_press_handler.<locals>.handler(bottom-bridge)",
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "Bottom Themes",
+   "panel_class": "metacat.gui.theme_graphics.BridgeThemesWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.theme_graphics.BridgeThemesWindow.resize",
+   "right_press": "metacat.gui.theme_graphics.theme_window_right_press_handler.<locals>.handler(bottom-bridge)",
+   "scrollbars": [],
+   "scrolling": "none",
+   "shift_left_press": "metacat.gui.theme_graphics.theme_window_right_press_handler.<locals>.handler(bottom-bridge)",
+   "title": "Bottom Themes",
+   "visible_at_start": true
+  },
+  {
+   "aspect": [
+    81,
+    296,
+    81,
+    296
+   ],
+   "background": "Rgb(190, 190, 190)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    160,
+    590
+   ],
+   "default_size": [
+    160,
+    590
+   ],
+   "draws_in": "metacat.gui.theme_graphics",
+   "geometry": "160x590+1270+638",
+   "global": "g_vertical_themes_window",
+   "left_press": "metacat.gui.theme_graphics.theme_window_left_press_handler.<locals>.handler(vertical-bridge)",
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "Vertical Themes",
+   "panel_class": "metacat.gui.theme_graphics.BridgeThemesWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.theme_graphics.BridgeThemesWindow.resize",
+   "right_press": "metacat.gui.theme_graphics.theme_window_right_press_handler.<locals>.handler(vertical-bridge)",
+   "scrollbars": [],
+   "scrolling": "none",
+   "shift_left_press": "metacat.gui.theme_graphics.theme_window_right_press_handler.<locals>.handler(vertical-bridge)",
+   "title": "Vertical Themes",
+   "visible_at_start": true
+  },
+  {
+   "aspect": null,
+   "background": "Rgb(0, 0, 0)",
+   "canvas_bindings": {
+    "<Button-1>": "python callback",
+    "<Button-3>": "python callback",
+    "<Configure>": "python callback",
+    "<Shift-Button-1>": "python callback"
+   },
+   "canvas_size": [
+    2000,
+    120
+   ],
+   "default_size": [
+    900,
+    120
+   ],
+   "draws_in": "metacat.gui.eeg_graphics",
+   "geometry": "900x133+0+1092",
+   "global": "g_EEG_window",
+   "left_press": null,
+   "min_size": [
+    10,
+    10
+   ],
+   "name": "EEG",
+   "panel_class": "metacat.gui.eeg_graphics.EEGWindow",
+   "resizable": [
+    1,
+    1
+   ],
+   "resize_method": "metacat.gui.eeg_graphics.EEGWindow.resize",
+   "right_press": null,
+   "scrollbars": [
+    "horizontal"
+   ],
+   "scrolling": "horizontal",
+   "shift_left_press": null,
+   "title": "EEG",
+   "visible_at_start": false
+  },
+  {
+   "canvas_bindings": {},
+   "draws_in": "metacat.gui.fonts",
+   "geometry": "110x80+0+0",
+   "global": "fonts.g_mcat_logo",
+   "name": "Logo",
+   "resizable": [
+    0,
+    0
+   ],
+   "title": "Logo",
+   "visible_at_start": false
+  }
+ ]
+}

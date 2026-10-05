@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metacat"
+version = "1.2.0"
+description = "Metacat 1.2 (James B. Marshall), translated to Python from the Chez Scheme original"
+readme = "README.md"
+license = { text = "GPL-2.0-or-later" }
+requires-python = ">=3.12"
+dependencies = []                  # the standard library only (tkinter for the GUI)
+
+[project.optional-dependencies]
+test = ["pytest>=7.4"]
+qt = ["PySide6>=6.5"]                # the single-window GUI: python3 -m metacat.qt
+
+[project.scripts]
+metacat = "metacat.__main__:main"         # the CLI: python3 -m metacat
+metacat-gui = "metacat.gui.app:main"      # the GUI: python3 -m metacat.gui
+metacat-qt = "metacat.qt.app:main"        # the one-window GUI: python3 -m metacat.qt
+
+[tool.setuptools]
+packages = ["metacat", "metacat.gui", "metacat.qt"]
+
+[tool.setuptools.package-data]
+"metacat.gui" = ["help.txt"]               # chez_scheme/original/help.txt, unchanged
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+# pytest-qt, if installed, crashes pytest when no Qt binding imports; the Qt tests
+# use conftest.py's own qapp fixture instead
+addopts = "-p no:pytest-qt"
+markers = [
+    "slow: runs Chez or full golden runs; skipped by run-tests.sh --fast",
+]

@@ -1,0 +1,483 @@
+# session it18 started 2026-10-03 04:44:01
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ sed -n '/17 Final/,$p' ralph_loops/loop0001/iterations.md; ls racket racket/tests tests chez_scheme/oracle docs; head -20 tests/problems.txt; wc -l docs/*.md; n
+  > $ sed -n 1,200p chez_scheme/oracle/make-golden.ss; sed -n 20,80p tests/problems.txt; cat racket/tests/golden-pool.rkt | head -80
+  > $ sed -n 1,60p racket/cli.rkt; cat tests/run-tests.sh; cat ralph_loops/loop0001/gate.py | head -50
+  > Write /home/al/dev/metacat/tests/extra-seeds.py
+  > $ head -c 600 tests/golden/a-b-z_1.jsonl; echo; tail -2 tests/golden/a-b-z_1.jsonl | cut -c1-300
+
+Writing the extra-seed comparison script (20 new seeds per golden problem, oracle vs port); about to run it.
+  > $ python3 - <<'EOF'
+import re
+p='tests/extra-seeds.py'
+s=open(p).read()
+s=s.replace('''        last = chez[3].rstrip(b"\\n").rsplit(b"\\n", 1)[-1]
+        if b'"t
+  > $ time python3 tests/extra-seeds.py --keep /tmp/metacat-extra 2>&1 | tail -30
+  > $ cd /tmp/metacat-extra && grep -l '"ev":"halt"' *.chez.jsonl; ls *.chez.jsonl | wc -l; for f in *.chez.jsonl; do tail -1 $f | python3 -c "import json,sys;d=json.
+
+Now a mutation check that the script catches a divergence.
+  > $ grep -n "0.6" racket/engine/bonds.rktl | head -5
+  > $ cp racket/engine/bonds.rktl /tmp/bonds.bak && sleep 1 && sed -i '170s/expt 0.6/expt 0.5/' racket/engine/bonds.rktl && python3 tests/extra-seeds.py --seeds 1 2>&
+  > $ python3 tests/extra-seeds.py --seeds 1 2>&1 | tail -2; git status --short
+  > $ grep -rn "racket/gui" racket --include=*.rkt --include=*.rktl -l | grep -v compiled; grep -n "gui" racket/tests/engine-test.rkt | head
+  > $ sed -n 150,180p racket/tests/engine-test.rkt; grep -n "require" racket/engine/*.rktl | head; grep -n "require" racket/main.rkt racket/metacat.rkt racket/headles
+  > Write /home/al/dev/metacat/racket/tests/no-gui-test.rkt
+
+Extra seeds: 720/720 runs identical. Now writing a test that walks every headless module's imports to confirm none reaches racket/gui.
+  > $ python3 - <<'EOF'
+p='racket/tests/no-gui-test.rkt'
+s=open(p).read()
+helper='''(define (port->string* in)
+  (let loop ([acc '()])
+    (define s (read-string 6553
+  > $ python3 - <<'EOF'
+p='racket/tests/no-gui-test.rkt'
+s=open(p).read()
+start=s.index(';; every module path reachable')
+end=s.index('(define (port->string*')
+new=''
+  > $ python3 - <<'EOF'
+p='racket/tests/no-gui-test.rkt'
+s=open(p).read()
+s=s.replace('''    (and (path? p)
+         (regexp-match? collection-dir (path->string p))))
+  > $ sed -i 's|(define port-root (path->string (port-file "")))|(define port-root (path->string (port-file (quote same))))|' racket/tests/no-gui-test.rkt && raco tes
+  > $ cat > /tmp/w.rkt <<'EOF'
+#lang racket/base
+(require syntax/modresolve)
+(define seen (make-hash))
+(define (visit mod from)
+  (unless (hash-ref seen mod #f)
+    (
+  > $ sed -i 's|(resolve-module-path "/home/al/dev/metacat/racket/gui/colors.rkt" #f)|(resolve-module-path (string->path "/home/al/dev/metacat/racket/gui/colors.rkt")
+
+Still on the import-walk test. racket/draw itself imports `racket/gui/dynamic`, a small base-collects module that doesn't load the GUI, so the test has to whitelist it.
+  > $ python3 - <<'EOF'
+p='racket/tests/no-gui-test.rkt'
+s=open(p).read()
+s=s.replace('''         (not (string-prefix? (path->string p) port-root))''','''         (no
+  > $ cp racket/headless.rkt /tmp/headless.bak && sed -i 's|^(require racket/flonum racket/port|(require racket/gui/dynamic racket/gui/base racket/flonum racket/port|
+
+Mutation check passes: adding a racket/gui require to headless.rkt is caught for headless.rkt and cli.rkt. Starting the full gate in the background while I audit the docs against the code.
+  > $ python3 ralph_loops/loop0001/gate.py > /tmp/gate1.log 2>&1; echo EXIT $? >> /tmp/gate1.log
+  > $ cat docs/divergences.md; grep -n '^#' docs/porting-notes.md
+
+Launching three agents in parallel to check porting-notes.md and divergences.md claims against the code, split by section.
+  > Agent {"description": "Audit porting-notes items 01-06", "subagent_type": "general-purpose", "prompt": "You are auditing docum
+  > Read /home/al/dev/metacat/docs/porting-notes.md
+  > Read /home/al/dev/metacat/docs/porting-notes.md
+  > Agent {"description": "Audit porting-notes items 07-11", "subagent_type": "general-purpose", "prompt": "You are auditing docum
+  > $ cd /home/al/dev/metacat; ls racket racket/engine racket/tests racket/gui chez_scheme/oracle chez_scheme/oracle/tests tests tests/diff; git log --oneline | head 
+  > $ cd /home/al/dev/metacat; cat racket/engine.rkt | head -150; grep -n "port:" racket/utilities.rkt racket/engine/*.rktl | head -100
+  > Read /home/al/dev/metacat/docs/porting-notes.md
+  > $ cd /home/al/dev/metacat; cat racket/engine/pending.rktl; sed -n 150,200p racket/engine.rkt; grep -n "load" chez_scheme/original/metacat.ss
+  > Read /home/al/dev/metacat/docs/porting-notes.md
+  > $ cd /home/al/dev/metacat; ls racket racket/engine racket/tests tests tests/diff chez_scheme/oracle chez_scheme/oracle/tests; cat racket/engine/pending.rktl 2>/de
+  > Agent {"description": "Audit porting-notes 12-16, divergences", "subagent_type": "general-purpose", "prompt": "You are auditin
+  > $ cd /home/al/dev/metacat; grep -n "set-global\|include\|settable" racket/engine.rkt | head -80; cat racket/engine/view-globals.rktl | head -60
+  > $ cd /home/al/dev/metacat; grep -rn "define %num-of-flashes%\|define \*EEG\*\|(define (full-workspace-object-name\|define (group-graphics\|define (bridge-graphics
+  > Read /home/al/dev/metacat/docs/porting-notes.md
+
+While the agents work, I'm writing up the extra-seed results.
+  > $ cd /home/al/dev/metacat; ls racket racket/gui racket/engine racket/tests racket/gui-tests 2>&1; wc -l docs/divergences.md
+  > $ cd /home/al/dev/metacat; sed -n 80,200p racket/engine.rkt
+  > $ cd /home/al/dev/metacat; grep -rn "num-of-flashes%\|full-workspace-object-name\b" racket/engine/*.rktl racket/gui/*.rkt* racket/*.rkt | grep -n "define\|set!" |
+  > $ cd /tmp/metacat-extra && python3 - <<'EOF'
+import json,glob,collections
+by=collections.OrderedDict()
+for f in sorted(glob.glob('*.chez.jsonl')):
+    lines=open(
+  > $ cd /home/al/dev/metacat; grep -rn "%num-of-flashes%\|contains?" racket/engine/*.rktl | grep -i "define" | head; grep -n "num-of-flashes\|flash-pause" racket/eng
+  > Read /home/al/dev/metacat/docs/porting-notes.md
+  > Read /home/al/dev/metacat/docs/divergences.md
+  > $ cd /tmp/metacat-extra && grep -h '"ev":"halt"' *.chez.jsonl | cut -c1-300; grep -h '"ev":"halt"' /home/al/dev/metacat/tests/golden/*.jsonl | cut -c1-300
+  > $ cd /home/al/dev/metacat/racket; grep -rn "attach-workspace-view\|attach-views!" --include=*.rkt --include=*.rktl . | grep -v compiled | head; echo ---; grep -rn
+  > $ cd /home/al/dev/metacat/chez_scheme/oracle; grep -n "extend-syntax\|swl:oop\|swl:threads\|\*platform\*\|metacat-directory\|file-dialog\|get-actual-values\|defin
+  > $ cd /home/al/dev/metacat/racket; sed -n 160,240p gui/views.rkt; sed -n 50,75p engine/view-globals.rktl
+  > $ cd /home/al/dev/metacat/chez_scheme/oracle; grep -n "keep-going\|max-codelets\|break-time\|quiet-break\|abstract-answer-description\|make-comment-window\|Stoppe
+  > $ cd /home/al/dev/metacat; head -60 racket/headless.rkt; grep -n "set-global!" racket/headless.rkt | head -20; cat racket/tests/golden-harness.rkt | head -20
+  > $ cd /tmp/metacat-extra && python3 - > /tmp/table.md <<'EOF'
+import json,glob,collections
+by=collections.OrderedDict()
+for f in sorted(glob.glob('*.chez.jsonl')):
+  > $ cd /home/al/dev/metacat; grep -n "graphics%\|highlight-last\|set-window-size-defaults\|make-.*-window\|define (setup\|define setup" chez_scheme/original/setup.s
+  > $ cd /home/al/dev/metacat; ls docs; for s in b:run-codelets b:bridges? b:enable-bridges! b:rules? b:bridge-matrix b:rule-matrix b:structures first-answers; do ech
+
+Now diff the gui-side rktl files against originals.
+  > $ cd /home/al/dev/metacat; for f in bonds groups concept-mappings bridges breakers rules answers themes justify trace jootsing memory run group-graphics; do echo 
+  > $ cd /home/al/dev/metacat/chez_scheme/oracle; sed -n 228,275p prelude.ss; grep -n "codelet\|choose-codelet\|add-rule\|forward" /home/al/dev/metacat/racket/headles
+  > $ cd /home/al/dev/metacat; for f in slipnet coderack temperature theme trace memory commentary eeg workspace general group bridge rule; do for d in racket/gui rac
+  > $ cd /home/al/dev/metacat; for f in slipnet coderack temperature theme trace memory commentary workspace; do echo "##### $f"; diff chez_scheme/original/$f-graphic
+  > $ cd /home/al/dev/metacat/racket; sed -n '/(provide/,/^$/p' compat.rkt | head -60; grep -n "vm-primitive\|call/ec\|set-fizzle!\|ascending-index-list\|metacat-rese
+  > $ cd /home/al/dev/metacat; grep -n "define (find-next-space-position\|define find-next-space-position\|define relation-name\|define (relation-name\|define group-e
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/eeg-graphics.ss racket/gui/eeg-graphics.rktl | head -30; echo ====; diff chez_scheme/original/setup.ss racket
+  > $ cd /home/al/dev/metacat/racket; sed -n 20,35p utilities.rkt; sed -n 75,90p utilities.rkt; grep -n "pause\|sleep" utilities.rkt | head; sed -n 118,130p utilities
+  > $ { cat <<'EOF'
+# Extra-seed equivalence runs (item 17)
+
+The final audit of loop0001 ran every problem of `tests/problems.txt` with **20 seeds
+that are not golden
+  > $ cd /home/al/dev/metacat; grep -n "relation-name\|group-event-pexp\|find-next-space" racket/tests/engine-test.rkt; grep -n "ccbbaa\|caddr\|1062\|scheme\|Stopped:
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/utilities.ss racket/utilities.rkt
+  > $ cd /home/al/dev/metacat/racket; for s in set-thread-break-handler! set-scrollbar-size! engine-busy? engine-idle-evt set-view-global! get-widgets get-info-title 
+  > $ python3 - <<'EOF'
+p='docs/extra-seeds.md'
+s=open(p).read()
+s=s.replace("| Problem | Runs |","Per problem line (justify runs list the answer string; keep-going r
+  > $ cd /home/al/dev/metacat; sed -n 128,170p racket/tests/golden-test.rkt; sed -n 105,125p racket/tests/engine-test.rkt
+  > $ cd /home/al/dev/metacat; grep -rn "format-slipnode" racket/engine/*.rktl racket/engine.rkt | grep -i "top-level" 
+  > $ cd /home/al/dev/metacat; grep -rn "'format-slipnode\|define-top-level-value" racket --include=*.rkt* | grep -v compiled | head
+  > $ cd /home/al/dev/metacat/racket; grep -n "hidden-canvas" gui/fonts.rkt | head -3; grep -n "700" gui/gui.rktl gui/gui.rkt | head; grep -n "views" headless.rkt | h
+  > $ cd /home/al/dev/metacat; grep -n "bad\|clock\|keep-going\|--trace\|exit\|stderr" racket/tests/cli-test.rkt | head -30; grep -n "usage\|Usage" racket/cli.rkt | h
+  > $ cd /home/al/dev/metacat/racket; grep -n "platform\|nice-graphics\|8_3" gui/sgl.rkt | head; grep -n "graphics-dash-pattern" -r gui engine | head
+  > $ cd /home/al/dev/metacat/racket; timeout 60 racket -e '(require "engine.rkt" "compat.rkt") (displayln (top-level-bound? (quote format-slipnode)))' 2>&1 | tail -3
+  > $ cd /home/al/dev/metacat; sed -n 40,125p racket/tests/cli-test.rkt
+  > $ grep -n '^## \|Status' docs/anomalies_and_quirks.md | head -120; sed -n 1,30p docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat; for f in racket/engine/*.rktl; do b=$(basename $f .rktl); o=chez_scheme/original/$b.ss; [ -f $o ] || { echo "== $b: no original"; conti
+
+Extra-seed write-up done (docs/extra-seeds.md). Now checking anomaly entries that mention pending.rktl, which later items emptied.
+  > $ cd /home/al/dev/metacat; for f in tests/diff/sgl-battery.scm tests/diff/graphics-battery.scm tests/diff/panels-battery.scm; do echo "$f: $(grep -c '^ *(test\b\|
+  > $ grep -v '^;' racket/engine/pending.rktl | grep -v '^\s*$' | head -40; grep -n "same-direction?\|complement-codelet-pattern\|temperature-clamped\|initial-slipnod
+  > $ cd /home/al/dev/metacat; wc -l chez_scheme/original/group-graphics.ss racket/engine/group-graphics.rktl; grep -n "set-report-error-and-halt" racket/headless.rkt
+  > $ cd /home/al/dev/metacat; grep -n "(test" tests/diff/sgl-battery.scm | head -3; grep -c "(test " tests/diff/sgl-battery.scm tests/diff/graphics-battery.scm tests
+  > $ cd /home/al/dev/metacat; for b in coderack slipnet descriptions groups; do echo "=== $b"; diff chez_scheme/original/$b.ss racket/engine/$b.rktl; done
+  > $ cd /home/al/dev/metacat; sed -n 1212,1220p docs/porting-notes.md; sed -n 1308,1320p docs/porting-notes.md; grep -n "restore-current-state\|view-globals" docs/po
+  > $ cat racket/engine/pending.rktl | sed -n 1,60p; grep -rn "pending-procedures\|pending-variables" racket --include=*.rkt* | grep -v compiled
+  > $ sed -n 430,545p docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat; for f in sgl graphics panels; do echo "$f $(grep -o '(test\b' tests/diff/$f-battery.scm | wc -l) $(grep -oE '\((test|check)[a-z-]*' tes
+  > $ cd /home/al/dev/metacat; for b in setup demos group-graphics bridge-graphics rule-graphics; do echo "=== $b"; diff chez_scheme/original/$b.ss racket/engine/$b.r
+  > $ cd /home/al/dev/metacat; grep -n "50\|48\|38\|36" racket/tests/sgl-diff-test.rkt racket/tests/graphics-diff-test.rkt racket/tests/panels-diff-test.rkt | head; g
+  > $ grep -rn "%group-letter-category-font%\|find-next-space-position\|equivalent-workspace-objects?\b" racket/engine/*.rktl racket/gui/*.rktl | grep "define" | head
+  > $ cd /home/al/dev/metacat; grep -n "50 \|battery" docs/*.md PROGRESS.md ralph_loops/loop0001/PROGRESS.md 2>/dev/null | grep -i "sgl-battery\|graphics-battery\|pan
+  > $ grep -rn "group-letter-category-font\|equivalent-workspace-objects" racket/engine/*.rktl racket/gui/*.rktl | grep -v "^\S*:[0-9]*:\s*;" | head -8; grep -n "brid
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/run.ss racket/engine/run.rktl; diff chez_scheme/original/constants.ss racket/engine/constants.rktl | grep '^>
+  > $ cd /home/al/dev/metacat; ls racket/tests/snapshots | sed 's/-[a-z-]*\.png$//' | head -0; ls racket/tests/snapshots | wc -l; ls racket/tests/snapshots | head -80
+
+Now adding update lines to the stale anomaly statuses.
+  > $ cd /home/al/dev/metacat; grep -n "set-global!\|compilation-manager\|make-compilation-manager-load/use-compiled-handler\|load/use-compiled" racket/tests/diff-run
+  > $ cd /home/al/dev/metacat; cat racket/info.rkt; grep -n "gui-tests\|xvfb" tests/run-tests.sh; ls tests/gui-screenshot.rkt docs/screenshots docs/demos.md 2>&1; gre
+  > $ python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+def after(anchor, add):
+    global s
+    i=s.index(anchor); j=i+len(anchor)
+    s=s[:j]+add+
+  > $ cd /home/al/dev/metacat; grep -v '^\s*\(;\|#\|$\)' tests/problems.txt | wc -l; grep -v '^\s*\(;\|#\|$\)' tests/problems.txt | awk '{print NF}' | sort | uniq -c;
+  > $ cd /home/al/dev/metacat; grep -n "max-codelets\|exit 2\|\"2\"\|= 2\|stderr\|11" racket/gui-tests/dist-test.rkt | head; sed -n 1,40p racket/metacat.rkt | grep -v
+  > $ grep -rn "define.*%num-of-flashes%\|%num-of-flashes%" racket/engine/*.rktl racket/engine.rkt | head -5; git log --oneline -3 -- racket/engine/pending.rktl
+  > $ cd /home/al/dev/metacat/racket/gui; grep -n "running\.\.\.\|Help\"\|Memory\"\|\"Error\|port:" gui.rktl | head -50
+  > $ cd /home/al/dev/metacat; grep -v '^;' racket/engine-lang.rkt | head -40; grep -n "same-bond-category?\|full-workspace-object-name\|verbatim-clause?" racket/engi
+  > $ cd /home/al/dev/metacat/racket/gui; grep -n "get-info-title\|get-widgets\|make-menu-item\|engine-error" gui.rktl; grep -n "get-info-title\|info-title" ../../che
+
+pending.rktl's header still describes "files not ported yet" and keeps two unused macros; fixing that.
+  > $ cd /home/al/dev/metacat/racket/gui; sed -n 700,725p gui.rktl; sed -n 944,955p gui.rktl
+  > $ python3 - <<'EOF'
+p='racket/engine/pending.rktl'
+s=open(p).read()
+old=s[:s.index(';; *temperature-clamped?*')]
+new=''';; Part of the Racket port of Metacat (GPL
+
+I found no wrong code descriptions in lines 538–1090. Everything stale is a historical changelog entry that later items correct, but the item 07–11 text has no forward pointers. A reader who stops there would think names still live in `pending.rktl`.
+
+**Code diffs.** All 13 files plus `group-graphics.rktl` match their originals apart from the "Ported to Racket" header lines, except:
+- `groups.rktl`: the `get-local-density` `let*`, marked `port:` and described at lines 545–557.
+- `run.rktl`: three changes, all marked `port:` and matching lines 1004–1020: `prompt`/`no-prompt` left out, `call/cc` in `break`/`quiet-break` without the SWL calls, and the reversed `let*` in `init-workspace`.
+
+Nothing undocumented.
+
+**Checked and correct.** I checked these against the code and they hold:
+- The include positions in `engine.rkt` that the notes give (lines 541–543, 627, 748, 891, 1002–1003).
+- The `set-global!` names given at lines 580–581, 661, 782–785, 927–932 and 1033–1035, including `contains?`, which `workspace-battery.scm` still replaces.
+- `set-report-error-and-halt!` is marked `port:`.
+- The `b:*` battery names, `first-answers` and `METACAT_DIFF_DEBUG`.
+- `golden-harness.rkt` is a 30-line wrapper.
+- The crash check on `abc ccbbaa ijk` seed 3.
+- `cli-test.rkt` cases, including the nine bad-argument lists.
+- The 16-place cap (now in `golden-pool.rkt`), `tests/bench-runs.rkt` and `docs/run-times.md`.
+
+**Stale or misleading (historically accurate when written):**
+
+1. **L563–564**: "The rest of group-graphics.ss waits for the Workspace panel." Now `racket/engine/group-graphics.rktl` holds the whole file verbatim (item 13, L1213). Suggest adding "(item 13 ports the rest into the same file)".
+2. **L566–578**: lists `outline-box`, `arrowhead`, `draw-group-grope` and two arrowhead constants as stand-ins in `pending.rktl`. These are now in the ported graphics files. `%group-letter-category-font%` and `%relevant-group-length-font%` are now in `engine/view-globals.rktl`. `same-direction?` is the only one still in `pending.rktl`. Suggest a pointer like "(items 12–14 moved them; see L1223)".
+3. **L771–773**: the four slippage colours are now in `view-globals.rktl`, not `pending.rktl`. Same kind of pointer.
+4. **L920–921**: `%default-fg-color%`, `*fg-color*` and the colours are now in `view-globals.rktl`.
+5. **L922–925**: calls `group-event-pexp-text-string` and `relation-name` "early verbatim copies" in `pending.rktl`. They are now the permanent extracts `racket/engine/trace-graphics.rktl` and `racket/engine/theme-graphics.rktl` (item 14, L1308–1314). Suggest adding "(item 14 moves them to engine/trace-graphics.rktl and engine/theme-graphics.rktl)".
+6. **L962–964**: `engine-test.rkt` "the early copy of `relation-name`". The test (engine-test.rkt:152–154) checks `relation-name` and `group-event-pexp-text-string`, which are no longer early copies. Its own comment at engine-test.rkt:114 still says "early copies in engine/pending.rktl". Minor.
+7. **L1030**: `restore-current-state` "added" to `pending.rktl`. It now lives in `view-globals.rktl`, raises "no views are loaded" and is in `set-global!`. This is documented later at L1226 but not cross-referenced here.
+8. **L961**: "the same `caddr` error after the same 1062 trace lines". The test (golden-test.rkt:154–159) checks more than 1000 Chez lines and an identical prefix; it never asserts 1062. I didn't re-run the oracle, so the count itself is unverified. Suggest "after the same trace (1062 lines when written)".
+
+**Stale comments in code and docs outside the range** (the code itself is correct):
+- **`racket/engine.rkt` `set-global!` comments**:
+  - It groups `*EEG*` under "never defined by the original (engine/pending.rktl); not ported yet". `*EEG*` is now defined in `engine/eeg-graphics.rktl`.
+  - It says "gui.ss's speed settings (engine/pending.rktl)". They are in `view-globals.rktl`.
+- **`racket/engine/pending.rktl` header** still says "Stand-ins for names ... defined in files not ported yet". It now holds only the four names the original never defines: `*temperature-clamped?*`, `*initial-slipnode-unclamp-time*`, `same-direction?` and `complement-codelet-pattern`.
+- **porting-notes.md L1317–1318**: "engine/pending.rktl now only holds gui.ss's speed settings" was inaccurate even then (the never-defined names were there too). L1475–1476 corrects it.
+
+The main files: `/home/al/dev/metacat/docs/porting-notes.md`, `/home/al/dev/metacat/racket/engine.rkt`, `/home/al/dev/metacat/racket/engine/pending.rktl`, `/home/al/dev/metacat/racket/engine/view-globals.rktl` and `/home/al/dev/metacat/racket/tests/engine-test.rkt`.
+  > $ cd /home/al/dev/metacat/racket; grep -v "^;;\|^$" engine/pending.rktl | head -20; grep -n "include" engine.rkt | head -60 | grep -n "graphics\|demos\|view-globa
+  > $ cd /home/al/dev/metacat; sed -n 1,540p docs/porting-notes.md | grep -n "golden-harness\|view-test\|headless\|cli.rkt\|main.rkt\|item 12\|Item 12"; grep -n "defi
+  > $ sed -i '3s/Until item 16/Until item 15/' racket/engine/pending.rktl && grep -rn "pending\|not ported yet" racket/tests/*.rkt | head
+  > $ cd /home/al/dev/metacat; grep -rn "define \*temperature-clamped?\*\|define \*initial-slipnode-unclamp-time\*\|define same-direction?\|define complement-codelet-
+  > $ cd /home/al/dev/metacat; grep -n "set-global\|\*workspace-window\*" racket/gui/setup.rktl racket/gui/gui.rkt | head -8; grep -rn "plot-current-values" chez_sche
+
+Fixing the stale comments in engine.rkt and engine-test.rkt that the second agent flagged.
+  > $ grep -n "pending\|not ported" racket/engine.rkt; sed -n 80,90p racket/tests/engine-test.rkt; sed -n 110,130p racket/tests/engine-test.rkt
+  > $ cd /home/al/dev/metacat/racket/gui; sed -n 95,130p fonts.rkt; grep -n "scrollbar-width\|scrollbar-height" fonts.rkt gui.rkt | head; grep -n "create-mcat-logo" f
+  > $ cd /home/al/dev/metacat/racket/gui; sed -n 20,60p fonts.rkt | grep -n "families\|roman\|swiss"; grep -n "font-families\|'roman\|'swiss" fonts.rkt | head
+  > $ cd /home/al/dev/metacat; sed -n 1,30p racket/gui/engine-route.rkt | grep -v "^$"
+  > $ sed -n 28,40p racket/engine.rkt; sed -n 115,125p racket/engine.rkt; sed -n 150,160p racket/engine.rkt
+  > $ cd /home/al/dev/metacat/racket/tests; grep -ln "golden-pool" *.rkt; grep -n "racket/gui\|racket/draw" views-test.rkt engine-test.rkt sgl-test.rkt no-gui-test.rk
+  > $ cd /home/al/dev/metacat/racket/tests; grep -n "racket/gui\|module-declared\|draw" views-test.rkt sgl-test.rkt engine-test.rkt | head; grep -n "view-globals\|#f 
+  > $ python3 - <<'EOF'
+import re
+p='racket/engine.rkt'
+s=open(p).read()
+s=s.replace(''';; Names that model files refer to but whose files are not ported yet are
+;; d
+  > $ cd /home/al/dev/metacat; grep -n "gui\|declared" racket/tests/views-test.rkt | head; git status --short racket/tests; git log --oneline -1 -- racket/tests/views
+  > $ cd /home/al/dev/metacat; sed -n 1,40p racket/tests/views-test.rkt; grep -n "check\|test-case" racket/tests/views-test.rkt | head -30
+
+Waiting on two audit agents; meanwhile drafting the follow-ups list for a second loop.
+  > $ sed -n 1,25p docs/run-times.md; wc -l racket/compat.rkt racket/engine/*.rktl racket/gui/*.rkt* | tail -1; grep -c "port:" racket/engine/*.rktl racket/gui/*.rktl
+  > $ cd /home/al/dev/metacat; grep -n "misc" racket/tests/demos-test.rkt | head; grep -n "misc[0-9]" chez_scheme/original/demos.ss | head -20; grep -c "\"" racket/te
+
+I found 7 statements that are now wrong or stale and 1 real bug in lines 1-540; nothing else in that range needs changing. I didn't edit any file or run the test suite.
+
+**Wrong now / stale**
+
+1. **L95-97**: "The port has no need for any of this: it emits the same events from the same places directly (through a trace hook...)". This is wrong. `racket/headless.rkt` (`install-trace!`) uses the oracle's own approach. It swaps in the same wrappers with `set-global!` and forwards `*coderack*` `choose-codelet` (l.314-320) and `*workspace*` `add-rule` (l.342-345). Its header says so. Suggest: "The port does the same in `racket/headless.rkt`, with `set-global!` instead of `set!`."
+
+2. **L184-192, L902 of utilities.rkt (bug)**: the notes say `reveal-obj` reaches `format-slipnode` through `top-level-value`, "so the rules port must register it there". Nobody registered it. No `define-top-level-value 'format-slipnode` exists in `racket/`, and loading `engine.rkt` and evaluating `(top-level-bound? 'format-slipnode)` returns `#f`. So `reveal-obj` on a slipnode errors. Fix the code, or log it in `docs/anomalies_and_quirks.md`.
+
+3. **L228-235**: the `utilities.rkt` change list is incomplete.
+   - It leaves out `set-report-error-and-halt!` (marked `port:`, l.79).
+   - It leaves out the locally defined `clear-input-port` (l.133).
+   - The `pause` → `sleep` change (l.954) has no `port:` marker in the code, so the claim "these changes (marked `port:`)" is false for it.
+
+4. **L301-307 and L389-399**: historically accurate. But none of the item-05 stand-ins are in `pending.rktl` now:
+   - `%update-cycle-length%` is in `run.rktl:23`.
+   - `make-group-pexp`, `monitor-...` and the rest are defined by their ported files.
+
+   `pending.rktl` now holds only names the original never defines: `*temperature-clamped?*`, `*initial-slipnode-unclamp-time*`, `same-direction?` and `complement-codelet-pattern`. Suggest a "(since removed, see later items)" note.
+
+5. **L321-326**: "The colours and fonts coderack.ss refers to ... are stand-ins in pending.rktl." They are now in `racket/engine/view-globals.rktl`, installed by `racket/gui/views.rkt`. The window constants are in `racket/gui/constants.rktl`.
+
+6. **L452-456**: "engine/pending.rktl defines it (`#f`) under run.ss, and the run.ss item must move it there." That move never happened. `*temperature-clamped?*` is still in `pending.rktl`, now described as "not pending on any item". Suggest: "it stays in pending.rktl as a never-defined name."
+
+7. **L457-467**: every stand-in listed is now defined by its file: `same-bond-category?` in `bonds.rktl`, `verbatim-clause?` in `rules.rktl`, `full-workspace-object-name` in `trace.rktl`, `group-graphics` in `group-graphics.rktl`, `*EEG*` in `eeg-graphics.rktl:126`. This is historical, but deserves a "since ported" note.
+
+8. **L253-255**: "rule-graphics.ss:77 ... the GUI port must restructure it." This was done, but in the engine file `racket/engine/rule-graphics.rktl` (`port:` block at l.77; `update-rule-pexps!` returns a copy), not in the GUI layer. Add a pointer.
+
+9. **L9-11**, minor: "engine modules directly in the folder". The engine is one module, `racket/engine.rkt`, which includes `racket/engine/*.rktl`, and that set includes the model-side graphics files. `racket/headless.rkt` and `racket/metacat.rkt` are also there.
+
+**Historically accurate, fine**
+- L61-62, L354-356: these were forward-looking. The headless null windows now exist in `racket/headless.rkt` (`install-headless-windows!`), so a pointer there would help.
+- Everything else checks out against the current code. That covers the oracle prelude and `run.ss`/`trace.ss` claims, the `compat.rkt` exports, `engine-lang.rkt`, `diff-runner.rkt`, the `set-global!` entries named in the notes, and all test, battery and check file names cited in L1-540. The 36 problems in `problems.txt` and the battery fakes also match.
+
+**Verbatim diffs of `racket/engine/X.rktl` against `original/X.ss`**
+- These differ only by their 3-line header: descriptions, bonds, breakers, bridges, concept-mappings, formulas, images, rules, answers, themes, justify, trace, jootsing, memory, and the five workspace files. demos, group-graphics and bridge-graphics are header-only too.
+- These have only header lines plus `port:`-marked changes: coderack and slipnet (the `define-*-list*` form), groups (the `append` order), run (prompt/no-prompt, `break`/`quiet-break` via `call/cc`, the `let*` order), setup (`setup`/`enable-resizing` removed) and rule-graphics.
+- One header mismatch: `rule-graphics.rktl`'s header says "verbatim", but the file has a `port:` change.
+- constants, eeg-, general-, theme- and trace-graphics are partial ports. They are not verbatim and I didn't audit them line by line.
+
+**Stale comments in the code itself** (outside the notes)
+- `racket/engine.rkt`'s `set-global!` list says `*EEG*` is "never defined by the original (engine/pending.rktl); not ported yet". It is now defined in `eeg-graphics.rktl`.
+- The same list says gui.ss's speed settings are in "(engine/pending.rktl)". They are in `view-globals.rktl:59`.
+- The `racket/engine/constants.rktl` header says the graphics constants "wait for the GUI items". They have since been ported.
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/general-graphics.ss racket/gui/general-graphics.rktl | grep -v "^< " | head -150
+  > $ cd /home/al/dev/metacat; diff chez_scheme/original/setup.ss racket/engine/setup.rktl | grep -v "^< "
+  > $ cd /home/al/dev/metacat; grep -n "platform" chez_scheme/oracle/prelude.ss chez_scheme/original/metacat.ss | head
+  > $ cd /home/al/dev/metacat; grep -n "create-mcat-logo" -A25 chez_scheme/original/fonts.ss | head -40; sed -n 335,365p racket/gui/gui.rkt
+  > $ cd /home/al/dev/metacat; grep -n "select-workspace-fonts" -A40 chez_scheme/original/workspace-graphics.ss | grep -o "(set! %[a-z-]*%" | sort -u | wc -l
+  > Write /home/al/dev/metacat/docs/follow-ups.md
+
+The first agent found a real gap: `format-slipnode` was never registered as a top-level value, so `reveal-obj` on a slipnode would fail. Checking.
+  > $ grep -n "format-slipnode" chez_scheme/original/*.ss racket/*.rkt racket/engine/*.rktl | head; grep -n "define-top-level-value" racket/engine/*.rktl racket/engin
+  > $ grep -n "reveal-obj" -A12 racket/utilities.rkt | head -30; grep -n "reveal-obj\|(define format-slipnode\|(define (format-slipnode" chez_scheme/original/*.ss | h
+  > $ grep -n "(reveal\b\|reveal " chez_scheme/original/*.ss | head; grep -n "top-level-value 'slipnode?\|top-level-value '" racket/utilities.rkt | head
+  > $ sed -n 90,110p chez_scheme/original/jootsing.ss; grep -n "slipnode?\|letter?\|group?" racket/utilities.rkt | head
+
+I found 7 discrepancies between the two docs and the code; neither doc is wrong in any big way. Most of the claims I checked still hold.
+
+**Claims that still hold:**
+- Constants and timers: 96 dpi, `'unsmoothed` for text and shapes, the 50 ms refresh timer, both 700 ms timers, the 15 px scrollbars, 1280×1024, and the 11 Workspace fonts.
+- Hooks and procedures: `set-window-host-maker!`, `make-window-host`, `set-thread-break-handler!`, `set-scrollbar-size!`, `set-view-global!`, `engine-busy?`/`engine-idle-evt`, `install-recorders!`, `cli-main` and `lazy-require`.
+- Tests: the 48 pictures over 8 scenes, sgl-test's 71 checks, and the snapshot names.
+- Build and test setup: the `make-dist.sh` steps and the `info.rkt` exclusion of `gui-tests`.
+- Original-vs-port diffs: every `racket/gui/*-graphics.rktl`, the engine group/bridge/rule graphics files and `demos.rktl` differ from the original only in `port:`-marked places, apart from the two small unmarked lines in item 5 below.
+
+**Discrepancies:**
+
+1. **docs/divergences.md:37-39.** It says ``attach-workspace-view!` sets gui.ss's speed settings ... (`%flash-pause%` 0, `%snag-pause%` 0, `%num-of-flashes%` 1)``.
+   - The code (racket/gui/views.rkt:176-198): the main entry point is now `attach-views!`, which views-test and views-harness use. Both procedures also set `%codelet-highlight-pause%` 0 and `%text-scroll-pause%` 0.
+   - Fix: name `attach-views!` (and `attach-workspace-view!`), and list all five settings.
+
+2. **docs/porting-notes.md:1279-1294 (item 13 tests).** It describes `racket/tests/workspace-view-test.rkt`, and line 1233 calls `attach-workspace-view!` the hook.
+   - The code: that file no longer exists. It is now `racket/tests/views-test.rkt`, which uses `attach-views!`. The note at 1374 records the rename, but item 13 does not point to it.
+   - Fix: add "(renamed views-test.rkt in item 14)" at 1279.
+
+3. **docs/porting-notes.md:1158, 1269, 1350.** They give sgl-battery.scm as "50 tests", graphics-battery.scm as "50 tests" and panels-battery.scm as "38 tests".
+   - The code: the files hold 48, 48 and 36 `(test` forms. `check-battery` (racket/tests/diff-runner.rkt:95-110) adds two count checks per battery, which probably explains the extra 2. PROGRESS.md has the same numbers.
+   - Fix: say "48 tests (50 checks)", "48 (50)" and "36 (38)".
+
+4. **docs/porting-notes.md:1316-1318 (item 14).** It says "engine/pending.rktl now only holds gui.ss's speed settings".
+   - The code: pending.rktl now holds only names the original never defines (`*temperature-clamped?*`, `*initial-slipnode-unclamp-time*`, `same-direction?`, `complement-codelet-pattern`). Item 15 (line 1475) records the move.
+   - Fix: add "(until item 15)".
+
+5. **Unmarked port changes.** These are small, but they break the "changes are marked port:" claim at 1110, 1240 and 1487.
+   - racket/gui/setup.rktl: `(start-gui-refresh!)` replaces the SWL waiter-prompt `if*`. The `port:` comment sits after it, not before. porting-notes 1456 mentions `start-gui-refresh!` but not that `setup` calls it.
+   - racket/gui/gui.rktl:715: `get-info-title` has no `port:` tag of its own, though porting-notes 1494 says the new messages are marked. Its only cover is the `get-widgets` comment above it.
+   - Fix: add marks, or soften the claim.
+
+6. **Two copies of `*platform*` with different values.** porting-notes 1136 says sgl.rkt's `*platform*` is `'unix`; porting-notes 1211 says engine/general-graphics.rktl's is `'linux`.
+   - The code: both statements are accurate (sgl.rkt:101 and engine/general-graphics.rktl:32). But `'unix` is not one of the values original metacat.ss accepts (`linux`/`windows`/`macintosh`).
+   - This is harmless, because only `'windows` is ever tested. Consider making sgl.rkt `'linux`, or note why it differs.
+
+7. **Possibly missing from divergences.md.** The standalone executable is new user-facing behaviour, and divergences.md never mentions it:
+   - `metacat`/`racket/metacat.rkt` runs headless when given problem arguments and opens the GUI with no arguments or one number;
+   - `racket racket/main.rkt [SCALE]` stands in for `(setup)`;
+   - the original had only the REPL `(setup)`/`(run ...)`.
+
+   divergences.md:80-82 covers "no REPL" only. Suggestion: add a short "Entry points: GUI, CLI, standalone program (items 15-16)" entry.
+
+**Minor (code comment, not docs):** racket/engine/setup.rktl's `port:` comment still says `(setup)` and `enable-resizing` "move to the GUI layer when the panels are ported", in the future tense. They already live in racket/gui/setup.rktl.
+
+I changed nothing.
+  > $ grep -n "vprintf" -A6 chez_scheme/original/syntactic-sugar.ss chez_scheme/original/utilities.ss | head -20; grep -n "verbose" racket/gui/gui.rktl | head
+  > $ grep -n "verbose\|command-line-arguments\|define (main\|load " chez_scheme/oracle/run.ss | head -30; grep -n "verbose" racket/headless.rkt racket/cli.rkt | head
+
+A differential test in the slipnet battery fits: it runs under both Chez and the engine.
+  > $ tail -30 tests/diff/slipnet-battery.scm; grep -n "define-syntax test\|(define (test\|test " tests/diff/helpers.scm | head -5
+  > $ cat >> tests/diff/slipnet-battery.scm <<'EOF'
+
+;; utilities.ss's reveal (jootsing.ss calls it in a vprintf, so only in
+;; verbose mode) names slipnodes with rul
+
+Fails as expected (`ERROR` vs Chez's `<length>` …). Now the fix: register `format-slipnode` as a top-level value after rules.rktl is included.
+  > $ grep -n "include" racket/engine.rkt | sed -n 1,60p
+  > $ python3 - <<'EOF'
+p='racket/engine.rkt'
+s=open(p).read()
+s=s.replace('''(include "engine/rules.rktl")          ; rules.ss
+''','''(include "engine/rules.rktl")  
+
+Passes now. Checking for other `top-level-value` lookups of names nobody registers.
+  > $ grep -n "top-level-value\|(eval " racket/utilities.rkt racket/engine/*.rktl racket/gui/*.rktl racket/headless.rkt | grep -v "define-top-level-value\|^\S*:\s*;" 
+  > $ sed -n 250,275p racket/utilities.rkt; grep -n "(eval\b" chez_scheme/original/*.ss | head
+  > $ grep -rn "string->slipnode\|symbol->slipnode" chez_scheme/original/*.ss | grep -v "define" | head -5
+
+Also want to check whether verbose output as a whole matches the oracle, since no test has ever turned `%verbose%` on. Looking at how the oracle's headless panel handles it.
+  > $ grep -n "verbose" chez_scheme/oracle/*.ss | head; sed -n 40,140p chez_scheme/oracle/run.ss
+  > $ sed -n 25,39p chez_scheme/oracle/run.ss; sed -n 260,280p chez_scheme/oracle/prelude.ss; sed -n 240,256p racket/headless.rkt
+  > $ grep -n "define (run-problem" -A40 racket/headless.rkt | grep -n "views\|install\|init-mcat" 
+  > $ sed "s|^(define \$oracle-directory|(define \$oracle-directory \"$PWD/chez_scheme/oracle\")\n(define \$unused|" chez_scheme/oracle/run.ss | sed 's|^(install-head
+  > $ cd /tmp && scheme --script /tmp/vrun.ss abc abd xyz --seed 5 --max-codelets 3000 > /tmp/v.chez 2>&1; echo $?; racket /tmp/vrun.rkt abc abd xyz 5 3000 > /tmp/v.r
+
+The first verbose run (14,104 lines) matches the oracle exactly, apart from my scratch script printing its return value. Extending this to all 109 golden runs to reach jootsing's `reveal` path.
+  > $ cat > /tmp/vrun.rkt <<'EOF'
+#lang racket/base
+(require (file "/home/al/dev/metacat/racket/headless.rkt")
+         (file "/home/al/dev/metacat/racket/engine.rkt"
+  > $ cd /tmp/vout && grep -l "entry: overlap" *.chez | wc -l; grep -h "entry: overlap" *.chez | head -3; cat *.chez | wc -l; grep -l "Error\|error" *.rkt | head
+  > $ cd /tmp/vout && grep -l "entry: overlap" *.chez | while read f; do echo "$f $(wc -l < $f)"; done; cd /home/al/dev/metacat; sed -n 60,80p racket/cli.rkt; grep -n
+  > $ sed -n 1,24p chez_scheme/oracle/run.ss; grep -n "define \$commentary-hook\|^(define \$" chez_scheme/oracle/prelude.ss | head; sed -n 415,470p racket/headless.rk
+
+Implementing `--verbose` on the oracle side first.
+  > $ python3 - <<'EOF'
+p='chez_scheme/oracle/prelude.ss'
+s=open(p).read()
+old='''          ;; as in gui.ss with the verbose checkbox off
+          ((set-verbose-step
+  > $ grep -nF 'verbose' chez_scheme/oracle/prelude.ss chez_scheme/oracle/run.ss
+
+Now the Racket side: headless.rkt and cli.rkt.
+  > $ python3 - <<'EOF'
+p='racket/headless.rkt'
+s=open(p).read()
+old='''                   ;; as in gui.ss with the verbose checkbox off
+                   [(set-verb
+  > $ sed -n 40,55p racket/metacat.rkt; grep -n "usage" racket/tests/cli-test.rkt | head; grep -n "define (both\|define (run-both\|define (compare" racket/tests/cli-t
+  > $ sed -i 's|               \[--keep-going\] \[--trace FILE\]   run headless\\n"))|               [--keep-going] [--trace FILE] [--verbose]   run headless\\n"))|' 
+
+Adding the verbose cases to cli-test.rkt.
+  > Edit /home/al/dev/metacat/racket/tests/cli-test.rkt
+  > $ raco make racket/cli.rkt racket/metacat.rkt racket/tests/cli-test.rkt && raco test racket/tests/cli-test.rkt 2>&1 | tail -5
+
+cli-test passes (79 checks). Checking that the verbose case fails without the `format-slipnode` fix:
+  > $ tail -3 /tmp/gate1.log; cp racket/engine.rkt /tmp/engine.bak && sleep 1 && sed -i "s|^(define-top-level-value 'format-slipnode format-slipnode)|(void)|" racket/
+
+The mutation is caught. But the first background gate run **failed**; looking at why.
+  > $ git diff racket/engine.rkt | grep -c format-slipnode; grep -n "FAIL\|failure\|Error\|error" /tmp/gate1.log | head -20
+  > $ sed -n 35,60p /tmp/gate1.log | cut -c1-250; grep "raco test: \|tests passed\|test failures" /tmp/gate1.log | cut -c1-200 | head -60
+  > $ grep -n "start-gui-refresh" -B3 -A3 racket/gui/setup.rktl; sed -n 705,720p racket/gui/gui.rktl; grep -n "move to the GUI" -B2 -A2 racket/engine/setup.rktl; grep
+  > $ sed -n 695,706p racket/gui/gui.rktl; sed -n 18,23p racket/engine/constants.rktl; sed -n 95,102p racket/gui/sgl.rkt
+  > $ python3 - <<'EOF'
+import re
+def rep(p,old,new):
+    s=open(p).read(); assert old in s,(p,old); open(p,'w').write(s.replace(old,new,1))
+rep('racket/gui/setup.rkt
+  > $ sed -i '19s|;; Ported to Racket, 2026: verbatim; part of the engine|;; Ported to Racket, 2026: verbatim but for one port: change (update-rule-pexps!\n;; returns
+
+Code-comment fixes done. Now the utilities.rkt `pause` port mark, then the docs.
+  > $ sed -i "1136s/(\`'unix\`)/(\`'linux\`; \`'unix\` until item 17)/" docs/porting-notes.md && sed -n 1136p docs/porting-notes.md; grep -n "sleep" -B3 racket/utilit
+  > $ sed -n 945,955p racket/utilities.rkt; sed -n 118,140p racket/utilities.rkt
+  > $ python3 - <<'EOF'
+def rep(p,old,new):
+    s=open(p).read(); assert old in s,(p,old); open(p,'w').write(s.replace(old,new,1))
+rep('racket/utilities.rkt','''(defi
+  > $ python3 - <<'EOF'
+def rep(p,old,new):
+    s=open(p).read(); assert old in s,(p,old); open(p,'w').write(s.replace(old,new,1))
+p='docs/porting-notes.md'
+rep(p,'''
+
+Now the divergences.md fixes: the `attach-views!` speed settings and a new entry for the entry points.
+  > $ python3 - <<'EOF'
+def rep(p,old,new):
+    s=open(p).read(); assert old in s,(p,old); open(p,'w').write(s.replace(old,new,1))
+p='docs/divergences.md'
+rep(p,'''  
+  > $ sed -n 10,35p chez_scheme/oracle/README.md
+  > $ python3 - <<'EOF'
+def rep(p,old,new):
+    s=open(p).read(); assert old in s,(p,old); open(p,'w').write(s.replace(old,new,1))
+rep('chez_scheme/oracle/README.md',
+
+Adding two anomaly entries: the `format-slipnode` port bug and racket/draw importing `racket/gui/dynamic`.
+  > $ python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+anchor='## 🛸 UFO sightings'
+add='''### Verbose mode reached an unregistered `format-slipnode
+
+Now the item 17 section in porting-notes.md.
+  > $ cat >> docs/porting-notes.md <<'EOF'
+
+## Final audit (item 17)
+
+### What was checked
+- **Extra seeds**: every problem line of tests/problems.txt with 20 seeds t
+
+Fixing an odd phrase in follow-ups.md, then rerunning the full gate.
+  > $ python3 - <<'EOF'
+def rep(p,old,new):
+    s=open(p).read(); assert old in s,(p,old); open(p,'w').write(s.replace(old,new,1))
+rep('docs/follow-ups.md','''- The e
+  > $ sed -n 75,84p README.md
+  > $ python3 - <<'EOF'
+def rep(p,old,new):
+    s=open(p).read(); assert old in s,(p,old); open(p,'w').write(s.replace(old,new,1))
+rep('README.md','[--keep-going] [--
+
+While the gate runs (no more code edits), I'll draft the PROGRESS entry. Afterwards I'll rerun the extra seeds, since engine.rkt and headless.rkt changed after the first run.
+  > ScheduleWakeup {"delaySeconds": 600, "reason": "fallback in case the gate notification doesn't arrive", "prompt": "Check /tmp/gate2.log
+
+The gate is running in the background. I'll write the PROGRESS entry once it and the extra-seed rerun finish.
+  > $ sleep 1; tail -3 /tmp/gate2.log
+
+Still in the Racket tests; waiting for the notification.
+
+# result: success in 862s, 98 turns, cost $6.39

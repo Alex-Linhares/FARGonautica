@@ -1,0 +1,365 @@
+# session it08 started 2026-10-03 21:05:41
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cd /home/al/dev/metacat; sed -n 1,400p ralph_loops/loop0002/iterations.md | grep -n "07\|08\|09" | head; wc -l chez_scheme/original/{bonds,groups,concept-mappin
+  > $ cd /home/al/dev/metacat; cat tests/diff/codelet-harness.scm
+  > $ cd /home/al/dev/metacat; cat tests/diff/codelet-battery.scm; head -c 3000 python/fixtures/codelet/002-codelets-01.txt 2>/dev/null || ls python/fixtures/codelet 
+  > $ cd /home/al/dev/metacat; cat tests/problems.txt | head -50; ls -la python/fixtures/codelet | head -60; ls racket racket/engine 2>/dev/null | head -80
+  > $ cd /home/al/dev/metacat; ls racket/tests; sed -n 1,200p racket/tests/codelet-diff-test.rkt
+  > $ cd /home/al/dev/metacat; wc -l python/tests/*.py python/metacat/*.py; cat python/tests/engine_stubs.py; cat python/run-tests.sh; cat python/tests/conftest.py
+
+Reading the harness and existing tests before writing the codelet test; next I'll check the Racket bonds/groups ports and the workspace test helpers.
+  > $ cd /home/al/dev/metacat; grep -n "^def \|^class \|^# ---\|^_\|^[A-Z_]* =" python/tests/test_workspace.py | head -80; sed -n 1,80p python/tests/test_workspace.py
+  > $ cd /home/al/dev/metacat; sed -n 100,340p python/tests/test_workspace.py; sed -n 1400,1577p python/tests/test_workspace.py
+  > $ cd /home/al/dev/metacat; sed -n 1,154p python/metacat/workspace_structures.py; sed -n 1,140p python/metacat/descriptions.py
+  > $ cd /home/al/dev/metacat; sed -n 140,294p python/metacat/descriptions.py; cat python/metacat/engine.py; cat docs/python-translation-plan.md | sed -n '/As built (
+  > $ cd /home/al/dev/metacat; grep -n "port:" racket/engine/{bonds,groups,concept-mappings}.rktl | head -50; grep -n "group-graphics\|bridge-graphics\|%workspace-gra
+  > $ cd /home/al/dev/metacat; sed -n 700,800p chez_scheme/original/groups.ss; sed -n 360,380p racket/engine/groups.rktl; grep -n "define group-graphics" -A60 chez_sc
+
+Launching translation subagents into a staging directory while I write the failing harness test.
+  > Agent {"description": "Translate groups.ss to Python", "prompt": "You are translating one file of Metacat 1.2 (Chez Scheme) to
+  > $ cd /home/al/dev/metacat; ls python/metacat; wc -l docs/python-translation-plan.md python/metacat/*.py racket/engine/groups.rktl; grep -rn "_metacat.groups\|grou
+  > $ cd /home/al/dev/metacat; cat docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 1,400p racket/engine/groups.rktl
+  > $ cd /home/al/dev/metacat; sed -n 400,1070p racket/engine/groups.rktl
+  > $ cd /home/al/dev/metacat; cat python/metacat/workspace_objects.py
+  > $ cd /home/al/dev/metacat; cat python/metacat/workspace_structures.py python/metacat/objects.py; sed -n 1,140p python/metacat/descriptions.py
+  > $ cd /home/al/dev/metacat; sed -n 140,294p python/metacat/descriptions.py
+  > $ cd /home/al/dev/metacat; sed -n 40,200p python/metacat/workspace_objects.py; grep -n "^def \|^class \|^    def otherwise\|^def load" python/metacat/workspace_ob
+  > $ cd /home/al/dev/metacat; sed -n 1,40p python/metacat/workspace_objects.py; sed -n 200,420p python/metacat/workspace_objects.py
+  > $ cd /home/al/dev/metacat; cat python/metacat/sugar.py
+  > Agent {"description": "Translate bonds and concept-mappings", "prompt": "You are translating files of Metacat 1.2 (Chez Scheme
+  > $ cd /home/al/dev/metacat; grep -n "port:" racket/engine/groups.rktl; diff <(sed 's/[ \t]*$//' chez_scheme/original/groups.ss) <(sed 's/[ \t]*$//' racket/engine/g
+  > $ cd /home/al/dev/metacat; ls python/metacat; wc -l docs/python-translation-plan.md python/metacat/*.py; grep -rn "_metacat\.\(bonds\|concept_mappings\|group_grap
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/bonds.ss
+  > $ cd /home/al/dev/metacat/python; grep -n "initially.clamped\|def add_top_down_codelets\|def post_codelet_probability\|def bottom_up_urgency\|def num_of_codelets_
+  > $ cd /home/al/dev/metacat; cat racket/engine/bonds.rktl
+  > $ cd /home/al/dev/metacat; cat chez_scheme/original/concept-mappings.ss; cat racket/engine/concept-mappings.rktl; sed -n 1,80p chez_scheme/original/group-graphics
+  > $ cd /home/al/dev/metacat; F=/home/al/.claude/projects/-home-al-dev-metacat/24ee3e1e-74f8-4bfe-aeaa-c4412e017161/tool-results/bxnyi3t7h.txt; grep -n "^#" $F
+  > $ cd /home/al/dev/metacat/python; grep -n "fizzle\|class .*Exception\|class Fizzle\|def define_codelet_procedure_star" -A6 metacat/sugar.py | head -60; sed -n 830
+  > $ cd /home/al/dev/metacat; grep -n "port:" racket/engine/bonds.rktl racket/engine/concept-mappings.rktl racket/engine/group-graphics.rktl; cat docs/python-transla
+  > $ cd /home/al/dev/metacat; F=/home/al/.claude/projects/-home-al-dev-metacat/24ee3e1e-74f8-4bfe-aeaa-c4412e017161/tool-results/bxnyi3t7h.txt; sed -n 63,280p $F
+  > $ cd /home/al/dev/metacat; grep -n "^#" docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; F=/home/al/.claude/projects/-home-al-dev-metacat/24ee3e1e-74f8-4bfe-aeaa-c4412e017161/tool-results/bxnyi3t7h.txt; sed -n 412,646p $F; s
+  > $ cd /home/al/dev/metacat; grep -n "monitor-\|\*trace\*\|trace" chez_scheme/original/{bonds,groups,concept-mappings}.ss | head; grep -n "define update-everything"
+  > $ cd /home/al/dev/metacat; sed -n 63,280p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 354,722p docs/python-translation-plan.md
+  > $ cd /home/al/dev/metacat; sed -n 150,182p chez_scheme/original/concept-mappings.ss; grep -rn "monitor-new-concept-mappings" chez_scheme/original/*.ss | head
+
+Now the style models.
+  > $ cd /home/al/dev/metacat; cat python/metacat/descriptions.py; cat python/metacat/workspace_structures.py
+  > $ cd /home/al/dev/metacat/python/metacat; for n in g_workspace_window p_workspace_graphics p_verbose p_justify_mode g_all_strings g_non_answer_strings g_initial_s
+  > $ cd /home/al/dev/metacat; sed -n 1,60p python/metacat/workspace_objects.py; grep -n "^def \|^class \|^[a-zA-Z_]* = " python/metacat/sugar.py python/metacat/objec
+  > $ cd /home/al/dev/metacat; sed -n 160,240p python/metacat/sugar.py; sed -n 355,395p python/metacat/sugar.py; grep -n "^def \|^[a-zA-Z_]* = " python/metacat/utilit
+  > $ cd /home/al/dev/metacat; sed -n 136,170p python/metacat/utilities.py; sed -n 400,420p python/metacat/utilities.py; sed -n 489,500p python/metacat/utilities.py; 
+  > $ cd /home/al/dev/metacat; grep -rn "define (outline-box\|define outline-box\|define arrowhead\|define (arrowhead\|small-group-arrowhead-length% \|define %group-a
+  > $ cd /home/al/dev/metacat/python; grep -n "g_workspace_window\|g_themespace_window\|p_self_watching_enabled\|p_slipnet_graphics\|p_coderack_graphics\|p_workspace_
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "letter_p\|group_p\|workspace_p\|workspace_string_p\|def coord\|def last\|def select\b\|def map_compress\|def co
+  > $ cd /home/al/dev/metacat; grep -rn "g_workspace_window\b\|^p_justify_mode\|p_justify_mode =\|g_all_strings\|g_non_answer_strings\|g_initial_string =\|g_modified_
+
+Writing the Python harness (translation of `codelet-harness.scm`) now; checking the workspace test's fixture pattern first.
+  > $ cd /home/al/dev/metacat/python; sed -n 85,99p tests/test_workspace.py; grep -n "fixture" -A45 tests/test_workspace.py | sed -n 1,80p | grep -v "^--$" | head -70
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 140,230p utilities.py; sed -n 400,420p utilities.py; sed -n 640,700p utilities.py; grep -n "def select_meth\|def 
+  > $ cd /home/al/dev/metacat/python; sed -n 1240,1283p tests/test_workspace.py; cat tests/scheme_canon.py | sed -n 1,83p; grep -n "b:capture\|b:canon" -A12 ../tests/
+  > $ cd /home/al/dev/metacat; for n in get-common-groups break-group directed-group? same-group-direction? same-group-category? disjoint-objects? description-type-su
+  > $ cd /home/al/dev/metacat; grep -n "directed-group?\|same-group-direction?\|same-group-category?\|incompatible-horizontal-CMs?\|incompatible-vertical-CMs?\|same-d
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "select_meth\|ormap_meth\|remq_duplicates\|andmap_meth" utilities.py | head; grep -n "view_globals\|_metacat\.\w
+  > $ cd /home/al/dev/metacat; grep -rn "UnboundVariable" python/metacat | head; grep -n "complement" python/metacat/*.py | head -3
+  > $ cd /home/al/dev/metacat/python/metacat; grep -n "uppercase" slipnet.py | head; grep -n "def make_rectangular\|class ExactComplex\|def real_part\|def imag_part" 
+  > $ cd /home/al/dev/metacat; sed -n 125,145p python/metacat/chez.py; sed -n 1035,1060p python/metacat/chez.py; grep -n "^def \|^class " python/metacat/chez.py | hea
+  > $ cd /home/al/dev/metacat; grep -n "bond" python/metacat/coderack.py | head -20; sed -n 430,445p python/metacat/slipnet.py; sed -n 585,595p python/metacat/slipnet
+  > $ cd /home/al/dev/metacat/python; grep -n "def random_seed\|def top_level_value\|def map_\b\|def map_(" -A6 metacat/chez.py | head -30; grep -n "^def \(tell_all\|
+  > $ cd /home/al/dev/metacat/python; grep -rn "def letter_p\|def group_p\|def slipnode_p\|def workspace_string_p\|def bridge_p\|def concept_mapping_p" metacat/ | hea
+  > $ cd /home/al/dev/metacat/python; sed -n 100,135p metacat/utilities.py; grep -rn "b:capture" ../chez_scheme/oracle/diff-eval.ss | head -3
+  > $ cd /home/al/dev/metacat; sed -n 1030,1060p chez_scheme/original/groups.ss; sed -n 1600,1615p chez_scheme/original/bridges.ss; sed -n 195,205p python/metacat/uti
+  > $ cd /home/al/dev/metacat; sed -n 15,80p chez_scheme/original/concept-mappings.ss; grep -n "define descriptor-support" -A15 chez_scheme/original/*.ss; grep -n "de
+  > $ cd /home/al/dev/metacat; sed -n 20,60p chez_scheme/original/bonds.ss; grep -n "make-flipped-version" -A8 chez_scheme/original/bonds.ss | head -20; grep -n "defi
+  > $ cd /home/al/dev/metacat; sed -n 54,80p python/metacat/utilities.py; grep -n "choose-left-neighbor\|choose_left_neighbor" -A12 python/metacat/workspace_objects.p
+  > $ cd /home/al/dev/metacat; sed -n 40,100p python/metacat/objects.py; sed -n 130,152p python/metacat/objects.py
+  > $ cd /home/al/dev/metacat/python/metacat; grep -rn "let-sgl" *.py | head -5; grep -n "def make_image\|def relationship_between\|def number_to_platonic_number" -A3
+  > $ mkdir -p /tmp/stage07; cd /home/al/dev/metacat; grep -n "workspace_string_p\|chez.newline\|return chez.printf" python/metacat/*.py | head -5; sed -n 1,30p pytho
+  > Write /home/al/dev/metacat/python/tests/codelet_harness.py
+  > $ cd /home/al/dev/metacat/python; grep -n "^from\|^import\|set_global =\|get_global =\|def set_global\|def get_global" tests/test_workspace.py | head; grep -rn "p
+  > $ cd /home/al/dev/metacat/python; grep -n "set_global\b" tests/test_workspace.py | head -3; grep -n "^set_global\|^get_global\|set_global, get_global\|import.*set
+  > $ cd /home/al/dev/metacat/python/metacat; sed -n 893,900p utilities.py; grep -n "def exists_p" -A4 utilities.py; sed -n 188,202p coderack.py; grep -n "group_scout
+  > $ cd /home/al/dev/metacat/python; sed -i 's/setup.p_very_low_urgency/coderack.p_very_low_urgency/' tests/codelet_harness.py; sed -n 1,60p tests/test_slipnet.py | 
+  > $ mkdir -p /tmp/stage07; cd /home/al/dev/metacat; sed -n 15,60p chez_scheme/original/workspace-structure-formulas.ss; grep -n "def stochastic_pick_by_method\|def 
+  > $ cd /home/al/dev/metacat/python; sed -n 1300,1333p tests/test_workspace.py
+
+Now the test file.
+  > Write /home/al/dev/metacat/python/tests/test_codelets.py
+  > $ cd /home/al/dev/metacat/python; grep -n "codelet_proc\b\|codelet_proc =" metacat/coderack.py | head -5; ls /tmp/stage07 2>/dev/null; timeout 600 python3 -m pyte
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest -q tests/test_codelets.py -m "not slow" 2>&1 | tail -22
+  > $ cd /home/al/dev/metacat/python; timeout 600 python3 -m pytest -q tests/test_codelets.py -k every_battery_test_is_run 2>&1 | grep -B5 Error | head -20
+  > $ cd /home/al/dev/metacat/python; sed -i 's/== 56$/== 59/; s/its 56 cases run/its 59 cases run/' tests/test_codelets.py; timeout 900 python3 -m pytest -q tests/te
+  > Write /tmp/stage07/bonds.py
+
+Failing state recorded (57 failed, 2 passed in the battery; 15 structural/fast failures). Waiting on the translators; meanwhile I'll skim `bonds.ss` to review their output.
+  > $ cd /home/al/dev/metacat; sed -n 280,550p chez_scheme/original/bonds.ss
+  > $ for i in $(seq 1 55); do n=$(ls /tmp/stage07/*.py 2>/dev/null | wc -l); [ "$n" -ge 4 ] && break; sleep 10; done; ls -la /tmp/stage07/
+  > $ cd /tmp/stage07 && python3 - <<'EOF'
+p='bonds.py'; s=open(p).read()
+start=s.index('def _choose_string('); end=s.index('def top_down_bond_scout__category(')
+s=s[
+  > $ cd /tmp/stage07 && python3 - <<'EOF'
+p='bonds.py'; s=open(p).read()
+s=s.replace("""            and workspace_structures.wins_all_fights_p(proposed_bond, 1, inco
+  > $ cd /tmp/stage07 && python3 - <<'EOF'
+p='bonds.py'; s=open(p).read()
+s=s.replace("""            and workspace_structures.wins_all_fights_p(proposed_bond, 1, inco
+  > Write /tmp/stage07/concept_mappings.py
+  > Write /tmp/stage07/group_graphics.py
+  > $ cd /tmp/stage07 && python3 -m py_compile bonds.py concept_mappings.py group_graphics.py && echo compiled; cd /home/al/dev/metacat/python && python3 - <<'EOF'
+im
+  > $ cd /home/al/dev/metacat/python && sed -n 1,83p metacat/engine.py | grep -n "LOAD_ORDER\|def \|import" | head -20; ls tests | head -40
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -c '
+import importlib.util, sys
+import metacat
+for name in ["bonds","concept_mappings","group_graphics"]:
+
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -m pytest -q -p no:cacheprovider tests/test_workspace.py tests/test_codelets.py tests/test_coderack.py 2>&
+  > Write /tmp/stage07/groups.py
+  > $ prev=""; for i in $(seq 1 50); do cur=$(stat -c %Y /tmp/stage07/*.py | md5sum); if [ "$cur" = "$prev" ]; then s=$((s+1)); else s=0; fi; prev=$cur; [ "${s:-0}" -
+  > $ cd /tmp/stage07 && python3 - <<'EOF'
+p='groups.py'; t=open(p).read()
+t=t.replace("""from metacat import (coderack, descriptions, setup, slipnet, view_globals, w
+  > $ cd /tmp/stage07 && python3 - <<'EOF'
+p='groups.py'; t=open(p).read()
+for m,v in (("get-bond-category-relevance","bond_category"),("get-direction-relevance","dir
+  > $ cd /home/al/dev/metacat/python; sed -n 1,83p metacat/engine.py | grep -n "groups\|def load\|import" ; ls tests | head -40
+
+Let me do a smoke test in a temp copy of the package (repository untouched).
+  > $ rm -rf /tmp/stage07/smoke && mkdir -p /tmp/stage07/smoke && cp -r /home/al/dev/metacat/python/metacat /tmp/stage07/smoke/ && cp /tmp/stage07/groups.py /tmp/stag
+  > $ cd /tmp/stage07/smoke && grep -n "def make_workspace_string" -A3 metacat/workspace_strings.py; grep -n "make_workspace_string\|setup.p_workspace_graphics\|g_ini
+  > $ cd /tmp/stage07/smoke && timeout 120 python3 - <<'EOF'
+import metacat
+from metacat import engine
+engine.load()
+from metacat import groups, workspace, slipnet, s
+  > $ rm -rf /tmp/stage07/smoke; ls /tmp/stage07; cd /home/al/dev/metacat && git status --short
+  > $ ls /tmp/stage07/__pycache__; rm -f /tmp/stage07/__pycache__/groups.*.pyc
+  > $ cd /tmp/stage07; for n in directed_p bonded_p make_bond build_bond break_bond bond_degree_of_assoc; do grep -c "^def $n\b" bonds.py | sed "s/^/bonds.$n: /"; don
+  > $ cd /tmp/stage07; grep -n "arrowhead\|grope\|^def \|^p_\|^[a-z_]* = " group_graphics.py | head -30
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -c '
+import importlib.util, sys
+import metacat
+for name in ["bonds","concept_mappings","group_graphics"]:
+
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -c '
+import importlib.util, sys
+import metacat
+for name in ["bonds","concept_mappings","group_graphics"]:
+
+  > $ cd /home/al/dev/metacat/python && sed -n 100,175p tests/test_codelets.py; grep -n "contains?" -A6 ../chez_scheme/original/groups.ss | head -20; grep -n "(define
+
+I wrote `/tmp/stage07/groups.py` and changed nothing in the repository. It parses, `py_compile` passes, and every line is under 100 characters. pyflakes reports only three unused locals in `top_down_group_scout__direction`; I left them on purpose because 1.2 binds them and never uses them. It has not been run against goldens or the codelet harness. I only ran a smoke test in a throwaway copy of the package, now deleted: I built an `[A]:0,1` samegrp group on "aab" and checked internal strength (95), `contains_p` both ways, incompatible groups and bridges, `build_group`, `make-flipped-version` and `group_evaluation_probability`. All gave the expected results.
+
+**Structure**
+- There is one function per Scheme definition, in the file's order, each docstring starting with `groups.ss: ...`.
+- `new-group`'s closure is the `Group` class, built like `Letter`. Messages it doesn't answer go first to its `WorkspaceObject`, then to its `WorkspaceStructure`.
+- `load()` installs the five codelet procedures in the file's order.
+- It provides the names other modules already read through `_metacat.groups`: `contains_p` (descriptions), `make_group` (images), and `same_group_category_p` / `same_group_direction_p` (workspace_strings).
+- Globals are read where they live: `setup.p_workspace_graphics`, `p_verbose`, `p_justify_mode`, `g_workspace_window`, `g_temperature`; `workspace.g_workspace`, the string globals and `p_built` / `p_proposed` / `p_evaluated`; and `view_globals.p_group_letter_category_font` / `p_relevant_group_length_font`.
+
+**Names from not-yet-existing modules (reached at call time)**
+- `bonds`: `directed_p`, `bonded_p`, `make_bond`, `build_bond`, `break_bond`, `bond_degree_of_assoc`
+- `bridges`: `break_bridge`, `incompatible_horizontal_CMs_p`, `incompatible_vertical_CMs_p`
+- `concept_mappings`: `make_concept_mapping`
+- `trace`: `monitor_new_groups`
+- `group_graphics`: `group_graphics`, `draw_group_grope`, `p_small_group_arrowhead_length`, `p_group_arrowhead_angle`
+- `general_graphics`: `outline_box`, `arrowhead`
+
+**Evaluation-order sites**
+- **Changed from left-to-right:** `get-local-density`'s `append`. The right neighbours are computed before the left ones (both draw), as at groups.rktl:371, marked `# chez: evaluation order`.
+- **Coin before probability:** in the three `stochastic-if*` forms (singleton support in `top-down-group-scout:category`, `group-evaluator`, and the length-description test in `propose-group`), `chez.random(1.0)` is drawn before the probability is evaluated. In the first, the probability itself draws, via `get-local-support` → `get-local-density`.
+- **Chez's map order, because the procedure has effects:** the two `adjacency-map` bond builders and the `else` branch's `map` in `group-builder` (`break-bond` / `build-bond`), and `polarize-bonds`, where an escape can stop the map midway.
+- **First to last, stopping at the first loss:** the fights over incompatible groups use `chez.andmap`.
+- **Checked and left left-to-right, because they have no side effects:**
+  - the weight lists of the three scouts;
+  - the `make-image` arguments in `new-group`;
+  - `group-builder`'s `(append (... 'vertical) (... 'horizontal))` (`make-concept-mapping` is pure, I checked);
+  - the two `descriptor-support` calls;
+  - `break-group`'s four-binding `let`;
+  - the `cons` in `scan-bonds` (`make-flipped-version` only allocates).
+
+**Doubts**
+- **Partial `group_graphics.py` next to mine:** the `group_graphics.py` another agent left in `/tmp/stage07` defines only `group_graphics`. It lacks `draw_group_grope`, `make_group_pexp` and the two arrowhead constants that `groups.py` (and `images.py`, for `make_group_pexp`) expect. The `bonds.py` and `concept_mappings.py` there do have every name I use.
+- **Unconditional erase:** in the two consolidation branches of `group-builder`, `(group-graphics 'erase proposed-group)` is not gated by `%workspace-graphics%` in 1.2. I kept it that way (marked `# 1.2:`), so headless runs that reach those branches need `group_graphics.group_graphics("erase", g)` to work with graphics off.
+- **Escape as plain returns:** `get-incompatible-bridge`'s `continuation-point*` became plain early `return False` statements, since every escape leaves only that method. `polarize-bonds` uses `sugar.continuation_point_star`, because there the escape comes from inside the mapped lambda.
+- **String types:** `ascii-name`, the length string and the " " passed to `get-character-width` are `chez.String`. The `say` text "~a%" is also a `chez.String`.
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -c '
+import importlib.util, sys, types
+import metacat
+for name in ["bonds","concept_mappings","group_graph
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -c '
+import importlib.util, sys, types
+sys.path[:0]=["tests","oracle"]
+import metacat
+for name in ["bonds"
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -c '
+import importlib.util, sys, types
+import metacat
+for name in ["bonds","concept_mappings","group_graph
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -c '
+import importlib.util, sys, types
+import metacat
+for name in ["bonds","concept_mappings","group_graph
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -c '
+import importlib.util, sys, types
+import metacat
+for name in ["bonds","concept_mappings","group_graph
+  > $ cd /home/al/dev/metacat/python && cat tests/conftest.py | head -60; grep -n "temperature-clamped\|engine_module\|def " tests/codelet_harness.py | head -30
+  > $ cd /home/al/dev/metacat/python && sed -n 1,33p tests/codelet_harness.py; sed -n 100,120p tests/codelet_harness.py; sed -n 300,345p tests/codelet_harness.py
+  > $ sleep 45; ls -la --time-style=+%T /tmp/stage07/*.py
+  > $ cd /home/al/dev/metacat/python; cp /tmp/stage07/{bonds,groups,concept_mappings,group_graphics}.py metacat/; timeout 600 python3 -m pytest -q tests/test_codelets
+  > $ cd /home/al/dev/metacat/python; time (timeout 1200 python3 -m pytest -q tests/test_codelets.py 2>&1 | tail -30)
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -c '
+import importlib.util, sys, types
+sys.path[:0]=["tests","oracle"]
+import metacat
+for name in ["bonds"
+
+All 59 Chez cases pass on the first run (6 s across the pool). That's surprisingly quick, so next I'll check that the comparison really bites.
+  > $ cd /home/al/dev/metacat/python; cat > /tmp/chk.py <<'EOF'
+import sys, time
+sys.path[:0] = ["tests", "oracle"]
+from contextlib import ExitStack
+from metacat impo
+  > $ cd /home/al/dev/metacat/python; PYTHONPATH=. python3 /tmp/chk.py
+  > $ cd /home/al/dev/metacat/python && timeout 600 python3 -c '
+import importlib.util, sys, types
+sys.path[:0]=["tests","oracle"]
+import metacat
+for name in ["bonds"
+
+Byte-identical, with the consolidation path reached. Now the full suite, to check for interactions with earlier test files.
+  > $ cd /home/al/dev/metacat/python; time (bash run-tests.sh 2>&1 | tail -5)
+  > $ cd /home/al/dev/metacat/python && timeout 900 python3 -c '
+import importlib.util, sys, types
+sys.path[:0]=["tests","oracle"]
+import metacat
+for name in ["bonds"
+  > $ cd /home/al/dev/metacat/python && sed -n 1,60p tests/test_codelets.py | grep -v "^#" | head -60
+  > $ cd /home/al/dev/metacat/python && cat > /dev/null; for P in 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22; do timeout 300 python3 -c '
+import impor
+  > $ cd /home/al/dev/metacat/python && timeout 900 python3 -c '
+import importlib.util, sys, types
+sys.path[:0]=["tests","oracle"]
+import metacat
+for name in ["bonds"
+  > $ cd /home/al/dev/metacat/python; diff -q /tmp/stage07/bonds.py metacat/bonds.py; diff -q /tmp/stage07/concept_mappings.py metacat/concept_mappings.py; grep -n "#
+  > $ cd /home/al/dev/metacat/python; sed -n 300,460p metacat/bonds.py
+  > $ cd /home/al/dev/metacat; sed -n 535,560p python/metacat/bonds.py; grep -n "same-direction?" docs/anomalies_and_quirks.md | head -3; head -60 docs/anomalies_and_
+
+The three files are written and compile: `/tmp/stage07/bonds.py`, `/tmp/stage07/concept_mappings.py` and `/tmp/stage07/group_graphics.py`. Nothing in the repository was changed. `bonds.py` matches Chez exactly in every run I could check, up to the first group codelet. Beyond that it is untested, because `groups.py` doesn't exist yet.
+
+**How I tested it** (by loading the three files in memory and running the existing `python/tests/test_codelets.py` harness):
+- **Bonds:** for all 23 problems, first seed, every codelet step matched the Chez fixture line for line. That covers proposing, evaluating, building and breaking bonds. Each run stopped at the first group codelet (or, in 2 cases, at an update step) because `groups.py` is missing. Problem 21 (`a b z`) has no group codelets and matched all 400 steps. To get past the start of each run I used a three-function stand-in for groups (`contains_p`, `get_common_groups`, `directed_group_p`).
+- **Concept mappings:** all 11 `cm-categor*` battery cases pass, which check every message of every mapping between instances of each category.
+- **`group_graphics`:** not exercised.
+
+**Names the already-translated modules expect, now provided:** `bonds.same_bond_category_p`, `same_bond_direction_p`, `opposite_bond_category_p`, `opposite_bond_direction_p`, `group_graphics.group_graphics`. `group_graphics.make_group_pexp` (which `images.py` and `group_graphics` itself call) is deliberately not defined: it comes with the panels item, as the module docstring says.
+
+**Names reached at call time from modules that don't exist yet:**
+- `groups`: `get_common_groups`, `break_group`, `directed_group_p`, `same_group_direction_p`, `same_group_category_p`
+- `bridges`: `break_bridge`, `incompatible_horizontal_CMs_p`, `incompatible_vertical_CMs_p`
+- `group_graphics.make_group_pexp` (later item)
+- `concept_mappings.make_concept_mapping`, called from inside `bonds.py`. This one exists now (it's in this batch).
+
+**Evaluation order:** none of the three Racket files has any `port:` comments. Every random draw in `bonds.ss` happens inside a `let*`, a sequence of statements or a `cond`, so Python's order is already Chez's. That includes `get-local-density`, where all the left neighbours are drawn before the right ones. The places where several arguments are computed at once (`get-incompatible-bridges`, the `append` in `bond-builder`, the weights of the two top-down scouts, `propose-bond`'s two-binding `let`, `printf` arguments) don't draw or change state. They are written left to right with comments saying so. `bond-evaluator` draws its coin before computing the probability, as `stochastic-if*` does. Nothing in `concept-mappings.ss` or `group-graphics` draws.
+
+**Doubts:**
+1. **`same-direction?`:** the original never defines it, but `bonds-equal?` calls it. I added a `same_direction_p` to `bonds.py` that raises `chez.UnboundVariable("same-direction?")`, mirroring `racket/engine/pending.rktl`. It's the one function with no matching Scheme definition, so a "one function per definition" test might flag it. The alternative is `chez.top_level_value("same-direction?")` inside `bonds_equal_p`.
+2. **`remove-duplicate-CMs`:** it's a plain module-level variable (built from `CMs_equal_p` when the module loads, as in Chez), so it has a comment rather than a docstring.
+3. **Return values that may not be booleans:** `distinguishing?`, `relevant-distinguishing?` and `distinguishing-identity/opposite?` return the last test's actual value, as Scheme's `and` does, rather than a Python bool.
+4. **Early returns:** `get-incompatible-bridge` uses plain Python `return`s instead of `continuation-point*`. This is equivalent because the escape only ever jumps upward out of that method.
+5. **One stored window:** `group_graphics` reads `setup.g_workspace_window` once at the start of the call, where the original reads `*workspace-window*` at each use. These differ only if the global were reassigned partway through a call.
+
+Tests are green; now mutation checks. Pulling candidate lines to mutate.
+  > $ cd /home/al/dev/metacat/python; grep -n "chez.map_\|chez.random\|stochastic_pick\|round_\|chez.div\|chez.mul\|chez.sqrt\|< \|> \|<= \|>= \|percent(\| 100\b\|rev
+  > $ cd /home/al/dev/metacat/python; for f in bonds groups concept_mappings group_graphics; do cmp /tmp/stage07/$f.py metacat/$f.py; done; sed -n 1,200p metacat/grou
+  > $ cd /home/al/dev/metacat/python; sed -i '/^    window = setup.g_workspace_window$/d; s/tell(window, /tell(setup.g_workspace_window, /' metacat/group_graphics.py;
+  > $ cd /home/al/dev/metacat/python; grep -n "if\*" -A6 ../chez_scheme/original/syntactic-sugar.ss | head -12
+  > $ cd /home/al/dev/metacat/python; grep -n "chez.map_\|chez.random\|stochastic_pick\|round_\|chez.div\|chez.mul\|chez.sqrt\|min_\|max_\| < \| > \|<= \|>= \|percent
+  > $ mkdir -p /tmp/mut7; cat > /tmp/mut7/mutate.py <<'EOF'
+import subprocess, sys, pathlib
+P = pathlib.Path("/home/al/dev/metacat/python/metacat")
+M = [
+ ("groups", 
+  > $ cd /home/al/dev/metacat/python; grep -n '"add-bond"\|"get-bonds"' -A8 metacat/workspace_strings.py | head -30; grep -n "get-highest-level-coincident-group\|get_
+
+Killing the survivors with a small local battery. Checking the group-density message names first.
+  > $ cd /home/al/dev/metacat/python; sed -n 520,600p metacat/groups.py; sed -n 940,990p metacat/groups.py
+  > $ cd /home/al/dev/metacat; sed -n 640,700p chez_scheme/original/groups.ss; grep -n "make-codelet" -A4 chez_scheme/original/coderack.ss | head -12
+  > $ cd /home/al/dev/metacat; sed -n 606,640p chez_scheme/original/groups.ss; sed -n 189,215p chez_scheme/original/coderack.ss; grep -n "define make-group\b\|define 
+  > $ cd /home/al/dev/metacat; head -30 python/oracle/batteries/workspace-extra-battery.scm; sed -n 1,40p python/oracle/capture.py | head -40
+  > Write /home/al/dev/metacat/python/oracle/batteries/codelet-extra-battery.scm
+  > $ cd /home/al/dev/metacat; time python3 python/oracle/capture.py codelet-extra 2>&1 | tail -5; ls python/fixtures/codelet-extra; for f in python/fixtures/codelet-
+
+Captured; the fixtures include a 67 (2/3, which floors to 66) and a run where the flip is built. Adding the Python side.
+  > $ cd /home/al/dev/metacat/python; cat >> tests/test_codelets.py <<'EOF'
+
+
+# python/oracle/batteries/codelet-extra-battery.scm (local, written after the code) ----
+  > $ cd /home/al/dev/metacat/python; python3 /tmp/mut7/mutate.py 1 2 7 11 12 17; git status --short metacat/ | head
+  > $ cd /home/al/dev/metacat/python; cat > /tmp/mut7/find.py <<'EOF'
+import sys
+sys.path[:0] = ["tests", "oracle", "."]
+from contextlib import ExitStack
+from metacat
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="python/oracle/batteries/codelet-extra-battery.scm"
+s=open(p).read()
+s=s.replace("(test local-densities-kkjjii (x:d
+  > $ cd /home/al/dev/metacat/python; grep -n "extra\|LOCAL" tests/test_fixtures.py | head
+  > $ cd /home/al/dev/metacat/python; python3 - <<'EOF'
+p="tests/test_fixtures.py"
+s=open(p).read()
+s=s.replace('''    assert local == ["chez", "coderack-extra", "sli
+
+Fast tier is green (3.5 s). Checking the docs for the quirks this item touched before writing them up.
+  > $ cd /home/al/dev/metacat; grep -n "^### " docs/anomalies_and_quirks.md | grep -i "group-graphics\|ungated\|consolidat\|same-direction\|fork\|parallel" ; grep -n 
+  > $ cd /home/al/dev/metacat; grep -n "group-graphics" docs/anomalies_and_quirks.md docs/porting-notes.md | head; sed -n 592,600p docs/anomalies_and_quirks.md; grep 
+  > $ cd /home/al/dev/metacat; sed -n 44,60p docs/anomalies_and_quirks.md; grep -n "Python" docs/anomalies_and_quirks.md | grep "^[0-9]*:###" | tail -5
+  > $ cd /home/al/dev/metacat; sed -n 552,592p docs/anomalies_and_quirks.md
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="docs/anomalies_and_quirks.md"
+s=open(p).read()
+old="- **Status:** won't fix (latent). engine/pending.rktl defines 
+  > $ cd /home/al/dev/metacat; python3 - <<'EOF'
+p="docs/python-translation-plan.md"
+s=open(p).read()
+anchor="\n## Names\n"
+assert s.count(anchor)==1
+add = """
+### As
+
+Updating the README and then running the gate.
+  > $ cd /home/al/dev/metacat; sed -n 85,120p python/README.md
+  > $ cd /home/al/dev/metacat; cat >> python/README.md.tmp <<'EOF'
+- `metacat/bonds.py`: bonds.ss (bonds, the bond scouts, evaluator and builder,
+  `build-bond`/`brea
+
+Gate passed (697 tests, 58 s). Writing PROGRESS.md and marking the item.
+  > $ cd /home/al/dev/metacat; git status --short; date "+%Y-%m-%d %H:%M"
+  > $ cd /home/al/dev/metacat/ralph_loops/loop0002; sed -i 's/^- \*\*Current\*\*: 7\/18 SOLVED/- **Current**: 8\/18 SOLVED/' PROGRESS.md; sed -i 's/^- \[ \] \*\*07 Bo
+
+Item 07 is done: bonds, groups and concept mappings are translated, and all 59 tests of `codelet-battery.scm` match Chez byte for byte. The gate passes (697 tests, 58 s). Nothing is committed or pushed.
+
+- **Tests first:** I wrote `python/tests/codelet_harness.py` (the Python version of `codelet-harness.scm`) and `python/tests/test_codelets.py` before the modules existed. Run then, 57 of the 59 battery cases failed, plus all 15 fast and structural tests. The two cases that passed don't use the new modules.
+- **What the battery covers:** 400-codelet traces of every problem and seed in `tests/problems.txt`, seven 2000-codelet runs, and the concept-mapping checks. The full battery is in the slow tier and takes about 6 s across 32 cores. The fast tier runs the first seed of problem 0 plus two concept-mapping cases, in 3.5 s.
+- **Code:** `metacat/bonds.py`, `groups.py`, `concept_mappings.py`, and a small `group_graphics.py` holding only `group-graphics`, which `group-builder` calls even with graphics off. Two subagents did the first translation while I wrote the harness. With their code in place, every case matched on the first run. I made one review fix: `group_graphics.py` now reads the window global at each use, as the original does.
+- **Mutation checks:** 21 mutants. The frozen battery caught 15, including the Chez `append` order site in `groups.ss`, the fight order and the coin-first draws.
+  - Three survivors (local density floored instead of rounded, for both bonds and groups, and `group-builder`'s bond `map` order) are now caught by a new local battery, `python/oracle/batteries/codelet-extra-battery.scm` (13 tests). Its fixtures were captured from Chez with the unedited `diff-eval.ss`.
+  - The other three survivors make no difference in these runs: a graphics-only comparison, a bond constant only bridges read (item 08), and a `<` that becomes `<=` between two positions that are never equal.
+- **Docs:** two entries in `docs/anomalies_and_quirks.md`:
+  - an update to the `same-direction?` entry;
+  - a note that every battery case gives Chez's trace when run in its own forked process. That supports the plan to run the goldens the same way, forked after the engine loads.
+
+  The plan has an "As built (item 07)" section, and the README lists the new modules.
+
+PROGRESS.md now has the Iteration 8 section and reads 8/18 SOLVED; item 07 is marked `[x]` in `iterations.md`.
+
+What remains, by design: the bridge code paths inside bonds and groups are translated but not yet run; item 08's bridge battery will exercise them. The rest of `group-graphics.ss` belongs to the panels item.
+
+# result: success in 1087s, 76 turns, cost $8.90

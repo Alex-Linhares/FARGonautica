@@ -1,0 +1,100 @@
+# session it17 started 2026-10-04 02:47:18
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cat python/pyproject.toml && cat python/README.md | head -80 && wc -l python/README.md README.md && ls python python/metacat python/metacat/gui python/tests/sna
+  > $ grep -rn "help\.txt\|Path(__file__\|__file__\|parents\[" python/metacat | grep -v pycache; sed -n 80,260p python/README.md; cat README.md
+  > $ cat python/metacat/gui/__main__.py; grep -n "^def \|^    def main\|sys.argv\|mainloop" python/metacat/gui/app.py | head -40; grep -n "^def main\|__name__" pytho
+  > $ cd /tmp && rm -rf vtest && python3 -m venv vtest && vtest/bin/pip --version && vtest/bin/pip list 2>/dev/null; python3 -c "import setuptools; print(setuptools._
+  > $ sed -n 95,130p python/metacat/__main__.py; sed -n 235,260p python/metacat/gui/app.py; grep -rn "problems.txt\|demos" python/metacat/demos.py | head -5; ls pytho
+  > $ cd /tmp && rm -rf vtest && python3 -m venv --system-site-packages vtest && cd /tmp && vtest/bin/python -c "import setuptools,sys;print(setuptools.__version__, s
+
+Item 16 is packaging. I'm writing the install tests first, then I'll make the package changes.
+  > Write /home/al/dev/metacat/python/tests/test_install.py
+  > $ cd /home/al/dev/metacat/python && timeout 900 python3 -m pytest -q tests/test_install.py 2>&1 | tail -25
+
+Real finding: the regular install leaves out `metacat/gui` today. Next I'll check why the clean-checkout trace differs.
+  > $ timeout 900 python3 -m pytest -q tests/test_install.py -k clean_checkout_cli 2>&1 | grep -E "^E" | head -10
+  > $ cd /tmp && rm -rf cc && mkdir cc && cd /home/al/dev/metacat && git ls-files -co --exclude-standard python | grep -v "^python/fixtures\|^python/tests" | xargs -I
+
+The test was wrong, not the port: the golden was recorded with `--max-codelets 10000`. I'll fix the arguments and then do the packaging changes.
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+import re,pathlib
+p=pathlib.Path("tests/test_install.py"); s=p.read_text()
+s=s.replace('ARGS = ["abc", "abd"
+  > $ python3 - <<'EOF'
+import pathlib
+p=pathlib.Path("metacat/__main__.py"); s=p.read_text()
+s=s.replace('''def main(argv=None):
+    args = sys.argv[1:] if argv is N
+
+Install tests all pass now. I'll check the literal `pip install -e python` on the real checkout, then run the fast tier.
+  > $ cd /tmp && rm -rf v2 && python3 -m venv --system-site-packages v2 && v2/bin/pip install -q --no-build-isolation --no-index -e /home/al/dev/metacat/python && cd 
+
+Both work. Next is the README, so I'll look at the screenshots on hand.
+  > $ cd /home/al/dev/metacat/python/tests/snapshots && ls -la . views | head -70; python3 -c "
+import struct
+for f in ['gui-run7.png','gui-final.png']:
+    d=open(f,
+  > Read /home/al/dev/metacat/python/tests/snapshots/gui-run7.png
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/workspace-run7-answer.png
+  > Read /home/al/dev/metacat/python/tests/snapshots/views/workspace-glz-compare.png
+
+The full screen grab is mostly black, so I'll crop it for the README if an image tool is installed.
+  > $ which convert magick pngcrush 2>&1; python3 -c "import PIL; print(PIL.__version__)" 2>&1; ls /home/al/dev/metacat/docs/screenshots
+  > $ cd /home/al/dev/metacat && python3 -c "
+from PIL import Image
+im=Image.open('python/tests/snapshots/gui-run7.png').crop((0,0,1850,1232))
+im.save('docs/screensho
+  > Read /home/al/dev/metacat/docs/screenshots/python-run7-wyz.png
+
+The crop looks right. Now the user-facing sections of `python/README.md`.
+  > $ cd /home/al/dev/metacat/python && python3 - <<'EOF'
+import pathlib
+p=pathlib.Path("README.md"); s=p.read_text()
+old_head = s[:s.index("## Tests")]
+new_head = ''
+  > $ cd /home/al/dev/metacat && python3 - <<'EOF'
+import pathlib
+p=pathlib.Path("python/README.md"); s=p.read_text()
+s=s.replace('''109 golden traces of `tests/golde
+
+Next: the tier comment, a short plan note, then the gate.
+  > $ grep -n "As built (item 15)" -A3 docs/python-translation-plan.md | head; tail -30 docs/anomalies_and_quirks.md
+  > $ sed -n 825,870p docs/python-translation-plan.md | tail -25; grep -n "^### Python\|^## " docs/anomalies_and_quirks.md | tail -15
+  > $ sed -n 819,826p docs/anomalies_and_quirks.md && python3 - <<'EOF'
+import pathlib
+p=pathlib.Path("docs/anomalies_and_quirks.md"); s=p.read_text()
+i=s.index("## 🔗
+
+Now the gate.
+  > $ timeout 1500 python3 ralph_loops/loop0002/gate.py 2>&1 | tail -8
+  > $ grep -n "^- \[" ralph_loops/loop0002/iterations.md | tail -4; git status --short
+  > $ sed -i '123s/- \[ \]/- [x]/' ralph_loops/loop0002/iterations.md && sed -i 's/^- \*\*Current\*\*: 16\/18 SOLVED/- **Current**: 17\/18 SOLVED/' ralph_loops/loop00
+
+Item 16 (packaging and docs) is done and the gate passes: all 1,406 tests, in 7 min 12 s. One item is left (17, the final audit), so I didn't add `LOOP_COMPLETE`. I haven't committed or pushed; the driver does that.
+
+**A real bug the new tests found:** a regular `pip install` left out the whole GUI. `pyproject.toml` listed only the `metacat` package, so `metacat/gui` never got installed.
+
+**Changes:**
+- **`pyproject.toml`:** it now lists both `metacat` and `metacat.gui`, ships the help text, and installs two commands, `metacat` (the CLI) and `metacat-gui`.
+- **Help text:** `python/metacat/gui/help.txt` is an exact copy of the original's. Before, the GUI read it from `chez_scheme/original/`, which only exists in a checkout.
+- **Entry points:** both `main` functions now read the command line themselves when called with no arguments, as an installed command calls them. The CLI's `main` also raises the recursion limit itself, because an installed command skips the `__main__` block where that was done.
+
+**Tests (`python/tests/test_install.py`):** I wrote them before changing anything; 8 of 9 failed at first. One of those failures was my own mistake: the golden trace was recorded with `--max-codelets 10000`, so the test now passes that too. Each slow test works in a temporary directory, never in the checkout:
+- **Clean copy of `python/`** (git's files only, no fixtures, no tests, nothing else from the repo):
+  - `python3 -m metacat abc abd xyz --seed 3852097033 --max-codelets 10000 --trace` prints exactly what the live Chez original prints, and writes the golden trace byte for byte.
+  - `python3 -m metacat.gui` opens its windows under xvfb-run.
+- **Fresh venv, `pip install -e`:** the `metacat` command, run from another directory, gives the same output and trace.
+- **Fresh venv, regular install:** the same checks, plus the GUI files and the help text are installed, and `metacat-gui` opens.
+
+A fresh venv on Python 3.12 has no setuptools, so pip can't build offline. The test venvs borrow it from the system Python (`--system-site-packages`); nothing else from the system is used. I also ran the literal `pip install -e python` by hand in a throwaway venv (`metacat abc abd xyz --seed 7` answered wyz), then deleted the venv and the egg-info it wrote into `python/`.
+
+**Docs:**
+- **`python/README.md`:** it now opens with user-facing sections: how to run from a checkout or after installing, the CLI's arguments and exit codes, how to use the GUI, and how the port was made. It shows three screenshots. The developer notes follow.
+- **New screenshot:** `docs/screenshots/python-run7-wyz.png`, the whole GUI at Run 7's answer. I cropped it from item 15's screen grab using the PIL that comes with Anaconda; nothing in the package or tests needs it.
+- **Top-level `README.md`:** a new "Also in Python" section with that screenshot, `python/` in the layout, and a mention of the second loop.
+- **Smaller notes:** an "As built (item 16)" note in the translation plan, an entry on the offline-venv problem in `docs/anomalies_and_quirks.md`, and an updated tier comment in `python/run-tests.sh`.
+
+The item is marked `[x]` in `iterations.md`, and `PROGRESS.md` has the Iteration 17 section and now reads 17/18 SOLVED.
+
+# result: success in 679s, 30 turns, cost $1.99

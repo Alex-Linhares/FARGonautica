@@ -1,0 +1,211 @@
+# session it09 started 2026-10-02 22:58:38
+
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+  > $ cat ralph_loops/loop0001/iterations.md | sed -n 1,80p && ls racket racket/engine tests/diff racket/tests && wc -l chez_scheme/original/bridges.ss chez_scheme/or
+  > $ cat racket/engine/pending.rktl && cat tests/diff/codelet-harness.scm && cat racket/tests/codelet-diff-test.rkt
+  > $ cat tests/diff/codelet-battery.scm && cat chez_scheme/original/breakers.ss && grep -n "^(define" chez_scheme/original/bridges.ss | head -100 && sed -n '/(define
+  > Read /home/al/dev/metacat/chez_scheme/original/bridges.ss
+  > Read /home/al/dev/metacat/chez_scheme/original/bridges.ss
+  > Read /home/al/dev/metacat/chez_scheme/original/bridges.ss
+
+Reading done; now porting bridges.ss/breakers.ss, then extending the codelet harness to bridges and breakers.
+  > $ sed -n 414,800p chez_scheme/original/bridges.ss | grep -n "random\|prob?\|pick\|choose\|stochastic\|draw\|graphics" ; grep -n "breaker\|bridge" chez_scheme/orig
+  > $ sed -n 75,125p chez_scheme/original/metacat.ss
+
+Now create the ported files.
+  > $ hdr=';; Ported to Racket, 2026: included by racket/engine.rkt (see docs/porting-notes.md,
+;; item 04).  Changes are marked port:.
+;;============================
+  > $ for i in $(seq 1 25); do out=$(raco make racket/engine.rkt 2>&1 | head -2); [ -z "$out" ] && { echo OK; break; }; echo "$out" | head -1; name=$(echo "$out" | gr
+  > $ cd /home/al/dev/metacat/chez_scheme/original && for n in bridge-type-\>theme-type entries remove-whole/single-concept-mappings check-descriptions conflicts-with
+  > $ grep -n "conflicts-with-theme?\|supported-by-theme?\|descriptions-affect-themespace?\|equivalent-workspace-objects?\|rule-describable-bridge?" *.ss | grep -i "d
+  > $ grep -n "thematic-compatibility\|theme-support\|boost-themespace\|get-associated-thematic\|incompatible-with-theme\|supports-theme-pattern" *.ss | grep -v "^bri
+  > $ grep -n "(define weighted-average" -A8 utilities.ss; sed -n 400,420p ../../racket/engine/workspace.rktl; sed -n 455,470p ../../racket/engine/workspace.rktl; gre
+  > $ cd /home/al/dev/metacat && grep -rn "define rule?\|define (rule?\|rule?" racket/engine/*.rktl | grep -v "describable\|possible" | head -5; grep -n "beta\b" chez
+  > $ grep -rn "rule?" racket/*.rkt racket/engine/*.rktl | grep -v "describable\|possible\|clamp" | head; grep -n "(define rule?" chez_scheme/original/*.ss
+
+Now restructure the pending stand-ins properly.
+  > $ python3 - <<'EOF'
+p='racket/engine/pending.rktl'
+s=open(p).read()
+s=s[:s.index('(pending-procedures bridge-type->theme-type) ; AUTO')]
+s=s.replace(''';; themes.
+  > $ sed -i 's/    monitor-new-concept-mappings \*themespace-window\*/    monitor-new-concept-mappings/' racket/engine.rkt && sed -n 90,100p racket/engine.rkt && rac
+  > $ cd /home/al/dev/metacat/chez_scheme/original && grep -n "make-flipped-version" -A3 groups.ss | head -20; grep -n "(define propose-group" -A30 groups.ss | grep -
+  > $ grep -n "(define add-bottom-up-codelets" -A40 run.ss; grep -n "top-down-slipnodes" *.ss | head; grep -n "(define update-workspace-values" -A15 run.ss
+  > $ grep -n "add-bottom-up-codelets" *.ss | head -3; grep -n "(define add-bottom-up-codelets" -A30 coderack.ss; sed -n 470,500p slipnet.ss; grep -n "b:update-worksp
+  > $ grep -n "bottom-up-codelet-types\*" -A14 coderack.ss | head -40
+
+Extending the codelet harness with a bridges mode (bridge scouts, description scouts, breaker, fake Themespace recording boosts).
+  > $ cd /home/al/dev/metacat && grep -n "bottom-up-description-scout\|top-down-description-scout" chez_scheme/original/coderack.ss | head; grep -n "define b:set-glob
+  > $ python3 - <<'EOF'
+p='tests/diff/codelet-harness.scm'
+s=open(p).read()
+old_ts='''(define b:fake-themespace
+  (lambda msg
+    (record-case (cdr msg)
+      (get-ac
+  > $ sed -n 145,215p racket/engine/workspace.rktl
+  > $ python3 - <<'EOF'
+p='tests/diff/codelet-harness.scm'
+s=open(p).read()
+old=s[s.index('(define b:all-bridges'):s.index(';; the number of descriptions')]
+s=s.repla
+  > $ time scheme --script chez_scheme/oracle/diff-eval.ss tests/diff/helpers.scm tests/diff/bridge-battery.scm > /tmp/br-chez.txt; grep -c "" /tmp/br-chez.txt; grep 
+  > $ cat > /tmp/dbg.scm <<'EOF'
+(define b:dbg (lambda (thunk) (call/cc (lambda (k) (with-exception-handler (lambda (c) (k (if (condition? c) (with-output-to-string (
+  > $ cat > /tmp/dbg0.scm <<'EOF'
+(define b:last '())
+(define b:post0 #f)
+(set! b:events '())
+(define b:step-orig b:step)
+(define b:step
+  (lambda ()
+    (let* ((code
+  > $ cat > /tmp/dbg2.scm <<'EOF'
+(define b:dbg (lambda (thunk) (call/cc (lambda (k) (with-exception-handler (lambda (c) (k (list b:last (if (condition? c) (with-outp
+  > $ cat > /tmp/dbg3.scm <<'EOF'
+(define b:last 'none)
+(define b:dbg (lambda (thunk) (call/cc (lambda (k) (with-exception-handler (lambda (c) (k (list b:last (if (co
+  > $ cat > /tmp/dbg4.scm <<'EOF'
+(define b:last 'none)
+(define b:dbg (lambda (thunk) (call/cc (lambda (k) (with-exception-handler (lambda (c) (k (list b:last (if (co
+  > $ grep -n "(define b:structures" -A32 tests/diff/codelet-harness.scm
+
+Fixing a harness bug (wrong `apply append` nesting), then re-running under Chez.
+  > $ python3 - <<'EOF'
+p='tests/diff/codelet-harness.scm'
+s=open(p).read()
+s=s.replace('''(define b:structures
+  (lambda ()
+    (apply append
+      (map (lambda (s)'
+  > $ for pat in "(built ((bridge" "(broken ((bridge" " breaker " "bridge-builder" "important-object-bridge-scout" "description-builder" "top-down-description-scout" 
+  > $ grep -o "(built ([^)]*" /tmp/br-chez.txt | sort | uniq -c | sort -rn | head; grep -m1 "bridge-builder" /tmp/br-chez.txt | cut -c1-600
+  > $ grep -c "(broken (.*(bridge " /tmp/br-chez.txt; grep -c "#t #f) [0-9]\|#f #t) [0-9]\|#t #t) [0-9]" /tmp/br-chez.txt; grep -c "breaker [^(]*(built () (broken (("
+  > $ grep -o "breaker [0-9/.]* [0-9]* [0-9]* (built ([^)]*) (broken (.\{0,60\}" /tmp/br-chez.txt | grep -v "broken ())" | head -3; grep -o "breaker [^b]*(built" /tmp
+  > $ grep -o "breaker [0-9/.]* [0-9]* [0-9]* (built ().\{0,80\}" /tmp/br-chez.txt | grep -v "(broken ())" | head -3; echo; grep -o "breaker .\{0,60\}" /tmp/br-chez.t
+
+Chez side works (bridges built/broken, breaker, flipped groups, CM monitors). Now the Racket test.
+  > $ cat > racket/tests/bridge-diff-test.rkt <<'EOF'
+#lang racket/base
+;; Item 08: bridges.ss and breakers.ss in the codelet-level differential
+;; harness.  tests/di
+
+All 21 checks pass, Racket traces identical. Now confirming the test fails without the port (HEAD engine).
+  > $ cp racket/engine.rkt /tmp/engine.rkt.new && cp racket/engine/pending.rktl /tmp/pending.new && git show HEAD:racket/engine.rkt > racket/engine.rkt && git show HE
+
+Tests-first confirmed. Now mutation checks; I'll use a faster runner that compares Racket output to the saved Chez output.
+  > $ grep -n "provide\|define (racket-output\|define (chez-output" racket/tests/diff-runner.rkt
+  > $ cat > /tmp/mut.rkt <<'EOF'
+#lang racket/base
+(require racket/string racket/file (file "/home/al/dev/metacat/racket/tests/diff-runner.rkt"))
+(define root "/home/
+  > $ cat > /tmp/mutate.py <<'EOF'
+import subprocess, time, sys
+B='racket/engine/bridges.rktl'; K='racket/engine/breakers.rktl'
+M=[
+ ("horizontal CM-count factor 1.2 
+  > $ grep -n "proposed-bridge 3" -A1 racket/engine/bridges.rktl | cat -A | head -3
+  > $ sed -i 's/"proposed-bridge 3\\n\\t\\t\\t\\t   incompatible-bond 2", "proposed-bridge 2\\n\\t\\t\\t\\t   incompatible-bond 3"/"proposed-bridge 3\\n\\t\\t\\t   in
+  > $ python3 /tmp/mutate.py > /tmp/mutate.log 2>&1
+
+Mutation run in progress (~17 min). Meanwhile, documentation: checking a few oddities first.
+  > $ grep -n "propose-singleton-group\|get-drawn-coincident-bridge\|get-highest-level-coincident\|letter-category-mappable-objects?" chez_scheme/original/*.ss | grep
+  > $ sed -n 536,640p docs/porting-notes.md; sed -n 225,260p docs/anomalies_and_quirks.md; grep -n "^## " docs/anomalies_and_quirks.md
+  > $ sleep 240; cat /tmp/mutate.log
+  > $ cat /tmp/mutate.log
+  > $ python3 - <<'EOF'
+p='docs/anomalies_and_quirks.md'
+s=open(p).read()
+bug='''
+### `letter-category-mappable-objects?` compares a group with itself
+- **Seen:** ite
+  > $ ps aux | grep -E "racket|scheme|mutate" | grep -v grep | head; cd /home/al/dev/metacat && git diff --stat racket/engine/
+  > $ ps -eo pid,etime,args | grep -E "mut.rkt|mutate.py" | grep -v grep | cut -c1-120; cd /home/al/dev/metacat && git diff --stat racket/engine/ | tail -3
+  > ToolSearch {"query": "select:Monitor", "max_results": 1}
+
+Mutation run continues in the background; drafting the porting notes meanwhile.
+  > $ cat >> docs/porting-notes.md <<'EOF'
+
+## Bridges and breakers (item 08)
+
+**Changes**: `bridges.ss` and `breakers.ss` → `racket/engine/bridges.rktl` and
+`breaker
+  > $ cat /tmp/mutate.log
+  > $ until [ $(wc -l < /tmp/mutate.log) -ge 17 ] || ! pgrep -f mutate.py >/dev/null; do sleep 5; done; cat /tmp/mutate.log
+
+Waiting for the mutation run to finish.
+  > $ until ! pgrep -f mutate.py >/dev/null; do sleep 5; done; cat /tmp/mutate.log
+  > $ cut -c1-170 /tmp/mutate.log; cmp racket/engine/bridges.rktl /tmp/bridges.bak && cmp racket/engine/breakers.rktl /tmp/breakers.bak && echo RESTORED
+  > $ cat >> tests/diff/bridge-battery.scm <<'EOF'
+
+;;;---------------------------------------------------------------------------
+;;; Bridges examined directly.  Aft
+  > $ python3 - <<'EOF'
+p='tests/diff/bridge-battery.scm'
+s=open(p).read()
+s=s.replace("(tell (tell d2 'get-opposite-node) 'self))","(if (eq? d2 plato-left) plato-rig
+  > $ grep -o '"[a-z]*=>[a-z]*" ((bridge[^"]\{0,80\}' /tmp/br-chez.txt | grep -i "right\|left" | head -3; grep "^bridge-matrix" /tmp/br-chez.txt | grep -o "#t" | wc -
+  > $ grep "^bridge-matrix" /tmp/br-chez.txt | grep -o '"\(left\|right\)=>\(left\|right\)" . (.\{0,40\}' | sort | uniq -c | head
+
+Direction-incompatible bridges are now exercised. Re-running the three escaped mutations against the new battery.
+  > $ python3 /tmp/mutate.py 2 11 12 2>&1 | cut -c1-200; cmp racket/engine/bridges.rktl /tmp/bridges.bak && echo RESTORED
+  > $ grep -n "(define partition" -A15 chez_scheme/original/utilities.ss; grep -n "(define select-longest-list" -A6 chez_scheme/original/utilities.ss
+  > $ python3 - <<'EOF'
+p='/tmp/mutate.py'
+s=open(p).read()
+s=s.replace(''' ("horizontal incompatible-CMs label test dropped"''',''' ("direction-incompatible partitio
+  > $ sed -n '1,/^(test bridges-35/p' tests/diff/bridge-battery.scm | sed 's/(define b:codelet-cap 1000)/(define b:codelet-cap 3000)/' > /tmp/bridge-long.scm && grep 
+
+3000 codelets × 109 runs: byte-identical (151 MB). Gathering a few stats, then the gate.
+  > $ grep -o "(built (((bridge" /tmp/long-chez.txt | wc -l; grep -o "breaker [0-9/.]* [0-9]* [0-9]* (built ()) (broken ((" /tmp/long-chez.txt | wc -l; grep -oE "\(br
+  > $ time python3 ralph_loops/loop0001/gate.py 2>&1 | tail -15
+  > $ sed -n 75,95p racket/tests/engine-test.rkt; grep -n "bridge\|pending" racket/tests/engine-test.rkt | head -20
+  > $ python3 - <<'EOF'
+p='racket/tests/engine-test.rkt'
+s=open(p).read()
+s=s.replace('''(check-exn #rx"not ported yet" (lambda () ((engine 'bridge-between?) 'a 'b 'c
+  > $ time python3 ralph_loops/loop0001/gate.py 2>&1 | tail -6
+  > $ raco test racket/ 2>&1 | tail -2
+
+Gate passed (483 Racket tests). Finishing docs, PROGRESS.md and iterations.md.
+  > $ cat >> docs/porting-notes.md <<'EOF'
+- Also in the battery, **bridges examined directly** (`b:bridge-matrix`, 9
+  runs of 1500 codelets): after the run, a fresh
+  > $ sed -n 38,52p chez_scheme/oracle/README.md
+  > $ python3 - <<'EOF'
+p='chez_scheme/oracle/README.md'
+s=open(p).read()
+s=s.replace('''  `tests/diff/codelet-harness.scm`). It prints''','''  `tests/diff/codelet-ha
+  > $ sed -i 's/^- \*\*Mutation checks\*\*: 20 mutations/- **Mutation checks**: 19 mutations/' ralph_loops/loop0001/PROGRESS.md && grep -n "19 mutations" ralph_loops/
+
+Item 08 (bridges and breakers) is done and the gate passes (483 Racket tests, about 2.5 minutes, of which the new test takes about 85 s). Nothing is committed: the loop driver commits and pushes.
+
+**What changed**
+- `bridges.ss` and `breakers.ss` are copied unchanged to `racket/engine/bridges.rktl` and `breakers.rktl`, apart from the "Ported to Racket" header lines. `engine.rkt` includes them right after groups, in the original's load order. I checked every random draw in the two files: none sits in a call or `let` with another argument that also draws, so Chez's evaluation order can't shift anything.
+- **`pending.rktl`:**
+  - The bridges stand-ins are gone. Two names that had been filed under bridges belong to `trace.ss` and `rules.ss` and are now listed there.
+  - Every bridge calls four small `themes.ss` helpers. They make no random draws and change no state, so `pending.rktl` now holds unchanged copies of them; item 10 moves them back when it ports `themes.ss`.
+  - `monitor-new-concept-mappings`, which every bridge build calls, can now be replaced from tests.
+
+**Tests**
+- **Bridges mode for the item 07 harness**: it now adds the bridge scouts, the description scout, the breaker and the full set of top-down slipnodes. A fake Themespace with no active themes records what bridge-builder sends it.
+  - For all 109 problem × seed runs at 1000 codelets (item 07 used 400), the traces from Chez and Racket are identical: about 116,000 lines.
+  - A second set of 9 runs builds a trial bridge for every object pair afterwards and records its strengths, which bridges and bonds it conflicts with, and the direction checks.
+- **Tests first**: the new test fails against the engine as it was before this item, at the first `set-global!` of `monitor-new-concept-mappings`. With the port it passed on the first run, and no ported code had to change. The only bug found was in the test harness itself.
+- **Mutation checks**: I made 19 small deliberate changes to the ported code; 16 were caught. The other 3 can't change any of these runs:
+  - a coherence factor whose result is capped at 100 either way;
+  - two swaps of a comparison that is never consulted, because the bridges it sorts already arrive in string order.
+- **Longer runs** (not in the gate): at 3000 codelets on all 109 runs, Chez and Racket give byte-identical output, 151 MB, including 2160 bridges built and 6 bridges with flipped groups.
+
+**Not yet possible**: the golden traces from the original still can't be compared. Real runs also post rule, answer and self-watching codelets, which items 09 and 10 port.
+
+**Logged in `docs/anomalies_and_quirks.md`**:
+- A bug in the original: `letter-category-mappable-objects?` compares the first group's category with itself, so the check is always true. It is kept unchanged because the golden traces depend on it.
+- Bridges call `themes.ss` and `trace.ss` code on every bridge, and message the Themespace window even when graphics are off.
+- Two singleton-group procedures in `bridges.ss` are never called.
+
+PROGRESS.md (now 9/18) and iterations.md (item 08 marked `[x]`) are updated. `docs/porting-notes.md` has the item 08 section with the mutation table.
+
+# result: success in 2013s, 79 turns, cost $4.36
