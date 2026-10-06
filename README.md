@@ -8,7 +8,7 @@ a project in loving memory of Helga Keller
 **Repository News: Metacat runs again, in Racket and Python, alongside the classic version. Numbo source-code just added, Seek-Whence should really be coming soon now!**
 
 
-![FCCA](https://cogsci.indiana.edu/images/fcca.jpg)
+![FCCA](fcca.jpg)
 
 [**Hofstadter, D., and FARG (1995) Fluid Concepts and Creative Analogies, Basic Books.**](https://cogsci.indiana.edu/book.html)
 
@@ -91,7 +91,7 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
 
 PROJECT: COPYCAT
 ---
-[![Watch](https://camo.githubusercontent.com/fce9eca50ac44e256082460f36bca5fd48c56e46/687474703a2f2f692e696d6775722e636f6d2f6c484d776e2e706e67)](https://youtu.be/v7Eotp-XKVA)
+[![Watch Joseph Aaron Hager's Copycat (Python 3, OpenGL) solve abc → abd; xyz → ?](/Software/Copycat/copycat-hager-opengl.png)](https://youtu.be/v7Eotp-XKVA)
 
 
 [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
@@ -293,7 +293,7 @@ For additional info, please see the [project's page](capyblanca.md).
 
 PROJECT: MUSICAT
 ---
-![Musicat](http://ericpnichols.com/images/musicat.png)
+![Musicat](https://ericpnichols.com/images/musicat.png)
 
 [Eric Paul Nichols](https://github.com/eraoul) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
 
@@ -356,6 +356,10 @@ Find Dr. McGraw in  [Personal page](https://www.garymcgraw.com/)  |  [Google Sch
 
 There is an incredible javascrpt implementation of the examiner by [Paul Geiger](https://github.com/Paul-G2).  Run it [here](https://paul-g2.github.io/letter-spirit-examiner-js/), or check out the source [here](https://github.com/Paul-G2/letter-spirit-examiner-js?tab=readme-ov-file). 
 
+[![Paul Geiger's Letter Spirit Examiner in the browser, recognizing a gridletter as "b"](/Software/Letter-Spirit/screenshots/examiner-js.png)](https://paul-g2.github.io/letter-spirit-examiner-js/)
+
+*Geiger's Examiner after 184 codelets: it has parsed the input into a `left-post` and a `right-bowl` and decided "I think it's: b". The Coderack is on the right, and the activations of the roles and letter categories are along the bottom.*
+
 LETTER SPIRIT, PART II
 ---
 
@@ -366,4 +370,8 @@ Find Dr. Rehling in  [Google Scholar](https://scholar.google.com.br/scholar?hl=e
 Dr. Rehling's thesis is available [here](http://goosie.cogsci.indiana.edu/farg/mcgrawg/thesis.html) and his sourcecode is available in the [/Software/Letter-Spirit](/Software/Letter-Spirit) folder.
 
 Once again, there is an incredibly beautiful javascrpt implementation of this work by [Dr. Paul Geiger](https://github.com/Paul-G2).  Run it [here](https://paul-g2.github.io/letter-spirit-2-js/index.html), or check out the source [here](https://github.com/Paul-G2/letter-spirit-2-js). 
+
+[![Paul Geiger's Letter Spirit II in the browser, after drafting a whole alphabet in the style of five seed letters](/Software/Letter-Spirit/screenshots/letter-spirit-2-js.png)](https://paul-g2.github.io/letter-spirit-2-js/index.html)
+
+*Geiger's Letter Spirit II, after 30 drafts and about 125,000 codelets. Starting from the seed letters `b c e f g` (left, dark orange in the grid), it has drafted the rest of the alphabet in their style and is adjudicating its latest draft of `h`. The stylistic properties it has abstracted from the seeds are listed below the grid.*
 
