@@ -238,6 +238,14 @@ Seqsee is written in Perl and a new version is written in Python and the code is
 
 [Python version being rewritten](https://github.com/amahabal/Pyhttps://scholar.google.com.br/scholar?hl=en&q=Francisco+Lara-Dammer&btnG=&as_sdt=1%2C5&as_sdtp=&oq=francisco+Seqsee)
 
+![Abhijit Mahabal's original Perl/Tk Seqsee, unchanged, after solving 1 1 2 1 2 3](/Software/Seqsee/screenshots/seqsee-perl-tk.png)
+
+*Mahabal's original Perl/Tk Seqsee, run unchanged on `1 1 2 1 2 3`, after 830 steps. In the Workspace it has seen the sequence as the blocks 1, 1 2, 1 2 3, 1 2 3 4 and 1 2 3 4 5, all inside one green group. The Slipnet's active concepts (succ, ascending, …) are on the right, and the Groups list is under the Workspace. In the Commentary at the bottom it describes its solution. Mahabal switched off the rule description in 2010, hence "RULE DESCRIPTION CURRENTLY BROKEN!!".*
+
+![The same run in a Python port of Seqsee with a PySide6 (Qt) GUI](/Software/Seqsee/screenshots/seqsee-python-qt.png)
+
+*The same sequence in a Python port of Seqsee, with a PySide6 (Qt) GUI that redraws the original's views. With seed 7 it reaches the same solution after 677 steps. The Commentary shows the questions Seqsee asked and the answers (in red): "Is the next term 4?" no; "Are the next 4 terms 1, 2, 3, and 4?" yes; "Are the next 5 terms 1, 2, 3, 4, and 5?" yes; then it describes the solution and asks for confirmation.*
+
 
 PROJECT: George
 ---
