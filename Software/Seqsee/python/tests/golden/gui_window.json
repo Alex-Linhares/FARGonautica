@@ -1,0 +1,185 @@
+[
+ {
+  "canvas": {
+   "background": "#D9D9D9",
+   "borderwidth": 0,
+   "height": 450,
+   "highlight": 1,
+   "width": 780
+  },
+  "frame_background": "#D9D9D9",
+  "help_prints": {
+   "About...": "[About...]\n",
+   "Help On...": "[Help On...]\n"
+  },
+  "menus": [
+   {
+    "entries": [
+     {
+      "label": "Workspace + Groups + Relations + Slipnet",
+      "type": "command"
+     },
+     {
+      "label": "Workspace",
+      "type": "command"
+     },
+     {
+      "label": "Workspace + Attention",
+      "type": "command"
+     },
+     {
+      "label": "Workspace + Slipnet",
+      "type": "command"
+     },
+     {
+      "label": "Workspace + Categories",
+      "type": "command"
+     },
+     {
+      "label": "Workspace + Coderack",
+      "type": "command"
+     },
+     {
+      "label": "Workspace + Rules",
+      "type": "command"
+     },
+     {
+      "label": "Workspace + Relations",
+      "type": "command"
+     },
+     {
+      "label": "Workspace + Groups",
+      "type": "command"
+     },
+     {
+      "label": "Workspace + Stream",
+      "type": "command"
+     },
+     {
+      "label": "Workspace + Stream2",
+      "type": "command"
+     }
+    ],
+    "label": "View",
+    "side": "left"
+   },
+   {
+    "entries": [
+     {
+      "label": "as EPS",
+      "type": "command"
+     }
+    ],
+    "label": "Save",
+    "side": "left"
+   },
+   {
+    "entries": [
+     {
+      "label": "About...",
+      "type": "command"
+     },
+     {
+      "type": "separator"
+     },
+     {
+      "label": "Help On...",
+      "type": "command"
+     }
+    ],
+    "label": "Help",
+    "side": "right"
+   }
+  ],
+  "name": "window",
+  "views": [
+   {
+    "label": null,
+    "parts": [
+     "SGUI::Slipnet",
+     "SGUI::Workspace",
+     "SGUI::List::Groups",
+     "SGUI::Relations"
+    ]
+   },
+   {
+    "label": "Workspace + Groups + Relations + Slipnet",
+    "parts": [
+     "SGUI::Slipnet",
+     "SGUI::Workspace",
+     "SGUI::List::Groups",
+     "SGUI::Relations"
+    ]
+   },
+   {
+    "label": "Workspace",
+    "parts": [
+     "SGUI::Workspace"
+    ]
+   },
+   {
+    "label": "Workspace + Attention",
+    "parts": [
+     "SGUI::Workspace",
+     "SGUI::Workspace_Attention"
+    ]
+   },
+   {
+    "label": "Workspace + Slipnet",
+    "parts": [
+     "SGUI::Workspace",
+     "SGUI::Slipnet"
+    ]
+   },
+   {
+    "label": "Workspace + Categories",
+    "parts": [
+     "SGUI::Workspace",
+     "SGUI::List::Categories"
+    ]
+   },
+   {
+    "label": "Workspace + Coderack",
+    "parts": [
+     "SGUI::Workspace",
+     "SGUI::Coderack"
+    ]
+   },
+   {
+    "label": "Workspace + Rules",
+    "parts": [
+     "SGUI::Workspace",
+     "SGUI::List::Rules"
+    ]
+   },
+   {
+    "label": "Workspace + Relations",
+    "parts": [
+     "SGUI::Workspace",
+     "SGUI::Relations"
+    ]
+   },
+   {
+    "label": "Workspace + Groups",
+    "parts": [
+     "SGUI::Workspace",
+     "SGUI::List::Groups"
+    ]
+   },
+   {
+    "label": "Workspace + Stream",
+    "parts": [
+     "SGUI::Workspace",
+     "SGUI::Stream"
+    ]
+   },
+   {
+    "label": "Workspace + Stream2",
+    "parts": [
+     "SGUI::Workspace",
+     "SGUI::List::Stream"
+    ]
+   }
+  ]
+ }
+]

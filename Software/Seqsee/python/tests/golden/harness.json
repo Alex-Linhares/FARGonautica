@@ -1,0 +1,4486 @@
+[
+ {
+  "case": "parse_seq",
+  "continuation": [
+   "4",
+   "5"
+  ],
+  "input": "1 2 3 | 4 5",
+  "seq": [
+   "1",
+   "2",
+   "3"
+  ]
+ },
+ {
+  "case": "parse_seq",
+  "continuation": [
+   "4",
+   "5",
+   "6"
+  ],
+  "input": "  1 2  3|4  5 6  ",
+  "seq": [
+   "1",
+   "2",
+   "3"
+  ]
+ },
+ {
+  "case": "parse_seq",
+  "continuation": [
+   "3",
+   "4"
+  ],
+  "input": "1 2 | 3 4 | 5",
+  "seq": [
+   "1",
+   "2"
+  ]
+ },
+ {
+  "case": "parse_seq",
+  "continuation": [],
+  "input": " 1 2  ",
+  "seq": [
+   "1",
+   "2"
+  ]
+ },
+ {
+  "case": "parse_seq",
+  "continuation": [],
+  "input": "|",
+  "seq": []
+ },
+ {
+  "case": "parse_seq",
+  "continuation": [],
+  "input": "",
+  "seq": []
+ },
+ {
+  "case": "parse_seq",
+  "continuation": [],
+  "input": "7|",
+  "seq": [
+   "7"
+  ]
+ },
+ {
+  "case": "status",
+  "is_a_crash": 0,
+  "is_at_least_an_extension": 1,
+  "is_success": 1,
+  "name": "Successful",
+  "status_string": "Successful"
+ },
+ {
+  "case": "status",
+  "is_a_crash": 0,
+  "is_at_least_an_extension": 1,
+  "is_success": 0,
+  "name": "RanOutOfTerms",
+  "status_string": "RanOutOfTerms"
+ },
+ {
+  "case": "status",
+  "is_a_crash": 0,
+  "is_at_least_an_extension": 1,
+  "is_success": 0,
+  "name": "InitialBlemish",
+  "status_string": "InitialBlemish"
+ },
+ {
+  "case": "status",
+  "is_a_crash": 0,
+  "is_at_least_an_extension": 1,
+  "is_success": 0,
+  "name": "ExtendedABit",
+  "status_string": "ExtendedABit"
+ },
+ {
+  "case": "status",
+  "is_a_crash": 0,
+  "is_at_least_an_extension": 0,
+  "is_success": 0,
+  "name": "NotEvenExtended",
+  "status_string": "NotEvenExtended"
+ },
+ {
+  "case": "status",
+  "is_a_crash": 1,
+  "is_at_least_an_extension": 0,
+  "is_success": 0,
+  "name": "Crashed",
+  "status_string": "Crashed"
+ },
+ {
+  "case": "status_new",
+  "is_success": 1,
+  "now": "Successful",
+  "old": "Weird",
+  "shared": 0
+ },
+ {
+  "case": "status_missing",
+  "error": "Missing initializer label for TestOutputStatus: 'status_string'.\nFatal error in constructor call\n"
+ },
+ {
+  "case": "result",
+  "error": null,
+  "old_steps": 12,
+  "status": "Crashed",
+  "steps": 15
+ },
+ {
+  "args": [
+   "error",
+   "steps"
+  ],
+  "case": "result_missing",
+  "error": "Missing initializer label for Seqsee::ResultOfTestRun: 'status'.\nFatal error in constructor call\n"
+ },
+ {
+  "args": [],
+  "case": "result_missing",
+  "error": "Missing initializer label for Seqsee::ResultOfTestRun: 'status'.\nMissing initializer label for Seqsee::ResultOfTestRun: 'steps'.\nMissing initializer label for Seqsee::ResultOfTestRun: 'error'.\nFatal error in constructor call\n"
+ },
+ {
+  "args": [
+   "status",
+   "steps"
+  ],
+  "case": "result_missing",
+  "error": "Missing initializer label for Seqsee::ResultOfTestRun: 'error'.\nFatal error in constructor call\n"
+ },
+ {
+  "case": "results",
+  "context": "",
+  "is_ltm_result": 0,
+  "rate": 0.5,
+  "version": 3
+ },
+ {
+  "case": "results_given",
+  "context": "new",
+  "is_ltm_result": 1,
+  "old_context": "ctx"
+ },
+ {
+  "case": "results_missing",
+  "error": "Missing initializer label for ResultsOfTestRuns: 'results'.\nMissing initializer label for ResultsOfTestRuns: 'rate'.\nMissing initializer label for ResultsOfTestRuns: 'terms'.\nMissing initializer label for ResultsOfTestRuns: 'features'.\nMissing initializer label for ResultsOfTestRuns: 'version'.\n(Did you mislabel one of the args you passed: 'times', 'times', 'times', or 'times'?)\nFatal error in constructor call\n"
+ },
+ {
+  "args": [
+   0.5,
+   1000,
+   0.2
+  ],
+  "case": "range",
+  "range": [
+   300,
+   700
+  ]
+ },
+ {
+  "args": [
+   0.1,
+   1000,
+   0.2
+  ],
+  "case": "range",
+  "range": [
+   -100,
+   300
+  ]
+ },
+ {
+  "args": [
+   0.9,
+   1000,
+   0.2
+  ],
+  "case": "range",
+  "range": [
+   700,
+   1100
+  ]
+ },
+ {
+  "args": [
+   0.33,
+   100,
+   0.1
+  ],
+  "case": "range",
+  "range": [
+   23,
+   43
+  ]
+ },
+ {
+  "args": [
+   0,
+   50,
+   0.2
+  ],
+  "case": "range",
+  "range": [
+   -10,
+   10
+  ]
+ },
+ {
+  "arg": [
+   0,
+   1,
+   2
+  ],
+  "calls": 4,
+  "case": "stochastic",
+  "fn": "all_seen_ok",
+  "msg": null,
+  "next_rand": 0.395893183897972,
+  "order": "sub_first",
+  "seed": 100,
+  "sub": "rand3",
+  "tap": [
+   [
+    1,
+    "stochastic_all_seen_ok"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   0,
+   1,
+   2
+  ],
+  "calls": 4,
+  "case": "stochastic",
+  "fn": "all_seen_ok",
+  "msg": null,
+  "next_rand": 0.395893183897972,
+  "order": "arg_first",
+  "seed": 100,
+  "sub": "rand3",
+  "tap": [
+   [
+    1,
+    "stochastic_all_seen_ok"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   0,
+   1,
+   5
+  ],
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "all_seen_ok",
+  "msg": "msg1",
+  "next_rand": 0.56051728401761,
+  "order": "sub_first",
+  "seed": 101,
+  "sub": "rand3",
+  "tap": [
+   [
+    0,
+    "Not all expected outputs seen: missing 5\n"
+   ]
+  ]
+ },
+ {
+  "arg": [],
+  "calls": 1,
+  "case": "stochastic",
+  "fn": "all_seen_ok",
+  "msg": null,
+  "next_rand": 0.992663519996317,
+  "order": "sub_first",
+  "seed": 102,
+  "sub": "const",
+  "tap": [
+   [
+    1,
+    "stochastic_all_seen_ok"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   "",
+   "u"
+  ],
+  "calls": 2,
+  "case": "stochastic",
+  "fn": "all_seen_ok",
+  "msg": "msg3",
+  "next_rand": 0.156264597588358,
+  "order": "sub_first",
+  "seed": 103,
+  "sub": "undef_ret",
+  "tap": [
+   [
+    1,
+    "msg3"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   "",
+   "u"
+  ],
+  "calls": 2,
+  "case": "stochastic",
+  "fn": "all_seen_ok",
+  "msg": null,
+  "next_rand": 0.156264597588358,
+  "order": "arg_first",
+  "seed": 103,
+  "sub": "undef_ret",
+  "tap": [
+   [
+    1,
+    "stochastic_all_seen_ok"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   0,
+   1,
+   2
+  ],
+  "calls": 5,
+  "case": "stochastic",
+  "fn": "all_seen_nok",
+  "msg": null,
+  "next_rand": 0.246435228254981,
+  "order": "sub_first",
+  "seed": 104,
+  "sub": "rand3",
+  "tap": [
+   [
+    0,
+    "stochastic_all_seen_nok: unexpectedly saw everything"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   3
+  ],
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "all_seen_nok",
+  "msg": "msg5",
+  "next_rand": 0.434261426259386,
+  "order": "sub_first",
+  "seed": 105,
+  "sub": "rand3",
+  "tap": [
+   [
+    1,
+    "msg5"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   0,
+   1,
+   2
+  ],
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "all_and_only_ok",
+  "msg": null,
+  "next_rand": 0.40269746181983,
+  "order": "sub_first",
+  "seed": 106,
+  "sub": "rand3",
+  "tap": [
+   [
+    1,
+    "stochastic_all_and_only_ok"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   0,
+   1,
+   2
+  ],
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "all_and_only_ok",
+  "msg": null,
+  "next_rand": 0.40269746181983,
+  "order": "arg_first",
+  "seed": 106,
+  "sub": "rand3",
+  "tap": [
+   [
+    1,
+    "stochastic_all_and_only_ok"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   0,
+   1
+  ],
+  "calls": 4,
+  "case": "stochastic",
+  "fn": "all_and_only_ok",
+  "msg": "msg7",
+  "next_rand": 0.313194461295172,
+  "order": "sub_first",
+  "seed": 107,
+  "sub": "rand3",
+  "tap": [
+   [
+    0,
+    "unexpected value 2\n"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   0,
+   1,
+   7
+  ],
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "all_and_only_ok",
+  "msg": null,
+  "next_rand": 0.339569532940718,
+  "order": "sub_first",
+  "seed": 108,
+  "sub": "rand2",
+  "tap": [
+   [
+    0,
+    "Not all expected outputs seen: missing 0, 7, 1\n"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   0,
+   1,
+   2
+  ],
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "all_and_only_nok",
+  "msg": "msg9",
+  "next_rand": 0.308005568501162,
+  "order": "sub_first",
+  "seed": 109,
+  "sub": "rand3",
+  "tap": [
+   [
+    0,
+    "stochastic_all_and_only_nok"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   0,
+   1,
+   2
+  ],
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "all_and_only_nok",
+  "msg": null,
+  "next_rand": 0.308005568501162,
+  "order": "arg_first",
+  "seed": 109,
+  "sub": "rand3",
+  "tap": [
+   [
+    0,
+    "stochastic_all_and_only_nok"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   0,
+   2
+  ],
+  "calls": 6,
+  "case": "stochastic",
+  "fn": "all_and_only_nok",
+  "msg": null,
+  "next_rand": 0.185684143003837,
+  "order": "sub_first",
+  "seed": 110,
+  "sub": "rand3",
+  "tap": [
+   [
+    1,
+    "stochastic_all_and_only_nok"
+   ]
+  ]
+ },
+ {
+  "arg": {
+   "0": 0.5,
+   "1": 0.5
+  },
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "ok",
+  "msg": "msg11",
+  "next_rand": 0.24487763962205,
+  "order": "sub_first",
+  "seed": 111,
+  "sub": "rand2",
+  "tap": [
+   [
+    1,
+    "msg11"
+   ]
+  ]
+ },
+ {
+  "arg": {
+   "a": 0.5
+  },
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "ok",
+  "msg": null,
+  "next_rand": 0.213313675182494,
+  "order": "sub_first",
+  "seed": 112,
+  "sub": "skewed",
+  "tap": [
+   [
+    0,
+    "Value out of range for 'a': expected to see it between 300 and 700 times, but instead saw it 888 times\n"
+   ]
+  ]
+ },
+ {
+  "arg": {
+   "a": 0.5
+  },
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "ok",
+  "msg": null,
+  "next_rand": 0.213313675182494,
+  "order": "arg_first",
+  "seed": 112,
+  "sub": "skewed",
+  "tap": [
+   [
+    1,
+    "stochastic_ok"
+   ]
+  ]
+ },
+ {
+  "arg": {
+   "b": 0.5
+  },
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "ok",
+  "msg": "msg13",
+  "next_rand": 0.181749710742938,
+  "order": "sub_first",
+  "seed": 113,
+  "sub": "skewed",
+  "tap": [
+   [
+    0,
+    "Value out of range for 'b': expected to see it between 300 and 700 times, but instead saw it 104 times\n"
+   ]
+  ]
+ },
+ {
+  "arg": {
+   "c": 0.1
+  },
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "ok",
+  "msg": null,
+  "next_rand": 0.150185746303382,
+  "order": "sub_first",
+  "seed": 114,
+  "sub": "skewed",
+  "tap": [
+   [
+    1,
+    "stochastic_ok"
+   ]
+  ]
+ },
+ {
+  "arg": {
+   "a": 0.9,
+   "b": 0.1
+  },
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "ok",
+  "msg": "msg15",
+  "next_rand": 0.118621781863826,
+  "order": "sub_first",
+  "seed": 115,
+  "sub": "skewed",
+  "tap": [
+   [
+    1,
+    "msg15"
+   ]
+  ]
+ },
+ {
+  "arg": {
+   "a": 0.9,
+   "b": 0.1
+  },
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "ok",
+  "msg": null,
+  "next_rand": 0.118621781863826,
+  "order": "arg_first",
+  "seed": 115,
+  "sub": "skewed",
+  "tap": [
+   [
+    1,
+    "stochastic_ok"
+   ]
+  ]
+ },
+ {
+  "arg": {
+   "a": 0.9
+  },
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "nok",
+  "msg": null,
+  "next_rand": 0.0870578174242702,
+  "order": "sub_first",
+  "seed": 116,
+  "sub": "skewed",
+  "tap": [
+   [
+    1,
+    "stochastic_nok -- unexpectedly in range"
+   ]
+  ]
+ },
+ {
+  "arg": {
+   "a": 0.1
+  },
+  "calls": 1000,
+  "case": "stochastic",
+  "fn": "nok",
+  "msg": "msg17",
+  "next_rand": 0.0554938529847142,
+  "order": "sub_first",
+  "seed": 117,
+  "sub": "skewed",
+  "tap": [
+   [
+    1,
+    "msg17"
+   ]
+  ]
+ },
+ {
+  "calls": 50,
+  "case": "stochastic_setup",
+  "next_rand": 0.186665032199993,
+  "tap": [
+   [
+    1,
+    "stochastic_ok"
+   ]
+  ]
+ },
+ {
+  "case": "stochastic_setup_bad",
+  "error": "unknown option bogus passed to setup\n"
+ },
+ {
+  "case": "wrap",
+  "error": null,
+  "name": "thought",
+  "ret": "AreRelated"
+ },
+ {
+  "case": "wrap",
+  "error": null,
+  "name": "thought_sub",
+  "ret": "Special"
+ },
+ {
+  "case": "wrap",
+  "error": null,
+  "name": "scf",
+  "ret": "FocusOn::P"
+ },
+ {
+  "case": "wrap",
+  "error": "FakeErr(Other::Thing)",
+  "name": "other",
+  "ret": null
+ },
+ {
+  "case": "wrap",
+  "error": "FakeErr(none)",
+  "name": "nopayload",
+  "ret": null
+ },
+ {
+  "case": "wrap",
+  "error": "plain\n",
+  "name": "string",
+  "ret": null
+ },
+ {
+  "case": "wrap",
+  "error": null,
+  "name": "lives",
+  "ret": ""
+ },
+ {
+  "case": "wrap",
+  "error": null,
+  "name": "check_ok",
+  "ret": ""
+ },
+ {
+  "case": "wrap",
+  "error": "Failed Check in check_sub",
+  "name": "check_bad",
+  "ret": null
+ },
+ {
+  "case": "wrap",
+  "error": null,
+  "name": "check_ignored_on_throw",
+  "ret": "AreRelated"
+ },
+ {
+  "calls": 8,
+  "case": "code_throws",
+  "expect": [
+   "",
+   "AreRelated",
+   "FocusOn::P"
+  ],
+  "fn": "ok",
+  "next_rand": 0.851820987174879,
+  "outs": [
+   "",
+   "SThought::AreRelated",
+   "Seqsee::SCF::FocusOn::P"
+  ],
+  "seed": 300,
+  "tap": [
+   [
+    1,
+    "stochastic_all_seen_ok"
+   ]
+  ]
+ },
+ {
+  "calls": 1000,
+  "case": "code_throws",
+  "expect": [
+   "AreRelated",
+   "Special"
+  ],
+  "fn": "ok",
+  "next_rand": 0.24772439610641,
+  "outs": [
+   "",
+   "SThought::AreRelated"
+  ],
+  "seed": 301,
+  "tap": [
+   [
+    0,
+    "Not all expected outputs seen: missing Special\n"
+   ]
+  ]
+ },
+ {
+  "calls": 2,
+  "case": "code_throws",
+  "expect": [
+   "",
+   "x"
+  ],
+  "fn": "ok",
+  "next_rand": 0.106931543714506,
+  "outs": [
+   "",
+   "die"
+  ],
+  "seed": 302,
+  "tap": [
+   [
+    0,
+    "boom\n"
+   ]
+  ]
+ },
+ {
+  "calls": 3,
+  "case": "code_throws",
+  "expect": [
+   "",
+   "AreRelated"
+  ],
+  "fn": "nok",
+  "next_rand": 0.923268571818831,
+  "outs": [
+   "",
+   "SThought::AreRelated"
+  ],
+  "seed": 303,
+  "tap": [
+   [
+    0,
+    "stochastic_all_seen_nok: unexpectedly saw everything"
+   ]
+  ]
+ },
+ {
+  "calls": 1000,
+  "case": "code_throws",
+  "expect": [
+   "Special"
+  ],
+  "fn": "nok",
+  "next_rand": 0.153032502787742,
+  "outs": [
+   "",
+   "SThought::AreRelated"
+  ],
+  "seed": 304,
+  "tap": [
+   [
+    1,
+    "stochastic_all_seen_nok"
+   ]
+  ]
+ },
+ {
+  "calls": 1000,
+  "case": "code_throws",
+  "expect": [
+   "",
+   "AreRelated"
+  ],
+  "fn": "all_and_only_ok",
+  "next_rand": 0.121468538348186,
+  "outs": [
+   "",
+   "SThought::AreRelated"
+  ],
+  "seed": 305,
+  "tap": [
+   [
+    1,
+    "stochastic_all_and_only_ok"
+   ]
+  ]
+ },
+ {
+  "calls": 1,
+  "case": "code_throws",
+  "expect": [
+   ""
+  ],
+  "fn": "all_and_only_ok",
+  "next_rand": 0.354584039046557,
+  "outs": [
+   "",
+   "SThought::AreRelated"
+  ],
+  "seed": 306,
+  "tap": [
+   [
+    0,
+    "unexpected value AreRelated\n"
+   ]
+  ]
+ },
+ {
+  "calls": 1000,
+  "case": "code_throws",
+  "expect": [
+   "",
+   "AreRelated"
+  ],
+  "fn": "all_and_only_nok",
+  "next_rand": 0.0583406094690737,
+  "outs": [
+   "",
+   "SThought::AreRelated"
+  ],
+  "seed": 307,
+  "tap": [
+   [
+    0,
+    "stochastic_all_and_only_nok"
+   ]
+  ]
+ },
+ {
+  "calls": 1,
+  "case": "code_throws",
+  "expect": [
+   "AreRelated"
+  ],
+  "fn": "all_and_only_nok",
+  "next_rand": 0.763764967533888,
+  "outs": [
+   "",
+   "SThought::AreRelated"
+  ],
+  "seed": 308,
+  "tap": [
+   [
+    1,
+    "stochastic_all_and_only_nok"
+   ]
+  ]
+ },
+ {
+  "calls": 1,
+  "case": "code_throws_check_fails",
+  "next_rand": 0.586087677951099,
+  "tap": [
+   [
+    0,
+    "Failed Check in check_sub"
+   ]
+  ]
+ },
+ {
+  "calls": 1000,
+  "case": "code_throws_all_and_only_check",
+  "next_rand": 0.0913279521508095,
+  "tap": [
+   [
+    1,
+    "CODE(0x555558fd42a0)"
+   ]
+  ]
+ },
+ {
+  "case": "throws_thought",
+  "died": null,
+  "name": "match",
+  "ret": "SThought::AreRelated",
+  "tap": [
+   [
+    1,
+    "P:SThought::AreRelated returned"
+   ]
+  ],
+  "type": "AreRelated"
+ },
+ {
+  "case": "throws_thought",
+  "died": null,
+  "name": "match_full",
+  "ret": "SThought::AreRelated",
+  "tap": [
+   [
+    1,
+    "P:SThought::AreRelated returned"
+   ]
+  ],
+  "type": "SThought::AreRelated"
+ },
+ {
+  "case": "throws_thought",
+  "died": null,
+  "name": "match_list",
+  "ret": "SThought::AreRelated",
+  "tap": [
+   [
+    1,
+    "P:SThought::AreRelated returned"
+   ]
+  ],
+  "type": [
+   "Foo",
+   "AreRelated"
+  ]
+ },
+ {
+  "case": "throws_thought",
+  "died": null,
+  "name": "match_isa",
+  "ret": "SThought::Special",
+  "tap": [
+   [
+    1,
+    "P:SThought::Special returned"
+   ]
+  ],
+  "type": "AreRelated"
+ },
+ {
+  "case": "throws_thought",
+  "died": null,
+  "name": "wrong",
+  "ret": null,
+  "tap": [
+   [
+    0,
+    "Wrong type: P:SThought::AreRelated. Expected one of: SThought::Foo, SThought::Bar"
+   ]
+  ],
+  "type": [
+   "Foo",
+   "SThought::Bar"
+  ]
+ },
+ {
+  "case": "throws_thought",
+  "died": null,
+  "name": "no_thought",
+  "ret": null,
+  "tap": [
+   [
+    0,
+    "No thought returned"
+   ]
+  ],
+  "type": "AreRelated"
+ },
+ {
+  "case": "throws_thought",
+  "died": null,
+  "name": "no_payload",
+  "ret": null,
+  "tap": [
+   [
+    0,
+    "Died without payload"
+   ]
+  ],
+  "type": "AreRelated"
+ },
+ {
+  "case": "throws_thought",
+  "died": "Can't locate object method \"payload\" via package \"oops\\n\" (perhaps you forgot to load \"oops\\n\"?)\n",
+  "name": "string",
+  "ret": null,
+  "tap": null,
+  "type": "AreRelated"
+ },
+ {
+  "case": "throws_no_thought",
+  "name": "lives",
+  "tap": [
+   [
+    1,
+    "Lived Ok"
+   ]
+  ]
+ },
+ {
+  "case": "throws_no_thought",
+  "name": "string",
+  "tap": [
+   [
+    0,
+    "Should return no thought! x\n"
+   ]
+  ]
+ },
+ {
+  "case": "throws_no_thought",
+  "name": "thought",
+  "tap": [
+   [
+    0,
+    "Should return no thought! FakeErr(SThought::AreRelated)"
+   ]
+  ]
+ },
+ {
+  "args": [
+   null,
+   null
+  ],
+  "case": "undef_ok",
+  "tap": [
+   [
+    1,
+    "is undefined"
+   ]
+  ]
+ },
+ {
+  "args": [
+   0,
+   null
+  ],
+  "case": "undef_ok",
+  "tap": [
+   [
+    0,
+    "expected undef, got 0"
+   ]
+  ]
+ },
+ {
+  "args": [
+   "",
+   null
+  ],
+  "case": "undef_ok",
+  "tap": [
+   [
+    0,
+    "expected undef, got "
+   ]
+  ]
+ },
+ {
+  "args": [
+   5,
+   null
+  ],
+  "case": "undef_ok",
+  "tap": [
+   [
+    0,
+    "expected undef, got 5"
+   ]
+  ]
+ },
+ {
+  "args": [
+   null,
+   "custom"
+  ],
+  "case": "undef_ok",
+  "tap": [
+   [
+    1,
+    "custom"
+   ]
+  ]
+ },
+ {
+  "args": [
+   5,
+   "custom"
+  ],
+  "case": "undef_ok",
+  "tap": [
+   [
+    0,
+    "custom"
+   ]
+  ]
+ },
+ {
+  "args": [
+   "cat1",
+   null
+  ],
+  "case": "instance_of_cat_ok",
+  "tap": [
+   [
+    1,
+    "OBJ is an instance of cat1"
+   ]
+  ]
+ },
+ {
+  "args": [
+   "cat2",
+   null
+  ],
+  "case": "instance_of_cat_ok",
+  "tap": [
+   [
+    0,
+    "OBJ is an instance of cat2"
+   ]
+  ]
+ },
+ {
+  "args": [
+   "cat1",
+   "mine"
+  ],
+  "case": "instance_of_cat_ok",
+  "tap": [
+   [
+    1,
+    "mine"
+   ]
+  ]
+ },
+ {
+  "args": [
+   "cat2",
+   "mine"
+  ],
+  "case": "instance_of_cat_ok",
+  "tap": [
+   [
+    0,
+    "mine"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.0276402579782307,
+  "scope": [
+   "always",
+   [
+    "always"
+   ]
+  ],
+  "seed": 500,
+  "tap": [
+   [
+    1,
+    "output_contains"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.932803446676001,
+  "scope": [
+   "always",
+   [
+    "half"
+   ]
+  ],
+  "seed": 501,
+  "tap": [
+   [
+    0,
+    "output_containshalf was not always seen. Seen 3 times out of 5"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.837966635373771,
+  "scope": [
+   "always",
+   [
+    "missing"
+   ]
+  ],
+  "seed": 502,
+  "tap": [
+   [
+    0,
+    "output_containsmissing was not always seen. Seen 0 times out of 5"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.743129824071541,
+  "scope": [
+   "never",
+   [
+    "missing"
+   ]
+  ],
+  "seed": 503,
+  "tap": [
+   [
+    1,
+    "output_contains"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.648293012769312,
+  "scope": [
+   "never",
+   [
+    "half"
+   ]
+  ],
+  "seed": 504,
+  "tap": [
+   [
+    0,
+    "output_containshalf was not never seen. Seen 3 times out of 5"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.553456201467082,
+  "scope": [
+   "sometimes",
+   [
+    "half"
+   ]
+  ],
+  "seed": 505,
+  "tap": [
+   [
+    1,
+    "output_contains"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.458619390164852,
+  "scope": [
+   "sometimes",
+   [
+    "missing"
+   ]
+  ],
+  "seed": 506,
+  "tap": [
+   [
+    0,
+    "output_containsmissing was not seen anytime. Seen 0 times out of 5"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.363782578862622,
+  "scope": [
+   "sometimes",
+   [
+    "always"
+   ]
+  ],
+  "seed": 507,
+  "tap": [
+   [
+    1,
+    "output_contains"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.268945767560393,
+  "scope": [
+   "sometimes_but_not_always",
+   [
+    "half"
+   ]
+  ],
+  "seed": 508,
+  "tap": [
+   [
+    1,
+    "output_contains"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.174108956258163,
+  "scope": [
+   "sometimes_but_not_always",
+   [
+    "always"
+   ]
+  ],
+  "seed": 509,
+  "tap": [
+   [
+    0,
+    "output_containsExpected to see always sometimes but not always, but it was always seen"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.079272144955933,
+  "scope": [
+   "sometimes_but_not_always",
+   [
+    "missing"
+   ]
+  ],
+  "seed": 510,
+  "tap": [
+   [
+    0,
+    "output_containsExpected to see missing sometimes but not always, but it was never seen"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.984435333653703,
+  "scope": [
+   "always",
+   [
+    "always",
+    "half",
+    "missing"
+   ]
+  ],
+  "seed": 511,
+  "tap": [
+   [
+    0,
+    "output_containshalf was not always seen. Seen 2 times out of 5"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.889598522351474,
+  "scope": [
+   "always",
+   [
+    "always"
+   ],
+   "never",
+   [
+    "missing"
+   ],
+   "sometimes",
+   [
+    "half"
+   ],
+   "msg",
+   "multi"
+  ],
+  "seed": 512,
+  "tap": [
+   [
+    1,
+    "multi"
+   ]
+  ]
+ },
+ {
+  "calls": 5,
+  "case": "output_contains",
+  "next_rand": 0.794761711049244,
+  "scope": [
+   "msg",
+   "empty"
+  ],
+  "seed": 513,
+  "tap": [
+   [
+    1,
+    "empty"
+   ]
+  ]
+ },
+ {
+  "case": "output_contains_bad",
+  "error": "unknown quantifier bogus"
+ },
+ {
+  "arg": "always",
+  "calls": 5,
+  "case": "output_wrapper",
+  "kind": "always",
+  "next_rand": 0.216243769524038,
+  "seed": 614,
+  "tap": [
+   [
+    1,
+    "output_contains"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   "always",
+   "half"
+  ],
+  "calls": 5,
+  "case": "output_wrapper",
+  "kind": "always",
+  "next_rand": 0.121406958221808,
+  "seed": 615,
+  "tap": [
+   [
+    0,
+    "output_containshalf was not always seen. Seen 3 times out of 5"
+   ]
+  ]
+ },
+ {
+  "arg": "rare",
+  "calls": 5,
+  "case": "output_wrapper",
+  "kind": "never",
+  "next_rand": 0.0265701469195783,
+  "seed": 616,
+  "tap": [
+   [
+    1,
+    "output_contains"
+   ]
+  ]
+ },
+ {
+  "arg": "half",
+  "calls": 5,
+  "case": "output_wrapper",
+  "kind": "sometimes",
+  "next_rand": 0.931733335617349,
+  "seed": 617,
+  "tap": [
+   [
+    1,
+    "output_contains"
+   ]
+  ]
+ },
+ {
+  "arg": [
+   "half"
+  ],
+  "calls": 5,
+  "case": "output_wrapper",
+  "kind": "sometimes_but_not_always",
+  "next_rand": 0.836896524315119,
+  "seed": 618,
+  "tap": [
+   [
+    1,
+    "output_contains"
+   ]
+  ]
+ },
+ {
+  "case": "fringe",
+  "how": "object",
+  "kind": "fringe",
+  "next_rand": 0.066542162778191,
+  "scope": [
+   "always",
+   [
+    "a"
+   ],
+   "sometimes_but_not_always",
+   [
+    "b"
+   ],
+   "never",
+   [
+    "z"
+   ]
+  ],
+  "seed": 719,
+  "setups": 0,
+  "tap": [
+   [
+    1,
+    "fringe_contains  "
+   ]
+  ]
+ },
+ {
+  "case": "fringe",
+  "how": "setup",
+  "kind": "fringe",
+  "next_rand": 0.282509816330261,
+  "scope": [
+   "always",
+   [
+    "a",
+    "z"
+   ]
+  ],
+  "seed": 720,
+  "setups": 5,
+  "tap": [
+   [
+    1,
+    "fringe_contains  "
+   ]
+  ]
+ },
+ {
+  "case": "fringe",
+  "how": "object",
+  "kind": "fringe",
+  "next_rand": 0.498477469882332,
+  "scope": [
+   "always",
+   [
+    "b"
+   ]
+  ],
+  "seed": 721,
+  "setups": 0,
+  "tap": [
+   [
+    0,
+    "fringe_contains  b was not always seen. Seen 2 times out of 5"
+   ]
+  ]
+ },
+ {
+  "case": "fringe",
+  "how": "object",
+  "kind": "extended_fringe",
+  "next_rand": 0.714445123434402,
+  "scope": [
+   "always",
+   [
+    "x"
+   ],
+   "sometimes",
+   [
+    "y"
+   ]
+  ],
+  "seed": 722,
+  "setups": 0,
+  "tap": [
+   [
+    1,
+    "extended_fringe_contains  "
+   ]
+  ]
+ },
+ {
+  "case": "fringe",
+  "how": "setup",
+  "kind": "extended_fringe",
+  "next_rand": 0.930412776986472,
+  "scope": [
+   "never",
+   [
+    "y"
+   ]
+  ],
+  "seed": 723,
+  "setups": 5,
+  "tap": [
+   [
+    0,
+    "extended_fringe_contains  y was not never seen. Seen 2 times out of 5"
+   ]
+  ]
+ },
+ {
+  "case": "fringe",
+  "how": "object",
+  "kind": "action",
+  "next_rand": 0.146380430538542,
+  "scope": [
+   "always",
+   [
+    "SAction"
+   ],
+   "sometimes",
+   [
+    "SCodelet"
+   ]
+  ],
+  "seed": 724,
+  "setups": 0,
+  "tap": [
+   [
+    1,
+    "action_contains  "
+   ]
+  ]
+ },
+ {
+  "case": "fringe",
+  "how": "setup",
+  "kind": "action",
+  "next_rand": 0.362348084090613,
+  "scope": [
+   "never",
+   [
+    "SCodelet"
+   ]
+  ],
+  "seed": 725,
+  "setups": 5,
+  "tap": [
+   [
+    0,
+    "action_contains  SCodelet was not never seen. Seen 3 times out of 5"
+   ]
+  ]
+ },
+ {
+  "case": "initialize",
+  "current_runnable_string": "",
+  "options": {
+   "DecayRate": "0.98",
+   "ScheduledThoughtVanishProb": "0.3",
+   "UseScheduledThoughtProb": "0.85",
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seed": 29992,
+   "seq": [
+    "0"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "steps_finished": 0,
+  "testing_mode": 1
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   },
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "failed": 0,
+  "min_extension": 3,
+  "name": "natural_none",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 4,
+  "status": "NotEvenExtended",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 4,
+  "stub": [
+   {
+    "steps": 4
+   },
+   {
+    "ret": 1
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "failed": 0,
+  "min_extension": 3,
+  "name": "natural_ret_first",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 4,
+  "status": "NotEvenExtended",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 4,
+  "stub": [
+   {
+    "ret": 1,
+    "steps": 4
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   },
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "error": null,
+  "failed": 0,
+  "min_extension": 3,
+  "name": "natural_extended",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 9,
+  "status": "ExtendedABit",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 9,
+  "stub": [
+   {
+    "insert": [
+     4,
+     5,
+     6,
+     7
+    ],
+    "steps": 9
+   },
+   {
+    "ret": 1
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   },
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "failed": 0,
+  "min_extension": 3,
+  "name": "natural_exactly_min",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 9,
+  "status": "NotEvenExtended",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 9,
+  "stub": [
+   {
+    "insert": [
+     4,
+     5,
+     6
+    ],
+    "steps": 9
+   },
+   {
+    "ret": 1
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   },
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "error": null,
+  "failed": 0,
+  "min_extension": 0,
+  "name": "natural_min0",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 2,
+  "status": "ExtendedABit",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 2,
+  "stub": [
+   {
+    "insert": [
+     4
+    ],
+    "steps": 2
+   },
+   {
+    "ret": 1
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   },
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   },
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "failed": 0,
+  "min_extension": 3,
+  "name": "three_calls",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 3,
+  "status": "NotEvenExtended",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 3,
+  "stub": [
+   {
+    "steps": 1
+   },
+   {
+    "ret": 0,
+    "steps": 2
+   },
+   {
+    "ret": "yes"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   },
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "failed": 0,
+  "min_extension": 3,
+  "name": "got_it",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 8,
+  "status": "Successful",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 8,
+  "stub": [
+   {
+    "steps": 5
+   },
+   {
+    "steps": 3,
+    "throw": "got_it"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": "A SErr::FinishedTest thrown without getting it. Bad.",
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "failed": 0,
+  "min_extension": 3,
+  "name": "not_got_it",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\n",
+  "steps": 5,
+  "stub": [
+   {
+    "steps": 5,
+    "throw": "not_got_it"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "error": null,
+  "failed": 0,
+  "min_extension": 3,
+  "name": "clairvoyant",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 6,
+  "status": "RanOutOfTerms",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 6,
+  "stub": [
+   {
+    "insert": [
+     4
+    ],
+    "steps": 6,
+    "throw": "clairvoyant"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "failed": 0,
+  "min_extension": 3,
+  "name": "blemished",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 2,
+  "status": "InitialBlemish",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 2,
+  "stub": [
+   {
+    "steps": 2,
+    "throw": "blemished"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "error": "Crashed!\nobjerr",
+  "failed": 0,
+  "min_extension": 3,
+  "name": "serr",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 2,
+  "status": "Crashed",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 2,
+  "stub": [
+   {
+    "steps": 2,
+    "throw": "serr"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "error": "Crashed!\nboom\n",
+  "failed": 4,
+  "min_extension": 3,
+  "name": "die",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "result_steps": 2,
+  "status": "Crashed",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 2,
+  "stub": [
+   {
+    "fail": 4,
+    "steps": 2,
+    "throw": "die"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 50,
+    "n": 50,
+    "update_after": 50
+   }
+  ],
+  "case": "run_seqsee",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "error": "Crashed!\nno newline\n",
+  "failed": 1,
+  "min_extension": 3,
+  "name": "die_nonl",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [
+   "9, 9"
+  ],
+  "result_steps": 2,
+  "status": "Crashed",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 2,
+  "stub": [
+   {
+    "fail": 1,
+    "reject": "9, 9",
+    "steps": 2,
+    "throw": "die_nonl"
+   }
+  ]
+ },
+ {
+  "called": [],
+  "case": "run_seqsee_ltm_missing",
+  "dumped": [],
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "error": "Unable to load memory file! read_file '/nonexistent/memory_dump.dat' - open: No such file or directory\n",
+  "failed": 0,
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "rejected": [],
+  "result_steps": 0,
+  "status": "Crashed",
+  "stdout": "Initializing Coderack...\nLoading LTM from /nonexistent/memory_dump.dat\n",
+  "steps": 0
+ },
+ {
+  "called": [
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   }
+  ],
+  "case": "reg_test_helper",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "failed": 0,
+  "min_extension": 3,
+  "name": "got_it",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "ret": [
+   "GotIt",
+   5
+  ],
+  "stderr": "\n****** BEGIN ANOTHER RUN: +GOT IT\n",
+  "stdout": "Initializing Coderack...\n",
+  "steps": 5,
+  "stub": [
+   {
+    "steps": 5,
+    "throw": "got_it"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   }
+  ],
+  "case": "reg_test_helper",
+  "died": "[Generic exception]",
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "failed": 0,
+  "min_extension": 3,
+  "name": "not_got_it",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "ret": [],
+  "stderr": "\n****** BEGIN ANOTHER RUN: ",
+  "stdout": "Initializing Coderack...\n",
+  "steps": 5,
+  "stub": [
+   {
+    "steps": 5,
+    "throw": "not_got_it"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   }
+  ],
+  "case": "reg_test_helper",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "failed": 0,
+  "min_extension": 3,
+  "name": "clairvoyant",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "ret": [
+   "Extended",
+   6
+  ],
+  "stderr": "\n****** BEGIN ANOTHER RUN: +EXTENDED (NO MORE KNOWN TERMS)\n",
+  "stdout": "Initializing Coderack...\n",
+  "steps": 6,
+  "stub": [
+   {
+    "steps": 6,
+    "throw": "clairvoyant"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   }
+  ],
+  "case": "reg_test_helper",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "failed": 0,
+  "min_extension": 3,
+  "name": "blemished",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "ret": [
+   "BlemishedGotIt",
+   2
+  ],
+  "stderr": "\n****** BEGIN ANOTHER RUN: +BLEMISHED GOT IT\n",
+  "stdout": "Initializing Coderack...\n",
+  "steps": 2,
+  "stub": [
+   {
+    "steps": 2,
+    "throw": "blemished"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   }
+  ],
+  "case": "reg_test_helper",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "failed": 3,
+  "min_extension": 3,
+  "name": "too_many",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [
+   "8, 9"
+  ],
+  "ret": [
+   "TooManyFalseQueries",
+   0
+  ],
+  "stderr": "\n****** BEGIN ANOTHER RUN: +TOO MANY FAILED QUERIES (3 > 2)!\n8, 9\n",
+  "stdout": "Initializing Coderack...\n",
+  "steps": 2,
+  "stub": [
+   {
+    "fail": 3,
+    "reject": "8, 9",
+    "steps": 2,
+    "throw": "die"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   }
+  ],
+  "case": "reg_test_helper",
+  "died": "boom\n",
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "failed": 2,
+  "min_extension": 3,
+  "name": "not_too_many",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "ret": [],
+  "stderr": "\n****** BEGIN ANOTHER RUN: ",
+  "stdout": "Initializing Coderack...\n",
+  "steps": 2,
+  "stub": [
+   {
+    "fail": 2,
+    "steps": 2,
+    "throw": "die"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   }
+  ],
+  "case": "reg_test_helper",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "failed": 3,
+  "min_extension": 3,
+  "name": "too_many_object",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "ret": [
+   "TooManyFalseQueries",
+   0
+  ],
+  "stderr": "\n****** BEGIN ANOTHER RUN: +TOO MANY FAILED QUERIES (3 > 2)!\n\n",
+  "stdout": "Initializing Coderack...\n",
+  "steps": 2,
+  "stub": [
+   {
+    "fail": 3,
+    "steps": 2,
+    "throw": "serr"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   }
+  ],
+  "case": "reg_test_helper",
+  "died": "objerr",
+  "elements": [
+   1,
+   2,
+   3
+  ],
+  "failed": 0,
+  "min_extension": 3,
+  "name": "rethrow_object",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "ret": [],
+  "stderr": "\n****** BEGIN ANOTHER RUN: ",
+  "stdout": "Initializing Coderack...\n",
+  "steps": 2,
+  "stub": [
+   {
+    "steps": 2,
+    "throw": "serr"
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   },
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   }
+  ],
+  "case": "reg_test_helper",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "failed": 0,
+  "min_extension": 3,
+  "name": "extended",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "ret": [
+   "ExtendedWithoutGettingIt",
+   9
+  ],
+  "stderr": "\n****** BEGIN ANOTHER RUN: +EXTENDED A BIT\n",
+  "stdout": "Initializing Coderack...\n",
+  "steps": 9,
+  "stub": [
+   {
+    "insert": [
+     4,
+     5,
+     6,
+     7
+    ],
+    "steps": 9
+   }
+  ]
+ },
+ {
+  "called": [
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   },
+   {
+    "max_steps": 40,
+    "n": 40,
+    "update_after": 40
+   }
+  ],
+  "case": "reg_test_helper",
+  "died": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "failed": 0,
+  "min_extension": 3,
+  "name": "not_extended",
+  "read_head": 0,
+  "real_sequence": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "rejected": [],
+  "ret": [
+   "NotEvenExtended",
+   9
+  ],
+  "stderr": "\n****** BEGIN ANOTHER RUN: +NOT EVEN EXTENDED ONCE\n",
+  "stdout": "Initializing Coderack...\n",
+  "steps": 9,
+  "stub": [
+   {
+    "insert": [
+     4,
+     5,
+     6
+    ],
+    "steps": 9
+   }
+  ]
+ },
+ {
+  "case": "reg_test_helper_missing",
+  "error": "Missing option min_extension"
+ },
+ {
+  "case": "reg_stat",
+  "died": null,
+  "name": "mixed",
+  "outputs": {
+   "Extended": 1,
+   "GotIt": 3,
+   "UnnaturalDeath": 2,
+   "avgcc": 50
+  },
+  "results": [
+   "SUCCESS: GotIt\t100",
+   "SUCCESS: Extended\t50",
+   "SUCCESS: GotIt\t30",
+   "Different result!",
+   "Error: kaput\n",
+   "Different result!",
+   "Different result!",
+   "Different result!",
+   "Error: kaput\n",
+   "SUCCESS: GotIt\t20"
+  ],
+  "script": [
+   [
+    "GotIt",
+    100
+   ],
+   [
+    "Extended",
+    50
+   ],
+   [
+    "GotIt",
+    30
+   ],
+   [
+    "NotEvenExtended",
+    9
+   ],
+   [
+    "die",
+    "kaput\n"
+   ],
+   [
+    "TooManyFalseQueries",
+    0
+   ],
+   [
+    "BlemishedGotIt",
+    3
+   ],
+   [
+    "ExtendedWithoutGettingIt",
+    4
+   ],
+   [
+    "die",
+    "kaput\n"
+   ],
+   [
+    "GotIt",
+    20
+   ]
+  ],
+  "seen_opts": [
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2"
+  ],
+  "stdout_lines": [
+   "============",
+   "continuation\t=>  3",
+   "min_extension\t=>  2",
+   "seq\t=>  1, 2",
+   "max_steps\t=>  10",
+   "max_false\t=>  4",
+   "============",
+   "3\t times: GotIt",
+   "2\t times: UnnaturalDeath",
+   "1\t times: Extended"
+  ]
+ },
+ {
+  "case": "reg_stat",
+  "died": null,
+  "name": "none",
+  "outputs": {},
+  "results": [
+   "Different result!",
+   "Different result!",
+   "Different result!",
+   "Different result!",
+   "Different result!",
+   "Different result!",
+   "Different result!",
+   "Different result!",
+   "Different result!",
+   "Different result!"
+  ],
+  "script": [
+   [
+    "NotEvenExtended",
+    1
+   ],
+   [
+    "NotEvenExtended",
+    2
+   ],
+   [
+    "NotEvenExtended",
+    3
+   ],
+   [
+    "NotEvenExtended",
+    4
+   ],
+   [
+    "NotEvenExtended",
+    5
+   ],
+   [
+    "NotEvenExtended",
+    6
+   ],
+   [
+    "NotEvenExtended",
+    7
+   ],
+   [
+    "NotEvenExtended",
+    8
+   ],
+   [
+    "NotEvenExtended",
+    9
+   ],
+   [
+    "NotEvenExtended",
+    10
+   ]
+  ],
+  "seen_opts": [
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2",
+   "continuation=3,max_false=4,max_steps=10,min_extension=2,seq=1 2"
+  ],
+  "stdout_lines": [
+   "============",
+   "continuation\t=>  3",
+   "min_extension\t=>  2",
+   "seq\t=>  1, 2",
+   "max_steps\t=>  10",
+   "max_false\t=>  4",
+   "============"
+  ]
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": null,
+  "improved": [
+   [
+    [
+     "1",
+     "2",
+     "3"
+    ],
+    0,
+    3
+   ]
+  ],
+  "input": {
+   "seq": "1 2 3 | 4 5"
+  },
+  "last_res": [
+   "GotIt = 3",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 5"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 3",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 5"
+  ],
+  "name": "hash_first",
+  "opts": {
+   "continuation": [
+    "4",
+    "5"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1",
+    "2",
+    "3"
+   ]
+  },
+  "results": [
+   "SUCCESS: GotIt\\t5"
+  ],
+  "second": null,
+  "shell": {
+   "GotIt": 3,
+   "RESULTS": [
+    "SUCCESS: GotIt\\t5"
+   ],
+   "avgcc": 5
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "4",
+     "5"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1",
+     "2",
+     "3"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n!!!!!!!!!\n# PERFORMANCE BETTER!\n Had Got It 0 times, now it is 3",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": null,
+  "improved": [],
+  "input": {
+   "max_false": 2,
+   "max_steps": 50,
+   "min_extension": 0,
+   "seq": " 1 2|3 "
+  },
+  "last_res": [
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "hash_opts",
+  "opts": {
+   "continuation": [
+    "3"
+   ],
+   "max_false": 2,
+   "max_steps": 50,
+   "min_extension": 2,
+   "seq": [
+    "1",
+    "2"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "3"
+    ],
+    "max_false": 2,
+    "max_steps": 50,
+    "min_extension": 2,
+    "seq": [
+     "1",
+     "2"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": "Can't open config file '' (no such file or directory)\n",
+  "earlier": null,
+  "improved": null,
+  "input": "seq = 1 1 2 | 1 2 3\nmax_steps = 99\n",
+  "last_res": [],
+  "log_res": null,
+  "name": "file",
+  "opts": null,
+  "results": null,
+  "second": null,
+  "shell": {
+   "GotIt": 5,
+   "RESULTS": [
+    "a",
+    "b"
+   ]
+  },
+  "shell_opts": [],
+  "stdout": "",
+  "worse": null
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": null,
+  "improved": [
+   [
+    [
+     "1",
+     "1",
+     "2"
+    ],
+    0,
+    5
+   ]
+  ],
+  "input": "seq = 1 1 2 | 1 2 3\nmax_steps = 99\n# comment\n\nmin_extension: 4\n",
+  "last_res": [
+   "GotIt = 5",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 5",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "file_second",
+  "opts": {
+   "continuation": [
+    "1",
+    "2",
+    "3"
+   ],
+   "max_false": 10,
+   "max_steps": "99",
+   "min_extension": "4",
+   "seq": [
+    "1",
+    "1",
+    "2"
+   ]
+  },
+  "results": [
+   "a",
+   "b"
+  ],
+  "second": 1,
+  "shell": {
+   "GotIt": 5,
+   "RESULTS": [
+    "a",
+    "b"
+   ]
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "1",
+     "2",
+     "3"
+    ],
+    "max_false": 10,
+    "max_steps": "99",
+    "min_extension": "4",
+    "seq": [
+     "1",
+     "1",
+     "2"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n!!!!!!!!!\n# PERFORMANCE BETTER!\n Had Got It 0 times, now it is 5",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": "Error in config file 'in.reg' near:\n",
+  "earlier": null,
+  "improved": null,
+  "input": "seq = 1 | 2\nnonsense line\n",
+  "last_res": [],
+  "log_res": null,
+  "name": "file_bad",
+  "opts": null,
+  "results": null,
+  "second": 1,
+  "shell": {
+   "GotIt": 5,
+   "RESULTS": []
+  },
+  "shell_opts": [],
+  "stdout": "",
+  "worse": null
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 0\nRESULTS = ARRAY(0x1)\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_0_now_0",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 0,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 0\nRESULTS = ARRAY(0x1)\n",
+  "improved": [
+   [
+    [
+     "1"
+    ],
+    "0",
+    1
+   ]
+  ],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 1",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 1",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_0_now_1",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 1,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n!!!!!!!!!\n# PERFORMANCE BETTER!\n Had Got It 0 times, now it is 1",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 1\nRESULTS = ARRAY(0x1)\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_1_now_0",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 0,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n##########\n# PERFORMANCE WORSE!\n Had Got It 1 times, now just 0",
+  "worse": [
+   [
+    [
+     "1"
+    ],
+    "1",
+    0
+   ]
+  ]
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 1\nRESULTS = ARRAY(0x1)\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 2",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 2",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_1_now_2",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 2,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 1\nRESULTS = ARRAY(0x1)\n",
+  "improved": [
+   [
+    [
+     "1"
+    ],
+    "1",
+    3
+   ]
+  ],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 3",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 3",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_1_now_3",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 3,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n!!!!!!!!!\n# PERFORMANCE BETTER!\n Had Got It 1 times, now it is 3",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 3\nRESULTS = ARRAY(0x1)\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 1",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 1",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_3_now_1",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 1,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n##########\n# PERFORMANCE WORSE!\n Had Got It 3 times, now just 1",
+  "worse": [
+   [
+    [
+     "1"
+    ],
+    "3",
+    1
+   ]
+  ]
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 3\nRESULTS = ARRAY(0x1)\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 2",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 2",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_3_now_2",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 2,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 3\nRESULTS = ARRAY(0x1)\n",
+  "improved": [
+   [
+    [
+     "1"
+    ],
+    "3",
+    5
+   ]
+  ],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 5",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 5",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_3_now_5",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 5,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n!!!!!!!!!\n# PERFORMANCE BETTER!\n Had Got It 3 times, now it is 5",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 5\nRESULTS = ARRAY(0x1)\n",
+  "improved": [
+   [
+    [
+     "1"
+    ],
+    "5",
+    7
+   ]
+  ],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 7",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 7",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_5_now_7",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 7,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n!!!!!!!!!\n# PERFORMANCE BETTER!\n Had Got It 5 times, now it is 7",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 9\nRESULTS = ARRAY(0x1)\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 7",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 7",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_9_now_7",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 7,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n##########\n# PERFORMANCE WORSE!\n Had Got It 9 times, now just 7",
+  "worse": [
+   [
+    [
+     "1"
+    ],
+    "9",
+    7
+   ]
+  ]
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 9\nRESULTS = ARRAY(0x1)\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 8",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 8",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_9_now_8",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 8,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 10\nRESULTS = ARRAY(0x1)\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 9",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 9",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_10_now_9",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 9,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n##########\n# PERFORMANCE WORSE!\n Had Got It 10 times, now just 9",
+  "worse": [
+   [
+    [
+     "1"
+    ],
+    "10",
+    9
+   ]
+  ]
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 10\nRESULTS = ARRAY(0x1)\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 10",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 10",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_10_now_10",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 10,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 10\nRESULTS = ARRAY(0x1)\n",
+  "improved": [
+   [
+    [
+     "1"
+    ],
+    "10",
+    11
+   ]
+  ],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 11",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 11",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_10_now_11",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 11,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n!!!!!!!!!\n# PERFORMANCE BETTER!\n Had Got It 10 times, now it is 11",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 12\nRESULTS = ARRAY(0x1)\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_12_now_0",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 0,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n##########\n# PERFORMANCE WORSE!\n Had Got It 12 times, now just 0",
+  "worse": [
+   [
+    [
+     "1"
+    ],
+    "12",
+    0
+   ]
+  ]
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 12\nRESULTS = ARRAY(0x1)\n",
+  "improved": [
+   [
+    [
+     "1"
+    ],
+    "12",
+    1
+   ]
+  ],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 1",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 1",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_12_now_1",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 1,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n!!!!!!!!!\n# PERFORMANCE BETTER!\n Had Got It 12 times, now it is 1",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "GotIt = 8\nRESULTS = ARRAY(0x1)\n",
+  "improved": [
+   [
+    [
+     "1"
+    ],
+    "8",
+    9
+   ]
+  ],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 9",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 9",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_8_now_9",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 9,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n!!!!!!!!!\n# PERFORMANCE BETTER!\n Had Got It 8 times, now it is 9",
+  "worse": []
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "avgcc = 3\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_no_gotit",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 0,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n##########\n# PERFORMANCE WORSE!\n Had Got It  times, now just 0",
+  "worse": [
+   [
+    [
+     "1"
+    ],
+    null,
+    0
+   ]
+  ]
+ },
+ {
+  "case": "reg_harness",
+  "died": null,
+  "earlier": "[[[ not config\n",
+  "improved": [],
+  "input": {
+   "seq": "1 | 2"
+  },
+  "last_res": [
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "log_res": [
+   "[T]",
+   "GotIt = 0",
+   "RESULTS = ARRAY(0x)",
+   "avgcc = 0"
+  ],
+  "name": "earlier_unparsable",
+  "opts": {
+   "continuation": [
+    "2"
+   ],
+   "max_false": 10,
+   "max_steps": 10000,
+   "min_extension": 2,
+   "seq": [
+    "1"
+   ]
+  },
+  "results": [],
+  "second": null,
+  "shell": {
+   "GotIt": 0,
+   "RESULTS": []
+  },
+  "shell_opts": [
+   {
+    "continuation": [
+     "2"
+    ],
+    "max_false": 10,
+    "max_steps": 10000,
+    "min_extension": 2,
+    "seq": [
+     "1"
+    ]
+   }
+  ],
+  "stdout": "Processing time: N\n",
+  "worse": []
+ },
+ {
+  "case": "real",
+  "continuation": "6 7 8",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "error": null,
+  "max_false": 3,
+  "max_steps": 1,
+  "min_extension": 3,
+  "seed": 1,
+  "seq": "1 2 3 4 5",
+  "status": "NotEvenExtended",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 1
+ },
+ {
+  "case": "real",
+  "continuation": "6 7 8",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "error": null,
+  "max_false": 3,
+  "max_steps": 5,
+  "min_extension": 3,
+  "seed": 2,
+  "seq": "1 2 3 4 5",
+  "status": "NotEvenExtended",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 5
+ },
+ {
+  "case": "real",
+  "continuation": "1 2 3 4",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "max_false": 3,
+  "max_steps": 20,
+  "min_extension": 3,
+  "seed": 3,
+  "seq": "1 1 2 1 2 3",
+  "status": "NotEvenExtended",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 20
+ },
+ {
+  "case": "real",
+  "continuation": "4 4 5 5",
+  "elements": [
+   1,
+   1,
+   2,
+   2,
+   3,
+   3
+  ],
+  "error": null,
+  "max_false": 3,
+  "max_steps": 10,
+  "min_extension": 3,
+  "seed": 4,
+  "seq": "1 1 2 2 3 3",
+  "status": "NotEvenExtended",
+  "stdout": "Initializing Coderack...\nLTM not passed in as an option.\nInitializing SLTM...\nLTM not passed in as an option, so no need to save.\n",
+  "steps": 10
+ }
+]

@@ -1,0 +1,695 @@
+[
+ {
+  "AcceptableTrustLevel": 0.5,
+  "ActivationsLogfile": "activations.log",
+  "AtLeastOneUserVerification": null,
+  "BestRule": null,
+  "Break_Loop": null,
+  "CodeletTreeLogfile": "codelet_tree.log",
+  "Feature": [],
+  "InitialTermCount": null,
+  "InterstepSleep": 0,
+  "LogString": "",
+  "MainStream_DiscountFactor": 0.8,
+  "MainStream_MaxOlderThoughts": 10,
+  "MainStream_class": "SStream2",
+  "MainStream_memo": 1,
+  "MainStream_name": "MainStream",
+  "PossibleFeatures": [
+   "AllowSquinting",
+   "Alternating",
+   "CodeletTree",
+   "LTM",
+   "LTM_expt",
+   "LogActivations",
+   "NoGpOverlap",
+   "NoInterlaced",
+   "Parity",
+   "Primes",
+   "debug",
+   "debugMAX"
+  ],
+  "RealSequence": [],
+  "Sanity": 1,
+  "Steps_Finished": "",
+  "TimeOfLastNewElement": 0,
+  "TimeOfNewStructure": 0,
+  "debugMAX": null,
+  "op": "initial"
+ },
+ {
+  "after": "two calls",
+  "hilit": {
+   "o0": 1,
+   "o1": 2,
+   "o2": 2
+  },
+  "op": "hilit"
+ },
+ {
+  "after": "no objects",
+  "hilit": {
+   "o0": 1,
+   "o1": 2,
+   "o2": 2
+  },
+  "op": "hilit"
+ },
+ {
+  "after": "ClearHilit",
+  "hilit": {},
+  "op": "hilit"
+ },
+ {
+  "BestRule": "rule1",
+  "RecentPromisingRule": null,
+  "after": "best ra1",
+  "gsbc": {
+   "o0": 40,
+   "o1": 40,
+   "o2": 40
+  },
+  "op": "rules"
+ },
+ {
+  "BestRule": "rule1",
+  "RecentPromisingRule": "rule2",
+  "after": "recent ra2",
+  "gsbc": {
+   "o0": 40,
+   "o1": 40,
+   "o2": 120,
+   "o3": 40
+  },
+  "op": "rules"
+ },
+ {
+  "BestRule": "rule2",
+  "RecentPromisingRule": "rule2",
+  "after": "best ra2",
+  "gsbc": {
+   "o2": 160,
+   "o3": 80
+  },
+  "op": "rules"
+ },
+ {
+  "AtLeastOneUserVerification": 0,
+  "BestRule": null,
+  "BestRuleApp_defined": 1,
+  "ExtensionRejectedByUser": [],
+  "LogString": "",
+  "RecentPromisingRule": null,
+  "RecentPromisingRuleApp_defined": 1,
+  "Steps_Finished": 0,
+  "TimeOfLastNewElement": 9,
+  "gsbc": {},
+  "hilit": {},
+  "op": "clear"
+ },
+ {
+  "gsbc": {
+   "o2": 160,
+   "o3": 80
+  },
+  "op": "update_after_clear"
+ },
+ {
+  "RealSequence": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "op": "set_future_terms"
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   "1, 2",
+   "1, 2, 3, 4",
+   "2, 3",
+   "1, 23, 4",
+   "1, 2, 5"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   1,
+   2
+  ],
+  "result": [
+   "1, 23, 4",
+   "3",
+   "3, 4",
+   "5"
+  ],
+  "values": [
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   "1, 2",
+   "1, 2, 3, 4",
+   "2, 3",
+   "1, 23, 4",
+   "1, 2, 5"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   7
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   "1, 2",
+   "1, 2, 3, 4",
+   "2, 3",
+   "1, 23, 4",
+   "1, 2, 5"
+  ],
+  "op": "update_rejected",
+  "prefix": [],
+  "result": [
+   "1, 2",
+   "1, 2, 3",
+   "1, 2, 3, 4",
+   "1, 2, 5",
+   "1, 23, 4",
+   "2, 3"
+  ],
+  "values": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   "1, 2",
+   "1, 2, 3, 4",
+   "2, 3",
+   "1, 23, 4",
+   "1, 2, 5"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   1
+  ],
+  "result": [
+   "2",
+   "2, 3",
+   "2, 3, 4",
+   "2, 5",
+   "23, 4"
+  ],
+  "values": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   "1, 2",
+   "1, 2, 3, 4",
+   "2, 3",
+   "1, 23, 4",
+   "1, 2, 5"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   10
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   "1, 2",
+   "1, 2, 3, 4",
+   "2, 3",
+   "1, 23, 4",
+   "1, 2, 5"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   "1."
+  ],
+  "result": [
+   "1, 2",
+   "1, 2, 3",
+   "1, 2, 3, 4",
+   "1, 2, 5",
+   "1, 23, 4"
+  ],
+  "values": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "7",
+   "7, 8",
+   "8"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   1,
+   2
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "7",
+   "7, 8",
+   "8"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   7
+  ],
+  "result": [
+   "8"
+  ],
+  "values": [
+   1
+  ]
+ },
+ {
+  "keys": [
+   "7",
+   "7, 8",
+   "8"
+  ],
+  "op": "update_rejected",
+  "prefix": [],
+  "result": [
+   "7",
+   "7, 8",
+   "8"
+  ],
+  "values": [
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "7",
+   "7, 8",
+   "8"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   1
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "7",
+   "7, 8",
+   "8"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   10
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "7",
+   "7, 8",
+   "8"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   "1."
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   ", 1",
+   "x"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   1,
+   2
+  ],
+  "result": [
+   "3"
+  ],
+  "values": [
+   1
+  ]
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   ", 1",
+   "x"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   7
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   ", 1",
+   "x"
+  ],
+  "op": "update_rejected",
+  "prefix": [],
+  "result": [
+   "1",
+   "1, 2, 3",
+   "x"
+  ],
+  "values": [
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   ", 1",
+   "x"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   1
+  ],
+  "result": [
+   "2, 3"
+  ],
+  "values": [
+   1
+  ]
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   ", 1",
+   "x"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   10
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "1, 2, 3",
+   ", 1",
+   "x"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   "1."
+  ],
+  "result": [
+   "1, 2, 3"
+  ],
+  "values": [
+   1
+  ]
+ },
+ {
+  "keys": [
+   "10, 11",
+   "1, 11"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   1,
+   2
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "10, 11",
+   "1, 11"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   7
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "10, 11",
+   "1, 11"
+  ],
+  "op": "update_rejected",
+  "prefix": [],
+  "result": [
+   "1, 11",
+   "10, 11"
+  ],
+  "values": [
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "10, 11",
+   "1, 11"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   1
+  ],
+  "result": [
+   "10, 11",
+   "11"
+  ],
+  "values": [
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "10, 11",
+   "1, 11"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   10
+  ],
+  "result": [
+   "11"
+  ],
+  "values": [
+   1
+  ]
+ },
+ {
+  "keys": [
+   "10, 11",
+   "1, 11"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   "1."
+  ],
+  "result": [
+   "1, 11",
+   "11"
+  ],
+  "values": [
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "1. 2, 3",
+   "1, 2, 3"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   1,
+   2
+  ],
+  "result": [
+   "3"
+  ],
+  "values": [
+   1
+  ]
+ },
+ {
+  "keys": [
+   "1. 2, 3",
+   "1, 2, 3"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   7
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "1. 2, 3",
+   "1, 2, 3"
+  ],
+  "op": "update_rejected",
+  "prefix": [],
+  "result": [
+   "1, 2, 3",
+   "1. 2, 3"
+  ],
+  "values": [
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "1. 2, 3",
+   "1, 2, 3"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   1
+  ],
+  "result": [
+   "1. 2, 3",
+   "2, 3"
+  ],
+  "values": [
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [
+   "1. 2, 3",
+   "1, 2, 3"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   10
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [
+   "1. 2, 3",
+   "1, 2, 3"
+  ],
+  "op": "update_rejected",
+  "prefix": [
+   "1."
+  ],
+  "result": [
+   "1, 2, 3",
+   "1. 2, 3"
+  ],
+  "values": [
+   1,
+   1
+  ]
+ },
+ {
+  "keys": [],
+  "op": "update_rejected",
+  "prefix": [
+   1,
+   2
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [],
+  "op": "update_rejected",
+  "prefix": [
+   7
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [],
+  "op": "update_rejected",
+  "prefix": [],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [],
+  "op": "update_rejected",
+  "prefix": [
+   1
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [],
+  "op": "update_rejected",
+  "prefix": [
+   10
+  ],
+  "result": [],
+  "values": []
+ },
+ {
+  "keys": [],
+  "op": "update_rejected",
+  "prefix": [
+   "1."
+  ],
+  "result": [],
+  "values": []
+ }
+]

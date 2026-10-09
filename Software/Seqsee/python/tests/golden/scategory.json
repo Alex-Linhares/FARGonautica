@@ -1,0 +1,1185 @@
+[
+ {
+  "as_string_parts": [
+   "FakeCat",
+   "FakeCat"
+  ],
+  "cats": [
+   "catA",
+   "catB"
+  ],
+  "hash_size": 2,
+  "hist": [
+   "Added category catA",
+   "Added category catB"
+  ],
+  "op": "add_category",
+  "ret_list": [
+   "bA"
+  ],
+  "ret_scalar": "bB",
+  "strings": [
+   "FakeCat",
+   "FakeCat"
+  ]
+ },
+ {
+  "binding": "bA2",
+  "hist": [
+   "Added category catA",
+   "Added category catB",
+   "Added category catA"
+  ],
+  "n": 2,
+  "op": "add_again"
+ },
+ {
+  "absent": null,
+  "absent_defined": 0,
+  "op": "lookup",
+  "present": "bB"
+ },
+ {
+  "cats": [
+   "catA"
+  ],
+  "hist": [
+   "Added category catA",
+   "Added category catB",
+   "Added category catA",
+   "Removed category catB",
+   "Removed category catC"
+  ],
+  "op": "remove_category",
+  "ret_absent": [
+   "undef"
+  ],
+  "ret_present": [
+   "bB"
+  ]
+ },
+ {
+  "dies": 1,
+  "hist": [
+   "Added category catA",
+   "Added category catB",
+   "Added category catA",
+   "Removed category catB",
+   "Removed category catC"
+  ],
+  "n": 1,
+  "op": "add_one_arg"
+ },
+ {
+  "hist": [
+   "Added category unreg",
+   "Added category catA"
+  ],
+  "n": 2,
+  "op": "unregistered",
+  "strings": [
+   "FakeCat",
+   "FakeUnreg"
+  ],
+  "undefs": 1
+ },
+ {
+  "dies": 0,
+  "label": "none",
+  "names": [],
+  "op": "get_common_categories"
+ },
+ {
+  "dies": 0,
+  "label": "one object",
+  "names": [
+   "catA",
+   "catB"
+  ],
+  "op": "get_common_categories"
+ },
+ {
+  "dies": 0,
+  "label": "two overlap",
+  "names": [
+   "catB"
+  ],
+  "op": "get_common_categories"
+ },
+ {
+  "dies": 0,
+  "label": "three all share",
+  "names": [
+   "catA",
+   "catC"
+  ],
+  "op": "get_common_categories"
+ },
+ {
+  "dies": 0,
+  "label": "disjoint",
+  "names": [],
+  "op": "get_common_categories"
+ },
+ {
+  "dies": 0,
+  "label": "empty object",
+  "names": [],
+  "op": "get_common_categories"
+ },
+ {
+  "dies": 1,
+  "label": "common unregistered",
+  "names": [],
+  "op": "get_common_categories"
+ },
+ {
+  "dies": 1,
+  "label": "non-ref arg",
+  "op": "get_common_categories"
+ },
+ {
+  "dies": 1,
+  "label": "undef arg",
+  "op": "get_common_categories"
+ },
+ {
+  "label": "none",
+  "op": "HasNonAdHocCategory",
+  "result": 0
+ },
+ {
+  "label": "interlaced only",
+  "op": "HasNonAdHocCategory",
+  "result": 0
+ },
+ {
+  "label": "plain only",
+  "op": "HasNonAdHocCategory",
+  "result": 1
+ },
+ {
+  "label": "interlaced and plain",
+  "op": "HasNonAdHocCategory",
+  "result": 1
+ },
+ {
+  "label": "unregistered",
+  "op": "HasNonAdHocCategory",
+  "result": 1
+ },
+ {
+  "calls": [],
+  "label": "no categories",
+  "op": "CopyCategoriesTo",
+  "result": 1,
+  "to_cats": 0
+ },
+ {
+  "calls": [
+   "describe_as catA",
+   "describe_as catB"
+  ],
+  "label": "all describable",
+  "op": "CopyCategoriesTo",
+  "result": 1,
+  "to_cats": 0
+ },
+ {
+  "calls": [
+   "describe_as catA",
+   "describe_as catB"
+  ],
+  "label": "one fails",
+  "op": "CopyCategoriesTo",
+  "result": 0,
+  "to_cats": 0
+ },
+ {
+  "calls": [
+   "describe_as catA"
+  ],
+  "label": "false bindings",
+  "op": "CopyCategoriesTo",
+  "result": 0,
+  "to_cats": 0
+ },
+ {
+  "binding": "BIND",
+  "cats": [
+   "catA"
+  ],
+  "false_defined": 0,
+  "hist": [
+   "Added category catA"
+  ],
+  "no_defined": 0,
+  "op": "is_instance",
+  "yes": "BIND"
+ },
+ {
+  "eq_other": 0,
+  "eq_self": 1,
+  "is_numeric_fake": 0,
+  "is_numeric_num": 1,
+  "numeq_other": 0,
+  "numeq_self": 1,
+  "op": "registration",
+  "registered": 1,
+  "smartmatch_list": 1,
+  "smartmatch_other": 0,
+  "smartmatch_self": 1
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1,
+    "b": 5
+   },
+   "mode": "NONE"
+  },
+  "b2": {
+   "b": {
+    "a": 2,
+    "b": 3
+   },
+   "mode": "NONE"
+  },
+  "dies": 0,
+  "label": "no_slips none",
+  "op": "FindMappingForCat",
+  "opts": {
+   "category": "mapcat",
+   "changed_bindings": {
+    "a": 1,
+    "b": -2
+   },
+   "direction_is_same": 1,
+   "first": "o1",
+   "keys": [
+    "category",
+    "changed_bindings",
+    "direction_reln",
+    "first",
+    "meto_mode",
+    "metonymy_reln",
+    "position_reln",
+    "second",
+    "slippages",
+    "unchanged_bindings"
+   ],
+   "meto_mode": "NONE",
+   "metonymy_reln": "",
+   "position_reln": "",
+   "second": "o2",
+   "slippages": {},
+   "unchanged_bindings": []
+  },
+  "result": "STRUCTURAL",
+  "suff_calls": [],
+  "sufficient": 1
+ },
+ {
+  "b1": {
+   "b": {},
+   "mode": "NONE"
+  },
+  "b2": {
+   "b": {},
+   "mode": "NONE"
+  },
+  "dies": 0,
+  "label": "no_slips empty bindings",
+  "op": "FindMappingForCat",
+  "opts": {
+   "category": "mapcat",
+   "changed_bindings": {},
+   "direction_is_same": 1,
+   "first": "o1",
+   "keys": [
+    "category",
+    "changed_bindings",
+    "direction_reln",
+    "first",
+    "meto_mode",
+    "metonymy_reln",
+    "position_reln",
+    "second",
+    "slippages",
+    "unchanged_bindings"
+   ],
+   "meto_mode": "NONE",
+   "metonymy_reln": "",
+   "position_reln": "",
+   "second": "o2",
+   "slippages": {},
+   "unchanged_bindings": []
+  },
+  "result": "STRUCTURAL",
+  "suff_calls": [],
+  "sufficient": 1
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1
+   },
+   "mode": "NONE"
+  },
+  "b2": {
+   "b": {
+    "a": 1
+   },
+   "mode": "ALL"
+  },
+  "dies": 0,
+  "label": "meto modes differ",
+  "op": "FindMappingForCat",
+  "result": null,
+  "suff_calls": [],
+  "sufficient": 1
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1
+   },
+   "mode": "NONE"
+  },
+  "b2": {
+   "b": {
+    "a": 9
+   },
+   "mode": "NONE"
+  },
+  "dies": 0,
+  "label": "no mapping anywhere",
+  "op": "FindMappingForCat",
+  "opts": {
+   "category": "mapcat",
+   "changed_bindings": {},
+   "direction_is_same": 1,
+   "first": "o1",
+   "keys": [
+    "category",
+    "changed_bindings",
+    "direction_reln",
+    "first",
+    "meto_mode",
+    "metonymy_reln",
+    "position_reln",
+    "second",
+    "slippages",
+    "unchanged_bindings"
+   ],
+   "meto_mode": "NONE",
+   "metonymy_reln": "",
+   "position_reln": "",
+   "second": "o2",
+   "slippages": {},
+   "unchanged_bindings": []
+  },
+  "result": "STRUCTURAL",
+  "suff_calls": [
+   [],
+   []
+  ],
+  "sufficient": 1
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1,
+    "b": 9
+   },
+   "mode": "NONE"
+  },
+  "b2": {
+   "b": {
+    "a": 9,
+    "b": 1
+   },
+   "mode": "NONE"
+  },
+  "dies": 0,
+  "label": "slips swap",
+  "op": "FindMappingForCat",
+  "opts": {
+   "category": "mapcat",
+   "changed_bindings": {
+    "a": 0,
+    "b": 0
+   },
+   "direction_is_same": 1,
+   "first": "o1",
+   "keys": [
+    "category",
+    "changed_bindings",
+    "direction_reln",
+    "first",
+    "meto_mode",
+    "metonymy_reln",
+    "position_reln",
+    "second",
+    "slippages",
+    "unchanged_bindings"
+   ],
+   "meto_mode": "NONE",
+   "metonymy_reln": "",
+   "position_reln": "",
+   "second": "o2",
+   "slippages": {
+    "a": "b",
+    "b": "a"
+   },
+   "unchanged_bindings": []
+  },
+  "result": "STRUCTURAL",
+  "suff_calls": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "a",
+    "b"
+   ]
+  ],
+  "sufficient": 1
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1,
+    "b": 9
+   },
+   "mode": "NONE"
+  },
+  "b2": {
+   "b": {
+    "a": 9,
+    "b": 1
+   },
+   "mode": "NONE"
+  },
+  "dies": 0,
+  "label": "slips swap insufficient",
+  "op": "FindMappingForCat",
+  "result": null,
+  "suff_calls": [
+   [
+    "a",
+    "b"
+   ]
+  ],
+  "sufficient": 0
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1,
+    "b": 10
+   },
+   "mode": "NONE"
+  },
+  "b2": {
+   "b": {
+    "a": 2,
+    "b": 3
+   },
+   "mode": "NONE"
+  },
+  "dies": 0,
+  "label": "slips reverse fails",
+  "op": "FindMappingForCat",
+  "opts": {
+   "category": "mapcat",
+   "changed_bindings": {
+    "a": 1,
+    "b": 2
+   },
+   "direction_is_same": 1,
+   "first": "o1",
+   "keys": [
+    "category",
+    "changed_bindings",
+    "direction_reln",
+    "first",
+    "meto_mode",
+    "metonymy_reln",
+    "position_reln",
+    "second",
+    "slippages",
+    "unchanged_bindings"
+   ],
+   "meto_mode": "NONE",
+   "metonymy_reln": "",
+   "position_reln": "",
+   "second": "o2",
+   "slippages": {
+    "a": "a",
+    "b": "a"
+   },
+   "unchanged_bindings": []
+  },
+  "result": "STRUCTURAL",
+  "suff_calls": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "a"
+   ]
+  ],
+  "sufficient": 1
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1
+   },
+   "mode": "ALL"
+  },
+  "b2": {
+   "b": {
+    "a": 3
+   },
+   "mode": "ALL"
+  },
+  "dies": 0,
+  "label": "ALL mode",
+  "op": "FindMappingForCat",
+  "opts": {
+   "category": "mapcat",
+   "changed_bindings": {
+    "a": 2
+   },
+   "direction_is_same": 1,
+   "first": "o1",
+   "keys": [
+    "category",
+    "changed_bindings",
+    "direction_reln",
+    "first",
+    "meto_mode",
+    "position_reln",
+    "second",
+    "slippages",
+    "unchanged_bindings"
+   ],
+   "meto_mode": "ALL",
+   "metonymy_reln": "missing",
+   "position_reln": "",
+   "second": "o2",
+   "slippages": {},
+   "unchanged_bindings": []
+  },
+  "result": "STRUCTURAL",
+  "suff_calls": [],
+  "sufficient": 1
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1
+   },
+   "mode": "SINGLE",
+   "pos": 1,
+   "type": 4
+  },
+  "b2": {
+   "b": {
+    "a": 2
+   },
+   "mode": "SINGLE",
+   "pos": 2,
+   "type": 5
+  },
+  "dies": 0,
+  "label": "SINGLE ok",
+  "op": "FindMappingForCat",
+  "opts": {
+   "category": "mapcat",
+   "changed_bindings": {
+    "a": 1
+   },
+   "direction_is_same": 1,
+   "first": "o1",
+   "keys": [
+    "category",
+    "changed_bindings",
+    "direction_reln",
+    "first",
+    "meto_mode",
+    "metonymy_reln",
+    "position_reln",
+    "second",
+    "slippages",
+    "unchanged_bindings"
+   ],
+   "meto_mode": "SINGLE",
+   "metonymy_reln": "rel 1",
+   "position_reln": "rel 1",
+   "second": "o2",
+   "slippages": {},
+   "unchanged_bindings": []
+  },
+  "result": "STRUCTURAL",
+  "suff_calls": [],
+  "sufficient": 1
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1
+   },
+   "mode": "ALLBUTONE",
+   "pos": 3,
+   "type": 4
+  },
+  "b2": {
+   "b": {
+    "a": 0
+   },
+   "mode": "ALLBUTONE",
+   "pos": 1,
+   "type": 4
+  },
+  "dies": 0,
+  "label": "ALLBUTONE ok",
+  "op": "FindMappingForCat",
+  "opts": {
+   "category": "mapcat",
+   "changed_bindings": {
+    "a": -1
+   },
+   "direction_is_same": 1,
+   "first": "o1",
+   "keys": [
+    "category",
+    "changed_bindings",
+    "direction_reln",
+    "first",
+    "meto_mode",
+    "metonymy_reln",
+    "position_reln",
+    "second",
+    "slippages",
+    "unchanged_bindings"
+   ],
+   "meto_mode": "ALLBUTONE",
+   "metonymy_reln": "rel 0",
+   "position_reln": "rel -2",
+   "second": "o2",
+   "slippages": {},
+   "unchanged_bindings": []
+  },
+  "result": "STRUCTURAL",
+  "suff_calls": [],
+  "sufficient": 1
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1
+   },
+   "mode": "SINGLE",
+   "pos": 1,
+   "type": 4
+  },
+  "b2": {
+   "b": {
+    "a": 2
+   },
+   "mode": "SINGLE",
+   "pos": 8,
+   "type": 5
+  },
+  "dies": 0,
+  "label": "SINGLE position fails",
+  "op": "FindMappingForCat",
+  "result": null,
+  "suff_calls": [],
+  "sufficient": 1
+ },
+ {
+  "b1": {
+   "b": {
+    "a": 1
+   },
+   "mode": "SINGLE",
+   "pos": 1,
+   "type": 4
+  },
+  "b2": {
+   "b": {
+    "a": 2
+   },
+   "mode": "SINGLE",
+   "pos": 2,
+   "type": 15
+  },
+  "dies": 0,
+  "label": "SINGLE type fails",
+  "op": "FindMappingForCat",
+  "result": null,
+  "suff_calls": [],
+  "sufficient": 1
+ },
+ {
+  "dies": 1,
+  "label": "two args",
+  "op": "FindMappingForCat"
+ },
+ {
+  "dies": 1,
+  "label": "four args",
+  "op": "FindMappingForCat"
+ },
+ {
+  "dies": 1,
+  "label": "not Seqsee::Object",
+  "op": "FindMappingForCat"
+ },
+ {
+  "dies": 0,
+  "first_missing": 0,
+  "label": "not of category",
+  "neither": 0,
+  "op": "FindMappingForCat",
+  "second_missing": 0
+ },
+ {
+  "dies": 1,
+  "error": "In CalculateBindingsChange_no_slips:: binding for a missing for second object! at /home/al/dev/SeqSee/Seqsee/lib/SCategory.pm line 208.",
+  "label": "missing key in second",
+  "op": "FindMappingForCat"
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1,
+    "b": 5
+   },
+   "mode": "NONE"
+  },
+  "blemish": null,
+  "build_fails": 0,
+  "built": {
+   "a": 2,
+   "b": 5
+  },
+  "defined": 1,
+  "dies": 0,
+  "effective": 0,
+  "group_p": 1,
+  "label": "plain change",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {
+    "a": 1
+   },
+   "meto_mode": "NONE",
+   "slips": {}
+  },
+  "result_calls": [
+   "describe_as mapcat"
+  ],
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1,
+    "b": 5
+   },
+   "mode": "NONE"
+  },
+  "blemish": null,
+  "build_fails": 0,
+  "built": {
+   "a": 1,
+   "b": 5
+  },
+  "defined": 1,
+  "dies": 0,
+  "effective": 0,
+  "group_p": 1,
+  "label": "no change at all",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {},
+   "meto_mode": "NONE",
+   "slips": {}
+  },
+  "result_calls": [
+   "describe_as mapcat"
+  ],
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1,
+    "b": 5
+   },
+   "mode": "NONE"
+  },
+  "build_fails": 0,
+  "defined": 0,
+  "dies": 0,
+  "effective": 0,
+  "label": "change overflows",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {
+    "b": 16
+   },
+   "meto_mode": "NONE",
+   "slips": {}
+  },
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1,
+    "b": 5
+   },
+   "mode": "NONE"
+  },
+  "blemish": null,
+  "build_fails": 0,
+  "built": {
+   "a": 7,
+   "b": 1
+  },
+  "defined": 1,
+  "dies": 0,
+  "effective": 0,
+  "group_p": 1,
+  "label": "slippages",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {
+    "a": 2
+   },
+   "meto_mode": "NONE",
+   "slips": {
+    "a": "b",
+    "b": "a",
+    "c": ""
+   }
+  },
+  "result_calls": [
+   "describe_as mapcat"
+  ],
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1,
+    "b": 5
+   },
+   "mode": "NONE"
+  },
+  "build_fails": 0,
+  "defined": 0,
+  "dies": 0,
+  "effective": 0,
+  "label": "slippage change overflows",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {
+    "a": 16
+   },
+   "meto_mode": "NONE",
+   "slips": {
+    "a": "b"
+   }
+  },
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1,
+    "b": 5
+   },
+   "mode": "NONE"
+  },
+  "build_fails": 0,
+  "defined": 0,
+  "dies": 1,
+  "effective": 0,
+  "label": "slippage to missing attr",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {},
+   "meto_mode": "NONE",
+   "slips": {
+    "a": "zz"
+   }
+  },
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": null,
+  "build_fails": 0,
+  "defined": 0,
+  "dies": 0,
+  "effective": 0,
+  "label": "not describable",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {},
+   "meto_mode": "NONE",
+   "slips": {}
+  },
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1
+   },
+   "mode": "NONE"
+  },
+  "build_fails": 1,
+  "defined": 0,
+  "dies": 0,
+  "effective": 0,
+  "label": "build fails",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {},
+   "meto_mode": "NONE",
+   "slips": {}
+  },
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1
+   },
+   "mode": "NONE"
+  },
+  "build_fails": 0,
+  "defined": 0,
+  "dies": 0,
+  "effective": 0,
+  "label": "meto modes differ",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {},
+   "meto_mode": "ALL",
+   "slips": {}
+  },
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1
+   },
+   "mode": "ALL",
+   "type": 4
+  },
+  "blemish": "everywhere 5",
+  "build_fails": 0,
+  "built": {
+   "a": 1
+  },
+  "defined": 1,
+  "dies": 0,
+  "effective": 0,
+  "group_p": 1,
+  "label": "ALL blemish",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {},
+   "meto_mode": "ALL",
+   "meto_reln": 1,
+   "slips": {}
+  },
+  "result_calls": [
+   "describe_as mapcat"
+  ],
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1
+   },
+   "mode": "ALL",
+   "type": 4
+  },
+  "build_fails": 0,
+  "defined": 0,
+  "dies": 0,
+  "effective": 0,
+  "label": "ALL meto reln overflows",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {},
+   "meto_mode": "ALL",
+   "meto_reln": 17,
+   "slips": {}
+  },
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1
+   },
+   "mode": "SINGLE",
+   "pos": 2,
+   "type": 4
+  },
+  "blemish": "at 3 5",
+  "build_fails": 0,
+  "built": {
+   "a": 1
+  },
+  "defined": 1,
+  "dies": 0,
+  "effective": 0,
+  "group_p": 1,
+  "label": "SINGLE blemish",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {},
+   "meto_mode": "SINGLE",
+   "meto_reln": 1,
+   "pos_reln": 1,
+   "slips": {}
+  },
+  "result_calls": [
+   "describe_as mapcat"
+  ],
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1
+   },
+   "mode": "SINGLE",
+   "pos": 2,
+   "type": 4
+  },
+  "build_fails": 0,
+  "defined": 0,
+  "dies": 0,
+  "effective": 0,
+  "label": "SINGLE blemish dies",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {},
+   "meto_mode": "SINGLE",
+   "meto_reln": 1,
+   "pos_reln": 2,
+   "slips": {}
+  },
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 1
+   },
+   "mode": "SINGLE",
+   "pos": 2,
+   "type": 4
+  },
+  "build_fails": 0,
+  "defined": 0,
+  "dies": 0,
+  "effective": 0,
+  "label": "SINGLE position overflows",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {},
+   "meto_mode": "SINGLE",
+   "meto_reln": 1,
+   "pos_reln": 19,
+   "slips": {}
+  },
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "bindings": {
+   "b": {
+    "a": 3
+   },
+   "mode": "NONE"
+  },
+  "blemish": null,
+  "build_fails": 0,
+  "built": {
+   "a": 4
+  },
+  "defined": 1,
+  "dies": 0,
+  "effective": 1,
+  "group_p": 1,
+  "label": "effective object",
+  "op": "ApplyMappingForCat",
+  "reln": {
+   "changed": {
+    "a": 1
+   },
+   "meto_mode": "NONE",
+   "slips": {}
+  },
+  "result_calls": [
+   "describe_as mapcat"
+  ],
+  "target_calls": [
+   "describe_as mapcat"
+  ]
+ },
+ {
+  "dies": 1,
+  "label": "category mismatch",
+  "op": "ApplyMappingForCat"
+ },
+ {
+  "dies": 1,
+  "label": "undef object",
+  "op": "ApplyMappingForCat"
+ }
+]

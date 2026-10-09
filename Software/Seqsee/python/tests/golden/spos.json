@@ -1,0 +1,387 @@
+[
+ {
+  "arg": "2",
+  "op": "new",
+  "position": 2
+ },
+ {
+  "arg": "2",
+  "op": "new_named",
+  "position": 2
+ },
+ {
+  "arg": "3",
+  "op": "new",
+  "position": 3
+ },
+ {
+  "arg": "3",
+  "op": "new_named",
+  "position": 3
+ },
+ {
+  "arg": "1",
+  "op": "new",
+  "position": 1
+ },
+ {
+  "arg": "1",
+  "op": "new_named",
+  "position": 1
+ },
+ {
+  "arg": "-1",
+  "op": "new",
+  "position": -1
+ },
+ {
+  "arg": "-1",
+  "op": "new_named",
+  "position": -1
+ },
+ {
+  "arg": "100",
+  "op": "new",
+  "position": 100
+ },
+ {
+  "arg": "100",
+  "op": "new_named",
+  "position": 100
+ },
+ {
+  "arg": "7",
+  "op": "new",
+  "position": "7"
+ },
+ {
+  "arg": "7",
+  "op": "new_named",
+  "position": "7"
+ },
+ {
+  "arg": "-1",
+  "op": "new",
+  "position": "-1"
+ },
+ {
+  "arg": "-1",
+  "op": "new_named",
+  "position": "-1"
+ },
+ {
+  "arg": "0",
+  "dies": 1,
+  "op": "new_dies"
+ },
+ {
+  "arg": "0",
+  "dies": 1,
+  "op": "new_named_dies"
+ },
+ {
+  "arg": "-3",
+  "dies": 1,
+  "op": "new_dies"
+ },
+ {
+  "arg": "-3",
+  "dies": 1,
+  "op": "new_named_dies"
+ },
+ {
+  "arg": "-2",
+  "dies": 1,
+  "op": "new_dies"
+ },
+ {
+  "arg": "-2",
+  "dies": 1,
+  "op": "new_named_dies"
+ },
+ {
+  "arg": "2.5",
+  "dies": 1,
+  "op": "new_dies"
+ },
+ {
+  "arg": "2.5",
+  "dies": 1,
+  "op": "new_named_dies"
+ },
+ {
+  "arg": "3.0",
+  "dies": 1,
+  "op": "new_dies"
+ },
+ {
+  "arg": "3.0",
+  "dies": 1,
+  "op": "new_named_dies"
+ },
+ {
+  "arg": " 3",
+  "dies": 1,
+  "op": "new_dies"
+ },
+ {
+  "arg": " 3",
+  "dies": 1,
+  "op": "new_named_dies"
+ },
+ {
+  "arg": "abc",
+  "dies": 1,
+  "op": "new_dies"
+ },
+ {
+  "arg": "abc",
+  "dies": 1,
+  "op": "new_named_dies"
+ },
+ {
+  "arg": "",
+  "dies": 1,
+  "op": "new_dies"
+ },
+ {
+  "arg": "",
+  "dies": 1,
+  "op": "new_named_dies"
+ },
+ {
+  "arg": null,
+  "dies": 1,
+  "op": "new_dies"
+ },
+ {
+  "dies": 1,
+  "op": "new_no_args_dies"
+ },
+ {
+  "a": 2,
+  "b": 2,
+  "eq": 1,
+  "ne": 1,
+  "op": "eq",
+  "smartmatch": 1
+ },
+ {
+  "a": 2,
+  "b": 3,
+  "eq": 0,
+  "ne": 1,
+  "op": "eq",
+  "smartmatch": 0
+ },
+ {
+  "a": 3,
+  "b": 2,
+  "eq": 0,
+  "ne": 1,
+  "op": "eq",
+  "smartmatch": 0
+ },
+ {
+  "a": -1,
+  "b": -1,
+  "eq": 1,
+  "ne": 1,
+  "op": "eq",
+  "smartmatch": 1
+ },
+ {
+  "a": -1,
+  "b": 1,
+  "eq": 0,
+  "ne": 1,
+  "op": "eq",
+  "smartmatch": 0
+ },
+ {
+  "a": 1,
+  "b": 1,
+  "eq": 1,
+  "ne": 1,
+  "op": "eq",
+  "smartmatch": 1
+ },
+ {
+  "eq": 1,
+  "ne": 0,
+  "op": "eq_same_object",
+  "smartmatch": 1
+ },
+ {
+  "dies": 1,
+  "op": "eq_non_spos_dies"
+ },
+ {
+  "op": "set",
+  "position": 5,
+  "value": 5
+ },
+ {
+  "op": "set",
+  "position": 0,
+  "value": 0
+ },
+ {
+  "op": "set",
+  "position": -7,
+  "value": -7
+ },
+ {
+  "dies": 1,
+  "op": "set_dies",
+  "value": "2.5"
+ },
+ {
+  "error": "OutOfRange [obj=[1, 2, 3]]index=1, size=0, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": 1,
+  "result": null,
+  "size": 0
+ },
+ {
+  "error": null,
+  "error_class": null,
+  "op": "find_range",
+  "position": 1,
+  "result": [
+   0
+  ],
+  "size": 1
+ },
+ {
+  "error": null,
+  "error_class": null,
+  "op": "find_range",
+  "position": 1,
+  "result": [
+   0
+  ],
+  "size": 3
+ },
+ {
+  "error": "OutOfRange [obj=[1, 2, 3]]index=2, size=0, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": 2,
+  "result": null,
+  "size": 0
+ },
+ {
+  "error": "OutOfRange [obj=[1, 2, 3]]index=2, size=1, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": 2,
+  "result": null,
+  "size": 1
+ },
+ {
+  "error": null,
+  "error_class": null,
+  "op": "find_range",
+  "position": 2,
+  "result": [
+   1
+  ],
+  "size": 3
+ },
+ {
+  "error": "OutOfRange [obj=[1, 2, 3]]index=3, size=0, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": 3,
+  "result": null,
+  "size": 0
+ },
+ {
+  "error": "OutOfRange [obj=[1, 2, 3]]index=3, size=1, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": 3,
+  "result": null,
+  "size": 1
+ },
+ {
+  "error": null,
+  "error_class": null,
+  "op": "find_range",
+  "position": 3,
+  "result": [
+   2
+  ],
+  "size": 3
+ },
+ {
+  "error": "OutOfRange [obj=[1, 2, 3]]index=4, size=0, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": 4,
+  "result": null,
+  "size": 0
+ },
+ {
+  "error": "OutOfRange [obj=[1, 2, 3]]index=4, size=1, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": 4,
+  "result": null,
+  "size": 1
+ },
+ {
+  "error": "OutOfRange [obj=[1, 2, 3]]index=4, size=3, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": 4,
+  "result": null,
+  "size": 3
+ },
+ {
+  "error": "OutOfRange [obj=[1, 2, 3]]index=-1, size=0, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": -1,
+  "result": null,
+  "size": 0
+ },
+ {
+  "error": null,
+  "error_class": null,
+  "op": "find_range",
+  "position": -1,
+  "result": [
+   0
+  ],
+  "size": 1
+ },
+ {
+  "error": null,
+  "error_class": null,
+  "op": "find_range",
+  "position": -1,
+  "result": [
+   2
+  ],
+  "size": 3
+ },
+ {
+  "error": "OutOfRange [obj=[4, 5, 6]]index=0, size=3, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": 0,
+  "result": null,
+  "size": 3
+ },
+ {
+  "error": "OutOfRange [obj=[4, 5, 6]]index=-7, size=3, ",
+  "error_class": "SErr",
+  "op": "find_range",
+  "position": -7,
+  "result": null,
+  "size": 3
+ }
+]

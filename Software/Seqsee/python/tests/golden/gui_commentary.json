@@ -1,0 +1,1684 @@
+[
+ {
+  "buttons": [
+   {
+    "side": "top",
+    "state": "disabled",
+    "text": "",
+    "width": "15"
+   },
+   {
+    "side": "top",
+    "state": "disabled",
+    "text": "",
+    "width": "15"
+   },
+   {
+    "side": "top",
+    "state": "disabled",
+    "text": "",
+    "width": "15"
+   },
+   {
+    "side": "top",
+    "state": "disabled",
+    "text": "",
+    "width": "15"
+   },
+   {
+    "side": "bottom",
+    "state": "normal",
+    "text": "Start Debug",
+    "width": "15"
+   }
+  ],
+  "kind": "widget",
+  "name": "widget",
+  "tag_priority": [
+   "codelet_family",
+   "debug",
+   "green",
+   "user_response"
+  ],
+  "tags": {
+   "codelet_family": {
+    "foreground": "#0000FF"
+   },
+   "debug": {
+    "font": {
+     "actual": {
+      "-family": "Noto Sans",
+      "-overstrike": 0,
+      "-size": -10,
+      "-slant": "roman",
+      "-underline": 0,
+      "-weight": "bold"
+     },
+     "xlfd": "-lucida--bold-r-normal--10-120-100-100-p-0-iso8859-15"
+    },
+    "foreground": "#0000FF"
+   },
+   "green": {
+    "foreground": "#00FF00"
+   },
+   "user_response": {
+    "foreground": "#FF0000"
+   }
+  },
+  "tags_config": {
+   "codelet_family": "-foreground #0000FF",
+   "debug": "-foreground #0000FF -font -lucida--bold-r-normal--10-120-100-100-p-0-iso8859-15",
+   "green": "-foreground #00FF00",
+   "user_response": "-foreground #FF0000"
+  },
+  "text": {
+   "font": {
+    "actual": {
+     "-family": "Noto Sans",
+     "-overstrike": 0,
+     "-size": -17,
+     "-slant": "roman",
+     "-underline": 0,
+     "-weight": "bold"
+    },
+    "xlfd": "-lucida-lucida bright-bold-r-normal--17-120-100-100-p-0-iso8859-15"
+   },
+   "height": 10,
+   "side": "left",
+   "width": 60,
+   "wrap": "word"
+  }
+ },
+ {
+  "kind": "session",
+  "name": "no_response",
+  "steps": [
+   {
+    "answer": null,
+    "args": [
+     "Plain text\n"
+    ],
+    "call": "no_response",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Plain text\n",
+      []
+     ]
+    ],
+    "text": "Plain text\n",
+    "waiting": null
+   },
+   {
+    "answer": null,
+    "args": [
+     "New Sequence Started: ",
+     [],
+     "1 1 2 1 2 3\n"
+    ],
+    "call": "no_response",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Plain text\nNew Sequence Started: 1 1 2 1 2 3\n",
+      []
+     ]
+    ],
+    "text": "Plain text\nNew Sequence Started: 1 1 2 1 2 3\n",
+    "waiting": null
+   },
+   {
+    "answer": null,
+    "args": [
+     "Reader",
+     "green",
+     " About to run: x",
+     [],
+     "\n"
+    ],
+    "call": "no_response",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Plain text\nNew Sequence Started: 1 1 2 1 2 3\n",
+      []
+     ],
+     [
+      "Reader",
+      [
+       "green"
+      ]
+     ],
+     [
+      " About to run: x\n",
+      []
+     ]
+    ],
+    "text": "Plain text\nNew Sequence Started: 1 1 2 1 2 3\nReader About to run: x\n",
+    "waiting": null
+   },
+   {
+    "answer": null,
+    "args": [
+     "Fam",
+     [
+      "codelet_family"
+     ],
+     " codelet added",
+     [
+      "debug",
+      "green"
+     ],
+     "\n"
+    ],
+    "call": "no_response",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Plain text\nNew Sequence Started: 1 1 2 1 2 3\n",
+      []
+     ],
+     [
+      "Reader",
+      [
+       "green"
+      ]
+     ],
+     [
+      " About to run: x\n",
+      []
+     ],
+     [
+      "Fam",
+      [
+       "codelet_family"
+      ]
+     ],
+     [
+      " codelet added",
+      [
+       "debug",
+       "green"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Plain text\nNew Sequence Started: 1 1 2 1 2 3\nReader About to run: x\nFam codelet added\n",
+    "waiting": null
+   },
+   {
+    "answer": null,
+    "args": [
+     "tagged only",
+     [
+      "user_response"
+     ]
+    ],
+    "call": "no_response",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Plain text\nNew Sequence Started: 1 1 2 1 2 3\n",
+      []
+     ],
+     [
+      "Reader",
+      [
+       "green"
+      ]
+     ],
+     [
+      " About to run: x\n",
+      []
+     ],
+     [
+      "Fam",
+      [
+       "codelet_family"
+      ]
+     ],
+     [
+      " codelet added",
+      [
+       "debug",
+       "green"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "tagged only",
+      [
+       "user_response"
+      ]
+     ]
+    ],
+    "text": "Plain text\nNew Sequence Started: 1 1 2 1 2 3\nReader About to run: x\nFam codelet added\ntagged only",
+    "waiting": null
+   },
+   {
+    "answer": null,
+    "args": [
+     "\nafter"
+    ],
+    "call": "no_response",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Plain text\nNew Sequence Started: 1 1 2 1 2 3\n",
+      []
+     ],
+     [
+      "Reader",
+      [
+       "green"
+      ]
+     ],
+     [
+      " About to run: x\n",
+      []
+     ],
+     [
+      "Fam",
+      [
+       "codelet_family"
+      ]
+     ],
+     [
+      " codelet added",
+      [
+       "debug",
+       "green"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "tagged only",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nafter",
+      []
+     ]
+    ],
+    "text": "Plain text\nNew Sequence Started: 1 1 2 1 2 3\nReader About to run: x\nFam codelet added\ntagged only\nafter",
+    "waiting": null
+   }
+  ]
+ },
+ {
+  "kind": "session",
+  "name": "response",
+  "steps": [
+   {
+    "answer": [
+     [
+      "button",
+      1
+     ]
+    ],
+    "args": [
+     [
+      "Yes",
+      "No"
+     ],
+     "Is this the right rule?"
+    ],
+    "call": "response",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": "No",
+    "runs": [
+     [
+      "Is this the right rule?  ",
+      []
+     ],
+     [
+      "No",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is this the right rule?  No\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "Yes"
+      },
+      {
+       "state": "normal",
+       "text": "No"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   },
+   {
+    "answer": [
+     [
+      "button",
+      3
+     ]
+    ],
+    "args": [
+     [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "Pick ",
+     [
+      "green"
+     ],
+     "one"
+    ],
+    "call": "response",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": "d",
+    "runs": [
+     [
+      "Is this the right rule?  ",
+      []
+     ],
+     [
+      "No",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "Pick ",
+      [
+       "green"
+      ]
+     ],
+     [
+      "one  ",
+      []
+     ],
+     [
+      "d",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is this the right rule?  No\nPick one  d\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "a"
+      },
+      {
+       "state": "normal",
+       "text": "b"
+      },
+      {
+       "state": "normal",
+       "text": "c"
+      },
+      {
+       "state": "normal",
+       "text": "d"
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   },
+   {
+    "answer": [
+     [
+      "key",
+      4
+     ],
+     [
+      "key",
+      3
+     ],
+     [
+      "key",
+      2
+     ]
+    ],
+    "args": [
+     [
+      "one",
+      "two"
+     ],
+     "Keys: "
+    ],
+    "call": "response",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": "two",
+    "runs": [
+     [
+      "Is this the right rule?  ",
+      []
+     ],
+     [
+      "No",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "Pick ",
+      [
+       "green"
+      ]
+     ],
+     [
+      "one  ",
+      []
+     ],
+     [
+      "d",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nKeys:   ",
+      []
+     ],
+     [
+      "two",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is this the right rule?  No\nPick one  d\nKeys:   two\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "one"
+      },
+      {
+       "state": "normal",
+       "text": "two"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   },
+   {
+    "answer": [
+     [
+      "key",
+      1
+     ]
+    ],
+    "args": [
+     [
+      "continue"
+     ],
+     "Multi\nline"
+    ],
+    "call": "response",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": "continue",
+    "runs": [
+     [
+      "Is this the right rule?  ",
+      []
+     ],
+     [
+      "No",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "Pick ",
+      [
+       "green"
+      ]
+     ],
+     [
+      "one  ",
+      []
+     ],
+     [
+      "d",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nKeys:   ",
+      []
+     ],
+     [
+      "two",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nMulti\nline  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is this the right rule?  No\nPick one  d\nKeys:   two\nMulti\nline  continue\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "continue"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "kind": "session",
+  "name": "boolean",
+  "steps": [
+   {
+    "answer": [
+     [
+      "button",
+      0
+     ]
+    ],
+    "args": [
+     "Is the next term 3?"
+    ],
+    "call": "boolean",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": 1,
+    "runs": [
+     [
+      "Is the next term 3?  ",
+      []
+     ],
+     [
+      "yes",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is the next term 3?  yes\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "yes"
+      },
+      {
+       "state": "normal",
+       "text": "no"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   },
+   {
+    "answer": [
+     [
+      "button",
+      1
+     ]
+    ],
+    "args": [
+     "Are the next terms: 4 5?"
+    ],
+    "call": "boolean",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": 0,
+    "runs": [
+     [
+      "Is the next term 3?  ",
+      []
+     ],
+     [
+      "yes",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nAre the next terms: 4 5?  ",
+      []
+     ],
+     [
+      "no",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is the next term 3?  yes\nAre the next terms: 4 5?  no\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "yes"
+      },
+      {
+       "state": "normal",
+       "text": "no"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   },
+   {
+    "answer": [
+     [
+      "key",
+      1
+     ]
+    ],
+    "args": [
+     "Is the next term 7?",
+     "",
+     "suffix text",
+     [
+      "debug"
+     ]
+    ],
+    "call": "boolean",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": 1,
+    "runs": [
+     [
+      "Is the next term 3?  ",
+      []
+     ],
+     [
+      "yes",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nAre the next terms: 4 5?  ",
+      []
+     ],
+     [
+      "no",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nIs the next term 7?",
+      []
+     ],
+     [
+      "suffix text",
+      [
+       "debug"
+      ]
+     ],
+     [
+      "  ",
+      []
+     ],
+     [
+      "yes",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is the next term 3?  yes\nAre the next terms: 4 5?  no\nIs the next term 7?suffix text  yes\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "yes"
+      },
+      {
+       "state": "normal",
+       "text": "no"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "kind": "session",
+  "name": "message",
+  "steps": [
+   {
+    "answer": [
+     [
+      "button",
+      0
+     ]
+    ],
+    "args": [
+     "Breaking message"
+    ],
+    "call": "message",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": "continue",
+    "runs": [
+     [
+      "Breaking message  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Breaking message  continue\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "continue"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   },
+   {
+    "answer": [
+     [
+      "key",
+      1
+     ]
+    ],
+    "args": [
+     [
+      "Reader",
+      "green",
+      "About to run: SCodelet"
+     ]
+    ],
+    "call": "message",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": "continue",
+    "runs": [
+     [
+      "Breaking message  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "Reader",
+      [
+       "green"
+      ]
+     ],
+     [
+      "About to run: SCodelet  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Breaking message  continue\nReaderAbout to run: SCodelet  continue\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "continue"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   },
+   {
+    "answer": null,
+    "args": [
+     "No break",
+     1
+    ],
+    "call": "message",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Breaking message  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "Reader",
+      [
+       "green"
+      ]
+     ],
+     [
+      "About to run: SCodelet  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nNo break\n",
+      []
+     ]
+    ],
+    "text": "Breaking message  continue\nReaderAbout to run: SCodelet  continue\nNo break\n",
+    "waiting": null
+   },
+   {
+    "answer": null,
+    "args": [
+     [
+      "Fam",
+      [
+       "codelet_family"
+      ],
+      " codelet added by thought: x"
+     ],
+     1
+    ],
+    "call": "message",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Breaking message  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "Reader",
+      [
+       "green"
+      ]
+     ],
+     [
+      "About to run: SCodelet  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nNo break\n",
+      []
+     ],
+     [
+      "Fam",
+      [
+       "codelet_family"
+      ]
+     ],
+     [
+      " codelet added by thought: x",
+      []
+     ]
+    ],
+    "text": "Breaking message  continue\nReaderAbout to run: SCodelet  continue\nNo break\nFam codelet added by thought: x",
+    "waiting": null
+   },
+   {
+    "answer": null,
+    "args": [
+     "after array",
+     1
+    ],
+    "call": "message",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Breaking message  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "Reader",
+      [
+       "green"
+      ]
+     ],
+     [
+      "About to run: SCodelet  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nNo break\n",
+      []
+     ],
+     [
+      "Fam",
+      [
+       "codelet_family"
+      ]
+     ],
+     [
+      " codelet added by thought: xafter array\n",
+      []
+     ]
+    ],
+    "text": "Breaking message  continue\nReaderAbout to run: SCodelet  continue\nNo break\nFam codelet added by thought: xafter array\n",
+    "waiting": null
+   },
+   {
+    "answer": null,
+    "args": [],
+    "call": "start_debug",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 1
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Breaking message  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "Reader",
+      [
+       "green"
+      ]
+     ],
+     [
+      "About to run: SCodelet  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nNo break\n",
+      []
+     ],
+     [
+      "Fam",
+      [
+       "codelet_family"
+      ]
+     ],
+     [
+      " codelet added by thought: xafter array\ndebugMAX=1\n",
+      []
+     ]
+    ],
+    "text": "Breaking message  continue\nReaderAbout to run: SCodelet  continue\nNo break\nFam codelet added by thought: xafter array\ndebugMAX=1\n",
+    "waiting": null
+   },
+   {
+    "answer": null,
+    "args": [],
+    "call": "start_debug",
+    "globals": {
+     "AtLeastOneUserVerification": 0,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Breaking message  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ],
+     [
+      "Reader",
+      [
+       "green"
+      ]
+     ],
+     [
+      "About to run: SCodelet  ",
+      []
+     ],
+     [
+      "continue",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nNo break\n",
+      []
+     ],
+     [
+      "Fam",
+      [
+       "codelet_family"
+      ]
+     ],
+     [
+      " codelet added by thought: xafter array\ndebugMAX=1\ndebugMAX=0\n",
+      []
+     ]
+    ],
+    "text": "Breaking message  continue\nReaderAbout to run: SCodelet  continue\nNo break\nFam codelet added by thought: xafter array\ndebugMAX=1\ndebugMAX=0\n",
+    "waiting": null
+   }
+  ]
+ },
+ {
+  "kind": "session",
+  "name": "ask_user_extension",
+  "steps": [
+   {
+    "answer": [
+     [
+      "button",
+      0
+     ]
+    ],
+    "args": [
+     [
+      3
+     ]
+    ],
+    "call": "ask_user_extension",
+    "globals": {
+     "AtLeastOneUserVerification": 1,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": 1,
+    "runs": [
+     [
+      "Is the next term 3?  ",
+      []
+     ],
+     [
+      "yes",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is the next term 3?  yes\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "yes"
+      },
+      {
+       "state": "normal",
+       "text": "no"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   },
+   {
+    "answer": [
+     [
+      "button",
+      1
+     ]
+    ],
+    "args": [
+     [
+      4,
+      5
+     ]
+    ],
+    "call": "ask_user_extension",
+    "globals": {
+     "AtLeastOneUserVerification": 1,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": 0,
+    "runs": [
+     [
+      "Is the next term 3?  ",
+      []
+     ],
+     [
+      "yes",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nAre the next terms: 4 5?  ",
+      []
+     ],
+     [
+      "no",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is the next term 3?  yes\nAre the next terms: 4 5?  no\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "yes"
+      },
+      {
+       "state": "normal",
+       "text": "no"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   },
+   {
+    "answer": null,
+    "args": [
+     [
+      6,
+      7
+     ],
+     null,
+     {
+      "rejected": [
+       "6"
+      ]
+     }
+    ],
+    "call": "ask_user_extension",
+    "globals": {
+     "AtLeastOneUserVerification": 1,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": null,
+    "runs": [
+     [
+      "Is the next term 3?  ",
+      []
+     ],
+     [
+      "yes",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nAre the next terms: 4 5?  ",
+      []
+     ],
+     [
+      "no",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is the next term 3?  yes\nAre the next terms: 4 5?  no\n",
+    "waiting": null
+   },
+   {
+    "answer": [
+     [
+      "button",
+      0
+     ]
+    ],
+    "args": [
+     [
+      8
+     ],
+     "because of x",
+     {
+      "feature": {
+       "debug": 1
+      }
+     }
+    ],
+    "call": "ask_user_extension",
+    "globals": {
+     "AtLeastOneUserVerification": 1,
+     "Break_Loop": 0,
+     "debugMAX": 0
+    },
+    "returned": 1,
+    "runs": [
+     [
+      "Is the next term 3?  ",
+      []
+     ],
+     [
+      "yes",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nAre the next terms: 4 5?  ",
+      []
+     ],
+     [
+      "no",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\nIs the next term 8?",
+      []
+     ],
+     [
+      "because of x",
+      [
+       "debug"
+      ]
+     ],
+     [
+      "  ",
+      []
+     ],
+     [
+      "yes",
+      [
+       "user_response"
+      ]
+     ],
+     [
+      "\n",
+      []
+     ]
+    ],
+    "text": "Is the next term 3?  yes\nAre the next terms: 4 5?  no\nIs the next term 8?because of x  yes\n",
+    "waiting": {
+     "attention": 1,
+     "buttons": [
+      {
+       "state": "normal",
+       "text": "yes"
+      },
+      {
+       "state": "normal",
+       "text": "no"
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "disabled",
+       "text": ""
+      },
+      {
+       "state": "normal",
+       "text": "Start Debug"
+      }
+     ]
+    }
+   }
+  ]
+ }
+]

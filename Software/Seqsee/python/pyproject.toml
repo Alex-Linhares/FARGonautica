@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seqsee"
+version = "0.1.0"
+description = "Python port of Seqsee, Abhijit Mahabal's integer-sequence extrapolation program"
+requires-python = ">=3.12"
+license = { text = "Artistic-2.0" }
+
+[project.optional-dependencies]
+test = ["pytest>=7", "hypothesis", "pytest-qt"]
+gui = ["PySide6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+markers = [
+    "slow: long-running end-to-end tests",
+    "gui: needs PySide6 (Qt, run headless with QT_QPA_PLATFORM=offscreen); skipped without it",
+    "perl_source: reads the Perl Seqsee source (../lib); skipped without it",
+]

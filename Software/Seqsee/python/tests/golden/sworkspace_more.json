@@ -1,0 +1,6047 @@
+[
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "describe",
+    "A",
+    "ascending"
+   ],
+   [
+    "gp",
+    "B",
+    "e5",
+    "e6"
+   ],
+   [
+    "add",
+    "B"
+   ],
+   [
+    "gp",
+    "C",
+    "e6",
+    "e7",
+    "e8"
+   ],
+   [
+    "add",
+    "C"
+   ],
+   [
+    "describe",
+    "C",
+    "ascending"
+   ],
+   [
+    "gp",
+    "I",
+    "e0",
+    "e1"
+   ],
+   [
+    "add",
+    "I"
+   ],
+   [
+    "describe",
+    "I",
+    "interlaced2"
+   ],
+   [
+    "state"
+   ],
+   [
+    "info",
+    "I"
+   ],
+   [
+    "longest_exact",
+    1,
+    null
+   ],
+   [
+    "longest_exact",
+    null,
+    3
+   ],
+   [
+    "longest_exact",
+    5,
+    null
+   ],
+   [
+    "longest_exact",
+    null,
+    6
+   ],
+   [
+    "longest_exact",
+    6,
+    null
+   ],
+   [
+    "longest_exact",
+    null,
+    8
+   ],
+   [
+    "longest_exact",
+    0,
+    null
+   ],
+   [
+    "longest_exact",
+    null,
+    1
+   ],
+   [
+    "longest_exact",
+    9,
+    null
+   ],
+   [
+    "longest_exact",
+    12,
+    null
+   ],
+   [
+    "longest_exact",
+    -1,
+    null
+   ],
+   [
+    "longest_exact",
+    1,
+    3
+   ],
+   [
+    "longest_exact",
+    null,
+    null
+   ],
+   [
+    "longest_lerb",
+    1,
+    3
+   ],
+   [
+    "longest_lerb",
+    1,
+    2
+   ],
+   [
+    "longest_lerb",
+    1,
+    9
+   ],
+   [
+    "longest_lerb",
+    6,
+    8
+   ],
+   [
+    "longest_lerb",
+    6,
+    7
+   ],
+   [
+    "longest_lerb",
+    5,
+    9
+   ],
+   [
+    "longest_lerb",
+    0,
+    9
+   ],
+   [
+    "longest_lerb",
+    11,
+    12
+   ],
+   [
+    "longest_start",
+    1
+   ],
+   [
+    "longest_start",
+    0
+   ],
+   [
+    "longest_start",
+    5
+   ],
+   [
+    "longest_start",
+    6
+   ],
+   [
+    "longest_start",
+    9
+   ],
+   [
+    "longest_start",
+    10
+   ],
+   [
+    "longest_start",
+    -2
+   ],
+   [
+    "longest_end",
+    3
+   ],
+   [
+    "longest_end",
+    1
+   ],
+   [
+    "longest_end",
+    6
+   ],
+   [
+    "longest_end",
+    8
+   ],
+   [
+    "longest_end",
+    10
+   ],
+   [
+    "longest_end",
+    -1
+   ],
+   [
+    "intervening",
+    0,
+    9
+   ],
+   [
+    "intervening",
+    1,
+    4
+   ],
+   [
+    "intervening",
+    1,
+    2
+   ],
+   [
+    "intervening",
+    4,
+    8
+   ],
+   [
+    "intervening",
+    5,
+    6
+   ],
+   [
+    "intervening",
+    3,
+    2
+   ],
+   [
+    "intervening",
+    7,
+    10
+   ],
+   [
+    "intervening",
+    0,
+    0
+   ]
+  ],
+  "results": [
+   {
+    "value": 10
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 3>  [2, 3, 4]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": "Seqsee::Anchored  <5, 6>  [6, 7]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": "Seqsee::Anchored  <6, 8>  [7, 8, 9]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 1>  [1, 2]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": [
+     [
+      "A",
+      1,
+      3
+     ],
+     [
+      "B",
+      5,
+      6
+     ],
+     [
+      "C",
+      6,
+      8
+     ],
+     [
+      "I",
+      0,
+      1
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ],
+     [
+      "e6",
+      6,
+      6
+     ],
+     [
+      "e7",
+      7,
+      7
+     ],
+     [
+      "e8",
+      8,
+      8
+     ],
+     [
+      "e9",
+      9,
+      9
+     ]
+    ]
+   },
+   {
+    "value": {
+     "cats": [
+      "Interlaced_2"
+     ],
+     "group_p": 1,
+     "live": 1,
+     "meto": null,
+     "meto_active": 0,
+     "text": "Seqsee::Anchored  <0, 1>  [1, 2]"
+    }
+   },
+   {
+    "value": "A"
+   },
+   {
+    "value": "A"
+   },
+   {
+    "value": "e5"
+   },
+   {
+    "value": "e6"
+   },
+   {
+    "value": "C"
+   },
+   {
+    "value": "C"
+   },
+   {
+    "value": "e0"
+   },
+   {
+    "value": "e1"
+   },
+   {
+    "value": "e9"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "e9"
+   },
+   {
+    "error": "__GetLongestNonAdHocWithEndsExactly needs exactly one defined argument. Got '1' and '3'"
+   },
+   {
+    "error": "__GetLongestNonAdHocWithEndsExactly needs exactly one defined argument. Got '' and ''"
+   },
+   {
+    "value": "A"
+   },
+   {
+    "value": "e1"
+   },
+   {
+    "value": "A"
+   },
+   {
+    "value": "C"
+   },
+   {
+    "value": "e6"
+   },
+   {
+    "value": "e5"
+   },
+   {
+    "value": "e0"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "A"
+   },
+   {
+    "value": "e0"
+   },
+   {
+    "value": "e5"
+   },
+   {
+    "value": "C"
+   },
+   {
+    "value": "e9"
+   },
+   {
+    "error": "Why am I being asked this?"
+   },
+   {
+    "value": "e8"
+   },
+   {
+    "value": "A"
+   },
+   {
+    "value": "e1"
+   },
+   {
+    "value": "e6"
+   },
+   {
+    "value": "C"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "e9"
+   },
+   {
+    "value": [
+     "e0",
+     "A",
+     "e4",
+     "e5",
+     "C",
+     "e9"
+    ]
+   },
+   {
+    "value": [
+     "A",
+     "e4"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     "e4",
+     "e5",
+     "C"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "error": "get_intervening_objects called with right end of gap beyond known elements"
+   },
+   {
+    "value": [
+     "e0"
+    ]
+   }
+  ],
+  "scenario": "longest_non_adhoc"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "describe",
+    "A",
+    "ascending"
+   ],
+   [
+    "gp",
+    "B",
+    "e5",
+    "e6"
+   ],
+   [
+    "add",
+    "B"
+   ],
+   [
+    "gp",
+    "C",
+    "e6",
+    "e7",
+    "e8"
+   ],
+   [
+    "add",
+    "C"
+   ],
+   [
+    "describe",
+    "C",
+    "ascending"
+   ],
+   [
+    "gp",
+    "I",
+    "e0",
+    "e1"
+   ],
+   [
+    "add",
+    "I"
+   ],
+   [
+    "describe",
+    "I",
+    "interlaced2"
+   ],
+   [
+    "state"
+   ],
+   [
+    "distance",
+    "e0",
+    "e1",
+    "element"
+   ],
+   [
+    "distance",
+    "e0",
+    "e2",
+    "element"
+   ],
+   [
+    "distance",
+    "e0",
+    "e9",
+    "element"
+   ],
+   [
+    "distance",
+    "e9",
+    "e0",
+    "element"
+   ],
+   [
+    "distance",
+    "e0",
+    "e9",
+    "group"
+   ],
+   [
+    "distance",
+    "e9",
+    "e0",
+    "group"
+   ],
+   [
+    "distance",
+    "e0",
+    "e5",
+    "group"
+   ],
+   [
+    "distance",
+    "e4",
+    "e9",
+    "group"
+   ],
+   [
+    "distance",
+    "e0",
+    "e4",
+    "group"
+   ],
+   [
+    "distance",
+    "A",
+    "C",
+    "group"
+   ],
+   [
+    "distance",
+    "A",
+    "C",
+    "element"
+   ],
+   [
+    "distance",
+    "A",
+    "e1",
+    "group"
+   ],
+   [
+    "distance",
+    "A",
+    "e4",
+    "element"
+   ],
+   [
+    "distance",
+    "B",
+    "C",
+    "element"
+   ],
+   [
+    "distance",
+    "I",
+    "B",
+    "group"
+   ],
+   [
+    "distance",
+    "I",
+    "B",
+    "element"
+   ],
+   [
+    "distance",
+    "e0",
+    "e0",
+    "group"
+   ],
+   [
+    "srand",
+    3
+   ],
+   [
+    "distance",
+    "e0",
+    "e9"
+   ],
+   [
+    "distance",
+    "e0",
+    "e9"
+   ],
+   [
+    "distance",
+    "e0",
+    "e9"
+   ],
+   [
+    "distance",
+    "e0",
+    "e9"
+   ],
+   [
+    "distance",
+    "e0",
+    "e9"
+   ],
+   [
+    "distance",
+    "e0",
+    "e9"
+   ],
+   [
+    "distance",
+    "e0",
+    "e4"
+   ],
+   [
+    "distance",
+    "e0",
+    "e4"
+   ],
+   [
+    "distance",
+    "e0",
+    "e4"
+   ],
+   [
+    "distance",
+    "e0",
+    "e4"
+   ],
+   [
+    "distance",
+    "e0",
+    "e4"
+   ],
+   [
+    "distance",
+    "e0",
+    "e4"
+   ],
+   [
+    "distance",
+    "e0",
+    "e1"
+   ],
+   [
+    "distance",
+    "e0",
+    "e1"
+   ],
+   [
+    "rand"
+   ],
+   [
+    "distance_helper",
+    1,
+    8,
+    "group"
+   ],
+   [
+    "distance_helper",
+    4,
+    8,
+    "group"
+   ],
+   [
+    "distance_helper",
+    4,
+    4,
+    "group"
+   ],
+   [
+    "distance_helper",
+    5,
+    4,
+    "group"
+   ],
+   [
+    "distance_helper",
+    5,
+    4,
+    "element"
+   ],
+   [
+    "distance_helper",
+    2,
+    7,
+    "element"
+   ],
+   [
+    "remove",
+    "A"
+   ],
+   [
+    "distance",
+    "A",
+    "e9",
+    "group"
+   ],
+   [
+    "distance",
+    "e9",
+    "A",
+    "element"
+   ]
+  ],
+  "results": [
+   {
+    "value": 10
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 3>  [2, 3, 4]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": "Seqsee::Anchored  <5, 6>  [6, 7]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": "Seqsee::Anchored  <6, 8>  [7, 8, 9]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 1>  [1, 2]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": [
+     [
+      "A",
+      1,
+      3
+     ],
+     [
+      "B",
+      5,
+      6
+     ],
+     [
+      "C",
+      6,
+      8
+     ],
+     [
+      "I",
+      0,
+      1
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ],
+     [
+      "e6",
+      6,
+      6
+     ],
+     [
+      "e7",
+      7,
+      7
+     ],
+     [
+      "e8",
+      8,
+      8
+     ],
+     [
+      "e9",
+      9,
+      9
+     ]
+    ]
+   },
+   {
+    "value": [
+     0,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     1,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     8,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     8,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     8,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     8,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     4,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     4,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     3,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     2,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     2,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     0,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     0,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     0,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     3,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     3,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     0,
+     "group"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     8,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     8,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     8,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     8,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     8,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     8,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     3,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     3,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     3,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     3,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     3,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     3,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     0,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     0,
+     "group"
+    ]
+   },
+   {
+    "value": 0.0639736511079683
+   },
+   {
+    "value": [
+     8,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     5,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     1,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     0,
+     "group"
+    ]
+   },
+   {
+    "value": [
+     0,
+     "element"
+    ]
+   },
+   {
+    "value": [
+     6,
+     "element"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "error": "Dying because of liveness issues!\nNON_LIVE OBJECT: >>Seqsee::Anchored  <1, 3>  [2, 3, 4]<<\nBut was live once!\n"
+   },
+   {
+    "error": "Dying because of liveness issues!\nNON_LIVE OBJECT: >>Seqsee::Anchored  <1, 3>  [2, 3, 4]<<\nBut was live once!\n"
+   }
+  ],
+  "scenario": "distances"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "describe",
+    "A",
+    "ascending"
+   ],
+   [
+    "gp",
+    "B",
+    "e5",
+    "e6"
+   ],
+   [
+    "add",
+    "B"
+   ],
+   [
+    "gp",
+    "C",
+    "e6",
+    "e7",
+    "e8"
+   ],
+   [
+    "add",
+    "C"
+   ],
+   [
+    "describe",
+    "C",
+    "ascending"
+   ],
+   [
+    "gp",
+    "I",
+    "e0",
+    "e1"
+   ],
+   [
+    "add",
+    "I"
+   ],
+   [
+    "describe",
+    "I",
+    "interlaced2"
+   ],
+   [
+    "state"
+   ],
+   [
+    "pos_at",
+    "e0",
+    "RIGHT",
+    1,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e0",
+    "RIGHT",
+    2,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e0",
+    "RIGHT",
+    3,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e0",
+    "RIGHT",
+    0,
+    "group"
+   ],
+   [
+    "pos_at",
+    "I",
+    "RIGHT",
+    1,
+    "group"
+   ],
+   [
+    "pos_at",
+    "A",
+    "RIGHT",
+    1,
+    "group"
+   ],
+   [
+    "pos_at",
+    "A",
+    "RIGHT",
+    2,
+    "group"
+   ],
+   [
+    "pos_at",
+    "A",
+    "RIGHT",
+    4,
+    "group"
+   ],
+   [
+    "pos_at",
+    "A",
+    "RIGHT",
+    6,
+    "group"
+   ],
+   [
+    "pos_at",
+    "A",
+    "RIGHT",
+    7,
+    "group"
+   ],
+   [
+    "pos_at",
+    "A",
+    "RIGHT",
+    1,
+    "element"
+   ],
+   [
+    "pos_at",
+    "A",
+    "LEFT",
+    0,
+    "group"
+   ],
+   [
+    "pos_at",
+    "A",
+    "LEFT",
+    1,
+    "group"
+   ],
+   [
+    "pos_at",
+    "A",
+    "LEFT",
+    2,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e9",
+    "LEFT",
+    1,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e9",
+    "LEFT",
+    2,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e9",
+    "LEFT",
+    3,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e9",
+    "LEFT",
+    5,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e9",
+    "LEFT",
+    6,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e9",
+    "LEFT",
+    7,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e9",
+    "LEFT",
+    1,
+    "element"
+   ],
+   [
+    "pos_at",
+    "e0",
+    "LEFT",
+    1,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e0",
+    "LEFT",
+    0,
+    "group"
+   ],
+   [
+    "pos_at",
+    "e0",
+    "UNKNOWN",
+    1,
+    "group"
+   ],
+   [
+    "pos_at_raw",
+    "e0",
+    "RIGHT",
+    2
+   ],
+   [
+    "pos_at_raw",
+    "e0",
+    "RIGHT",
+    0
+   ],
+   [
+    "pos_at_raw",
+    "e0",
+    null,
+    2
+   ],
+   [
+    "pos_at_raw",
+    null,
+    "RIGHT",
+    2
+   ],
+   [
+    "posstruct",
+    "A"
+   ],
+   [
+    "posstruct",
+    "e4"
+   ],
+   [
+    "posstruct_str",
+    "A"
+   ],
+   [
+    "posstruct_str",
+    "e4"
+   ],
+   [
+    "gp",
+    "N",
+    "A",
+    "e4"
+   ],
+   [
+    "add",
+    "N"
+   ],
+   [
+    "posstruct",
+    "N"
+   ],
+   [
+    "posstruct_str",
+    "N"
+   ],
+   [
+    "posstruct_obj",
+    "N"
+   ],
+   [
+    "posstruct_obj",
+    "A"
+   ],
+   [
+    "obj",
+    "X",
+    3,
+    4
+   ],
+   [
+    "posstruct",
+    "X"
+   ]
+  ],
+  "results": [
+   {
+    "value": 10
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 3>  [2, 3, 4]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": "Seqsee::Anchored  <5, 6>  [6, 7]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": "Seqsee::Anchored  <6, 8>  [7, 8, 9]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 1>  [1, 2]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": [
+     [
+      "A",
+      1,
+      3
+     ],
+     [
+      "B",
+      5,
+      6
+     ],
+     [
+      "C",
+      6,
+      8
+     ],
+     [
+      "I",
+      0,
+      1
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ],
+     [
+      "e6",
+      6,
+      6
+     ],
+     [
+      "e7",
+      7,
+      7
+     ],
+     [
+      "e8",
+      8,
+      8
+     ],
+     [
+      "e9",
+      9,
+      9
+     ]
+    ]
+   },
+   {
+    "value": [
+     4
+    ]
+   },
+   {
+    "value": [
+     5
+    ]
+   },
+   {
+    "value": [
+     6
+    ]
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     3
+    ]
+   },
+   {
+    "value": [
+     5
+    ]
+   },
+   {
+    "value": [
+     6
+    ]
+   },
+   {
+    "value": [
+     10
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     "huge"
+    ]
+   },
+   {
+    "value": [
+     0
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     5
+    ]
+   },
+   {
+    "value": [
+     4
+    ]
+   },
+   {
+    "value": [
+     3
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "error": "HUH?"
+   },
+   {
+    "error": "\n"
+   },
+   {
+    "error": "Need distance"
+   },
+   {
+    "error": "Need direction"
+   },
+   {
+    "error": "Need from_object"
+   },
+   {
+    "value": [
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "value": 4
+   },
+   {
+    "value": "[1, 2, 3]"
+   },
+   {
+    "value": 4
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 4>  [[2, 3, 4], 5]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     [
+      1,
+      2,
+      3
+     ],
+     4
+    ]
+   },
+   {
+    "value": "[[1, 2, 3], 4]"
+   },
+   {
+    "value": [
+     "[1, 2, 3]",
+     4
+    ]
+   },
+   {
+    "value": [
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [3, 4]"
+    ]
+   },
+   {
+    "value": null
+   }
+  ],
+  "scenario": "positions"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     1,
+     1,
+     2,
+     3,
+     3,
+     4,
+     5,
+     5
+    ]
+   ],
+   [
+    "sameness_around",
+    0
+   ],
+   [
+    "sameness_around",
+    1
+   ],
+   [
+    "sameness_around",
+    2
+   ],
+   [
+    "sameness_around",
+    3
+   ],
+   [
+    "sameness_around",
+    4
+   ],
+   [
+    "sameness_around",
+    5
+   ],
+   [
+    "sameness_around",
+    8
+   ],
+   [
+    "sameness_around",
+    7
+   ],
+   [
+    "sameness_around",
+    9
+   ],
+   [
+    "sameness_around",
+    -1
+   ],
+   [
+    "sameness_group",
+    3
+   ],
+   [
+    "sameness_group",
+    1,
+    "S1"
+   ],
+   [
+    "state"
+   ],
+   [
+    "sameness_group",
+    0
+   ],
+   [
+    "sameness_group",
+    4,
+    "S2"
+   ],
+   [
+    "obj",
+    "X",
+    5,
+    5
+   ],
+   [
+    "metonym",
+    "e7",
+    "number",
+    "x"
+   ],
+   [
+    "sameness_group",
+    8
+   ],
+   [
+    "srand",
+    1
+   ],
+   [
+    "sameness_group",
+    2
+   ],
+   [
+    "srand",
+    2
+   ],
+   [
+    "sameness_group",
+    2
+   ],
+   [
+    "srand",
+    4
+   ],
+   [
+    "sameness_group",
+    2
+   ],
+   [
+    "state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 9
+   },
+   {
+    "value": [
+     0,
+     2
+    ]
+   },
+   {
+    "value": [
+     0,
+     2
+    ]
+   },
+   {
+    "value": [
+     0,
+     2
+    ]
+   },
+   {
+    "value": [
+     3,
+     3
+    ]
+   },
+   {
+    "value": [
+     4,
+     5
+    ]
+   },
+   {
+    "value": [
+     4,
+     5
+    ]
+   },
+   {
+    "value": [
+     7,
+     8
+    ]
+   },
+   {
+    "value": [
+     7,
+     8
+    ]
+   },
+   {
+    "value": [
+     9,
+     9
+    ]
+   },
+   {
+    "value": [
+     -1,
+     -1
+    ]
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      1
+     ],
+     [
+      {
+       "cats": [
+        "sameness"
+       ],
+       "group_p": 1,
+       "live": 1,
+       "meto": null,
+       "meto_active": 0,
+       "text": "Seqsee::Anchored  <0, 2>  [1, 1, 1]"
+      }
+     ]
+    ]
+   },
+   {
+    "value": [
+     [
+      "S1",
+      0,
+      2
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ],
+     [
+      "e6",
+      6,
+      6
+     ],
+     [
+      "e7",
+      7,
+      7
+     ],
+     [
+      "e8",
+      8,
+      8
+     ]
+    ]
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      1
+     ],
+     [
+      {
+       "cats": [
+        "sameness"
+       ],
+       "group_p": 1,
+       "live": 1,
+       "meto": null,
+       "meto_active": 0,
+       "text": "Seqsee::Anchored  <4, 5>  [3, 3]"
+      }
+     ]
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [5, 5]"
+    ]
+   },
+   {
+    "error": "Can't locate object method \"find_metonym\" via package \"SCategory::Number\""
+   },
+   {
+    "value": [
+     [
+      1
+     ],
+     [
+      {
+       "cats": [
+        "sameness"
+       ],
+       "group_p": 1,
+       "live": 1,
+       "meto": null,
+       "meto_active": 0,
+       "text": "Seqsee::Anchored  <7, 8>  [5, 5]"
+      }
+     ]
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <7, 8>  [5, 5]",
+      7,
+      8
+     ],
+     [
+      "S1",
+      0,
+      2
+     ],
+     [
+      "S2",
+      4,
+      5
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ],
+     [
+      "e6",
+      6,
+      6
+     ],
+     [
+      "e7",
+      7,
+      7
+     ],
+     [
+      "e8",
+      8,
+      8
+     ]
+    ]
+   }
+  ],
+  "scenario": "sameness"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     7,
+     7,
+     7,
+     8
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "srand",
+    1
+   ],
+   [
+    "sameness_group",
+    1
+   ],
+   [
+    "rand"
+   ],
+   [
+    "state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 4
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 3>  [7, 7, 7, 8]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   },
+   {
+    "value": 0.454492444728629
+   },
+   {
+    "value": [
+     [
+      "A",
+      0,
+      3
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ]
+    ]
+   }
+  ],
+  "scenario": "sameness_covered_1"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     7,
+     7,
+     7,
+     8
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "srand",
+    2
+   ],
+   [
+    "sameness_group",
+    1
+   ],
+   [
+    "rand"
+   ],
+   [
+    "state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 4
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 3>  [7, 7, 7, 8]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      1
+     ],
+     [
+      {
+       "cats": [
+        "sameness"
+       ],
+       "group_p": 1,
+       "live": 1,
+       "meto": null,
+       "meto_active": 0,
+       "text": "Seqsee::Anchored  <0, 2>  [7, 7, 7]"
+      }
+     ]
+    ]
+   },
+   {
+    "value": 0.573262780710262
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <0, 2>  [7, 7, 7]",
+      0,
+      2
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ]
+    ]
+   }
+  ],
+  "scenario": "sameness_covered_2"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     7,
+     7,
+     7,
+     8
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "srand",
+    3
+   ],
+   [
+    "sameness_group",
+    1
+   ],
+   [
+    "rand"
+   ],
+   [
+    "state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 4
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 3>  [7, 7, 7, 8]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   },
+   {
+    "value": 0.31170834325361
+   },
+   {
+    "value": [
+     [
+      "A",
+      0,
+      3
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ]
+    ]
+   }
+  ],
+  "scenario": "sameness_covered_3"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     7,
+     7,
+     7,
+     8
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "srand",
+    4
+   ],
+   [
+    "sameness_group",
+    1
+   ],
+   [
+    "rand"
+   ],
+   [
+    "state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 4
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 3>  [7, 7, 7, 8]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   },
+   {
+    "value": 0.0501539057969573
+   },
+   {
+    "value": [
+     [
+      "A",
+      0,
+      3
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ]
+    ]
+   }
+  ],
+  "scenario": "sameness_covered_4"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     7,
+     7,
+     7,
+     8
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "srand",
+    5
+   ],
+   [
+    "sameness_group",
+    1
+   ],
+   [
+    "rand"
+   ],
+   [
+    "state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 4
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 3>  [7, 7, 7, 8]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      1
+     ],
+     [
+      {
+       "cats": [
+        "sameness"
+       ],
+       "group_p": 1,
+       "live": 1,
+       "meto": null,
+       "meto_active": 0,
+       "text": "Seqsee::Anchored  <0, 2>  [7, 7, 7]"
+      }
+     ]
+    ]
+   },
+   {
+    "value": 0.788599468340305
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <0, 2>  [7, 7, 7]",
+      0,
+      2
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ]
+    ]
+   }
+  ],
+  "scenario": "sameness_covered_5"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     7,
+     7,
+     7,
+     8
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "srand",
+    6
+   ],
+   [
+    "sameness_group",
+    1
+   ],
+   [
+    "rand"
+   ],
+   [
+    "state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 4
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 3>  [7, 7, 7, 8]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   },
+   {
+    "value": 0.977444765946956
+   },
+   {
+    "value": [
+     [
+      "A",
+      0,
+      3
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ]
+    ]
+   }
+  ],
+  "scenario": "sameness_covered_6"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     2,
+     2,
+     2,
+     5,
+     5
+    ]
+   ],
+   [
+    "gp",
+    "D",
+    "e3",
+    "e4"
+   ],
+   [
+    "add",
+    "D"
+   ],
+   [
+    "describe",
+    "D",
+    "sameness"
+   ],
+   [
+    "metonym",
+    "D",
+    "sameness",
+    "each"
+   ],
+   [
+    "info",
+    "D"
+   ],
+   [
+    "sameness_group",
+    0
+   ],
+   [
+    "sameness_group",
+    3
+   ],
+   [
+    "meto_off",
+    "D"
+   ],
+   [
+    "sameness_group",
+    3
+   ]
+  ],
+  "results": [
+   {
+    "value": 5
+   },
+   {
+    "value": "Seqsee::Anchored  <3, 4>  [5, 5]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": null
+   },
+   {
+    "value": {
+     "cats": [
+      "sameness"
+     ],
+     "group_p": 1,
+     "live": 1,
+     "meto": [
+      "sameness",
+      "each"
+     ],
+     "meto_active": 1,
+     "text": "Seqsee::Anchored  <3, 4>  [5, 5] --*-> 5"
+    }
+   },
+   {
+    "value": [
+     [
+      1
+     ],
+     [
+      {
+       "cats": [
+        "sameness"
+       ],
+       "group_p": 1,
+       "live": 1,
+       "meto": null,
+       "meto_active": 0,
+       "text": "Seqsee::Anchored  <0, 2>  [2, 2, 2]"
+      }
+     ]
+    ]
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [],
+     []
+    ]
+   }
+  ],
+  "scenario": "sameness_metonym"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    "obj",
+    "X",
+    2,
+    3
+   ],
+   [
+    "obj",
+    "Y",
+    [
+     4,
+     5
+    ],
+    6
+   ],
+   [
+    "obj",
+    "Z",
+    3,
+    2
+   ],
+   [
+    "obj",
+    "W",
+    6,
+    7,
+    8
+   ],
+   [
+    "gp",
+    "G",
+    "e2",
+    "e3"
+   ],
+   [
+    "check_at",
+    1,
+    "RIGHT",
+    "X"
+   ],
+   [
+    "check_at",
+    2,
+    "RIGHT",
+    "X"
+   ],
+   [
+    "check_at",
+    2,
+    "LEFT",
+    "X"
+   ],
+   [
+    "check_at",
+    1,
+    "LEFT",
+    "X"
+   ],
+   [
+    "check_at",
+    0,
+    "LEFT",
+    "X"
+   ],
+   [
+    "check_at",
+    3,
+    "RIGHT",
+    "Y"
+   ],
+   [
+    "check_at",
+    5,
+    "LEFT",
+    "Y"
+   ],
+   [
+    "check_at",
+    4,
+    "RIGHT",
+    "Y"
+   ],
+   [
+    "check_at",
+    5,
+    "RIGHT",
+    "W"
+   ],
+   [
+    "check_at",
+    6,
+    "RIGHT",
+    "W"
+   ],
+   [
+    "check_at",
+    9,
+    "RIGHT",
+    "X"
+   ],
+   [
+    "check_at",
+    4,
+    "RIGHT",
+    "W"
+   ],
+   [
+    "check_at",
+    2,
+    "RIGHT",
+    "G"
+   ],
+   [
+    "check_at",
+    3,
+    "LEFT",
+    "G"
+   ],
+   [
+    "check_at",
+    2,
+    "RIGHT",
+    "e2"
+   ],
+   [
+    "check_at",
+    0,
+    "LEFT",
+    "e0"
+   ],
+   [
+    "check_at",
+    -5,
+    "RIGHT",
+    "X"
+   ],
+   [
+    "check_at",
+    -3,
+    "RIGHT",
+    "Y"
+   ],
+   [
+    "check_at",
+    -9,
+    "RIGHT",
+    "X"
+   ],
+   [
+    "check_at",
+    1,
+    "UNKNOWN",
+    "X"
+   ],
+   [
+    "check_at",
+    1,
+    null,
+    "X"
+   ],
+   [
+    "check_at",
+    null,
+    "RIGHT",
+    "X"
+   ],
+   [
+    "check_rightward",
+    1,
+    [
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    "check_rightward",
+    1,
+    [
+     2,
+     4
+    ]
+   ],
+   [
+    "check_rightward",
+    4,
+    [
+     5,
+     6,
+     7,
+     8
+    ]
+   ],
+   [
+    "check_rightward",
+    4,
+    [
+     5,
+     7,
+     7,
+     8
+    ]
+   ],
+   [
+    "check_rightward",
+    6,
+    []
+   ],
+   [
+    "check_rightward",
+    6,
+    [
+     1
+    ]
+   ],
+   [
+    "check_rightward",
+    -2,
+    [
+     5,
+     6
+    ]
+   ]
+  ],
+  "results": [
+   {
+    "value": 6
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [2, 3]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [[4, 5], 6]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [3, 2]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [6, 7, 8]"
+    ]
+   },
+   {
+    "value": "Seqsee::Anchored  <2, 3>  [3, 4]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "error": {
+     "class": "SErr::ElementsBeyondKnownSought",
+     "message": "",
+     "next_elements": [
+      7,
+      8
+     ]
+    }
+   },
+   {
+    "error": {
+     "class": "SErr::ElementsBeyondKnownSought",
+     "message": "",
+     "next_elements": [
+      6,
+      7,
+      8
+     ]
+    }
+   },
+   {
+    "error": {
+     "class": "SErr::ElementsBeyondKnownSought",
+     "message": "",
+     "next_elements": [
+      2,
+      3
+     ]
+    }
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "error": "Can't call method \"get_mag\" on an undefined value"
+   },
+   {
+    "error": "Huh?"
+   },
+   {
+    "error": "need direction"
+   },
+   {
+    "error": "Need start"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "error": {
+     "class": "SErr::ElementsBeyondKnownSought",
+     "message": "",
+     "next_elements": [
+      7,
+      8
+     ]
+    }
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "error": {
+     "class": "SErr::ElementsBeyondKnownSought",
+     "message": "",
+     "next_elements": [
+      1
+     ]
+    }
+   },
+   {
+    "value": [
+     1
+    ]
+   }
+  ],
+  "scenario": "check_at_location"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     3,
+     3,
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    "rapid",
+    "R1",
+    [
+     [
+      "ascending"
+     ],
+     "e0",
+     "e1",
+     "e2"
+    ]
+   ],
+   [
+    "rapid",
+    "R2",
+    [
+     [
+      "sameness",
+      "metonym",
+      "sameness",
+      "each"
+     ],
+     "e3",
+     "e4"
+    ]
+   ],
+   [
+    "rapid",
+    "R3",
+    [
+     [],
+     "e5",
+     [
+      [
+       "ascending"
+      ],
+      "e6",
+      "e7"
+     ]
+    ]
+   ],
+   [
+    "state"
+   ],
+   [
+    "rapid",
+    "R4",
+    [
+     [
+      "ascending"
+     ],
+     "e0",
+     "e1"
+    ]
+   ],
+   [
+    "rapid",
+    "R5",
+    [
+     [
+      "descending"
+     ],
+     "e2",
+     "e3"
+    ]
+   ],
+   [
+    "state"
+   ],
+   [
+    "rapid",
+    "R6",
+    [
+     [
+      "metonym",
+      "number",
+      "x"
+     ],
+     "e6",
+     "e7"
+    ]
+   ],
+   [
+    "rapid",
+    "R7",
+    [
+     [
+      "metonym",
+      "ascending",
+      "x"
+     ],
+     "e5",
+     "e6"
+    ]
+   ]
+  ],
+  "results": [
+   {
+    "value": 8
+   },
+   {
+    "value": {
+     "cats": [
+      "ascending"
+     ],
+     "group_p": 1,
+     "live": 1,
+     "meto": null,
+     "meto_active": 0,
+     "text": "Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    }
+   },
+   {
+    "value": {
+     "cats": [
+      "sameness"
+     ],
+     "group_p": 1,
+     "live": 1,
+     "meto": [
+      "sameness",
+      "each"
+     ],
+     "meto_active": 1,
+     "text": "Seqsee::Anchored  <3, 4>  [3, 3] --*-> 3"
+    }
+   },
+   {
+    "value": {
+     "cats": [],
+     "group_p": 1,
+     "live": 1,
+     "meto": null,
+     "meto_active": 0,
+     "text": "Seqsee::Anchored  <5, 7>  [4, [5, 6]]"
+    }
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <6, 7>  [5, 6]",
+      6,
+      7
+     ],
+     [
+      "R1",
+      0,
+      2
+     ],
+     [
+      "R2",
+      3,
+      4
+     ],
+     [
+      "R3",
+      5,
+      7
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ],
+     [
+      "e6",
+      6,
+      6
+     ],
+     [
+      "e7",
+      7,
+      7
+     ]
+    ]
+   },
+   {
+    "value": {
+     "cats": [
+      "ascending"
+     ],
+     "group_p": 1,
+     "live": 1,
+     "meto": null,
+     "meto_active": 0,
+     "text": "Seqsee::Anchored  <0, 1>  [1, 2]"
+    }
+   },
+   {
+    "value": {
+     "cats": [],
+     "group_p": 1,
+     "live": 1,
+     "meto": null,
+     "meto_active": 0,
+     "text": "Seqsee::Anchored  <2, 3>  [3, 3]"
+    }
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <6, 7>  [5, 6]",
+      6,
+      7
+     ],
+     [
+      "R2",
+      3,
+      4
+     ],
+     [
+      "R3",
+      5,
+      7
+     ],
+     [
+      "R4",
+      0,
+      1
+     ],
+     [
+      "R5",
+      2,
+      3
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ],
+     [
+      "e6",
+      6,
+      6
+     ],
+     [
+      "e7",
+      7,
+      7
+     ]
+    ]
+   },
+   {
+    "error": "Can't locate object method \"get_mag\" via package \"Seqsee::Anchored\""
+   },
+   {
+    "error": "Can't locate object method \"find_metonym\" via package \"SCategory::Ascending\""
+   }
+  ],
+  "scenario": "rapid_create"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     4,
+     4,
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e0",
+    "e1",
+    "e2"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "describe",
+    "A",
+    "ascending"
+   ],
+   [
+    "reln_scheme",
+    "A"
+   ],
+   [
+    "gp",
+    "B",
+    "e6",
+    "e7",
+    "e8"
+   ],
+   [
+    "add",
+    "B"
+   ],
+   [
+    "copy_attr",
+    "A",
+    "B"
+   ],
+   [
+    "gp",
+    "S",
+    "e3",
+    "e4",
+    "e5"
+   ],
+   [
+    "add",
+    "S"
+   ],
+   [
+    "describe",
+    "S",
+    "sameness"
+   ],
+   [
+    "metonym",
+    "S",
+    "sameness",
+    "each"
+   ],
+   [
+    "gp",
+    "T",
+    "e3",
+    "e4"
+   ],
+   [
+    "copy_attr",
+    "S",
+    "T"
+   ],
+   [
+    "obj",
+    "X",
+    4,
+    4,
+    4
+   ],
+   [
+    "copy_attr",
+    "S",
+    "X"
+   ],
+   [
+    "copy_attr",
+    "A",
+    "S"
+   ],
+   [
+    "copy_attr",
+    "e0",
+    "e1"
+   ],
+   [
+    "copy_attr_missing",
+    "A",
+    "nothing"
+   ],
+   [
+    "copy_attr_missing",
+    "nothing",
+    "A"
+   ],
+   [
+    "meto_off",
+    "S"
+   ],
+   [
+    "obj",
+    "Y",
+    4,
+    4,
+    4
+   ],
+   [
+    "copy_attr",
+    "S",
+    "Y"
+   ]
+  ],
+  "results": [
+   {
+    "value": 9
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "Seqsee::Anchored  <6, 8>  [1, 2, 3]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     1,
+     {
+      "cats": [
+       "ascending"
+      ],
+      "group_p": 1,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Anchored  <6, 8>  [1, 2, 3]"
+     }
+    ]
+   },
+   {
+    "value": "Seqsee::Anchored  <3, 5>  [4, 4, 4]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "Seqsee::Anchored  <3, 4>  [4, 4]"
+   },
+   {
+    "value": [
+     1,
+     {
+      "cats": [
+       "sameness"
+      ],
+      "group_p": 1,
+      "live": 0,
+      "meto": [
+       "sameness",
+       "each"
+      ],
+      "meto_active": 1,
+      "text": "Seqsee::Anchored  <3, 4>  [4, 4] --*-> 4"
+     }
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [4, 4, 4]"
+    ]
+   },
+   {
+    "value": [
+     1,
+     {
+      "cats": [
+       "sameness"
+      ],
+      "group_p": 1,
+      "live": 0,
+      "meto": [
+       "sameness",
+       "each"
+      ],
+      "meto_active": 1,
+      "text": "Seqsee::Object [4, 4, 4]"
+     }
+    ]
+   },
+   {
+    "value": [
+     1,
+     {
+      "cats": [
+       "ascending",
+       "sameness"
+      ],
+      "group_p": 1,
+      "live": 1,
+      "meto": [
+       "sameness",
+       "each"
+      ],
+      "meto_active": 1,
+      "text": "Seqsee::Anchored  <3, 5>  [4, 4, 4] --*-> 4"
+     }
+    ]
+   },
+   {
+    "value": [
+     1,
+     {
+      "cats": [
+       "number"
+      ],
+      "group_p": 0,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Element:[1,1] 2"
+     }
+    ]
+   },
+   {
+    "error": "Missing from or to"
+   },
+   {
+    "error": "Missing from or to"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [4, 4, 4]"
+    ]
+   },
+   {
+    "value": [
+     1,
+     {
+      "cats": [
+       "ascending",
+       "sameness"
+      ],
+      "group_p": 1,
+      "live": 0,
+      "meto": [
+       "sameness",
+       "each"
+      ],
+      "meto_active": 0,
+      "text": "Seqsee::Object [4, 4, 4]"
+     }
+    ]
+   }
+  ],
+  "scenario": "copy_attributes"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   ],
+   [
+    "obj",
+    "X",
+    2,
+    3
+   ],
+   [
+    "obj",
+    "Y",
+    [
+     4,
+     5
+    ],
+    6
+   ],
+   [
+    "obj",
+    "E",
+    3
+   ],
+   [
+    "obj",
+    "Z",
+    3,
+    4,
+    9
+   ],
+   [
+    "obj",
+    "W",
+    7,
+    8
+   ],
+   [
+    "obj",
+    "Q",
+    6,
+    7
+   ],
+   [
+    "describe",
+    "X",
+    "ascending"
+   ],
+   [
+    "describe",
+    "Y",
+    "ascending"
+   ],
+   [
+    "plonk",
+    "pE",
+    2,
+    "RIGHT",
+    "E"
+   ],
+   [
+    "plonk",
+    "pE2",
+    3,
+    "RIGHT",
+    "E"
+   ],
+   [
+    "plonk",
+    "pE3",
+    2,
+    "LEFT",
+    "E"
+   ],
+   [
+    "plonk",
+    "pE4",
+    -5,
+    "RIGHT",
+    "E"
+   ],
+   [
+    "plonk",
+    "pX",
+    1,
+    "RIGHT",
+    "X"
+   ],
+   [
+    "state"
+   ],
+   [
+    "plonk",
+    "pX2",
+    1,
+    "RIGHT",
+    "X"
+   ],
+   [
+    "plonk",
+    "pX3",
+    2,
+    "LEFT",
+    "X"
+   ],
+   [
+    "plonk",
+    "pX4",
+    0,
+    "LEFT",
+    "X"
+   ],
+   [
+    "plonk",
+    "pX5",
+    2,
+    "RIGHT",
+    "X"
+   ],
+   [
+    "plonk",
+    "pY",
+    3,
+    "RIGHT",
+    "Y"
+   ],
+   [
+    "state"
+   ],
+   [
+    "plonk",
+    "pY2",
+    5,
+    "LEFT",
+    "Y"
+   ],
+   [
+    "plonk",
+    "pZ",
+    2,
+    "RIGHT",
+    "Z"
+   ],
+   [
+    "plonk",
+    "pW",
+    6,
+    "RIGHT",
+    "W"
+   ],
+   [
+    "plonk",
+    "pQ",
+    5,
+    "RIGHT",
+    "Q"
+   ],
+   [
+    "plonk",
+    "pQ2",
+    6,
+    "LEFT",
+    "Q"
+   ],
+   [
+    "state"
+   ],
+   [
+    "plonk",
+    "pE5",
+    9,
+    "RIGHT",
+    "E"
+   ]
+  ],
+  "results": [
+   {
+    "value": 7
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [2, 3]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [[4, 5], 6]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Element",
+     "Seqsee::Element:[0,0] 3"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [3, 4, 9]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [7, 8]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [6, 7]"
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": 0
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [
+       "number"
+      ],
+      "group_p": 0,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Element:[2,2] 3"
+     },
+     "ok": 1,
+     "plonked": "E",
+     "resultant": "e2"
+    }
+   },
+   {
+    "value": {
+     "copy": 0,
+     "ok": 0,
+     "plonked": "E",
+     "resultant": null
+    }
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [
+       "number"
+      ],
+      "group_p": 0,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Element:[2,2] 3"
+     },
+     "ok": 1,
+     "plonked": "E",
+     "resultant": "e2"
+    }
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [
+       "number"
+      ],
+      "group_p": 0,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Element:[2,2] 3"
+     },
+     "ok": 1,
+     "plonked": "E",
+     "resultant": "e2"
+    }
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [
+       "ascending"
+      ],
+      "group_p": 1,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Anchored  <1, 2>  [2, 3]"
+     },
+     "ok": 1,
+     "plonked": "X",
+     "resultant": "pX"
+    }
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ],
+     [
+      "e6",
+      6,
+      6
+     ],
+     [
+      "pX",
+      1,
+      2
+     ]
+    ]
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [
+       "ascending"
+      ],
+      "group_p": 1,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Anchored  <1, 2>  [2, 3]"
+     },
+     "ok": 1,
+     "plonked": "X",
+     "resultant": "pX"
+    }
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [
+       "ascending"
+      ],
+      "group_p": 1,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Anchored  <1, 2>  [2, 3]"
+     },
+     "ok": 1,
+     "plonked": "X",
+     "resultant": "pX"
+    }
+   },
+   {
+    "value": {
+     "copy": 0,
+     "ok": 0,
+     "plonked": "X",
+     "resultant": null
+    }
+   },
+   {
+    "value": {
+     "copy": 0,
+     "ok": 0,
+     "plonked": "X",
+     "resultant": null
+    }
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [],
+      "group_p": 1,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Anchored  <3, 5>  [[4, 5], 6]"
+     },
+     "ok": 1,
+     "plonked": "Y",
+     "resultant": "pY"
+    }
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <3, 4>  [4, 5]",
+      3,
+      4
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ],
+     [
+      "e6",
+      6,
+      6
+     ],
+     [
+      "pX",
+      1,
+      2
+     ],
+     [
+      "pY",
+      3,
+      5
+     ]
+    ]
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [],
+      "group_p": 1,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Anchored  <3, 5>  [[4, 5], 6]"
+     },
+     "ok": 1,
+     "plonked": "Y",
+     "resultant": "pY"
+    }
+   },
+   {
+    "value": {
+     "copy": 0,
+     "ok": 0,
+     "plonked": "Z",
+     "resultant": null
+    }
+   },
+   {
+    "value": {
+     "copy": 0,
+     "ok": 0,
+     "plonked": "W",
+     "resultant": null
+    }
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [],
+      "group_p": 1,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Anchored  <5, 6>  [6, 7]"
+     },
+     "ok": 1,
+     "plonked": "Q",
+     "resultant": "pQ"
+    }
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [],
+      "group_p": 1,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Anchored  <5, 6>  [6, 7]"
+     },
+     "ok": 1,
+     "plonked": "Q",
+     "resultant": "pQ"
+    }
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <3, 4>  [4, 5]",
+      3,
+      4
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ],
+     [
+      "e6",
+      6,
+      6
+     ],
+     [
+      "pQ",
+      5,
+      6
+     ],
+     [
+      "pX",
+      1,
+      2
+     ],
+     [
+      "pY",
+      3,
+      5
+     ]
+    ]
+   },
+   {
+    "value": {
+     "copy": 0,
+     "ok": 0,
+     "plonked": "E",
+     "resultant": null
+    }
+   }
+  ],
+  "scenario": "plonk"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   [
+    "gp",
+    "G",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "G"
+   ],
+   [
+    "obj",
+    "X",
+    2,
+    3
+   ],
+   [
+    "plonk",
+    "pX",
+    1,
+    "RIGHT",
+    "X"
+   ],
+   [
+    "obj",
+    "Y",
+    1,
+    2,
+    3,
+    4
+   ],
+   [
+    "plonk",
+    "pY",
+    0,
+    "RIGHT",
+    "Y"
+   ],
+   [
+    "state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 5
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 3>  [2, 3, 4]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [2, 3]"
+    ]
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [],
+      "group_p": 1,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Anchored  <1, 2>  [2, 3]"
+     },
+     "ok": 1,
+     "plonked": "X",
+     "resultant": "pX"
+    }
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [1, 2, 3, 4]"
+    ]
+   },
+   {
+    "value": {
+     "copy": 1,
+     "info": {
+      "cats": [],
+      "group_p": 1,
+      "live": 1,
+      "meto": null,
+      "meto_active": 0,
+      "text": "Seqsee::Anchored  <0, 3>  [1, 2, 3, 4]"
+     },
+     "ok": 1,
+     "plonked": "Y",
+     "resultant": "pY"
+    }
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "pY",
+      0,
+      3
+     ]
+    ]
+   }
+  ],
+  "scenario": "plonk_conflict"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e1",
+    "e2"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "obj",
+    "X",
+    2,
+    3
+   ],
+   [
+    "obj",
+    "Y",
+    4,
+    5
+   ],
+   [
+    "obj",
+    "Z",
+    5,
+    6,
+    7
+   ],
+   [
+    "obj",
+    "V",
+    9,
+    9
+   ],
+   [
+    "srand",
+    1
+   ],
+   [
+    "something_like",
+    "X",
+    1,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "something_like",
+    "X",
+    2,
+    "LEFT",
+    0.5
+   ],
+   [
+    "something_like",
+    "Y",
+    3,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "state"
+   ],
+   [
+    "something_like",
+    "Z",
+    4,
+    "RIGHT",
+    0,
+    "why"
+   ],
+   [
+    "something_like",
+    "V",
+    4,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "something_like",
+    "V",
+    4,
+    "LEFT",
+    0.5
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 6
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 2>  [2, 3]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [2, 3]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [4, 5]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [5, 6, 7]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [9, 9]"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     "A"
+    ]
+   },
+   {
+    "value": [
+     "A"
+    ]
+   },
+   {
+    "value": [
+     "?Seqsee::Anchored  <3, 4>  [4, 5]"
+    ]
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <3, 4>  [4, 5]",
+      3,
+      4
+     ],
+     [
+      "A",
+      1,
+      2
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.00176691239174431
+   }
+  ],
+  "scenario": "something_like_1"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e1",
+    "e2"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "obj",
+    "X",
+    2,
+    3
+   ],
+   [
+    "obj",
+    "Y",
+    4,
+    5
+   ],
+   [
+    "obj",
+    "Z",
+    5,
+    6,
+    7
+   ],
+   [
+    "obj",
+    "V",
+    9,
+    9
+   ],
+   [
+    "srand",
+    2
+   ],
+   [
+    "something_like",
+    "X",
+    1,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "something_like",
+    "X",
+    2,
+    "LEFT",
+    0.5
+   ],
+   [
+    "something_like",
+    "Y",
+    3,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "state"
+   ],
+   [
+    "something_like",
+    "Z",
+    4,
+    "RIGHT",
+    0,
+    "why"
+   ],
+   [
+    "something_like",
+    "V",
+    4,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "something_like",
+    "V",
+    4,
+    "LEFT",
+    0.5
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 6
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 2>  [2, 3]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [2, 3]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [4, 5]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [5, 6, 7]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [9, 9]"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     "A"
+    ]
+   },
+   {
+    "value": [
+     "A"
+    ]
+   },
+   {
+    "value": [
+     "?Seqsee::Anchored  <3, 4>  [4, 5]"
+    ]
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <3, 4>  [4, 5]",
+      3,
+      4
+     ],
+     [
+      "A",
+      1,
+      2
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.612101889954907
+   }
+  ],
+  "scenario": "something_like_2"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e1",
+    "e2"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "obj",
+    "X",
+    2,
+    3
+   ],
+   [
+    "obj",
+    "Y",
+    4,
+    5
+   ],
+   [
+    "obj",
+    "Z",
+    5,
+    6,
+    7
+   ],
+   [
+    "obj",
+    "V",
+    9,
+    9
+   ],
+   [
+    "srand",
+    3
+   ],
+   [
+    "something_like",
+    "X",
+    1,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "something_like",
+    "X",
+    2,
+    "LEFT",
+    0.5
+   ],
+   [
+    "something_like",
+    "Y",
+    3,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "state"
+   ],
+   [
+    "something_like",
+    "Z",
+    4,
+    "RIGHT",
+    0,
+    "why"
+   ],
+   [
+    "something_like",
+    "V",
+    4,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "something_like",
+    "V",
+    4,
+    "LEFT",
+    0.5
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 6
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 2>  [2, 3]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [2, 3]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [4, 5]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [5, 6, 7]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [9, 9]"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     "A"
+    ]
+   },
+   {
+    "value": [
+     "A"
+    ]
+   },
+   {
+    "value": [
+     "?Seqsee::Anchored  <3, 4>  [4, 5]"
+    ]
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <3, 4>  [4, 5]",
+      3,
+      4
+     ],
+     [
+      "A",
+      1,
+      2
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.433702219495885
+   }
+  ],
+  "scenario": "something_like_3"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e1",
+    "e2"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "obj",
+    "X",
+    2,
+    3
+   ],
+   [
+    "obj",
+    "Y",
+    4,
+    5
+   ],
+   [
+    "obj",
+    "Z",
+    5,
+    6,
+    7
+   ],
+   [
+    "obj",
+    "V",
+    9,
+    9
+   ],
+   [
+    "srand",
+    4
+   ],
+   [
+    "something_like",
+    "X",
+    1,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "something_like",
+    "X",
+    2,
+    "LEFT",
+    0.5
+   ],
+   [
+    "something_like",
+    "Y",
+    3,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "state"
+   ],
+   [
+    "something_like",
+    "Z",
+    4,
+    "RIGHT",
+    0,
+    "why"
+   ],
+   [
+    "something_like",
+    "V",
+    4,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "something_like",
+    "V",
+    4,
+    "LEFT",
+    0.5
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 6
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 2>  [2, 3]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [2, 3]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [4, 5]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [5, 6, 7]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [9, 9]"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     "A"
+    ]
+   },
+   {
+    "value": [
+     "A"
+    ]
+   },
+   {
+    "value": [
+     "?Seqsee::Anchored  <3, 4>  [4, 5]"
+    ]
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Anchored  <3, 4>  [4, 5]",
+      3,
+      4
+     ],
+     [
+      "A",
+      1,
+      2
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.67377560762392
+   }
+  ],
+  "scenario": "something_like_4"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "obj",
+    "X",
+    2,
+    3
+   ],
+   [
+    "something_like",
+    null,
+    1,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "something_like",
+    "X",
+    null,
+    "RIGHT",
+    0.5
+   ],
+   [
+    "something_like",
+    "X",
+    1,
+    null,
+    0.5
+   ],
+   [
+    "something_like",
+    "X",
+    1,
+    "RIGHT",
+    null
+   ],
+   [
+    "something_like",
+    "X",
+    1,
+    "UNKNOWN",
+    0.5
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [2, 3]"
+    ]
+   },
+   {
+    "error": ""
+   },
+   {
+    "error": ""
+   },
+   {
+    "error": ""
+   },
+   {
+    "error": ""
+   },
+   {
+    "error": "Huh?"
+   }
+  ],
+  "scenario": "something_like_errors"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    "gp",
+    "A",
+    "e1",
+    "e2"
+   ],
+   [
+    "add",
+    "A"
+   ],
+   [
+    "gp",
+    "B",
+    "e3",
+    "e4",
+    "e5"
+   ],
+   [
+    "add",
+    "B"
+   ],
+   [
+    "obj",
+    "X",
+    2,
+    3
+   ],
+   [
+    "obj",
+    "Y",
+    4,
+    5
+   ],
+   [
+    "obj",
+    "Z",
+    5,
+    6,
+    7,
+    8
+   ],
+   [
+    "obj",
+    "T",
+    4,
+    5,
+    6
+   ],
+   [
+    "look_like",
+    "X",
+    1,
+    "RIGHT"
+   ],
+   [
+    "look_like",
+    "X",
+    2,
+    "LEFT"
+   ],
+   [
+    "look_like",
+    "Y",
+    3,
+    "RIGHT"
+   ],
+   [
+    "look_like",
+    "T",
+    3,
+    "RIGHT"
+   ],
+   [
+    "look_like",
+    "T",
+    5,
+    "LEFT"
+   ],
+   [
+    "look_like",
+    "Z",
+    4,
+    "RIGHT"
+   ],
+   [
+    "look_like",
+    "Y",
+    1,
+    "RIGHT"
+   ],
+   [
+    "look_like",
+    "X",
+    0,
+    "RIGHT"
+   ],
+   [
+    "look_like",
+    "X",
+    1,
+    "UNKNOWN"
+   ],
+   [
+    "look_like",
+    null,
+    1,
+    "RIGHT"
+   ],
+   [
+    "look_like",
+    "X",
+    1,
+    null
+   ],
+   [
+    "state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 6
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 2>  [2, 3]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": "Seqsee::Anchored  <3, 5>  [4, 5, 6]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [2, 3]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [4, 5]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [5, 6, 7, 8]"
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Object",
+     "Seqsee::Object [4, 5, 6]"
+    ]
+   },
+   {
+    "value": {
+     "literally_present": [
+      1,
+      "RIGHT",
+      "X"
+     ],
+     "potential": [
+      "e1"
+     ],
+     "probable": [
+      "A"
+     ],
+     "to_ask": null
+    }
+   },
+   {
+    "value": {
+     "literally_present": [
+      2,
+      "LEFT",
+      "X"
+     ],
+     "potential": [
+      "e2"
+     ],
+     "probable": [
+      "A"
+     ],
+     "to_ask": null
+    }
+   },
+   {
+    "value": {
+     "literally_present": [
+      3,
+      "RIGHT",
+      "Y"
+     ],
+     "potential": [
+      "B",
+      "e3"
+     ],
+     "probable": [],
+     "to_ask": null
+    }
+   },
+   {
+    "value": {
+     "literally_present": [
+      3,
+      "RIGHT",
+      "T"
+     ],
+     "potential": [
+      "e3"
+     ],
+     "probable": [
+      "B"
+     ],
+     "to_ask": null
+    }
+   },
+   {
+    "value": {
+     "literally_present": [
+      5,
+      "LEFT",
+      "T"
+     ],
+     "potential": [
+      "e5"
+     ],
+     "probable": [
+      "B"
+     ],
+     "to_ask": null
+    }
+   },
+   {
+    "value": {
+     "literally_present": null,
+     "potential": [
+      "e4"
+     ],
+     "probable": [],
+     "to_ask": {
+      "exception": {
+       "class": "SErr::ElementsBeyondKnownSought",
+       "message": "",
+       "next_elements": [
+        7,
+        8
+       ]
+      },
+      "expected": "Z",
+      "start": 4
+     }
+    }
+   },
+   {
+    "value": {
+     "literally_present": null,
+     "potential": [
+      "A",
+      "e1"
+     ],
+     "probable": [],
+     "to_ask": null
+    }
+   },
+   {
+    "error": "need start_position"
+   },
+   {
+    "error": "Huh?"
+   },
+   {
+    "error": "need object"
+   },
+   {
+    "error": "need direction"
+   },
+   {
+    "value": [
+     [
+      "A",
+      1,
+      2
+     ],
+     [
+      "B",
+      3,
+      5
+     ],
+     [
+      "e0",
+      0,
+      0
+     ],
+     [
+      "e1",
+      1,
+      1
+     ],
+     [
+      "e2",
+      2,
+      2
+     ],
+     [
+      "e3",
+      3,
+      3
+     ],
+     [
+      "e4",
+      4,
+      4
+     ],
+     [
+      "e5",
+      5,
+      5
+     ]
+    ]
+   }
+  ],
+  "scenario": "look_for_something_like"
+ }
+]

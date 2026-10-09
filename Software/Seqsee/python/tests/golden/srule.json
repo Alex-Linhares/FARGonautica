@@ -1,0 +1,2745 @@
+[
+ {
+  "err": null,
+  "kind": "create",
+  "log": [],
+  "memo": 1,
+  "n": 1,
+  "rule": {
+   "as_text": "Rule: succ",
+   "flipped": "pred",
+   "ref": "SRule",
+   "transform": "succ"
+  },
+  "type": "succ"
+ },
+ {
+  "err": null,
+  "kind": "create",
+  "log": [],
+  "memo": 1,
+  "n": 1,
+  "rule": {
+   "as_text": "Rule: pred",
+   "flipped": "succ",
+   "ref": "SRule",
+   "transform": "pred"
+  },
+  "type": "pred"
+ },
+ {
+  "err": null,
+  "kind": "create",
+  "log": [],
+  "memo": 1,
+  "n": 1,
+  "rule": {
+   "as_text": "Rule: same",
+   "flipped": "same",
+   "ref": "SRule",
+   "transform": "same"
+  },
+  "type": "same"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": ""
+  },
+  "kind": "create",
+  "log": [
+   [
+    "message",
+    "This transform is bogus! CAT=ascending ATTS=start"
+   ],
+   [
+    "message",
+    "Flip problematic!start;Mapping::Numeric=REF"
+   ],
+   [
+    "message",
+    "This transform is bogus! CAT=ascending ATTS=start"
+   ]
+  ],
+  "n": 0,
+  "type": "struct"
+ },
+ {
+  "err": null,
+  "kind": "create",
+  "log": [],
+  "memo": 1,
+  "n": 1,
+  "rule": {
+   "as_text": "Rule: [ascending] end => succ;start => succ",
+   "flipped": "[ascending] end => pred;start => pred",
+   "ref": "SRule",
+   "transform": "[ascending] end => succ;start => succ"
+  },
+  "type": "struct2"
+ },
+ {
+  "err": null,
+  "kind": "create",
+  "log": [],
+  "n": 0,
+  "type": "noflip"
+ },
+ {
+  "err": null,
+  "kind": "create",
+  "log": [],
+  "memo": 1,
+  "n": 1,
+  "rule": {
+   "as_text": "Rule: fake y",
+   "flipped": "fake yflip",
+   "ref": "SRule",
+   "transform": "fake y"
+  },
+  "type": "fakeflip"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": ""
+  },
+  "kind": "create",
+  "log": [],
+  "n": 0,
+  "type": "insane"
+ },
+ {
+  "err": null,
+  "kind": "create",
+  "log": [],
+  "memo": 1,
+  "n": 1,
+  "rule": {
+   "as_text": "Rule: succ",
+   "flipped": "pred",
+   "ref": "SRule",
+   "transform": "succ"
+  },
+  "type": "rel"
+ },
+ {
+  "err": null,
+  "kind": "create",
+  "log": [],
+  "memo": 1,
+  "n": 1,
+  "rule": {
+   "as_text": "Rule: pred",
+   "flipped": "succ",
+   "ref": "SRule",
+   "transform": "pred"
+  },
+  "type": "relpred"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "No viable candidate for call to multimethod createRule(#)"
+  },
+  "kind": "create",
+  "log": [],
+  "n": 0,
+  "type": 5
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "No viable candidate for call to multimethod createRule($)"
+  },
+  "kind": "create",
+  "log": [],
+  "n": 0,
+  "type": "str"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "No viable candidate for call to multimethod createRule($)"
+  },
+  "kind": "create",
+  "log": [],
+  "n": 0,
+  "type": null
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "No viable candidate for call to multimethod createRule(DIR)"
+  },
+  "kind": "create",
+  "log": [],
+  "n": 0,
+  "type": "RIGHT"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "No viable candidate for call to multimethod createRule(ARRAY)"
+  },
+  "kind": "create",
+  "log": [],
+  "n": 0,
+  "type": "ARRAY"
+ },
+ {
+  "kind": "create_rel_same",
+  "same": 1
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "No viable candidate for call to multimethod createRule()"
+  },
+  "kind": "create",
+  "n": 0,
+  "type": "NOARGS"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "No viable candidate for call to multimethod createRule(Mapping::Numeric,Mapping::Numeric)"
+  },
+  "kind": "create",
+  "n": 0,
+  "type": "TWOARGS"
+ },
+ {
+  "args": [],
+  "err": {
+   "class": "DIE",
+   "message": "Missing initializer label for SRule: 'transform'.\nMissing initializer label for SRule: 'flipped_transform'.\nFatal error in constructor call"
+  },
+  "kind": "rule_new"
+ },
+ {
+  "args": [
+   "transform",
+   "succ"
+  ],
+  "err": {
+   "class": "DIE",
+   "message": "Missing initializer label for SRule: 'flipped_transform'.\nFatal error in constructor call"
+  },
+  "kind": "rule_new"
+ },
+ {
+  "args": [
+   "flipped_transform",
+   "pred"
+  ],
+  "err": {
+   "class": "DIE",
+   "message": "Missing initializer label for SRule: 'transform'.\nFatal error in constructor call"
+  },
+  "kind": "rule_new"
+ },
+ {
+  "args": [
+   "transform",
+   "succ",
+   "flipped_transform",
+   "pred"
+  ],
+  "as_text": "Rule: succ",
+  "as_text_err": null,
+  "err": null,
+  "flipped": "pred",
+  "kind": "rule_new",
+  "transform": "succ"
+ },
+ {
+  "args": [
+   "transform",
+   5,
+   "flipped_transform",
+   6
+  ],
+  "as_text": null,
+  "as_text_err": {
+   "class": "DIE",
+   "message": "Can't locate object method \"as_text\" via package \"5\" (perhaps you forgot to load \"5\"?)"
+  },
+  "err": null,
+  "flipped": 6,
+  "kind": "rule_new",
+  "transform": 5
+ },
+ {
+  "args": [
+   "transform",
+   null,
+   "flipped_transform",
+   null
+  ],
+  "as_text": null,
+  "as_text_err": {
+   "class": "DIE",
+   "message": "Can't call method \"as_text\" on an undefined value"
+  },
+  "err": null,
+  "flipped": null,
+  "kind": "rule_new",
+  "transform": null
+ },
+ {
+  "kind": "rule_set",
+  "rule": {
+   "as_text": "Rule: same",
+   "flipped": null,
+   "ref": "SRule",
+   "transform": "same"
+  }
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "0"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 1
+  },
+  "args": [
+   "start",
+   "a1_0",
+   "direction",
+   "RIGHT"
+  ],
+  "err": null,
+  "kind": "create_app",
+  "rule_is": 1
+ },
+ {
+  "args": [
+   "direction",
+   "RIGHT"
+  ],
+  "err": {
+   "class": "DIE",
+   "message": "need start"
+  },
+  "kind": "create_app"
+ },
+ {
+  "args": [
+   "start",
+   "a1_0"
+  ],
+  "err": {
+   "class": "DIE",
+   "message": "need direction"
+  },
+  "kind": "create_app"
+ },
+ {
+  "args": [
+   "start",
+   0,
+   "direction",
+   "RIGHT"
+  ],
+  "err": {
+   "class": "DIE",
+   "message": "need start"
+  },
+  "kind": "create_app"
+ },
+ {
+  "args": [
+   "start",
+   "a1_0",
+   "direction",
+   "LEFT"
+  ],
+  "err": {
+   "class": "DIE",
+   "message": "Expected direction to be right!"
+  },
+  "kind": "create_app"
+ },
+ {
+  "args": [
+   "start",
+   "a1_0",
+   "direction",
+   "right"
+  ],
+  "err": {
+   "class": "DIE",
+   "message": "Expected direction to be right!"
+  },
+  "kind": "create_app"
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "items": [
+    "x"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ"
+  },
+  "args": [
+   "start",
+   "x",
+   "direction",
+   "RIGHT"
+  ],
+  "err": null,
+  "kind": "create_app",
+  "rule_is": 1
+ },
+ {
+  "args": [],
+  "err": {
+   "class": "DIE",
+   "message": "need start"
+  },
+  "kind": "create_app"
+ },
+ {
+  "args": [],
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (direction) is required"
+  },
+  "kind": "app_new"
+ },
+ {
+  "args": [
+   "rule",
+   "succ"
+  ],
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (direction) is required"
+  },
+  "kind": "app_new"
+ },
+ {
+  "args": [
+   "direction",
+   "RIGHT"
+  ],
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (rule) is required"
+  },
+  "kind": "app_new"
+ },
+ {
+  "args": [
+   "rule",
+   "succ",
+   "direction",
+   "RIGHT"
+  ],
+  "direction": "right",
+  "err": null,
+  "items_n": 0,
+  "kind": "app_new",
+  "rule": "succ"
+ },
+ {
+  "args": [
+   "rule",
+   "succ",
+   "direction",
+   "LEFT"
+  ],
+  "err": {
+   "class": "DIE",
+   "message": "Expected direction to be right!"
+  },
+  "kind": "app_new"
+ },
+ {
+  "args": [
+   "rule",
+   "succ",
+   "direction",
+   null
+  ],
+  "err": {
+   "class": "DIE",
+   "message": "Expected direction to be right!"
+  },
+  "kind": "app_new"
+ },
+ {
+  "args": [
+   "rule",
+   "succ",
+   "direction",
+   "right"
+  ],
+  "err": {
+   "class": "DIE",
+   "message": "Expected direction to be right!"
+  },
+  "kind": "app_new"
+ },
+ {
+  "args": [
+   "rule",
+   null,
+   "direction",
+   "RIGHT"
+  ],
+  "direction": "right",
+  "err": null,
+  "items_n": 0,
+  "kind": "app_new",
+  "rule": null
+ },
+ {
+  "args": [
+   "rule",
+   "succ",
+   "direction",
+   "RIGHT",
+   "items",
+   5
+  ],
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value 5"
+  },
+  "kind": "app_new"
+ },
+ {
+  "args": [
+   "rule",
+   "succ",
+   "direction",
+   "LEFT",
+   "items",
+   5
+  ],
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value 5"
+  },
+  "kind": "app_new"
+ },
+ {
+  "args": [
+   "items",
+   5
+  ],
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (direction) is required"
+  },
+  "kind": "app_new"
+ },
+ {
+  "args": [
+   "rule",
+   "succ",
+   "direction",
+   "RIGHT",
+   "items",
+   "ARRAY"
+  ],
+  "direction": "right",
+  "err": null,
+  "items_n": 0,
+  "kind": "app_new",
+  "rule": "succ"
+ },
+ {
+  "args": [
+   "rule",
+   "succ",
+   "direction",
+   "RIGHT",
+   "items",
+   null
+  ],
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value undef"
+  },
+  "kind": "app_new"
+ },
+ {
+  "args": [
+   "rule",
+   5,
+   "direction",
+   "RIGHT",
+   "items",
+   "a1_0"
+  ],
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value Seqsee::Element={ categories: { SCategory::Number=REF: SBindings=REF }, direction: undef, group_p: 0, history_obj: SHistory=\\undef, item: [ Seqsee::Element=REF ], left_edge: 0, ... }"
+  },
+  "kind": "app_new"
+ },
+ {
+  "err": null,
+  "kind": "app_new_list",
+  "ok": 1
+ },
+ {
+  "kind": "accessors",
+  "steps": [
+   [
+    "init",
+    {
+     "as_text": "SRuleApp SRuleApp=REF",
+     "direction": "right",
+     "edges": [
+      "0",
+      "1"
+     ],
+     "items": [
+      "Seqsee::Element:[0,0] 1",
+      "Seqsee::Element:[1,1] 2"
+     ],
+     "ref": "SRuleApp",
+     "rule": "Rule: succ",
+     "span": 2
+    }
+   ],
+   [
+    "push",
+    {
+     "as_text": "SRuleApp SRuleApp=REF",
+     "direction": "right",
+     "edges": [
+      "0",
+      "2"
+     ],
+     "items": [
+      "Seqsee::Element:[0,0] 1",
+      "Seqsee::Element:[1,1] 2",
+      "Seqsee::Element:[2,2] 3"
+     ],
+     "ref": "SRuleApp",
+     "rule": "Rule: succ",
+     "span": 3
+    }
+   ],
+   [
+    "unshift",
+    {
+     "as_text": "SRuleApp SRuleApp=REF",
+     "direction": "right",
+     "edges": [
+      "5",
+      "2"
+     ],
+     "items": [
+      "Seqsee::Element:[5,5] 0",
+      "Seqsee::Element:[0,0] 1",
+      "Seqsee::Element:[1,1] 2",
+      "Seqsee::Element:[2,2] 3"
+     ],
+     "ref": "SRuleApp",
+     "rule": "Rule: succ",
+     "span": -2
+    }
+   ],
+   [
+    "set_items",
+    {
+     "as_text": "SRuleApp SRuleApp=REF",
+     "direction": "right",
+     "edges": [
+      "1",
+      "1"
+     ],
+     "items": [
+      "Seqsee::Element:[1,1] 2"
+     ],
+     "ref": "SRuleApp",
+     "rule": "Rule: succ",
+     "span": 1
+    }
+   ],
+   [
+    "set_items_bad",
+    {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value 5"
+    },
+    {
+     "as_text": "SRuleApp SRuleApp=REF",
+     "direction": "right",
+     "edges": [
+      "1",
+      "1"
+     ],
+     "items": [
+      "Seqsee::Element:[1,1] 2"
+     ],
+     "ref": "SRuleApp",
+     "rule": "Rule: succ",
+     "span": 1
+    }
+   ],
+   [
+    "set_direction",
+    {
+     "as_text": "SRuleApp SRuleApp=REF",
+     "direction": "left",
+     "edges": [
+      "1",
+      "1"
+     ],
+     "items": [
+      "Seqsee::Element:[1,1] 2"
+     ],
+     "ref": "SRuleApp",
+     "rule": "Rule: succ",
+     "span": 1
+    }
+   ],
+   [
+    "set_rule",
+    {
+     "as_text": "SRuleApp SRuleApp=REF",
+     "direction": "left",
+     "edges": [
+      "1",
+      "1"
+     ],
+     "items": [
+      "Seqsee::Element:[1,1] 2"
+     ],
+     "ref": "SRuleApp",
+     "rule": "Rule: pred",
+     "span": 1
+    }
+   ],
+   [
+    "get_items_ref",
+    "ARRAY",
+    1
+   ],
+   [
+    "empty_edges",
+    {
+     "class": "DIE",
+     "message": "Can't call method \"get_left_edge\" on an undefined value"
+    }
+   ],
+   [
+    "empty_span",
+    {
+     "class": "DIE",
+     "message": "Can't call method \"get_left_edge\" on an undefined value"
+    }
+   ]
+  ]
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 1,
+  "objects": [
+   "a1_0",
+   "a2_1",
+   "a3_2"
+  ],
+  "rule_is": 1,
+  "type": "succ"
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "1"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 2
+  },
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 1,
+  "objects": [
+   "a1_0",
+   "a2_1"
+  ],
+  "rule_is": 1,
+  "type": "succ"
+ },
+ {
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "a1_0",
+   "a2_1",
+   "a4_2"
+  ],
+  "type": "succ"
+ },
+ {
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "a1_0",
+   "a3_2",
+   "a5_4"
+  ],
+  "type": "succ"
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "5"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[2,2] 2",
+    "Seqsee::Element:[5,5] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 6
+  },
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 1,
+  "objects": [
+   "a1_0",
+   "a2_2",
+   "a3_5"
+  ],
+  "rule_is": 1,
+  "type": "succ"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "Need at least 2"
+  },
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "a1_0"
+  ],
+  "type": "succ"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "Need at least 2"
+  },
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [],
+  "type": "succ"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "Expected direction to be right!"
+  },
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "a1_4",
+   "a2_3",
+   "a3_2"
+  ],
+  "type": "succ"
+ },
+ {
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "a1_0",
+   "a2_0"
+  ],
+  "type": "succ"
+ },
+ {
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "a1_0",
+   "a2_3",
+   "a3_2"
+  ],
+  "type": "succ"
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 3",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 1"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: pred",
+   "span": 3
+  },
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 1,
+  "objects": [
+   "a3_0",
+   "a2_1",
+   "a1_2"
+  ],
+  "rule_is": 1,
+  "type": "pred"
+ },
+ {
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "a1_0",
+   "a2_1"
+  ],
+  "type": "pred"
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "3"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 2",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 2",
+    "Seqsee::Element:[3,3] 2"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: same",
+   "span": 4
+  },
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 1,
+  "objects": [
+   "a2_0",
+   "a2_1",
+   "a2_2",
+   "a2_3"
+  ],
+  "rule_is": 1,
+  "type": "same"
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "5"
+   ],
+   "items": [
+    "Seqsee::Anchored  <0, 1>  [1, 2]",
+    "Seqsee::Anchored  <2, 3>  [2, 3]",
+    "Seqsee::Anchored  <4, 5>  [3, 4]"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: [ascending] end => succ;start => succ",
+   "span": 6
+  },
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 1,
+  "objects": [
+   "g(a1_0,a2_1)",
+   "g(a2_2,a3_3)",
+   "g(a3_4,a4_5)"
+  ],
+  "rule_is": 1,
+  "type": "struct2"
+ },
+ {
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "g(a1_0,a2_1)",
+   "g(a2_2,a3_3)",
+   "g(a4_4,a5_5)"
+  ],
+  "type": "struct2"
+ },
+ {
+  "err": null,
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "g(a1_0,a2_1)",
+   "g(a2_2,a3_3)"
+  ],
+  "type": "succ"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "No viable candidate for call to multimethod ApplyMapping(FakeMapping,Seqsee::Element)"
+  },
+  "kind": "check_app",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "a1_0",
+   "a2_1"
+  ],
+  "type": "fakeflip"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "need objects"
+  },
+  "kind": "check_app_noobjects"
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    8,
+    5,
+    "right",
+    21.4285714285714,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6",
+     "Seqsee::Element:[4,4] 7"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "r3",
+  "ret": "FOUND"
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    8,
+    5,
+    "right",
+    21.4285714285714,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6",
+     "Seqsee::Element:[4,4] 7"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "r3s0",
+  "ret": "FOUND"
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    7,
+    4,
+    "right",
+    21.4285714285714,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6",
+     "Seqsee::Element:[4,4] 7"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "r3s1",
+  "ret": "FOUND"
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    6,
+    3,
+    "right",
+    21.4285714285714,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6",
+     "Seqsee::Element:[4,4] 7"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "r3s2",
+  "ret": "FOUND"
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [],
+  "n": 0,
+  "name": "r3s3",
+  "ret": null
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [],
+  "n": 0,
+  "name": "r3s9",
+  "ret": null
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    4,
+    1,
+    "left",
+    21.4285714285714,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6",
+     "Seqsee::Element:[4,4] 7"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "l3",
+  "ret": "FOUND"
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    5,
+    2,
+    "left",
+    21.4285714285714,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6",
+     "Seqsee::Element:[4,4] 7"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "l3s1",
+  "ret": "FOUND"
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [],
+  "n": 0,
+  "name": "l3edge",
+  "ret": null
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    4,
+    5,
+    "right",
+    21.4285714285714,
+    "",
+    [
+     "Seqsee::Element:[2,2] 7",
+     "Seqsee::Element:[3,3] 6",
+     "Seqsee::Element:[4,4] 5"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "pred_r",
+  "ret": "FOUND"
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    8,
+    1,
+    "left",
+    21.4285714285714,
+    "",
+    [
+     "Seqsee::Element:[2,2] 7",
+     "Seqsee::Element:[3,3] 6",
+     "Seqsee::Element:[4,4] 5"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "pred_l",
+  "ret": "FOUND"
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    "3",
+    3,
+    "right",
+    14.2857142857143,
+    "",
+    [
+     "Seqsee::Element:[1,1] 3",
+     "Seqsee::Element:[2,2] 3"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "same_r",
+  "ret": "FOUND"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "need direction_to_extend_in"
+  },
+  "kind": "find_ext",
+  "log": [],
+  "n": 0,
+  "name": "nodir",
+  "ret": null
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "funny direction to extnd in!!"
+  },
+  "kind": "find_ext",
+  "log": [],
+  "n": 0,
+  "name": "unknown",
+  "ret": null
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [],
+  "n": 0,
+  "name": "groups_num",
+  "ret": null
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    "[3, 4]",
+    4,
+    "right",
+    28.5714285714286,
+    "",
+    [
+     "Seqsee::Anchored  <0, 1>  [1, 2]",
+     "Seqsee::Anchored  <2, 3>  [2, 3]"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "groups_struct",
+  "ret": "FOUND"
+ },
+ {
+  "err": null,
+  "kind": "find_ext",
+  "log": [
+   [
+    "gsl",
+    "[1, 2]",
+    1,
+    "left",
+    28.5714285714286,
+    "",
+    [
+     "Seqsee::Anchored  <2, 3>  [2, 3]",
+     "Seqsee::Anchored  <4, 5>  [3, 4]"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "groups_struct_l",
+  "ret": "FOUND"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "No viable candidate for call to multimethod ApplyMapping(FakeMapping,Seqsee::Element)"
+  },
+  "kind": "find_ext",
+  "log": [],
+  "n": 0,
+  "name": "fake_r",
+  "ret": null
+ },
+ {
+  "err": null,
+  "kind": "find_ext_odd",
+  "log": [],
+  "n": 0,
+  "name": "noflip_LEFT"
+ },
+ {
+  "err": null,
+  "kind": "find_ext_odd",
+  "log": [
+   [
+    "gsl",
+    7,
+    4,
+    "right",
+    14.2857142857143,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "noflip_RIGHT"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "Strange transform: 5"
+  },
+  "kind": "find_ext_odd",
+  "log": [],
+  "n": 0,
+  "name": "strange"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "Strange transform: "
+  },
+  "kind": "find_ext_odd",
+  "log": [],
+  "n": 0,
+  "name": "strange_empty"
+ },
+ {
+  "err": null,
+  "kind": "find_ext_odd",
+  "log": [
+   [
+    "gsl",
+    7,
+    4,
+    "right",
+    14.2857142857143,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6"
+    ]
+   ]
+  ],
+  "n": 1,
+  "name": "gsl_undef"
+ },
+ {
+  "count": 0,
+  "kind": "find_ext_count",
+  "log": [
+   [
+    "gsl",
+    7,
+    4,
+    "right",
+    100,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6"
+    ]
+   ]
+  ]
+ },
+ {
+  "count": 2,
+  "kind": "find_ext_count",
+  "log": [
+   [
+    "gsl",
+    7,
+    4,
+    "right",
+    33.3333333333333,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6"
+    ]
+   ]
+  ]
+ },
+ {
+  "count": 10,
+  "kind": "find_ext_count",
+  "log": [
+   [
+    "gsl",
+    7,
+    4,
+    "right",
+    9.09090909090909,
+    "",
+    [
+     "Seqsee::Element:[2,2] 5",
+     "Seqsee::Element:[3,3] 6"
+    ]
+   ]
+  ]
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "10",
+    "12"
+   ],
+   "items": [
+    "Seqsee::Element:[10,10] 1",
+    "Seqsee::Element:[11,11] 2",
+    "Seqsee::Element:[12,12] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": null,
+  "find": [
+   [
+    "RIGHT",
+    0,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      4,
+      13,
+      "right",
+      21.4285714285714,
+      "",
+      [
+       "Seqsee::Element:[10,10] 1",
+       "Seqsee::Element:[11,11] 2",
+       "Seqsee::Element:[12,12] 3"
+      ]
+     ]
+    ]
+   ],
+   [
+    "RIGHT",
+    1,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      3,
+      12,
+      "right",
+      21.4285714285714,
+      "",
+      [
+       "Seqsee::Element:[10,10] 1",
+       "Seqsee::Element:[11,11] 2",
+       "Seqsee::Element:[12,12] 3"
+      ]
+     ]
+    ]
+   ],
+   [
+    "LEFT",
+    0,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      0,
+      9,
+      "left",
+      21.4285714285714,
+      "",
+      [
+       "Seqsee::Element:[10,10] 1",
+       "Seqsee::Element:[11,11] 2",
+       "Seqsee::Element:[12,12] 3"
+      ]
+     ]
+    ]
+   ],
+   [
+    "LEFT",
+    1,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      1,
+      10,
+      "left",
+      21.4285714285714,
+      "",
+      [
+       "Seqsee::Element:[10,10] 1",
+       "Seqsee::Element:[11,11] 2",
+       "Seqsee::Element:[12,12] 3"
+      ]
+     ]
+    ]
+   ]
+  ],
+  "has_reln": 1,
+  "hist": [
+   "[0]\tUnderlying relation set: SRuleApp=REF "
+  ],
+  "kind": "set_underlying",
+  "log": [],
+  "n": 1,
+  "objects": [
+   "a1_10",
+   "a2_11",
+   "a3_12"
+  ],
+  "type": "succ"
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "10",
+    "12"
+   ],
+   "items": [
+    "Seqsee::Element:[10,10] 1",
+    "Seqsee::Element:[11,11] 2",
+    "Seqsee::Element:[12,12] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": null,
+  "find": [
+   [
+    "RIGHT",
+    0,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      4,
+      13,
+      "right",
+      21.4285714285714,
+      "",
+      [
+       "Seqsee::Element:[10,10] 1",
+       "Seqsee::Element:[11,11] 2",
+       "Seqsee::Element:[12,12] 3"
+      ]
+     ]
+    ]
+   ],
+   [
+    "RIGHT",
+    1,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      3,
+      12,
+      "right",
+      21.4285714285714,
+      "",
+      [
+       "Seqsee::Element:[10,10] 1",
+       "Seqsee::Element:[11,11] 2",
+       "Seqsee::Element:[12,12] 3"
+      ]
+     ]
+    ]
+   ],
+   [
+    "LEFT",
+    0,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      0,
+      9,
+      "left",
+      21.4285714285714,
+      "",
+      [
+       "Seqsee::Element:[10,10] 1",
+       "Seqsee::Element:[11,11] 2",
+       "Seqsee::Element:[12,12] 3"
+      ]
+     ]
+    ]
+   ],
+   [
+    "LEFT",
+    1,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      1,
+      10,
+      "left",
+      21.4285714285714,
+      "",
+      [
+       "Seqsee::Element:[10,10] 1",
+       "Seqsee::Element:[11,11] 2",
+       "Seqsee::Element:[12,12] 3"
+      ]
+     ]
+    ]
+   ]
+  ],
+  "has_reln": 1,
+  "hist": [
+   "[0]\tUnderlying relation set: SRuleApp=REF "
+  ],
+  "kind": "set_underlying",
+  "log": [],
+  "n": 1,
+  "objects": [
+   "a1_10",
+   "a2_11",
+   "a3_12"
+  ],
+  "type": "rel"
+ },
+ {
+  "err": null,
+  "has_reln": 0,
+  "hist": [
+   "[0]\tUnderlying relation set:  "
+  ],
+  "kind": "set_underlying",
+  "log": [],
+  "n": 1,
+  "objects": [
+   "a1_10",
+   "a2_11",
+   "a3_12"
+  ],
+  "type": "pred"
+ },
+ {
+  "err": null,
+  "has_reln": 0,
+  "hist": [],
+  "kind": "set_underlying",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "a1_10",
+   "a2_11"
+  ],
+  "type": "noflip"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": ""
+  },
+  "has_reln": 0,
+  "hist": [],
+  "kind": "set_underlying",
+  "log": [],
+  "n": 0,
+  "objects": [
+   "a1_10",
+   "a2_11"
+  ],
+  "type": "insane"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": ""
+  },
+  "has_reln": 0,
+  "hist": [],
+  "kind": "set_underlying",
+  "log": [
+   [
+    "message",
+    "This transform is bogus! CAT=ascending ATTS=start"
+   ]
+  ],
+  "n": 0,
+  "objects": [
+   "g(a1_20,a2_21)",
+   "g(a2_22,a3_23)"
+  ],
+  "type": "struct"
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "20",
+    "23"
+   ],
+   "items": [
+    "Seqsee::Anchored  <20, 21>  [1, 2]",
+    "Seqsee::Anchored  <22, 23>  [2, 3]"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: [ascending] end => succ;start => succ",
+   "span": 4
+  },
+  "err": null,
+  "find": [
+   [
+    "RIGHT",
+    0,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      "[3, 4]",
+      24,
+      "right",
+      28.5714285714286,
+      "",
+      [
+       "Seqsee::Anchored  <20, 21>  [1, 2]",
+       "Seqsee::Anchored  <22, 23>  [2, 3]"
+      ]
+     ]
+    ]
+   ],
+   [
+    "RIGHT",
+    1,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      "[2, 3]",
+      22,
+      "right",
+      28.5714285714286,
+      "",
+      [
+       "Seqsee::Anchored  <20, 21>  [1, 2]",
+       "Seqsee::Anchored  <22, 23>  [2, 3]"
+      ]
+     ]
+    ]
+   ],
+   [
+    "LEFT",
+    0,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      "[0, 1]",
+      19,
+      "left",
+      28.5714285714286,
+      "",
+      [
+       "Seqsee::Anchored  <20, 21>  [1, 2]",
+       "Seqsee::Anchored  <22, 23>  [2, 3]"
+      ]
+     ]
+    ]
+   ],
+   [
+    "LEFT",
+    1,
+    null,
+    1,
+    [
+     [
+      "gsl",
+      "[1, 2]",
+      21,
+      "left",
+      28.5714285714286,
+      "",
+      [
+       "Seqsee::Anchored  <20, 21>  [1, 2]",
+       "Seqsee::Anchored  <22, 23>  [2, 3]"
+      ]
+     ]
+    ]
+   ]
+  ],
+  "has_reln": 1,
+  "hist": [
+   "[0]\tUnderlying relation set: SRuleApp=REF "
+  ],
+  "kind": "set_underlying",
+  "log": [],
+  "n": 1,
+  "objects": [
+   "g(a1_20,a2_21)",
+   "g(a2_22,a3_23)"
+  ],
+  "type": "struct2"
+ },
+ {
+  "err": null,
+  "group": "elem",
+  "kind": "consistency",
+  "ret": 1
+ },
+ {
+  "err": null,
+  "group": "ga",
+  "kind": "consistency",
+  "ret": 1
+ },
+ {
+  "err": null,
+  "group": "gb",
+  "kind": "consistency",
+  "ret": 1
+ },
+ {
+  "err": null,
+  "group": "gc",
+  "kind": "consistency",
+  "ret": 1
+ },
+ {
+  "err": null,
+  "group": "left_out",
+  "kind": "consistency",
+  "ret": 1
+ },
+ {
+  "err": null,
+  "group": "nested",
+  "kind": "consistency",
+  "ret": 1
+ },
+ {
+  "err": null,
+  "group": "outside",
+  "kind": "consistency",
+  "ret": 1
+ },
+ {
+  "err": null,
+  "group": "straddle",
+  "kind": "consistency",
+  "ret": 0
+ },
+ {
+  "err": null,
+  "group": "whole",
+  "kind": "consistency",
+  "ret": 0
+ },
+ {
+  "group": "straddle_own",
+  "kind": "consistency",
+  "ret": 1
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": null,
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ],
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "name": "fwd_no",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": null,
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ],
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "name": "fwd2_no",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": null,
+  "kind": "extend",
+  "log": [],
+  "name": "fwd0",
+  "ret": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": {
+   "class": "DIE",
+   "message": "Undefined subroutine &SRuleApp::__PlonkIntoPlace called"
+  },
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ],
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "name": "fwd_yes",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": null,
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    1,
+    "right",
+    2
+   ],
+   [
+    "check",
+    1,
+    "right",
+    2
+   ]
+  ],
+  "name": "back_no",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": {
+   "class": "DIE",
+   "message": "Undefined subroutine &SRuleApp::__PlonkIntoPlace called"
+  },
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    1,
+    "right",
+    2
+   ],
+   [
+    "check",
+    1,
+    "right",
+    2
+   ]
+  ],
+  "name": "back_yes",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": null,
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ],
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "name": "right_no",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": null,
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    1,
+    "right",
+    2
+   ],
+   [
+    "check",
+    1,
+    "right",
+    2
+   ]
+  ],
+  "name": "left_no",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": null,
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    1,
+    "right",
+    2
+   ],
+   [
+    "check",
+    1,
+    "right",
+    2
+   ]
+  ],
+  "name": "left_max",
+  "ret": [
+   null
+  ],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": {
+   "class": "DIE",
+   "message": "boom\n"
+  },
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ],
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "name": "fwd_die_str",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: succ",
+   "span": 3
+  },
+  "err": {
+   "class": "SErr",
+   "message": "ws err"
+  },
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ],
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "name": "fwd_die_serr",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: pred",
+   "span": 3
+  },
+  "err": null,
+  "kind": "extend",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    2
+   ],
+   [
+    "check",
+    3,
+    "right",
+    2
+   ]
+  ],
+  "name": "pred_no",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "app": {
+   "as_text": "SRuleApp SRuleApp=REF",
+   "direction": "right",
+   "edges": [
+    "0",
+    "2"
+   ],
+   "items": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 2",
+    "Seqsee::Element:[2,2] 3"
+   ],
+   "ref": "SRuleApp",
+   "rule": "Rule: fake y",
+   "span": 3
+  },
+  "err": {
+   "class": "DIE",
+   "message": "No viable candidate for call to multimethod ApplyMapping(FakeMapping,Seqsee::Element)"
+  },
+  "kind": "extend",
+  "log": [],
+  "name": "fake_no",
+  "ret": [],
+  "scalar": null
+ },
+ {
+  "count": 3,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ],
+   [
+    "add_codelet",
+    "MaybeAskTheseTerms",
+    10000,
+    [
+     "core",
+     "exception"
+    ],
+    1
+   ]
+  ],
+  "next_rand": 0.454492444728629,
+  "ret": [],
+  "seed": 1
+ },
+ {
+  "count": 12,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ],
+   [
+    "add_codelet",
+    "MaybeAskTheseTerms",
+    10000,
+    [
+     "core",
+     "exception"
+    ],
+    1
+   ]
+  ],
+  "next_rand": 0.454492444728629,
+  "ret": [],
+  "seed": 1
+ },
+ {
+  "count": 3,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "next_rand": 0.159082908972294,
+  "ret": [],
+  "seed": 2
+ },
+ {
+  "count": 12,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "next_rand": 0.159082908972294,
+  "ret": [],
+  "seed": 2
+ },
+ {
+  "count": 3,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "next_rand": 0.86367337321596,
+  "ret": [],
+  "seed": 3
+ },
+ {
+  "count": 12,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "next_rand": 0.86367337321596,
+  "ret": [],
+  "seed": 3
+ },
+ {
+  "count": 3,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "next_rand": 0.568263837459625,
+  "ret": [],
+  "seed": 4
+ },
+ {
+  "count": 12,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "next_rand": 0.568263837459625,
+  "ret": [],
+  "seed": 4
+ },
+ {
+  "count": 3,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "next_rand": 0.272854301703291,
+  "ret": [],
+  "seed": 5
+ },
+ {
+  "count": 12,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "next_rand": 0.272854301703291,
+  "ret": [],
+  "seed": 5
+ },
+ {
+  "count": 3,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ],
+   [
+    "add_codelet",
+    "MaybeAskTheseTerms",
+    10000,
+    [
+     "core",
+     "exception"
+    ],
+    1
+   ]
+  ],
+  "next_rand": 0.977444765946956,
+  "ret": [],
+  "seed": 6
+ },
+ {
+  "count": 12,
+  "err": null,
+  "kind": "extend_beyond",
+  "log": [
+   [
+    "check",
+    3,
+    "right",
+    4
+   ]
+  ],
+  "next_rand": 0.977444765946956,
+  "ret": [],
+  "seed": 6
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "need items_ref"
+  },
+  "keys": [],
+  "kind": "extend_one",
+  "log": [],
+  "n": 0
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "need direction_to_extend_in"
+  },
+  "keys": [
+   "items_ref"
+  ],
+  "kind": "extend_one",
+  "log": [],
+  "n": 0
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "need object_at_end"
+  },
+  "keys": [
+   "direction_to_extend_in",
+   "items_ref"
+  ],
+  "kind": "extend_one",
+  "log": [],
+  "n": 0
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "need transform"
+  },
+  "keys": [
+   "direction_to_extend_in",
+   "items_ref",
+   "object_at_end"
+  ],
+  "kind": "extend_one",
+  "log": [],
+  "n": 0
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "need extend_at_start_or_end"
+  },
+  "keys": [
+   "direction_to_extend_in",
+   "items_ref",
+   "object_at_end",
+   "transform"
+  ],
+  "kind": "extend_one",
+  "log": [],
+  "n": 0
+ },
+ {
+  "err": null,
+  "keys": [
+   "direction_to_extend_in",
+   "extend_at_start_or_end",
+   "items_ref",
+   "object_at_end",
+   "transform"
+  ],
+  "kind": "extend_one",
+  "log": [
+   [
+    "check",
+    1,
+    "right",
+    2
+   ]
+  ],
+  "n": 0
+ }
+]

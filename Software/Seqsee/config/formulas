@@ -1,0 +1,26 @@
+Codelet => { FocusOn::HuntsSameness => 0.1 };
+SpikeAmount => {
+    CheckIfInstance::Link                    => 5,
+    CheckIfInstance::Category                => 10,
+    AttemptExtensionOfRelation::Core         => 100,
+    AttemptExtensionOfRelation::CoreCategory => 100,
+};
+WeakenAmount => {
+    AttemptExtensionOfRelation::Core        => 50,
+    AttemptExtensionOfRelation::AdHocOnFail => 30,
+};
+Urgencies => {
+    AttemptExtensionOfRelation::MaybeAsk          => 500,
+    AttemptExtensionOfRelation::AreTheseGroupable => 100,
+    FindIfRelated::MergeGroups                    => 100,
+    FindIfRelatedRelns::AreTheseGroupable         => 100,
+    AttemptExtensionOfGroup::AreWeDone            => 100,
+};
+
+Strength::SAnchored::FromParts( $group ! ) returns Num {
+    20 + 0.2 * ( sum( map { $_->get_strength() } @{ $group->get_parts_ref() } ) || 0 );
+}
+
+Strength::SAnchored::FromCategories( $group ! ) returns Num {
+    30 * ( sum( @{ SLTM::GetRealActivationsForConcepts( $group->get_categories() ) } ) || 0 );
+}

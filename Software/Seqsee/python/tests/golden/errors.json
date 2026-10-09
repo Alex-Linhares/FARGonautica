@@ -1,0 +1,377 @@
+[
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 1,
+  "class": "SErr",
+  "description": "Generic exception",
+  "fields": [],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 1,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr"
+ },
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 0,
+  "class": "SErr::AskUser",
+  "description": "Generic exception",
+  "fields": [
+   "already_matched",
+   "direction",
+   "from_position",
+   "next_elements",
+   "object"
+  ],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 0,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr::AskUser"
+ },
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 0,
+  "class": "SErr::CallSubscript",
+  "description": "Generic exception",
+  "fields": [
+   "arguments",
+   "name"
+  ],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 0,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr::CallSubscript"
+ },
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 0,
+  "class": "SErr::CouldNotCreateExtendedGroup",
+  "description": "Generic exception",
+  "fields": [],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 0,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr::CouldNotCreateExtendedGroup"
+ },
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 0,
+  "class": "SErr::ElementsBeyondKnownSought",
+  "description": "Generic exception",
+  "fields": [
+   "next_elements"
+  ],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 0,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr::ElementsBeyondKnownSought"
+ },
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 0,
+  "class": "SErr::FinishedTest",
+  "description": "Generic exception",
+  "fields": [
+   "got_it"
+  ],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 0,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr::FinishedTest"
+ },
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 0,
+  "class": "SErr::FinishedTestBlemished",
+  "description": "Generic exception",
+  "fields": [],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 0,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr::FinishedTestBlemished"
+ },
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 0,
+  "class": "SErr::LTM_LoadFailure",
+  "description": "Generic exception",
+  "fields": [
+   "what"
+  ],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 0,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr::LTM_LoadFailure"
+ },
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 0,
+  "class": "SErr::MetonymNotAppicable",
+  "description": "Generic exception",
+  "fields": [],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 0,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr::MetonymNotAppicable"
+ },
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 0,
+  "class": "SErr::NotClairvoyant",
+  "description": "Generic exception",
+  "fields": [],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 0,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr::NotClairvoyant"
+ },
+ {
+  "as_string": "[Generic exception]",
+  "caught_as_self": 1,
+  "caught_as_serr": 0,
+  "class": "SErr::ScriptReturn",
+  "description": "Generic exception",
+  "fields": [],
+  "isa": [
+   "Exception::Class::Base"
+  ],
+  "isa_serr": 0,
+  "message": "",
+  "new_with_error": "err",
+  "new_with_message": "hello",
+  "new_with_message_key": "m",
+  "op": "class",
+  "stringified": "[Generic exception]",
+  "throw_dies": 1,
+  "unknown_field_dies": 1,
+  "unknown_field_error": "unknown field bogus passed to constructor for class SErr::ScriptReturn"
+ },
+ {
+  "class": "SErr::LTM_LoadFailure",
+  "op": "fields",
+  "unset": null,
+  "what": "bad file"
+ },
+ {
+  "class": "SErr::FinishedTest",
+  "got_it": 1,
+  "message": "",
+  "op": "fields"
+ },
+ {
+  "already_matched": [
+   1,
+   2
+  ],
+  "class": "SErr::AskUser",
+  "direction": null,
+  "from_position": 4,
+  "message": "q",
+  "next_elements": [
+   3
+  ],
+  "object": null,
+  "op": "fields"
+ },
+ {
+  "arguments": {
+   "a": 1
+  },
+  "class": "SErr::CallSubscript",
+  "name": "foo",
+  "op": "fields"
+ },
+ {
+  "arg": "OutOfRange [obj=x]index=5, size=3, ",
+  "as_string": "OutOfRange [obj=x]index=5, size=3, ",
+  "class": "SErr",
+  "error": "OutOfRange [obj=x]index=5, size=3, ",
+  "message": "OutOfRange [obj=x]index=5, size=3, ",
+  "op": "throw"
+ },
+ {
+  "arg": "Not of category",
+  "as_string": "Not of category",
+  "class": "SErr",
+  "error": "Not of category",
+  "message": "Not of category",
+  "op": "throw"
+ },
+ {
+  "arg": "",
+  "as_string": "[Generic exception]",
+  "class": "SErr",
+  "error": "",
+  "message": "",
+  "op": "throw"
+ },
+ {
+  "caught": 1,
+  "class": "SErr::FinishedTest",
+  "got_it": 0,
+  "op": "rethrow"
+ },
+ {
+  "caught_any": "plain\n",
+  "caught_class": 0,
+  "op": "caught_plain"
+ },
+ {
+  "class": "SErr::Fatal",
+  "dies": 1,
+  "error": "Can't locate object method \"throw\" via package \"SErr::Fatal\" (perhaps you forgot to load \"SErr::Fatal\"?)",
+  "op": "undeclared"
+ },
+ {
+  "next_elements": [
+   7
+  ],
+  "op": "actual_question",
+  "question": "Is the next term 7??"
+ },
+ {
+  "next_elements": [
+   7,
+   8
+  ],
+  "op": "actual_question",
+  "question": "Are the next 2 terms 7 and 8?"
+ },
+ {
+  "next_elements": [
+   7,
+   8,
+   9
+  ],
+  "op": "actual_question",
+  "question": "Are the next 3 terms 7, 8, and 9?"
+ },
+ {
+  "next_elements": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "op": "actual_question",
+  "question": "Are the next 4 terms 1, 2, 3, and 4?"
+ },
+ {
+  "next_elements": [
+   -1,
+   10
+  ],
+  "op": "actual_question",
+  "question": "Are the next 2 terms -1 and 10?"
+ },
+ {
+  "dies": 1,
+  "next_elements": [],
+  "op": "actual_question",
+  "question": null
+ },
+ {
+  "class": "SErr::ElementsBeyondKnownSought",
+  "dies": 1,
+  "op": "worth_asking"
+ }
+]

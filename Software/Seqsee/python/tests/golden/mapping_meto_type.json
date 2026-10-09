@@ -1,0 +1,2261 @@
+[
+ {
+  "args": {
+   "category": "NUMBER",
+   "change": [],
+   "name": "x"
+  },
+  "category": "NUMBER",
+  "change": [],
+  "error": null,
+  "isa_mapping": 0,
+  "kind": "new",
+  "name": "x",
+  "pure_is_self": 1
+ },
+ {
+  "args": {
+   "category": "NUMBER",
+   "change": [
+    [
+     "a",
+     "N:succ"
+    ]
+   ]
+  },
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "error": null,
+  "isa_mapping": 0,
+  "kind": "new",
+  "name": null,
+  "pure_is_self": 1
+ },
+ {
+  "args": {
+   "category": "u",
+   "change": [],
+   "name": "x"
+  },
+  "category": "u",
+  "change": [],
+  "error": null,
+  "isa_mapping": 0,
+  "kind": "new",
+  "name": "x",
+  "pure_is_self": 1
+ },
+ {
+  "args": {
+   "category": "s:foo",
+   "change": [],
+   "name": "x"
+  },
+  "category": "s:foo",
+  "change": [],
+  "error": null,
+  "isa_mapping": 0,
+  "kind": "new",
+  "name": "x",
+  "pure_is_self": 1
+ },
+ {
+  "args": {
+   "change": [],
+   "name": "x"
+  },
+  "error": "Attribute (category) is required at constructor Mapping::MetoType::new (defined",
+  "kind": "new"
+ },
+ {
+  "args": {
+   "category": "NUMBER",
+   "name": "x"
+  },
+  "error": "Attribute (change_ref) is required at constructor Mapping::MetoType::new (defined",
+  "kind": "new"
+ },
+ {
+  "args": {
+   "category": "NUMBER",
+   "change": "u",
+   "name": "x"
+  },
+  "category": "NUMBER",
+  "change": null,
+  "error": null,
+  "isa_mapping": 0,
+  "kind": "new",
+  "name": "x",
+  "pure_is_self": 1
+ },
+ {
+  "args": {
+   "category": "NUMBER",
+   "change": [],
+   "name": "u"
+  },
+  "error": "Attribute (name) does not pass the type constraint because: Validation failed for 'Str' with value undef at constructor Mapping::MetoType::new (defined",
+  "kind": "new"
+ },
+ {
+  "args": {
+   "category": "NUMBER",
+   "change": [],
+   "name": "ARRAY"
+  },
+  "error": "Attribute (name) does not pass the type constraint because: Validation failed for 'Str' with value [  ] at constructor Mapping::MetoType::new (defined",
+  "kind": "new"
+ },
+ {
+  "args": {
+   "category": "NUMBER",
+   "change": [],
+   "name": 7
+  },
+  "category": "NUMBER",
+  "change": [],
+  "error": null,
+  "isa_mapping": 0,
+  "kind": "new",
+  "name": 7,
+  "pure_is_self": 1
+ },
+ {
+  "category": "EVEN",
+  "change": [
+   [
+    "a",
+    "N:same/NUMBER"
+   ]
+  ],
+  "kind": "setters",
+  "name": "y",
+  "set_name_undef_error": "Attribute (name) does not pass the type constraint because: Validation failed for 'Str' with value undef at writer Mapping::MetoType::set_name of attribute name (defined"
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 0,
+  "name": "x",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   [
+    [
+     "a",
+     "N:succ"
+    ]
+   ]
+  ],
+  "step": 0
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 0,
+  "name": "x",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   [
+    [
+     "a",
+     "N:succ"
+    ]
+   ]
+  ],
+  "step": 1
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 1,
+  "name": "x",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   [
+    [
+     "a",
+     "N:pred"
+    ]
+   ]
+  ],
+  "step": 2
+ },
+ {
+  "category": "EVEN",
+  "change": [
+   [
+    "a",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 2,
+  "name": "x",
+  "op": [
+   "create",
+   "EVEN",
+   "x",
+   [
+    [
+     "a",
+     "N:succ"
+    ]
+   ]
+  ],
+  "step": 3
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 3,
+  "name": "y",
+  "op": [
+   "create",
+   "NUMBER",
+   "y",
+   [
+    [
+     "a",
+     "N:succ"
+    ]
+   ]
+  ],
+  "step": 4
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "b",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 4,
+  "name": "x",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   [
+    [
+     "b",
+     "N:succ"
+    ]
+   ]
+  ],
+  "step": 5
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:succ/NUMBER"
+   ],
+   [
+    "b",
+    "MD:Same"
+   ]
+  ],
+  "kind": "script",
+  "label": 5,
+  "name": "x",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   [
+    [
+     "a",
+     "N:succ"
+    ],
+    [
+     "b",
+     "MD:Same"
+    ]
+   ]
+  ],
+  "step": 6
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:succ/NUMBER"
+   ],
+   [
+    "b",
+    "MD:Same"
+   ]
+  ],
+  "kind": "script",
+  "label": 5,
+  "name": "x",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   [
+    [
+     "b",
+     "MD:Same"
+    ],
+    [
+     "a",
+     "N:succ"
+    ]
+   ]
+  ],
+  "step": 7
+ },
+ {
+  "category": "NUMBER",
+  "change": [],
+  "kind": "script",
+  "label": 6,
+  "name": "x",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   []
+  ],
+  "step": 8
+ },
+ {
+  "error": "Attribute (name) does not pass the type constraint because: Validation failed for 'Str' with value undef at constructor Mapping::MetoType::new (defined",
+  "kind": "script",
+  "op": [
+   "create",
+   "NUMBER",
+   "u",
+   []
+  ],
+  "result": null,
+  "step": 9
+ },
+ {
+  "category": "NUMBER",
+  "change": [],
+  "kind": "script",
+  "label": 7,
+  "name": "",
+  "op": [
+   "create",
+   "NUMBER",
+   "",
+   []
+  ],
+  "step": 10
+ },
+ {
+  "error": "Can't use an undefined value as a HASH reference",
+  "kind": "script",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   "u"
+  ],
+  "result": null,
+  "step": 11
+ },
+ {
+  "category": "s:foo",
+  "change": [],
+  "kind": "script",
+  "label": 8,
+  "name": "x",
+  "op": [
+   "create",
+   "s:foo",
+   "x",
+   []
+  ],
+  "step": 12
+ },
+ {
+  "category": "s:foo",
+  "change": [],
+  "kind": "script",
+  "label": 8,
+  "name": "x",
+  "op": [
+   "create",
+   "s:foo",
+   "x",
+   []
+  ],
+  "step": 13
+ },
+ {
+  "category": "u",
+  "change": [],
+  "kind": "script",
+  "label": 9,
+  "name": "x",
+  "op": [
+   "create",
+   "u",
+   "x",
+   []
+  ],
+  "step": 14
+ },
+ {
+  "category": "u",
+  "change": [],
+  "kind": "script",
+  "label": 9,
+  "name": "x",
+  "op": [
+   "create",
+   "s:",
+   "x",
+   []
+  ],
+  "step": 15
+ },
+ {
+  "category": "NUMBER",
+  "change": [],
+  "kind": "script",
+  "label": 10,
+  "name": "x;a",
+  "op": [
+   "create",
+   "NUMBER",
+   "x;a",
+   []
+  ],
+  "step": 16
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "s:q"
+   ]
+  ],
+  "kind": "script",
+  "label": 11,
+  "name": "x",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   [
+    [
+     "a",
+     "s:q"
+    ]
+   ]
+  ],
+  "step": 17
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "i:4"
+   ]
+  ],
+  "kind": "script",
+  "label": 12,
+  "name": "x",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   [
+    [
+     "a",
+     "i:4"
+    ]
+   ]
+  ],
+  "step": 18
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "i:4"
+   ]
+  ],
+  "kind": "script",
+  "label": 12,
+  "name": "x",
+  "op": [
+   "create",
+   "NUMBER",
+   "x",
+   [
+    [
+     "a",
+     "i:4"
+    ]
+   ]
+  ],
+  "step": 19
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 13,
+  "name": "flipped_x",
+  "op": [
+   "flip",
+   0
+  ],
+  "step": 20
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 0,
+  "name": "x",
+  "op": [
+   "flip",
+   20
+  ],
+  "step": 21
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 14,
+  "name": "flipped_x",
+  "op": [
+   "flip",
+   2
+  ],
+  "step": 22
+ },
+ {
+  "category": "NUMBER",
+  "change": [],
+  "kind": "script",
+  "label": 15,
+  "name": "flipped_x",
+  "op": [
+   "flip",
+   8
+  ],
+  "step": 23
+ },
+ {
+  "kind": "script",
+  "missing": 1,
+  "op": [
+   "flip",
+   9
+  ],
+  "step": 24
+ },
+ {
+  "kind": "script",
+  "missing": 1,
+  "op": [
+   "flip",
+   24
+  ],
+  "step": 25
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:pred/NUMBER"
+   ],
+   [
+    "b",
+    "MD:Same"
+   ]
+  ],
+  "kind": "script",
+  "label": 16,
+  "name": "flipped_x",
+  "op": [
+   "flip",
+   6
+  ],
+  "step": 26
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "p",
+    "MP:succ"
+   ]
+  ],
+  "kind": "script",
+  "label": 17,
+  "name": "flipped_",
+  "op": [
+   "create",
+   "NUMBER",
+   "flipped_",
+   [
+    [
+     "p",
+     "MP:succ"
+    ]
+   ]
+  ],
+  "step": 27
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "p",
+    "MP:pred"
+   ]
+  ],
+  "kind": "script",
+  "label": 18,
+  "name": "",
+  "op": [
+   "flip",
+   27
+  ],
+  "step": 28
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "p",
+    "MP:succ"
+   ]
+  ],
+  "kind": "script",
+  "label": 17,
+  "name": "flipped_",
+  "op": [
+   "flip",
+   28
+  ],
+  "step": 29
+ },
+ {
+  "error": "Can't locate object method \"FlippedVersion\" via package \"q\" (perhaps you forgot to load \"q\"?)",
+  "kind": "script",
+  "op": [
+   "flip",
+   17
+  ],
+  "result": null,
+  "step": 30
+ },
+ {
+  "category": "NUMBER",
+  "change": [],
+  "kind": "script",
+  "label": 19,
+  "name": "flippedx",
+  "op": [
+   "create",
+   "NUMBER",
+   "flippedx",
+   []
+  ],
+  "step": 31
+ },
+ {
+  "category": "NUMBER",
+  "change": [],
+  "kind": "script",
+  "label": 20,
+  "name": "flipped_flippedx",
+  "op": [
+   "flip",
+   31
+  ],
+  "step": 32
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "MD:Different"
+   ]
+  ],
+  "kind": "script",
+  "label": 21,
+  "name": "z",
+  "op": [
+   "create",
+   "NUMBER",
+   "z",
+   [
+    [
+     "a",
+     "MD:Different"
+    ]
+   ]
+  ],
+  "step": 33
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "MD:Different"
+   ]
+  ],
+  "kind": "script",
+  "label": 22,
+  "name": "flipped_z",
+  "op": [
+   "flip",
+   33
+  ],
+  "step": 34
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "MD:Different"
+   ]
+  ],
+  "kind": "script",
+  "label": 21,
+  "name": "z",
+  "op": [
+   "flip",
+   34
+  ],
+  "step": 35
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "length",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 23,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:2"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:3"
+     ]
+    ]
+   ]
+  ],
+  "step": 36
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "length",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 23,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:2"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:3"
+     ]
+    ]
+   ]
+  ],
+  "step": 37
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "length",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 24,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:3"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:2"
+     ]
+    ]
+   ]
+  ],
+  "step": 38
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "length",
+    "N:same/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 25,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:3"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:3"
+     ]
+    ]
+   ]
+  ],
+  "step": 39
+ },
+ {
+  "kind": "script",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:2"
+     ]
+    ]
+   ],
+   [
+    "EVEN",
+    "each",
+    [
+     [
+      "length",
+      "n:3"
+     ]
+    ]
+   ]
+  ],
+  "result": null,
+  "step": 40
+ },
+ {
+  "kind": "script",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:2"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "other",
+    [
+     [
+      "length",
+      "n:3"
+     ]
+    ]
+   ]
+  ],
+  "result": null,
+  "step": 41
+ },
+ {
+  "kind": "script",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:2"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "len",
+      "n:3"
+     ]
+    ]
+   ]
+  ],
+  "result": null,
+  "step": 42
+ },
+ {
+  "kind": "script",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:2"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:3"
+     ],
+     [
+      "x",
+      "n:1"
+     ]
+    ]
+   ]
+  ],
+  "result": null,
+  "step": 43
+ },
+ {
+  "category": "NUMBER",
+  "change": [],
+  "kind": "script",
+  "label": 26,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    []
+   ],
+   [
+    "NUMBER",
+    "each",
+    []
+   ]
+  ],
+  "step": 44
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "d",
+    "MD:Different"
+   ]
+  ],
+  "kind": "script",
+  "label": 27,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "d",
+      "D:left"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "d",
+      "D:right"
+     ]
+    ]
+   ]
+  ],
+  "step": 45
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "d",
+    "MD:Same"
+   ]
+  ],
+  "kind": "script",
+  "label": 28,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "d",
+      "D:left"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "d",
+      "D:left"
+     ]
+    ]
+   ]
+  ],
+  "step": 46
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "d",
+    "MD:Unknown"
+   ]
+  ],
+  "kind": "script",
+  "label": 29,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "d",
+      "D:left"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "d",
+      "D:unknown"
+     ]
+    ]
+   ]
+  ],
+  "step": 47
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "p",
+    "MP:succ"
+   ]
+  ],
+  "kind": "script",
+  "label": 30,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "p",
+      "P:1"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "p",
+      "P:2"
+     ]
+    ]
+   ]
+  ],
+  "step": 48
+ },
+ {
+  "kind": "script",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "p",
+      "P:-1"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "p",
+      "P:1"
+     ]
+    ]
+   ]
+  ],
+  "result": null,
+  "step": 49
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "d",
+    "MD:Different"
+   ],
+   [
+    "l",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 31,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "l",
+      "n:2"
+     ],
+     [
+      "d",
+      "D:left"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "d",
+      "D:right"
+     ],
+     [
+      "l",
+      "n:1"
+     ]
+    ]
+   ]
+  ],
+  "step": 50
+ },
+ {
+  "error": "No viable candidate for call to multimethod FindMapping($,$)",
+  "kind": "script",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "l",
+      "s:a"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "l",
+      "s:b"
+     ]
+    ]
+   ]
+  ],
+  "result": null,
+  "step": 51
+ },
+ {
+  "error": "No viable candidate for call to multimethod FindMapping(SInt,#)",
+  "kind": "script",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "l",
+      "i:2"
+     ]
+    ]
+   ],
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "l",
+      "n:3"
+     ]
+    ]
+   ]
+  ],
+  "result": null,
+  "step": 52
+ },
+ {
+  "category": "s:foo",
+  "change": [],
+  "kind": "script",
+  "label": 32,
+  "name": "each",
+  "op": [
+   "find",
+   [
+    "s:foo",
+    "each",
+    []
+   ],
+   [
+    "s:foo",
+    "each",
+    []
+   ]
+  ],
+  "step": 53
+ },
+ {
+  "kind": "script",
+  "op": [
+   "find",
+   [
+    "s:foo",
+    "each",
+    []
+   ],
+   [
+    "s:bar",
+    "each",
+    []
+   ]
+  ],
+  "result": null,
+  "step": 54
+ },
+ {
+  "kind": "script",
+  "op": [
+   "find",
+   [
+    "NUMBER",
+    "2",
+    []
+   ],
+   [
+    "NUMBER",
+    "2.0",
+    []
+   ]
+  ],
+  "result": null,
+  "step": 55
+ },
+ {
+  "category": "NUMBER",
+  "fresh": 1,
+  "info_loss": [
+   [
+    "length",
+    "n:6"
+   ]
+  ],
+  "info_loss_shared": 0,
+  "is_smt": 1,
+  "kind": "script",
+  "name": "each",
+  "op": [
+   "apply",
+   36,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:5"
+     ]
+    ]
+   ]
+  ],
+  "step": 56
+ },
+ {
+  "category": "NUMBER",
+  "fresh": 1,
+  "info_loss": [
+   [
+    "length",
+    "n:6"
+   ]
+  ],
+  "info_loss_shared": 0,
+  "is_smt": 1,
+  "kind": "script",
+  "name": "each",
+  "op": [
+   "apply",
+   36,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "n:5"
+     ]
+    ]
+   ]
+  ],
+  "step": 57
+ },
+ {
+  "category": "EVEN",
+  "fresh": 1,
+  "info_loss": [
+   [
+    "length",
+    "n:6"
+   ],
+   [
+    "q",
+    "s:keep"
+   ]
+  ],
+  "info_loss_shared": 0,
+  "is_smt": 1,
+  "kind": "script",
+  "name": "other",
+  "op": [
+   "apply",
+   36,
+   [
+    "EVEN",
+    "other",
+    [
+     [
+      "length",
+      "n:5"
+     ],
+     [
+      "q",
+      "s:keep"
+     ]
+    ]
+   ]
+  ],
+  "step": 58
+ },
+ {
+  "category": "NUMBER",
+  "fresh": 1,
+  "info_loss": [
+   [
+    "other",
+    "n:5"
+   ]
+  ],
+  "info_loss_shared": 0,
+  "is_smt": 1,
+  "kind": "script",
+  "name": "each",
+  "op": [
+   "apply",
+   36,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "other",
+      "n:5"
+     ]
+    ]
+   ]
+  ],
+  "step": 59
+ },
+ {
+  "category": "NUMBER",
+  "fresh": 1,
+  "info_loss": [],
+  "info_loss_shared": 0,
+  "is_smt": 1,
+  "kind": "script",
+  "name": "each",
+  "op": [
+   "apply",
+   36,
+   [
+    "NUMBER",
+    "each",
+    []
+   ]
+  ],
+  "step": 60
+ },
+ {
+  "category": "NUMBER",
+  "fresh": 1,
+  "info_loss": [
+   [
+    "length",
+    "i:8"
+   ]
+  ],
+  "info_loss_shared": 0,
+  "is_smt": 1,
+  "kind": "script",
+  "name": "each",
+  "op": [
+   "apply",
+   36,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "i:7"
+     ]
+    ]
+   ]
+  ],
+  "step": 61
+ },
+ {
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "script",
+  "op": [
+   "apply",
+   36,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "length",
+      "s:x"
+     ]
+    ]
+   ]
+  ],
+  "step": 62
+ },
+ {
+  "category": "NUMBER",
+  "fresh": 1,
+  "info_loss": [
+   [
+    "d",
+    "D:left"
+   ]
+  ],
+  "info_loss_shared": 0,
+  "is_smt": 1,
+  "kind": "script",
+  "name": "each",
+  "op": [
+   "apply",
+   45,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "d",
+      "D:right"
+     ]
+    ]
+   ]
+  ],
+  "step": 63
+ },
+ {
+  "error": "Flip called on weird direction",
+  "kind": "script",
+  "op": [
+   "apply",
+   45,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "d",
+      "D:unknown"
+     ]
+    ]
+   ]
+  ],
+  "step": 64
+ },
+ {
+  "category": "NUMBER",
+  "fresh": 1,
+  "info_loss": [
+   [
+    "d",
+    "D:unknown"
+   ]
+  ],
+  "info_loss_shared": 0,
+  "is_smt": 1,
+  "kind": "script",
+  "name": "each",
+  "op": [
+   "apply",
+   46,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "d",
+      "D:unknown"
+     ]
+    ]
+   ]
+  ],
+  "step": 65
+ },
+ {
+  "category": "NUMBER",
+  "fresh": 1,
+  "info_loss": [
+   [
+    "p",
+    "P:4"
+   ]
+  ],
+  "info_loss_shared": 0,
+  "is_smt": 1,
+  "kind": "script",
+  "name": "each",
+  "op": [
+   "apply",
+   48,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "p",
+      "P:3"
+     ]
+    ]
+   ]
+  ],
+  "step": 66
+ },
+ {
+  "error": "Attempt to set position to 0",
+  "kind": "script",
+  "op": [
+   "apply",
+   48,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "p",
+      "P:-1"
+     ]
+    ]
+   ]
+  ],
+  "step": 67
+ },
+ {
+  "error": "No viable candidate for call to multimethod ApplyMapping($,#)",
+  "kind": "script",
+  "op": [
+   "apply",
+   17,
+   [
+    "NUMBER",
+    "each",
+    [
+     [
+      "a",
+      "n:1"
+     ]
+    ]
+   ]
+  ],
+  "step": 68
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   8
+  ],
+  "result": 1,
+  "step": 69
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   0
+  ],
+  "result": null,
+  "step": 70
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   39
+  ],
+  "result": 1,
+  "step": 71
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   46
+  ],
+  "result": 1,
+  "step": 72
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   33
+  ],
+  "result": null,
+  "step": 73
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "MP:same"
+   ]
+  ],
+  "kind": "script",
+  "label": 33,
+  "name": "w",
+  "op": [
+   "create",
+   "NUMBER",
+   "w",
+   [
+    [
+     "a",
+     "MP:same"
+    ]
+   ]
+  ],
+  "step": 74
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   74
+  ],
+  "result": 1,
+  "step": 75
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   0
+  ],
+  "result": [
+   "NUMBER",
+   "N:succ/NUMBER"
+  ],
+  "step": 76
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   6
+  ],
+  "result": [
+   "NUMBER",
+   "MD:Same",
+   "N:succ/NUMBER"
+  ],
+  "step": 77
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   8
+  ],
+  "result": [
+   "NUMBER"
+  ],
+  "step": 78
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   12
+  ],
+  "result": [],
+  "step": 79
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   14
+  ],
+  "result": [],
+  "step": 80
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   17
+  ],
+  "result": [
+   "NUMBER"
+  ],
+  "step": 81
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   18
+  ],
+  "result": [
+   "NUMBER",
+   "i:4"
+  ],
+  "step": 82
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   0
+  ],
+  "result": "Mapping::MetoType(change=>>{ a =>> <<succ>>,  }, category=>><<number>>)",
+  "step": 83
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   8
+  ],
+  "result": "Mapping::MetoType(change=>>{  }, category=>><<number>>)",
+  "step": 84
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   12
+  ],
+  "result": "Mapping::MetoType(change=>>{  }, category=>>foo)",
+  "step": 85
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   74
+  ],
+  "result": "Mapping::MetoType(change=>>{ a =>> <<Mapping::Position same>>,  }, category=>><<number>>)",
+  "step": 86
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   14
+  ],
+  "result": "Mapping::MetoType(change=>>{  }, category=>>undef)",
+  "step": 87
+ },
+ {
+  "error": "unrecognized reference to 'Mapping::Numeric=HASH(0x555558883140)'",
+  "kind": "script",
+  "op": [
+   "serialize",
+   0
+  ],
+  "result": null,
+  "step": 88
+ },
+ {
+  "error": "unrecognized reference to 'Mapping::Numeric=HASH(0x555558883140)'",
+  "kind": "script",
+  "op": [
+   "deserialize",
+   0
+  ],
+  "result": null,
+  "step": 89
+ },
+ {
+  "index": 1,
+  "kind": "script",
+  "op": [
+   "insert",
+   "NUMBER"
+  ],
+  "step": 90
+ },
+ {
+  "error": "unrecognized reference to 'Mapping::Numeric=HASH(0x555558883140)'",
+  "kind": "script",
+  "op": [
+   "serialize",
+   0
+  ],
+  "result": null,
+  "step": 91
+ },
+ {
+  "error": "unrecognized reference to 'Mapping::Numeric=HASH(0x555558883140)'",
+  "kind": "script",
+  "op": [
+   "deserialize",
+   0
+  ],
+  "result": null,
+  "step": 92
+ },
+ {
+  "index": 2,
+  "kind": "script",
+  "op": [
+   "insert",
+   "N:succ"
+  ],
+  "step": 93
+ },
+ {
+  "error": "unrecognized reference to 'Mapping::Numeric=HASH(0x555558883140)'",
+  "kind": "script",
+  "op": [
+   "serialize",
+   0
+  ],
+  "result": null,
+  "step": 94
+ },
+ {
+  "error": "unrecognized reference to 'Mapping::Numeric=HASH(0x555558883140)'",
+  "kind": "script",
+  "op": [
+   "deserialize",
+   0
+  ],
+  "result": null,
+  "step": 95
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   8
+  ],
+  "result": "<C1>1<S1>x<S1><C2>",
+  "step": 96
+ },
+ {
+  "category": "NUMBER",
+  "change": [],
+  "kind": "script",
+  "label": 6,
+  "name": "x",
+  "op": [
+   "deserialize",
+   8
+  ],
+  "step": 97
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   12
+  ],
+  "result": "foo<S1>x<S1><C2>",
+  "step": 98
+ },
+ {
+  "category": "s:foo",
+  "change": [],
+  "kind": "script",
+  "label": 8,
+  "name": "x",
+  "op": [
+   "deserialize",
+   12
+  ],
+  "step": 99
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   17
+  ],
+  "result": "<C1>1<S1>x<S1><C2>a<S2>q",
+  "step": 100
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "s:q"
+   ]
+  ],
+  "kind": "script",
+  "label": 11,
+  "name": "x",
+  "op": [
+   "deserialize",
+   17
+  ],
+  "step": 101
+ },
+ {
+  "index": 4,
+  "kind": "script",
+  "node_count": 4,
+  "op": [
+   "insert_mt",
+   33
+  ],
+  "step": 102
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   33
+  ],
+  "result": "<C1>1<S1>z<S1><C2>a<S2><C1>3",
+  "step": 103
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "MD:Different"
+   ]
+  ],
+  "kind": "script",
+  "label": 21,
+  "name": "z",
+  "op": [
+   "deserialize",
+   33
+  ],
+  "step": 104
+ },
+ {
+  "error": "Can't use an undefined value as a HASH reference",
+  "kind": "script",
+  "op": [
+   "deserialize_str",
+   "x"
+  ],
+  "result": null,
+  "step": 105
+ },
+ {
+  "error": "Can't use an undefined value as a HASH reference",
+  "kind": "script",
+  "op": [
+   "deserialize_str",
+   ""
+  ],
+  "result": null,
+  "step": 106
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "kind": "script",
+  "label": 34,
+  "name": "x",
+  "op": [
+   "deserialize_str",
+   "<C1>1<S1>x<S1><C2>a<S2><C1>2"
+  ],
+  "step": 107
+ },
+ {
+  "category": "NUMBER",
+  "change": [
+   [
+    "a",
+    "u"
+   ]
+  ],
+  "kind": "script",
+  "label": 35,
+  "name": "x",
+  "op": [
+   "deserialize_str",
+   "<C1>1<S1>x<S1><C2>a<S2><C1>9"
+  ],
+  "step": 108
+ },
+ {
+  "error": "Can't use an undefined value as a HASH reference",
+  "kind": "script",
+  "op": [
+   "deserialize_str",
+   "<C1>1<S1>x<S1>"
+  ],
+  "result": null,
+  "step": 109
+ },
+ {
+  "flipped_again_keys": [
+   "a",
+   "b",
+   "c",
+   "d"
+  ],
+  "flipped_keys": [
+   "a",
+   "b",
+   "c"
+  ],
+  "kind": "each_quirk",
+  "order": [
+   "d",
+   "b",
+   "c",
+   "a"
+  ],
+  "sameness_seq": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0
+  ]
+ },
+ {
+  "after_keys": 0,
+  "first": 0,
+  "kind": "each_reset",
+  "order": [
+   "d",
+   "b",
+   "c",
+   "a"
+  ],
+  "without_reset": 1
+ },
+ {
+  "applied_again_keys": [
+   "a",
+   "b",
+   "c",
+   "d"
+  ],
+  "applied_keys": [
+   "a",
+   "c"
+  ],
+  "found": 0,
+  "kind": "each_find_apply",
+  "order": [
+   "d",
+   "b",
+   "c",
+   "a"
+  ]
+ },
+ {
+  "apply_mt_num": "No viable candidate for call to multimethod ApplyMapping(Mapping::MetoType,#)",
+  "apply_smt_mt": "No viable candidate for call to multimethod ApplyMapping(SMetonymType,Mapping::MetoType)",
+  "find_mt_mt": "No viable candidate for call to multimethod FindMapping(Mapping::MetoType,Mapping::MetoType)",
+  "kind": "dispatch"
+ }
+]

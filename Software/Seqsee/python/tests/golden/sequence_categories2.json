@@ -1,0 +1,1731 @@
+[
+ {
+  "as_text": "mountain",
+  "cat": "mountain",
+  "class": "SCategory::Mountain",
+  "deserialized_class": "SCategory::Mountain",
+  "deserialized_is_same": 0,
+  "get_name": "mountain",
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 0,
+  "is_pure": 1,
+  "kind": "basics",
+  "memory_deps_count": 0,
+  "meto_types": [],
+  "serialize": "SCategory::Mountain->new()",
+  "serialize_died": 0,
+  "serialize_error": null,
+  "smartmatch_self": 1
+ },
+ {
+  "as_text": "Interlaced_2",
+  "cat": "interlaced_2",
+  "class": "SCategory::Interlaced",
+  "get_name": "Interlaced_2",
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 0,
+  "is_pure": 1,
+  "kind": "basics",
+  "longer_description": "That is, the sequence consists of 2 simpler sequences interlaced together",
+  "memory_deps_count": 0,
+  "meto_types": [],
+  "parts_count": 2,
+  "serialize": null,
+  "serialize_died": 1,
+  "serialize_error": "Can't locate object method \"ident\" via package \"SCategory::Interlaced\"",
+  "smartmatch_self": 1
+ },
+ {
+  "as_text": "Interlaced_3",
+  "cat": "interlaced_3",
+  "class": "SCategory::Interlaced",
+  "get_name": "Interlaced_3",
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 0,
+  "is_pure": 1,
+  "kind": "basics",
+  "longer_description": "That is, the sequence consists of 3 simpler sequences interlaced together",
+  "memory_deps_count": 0,
+  "meto_types": [],
+  "parts_count": 3,
+  "serialize": null,
+  "serialize_died": 1,
+  "serialize_error": "Can't locate object method \"ident\" via package \"SCategory::Interlaced\"",
+  "smartmatch_self": 1
+ },
+ {
+  "as_text": "Interlaced_0",
+  "cat": "interlaced_0",
+  "class": "SCategory::Interlaced",
+  "get_name": "Interlaced_0",
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 0,
+  "is_pure": 1,
+  "kind": "basics",
+  "longer_description": "That is, the sequence consists of 0 simpler sequences interlaced together",
+  "memory_deps_count": 0,
+  "meto_types": [],
+  "parts_count": 0,
+  "serialize": null,
+  "serialize_died": 1,
+  "serialize_error": "Can't locate object method \"ident\" via package \"SCategory::Interlaced\"",
+  "smartmatch_self": 1
+ },
+ {
+  "atts": [],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "foot"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "peak"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "foot",
+   "peak"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "peak",
+   "foot",
+   "x"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "foot",
+   "foot"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "x",
+   "y"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_1"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_2",
+   "part_no_3"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_x",
+   "part_no_y"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "x",
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "apart_no_1",
+   "part_no_2"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_2",
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "mountain",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "foot"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "peak"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "foot",
+   "peak"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "peak",
+   "foot",
+   "x"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "foot",
+   "foot"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "x",
+   "y"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_1"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_2",
+   "part_no_3"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_x",
+   "part_no_y"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "x",
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "apart_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_2",
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_2",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "foot"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "peak"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "foot",
+   "peak"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "peak",
+   "foot",
+   "x"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "foot",
+   "foot"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "x",
+   "y"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_1"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_2",
+   "part_no_3"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "part_no_x",
+   "part_no_y"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "x",
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "apart_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_2",
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_3",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "foot"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "peak"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "foot",
+   "peak"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "peak",
+   "foot",
+   "x"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "foot",
+   "foot"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "x",
+   "y"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "part_no_1"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_1"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_1",
+   "part_no_2",
+   "part_no_3"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_x",
+   "part_no_y"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "x",
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "apart_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "part_no_2",
+   "part_no_1",
+   "part_no_2"
+  ],
+  "cat": "interlaced_0",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "args_after": {
+   "foot": "1",
+   "peak": "4"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "3",
+   "2",
+   "1"
+  ],
+  "kind": "build",
+  "label": "plain",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "4",
+   "peak": "1"
+  },
+  "cat": "mountain",
+  "defined": 0,
+  "died": 0,
+  "kind": "build",
+  "label": "reversed"
+ },
+ {
+  "args_after": {
+   "foot": "3",
+   "peak": "3"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "3"
+  ],
+  "kind": "build",
+  "label": "equal",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "SInt(2)",
+   "peak": "SInt(5)"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2",
+   "3",
+   "4",
+   "5",
+   "4",
+   "3",
+   "2"
+  ],
+  "kind": "build",
+  "label": "sint",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "SInt(2)",
+   "peak": "SInt(2)"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2"
+  ],
+  "kind": "build",
+  "label": "sint equal",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "0",
+   "peak": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "0",
+   "1",
+   "2",
+   "1",
+   "0"
+  ],
+  "kind": "build",
+  "label": "zero foot",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "-1",
+   "peak": "1"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "-1",
+   "0",
+   "1",
+   "0",
+   "-1"
+  ],
+  "kind": "build",
+  "label": "negative",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "1.5",
+   "peak": "3.7"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2",
+   "3",
+   "2",
+   "1"
+  ],
+  "kind": "build",
+  "label": "floats",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "1",
+   "peak": "1.5"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1"
+  ],
+  "kind": "build",
+  "label": "float peak just above",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "3.5",
+   "peak": "3.5"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "3.5"
+  ],
+  "kind": "build",
+  "label": "float equal",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "2",
+   "peak": "4"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2",
+   "3",
+   "4",
+   "3",
+   "2"
+  ],
+  "kind": "build",
+  "label": "strings",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "3",
+   "peak": "3.0"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "3"
+  ],
+  "kind": "build",
+  "label": "strings equal",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": null,
+   "peak": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "0",
+   "1",
+   "2",
+   "1",
+   "0"
+  ],
+  "kind": "build",
+  "label": "foot undef",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "2",
+   "peak": null
+  },
+  "cat": "mountain",
+  "defined": 0,
+  "died": 0,
+  "kind": "build",
+  "label": "peak undef"
+ },
+ {
+  "args_after": {
+   "extra": "x",
+   "foot": "1",
+   "peak": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "mountain",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2",
+   "1"
+  ],
+  "kind": "build",
+  "label": "extra key",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "foot": "1"
+  },
+  "cat": "mountain",
+  "died": 1,
+  "kind": "build",
+  "label": "missing peak"
+ },
+ {
+  "args_after": {
+   "peak": "1"
+  },
+  "cat": "mountain",
+  "died": 1,
+  "kind": "build",
+  "label": "missing foot"
+ },
+ {
+  "args_after": {},
+  "cat": "mountain",
+  "died": 1,
+  "kind": "build",
+  "label": "empty"
+ },
+ {
+  "args_after": {
+   "part_no_1": "1",
+   "part_no_2": "2",
+   "part_no_3": "3"
+  },
+  "cat": "interlaced_2",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2"
+  ],
+  "kind": "build",
+  "label": "all parts",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "V(1)",
+   "part_no_2": "SInt(2)",
+   "part_no_3": "E(3)"
+  },
+  "cat": "interlaced_2",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "V(1)",
+   "SInt(2)"
+  ],
+  "kind": "build",
+  "label": "objects",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "1",
+   "part_no_3": "3"
+  },
+  "cat": "interlaced_2",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   null
+  ],
+  "kind": "build",
+  "label": "missing part",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "1",
+   "part_no_2": "2",
+   "part_no_3": "3",
+   "part_no_4": "4",
+   "x": "5"
+  },
+  "cat": "interlaced_2",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2"
+  ],
+  "kind": "build",
+  "label": "extra keys",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {},
+  "cat": "interlaced_2",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   null,
+   null
+  ],
+  "kind": "build",
+  "label": "empty",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "1",
+   "part_no_2": "2",
+   "part_no_3": "3"
+  },
+  "cat": "interlaced_3",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "build",
+  "label": "all parts",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "V(1)",
+   "part_no_2": "SInt(2)",
+   "part_no_3": "E(3)"
+  },
+  "cat": "interlaced_3",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "V(1)",
+   "SInt(2)",
+   "E(3)"
+  ],
+  "kind": "build",
+  "label": "objects",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "1",
+   "part_no_3": "3"
+  },
+  "cat": "interlaced_3",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   null,
+   "3"
+  ],
+  "kind": "build",
+  "label": "missing part",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "1",
+   "part_no_2": "2",
+   "part_no_3": "3",
+   "part_no_4": "4",
+   "x": "5"
+  },
+  "cat": "interlaced_3",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "build",
+  "label": "extra keys",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {},
+  "cat": "interlaced_3",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   null,
+   null,
+   null
+  ],
+  "kind": "build",
+  "label": "empty",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "1",
+   "part_no_2": "2",
+   "part_no_3": "3"
+  },
+  "cat": "interlaced_0",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "all parts",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "V(1)",
+   "part_no_2": "SInt(2)",
+   "part_no_3": "E(3)"
+  },
+  "cat": "interlaced_0",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "objects",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "1",
+   "part_no_3": "3"
+  },
+  "cat": "interlaced_0",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "missing part",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {
+   "part_no_1": "1",
+   "part_no_2": "2",
+   "part_no_3": "3",
+   "part_no_4": "4",
+   "x": "5"
+  },
+  "cat": "interlaced_0",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "extra keys",
+  "reln_is_chain": 0
+ },
+ {
+  "args_after": {},
+  "cat": "interlaced_0",
+  "cats_count": 0,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "empty",
+  "reln_is_chain": 0
+ },
+ {
+  "bindings": {
+   "foot": "SInt(1)",
+   "peak": "SInt(3)"
+  },
+  "cat": "mountain",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "plain",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(1,2,3,2,1)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "mountain",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "even size",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "mountain",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "empty",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {
+   "foot": "SInt(4)",
+   "peak": "SInt(4)"
+  },
+  "cat": "mountain",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "single item",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(4)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "mountain",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "not seen",
+  "seen": [
+   "Built(1,2,3,2,1)"
+  ],
+  "seen_count": 1
+ },
+ {
+  "cat": "mountain",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "seen returns 0",
+  "seen": [
+   "Built(1,2,3,2,1)"
+  ],
+  "seen_count": 1
+ },
+ {
+  "bindings": {
+   "foot": "SInt(0)",
+   "peak": "SInt(1)"
+  },
+  "cat": "mountain",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "zero foot",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(0,1,0)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "foot": "SInt(3)",
+   "peak": "SInt(1)"
+  },
+  "cat": "mountain",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "valley",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   null
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "mountain",
+  "died": 1,
+  "kind": "instancer",
+  "label": "first item undef",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "mountain",
+  "died": 1,
+  "kind": "instancer",
+  "label": "middle item missing",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "mountain",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "parts_count even, items odd",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {
+   "foot": "SInt(1)",
+   "peak": "SInt(5)"
+  },
+  "cat": "mountain",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "metonym subobject",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(1,2,3,4,5,4,3,2,1)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "mountain",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "effective object not an element",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "mountain",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "element subclass peak",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {
+   "foot": "SInt(1)",
+   "peak": "SInt(2)"
+  },
+  "cat": "mountain",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "parts blemished",
+  "metonymy_mode": "SINGLE",
+  "position": 2,
+  "ref": "SBindings",
+  "seen": [
+   "Built(1,2,1)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "1"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "foot": "SInt(1)",
+   "peak": "SInt(2)"
+  },
+  "cat": "mountain",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "parts undef",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(1,2,1)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "foot": "SInt(2)",
+   "peak": "SInt(2)"
+  },
+  "cat": "mountain",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "element group, entire blemish",
+  "metonymy_mode": "SINGLE",
+  "position": 1,
+  "ref": "SBindings",
+  "seen": [
+   "Built(2)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "0"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "foot": "SInt(2)",
+   "peak": "SInt(2)"
+  },
+  "cat": "mountain",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "element group, no entire",
+  "metonymy_mode": "SINGLE",
+  "position": 3,
+  "ref": "SBindings",
+  "seen": [
+   "Built(2)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "2"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "foot": "SInt(2)",
+   "peak": "SInt(3)"
+  },
+  "cat": "mountain",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "non-element group, entire blemish",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(2,3,2)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "part_no_1": "E(1)",
+   "part_no_2": "E(2)"
+  },
+  "cat": "interlaced_2",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "two items",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [],
+  "seen_count": 0,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "interlaced_2",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "three items",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "interlaced_2",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "empty",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {
+   "part_no_1": null,
+   "part_no_2": "E(2)"
+  },
+  "cat": "interlaced_2",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "undef item",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [],
+  "seen_count": 0,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "interlaced_2",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "mixed",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "interlaced_3",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "two items",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {
+   "part_no_1": "E(1)",
+   "part_no_2": "E(2)",
+   "part_no_3": "E(3)"
+  },
+  "cat": "interlaced_3",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "three items",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [],
+  "seen_count": 0,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "interlaced_3",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "empty",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "interlaced_3",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "undef item",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {
+   "part_no_1": "V(1)",
+   "part_no_2": "SInt(2)",
+   "part_no_3": "x"
+  },
+  "cat": "interlaced_3",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "mixed",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [],
+  "seen_count": 0,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "interlaced_0",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "two items",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "interlaced_0",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "three items",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {},
+  "cat": "interlaced_0",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "empty",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [],
+  "seen_count": 0,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "interlaced_0",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "undef item",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "interlaced_0",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "mixed",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "deserialize_new_name": "Interlaced_7",
+  "deserialize_same": 1,
+  "kind": "create",
+  "label": "memo",
+  "leading_zero_count": "02",
+  "leading_zero_name": "Interlaced_02",
+  "leading_zero_same": 0,
+  "negative_name": "Interlaced_-1",
+  "new_is_not_memo": 0,
+  "same_float": 1,
+  "same_int": 1,
+  "same_string": 1
+ },
+ {
+  "create": 1,
+  "create_again": 1,
+  "kind": "create_dies",
+  "label": "2.5",
+  "new": 1
+ },
+ {
+  "create": 1,
+  "create_again": 1,
+  "kind": "create_dies",
+  "label": "abc",
+  "new": 1
+ },
+ {
+  "create": 1,
+  "create_again": 1,
+  "kind": "create_dies",
+  "label": "undef",
+  "new": 1
+ },
+ {
+  "create": 1,
+  "create_again": 1,
+  "kind": "create_dies",
+  "label": "empty string",
+  "new": 1
+ },
+ {
+  "create": 1,
+  "create_again": 1,
+  "kind": "create_dies",
+  "label": "1e3",
+  "new": 1
+ },
+ {
+  "create": 1,
+  "create_again": 1,
+  "kind": "create_dies",
+  "label": " 3",
+  "new": 1
+ },
+ {
+  "kind": "create_dies",
+  "label": "missing",
+  "new": 1
+ },
+ {
+  "as_text_after": "Interlaced_5",
+  "count_after_bad_set": 8,
+  "kind": "memoize",
+  "longer_after": "That is, the sequence consists of 6 simpler sequences interlaced together",
+  "name_after": "Interlaced_5",
+  "name_before": "Interlaced_5",
+  "parts_count_after": 6,
+  "set_bad_dies": 1,
+  "unnamed_set_as_text": "Interlaced_8",
+  "unnamed_set_name": "Interlaced_8"
+ }
+]

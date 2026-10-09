@@ -1,0 +1,1900 @@
+[
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   4
+  ],
+  "error": null,
+  "extension": [
+   4
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 1,
+  "seq": "1 1 2 1 2 3",
+  "status": "accepted",
+  "steps": 368
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   4
+  ],
+  "error": null,
+  "extension": [
+   4
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 2,
+  "seq": "1 1 2 1 2 3",
+  "status": "accepted",
+  "steps": 220
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   4
+  ],
+  "error": null,
+  "extension": [
+   4
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 3,
+  "seq": "1 1 2 1 2 3",
+  "status": "accepted",
+  "steps": 275
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   4
+  ],
+  "error": null,
+  "extension": [
+   4
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 4,
+  "seq": "1 1 2 1 2 3",
+  "status": "accepted",
+  "steps": 211
+ },
+ {
+  "asked": [
+   ". Is the next term 4??",
+   ". Is the next term 5??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "error": null,
+  "extension": [
+   4,
+   5
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 5,
+  "seq": "1 1 2 1 2 3",
+  "status": "accepted",
+  "steps": 306
+ },
+ {
+  "asked": [
+   " Extending analogy: Is the next term 4??",
+   ". Is the next term 5??",
+   ". Is the next term 6??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   4,
+   5,
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 6,
+  "seq": "1 1 2 1 2 3",
+  "status": "accepted",
+  "steps": 539
+ },
+ {
+  "asked": [
+   ". Is the next term 6??",
+   ". Is the next term 7??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "error": null,
+  "extension": [
+   6,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 1,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 142
+ },
+ {
+  "asked": [
+   " Extending analogy: Is the next term 6??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 2,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 203
+ },
+ {
+  "asked": [
+   ". Is the next term 6??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 3,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 182
+ },
+ {
+  "asked": [
+   ". Is the next term 6??",
+   ". Is the next term 7??",
+   " Extending analogy: Is the next term 8??",
+   ". Is the next term 9??",
+   ". Is the next term 10??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "error": null,
+  "extension": [
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 4,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 388
+ },
+ {
+  "asked": [
+   ". Is the next term 6??",
+   ". Is the next term 7??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "error": null,
+  "extension": [
+   6,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 5,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 128
+ },
+ {
+  "asked": [
+   ". Is the next term 6??"
+  ],
+  "continuation": null,
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 6,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 96
+ },
+ {
+  "asked": [],
+  "continuation": null,
+  "elements": [
+   5
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 100,
+  "responses": [],
+  "seed": 1,
+  "seq": "5",
+  "status": "max_steps",
+  "steps": 100
+ },
+ {
+  "asked": [],
+  "continuation": null,
+  "elements": [
+   5
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 100,
+  "responses": [],
+  "seed": 2,
+  "seq": "5",
+  "status": "max_steps",
+  "steps": 100
+ },
+ {
+  "asked": [],
+  "continuation": null,
+  "elements": [
+   5
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 100,
+  "responses": [],
+  "seed": 3,
+  "seq": "5",
+  "status": "max_steps",
+  "steps": 100
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 1,
+  "seq": "1 1 2 1 2 3",
+  "status": "max_steps",
+  "steps": 1000
+ },
+ {
+  "asked": [
+   ". Is the next term 4??",
+   ". Are the next 4 terms 1, 2, 3, and 4?",
+   ". Are the next 5 terms 1, 2, 3, 4, and 5?"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "error": null,
+  "extension": [
+   1,
+   2,
+   3,
+   4,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "max_steps": 1000,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 2,
+  "seq": "1 1 2 1 2 3",
+  "status": "accepted",
+  "steps": 501
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 3,
+  "seq": "1 1 2 1 2 3",
+  "status": "max_steps",
+  "steps": 1000
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 4,
+  "seq": "1 1 2 1 2 3",
+  "status": "max_steps",
+  "steps": 1000
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 5,
+  "seq": "1 1 2 1 2 3",
+  "status": "max_steps",
+  "steps": 1000
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 6,
+  "seq": "1 1 2 1 2 3",
+  "status": "max_steps",
+  "steps": 1000
+ },
+ {
+  "asked": [
+   ". Is the next term 4??",
+   ". Are the next 4 terms 1, 2, 3, and 4?"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "error": null,
+  "extension": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "max_steps": 1000,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 7,
+  "seq": "1 1 2 1 2 3",
+  "status": "accepted",
+  "steps": 605
+ },
+ {
+  "asked": [
+   " Extending analogy: Is the next term 4??"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 8,
+  "seq": "1 1 2 1 2 3",
+  "status": "max_steps",
+  "steps": 1000
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 9,
+  "seq": "1 1 2 1 2 3",
+  "status": "max_steps",
+  "steps": 1000
+ },
+ {
+  "asked": [
+   ". Is the next term 4??",
+   ". Are the next 4 terms 1, 2, 3, and 4?"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "error": null,
+  "extension": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "max_steps": 1000,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 10,
+  "seq": "1 1 2 1 2 3",
+  "status": "accepted",
+  "steps": 579
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 11,
+  "seq": "1 1 2 1 2 3",
+  "status": "max_steps",
+  "steps": 1000
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": "1 2 3 4 1 2 3 4 5",
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 12,
+  "seq": "1 1 2 1 2 3",
+  "status": "max_steps",
+  "steps": 1000
+ },
+ {
+  "asked": [
+   ". Is the next term 6??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 1,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 222
+ },
+ {
+  "asked": [
+   ". Is the next term 6??",
+   ". Is the next term 7??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "error": null,
+  "extension": [
+   6,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 2,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 192
+ },
+ {
+  "asked": [
+   ". Is the next term 6??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 3,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 96
+ },
+ {
+  "asked": [
+   ". Is the next term 6??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 4,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 118
+ },
+ {
+  "asked": [
+   ". Is the next term 6??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 5,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 128
+ },
+ {
+  "asked": [
+   ". Is the next term 6??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 6,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 230
+ },
+ {
+  "asked": [
+   ". Is the next term 6??",
+   ". Is the next term 7??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "error": null,
+  "extension": [
+   6,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 7,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 171
+ },
+ {
+  "asked": [
+   ". Is the next term 6??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 8,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 132
+ },
+ {
+  "asked": [
+   ". Is the next term 6??",
+   ". Is the next term 7??",
+   ". Is the next term 8??",
+   ". Is the next term 9??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "error": null,
+  "extension": [
+   6,
+   7,
+   8,
+   9
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 9,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 215
+ },
+ {
+  "asked": [
+   " Extending analogy: Is the next term 6??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "error": null,
+  "extension": [
+   6
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 10,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 181
+ },
+ {
+  "asked": [
+   ". Is the next term 6??",
+   ". Is the next term 7??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "error": null,
+  "extension": [
+   6,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 11,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 192
+ },
+ {
+  "asked": [
+   " Extending analogy: Is the next term 6??",
+   ". Is the next term 7??"
+  ],
+  "continuation": "6 7 8 9 10",
+  "elements": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "error": null,
+  "extension": [
+   6,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 12,
+  "seq": "1 2 3 4 5",
+  "status": "accepted",
+  "steps": 190
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 1,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 2,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 3,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 4,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 5,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 6,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 7,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 8,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 9,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 10,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 11,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [],
+  "continuation": "10 12 14 16",
+  "elements": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 12,
+  "seq": "2 4 6 8",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [
+   ". Are the next 2 terms 1 and 7?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 1,
+  "seq": "1 7 1 7 1 7",
+  "status": "accepted",
+  "steps": 347
+ },
+ {
+  "asked": [
+   ". Are the next 2 terms 1 and 7?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 2,
+  "seq": "1 7 1 7 1 7",
+  "status": "accepted",
+  "steps": 390
+ },
+ {
+  "asked": [],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 3,
+  "seq": "1 7 1 7 1 7",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [
+   ". Are the next 2 terms 1 and 7?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 4,
+  "seq": "1 7 1 7 1 7",
+  "status": "accepted",
+  "steps": 268
+ },
+ {
+  "asked": [
+   ". Are the next 2 terms 1 and 7?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 5,
+  "seq": "1 7 1 7 1 7",
+  "status": "accepted",
+  "steps": 307
+ },
+ {
+  "asked": [
+   ". Is the next term 1??",
+   ". Are the next 2 terms 7 and 1?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7,
+   1
+  ],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 6,
+  "seq": "1 7 1 7 1 7",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [
+   ". Is the next term 1??",
+   ". Are the next 2 terms 7 and 1?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7,
+   1
+  ],
+  "max_steps": 600,
+  "responses": [],
+  "seed": 7,
+  "seq": "1 7 1 7 1 7",
+  "status": "max_steps",
+  "steps": 600
+ },
+ {
+  "asked": [
+   ". Are the next 2 terms 1 and 7?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 8,
+  "seq": "1 7 1 7 1 7",
+  "status": "accepted",
+  "steps": 368
+ },
+ {
+  "asked": [
+   ". Are the next 2 terms 1 and 7?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 9,
+  "seq": "1 7 1 7 1 7",
+  "status": "accepted",
+  "steps": 439
+ },
+ {
+  "asked": [
+   ". Is the next term 1??",
+   ". Is the next term 7??",
+   ". Are the next 2 terms 1 and 7?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7,
+   1,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 10,
+  "seq": "1 7 1 7 1 7",
+  "status": "accepted",
+  "steps": 360
+ },
+ {
+  "asked": [
+   ". Are the next 2 terms 1 and 7?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 11,
+  "seq": "1 7 1 7 1 7",
+  "status": "accepted",
+  "steps": 269
+ },
+ {
+  "asked": [
+   ". Are the next 2 terms 1 and 7?",
+   ". Are the next 2 terms 1 and 7?"
+  ],
+  "continuation": "1 7 1 7",
+  "elements": [
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7,
+   1,
+   7
+  ],
+  "error": null,
+  "extension": [
+   1,
+   7,
+   1,
+   7
+  ],
+  "max_steps": 600,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 12,
+  "seq": "1 7 1 7 1 7",
+  "status": "accepted",
+  "steps": 507
+ },
+ {
+  "asked": [
+   ". Are the next 5 terms 5, 5, 5, 5, and 5?",
+   ". Are the next 6 terms 6, 6, 6, 6, 6, and 6?"
+  ],
+  "continuation": "5 5 5 5 5",
+  "elements": [
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "error": null,
+  "extension": [
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 1,
+  "seq": "1 2 2 3 3 3 4 4 4 4",
+  "status": "out_of_terms",
+  "steps": 321
+ },
+ {
+  "asked": [
+   ". Is the next term 4??"
+  ],
+  "continuation": "5 5 5 5 5",
+  "elements": [
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4
+  ],
+  "error": null,
+  "extension": [],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 2,
+  "seq": "1 2 2 3 3 3 4 4 4 4",
+  "status": "max_steps",
+  "steps": 1000
+ },
+ {
+  "asked": [
+   ". Are the next 5 terms 5, 5, 5, 5, and 5?"
+  ],
+  "continuation": "5 5 5 5 5",
+  "elements": [
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "error": null,
+  "extension": [
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "max_steps": 1000,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 3,
+  "seq": "1 2 2 3 3 3 4 4 4 4",
+  "status": "accepted",
+  "steps": 461
+ },
+ {
+  "asked": [
+   ". Are the next 5 terms 5, 5, 5, 5, and 5?"
+  ],
+  "continuation": "5 5 5 5 5",
+  "elements": [
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "error": null,
+  "extension": [
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "max_steps": 1000,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 4,
+  "seq": "1 2 2 3 3 3 4 4 4 4",
+  "status": "accepted",
+  "steps": 500
+ },
+ {
+  "asked": [
+   ". Are the next 5 terms 5, 5, 5, 5, and 5?"
+  ],
+  "continuation": "5 5 5 5 5",
+  "elements": [
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "error": null,
+  "extension": [
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "max_steps": 1000,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 5,
+  "seq": "1 2 2 3 3 3 4 4 4 4",
+  "status": "accepted",
+  "steps": 152
+ },
+ {
+  "asked": [
+   ". Are the next 5 terms 5, 5, 5, 5, and 5?",
+   ". Are the next 6 terms 6, 6, 6, 6, 6, and 6?"
+  ],
+  "continuation": "5 5 5 5 5",
+  "elements": [
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "error": null,
+  "extension": [
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 6,
+  "seq": "1 2 2 3 3 3 4 4 4 4",
+  "status": "out_of_terms",
+  "steps": 587
+ },
+ {
+  "asked": [
+   ". Are the next 5 terms 5, 5, 5, 5, and 5?",
+   ". Are the next 6 terms 6, 6, 6, 6, 6, and 6?"
+  ],
+  "continuation": "5 5 5 5 5",
+  "elements": [
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "error": null,
+  "extension": [
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "max_steps": 1000,
+  "responses": [],
+  "seed": 7,
+  "seq": "1 2 2 3 3 3 4 4 4 4",
+  "status": "out_of_terms",
+  "steps": 131
+ },
+ {
+  "asked": [
+   ". Are the next 5 terms 5, 5, 5, 5, and 5?"
+  ],
+  "continuation": "5 5 5 5 5",
+  "elements": [
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "error": null,
+  "extension": [
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "max_steps": 1000,
+  "responses": [
+   "Does this generate the sequence you had in mind?"
+  ],
+  "seed": 8,
+  "seq": "1 2 2 3 3 3 4 4 4 4",
+  "status": "accepted",
+  "steps": 514
+ }
+]

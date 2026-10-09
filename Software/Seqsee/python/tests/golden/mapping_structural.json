@@ -1,0 +1,3417 @@
+[
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 0,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": []
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 0
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 0,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 0,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": []
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 1
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 0,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 0,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 2
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 0,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 0,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "metonymy_reln": "s:",
+    "position_reln": "s:",
+    "sl": []
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 3
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 1,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:pred"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": []
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:pred/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 4
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "end",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 2,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "end",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": []
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "end",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 5
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Different",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 3,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Different",
+    "meto_mode": "NONE",
+    "sl": []
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Different",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 6
+ },
+ {
+  "category": "DESC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 4,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "DESC",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": []
+   }
+  ],
+  "opts_after": {
+   "category": "DESC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 7
+ },
+ {
+  "category": "ASC",
+  "cb": [],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 5,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 8
+ },
+ {
+  "category": "ASC",
+  "cb": [],
+  "cb_is_given": 0,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 5,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": "u",
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": "u"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 9
+ },
+ {
+  "category": "ASC",
+  "cb": [],
+  "cb_is_given": 0,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 5,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": []
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 10
+ },
+ {
+  "error": "Can't use string (\"x\") as a HASH ref while \"strict refs\" in use",
+  "kind": "script",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": "s:x",
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": []
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": "s:x",
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "step": 11
+ },
+ {
+  "error": "Can't use string (\"x\") as a HASH ref while \"strict refs\" in use",
+  "kind": "script",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": "s:x"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": "s:x"
+  },
+  "step": 12
+ },
+ {
+  "error": "need meto_mode",
+  "kind": "script",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "direction_reln": "MD:Same",
+    "meto_mode": "u"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "direction_reln": "MD:Same",
+   "meto_mode": "u"
+  },
+  "step": 13
+ },
+ {
+  "error": "need meto_mode",
+  "kind": "script",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "direction_reln": "MD:Same"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "direction_reln": "MD:Same"
+  },
+  "step": 14
+ },
+ {
+  "error": "need meto_mode",
+  "kind": "script",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "direction_reln": "MD:Same",
+    "meto_mode": "s:"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "direction_reln": "MD:Same",
+   "meto_mode": "s:"
+  },
+  "step": 15
+ },
+ {
+  "error": "Can't locate object method \"is_metonymy_present\" via package \"NONE\" (perhaps you forgot to load \"NONE\"?)",
+  "kind": "script",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "direction_reln": "MD:Same",
+    "meto_mode": "s:NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "direction_reln": "MD:Same",
+   "meto_mode": "s:NONE"
+  },
+  "step": 16
+ },
+ {
+  "error": "Attribute (direction_reln) is required at constructor Mapping::Structural::new (defined",
+  "kind": "script",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [],
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [],
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "step": 17
+ },
+ {
+  "error": "Attribute (category) is required at constructor Mapping::Structural::new (defined",
+  "kind": "script",
+  "op": [
+   "create",
+   {
+    "cb": [],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "changed_bindings": [],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "step": 18
+ },
+ {
+  "category": "u",
+  "cb": [],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 6,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "u",
+    "cb": [],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "u",
+   "changed_bindings": [],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 19
+ },
+ {
+  "category": "u",
+  "cb": [],
+  "cb_is_given": 0,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 6,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "s:",
+    "cb": [],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "s:",
+   "changed_bindings": [],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 20
+ },
+ {
+  "category": "s:foo",
+  "cb": [],
+  "cb_is_given": 1,
+  "direction_reln": "u",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 7,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "s:foo",
+    "cb": [],
+    "direction_reln": "u",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "s:foo",
+   "changed_bindings": [],
+   "direction_reln": "u",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 21
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "N:same/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 8,
+  "meto_mode": "SINGLE",
+  "metonymy_reln": "MT:each",
+  "op": [
+   "create",
+   {
+    "category": "SAME",
+    "cb": [
+     [
+      "each",
+      "N:same"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "SINGLE",
+    "metonymy_reln": "MT:each:length:same",
+    "position_reln": "MP:same"
+   }
+  ],
+  "opts_after": {
+   "category": "SAME",
+   "changed_bindings": [
+    [
+     "each",
+     "N:same/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "SINGLE",
+   "metonymy_reln": "MT:each",
+   "position_reln": "MP:same",
+   "slippages": []
+  },
+  "position_reln": "MP:same",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 22
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 9,
+  "meto_mode": "SINGLE",
+  "metonymy_reln": "MT:each",
+  "op": [
+   "create",
+   {
+    "category": "SAME",
+    "cb": [
+     [
+      "each",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "SINGLE",
+    "metonymy_reln": "MT:each:length:succ",
+    "position_reln": "MP:succ"
+   }
+  ],
+  "opts_after": {
+   "category": "SAME",
+   "changed_bindings": [
+    [
+     "each",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "SINGLE",
+   "metonymy_reln": "MT:each",
+   "position_reln": "MP:succ",
+   "slippages": []
+  },
+  "position_reln": "MP:succ",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 23
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 10,
+  "meto_mode": "ALL",
+  "metonymy_reln": "MT:each",
+  "op": [
+   "create",
+   {
+    "category": "SAME",
+    "cb": [
+     [
+      "each",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "ALL",
+    "metonymy_reln": "MT:each:length:succ",
+    "position_reln": "MP:succ"
+   }
+  ],
+  "opts_after": {
+   "category": "SAME",
+   "changed_bindings": [
+    [
+     "each",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "ALL",
+   "metonymy_reln": "MT:each",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 24
+ },
+ {
+  "error": "Attribute (metonymy_reln) is required at constructor Mapping::Structural::new (defined",
+  "kind": "script",
+  "op": [
+   "create",
+   {
+    "category": "SAME",
+    "cb": [
+     [
+      "each",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "ALL",
+    "position_reln": "s:"
+   }
+  ],
+  "opts_after": {
+   "category": "SAME",
+   "changed_bindings": [
+    [
+     "each",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "ALL",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "step": 25
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Different",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 11,
+  "meto_mode": "ALLBUTONE",
+  "metonymy_reln": "MT:each",
+  "op": [
+   "create",
+   {
+    "category": "SAME",
+    "cb": [
+     [
+      "each",
+      "N:pred"
+     ]
+    ],
+    "direction_reln": "MD:Different",
+    "meto_mode": "ALLBUTONE",
+    "metonymy_reln": "MT:each:length:pred",
+    "position_reln": "MP:pred"
+   }
+  ],
+  "opts_after": {
+   "category": "SAME",
+   "changed_bindings": [
+    [
+     "each",
+     "N:pred/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Different",
+   "meto_mode": "ALLBUTONE",
+   "metonymy_reln": "MT:each",
+   "position_reln": "MP:pred",
+   "slippages": []
+  },
+  "position_reln": "MP:pred",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 26
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "end",
+    "N:succ/NUMBER"
+   ],
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 12,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ],
+     [
+      "end",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "end",
+     "N:succ/NUMBER"
+    ],
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 27
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "end",
+    "N:succ/NUMBER"
+   ],
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 0,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 12,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "end",
+      "N:succ"
+     ],
+     [
+      "start",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "end",
+     "N:succ/NUMBER"
+    ],
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 28
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 13,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": [
+     [
+      "start",
+      "end"
+     ]
+    ]
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": [
+    [
+     "start",
+     "s:end"
+    ]
+   ]
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [
+   [
+    "start",
+    "s:end"
+   ]
+  ],
+  "step": 29
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "end",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 14,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "end",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": [
+     [
+      "start",
+      "end"
+     ],
+     [
+      "end",
+      "start"
+     ]
+    ]
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "end",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": [
+    [
+     "end",
+     "s:start"
+    ],
+    [
+     "start",
+     "s:end"
+    ]
+   ]
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [
+   [
+    "end",
+    "s:start"
+   ],
+   [
+    "start",
+    "s:end"
+   ]
+  ],
+  "step": 30
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:same/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 15,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:same"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": [
+     [
+      "start",
+      "start"
+     ]
+    ]
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:same/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": [
+    [
+     "start",
+     "s:start"
+    ]
+   ]
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [
+   [
+    "start",
+    "s:start"
+   ]
+  ],
+  "step": 31
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:same/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 16,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:same"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": [
+     [
+      "start",
+      "end"
+     ],
+     [
+      "end",
+      "end"
+     ]
+    ]
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:same/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": [
+    [
+     "end",
+     "s:end"
+    ],
+    [
+     "start",
+     "s:end"
+    ]
+   ]
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [
+   [
+    "end",
+    "s:end"
+   ],
+   [
+    "start",
+    "s:end"
+   ]
+  ],
+  "step": 32
+ },
+ {
+  "category": "MOUNTAIN",
+  "cb": [
+   [
+    "foot",
+    "N:succ/NUMBER"
+   ],
+   [
+    "peak",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 17,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "MOUNTAIN",
+    "cb": [
+     [
+      "foot",
+      "N:succ"
+     ],
+     [
+      "peak",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "MOUNTAIN",
+   "changed_bindings": [
+    [
+     "foot",
+     "N:succ/NUMBER"
+    ],
+    [
+     "peak",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 33
+ },
+ {
+  "category": "IL2",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 18,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "IL2",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "IL2",
+   "changed_bindings": [
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 34
+ },
+ {
+  "category": "IL3",
+  "cb": [],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 19,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "IL3",
+    "cb": [],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "IL3",
+   "changed_bindings": [],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 35
+ },
+ {
+  "category": "PRIME",
+  "cb": [],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 20,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "PRIME",
+    "cb": [],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "PRIME",
+   "changed_bindings": [],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 36
+ },
+ {
+  "category": "NUMBER",
+  "cb": [
+   [
+    "mag",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 21,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "NUMBER",
+    "cb": [
+     [
+      "mag",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "NUMBER",
+   "changed_bindings": [
+    [
+     "mag",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 37
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "ST#0"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 22,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "SAME",
+    "cb": [
+     [
+      "each",
+      "ST:0"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE"
+   }
+  ],
+  "opts_after": {
+   "category": "SAME",
+   "changed_bindings": [
+    [
+     "each",
+     "ST#0"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": []
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 38
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "end",
+    "N:succ/NUMBER"
+   ],
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 23,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "create",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ],
+     [
+      "end",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "sl": [
+     [
+      "start",
+      "end"
+     ],
+     [
+      "end",
+      "start"
+     ]
+    ]
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "end",
+     "N:succ/NUMBER"
+    ],
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": [
+    [
+     "end",
+     "s:start"
+    ],
+    [
+     "start",
+     "s:end"
+    ]
+   ]
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [
+   [
+    "end",
+    "s:start"
+   ],
+   [
+    "start",
+    "s:end"
+   ]
+  ],
+  "step": 39
+ },
+ {
+  "category": "ASC",
+  "cb": [],
+  "cb_is_given": 0,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 24,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "new",
+   {
+    "category": "ASC",
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "metonymy_reln": "s:x",
+    "position_reln": "s:x"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x"
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 40
+ },
+ {
+  "error": "Attribute (metonymy_reln) is required at constructor Mapping::Structural::new (defined",
+  "kind": "script",
+  "op": [
+   "new",
+   {
+    "category": "ASC",
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "position_reln": "s:x"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "position_reln": "s:x"
+  },
+  "step": 41
+ },
+ {
+  "error": "Attribute (position_reln) is required at constructor Mapping::Structural::new (defined",
+  "kind": "script",
+  "op": [
+   "new",
+   {
+    "category": "ASC",
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "metonymy_reln": "s:x"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x"
+  },
+  "step": 42
+ },
+ {
+  "error": "Attribute (direction_reln) is required at constructor Mapping::Structural::new (defined",
+  "kind": "script",
+  "op": [
+   "new",
+   {
+    "category": "ASC",
+    "meto_mode": "NONE",
+    "metonymy_reln": "s:x",
+    "position_reln": "s:x"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x"
+  },
+  "step": 43
+ },
+ {
+  "error": "Attribute (meto_mode) is required at constructor Mapping::Structural::new (defined",
+  "kind": "script",
+  "op": [
+   "new",
+   {
+    "category": "ASC",
+    "direction_reln": "MD:Same",
+    "metonymy_reln": "s:x",
+    "position_reln": "s:x"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "direction_reln": "MD:Same",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x"
+  },
+  "step": 44
+ },
+ {
+  "error": "Attribute (category) is required at constructor Mapping::Structural::new (defined",
+  "kind": "script",
+  "op": [
+   "new",
+   {
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "metonymy_reln": "s:x",
+    "position_reln": "s:x"
+   }
+  ],
+  "opts_after": {
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x"
+  },
+  "step": 45
+ },
+ {
+  "category": "u",
+  "cb": [],
+  "cb_is_given": 0,
+  "direction_reln": "u",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 25,
+  "meto_mode": "u",
+  "metonymy_reln": "u",
+  "op": [
+   "new",
+   {
+    "category": "u",
+    "direction_reln": "u",
+    "meto_mode": "u",
+    "metonymy_reln": "u",
+    "position_reln": "u"
+   }
+  ],
+  "opts_after": {
+   "category": "u",
+   "direction_reln": "u",
+   "meto_mode": "u",
+   "metonymy_reln": "u",
+   "position_reln": "u"
+  },
+  "position_reln": "u",
+  "pure_is_self": 1,
+  "sl": [],
+  "step": 46
+ },
+ {
+  "error": "Attribute (changed_bindings) does not pass the type constraint because: Validation failed for 'HashRef' with value undef at constructor Mapping::Structural::new (defined",
+  "kind": "script",
+  "op": [
+   "new",
+   {
+    "category": "ASC",
+    "cb": "u",
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "metonymy_reln": "s:x",
+    "position_reln": "s:x"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": "u",
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x"
+  },
+  "step": 47
+ },
+ {
+  "error": "Attribute (slippages) does not pass the type constraint because: Validation failed for 'HashRef' with value \"q\" at constructor Mapping::Structural::new (defined",
+  "kind": "script",
+  "op": [
+   "new",
+   {
+    "category": "ASC",
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "metonymy_reln": "s:x",
+    "position_reln": "s:x",
+    "sl": "s:q"
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": "s:q"
+  },
+  "step": 48
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "cb_is_given": 1,
+  "direction_reln": "MD:Same",
+  "isa_mapping": 1,
+  "kind": "script",
+  "label": 26,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "new",
+   {
+    "category": "ASC",
+    "cb": [
+     [
+      "start",
+      "N:succ"
+     ]
+    ],
+    "direction_reln": "MD:Same",
+    "meto_mode": "NONE",
+    "metonymy_reln": "s:x",
+    "position_reln": "s:x",
+    "sl": [
+     [
+      "a",
+      "b"
+     ]
+    ]
+   }
+  ],
+  "opts_after": {
+   "category": "ASC",
+   "changed_bindings": [
+    [
+     "start",
+     "N:succ/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "slippages": [
+    [
+     "a",
+     "s:b"
+    ]
+   ]
+  },
+  "position_reln": "s:x",
+  "pure_is_self": 1,
+  "sl": [
+   [
+    "a",
+    "s:b"
+   ]
+  ],
+  "step": 49
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 1,
+  "messages": [
+   "This transform is bogus! CAT=ascending ATTS=start",
+   "Flip problematic!start;Mapping::Numeric=REF"
+  ],
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   0
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 50
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 1,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   0
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 51
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 0,
+  "messages": [
+   "This transform is bogus! CAT=ascending ATTS=start",
+   "Flip problematic!start;Mapping::Numeric=REF"
+  ],
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   50
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 52
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 0,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   4
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 53
+ },
+ {
+  "category": "ASC",
+  "cb": [],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 5,
+  "messages": [
+   "This transform is bogus! CAT=ascending ATTS=",
+   "Flip problematic!"
+  ],
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   8
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 54
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 27,
+  "messages": [
+   "This transform is bogus! CAT=sameness ATTS=each",
+   "Flip problematic!each;Mapping::Numeric=REF"
+  ],
+  "meto_mode": "SINGLE",
+  "metonymy_reln": "MT:flipped_each",
+  "op": [
+   "flip",
+   23
+  ],
+  "position_reln": "MP:pred",
+  "sl": [],
+  "step": 55
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 28,
+  "messages": [
+   "This transform is bogus! CAT=sameness ATTS=each",
+   "Flip problematic!each;Mapping::Numeric=REF"
+  ],
+  "meto_mode": "ALL",
+  "metonymy_reln": "MT:flipped_each",
+  "op": [
+   "flip",
+   24
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 56
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Different",
+  "kind": "script",
+  "label": 29,
+  "messages": [
+   "This transform is bogus! CAT=sameness ATTS=each",
+   "Flip problematic!each;Mapping::Numeric=REF"
+  ],
+  "meto_mode": "ALLBUTONE",
+  "metonymy_reln": "MT:flipped_each",
+  "op": [
+   "flip",
+   26
+  ],
+  "position_reln": "MP:succ",
+  "sl": [],
+  "step": 57
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "end",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 30,
+  "messages": [
+   "This transform is bogus! CAT=ascending ATTS=end",
+   "Flip problematic!end;Mapping::Numeric=REF"
+  ],
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   29
+  ],
+  "position_reln": "s:x",
+  "sl": [
+   [
+    "end",
+    "s:start"
+   ]
+  ],
+  "step": 58
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 31,
+  "messages": [
+   "This transform is bogus! CAT=ascending ATTS=start",
+   "Flip problematic!start;Mapping::Numeric=REF"
+  ],
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   30
+  ],
+  "position_reln": "s:x",
+  "sl": [
+   [
+    "end",
+    "s:start"
+   ],
+   [
+    "start",
+    "s:end"
+   ]
+  ],
+  "step": 59
+ },
+ {
+  "kind": "script",
+  "op": [
+   "flip",
+   32
+  ],
+  "result": null,
+  "step": 60
+ },
+ {
+  "kind": "script",
+  "op": [
+   "flip",
+   32
+  ],
+  "result": null,
+  "step": 61
+ },
+ {
+  "category": "MOUNTAIN",
+  "cb": [
+   [
+    "foot",
+    "N:pred/NUMBER"
+   ],
+   [
+    "peak",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 32,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   33
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 62
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "ST#1"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 33,
+  "messages": [
+   "This transform is bogus! CAT=sameness ATTS=each",
+   "Flip problematic!each;Mapping::Structural=REF"
+  ],
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   38
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 63
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "end",
+    "N:pred/NUMBER"
+   ],
+   [
+    "start",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 34,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   39
+  ],
+  "position_reln": "s:x",
+  "sl": [
+   [
+    "end",
+    "s:start"
+   ],
+   [
+    "start",
+    "s:end"
+   ]
+  ],
+  "step": 64
+ },
+ {
+  "error": "Can't locate object method \"AreAttributesSufficientToBuild\" via package \"foo\" (perhaps you forgot to load \"foo\"?)",
+  "kind": "script",
+  "op": [
+   "flip",
+   21
+  ],
+  "step": 65
+ },
+ {
+  "category": "NUMBER",
+  "cb": [
+   [
+    "mag",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 35,
+  "messages": [
+   "This transform is bogus! CAT=number ATTS=mag",
+   "Flip problematic!mag;Mapping::Numeric=REF"
+  ],
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   37
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 66
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "end",
+    "N:pred/NUMBER"
+   ],
+   [
+    "start",
+    "N:pred/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 36,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "flip",
+   27
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 67
+ },
+ {
+  "kind": "script",
+  "missing": 1,
+  "op": [
+   "flip",
+   25
+  ],
+  "step": 68
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "N:same/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 37,
+  "messages": [
+   "This transform is bogus! CAT=sameness ATTS=each",
+   "Flip problematic!each;Mapping::Numeric=REF"
+  ],
+  "meto_mode": "SINGLE",
+  "metonymy_reln": "MT:flipped_each",
+  "op": [
+   "flip",
+   22
+  ],
+  "position_reln": "MP:same",
+  "sl": [],
+  "step": 69
+ },
+ {
+  "kind": "script",
+  "messages": [
+   "This transform is bogus! CAT=ascending ATTS=start"
+  ],
+  "op": [
+   "sanity",
+   0
+  ],
+  "result": null,
+  "step": 70
+ },
+ {
+  "kind": "script",
+  "messages": [
+   "This transform is bogus! CAT=ascending ATTS="
+  ],
+  "op": [
+   "sanity",
+   8
+  ],
+  "result": null,
+  "step": 71
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sanity",
+   27
+  ],
+  "result": 1,
+  "step": 72
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sanity",
+   33
+  ],
+  "result": 1,
+  "step": 73
+ },
+ {
+  "kind": "script",
+  "messages": [
+   "This transform is bogus! CAT=number ATTS=mag"
+  ],
+  "op": [
+   "sanity",
+   37
+  ],
+  "result": null,
+  "step": 74
+ },
+ {
+  "kind": "script",
+  "messages": [
+   "This transform is bogus! CAT=sameness ATTS=each"
+  ],
+  "op": [
+   "sanity",
+   22
+  ],
+  "result": null,
+  "step": 75
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   0
+  ],
+  "result": null,
+  "step": 76
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   8
+  ],
+  "result": 1,
+  "step": 77
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   22
+  ],
+  "result": 1,
+  "step": 78
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   23
+  ],
+  "result": null,
+  "step": 79
+ },
+ {
+  "kind": "script",
+  "missing": 1,
+  "op": [
+   "sameness",
+   25
+  ],
+  "step": 80
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   31
+  ],
+  "result": 1,
+  "step": 81
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   29
+  ],
+  "result": null,
+  "step": 82
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   38
+  ],
+  "result": 1,
+  "step": 83
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   52
+  ],
+  "result": null,
+  "step": 84
+ },
+ {
+  "kind": "script",
+  "op": [
+   "sameness",
+   26
+  ],
+  "result": null,
+  "step": 85
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   0
+  ],
+  "result": [
+   "ASC",
+   "NONE",
+   "MD:Same",
+   "N:succ/NUMBER"
+  ],
+  "step": 86
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   8
+  ],
+  "result": [
+   "ASC",
+   "NONE",
+   "MD:Same"
+  ],
+  "step": 87
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   21
+  ],
+  "result": [
+   "NONE"
+  ],
+  "step": 88
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   22
+  ],
+  "result": [
+   "SAME",
+   "SINGLE",
+   "MP:same",
+   "MT:each",
+   "MD:Same",
+   "N:same/NUMBER"
+  ],
+  "step": 89
+ },
+ {
+  "kind": "script",
+  "missing": 1,
+  "op": [
+   "deps",
+   25
+  ],
+  "step": 90
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   27
+  ],
+  "result": [
+   "ASC",
+   "NONE",
+   "MD:Same",
+   "N:succ/NUMBER",
+   "N:succ/NUMBER"
+  ],
+  "step": 91
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   38
+  ],
+  "result": [
+   "SAME",
+   "NONE",
+   "MD:Same",
+   "ST#0"
+  ],
+  "step": 92
+ },
+ {
+  "kind": "script",
+  "op": [
+   "deps",
+   19
+  ],
+  "result": [
+   "NONE",
+   "MD:Same"
+  ],
+  "step": 93
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   0
+  ],
+  "result": "[ascending] start => succ",
+  "step": 94
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   8
+  ],
+  "result": "[ascending] ",
+  "step": 95
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   22
+  ],
+  "result": "[sameness*] each => same",
+  "step": 96
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   23
+  ],
+  "result": "[sameness*] ",
+  "step": 97
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   27
+  ],
+  "result": "[ascending] end => succ;start => succ",
+  "step": 98
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   29
+  ],
+  "result": "[ascending] (start => succ (of end))",
+  "step": 99
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   30
+  ],
+  "result": "[ascending] (end => succ (of start));new start is the earlier end",
+  "step": 100
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   31
+  ],
+  "result": "[ascending] (start => same (of start))",
+  "step": 101
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   32
+  ],
+  "result": "[ascending] (start => same (of end))",
+  "step": 102
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   38
+  ],
+  "result": "[sameness] each => [ascending] start => succ",
+  "step": 103
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   39
+  ],
+  "result": "[ascending] (end => succ (of start));(start => succ (of end))",
+  "step": 104
+ },
+ {
+  "error": "Can't locate object method \"get_name\" via package \"foo\" (perhaps you forgot to load \"foo\"?)",
+  "kind": "script",
+  "op": [
+   "as_text",
+   21
+  ],
+  "result": null,
+  "step": 105
+ },
+ {
+  "error": "Can't call method \"get_name\" on an undefined value",
+  "kind": "script",
+  "op": [
+   "as_text",
+   19
+  ],
+  "result": null,
+  "step": 106
+ },
+ {
+  "kind": "script",
+  "op": [
+   "as_text",
+   33
+  ],
+  "result": "[mountain] peak => succ;foot => succ",
+  "step": 107
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   0
+  ],
+  "result": 0.2,
+  "step": 108
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   8
+  ],
+  "result": 0.1,
+  "step": 109
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   7
+  ],
+  "result": 0.2,
+  "step": 110
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   22
+  ],
+  "result": 0.3,
+  "step": 111
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   23
+  ],
+  "result": 0.4,
+  "step": 112
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   24
+  ],
+  "result": 0.4,
+  "step": 113
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   27
+  ],
+  "result": 0.3,
+  "step": 114
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   29
+  ],
+  "result": 0.4,
+  "step": 115
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   30
+  ],
+  "result": 0.6,
+  "step": 116
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   32
+  ],
+  "result": 0.3,
+  "step": 117
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   33
+  ],
+  "result": 0.5,
+  "step": 118
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   34
+  ],
+  "result": 0.3,
+  "step": 119
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   35
+  ],
+  "result": 0.3,
+  "step": 120
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   36
+  ],
+  "result": 0.3,
+  "step": 121
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   37
+  ],
+  "result": 0.4,
+  "step": 122
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   38
+  ],
+  "result": 0.3,
+  "step": 123
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   39
+  ],
+  "result": 0.7,
+  "step": 124
+ },
+ {
+  "kind": "script",
+  "op": [
+   "complexity",
+   21
+  ],
+  "result": 0.3,
+  "step": 125
+ },
+ {
+  "error": "Can't call method \"isa\" on an undefined value",
+  "kind": "script",
+  "op": [
+   "complexity",
+   20
+  ],
+  "result": null,
+  "step": 126
+ },
+ {
+  "error": "Can't call method \"isa\" on an undefined value",
+  "kind": "script",
+  "op": [
+   "complexity",
+   19
+  ],
+  "result": null,
+  "step": 127
+ },
+ {
+  "error": "unrecognized reference to 'Mapping::Numeric=REF'",
+  "kind": "script",
+  "op": [
+   "serialize",
+   0
+  ],
+  "result": null,
+  "step": 128
+ },
+ {
+  "error": "unrecognized reference to 'Mapping::Numeric=REF'",
+  "kind": "script",
+  "op": [
+   "deserialize",
+   0
+  ],
+  "step": 129
+ },
+ {
+  "index": 2,
+  "kind": "script",
+  "op": [
+   "insert",
+   "N:succ"
+  ],
+  "step": 130
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   0
+  ],
+  "result": "<C1><S1><C1><S1>x<S1><C1><S1>x<S1><C2>start<S2><C1>2<S1><C2>",
+  "step": 131
+ },
+ {
+  "error": "Can't locate object method \"is_metonymy_present\" via package \"!!!\" (perhaps you forgot to load \"!!!\"?)",
+  "kind": "script",
+  "op": [
+   "deserialize",
+   0
+  ],
+  "step": 132
+ },
+ {
+  "index": 6,
+  "kind": "script",
+  "node_count": 6,
+  "op": [
+   "insert_st",
+   0
+  ],
+  "step": 133
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   0
+  ],
+  "result": "<C1>3<S1><C1>4<S1>x<S1><C1>5<S1>x<S1><C2>start<S2><C1>2<S1><C2>",
+  "step": 134
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 0,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "deserialize",
+   0
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 135
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   8
+  ],
+  "result": "<C1>3<S1><C1>4<S1>x<S1><C1>5<S1>x<S1><C2><S1><C2>",
+  "step": 136
+ },
+ {
+  "category": "ASC",
+  "cb": [],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 5,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "deserialize",
+   8
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 137
+ },
+ {
+  "index": 7,
+  "kind": "script",
+  "node_count": 7,
+  "op": [
+   "insert_st",
+   29
+  ],
+  "step": 138
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   29
+  ],
+  "result": "<C1>3<S1><C1>4<S1>x<S1><C1>5<S1>x<S1><C2>start<S2><C1>2<S1><C2>start<S2>end",
+  "step": 139
+ },
+ {
+  "category": "ASC",
+  "cb": [
+   [
+    "start",
+    "N:succ/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 13,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "deserialize",
+   29
+  ],
+  "position_reln": "s:x",
+  "sl": [
+   [
+    "start",
+    "s:end"
+   ]
+  ],
+  "step": 140
+ },
+ {
+  "index": 13,
+  "kind": "script",
+  "node_count": 13,
+  "op": [
+   "insert_st",
+   22
+  ],
+  "step": 141
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   22
+  ],
+  "result": "<C1>8<S1><C1>9<S1><C1>12<S1><C1>5<S1><C1>10<S1><C2>each<S2><C1>11<S1><C2>",
+  "step": 142
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "N:same/NUMBER"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 8,
+  "meto_mode": "SINGLE",
+  "metonymy_reln": "MT:each",
+  "op": [
+   "deserialize",
+   22
+  ],
+  "position_reln": "MP:same",
+  "sl": [],
+  "step": 143
+ },
+ {
+  "index": 14,
+  "kind": "script",
+  "node_count": 14,
+  "op": [
+   "insert_st",
+   38
+  ],
+  "step": 144
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   38
+  ],
+  "result": "<C1>8<S1><C1>4<S1>x<S1><C1>5<S1>x<S1><C2>each<S2><C1>6<S1><C2>",
+  "step": 145
+ },
+ {
+  "category": "SAME",
+  "cb": [
+   [
+    "each",
+    "ST#0"
+   ]
+  ],
+  "direction_reln": "MD:Same",
+  "kind": "script",
+  "label": 22,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "deserialize",
+   38
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 146
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   21
+  ],
+  "result": "foo<S1><C1>4<S1>x<S1><S1>x<S1><C2><S1><C2>",
+  "step": 147
+ },
+ {
+  "category": "s:foo",
+  "cb": [],
+  "direction_reln": "u",
+  "kind": "script",
+  "label": 7,
+  "meto_mode": "NONE",
+  "metonymy_reln": "s:x",
+  "op": [
+   "deserialize",
+   21
+  ],
+  "position_reln": "s:x",
+  "sl": [],
+  "step": 148
+ },
+ {
+  "error": "need meto_mode",
+  "kind": "script",
+  "op": [
+   "deserialize_str",
+   ""
+  ],
+  "step": 149
+ },
+ {
+  "error": "need meto_mode",
+  "kind": "script",
+  "op": [
+   "deserialize_str",
+   "<C1>1"
+  ],
+  "step": 150
+ },
+ {
+  "error": "Can't locate object method \"is_metonymy_present\" via package \"Mapping::Numeric\"",
+  "kind": "script",
+  "op": [
+   "deserialize_str",
+   "<C1>1<S1><C1>2<S1>x<S1><C1>3<S1>x<S1><C2><S1><C2>"
+  ],
+  "step": 151
+ },
+ {
+  "error": "Can't locate object method \"is_metonymy_present\" via package \"Mapping::Numeric\"",
+  "kind": "script",
+  "op": [
+   "deserialize_str",
+   "<C1>1<S1><C1>2<S1>x<S1><C1>3<S1>x"
+  ],
+  "step": 152
+ },
+ {
+  "error": "Can't locate object method \"is_metonymy_present\" via package \"Mapping::Numeric\"",
+  "kind": "script",
+  "op": [
+   "deserialize_str",
+   "<C1>1<S1><C1>2<S1>x<S1><C1>3<S1>x<S1><C2>a<S2><C1>4<S1><C2>"
+  ],
+  "step": 153
+ },
+ {
+  "error": "Can't locate object method \"is_metonymy_present\" via package \"Mapping::Numeric\"",
+  "kind": "script",
+  "op": [
+   "deserialize_str",
+   "<C1>1<S1><C1>2<S1>x<S1><C1>3<S1>x<S1><C2>a<S2><C1>4<S1><C2>a<S2>b"
+  ],
+  "step": 154
+ },
+ {
+  "category_after_set": "DESC",
+  "flip": {
+   "category": "ASC",
+   "cb": [
+    [
+     "start",
+     "N:pred/NUMBER"
+    ]
+   ],
+   "direction_reln": "MD:Same",
+   "label": 38,
+   "meto_mode": "NONE",
+   "metonymy_reln": "s:x",
+   "position_reln": "s:x",
+   "sl": []
+  },
+  "kind": "flip_memo",
+  "same_object": 1
+ },
+ {
+  "after_copy": 0,
+  "kind": "each_quirk_slippages",
+  "order": [
+   "d",
+   "b",
+   "c",
+   "a"
+  ],
+  "sameness_seq": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0
+  ]
+ },
+ {
+  "after_values": 0,
+  "kind": "each_quirk_bindings",
+  "order": [
+   "d",
+   "b",
+   "c",
+   "a"
+  ],
+  "sameness_seq": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0
+  ]
+ },
+ {
+  "apply_num": "No viable candidate for call to multimethod ApplyMapping(Mapping::Structural,#)",
+  "find_st_st": "No viable candidate for call to multimethod FindMapping(Mapping::Structural,Mapping::Structural)",
+  "kind": "dispatch"
+ }
+]

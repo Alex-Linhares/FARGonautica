@@ -1,0 +1,3496 @@
+[
+ {
+  "args": [],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (first) is required"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0"
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (second) is required"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1"
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (type) is required"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e2",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <2, 2> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    2
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 3,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e2",
+   "second",
+   "e0",
+   "type",
+   "pred"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <2, 2>  -->  <0, 0> : pred",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    2,
+    0
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": -1,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e5",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <5, 5> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    5
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 6,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e1",
+   "second",
+   "e1b",
+   "type",
+   "same"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <1, 1>  -->  <1, 1> : same",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "unknown",
+   "extent": [
+    1,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 1,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e1",
+   "second",
+   "e1",
+   "type",
+   "same"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <1, 1>  -->  <1, 1> : same",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "unknown",
+   "extent": [
+    1,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 1,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "g01",
+   "second",
+   "g23",
+   "type",
+   "struct"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 1>  -->  <2, 3> : [ascending] start => succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    3
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 4,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "g01",
+   "second",
+   "e3",
+   "type",
+   "fake"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 1>  -->  <3, 3> : fake x",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    3
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 4,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "g01",
+   "type",
+   "fake"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <0, 1> : fake x",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "unknown",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "dir"
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (type) does not pass the type constraint because: Validation failed for 'Mapping' with value DIR={ text: \"right\" }"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   5
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (type) does not pass the type constraint because: Validation failed for 'Mapping' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   null
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (type) does not pass the type constraint because: Validation failed for 'Mapping' with value undef"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   5,
+   "second",
+   "e1",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (first) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "x",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (second) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value \"x\""
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "ARRAY",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (second) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value [  ]"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "strength",
+   40
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 40
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "strength",
+   "abc"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": "abc"
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "holeyness",
+   5
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (holeyness) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "holeyness",
+   1
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "direction_reln",
+   "q"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": "q",
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "history_object",
+   5
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (history_object) does not pass the type constraint because: Validation failed for 'SHistory' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "history_object",
+   "SHistory"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "unchanged_bindings",
+   "HASH"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "obj",
+   "second",
+   "e1",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "SErr",
+   "message": "SWorkspace are_there_holes_here called with a non anchored object Seqsee::Object=REF"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "obj",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "SErr",
+   "message": "SWorkspace are_there_holes_here called with a non anchored object Seqsee::Object=REF"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "type",
+   5
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (first) is required"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "second",
+   5,
+   "type",
+   5
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (first) is required"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   5,
+   "type",
+   5
+  ],
+  "class": "SRelation",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (first) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "unchanged_bindings",
+   5
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "unchanged_bindings",
+   "HASH"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  }
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "unchanged_bindings",
+   "ARRAY"
+  ],
+  "class": "SRelation",
+  "err": null,
+  "kind": "new",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  }
+ },
+ {
+  "args": [],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (first) is required"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0"
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (second) is required"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1"
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (type) is required"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 2,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e2",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <2, 2> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    2
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 3,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e2",
+   "second",
+   "e0",
+   "type",
+   "pred"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <2, 2>  -->  <0, 0> : pred",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    2,
+    0
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": -1,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e5",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <5, 5> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    5
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 6,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e1",
+   "second",
+   "e1b",
+   "type",
+   "same"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <1, 1>  -->  <1, 1> : same",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "unknown",
+   "extent": [
+    1,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 1,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e1",
+   "second",
+   "e1",
+   "type",
+   "same"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <1, 1>  -->  <1, 1> : same",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "unknown",
+   "extent": [
+    1,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 1,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "g01",
+   "second",
+   "g23",
+   "type",
+   "struct"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 1>  -->  <2, 3> : [ascending] start => succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    3
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 4,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "g01",
+   "second",
+   "e3",
+   "type",
+   "fake"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 1>  -->  <3, 3> : fake x",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    3
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 4,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "g01",
+   "type",
+   "fake"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <0, 1> : fake x",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "unknown",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 2,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "dir"
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (type) does not pass the type constraint because: Validation failed for 'Mapping' with value DIR={ text: \"right\" }"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   5
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (type) does not pass the type constraint because: Validation failed for 'Mapping' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   null
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (type) does not pass the type constraint because: Validation failed for 'Mapping' with value undef"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   5,
+   "second",
+   "e1",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (first) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "x",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (second) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value \"x\""
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "ARRAY",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (second) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value [  ]"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "strength",
+   40
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 2,
+   "strength": 40
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "strength",
+   "abc"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 2,
+   "strength": "abc"
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "holeyness",
+   5
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (holeyness) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "holeyness",
+   1
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 2,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "direction_reln",
+   "q"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": "q",
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 2,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "history_object",
+   5
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (history_object) does not pass the type constraint because: Validation failed for 'SHistory' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "history_object",
+   "SHistory"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 2,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "unchanged_bindings",
+   "HASH"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 2,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "obj",
+   "second",
+   "e1",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "SErr",
+   "message": "SWorkspace are_there_holes_here called with a non anchored object Seqsee::Object=REF"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "obj",
+   "type",
+   "succ"
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "SErr",
+   "message": "SWorkspace are_there_holes_here called with a non anchored object Seqsee::Object=REF"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "type",
+   5
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (first) is required"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "second",
+   5,
+   "type",
+   5
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (first) is required"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   5,
+   "type",
+   5
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (first) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "unchanged_bindings",
+   5
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (unchanged_bindings) does not pass the type constraint because: Validation failed for 'HashRef' with value 5"
+  },
+  "kind": "new"
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "unchanged_bindings",
+   "HASH"
+  ],
+  "class": "SRelation::Structural",
+  "err": null,
+  "kind": "new",
+  "no_unchanged": 1,
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation::Structural",
+   "span": 2,
+   "strength": 0
+  },
+  "unchanged": []
+ },
+ {
+  "args": [
+   "first",
+   "e0",
+   "second",
+   "e1",
+   "type",
+   "succ",
+   "unchanged_bindings",
+   "ARRAY"
+  ],
+  "class": "SRelation::Structural",
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (unchanged_bindings) does not pass the type constraint because: Validation failed for 'HashRef' with value [  ]"
+  },
+  "kind": "new"
+ },
+ {
+  "as_text": " <0, 0>  -->  <1, 1> : succ",
+  "err": null,
+  "kind": "new_list"
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "pair": [
+   "e0",
+   "e1"
+  ]
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <1, 1>  -->  <0, 0> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    1,
+    0
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 0,
+   "strength": 0
+  },
+  "pair": [
+   "e1",
+   "e0"
+  ]
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <0, 0>  -->  <2, 2> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    2
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 3,
+   "strength": 0
+  },
+  "pair": [
+   "e0",
+   "e2"
+  ]
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <2, 2>  -->  <0, 0> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    2,
+    0
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": -1,
+   "strength": 0
+  },
+  "pair": [
+   "e2",
+   "e0"
+  ]
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <1, 1>  -->  <1, 1> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "unknown",
+   "extent": [
+    1,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 1,
+   "strength": 0
+  },
+  "pair": [
+   "e1",
+   "e1b"
+  ]
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <0, 1>  -->  <2, 3> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    3
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 4,
+   "strength": 0
+  },
+  "pair": [
+   "g01",
+   "g23"
+  ]
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <2, 3>  -->  <0, 1> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    2,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 0,
+   "strength": 0
+  },
+  "pair": [
+   "g23",
+   "g01"
+  ]
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <0, 1>  -->  <2, 2> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    2
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 3,
+   "strength": 0
+  },
+  "pair": [
+   "g01",
+   "e2"
+  ]
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <0, 0>  -->  <0, 1> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "unknown",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "pair": [
+   "e0",
+   "g01"
+  ]
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <0, 0>  -->  <5, 5> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    5
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 6,
+   "strength": 0
+  },
+  "pair": [
+   "e0",
+   "e5"
+  ]
+ },
+ {
+  "ends_ok": 1,
+  "kind": "accessors",
+  "nends": 2,
+  "obj": {
+   "as_text": " <5, 5>  -->  <0, 0> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    5,
+    0
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": -4,
+   "strength": 0
+  },
+  "pair": [
+   "e5",
+   "e0"
+  ]
+ },
+ {
+  "err": null,
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 77
+  },
+  "writer": [
+   "set_strength",
+   77
+  ]
+ },
+ {
+  "err": null,
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": "z"
+  },
+  "writer": [
+   "set_strength",
+   "z"
+  ]
+ },
+ {
+  "err": null,
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "set_holeyness",
+   1
+  ]
+ },
+ {
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (holeyness) does not pass the type constraint because: Validation failed for 'Bool' with value 7"
+  },
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "set_holeyness",
+   7
+  ]
+ },
+ {
+  "err": null,
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": null,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "set_holeyness",
+   null
+  ]
+ },
+ {
+  "err": null,
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": "w",
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "set_direction_reln",
+   "w"
+  ]
+ },
+ {
+  "err": null,
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : pred",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "set_type",
+   "pred"
+  ]
+ },
+ {
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (type) does not pass the type constraint because: Validation failed for 'Mapping' with value 5"
+  },
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "set_type",
+   5
+  ]
+ },
+ {
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (type) does not pass the type constraint because: Validation failed for 'Mapping' with value DIR={ text: \"right\" }"
+  },
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "set_type",
+   "dir"
+  ]
+ },
+ {
+  "err": null,
+  "kind": "writer",
+  "obj": {
+   "as_text": " <2, 2>  -->  <1, 1> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    2,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 0,
+   "strength": 0
+  },
+  "writer": [
+   "set_first",
+   "e2"
+  ]
+ },
+ {
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (first) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "set_first",
+   5
+  ]
+ },
+ {
+  "err": null,
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <2, 3> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    3
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 4,
+   "strength": 0
+  },
+  "writer": [
+   "set_second",
+   "g23"
+  ]
+ },
+ {
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (second) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value undef"
+  },
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "set_second",
+   null
+  ]
+ },
+ {
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (history_object) does not pass the type constraint because: Validation failed for 'SHistory' with value 5"
+  },
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "history_object",
+   5
+  ]
+ },
+ {
+  "err": null,
+  "kind": "writer",
+  "obj": {
+   "as_text": " <0, 0>  -->  <1, 1> : succ",
+   "contig": 1,
+   "dir_reln": null,
+   "direction": "right",
+   "extent": [
+    0,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 2,
+   "strength": 0
+  },
+  "writer": [
+   "history_object",
+   "SHistory"
+  ]
+ },
+ {
+  "err": null,
+  "kind": "writer_unchanged",
+  "no_unchanged": 0,
+  "unchanged": [
+   "a"
+  ],
+  "value": {
+   "a": 1
+  }
+ },
+ {
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (unchanged_bindings) does not pass the type constraint because: Validation failed for 'HashRef' with value 5"
+  },
+  "kind": "writer_unchanged",
+  "no_unchanged": 0,
+  "unchanged": [
+   "a"
+  ],
+  "value": 5
+ },
+ {
+  "err": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (unchanged_bindings) does not pass the type constraint because: Validation failed for 'HashRef' with value undef"
+  },
+  "kind": "writer_unchanged",
+  "no_unchanged": 0,
+  "unchanged": [
+   "a"
+  ],
+  "value": null
+ },
+ {
+  "err": null,
+  "kind": "writer_unchanged",
+  "no_unchanged": 1,
+  "unchanged": [],
+  "value": {}
+ },
+ {
+  "age": 7,
+  "as_text": "History:\n[0]\tcreated\n[0]\tfirst note\n[7]\tsecond note",
+  "history": [
+   "[0]\tcreated",
+   "[0]\tfirst note",
+   "[7]\tsecond note"
+  ],
+  "hobj_ref": "SHistory",
+  "kind": "history",
+  "search": [
+   "0",
+   "0",
+   "7"
+  ],
+  "unchanged": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "Can't locate object method \"set_history\" via package \"SHistory\" at inline delegation in SRelation for history_object->set_history (attribute declared in /home/al/dev/SeqSee/Seqsee/lib/SRelation.pm at line 46) line 18.\n"
+  },
+  "kind": "set_history"
+ },
+ {
+  "act": 0,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e1"
+  ],
+  "ret": 0,
+  "strength": 0
+ },
+ {
+  "act": 0,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e2"
+  ],
+  "ret": 0,
+  "strength": 0
+ },
+ {
+  "act": 1,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e1"
+  ],
+  "ret": 20,
+  "strength": 20
+ },
+ {
+  "act": 1,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e2"
+  ],
+  "ret": 16,
+  "strength": 16
+ },
+ {
+  "act": 2.5,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e1"
+  ],
+  "ret": 50,
+  "strength": 50
+ },
+ {
+  "act": 2.5,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e2"
+  ],
+  "ret": 40,
+  "strength": 40
+ },
+ {
+  "act": 3,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e1"
+  ],
+  "ret": 60,
+  "strength": 60
+ },
+ {
+  "act": 3,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e2"
+  ],
+  "ret": 48,
+  "strength": 48
+ },
+ {
+  "act": 5,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e1"
+  ],
+  "ret": 100,
+  "strength": 100
+ },
+ {
+  "act": 5,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e2"
+  ],
+  "ret": 80,
+  "strength": 80
+ },
+ {
+  "act": 6,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e1"
+  ],
+  "ret": 100,
+  "strength": 100
+ },
+ {
+  "act": 6,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e2"
+  ],
+  "ret": 96,
+  "strength": 96
+ },
+ {
+  "act": null,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e1"
+  ],
+  "ret": 0,
+  "strength": 0
+ },
+ {
+  "act": null,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e2"
+  ],
+  "ret": 0,
+  "strength": 0
+ },
+ {
+  "act": -1,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e1"
+  ],
+  "ret": -20,
+  "strength": -20
+ },
+ {
+  "act": -1,
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e2"
+  ],
+  "ret": -16,
+  "strength": -16
+ },
+ {
+  "act": "",
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e1"
+  ],
+  "ret": 0,
+  "strength": 0
+ },
+ {
+  "act": "",
+  "kind": "update_strength",
+  "log": [
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pair": [
+   "e0",
+   "e2"
+  ],
+  "ret": 0,
+  "strength": 0
+ },
+ {
+  "as_text": " <0, 0>  -->  <2, 3> : succ",
+  "kind": "as_text",
+  "type": "succ"
+ },
+ {
+  "as_text": " <0, 0>  -->  <2, 3> : pred",
+  "kind": "as_text",
+  "type": "pred"
+ },
+ {
+  "as_text": " <0, 0>  -->  <2, 3> : same",
+  "kind": "as_text",
+  "type": "same"
+ },
+ {
+  "as_text": " <0, 0>  -->  <2, 3> : foo",
+  "kind": "as_text",
+  "type": "foo"
+ },
+ {
+  "as_text": " <0, 0>  -->  <2, 3> : succ",
+  "kind": "as_text",
+  "type": "evensucc"
+ },
+ {
+  "as_text": " <0, 0>  -->  <2, 3> : [ascending] start => succ",
+  "kind": "as_text",
+  "type": "struct"
+ },
+ {
+  "as_text": " <0, 0>  -->  <2, 3> : fake x",
+  "kind": "as_text",
+  "type": "fake"
+ },
+ {
+  "defined": 1,
+  "kind": "suggest",
+  "list": [
+   "SCategory::Ascending"
+  ],
+  "name": "ascending",
+  "nlist": 1,
+  "ref": "SCategory::Ascending",
+  "same_as": "ASCENDING",
+  "type": "succ"
+ },
+ {
+  "kind": "suggest_ends",
+  "n": 0,
+  "scalar": 0,
+  "type": "succ"
+ },
+ {
+  "defined": 1,
+  "kind": "suggest",
+  "list": [
+   "SCategory::Descending"
+  ],
+  "name": "descending",
+  "nlist": 1,
+  "ref": "SCategory::Descending",
+  "same_as": "DESCENDING",
+  "type": "pred"
+ },
+ {
+  "kind": "suggest_ends",
+  "n": 0,
+  "scalar": 0,
+  "type": "pred"
+ },
+ {
+  "defined": 1,
+  "kind": "suggest",
+  "list": [
+   "SCategory::Sameness"
+  ],
+  "name": "sameness",
+  "nlist": 1,
+  "ref": "SCategory::Sameness",
+  "same_as": "SAMENESS",
+  "type": "same"
+ },
+ {
+  "kind": "suggest_ends",
+  "n": 0,
+  "scalar": 0,
+  "type": "same"
+ },
+ {
+  "defined": 1,
+  "kind": "suggest",
+  "list": [
+   false
+  ],
+  "nlist": 1,
+  "type": "foo",
+  "value": false
+ },
+ {
+  "kind": "suggest_ends",
+  "n": 0,
+  "scalar": 0,
+  "type": "foo"
+ },
+ {
+  "defined": 1,
+  "kind": "suggest",
+  "list": [
+   "SCategory::Ascending"
+  ],
+  "name": "ascending",
+  "nlist": 1,
+  "ref": "SCategory::Ascending",
+  "same_as": "ASCENDING",
+  "type": "evensucc"
+ },
+ {
+  "kind": "suggest_ends",
+  "n": 0,
+  "scalar": 0,
+  "type": "evensucc"
+ },
+ {
+  "defined": 1,
+  "kind": "suggest",
+  "list": [
+   "SCategory::MappingBased"
+  ],
+  "name": "Gp based on [ascending] start => succ",
+  "nlist": 1,
+  "ref": "SCategory::MappingBased",
+  "same_as": "MB",
+  "type": "struct"
+ },
+ {
+  "kind": "suggest_ends",
+  "n": 0,
+  "scalar": 0,
+  "type": "struct"
+ },
+ {
+  "defined": 1,
+  "kind": "suggest",
+  "list": [
+   false
+  ],
+  "nlist": 1,
+  "type": "fake",
+  "value": false
+ },
+ {
+  "kind": "suggest_ends",
+  "n": 0,
+  "scalar": 0,
+  "type": "fake"
+ },
+ {
+  "defined": 1,
+  "kind": "suggest",
+  "list": [
+   "SCategory::MappingBased"
+  ],
+  "name": "Gp based on fake y",
+  "nlist": 1,
+  "ref": "SCategory::MappingBased",
+  "same_as": "MB",
+  "type": "fakeflip"
+ },
+ {
+  "kind": "suggest_ends",
+  "n": 0,
+  "scalar": 0,
+  "type": "fakeflip"
+ },
+ {
+  "case": [
+   "e0",
+   "e1",
+   "succ"
+  ],
+  "defined": 1,
+  "ends_swapped": 1,
+  "err": null,
+  "kind": "flip",
+  "nlist": 1,
+  "obj": {
+   "as_text": " <1, 1>  -->  <0, 0> : pred",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    1,
+    0
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 0,
+   "strength": 0
+  },
+  "ref": "SRelation"
+ },
+ {
+  "case": [
+   "e0",
+   "e2",
+   "pred"
+  ],
+  "defined": 1,
+  "ends_swapped": 1,
+  "err": null,
+  "kind": "flip",
+  "nlist": 1,
+  "obj": {
+   "as_text": " <2, 2>  -->  <0, 0> : succ",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    2,
+    0
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": -1,
+   "strength": 0
+  },
+  "ref": "SRelation"
+ },
+ {
+  "case": [
+   "e1",
+   "e1b",
+   "same"
+  ],
+  "defined": 1,
+  "ends_swapped": 1,
+  "err": null,
+  "kind": "flip",
+  "nlist": 1,
+  "obj": {
+   "as_text": " <1, 1>  -->  <1, 1> : same",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "unknown",
+   "extent": [
+    1,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 1,
+   "strength": 0
+  },
+  "ref": "SRelation"
+ },
+ {
+  "case": [
+   "g01",
+   "g23",
+   "fakeflip"
+  ],
+  "defined": 1,
+  "ends_swapped": 1,
+  "err": null,
+  "kind": "flip",
+  "nlist": 1,
+  "obj": {
+   "as_text": " <2, 3>  -->  <0, 1> : fake yflip",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    2,
+    1
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 0,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": 0,
+   "strength": 0
+  },
+  "ref": "SRelation"
+ },
+ {
+  "case": [
+   "e0",
+   "e1",
+   "fake"
+  ],
+  "defined": 0,
+  "err": null,
+  "kind": "flip",
+  "nlist": 0
+ },
+ {
+  "case": [
+   "e0",
+   "e1",
+   "foo"
+  ],
+  "defined": 0,
+  "err": {
+   "class": "DIE",
+   "message": "Mapping::Numeric creation attempted without name!"
+  },
+  "kind": "flip",
+  "nlist": 0
+ },
+ {
+  "case": [
+   "e0",
+   "e5",
+   "succ"
+  ],
+  "defined": 1,
+  "ends_swapped": 1,
+  "err": null,
+  "kind": "flip",
+  "nlist": 1,
+  "obj": {
+   "as_text": " <5, 5>  -->  <0, 0> : pred",
+   "contig": 0,
+   "dir_reln": null,
+   "direction": "left",
+   "extent": [
+    5,
+    0
+   ],
+   "history": [
+    "[0]\tcreated"
+   ],
+   "holeyness": 1,
+   "pure_is_type": 1,
+   "ref": "SRelation",
+   "span": -4,
+   "strength": 0
+  },
+  "ref": "SRelation"
+ },
+ {
+  "case": [
+   "g01",
+   "g23",
+   "struct"
+  ],
+  "defined": 0,
+  "err": {
+   "class": "DIE",
+   "message": "Undefined subroutine &main::message called"
+  },
+  "kind": "flip",
+  "nlist": 0
+ },
+ {
+  "ends": [
+   {
+    "hist": [
+     "[0]\tadded reln to  <11, 11> "
+    ],
+    "rels": 1
+   },
+   {
+    "hist": [
+     "[0]\tadded reln to  <10, 10> "
+    ],
+    "rels": 1
+   }
+  ],
+  "exists": 1,
+  "kind": "insert",
+  "log": [
+   [
+    "ws_add",
+    "SWorkspace",
+    " <10, 10>  -->  <11, 11> : succ"
+   ],
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "ret": 40,
+  "step": "first",
+  "strength": 40
+ },
+ {
+  "ends": [
+   {
+    "hist": [
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> "
+    ],
+    "rels": 1
+   },
+   {
+    "hist": [
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> "
+    ],
+    "rels": 1
+   }
+  ],
+  "exists": 1,
+  "kind": "insert",
+  "log": [
+   [
+    "ws_remove",
+    "SWorkspace",
+    " <10, 10>  -->  <11, 11> : succ"
+   ],
+   [
+    "ws_add",
+    "SWorkspace",
+    " <10, 10>  -->  <11, 11> : pred"
+   ],
+   [
+    "activation",
+    "pred"
+   ]
+  ],
+  "step": "replace",
+  "strength": 20
+ },
+ {
+  "ends": [
+   {
+    "hist": [
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> "
+    ],
+    "rels": 1
+   },
+   {
+    "hist": [
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> "
+    ],
+    "rels": 1
+   }
+  ],
+  "exists": 1,
+  "kind": "insert",
+  "log": [
+   [
+    "ws_remove",
+    "SWorkspace",
+    " <10, 10>  -->  <11, 11> : pred"
+   ],
+   [
+    "ws_add",
+    "SWorkspace",
+    " <11, 11>  -->  <10, 10> : succ"
+   ],
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "step": "reverse",
+  "strength": 40
+ },
+ {
+  "ends": [
+   {
+    "hist": [
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> "
+    ],
+    "rels": 1
+   },
+   {
+    "hist": [],
+    "rels": 0
+   }
+  ],
+  "exists": 0,
+  "holey": 1,
+  "kind": "insert",
+  "log": [
+   [
+    "ws_add",
+    "SWorkspace",
+    " <11, 11>  -->  <13, 13> : succ"
+   ],
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "ret": 32,
+  "step": "refused",
+  "strength": 32
+ },
+ {
+  "exists": 0,
+  "kind": "insert",
+  "log": [
+   [
+    "ws_add",
+    "SWorkspace",
+    " <11, 11>  -->  <13, 13> : succ"
+   ],
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "step": "refused0"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "Relation insertion error: boom\n "
+  },
+  "exists": 0,
+  "kind": "insert",
+  "log": [
+   [
+    "ws_add",
+    "SWorkspace",
+    " <11, 11>  -->  <13, 13> : succ"
+   ]
+  ],
+  "step": "dies"
+ },
+ {
+  "err": {
+   "class": "DIE",
+   "message": "Relation insertion error: ws err "
+  },
+  "kind": "insert",
+  "log": [
+   [
+    "ws_add",
+    "SWorkspace",
+    " <11, 11>  -->  <13, 13> : succ"
+   ]
+  ],
+  "step": "dies_obj"
+ },
+ {
+  "ends": [
+   {
+    "hist": [
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> "
+    ],
+    "rels": 0
+   },
+   {
+    "hist": [
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> "
+    ],
+    "rels": 0
+   }
+  ],
+  "exists": 0,
+  "kind": "uninsert",
+  "log": [
+   [
+    "ws_remove",
+    "SWorkspace",
+    " <11, 11>  -->  <10, 10> : succ"
+   ]
+  ],
+  "ret": false
+ },
+ {
+  "ends": [
+   {
+    "hist": [
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> "
+    ],
+    "rels": 0
+   },
+   {
+    "hist": [
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> "
+    ],
+    "rels": 0
+   }
+  ],
+  "err": null,
+  "kind": "uninsert",
+  "log": [
+   [
+    "ws_remove",
+    "SWorkspace",
+    " <11, 11>  -->  <10, 10> : succ"
+   ]
+  ],
+  "step": "again"
+ },
+ {
+  "ends": [
+   {
+    "hist": [
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tadded reln to  <13, 13> "
+    ],
+    "rels": 2
+   },
+   {
+    "hist": [
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> "
+    ],
+    "rels": 1
+   },
+   {
+    "hist": [
+     "[0]\tadded reln to  <10, 10> "
+    ],
+    "rels": 1
+   }
+  ],
+  "kind": "insert",
+  "log": [
+   [
+    "ws_add",
+    "SWorkspace",
+    " <10, 10>  -->  <13, 13> : succ"
+   ],
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "rels_a": 2,
+  "step": "second_pair"
+ },
+ {
+  "ends": [
+   {
+    "hist": [
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tadded reln to  <11, 11> ",
+     "[0]\tadded reln to  <13, 13> ",
+     "[0]\tremoved reln to  <11, 11> ",
+     "[0]\tremoved reln to  <13, 13> "
+    ],
+    "rels": 0
+   },
+   {
+    "hist": [
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> ",
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> "
+    ],
+    "rels": 0
+   },
+   {
+    "hist": [
+     "[0]\tadded reln to  <10, 10> ",
+     "[0]\tremoved reln to  <10, 10> "
+    ],
+    "rels": 0
+   }
+  ],
+  "kind": "remove_all",
+  "log": [
+   [
+    "ws_remove",
+    "SWorkspace",
+    " <10, 10>  -->  <11, 11> : succ"
+   ],
+   [
+    "ws_remove",
+    "SWorkspace",
+    " <10, 10>  -->  <13, 13> : succ"
+   ]
+  ]
+ },
+ {
+  "kind": "chain",
+  "log": [
+   [
+    "ws_add",
+    "SWorkspace",
+    " <20, 20>  -->  <21, 21> : succ"
+   ],
+   [
+    "activation",
+    "succ"
+   ],
+   [
+    "ws_add",
+    "SWorkspace",
+    " <21, 21>  -->  <22, 22> : succ"
+   ],
+   [
+    "activation",
+    "succ"
+   ]
+  ],
+  "pairs": [
+   {
+    "as_text": " <20, 20>  -->  <21, 21> : succ",
+    "ref": "SRelation",
+    "strength": 60
+   },
+   {
+    "as_text": " <21, 21>  -->  <22, 22> : succ",
+    "ref": "SRelation",
+    "strength": 60
+   }
+  ]
+ },
+ {
+  "kind": "recalc",
+  "log": [
+   [
+    "ws_remove",
+    "SWorkspace",
+    " <20, 20>  -->  <21, 21> : succ"
+   ]
+  ],
+  "rel": null,
+  "rel2": " <21, 21>  -->  <22, 22> : succ"
+ }
+]

@@ -1,0 +1,1299 @@
+[
+ {
+  "args": {
+   "category": "NUMBER",
+   "name": "succ"
+  },
+  "category": "NUMBER",
+  "check_sanity": 1,
+  "error": null,
+  "isa_mapping": 1,
+  "kind": "new",
+  "name": "succ"
+ },
+ {
+  "args": {
+   "category": "EVEN",
+   "name": ""
+  },
+  "category": "EVEN",
+  "check_sanity": 1,
+  "error": null,
+  "isa_mapping": 1,
+  "kind": "new",
+  "name": ""
+ },
+ {
+  "args": {
+   "category": "u",
+   "name": "pred"
+  },
+  "category": "undef",
+  "check_sanity": 1,
+  "error": null,
+  "isa_mapping": 1,
+  "kind": "new",
+  "name": "pred"
+ },
+ {
+  "args": {
+   "category": "s:x",
+   "name": "pred"
+  },
+  "category": "s:x",
+  "check_sanity": 1,
+  "error": null,
+  "isa_mapping": 1,
+  "kind": "new",
+  "name": "pred"
+ },
+ {
+  "args": {
+   "category": "NUMBER"
+  },
+  "category": null,
+  "check_sanity": null,
+  "error": "Attribute (name) is required at constructor Mapping::Numeric::new (defined",
+  "isa_mapping": null,
+  "kind": "new",
+  "name": null
+ },
+ {
+  "args": {
+   "name": "succ"
+  },
+  "category": null,
+  "check_sanity": null,
+  "error": "Attribute (category) is required at constructor Mapping::Numeric::new (defined",
+  "isa_mapping": null,
+  "kind": "new",
+  "name": null
+ },
+ {
+  "args": {
+   "category": "NUMBER",
+   "name": null
+  },
+  "category": null,
+  "check_sanity": null,
+  "error": "Attribute (name) does not pass the type constraint because: Validation failed for 'Str' with value undef at constructor Mapping::Numeric::new (defined",
+  "isa_mapping": null,
+  "kind": "new",
+  "name": null
+ },
+ {
+  "args": {
+   "category": "NUMBER",
+   "name": "ARRAY"
+  },
+  "category": null,
+  "check_sanity": null,
+  "error": "Attribute (name) does not pass the type constraint because: Validation failed for 'Str' with value [  ] at constructor Mapping::Numeric::new (defined",
+  "isa_mapping": null,
+  "kind": "new",
+  "name": null
+ },
+ {
+  "args": {
+   "category": "ODD",
+   "name": 7
+  },
+  "category": "ODD",
+  "check_sanity": 1,
+  "error": null,
+  "isa_mapping": 1,
+  "kind": "new",
+  "name": 7
+ },
+ {
+  "error": "Mapping::Numeric creation attempted without name!",
+  "kind": "create_error",
+  "name": ""
+ },
+ {
+  "error": "Mapping::Numeric creation attempted without name!",
+  "kind": "create_error",
+  "name": "0"
+ },
+ {
+  "error": "Mapping::Numeric creation attempted without name!",
+  "kind": "create_error",
+  "name": null
+ },
+ {
+  "category": "EVEN",
+  "kind": "script",
+  "label": 0,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "EVEN"
+  ],
+  "step": 0
+ },
+ {
+  "category": "EVEN",
+  "kind": "script",
+  "label": 0,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "NUMBER"
+  ],
+  "step": 1
+ },
+ {
+  "category": "NUMBER",
+  "kind": "script",
+  "label": 1,
+  "name": "pred",
+  "op": [
+   "create",
+   "pred",
+   "NUMBER"
+  ],
+  "step": 2
+ },
+ {
+  "category": "NUMBER",
+  "kind": "script",
+  "label": 1,
+  "name": "pred",
+  "op": [
+   "create",
+   "pred",
+   "PRIME"
+  ],
+  "step": 3
+ },
+ {
+  "category": "ODD",
+  "kind": "script",
+  "label": 2,
+  "name": "same",
+  "op": [
+   "create",
+   "same",
+   "ODD"
+  ],
+  "step": 4
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   0
+  ],
+  "result": "succ<S1><C1>",
+  "step": 5
+ },
+ {
+  "index": 1,
+  "kind": "script",
+  "op": [
+   "insert",
+   "ODD"
+  ],
+  "step": 6
+ },
+ {
+  "category": "ODD",
+  "kind": "script",
+  "label": 3,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "ODD"
+  ],
+  "step": 7
+ },
+ {
+  "category": "ODD",
+  "kind": "script",
+  "label": 3,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "ODD"
+  ],
+  "step": 8
+ },
+ {
+  "category": "ODD",
+  "kind": "script",
+  "label": 4,
+  "name": "same",
+  "op": [
+   "create",
+   "same",
+   "ODD"
+  ],
+  "step": 9
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   7
+  ],
+  "result": "succ<S1><C1>1",
+  "step": 10
+ },
+ {
+  "index": 2,
+  "kind": "script",
+  "op": [
+   "insert",
+   "NUMBER"
+  ],
+  "step": 11
+ },
+ {
+  "index": 1,
+  "kind": "script",
+  "op": [
+   "insert",
+   "ODD"
+  ],
+  "step": 12
+ },
+ {
+  "category": "NUMBER",
+  "kind": "script",
+  "label": 5,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "NUMBER"
+  ],
+  "step": 13
+ },
+ {
+  "category": "NUMBER",
+  "kind": "script",
+  "label": 6,
+  "name": "flip",
+  "op": [
+   "create",
+   "flip",
+   "NUMBER"
+  ],
+  "step": 14
+ },
+ {
+  "category": "s:x",
+  "kind": "script",
+  "label": 7,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "s:x"
+  ],
+  "step": 15
+ },
+ {
+  "category": "s:x",
+  "kind": "script",
+  "label": 7,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "s:x"
+  ],
+  "step": 16
+ },
+ {
+  "category": "s:",
+  "kind": "script",
+  "label": 8,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "s:"
+  ],
+  "step": 17
+ },
+ {
+  "category": "s:",
+  "kind": "script",
+  "label": 8,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "u"
+  ],
+  "step": 18
+ },
+ {
+  "category": "i:5",
+  "kind": "script",
+  "label": 9,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "i:5"
+  ],
+  "step": 19
+ },
+ {
+  "category": "i:5",
+  "kind": "script",
+  "label": 9,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "s:<C3>5"
+  ],
+  "step": 20
+ },
+ {
+  "category": "HASH",
+  "kind": "script",
+  "label": 10,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "h:a=1"
+  ],
+  "step": 21
+ },
+ {
+  "index": 3,
+  "kind": "script",
+  "node_count": 3,
+  "op": [
+   "insert_mapping",
+   14
+  ],
+  "step": 22
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   14
+  ],
+  "result": "flip<S1><C1>2",
+  "step": 23
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   2
+  ],
+  "result": "pred<S1><C1>2",
+  "step": 24
+ },
+ {
+  "category": "NUMBER",
+  "kind": "script",
+  "label": 6,
+  "name": "flip",
+  "op": [
+   "deserialize",
+   14
+  ],
+  "step": 25
+ },
+ {
+  "category": "s:!!!",
+  "kind": "script",
+  "label": 11,
+  "name": "succ",
+  "op": [
+   "deserialize",
+   0
+  ],
+  "step": 26
+ },
+ {
+  "category": "s:",
+  "kind": "script",
+  "label": 8,
+  "name": "succ",
+  "op": [
+   "deserialize",
+   17
+  ],
+  "step": 27
+ },
+ {
+  "category": "NUMBER",
+  "kind": "script",
+  "label": 12,
+  "name": "pred",
+  "op": [
+   "deserialize_str",
+   "pred<S1><C1>2"
+  ],
+  "step": 28
+ },
+ {
+  "category": "undef",
+  "kind": "script",
+  "label": 13,
+  "name": "pred",
+  "op": [
+   "deserialize_str",
+   "pred<S1><C1>7"
+  ],
+  "step": 29
+ },
+ {
+  "category": "s:",
+  "kind": "script",
+  "label": 8,
+  "name": "succ",
+  "op": [
+   "deserialize_str",
+   "succ"
+  ],
+  "step": 30
+ },
+ {
+  "error": "Mapping::Numeric creation attempted without name!",
+  "kind": "script",
+  "op": [
+   "deserialize_str",
+   ""
+  ],
+  "step": 31
+ },
+ {
+  "category": "NUMBER",
+  "kind": "script",
+  "label": 1,
+  "name": "pred",
+  "op": [
+   "flip",
+   0
+  ],
+  "step": 32
+ },
+ {
+  "category": "NUMBER",
+  "kind": "script",
+  "label": 6,
+  "name": "flip",
+  "op": [
+   "flip",
+   14
+  ],
+  "step": 33
+ },
+ {
+  "category": "s:x",
+  "kind": "script",
+  "label": 14,
+  "name": "pred",
+  "op": [
+   "flip",
+   15
+  ],
+  "step": 34
+ },
+ {
+  "category": "PRIME",
+  "kind": "script",
+  "label": 15,
+  "name": "no_flip",
+  "op": [
+   "create",
+   "no_flip",
+   "PRIME"
+  ],
+  "step": 35
+ },
+ {
+  "category": "PRIME",
+  "kind": "script",
+  "label": 15,
+  "name": "no_flip",
+  "op": [
+   "flip",
+   35
+  ],
+  "step": 36
+ },
+ {
+  "category": "PRIME",
+  "kind": "script",
+  "label": 16,
+  "name": "weird",
+  "op": [
+   "create",
+   "weird",
+   "PRIME"
+  ],
+  "step": 37
+ },
+ {
+  "error": "Mapping::Numeric creation attempted without name!",
+  "kind": "script",
+  "op": [
+   "flip",
+   37
+  ],
+  "step": 38
+ },
+ {
+  "index": 4,
+  "kind": "script",
+  "op": [
+   "insert",
+   "PRIME"
+  ],
+  "step": 39
+ },
+ {
+  "category": "PRIME",
+  "kind": "script",
+  "label": 17,
+  "name": "pred",
+  "op": [
+   "create",
+   "pred",
+   "PRIME"
+  ],
+  "step": 40
+ },
+ {
+  "category": "PRIME",
+  "kind": "script",
+  "label": 18,
+  "name": "succ",
+  "op": [
+   "create",
+   "succ",
+   "PRIME"
+  ],
+  "step": 41
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   19
+  ],
+  "result": "succ<S1><C3>5",
+  "step": 42
+ },
+ {
+  "category": "i:5",
+  "kind": "script",
+  "label": 9,
+  "name": "succ",
+  "op": [
+   "deserialize",
+   19
+  ],
+  "step": 43
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   21
+  ],
+  "result": "succ<S1><C2>a<S2>1",
+  "step": 44
+ },
+ {
+  "category": "HASH",
+  "kind": "script",
+  "label": 10,
+  "name": "succ",
+  "op": [
+   "deserialize",
+   21
+  ],
+  "step": 45
+ },
+ {
+  "kind": "script",
+  "op": [
+   "serialize",
+   18
+  ],
+  "result": "succ<S1>",
+  "step": 46
+ },
+ {
+  "as_text": "same",
+  "category": "NUMBER",
+  "deps": [
+   "NUMBER"
+  ],
+  "get_complexity": 0,
+  "is_sameness": 1,
+  "kind": "methods",
+  "name": "same",
+  "pure_is_self": 1,
+  "rbc": "SCategory::Sameness",
+  "rbc_is": "singleton",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "succ",
+  "category": "NUMBER",
+  "deps": [
+   "NUMBER"
+  ],
+  "get_complexity": 0.1,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "succ",
+  "pure_is_self": 1,
+  "rbc": "SCategory::Ascending",
+  "rbc_is": "singleton",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "pred",
+  "category": "NUMBER",
+  "deps": [
+   "NUMBER"
+  ],
+  "get_complexity": 0.1,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "pred",
+  "pure_is_self": 1,
+  "rbc": "SCategory::Descending",
+  "rbc_is": "singleton",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "flip",
+  "category": "NUMBER",
+  "deps": [
+   "NUMBER"
+  ],
+  "get_complexity": 0.1,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "flip",
+  "pure_is_self": 1,
+  "rbc_error": "Should not reach herre"
+ },
+ {
+  "as_text": "no_flip",
+  "category": "NUMBER",
+  "deps": [
+   "NUMBER"
+  ],
+  "get_complexity": 0.1,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "no_flip",
+  "pure_is_self": 1,
+  "rbc_error": "Should not reach herre"
+ },
+ {
+  "as_text": "other",
+  "category": "NUMBER",
+  "deps": [
+   "NUMBER"
+  ],
+  "get_complexity": 0.1,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "other",
+  "pure_is_self": 1,
+  "rbc_error": "Should not reach herre"
+ },
+ {
+  "as_text": "even same",
+  "category": "EVEN",
+  "deps": [
+   "EVEN"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 1,
+  "kind": "methods",
+  "name": "same",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "even succ",
+  "category": "EVEN",
+  "deps": [
+   "EVEN"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "succ",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "even pred",
+  "category": "EVEN",
+  "deps": [
+   "EVEN"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "pred",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "even flip",
+  "category": "EVEN",
+  "deps": [
+   "EVEN"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "even no_flip",
+  "category": "EVEN",
+  "deps": [
+   "EVEN"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "no_flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "even other",
+  "category": "EVEN",
+  "deps": [
+   "EVEN"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "other",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "odd same",
+  "category": "ODD",
+  "deps": [
+   "ODD"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 1,
+  "kind": "methods",
+  "name": "same",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "odd succ",
+  "category": "ODD",
+  "deps": [
+   "ODD"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "succ",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "odd pred",
+  "category": "ODD",
+  "deps": [
+   "ODD"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "pred",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "odd flip",
+  "category": "ODD",
+  "deps": [
+   "ODD"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "odd no_flip",
+  "category": "ODD",
+  "deps": [
+   "ODD"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "no_flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "odd other",
+  "category": "ODD",
+  "deps": [
+   "ODD"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "other",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "Prime same",
+  "category": "PRIME",
+  "deps": [
+   "PRIME"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 1,
+  "kind": "methods",
+  "name": "same",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "Prime succ",
+  "category": "PRIME",
+  "deps": [
+   "PRIME"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "succ",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "Prime pred",
+  "category": "PRIME",
+  "deps": [
+   "PRIME"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "pred",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "Prime flip",
+  "category": "PRIME",
+  "deps": [
+   "PRIME"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "Prime no_flip",
+  "category": "PRIME",
+  "deps": [
+   "PRIME"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "no_flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "Prime other",
+  "category": "PRIME",
+  "deps": [
+   "PRIME"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "other",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "fakealt same",
+  "category": "ALT",
+  "deps": [
+   "ALT"
+  ],
+  "get_complexity": 0.7,
+  "is_sameness": 1,
+  "kind": "methods",
+  "name": "same",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "fakealt succ",
+  "category": "ALT",
+  "deps": [
+   "ALT"
+  ],
+  "get_complexity": 0.7,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "succ",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "fakealt pred",
+  "category": "ALT",
+  "deps": [
+   "ALT"
+  ],
+  "get_complexity": 0.7,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "pred",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "fakealt flip",
+  "category": "ALT",
+  "deps": [
+   "ALT"
+  ],
+  "get_complexity": 0.7,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "fakealt no_flip",
+  "category": "ALT",
+  "deps": [
+   "ALT"
+  ],
+  "get_complexity": 0.7,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "no_flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": "fakealt other",
+  "category": "ALT",
+  "deps": [
+   "ALT"
+  ],
+  "get_complexity": 0.7,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "other",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't locate object method \"as_text\" via package \"x\" (perhaps you forgot to load \"x\"?)",
+  "category": "s:x",
+  "deps": [
+   "s:x"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 1,
+  "kind": "methods",
+  "name": "same",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't locate object method \"as_text\" via package \"x\" (perhaps you forgot to load \"x\"?)",
+  "category": "s:x",
+  "deps": [
+   "s:x"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "succ",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't locate object method \"as_text\" via package \"x\" (perhaps you forgot to load \"x\"?)",
+  "category": "s:x",
+  "deps": [
+   "s:x"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "pred",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't locate object method \"as_text\" via package \"x\" (perhaps you forgot to load \"x\"?)",
+  "category": "s:x",
+  "deps": [
+   "s:x"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't locate object method \"as_text\" via package \"x\" (perhaps you forgot to load \"x\"?)",
+  "category": "s:x",
+  "deps": [
+   "s:x"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "no_flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't locate object method \"as_text\" via package \"x\" (perhaps you forgot to load \"x\"?)",
+  "category": "s:x",
+  "deps": [
+   "s:x"
+  ],
+  "get_complexity": 0.4,
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "other",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't call method \"as_text\" on an undefined value",
+  "category": "u",
+  "deps": [
+   "undef"
+  ],
+  "get_complexity": null,
+  "get_complexity_error": "Can't call method \"isa\" on an undefined value",
+  "is_sameness": 1,
+  "kind": "methods",
+  "name": "same",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't call method \"as_text\" on an undefined value",
+  "category": "u",
+  "deps": [
+   "undef"
+  ],
+  "get_complexity": null,
+  "get_complexity_error": "Can't call method \"isa\" on an undefined value",
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "succ",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't call method \"as_text\" on an undefined value",
+  "category": "u",
+  "deps": [
+   "undef"
+  ],
+  "get_complexity": null,
+  "get_complexity_error": "Can't call method \"isa\" on an undefined value",
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "pred",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't call method \"as_text\" on an undefined value",
+  "category": "u",
+  "deps": [
+   "undef"
+  ],
+  "get_complexity": null,
+  "get_complexity_error": "Can't call method \"isa\" on an undefined value",
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't call method \"as_text\" on an undefined value",
+  "category": "u",
+  "deps": [
+   "undef"
+  ],
+  "get_complexity": null,
+  "get_complexity_error": "Can't call method \"isa\" on an undefined value",
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "no_flip",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "as_text": null,
+  "as_text_error": "Can't call method \"as_text\" on an undefined value",
+  "category": "u",
+  "deps": [
+   "undef"
+  ],
+  "get_complexity": null,
+  "get_complexity_error": "Can't call method \"isa\" on an undefined value",
+  "is_sameness": 0,
+  "kind": "methods",
+  "name": "other",
+  "pure_is_self": 1,
+  "rbc": "SCategory::MappingBased",
+  "rbc_is": "mapping_based_of_self",
+  "rbc_memo": 1
+ },
+ {
+  "after": [
+   "even succ",
+   0.4
+  ],
+  "before": [
+   "even succ",
+   0.4
+  ],
+  "is_sameness_after": 1,
+  "kind": "stale",
+  "rbc_after": "SCategory::Sameness"
+ },
+ {
+  "as_text": "even pred",
+  "get_complexity": 0.4,
+  "kind": "stale_fresh"
+ },
+ {
+  "error": "Attribute (name) does not pass the type constraint because: Validation failed for 'Str' with value undef at writer Mapping::Numeric::set_name of attribute name (defined",
+  "kind": "set_name_undef",
+  "name": "pred"
+ }
+]

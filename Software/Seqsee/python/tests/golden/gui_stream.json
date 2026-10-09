@@ -1,0 +1,7727 @@
+[
+ {
+  "died": null,
+  "items": [],
+  "recipe": "empty",
+  "rect": [
+   0,
+   0,
+   780,
+   450
+  ],
+  "stream": {
+   "current": null,
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [],
+  "recipe": "empty",
+  "rect": [
+   0,
+   0,
+   400,
+   200
+  ],
+  "stream": {
+   "current": null,
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [],
+  "recipe": "empty",
+  "rect": [
+   50,
+   30,
+   600,
+   300
+  ],
+  "stream": {
+   "current": null,
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [],
+  "recipe": "empty",
+  "rect": [
+   10,
+   100,
+   300,
+   150
+  ],
+  "stream": {
+   "current": null,
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [],
+  "recipe": "empty",
+  "rect": [
+   0,
+   0,
+   30,
+   30
+  ],
+  "stream": {
+   "current": null,
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [],
+  "recipe": "groups_relations",
+  "rect": [
+   0,
+   0,
+   780,
+   450
+  ],
+  "stream": {
+   "current": null,
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [],
+  "recipe": "groups_relations",
+  "rect": [
+   0,
+   0,
+   400,
+   200
+  ],
+  "stream": {
+   "current": null,
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [],
+  "recipe": "groups_relations",
+  "rect": [
+   50,
+   30,
+   600,
+   300
+  ],
+  "stream": {
+   "current": null,
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [],
+  "recipe": "groups_relations",
+  "rect": [
+   10,
+   100,
+   300,
+   150
+  ],
+  "stream": {
+   "current": null,
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [],
+  "recipe": "groups_relations",
+  "rect": [
+   0,
+   0,
+   30,
+   30
+  ],
+  "stream": {
+   "current": null,
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     10,
+     0,
+     195,
+     136
+    ],
+    "opts": {
+     "fill": "#8AE68A",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     11,
+     1
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[1,1] 5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     30
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     45
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_current",
+  "rect": [
+   0,
+   0,
+   780,
+   450
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      100,
+      null
+     ],
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      30,
+      null
+     ],
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      30,
+      null
+     ],
+     [
+      "absolute_position_1",
+      80,
+      null
+     ],
+     [
+      "absolute_position_0",
+      20,
+      null
+     ],
+     [
+      "absolute_position_2",
+      20,
+      null
+     ]
+    ],
+    "hit": null,
+    "text": "Element Seqsee::Element:[1,1] 5"
+   },
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     10,
+     0,
+     100,
+     53
+    ],
+    "opts": {
+     "fill": "#8AE68A",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     11,
+     1
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[1,1] 5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     30
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     45
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_current",
+  "rect": [
+   0,
+   0,
+   400,
+   200
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      100,
+      null
+     ],
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      30,
+      null
+     ],
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      30,
+      null
+     ],
+     [
+      "absolute_position_1",
+      80,
+      null
+     ],
+     [
+      "absolute_position_0",
+      20,
+      null
+     ],
+     [
+      "absolute_position_2",
+      20,
+      null
+     ]
+    ],
+    "hit": null,
+    "text": "Element Seqsee::Element:[1,1] 5"
+   },
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     60,
+     30,
+     200,
+     116
+    ],
+    "opts": {
+     "fill": "#8AE68A",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     61,
+     31
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[1,1] 5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     45
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     60
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     75
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_current",
+  "rect": [
+   50,
+   30,
+   600,
+   300
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      100,
+      null
+     ],
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      30,
+      null
+     ],
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      30,
+      null
+     ],
+     [
+      "absolute_position_1",
+      80,
+      null
+     ],
+     [
+      "absolute_position_0",
+      20,
+      null
+     ],
+     [
+      "absolute_position_2",
+      20,
+      null
+     ]
+    ],
+    "hit": null,
+    "text": "Element Seqsee::Element:[1,1] 5"
+   },
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     20,
+     100,
+     85,
+     136
+    ],
+    "opts": {
+     "fill": "#8AE68A",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     101
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[1,1] 5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     115
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     130
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     145
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_current",
+  "rect": [
+   10,
+   100,
+   300,
+   150
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      100,
+      null
+     ],
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      30,
+      null
+     ],
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      30,
+      null
+     ],
+     [
+      "absolute_position_1",
+      80,
+      null
+     ],
+     [
+      "absolute_position_0",
+      20,
+      null
+     ],
+     [
+      "absolute_position_2",
+      20,
+      null
+     ]
+    ],
+    "hit": null,
+    "text": "Element Seqsee::Element:[1,1] 5"
+   },
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     8,
+     -3,
+     10,
+     0
+    ],
+    "opts": {
+     "fill": "#8AE68A",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     11,
+     1
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[1,1] 5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     30
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     45
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_current",
+  "rect": [
+   0,
+   0,
+   30,
+   30
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      100,
+      null
+     ],
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      30,
+      null
+     ],
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      30,
+      null
+     ],
+     [
+      "absolute_position_1",
+      80,
+      null
+     ],
+     [
+      "absolute_position_0",
+      20,
+      null
+     ],
+     [
+      "absolute_position_2",
+      20,
+      null
+     ]
+    ],
+    "hit": null,
+    "text": "Element Seqsee::Element:[1,1] 5"
+   },
+   "older": []
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     10,
+     0,
+     195,
+     136
+    ],
+    "opts": {
+     "fill": "#87E187",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     11,
+     1
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "absolute_position_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     30
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     45
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SInt(5)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     156,
+     205,
+     292
+    ],
+    "opts": {
+     "fill": "#96CC7A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Ascending=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     292,
+     205,
+     428
+    ],
+    "opts": {
+     "fill": "#5D804C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     293
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": " <2, 2>  -->  <3, 3> : succ"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     205,
+     20,
+     390,
+     156
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     206,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Category ascending"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     205,
+     156,
+     390,
+     292
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     206,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "0.5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     186
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "x"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_small",
+  "rect": [
+   0,
+   0,
+   780,
+   450
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "absolute_position_3",
+      80,
+      80
+     ],
+     [
+      "4",
+      100,
+      100
+     ],
+     [
+      "SInt(5)",
+      30,
+      null
+     ],
+     [
+      "SCategory::Ascending=HASH(ADDR)",
+      50,
+      null
+     ]
+    ],
+    "hit": 100,
+    "text": "Element Seqsee::Element:[3,3] 4"
+   },
+   "older": [
+    {
+     "fringe": [
+      [
+       "SCategory::Ascending=HASH(ADDR)",
+       100,
+       null
+      ]
+     ],
+     "hit": 500,
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    {
+     "fringe": [],
+     "hit": 2500,
+     "text": " <2, 2>  -->  <3, 3> : succ"
+    },
+    {
+     "fringe": null,
+     "hit": null,
+     "text": "Category ascending"
+    },
+    {
+     "fringe": [
+      [
+       "0.5",
+       20,
+       null
+      ],
+      [
+       "x",
+       10,
+       null
+      ]
+     ],
+     "hit": 0,
+     "text": "Element Seqsee::Element:[0,0] 1"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     10,
+     0,
+     100,
+     53
+    ],
+    "opts": {
+     "fill": "#87E187",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     11,
+     1
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "absolute_position_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     30
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     45
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SInt(5)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     73,
+     110,
+     126
+    ],
+    "opts": {
+     "fill": "#96CC7A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     74
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     88
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Ascending=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     126,
+     110,
+     179
+    ],
+    "opts": {
+     "fill": "#5D804C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     127
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": " <2, 2>  -->  <3, 3> : succ"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     110,
+     20,
+     200,
+     73
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     111,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Category ascending"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     110,
+     73,
+     200,
+     126
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     111,
+     74
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     88
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "0.5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     103
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "x"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_small",
+  "rect": [
+   0,
+   0,
+   400,
+   200
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "absolute_position_3",
+      80,
+      80
+     ],
+     [
+      "4",
+      100,
+      100
+     ],
+     [
+      "SInt(5)",
+      30,
+      null
+     ],
+     [
+      "SCategory::Ascending=HASH(ADDR)",
+      50,
+      null
+     ]
+    ],
+    "hit": 100,
+    "text": "Element Seqsee::Element:[3,3] 4"
+   },
+   "older": [
+    {
+     "fringe": [
+      [
+       "SCategory::Ascending=HASH(ADDR)",
+       100,
+       null
+      ]
+     ],
+     "hit": 500,
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    {
+     "fringe": [],
+     "hit": 2500,
+     "text": " <2, 2>  -->  <3, 3> : succ"
+    },
+    {
+     "fringe": null,
+     "hit": null,
+     "text": "Category ascending"
+    },
+    {
+     "fringe": [
+      [
+       "0.5",
+       20,
+       null
+      ],
+      [
+       "x",
+       10,
+       null
+      ]
+     ],
+     "hit": 0,
+     "text": "Element Seqsee::Element:[0,0] 1"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     60,
+     30,
+     200,
+     116
+    ],
+    "opts": {
+     "fill": "#87E187",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     61,
+     31
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     45
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "absolute_position_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     60
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     75
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SInt(5)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     136,
+     210,
+     222
+    ],
+    "opts": {
+     "fill": "#96CC7A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     71,
+     137
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     80,
+     151
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Ascending=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     222,
+     210,
+     308
+    ],
+    "opts": {
+     "fill": "#5D804C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     71,
+     223
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": " <2, 2>  -->  <3, 3> : succ"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     210,
+     50,
+     350,
+     136
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     211,
+     51
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Category ascending"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     210,
+     136,
+     350,
+     222
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     211,
+     137
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     151
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "0.5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     166
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "x"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_small",
+  "rect": [
+   50,
+   30,
+   600,
+   300
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "absolute_position_3",
+      80,
+      80
+     ],
+     [
+      "4",
+      100,
+      100
+     ],
+     [
+      "SInt(5)",
+      30,
+      null
+     ],
+     [
+      "SCategory::Ascending=HASH(ADDR)",
+      50,
+      null
+     ]
+    ],
+    "hit": 100,
+    "text": "Element Seqsee::Element:[3,3] 4"
+   },
+   "older": [
+    {
+     "fringe": [
+      [
+       "SCategory::Ascending=HASH(ADDR)",
+       100,
+       null
+      ]
+     ],
+     "hit": 500,
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    {
+     "fringe": [],
+     "hit": 2500,
+     "text": " <2, 2>  -->  <3, 3> : succ"
+    },
+    {
+     "fringe": null,
+     "hit": null,
+     "text": "Category ascending"
+    },
+    {
+     "fringe": [
+      [
+       "0.5",
+       20,
+       null
+      ],
+      [
+       "x",
+       10,
+       null
+      ]
+     ],
+     "hit": 0,
+     "text": "Element Seqsee::Element:[0,0] 1"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     20,
+     100,
+     85,
+     136
+    ],
+    "opts": {
+     "fill": "#87E187",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     101
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     115
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "absolute_position_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     130
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     145
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SInt(5)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     156,
+     95,
+     192
+    ],
+    "opts": {
+     "fill": "#96CC7A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     31,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     40,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Ascending=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     192,
+     95,
+     228
+    ],
+    "opts": {
+     "fill": "#5D804C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     31,
+     193
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": " <2, 2>  -->  <3, 3> : succ"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     95,
+     120,
+     160,
+     156
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     96,
+     121
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Category ascending"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     95,
+     156,
+     160,
+     192
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     96,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "0.5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     186
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "x"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_small",
+  "rect": [
+   10,
+   100,
+   300,
+   150
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "absolute_position_3",
+      80,
+      80
+     ],
+     [
+      "4",
+      100,
+      100
+     ],
+     [
+      "SInt(5)",
+      30,
+      null
+     ],
+     [
+      "SCategory::Ascending=HASH(ADDR)",
+      50,
+      null
+     ]
+    ],
+    "hit": 100,
+    "text": "Element Seqsee::Element:[3,3] 4"
+   },
+   "older": [
+    {
+     "fringe": [
+      [
+       "SCategory::Ascending=HASH(ADDR)",
+       100,
+       null
+      ]
+     ],
+     "hit": 500,
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    {
+     "fringe": [],
+     "hit": 2500,
+     "text": " <2, 2>  -->  <3, 3> : succ"
+    },
+    {
+     "fringe": null,
+     "hit": null,
+     "text": "Category ascending"
+    },
+    {
+     "fringe": [
+      [
+       "0.5",
+       20,
+       null
+      ],
+      [
+       "x",
+       10,
+       null
+      ]
+     ],
+     "hit": 0,
+     "text": "Element Seqsee::Element:[0,0] 1"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     8,
+     -3,
+     10,
+     0
+    ],
+    "opts": {
+     "fill": "#87E187",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     11,
+     1
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "absolute_position_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     30
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     45
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SInt(5)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     18,
+     14,
+     20,
+     17
+    ],
+    "opts": {
+     "fill": "#96CC7A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     18
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     32
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Ascending=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     18,
+     11,
+     20,
+     14
+    ],
+    "opts": {
+     "fill": "#5D804C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": " <2, 2>  -->  <3, 3> : succ"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     16,
+     17,
+     18,
+     20
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     19,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Category ascending"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     16,
+     14,
+     18,
+     17
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     19,
+     18
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     32
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "0.5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     47
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "x"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_small",
+  "rect": [
+   0,
+   0,
+   30,
+   30
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "absolute_position_3",
+      80,
+      80
+     ],
+     [
+      "4",
+      100,
+      100
+     ],
+     [
+      "SInt(5)",
+      30,
+      null
+     ],
+     [
+      "SCategory::Ascending=HASH(ADDR)",
+      50,
+      null
+     ]
+    ],
+    "hit": 100,
+    "text": "Element Seqsee::Element:[3,3] 4"
+   },
+   "older": [
+    {
+     "fringe": [
+      [
+       "SCategory::Ascending=HASH(ADDR)",
+       100,
+       null
+      ]
+     ],
+     "hit": 500,
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    {
+     "fringe": [],
+     "hit": 2500,
+     "text": " <2, 2>  -->  <3, 3> : succ"
+    },
+    {
+     "fringe": null,
+     "hit": null,
+     "text": "Category ascending"
+    },
+    {
+     "fringe": [
+      [
+       "0.5",
+       20,
+       null
+      ],
+      [
+       "x",
+       10,
+       null
+      ]
+     ],
+     "hit": 0,
+     "text": "Element Seqsee::Element:[0,0] 1"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     20,
+     156,
+     205,
+     292
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     292,
+     205,
+     428
+    ],
+    "opts": {
+     "fill": "#A3DE85"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     293
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[1,1] 2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     307
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c1_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     205,
+     20,
+     390,
+     156
+    ],
+    "opts": {
+     "fill": "#9DD781"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     206,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[2,2] 3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c2_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     50
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c2_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     205,
+     156,
+     390,
+     292
+    ],
+    "opts": {
+     "fill": "#98CF7C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     206,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     186
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     201
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     205,
+     292,
+     390,
+     428
+    ],
+    "opts": {
+     "fill": "#92C777"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     206,
+     293
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[4,4] 5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     307
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     322
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     337
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     390,
+     20,
+     575,
+     156
+    ],
+    "opts": {
+     "fill": "#8CC073"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     391,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[5,5] 6"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     390,
+     156,
+     575,
+     292
+    ],
+    "opts": {
+     "fill": "#87B86E"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     391,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[6,6] 7"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     400,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c6_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     390,
+     292,
+     575,
+     428
+    ],
+    "opts": {
+     "fill": "#81B069"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     391,
+     293
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[7,7] 8"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     400,
+     307
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c7_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     400,
+     322
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c7_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     575,
+     20,
+     760,
+     156
+    ],
+    "opts": {
+     "fill": "#7BA865"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     576,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[8,8] 9"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     585,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     585,
+     50
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     585,
+     65
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     575,
+     156,
+     760,
+     292
+    ],
+    "opts": {
+     "fill": "#76A160"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     576,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[9,9] 10"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     585,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     585,
+     186
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     585,
+     201
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     575,
+     292,
+     760,
+     428
+    ],
+    "opts": {
+     "fill": "#70995C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     576,
+     293
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[10,10] 11"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     760,
+     20,
+     945,
+     156
+    ],
+    "opts": {
+     "fill": "#6B9157"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     761,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[11,11] 12"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     770,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c11_1"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_full",
+  "rect": [
+   0,
+   0,
+   780,
+   450
+  ],
+  "stream": {
+   "current": null,
+   "older": [
+    {
+     "fringe": [],
+     "hit": 0,
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    {
+     "fringe": [
+      [
+       "c1_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 150,
+     "text": "Element Seqsee::Element:[1,1] 2"
+    },
+    {
+     "fringe": [
+      [
+       "c2_1",
+       10,
+       null
+      ],
+      [
+       "c2_2",
+       20,
+       null
+      ]
+     ],
+     "hit": 300,
+     "text": "Element Seqsee::Element:[2,2] 3"
+    },
+    {
+     "fringe": [
+      [
+       "c3_1",
+       10,
+       null
+      ],
+      [
+       "c3_2",
+       20,
+       null
+      ],
+      [
+       "c3_3",
+       30,
+       null
+      ]
+     ],
+     "hit": 450,
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    {
+     "fringe": [
+      [
+       "c4_1",
+       10,
+       null
+      ],
+      [
+       "c4_2",
+       20,
+       null
+      ],
+      [
+       "c4_3",
+       30,
+       null
+      ],
+      [
+       "c4_4",
+       40,
+       null
+      ]
+     ],
+     "hit": 600,
+     "text": "Element Seqsee::Element:[4,4] 5"
+    },
+    null,
+    {
+     "fringe": [],
+     "hit": 750,
+     "text": "Element Seqsee::Element:[5,5] 6"
+    },
+    {
+     "fringe": [
+      [
+       "c6_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 900,
+     "text": "Element Seqsee::Element:[6,6] 7"
+    },
+    {
+     "fringe": [
+      [
+       "c7_1",
+       10,
+       null
+      ],
+      [
+       "c7_2",
+       20,
+       null
+      ]
+     ],
+     "hit": 1050,
+     "text": "Element Seqsee::Element:[7,7] 8"
+    },
+    {
+     "fringe": [
+      [
+       "c8_1",
+       10,
+       null
+      ],
+      [
+       "c8_2",
+       20,
+       null
+      ],
+      [
+       "c8_3",
+       30,
+       null
+      ]
+     ],
+     "hit": 1200,
+     "text": "Element Seqsee::Element:[8,8] 9"
+    },
+    {
+     "fringe": [
+      [
+       "c9_1",
+       10,
+       null
+      ],
+      [
+       "c9_2",
+       20,
+       null
+      ],
+      [
+       "c9_3",
+       30,
+       null
+      ],
+      [
+       "c9_4",
+       40,
+       null
+      ]
+     ],
+     "hit": 1350,
+     "text": "Element Seqsee::Element:[9,9] 10"
+    },
+    {
+     "fringe": [],
+     "hit": 1500,
+     "text": "Element Seqsee::Element:[10,10] 11"
+    },
+    {
+     "fringe": [
+      [
+       "c11_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 1650,
+     "text": "Element Seqsee::Element:[11,11] 12"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     20,
+     73,
+     110,
+     126
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     74
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     126,
+     110,
+     179
+    ],
+    "opts": {
+     "fill": "#A3DE85"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     127
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[1,1] 2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     141
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c1_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     110,
+     20,
+     200,
+     73
+    ],
+    "opts": {
+     "fill": "#9DD781"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     111,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[2,2] 3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c2_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     50
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c2_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     110,
+     73,
+     200,
+     126
+    ],
+    "opts": {
+     "fill": "#98CF7C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     111,
+     74
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     88
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     103
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     118
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     110,
+     126,
+     200,
+     179
+    ],
+    "opts": {
+     "fill": "#92C777"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     111,
+     127
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[4,4] 5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     141
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     156
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     200,
+     20,
+     290,
+     73
+    ],
+    "opts": {
+     "fill": "#8CC073"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     201,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[5,5] 6"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     200,
+     73,
+     290,
+     126
+    ],
+    "opts": {
+     "fill": "#87B86E"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     201,
+     74
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[6,6] 7"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     210,
+     88
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c6_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     200,
+     126,
+     290,
+     179
+    ],
+    "opts": {
+     "fill": "#81B069"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     201,
+     127
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[7,7] 8"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     210,
+     141
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c7_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     210,
+     156
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c7_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     290,
+     20,
+     380,
+     73
+    ],
+    "opts": {
+     "fill": "#7BA865"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     291,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[8,8] 9"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     300,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     300,
+     50
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     300,
+     65
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     290,
+     73,
+     380,
+     126
+    ],
+    "opts": {
+     "fill": "#76A160"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     291,
+     74
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[9,9] 10"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     300,
+     88
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     300,
+     103
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     300,
+     118
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     290,
+     126,
+     380,
+     179
+    ],
+    "opts": {
+     "fill": "#70995C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     291,
+     127
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[10,10] 11"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     380,
+     20,
+     470,
+     73
+    ],
+    "opts": {
+     "fill": "#6B9157"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     381,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[11,11] 12"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     390,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c11_1"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_full",
+  "rect": [
+   0,
+   0,
+   400,
+   200
+  ],
+  "stream": {
+   "current": null,
+   "older": [
+    {
+     "fringe": [],
+     "hit": 0,
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    {
+     "fringe": [
+      [
+       "c1_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 150,
+     "text": "Element Seqsee::Element:[1,1] 2"
+    },
+    {
+     "fringe": [
+      [
+       "c2_1",
+       10,
+       null
+      ],
+      [
+       "c2_2",
+       20,
+       null
+      ]
+     ],
+     "hit": 300,
+     "text": "Element Seqsee::Element:[2,2] 3"
+    },
+    {
+     "fringe": [
+      [
+       "c3_1",
+       10,
+       null
+      ],
+      [
+       "c3_2",
+       20,
+       null
+      ],
+      [
+       "c3_3",
+       30,
+       null
+      ]
+     ],
+     "hit": 450,
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    {
+     "fringe": [
+      [
+       "c4_1",
+       10,
+       null
+      ],
+      [
+       "c4_2",
+       20,
+       null
+      ],
+      [
+       "c4_3",
+       30,
+       null
+      ],
+      [
+       "c4_4",
+       40,
+       null
+      ]
+     ],
+     "hit": 600,
+     "text": "Element Seqsee::Element:[4,4] 5"
+    },
+    null,
+    {
+     "fringe": [],
+     "hit": 750,
+     "text": "Element Seqsee::Element:[5,5] 6"
+    },
+    {
+     "fringe": [
+      [
+       "c6_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 900,
+     "text": "Element Seqsee::Element:[6,6] 7"
+    },
+    {
+     "fringe": [
+      [
+       "c7_1",
+       10,
+       null
+      ],
+      [
+       "c7_2",
+       20,
+       null
+      ]
+     ],
+     "hit": 1050,
+     "text": "Element Seqsee::Element:[7,7] 8"
+    },
+    {
+     "fringe": [
+      [
+       "c8_1",
+       10,
+       null
+      ],
+      [
+       "c8_2",
+       20,
+       null
+      ],
+      [
+       "c8_3",
+       30,
+       null
+      ]
+     ],
+     "hit": 1200,
+     "text": "Element Seqsee::Element:[8,8] 9"
+    },
+    {
+     "fringe": [
+      [
+       "c9_1",
+       10,
+       null
+      ],
+      [
+       "c9_2",
+       20,
+       null
+      ],
+      [
+       "c9_3",
+       30,
+       null
+      ],
+      [
+       "c9_4",
+       40,
+       null
+      ]
+     ],
+     "hit": 1350,
+     "text": "Element Seqsee::Element:[9,9] 10"
+    },
+    {
+     "fringe": [],
+     "hit": 1500,
+     "text": "Element Seqsee::Element:[10,10] 11"
+    },
+    {
+     "fringe": [
+      [
+       "c11_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 1650,
+     "text": "Element Seqsee::Element:[11,11] 12"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     70,
+     136,
+     210,
+     222
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     71,
+     137
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     222,
+     210,
+     308
+    ],
+    "opts": {
+     "fill": "#A3DE85"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     71,
+     223
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[1,1] 2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     80,
+     237
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c1_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     210,
+     50,
+     350,
+     136
+    ],
+    "opts": {
+     "fill": "#9DD781"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     211,
+     51
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[2,2] 3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     65
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c2_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     80
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c2_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     210,
+     136,
+     350,
+     222
+    ],
+    "opts": {
+     "fill": "#98CF7C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     211,
+     137
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     151
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     166
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     181
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     210,
+     222,
+     350,
+     308
+    ],
+    "opts": {
+     "fill": "#92C777"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     211,
+     223
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[4,4] 5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     237
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     252
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     267
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     350,
+     50,
+     490,
+     136
+    ],
+    "opts": {
+     "fill": "#8CC073"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     351,
+     51
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[5,5] 6"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     350,
+     136,
+     490,
+     222
+    ],
+    "opts": {
+     "fill": "#87B86E"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     351,
+     137
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[6,6] 7"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     360,
+     151
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c6_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     350,
+     222,
+     490,
+     308
+    ],
+    "opts": {
+     "fill": "#81B069"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     351,
+     223
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[7,7] 8"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     360,
+     237
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c7_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     360,
+     252
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c7_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     490,
+     50,
+     630,
+     136
+    ],
+    "opts": {
+     "fill": "#7BA865"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     491,
+     51
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[8,8] 9"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     500,
+     65
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     500,
+     80
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     500,
+     95
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     490,
+     136,
+     630,
+     222
+    ],
+    "opts": {
+     "fill": "#76A160"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     491,
+     137
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[9,9] 10"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     500,
+     151
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     500,
+     166
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     500,
+     181
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     490,
+     222,
+     630,
+     308
+    ],
+    "opts": {
+     "fill": "#70995C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     491,
+     223
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[10,10] 11"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     630,
+     50,
+     770,
+     136
+    ],
+    "opts": {
+     "fill": "#6B9157"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     631,
+     51
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[11,11] 12"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     640,
+     65
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c11_1"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_full",
+  "rect": [
+   50,
+   30,
+   600,
+   300
+  ],
+  "stream": {
+   "current": null,
+   "older": [
+    {
+     "fringe": [],
+     "hit": 0,
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    {
+     "fringe": [
+      [
+       "c1_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 150,
+     "text": "Element Seqsee::Element:[1,1] 2"
+    },
+    {
+     "fringe": [
+      [
+       "c2_1",
+       10,
+       null
+      ],
+      [
+       "c2_2",
+       20,
+       null
+      ]
+     ],
+     "hit": 300,
+     "text": "Element Seqsee::Element:[2,2] 3"
+    },
+    {
+     "fringe": [
+      [
+       "c3_1",
+       10,
+       null
+      ],
+      [
+       "c3_2",
+       20,
+       null
+      ],
+      [
+       "c3_3",
+       30,
+       null
+      ]
+     ],
+     "hit": 450,
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    {
+     "fringe": [
+      [
+       "c4_1",
+       10,
+       null
+      ],
+      [
+       "c4_2",
+       20,
+       null
+      ],
+      [
+       "c4_3",
+       30,
+       null
+      ],
+      [
+       "c4_4",
+       40,
+       null
+      ]
+     ],
+     "hit": 600,
+     "text": "Element Seqsee::Element:[4,4] 5"
+    },
+    null,
+    {
+     "fringe": [],
+     "hit": 750,
+     "text": "Element Seqsee::Element:[5,5] 6"
+    },
+    {
+     "fringe": [
+      [
+       "c6_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 900,
+     "text": "Element Seqsee::Element:[6,6] 7"
+    },
+    {
+     "fringe": [
+      [
+       "c7_1",
+       10,
+       null
+      ],
+      [
+       "c7_2",
+       20,
+       null
+      ]
+     ],
+     "hit": 1050,
+     "text": "Element Seqsee::Element:[7,7] 8"
+    },
+    {
+     "fringe": [
+      [
+       "c8_1",
+       10,
+       null
+      ],
+      [
+       "c8_2",
+       20,
+       null
+      ],
+      [
+       "c8_3",
+       30,
+       null
+      ]
+     ],
+     "hit": 1200,
+     "text": "Element Seqsee::Element:[8,8] 9"
+    },
+    {
+     "fringe": [
+      [
+       "c9_1",
+       10,
+       null
+      ],
+      [
+       "c9_2",
+       20,
+       null
+      ],
+      [
+       "c9_3",
+       30,
+       null
+      ],
+      [
+       "c9_4",
+       40,
+       null
+      ]
+     ],
+     "hit": 1350,
+     "text": "Element Seqsee::Element:[9,9] 10"
+    },
+    {
+     "fringe": [],
+     "hit": 1500,
+     "text": "Element Seqsee::Element:[10,10] 11"
+    },
+    {
+     "fringe": [
+      [
+       "c11_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 1650,
+     "text": "Element Seqsee::Element:[11,11] 12"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     30,
+     156,
+     95,
+     192
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     31,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     192,
+     95,
+     228
+    ],
+    "opts": {
+     "fill": "#A3DE85"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     31,
+     193
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[1,1] 2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     40,
+     207
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c1_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     95,
+     120,
+     160,
+     156
+    ],
+    "opts": {
+     "fill": "#9DD781"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     96,
+     121
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[2,2] 3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     135
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c2_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     150
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c2_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     95,
+     156,
+     160,
+     192
+    ],
+    "opts": {
+     "fill": "#98CF7C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     96,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     186
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     201
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     95,
+     192,
+     160,
+     228
+    ],
+    "opts": {
+     "fill": "#92C777"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     96,
+     193
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[4,4] 5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     207
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     222
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     237
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     160,
+     120,
+     225,
+     156
+    ],
+    "opts": {
+     "fill": "#8CC073"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     161,
+     121
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[5,5] 6"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     160,
+     156,
+     225,
+     192
+    ],
+    "opts": {
+     "fill": "#87B86E"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     161,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[6,6] 7"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     170,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c6_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     160,
+     192,
+     225,
+     228
+    ],
+    "opts": {
+     "fill": "#81B069"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     161,
+     193
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[7,7] 8"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     170,
+     207
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c7_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     170,
+     222
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c7_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     225,
+     120,
+     290,
+     156
+    ],
+    "opts": {
+     "fill": "#7BA865"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     226,
+     121
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[8,8] 9"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     235,
+     135
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     235,
+     150
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     235,
+     165
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     225,
+     156,
+     290,
+     192
+    ],
+    "opts": {
+     "fill": "#76A160"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     226,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[9,9] 10"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     235,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     235,
+     186
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     235,
+     201
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     225,
+     192,
+     290,
+     228
+    ],
+    "opts": {
+     "fill": "#70995C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     226,
+     193
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[10,10] 11"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     290,
+     120,
+     355,
+     156
+    ],
+    "opts": {
+     "fill": "#6B9157"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     291,
+     121
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[11,11] 12"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     300,
+     135
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c11_1"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_full",
+  "rect": [
+   10,
+   100,
+   300,
+   150
+  ],
+  "stream": {
+   "current": null,
+   "older": [
+    {
+     "fringe": [],
+     "hit": 0,
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    {
+     "fringe": [
+      [
+       "c1_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 150,
+     "text": "Element Seqsee::Element:[1,1] 2"
+    },
+    {
+     "fringe": [
+      [
+       "c2_1",
+       10,
+       null
+      ],
+      [
+       "c2_2",
+       20,
+       null
+      ]
+     ],
+     "hit": 300,
+     "text": "Element Seqsee::Element:[2,2] 3"
+    },
+    {
+     "fringe": [
+      [
+       "c3_1",
+       10,
+       null
+      ],
+      [
+       "c3_2",
+       20,
+       null
+      ],
+      [
+       "c3_3",
+       30,
+       null
+      ]
+     ],
+     "hit": 450,
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    {
+     "fringe": [
+      [
+       "c4_1",
+       10,
+       null
+      ],
+      [
+       "c4_2",
+       20,
+       null
+      ],
+      [
+       "c4_3",
+       30,
+       null
+      ],
+      [
+       "c4_4",
+       40,
+       null
+      ]
+     ],
+     "hit": 600,
+     "text": "Element Seqsee::Element:[4,4] 5"
+    },
+    null,
+    {
+     "fringe": [],
+     "hit": 750,
+     "text": "Element Seqsee::Element:[5,5] 6"
+    },
+    {
+     "fringe": [
+      [
+       "c6_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 900,
+     "text": "Element Seqsee::Element:[6,6] 7"
+    },
+    {
+     "fringe": [
+      [
+       "c7_1",
+       10,
+       null
+      ],
+      [
+       "c7_2",
+       20,
+       null
+      ]
+     ],
+     "hit": 1050,
+     "text": "Element Seqsee::Element:[7,7] 8"
+    },
+    {
+     "fringe": [
+      [
+       "c8_1",
+       10,
+       null
+      ],
+      [
+       "c8_2",
+       20,
+       null
+      ],
+      [
+       "c8_3",
+       30,
+       null
+      ]
+     ],
+     "hit": 1200,
+     "text": "Element Seqsee::Element:[8,8] 9"
+    },
+    {
+     "fringe": [
+      [
+       "c9_1",
+       10,
+       null
+      ],
+      [
+       "c9_2",
+       20,
+       null
+      ],
+      [
+       "c9_3",
+       30,
+       null
+      ],
+      [
+       "c9_4",
+       40,
+       null
+      ]
+     ],
+     "hit": 1350,
+     "text": "Element Seqsee::Element:[9,9] 10"
+    },
+    {
+     "fringe": [],
+     "hit": 1500,
+     "text": "Element Seqsee::Element:[10,10] 11"
+    },
+    {
+     "fringe": [
+      [
+       "c11_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 1650,
+     "text": "Element Seqsee::Element:[11,11] 12"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     18,
+     14,
+     20,
+     17
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     18
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     18,
+     11,
+     20,
+     14
+    ],
+    "opts": {
+     "fill": "#A3DE85"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[1,1] 2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     29
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c1_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     16,
+     17,
+     18,
+     20
+    ],
+    "opts": {
+     "fill": "#9DD781"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     19,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[2,2] 3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c2_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     50
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c2_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     16,
+     14,
+     18,
+     17
+    ],
+    "opts": {
+     "fill": "#98CF7C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     19,
+     18
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     32
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     47
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     62
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c3_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     16,
+     11,
+     18,
+     14
+    ],
+    "opts": {
+     "fill": "#92C777"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     19,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[4,4] 5"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     29
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     44
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     59
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c4_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     14,
+     17,
+     16,
+     20
+    ],
+    "opts": {
+     "fill": "#8CC073"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     17,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[5,5] 6"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     14,
+     14,
+     16,
+     17
+    ],
+    "opts": {
+     "fill": "#87B86E"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     17,
+     18
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[6,6] 7"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     26,
+     32
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c6_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     14,
+     11,
+     16,
+     14
+    ],
+    "opts": {
+     "fill": "#81B069"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     17,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[7,7] 8"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     26,
+     29
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c7_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     26,
+     44
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c7_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     12,
+     17,
+     14,
+     20
+    ],
+    "opts": {
+     "fill": "#7BA865"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     15,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[8,8] 9"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     24,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     24,
+     50
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     24,
+     65
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c8_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     12,
+     14,
+     14,
+     17
+    ],
+    "opts": {
+     "fill": "#76A160"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     15,
+     18
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[9,9] 10"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     24,
+     32
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_1"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     24,
+     47
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     24,
+     62
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c9_3"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     12,
+     11,
+     14,
+     14
+    ],
+    "opts": {
+     "fill": "#70995C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     15,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[10,10] 11"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     10,
+     17,
+     12,
+     20
+    ],
+    "opts": {
+     "fill": "#6B9157"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     13,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[11,11] 12"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     22,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "c11_1"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_full",
+  "rect": [
+   0,
+   0,
+   30,
+   30
+  ],
+  "stream": {
+   "current": null,
+   "older": [
+    {
+     "fringe": [],
+     "hit": 0,
+     "text": "Element Seqsee::Element:[0,0] 1"
+    },
+    {
+     "fringe": [
+      [
+       "c1_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 150,
+     "text": "Element Seqsee::Element:[1,1] 2"
+    },
+    {
+     "fringe": [
+      [
+       "c2_1",
+       10,
+       null
+      ],
+      [
+       "c2_2",
+       20,
+       null
+      ]
+     ],
+     "hit": 300,
+     "text": "Element Seqsee::Element:[2,2] 3"
+    },
+    {
+     "fringe": [
+      [
+       "c3_1",
+       10,
+       null
+      ],
+      [
+       "c3_2",
+       20,
+       null
+      ],
+      [
+       "c3_3",
+       30,
+       null
+      ]
+     ],
+     "hit": 450,
+     "text": "Element Seqsee::Element:[3,3] 4"
+    },
+    {
+     "fringe": [
+      [
+       "c4_1",
+       10,
+       null
+      ],
+      [
+       "c4_2",
+       20,
+       null
+      ],
+      [
+       "c4_3",
+       30,
+       null
+      ],
+      [
+       "c4_4",
+       40,
+       null
+      ]
+     ],
+     "hit": 600,
+     "text": "Element Seqsee::Element:[4,4] 5"
+    },
+    null,
+    {
+     "fringe": [],
+     "hit": 750,
+     "text": "Element Seqsee::Element:[5,5] 6"
+    },
+    {
+     "fringe": [
+      [
+       "c6_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 900,
+     "text": "Element Seqsee::Element:[6,6] 7"
+    },
+    {
+     "fringe": [
+      [
+       "c7_1",
+       10,
+       null
+      ],
+      [
+       "c7_2",
+       20,
+       null
+      ]
+     ],
+     "hit": 1050,
+     "text": "Element Seqsee::Element:[7,7] 8"
+    },
+    {
+     "fringe": [
+      [
+       "c8_1",
+       10,
+       null
+      ],
+      [
+       "c8_2",
+       20,
+       null
+      ],
+      [
+       "c8_3",
+       30,
+       null
+      ]
+     ],
+     "hit": 1200,
+     "text": "Element Seqsee::Element:[8,8] 9"
+    },
+    {
+     "fringe": [
+      [
+       "c9_1",
+       10,
+       null
+      ],
+      [
+       "c9_2",
+       20,
+       null
+      ],
+      [
+       "c9_3",
+       30,
+       null
+      ],
+      [
+       "c9_4",
+       40,
+       null
+      ]
+     ],
+     "hit": 1350,
+     "text": "Element Seqsee::Element:[9,9] 10"
+    },
+    {
+     "fringe": [],
+     "hit": 1500,
+     "text": "Element Seqsee::Element:[10,10] 11"
+    },
+    {
+     "fringe": [
+      [
+       "c11_1",
+       10,
+       null
+      ]
+     ],
+     "hit": 1650,
+     "text": "Element Seqsee::Element:[11,11] 12"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     10,
+     0,
+     195,
+     136
+    ],
+    "opts": {
+     "fill": "#8AE68A",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     11,
+     1
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     30
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Ascending=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     156,
+     205,
+     292
+    ],
+    "opts": {
+     "fill": "#A7E489"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": " <0, 0>  -->  <1, 1> : succ"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Mapping::Numeric=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     186
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Seqsee::Element=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     201
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Seqsee::Element=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     292,
+     205,
+     428
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     293
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Category sameness"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     307
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Sameness=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     205,
+     20,
+     390,
+     156
+    ],
+    "opts": {
+     "fill": "#5D804C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     206,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[4,4] 2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     50
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     215,
+     65
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_real",
+  "rect": [
+   0,
+   0,
+   780,
+   450
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      100,
+      null
+     ],
+     [
+      "SCategory::Ascending=HASH(ADDR)",
+      100,
+      null
+     ]
+    ],
+    "hit": null,
+    "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+   },
+   "older": [
+    {
+     "fringe": [
+      [
+       "Mapping::Numeric=HASH(ADDR)",
+       100,
+       null
+      ],
+      [
+       "Seqsee::Element=HASH(ADDR)",
+       50,
+       null
+      ],
+      [
+       "Seqsee::Element=HASH(ADDR)",
+       50,
+       null
+      ]
+     ],
+     "hit": 40,
+     "text": " <0, 0>  -->  <1, 1> : succ"
+    },
+    {
+     "fringe": [
+      [
+       "SCategory::Sameness=HASH(ADDR)",
+       100,
+       null
+      ]
+     ],
+     "hit": null,
+     "text": "Category sameness"
+    },
+    {
+     "fringe": [
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       100,
+       null
+      ],
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       30,
+       null
+      ],
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       30,
+       null
+      ],
+      [
+       "absolute_position_4",
+       80,
+       null
+      ],
+      [
+       "absolute_position_3",
+       20,
+       null
+      ],
+      [
+       "absolute_position_5",
+       20,
+       null
+      ]
+     ],
+     "hit": 1999,
+     "text": "Element Seqsee::Element:[4,4] 2"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     10,
+     0,
+     100,
+     53
+    ],
+    "opts": {
+     "fill": "#8AE68A",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     11,
+     1
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     30
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Ascending=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     73,
+     110,
+     126
+    ],
+    "opts": {
+     "fill": "#A7E489"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     74
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": " <0, 0>  -->  <1, 1> : succ"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     88
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Mapping::Numeric=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     103
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Seqsee::Element=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     118
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Seqsee::Element=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     126,
+     110,
+     179
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     127
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Category sameness"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     141
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Sameness=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     110,
+     20,
+     200,
+     73
+    ],
+    "opts": {
+     "fill": "#5D804C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     111,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[4,4] 2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     50
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     120,
+     65
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_real",
+  "rect": [
+   0,
+   0,
+   400,
+   200
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      100,
+      null
+     ],
+     [
+      "SCategory::Ascending=HASH(ADDR)",
+      100,
+      null
+     ]
+    ],
+    "hit": null,
+    "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+   },
+   "older": [
+    {
+     "fringe": [
+      [
+       "Mapping::Numeric=HASH(ADDR)",
+       100,
+       null
+      ],
+      [
+       "Seqsee::Element=HASH(ADDR)",
+       50,
+       null
+      ],
+      [
+       "Seqsee::Element=HASH(ADDR)",
+       50,
+       null
+      ]
+     ],
+     "hit": 40,
+     "text": " <0, 0>  -->  <1, 1> : succ"
+    },
+    {
+     "fringe": [
+      [
+       "SCategory::Sameness=HASH(ADDR)",
+       100,
+       null
+      ]
+     ],
+     "hit": null,
+     "text": "Category sameness"
+    },
+    {
+     "fringe": [
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       100,
+       null
+      ],
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       30,
+       null
+      ],
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       30,
+       null
+      ],
+      [
+       "absolute_position_4",
+       80,
+       null
+      ],
+      [
+       "absolute_position_3",
+       20,
+       null
+      ],
+      [
+       "absolute_position_5",
+       20,
+       null
+      ]
+     ],
+     "hit": 1999,
+     "text": "Element Seqsee::Element:[4,4] 2"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     60,
+     30,
+     200,
+     116
+    ],
+    "opts": {
+     "fill": "#8AE68A",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     61,
+     31
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     45
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     60
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Ascending=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     136,
+     210,
+     222
+    ],
+    "opts": {
+     "fill": "#A7E489"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     71,
+     137
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": " <0, 0>  -->  <1, 1> : succ"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     80,
+     151
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Mapping::Numeric=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     80,
+     166
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Seqsee::Element=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     80,
+     181
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Seqsee::Element=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     70,
+     222,
+     210,
+     308
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     71,
+     223
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Category sameness"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     80,
+     237
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Sameness=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     210,
+     50,
+     350,
+     136
+    ],
+    "opts": {
+     "fill": "#5D804C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     211,
+     51
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[4,4] 2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     65
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     80
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     220,
+     95
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_real",
+  "rect": [
+   50,
+   30,
+   600,
+   300
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      100,
+      null
+     ],
+     [
+      "SCategory::Ascending=HASH(ADDR)",
+      100,
+      null
+     ]
+    ],
+    "hit": null,
+    "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+   },
+   "older": [
+    {
+     "fringe": [
+      [
+       "Mapping::Numeric=HASH(ADDR)",
+       100,
+       null
+      ],
+      [
+       "Seqsee::Element=HASH(ADDR)",
+       50,
+       null
+      ],
+      [
+       "Seqsee::Element=HASH(ADDR)",
+       50,
+       null
+      ]
+     ],
+     "hit": 40,
+     "text": " <0, 0>  -->  <1, 1> : succ"
+    },
+    {
+     "fringe": [
+      [
+       "SCategory::Sameness=HASH(ADDR)",
+       100,
+       null
+      ]
+     ],
+     "hit": null,
+     "text": "Category sameness"
+    },
+    {
+     "fringe": [
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       100,
+       null
+      ],
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       30,
+       null
+      ],
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       30,
+       null
+      ],
+      [
+       "absolute_position_4",
+       80,
+       null
+      ],
+      [
+       "absolute_position_3",
+       20,
+       null
+      ],
+      [
+       "absolute_position_5",
+       20,
+       null
+      ]
+     ],
+     "hit": 1999,
+     "text": "Element Seqsee::Element:[4,4] 2"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     20,
+     100,
+     85,
+     136
+    ],
+    "opts": {
+     "fill": "#8AE68A",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     101
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     115
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     130
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Ascending=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     156,
+     95,
+     192
+    ],
+    "opts": {
+     "fill": "#A7E489"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     31,
+     157
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": " <0, 0>  -->  <1, 1> : succ"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     40,
+     171
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Mapping::Numeric=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     40,
+     186
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Seqsee::Element=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     40,
+     201
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Seqsee::Element=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     192,
+     95,
+     228
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     31,
+     193
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Category sameness"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     40,
+     207
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Sameness=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     95,
+     120,
+     160,
+     156
+    ],
+    "opts": {
+     "fill": "#5D804C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     96,
+     121
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[4,4] 2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     135
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     150
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     105,
+     165
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_real",
+  "rect": [
+   10,
+   100,
+   300,
+   150
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      100,
+      null
+     ],
+     [
+      "SCategory::Ascending=HASH(ADDR)",
+      100,
+      null
+     ]
+    ],
+    "hit": null,
+    "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+   },
+   "older": [
+    {
+     "fringe": [
+      [
+       "Mapping::Numeric=HASH(ADDR)",
+       100,
+       null
+      ],
+      [
+       "Seqsee::Element=HASH(ADDR)",
+       50,
+       null
+      ],
+      [
+       "Seqsee::Element=HASH(ADDR)",
+       50,
+       null
+      ]
+     ],
+     "hit": 40,
+     "text": " <0, 0>  -->  <1, 1> : succ"
+    },
+    {
+     "fringe": [
+      [
+       "SCategory::Sameness=HASH(ADDR)",
+       100,
+       null
+      ]
+     ],
+     "hit": null,
+     "text": "Category sameness"
+    },
+    {
+     "fringe": [
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       100,
+       null
+      ],
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       30,
+       null
+      ],
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       30,
+       null
+      ],
+      [
+       "absolute_position_4",
+       80,
+       null
+      ],
+      [
+       "absolute_position_3",
+       20,
+       null
+      ],
+      [
+       "absolute_position_5",
+       20,
+       null
+      ]
+     ],
+     "hit": 1999,
+     "text": "Element Seqsee::Element:[4,4] 2"
+    }
+   ]
+  }
+ },
+ {
+  "died": null,
+  "items": [
+   {
+    "coords": [
+     8,
+     -3,
+     10,
+     0
+    ],
+    "opts": {
+     "fill": "#8AE68A",
+     "width": 3
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     11,
+     1
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     20,
+     30
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Ascending=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     18,
+     14,
+     20,
+     17
+    ],
+    "opts": {
+     "fill": "#A7E489"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     18
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": " <0, 0>  -->  <1, 1> : succ"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     32
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Mapping::Numeric=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     47
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Seqsee::Element=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     62
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "Seqsee::Element=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     18,
+     11,
+     20,
+     14
+    ],
+    "opts": {
+     "fill": "#A8E68A"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     21,
+     15
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Category sameness"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     30,
+     29
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SCategory::Sameness=HASH(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     16,
+     17,
+     18,
+     20
+    ],
+    "opts": {
+     "fill": "#5D804C"
+    },
+    "tags": [],
+    "type": "rectangle"
+   },
+   {
+    "coords": [
+     19,
+     21
+    ],
+    "opts": {
+     "anchor": "nw",
+     "font": "-adobe-helvetica-bold-r-normal--14-140-100-100-p-105-iso8859-4",
+     "text": "Element Seqsee::Element:[4,4] 2"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     35
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     50
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   },
+   {
+    "coords": [
+     28,
+     65
+    ],
+    "opts": {
+     "anchor": "nw",
+     "fill": "#3314CC",
+     "font": "-adobe-helvetica-bold-r-normal--10-140-100-100-p-105-iso8859-4",
+     "text": "SLTM::Platonic=SCALAR(ADDR)"
+    },
+    "tags": [],
+    "type": "text"
+   }
+  ],
+  "recipe": "stream_real",
+  "rect": [
+   0,
+   0,
+   30,
+   30
+  ],
+  "stream": {
+   "current": {
+    "fringe": [
+     [
+      "SLTM::Platonic=SCALAR(ADDR)",
+      100,
+      null
+     ],
+     [
+      "SCategory::Ascending=HASH(ADDR)",
+      100,
+      null
+     ]
+    ],
+    "hit": null,
+    "text": "Group Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+   },
+   "older": [
+    {
+     "fringe": [
+      [
+       "Mapping::Numeric=HASH(ADDR)",
+       100,
+       null
+      ],
+      [
+       "Seqsee::Element=HASH(ADDR)",
+       50,
+       null
+      ],
+      [
+       "Seqsee::Element=HASH(ADDR)",
+       50,
+       null
+      ]
+     ],
+     "hit": 40,
+     "text": " <0, 0>  -->  <1, 1> : succ"
+    },
+    {
+     "fringe": [
+      [
+       "SCategory::Sameness=HASH(ADDR)",
+       100,
+       null
+      ]
+     ],
+     "hit": null,
+     "text": "Category sameness"
+    },
+    {
+     "fringe": [
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       100,
+       null
+      ],
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       30,
+       null
+      ],
+      [
+       "SLTM::Platonic=SCALAR(ADDR)",
+       30,
+       null
+      ],
+      [
+       "absolute_position_4",
+       80,
+       null
+      ],
+      [
+       "absolute_position_3",
+       20,
+       null
+      ],
+      [
+       "absolute_position_5",
+       20,
+       null
+      ]
+     ],
+     "hit": 1999,
+     "text": "Element Seqsee::Element:[4,4] 2"
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,5421 @@
+[
+ {
+  "args": [
+   "PA",
+   "PA"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "PA,PA"
+ },
+ {
+  "args": [
+   "PB",
+   "PA"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "PB,PA"
+ },
+ {
+  "args": [
+   "PA",
+   "PB"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "PA,PB"
+ },
+ {
+  "args": [
+   "PB",
+   "PB"
+  ],
+  "error": "Cannot resolve call to multimethod Probe(PB,PB). The multimethods:",
+  "kind": "probe",
+  "result": null
+ },
+ {
+  "args": [
+   "PC",
+   "PA"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "PB,PA"
+ },
+ {
+  "args": [
+   "PC",
+   "PC"
+  ],
+  "error": "Cannot resolve call to multimethod Probe(PC,PC). The multimethods:",
+  "kind": "probe",
+  "result": null
+ },
+ {
+  "args": [
+   "PD",
+   "PA"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "PA,PA"
+ },
+ {
+  "args": [
+   "PD",
+   "PX"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "*,PX"
+ },
+ {
+  "args": [
+   "PD",
+   "PD"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "PA,PA"
+ },
+ {
+  "args": [
+   "PY",
+   "PY"
+  ],
+  "error": "Cannot resolve call to multimethod Probe(PY,PY). The multimethods:",
+  "kind": "probe",
+  "result": null
+ },
+ {
+  "args": [
+   "PA",
+   "PY"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "*,PY"
+ },
+ {
+  "args": [
+   "PY",
+   "PA"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "PY,*"
+ },
+ {
+  "args": [
+   "num",
+   "num"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "#,#"
+ },
+ {
+  "args": [
+   "float",
+   "neg"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "#,#"
+ },
+ {
+  "args": [
+   "undef",
+   "undef"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "$,$"
+ },
+ {
+  "args": [
+   "num",
+   "str"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "$,$"
+ },
+ {
+  "args": [
+   "str",
+   "num"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "$,$"
+ },
+ {
+  "args": [
+   "numstr",
+   "numstr"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "$,$"
+ },
+ {
+  "args": [
+   "empty",
+   "num"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "$,$"
+ },
+ {
+  "args": [
+   "ARRAY",
+   "num"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "ARRAY,*"
+ },
+ {
+  "args": [
+   "ARRAY",
+   "PA"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "ARRAY,*"
+ },
+ {
+  "args": [
+   "HASH",
+   "HASH"
+  ],
+  "error": null,
+  "kind": "probe",
+  "result": "HASH,HASH"
+ },
+ {
+  "args": [
+   "HASH",
+   "PA"
+  ],
+  "error": "No viable candidate for call to multimethod Probe(HASH,PA)",
+  "kind": "probe",
+  "result": null
+ },
+ {
+  "args": [
+   "PA",
+   "str"
+  ],
+  "error": "No viable candidate for call to multimethod Probe(PA,$)",
+  "kind": "probe",
+  "result": null
+ },
+ {
+  "args": [
+   "num",
+   "num",
+   "num"
+  ],
+  "error": "No viable candidate for call to multimethod Probe(#,#,#)",
+  "kind": "probe",
+  "result": null
+ },
+ {
+  "args": [
+   "PA"
+  ],
+  "error": "No viable candidate for call to multimethod Probe(PA)",
+  "kind": "probe",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 4,
+  "count": 1,
+  "error": null,
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:succ/number",
+  "spike": []
+ },
+ {
+  "a": 4,
+  "b": 3,
+  "count": 1,
+  "error": null,
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:pred/number",
+  "spike": []
+ },
+ {
+  "a": 3,
+  "b": 3,
+  "count": 1,
+  "error": null,
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:same/number",
+  "spike": []
+ },
+ {
+  "a": 3,
+  "b": 7,
+  "count": 0,
+  "error": null,
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": null,
+  "b": 1,
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping($,#)",
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": null,
+  "b": null,
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping($,$)",
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": 1.5,
+  "b": 2.5,
+  "count": 1,
+  "error": null,
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:succ/number",
+  "spike": []
+ },
+ {
+  "a": 0,
+  "b": -1,
+  "count": 1,
+  "error": null,
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:pred/number",
+  "spike": []
+ },
+ {
+  "a": "3",
+  "b": "4",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping($,$)",
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": "a",
+  "b": "b",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping($,$)",
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": 3,
+  "b": "4",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping(#,$)",
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": "4",
+  "b": 3,
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping($,#)",
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": "",
+  "b": 1,
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping($,#)",
+  "kind": "find_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_cat",
+  "label": "number",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:succ/number",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_cat",
+  "label": "number_strings",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:succ/number",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_cat",
+  "label": "fake_sints",
+  "log": [
+   "find:SInt,SInt"
+  ],
+  "messages": [],
+  "result": "found-by-fc",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_cat",
+  "label": "fake_undef",
+  "log": [
+   "find:,"
+  ],
+  "messages": [],
+  "result": "found-by-fc",
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "Can't call method \"FindMappingForCat\" on an undefined value",
+  "kind": "find_cat",
+  "label": "undef_cat",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_sint",
+  "label": "succ",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:succ/number",
+  "spike": [
+   [
+    0,
+    "number"
+   ]
+  ]
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "find_sint",
+  "label": "none",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": [
+   [
+    0,
+    "number"
+   ]
+  ]
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_sint",
+  "label": "pick_undef",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:pred/number",
+  "spike": [
+   [
+    0,
+    "number"
+   ]
+  ]
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_sint",
+  "label": "fake_cat",
+  "log": [
+   "find:SInt,SInt"
+  ],
+  "messages": [],
+  "result": "found-by-fc",
+  "spike": [
+   [
+    0,
+    "number",
+    "fc"
+   ]
+  ]
+ },
+ {
+  "count": 0,
+  "error": "",
+  "kind": "find_sint",
+  "label": "no_common",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "undef in common_categories FindMapping SInt/Seqsee::Element SInt/Seqsee::Element:SCategory::Number=HASH(0x555555aa2488), ",
+  "kind": "find_sint",
+  "label": "undef_cat",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_elem",
+  "label": "succ",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:succ/number",
+  "spike": [
+   [
+    0,
+    "number"
+   ]
+  ]
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_elem",
+  "label": "same_two_cats",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:same/number",
+  "spike": [
+   [
+    0,
+    "number",
+    "fc"
+   ]
+  ]
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_elem",
+  "label": "fake_cat",
+  "log": [
+   "find:FakeElem,FakeElem"
+  ],
+  "messages": [],
+  "result": "found-by-fc",
+  "spike": [
+   [
+    0,
+    "number",
+    "fc"
+   ]
+  ]
+ },
+ {
+  "count": 0,
+  "error": "",
+  "kind": "find_elem",
+  "label": "no_common",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_elem",
+  "label": "pick_undef",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Numeric:pred/number",
+  "spike": [
+   [
+    0,
+    "fc"
+   ]
+  ]
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_anch",
+  "label": "fake_cat",
+  "log": [
+   "find:FakeAnch,FakeAnch"
+  ],
+  "messages": [],
+  "result": "found-by-fc",
+  "spike": [
+   [
+    10,
+    "fc"
+   ]
+  ]
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "find_anch",
+  "label": "no_common",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "find_anch",
+  "label": "pick_undef",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": [
+   [
+    10,
+    "fc"
+   ]
+  ]
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_anch",
+  "label": "elem_anch",
+  "log": [
+   "find:FakeElem,FakeAnch"
+  ],
+  "messages": [],
+  "result": "found-by-fc",
+  "spike": [
+   [
+    10,
+    "fc"
+   ]
+  ]
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "find_anch",
+  "label": "anch_elem",
+  "log": [
+   "find:FakeAnch,FakeElem"
+  ],
+  "messages": [],
+  "result": "found-by-fc",
+  "spike": [
+   [
+    10,
+    "fc"
+   ]
+  ]
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "find_mixed",
+  "label": "sint_elem",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "find_mixed",
+  "label": "elem_sint",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "find_mixed",
+  "label": "anch_sint",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "find_mixed",
+  "label": "sint_anch",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping(FakeObj,FakeObj)",
+  "kind": "find_mixed",
+  "label": "obj_obj",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping(SInt,#)",
+  "kind": "find_mixed",
+  "label": "sint_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping(#,SInt)",
+  "kind": "find_mixed",
+  "label": "num_sint",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping(FakeElem,#)",
+  "kind": "find_mixed",
+  "label": "elem_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping(#)",
+  "kind": "find_mixed",
+  "label": "one_arg",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod FindMapping(DIR,SPos)",
+  "kind": "find_mixed",
+  "label": "dir_spos",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": "left",
+  "b": "left",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Same"
+ },
+ {
+  "a": "left",
+  "b": "neither",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "left",
+  "b": "right",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Different"
+ },
+ {
+  "a": "left",
+  "b": "unknown",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "neither",
+  "b": "left",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "neither",
+  "b": "neither",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "neither",
+  "b": "right",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "neither",
+  "b": "unknown",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "right",
+  "b": "left",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Different"
+ },
+ {
+  "a": "right",
+  "b": "neither",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "right",
+  "b": "right",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Same"
+ },
+ {
+  "a": "right",
+  "b": "unknown",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "unknown",
+  "b": "left",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "unknown",
+  "b": "neither",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "unknown",
+  "b": "right",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": "unknown",
+  "b": "unknown",
+  "is_memo": 1,
+  "kind": "find_dir",
+  "result": "Mapping::Dir:Unknown"
+ },
+ {
+  "a": 1,
+  "b": 2,
+  "count": 1,
+  "error": null,
+  "kind": "find_pos",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Position:succ",
+  "spike": []
+ },
+ {
+  "a": 2,
+  "b": 1,
+  "count": 1,
+  "error": null,
+  "kind": "find_pos",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Position:pred",
+  "spike": []
+ },
+ {
+  "a": 2,
+  "b": 2,
+  "count": 1,
+  "error": null,
+  "kind": "find_pos",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Position:same",
+  "spike": []
+ },
+ {
+  "a": 1,
+  "b": 3,
+  "count": 0,
+  "error": null,
+  "kind": "find_pos",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": 3,
+  "b": 1,
+  "count": 0,
+  "error": null,
+  "kind": "find_pos",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": -1,
+  "b": 1,
+  "count": 0,
+  "error": null,
+  "kind": "find_pos",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": -1,
+  "b": -1,
+  "count": 1,
+  "error": null,
+  "kind": "find_pos",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Position:same",
+  "spike": []
+ },
+ {
+  "a": 1,
+  "b": -1,
+  "count": 0,
+  "error": null,
+  "kind": "find_pos",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "a": 5,
+  "b": 6,
+  "count": 1,
+  "error": null,
+  "kind": "find_pos",
+  "log": [],
+  "messages": [],
+  "result": "Mapping::Position:succ",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "3",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "SInt:3",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "3",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "FakeElem:3",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "0",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "SInt:0",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "0",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "FakeElem:0",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "-1",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "SInt:-1",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "FakeElem:-1",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 2.5,
+  "result": "2.5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 2.5,
+  "result": "SInt:2.5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2.5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 2.5,
+  "result": "FakeElem:2.5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "97",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "SInt:97",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "97",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "FakeElem:97",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "SInt:5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "FakeElem:5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "2",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "SInt:2",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "FakeElem:2",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "1",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "SInt:1",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "FakeElem:1",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 2.5,
+  "result": "4.5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 2.5,
+  "result": "SInt:4.5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "4.5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 2.5,
+  "result": "FakeElem:4.5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": "99",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": "SInt:99",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "99",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": "FakeElem:99",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": "SInt:2",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": "FakeElem:2",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "1",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "SInt:1",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "FakeElem:1",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": "-2",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": "SInt:-2",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": "FakeElem:-2",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": "-3",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": "SInt:-3",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-3",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": "FakeElem:-3",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 2.5,
+  "result": "0.5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 2.5,
+  "result": "SInt:0.5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "0.5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 2.5,
+  "result": "FakeElem:0.5",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "95",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "SInt:95",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "95",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "FakeElem:95",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": "SInt:-2",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": "FakeElem:-2",
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 2.5,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 2.5,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 2.5,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "even",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "3",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "SInt:3",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "3",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "FakeElem:3",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "0",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "SInt:0",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "0",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "FakeElem:0",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "-1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "SInt:-1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "FakeElem:-1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 2.5,
+  "result": "2.5",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 2.5,
+  "result": "SInt:2.5",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2.5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 2.5,
+  "result": "FakeElem:2.5",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "97",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "SInt:97",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "97",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "FakeElem:97",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "4",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "SInt:4",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "4",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "FakeElem:4",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "SInt:1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "FakeElem:1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "0",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "SInt:0",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "0",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "FakeElem:0",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 2.5,
+  "result": "3.5",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 2.5,
+  "result": "SInt:3.5",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "3.5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 2.5,
+  "result": "FakeElem:3.5",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": "98",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": "SInt:98",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "98",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": "FakeElem:98",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": "SInt:1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": "FakeElem:1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "2",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "SInt:2",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "FakeElem:2",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": "-1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": "SInt:-1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": "FakeElem:-1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": "-2",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": "SInt:-2",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": "FakeElem:-2",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 2.5,
+  "result": "1.5",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 2.5,
+  "result": "SInt:1.5",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "1.5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 2.5,
+  "result": "FakeElem:1.5",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "96",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "SInt:96",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "96",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "FakeElem:96",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": "SInt:-1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": "FakeElem:-1",
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 2.5,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 2.5,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 2.5,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "number",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "3",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "SInt:3",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "3",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "FakeElem:3",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "0",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "SInt:0",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "0",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "FakeElem:0",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "-1",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "SInt:-1",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "FakeElem:-1",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 2.5,
+  "result": "2.5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 2.5,
+  "result": "SInt:2.5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2.5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 2.5,
+  "result": "FakeElem:2.5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "97",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "SInt:97",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "97",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "FakeElem:97",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "SInt:5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "FakeElem:5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "2",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "SInt:2",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "FakeElem:2",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "1",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "SInt:1",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "FakeElem:1",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 2.5,
+  "result": "4.5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 2.5,
+  "result": "SInt:4.5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "4.5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 2.5,
+  "result": "FakeElem:4.5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": "99",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": "SInt:99",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "99",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": "FakeElem:99",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": "SInt:2",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": "FakeElem:2",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "1",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "SInt:1",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "FakeElem:1",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": "-2",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": "SInt:-2",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": "FakeElem:-2",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": "-3",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": "SInt:-3",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-3",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": "FakeElem:-3",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 2.5,
+  "result": "0.5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 2.5,
+  "result": "SInt:0.5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "0.5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 2.5,
+  "result": "FakeElem:0.5",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "95",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "SInt:95",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "95",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "FakeElem:95",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": "SInt:-2",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": "FakeElem:-2",
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 2.5,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 2.5,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 2.5,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "odd",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "3",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "SInt:3",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "3",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 3,
+  "result": "FakeElem:3",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "0",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "SInt:0",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "0",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 0,
+  "result": "FakeElem:0",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "-1",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "SInt:-1",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "-1",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": -1,
+  "result": "FakeElem:-1",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "97",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "SInt:97",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "97",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": 97,
+  "result": "FakeElem:97",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "same",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "5",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "SInt:5",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "5",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 3,
+  "result": "FakeElem:5",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "SInt:2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 0,
+  "result": "FakeElem:2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "SInt:2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": -1,
+  "result": "FakeElem:2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": "SInt:2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "succ",
+  "num": null,
+  "result": "FakeElem:2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "SInt:2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "2",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 3,
+  "result": "FakeElem:2",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "89",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "SInt:89",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 1,
+  "created": [
+   "Seqsee::Element",
+   "89",
+   -1
+  ],
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": 97,
+  "result": "FakeElem:89",
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "pred",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 3,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 0,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": 97,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_num",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "error": null,
+  "kind": "apply_sint",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "cat": "prime",
+  "count": 0,
+  "created": null,
+  "error": null,
+  "kind": "apply_elem",
+  "log": [],
+  "messages": [],
+  "name": "flip",
+  "num": null,
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,$)",
+  "kind": "apply_misc",
+  "label": "numeric_str",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "apply_misc",
+  "label": "numeric_anch",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,FakeObj)",
+  "kind": "apply_misc",
+  "label": "numeric_obj",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Numeric,SPos)",
+  "kind": "apply_misc",
+  "label": "numeric_spos",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "apply_misc",
+  "label": "struct_obj",
+  "log": [
+   "apply:FakeStruct,FakeObj"
+  ],
+  "messages": [],
+  "result": "applied",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "apply_misc",
+  "label": "struct_elem",
+  "log": [
+   "apply:FakeStruct,FakeElem"
+  ],
+  "messages": [],
+  "result": "applied",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "apply_misc",
+  "label": "struct_anch",
+  "log": [
+   "apply:FakeStruct,FakeAnch"
+  ],
+  "messages": [],
+  "result": "applied",
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(FakeStruct,SInt)",
+  "kind": "apply_misc",
+  "label": "struct_sint",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(FakeStruct,#)",
+  "kind": "apply_misc",
+  "label": "struct_num",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "apply_misc",
+  "label": "struct_undef_result",
+  "log": [
+   "apply:FakeStruct,FakeObj"
+  ],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Dir,SPos)",
+  "kind": "apply_misc",
+  "label": "dir_spos",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping(Mapping::Position,DIR)",
+  "kind": "apply_misc",
+  "label": "pos_dir",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "No viable candidate for call to multimethod ApplyMapping($,$)",
+  "kind": "apply_misc",
+  "label": "undef_undef",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "left",
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Different",
+  "messages": [],
+  "result": "DIR:right",
+  "spike": []
+ },
+ {
+  "count": 0,
+  "dir": "neither",
+  "error": "Flip called on weird direction",
+  "is_input": 0,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Different",
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "right",
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Different",
+  "messages": [],
+  "result": "DIR:left",
+  "spike": []
+ },
+ {
+  "count": 0,
+  "dir": "unknown",
+  "error": "Flip called on weird direction",
+  "is_input": 0,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Different",
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "left",
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "NewSame",
+  "messages": [],
+  "result": "DIR:unknown",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "neither",
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "NewSame",
+  "messages": [],
+  "result": "DIR:unknown",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "right",
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "NewSame",
+  "messages": [],
+  "result": "DIR:unknown",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "unknown",
+  "error": null,
+  "is_input": 1,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "NewSame",
+  "messages": [],
+  "result": "DIR:unknown",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "left",
+  "error": null,
+  "is_input": 1,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Same",
+  "messages": [],
+  "result": "DIR:left",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "neither",
+  "error": null,
+  "is_input": 1,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Same",
+  "messages": [],
+  "result": "DIR:neither",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "right",
+  "error": null,
+  "is_input": 1,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Same",
+  "messages": [],
+  "result": "DIR:right",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "unknown",
+  "error": null,
+  "is_input": 1,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Same",
+  "messages": [],
+  "result": "DIR:unknown",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "left",
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Unknown",
+  "messages": [],
+  "result": "DIR:unknown",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "neither",
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Unknown",
+  "messages": [],
+  "result": "DIR:unknown",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "right",
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Unknown",
+  "messages": [],
+  "result": "DIR:unknown",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "dir": "unknown",
+  "error": null,
+  "is_input": 1,
+  "kind": "apply_dir",
+  "log": [],
+  "map": "Unknown",
+  "messages": [],
+  "result": "DIR:unknown",
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "foo",
+  "messages": [],
+  "pos": 1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "foo",
+  "messages": [],
+  "pos": 2,
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "foo",
+  "messages": [],
+  "pos": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "new_succ",
+  "messages": [],
+  "pos": 1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "new_succ",
+  "messages": [],
+  "pos": 2,
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "new_succ",
+  "messages": [],
+  "pos": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "Attempt to set position to 0",
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "pred",
+  "messages": [],
+  "pos": 1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "pred",
+  "messages": [],
+  "pos": 2,
+  "result": "SPos:1",
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "Attempt to set position to -2",
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "pred",
+  "messages": [],
+  "pos": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "is_input": 1,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "same",
+  "messages": [],
+  "pos": 1,
+  "result": "SPos:1",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "is_input": 1,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "same",
+  "messages": [],
+  "pos": 2,
+  "result": "SPos:2",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "is_input": 1,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "same",
+  "messages": [],
+  "pos": -1,
+  "result": "SPos:-1",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "succ",
+  "messages": [],
+  "pos": 1,
+  "result": "SPos:2",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "succ",
+  "messages": [],
+  "pos": 2,
+  "result": "SPos:3",
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "Attempt to set position to 0",
+  "is_input": 0,
+  "kind": "apply_pos",
+  "log": [],
+  "map": "succ",
+  "messages": [],
+  "pos": -1,
+  "result": null,
+  "spike": []
+ },
+ {
+  "can_as_text": 0,
+  "can_check_sanity": 0,
+  "can_get_name": 0,
+  "create_same_is_memo": 1,
+  "deps": [
+   0,
+   0,
+   0
+  ],
+  "deserialize_is_memo": 1,
+  "flipped_is_self": [
+   1,
+   1,
+   1
+  ],
+  "isa_mapping": 0,
+  "kind": "dir_basics",
+  "new_same_is_memo": 0,
+  "pure_is_self": [
+   1,
+   1,
+   1
+  ],
+  "refs": [
+   "Mapping::Dir",
+   "Mapping::Dir",
+   "Mapping::Dir"
+  ],
+  "sameness": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "serialize": [
+   "Same",
+   "Different",
+   "Unknown"
+  ],
+  "strings": [
+   "Same",
+   "Different",
+   "Unknown"
+  ]
+ },
+ {
+  "again_is_memo": 1,
+  "deserialize_is_memo": 1,
+  "kind": "dir_other",
+  "sameness": 0,
+  "string": "Other"
+ },
+ {
+  "as_text": "Mapping::Position succ",
+  "can_check_sanity": 0,
+  "create_is_memo": 1,
+  "deps": 0,
+  "deserialize_is_memo": 1,
+  "flipped": "pred",
+  "flipped_is_memo": 1,
+  "get_text": "succ",
+  "isa_mapping": 0,
+  "kind": "pos_basics",
+  "new_is_memo": 0,
+  "new_sameness": 0,
+  "pure_is_self": 1,
+  "ref": "Mapping::Position",
+  "sameness": 0,
+  "serialize": "succ",
+  "text": "succ"
+ },
+ {
+  "as_text": "Mapping::Position pred",
+  "can_check_sanity": 0,
+  "create_is_memo": 1,
+  "deps": 0,
+  "deserialize_is_memo": 1,
+  "flipped": "succ",
+  "flipped_is_memo": 1,
+  "get_text": "pred",
+  "isa_mapping": 0,
+  "kind": "pos_basics",
+  "new_is_memo": 0,
+  "new_sameness": 0,
+  "pure_is_self": 1,
+  "ref": "Mapping::Position",
+  "sameness": 0,
+  "serialize": "pred",
+  "text": "pred"
+ },
+ {
+  "as_text": "Mapping::Position same",
+  "can_check_sanity": 0,
+  "create_is_memo": 1,
+  "deps": 0,
+  "deserialize_is_memo": 1,
+  "flipped": "same",
+  "flipped_is_memo": 1,
+  "get_text": "same",
+  "isa_mapping": 0,
+  "kind": "pos_basics",
+  "new_is_memo": 0,
+  "new_sameness": 0,
+  "pure_is_self": 1,
+  "ref": "Mapping::Position",
+  "sameness": 1,
+  "serialize": "same",
+  "text": "same"
+ },
+ {
+  "count": 0,
+  "error": "Attribute (text) does not pass the type constraint because: Validation failed for 'Str' with value undef at constructor Mapping::Position::new (defined at /home/al/dev/SeqSee/Seqsee/lib/Mapping/Position.pm line 84) line 39",
+  "kind": "pos_edge",
+  "label": "flip_foo_before_empty",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "Attribute (text) does not pass the type constraint because: Validation failed for 'Str' with value undef at constructor Mapping::Position::new (defined at /home/al/dev/SeqSee/Seqsee/lib/Mapping/Position.pm line 84) line 39",
+  "kind": "pos_edge",
+  "label": "create_undef",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "pos_edge",
+  "label": "create_num",
+  "log": [],
+  "messages": [],
+  "result": "5",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "pos_edge",
+  "label": "create_num_str_same",
+  "log": [],
+  "messages": [],
+  "result": "1",
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "Attribute (text) does not pass the type constraint because: Validation failed for 'Str' with value [  ] at constructor Mapping::Position::new (defined at /home/al/dev/SeqSee/Seqsee/lib/Mapping/Position.pm line 84) line 39",
+  "kind": "pos_edge",
+  "label": "new_array",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": "Attribute (text) is required at constructor Mapping::Position::new (defined at /home/al/dev/SeqSee/Seqsee/lib/Mapping/Position.pm line 84) line 30",
+  "kind": "pos_edge",
+  "label": "new_missing",
+  "log": [],
+  "messages": [],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "pos_edge",
+  "label": "create_empty",
+  "log": [],
+  "messages": [],
+  "result": "",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "pos_edge",
+  "label": "flip_foo_after_empty",
+  "log": [],
+  "messages": [],
+  "result": "is_empty",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "pos_edge",
+  "label": "create_undef_after_empty",
+  "log": [],
+  "messages": [],
+  "result": "is_empty",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "sanity",
+  "label": "numeric",
+  "log": [],
+  "messages": [],
+  "result": "1",
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "sanity",
+  "label": "ok_two",
+  "log": [
+   "suff:a,b"
+  ],
+  "messages": [],
+  "result": "1",
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "sanity",
+  "label": "bad_one",
+  "log": [
+   "suff:a"
+  ],
+  "messages": [
+   "This transform is bogus! CAT=sc ATTS=a"
+  ],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "sanity",
+  "label": "bad_none",
+  "log": [
+   "suff:"
+  ],
+  "messages": [
+   "This transform is bogus! CAT=sc ATTS="
+  ],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "sanity",
+  "label": "ok_none",
+  "log": [
+   "suff:"
+  ],
+  "messages": [],
+  "result": "1",
+  "spike": []
+ },
+ {
+  "count": 0,
+  "error": null,
+  "kind": "sanity",
+  "label": "bad_undef",
+  "log": [
+   "suff:x"
+  ],
+  "messages": [
+   "This transform is bogus! CAT=sc ATTS=x"
+  ],
+  "result": null,
+  "spike": []
+ },
+ {
+  "count": 1,
+  "error": null,
+  "kind": "sanity",
+  "label": "plain_mapping",
+  "log": [],
+  "messages": [],
+  "result": "1",
+  "spike": []
+ }
+]

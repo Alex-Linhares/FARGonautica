@@ -1,0 +1,287 @@
+[
+ {
+  "ad_hoc": 0,
+  "case": "singletons",
+  "classes": [
+   "SCategory::Ascending",
+   "SCategory::Descending",
+   "SCategory::Mountain",
+   "SCategory::Sameness",
+   "SCategory::Number",
+   "SCategory::Prime",
+   "SCategory::Odd",
+   "SCategory::Even"
+  ],
+  "double": [
+   "SMetonymType",
+   "each",
+   1,
+   2,
+   "SMetonymType"
+  ],
+  "names": [
+   "ascending",
+   "descending",
+   "mountain",
+   "sameness",
+   "number",
+   "Prime",
+   "odd",
+   "even"
+  ],
+  "new_is_new": 1,
+  "texts": [
+   "ascending",
+   "descending",
+   "mountain",
+   "sameness",
+   "number",
+   "Prime",
+   "odd",
+   "even"
+  ]
+ },
+ {
+  "case": "families",
+  "families": [
+   "ActOnOverlappingThoughts",
+   "ArbitraryInitialBlemish",
+   "AreTheseGroupable",
+   "AreWeDone",
+   "AskIfThisIsTheContinuation",
+   "AttemptExtensionOfGroup",
+   "AttemptExtensionOfRelation",
+   "CheckIfAlternating",
+   "CheckIfInstance",
+   "CheckProgress",
+   "CleanUpGroup",
+   "ConvulseEnd",
+   "CreateGroup",
+   "Describe2InterlacedCategory",
+   "DescribeBlocks",
+   "DescribeInitialBlemish",
+   "DescribeInterlacedCategory",
+   "DescribeMapping",
+   "DescribeMultipleInterlacedCategory",
+   "DescribeRelationCompound",
+   "DescribeRelationSimple",
+   "DescribeRelnCategory",
+   "DescribeRelnMetoMode",
+   "DescribeRule",
+   "DescribeSolution",
+   "DoTheAsking",
+   "DoTheSameThing",
+   "FindIfRelated",
+   "FindIfRelatedRelations",
+   "FocusOn",
+   "InterlacedInitialBlemish",
+   "LargeGroup",
+   "LookForSimilarGroups",
+   "MaybeAskTheseTerms",
+   "MaybeAskUsingThisGoodRule",
+   "MaybeStartBlemish",
+   "MergeGroups",
+   "TryToSquint"
+  ]
+ },
+ {
+  "case": "all_clean",
+  "error": null,
+  "groups": 1,
+  "messages": []
+ },
+ {
+  "case": "group_clean",
+  "error": null,
+  "messages": []
+ },
+ {
+  "case": "relation_clean",
+  "error": null,
+  "messages": []
+ },
+ {
+  "case": "element_clean",
+  "error": null,
+  "messages": []
+ },
+ {
+  "case": "element_nonref",
+  "error": "Can't call method \"as_text\" on an undefined value",
+  "messages": []
+ },
+ {
+  "case": "element_nonref_codelet",
+  "error": null,
+  "messages": []
+ },
+ {
+  "case": "element_nonref_steps",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a Seqsee::SCF::FocusOn.(17)\nNon-ref in bindings: start => 7 for ascendingThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a Seqsee::SCF::FocusOn.(17)\nNon-ref in bindings: start => 7 for ascendingThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "group_no_category_count",
+  "cats": 0
+ },
+ {
+  "case": "group_no_category",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nGroup without any category:Seqsee::Anchored  <0, 2>  [1, 2, 3]\nhist:\n[0]\tcreated\n-------- Seqsee::Element:[0,0] 1\n[0]\tcreated\n[0]\tAdded category number\n[0]\tAdded category number\n-------- Seqsee::Element:[1,1] 2\n[0]\tcreated\n[0]\tAdded category number\n[0]\tAdded category number\n-------- Seqsee::Element:[2,2] 3\n[0]\tcreated\n[0]\tAdded category number\n[0]\tAdded category numberThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nGroup without any category:Seqsee::Anchored  <0, 2>  [1, 2, 3]\nhist:\n[0]\tcreated\n-------- Seqsee::Element:[0,0] 1\n[0]\tcreated\n[0]\tAdded category number\n[0]\tAdded category number\n-------- Seqsee::Element:[1,1] 2\n[0]\tcreated\n[0]\tAdded category number\n[0]\tAdded category number\n-------- Seqsee::Element:[2,2] 3\n[0]\tcreated\n[0]\tAdded category number\n[0]\tAdded category numberThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "group_binding_keys",
+  "keys": [
+   "end",
+   "length",
+   "start"
+  ]
+ },
+ {
+  "case": "group_nonref",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nNon-ref in bindings: start => 3 for ascendingThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nNon-ref in bindings: start => 3 for ascendingThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "edge_right",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nEdge problem: right 6; Workspace has 6The codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nEdge problem: right 6; Workspace has 6The codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "edge_order",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nEdge problem: 2 1The codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nEdge problem: 2 1The codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "edge_left",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nEdge problem: left -1The codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nEdge problem: left -1The codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "edges_restored",
+  "error": null,
+  "messages": []
+ },
+ {
+  "case": "gg_cats",
+  "cats": []
+ },
+ {
+  "case": "gg_clean",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nGroup without any category:Seqsee::Anchored  <0, 3>  [[1, 2], [3, 4]]\nhist:\n[0]\tcreated\n-------- Seqsee::Anchored  <0, 1>  [1, 2]\n[0]\tcreated\n-------- Seqsee::Anchored  <2, 3>  [3, 4]\n[0]\tcreatedThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nGroup without any category:Seqsee::Anchored  <0, 3>  [[1, 2], [3, 4]]\nhist:\n[0]\tcreated\n-------- Seqsee::Anchored  <0, 1>  [1, 2]\n[0]\tcreated\n-------- Seqsee::Anchored  <2, 3>  [3, 4]\n[0]\tcreatedThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "holes",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nHoles in group!The codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nHoles in group!The codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "metonym_part_self",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nGroup has metonym as partThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nGroup has metonym as partThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "unanchored_scalar",
+  "error": {
+   "class": "SErr",
+   "message": "SWorkspace are_there_holes_here called with a non anchored object 5"
+  },
+  "messages": []
+ },
+ {
+  "case": "unanchored_object",
+  "error": {
+   "class": "SErr",
+   "message": "SWorkspace are_there_holes_here called with a non anchored object Seqsee::Object=HASH"
+  },
+  "messages": []
+ },
+ {
+  "case": "ruleapp_items",
+  "count": 3
+ },
+ {
+  "case": "ruleapp_clean",
+  "error": null,
+  "messages": []
+ },
+ {
+  "case": "ruleapp_out_of_sync",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\n Gp/Ruleapp out of sync! Group: Seqsee::Anchored u <0, 2>  [1, 2, 3] has 3 elements: Seqsee::Element=HASH Seqsee::Element=HASH Seqsee::Element=HASH, whereas ruleapp only has Seqsee::Element=HASH Seqsee::Element=HASHThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\n Gp/Ruleapp out of sync! Group: Seqsee::Anchored u <0, 2>  [1, 2, 3] has 3 elements: Seqsee::Element=HASH Seqsee::Element=HASH Seqsee::Element=HASH, whereas ruleapp only has Seqsee::Element=HASH Seqsee::Element=HASHThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "relation_leftward",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nLeftward relation  <2, 2>  -->  <1, 1> : pred!The codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nLeftward relation  <2, 2>  -->  <1, 1> : pred!The codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "relation_metonymed_end",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nEnd of a relation is a metonymed objectThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nEnd of a relation is a metonymed objectThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "relation_self_metonym",
+  "error": null,
+  "messages": []
+ },
+ {
+  "case": "all_relation_bad",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nEnd of a relation is a metonymed objectThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nEnd of a relation is a metonymed objectThe codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "all_clean2",
+  "error": null,
+  "messages": []
+ },
+ {
+  "case": "all_group_bad",
+  "error": "Sanity failed... exiting! Entered inconsistent state after a .(0)\nEdge problem: right 9; Workspace has 6The codelet was: Codelet(family=FocusOn,urgency=50,args={  }",
+  "messages": [
+   "Entered inconsistent state after a .(0)\nEdge problem: right 9; Workspace has 6The codelet was: Codelet(family=FocusOn,urgency=50,args={  }"
+  ]
+ },
+ {
+  "case": "dispatch_number",
+  "error": "No viable candidate for call to multimethod SanityCheck(#)",
+  "messages": []
+ },
+ {
+  "case": "dispatch_string",
+  "error": "No viable candidate for call to multimethod SanityCheck($)",
+  "messages": []
+ },
+ {
+  "case": "dispatch_undef",
+  "error": "No viable candidate for call to multimethod SanityCheck($)",
+  "messages": []
+ }
+]

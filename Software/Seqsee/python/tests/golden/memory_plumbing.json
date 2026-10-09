@@ -1,0 +1,697 @@
+[
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": "5",
+  "string": "5"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": "0",
+  "string": "0"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": "12abc",
+  "string": "12abc"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": "a1",
+  "string": "a1"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": "1,2",
+  "string": "1,2"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": "-3",
+  "string": "-3"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1",
+   "2"
+  ],
+  "string": "[1,2]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1",
+   "2"
+  ],
+  "string": "[1, 2]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   [
+    "1",
+    "2"
+   ],
+   [
+    "3"
+   ]
+  ],
+  "string": " [ [1,2], [3] ] "
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [],
+  "string": "[]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   []
+  ],
+  "string": "[[]]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   [],
+   []
+  ],
+  "string": "[[], []]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1",
+   "2"
+  ],
+  "string": "[1,a,2]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1",
+   "a2"
+  ],
+  "string": "[1,a2]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1",
+   "-2"
+  ],
+  "string": "[1,-2]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1.5",
+   "2"
+  ],
+  "string": "[1.5,2]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "0"
+  ],
+  "string": "[0]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1",
+   "2"
+  ],
+  "string": "[,1,,2,]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [],
+  "string": "[x]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1",
+   [
+    "2",
+    [
+     "3",
+     "4"
+    ]
+   ],
+   "5"
+  ],
+  "string": "[1,[2,[3,4]],5]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "01",
+   "1e3"
+  ],
+  "string": "[01,1e3]"
+ },
+ {
+  "error": "Problematic string [1][2]!",
+  "op": "structure_from_string",
+  "result": null,
+  "string": "[1][2]"
+ },
+ {
+  "error": "Problematic string [1!",
+  "op": "structure_from_string",
+  "result": null,
+  "string": "[1"
+ },
+ {
+  "error": "Modification of non-creatable array value attempted, subscript -1",
+  "op": "structure_from_string",
+  "result": null,
+  "string": "]"
+ },
+ {
+  "error": "Problematic string !",
+  "op": "structure_from_string",
+  "result": null,
+  "string": ""
+ },
+ {
+  "error": "Problematic string x!",
+  "op": "structure_from_string",
+  "result": null,
+  "string": "x"
+ },
+ {
+  "error": "Problematic string [[1,2]!",
+  "op": "structure_from_string",
+  "result": null,
+  "string": "[[1,2]"
+ },
+ {
+  "error": "Modification of non-creatable array value attempted, subscript -1",
+  "op": "structure_from_string",
+  "result": null,
+  "string": "[1]]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1"
+  ],
+  "string": "[1]x"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1"
+  ],
+  "string": "x[1]"
+ },
+ {
+  "error": null,
+  "op": "structure_from_string",
+  "result": [
+   "1",
+   "2"
+  ],
+  "string": "\t[1,\n2]"
+ },
+ {
+  "error": "Problematic string !",
+  "op": "structure_from_string",
+  "result": null,
+  "string": null
+ },
+ {
+  "as_text": "plat5",
+  "deps": [],
+  "deserialize_same": 1,
+  "memoized": 1,
+  "op": "create",
+  "pure_same": 1,
+  "ref": "SLTM::Platonic",
+  "serialize": "5",
+  "string": "5",
+  "structure": "5",
+  "structure_string": "5"
+ },
+ {
+  "as_text": "plat[1, 2]",
+  "deps": [],
+  "deserialize_same": 1,
+  "memoized": 1,
+  "op": "create",
+  "pure_same": 1,
+  "ref": "SLTM::Platonic",
+  "serialize": "[1, 2]",
+  "string": "[1, 2]",
+  "structure": [
+   "1",
+   "2"
+  ],
+  "structure_string": "[1, 2]"
+ },
+ {
+  "as_text": "plat[1,2]",
+  "deps": [],
+  "deserialize_same": 1,
+  "memoized": 1,
+  "op": "create",
+  "pure_same": 1,
+  "ref": "SLTM::Platonic",
+  "serialize": "[1,2]",
+  "string": "[1,2]",
+  "structure": [
+   "1",
+   "2"
+  ],
+  "structure_string": "[1,2]"
+ },
+ {
+  "as_text": "plat[[1,2],[3]]",
+  "deps": [],
+  "deserialize_same": 1,
+  "memoized": 1,
+  "op": "create",
+  "pure_same": 1,
+  "ref": "SLTM::Platonic",
+  "serialize": "[[1,2],[3]]",
+  "string": "[[1,2],[3]]",
+  "structure": [
+   [
+    "1",
+    "2"
+   ],
+   [
+    "3"
+   ]
+  ],
+  "structure_string": "[[1,2],[3]]"
+ },
+ {
+  "as_text": "plat[]",
+  "deps": [],
+  "deserialize_same": 1,
+  "memoized": 1,
+  "op": "create",
+  "pure_same": 1,
+  "ref": "SLTM::Platonic",
+  "serialize": "[]",
+  "string": "[]",
+  "structure": [],
+  "structure_string": "[]"
+ },
+ {
+  "as_text": "plata1",
+  "deps": [],
+  "deserialize_same": 1,
+  "memoized": 1,
+  "op": "create",
+  "pure_same": 1,
+  "ref": "SLTM::Platonic",
+  "serialize": "a1",
+  "string": "a1",
+  "structure": "a1",
+  "structure_string": "a1"
+ },
+ {
+  "as_text": "plat7",
+  "op": "create_number",
+  "same_as_string": 1,
+  "structure": "7",
+  "structure_string": 7
+ },
+ {
+  "op": "whitespace_keys_differ",
+  "same": 0
+ },
+ {
+  "error": "Problematic string !",
+  "op": "create_dies",
+  "string": null
+ },
+ {
+  "error": "Problematic string !",
+  "op": "create_dies",
+  "string": ""
+ },
+ {
+  "error": "Problematic string [1!",
+  "op": "create_dies",
+  "string": "[1"
+ },
+ {
+  "error": "Modification of non-creatable array value attempted, subscript -1",
+  "op": "create_dies",
+  "string": "]"
+ },
+ {
+  "as_text": "platzz",
+  "old": "[1, 2]",
+  "op": "set_structure_string",
+  "serialize": "zz",
+  "still_memoized": 1,
+  "zz_dies": 1
+ },
+ {
+  "old": [
+   "1",
+   "2"
+  ],
+  "op": "set_structure",
+  "structure": [
+   9
+  ]
+ },
+ {
+  "args": {},
+  "as_text": null,
+  "error": "Missing initializer label for SLTM::Platonic: 'structure_string'.\nMissing initializer label for SLTM::Platonic: 'structure'.\nFatal error in constructor call",
+  "op": "new",
+  "same_as_create": 0
+ },
+ {
+  "args": {
+   "structure": 1
+  },
+  "as_text": null,
+  "error": "Missing initializer label for SLTM::Platonic: 'structure_string'.\nFatal error in constructor call",
+  "op": "new",
+  "same_as_create": 0
+ },
+ {
+  "args": {
+   "structure_string": "1"
+  },
+  "as_text": null,
+  "error": "Missing initializer label for SLTM::Platonic: 'structure'.\nFatal error in constructor call",
+  "op": "new",
+  "same_as_create": 0
+ },
+ {
+  "args": {
+   "structure": 1,
+   "structure_string": "1"
+  },
+  "as_text": "plat1",
+  "error": null,
+  "op": "new",
+  "same_as_create": 0
+ },
+ {
+  "args": {
+   "foo": 1
+  },
+  "as_text": null,
+  "error": "Missing initializer label for SLTM::Platonic: 'structure_string'.\nMissing initializer label for SLTM::Platonic: 'structure'.\n(Did you mislabel one of the args you passed: 'foo'?)\nFatal error in constructor call",
+  "op": "new",
+  "same_as_create": 0
+ },
+ {
+  "error": "Argument to SLTM::Platonic->new() must be hash reference",
+  "op": "new_nonhash"
+ },
+ {
+  "as_text": "plat3",
+  "mag": 3,
+  "op": "sint_pure",
+  "same": 1
+ },
+ {
+  "as_text": "plat0",
+  "mag": 0,
+  "op": "sint_pure",
+  "same": 1
+ },
+ {
+  "as_text": "plat-2",
+  "mag": -2,
+  "op": "sint_pure",
+  "same": 1
+ },
+ {
+  "as_text": "plat4",
+  "op": "object_pure",
+  "same": 1,
+  "structure": "4",
+  "structure_string": 4
+ },
+ {
+  "as_text": "plat[1, [2, 3]]",
+  "op": "object_pure",
+  "same": 1,
+  "structure": [
+   "1",
+   [
+    "2",
+    "3"
+   ]
+  ],
+  "structure_string": "[1, [2, 3]]"
+ },
+ {
+  "calls": [
+   [
+    "SpikeBy",
+    5,
+    "ascending"
+   ],
+   [
+    "InsertISALink",
+    "ascending",
+    "descending"
+   ],
+   [
+    "SpikeBy",
+    null,
+    "odd"
+   ]
+  ],
+  "does": [
+   1,
+   1
+  ],
+  "op": "ltmstorable",
+  "returns": [
+   "spiked",
+   "linked",
+   "spiked"
+  ]
+ },
+ {
+  "dies": 1,
+  "op": "platonic_not_ltmstorable"
+ },
+ {
+  "deps": [],
+  "deserialize_ref": "SCategory::Ascending",
+  "is_pure": 1,
+  "op": "independent",
+  "pure_same": 1,
+  "serialize": "SCategory::Ascending->new()"
+ },
+ {
+  "error": "syntax error",
+  "loaded": 0,
+  "op": "memory_ltm_load"
+ },
+ {
+  "core": "b",
+  "item": "b",
+  "log": [
+   "b",
+   "a"
+  ],
+  "node_ref": "Memory::Node",
+  "op": "insert"
+ },
+ {
+  "log": [
+   "b",
+   "a"
+  ],
+  "op": "insert_again",
+  "same": 1
+ },
+ {
+  "core": "a",
+  "log": [
+   "b",
+   "a"
+  ],
+  "op": "insert_normalized"
+ },
+ {
+  "core": "x",
+  "log": [
+   "b",
+   "a",
+   "x"
+  ],
+  "op": "insert_via_normalized",
+  "same": 1
+ },
+ {
+  "log": [
+   "d",
+   "c"
+  ],
+  "op": "insert_diamond"
+ },
+ {
+  "does": 1,
+  "op": "storable_normalized",
+  "same": 1
+ },
+ {
+  "case": "spike",
+  "error": "Can't locate object method \"SpikeBy\" via package \"Memory::Node\"",
+  "ok": 0,
+  "op": "spike_weaken"
+ },
+ {
+  "case": "weaken",
+  "error": "Can't locate object method \"WeakenBy\" via package \"Memory::Node\"",
+  "ok": 0,
+  "op": "spike_weaken"
+ },
+ {
+  "case": "spike_none",
+  "error": null,
+  "ok": 1,
+  "op": "spike_weaken"
+ },
+ {
+  "core": "fresh",
+  "error": "Can't locate object method \"SpikeBy\" via package \"Memory::Node\"",
+  "log": [
+   "fresh"
+  ],
+  "op": "spike_inserts_first"
+ },
+ {
+  "case": "normalized_string",
+  "error": "Can't locate object method \"GetMemoryDependencies\" via package \"str\" (perhaps you forgot to load \"str\"?)",
+  "op": "insert_dies"
+ },
+ {
+  "case": "string",
+  "error": "Can't locate object method \"does\" via package \"str\" (perhaps you forgot to load \"str\"?)",
+  "op": "insert_dies"
+ },
+ {
+  "case": "blessed",
+  "error": "Can't locate object method \"does\" via package \"Foo\"",
+  "op": "insert_dies"
+ },
+ {
+  "case": "undef",
+  "error": "Can't call method \"does\" on an undefined value",
+  "op": "insert_dies"
+ },
+ {
+  "case": "plain_moose",
+  "error": "Non-insertible object 'T::Plain=HASH(0x5555588b13e8)'",
+  "op": "insert_dies"
+ },
+ {
+  "error": "Loop in dependencies detected! Currently installing: 1, 1, 1",
+  "log": [
+   "p",
+   "q"
+  ],
+  "op": "loop"
+ },
+ {
+  "error": "Loop in dependencies detected! Currently installing: 1, 1, 1",
+  "log": [],
+  "op": "loop_again"
+ },
+ {
+  "error": "Loop in dependencies detected! Currently installing: 1, 1, 1",
+  "log": [],
+  "op": "loop_q"
+ },
+ {
+  "error": "Loop in dependencies detected! Currently installing: 1, 1, 1, 1",
+  "op": "self_loop"
+ },
+ {
+  "core": "na",
+  "op": "node_new"
+ },
+ {
+  "core": "nb",
+  "op": "node_set",
+  "ret": "nb"
+ },
+ {
+  "core": "na",
+  "op": "node_new_hashref"
+ },
+ {
+  "case": "missing",
+  "error": "Attribute (core) is required",
+  "op": "node_dies"
+ },
+ {
+  "case": "blessed",
+  "error": "Attribute (core) does not pass the type constraint because: Validation failed for 'Memory::Storable' with value Foo={  }",
+  "op": "node_dies"
+ },
+ {
+  "case": "number",
+  "error": "Attribute (core) does not pass the type constraint because: Validation failed for 'Memory::Storable' with value 1",
+  "op": "node_dies"
+ },
+ {
+  "case": "string",
+  "error": "Attribute (core) does not pass the type constraint because: Validation failed for 'Memory::Storable' with value \"x\"",
+  "op": "node_dies"
+ },
+ {
+  "case": "undef",
+  "error": "Attribute (core) does not pass the type constraint because: Validation failed for 'Memory::Storable' with value undef",
+  "op": "node_dies"
+ },
+ {
+  "case": "insertible",
+  "error": "Attribute (core) does not pass the type constraint because: Validation failed for 'Memory::Storable' with value T::Ins={ target: T::Store={ deps: ARRAY(0x5555588bb2d0), name: \"na\" } }",
+  "op": "node_dies"
+ },
+ {
+  "case": "set_number",
+  "error": "Attribute (core) does not pass the type constraint because: Validation failed for 'Memory::Storable' with value 1",
+  "op": "node_dies"
+ },
+ {
+  "case": "set_undef",
+  "error": "Attribute (core) does not pass the type constraint because: Validation failed for 'Memory::Storable' with value undef",
+  "op": "node_dies"
+ }
+]

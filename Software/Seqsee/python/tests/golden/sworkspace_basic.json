@@ -1,0 +1,9070 @@
+[
+ {
+  "kind": "init",
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 1",
+    "Seqsee::Element:[2,2] 2",
+    "Seqsee::Element:[3,3] 1",
+    "Seqsee::Element:[4,4] 2",
+    "Seqsee::Element:[5,5] 3"
+   ],
+   "count": 6,
+   "edges": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     5
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 6,
+   "left_edge_of": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "live": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "ltm_nodes": 3,
+   "mags": [
+    1,
+    1,
+    2,
+    1,
+    2,
+    3
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    1,
+    2,
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+   ],
+   "supergroups": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "kind": "init",
+  "seq": [
+   7,
+   8
+  ],
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 7",
+    "Seqsee::Element:[1,1] 8"
+   ],
+   "count": 2,
+   "edges": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 2,
+   "left_edge_of": [
+    0,
+    1
+   ],
+   "live": [
+    1,
+    1
+   ],
+   "ltm_nodes": 5,
+   "mags": [
+    7,
+    8
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    7,
+    8
+   ],
+   "relations": 0,
+   "strengths": [
+    20,
+    20
+   ],
+   "supergroups": [
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "kind": "init",
+  "seq": [],
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 0,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 5,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  }
+ },
+ {
+  "kind": "init",
+  "seq": [
+   "4",
+   "5.0",
+   " 6"
+  ],
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 4",
+    "Seqsee::Element:[1,1] 5",
+    "Seqsee::Element:[2,2] 6"
+   ],
+   "count": 3,
+   "edges": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0,
+    1,
+    2
+   ],
+   "live": [
+    1,
+    1,
+    1
+   ],
+   "ltm_nodes": 8,
+   "mags": [
+    4,
+    5,
+    6
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    "4",
+    "5.0",
+    " 6"
+   ],
+   "relations": 0,
+   "strengths": [
+    20,
+    20,
+    20
+   ],
+   "supergroups": [
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "error": "Huh? Trying to insert 'x' into the workspace",
+  "kind": "init_dies",
+  "ok": 0,
+  "seq": [
+   3,
+   "x",
+   4
+  ],
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 3"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 42,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 8,
+   "mags": [
+    3
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    99
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  }
+ },
+ {
+  "kind": "clear",
+  "old_edges": [
+   [
+    0,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    2,
+    2
+   ]
+  ],
+  "old_left_edge": [
+   null,
+   null,
+   null
+  ],
+  "old_live": [
+   0,
+   0,
+   0
+  ],
+  "old_live_once": [
+   1,
+   1,
+   1
+  ],
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 8,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  }
+ },
+ {
+  "kind": "insert_times",
+  "last_new_element": 17,
+  "new_structure": 17,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 5",
+    "Seqsee::Element:[1,1] 6"
+   ],
+   "count": 2,
+   "edges": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0,
+    1
+   ],
+   "live": [
+    1,
+    1
+   ],
+   "ltm_nodes": 8,
+   "mags": [
+    5,
+    6
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20,
+    20
+   ],
+   "supergroups": [
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "kind": "insert_times_empty",
+  "last_new_element": 20,
+  "new_structure": 20,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 5",
+    "Seqsee::Element:[1,1] 6"
+   ],
+   "count": 2,
+   "edges": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0,
+    1
+   ],
+   "live": [
+    1,
+    1
+   ],
+   "ltm_nodes": 8,
+   "mags": [
+    5,
+    6
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20,
+    20
+   ],
+   "supergroups": [
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "error": "Huh? Trying to insert 'y' into the workspace",
+  "kind": "insert_times_dies",
+  "last_new_element": 20,
+  "new_structure": 20,
+  "ok": 0,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 5",
+    "Seqsee::Element:[1,1] 6",
+    "Seqsee::Element:[2,2] 7"
+   ],
+   "count": 3,
+   "edges": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0,
+    1,
+    2
+   ],
+   "live": [
+    1,
+    1,
+    1
+   ],
+   "ltm_nodes": 8,
+   "mags": [
+    5,
+    6,
+    7
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20,
+    20,
+    20
+   ],
+   "supergroups": [
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 3"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 8,
+   "mags": [
+    3
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "num",
+  "value": 3
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value 3.7"
+  },
+  "kind": "insert_value",
+  "ok": 0,
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 8,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  },
+  "type": "num",
+  "value": 3.7
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] -2"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 9,
+   "mags": [
+    -2
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "num",
+  "value": -2
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value 2.5"
+  },
+  "kind": "insert_value",
+  "ok": 0,
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 9,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  },
+  "type": "num",
+  "value": 2.5
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 0"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 10,
+   "mags": [
+    0
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "num",
+  "value": 0
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 3"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 10,
+   "mags": [
+    3
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "num",
+  "value": 3
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value 1e+20"
+  },
+  "kind": "insert_value",
+  "ok": 0,
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 10,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  },
+  "type": "num",
+  "value": 1e+20
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 3"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 10,
+   "mags": [
+    3
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "str",
+  "value": "3"
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 3"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 10,
+   "mags": [
+    3
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "str",
+  "value": "3.7"
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 3"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 10,
+   "mags": [
+    3
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "str",
+  "value": " 3"
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 3"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 10,
+   "mags": [
+    3
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "str",
+  "value": "3 "
+ },
+ {
+  "error": "Huh? Trying to insert '3abc' into the workspace",
+  "kind": "insert_value",
+  "ok": 0,
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 10,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  },
+  "type": "str",
+  "value": "3abc"
+ },
+ {
+  "error": "Huh? Trying to insert 'abc' into the workspace",
+  "kind": "insert_value",
+  "ok": 0,
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 10,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  },
+  "type": "str",
+  "value": "abc"
+ },
+ {
+  "error": "Huh? Trying to insert '' into the workspace",
+  "kind": "insert_value",
+  "ok": 0,
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 10,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  },
+  "type": "str",
+  "value": ""
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] -2"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 10,
+   "mags": [
+    -2
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "str",
+  "value": "-2"
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] -2"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 10,
+   "mags": [
+    -2
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "str",
+  "value": "-2.9"
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 100"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 11,
+   "mags": [
+    100
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "str",
+  "value": "1e2"
+ },
+ {
+  "error": "Huh? Trying to insert '0x10' into the workspace",
+  "kind": "insert_value",
+  "ok": 0,
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 11,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  },
+  "type": "str",
+  "value": "0x10"
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value Inf"
+  },
+  "kind": "insert_value",
+  "ok": 0,
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 11,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  },
+  "type": "str",
+  "value": "Inf"
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 0"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 11,
+   "mags": [
+    0
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "str",
+  "value": "0"
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 4"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 11,
+   "mags": [
+    4
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "str",
+  "value": "+4"
+ },
+ {
+  "error": null,
+  "kind": "insert_value",
+  "ok": 1,
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 0"
+   ],
+   "count": 1,
+   "edges": [
+    [
+     0,
+     0
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0
+   ],
+   "live": [
+    1
+   ],
+   "ltm_nodes": 11,
+   "mags": [
+    0
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20
+   ],
+   "supergroups": [
+    0
+   ]
+  },
+  "type": "str",
+  "value": "0 but true"
+ },
+ {
+  "error": "Huh? Trying to insert '' into the workspace",
+  "kind": "insert_value",
+  "ok": 0,
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 11,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  },
+  "type": "undef",
+  "value": null
+ },
+ {
+  "error": "No viable candidate for call to multimethod _insert_element(ARRAY)",
+  "kind": "insert_value",
+  "ok": 0,
+  "state": {
+   "as_text": [],
+   "count": 0,
+   "edges": [],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [],
+   "live": [],
+   "ltm_nodes": 11,
+   "mags": [],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [],
+   "supergroups": []
+  },
+  "type": "array",
+  "value": null
+ },
+ {
+  "kind": "insert_objects",
+  "same_object": [
+   1,
+   1
+  ],
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[0,0] 1",
+    "Seqsee::Element:[1,1] 9",
+    "Seqsee::Element:[2,2] 4",
+    "Seqsee::Element:[3,3] 2"
+   ],
+   "count": 4,
+   "edges": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "live": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "ltm_nodes": 12,
+   "mags": [
+    1,
+    9,
+    4,
+    2
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20,
+    20,
+    20,
+    20
+   ],
+   "supergroups": [
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "kind": "insert_same_twice",
+  "state": {
+   "as_text": [
+    "Seqsee::Element:[1,1] 9",
+    "Seqsee::Element:[1,1] 9"
+   ],
+   "count": 2,
+   "edges": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "elements_var": 0,
+   "initial_terms": 3,
+   "left_edge_of": [
+    1,
+    1
+   ],
+   "live": [
+    1,
+    1
+   ],
+   "ltm_nodes": 12,
+   "mags": [
+    9,
+    9
+   ],
+   "read_head": 0,
+   "real_sequence": [
+    1,
+    2,
+    3
+   ],
+   "relations": 0,
+   "strengths": [
+    20,
+    20
+   ],
+   "supergroups": [
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "kind": "insert_clears_rejected",
+  "rejected": []
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1
+  ],
+  "right": 0,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1
+  ],
+  "right": 0,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 0,
+  "mags": [
+   1
+  ],
+  "right": 0,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 1,
+  "mags": [
+   1
+  ],
+  "right": 1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 1,
+  "mags": [
+   1
+  ],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 3,
+  "mags": [
+   1
+  ],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 3,
+  "mags": [
+   1
+  ],
+  "right": 6,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2
+  ],
+  "right": -3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2
+  ],
+  "right": 2,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2
+  ],
+  "right": 2,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2
+  ],
+  "right": 2,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 2,
+  "mags": [
+   2
+  ],
+  "right": 2,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 2,
+  "mags": [
+   2
+  ],
+  "right": 4,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 4,
+  "mags": [
+   2
+  ],
+  "right": 7,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   2
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   2
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   2
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   2
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   2
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4
+  ],
+  "right": -1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4
+  ],
+  "right": -1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4
+  ],
+  "right": 9,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4
+  ],
+  "right": 9,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4
+  ],
+  "right": 9,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4
+  ],
+  "right": 9,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4
+  ],
+  "right": 9,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4
+  ],
+  "right": 9,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 9,
+  "mags": [
+   4
+  ],
+  "right": 9,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 9,
+  "mags": [
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 9,
+  "mags": [
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 9,
+  "mags": [
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2
+  ],
+  "right": 1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2
+  ],
+  "right": 1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2
+  ],
+  "right": 1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2
+  ],
+  "right": 1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 1,
+  "mags": [
+   1,
+   2
+  ],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 1,
+  "mags": [
+   1,
+   2
+  ],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 3,
+  "mags": [
+   1,
+   2
+  ],
+  "right": 6,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   2
+  ],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   2
+  ],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   2
+  ],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 3,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": 6,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   2,
+   3
+  ],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   2,
+   3
+  ],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   2,
+   3
+  ],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2,
+   3
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": -3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": 7,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": 7,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": 7,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": 7,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": 7,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": 7,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   3,
+   4
+  ],
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   3,
+   4
+  ],
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   3,
+   4
+  ],
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   3,
+   4
+  ],
+  "right": -2,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   3,
+   4
+  ],
+  "right": 8,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   3,
+   4
+  ],
+  "right": 8,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   3,
+   4
+  ],
+  "right": 8,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   3,
+   4
+  ],
+  "right": 8,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   3,
+   4
+  ],
+  "right": 8,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   3,
+   4
+  ],
+  "right": 8,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   3,
+   4
+  ],
+  "right": 8,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 8,
+  "mags": [
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   4
+  ],
+  "kind": "scan",
+  "left": 8,
+  "mags": [
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   4
+  ],
+  "kind": "scan",
+  "left": 8,
+  "mags": [
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   4
+  ],
+  "kind": "scan",
+  "left": 8,
+  "mags": [
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": 6,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": 6,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": 6,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": 6,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": 6,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": 6,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": 6,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   2,
+   3,
+   4
+  ],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   2,
+   3,
+   4
+  ],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   2,
+   3,
+   4
+  ],
+  "kind": "scan",
+  "left": 6,
+  "mags": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": -1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": -1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   1
+  ],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   1
+  ],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   1
+  ],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   1
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": 0,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": 0,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": 0,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 0,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "kind": "scan",
+  "left": 0,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "kind": "scan",
+  "left": 0,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "kind": "scan",
+  "left": 0,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [],
+  "right": -3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 0,
+  "mags": [],
+  "right": -1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 1,
+  "mags": [],
+  "right": 0,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 2,
+  "mags": [],
+  "right": 1,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 3,
+  "mags": [],
+  "right": 2,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 4,
+  "mags": [],
+  "right": 3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 6,
+  "mags": [],
+  "right": 5,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 9,
+  "mags": [],
+  "right": 8,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 10,
+  "mags": [],
+  "right": 9,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 11,
+  "mags": [],
+  "right": 10,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 12,
+  "mags": [],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 14,
+  "mags": [],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 10,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 11,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": 13,
+  "mags": [
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [],
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   0
+  ],
+  "kind": "scan",
+  "left": 9,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   0
+  ],
+  "kind": "scan",
+  "left": 9,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   0
+  ],
+  "kind": "scan",
+  "left": 9,
+  "mags": [
+   4,
+   0
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "check": 1,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": -3,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": 4,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": -1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": 4,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 0
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": 4,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 1
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": 4,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 2
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": null,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": 4,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 3
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 4,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": 7,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 5
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 8
+ },
+ {
+  "check": 0,
+  "check_error": null,
+  "check_next": null,
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 9
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   "3"
+  ],
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 10
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   "3"
+  ],
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 11
+ },
+ {
+  "check": null,
+  "check_error": {
+   "class": "SErr::ElementsBeyondKnownSought",
+   "message": ""
+  },
+  "check_next": [
+   "3"
+  ],
+  "kind": "scan",
+  "left": 7,
+  "mags": [
+   "2.0",
+   "3"
+  ],
+  "right": null,
+  "seq": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3,
+   1,
+   2,
+   3,
+   4
+  ],
+  "start": 13
+ },
+ {
+  "barlines": [],
+  "kind": "barlines",
+  "ops": []
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5,
+   9
+  ],
+  "kind": "barlines",
+  "ops": [
+   [
+    5,
+    2,
+    9,
+    2
+   ]
+  ]
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5,
+   9,
+   10
+  ],
+  "kind": "barlines",
+  "ops": [
+   [
+    5,
+    2,
+    9,
+    2
+   ],
+   [
+    10
+   ]
+  ]
+ },
+ {
+  "barlines": [
+   0,
+   2,
+   2,
+   3,
+   5,
+   9,
+   10
+  ],
+  "kind": "barlines",
+  "ops": [
+   [
+    5,
+    2,
+    9,
+    2
+   ],
+   [
+    10
+   ],
+   [
+    "3",
+    0
+   ]
+  ]
+ },
+ {
+  "barlines": [
+   0,
+   2,
+   2,
+   3,
+   5,
+   9,
+   10
+  ],
+  "kind": "barlines",
+  "ops": [
+   [
+    5,
+    2,
+    9,
+    2
+   ],
+   [
+    10
+   ],
+   [
+    "3",
+    0
+   ],
+   []
+  ]
+ },
+ {
+  "barlines": [],
+  "kind": "barlines_cleared"
+ },
+ {
+  "barlines": [],
+  "index": -1,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 0,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 1,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 2,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 3,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 4,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 5,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 6,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 7,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 8,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 9,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 10,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "index": 11,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": null
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": -1,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 3
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 0,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 3
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 1,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 3
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 2,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 3
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 3,
+  "kind": "closest",
+  "left": 3,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 4,
+  "kind": "closest",
+  "left": 3,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 5,
+  "kind": "closest",
+  "left": 3,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 6,
+  "kind": "closest",
+  "left": 3,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 7,
+  "kind": "closest",
+  "left": 3,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 8,
+  "kind": "closest",
+  "left": 3,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 9,
+  "kind": "closest",
+  "left": 3,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 10,
+  "kind": "closest",
+  "left": 3,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "index": 11,
+  "kind": "closest",
+  "left": 3,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": -1,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 0
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 0,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 4
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 1,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 4
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 2,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 4
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 3,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 4
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 4,
+  "kind": "closest",
+  "left": 4,
+  "left_list_len": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 5,
+  "kind": "closest",
+  "left": 4,
+  "left_list_len": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 6,
+  "kind": "closest",
+  "left": 4,
+  "left_list_len": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 7,
+  "kind": "closest",
+  "left": 4,
+  "left_list_len": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 8,
+  "kind": "closest",
+  "left": 8,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 9,
+  "kind": "closest",
+  "left": 8,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 10,
+  "kind": "closest",
+  "left": 8,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "index": 11,
+  "kind": "closest",
+  "left": 8,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": -1,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 2
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 0,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 2
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 1,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 2
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 2,
+  "kind": "closest",
+  "left": 2,
+  "left_list_len": 1,
+  "right": 5
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 3,
+  "kind": "closest",
+  "left": 2,
+  "left_list_len": 1,
+  "right": 5
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 4,
+  "kind": "closest",
+  "left": 2,
+  "left_list_len": 1,
+  "right": 5
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 5,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 6,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 7,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 8,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 9,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 10,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "index": 11,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": -1,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 0
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 0,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 10
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 1,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 10
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 2,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 10
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 3,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 10
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 4,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 10
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 5,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 10
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 6,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 10
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 7,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 10
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 8,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 10
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 9,
+  "kind": "closest",
+  "left": 0,
+  "left_list_len": 1,
+  "right": 10
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 10,
+  "kind": "closest",
+  "left": 10,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "index": 11,
+  "kind": "closest",
+  "left": 10,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": -1,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 1
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 0,
+  "kind": "closest",
+  "left": null,
+  "left_list_len": 0,
+  "right": 1
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 1,
+  "kind": "closest",
+  "left": 1,
+  "left_list_len": 1,
+  "right": 2
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 2,
+  "kind": "closest",
+  "left": 2,
+  "left_list_len": 1,
+  "right": 3
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 3,
+  "kind": "closest",
+  "left": 3,
+  "left_list_len": 1,
+  "right": 4
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 4,
+  "kind": "closest",
+  "left": 4,
+  "left_list_len": 1,
+  "right": 5
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 5,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 6,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 7,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 8,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 9,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 10,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "index": 11,
+  "kind": "closest",
+  "left": 5,
+  "left_list_len": 1,
+  "right": null
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 1
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": 1,
+  "right": 3
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": 1,
+  "right": 3
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": 1,
+  "right": 3
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": 1,
+  "right": 5
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": 1,
+  "right": 5
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": 1,
+  "right": 5
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": 1,
+  "right": 5
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": 1,
+  "right": 5
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": 1,
+  "right": 5
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 3,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": 1,
+  "right": 4
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": 1,
+  "right": 4
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": 1,
+  "right": 4
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": 1,
+  "right": 4
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 3,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 7
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 7
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 7
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": 1,
+  "right": 7
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 7
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 7
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 7
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 7
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 7
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": 1,
+  "right": 7
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": 1,
+  "right": 7
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": 1,
+  "right": 7
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 1,
+  "result": null,
+  "right": 8
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": null,
+  "right": 8
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": null,
+  "right": 8
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": 1,
+  "right": 8
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 1,
+  "result": 1,
+  "right": 8
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 0,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 5,
+  "result": null,
+  "right": 5
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": 1,
+  "right": 3
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": 1,
+  "right": 3
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 2,
+  "result": null,
+  "right": 3
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 8,
+  "result": null,
+  "right": 9
+ },
+ {
+  "barlines": [],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   3
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   0,
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   2,
+   2,
+   5
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   0,
+   10
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   2,
+   4,
+   6
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   4,
+   8
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   3,
+   5
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   2,
+   6
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ },
+ {
+  "barlines": [
+   0,
+   5
+  ],
+  "kind": "crosses",
+  "left": 4,
+  "result": null,
+  "right": 4
+ }
+]

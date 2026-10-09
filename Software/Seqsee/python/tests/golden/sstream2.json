@@ -1,0 +1,4629 @@
+[
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "opts_default",
+  "ops": [],
+  "results": []
+ },
+ {
+  "discount": 0.5,
+  "max": 3,
+  "name": "opts_given",
+  "ops": [],
+  "opts": {
+   "DiscountFactor": 0.5,
+   "MaxOlderThoughts": 3
+  },
+  "results": []
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "opts_zero",
+  "ops": [],
+  "opts": {
+   "DiscountFactor": 0,
+   "MaxOlderThoughts": 0
+  },
+  "results": []
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "sequence_no_hits",
+  "ops": [
+   [
+    "add",
+    "t1"
+   ],
+   [
+    "add",
+    "t2"
+   ],
+   [
+    "add",
+    "t3"
+   ],
+   [
+    "add",
+    "t3"
+   ],
+   [
+    "fringe_len",
+    "t1"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "t1",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 1,
+     "current": "t2",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t1"
+     ],
+     "own": {
+      "s:x1": {
+       "t1": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1",
+      "t2"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x1"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 2,
+     "current": "t3",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t2",
+      "t1"
+     ],
+     "own": {
+      "s:x1": {
+       "t1": 100
+      },
+      "s:x2": {
+       "t2": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1",
+      "t2",
+      "t3"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x1",
+      "s:x2"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.3359860301452,
+    "state": {
+     "count": 2,
+     "current": "t3",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t2",
+      "t1"
+     ],
+     "own": {
+      "s:x1": {
+       "t1": 100
+      },
+      "s:x2": {
+       "t2": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1",
+      "t2",
+      "t3"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x1",
+      "s:x2"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.565489403566136,
+    "state": {
+     "count": 2,
+     "current": "t3",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t2",
+      "t1"
+     ],
+     "own": {
+      "s:x1": {
+       "t1": 100
+      },
+      "s:x2": {
+       "t2": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1",
+      "t2",
+      "t3"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x1",
+      "s:x2"
+     ]
+    },
+    "value": 1
+   }
+  ],
+  "thoughts": {
+   "t1": {
+    "fringe": [
+     [
+      "s:x1",
+      100
+     ]
+    ]
+   },
+   "t2": {
+    "fringe": [
+     [
+      "s:x2",
+      100
+     ]
+    ]
+   },
+   "t3": {
+    "fringe": [
+     [
+      "s:x3",
+      100
+     ]
+    ]
+   },
+   "t4": {
+    "fringe": [
+     [
+      "s:x4",
+      100
+     ]
+    ]
+   },
+   "t5": {
+    "fringe": [
+     [
+      "s:x5",
+      100
+     ]
+    ]
+   },
+   "t6": {
+    "fringe": [
+     [
+      "s:x6",
+      100
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "false_core",
+  "ops": [
+   [
+    "add",
+    "z"
+   ],
+   [
+    "add",
+    "e"
+   ],
+   [
+    "add",
+    "t1"
+   ],
+   [
+    "add",
+    "z"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "",
+     "family": null,
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": null
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 0,
+     "current": "",
+     "family": null,
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": null
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 0,
+     "current": "t1",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.3359860301452,
+    "state": {
+     "count": 0,
+     "current": "t1",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": null
+    }
+   }
+  ],
+  "thoughts": {
+   "e": {
+    "core": "",
+    "fringe": [
+     [
+      "s:a",
+      1
+     ]
+    ]
+   },
+   "t1": {
+    "fringe": [
+     [
+      "s:x1",
+      100
+     ]
+    ]
+   },
+   "z": {
+    "core": 0,
+    "fringe": [
+     [
+      "s:a",
+      1
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "arity",
+  "ops": [
+   [
+    "add_args"
+   ],
+   [
+    "add_args",
+    "t1",
+    "t2"
+   ],
+   [
+    "add",
+    "t1"
+   ]
+  ],
+  "results": [
+   {
+    "error": "new thought takes two arguments",
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "",
+     "family": null,
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": null
+   },
+   {
+    "error": "new thought takes two arguments",
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 0,
+     "current": "",
+     "family": null,
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": null
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 0,
+     "current": "t1",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   }
+  ],
+  "thoughts": {
+   "t1": {
+    "fringe": [
+     [
+      "s:x1",
+      100
+     ]
+    ]
+   },
+   "t2": {
+    "fringe": [
+     [
+      "s:x2",
+      100
+     ]
+    ]
+   },
+   "t3": {
+    "fringe": [
+     [
+      "s:x3",
+      100
+     ]
+    ]
+   },
+   "t4": {
+    "fringe": [
+     [
+      "s:x4",
+      100
+     ]
+    ]
+   },
+   "t5": {
+    "fringe": [
+     [
+      "s:x5",
+      100
+     ]
+    ]
+   },
+   "t6": {
+    "fringe": [
+     [
+      "s:x6",
+      100
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "simple_hit",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "b"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 2
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 1,
+     "current": "b",
+     "family": "FT",
+     "hit": {
+      "s:y": 40
+     },
+     "older": [
+      "a"
+     ],
+     "own": {
+      "s:x": {
+       "a": 100
+      },
+      "s:y": {
+       "a": 50
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 1600
+     },
+     "vivify": [
+      "s:x",
+      "s:y"
+     ]
+    },
+    "value": {
+     "sf": 2
+    }
+   }
+  ],
+  "thoughts": {
+   "a": {
+    "fringe": [
+     [
+      "s:x",
+      100
+     ],
+     [
+      "s:y",
+      50
+     ]
+    ]
+   },
+   "b": {
+    "fringe": [
+     [
+      "s:y",
+      40
+     ],
+     [
+      "s:z",
+      10
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "object_and_number_components",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "b"
+   ],
+   [
+    "add",
+    "c"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 2
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 1,
+     "current": "b",
+     "family": "FT",
+     "hit": {
+      "s:5": 20
+     },
+     "older": [
+      "a"
+     ],
+     "own": {
+      "o:P": {
+       "a": 100
+      },
+      "s:5": {
+       "a": 30
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 480
+     },
+     "vivify": [
+      "o:P",
+      "s:5"
+     ]
+    },
+    "value": {
+     "sf": 2
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.565489403566136,
+    "state": {
+     "count": 2,
+     "current": "c",
+     "family": "FT",
+     "hit": {
+      "o:P": 70
+     },
+     "older": [
+      "b",
+      "a"
+     ],
+     "own": {
+      "o:P": {
+       "a": 100
+      },
+      "o:Q": {
+       "b": 100
+      },
+      "s:5": {
+       "a": 30,
+       "b": 20
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "c"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 4480
+     },
+     "vivify": [
+      "o:P",
+      "o:Q",
+      "s:5"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   }
+  ],
+  "thoughts": {
+   "a": {
+    "fringe": [
+     [
+      "o:P",
+      100
+     ],
+     [
+      "n:5",
+      30
+     ]
+    ]
+   },
+   "b": {
+    "fringe": [
+     [
+      "o:Q",
+      100
+     ],
+     [
+      "s:5",
+      20
+     ]
+    ]
+   },
+   "c": {
+    "fringe": [
+     [
+      "o:P",
+      70
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.5,
+  "max": 10,
+  "name": "dampening_single",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "b"
+   ],
+   [
+    "add",
+    "c"
+   ],
+   [
+    "add",
+    "d"
+   ]
+  ],
+  "opts": {
+   "DiscountFactor": 0.5
+  },
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 1,
+     "current": "b",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "a"
+     ],
+     "own": {
+      "s:k": {
+       "a": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a",
+      "b"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 2,
+     "current": "c",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:k": {
+       "a": 100
+      },
+      "s:m": {
+       "b": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:k",
+      "s:m"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.565489403566136,
+    "state": {
+     "count": 3,
+     "current": "d",
+     "family": "FT",
+     "hit": {
+      "s:k": 60
+     },
+     "older": [
+      "c",
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:k": {
+       "a": 100
+      },
+      "s:m": {
+       "b": 100
+      },
+      "s:n": {
+       "c": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "d"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 750
+     },
+     "vivify": [
+      "s:k",
+      "s:m",
+      "s:n"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   }
+  ],
+  "thoughts": {
+   "a": {
+    "fringe": [
+     [
+      "s:k",
+      100
+     ]
+    ]
+   },
+   "b": {
+    "fringe": [
+     [
+      "s:m",
+      100
+     ]
+    ]
+   },
+   "c": {
+    "fringe": [
+     [
+      "s:n",
+      100
+     ]
+    ]
+   },
+   "d": {
+    "fringe": [
+     [
+      "s:k",
+      60
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.5,
+  "max": 10,
+  "name": "dampening_multi_1",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "b"
+   ],
+   [
+    "add",
+    "c"
+   ],
+   [
+    "add",
+    "d"
+   ]
+  ],
+  "opts": {
+   "DiscountFactor": 0.5
+  },
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 2
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 1,
+     "current": "b",
+     "family": "FT",
+     "hit": {
+      "s:k": 50
+     },
+     "older": [
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10
+      },
+      "s:k": {
+       "a": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 2500
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.565489403566136,
+    "state": {
+     "count": 2,
+     "current": "c",
+     "family": "FT",
+     "hit": {
+      "s:j": 100
+     },
+     "older": [
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10
+      },
+      "s:k": {
+       "a": 100,
+       "b": 50
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "c"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 250
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.18758951699996,
+    "state": {
+     "count": 3,
+     "current": "d",
+     "family": "FT",
+     "hit": {
+      "s:j": 20,
+      "s:k": 60
+     },
+     "older": [
+      "c",
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10,
+       "c": 100
+      },
+      "s:k": {
+       "a": 100,
+       "b": 50
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "c"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "d"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 775,
+      "b": 750,
+      "c": 1000
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 2
+    }
+   }
+  ],
+  "seed": 1,
+  "thoughts": {
+   "a": {
+    "fringe": [
+     [
+      "s:k",
+      100
+     ],
+     [
+      "s:j",
+      10
+     ]
+    ]
+   },
+   "b": {
+    "fringe": [
+     [
+      "s:k",
+      50
+     ]
+    ]
+   },
+   "c": {
+    "fringe": [
+     [
+      "s:j",
+      100
+     ]
+    ]
+   },
+   "d": {
+    "fringe": [
+     [
+      "s:k",
+      60
+     ],
+     [
+      "s:j",
+      20
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.5,
+  "max": 10,
+  "name": "dampening_multi_2",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "b"
+   ],
+   [
+    "add",
+    "c"
+   ],
+   [
+    "add",
+    "d"
+   ]
+  ],
+  "opts": {
+   "DiscountFactor": 0.5
+  },
+  "results": [
+   {
+    "error": null,
+    "rand": 0.912432653437467,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 2
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.573262780710262,
+    "state": {
+     "count": 1,
+     "current": "b",
+     "family": "FT",
+     "hit": {
+      "s:k": 50
+     },
+     "older": [
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10
+      },
+      "s:k": {
+       "a": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 2500
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.553675300337165,
+    "state": {
+     "count": 2,
+     "current": "c",
+     "family": "FT",
+     "hit": {
+      "s:j": 100
+     },
+     "older": [
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10
+      },
+      "s:k": {
+       "a": 100,
+       "b": 50
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "c"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 250
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.68298488054128,
+    "state": {
+     "count": 3,
+     "current": "d",
+     "family": "FT",
+     "hit": {
+      "s:j": 20,
+      "s:k": 60
+     },
+     "older": [
+      "c",
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10,
+       "c": 100
+      },
+      "s:k": {
+       "a": 100,
+       "b": 50
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "c"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "c",
+        "b": "d"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 775,
+      "b": 750,
+      "c": 1000
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 2
+    }
+   }
+  ],
+  "seed": 2,
+  "thoughts": {
+   "a": {
+    "fringe": [
+     [
+      "s:k",
+      100
+     ],
+     [
+      "s:j",
+      10
+     ]
+    ]
+   },
+   "b": {
+    "fringe": [
+     [
+      "s:k",
+      50
+     ]
+    ]
+   },
+   "c": {
+    "fringe": [
+     [
+      "s:j",
+      100
+     ]
+    ]
+   },
+   "d": {
+    "fringe": [
+     [
+      "s:k",
+      60
+     ],
+     [
+      "s:j",
+      20
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.5,
+  "max": 10,
+  "name": "dampening_multi_3",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "b"
+   ],
+   [
+    "add",
+    "c"
+   ],
+   [
+    "add",
+    "d"
+   ]
+  ],
+  "opts": {
+   "DiscountFactor": 0.5
+  },
+  "results": [
+   {
+    "error": null,
+    "rand": 0.783234962103055,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 2
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.31170834325361,
+    "state": {
+     "count": 1,
+     "current": "b",
+     "family": "FT",
+     "hit": {
+      "s:k": 50
+     },
+     "older": [
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10
+      },
+      "s:k": {
+       "a": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 2500
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.541861197108194,
+    "state": {
+     "count": 2,
+     "current": "c",
+     "family": "FT",
+     "hit": {
+      "s:j": 100
+     },
+     "older": [
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10
+      },
+      "s:k": {
+       "a": 100,
+       "b": 50
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "c"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 250
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.1783802440826,
+    "state": {
+     "count": 3,
+     "current": "d",
+     "family": "FT",
+     "hit": {
+      "s:j": 20,
+      "s:k": 60
+     },
+     "older": [
+      "c",
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10,
+       "c": 100
+      },
+      "s:k": {
+       "a": 100,
+       "b": 50
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "c"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "c",
+        "b": "d"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 775,
+      "b": 750,
+      "c": 1000
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 2
+    }
+   }
+  ],
+  "seed": 3,
+  "thoughts": {
+   "a": {
+    "fringe": [
+     [
+      "s:k",
+      100
+     ],
+     [
+      "s:j",
+      10
+     ]
+    ]
+   },
+   "b": {
+    "fringe": [
+     [
+      "s:k",
+      50
+     ]
+    ]
+   },
+   "c": {
+    "fringe": [
+     [
+      "s:j",
+      100
+     ]
+    ]
+   },
+   "d": {
+    "fringe": [
+     [
+      "s:k",
+      60
+     ],
+     [
+      "s:j",
+      20
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.5,
+  "max": 10,
+  "name": "dampening_multi_4",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "b"
+   ],
+   [
+    "add",
+    "c"
+   ],
+   [
+    "add",
+    "d"
+   ]
+  ],
+  "opts": {
+   "DiscountFactor": 0.5
+  },
+  "results": [
+   {
+    "error": null,
+    "rand": 0.654037270768644,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 2
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.0501539057969573,
+    "state": {
+     "count": 1,
+     "current": "b",
+     "family": "FT",
+     "hit": {
+      "s:k": 50
+     },
+     "older": [
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10
+      },
+      "s:k": {
+       "a": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 2500
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.530047093879222,
+    "state": {
+     "count": 2,
+     "current": "c",
+     "family": "FT",
+     "hit": {
+      "s:j": 100
+     },
+     "older": [
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10
+      },
+      "s:k": {
+       "a": 100,
+       "b": 50
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "c"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 250
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.67377560762392,
+    "state": {
+     "count": 3,
+     "current": "d",
+     "family": "FT",
+     "hit": {
+      "s:j": 20,
+      "s:k": 60
+     },
+     "older": [
+      "c",
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:j": {
+       "a": 10,
+       "c": 100
+      },
+      "s:k": {
+       "a": 100,
+       "b": 50
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "c"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "b",
+        "b": "d"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 775,
+      "b": 750,
+      "c": 1000
+     },
+     "vivify": [
+      "s:j",
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 2
+    }
+   }
+  ],
+  "seed": 4,
+  "thoughts": {
+   "a": {
+    "fringe": [
+     [
+      "s:k",
+      100
+     ],
+     [
+      "s:j",
+      10
+     ]
+    ]
+   },
+   "b": {
+    "fringe": [
+     [
+      "s:k",
+      50
+     ]
+    ]
+   },
+   "c": {
+    "fringe": [
+     [
+      "s:j",
+      100
+     ]
+    ]
+   },
+   "d": {
+    "fringe": [
+     [
+      "s:k",
+      60
+     ],
+     [
+      "s:j",
+      20
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "type_mismatch",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "b"
+   ],
+   [
+    "add",
+    "c"
+   ],
+   [
+    "type_match",
+    "a",
+    "b"
+   ],
+   [
+    "type_match",
+    "b",
+    "c"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 1,
+     "current": "b",
+     "family": "FTB",
+     "hit": {
+      "s:k": 100
+     },
+     "older": [
+      "a"
+     ],
+     "own": {
+      "s:k": {
+       "a": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 0
+     },
+     "vivify": [
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.565489403566136,
+    "state": {
+     "count": 2,
+     "current": "c",
+     "family": "FTB",
+     "hit": {
+      "s:k": 100
+     },
+     "older": [
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:k": {
+       "a": 100,
+       "b": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "b",
+        "b": "c"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 0,
+      "b": 8000
+     },
+     "vivify": [
+      "s:k"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.00176691239174431,
+    "state": {
+     "count": 2,
+     "current": "c",
+     "family": "FTB",
+     "hit": {
+      "s:k": 100
+     },
+     "older": [
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:k": {
+       "a": 100,
+       "b": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "b",
+        "b": "c"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 0,
+      "b": 8000
+     },
+     "vivify": [
+      "s:k"
+     ]
+    },
+    "value": 0
+   },
+   {
+    "error": null,
+    "rand": 0.18758951699996,
+    "state": {
+     "count": 2,
+     "current": "c",
+     "family": "FTB",
+     "hit": {
+      "s:k": 100
+     },
+     "older": [
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:k": {
+       "a": 100,
+       "b": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "b"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "b",
+        "b": "c"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 0,
+      "b": 8000
+     },
+     "vivify": [
+      "s:k"
+     ]
+    },
+    "value": 1
+   }
+  ],
+  "thoughts": {
+   "a": {
+    "fringe": [
+     [
+      "s:k",
+      100
+     ]
+    ]
+   },
+   "b": {
+    "fringe": [
+     [
+      "s:k",
+      100
+     ]
+    ],
+    "kind": "FTB"
+   },
+   "c": {
+    "fringe": [
+     [
+      "s:k",
+      100
+     ]
+    ],
+    "kind": "FTB"
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "revisit",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "b"
+   ],
+   [
+    "add",
+    "c"
+   ],
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "d"
+   ],
+   [
+    "add",
+    "b"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 1,
+     "current": "b",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "a"
+     ],
+     "own": {
+      "s:x": {
+       "a": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a",
+      "b"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 2,
+     "current": "c",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "b",
+      "a"
+     ],
+     "own": {
+      "s:x": {
+       "a": 100
+      },
+      "s:y": {
+       "b": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x",
+      "s:y"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.565489403566136,
+    "state": {
+     "count": 2,
+     "current": "a",
+     "family": "FT",
+     "hit": {
+      "s:x": 100
+     },
+     "older": [
+      "c",
+      "b"
+     ],
+     "own": {
+      "s:x": {
+       "a": 100
+      },
+      "s:y": {
+       "b": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "a"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "a": 10000
+     },
+     "vivify": [
+      "s:x",
+      "s:y"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.18758951699996,
+    "state": {
+     "count": 3,
+     "current": "d",
+     "family": "FT",
+     "hit": {
+      "s:y": 50
+     },
+     "older": [
+      "a",
+      "c",
+      "b"
+     ],
+     "own": {
+      "s:x": {
+       "a": 100
+      },
+      "s:y": {
+       "b": 100
+      },
+      "s:z": {
+       "c": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "a"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "b",
+        "b": "d"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "b": 2560
+     },
+     "vivify": [
+      "s:x",
+      "s:y",
+      "s:z"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.750497133229519,
+    "state": {
+     "count": 3,
+     "current": "b",
+     "family": "FT",
+     "hit": {
+      "s:y": 100
+     },
+     "older": [
+      "d",
+      "a",
+      "c"
+     ],
+     "own": {
+      "s:x": {
+       "a": 100
+      },
+      "s:y": {
+       "b": 100
+      },
+      "s:z": {
+       "c": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "a",
+        "b": "a"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "b",
+        "b": "d"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "b",
+        "b": "b"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "b": 10000
+     },
+     "vivify": [
+      "s:x",
+      "s:y",
+      "s:z"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   }
+  ],
+  "thoughts": {
+   "a": {
+    "fringe": [
+     [
+      "s:x",
+      100
+     ]
+    ]
+   },
+   "b": {
+    "fringe": [
+     [
+      "s:y",
+      100
+     ]
+    ]
+   },
+   "c": {
+    "fringe": [
+     [
+      "s:z",
+      100
+     ]
+    ]
+   },
+   "d": {
+    "fringe": [
+     [
+      "s:y",
+      50
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 2,
+  "name": "expel",
+  "ops": [
+   [
+    "add",
+    "t1"
+   ],
+   [
+    "add",
+    "t2"
+   ],
+   [
+    "add",
+    "t3"
+   ],
+   [
+    "add",
+    "t4"
+   ],
+   [
+    "add",
+    "t5"
+   ],
+   [
+    "add",
+    "h"
+   ],
+   [
+    "add",
+    "t1"
+   ],
+   [
+    "add",
+    "t4"
+   ]
+  ],
+  "opts": {
+   "MaxOlderThoughts": 2
+  },
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "t1",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 1,
+     "current": "t2",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t1"
+     ],
+     "own": {
+      "s:x1": {
+       "t1": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1",
+      "t2"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x1"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 2,
+     "current": "t3",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t2",
+      "t1"
+     ],
+     "own": {
+      "s:x1": {
+       "t1": 100
+      },
+      "s:x2": {
+       "t2": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1",
+      "t2",
+      "t3"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x1",
+      "s:x2"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.3359860301452,
+    "state": {
+     "count": 2,
+     "current": "t4",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t3",
+      "t2"
+     ],
+     "own": {
+      "s:x2": {
+       "t2": 100
+      },
+      "s:x3": {
+       "t3": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t2",
+      "t3",
+      "t4"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x2",
+      "s:x3"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.565489403566136,
+    "state": {
+     "count": 2,
+     "current": "t5",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t4",
+      "t3"
+     ],
+     "own": {
+      "s:x3": {
+       "t3": 100
+      },
+      "s:x4": {
+       "t4": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t3",
+      "t4",
+      "t5"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x3",
+      "s:x4"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.18758951699996,
+    "state": {
+     "count": 2,
+     "current": "h",
+     "family": "FT",
+     "hit": {
+      "s:x4": 100
+     },
+     "older": [
+      "t5",
+      "t4"
+     ],
+     "own": {
+      "s:x4": {
+       "t4": 100
+      },
+      "s:x5": {
+       "t5": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "t4",
+        "b": "h"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "h",
+      "t4",
+      "t5"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "t4": 6400
+     },
+     "vivify": [
+      "s:x4",
+      "s:x5"
+     ]
+    },
+    "value": {
+     "sf": 2
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.750497133229519,
+    "state": {
+     "count": 2,
+     "current": "t1",
+     "family": "FT",
+     "hit": {
+      "s:x1": 100
+     },
+     "older": [
+      "h",
+      "t5"
+     ],
+     "own": {
+      "s:x1": {
+       "h": 100
+      },
+      "s:x4": {
+       "h": 100
+      },
+      "s:x5": {
+       "t5": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "t4",
+        "b": "h"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "h",
+        "b": "t1"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "h",
+      "t1",
+      "t5"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "h": 8000
+     },
+     "vivify": [
+      "s:x1",
+      "s:x4",
+      "s:x5"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.351209097790882,
+    "state": {
+     "count": 2,
+     "current": "t4",
+     "family": "FT",
+     "hit": {
+      "s:x4": 100
+     },
+     "older": [
+      "t1",
+      "h"
+     ],
+     "own": {
+      "s:x1": {
+       "h": 100,
+       "t1": 100
+      },
+      "s:x4": {
+       "h": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "t4",
+        "b": "h"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "h",
+        "b": "t1"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "h",
+        "b": "t4"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "h",
+      "t1",
+      "t4"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "h": 6400
+     },
+     "vivify": [
+      "s:x1",
+      "s:x4"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   }
+  ],
+  "thoughts": {
+   "h": {
+    "fringe": [
+     [
+      "s:x1",
+      100
+     ],
+     [
+      "s:x4",
+      100
+     ]
+    ]
+   },
+   "t1": {
+    "fringe": [
+     [
+      "s:x1",
+      100
+     ]
+    ]
+   },
+   "t2": {
+    "fringe": [
+     [
+      "s:x2",
+      100
+     ]
+    ]
+   },
+   "t3": {
+    "fringe": [
+     [
+      "s:x3",
+      100
+     ]
+    ]
+   },
+   "t4": {
+    "fringe": [
+     [
+      "s:x4",
+      100
+     ]
+    ]
+   },
+   "t5": {
+    "fringe": [
+     [
+      "s:x5",
+      100
+     ]
+    ]
+   },
+   "t6": {
+    "fringe": [
+     [
+      "s:x6",
+      100
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "antiquate_clear_init",
+  "ops": [
+   [
+    "add",
+    "t1"
+   ],
+   [
+    "antiquate"
+   ],
+   [
+    "add",
+    "t2"
+   ],
+   [
+    "antiquate"
+   ],
+   [
+    "antiquate"
+   ],
+   [
+    "init"
+   ],
+   [
+    "clear"
+   ],
+   [
+    "add",
+    "t1"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "t1",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 1,
+     "current": "",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t1"
+     ],
+     "own": {
+      "s:x1": {
+       "t1": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x1"
+     ]
+    },
+    "value": null
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 1,
+     "current": "t2",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t1"
+     ],
+     "own": {
+      "s:x1": {
+       "t1": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1",
+      "t2"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x1"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.3359860301452,
+    "state": {
+     "count": 2,
+     "current": "",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "t2",
+      "t1"
+     ],
+     "own": {
+      "s:x1": {
+       "t1": 100
+      },
+      "s:x2": {
+       "t2": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1",
+      "t2"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "s:x1",
+      "s:x2"
+     ]
+    },
+    "value": null
+   },
+   {
+    "error": "Can't call method \"stored_fringe\" without a package or object reference",
+    "rand": 0.565489403566136,
+    "state": {
+     "count": 3,
+     "current": "",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "",
+      "t2",
+      "t1"
+     ],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1",
+      "t2"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": null
+   },
+   {
+    "error": null,
+    "rand": 0.00176691239174431,
+    "state": {
+     "count": 3,
+     "current": "",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "",
+      "t2",
+      "t1"
+     ],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1",
+      "t2"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": null
+   },
+   {
+    "error": null,
+    "rand": 0.18758951699996,
+    "state": {
+     "count": 0,
+     "current": "",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": null
+   },
+   {
+    "error": null,
+    "rand": 0.990434079937664,
+    "state": {
+     "count": 0,
+     "current": "t1",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "t1"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   }
+  ],
+  "thoughts": {
+   "t1": {
+    "fringe": [
+     [
+      "s:x1",
+      100
+     ]
+    ]
+   },
+   "t2": {
+    "fringe": [
+     [
+      "s:x2",
+      100
+     ]
+    ]
+   },
+   "t3": {
+    "fringe": [
+     [
+      "s:x3",
+      100
+     ]
+    ]
+   },
+   "t4": {
+    "fringe": [
+     [
+      "s:x4",
+      100
+     ]
+    ]
+   },
+   "t5": {
+    "fringe": [
+     [
+      "s:x5",
+      100
+     ]
+    ]
+   },
+   "t6": {
+    "fringe": [
+     [
+      "s:x6",
+      100
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "actions_few",
+  "ops": [
+   [
+    "add",
+    "a"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [
+      [
+       "FamA",
+       30,
+       {
+        "tag": "c1"
+       }
+      ],
+      [
+       "FamB",
+       60,
+       {
+        "tag": "c2"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 0
+    }
+   }
+  ],
+  "thoughts": {
+   "a": {
+    "actions": [
+     [
+      "codelet",
+      "FamA",
+      30,
+      "c1"
+     ],
+     [
+      "codelet",
+      "FamB",
+      60,
+      "c2"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "actions_many_1",
+  "ops": [
+   [
+    "add",
+    "a"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.565489403566136,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "OracleProbe",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [
+      [
+       "FamB",
+       60,
+       {
+        "tag": "c2"
+       }
+      ],
+      [
+       "FamA",
+       30,
+       {
+        "tag": "c1"
+       }
+      ]
+     ],
+     "ran": [
+      "p1",
+      "p2"
+     ],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   }
+  ],
+  "seed": 1,
+  "thoughts": {
+   "a": {
+    "actions": [
+     [
+      "codelet",
+      "FamA",
+      30,
+      "c1"
+     ],
+     [
+      "action",
+      100,
+      "p1"
+     ],
+     [
+      "codelet",
+      "FamB",
+      60,
+      "c2"
+     ],
+     [
+      "codelet",
+      "FamC",
+      0,
+      "c3"
+     ],
+     [
+      "action",
+      50,
+      "p2"
+     ],
+     [
+      "codelet",
+      "FamD",
+      10,
+      "c4"
+     ]
+    ],
+    "fringe": [
+     [
+      "s:q",
+      10
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "actions_many_2",
+  "ops": [
+   [
+    "add",
+    "a"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.553675300337165,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "OracleProbe",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [
+      [
+       "FamB",
+       60,
+       {
+        "tag": "c2"
+       }
+      ],
+      [
+       "FamD",
+       10,
+       {
+        "tag": "c4"
+       }
+      ]
+     ],
+     "ran": [
+      "p1",
+      "p2"
+     ],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   }
+  ],
+  "seed": 2,
+  "thoughts": {
+   "a": {
+    "actions": [
+     [
+      "codelet",
+      "FamA",
+      30,
+      "c1"
+     ],
+     [
+      "action",
+      100,
+      "p1"
+     ],
+     [
+      "codelet",
+      "FamB",
+      60,
+      "c2"
+     ],
+     [
+      "codelet",
+      "FamC",
+      0,
+      "c3"
+     ],
+     [
+      "action",
+      50,
+      "p2"
+     ],
+     [
+      "codelet",
+      "FamD",
+      10,
+      "c4"
+     ]
+    ],
+    "fringe": [
+     [
+      "s:q",
+      10
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "actions_many_3",
+  "ops": [
+   [
+    "add",
+    "a"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.541861197108194,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "OracleProbe",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [
+      [
+       "FamB",
+       60,
+       {
+        "tag": "c2"
+       }
+      ],
+      [
+       "FamA",
+       30,
+       {
+        "tag": "c1"
+       }
+      ]
+     ],
+     "ran": [
+      "p1"
+     ],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   }
+  ],
+  "seed": 3,
+  "thoughts": {
+   "a": {
+    "actions": [
+     [
+      "codelet",
+      "FamA",
+      30,
+      "c1"
+     ],
+     [
+      "action",
+      100,
+      "p1"
+     ],
+     [
+      "codelet",
+      "FamB",
+      60,
+      "c2"
+     ],
+     [
+      "codelet",
+      "FamC",
+      0,
+      "c3"
+     ],
+     [
+      "action",
+      50,
+      "p2"
+     ],
+     [
+      "codelet",
+      "FamD",
+      10,
+      "c4"
+     ]
+    ],
+    "fringe": [
+     [
+      "s:q",
+      10
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "actions_zero_urgency",
+  "ops": [
+   [
+    "add",
+    "a"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "FT",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 0
+    }
+   }
+  ],
+  "thoughts": {
+   "a": {
+    "actions": [
+     [
+      "codelet",
+      "FamA",
+      0,
+      "c1"
+     ],
+     [
+      "codelet",
+      "FamB",
+      0,
+      "c2"
+     ],
+     [
+      "codelet",
+      "FamC",
+      0,
+      "c3"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "actions_bad_undef",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "a"
+   ]
+  ],
+  "results": [
+   {
+    "error": "Huh? non-codelet '' returned by get_actions",
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "OracleProbe",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [
+      "p1"
+     ],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": null
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "OracleProbe",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [
+      "p1"
+     ],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 0
+    }
+   }
+  ],
+  "thoughts": {
+   "a": {
+    "actions": [
+     [
+      "action",
+      100,
+      "p1"
+     ],
+     [
+      "codelet",
+      "FamA",
+      10,
+      "c1"
+     ],
+     [
+      "undef"
+     ],
+     [
+      "action",
+      100,
+      "p2"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "actions_bad_zero",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "a"
+   ]
+  ],
+  "results": [
+   {
+    "error": "Huh? non-codelet '0' returned by get_actions",
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "OracleProbe",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [
+      "p1"
+     ],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": null
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "OracleProbe",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [
+      "p1"
+     ],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 0
+    }
+   }
+  ],
+  "thoughts": {
+   "a": {
+    "actions": [
+     [
+      "action",
+      100,
+      "p1"
+     ],
+     [
+      "codelet",
+      "FamA",
+      10,
+      "c1"
+     ],
+     [
+      "zero"
+     ],
+     [
+      "action",
+      100,
+      "p2"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "actions_bad_str",
+  "ops": [
+   [
+    "add",
+    "a"
+   ],
+   [
+    "add",
+    "a"
+   ]
+  ],
+  "results": [
+   {
+    "error": "Huh? non-codelet 'junk' returned by get_actions",
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "OracleProbe",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [
+      "p1"
+     ],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": null
+   },
+   {
+    "error": null,
+    "rand": 0.834817218166915,
+    "state": {
+     "count": 0,
+     "current": "a",
+     "family": "OracleProbe",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [
+      "p1"
+     ],
+     "set": [
+      "a"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 0
+    }
+   }
+  ],
+  "thoughts": {
+   "a": {
+    "actions": [
+     [
+      "action",
+      100,
+      "p1"
+     ],
+     [
+      "codelet",
+      "FamA",
+      10,
+      "c1"
+     ],
+     [
+      "str",
+      "junk"
+     ],
+     [
+      "action",
+      100,
+      "p2"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "discount": 0.8,
+  "max": 10,
+  "name": "scat",
+  "ops": [
+   [
+    "add",
+    "sa"
+   ],
+   [
+    "add",
+    "sd"
+   ],
+   [
+    "add",
+    "sl"
+   ],
+   [
+    "add",
+    "f"
+   ],
+   [
+    "add",
+    "sn"
+   ],
+   [
+    "type_match",
+    "sa",
+    "f"
+   ]
+  ],
+  "results": [
+   {
+    "error": null,
+    "rand": 0.0416303447718782,
+    "state": {
+     "count": 0,
+     "current": "sa",
+     "family": "SThought::SCat",
+     "hit": {},
+     "older": [],
+     "own": {},
+     "rack": [],
+     "ran": [],
+     "set": [
+      "sa"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": []
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.454492444728629,
+    "state": {
+     "count": 1,
+     "current": "sd",
+     "family": "SThought::SCat",
+     "hit": {},
+     "older": [
+      "sa"
+     ],
+     "own": {
+      "cat:ascending": {
+       "sa": 100
+      }
+     },
+     "rack": [],
+     "ran": [],
+     "set": [
+      "sa",
+      "sd"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "cat:ascending"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.3359860301452,
+    "state": {
+     "count": 2,
+     "current": "sl",
+     "family": "SThought::SCat",
+     "hit": {
+      "cat:ascending": 100
+     },
+     "older": [
+      "sd",
+      "sa"
+     ],
+     "own": {
+      "cat:ascending": {
+       "sa": 100
+      },
+      "cat:descending": {
+       "sd": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "sa",
+        "b": "sl"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "sa",
+      "sd",
+      "sl"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "sa": 6400
+     },
+     "vivify": [
+      "cat:ascending",
+      "cat:descending"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.565489403566136,
+    "state": {
+     "count": 3,
+     "current": "f",
+     "family": "FT",
+     "hit": {},
+     "older": [
+      "sl",
+      "sd",
+      "sa"
+     ],
+     "own": {
+      "cat:ascending": {
+       "sa": 100,
+       "sl": 100
+      },
+      "cat:descending": {
+       "sd": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "sa",
+        "b": "sl"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "f",
+      "sa",
+      "sd",
+      "sl"
+     ],
+     "set_ok": 1,
+     "thit": {},
+     "vivify": [
+      "cat:ascending",
+      "cat:descending"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.18758951699996,
+    "state": {
+     "count": 4,
+     "current": "sn",
+     "family": "SThought::SCat",
+     "hit": {
+      "cat:ascending": 100
+     },
+     "older": [
+      "f",
+      "sl",
+      "sd",
+      "sa"
+     ],
+     "own": {
+      "cat:ascending": {
+       "sa": 100,
+       "sl": 100
+      },
+      "cat:descending": {
+       "sd": 100
+      },
+      "s:x": {
+       "f": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "sa",
+        "b": "sl"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "sa",
+        "b": "sn"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "f",
+      "sa",
+      "sd",
+      "sl",
+      "sn"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "sa": 4096,
+      "sl": 6400
+     },
+     "vivify": [
+      "cat:ascending",
+      "cat:descending",
+      "s:x"
+     ]
+    },
+    "value": {
+     "sf": 1
+    }
+   },
+   {
+    "error": null,
+    "rand": 0.990434079937664,
+    "state": {
+     "count": 4,
+     "current": "sn",
+     "family": "SThought::SCat",
+     "hit": {
+      "cat:ascending": 100
+     },
+     "older": [
+      "f",
+      "sl",
+      "sd",
+      "sa"
+     ],
+     "own": {
+      "cat:ascending": {
+       "sa": 100,
+       "sl": 100
+      },
+      "cat:descending": {
+       "sd": 100
+      },
+      "s:x": {
+       "f": 100
+      }
+     },
+     "rack": [
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "sa",
+        "b": "sl"
+       }
+      ],
+      [
+       "ActOnOverlappingThoughts",
+       100,
+       {
+        "a": "sa",
+        "b": "sn"
+       }
+      ]
+     ],
+     "ran": [],
+     "set": [
+      "f",
+      "sa",
+      "sd",
+      "sl",
+      "sn"
+     ],
+     "set_ok": 1,
+     "thit": {
+      "sa": 4096,
+      "sl": 6400
+     },
+     "vivify": [
+      "cat:ascending",
+      "cat:descending",
+      "s:x"
+     ]
+    },
+    "value": 0
+   }
+  ],
+  "thoughts": {
+   "f": {
+    "fringe": [
+     [
+      "s:x",
+      100
+     ]
+    ]
+   },
+   "sa": {
+    "cat": "ascending",
+    "kind": "scat"
+   },
+   "sd": {
+    "cat": "descending",
+    "kind": "scat"
+   },
+   "sl": {
+    "cat": "ascending",
+    "kind": "scat_list"
+   },
+   "sn": {
+    "cat": "ascending",
+    "kind": "scat_new"
+   }
+  }
+ }
+]

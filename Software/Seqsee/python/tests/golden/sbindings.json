@@ -1,0 +1,459 @@
+[
+ {
+  "all_slippage_types": [],
+  "binding_keys": [
+   "a"
+  ],
+  "dies": 0,
+  "label": "empty",
+  "metonymy_cat": null,
+  "metonymy_cat_dies": 1,
+  "metonymy_mode": "NONE",
+  "metonymy_name": null,
+  "metonymy_name_dies": 1,
+  "metonymy_type": null,
+  "op": "create",
+  "position": null,
+  "position_mode": null,
+  "slippage_positions": [],
+  "slippages": {},
+  "slippages_count": 0
+ },
+ {
+  "all_slippage_types": [
+   "type1"
+  ],
+  "binding_keys": [
+   "a"
+  ],
+  "dies": 0,
+  "label": "one at 0",
+  "metonymy_cat": "catA",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": "SINGLE",
+  "metonymy_name": "type1",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type1",
+  "op": "create",
+  "position": 1,
+  "position_mode": "FORWARD",
+  "slippage_positions": [
+   "0"
+  ],
+  "slippages": {
+   "0": "type1"
+  },
+  "slippages_count": 1
+ },
+ {
+  "all_slippage_types": [
+   "type1"
+  ],
+  "binding_keys": [
+   "a"
+  ],
+  "dies": 0,
+  "label": "one at 2",
+  "metonymy_cat": "catA",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": "SINGLE",
+  "metonymy_name": "type1",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type1",
+  "op": "create",
+  "position": 3,
+  "position_mode": "FORWARD",
+  "slippage_positions": [
+   "2"
+  ],
+  "slippages": {
+   "2": "type1"
+  },
+  "slippages_count": 1
+ },
+ {
+  "all_slippage_types": [
+   "type2"
+  ],
+  "binding_keys": [
+   "a"
+  ],
+  "dies": 0,
+  "label": "one at \"5\"",
+  "metonymy_cat": "catB",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": "SINGLE",
+  "metonymy_name": "type2",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type2",
+  "op": "create",
+  "position": 6,
+  "position_mode": "FORWARD",
+  "slippage_positions": [
+   "5"
+  ],
+  "slippages": {
+   "5": "type2"
+  },
+  "slippages_count": 1
+ },
+ {
+  "all_slippage_types": [
+   "type1"
+  ],
+  "binding_keys": [
+   "a"
+  ],
+  "dies": 0,
+  "label": "one at -2",
+  "metonymy_cat": "catA",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": "SINGLE",
+  "metonymy_name": "type1",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type1",
+  "op": "create",
+  "position": -1,
+  "position_mode": "FORWARD",
+  "slippage_positions": [
+   "-2"
+  ],
+  "slippages": {
+   "-2": "type1"
+  },
+  "slippages_count": 1
+ },
+ {
+  "all_slippage_types": [
+   "type1"
+  ],
+  "binding_keys": [
+   "a"
+  ],
+  "dies": 0,
+  "label": "one at \"abc\"",
+  "metonymy_cat": "catA",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": "SINGLE",
+  "metonymy_name": "type1",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type1",
+  "op": "create",
+  "position": 1,
+  "position_mode": "FORWARD",
+  "slippage_positions": [
+   "abc"
+  ],
+  "slippages": {
+   "abc": "type1"
+  },
+  "slippages_count": 1
+ },
+ {
+  "all_slippage_types": [
+   "type1"
+  ],
+  "binding_keys": [
+   "a"
+  ],
+  "dies": 0,
+  "label": "one at \"2.0\"",
+  "metonymy_cat": "catA",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": "SINGLE",
+  "metonymy_name": "type1",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type1",
+  "op": "create",
+  "position": 3,
+  "position_mode": "FORWARD",
+  "slippage_positions": [
+   "2.0"
+  ],
+  "slippages": {
+   "2.0": "type1"
+  },
+  "slippages_count": 1
+ },
+ {
+  "dies": 1,
+  "label": "one at -1",
+  "op": "create",
+  "slippages": {
+   "-1": "type1"
+  }
+ },
+ {
+  "dies": 1,
+  "label": "one at \"2.5\"",
+  "op": "create",
+  "slippages": {
+   "2.5": "type1"
+  }
+ },
+ {
+  "all_slippage_types": [
+   "type1",
+   "type1"
+  ],
+  "binding_keys": [
+   "a"
+  ],
+  "dies": 0,
+  "label": "two same type",
+  "metonymy_cat": "catA",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": null,
+  "metonymy_name": "type1",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type1",
+  "op": "create",
+  "position": null,
+  "position_mode": null,
+  "slippage_positions": [
+   "0",
+   "3"
+  ],
+  "slippages": {
+   "0": "type1",
+   "3": "type1"
+  },
+  "slippages_count": 2
+ },
+ {
+  "all_slippage_types": [
+   "type1",
+   "type2"
+  ],
+  "binding_keys": [
+   "a"
+  ],
+  "dies": 0,
+  "label": "two different types",
+  "metonymy_cat": null,
+  "metonymy_cat_dies": 1,
+  "metonymy_mode": null,
+  "metonymy_name": null,
+  "metonymy_name_dies": 1,
+  "metonymy_type": null,
+  "op": "create",
+  "position": null,
+  "position_mode": null,
+  "slippage_positions": [
+   "0",
+   "3"
+  ],
+  "slippages": {
+   "0": "type1",
+   "3": "type2"
+  },
+  "slippages_count": 2
+ },
+ {
+  "all_slippage_types": [
+   "type2",
+   "type2",
+   "type2"
+  ],
+  "binding_keys": [
+   "a"
+  ],
+  "dies": 0,
+  "label": "three same type",
+  "metonymy_cat": "catB",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": null,
+  "metonymy_name": "type2",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type2",
+  "op": "create",
+  "position": null,
+  "position_mode": null,
+  "slippage_positions": [
+   "1",
+   "2",
+   "4"
+  ],
+  "slippages": {
+   "1": "type2",
+   "2": "type2",
+   "4": "type2"
+  },
+  "slippages_count": 3
+ },
+ {
+  "a": 1,
+  "b": "x",
+  "length": 3,
+  "missing": null,
+  "op": "bindings",
+  "same_ref": 1
+ },
+ {
+  "c": 7,
+  "op": "bindings_live"
+ },
+ {
+  "op": "squinting_raw_shared",
+  "same_ref": 1
+ },
+ {
+  "dies": 1,
+  "op": "create_undef_slippages"
+ },
+ {
+  "dies": 1,
+  "op": "create_undef_bindings"
+ },
+ {
+  "dies": 1,
+  "op": "create_no_args"
+ },
+ {
+  "dies": 1,
+  "op": "create_array_bindings"
+ },
+ {
+  "dies": 1,
+  "op": "create_array_slippages"
+ },
+ {
+  "dies": 1,
+  "op": "new_missing_bindings"
+ },
+ {
+  "dies": 1,
+  "op": "new_missing_slippages"
+ },
+ {
+  "dies": 0,
+  "op": "new_hashref_extra_arg",
+  "x": 1
+ },
+ {
+  "all_slippage_types": [],
+  "binding_keys": [],
+  "metonymy_cat": null,
+  "metonymy_cat_dies": 1,
+  "metonymy_mode": "NONE",
+  "metonymy_name": null,
+  "metonymy_name_dies": 1,
+  "metonymy_type": null,
+  "op": "new_modes_empty",
+  "position": null,
+  "position_mode": "BACKWARD",
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "all_slippage_types": [
+   "type1"
+  ],
+  "binding_keys": [],
+  "metonymy_cat": "catA",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": "SINGLE",
+  "metonymy_name": "type1",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type1",
+  "op": "new_modes_one",
+  "position": 5,
+  "position_mode": "FORWARD",
+  "slippage_positions": [
+   "4"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "all_slippage_types": [
+   "type1",
+   "type1"
+  ],
+  "binding_keys": [],
+  "metonymy_cat": "catA",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": "ALL",
+  "metonymy_name": "type1",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type1",
+  "op": "new_modes_two_same",
+  "position": 2,
+  "position_mode": "BACKWARD",
+  "slippage_positions": [
+   "4",
+   "5"
+  ],
+  "slippages_count": 2
+ },
+ {
+  "all_slippage_types": [
+   "type1",
+   "type2"
+  ],
+  "binding_keys": [],
+  "metonymy_cat": "catB",
+  "metonymy_cat_dies": 0,
+  "metonymy_mode": null,
+  "metonymy_name": "type2",
+  "metonymy_name_dies": 0,
+  "metonymy_type": "type2",
+  "op": "new_type_two_different",
+  "position": null,
+  "position_mode": null,
+  "slippage_positions": [
+   "4",
+   "5"
+  ],
+  "slippages_count": 2
+ },
+ {
+  "dies": 0,
+  "op": "set_meto_mode",
+  "value": "ALLBUTONE"
+ },
+ {
+  "dies": 1,
+  "op": "set_meto_mode_bad"
+ },
+ {
+  "dies": 1,
+  "op": "set_meto_mode_pos_mode"
+ },
+ {
+  "dies": 1,
+  "op": "set_meto_mode_undef"
+ },
+ {
+  "dies": 0,
+  "op": "set_pos_mode",
+  "value": "BACKWARD"
+ },
+ {
+  "dies": 1,
+  "op": "set_pos_mode_bad"
+ },
+ {
+  "dies": 0,
+  "op": "set_position",
+  "value": -1
+ },
+ {
+  "dies": 1,
+  "op": "set_position_bad"
+ },
+ {
+  "cat": "catB",
+  "dies": 0,
+  "name": "type2",
+  "op": "set_meto_type"
+ },
+ {
+  "dies": 0,
+  "name_dies": 1,
+  "op": "set_meto_type_any"
+ },
+ {
+  "dies": 0,
+  "op": "tell_stories"
+ }
+]

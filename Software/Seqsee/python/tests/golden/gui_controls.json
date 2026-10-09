@@ -1,0 +1,675 @@
+[
+ {
+  "bindings": [
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_continue"
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_continue"
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "c"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_crawl",
+        30
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_crawl",
+        30
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "d"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_crawl",
+        300
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_crawl",
+        300
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "f"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_crawl",
+        700
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_crawl",
+        700
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "g"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_step_n",
+        {
+         "n": 5
+        }
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_step_n",
+        {
+         "n": 5
+        }
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "h"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_step_n",
+        {
+         "n": 25
+        }
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_step_n",
+        {
+         "n": 25
+        }
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "j"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_step_n",
+        {
+         "n": 50
+        }
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_step_n",
+        {
+         "n": 50
+        }
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "k"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_step_n",
+        {
+         "n": 100
+        }
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_step_n",
+        {
+         "n": 100
+        }
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "l"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": 1
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": 0
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": 1
+      },
+      "calls": [],
+      "printed": ""
+     }
+    ],
+    "sequence": "m"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 1,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 1,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 1,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [],
+      "printed": ""
+     }
+    ],
+    "sequence": "p"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "exit"
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "exit"
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "q"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_step"
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "Interaction_step"
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "s"
+   },
+   {
+    "effects": [
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "SGUI::ask_seq"
+       ]
+      ],
+      "printed": ""
+     },
+     {
+      "after": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "before": {
+       "Break_Loop": 0,
+       "InterstepSleep": 0,
+       "debugMAX": null
+      },
+      "calls": [
+       [
+        "SGUI::ask_seq"
+       ]
+      ],
+      "printed": ""
+     }
+    ],
+    "sequence": "x"
+   }
+  ],
+  "buttons": [
+   {
+    "class": "Tk::SCodeletCount",
+    "side": "right",
+    "text": ""
+   },
+   {
+    "class": "Tk::Button",
+    "effect": {
+     "after": {
+      "Break_Loop": 0,
+      "InterstepSleep": 0,
+      "debugMAX": null
+     },
+     "before": {
+      "Break_Loop": 0,
+      "InterstepSleep": 0,
+      "debugMAX": null
+     },
+     "calls": [
+      [
+       "Interaction_continue"
+      ]
+     ],
+     "printed": ""
+    },
+    "side": "left",
+    "text": "Start"
+   },
+   {
+    "class": "Tk::Button",
+    "effect": {
+     "after": {
+      "Break_Loop": 1,
+      "InterstepSleep": 0,
+      "debugMAX": null
+     },
+     "before": {
+      "Break_Loop": 0,
+      "InterstepSleep": 0,
+      "debugMAX": null
+     },
+     "calls": [],
+     "printed": ""
+    },
+    "side": "left",
+    "text": "Pause"
+   },
+   {
+    "class": "Tk::Button",
+    "effect": {
+     "after": {
+      "Break_Loop": 0,
+      "InterstepSleep": 0,
+      "debugMAX": null
+     },
+     "before": {
+      "Break_Loop": 0,
+      "InterstepSleep": 0,
+      "debugMAX": null
+     },
+     "calls": [
+      [
+       "Tk::exit"
+      ]
+     ],
+     "printed": "ATTEMPTING TO QUIT\n"
+    },
+    "side": "left",
+    "text": "Quit"
+   }
+  ],
+  "config": "config/GUI_sparse.conf",
+  "count": {
+   "font": "-adobe-helvetica-bold-r-normal--20-140-100-100-p-105-iso8859-4",
+   "font_actual": {
+    "-family": "Nimbus Sans",
+    "-overstrike": 0,
+    "-size": -20,
+    "-slant": "roman",
+    "-underline": 0,
+    "-weight": "bold"
+   },
+   "text": {
+    "0": "0",
+    "17": "17",
+    "undef": "0"
+   },
+   "text_initial": ""
+  },
+  "frames": [
+   {
+    "class": "Tk::Frame",
+    "name": "button_frame",
+    "side": "top"
+   },
+   {
+    "class": "Tk::Seqsee",
+    "name": "Workspace",
+    "side": "top"
+   },
+   {
+    "class": "Tk::SCommentary",
+    "name": "Commentary",
+    "side": "top"
+   },
+   {
+    "class": "Tk::SCodeletCount",
+    "name": "Count",
+    "side": "right"
+   }
+  ],
+  "geometry": "810x700+0+0",
+  "name": "controls",
+  "scale_config": {
+   "-from": "0",
+   "-length": "284",
+   "-orient": "horizontal",
+   "-tickinterval": "10",
+   "-to": "40",
+   "-variable": "!\\$Global::InterstepSleep"
+  }
+ }
+]

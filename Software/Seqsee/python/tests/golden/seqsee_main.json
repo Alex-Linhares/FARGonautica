@@ -1,0 +1,2836 @@
+[
+ {
+  "case": "config_empty",
+  "error": null,
+  "output": "View: 1!\n",
+  "result": {
+   "DecayRate": "0.98",
+   "ScheduledThoughtVanishProb": "0.3",
+   "UseScheduledThoughtProb": "0.85",
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "seed_given": null,
+  "seed_is_int": 1
+ },
+ {
+  "case": "config_spaces",
+  "error": null,
+  "output": "View: 1!\n",
+  "result": {
+   "DecayRate": "0.98",
+   "ScheduledThoughtVanishProb": "0.3",
+   "UseScheduledThoughtProb": "0.85",
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [
+    "1",
+    "2",
+    "3"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "seed_given": null,
+  "seed_is_int": 1
+ },
+ {
+  "case": "config_commas",
+  "error": null,
+  "output": "View: 1!\n",
+  "result": {
+   "DecayRate": "0.98",
+   "ScheduledThoughtVanishProb": "0.3",
+   "UseScheduledThoughtProb": "0.85",
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [
+    "1",
+    "2",
+    "3"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "seed_given": null,
+  "seed_is_int": 1
+ },
+ {
+  "case": "config_leading_comma",
+  "error": null,
+  "output": "View: 1!\n",
+  "result": {
+   "DecayRate": "0.98",
+   "ScheduledThoughtVanishProb": "0.3",
+   "UseScheduledThoughtProb": "0.85",
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [
+    "",
+    "1",
+    "2"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "seed_given": null,
+  "seed_is_int": 1
+ },
+ {
+  "case": "config_trailing_newline",
+  "error": null,
+  "output": "View: 1!\n",
+  "result": {
+   "DecayRate": "0.98",
+   "ScheduledThoughtVanishProb": "0.3",
+   "UseScheduledThoughtProb": "0.85",
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [
+    "1",
+    "2"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "seed_given": null,
+  "seed_is_int": 1
+ },
+ {
+  "case": "config_zero",
+  "error": null,
+  "output": "View: 1!\n",
+  "result": {
+   "DecayRate": "0.98",
+   "ScheduledThoughtVanishProb": "0.3",
+   "UseScheduledThoughtProb": "0.85",
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [
+    "0"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "seed_given": null,
+  "seed_is_int": 1
+ },
+ {
+  "case": "config_blank",
+  "error": null,
+  "output": "View: 1!\n",
+  "result": {
+   "DecayRate": "0.98",
+   "ScheduledThoughtVanishProb": "0.3",
+   "UseScheduledThoughtProb": "0.85",
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "seed_given": null,
+  "seed_is_int": 1
+ },
+ {
+  "case": "config_letters",
+  "error": "The option --seq must be a space or comma separated list of integers; I got '1 a' instead",
+  "output": "",
+  "result": null,
+  "seed_given": null,
+  "seed_is_int": 0
+ },
+ {
+  "case": "config_negative",
+  "error": "The option --seq must be a space or comma separated list of integers; I got '-1 2' instead",
+  "output": "",
+  "result": null,
+  "seed_given": null,
+  "seed_is_int": 0
+ },
+ {
+  "case": "config_decimal",
+  "error": "The option --seq must be a space or comma separated list of integers; I got '1.5' instead",
+  "output": "",
+  "result": null,
+  "seed_given": null,
+  "seed_is_int": 0
+ },
+ {
+  "case": "config_overrides",
+  "error": null,
+  "output": "View: 2!\n",
+  "result": {
+   "DecayRate": 0.5,
+   "ScheduledThoughtVanishProb": 0,
+   "UseScheduledThoughtProb": 1,
+   "gui_config": "X",
+   "max_steps": 50,
+   "seq": [
+    "4"
+   ],
+   "update_interval": 3,
+   "view": 2
+  },
+  "seed_given": 7,
+  "seed_is_int": 1
+ },
+ {
+  "case": "config_undef_override",
+  "error": null,
+  "output": "View: 1!\n",
+  "result": {
+   "DecayRate": "0.98",
+   "ScheduledThoughtVanishProb": "0.3",
+   "UseScheduledThoughtProb": "0.85",
+   "gui_config": "GUI_sparse",
+   "max_steps": null,
+   "seq": [
+    "4"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "seed_given": null,
+  "seed_is_int": 1
+ },
+ {
+  "case": "config_extra_ignored",
+  "error": null,
+  "output": "View: 1!\n",
+  "result": {
+   "DecayRate": "0.98",
+   "ScheduledThoughtVanishProb": "0.3",
+   "UseScheduledThoughtProb": "0.85",
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [
+    "5"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "seed_given": null,
+  "seed_is_int": 1
+ },
+ {
+  "argv": [],
+  "case": "cmd_none",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {},
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_seed_seq",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "seed": 5,
+   "seq": "1 2 3"
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_single_dash_eq",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "max_steps": 100,
+   "n": 100,
+   "seed": 5
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_max_steps_and_n",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "max_steps": 10,
+   "n": 20
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_n_only",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "max_steps": 20,
+   "n": 20
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_gui",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "gui": "X",
+   "gui_config": "X"
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_gui_config_and_gui",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "gui": "B",
+   "gui_config": "A"
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_sanity",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "sanity": 1
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_nosanity",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "sanity": 0
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_no_dash_sanity",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "sanity": 0
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [
+   "extra",
+   "args"
+  ],
+  "case": "cmd_view_extra",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "view": 3
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_features",
+  "debugMAX": 1,
+  "error": null,
+  "features": [
+   "LTM",
+   "debugMAX"
+  ],
+  "options": {},
+  "output": "LTM will be turned on\ndebugMAX will be turned on\n",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_feature_typo",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "seed": 3
+  },
+  "output": "Bogus will be turned on\nNo feature Bogus. Typo?\n",
+  "warnings": [
+   "EXIT\n"
+  ]
+ },
+ {
+  "argv": [],
+  "case": "cmd_bad_int",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {},
+  "output": "",
+  "warnings": [
+   "Value \"abc\" invalid for option seed (number expected)\n"
+  ]
+ },
+ {
+  "argv": [],
+  "case": "cmd_unknown",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "view": 1
+  },
+  "output": "",
+  "warnings": [
+   "Unknown option: bogus\n"
+  ]
+ },
+ {
+  "argv": [
+   "5"
+  ],
+  "case": "cmd_ambiguous",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {},
+  "output": "",
+  "warnings": [
+   "Option se is ambiguous (seed, seq)\n"
+  ]
+ },
+ {
+  "argv": [],
+  "case": "cmd_abbrev",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "max_steps": 7,
+   "update_interval": 4
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_seq_eq",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "seq": "1,2"
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_negative_int",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "seed": -3
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [
+   "--seed",
+   "5"
+  ],
+  "case": "cmd_double_dash",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "view": 2
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_missing_value",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {},
+  "output": "",
+  "warnings": [
+   "Option seed requires an argument\n"
+  ]
+ },
+ {
+  "argv": [],
+  "case": "cmd_repeat",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "seed": 2
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_plus_int",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "seed": 4
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "argv": [],
+  "case": "cmd_case",
+  "debugMAX": null,
+  "error": null,
+  "features": [],
+  "options": {
+   "seed": 6
+  },
+  "output": "",
+  "warnings": []
+ },
+ {
+  "break_loop": null,
+  "case": "bg_early_1",
+  "checker": 0,
+  "coderack": [
+   [
+    "FocusOn",
+    50,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.454492444728629,
+  "ran": [],
+  "sanities": 0,
+  "seed": 1,
+  "steps": 5,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_early_2",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.159082908972294,
+  "ran": [],
+  "sanities": 0,
+  "seed": 2,
+  "steps": 5,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_early_3",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.86367337321596,
+  "ran": [],
+  "sanities": 0,
+  "seed": 3,
+  "steps": 5,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_early_4",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.568263837459625,
+  "ran": [],
+  "sanities": 0,
+  "seed": 4,
+  "steps": 5,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_early_5",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.272854301703291,
+  "ran": [],
+  "sanities": 0,
+  "seed": 5,
+  "steps": 5,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_early_6",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.977444765946956,
+  "ran": [],
+  "sanities": 0,
+  "seed": 6,
+  "steps": 5,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_toss_1",
+  "checker": 0,
+  "coderack": [
+   [
+    "FocusOn",
+    50,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.834817218166915,
+  "ran": [],
+  "sanities": 0,
+  "seed": 1,
+  "steps": 30,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_toss_2",
+  "checker": 30,
+  "coderack": [
+   [
+    "CheckProgress",
+    100,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.573262780710262,
+  "ran": [],
+  "sanities": 0,
+  "seed": 2,
+  "steps": 30,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_toss_3",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.31170834325361,
+  "ran": [],
+  "sanities": 0,
+  "seed": 3,
+  "steps": 30,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_toss_4",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.0501539057969573,
+  "ran": [],
+  "sanities": 0,
+  "seed": 4,
+  "steps": 30,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_toss_5",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.788599468340305,
+  "ran": [],
+  "sanities": 0,
+  "seed": 5,
+  "steps": 30,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_toss_6",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.527045030883652,
+  "ran": [],
+  "sanities": 0,
+  "seed": 6,
+  "steps": 30,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_sure_1",
+  "checker": 200,
+  "coderack": [
+   [
+    "FocusOn",
+    50,
+    null
+   ],
+   [
+    "CheckProgress",
+    100,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.834817218166915,
+  "ran": [],
+  "sanities": 0,
+  "seed": 1,
+  "steps": 200,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_sure_2",
+  "checker": 200,
+  "coderack": [
+   [
+    "CheckProgress",
+    100,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.573262780710262,
+  "ran": [],
+  "sanities": 0,
+  "seed": 2,
+  "steps": 200,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_sure_3",
+  "checker": 200,
+  "coderack": [
+   [
+    "CheckProgress",
+    100,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.31170834325361,
+  "ran": [],
+  "sanities": 0,
+  "seed": 3,
+  "steps": 200,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_sure_4",
+  "checker": 200,
+  "coderack": [
+   [
+    "CheckProgress",
+    100,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.0501539057969573,
+  "ran": [],
+  "sanities": 0,
+  "seed": 4,
+  "steps": 200,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_sure_5",
+  "checker": 200,
+  "coderack": [
+   [
+    "CheckProgress",
+    100,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.788599468340305,
+  "ran": [],
+  "sanities": 0,
+  "seed": 5,
+  "steps": 200,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_sure_6",
+  "checker": 200,
+  "coderack": [
+   [
+    "CheckProgress",
+    100,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.527045030883652,
+  "ran": [],
+  "sanities": 0,
+  "seed": 6,
+  "steps": 200,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_recent_1",
+  "checker": 30,
+  "coderack": [
+   [
+    "FocusOn",
+    50,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.454492444728629,
+  "ran": [],
+  "sanities": 0,
+  "seed": 1,
+  "steps": 41,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_recent_2",
+  "checker": 30,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.159082908972294,
+  "ran": [],
+  "sanities": 0,
+  "seed": 2,
+  "steps": 41,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_recent_3",
+  "checker": 30,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.86367337321596,
+  "ran": [],
+  "sanities": 0,
+  "seed": 3,
+  "steps": 41,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_recent_4",
+  "checker": 30,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.568263837459625,
+  "ran": [],
+  "sanities": 0,
+  "seed": 4,
+  "steps": 41,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_recent_5",
+  "checker": 30,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.272854301703291,
+  "ran": [],
+  "sanities": 0,
+  "seed": 5,
+  "steps": 41,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_recent_6",
+  "checker": 30,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.977444765946956,
+  "ran": [],
+  "sanities": 0,
+  "seed": 6,
+  "steps": 41,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_21_1",
+  "checker": 30,
+  "coderack": [
+   [
+    "FocusOn",
+    50,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.834817218166915,
+  "ran": [],
+  "sanities": 0,
+  "seed": 1,
+  "steps": 51,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_21_2",
+  "checker": 51,
+  "coderack": [
+   [
+    "CheckProgress",
+    100,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.573262780710262,
+  "ran": [],
+  "sanities": 0,
+  "seed": 2,
+  "steps": 51,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_21_3",
+  "checker": 30,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.31170834325361,
+  "ran": [],
+  "sanities": 0,
+  "seed": 3,
+  "steps": 51,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_21_4",
+  "checker": 30,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.0501539057969573,
+  "ran": [],
+  "sanities": 0,
+  "seed": 4,
+  "steps": 51,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_21_5",
+  "checker": 51,
+  "coderack": [
+   [
+    "CheckProgress",
+    100,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.788599468340305,
+  "ran": [],
+  "sanities": 0,
+  "seed": 5,
+  "steps": 51,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_checker_21_6",
+  "checker": 30,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.527045030883652,
+  "ran": [],
+  "sanities": 0,
+  "seed": 6,
+  "steps": 51,
+  "strengths": 0,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_new_structure_1",
+  "checker": 0,
+  "coderack": [
+   [
+    "FocusOn",
+    50,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.834817218166915,
+  "ran": [],
+  "sanities": 0,
+  "seed": 1,
+  "steps": 61,
+  "strengths": 0,
+  "tons": 61,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_new_structure_2",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.573262780710262,
+  "ran": [],
+  "sanities": 0,
+  "seed": 2,
+  "steps": 61,
+  "strengths": 0,
+  "tons": 61,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_new_structure_3",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.31170834325361,
+  "ran": [],
+  "sanities": 0,
+  "seed": 3,
+  "steps": 61,
+  "strengths": 0,
+  "tons": 61,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_new_structure_4",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.0501539057969573,
+  "ran": [],
+  "sanities": 0,
+  "seed": 4,
+  "steps": 61,
+  "strengths": 0,
+  "tons": 61,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_new_structure_5",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.788599468340305,
+  "ran": [],
+  "sanities": 0,
+  "seed": 5,
+  "steps": 61,
+  "strengths": 0,
+  "tons": 61,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_new_structure_6",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "next_draw": 0.527045030883652,
+  "ran": [],
+  "sanities": 0,
+  "seed": 6,
+  "steps": 61,
+  "strengths": 0,
+  "tons": 61,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_1",
+  "checker": 0,
+  "coderack": [
+   [
+    "FocusOn",
+    50,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.454492444728629,
+  "ran": [],
+  "sanities": 0,
+  "seed": 1,
+  "steps": 10,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_2",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.159082908972294,
+  "ran": [],
+  "sanities": 0,
+  "seed": 2,
+  "steps": 10,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_3",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.86367337321596,
+  "ran": [],
+  "sanities": 0,
+  "seed": 3,
+  "steps": 10,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_4",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.568263837459625,
+  "ran": [],
+  "sanities": 0,
+  "seed": 4,
+  "steps": 10,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_5",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.272854301703291,
+  "ran": [],
+  "sanities": 0,
+  "seed": 5,
+  "steps": 10,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_6",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.977444765946956,
+  "ran": [],
+  "sanities": 0,
+  "seed": 6,
+  "steps": 10,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_zero_1",
+  "checker": 0,
+  "coderack": [
+   [
+    "FocusOn",
+    50,
+    null
+   ]
+  ],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.454492444728629,
+  "ran": [],
+  "sanities": 0,
+  "seed": 1,
+  "steps": 0,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_zero_2",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.159082908972294,
+  "ran": [],
+  "sanities": 0,
+  "seed": 2,
+  "steps": 0,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_zero_3",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.86367337321596,
+  "ran": [],
+  "sanities": 0,
+  "seed": 3,
+  "steps": 0,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_zero_4",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.568263837459625,
+  "ran": [],
+  "sanities": 0,
+  "seed": 4,
+  "steps": 0,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_zero_5",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.272854301703291,
+  "ran": [],
+  "sanities": 0,
+  "seed": 5,
+  "steps": 0,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_decay_zero_6",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 1,
+  "error": null,
+  "next_draw": 0.977444765946956,
+  "ran": [],
+  "sanities": 0,
+  "seed": 6,
+  "steps": 0,
+  "strengths": 1,
+  "tons": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "case": "bg_codelet_tree",
+  "checker": 0,
+  "coderack": [],
+  "current": "",
+  "decays": 0,
+  "error": null,
+  "log": "Background\n",
+  "next_draw": 0.159082908972294,
+  "ran": [],
+  "sanities": 0,
+  "steps": 3,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 5,
+    "update_after": 2
+   }
+  ],
+  "case": "step_basic_1",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 0,
+  "next_draw": 0.351209097790882,
+  "ran": [
+   "Probe:c",
+   "Probe:b",
+   "Probe:a",
+   "FocusOn",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:c",
+     "Probe:b",
+     "Probe:a",
+     "FocusOn",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 5
+   }
+  ],
+  "sanities": 5,
+  "steps": 5,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 3
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 5,
+    "update_after": 2
+   }
+  ],
+  "case": "step_basic_2",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 0,
+  "next_draw": 0.627090189597229,
+  "ran": [
+   "Probe:a",
+   "Probe:c",
+   "Probe:b",
+   "FocusOn",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:a",
+     "Probe:c",
+     "Probe:b",
+     "FocusOn",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 5
+   }
+  ],
+  "sanities": 5,
+  "steps": 5,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 3
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 5,
+    "update_after": 2
+   }
+  ],
+  "case": "step_basic_3",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 0,
+  "next_draw": 0.608630717558071,
+  "ran": [
+   "Probe:c",
+   "Probe:a",
+   "Probe:b",
+   "FocusOn",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:c",
+     "Probe:a",
+     "Probe:b",
+     "FocusOn",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 5
+   }
+  ],
+  "sanities": 5,
+  "steps": 5,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 3
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 5,
+    "update_after": 2
+   }
+  ],
+  "case": "step_basic_4",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 0,
+  "next_draw": 0.22980925726074,
+  "ran": [
+   "Probe:c",
+   "FocusOn",
+   "Probe:b",
+   "Probe:a",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:c",
+     "FocusOn",
+     "Probe:b",
+     "Probe:a",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 5
+   }
+  ],
+  "sanities": 5,
+  "steps": 5,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 3
+ },
+ {
+  "break_loop": null,
+  "calls": [
+   {
+    "max_steps": 100
+   }
+  ],
+  "case": "step_need_n",
+  "checker": 0,
+  "coderack": [
+   [
+    "Probe",
+    10,
+    "a"
+   ],
+   [
+    "Probe",
+    20,
+    "b"
+   ],
+   [
+    "Probe",
+    30,
+    "c"
+   ]
+  ],
+  "current": "",
+  "decays": 0,
+  "next_draw": 0.0416303447718782,
+  "ran": [],
+  "results": [
+   {
+    "error": "Need n",
+    "output": "",
+    "ran": [],
+    "ret": null,
+    "steps": 0
+   }
+  ],
+  "sanities": 0,
+  "steps": 0,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": null,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 0
+   }
+  ],
+  "case": "step_n_zero",
+  "checker": 0,
+  "coderack": [
+   [
+    "Probe",
+    10,
+    "a"
+   ],
+   [
+    "Probe",
+    20,
+    "b"
+   ],
+   [
+    "Probe",
+    30,
+    "c"
+   ]
+  ],
+  "current": "",
+  "decays": 0,
+  "next_draw": 0.0416303447718782,
+  "ran": [],
+  "results": [
+   {
+    "error": "Need n",
+    "output": "",
+    "ran": [],
+    "ret": null,
+    "steps": 0
+   }
+  ],
+  "sanities": 0,
+  "steps": 0,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 4,
+    "n": 10
+   },
+   {
+    "max_steps": 4,
+    "n": 10
+   }
+  ],
+  "case": "step_max_limits",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 0,
+  "next_draw": 0.25686935870036,
+  "ran": [
+   "Probe:b",
+   "Probe:a",
+   "Probe:c",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:b",
+     "Probe:a",
+     "Probe:c",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 4
+   },
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:b",
+     "Probe:a",
+     "Probe:c",
+     "FocusOn"
+    ],
+    "ret": 1,
+    "steps": 4
+   }
+  ],
+  "sanities": 4,
+  "steps": 4,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 1
+ },
+ {
+  "break_loop": null,
+  "calls": [
+   {
+    "n": 3
+   }
+  ],
+  "case": "step_no_max",
+  "checker": 0,
+  "coderack": [
+   [
+    "Probe",
+    10,
+    "a"
+   ],
+   [
+    "Probe",
+    20,
+    "b"
+   ],
+   [
+    "Probe",
+    30,
+    "c"
+   ]
+  ],
+  "current": "",
+  "decays": 0,
+  "next_draw": 0.0416303447718782,
+  "ran": [],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [],
+    "ret": 1,
+    "steps": 0
+   }
+  ],
+  "sanities": 0,
+  "steps": 0,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 10,
+    "n": 3
+   }
+  ],
+  "case": "step_update_default",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::Probe",
+  "decays": 0,
+  "next_draw": 0.66456633470656,
+  "ran": [
+   "Probe:c",
+   "Probe:b",
+   "Probe:a"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:c",
+     "Probe:b",
+     "Probe:a"
+    ],
+    "ret": null,
+    "steps": 3
+   }
+  ],
+  "sanities": 3,
+  "steps": 3,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 1
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 10,
+    "n": 3,
+    "update_after": 1
+   }
+  ],
+  "case": "step_update_every",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::Probe",
+  "decays": 0,
+  "next_draw": 0.66456633470656,
+  "ran": [
+   "Probe:c",
+   "Probe:b",
+   "Probe:a"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:c",
+     "Probe:b",
+     "Probe:a"
+    ],
+    "ret": null,
+    "steps": 3
+   }
+  ],
+  "sanities": 3,
+  "steps": 3,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 3
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 10,
+    "n": 4,
+    "update_after": 3
+   }
+  ],
+  "case": "step_update_3_of_4",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 0,
+  "next_draw": 0.0987731300238792,
+  "ran": [
+   "Probe:c",
+   "Probe:b",
+   "Probe:a",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:c",
+     "Probe:b",
+     "Probe:a",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 4
+   }
+  ],
+  "sanities": 4,
+  "steps": 4,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 2
+ },
+ {
+  "break_loop": 1,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 5,
+    "update_after": 2
+   }
+  ],
+  "case": "step_break",
+  "checker": 0,
+  "coderack": [
+   [
+    "Probe",
+    1,
+    "y"
+   ],
+   [
+    "FocusOn",
+    50,
+    null
+   ]
+  ],
+  "current": "Seqsee::SCF::Probe",
+  "decays": 0,
+  "next_draw": 0.265490593427,
+  "ran": [
+   "Probe:x"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:x"
+    ],
+    "ret": null,
+    "steps": 1
+   }
+  ],
+  "sanities": 1,
+  "steps": 1,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 1
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 5
+   }
+  ],
+  "case": "step_die",
+  "checker": 0,
+  "coderack": [
+   [
+    "FocusOn",
+    50,
+    null
+   ]
+  ],
+  "current": "Seqsee::SCF::Probe",
+  "decays": 0,
+  "next_draw": 0.00393615597034724,
+  "ran": [
+   "Probe:z"
+  ],
+  "results": [
+   {
+    "error": "probe died\n",
+    "output": "",
+    "ran": [
+     "Probe:z"
+    ],
+    "ret": null,
+    "steps": 1
+   }
+  ],
+  "sanities": 0,
+  "steps": 1,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 1000,
+    "n": 2
+   }
+  ],
+  "case": "step_trust_100",
+  "checker": 100,
+  "coderack": [
+   [
+    "Probe",
+    10,
+    "a"
+   ],
+   [
+    "Probe",
+    20,
+    "b"
+   ],
+   [
+    "Probe",
+    30,
+    "c"
+   ],
+   [
+    "FocusOn",
+    50,
+    null
+   ]
+  ],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 1,
+  "next_draw": 0.729508140808306,
+  "ran": [
+   "CheckProgress",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "CheckProgress",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 101
+   }
+  ],
+  "sanities": 2,
+  "steps": 101,
+  "strengths": 1,
+  "trust": 0.498,
+  "updates": 1
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 2000,
+    "n": 2
+   }
+  ],
+  "case": "step_print_1000",
+  "checker": 1000,
+  "coderack": [
+   [
+    "Probe",
+    10,
+    "a"
+   ],
+   [
+    "Probe",
+    30,
+    "c"
+   ]
+  ],
+  "current": "Seqsee::SCF::Probe",
+  "decays": 1,
+  "next_draw": 0.945475794360377,
+  "ran": [
+   "CheckProgress",
+   "Probe:b"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "@1000\n",
+    "ran": [
+     "CheckProgress",
+     "Probe:b"
+    ],
+    "ret": null,
+    "steps": 1001
+   }
+  ],
+  "sanities": 2,
+  "steps": 1001,
+  "strengths": 1,
+  "trust": 0.498,
+  "updates": 1
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 12
+   }
+  ],
+  "case": "step_empty_coderack",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 1,
+  "next_draw": 0.980791656039234,
+  "ran": [
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 12
+   }
+  ],
+  "sanities": 12,
+  "steps": 12,
+  "strengths": 1,
+  "trust": 0.5,
+  "updates": 1
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 3
+   }
+  ],
+  "case": "step_no_sanity",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::Probe",
+  "decays": 0,
+  "next_draw": 0.63693851595448,
+  "ran": [
+   "Probe:b",
+   "Probe:c",
+   "Probe:a"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:b",
+     "Probe:c",
+     "Probe:a"
+    ],
+    "ret": null,
+    "steps": 3
+   }
+  ],
+  "sanities": 0,
+  "steps": 3,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 1
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 6
+   }
+  ],
+  "case": "step_checker",
+  "checker": 0,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 1,
+  "next_draw": 0.46002011394086,
+  "ran": [
+   "Probe:q",
+   "Probe:p",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:q",
+     "Probe:p",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 31
+   }
+  ],
+  "sanities": 6,
+  "steps": 31,
+  "strengths": 1,
+  "trust": 0.5,
+  "updates": 1
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 40,
+    "update_after": 7
+   }
+  ],
+  "case": "step_long_14",
+  "checker": 22,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 4,
+  "next_draw": 0.179020969879669,
+  "ran": [
+   "Probe:p7",
+   "Probe:p5",
+   "Probe:p8",
+   "Probe:p2",
+   "Probe:p6",
+   "FocusOn",
+   "FocusOn",
+   "Probe:p3",
+   "FocusOn",
+   "FocusOn",
+   "Probe:p4",
+   "FocusOn",
+   "Probe:p1",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "CheckProgress",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:p7",
+     "Probe:p5",
+     "Probe:p8",
+     "Probe:p2",
+     "Probe:p6",
+     "FocusOn",
+     "FocusOn",
+     "Probe:p3",
+     "FocusOn",
+     "FocusOn",
+     "Probe:p4",
+     "FocusOn",
+     "Probe:p1",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "CheckProgress",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 40
+   }
+  ],
+  "sanities": 40,
+  "steps": 40,
+  "strengths": 4,
+  "trust": 0.5,
+  "updates": 6
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 40,
+    "update_after": 7
+   }
+  ],
+  "case": "step_long_15",
+  "checker": 26,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 4,
+  "next_draw": 0.970000152081163,
+  "ran": [
+   "Probe:p6",
+   "FocusOn",
+   "Probe:p2",
+   "FocusOn",
+   "Probe:p3",
+   "FocusOn",
+   "Probe:p8",
+   "FocusOn",
+   "Probe:p5",
+   "FocusOn",
+   "FocusOn",
+   "Probe:p4",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "Probe:p7",
+   "Probe:p1",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "CheckProgress",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:p6",
+     "FocusOn",
+     "Probe:p2",
+     "FocusOn",
+     "Probe:p3",
+     "FocusOn",
+     "Probe:p8",
+     "FocusOn",
+     "Probe:p5",
+     "FocusOn",
+     "FocusOn",
+     "Probe:p4",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "Probe:p7",
+     "Probe:p1",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "CheckProgress",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 40
+   }
+  ],
+  "sanities": 40,
+  "steps": 40,
+  "strengths": 4,
+  "trust": 0.5,
+  "updates": 6
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 40,
+    "update_after": 7
+   }
+  ],
+  "case": "step_long_16",
+  "checker": 21,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 4,
+  "next_draw": 0.985871189262248,
+  "ran": [
+   "Probe:p2",
+   "Probe:p6",
+   "Probe:p5",
+   "Probe:p7",
+   "FocusOn",
+   "Probe:p8",
+   "Probe:p3",
+   "FocusOn",
+   "FocusOn",
+   "Probe:p1",
+   "FocusOn",
+   "FocusOn",
+   "Probe:p4",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "CheckProgress",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:p2",
+     "Probe:p6",
+     "Probe:p5",
+     "Probe:p7",
+     "FocusOn",
+     "Probe:p8",
+     "Probe:p3",
+     "FocusOn",
+     "FocusOn",
+     "Probe:p1",
+     "FocusOn",
+     "FocusOn",
+     "Probe:p4",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "CheckProgress",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 40
+   }
+  ],
+  "sanities": 40,
+  "steps": 40,
+  "strengths": 4,
+  "trust": 0.5,
+  "updates": 6
+ },
+ {
+  "break_loop": 0,
+  "calls": [
+   {
+    "max_steps": 100,
+    "n": 40,
+    "update_after": 7
+   }
+  ],
+  "case": "step_long_17",
+  "checker": 26,
+  "coderack": [],
+  "current": "Seqsee::SCF::FocusOn",
+  "decays": 4,
+  "next_draw": 0.737951633741609,
+  "ran": [
+   "Probe:p7",
+   "Probe:p8",
+   "Probe:p4",
+   "FocusOn",
+   "Probe:p3",
+   "Probe:p2",
+   "Probe:p6",
+   "Probe:p5",
+   "Probe:p1",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "CheckProgress",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn",
+   "FocusOn"
+  ],
+  "results": [
+   {
+    "error": null,
+    "output": "",
+    "ran": [
+     "Probe:p7",
+     "Probe:p8",
+     "Probe:p4",
+     "FocusOn",
+     "Probe:p3",
+     "Probe:p2",
+     "Probe:p6",
+     "Probe:p5",
+     "Probe:p1",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "CheckProgress",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn",
+     "FocusOn"
+    ],
+    "ret": null,
+    "steps": 40
+   }
+  ],
+  "sanities": 40,
+  "steps": 40,
+  "strengths": 4,
+  "trust": 0.5,
+  "updates": 6
+ },
+ {
+  "break_loop": null,
+  "case": "seqsee_step_return",
+  "checker": 0,
+  "coderack": [
+   [
+    "Probe",
+    10,
+    "a"
+   ],
+   [
+    "Probe",
+    20,
+    "b"
+   ]
+  ],
+  "current": "Seqsee::SCF::Probe",
+  "decays": 0,
+  "defined": 0,
+  "error": null,
+  "next_draw": 0.31170834325361,
+  "ran": [
+   "Probe:c"
+  ],
+  "ret": null,
+  "sanities": 1,
+  "steps": 1,
+  "strengths": 0,
+  "trust": 0.5,
+  "updates": 0
+ },
+ {
+  "case": "run_list",
+  "codelets": 0,
+  "elements": 0,
+  "error": "Can't use string (\"1\") as a HASH ref while \"strict refs\" in use",
+  "output": ""
+ },
+ {
+  "case": "run_hashref",
+  "codelets": [
+   [
+    "FocusOn",
+    "100",
+    null
+   ],
+   [
+    "FocusOn",
+    "50",
+    null
+   ]
+  ],
+  "elements": 2,
+  "error": "Undefined subroutine &Seqsee::_SeqseeMainLoop called",
+  "output": "Initializing Coderack...\nInitializing SLTM...\n",
+  "real": [
+   4,
+   5
+  ]
+ },
+ {
+  "case": "run_empty",
+  "elements": 0,
+  "error": "Can't use an undefined value as an ARRAY reference",
+  "output": ""
+ }
+]

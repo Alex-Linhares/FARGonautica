@@ -1,0 +1,2273 @@
+[
+ {
+  "as_text_is_name": 1,
+  "cat": "alt",
+  "class": "SCategory::Alternating",
+  "deps": [
+   "plat5",
+   "plat3"
+  ],
+  "deps_are_objects": 1,
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 0,
+  "is_pure": 1,
+  "kind": "basics",
+  "meto_types": [],
+  "name": "plat5 or plat3",
+  "name_is_o1_or_o2": 1,
+  "objects": [
+   "plat3",
+   "plat5"
+  ],
+  "objects_are_platonic": [
+   "SLTM::Platonic",
+   "SLTM::Platonic"
+  ],
+  "sorted_by_string": 1
+ },
+ {
+  "as_text_is_name": 1,
+  "cat": "alt12",
+  "class": "SCategory::Alternating",
+  "deps": [
+   "plat[1,2]",
+   "plat3"
+  ],
+  "deps_are_objects": 1,
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 0,
+  "is_pure": 1,
+  "kind": "basics",
+  "meto_types": [],
+  "name": "plat[1,2] or plat3",
+  "name_is_o1_or_o2": 1,
+  "objects": [
+   "plat3",
+   "plat[1,2]"
+  ],
+  "objects_are_platonic": [
+   "SLTM::Platonic",
+   "SLTM::Platonic"
+  ],
+  "sorted_by_string": 1
+ },
+ {
+  "as_text_is_name": 1,
+  "cat": "alt33",
+  "class": "SCategory::Alternating",
+  "deps": [
+   "plat3",
+   "plat3"
+  ],
+  "deps_are_objects": 1,
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 0,
+  "is_pure": 1,
+  "kind": "basics",
+  "meto_types": [],
+  "name": "plat3 or plat3",
+  "name_is_o1_or_o2": 1,
+  "objects": [
+   "plat3",
+   "plat3"
+  ],
+  "objects_are_platonic": [
+   "SLTM::Platonic",
+   "SLTM::Platonic"
+  ],
+  "sorted_by_string": 1
+ },
+ {
+  "different": 0,
+  "kind": "create",
+  "label": "memo",
+  "new_is_not_memo": 0,
+  "other_objs_same": 1,
+  "platonics_same": 1,
+  "reversed_same": 1,
+  "self_alt_name": "plat3 or plat3",
+  "self_alt_objects": [
+   "plat3",
+   "plat3"
+  ],
+  "self_alt_same_obj": 1
+ },
+ {
+  "died": 1,
+  "error": "Attribute (object1) is required at constructor SCategory::Alternating::new (defined",
+  "kind": "create_dies",
+  "label": "missing object1"
+ },
+ {
+  "died": 1,
+  "error": "Attribute (object2) is required at constructor SCategory::Alternating::new (defined",
+  "kind": "create_dies",
+  "label": "missing object2"
+ },
+ {
+  "died": 1,
+  "error": "Attribute (object1) is required at constructor SCategory::Alternating::new (defined",
+  "kind": "create_dies",
+  "label": "empty"
+ },
+ {
+  "as_text_after": "plat3 or plat5",
+  "deps_after": [
+   "plat7",
+   "plat5"
+  ],
+  "kind": "memoize",
+  "name_after": "plat3 or plat5",
+  "name_after_list_context": "plat7 or plat5",
+  "name_before": "plat3 or plat5",
+  "object1_after": "plat7",
+  "unnamed_set_as_text": "plat3 or plat7",
+  "unnamed_set_name": "plat3 or plat7"
+ },
+ {
+  "atts": [],
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "which"
+  ],
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "x"
+  ],
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "x",
+   "which"
+  ],
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "which",
+   "which"
+  ],
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "Which"
+  ],
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "whic"
+  ],
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "which "
+  ],
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "bindings": {
+   "which": "SInt(1)"
+  },
+  "cat": "alt",
+  "defined": 1,
+  "kind": "instancer",
+  "metonymy_mode": "NONE",
+  "pure": "3",
+  "ref": "SBindings",
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "which": "SInt(0)"
+  },
+  "cat": "alt",
+  "defined": 1,
+  "kind": "instancer",
+  "metonymy_mode": "NONE",
+  "pure": "5",
+  "ref": "SBindings",
+  "slippages_count": 0
+ },
+ {
+  "cat": "alt",
+  "defined": 0,
+  "kind": "instancer",
+  "pure": "7"
+ },
+ {
+  "cat": "alt",
+  "defined": 0,
+  "kind": "instancer",
+  "pure": "[1,2]"
+ },
+ {
+  "bindings": {
+   "which": "SInt(1)"
+  },
+  "cat": "alt12",
+  "defined": 1,
+  "kind": "instancer",
+  "metonymy_mode": "NONE",
+  "pure": "3",
+  "ref": "SBindings",
+  "slippages_count": 0
+ },
+ {
+  "cat": "alt12",
+  "defined": 0,
+  "kind": "instancer",
+  "pure": "5"
+ },
+ {
+  "cat": "alt12",
+  "defined": 0,
+  "kind": "instancer",
+  "pure": "7"
+ },
+ {
+  "bindings": {
+   "which": "SInt(0)"
+  },
+  "cat": "alt12",
+  "defined": 1,
+  "kind": "instancer",
+  "metonymy_mode": "NONE",
+  "pure": "[1,2]",
+  "ref": "SBindings",
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "which": "SInt(0)"
+  },
+  "cat": "alt33",
+  "defined": 1,
+  "kind": "instancer",
+  "metonymy_mode": "NONE",
+  "pure": "3",
+  "ref": "SBindings",
+  "slippages_count": 0
+ },
+ {
+  "cat": "alt33",
+  "defined": 0,
+  "kind": "instancer",
+  "pure": "5"
+ },
+ {
+  "cat": "alt33",
+  "defined": 0,
+  "kind": "instancer",
+  "pure": "7"
+ },
+ {
+  "cat": "alt33",
+  "defined": 0,
+  "kind": "instancer",
+  "pure": "[1,2]"
+ },
+ {
+  "a": "3",
+  "b": "3",
+  "cat": "alt",
+  "cat_is_self": 1,
+  "kind": "find_mapping",
+  "result": "Num(no_flip,Alt(plat3|plat5))"
+ },
+ {
+  "a": "5",
+  "b": "5",
+  "cat": "alt",
+  "cat_is_self": 1,
+  "kind": "find_mapping",
+  "result": "Num(no_flip,Alt(plat3|plat5))"
+ },
+ {
+  "a": "3",
+  "b": "5",
+  "cat": "alt",
+  "cat_is_self": 1,
+  "kind": "find_mapping",
+  "result": "Num(flip,Alt(plat3|plat5))"
+ },
+ {
+  "a": "5",
+  "b": "3",
+  "cat": "alt",
+  "cat_is_self": 1,
+  "kind": "find_mapping",
+  "result": "Num(flip,Alt(plat3|plat5))"
+ },
+ {
+  "a": "7",
+  "b": "7",
+  "cat": "alt",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "3",
+  "b": "7",
+  "cat": "alt",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "7",
+  "b": "3",
+  "cat": "alt",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "7",
+  "b": "5",
+  "cat": "alt",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "[1,2]",
+  "b": "3",
+  "cat": "alt",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "[1,2]",
+  "b": "[1,2]",
+  "cat": "alt",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "3",
+  "b": "3",
+  "cat": "alt12",
+  "cat_is_self": 1,
+  "kind": "find_mapping",
+  "result": "Num(no_flip,Alt(plat3|plat[1,2]))"
+ },
+ {
+  "a": "5",
+  "b": "5",
+  "cat": "alt12",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "3",
+  "b": "5",
+  "cat": "alt12",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "5",
+  "b": "3",
+  "cat": "alt12",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "7",
+  "b": "7",
+  "cat": "alt12",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "3",
+  "b": "7",
+  "cat": "alt12",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "7",
+  "b": "3",
+  "cat": "alt12",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "7",
+  "b": "5",
+  "cat": "alt12",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "[1,2]",
+  "b": "3",
+  "cat": "alt12",
+  "cat_is_self": 1,
+  "kind": "find_mapping",
+  "result": "Num(flip,Alt(plat3|plat[1,2]))"
+ },
+ {
+  "a": "[1,2]",
+  "b": "[1,2]",
+  "cat": "alt12",
+  "cat_is_self": 1,
+  "kind": "find_mapping",
+  "result": "Num(no_flip,Alt(plat3|plat[1,2]))"
+ },
+ {
+  "a": "3",
+  "b": "3",
+  "cat": "alt33",
+  "cat_is_self": 1,
+  "kind": "find_mapping",
+  "result": "Num(no_flip,Alt(plat3|plat3))"
+ },
+ {
+  "a": "5",
+  "b": "5",
+  "cat": "alt33",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "3",
+  "b": "5",
+  "cat": "alt33",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "5",
+  "b": "3",
+  "cat": "alt33",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "7",
+  "b": "7",
+  "cat": "alt33",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "3",
+  "b": "7",
+  "cat": "alt33",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "7",
+  "b": "3",
+  "cat": "alt33",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "7",
+  "b": "5",
+  "cat": "alt33",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "[1,2]",
+  "b": "3",
+  "cat": "alt33",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "[1,2]",
+  "b": "[1,2]",
+  "cat": "alt33",
+  "cat_is_self": 0,
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 1,
+  "kind": "apply",
+  "original": "obj 3",
+  "result": "Built(5)",
+  "transform": "flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 1,
+  "kind": "apply",
+  "original": "obj 5",
+  "result": "Built(3)",
+  "transform": "flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 7",
+  "result": null,
+  "transform": "flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj [1,2]",
+  "result": null,
+  "transform": "flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 3",
+  "result": "5",
+  "transform": "flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 5",
+  "result": "3",
+  "transform": "flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 7",
+  "result": null,
+  "transform": "flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1,2]",
+  "result": null,
+  "transform": "flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1, 2]",
+  "result": null,
+  "transform": "flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 1,
+  "kind": "apply",
+  "original": "obj 3",
+  "result": "Built(3)",
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 1,
+  "kind": "apply",
+  "original": "obj 5",
+  "result": "Built(5)",
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 7",
+  "result": null,
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj [1,2]",
+  "result": null,
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 3",
+  "result": "3",
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 5",
+  "result": "5",
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 7",
+  "result": null,
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1,2]",
+  "result": null,
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1, 2]",
+  "result": null,
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 3",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 5",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 7",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj [1,2]",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 3",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 5",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 7",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1,2]",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1, 2]",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 3",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 5",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 7",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj [1,2]",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 3",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 5",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 7",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1,2]",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1, 2]",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 3",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 5",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 7",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj [1,2]",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 3",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 5",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 7",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1,2]",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1, 2]",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 1,
+  "kind": "apply",
+  "original": "obj 3",
+  "result": "Built([1,2])",
+  "transform": "flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 5",
+  "result": null,
+  "transform": "flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 7",
+  "result": null,
+  "transform": "flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 1,
+  "kind": "apply",
+  "original": "obj [1,2]",
+  "result": "Built(3)",
+  "transform": "flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 3",
+  "result": "[1,2]",
+  "transform": "flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 5",
+  "result": null,
+  "transform": "flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 7",
+  "result": null,
+  "transform": "flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1,2]",
+  "result": "3",
+  "transform": "flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1, 2]",
+  "result": null,
+  "transform": "flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 1,
+  "kind": "apply",
+  "original": "obj 3",
+  "result": "Built(3)",
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 5",
+  "result": null,
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 7",
+  "result": null,
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 1,
+  "kind": "apply",
+  "original": "obj [1,2]",
+  "result": "Built([1,2])",
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 3",
+  "result": "3",
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 5",
+  "result": null,
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 7",
+  "result": null,
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1,2]",
+  "result": "[1,2]",
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 0,
+  "error": null,
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1, 2]",
+  "result": null,
+  "transform": "no_flip"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 3",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 5",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 7",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj [1,2]",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 3",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 5",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 7",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1,2]",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1, 2]",
+  "result": null,
+  "transform": ""
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 3",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 5",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 7",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj [1,2]",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 3",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 5",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 7",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1,2]",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "transform without name! T<undef>",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1, 2]",
+  "result": null,
+  "transform": null
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 3",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 5",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj 7",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "obj [1,2]",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 3",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 5",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain 7",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1,2]",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here!",
+  "is_built": 0,
+  "kind": "apply",
+  "original": "plain [1, 2]",
+  "result": null,
+  "transform": "other"
+ },
+ {
+  "cat": "alt",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint 0",
+  "result": "Built(5)"
+ },
+ {
+  "cat": "alt",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint 1",
+  "result": "Built(3)"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here",
+  "kind": "build",
+  "label": "sint 2"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here",
+  "kind": "build",
+  "label": "sint -1"
+ },
+ {
+  "cat": "alt",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint \"0.0\"",
+  "result": "Built(5)"
+ },
+ {
+  "cat": "alt",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint \"1.0\"",
+  "result": "Built(3)"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here",
+  "kind": "build",
+  "label": "sint 0.5"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Should not be here",
+  "kind": "build",
+  "label": "sint undef"
+ },
+ {
+  "cat": "alt",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint \"abc\"",
+  "result": "Built(5)"
+ },
+ {
+  "cat": "alt",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint \"1abc\"",
+  "result": "Built(3)"
+ },
+ {
+  "cat": "alt",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint \"\"",
+  "result": "Built(5)"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "need which",
+  "kind": "build",
+  "label": "plain 0"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "Can't locate object method \"get_mag\" via package \"1\" (perhaps you forgot to load \"1\"?)",
+  "kind": "build",
+  "label": "plain 1"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "need which",
+  "kind": "build",
+  "label": "undef"
+ },
+ {
+  "cat": "alt",
+  "died": 1,
+  "error": "need which",
+  "kind": "build",
+  "label": "missing"
+ },
+ {
+  "cat": "alt",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "extra key",
+  "result": "Built(3)"
+ },
+ {
+  "cat": "alt12",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint 0",
+  "result": "Built([1,2])"
+ },
+ {
+  "cat": "alt12",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint 1",
+  "result": "Built(3)"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here",
+  "kind": "build",
+  "label": "sint 2"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here",
+  "kind": "build",
+  "label": "sint -1"
+ },
+ {
+  "cat": "alt12",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint \"0.0\"",
+  "result": "Built([1,2])"
+ },
+ {
+  "cat": "alt12",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint \"1.0\"",
+  "result": "Built(3)"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here",
+  "kind": "build",
+  "label": "sint 0.5"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Should not be here",
+  "kind": "build",
+  "label": "sint undef"
+ },
+ {
+  "cat": "alt12",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint \"abc\"",
+  "result": "Built([1,2])"
+ },
+ {
+  "cat": "alt12",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint \"1abc\"",
+  "result": "Built(3)"
+ },
+ {
+  "cat": "alt12",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "sint \"\"",
+  "result": "Built([1,2])"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "need which",
+  "kind": "build",
+  "label": "plain 0"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "Can't locate object method \"get_mag\" via package \"1\" (perhaps you forgot to load \"1\"?)",
+  "kind": "build",
+  "label": "plain 1"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "need which",
+  "kind": "build",
+  "label": "undef"
+ },
+ {
+  "cat": "alt12",
+  "died": 1,
+  "error": "need which",
+  "kind": "build",
+  "label": "missing"
+ },
+ {
+  "cat": "alt12",
+  "described_self": [
+   1
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "build",
+  "label": "extra key",
+  "result": "Built(3)"
+ },
+ {
+  "cat": "alt",
+  "cat_is_self": 1,
+  "kind": "flipping",
+  "result": "Num(flip,Alt(plat3|plat5))"
+ },
+ {
+  "cat": "alt12",
+  "cat_is_self": 1,
+  "kind": "flipping",
+  "result": "Num(flip,Alt(plat3|plat[1,2]))"
+ },
+ {
+  "cat": "alt33",
+  "cat_is_self": 1,
+  "kind": "flipping",
+  "result": "Num(flip,Alt(plat3|plat3))"
+ },
+ {
+  "described": [
+   [
+    "Alt(plat3|plat5)"
+   ],
+   [
+    "Alt(plat3|plat5)"
+   ],
+   [
+    "Alt(plat3|plat5)"
+   ]
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "objects alternate",
+  "messages": [
+   "CheckForAlternation: O3; O5; O3|1"
+  ],
+  "result": "Num(flip,Alt(plat3|plat5))",
+  "result_cat_is_memo": 1,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [
+    "Alt(plat3|plat5)"
+   ],
+   [
+    "Alt(plat3|plat5)"
+   ],
+   [
+    "Alt(plat3|plat5)"
+   ]
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "objects alternate, reversed",
+  "messages": [
+   "CheckForAlternation: O5; O3; O5|1"
+  ],
+  "result": "Num(flip,Alt(plat3|plat5))",
+  "result_cat_is_memo": 1,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [
+    "Alt(plat3|plat3)"
+   ],
+   [
+    "Alt(plat3|plat3)"
+   ],
+   [
+    "Alt(plat3|plat3)"
+   ]
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "objects all same",
+  "messages": [
+   "CheckForAlternation: O3; O3; O3|1"
+  ],
+  "result": "Num(flip,Alt(plat3|plat3))",
+  "result_cat_is_memo": 1,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   null,
+   null,
+   null
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "sints alternate",
+  "messages": [
+   "CheckForAlternation: SInt(3); SInt(5); SInt(3)|1"
+  ],
+  "result": "Num(flip,Alt(plat3|plat5))",
+  "result_cat_is_memo": 1,
+  "sint_cats": [
+   [
+    "number",
+    "Alt(plat3|plat5)"
+   ],
+   [
+    "number",
+    "Alt(plat3|plat5)"
+   ],
+   [
+    "number",
+    "Alt(plat3|plat5)"
+   ]
+  ]
+ },
+ {
+  "described": [
+   null,
+   null,
+   null
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "sints all same",
+  "messages": [
+   "CheckForAlternation: SInt(4); SInt(4); SInt(4)|1"
+  ],
+  "result": "Num(flip,Alt(plat4|plat4))",
+  "result_cat_is_memo": 1,
+  "sint_cats": [
+   [
+    "number",
+    "Alt(plat4|plat4)"
+   ],
+   [
+    "number",
+    "Alt(plat4|plat4)"
+   ],
+   [
+    "number",
+    "Alt(plat4|plat4)"
+   ]
+  ]
+ },
+ {
+  "described": [
+   null,
+   null,
+   null
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "sints no alternation",
+  "messages": [
+   "CheckForAlternation: SInt(3); SInt(5); SInt(7)|1"
+  ],
+  "result": null,
+  "sint_cats": [
+   [
+    "number"
+   ],
+   [
+    "number"
+   ],
+   [
+    "number"
+   ]
+  ]
+ },
+ {
+  "described": [
+   null,
+   null,
+   null
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "sints first eq second",
+  "messages": [
+   "CheckForAlternation: SInt(3); SInt(3); SInt(5)|1"
+  ],
+  "result": null,
+  "sint_cats": [
+   [
+    "number"
+   ],
+   [
+    "number"
+   ],
+   [
+    "number"
+   ]
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "objects no common category",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1"
+  ],
+  "result": null,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "numeric common category",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1"
+  ],
+  "result": null,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "not of category (second)",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1"
+  ],
+  "result": null,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "not of category (first)",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1"
+  ],
+  "result": null,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "common category only in some",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1"
+  ],
+  "result": "Structural(cat=Cat(cat),meto=NONE,dir_same=1,slippages=0,changed={x:succ})",
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "asked": [
+   [
+    "x"
+   ]
+  ],
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "attributes insufficient",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1"
+  ],
+  "result": null,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "asked": [
+   [
+    "x"
+   ],
+   [
+    "x"
+   ]
+  ],
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "same mapping succ",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1"
+  ],
+  "result": "Structural(cat=Cat(cat),meto=NONE,dir_same=1,slippages=0,changed={x:succ})",
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "same mapping same",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1"
+  ],
+  "result": "Structural(cat=Cat(cat),meto=NONE,dir_same=1,slippages=0,changed={x:same})",
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "recurse into alternation",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1",
+   "CheckForAlternation recursing (for x)!|1",
+   "CheckForAlternation: V1; V4; V1|1"
+  ],
+  "result": "Structural(cat=Cat(cat),meto=NONE,dir_same=1,slippages=0,changed={x:Num(flip,Alt(plat1|plat4))})",
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "recurse, mappings differ (succ, pred)",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1",
+   "CheckForAlternation recursing (for x)!|1",
+   "CheckForAlternation: V1; V2; V1|1"
+  ],
+  "result": "Structural(cat=Cat(cat),meto=NONE,dir_same=1,slippages=0,changed={x:Num(flip,Alt(plat1|plat2))})",
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 1,
+  "error": "Can't locate object method \"get_common_categories\" via package \"FakeVal\"",
+  "kind": "check",
+  "label": "recurse fails",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1",
+   "CheckForAlternation recursing (for x)!|1",
+   "CheckForAlternation: V1; V4; V9|1"
+  ],
+  "result": null,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "recurse on sints",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1",
+   "CheckForAlternation recursing (for x)!|1",
+   "CheckForAlternation: SInt(1); SInt(2); SInt(1)|1"
+  ],
+  "result": "Structural(cat=Cat(cat),meto=NONE,dir_same=1,slippages=0,changed={x:Num(flip,Alt(plat1|plat2))})",
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "recurse on sints, numeric stop",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1",
+   "CheckForAlternation recursing (for x)!|1",
+   "CheckForAlternation: SInt(1); SInt(2); SInt(6)|1"
+  ],
+  "result": null,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "two keys, one recursion",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1",
+   "CheckForAlternation recursing (for y)!|1",
+   "CheckForAlternation: V1; V4; V1|1"
+  ],
+  "result": "Structural(cat=Cat(cat),meto=NONE,dir_same=1,slippages=0,changed={x:succ,y:Num(flip,Alt(plat1|plat4))})",
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 0,
+  "error": null,
+  "kind": "check",
+  "label": "no keys",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1"
+  ],
+  "result": "Structural(cat=Cat(cat),meto=NONE,dir_same=1,slippages=0,changed={})",
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "described": [
+   [],
+   [],
+   []
+  ],
+  "died": 1,
+  "error": "Can't call method \"as_text\" on an undefined value",
+  "kind": "check",
+  "label": "missing key in later bindings",
+  "messages": [
+   "CheckForAlternation: O3; O5; O7|1",
+   "CheckForAlternation recursing (for x)!|1"
+  ],
+  "result": null,
+  "sint_cats": [
+   null,
+   null,
+   null
+  ]
+ }
+]

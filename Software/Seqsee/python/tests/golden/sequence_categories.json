@@ -1,0 +1,2249 @@
+[
+ {
+  "as_text": "sameness",
+  "cat": "sameness",
+  "class": "SCategory::Sameness",
+  "deserialized_class": "SCategory::Sameness",
+  "deserialized_is_same": 0,
+  "get_name": "sameness",
+  "get_pure_is_self": 1,
+  "is_metonyable": "1",
+  "is_numeric": 0,
+  "is_pure": 1,
+  "kind": "basics",
+  "memory_deps_count": 0,
+  "meto_types": [
+   "each"
+  ],
+  "serialize": "SCategory::Sameness->new()",
+  "smartmatch_self": 1
+ },
+ {
+  "as_text": "ascending",
+  "cat": "ascending",
+  "class": "SCategory::Ascending",
+  "deserialized_class": "SCategory::Ascending",
+  "deserialized_is_same": 0,
+  "get_name": "ascending",
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 0,
+  "is_pure": 1,
+  "kind": "basics",
+  "memory_deps_count": 0,
+  "meto_types": [],
+  "serialize": "SCategory::Ascending->new()",
+  "smartmatch_self": 1
+ },
+ {
+  "as_text": "descending",
+  "cat": "descending",
+  "class": "SCategory::Descending",
+  "deserialized_class": "SCategory::Descending",
+  "deserialized_is_same": 0,
+  "get_name": "descending",
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 0,
+  "is_pure": 1,
+  "kind": "basics",
+  "memory_deps_count": 0,
+  "meto_types": [],
+  "serialize": "SCategory::Descending->new()",
+  "smartmatch_self": 1
+ },
+ {
+  "atts": [],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "each"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "length"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "each",
+   "length"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "length",
+   "each",
+   "x"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "start"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "start",
+   "end"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "start",
+   "length"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "end",
+   "length"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "start",
+   "end",
+   "length"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "start",
+   "start"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "x",
+   "y"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "end",
+   "x"
+  ],
+  "cat": "sameness",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "each"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "length"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "each",
+   "length"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "length",
+   "each",
+   "x"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "start"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "start",
+   "end"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "start",
+   "length"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "end",
+   "length"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "start",
+   "end",
+   "length"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "start",
+   "start"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "x",
+   "y"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "end",
+   "x"
+  ],
+  "cat": "ascending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "each"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "length"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "each",
+   "length"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "length",
+   "each",
+   "x"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "start"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "start",
+   "end"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "start",
+   "length"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "end",
+   "length"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "start",
+   "end",
+   "length"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": "1"
+ },
+ {
+  "atts": [
+   "start",
+   "start"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "x",
+   "y"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "atts": [
+   "end",
+   "x"
+  ],
+  "cat": "descending",
+  "kind": "sufficient",
+  "result": null
+ },
+ {
+  "args_after": {
+   "each": "7",
+   "length": "3"
+  },
+  "bindings_shared": 1,
+  "cat": "sameness",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "7",
+   "7",
+   "7"
+  ],
+  "kind": "build",
+  "label": "plain",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "each": "7",
+   "length": "SInt(2)"
+  },
+  "bindings_shared": 1,
+  "cat": "sameness",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "7",
+   "7"
+  ],
+  "kind": "build",
+  "label": "sint length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "each": "SInt(4)",
+   "length": "1"
+  },
+  "bindings_shared": 1,
+  "cat": "sameness",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "SInt(4)"
+  ],
+  "kind": "build",
+  "label": "sint each",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "each": "V(5)",
+   "length": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "sameness",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "V(5)",
+   "V(5)"
+  ],
+  "kind": "build",
+  "label": "object each",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "each": "7",
+   "length": "0"
+  },
+  "cat": "sameness",
+  "defined": 0,
+  "died": 0,
+  "kind": "build",
+  "label": "length 0"
+ },
+ {
+  "args_after": {
+   "each": "7",
+   "length": "-1"
+  },
+  "cat": "sameness",
+  "defined": 0,
+  "died": 0,
+  "kind": "build",
+  "label": "length -1"
+ },
+ {
+  "args_after": {
+   "each": "7",
+   "length": "SInt(0)"
+  },
+  "cat": "sameness",
+  "defined": 0,
+  "died": 0,
+  "kind": "build",
+  "label": "sint length 0"
+ },
+ {
+  "args_after": {
+   "each": "7",
+   "length": "2.5"
+  },
+  "bindings_shared": 1,
+  "cat": "sameness",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "7",
+   "7"
+  ],
+  "kind": "build",
+  "label": "length 2.5",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "each": "7",
+   "length": "0.5"
+  },
+  "cat": "sameness",
+  "defined": 0,
+  "died": 0,
+  "kind": "build",
+  "label": "length 0.5"
+ },
+ {
+  "args_after": {
+   "each": "7",
+   "length": "3"
+  },
+  "bindings_shared": 1,
+  "cat": "sameness",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "7",
+   "7",
+   "7"
+  ],
+  "kind": "build",
+  "label": "length \"3\"",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "each": "7",
+   "length": "abc"
+  },
+  "cat": "sameness",
+  "defined": 0,
+  "died": 0,
+  "kind": "build",
+  "label": "length \"abc\""
+ },
+ {
+  "args_after": {
+   "each": null,
+   "length": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "sameness",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   null,
+   null
+  ],
+  "kind": "build",
+  "label": "each undef",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "each": "x",
+   "extra": "1",
+   "length": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "sameness",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "x",
+   "x"
+  ],
+  "kind": "build",
+  "label": "extra key",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "each": "7",
+   "length": null
+  },
+  "cat": "sameness",
+  "defined": 0,
+  "died": 0,
+  "kind": "build",
+  "label": "length undef"
+ },
+ {
+  "args_after": {
+   "each": "7"
+  },
+  "cat": "sameness",
+  "died": 1,
+  "kind": "build",
+  "label": "missing length"
+ },
+ {
+  "args_after": {
+   "length": "3"
+  },
+  "cat": "sameness",
+  "died": 1,
+  "kind": "build",
+  "label": "missing each"
+ },
+ {
+  "args_after": {},
+  "cat": "sameness",
+  "died": 1,
+  "kind": "build",
+  "label": "empty"
+ },
+ {
+  "args_after": {
+   "end": "4",
+   "length": "4",
+   "start": "1"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "kind": "build",
+  "label": "start end",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "1",
+   "length": "-2",
+   "start": "4"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "start end reversed",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "3",
+   "length": "1",
+   "start": "3"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "3"
+  ],
+  "kind": "build",
+  "label": "start end equal",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "3",
+   "length": "3",
+   "start": "1"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "build",
+  "label": "start length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "5",
+   "length": "3",
+   "start": "3"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "3",
+   "4",
+   "5"
+  ],
+  "kind": "build",
+  "label": "end length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "SInt(5)",
+   "length": "SInt(4)",
+   "start": "SInt(2)"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "kind": "build",
+  "label": "sint start end",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "SInt(4)",
+   "length": "3",
+   "start": "SInt(2)"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2",
+   "3",
+   "4"
+  ],
+  "kind": "build",
+  "label": "sint start, length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "SInt(6)",
+   "length": "SInt(2)",
+   "start": "SInt(5)"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "5",
+   "6"
+  ],
+  "kind": "build",
+  "label": "sint end, sint length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "6",
+   "length": "SInt(2)",
+   "start": "SInt(5)"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "5",
+   "6"
+  ],
+  "kind": "build",
+  "label": "plain end, sint length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "5",
+   "length": "99",
+   "start": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "kind": "build",
+  "label": "all three, length kept",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "5",
+   "length": "4",
+   "start": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "kind": "build",
+  "label": "all three, length 0",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "2",
+   "length": "3",
+   "start": "0"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "build",
+  "label": "start 0, length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "0",
+   "length": "3",
+   "start": "-2"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "-2",
+   "-1",
+   "0"
+  ],
+  "kind": "build",
+  "label": "end 0, length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "1",
+   "length": "4",
+   "start": "-2"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "-2",
+   "-1",
+   "0",
+   "1"
+  ],
+  "kind": "build",
+  "label": "negative",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "3.7",
+   "length": "3.2",
+   "start": "1.5"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "build",
+  "label": "floats",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "4",
+   "length": "3",
+   "start": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2",
+   "3",
+   "4"
+  ],
+  "kind": "build",
+  "label": "strings",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "3",
+   "length": "0",
+   "start": "4"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "length 0 only",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "3",
+   "extra": "x",
+   "length": "3",
+   "start": "1"
+  },
+  "bindings_shared": 1,
+  "cat": "ascending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "build",
+  "label": "extra key",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "start": "1"
+  },
+  "cat": "ascending",
+  "died": 1,
+  "kind": "build",
+  "label": "start only"
+ },
+ {
+  "args_after": {
+   "length": "3",
+   "x": "1"
+  },
+  "cat": "ascending",
+  "died": 1,
+  "kind": "build",
+  "label": "length and x"
+ },
+ {
+  "args_after": {},
+  "cat": "ascending",
+  "died": 1,
+  "kind": "build",
+  "label": "empty"
+ },
+ {
+  "args_after": {
+   "end": "4",
+   "length": "-2",
+   "start": "1"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "start end",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "1",
+   "length": "4",
+   "start": "4"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "4",
+   "3",
+   "2",
+   "1"
+  ],
+  "kind": "build",
+  "label": "start end reversed",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "3",
+   "length": "1",
+   "start": "3"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "3"
+  ],
+  "kind": "build",
+  "label": "start end equal",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "-1",
+   "length": "3",
+   "start": "1"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "1",
+   "0",
+   "-1"
+  ],
+  "kind": "build",
+  "label": "start length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "5",
+   "length": "3",
+   "start": "7"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "7",
+   "6",
+   "5"
+  ],
+  "kind": "build",
+  "label": "end length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "SInt(5)",
+   "length": "SInt(-2)",
+   "start": "SInt(2)"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "sint start end",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "SInt(0)",
+   "length": "3",
+   "start": "SInt(2)"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2",
+   "1",
+   "0"
+  ],
+  "kind": "build",
+  "label": "sint start, length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "SInt(6)",
+   "length": "SInt(2)",
+   "start": "SInt(7)"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "7",
+   "6"
+  ],
+  "kind": "build",
+  "label": "sint end, sint length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "6",
+   "length": "SInt(2)",
+   "start": "SInt(7)"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "7",
+   "6"
+  ],
+  "kind": "build",
+  "label": "plain end, sint length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "5",
+   "length": "99",
+   "start": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "all three, length kept",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "5",
+   "length": "-2",
+   "start": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "all three, length 0",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "-2",
+   "length": "3",
+   "start": "0"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "0",
+   "-1",
+   "-2"
+  ],
+  "kind": "build",
+  "label": "start 0, length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "0",
+   "length": "3",
+   "start": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2",
+   "1",
+   "0"
+  ],
+  "kind": "build",
+  "label": "end 0, length",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "1",
+   "length": "-2",
+   "start": "-2"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "negative",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "3.7",
+   "length": "-1.2",
+   "start": "1.5"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "floats",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "0",
+   "length": "3",
+   "start": "2"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [
+   "2",
+   "1",
+   "0"
+  ],
+  "kind": "build",
+  "label": "strings",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "5",
+   "length": "0",
+   "start": "4"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "length 0 only",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "end": "3",
+   "extra": "x",
+   "length": "-1",
+   "start": "1"
+  },
+  "bindings_shared": 1,
+  "cat": "descending",
+  "cat_is_self": 1,
+  "cats_count": 1,
+  "defined": 1,
+  "died": 0,
+  "items": [],
+  "kind": "build",
+  "label": "extra key",
+  "reln_is_chain": 1,
+  "slippages_count": 0
+ },
+ {
+  "args_after": {
+   "start": "1"
+  },
+  "cat": "descending",
+  "died": 1,
+  "kind": "build",
+  "label": "start only"
+ },
+ {
+  "args_after": {
+   "length": "3",
+   "x": "1"
+  },
+  "cat": "descending",
+  "died": 1,
+  "kind": "build",
+  "label": "length and x"
+ },
+ {
+  "args_after": {},
+  "cat": "descending",
+  "died": 1,
+  "kind": "build",
+  "label": "empty"
+ },
+ {
+  "bindings": {
+   "each": "E(3)",
+   "length": "SInt(3)"
+  },
+  "cat": "sameness",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "plain",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(E(3),E(3),E(3))"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "sameness",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "not seen",
+  "seen": [
+   "Built(E(3),E(3))"
+  ],
+  "seen_count": 1
+ },
+ {
+  "cat": "sameness",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "seen returns 0",
+  "seen": [
+   "Built(E(3),E(3))"
+  ],
+  "seen_count": 1
+ },
+ {
+  "bindings": {
+   "each": "E(3)",
+   "length": "SInt(2)"
+  },
+  "cat": "sameness",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "parts blemished",
+  "metonymy_mode": "SINGLE",
+  "position": 2,
+  "ref": "SBindings",
+  "seen": [
+   "Built(E(3),E(3))"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "1"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "each": "E(3)",
+   "length": "SInt(1)"
+  },
+  "cat": "sameness",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "parts undef",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(E(3))"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "each": "E(3)",
+   "length": "SInt(3)"
+  },
+  "cat": "sameness",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "two blemishes",
+  "metonymy_mode": null,
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(E(3),E(3),E(3))"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "1",
+   "2"
+  ],
+  "slippages_count": 2
+ },
+ {
+  "bindings": {
+   "each": "E(2)",
+   "length": "SInt(1)"
+  },
+  "cat": "sameness",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "element group, entire blemish",
+  "metonymy_mode": "SINGLE",
+  "position": 1,
+  "ref": "SBindings",
+  "seen": [
+   "Built(E(2))"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "0"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "each": "E(2)",
+   "length": "SInt(1)"
+  },
+  "cat": "sameness",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "element group, no entire",
+  "metonymy_mode": "SINGLE",
+  "position": 3,
+  "ref": "SBindings",
+  "seen": [
+   "Built(E(2))"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "2"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "each": "E(2)",
+   "length": "SInt(2)"
+  },
+  "cat": "sameness",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "non-element group, entire blemish",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(E(2),E(2))"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "each": null,
+   "length": "SInt(0)"
+  },
+  "cat": "sameness",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "empty group",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   null
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "each": "E(5)",
+   "length": "SInt(4)"
+  },
+  "cat": "sameness",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "parts_count differs",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(E(5),E(5),E(5),E(5))"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "each": null,
+   "length": "SInt(2)"
+  },
+  "cat": "sameness",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "first item undef",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(,)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(3)",
+   "length": "SInt(3)",
+   "start": "SInt(1)"
+  },
+  "cat": "ascending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "ascending items",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(1,2,3)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(1)",
+   "length": "SInt(-1)",
+   "start": "SInt(3)"
+  },
+  "cat": "ascending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "descending items",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built()"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(4)",
+   "length": "SInt(1)",
+   "start": "SInt(4)"
+  },
+  "cat": "ascending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "single item",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(4)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(2)",
+   "length": "SInt(3)",
+   "start": "SInt(0)"
+  },
+  "cat": "ascending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "zero start",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(0,1,2)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "ascending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "not seen",
+  "seen": [
+   "Built(1,2,3)"
+  ],
+  "seen_count": 1
+ },
+ {
+  "cat": "ascending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "first item undef",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "ascending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "last item undef",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "ascending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "empty",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(7)",
+   "length": "SInt(3)",
+   "start": "SInt(5)"
+  },
+  "cat": "ascending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "metonym subobject",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(5,6,7)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "ascending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "effective object not an element",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "ascending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "element subclass",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(3)",
+   "length": "SInt(3)",
+   "start": "SInt(1)"
+  },
+  "cat": "ascending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "parts blemished",
+  "metonymy_mode": "SINGLE",
+  "position": 2,
+  "ref": "SBindings",
+  "seen": [
+   "Built(1,2,3)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "1"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "end": "SInt(2)",
+   "length": "SInt(1)",
+   "start": "SInt(2)"
+  },
+  "cat": "ascending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "element group, entire blemish",
+  "metonymy_mode": "SINGLE",
+  "position": 1,
+  "ref": "SBindings",
+  "seen": [
+   "Built(2)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "0"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "end": "SInt(4)",
+   "length": "SInt(3)",
+   "start": "SInt(2)"
+  },
+  "cat": "ascending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "non-element group, entire blemish",
+  "metonymy_mode": "SINGLE",
+  "position": 1,
+  "ref": "SBindings",
+  "seen": [
+   "Built(2,3,4)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "0"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "end": "SInt(3)",
+   "length": "SInt(-1)",
+   "start": "SInt(1)"
+  },
+  "cat": "descending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "ascending items",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built()"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(1)",
+   "length": "SInt(3)",
+   "start": "SInt(3)"
+  },
+  "cat": "descending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "descending items",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(3,2,1)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(4)",
+   "length": "SInt(1)",
+   "start": "SInt(4)"
+  },
+  "cat": "descending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "single item",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built(4)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(2)",
+   "length": "SInt(-1)",
+   "start": "SInt(0)"
+  },
+  "cat": "descending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "zero start",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built()"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "descending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "not seen",
+  "seen": [
+   "Built()"
+  ],
+  "seen_count": 1
+ },
+ {
+  "cat": "descending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "first item undef",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "descending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "last item undef",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "descending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "empty",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(7)",
+   "length": "SInt(-1)",
+   "start": "SInt(5)"
+  },
+  "cat": "descending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "metonym subobject",
+  "metonymy_mode": "NONE",
+  "position": null,
+  "ref": "SBindings",
+  "seen": [
+   "Built()"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [],
+  "slippages_count": 0
+ },
+ {
+  "cat": "descending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "effective object not an element",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "cat": "descending",
+  "defined": 0,
+  "died": 0,
+  "kind": "instancer",
+  "label": "element subclass",
+  "seen": [],
+  "seen_count": 0
+ },
+ {
+  "bindings": {
+   "end": "SInt(3)",
+   "length": "SInt(-1)",
+   "start": "SInt(1)"
+  },
+  "cat": "descending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "parts blemished",
+  "metonymy_mode": "SINGLE",
+  "position": 2,
+  "ref": "SBindings",
+  "seen": [
+   "Built()"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "1"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "end": "SInt(2)",
+   "length": "SInt(1)",
+   "start": "SInt(2)"
+  },
+  "cat": "descending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "element group, entire blemish",
+  "metonymy_mode": "SINGLE",
+  "position": 1,
+  "ref": "SBindings",
+  "seen": [
+   "Built(2)"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "0"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "bindings": {
+   "end": "SInt(4)",
+   "length": "SInt(-1)",
+   "start": "SInt(2)"
+  },
+  "cat": "descending",
+  "defined": 1,
+  "died": 0,
+  "kind": "instancer",
+  "label": "non-element group, entire blemish",
+  "metonymy_mode": "SINGLE",
+  "position": 1,
+  "ref": "SBindings",
+  "seen": [
+   "Built()"
+  ],
+  "seen_count": 1,
+  "slippage_positions": [
+   "0"
+  ],
+  "slippages_count": 1
+ },
+ {
+  "cat": "sameness",
+  "finder_each": 1,
+  "finder_x": 0,
+  "kind": "meto_lookup",
+  "unfinder_each": 1,
+  "unfinder_x": 0
+ },
+ {
+  "category_is_self": 1,
+  "info_loss": {
+   "length": "SInt(3)"
+  },
+  "keys": [
+   "category",
+   "info_loss",
+   "name",
+   "starred",
+   "unstarred"
+  ],
+  "kind": "finder",
+  "label": "direct",
+  "name": "each",
+  "ref": "FakeSMetonym",
+  "starred": "Anchored(Built(7))",
+  "unstarred_is_obj": 1
+ },
+ {
+  "edges": null,
+  "info_loss": {
+   "length": "SInt(3)"
+  },
+  "kind": "finder",
+  "label": "find_metonym",
+  "starred": "Anchored(Built(7))"
+ },
+ {
+  "edges": [
+   2,
+   5
+  ],
+  "info_loss": {
+   "length": "2"
+  },
+  "kind": "finder",
+  "label": "find_metonym anchored",
+  "starred": "Anchored(Built(SInt(4)))"
+ },
+ {
+  "dies": 1,
+  "kind": "finder_dies",
+  "label": "unknown name"
+ },
+ {
+  "dies": 1,
+  "kind": "finder_dies",
+  "label": "no binding"
+ },
+ {
+  "died": 0,
+  "error": null,
+  "kind": "unfinder",
+  "label": "length",
+  "result": "Built(V(1),V(1),V(1))"
+ },
+ {
+  "died": 0,
+  "error": null,
+  "kind": "unfinder",
+  "label": "length sint",
+  "result": "Built(V(1),V(1))"
+ },
+ {
+  "died": 0,
+  "error": null,
+  "kind": "unfinder",
+  "label": "each overridden",
+  "result": "Built(8,8)"
+ },
+ {
+  "died": 0,
+  "error": null,
+  "kind": "unfinder",
+  "label": "length 0",
+  "result": null
+ },
+ {
+  "died": 1,
+  "error": "Length missing in info_loss: 0",
+  "kind": "unfinder",
+  "label": "empty",
+  "result": null
+ },
+ {
+  "died": 1,
+  "error": "Length missing in info_loss: 1",
+  "kind": "unfinder",
+  "label": "other key",
+  "result": null
+ },
+ {
+  "died": 1,
+  "error": "Length missing in info_loss: 2",
+  "kind": "unfinder",
+  "label": "two other keys",
+  "result": null
+ }
+]

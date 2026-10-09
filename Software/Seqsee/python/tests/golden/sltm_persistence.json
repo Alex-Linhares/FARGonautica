@@ -1,0 +1,1348 @@
+[
+ {
+  "died": 0,
+  "op": "init",
+  "out": "Initializing SLTM...\n"
+ },
+ {
+  "again": "Initializing SLTM...\n\tActivation logging requested.\n",
+  "exists": 1,
+  "op": "init_log",
+  "opened": 1,
+  "out": "Initializing SLTM...\n\tActivation logging requested.\n\tOpening file for write: DIR/act.log\n"
+ },
+ {
+  "file": "#####\n",
+  "op": "dump_empty",
+  "out": "Dumping LTM to file DIR/empty.dat\n"
+ },
+ {
+  "file": {
+   "links": [
+    "   2    3  2    0  1.0000 0.02000",
+    "   2    7  1    0  1.0000 0.02000",
+    "   3    2  2    0  1.0000 0.02000",
+    "   3    6  3    7  1.0000 0.02000",
+    "   4    5  1    0  1.0000 0.02000",
+    "   7    1  2    2 123.4568 0.00005"
+   ],
+   "nodes": "=== 1: SCategory::Number 0.2\nSCategory::Number->new()\n=== 2: SLTM::Platonic 0.2\n1\n=== 3: SLTM::Platonic 0.5\n[1,2]\n=== 4: SCategory::Ascending 7\nSCategory::Ascending->new()\n=== 5: Mapping::Numeric 0.2\nsucc\u0081\u00831\n=== 6: METO_MODE 0.2\nALL\n=== 7: POS_MODE 0.2\nFORWARD\n",
+   "whole": "=== 1: SCategory::Number 0.2\nSCategory::Number->new()\n=== 2: SLTM::Platonic 0.2\n1\n=== 3: SLTM::Platonic 0.5\n[1,2]\n=== 4: SCategory::Ascending 7\nSCategory::Ascending->new()\n=== 5: Mapping::Numeric 0.2\nsucc\u0081\u00831\n=== 6: METO_MODE 0.2\nALL\n=== 7: POS_MODE 0.2\nFORWARD\n#####\n   2    7  1    0  1.0000 0.02000\n   2    3  2    0  1.0000 0.02000\n   3    2  2    0  1.0000 0.02000\n   3    6  3    7  1.0000 0.02000\n   4    5  1    0  1.0000 0.02000\n   7    1  2    2 123.4568 0.00005\n"
+  },
+  "op": "dump_small",
+  "out": "Dumping LTM to file DIR/small.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ],
+    [
+     8,
+     0.2,
+     0.0112748007059013
+    ],
+    [
+     2,
+     0.5,
+     0.00307668033927189
+    ],
+    [
+     2,
+     "7",
+     0.00307668033927189
+    ],
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ],
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ],
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 6,
+   "links": [
+    [
+     2,
+     1,
+     7,
+     [
+      5,
+      1,
+      0.02,
+      0.00830216884047569,
+      0
+     ]
+    ],
+    [
+     2,
+     2,
+     3,
+     [
+      35,
+      1,
+      0.02,
+      0.127911130253241,
+      0
+     ]
+    ],
+    [
+     3,
+     2,
+     2,
+     [
+      5,
+      1,
+      0.02,
+      0.00830216884047569,
+      0
+     ]
+    ],
+    [
+     3,
+     3,
+     6,
+     [
+      5,
+      1,
+      0.02,
+      0.00830216884047569,
+      7
+     ]
+    ],
+    [
+     4,
+     1,
+     5,
+     [
+      5,
+      1,
+      0.02,
+      0.00830216884047569,
+      0
+     ]
+    ],
+    [
+     7,
+     2,
+     1,
+     [
+      5,
+      123.456789,
+      4.9e-05,
+      0.00830216884047569,
+      2
+     ]
+    ]
+   ],
+   "node_count": 7,
+   "nodes": [
+    [
+     "SCategory::Number",
+     "number"
+    ],
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ],
+    [
+     "SLTM::Platonic",
+     "plat[1,2]"
+    ],
+    [
+     "SCategory::Ascending",
+     "ascending"
+    ],
+    [
+     "Mapping::Numeric",
+     "succ"
+    ],
+    [
+     "METO_MODE",
+     "ALL"
+    ],
+    [
+     "POS_MODE",
+     "FORWARD"
+    ]
+   ]
+  }
+ },
+ {
+  "died": 0,
+  "file": {
+   "links": [
+    "   2    3  2    0  1.0000 0.02000",
+    "   2    7  1    0  1.0000 0.02000",
+    "   3    2  2    0  1.0000 0.02000",
+    "   3    6  3    7  1.0000 0.02000",
+    "   4    5  1    0  1.0000 0.02000",
+    "   7    1  2    2 123.4568 0.00005"
+   ],
+   "nodes": "=== 1: SCategory::Number 0.2\nSCategory::Number->new()\n=== 2: SLTM::Platonic 0.2\n1\n=== 3: SLTM::Platonic 0.5\n[1,2]\n=== 4: SCategory::Ascending 7\nSCategory::Ascending->new()\n=== 5: Mapping::Numeric 0.2\nsucc\u0081\u00831\n=== 6: METO_MODE 0.2\nALL\n=== 7: POS_MODE 0.2\nFORWARD\n",
+   "whole": "=== 1: SCategory::Number 0.2\nSCategory::Number->new()\n=== 2: SLTM::Platonic 0.2\n1\n=== 3: SLTM::Platonic 0.5\n[1,2]\n=== 4: SCategory::Ascending 7\nSCategory::Ascending->new()\n=== 5: Mapping::Numeric 0.2\nsucc\u0081\u00831\n=== 6: METO_MODE 0.2\nALL\n=== 7: POS_MODE 0.2\nFORWARD\n#####\n   2    7  1    0  1.0000 0.02000\n   2    3  2    0  1.0000 0.02000\n   3    2  2    0  1.0000 0.02000\n   3    6  3    7  1.0000 0.02000\n   4    5  1    0  1.0000 0.02000\n   7    1  2    2 123.4568 0.00005\n"
+  },
+  "op": "dump_file_temp"
+ },
+ {
+  "died": 1,
+  "error": "Dump must be called either with an unblessed filename or a File::Temp object",
+  "op": "dump_bad_ref"
+ },
+ {
+  "died": 1,
+  "error": "Dump must be called either with an unblessed filename or a File::Temp object",
+  "op": "dump_bad_blessed"
+ },
+ {
+  "file": {
+   "links": [
+    "   1    2  2    0 -12345.6789 99999.12346"
+   ],
+   "nodes": "=== 1: SLTM::Platonic \n5\n=== 2: SLTM::Platonic abc\n6\n",
+   "whole": "=== 1: SLTM::Platonic \n5\n=== 2: SLTM::Platonic abc\n6\n#####\n   1    2  2    0 -12345.6789 99999.12346\n"
+  },
+  "op": "dump_odd"
+ },
+ {
+  "file": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.2\n2\n#####\n   1    2  2    0  0.0000 0.00000\n",
+  "op": "dump_number",
+  "sig": 0,
+  "stab": 0,
+  "undef_modifier": 0
+ },
+ {
+  "file": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.2\n2\n#####\n   1    2  2    0  0.0000 0.00000\n",
+  "op": "dump_number",
+  "sig": 1e-09,
+  "stab": 1e-09,
+  "undef_modifier": 0
+ },
+ {
+  "file": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.2\n2\n#####\n   1    2  2    0  0.0001 0.00001\n",
+  "op": "dump_number",
+  "sig": 5e-05,
+  "stab": 5e-06,
+  "undef_modifier": 0
+ },
+ {
+  "file": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.2\n2\n#####\n   1    2  2    0 1234567.0000 12345.00000\n",
+  "op": "dump_number",
+  "sig": 1234567,
+  "stab": 12345,
+  "undef_modifier": 0
+ },
+ {
+  "file": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.2\n2\n#####\n   1    2  2    0  7.0000 0.30000\n",
+  "op": "dump_number",
+  "sig": "7",
+  "stab": "0.3",
+  "undef_modifier": 0
+ },
+ {
+  "file": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.2\n2\n#####\n   1    2  2    0  0.0000 0.00000\n",
+  "op": "dump_number",
+  "sig": null,
+  "stab": null,
+  "undef_modifier": 0
+ },
+ {
+  "file": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.2\n2\n#####\n   1    2  2    0  0.0000 0.00000\n",
+  "op": "dump_number",
+  "sig": "x",
+  "stab": "y",
+  "undef_modifier": 1
+ },
+ {
+  "file": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.2\n2\n#####\n   1    2  2    0  2.5000 0.12500\n",
+  "op": "dump_number",
+  "sig": 2.5,
+  "stab": 0.125,
+  "undef_modifier": 0
+ },
+ {
+  "died": 0,
+  "error": "",
+  "file_text": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.75\n[1,2]\n=== 3: SCategory::Ascending 0.2\nSCategory::Ascending->new()\n=== 4: SLTM::Platonic 0.2\n[[1,2],3]\n=== 5: METO_MODE 0.2\nALLBUTONE\n=== 6: POS_MODE 0.2\nBACKWARD\n#####\n   1    2  2    0  1.0000 0.02000\n   3    4  1    0  1.0000 0.02000\n   3    5  3    6  1.0000 0.02000\n   5    1  2    2 42.1235 0.12346\n",
+  "op": "load_round_trip",
+  "out": "Loading LTM from DIR/rt.dat\n",
+  "redump": {
+   "links": [
+    "   1    2  2    0  1.0000 0.02000",
+    "   3    4  1    0  1.0000 0.02000",
+    "   3    5  3    6  1.0000 0.02000",
+    "   5    1  2    2 42.1235 0.12346"
+   ],
+   "nodes": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.75\n[1,2]\n=== 3: SCategory::Ascending 0.2\nSCategory::Ascending->new()\n=== 4: SLTM::Platonic 0.2\n[[1,2],3]\n=== 5: METO_MODE 0.2\nALLBUTONE\n=== 6: POS_MODE 0.2\nBACKWARD\n",
+   "whole": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.75\n[1,2]\n=== 3: SCategory::Ascending 0.2\nSCategory::Ascending->new()\n=== 4: SLTM::Platonic 0.2\n[[1,2],3]\n=== 5: METO_MODE 0.2\nALLBUTONE\n=== 6: POS_MODE 0.2\nBACKWARD\n#####\n   1    2  2    0  1.0000 0.02000\n   3    4  1    0  1.0000 0.02000\n   3    5  3    6  1.0000 0.02000\n   5    1  2    2 42.1235 0.12346\n"
+  },
+  "same_platonic": 1,
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.75",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 4,
+   "links": [
+    [
+     1,
+     2,
+     2,
+     [
+      5,
+      "1.0000",
+      "0.02000",
+      0.00830216884047569,
+      "0"
+     ]
+    ],
+    [
+     3,
+     1,
+     4,
+     [
+      5,
+      "1.0000",
+      "0.02000",
+      0.00830216884047569,
+      "0"
+     ]
+    ],
+    [
+     3,
+     3,
+     5,
+     [
+      5,
+      "1.0000",
+      "0.02000",
+      0.00830216884047569,
+      "6"
+     ]
+    ],
+    [
+     5,
+     2,
+     1,
+     [
+      5,
+      "42.1235",
+      "0.12346",
+      0.00830216884047569,
+      "2"
+     ]
+    ]
+   ],
+   "node_count": 6,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ],
+    [
+     "SLTM::Platonic",
+     "plat[1,2]"
+    ],
+    [
+     "SCategory::Ascending",
+     "ascending"
+    ],
+    [
+     "SLTM::Platonic",
+     "plat[[1,2],3]"
+    ],
+    [
+     "METO_MODE",
+     "ALLBUTONE"
+    ],
+    [
+     "POS_MODE",
+     "BACKWARD"
+    ]
+   ]
+  }
+ },
+ {
+  "died": 1,
+  "error": "Should have only added 5 nodes by now, but looks like 6. Was trying to add 'Mapping::Numeric'. Its index is now 6.",
+  "node_count": 6,
+  "op": "load_small"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "empty",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/empty.dat\n",
+  "state": {
+   "activations": [],
+   "link_count": 0,
+   "links": [],
+   "node_count": 0,
+   "nodes": []
+  },
+  "text": ""
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "only_sep",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/only_sep.dat\n",
+  "state": {
+   "activations": [],
+   "link_count": 0,
+   "links": [],
+   "node_count": 0,
+   "nodes": []
+  },
+  "text": "#####\n"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "no_sep",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/no_sep.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.4",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 0,
+   "links": [],
+   "node_count": 2,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ],
+    [
+     "SLTM::Platonic",
+     "plat2"
+    ]
+   ]
+  },
+  "text": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.4\n2\n"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "whitespace",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/whitespace.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "  0.2  ",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.1",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 2,
+   "links": [
+    [
+     1,
+     2,
+     2,
+     [
+      5,
+      "1.0000",
+      "0.02000",
+      0.00830216884047569,
+      "0"
+     ]
+    ],
+    [
+     2,
+     3,
+     1,
+     [
+      5,
+      "5",
+      "0.5",
+      0.00830216884047569,
+      "1"
+     ]
+    ]
+   ],
+   "node_count": 2,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat  [1, 2]"
+    ],
+    [
+     "POS_MODE",
+     "FORWARD"
+    ]
+   ]
+  },
+  "text": "\n\n  === 1: SLTM::Platonic   0.2  \n  [1, 2]  \n\n=== 9:   POS_MODE 0.1\nFORWARD\n\n#####\n\n   1    2  2    0  1.0000 0.02000\n\n\t2 1 3 1 5 0.5   \n\n"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "links_many",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/links_many.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 4,
+   "links": [
+    [
+     1,
+     1,
+     3,
+     [
+      5,
+      "17.5000",
+      "0.10000",
+      0.00830216884047569,
+      "2"
+     ]
+    ],
+    [
+     1,
+     2,
+     2,
+     [
+      5,
+      "9.0000",
+      "0.50000",
+      0.00830216884047569,
+      "0"
+     ]
+    ],
+    [
+     2,
+     3,
+     1,
+     [
+      5,
+      "0.0000",
+      "1.00000",
+      0.00830216884047569,
+      "0"
+     ]
+    ],
+    [
+     3,
+     2,
+     99,
+     [
+      5,
+      "2.0000",
+      "0.20000",
+      0.00830216884047569,
+      "0"
+     ]
+    ]
+   ],
+   "node_count": 3,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ],
+    [
+     "SLTM::Platonic",
+     "plat2"
+    ],
+    [
+     "SLTM::Platonic",
+     "plat3"
+    ]
+   ]
+  },
+  "text": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.2\n2\n=== 3: SLTM::Platonic 0.2\n3\n#####\n   1    2  2    0  1.0000 0.02000\n   1    2  2    3  9.0000 0.50000\n   1    3  1    2 17.5000 0.10000\n   2    1  3    0  0.0000 1.00000\n   3   99  2    0  2.0000 0.20000\n"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "link_short",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/link_short.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 1,
+   "links": [
+    [
+     1,
+     0,
+     2,
+     [
+      5,
+      null,
+      null,
+      0.00830216884047569,
+      null
+     ]
+    ]
+   ],
+   "node_count": 1,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ]
+   ]
+  },
+  "text": "=== 1: SLTM::Platonic 0.2\n1\n#####\n1 2\n"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "no_depth",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/no_depth.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     null,
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 0,
+   "links": [],
+   "node_count": 1,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat7"
+    ]
+   ]
+  },
+  "text": "=== 1: SLTM::Platonic\n7\n"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "multiline_val",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/multiline_val.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 0,
+   "links": [],
+   "node_count": 1,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat[1,\n2]"
+    ]
+   ]
+  },
+  "text": "=== 1: SLTM::Platonic 0.2\n[1,\n2]\n"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "meto",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/meto.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.3",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 0,
+   "links": [],
+   "node_count": 3,
+   "nodes": [
+    [
+     "METO_MODE",
+     "SINGLE"
+    ],
+    [
+     "METO_MODE",
+     "NONE"
+    ],
+    [
+     "SCategory::Ascending",
+     "ascending"
+    ]
+   ]
+  },
+  "text": "=== 1: METO_MODE 0.2\nSINGLE\n=== 2: METO_MODE 0.3\nNONE\n=== 3: SCategory::Ascending 0.2\nSCategory::Ascending->new()\n"
+ },
+ {
+  "died": 1,
+  "error": "Unable to deserialize >>whatever<< of type >>Foo::Bar<<\nCan't locate object method \"deserialize\" via package \"Foo::Bar\" (perhaps you forgot to load \"Foo::Bar\"?)\nNodes inserted so far: 1.",
+  "name": "unknown_type",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/unknown_type.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 0,
+   "links": [],
+   "node_count": 1,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ]
+   ]
+  },
+  "text": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: Foo::Bar 0.2\nwhatever\n"
+ },
+ {
+  "died": 1,
+  "error": "Unable to deserialize >>BOGUS<< of type >>METO_MODE<<\nUnknown!\nNodes inserted so far: 0.",
+  "name": "bad_meto",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/bad_meto.dat\n",
+  "state": {
+   "activations": [],
+   "link_count": 0,
+   "links": [],
+   "node_count": 0,
+   "nodes": []
+  },
+  "text": "=== 1: METO_MODE 0.2\nBOGUS\n"
+ },
+ {
+  "died": 1,
+  "error": "Could not find pure: type='POS_MODE', val='BOGUS'",
+  "name": "bad_pos",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/bad_pos.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 0,
+   "links": [],
+   "node_count": 1,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ]
+   ]
+  },
+  "text": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: POS_MODE 0.2\nBOGUS\n"
+ },
+ {
+  "died": 1,
+  "error": "Unable to deserialize >>[1<< of type >>SLTM::Platonic<<\nProblematic string [1!\nNodes inserted so far: 0.",
+  "name": "bad_platonic",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/bad_platonic.dat\n",
+  "state": {
+   "activations": [],
+   "link_count": 0,
+   "links": [],
+   "node_count": 0,
+   "nodes": []
+  },
+  "text": "=== 1: SLTM::Platonic 0.2\n[1\n"
+ },
+ {
+  "died": 1,
+  "error": "Unable to deserialize >><< of type >>SLTM::Platonic<<\nProblematic string !\nNodes inserted so far: 0.",
+  "name": "no_val",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/no_val.dat\n",
+  "state": {
+   "activations": [],
+   "link_count": 0,
+   "links": [],
+   "node_count": 0,
+   "nodes": []
+  },
+  "text": "=== 1: SLTM::Platonic 0.2\n"
+ },
+ {
+  "died": 1,
+  "error": "Unable to deserialize >><< of type >>garbage<<\nCan't locate object method \"deserialize\" via package \"garbage\" (perhaps you forgot to load \"garbage\"?)\nNodes inserted so far: 0.",
+  "name": "garbage_first",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/garbage_first.dat\n",
+  "state": {
+   "activations": [],
+   "link_count": 0,
+   "links": [],
+   "node_count": 0,
+   "nodes": []
+  },
+  "text": "garbage\n=== 1: SLTM::Platonic 0.2\n1\n"
+ },
+ {
+  "died": 1,
+  "error": "Should have only added 2 nodes by now, but looks like 1. Was trying to add 'SLTM::Platonic'. Its index is now 1.",
+  "name": "duplicate",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/duplicate.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 0,
+   "links": [],
+   "node_count": 1,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ]
+   ]
+  },
+  "text": "=== 1: SLTM::Platonic 0.2\n1\n=== 2: SLTM::Platonic 0.3\n1\n"
+ },
+ {
+  "died": 1,
+  "error": "Unable to deserialize >>3<< of type >>SInt<<\nCan't locate object method \"deserialize\" via package \"SInt\"\nNodes inserted so far: 0.",
+  "name": "non_pure_type",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/non_pure_type.dat\n",
+  "state": {
+   "activations": [],
+   "link_count": 0,
+   "links": [],
+   "node_count": 0,
+   "nodes": []
+  },
+  "text": "=== 1: SInt 0.2\n3\n"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "empty_type",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/empty_type.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 0,
+   "links": [],
+   "node_count": 1,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ]
+   ]
+  },
+  "text": "=== 1:\n\n=== 2: SLTM::Platonic 0.2\n1\n"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "two_seps",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/two_seps.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 1,
+   "links": [
+    [
+     1,
+     2,
+     1,
+     [
+      5,
+      "1",
+      "1",
+      0.00830216884047569,
+      "0"
+     ]
+    ]
+   ],
+   "node_count": 1,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ]
+   ]
+  },
+  "text": "=== 1: SLTM::Platonic 0.2\n1\n#####\n1 1 2 0 1 1\n#####\n1 1 1 0 1 1\n"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "name": "ind_independent",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/ind_independent.dat\n",
+  "state": {
+   "activations": [
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ],
+    [
+     2,
+     "0.2",
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 0,
+   "links": [],
+   "node_count": 2,
+   "nodes": [
+    [
+     "SCategory::Number",
+     "number"
+    ],
+    [
+     "SCategory::Number",
+     "number"
+    ]
+   ]
+  },
+  "text": "=== 1: SCategory::Number 0.2\nSCategory::Number->new()\n=== 2: SCategory::Number 0.2\nSCategory::Number->new()\n"
+ },
+ {
+  "died": 1,
+  "error": "Could not find pure: type='SCategory::Number', val='nonsense'",
+  "name": "ind_bad",
+  "op": "load_file",
+  "out": "Loading LTM from DIR/ind_bad.dat\n",
+  "state": {
+   "activations": [],
+   "link_count": 0,
+   "links": [],
+   "node_count": 0,
+   "nodes": []
+  },
+  "text": "=== 1: SCategory::Number 0.2\nnonsense\n"
+ },
+ {
+  "died": 1,
+  "error": "read_file 'DIR/missing.dat' - open: No such file or directory",
+  "op": "load_missing"
+ },
+ {
+  "died": 1,
+  "error": "Died",
+  "node_count": 1,
+  "op": "load_wrapper_ok",
+  "out": "Loading LTM from DIR/ok.dat\n",
+  "warn": []
+ },
+ {
+  "died": 1,
+  "error": "EXIT CALLED\n",
+  "node_count": 1,
+  "op": "load_wrapper_failure",
+  "out": "Loading LTM from DIR/bad_pos.dat\n",
+  "warn_first_lines": [
+   "Failure loading LTM: Could not find pure: type='POS_MODE', val='BOGUS'"
+  ]
+ },
+ {
+  "died": 1,
+  "error": "read_file 'DIR/missing.dat' - open: No such file or directory",
+  "op": "load_wrapper_other",
+  "warn": []
+ },
+ {
+  "died": 0,
+  "error": "",
+  "op": "followers_none"
+ },
+ {
+  "nodes": [
+   [
+    "SCategory::Number",
+    "number"
+   ],
+   [
+    "Mapping::Numeric",
+    "succ"
+   ],
+   [
+    "Mapping::Numeric",
+    "pred"
+   ],
+   [
+    "SCategory::Odd",
+    "odd"
+   ],
+   [
+    "Mapping::Numeric",
+    "same"
+   ]
+  ],
+  "op": "followers_no_categories",
+  "result": [
+   [
+    "SInt(2)",
+    1
+   ],
+   [
+    "SInt(4)",
+    1
+   ]
+  ]
+ },
+ {
+  "is_not_empty": 1,
+  "op": "followers_number",
+  "result": [
+   [
+    "SInt(2)",
+    1
+   ],
+   [
+    "SInt(4)",
+    1
+   ]
+  ]
+ },
+ {
+  "op": "followers_three_cats",
+  "result": [
+   [
+    "SInt(2)",
+    1
+   ],
+   [
+    "SInt(4)",
+    2
+   ]
+  ],
+  "state": {
+   "activations": [
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ],
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ],
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ],
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ],
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ],
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ]
+   ],
+   "link_count": 4,
+   "links": [
+    [
+     1,
+     1,
+     2,
+     [
+      5,
+      1,
+      0.02,
+      0.00830216884047569,
+      0
+     ]
+    ],
+    [
+     1,
+     1,
+     3,
+     [
+      5,
+      1,
+      0.02,
+      0.00830216884047569,
+      0
+     ]
+    ],
+    [
+     1,
+     2,
+     5,
+     [
+      5,
+      1,
+      0.02,
+      0.00830216884047569,
+      0
+     ]
+    ],
+    [
+     4,
+     1,
+     2,
+     [
+      5,
+      1,
+      0.02,
+      0.00830216884047569,
+      0
+     ]
+    ]
+   ],
+   "node_count": 6,
+   "nodes": [
+    [
+     "SCategory::Number",
+     "number"
+    ],
+    [
+     "Mapping::Numeric",
+     "succ"
+    ],
+    [
+     "Mapping::Numeric",
+     "pred"
+    ],
+    [
+     "SCategory::Odd",
+     "odd"
+    ],
+    [
+     "Mapping::Numeric",
+     "same"
+    ],
+    [
+     "SCategory::Prime",
+     "Prime"
+    ]
+   ]
+  }
+ },
+ {
+  "op": "followers_zero",
+  "result": [
+   [
+    "SInt(-1)",
+    1
+   ],
+   [
+    "SInt(1)",
+    2
+   ]
+  ]
+ },
+ {
+  "delete_number": "SInt(5):1,x:1",
+  "delete_sint": "x:1",
+  "merged": "SInt(4):3,SInt(5):5,x:1",
+  "op": "weighted_sint"
+ },
+ {
+  "nodes": [
+   [
+    "SLTM::Platonic",
+    "plat3"
+   ]
+  ],
+  "op": "categories_none",
+  "result": []
+ },
+ {
+  "op": "categories_some",
+  "result": [
+   [
+    "Prime",
+    0.0145328793390457
+   ],
+   [
+    "odd",
+    0.00307668033927189
+   ]
+  ]
+ },
+ {
+  "died": 0,
+  "error": "",
+  "op": "categories_with_current",
+  "result": [
+   [
+    "Prime",
+    0.0145328793390457
+   ]
+  ]
+ },
+ {
+  "log": "NewNode\t4\tplat4\n17 4 0.018118906597276\nNewNode\t1\tplat1\n18 1 0.0112748007059013 4 0.018118906597276\nNewNode\t99\thello\n19 1 0.0112748007059013 4 0.018118906597276\n",
+  "op": "log_activations",
+  "state": {
+   "activations": [
+    [
+     8,
+     0.2,
+     0.0112748007059013
+    ],
+    [
+     4,
+     0.2,
+     0.00557944094984597
+    ],
+    [
+     2,
+     0.2,
+     0.00307668033927189
+    ],
+    [
+     12,
+     0.2,
+     0.018118906597276
+    ]
+   ],
+   "link_count": 0,
+   "links": [],
+   "node_count": 4,
+   "nodes": [
+    [
+     "SLTM::Platonic",
+     "plat1"
+    ],
+    [
+     "SLTM::Platonic",
+     "plat2"
+    ],
+    [
+     "SLTM::Platonic",
+     "plat3"
+    ],
+    [
+     "SLTM::Platonic",
+     "plat4"
+    ]
+   ]
+  }
+ },
+ {
+  "died": 0,
+  "op": "print_small",
+  "out": "=== 1: SCategory::Number 0.2\nnumber\n=== 2: SLTM::Platonic 0.2\nplat1\n\tFOLLOWS\n\t\tTo: FORWARD\n\t\tModifier: \n\t\tSig: 1, \tStab: 0.02\n\tIS\n\t\tTo: plat[1,2]\n\t\tModifier: \n\t\tSig: 1, \tStab: 0.02\n=== 3: SLTM::Platonic 0.5\nplat[1,2]\n\tIS\n\t\tTo: plat1\n\t\tModifier: \n\t\tSig: 1, \tStab: 0.02\n\tCAN_BE_SEEN_AS\n\t\tTo: ALL\n\t\tModifier: FORWARD\n\t\tSig: 1, \tStab: 0.02\n=== 4: SCategory::Ascending 7\nascending\n\tFOLLOWS\n\t\tTo: succ\n\t\tModifier: \n\t\tSig: 1, \tStab: 0.02\n=== 5: Mapping::Numeric 0.2\nsucc\n=== 6: METO_MODE 0.2\nALL\n=== 7: POS_MODE 0.2\nFORWARD\n\tIS\n\t\tTo: number\n\t\tModifier: plat1\n\t\tSig: 123.456789, \tStab: 4.9e-05\n"
+ },
+ {
+  "op": "print_empty",
+  "out": ""
+ }
+]

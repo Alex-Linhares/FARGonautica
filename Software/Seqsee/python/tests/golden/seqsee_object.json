@@ -1,0 +1,2148 @@
+[
+ {
+  "case": "defaults",
+  "cats": [],
+  "count": 0,
+  "direction_defined": 0,
+  "group_p": 1,
+  "history": [
+   "[0]\tcreated"
+  ],
+  "history_obj_ref": "SHistory",
+  "is_a_metonym": null,
+  "items_is_parts_ref": 1,
+  "metonym": null,
+  "metonym_activeness": 0,
+  "parts": [],
+  "relations": [],
+  "reln_scheme": null,
+  "strength": 0,
+  "true": 1,
+  "underlying_reln": null
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (group_p) is required"
+  },
+  "name": "no args"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (group_p) does not pass the type constraint because: Validation failed for 'Bool' with value 2"
+  },
+  "name": "group_p 2"
+ },
+ {
+  "case": "new",
+  "name": "group_p undef",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": null,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "new",
+  "name": "group_p \"0\"",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": "0",
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "new",
+  "name": "group_p \"\"",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": "",
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "new",
+  "name": "group_p \"1\"",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": "1",
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (group_p) does not pass the type constraint because: Validation failed for 'Bool' with value 0.5"
+  },
+  "name": "group_p 0.0"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (group_p) does not pass the type constraint because: Validation failed for 'Bool' with value \"abc\""
+  },
+  "name": "group_p \"abc\""
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value \"x\""
+  },
+  "name": "items string"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value {  }"
+  },
+  "name": "items hash"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value undef"
+  },
+  "name": "items undef"
+ },
+ {
+  "case": "new",
+  "name": "items numbers",
+  "ok": {
+   "cats": [],
+   "count": 2,
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [
+    {
+     "ref": false,
+     "value": 1
+    },
+    {
+     "ref": false,
+     "value": 2
+    }
+   ],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": {
+    "error": "Can't locate object method \"get_structure\" via package \"1\" (perhaps you forgot to load \"1\"?)"
+   }
+  }
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (history_obj) does not pass the type constraint because: Validation failed for 'SHistory' with value 3"
+  },
+  "name": "history_obj 3"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (metonym_activeness) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "name": "metonym_activeness 5"
+ },
+ {
+  "case": "new",
+  "name": "metonym_activeness 1",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (reln_other_end) does not pass the type constraint because: Validation failed for 'HashRef' with value [  ]"
+  },
+  "name": "reln_other_end array"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (categories) does not pass the type constraint because: Validation failed for 'HashRef' with value \"c\""
+  },
+  "name": "categories string"
+ },
+ {
+  "case": "new",
+  "name": "strength string",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": "abc",
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "new",
+  "name": "strength 35",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 35,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "new",
+  "name": "item (not init_arg)",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "new",
+  "name": "unknown key",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (group_p) is required"
+  },
+  "name": "missing + bad items"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (categories) does not pass the type constraint because: Validation failed for 'HashRef' with value \"c\""
+  },
+  "name": "all bad"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (group_p) does not pass the type constraint because: Validation failed for 'Bool' with value 2"
+  },
+  "name": "all bad but cats"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (history_obj) does not pass the type constraint because: Validation failed for 'SHistory' with value 3"
+  },
+  "name": "bad h/i/m/r"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value \"x\""
+  },
+  "name": "bad i/m/r"
+ },
+ {
+  "case": "new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (metonym_activeness) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "name": "bad m/r"
+ },
+ {
+  "case": "new with values (list form)",
+  "direction_is_left": 1,
+  "group_p": 0,
+  "is_a_metonym": "IAM",
+  "metonym": "M",
+  "metonym_activeness": 1,
+  "reln_scheme": "RS",
+  "strength": 12,
+  "underlying_reln": "UR"
+ },
+ {
+  "case": "writers",
+  "direction_defined": 0,
+  "group_p": 1,
+  "is_a_metonym": 7,
+  "metonym": null,
+  "metonym_activeness": 0,
+  "reln_scheme": 0,
+  "results": [
+   {
+    "error": {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (group_p) does not pass the type constraint because: Validation failed for 'Bool' with value 3"
+    },
+    "method": "set_group_p",
+    "value": 3
+   },
+   {
+    "error": null,
+    "method": "set_group_p",
+    "value": ""
+   },
+   {
+    "error": null,
+    "method": "set_group_p",
+    "value": null
+   },
+   {
+    "error": null,
+    "method": "set_group_p",
+    "value": 1
+   },
+   {
+    "error": {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (metonym_activeness) does not pass the type constraint because: Validation failed for 'Bool' with value 2"
+    },
+    "method": "set_metonym_activeness",
+    "value": 2
+   },
+   {
+    "error": null,
+    "method": "set_metonym_activeness",
+    "value": 0
+   },
+   {
+    "error": null,
+    "method": "set_strength",
+    "value": "x"
+   },
+   {
+    "error": null,
+    "method": "set_metonym",
+    "value": null
+   },
+   {
+    "error": null,
+    "method": "set_is_a_metonym",
+    "value": 7
+   },
+   {
+    "error": null,
+    "method": "set_reln_scheme",
+    "value": 0
+   },
+   {
+    "error": null,
+    "method": "set_underlying_reln",
+    "value": "u"
+   },
+   {
+    "error": null,
+    "method": "set_direction",
+    "value": null
+   },
+   {
+    "error": {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (history_obj) does not pass the type constraint because: Validation failed for 'SHistory' with value 4"
+    },
+    "method": "set_history_obj",
+    "value": 4
+   }
+  ],
+  "strength": "x",
+  "underlying_reln": "u"
+ },
+ {
+  "age": 6,
+  "as_text": "History:\n[3]\tcreated\n[5]\tfive",
+  "case": "history",
+  "history": [
+   "[3]\tcreated",
+   "[5]\tfive"
+  ],
+  "search": [
+   "3",
+   "5"
+  ],
+  "unchanged4": 0,
+  "unchanged5": 1
+ },
+ {
+  "case": "relations",
+  "log": [
+   [
+    "exists a",
+    false
+   ],
+   [
+    "get a",
+    null
+   ],
+   [
+    "set a",
+    "RA"
+   ],
+   [
+    "set b",
+    "RB"
+   ],
+   [
+    "exists a",
+    true
+   ],
+   [
+    "get a",
+    "RA"
+   ],
+   [
+    "all",
+    [
+     "RA",
+     "RB"
+    ]
+   ],
+   [
+    "remove a",
+    "RA"
+   ],
+   [
+    "remove a again",
+    null
+   ],
+   [
+    "exists a",
+    false
+   ],
+   [
+    "all",
+    [
+     "RB"
+    ]
+   ],
+   [
+    "set a undef",
+    null
+   ],
+   [
+    "exists a",
+    true
+   ],
+   [
+    "get a",
+    null
+   ],
+   [
+    "history",
+    [
+     "[0]\tcreated"
+    ]
+   ]
+  ]
+ },
+ {
+  "case": "create",
+  "name": "no args",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "create",
+  "name": "one number",
+  "ok": {
+   "cats": [
+    "number"
+   ],
+   "count": 1,
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number"
+   ],
+   "items": [],
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": 5
+  }
+ },
+ {
+  "case": "create",
+  "name": "zero",
+  "ok": {
+   "cats": [
+    "number"
+   ],
+   "count": 1,
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number"
+   ],
+   "items": [],
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": 0
+  }
+ },
+ {
+  "case": "create",
+  "name": "empty array",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "create",
+  "name": "array of one",
+  "ok": {
+   "cats": [
+    "number"
+   ],
+   "count": 1,
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number"
+   ],
+   "items": [],
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": 5
+  }
+ },
+ {
+  "case": "create",
+  "name": "array of two",
+  "ok": {
+   "cats": [],
+   "count": 2,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 1
+    },
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 2
+    }
+   ],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[1, 2]"
+  }
+ },
+ {
+  "case": "create",
+  "name": "three numbers",
+  "ok": {
+   "cats": [],
+   "count": 3,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 1
+    },
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 2
+    },
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 3
+    }
+   ],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[1, 2, 3]"
+  }
+ },
+ {
+  "case": "create",
+  "name": "nested",
+  "ok": {
+   "cats": [],
+   "count": 3,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 1
+    },
+    {
+     "cats": [],
+     "count": 2,
+     "group_p": 1,
+     "history": [
+      "[0]\tcreated"
+     ],
+     "items": [
+      {
+       "cats": [
+        "number"
+       ],
+       "count": 1,
+       "group_p": 0,
+       "history": [
+        "[0]\tcreated",
+        "[0]\tAdded category number",
+        "[0]\tAdded category number"
+       ],
+       "items": [],
+       "ref": "Seqsee::Element",
+       "self_item": 1,
+       "strength": 20,
+       "structure": 2
+      },
+      {
+       "cats": [
+        "number"
+       ],
+       "count": 1,
+       "group_p": 0,
+       "history": [
+        "[0]\tcreated",
+        "[0]\tAdded category number",
+        "[0]\tAdded category number"
+       ],
+       "items": [],
+       "ref": "Seqsee::Element",
+       "self_item": 1,
+       "strength": 20,
+       "structure": 3
+      }
+     ],
+     "ref": "Seqsee::Object",
+     "self_item": 0,
+     "strength": 0,
+     "structure": "[2, 3]"
+    },
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 4
+    }
+   ],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[1, [2, 3], 4]"
+  }
+ },
+ {
+  "case": "create",
+  "name": "nested arrays deep",
+  "ok": {
+   "cats": [],
+   "count": 2,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 1
+    },
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 2
+    }
+   ],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[1, 2]"
+  }
+ },
+ {
+  "case": "create",
+  "name": "array then empty",
+  "ok": {
+   "cats": [],
+   "count": 2,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 1
+    },
+    {
+     "cats": [],
+     "count": 0,
+     "group_p": 1,
+     "history": [
+      "[0]\tcreated"
+     ],
+     "items": [],
+     "ref": "Seqsee::Object",
+     "self_item": 0,
+     "strength": 0,
+     "structure": "[]"
+    }
+   ],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[1, []]"
+  }
+ },
+ {
+  "case": "create",
+  "error": "Can't call method \"get_categories\" on unblessed reference",
+  "name": "unblessed hash"
+ },
+ {
+  "case": "create",
+  "error": "Can't call method \"get_categories\" on unblessed reference",
+  "name": "two unblessed hashes"
+ },
+ {
+  "case": "create",
+  "name": "copy of element",
+  "ok": {
+   "cats": [
+    "evenish",
+    "number"
+   ],
+   "count": 1,
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number",
+    "[0]\tAdded category evenish",
+    "[0]\tAdded category evenish"
+   ],
+   "items": [],
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": 4
+  }
+ },
+ {
+  "case": "copy identity",
+  "name": "element",
+  "same": 0
+ },
+ {
+  "case": "create",
+  "name": "copy of group with cats",
+  "ok": {
+   "cats": [
+    "evenish",
+    "oddish"
+   ],
+   "count": 2,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category evenish",
+    "[0]\tAdded category evenish",
+    "[0]\tAdded category oddish",
+    "[0]\tAdded category oddish"
+   ],
+   "items": [
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 2
+    },
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 4
+    }
+   ],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 4]"
+  }
+ },
+ {
+  "calls": [
+   4,
+   2
+  ],
+  "case": "copy identity",
+  "items_same": [
+   0,
+   0
+  ],
+  "name": "group",
+  "same": 0
+ },
+ {
+  "case": "create",
+  "name": "copy of one-item group",
+  "ok": {
+   "cats": [
+    "evenish",
+    "number"
+   ],
+   "count": 1,
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number",
+    "[0]\tAdded category evenish",
+    "[0]\tAdded category evenish"
+   ],
+   "items": [],
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": 4
+  }
+ },
+ {
+  "case": "create",
+  "name": "copy of empty group",
+  "ok": {
+   "cats": [],
+   "count": 0,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[]"
+  }
+ },
+ {
+  "case": "create",
+  "name": "copy of nested group",
+  "ok": {
+   "cats": [
+    "evenish"
+   ],
+   "count": 2,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category evenish",
+    "[0]\tAdded category evenish"
+   ],
+   "items": [
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 1
+    },
+    {
+     "cats": [],
+     "count": 2,
+     "group_p": 1,
+     "history": [
+      "[0]\tcreated"
+     ],
+     "items": [
+      {
+       "cats": [
+        "number"
+       ],
+       "count": 1,
+       "group_p": 0,
+       "history": [
+        "[0]\tcreated",
+        "[0]\tAdded category number",
+        "[0]\tAdded category number"
+       ],
+       "items": [],
+       "ref": "Seqsee::Element",
+       "self_item": 1,
+       "strength": 20,
+       "structure": 2
+      },
+      {
+       "cats": [
+        "number"
+       ],
+       "count": 1,
+       "group_p": 0,
+       "history": [
+        "[0]\tcreated",
+        "[0]\tAdded category number",
+        "[0]\tAdded category number"
+       ],
+       "items": [],
+       "ref": "Seqsee::Element",
+       "self_item": 1,
+       "strength": 20,
+       "structure": 3
+      }
+     ],
+     "ref": "Seqsee::Object",
+     "self_item": 0,
+     "strength": 0,
+     "structure": "[2, 3]"
+    }
+   ],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[1, [2, 3]]"
+  }
+ },
+ {
+  "case": "create",
+  "name": "list of objects",
+  "ok": {
+   "cats": [],
+   "count": 3,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [
+    {
+     "cats": [
+      "evenish",
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number",
+      "[0]\tAdded category evenish",
+      "[0]\tAdded category evenish"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 4
+    },
+    {
+     "cats": [
+      "evenish",
+      "oddish"
+     ],
+     "count": 2,
+     "group_p": 1,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category evenish",
+      "[0]\tAdded category evenish",
+      "[0]\tAdded category oddish",
+      "[0]\tAdded category oddish"
+     ],
+     "items": [
+      {
+       "cats": [
+        "number"
+       ],
+       "count": 1,
+       "group_p": 0,
+       "history": [
+        "[0]\tcreated",
+        "[0]\tAdded category number",
+        "[0]\tAdded category number"
+       ],
+       "items": [],
+       "ref": "Seqsee::Element",
+       "self_item": 1,
+       "strength": 20,
+       "structure": 2
+      },
+      {
+       "cats": [
+        "number"
+       ],
+       "count": 1,
+       "group_p": 0,
+       "history": [
+        "[0]\tcreated",
+        "[0]\tAdded category number",
+        "[0]\tAdded category number"
+       ],
+       "items": [],
+       "ref": "Seqsee::Element",
+       "self_item": 1,
+       "strength": 20,
+       "structure": 4
+      }
+     ],
+     "ref": "Seqsee::Object",
+     "self_item": 0,
+     "strength": 0,
+     "structure": "[2, 4]"
+    },
+    {
+     "cats": [
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 7
+    }
+   ],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[4, [2, 4], 7]"
+  }
+ },
+ {
+  "case": "create",
+  "name": "array of objects",
+  "ok": {
+   "cats": [],
+   "count": 2,
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "items": [
+    {
+     "cats": [
+      "evenish",
+      "number"
+     ],
+     "count": 1,
+     "group_p": 0,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category number",
+      "[0]\tAdded category number",
+      "[0]\tAdded category evenish",
+      "[0]\tAdded category evenish"
+     ],
+     "items": [],
+     "ref": "Seqsee::Element",
+     "self_item": 1,
+     "strength": 20,
+     "structure": 4
+    },
+    {
+     "cats": [
+      "evenish",
+      "oddish"
+     ],
+     "count": 2,
+     "group_p": 1,
+     "history": [
+      "[0]\tcreated",
+      "[0]\tAdded category evenish",
+      "[0]\tAdded category evenish",
+      "[0]\tAdded category oddish",
+      "[0]\tAdded category oddish"
+     ],
+     "items": [
+      {
+       "cats": [
+        "number"
+       ],
+       "count": 1,
+       "group_p": 0,
+       "history": [
+        "[0]\tcreated",
+        "[0]\tAdded category number",
+        "[0]\tAdded category number"
+       ],
+       "items": [],
+       "ref": "Seqsee::Element",
+       "self_item": 1,
+       "strength": 20,
+       "structure": 2
+      },
+      {
+       "cats": [
+        "number"
+       ],
+       "count": 1,
+       "group_p": 0,
+       "history": [
+        "[0]\tcreated",
+        "[0]\tAdded category number",
+        "[0]\tAdded category number"
+       ],
+       "items": [],
+       "ref": "Seqsee::Element",
+       "self_item": 1,
+       "strength": 20,
+       "structure": 4
+      }
+     ],
+     "ref": "Seqsee::Object",
+     "self_item": 0,
+     "strength": 0,
+     "structure": "[2, 4]"
+    }
+   ],
+   "ref": "Seqsee::Object",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[4, [2, 4]]"
+  }
+ },
+ {
+  "binding": "B12",
+  "calls": [
+   1,
+   1
+  ],
+  "case": "describe_as",
+  "cats": [
+   "c1"
+  ],
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category c1",
+   "[0]\tAdded category c1"
+  ],
+  "is_of": "B12",
+  "name": "success then cached",
+  "r1": "B12",
+  "r2": "B12"
+ },
+ {
+  "case": "describe_as",
+  "cats": [],
+  "history": [
+   "[0]\tcreated"
+  ],
+  "name": "false bindings",
+  "r": null
+ },
+ {
+  "case": "describe_as",
+  "cats": [],
+  "history": [
+   "[0]\tcreated"
+  ],
+  "name": "no bindings",
+  "r": null
+ },
+ {
+  "case": "annotate_with_cat",
+  "error": null,
+  "name": "already",
+  "r": "B12"
+ },
+ {
+  "case": "annotate_with_cat",
+  "cats": [],
+  "error": {
+   "class": "SErr",
+   "message": "Not of category"
+  },
+  "history": [
+   "[0]\tcreated"
+  ],
+  "name": "fails"
+ },
+ {
+  "case": "annotate_with_cat",
+  "cats": [
+   "c1"
+  ],
+  "error": null,
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category c1",
+   "[0]\tAdded category c1"
+  ],
+  "name": "succeeds",
+  "r": "B12"
+ },
+ {
+  "case": "redescribe_as",
+  "cats": [
+   "c1"
+  ],
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1"
+  ],
+  "name": "success",
+  "r": "B12"
+ },
+ {
+  "case": "redescribe_as",
+  "cats": [
+   "c1"
+  ],
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1"
+  ],
+  "name": "success again",
+  "r": "B12"
+ },
+ {
+  "binding": "NEW",
+  "case": "redescribe_as",
+  "cats": [
+   "c1"
+  ],
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1"
+  ],
+  "name": "new bindings",
+  "r": "NEW"
+ },
+ {
+  "binding": null,
+  "case": "redescribe_as",
+  "cats": [],
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 failed",
+   "[0]\tRemoved category c1"
+  ],
+  "name": "failure removes",
+  "r": null
+ },
+ {
+  "case": "redescribe_as",
+  "cats": [],
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 succeded",
+   "[0]\tAdded category c1",
+   "[0]\tredescribe as instance of category c1 failed",
+   "[0]\tRemoved category c1",
+   "[0]\tredescribe as instance of category c1 failed",
+   "[0]\tRemoved category c1"
+  ],
+  "name": "failure when absent",
+  "r": null
+ },
+ {
+  "case": "recalculate_categories",
+  "cats": [
+   "r1"
+  ],
+  "error": null,
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category r1",
+   "[0]\tAdded category r1",
+   "[0]\tAdded category r1",
+   "[0]\tredescribe as instance of category r1 succeded",
+   "[0]\tAdded category r1"
+  ],
+  "name": "keeps"
+ },
+ {
+  "case": "recalculate_categories",
+  "cats": [],
+  "error": "LOST ALL CATEGORIES!!! Seqsee::Object=REF. Had FakeCat=REF\n",
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category r1",
+   "[0]\tAdded category r1",
+   "[0]\tAdded category r1",
+   "[0]\tredescribe as instance of category r1 succeded",
+   "[0]\tAdded category r1",
+   "[0]\tredescribe as instance of category r1 failed",
+   "[0]\tRemoved category r1"
+  ],
+  "name": "loses all"
+ },
+ {
+  "case": "recalculate_categories",
+  "cats": [],
+  "error": "LOST ALL CATEGORIES!!! Seqsee::Object=REF. Had \n",
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category r1",
+   "[0]\tAdded category r1",
+   "[0]\tAdded category r1",
+   "[0]\tredescribe as instance of category r1 succeded",
+   "[0]\tAdded category r1",
+   "[0]\tredescribe as instance of category r1 failed",
+   "[0]\tRemoved category r1"
+  ],
+  "name": "no categories"
+ },
+ {
+  "case": "recalculate_categories",
+  "cats": [
+   "r2"
+  ],
+  "error": null,
+  "history_sorted": [
+   "[0]\tAdded category r1",
+   "[0]\tAdded category r1",
+   "[0]\tAdded category r2",
+   "[0]\tAdded category r2",
+   "[0]\tAdded category r2",
+   "[0]\tAdded category r2",
+   "[0]\tRemoved category r1",
+   "[0]\tcreated",
+   "[0]\tredescribe as instance of category r1 failed",
+   "[0]\tredescribe as instance of category r2 succeded"
+  ],
+  "name": "loses one of two"
+ },
+ {
+  "case": "recalculate_categories",
+  "cats": [
+   "number"
+  ],
+  "error": null,
+  "history": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tredescribe as instance of category number succeded",
+   "[0]\tAdded category number"
+  ],
+  "name": "element"
+ },
+ {
+  "as_text": null,
+  "case": "structure",
+  "count": 1,
+  "deref_count": 1,
+  "flattened": [
+   1
+  ],
+  "name": "e1",
+  "span": 1,
+  "structure": 1,
+  "structure_string": 1
+ },
+ {
+  "as_text": "Seqsee::Object []",
+  "case": "structure",
+  "count": 0,
+  "deref_count": 0,
+  "flattened": [],
+  "name": "emp",
+  "span": null,
+  "structure": [],
+  "structure_string": "[]"
+ },
+ {
+  "as_text": "Seqsee::Object [1, [2, 3]]",
+  "case": "structure",
+  "count": 2,
+  "deref_count": 2,
+  "flattened": [
+   1,
+   2,
+   3
+  ],
+  "name": "g",
+  "span": 3,
+  "structure": [
+   1,
+   [
+    2,
+    3
+   ]
+  ],
+  "structure_string": "[1, [2, 3]]"
+ },
+ {
+  "as_text": "Seqsee::Object [2, 3]",
+  "case": "structure",
+  "count": 2,
+  "deref_count": 2,
+  "flattened": [
+   2,
+   3
+  ],
+  "name": "g23",
+  "span": 2,
+  "structure": [
+   2,
+   3
+  ],
+  "structure_string": "[2, 3]"
+ },
+ {
+  "as_text": "Seqsee::Object [2, 3]",
+  "case": "structure",
+  "count": 1,
+  "deref_count": 1,
+  "flattened": [
+   2,
+   3
+  ],
+  "name": "one",
+  "span": 2,
+  "structure": [
+   2,
+   3
+  ],
+  "structure_string": "[2, 3]"
+ },
+ {
+  "as_text": "Seqsee::Object 1",
+  "case": "structure",
+  "count": 1,
+  "deref_count": 1,
+  "flattened": [
+   1
+  ],
+  "name": "one1",
+  "span": 1,
+  "structure": 1,
+  "structure_string": 1
+ },
+ {
+  "as_text": "Seqsee::Object [[], 1]",
+  "case": "structure",
+  "count": 2,
+  "deref_count": 2,
+  "flattened": [
+   1
+  ],
+  "name": "wrap",
+  "span": 1,
+  "structure": [
+   [],
+   1
+  ],
+  "structure_string": "[[], 1]"
+ },
+ {
+  "a": "e1",
+  "b": "e1",
+  "case": "has_as",
+  "deep": 1,
+  "item": 1,
+  "smartmatch": 1
+ },
+ {
+  "a": "e1",
+  "b": "emp",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "e1",
+  "b": "g",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "e1",
+  "b": "g23",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "e1",
+  "b": "one",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "e1",
+  "b": "one1",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "e1",
+  "b": "wrap",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "emp",
+  "b": "e1",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "emp",
+  "b": "emp",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 1
+ },
+ {
+  "a": "emp",
+  "b": "g",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "emp",
+  "b": "g23",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "emp",
+  "b": "one",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "emp",
+  "b": "one1",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "emp",
+  "b": "wrap",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "g",
+  "b": "e1",
+  "case": "has_as",
+  "deep": 1,
+  "item": 1,
+  "smartmatch": 0
+ },
+ {
+  "a": "g",
+  "b": "emp",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "g",
+  "b": "g",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 1
+ },
+ {
+  "a": "g",
+  "b": "g23",
+  "case": "has_as",
+  "deep": 1,
+  "item": 1,
+  "smartmatch": 0
+ },
+ {
+  "a": "g",
+  "b": "one",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "g",
+  "b": "one1",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "g",
+  "b": "wrap",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "g23",
+  "b": "e1",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "g23",
+  "b": "emp",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "g23",
+  "b": "g",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "g23",
+  "b": "g23",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 1
+ },
+ {
+  "a": "g23",
+  "b": "one",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "g23",
+  "b": "one1",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "g23",
+  "b": "wrap",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "one",
+  "b": "e1",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "one",
+  "b": "emp",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "one",
+  "b": "g",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "one",
+  "b": "g23",
+  "case": "has_as",
+  "deep": 1,
+  "item": 1,
+  "smartmatch": 0
+ },
+ {
+  "a": "one",
+  "b": "one",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 1
+ },
+ {
+  "a": "one",
+  "b": "one1",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "one",
+  "b": "wrap",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "one1",
+  "b": "e1",
+  "case": "has_as",
+  "deep": 1,
+  "item": 1,
+  "smartmatch": 0
+ },
+ {
+  "a": "one1",
+  "b": "emp",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "one1",
+  "b": "g",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "one1",
+  "b": "g23",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "one1",
+  "b": "one",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "one1",
+  "b": "one1",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 1
+ },
+ {
+  "a": "one1",
+  "b": "wrap",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "wrap",
+  "b": "e1",
+  "case": "has_as",
+  "deep": 1,
+  "item": 1,
+  "smartmatch": 0
+ },
+ {
+  "a": "wrap",
+  "b": "emp",
+  "case": "has_as",
+  "deep": 1,
+  "item": 1,
+  "smartmatch": 0
+ },
+ {
+  "a": "wrap",
+  "b": "g",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "wrap",
+  "b": "g23",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "wrap",
+  "b": "one",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "wrap",
+  "b": "one1",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 0
+ },
+ {
+  "a": "wrap",
+  "b": "wrap",
+  "case": "has_as",
+  "deep": 0,
+  "item": 0,
+  "smartmatch": 1
+ },
+ {
+  "case": "deref",
+  "elements": [
+   "Seqsee::Element",
+   "Seqsee::Object"
+  ],
+  "first_is_e1": 1,
+  "second_is_g23": 1
+ },
+ {
+  "case": "has_as_item scalar",
+  "deep": 0,
+  "r": 0
+ }
+]

@@ -1,0 +1,2997 @@
+[
+ {
+  "bool": 1,
+  "defined": 1,
+  "error": null,
+  "kind": "copy_new",
+  "name": "none",
+  "success": 1
+ },
+ {
+  "bool": 1,
+  "defined": 1,
+  "error": null,
+  "kind": "copy_new",
+  "name": "s1",
+  "success": 1
+ },
+ {
+  "bool": 1,
+  "defined": 1,
+  "error": null,
+  "kind": "copy_new",
+  "name": "s0",
+  "success": 0
+ },
+ {
+  "bool": 1,
+  "defined": 0,
+  "error": null,
+  "kind": "copy_new",
+  "name": "sundef",
+  "success": null
+ },
+ {
+  "bool": 1,
+  "defined": 1,
+  "error": null,
+  "kind": "copy_new",
+  "name": "sempty",
+  "success": ""
+ },
+ {
+  "bool": null,
+  "defined": null,
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (success) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "kind": "copy_new",
+  "name": "s5",
+  "success": null
+ },
+ {
+  "bool": null,
+  "defined": null,
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (success) does not pass the type constraint because: Validation failed for 'Bool' with value \"x\""
+  },
+  "kind": "copy_new",
+  "name": "sx",
+  "success": null
+ },
+ {
+  "bool": null,
+  "defined": null,
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (success) does not pass the type constraint because: Validation failed for 'Bool' with value [  ]"
+  },
+  "kind": "copy_new",
+  "name": "sarray",
+  "success": null
+ },
+ {
+  "bool": 1,
+  "defined": 1,
+  "error": null,
+  "kind": "copy_new",
+  "name": "hashref0",
+  "success": 0
+ },
+ {
+  "bool": 1,
+  "defined": 1,
+  "error": null,
+  "kind": "copy_new",
+  "name": "extra",
+  "success": 0
+ },
+ {
+  "bool_fail": 1,
+  "kind": "copy_ctors",
+  "ref": "Seqsee::ResultOfAttributeCopy",
+  "same_f": 0,
+  "same_s": 0,
+  "success": [
+   1,
+   1,
+   0,
+   0
+  ]
+ },
+ {
+  "after": 0,
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_set",
+  "ret": 0,
+  "ret_def": 1,
+  "value": 0
+ },
+ {
+  "after": 1,
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_set",
+  "ret": 1,
+  "ret_def": 1,
+  "value": 1
+ },
+ {
+  "after": "",
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_set",
+  "ret": "",
+  "ret_def": 1,
+  "value": ""
+ },
+ {
+  "after": null,
+  "after_def": 0,
+  "error": null,
+  "kind": "copy_set",
+  "ret": null,
+  "ret_def": 0,
+  "value": null
+ },
+ {
+  "after": 1,
+  "after_def": 1,
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (success) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "kind": "copy_set",
+  "ret": null,
+  "ret_def": 0,
+  "value": 5
+ },
+ {
+  "after": 1,
+  "after_def": 1,
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (success) does not pass the type constraint because: Validation failed for 'Bool' with value \"x\""
+  },
+  "kind": "copy_set",
+  "ret": null,
+  "ret_def": 0,
+  "value": "x"
+ },
+ {
+  "after": 1,
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": 1,
+  "other": 1,
+  "ret": 1,
+  "ret_def": 1,
+  "theirs": 1
+ },
+ {
+  "after": 0,
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": 1,
+  "other": 0,
+  "ret": 0,
+  "ret_def": 1,
+  "theirs": 0
+ },
+ {
+  "after": null,
+  "after_def": 0,
+  "error": null,
+  "kind": "copy_update",
+  "mine": 1,
+  "other": null,
+  "ret": null,
+  "ret_def": 0,
+  "theirs": null
+ },
+ {
+  "after": "",
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": 1,
+  "other": "",
+  "ret": "",
+  "ret_def": 1,
+  "theirs": ""
+ },
+ {
+  "after": 1,
+  "after_def": 1,
+  "error": {
+   "class": "DIE",
+   "message": "Can't call method \"success\" on an undefined value"
+  },
+  "kind": "copy_update",
+  "mine": 1,
+  "other": null,
+  "ret": null,
+  "ret_def": 0,
+  "theirs": "UNDEF_OBJECT"
+ },
+ {
+  "after": 0,
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": 0,
+  "other": 1,
+  "ret": 0,
+  "ret_def": 1,
+  "theirs": 1
+ },
+ {
+  "after": 0,
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": 0,
+  "other": 0,
+  "ret": 0,
+  "ret_def": 1,
+  "theirs": 0
+ },
+ {
+  "after": 0,
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": 0,
+  "other": null,
+  "ret": 0,
+  "ret_def": 1,
+  "theirs": null
+ },
+ {
+  "after": 0,
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": 0,
+  "other": "",
+  "ret": 0,
+  "ret_def": 1,
+  "theirs": ""
+ },
+ {
+  "after": 0,
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": 0,
+  "other": null,
+  "ret": 0,
+  "ret_def": 1,
+  "theirs": "UNDEF_OBJECT"
+ },
+ {
+  "after": null,
+  "after_def": 0,
+  "error": null,
+  "kind": "copy_update",
+  "mine": null,
+  "other": 1,
+  "ret": null,
+  "ret_def": 0,
+  "theirs": 1
+ },
+ {
+  "after": null,
+  "after_def": 0,
+  "error": null,
+  "kind": "copy_update",
+  "mine": null,
+  "other": 0,
+  "ret": null,
+  "ret_def": 0,
+  "theirs": 0
+ },
+ {
+  "after": null,
+  "after_def": 0,
+  "error": null,
+  "kind": "copy_update",
+  "mine": null,
+  "other": null,
+  "ret": null,
+  "ret_def": 0,
+  "theirs": null
+ },
+ {
+  "after": null,
+  "after_def": 0,
+  "error": null,
+  "kind": "copy_update",
+  "mine": null,
+  "other": "",
+  "ret": null,
+  "ret_def": 0,
+  "theirs": ""
+ },
+ {
+  "after": null,
+  "after_def": 0,
+  "error": null,
+  "kind": "copy_update",
+  "mine": null,
+  "other": null,
+  "ret": null,
+  "ret_def": 0,
+  "theirs": "UNDEF_OBJECT"
+ },
+ {
+  "after": "",
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": "",
+  "other": 1,
+  "ret": "",
+  "ret_def": 1,
+  "theirs": 1
+ },
+ {
+  "after": "",
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": "",
+  "other": 0,
+  "ret": "",
+  "ret_def": 1,
+  "theirs": 0
+ },
+ {
+  "after": "",
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": "",
+  "other": null,
+  "ret": "",
+  "ret_def": 1,
+  "theirs": null
+ },
+ {
+  "after": "",
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": "",
+  "other": "",
+  "ret": "",
+  "ret_def": 1,
+  "theirs": ""
+ },
+ {
+  "after": "",
+  "after_def": 1,
+  "error": null,
+  "kind": "copy_update",
+  "mine": "",
+  "other": null,
+  "ret": "",
+  "ret_def": 1,
+  "theirs": "UNDEF_OBJECT"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "gA",
+   "resultant_object": "gB"
+  },
+  "error": null,
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "full",
+  "result": {
+   "bool": 1,
+   "copy_ok": 1,
+   "copy_ref": "Seqsee::ResultOfAttributeCopy",
+   "has": true,
+   "object": "gA",
+   "resultant": "gB",
+   "str": "1",
+   "success": true
+  }
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "e0"
+  },
+  "error": null,
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "no_res",
+  "result": {
+   "bool": 0,
+   "copy_ok": 1,
+   "copy_ref": "Seqsee::ResultOfAttributeCopy",
+   "has": false,
+   "object": "e0",
+   "resultant": null,
+   "str": "",
+   "success": false
+  }
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "e0",
+   "resultant_object": "e1"
+  },
+  "error": null,
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "element",
+  "result": {
+   "bool": 1,
+   "copy_ok": 1,
+   "copy_ref": "Seqsee::ResultOfAttributeCopy",
+   "has": true,
+   "object": "e0",
+   "resultant": "e1",
+   "str": "1",
+   "success": true
+  }
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY"
+  },
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (object_being_plonked) is required"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "no_obj"
+ },
+ {
+  "args": {
+   "object_being_plonked": "gA"
+  },
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (attribute_copy_result) is required"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "no_copy"
+ },
+ {
+  "args": {},
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (attribute_copy_result) is required"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "nothing"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": 5
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "obj_5"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "x"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value \"x\""
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "obj_x"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": null
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value undef"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "obj_undef"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "DIR"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value DIR={ text: \"right\" }"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "obj_dir"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "gA",
+   "resultant_object": null
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (resultant_object) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value undef"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "res_undef"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "gA",
+   "resultant_object": 5
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (resultant_object) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "res_5"
+ },
+ {
+  "args": {
+   "attribute_copy_result": 5,
+   "object_being_plonked": "gA"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (attribute_copy_result) does not pass the type constraint because: Validation failed for 'Seqsee::ResultOfAttributeCopy' with value 5"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "copy_5"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "gB",
+   "object_being_plonked": "gA"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (attribute_copy_result) does not pass the type constraint because: Validation failed for 'Seqsee::ResultOfAttributeCopy' with value Seqsee::Anchored={ categories: {  }, direction: undef, group_p: 1, history_obj: SHistory=\\undef, item: [ Seqsee::Element=REF, Seqsee::Element=REF ], left_edge: 1, ... }"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "copy_obj"
+ },
+ {
+  "args": {
+   "attribute_copy_result": null,
+   "object_being_plonked": "gA"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (attribute_copy_result) does not pass the type constraint because: Validation failed for 'Seqsee::ResultOfAttributeCopy' with value undef"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "copy_undef"
+ },
+ {
+  "args": {
+   "attribute_copy_result": 5,
+   "object_being_plonked": 5,
+   "resultant_object": 5
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (attribute_copy_result) does not pass the type constraint because: Validation failed for 'Seqsee::ResultOfAttributeCopy' with value 5"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "all_bad"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": 5,
+   "resultant_object": 5
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "form": "list",
+  "kind": "plonk_new",
+  "name": "obj_bad_res_bad"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "gA",
+   "resultant_object": "gB"
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "full",
+  "result": {
+   "bool": 1,
+   "copy_ok": 1,
+   "copy_ref": "Seqsee::ResultOfAttributeCopy",
+   "has": true,
+   "object": "gA",
+   "resultant": "gB",
+   "str": "1",
+   "success": true
+  }
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "e0"
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "no_res",
+  "result": {
+   "bool": 0,
+   "copy_ok": 1,
+   "copy_ref": "Seqsee::ResultOfAttributeCopy",
+   "has": false,
+   "object": "e0",
+   "resultant": null,
+   "str": "",
+   "success": false
+  }
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "e0",
+   "resultant_object": "e1"
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "element",
+  "result": {
+   "bool": 1,
+   "copy_ok": 1,
+   "copy_ref": "Seqsee::ResultOfAttributeCopy",
+   "has": true,
+   "object": "e0",
+   "resultant": "e1",
+   "str": "1",
+   "success": true
+  }
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY"
+  },
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (object_being_plonked) is required"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "no_obj"
+ },
+ {
+  "args": {
+   "object_being_plonked": "gA"
+  },
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (attribute_copy_result) is required"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "no_copy"
+ },
+ {
+  "args": {},
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (attribute_copy_result) is required"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "nothing"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": 5
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "obj_5"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "x"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value \"x\""
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "obj_x"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": null
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value undef"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "obj_undef"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "DIR"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value DIR={ text: \"right\" }"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "obj_dir"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "gA",
+   "resultant_object": null
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (resultant_object) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value undef"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "res_undef"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": "gA",
+   "resultant_object": 5
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (resultant_object) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "res_5"
+ },
+ {
+  "args": {
+   "attribute_copy_result": 5,
+   "object_being_plonked": "gA"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (attribute_copy_result) does not pass the type constraint because: Validation failed for 'Seqsee::ResultOfAttributeCopy' with value 5"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "copy_5"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "gB",
+   "object_being_plonked": "gA"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (attribute_copy_result) does not pass the type constraint because: Validation failed for 'Seqsee::ResultOfAttributeCopy' with value Seqsee::Anchored={ categories: {  }, direction: undef, group_p: 1, history_obj: SHistory=\\undef, item: [ Seqsee::Element=REF, Seqsee::Element=REF ], left_edge: 1, ... }"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "copy_obj"
+ },
+ {
+  "args": {
+   "attribute_copy_result": null,
+   "object_being_plonked": "gA"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (attribute_copy_result) does not pass the type constraint because: Validation failed for 'Seqsee::ResultOfAttributeCopy' with value undef"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "copy_undef"
+ },
+ {
+  "args": {
+   "attribute_copy_result": 5,
+   "object_being_plonked": 5,
+   "resultant_object": 5
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (attribute_copy_result) does not pass the type constraint because: Validation failed for 'Seqsee::ResultOfAttributeCopy' with value 5"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "all_bad"
+ },
+ {
+  "args": {
+   "attribute_copy_result": "COPY",
+   "object_being_plonked": 5,
+   "resultant_object": 5
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "form": "hashref",
+  "kind": "plonk_new",
+  "name": "obj_bad_res_bad"
+ },
+ {
+  "copy_success": 0,
+  "error": null,
+  "kind": "plonk_failed",
+  "result": {
+   "bool": 0,
+   "copy_ok": 0,
+   "copy_ref": "Seqsee::ResultOfAttributeCopy",
+   "has": false,
+   "object": "e0",
+   "resultant": null,
+   "str": "",
+   "success": false
+  },
+  "what": "e0"
+ },
+ {
+  "copy_success": 0,
+  "error": null,
+  "kind": "plonk_failed",
+  "result": {
+   "bool": 0,
+   "copy_ok": 0,
+   "copy_ref": "Seqsee::ResultOfAttributeCopy",
+   "has": false,
+   "object": "gA",
+   "resultant": null,
+   "str": "",
+   "success": false
+  },
+  "what": "gA"
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value undef"
+  },
+  "kind": "plonk_failed",
+  "what": null
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "kind": "plonk_failed",
+  "what": 5
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value DIR={ text: \"right\" }"
+  },
+  "kind": "plonk_failed",
+  "what": "DIR"
+ },
+ {
+  "kind": "plonk_writers",
+  "steps": [
+   {
+    "error": null,
+    "label": "set_res_gB",
+    "ret": "gB",
+    "state": {
+     "bool": 1,
+     "copy_ok": 0,
+     "copy_ref": "Seqsee::ResultOfAttributeCopy",
+     "has": true,
+     "object": "gA",
+     "resultant": "gB",
+     "str": "1",
+     "success": true
+    }
+   },
+   {
+    "error": {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (resultant_object) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+    },
+    "label": "set_res_5",
+    "ret": null,
+    "state": {
+     "bool": 1,
+     "copy_ok": 0,
+     "copy_ref": "Seqsee::ResultOfAttributeCopy",
+     "has": true,
+     "object": "gA",
+     "resultant": "gB",
+     "str": "1",
+     "success": true
+    }
+   },
+   {
+    "error": {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (resultant_object) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value undef"
+    },
+    "label": "set_res_undef",
+    "ret": null,
+    "state": {
+     "bool": 1,
+     "copy_ok": 0,
+     "copy_ref": "Seqsee::ResultOfAttributeCopy",
+     "has": true,
+     "object": "gA",
+     "resultant": "gB",
+     "str": "1",
+     "success": true
+    }
+   },
+   {
+    "error": null,
+    "label": "set_obj_gC",
+    "ret": "gC",
+    "state": {
+     "bool": 1,
+     "copy_ok": 0,
+     "copy_ref": "Seqsee::ResultOfAttributeCopy",
+     "has": true,
+     "object": "gC",
+     "resultant": "gB",
+     "str": "1",
+     "success": true
+    }
+   },
+   {
+    "error": {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (object_being_plonked) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value \"x\""
+    },
+    "label": "set_obj_x",
+    "ret": null,
+    "state": {
+     "bool": 1,
+     "copy_ok": 0,
+     "copy_ref": "Seqsee::ResultOfAttributeCopy",
+     "has": true,
+     "object": "gC",
+     "resultant": "gB",
+     "str": "1",
+     "success": true
+    }
+   },
+   {
+    "error": null,
+    "label": "copy_ok_set_1",
+    "ret": 1,
+    "state": {
+     "bool": 1,
+     "copy_ok": 1,
+     "copy_ref": "Seqsee::ResultOfAttributeCopy",
+     "has": true,
+     "object": "gC",
+     "resultant": "gB",
+     "str": "1",
+     "success": true
+    }
+   },
+   {
+    "error": {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (success) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+    },
+    "label": "copy_ok_set_5",
+    "ret": null,
+    "state": {
+     "bool": 1,
+     "copy_ok": 1,
+     "copy_ref": "Seqsee::ResultOfAttributeCopy",
+     "has": true,
+     "object": "gC",
+     "resultant": "gB",
+     "str": "1",
+     "success": true
+    }
+   },
+   {
+    "error": null,
+    "label": "set_copy_failed",
+    "ret": "unnamed Seqsee::ResultOfAttributeCopy",
+    "state": {
+     "bool": 1,
+     "copy_ok": 0,
+     "copy_ref": "Seqsee::ResultOfAttributeCopy",
+     "has": true,
+     "object": "gC",
+     "resultant": "gB",
+     "str": "1",
+     "success": true
+    }
+   },
+   {
+    "error": {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (attribute_copy_result) does not pass the type constraint because: Validation failed for 'Seqsee::ResultOfAttributeCopy' with value Seqsee::Anchored={ categories: {  }, direction: undef, group_p: 1, history_obj: SHistory=\\undef, item: [ Seqsee::Element=REF, Seqsee::Element=REF ], left_edge: 0, ... }"
+    },
+    "label": "set_copy_gA",
+    "ret": null,
+    "state": {
+     "bool": 1,
+     "copy_ok": 0,
+     "copy_ref": "Seqsee::ResultOfAttributeCopy",
+     "has": true,
+     "object": "gC",
+     "resultant": "gB",
+     "str": "1",
+     "success": true
+    }
+   },
+   {
+    "error": {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (attribute_copy_result) does not pass the type constraint because: Validation failed for 'Seqsee::ResultOfAttributeCopy' with value undef"
+    },
+    "label": "set_copy_undef",
+    "ret": null,
+    "state": {
+     "bool": 1,
+     "copy_ok": 0,
+     "copy_ref": "Seqsee::ResultOfAttributeCopy",
+     "has": true,
+     "object": "gC",
+     "resultant": "gB",
+     "str": "1",
+     "success": true
+    }
+   }
+  ]
+ },
+ {
+  "bool": 1,
+  "copy_def": 1,
+  "has": true,
+  "kind": "plonk_weak",
+  "obj_def": 0,
+  "res_def": 0
+ },
+ {
+  "args": {
+   "challenger": "gA"
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "min",
+  "result": {
+   "all": [],
+   "bool": 0,
+   "challenger": "gA",
+   "count": 0,
+   "exact": null,
+   "exact_def": 0,
+   "has": 0,
+   "str": "0"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": "gB"
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "exact_g",
+  "result": {
+   "all": [],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 0,
+   "exact": "gB",
+   "exact_def": 1,
+   "has": 0
+  }
+ },
+ {
+  "args": {
+   "challenger": "e0",
+   "exact_conflict": "e1"
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "exact_e",
+  "result": {
+   "all": [],
+   "bool": 1,
+   "challenger": "e0",
+   "count": 0,
+   "exact": "e1",
+   "exact_def": 1,
+   "has": 0
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": ""
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "exact_empty",
+  "result": {
+   "all": [],
+   "bool": 0,
+   "challenger": "gA",
+   "count": 0,
+   "exact": "",
+   "exact_def": 1,
+   "has": 0,
+   "str": "0"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": 0
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "exact_0",
+  "result": {
+   "all": [],
+   "bool": 0,
+   "challenger": "gA",
+   "count": 0,
+   "exact": 0,
+   "exact_def": 1,
+   "has": 0,
+   "str": "0"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": "abc"
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "exact_str",
+  "result": {
+   "all": [],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 0,
+   "exact": "abc",
+   "exact_def": 1,
+   "has": 0,
+   "str": "abc"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": null
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "exact_undef",
+  "result": {
+   "all": [],
+   "bool": 0,
+   "challenger": "gA",
+   "count": 0,
+   "exact": null,
+   "exact_def": 0,
+   "has": 0,
+   "str": "0"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": 7
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "exact_7",
+  "result": {
+   "all": [],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 0,
+   "exact": 7,
+   "exact_def": 1,
+   "has": 0,
+   "str": "7"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": [
+    "gB"
+   ]
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "over_1",
+  "result": {
+   "all": [
+    "gB"
+   ],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 1,
+   "exact": null,
+   "exact_def": 0,
+   "has": 1,
+   "str": "1"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": [
+    "gB",
+    "gC"
+   ]
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "over_2",
+  "result": {
+   "all": [
+    "gB",
+    "gC"
+   ],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 2,
+   "exact": null,
+   "exact_def": 0,
+   "has": 2,
+   "str": "2"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": "",
+   "overlapping_conflicts": [
+    "gC",
+    "e3"
+   ]
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "over_empty_exact",
+  "result": {
+   "all": [
+    "gC",
+    "e3"
+   ],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 2,
+   "exact": "",
+   "exact_def": 1,
+   "has": 2,
+   "str": "2"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": "gB",
+   "overlapping_conflicts": [
+    "gC",
+    "gD"
+   ]
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "both",
+  "result": {
+   "all": [
+    "gC",
+    "gD"
+   ],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 2,
+   "exact": "gB",
+   "exact_def": 1,
+   "has": 2
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": "abc",
+   "overlapping_conflicts": [
+    "gC"
+   ]
+  },
+  "error": null,
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "exact_str_over",
+  "result": {
+   "all": [
+    "gC"
+   ],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 1,
+   "exact": "abc",
+   "exact_def": 1,
+   "has": 1,
+   "str": "abc"
+  }
+ },
+ {
+  "args": {
+   "exact_conflict": "gB"
+  },
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (challenger) is required"
+  },
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "no_chal"
+ },
+ {
+  "args": {
+   "challenger": 5
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (challenger) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "chal_5"
+ },
+ {
+  "args": {
+   "challenger": null
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (challenger) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value undef"
+  },
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "chal_undef"
+ },
+ {
+  "args": {
+   "challenger": "DIR"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (challenger) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value DIR={ text: \"right\" }"
+  },
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "chal_dir"
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": "x"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (overlapping_conflicts) does not pass the type constraint because: Validation failed for 'ArrayRef[Seqsee::Object]' with value \"x\""
+  },
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "over_str"
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": "HASH"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (overlapping_conflicts) does not pass the type constraint because: Validation failed for 'ArrayRef[Seqsee::Object]' with value {  }"
+  },
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "over_hash"
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": null
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (overlapping_conflicts) does not pass the type constraint because: Validation failed for 'ArrayRef[Seqsee::Object]' with value undef"
+  },
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "over_undef"
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": [
+    "gB",
+    5
+   ]
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (overlapping_conflicts) does not pass the type constraint because: Validation failed for 'ArrayRef[Seqsee::Object]' with value [ Seqsee::Anchored={ categories: HASH(0x5555559777d8), direction: undef, group_p: 1, history_obj: SHistory=REF, item: ARRAY(0x55555886a908), left_edge: 1, ... }, 5 ]"
+  },
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "over_bad_item"
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": [
+    "DIR"
+   ]
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (overlapping_conflicts) does not pass the type constraint because: Validation failed for 'ArrayRef[Seqsee::Object]' with value [ DIR={ text: \"right\" } ]"
+  },
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "over_dir_item"
+ },
+ {
+  "args": {
+   "challenger": 5,
+   "overlapping_conflicts": "x"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (challenger) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "form": "list",
+  "kind": "conflicts_new",
+  "name": "chal_bad_over_bad"
+ },
+ {
+  "args": {
+   "challenger": "gA"
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "min",
+  "result": {
+   "all": [],
+   "bool": 0,
+   "challenger": "gA",
+   "count": 0,
+   "exact": null,
+   "exact_def": 0,
+   "has": 0,
+   "str": "0"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": "gB"
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "exact_g",
+  "result": {
+   "all": [],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 0,
+   "exact": "gB",
+   "exact_def": 1,
+   "has": 0
+  }
+ },
+ {
+  "args": {
+   "challenger": "e0",
+   "exact_conflict": "e1"
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "exact_e",
+  "result": {
+   "all": [],
+   "bool": 1,
+   "challenger": "e0",
+   "count": 0,
+   "exact": "e1",
+   "exact_def": 1,
+   "has": 0
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": ""
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "exact_empty",
+  "result": {
+   "all": [],
+   "bool": 0,
+   "challenger": "gA",
+   "count": 0,
+   "exact": "",
+   "exact_def": 1,
+   "has": 0,
+   "str": "0"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": 0
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "exact_0",
+  "result": {
+   "all": [],
+   "bool": 0,
+   "challenger": "gA",
+   "count": 0,
+   "exact": 0,
+   "exact_def": 1,
+   "has": 0,
+   "str": "0"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": "abc"
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "exact_str",
+  "result": {
+   "all": [],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 0,
+   "exact": "abc",
+   "exact_def": 1,
+   "has": 0,
+   "str": "abc"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": null
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "exact_undef",
+  "result": {
+   "all": [],
+   "bool": 0,
+   "challenger": "gA",
+   "count": 0,
+   "exact": null,
+   "exact_def": 0,
+   "has": 0,
+   "str": "0"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": 7
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "exact_7",
+  "result": {
+   "all": [],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 0,
+   "exact": 7,
+   "exact_def": 1,
+   "has": 0,
+   "str": "7"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": [
+    "gB"
+   ]
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "over_1",
+  "result": {
+   "all": [
+    "gB"
+   ],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 1,
+   "exact": null,
+   "exact_def": 0,
+   "has": 1,
+   "str": "1"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": [
+    "gB",
+    "gC"
+   ]
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "over_2",
+  "result": {
+   "all": [
+    "gB",
+    "gC"
+   ],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 2,
+   "exact": null,
+   "exact_def": 0,
+   "has": 2,
+   "str": "2"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": "",
+   "overlapping_conflicts": [
+    "gC",
+    "e3"
+   ]
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "over_empty_exact",
+  "result": {
+   "all": [
+    "gC",
+    "e3"
+   ],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 2,
+   "exact": "",
+   "exact_def": 1,
+   "has": 2,
+   "str": "2"
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": "gB",
+   "overlapping_conflicts": [
+    "gC",
+    "gD"
+   ]
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "both",
+  "result": {
+   "all": [
+    "gC",
+    "gD"
+   ],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 2,
+   "exact": "gB",
+   "exact_def": 1,
+   "has": 2
+  }
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "exact_conflict": "abc",
+   "overlapping_conflicts": [
+    "gC"
+   ]
+  },
+  "error": null,
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "exact_str_over",
+  "result": {
+   "all": [
+    "gC"
+   ],
+   "bool": 1,
+   "challenger": "gA",
+   "count": 1,
+   "exact": "abc",
+   "exact_def": 1,
+   "has": 1,
+   "str": "abc"
+  }
+ },
+ {
+  "args": {
+   "exact_conflict": "gB"
+  },
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (challenger) is required"
+  },
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "no_chal"
+ },
+ {
+  "args": {
+   "challenger": 5
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (challenger) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "chal_5"
+ },
+ {
+  "args": {
+   "challenger": null
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (challenger) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value undef"
+  },
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "chal_undef"
+ },
+ {
+  "args": {
+   "challenger": "DIR"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (challenger) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value DIR={ text: \"right\" }"
+  },
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "chal_dir"
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": "x"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (overlapping_conflicts) does not pass the type constraint because: Validation failed for 'ArrayRef[Seqsee::Object]' with value \"x\""
+  },
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "over_str"
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": "HASH"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (overlapping_conflicts) does not pass the type constraint because: Validation failed for 'ArrayRef[Seqsee::Object]' with value {  }"
+  },
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "over_hash"
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": null
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (overlapping_conflicts) does not pass the type constraint because: Validation failed for 'ArrayRef[Seqsee::Object]' with value undef"
+  },
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "over_undef"
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": [
+    "gB",
+    5
+   ]
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (overlapping_conflicts) does not pass the type constraint because: Validation failed for 'ArrayRef[Seqsee::Object]' with value [ Seqsee::Anchored={ categories: HASH(0x5555559777d8), direction: undef, group_p: 1, history_obj: SHistory=REF, item: ARRAY(0x55555886a908), left_edge: 1, ... }, 5 ]"
+  },
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "over_bad_item"
+ },
+ {
+  "args": {
+   "challenger": "gA",
+   "overlapping_conflicts": [
+    "DIR"
+   ]
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (overlapping_conflicts) does not pass the type constraint because: Validation failed for 'ArrayRef[Seqsee::Object]' with value [ DIR={ text: \"right\" } ]"
+  },
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "over_dir_item"
+ },
+ {
+  "args": {
+   "challenger": 5,
+   "overlapping_conflicts": "x"
+  },
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (challenger) does not pass the type constraint because: Validation failed for 'Seqsee::Object' with value 5"
+  },
+  "form": "hashref",
+  "kind": "conflicts_new",
+  "name": "chal_bad_over_bad"
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::CannotAssignValueToReadOnlyAccessor",
+   "message": "Cannot assign a value to a read-only accessor"
+  },
+  "kind": "conflicts_ro",
+  "method": "challenger"
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::CannotAssignValueToReadOnlyAccessor",
+   "message": "Cannot assign a value to a read-only accessor"
+  },
+  "kind": "conflicts_ro",
+  "method": "exact_conflict"
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::CannotAssignValueToReadOnlyAccessor",
+   "message": "Cannot assign a value to a read-only accessor"
+  },
+  "kind": "conflicts_ro",
+  "method": "overlapping_conflicts"
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::MethodExpectsFewerArgs",
+   "message": "Cannot call count with any arguments"
+  },
+  "kind": "conflicts_ro",
+  "method": "has_overlapping_conflicts"
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::MethodExpectsFewerArgs",
+   "message": "Cannot call count with any arguments"
+  },
+  "kind": "conflicts_ro",
+  "method": "overlapping_conflict_count"
+ },
+ {
+  "error": {
+   "class": "Moose::Exception::MethodExpectsFewerArgs",
+   "message": "Cannot call elements with any arguments"
+  },
+  "kind": "conflicts_ro",
+  "method": "all_overlapping_conflicts"
+ },
+ {
+  "all": [
+   "gB",
+   "gC"
+  ],
+  "count": 2,
+  "kind": "conflicts_list_ref"
+ },
+ {
+  "bool": 1,
+  "chal_def": 0,
+  "count": 1,
+  "exact_def": 0,
+  "kind": "conflicts_weak"
+ },
+ {
+  "bool": 0,
+  "exact_def": 0,
+  "kind": "conflicts_weak2"
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [],
+  "name": "nothing",
+  "opts": null,
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {},
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [],
+  "name": "nothing_empty_opts",
+  "opts": {},
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {},
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "exact_wins",
+  "opts": null,
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "exact_loses",
+  "opts": null,
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {
+   "gB": 0
+  }
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "exact_loses_undef",
+  "opts": {},
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {
+   "gB": null
+  }
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "exact_loses_empty",
+  "opts": {},
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {
+   "gB": ""
+  }
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "exact_wins_str",
+  "opts": {},
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {
+   "gB": "yes"
+  }
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [],
+  "name": "exact_ignored",
+  "opts": {
+   "IgnoreConflictWith": "gB"
+  },
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {
+   "gB": 0
+  }
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "exact_ignore_other",
+  "opts": {
+   "IgnoreConflictWith": "gC"
+  },
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {
+   "gB": 0
+  }
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "exact_ignore_undef",
+  "opts": {
+   "IgnoreConflictWith": null
+  },
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [],
+  "name": "exact_fail",
+  "opts": {
+   "FailIfExact": 1
+  },
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "exact_fail0",
+  "opts": {
+   "FailIfExact": 0
+  },
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [],
+  "name": "exact_fail_ignored",
+  "opts": {
+   "FailIfExact": 1,
+   "IgnoreConflictWith": "gB"
+  },
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {}
+ },
+ {
+  "dead": {
+   "gB": 1
+  },
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "exact_dead",
+  "opts": {},
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gB"
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [],
+  "name": "exact_empty_str",
+  "opts": {
+   "FailIfExact": 1
+  },
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": ""
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "abc"
+   ]
+  ],
+  "name": "exact_str",
+  "opts": {},
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "abc"
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [],
+  "name": "exact_str_ignored",
+  "opts": {
+   "IgnoreConflictWith": "abc"
+  },
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "abc"
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [],
+  "name": "exact_str_fail",
+  "opts": {
+   "FailIfExact": "x"
+  },
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "exact": "abc"
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "live",
+    "gB"
+   ],
+   [
+    "fight",
+    "gA",
+    "gB"
+   ],
+   [
+    "live",
+    "gC"
+   ],
+   [
+    "fight",
+    "gA",
+    "gC"
+   ]
+  ],
+  "name": "over_all_win",
+  "opts": {},
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "over": [
+    "gB",
+    "gC"
+   ]
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "live",
+    "gB"
+   ],
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "over_first_loses",
+  "opts": {},
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "over": [
+    "gB",
+    "gC"
+   ]
+  },
+  "wins": {
+   "gB": 0
+  }
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "live",
+    "gB"
+   ],
+   [
+    "fight",
+    "gA",
+    "gB"
+   ],
+   [
+    "live",
+    "gC"
+   ],
+   [
+    "fight",
+    "gA",
+    "gC"
+   ]
+  ],
+  "name": "over_second_loses",
+  "opts": {},
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "over": [
+    "gB",
+    "gC"
+   ]
+  },
+  "wins": {
+   "gC": 0
+  }
+ },
+ {
+  "dead": {
+   "gB": 1
+  },
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "live",
+    "gB"
+   ],
+   [
+    "live",
+    "gC"
+   ],
+   [
+    "fight",
+    "gA",
+    "gC"
+   ]
+  ],
+  "name": "over_dead",
+  "opts": {},
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "over": [
+    "gB",
+    "gC"
+   ]
+  },
+  "wins": {
+   "gB": 0
+  }
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "live",
+    "gC"
+   ],
+   [
+    "fight",
+    "gA",
+    "gC"
+   ]
+  ],
+  "name": "over_ignored",
+  "opts": {
+   "IgnoreConflictWith": "gB"
+  },
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "over": [
+    "gB",
+    "gC"
+   ]
+  },
+  "wins": {
+   "gB": 0
+  }
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "live",
+    "gB"
+   ],
+   [
+    "fight",
+    "gA",
+    "gB"
+   ],
+   [
+    "live",
+    "gC"
+   ],
+   [
+    "fight",
+    "gA",
+    "gC"
+   ]
+  ],
+  "name": "over_fail_exact",
+  "opts": {
+   "FailIfExact": 1
+  },
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "over": [
+    "gB",
+    "gC"
+   ]
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "live",
+    "gB"
+   ],
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "over_ignore_undef",
+  "opts": {
+   "IgnoreConflictWith": null
+  },
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "over": [
+    "gB"
+   ]
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ],
+   [
+    "live",
+    "gC"
+   ],
+   [
+    "fight",
+    "gA",
+    "gC"
+   ],
+   [
+    "live",
+    "gD"
+   ],
+   [
+    "fight",
+    "gA",
+    "gD"
+   ]
+  ],
+  "name": "both_win",
+  "opts": null,
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gB",
+   "over": [
+    "gC",
+    "gD"
+   ]
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ]
+  ],
+  "name": "both_exact_loses",
+  "opts": null,
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "exact": "gB",
+   "over": [
+    "gC",
+    "gD"
+   ]
+  },
+  "wins": {
+   "gB": 0
+  }
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [],
+  "name": "both_exact_fail",
+  "opts": {
+   "FailIfExact": 1
+  },
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "exact": "gB",
+   "over": [
+    "gC",
+    "gD"
+   ]
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "live",
+    "gC"
+   ],
+   [
+    "fight",
+    "gA",
+    "gC"
+   ],
+   [
+    "live",
+    "gD"
+   ],
+   [
+    "fight",
+    "gA",
+    "gD"
+   ]
+  ],
+  "name": "both_ignore_exact",
+  "opts": {
+   "IgnoreConflictWith": "gB"
+  },
+  "ret": null,
+  "ret_def": 0,
+  "spec": {
+   "exact": "gB",
+   "over": [
+    "gC",
+    "gD"
+   ]
+  },
+  "wins": {
+   "gB": 0,
+   "gD": 0
+  }
+ },
+ {
+  "dead": {
+   "gB": 1,
+   "gC": 1
+  },
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ],
+   [
+    "live",
+    "gC"
+   ],
+   [
+    "live",
+    "gD"
+   ],
+   [
+    "fight",
+    "gA",
+    "gD"
+   ]
+  ],
+  "name": "both_exact_dead",
+  "opts": {},
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gB",
+   "over": [
+    "gC",
+    "gD"
+   ]
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [
+   [
+    "fight",
+    "gA",
+    "gB"
+   ],
+   [
+    "live",
+    "gB"
+   ],
+   [
+    "fight",
+    "gA",
+    "gB"
+   ],
+   [
+    "live",
+    "gC"
+   ],
+   [
+    "fight",
+    "gA",
+    "gC"
+   ]
+  ],
+  "name": "same_in_both",
+  "opts": {},
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gB",
+   "over": [
+    "gB",
+    "gC"
+   ]
+  },
+  "wins": {}
+ },
+ {
+  "dead": {},
+  "error": null,
+  "kind": "resolve",
+  "log": [],
+  "name": "self_ignored",
+  "opts": {
+   "IgnoreConflictWith": "gA"
+  },
+  "ret": 1,
+  "ret_def": 1,
+  "spec": {
+   "exact": "gA",
+   "over": [
+    "gA"
+   ]
+  },
+  "wins": {}
+ },
+ {
+  "error": null,
+  "kind": "gsl_new",
+  "name": "full",
+  "values": [
+   "a",
+   "b",
+   "c",
+   "d"
+  ]
+ },
+ {
+  "error": null,
+  "kind": "gsl_new",
+  "name": "undefs",
+  "values": [
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "error": null,
+  "kind": "gsl_new",
+  "name": "extra",
+  "values": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ {
+  "error": null,
+  "kind": "gsl_new",
+  "name": "nested",
+  "values": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ {
+  "error": null,
+  "kind": "gsl_new",
+  "name": "nested_override",
+  "values": [
+   9,
+   2,
+   3,
+   4
+  ]
+ },
+ {
+  "error": {
+   "class": "DIE",
+   "message": "Missing initializer label for Seqsee::ResultOfGetSomethingLike: 'potential_matches'.\nFatal error in constructor call"
+  },
+  "kind": "gsl_new",
+  "name": "one_missing"
+ },
+ {
+  "error": {
+   "class": "DIE",
+   "message": "Missing initializer label for Seqsee::ResultOfGetSomethingLike: 'literally_present'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'probable_matches'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'potential_matches'.\n(Did you mislabel one of the args you passed: 'to_ask' or 'to_ask'?)\nFatal error in constructor call"
+  },
+  "kind": "gsl_new",
+  "name": "three_missing"
+ },
+ {
+  "error": {
+   "class": "DIE",
+   "message": "Missing initializer label for Seqsee::ResultOfGetSomethingLike: 'literally_present'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'probable_matches'.\n(Did you mislabel one of the args you passed: 'potential_matches' or 'to_ask'?)\nFatal error in constructor call"
+  },
+  "kind": "gsl_new",
+  "name": "two_missing_two_keys"
+ },
+ {
+  "error": {
+   "class": "DIE",
+   "message": "Missing initializer label for Seqsee::ResultOfGetSomethingLike: 'to_ask'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'literally_present'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'probable_matches'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'potential_matches'.\n(Did you mislabel one of the args you passed: 'foo', 'foo', or 'foo'?)\nFatal error in constructor call"
+  },
+  "kind": "gsl_new",
+  "name": "all_missing_one_key"
+ },
+ {
+  "error": {
+   "class": "DIE",
+   "message": "Missing initializer label for Seqsee::ResultOfGetSomethingLike: 'to_ask'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'literally_present'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'probable_matches'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'potential_matches'.\nFatal error in constructor call"
+  },
+  "kind": "gsl_new",
+  "name": "empty"
+ },
+ {
+  "error": {
+   "class": "DIE",
+   "message": "Missing initializer label for Seqsee::ResultOfGetSomethingLike: 'to_ask'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'literally_present'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'probable_matches'.\nMissing initializer label for Seqsee::ResultOfGetSomethingLike: 'potential_matches'.\nFatal error in constructor call"
+  },
+  "kind": "gsl_new",
+  "name": "no_args"
+ },
+ {
+  "error": {
+   "class": "DIE",
+   "message": "Argument to Seqsee::ResultOfGetSomethingLike->new() must be hash reference"
+  },
+  "kind": "gsl_new",
+  "name": "undef_arg"
+ },
+ {
+  "error": {
+   "class": "DIE",
+   "message": "Argument to Seqsee::ResultOfGetSomethingLike->new() must be hash reference"
+  },
+  "kind": "gsl_new",
+  "name": "number"
+ },
+ {
+  "error": {
+   "class": "DIE",
+   "message": "Argument to Seqsee::ResultOfGetSomethingLike->new() must be hash reference"
+  },
+  "kind": "gsl_new",
+  "name": "array"
+ },
+ {
+  "kind": "gsl_mislabel_two_keys",
+  "missing_lines": [
+   "Missing initializer label for Seqsee::ResultOfGetSomethingLike: 'to_ask'.",
+   "Missing initializer label for Seqsee::ResultOfGetSomethingLike: 'literally_present'.",
+   "Missing initializer label for Seqsee::ResultOfGetSomethingLike: 'probable_matches'.",
+   "Missing initializer label for Seqsee::ResultOfGetSomethingLike: 'potential_matches'."
+  ],
+  "names": [
+   "bar",
+   "bar",
+   "bar",
+   "foo",
+   "foo",
+   "foo"
+  ],
+  "tail": "Fatal error in constructor call"
+ },
+ {
+  "get_with_arg": null,
+  "kind": "gsl_setters",
+  "set_no_value": {
+   "class": "DIE",
+   "message": "Missing new value in call to 'set_to_ask' method"
+  },
+  "set_undef_after": null,
+  "steps": [
+   {
+    "after": "new_to_ask",
+    "attr": "to_ask",
+    "ret": "old",
+    "ret_is_self": 0
+   },
+   {
+    "after": "new_literally_present",
+    "attr": "literally_present",
+    "ret": "b",
+    "ret_is_self": 0
+   },
+   {
+    "after": "new_probable_matches",
+    "attr": "probable_matches",
+    "ret": "c",
+    "ret_is_self": 0
+   },
+   {
+    "after": "new_potential_matches",
+    "attr": "potential_matches",
+    "ret": "d",
+    "ret_is_self": 0
+   }
+  ]
+ }
+]

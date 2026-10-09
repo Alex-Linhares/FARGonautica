@@ -1,0 +1,4760 @@
+[
+ {
+  "again_same": 1,
+  "case": "result",
+  "name": "NO",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  }
+ },
+ {
+  "case": "result",
+  "fresh": 1,
+  "name": "unblemished",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  }
+ },
+ {
+  "case": "result",
+  "name": "entire",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": 7,
+   "entire_p": 1,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  }
+ },
+ {
+  "case": "result",
+  "name": "entire undef",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 1,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  }
+ },
+ {
+  "case": "result",
+  "name": "by part",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": {
+    "2": 7
+   },
+   "parts_p": 1,
+   "success": 1
+  }
+ },
+ {
+  "case": "result",
+  "name": "by part empty",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": {},
+   "parts_p": 1,
+   "success": 1
+  }
+ },
+ {
+  "case": "result new",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (success) is required"
+  },
+  "name": "no success"
+ },
+ {
+  "case": "result new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (success) does not pass the type constraint because: Validation failed for 'Bool' with value 2"
+  },
+  "name": "success 2"
+ },
+ {
+  "case": "result new",
+  "name": "success \"0\"",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": "0"
+  }
+ },
+ {
+  "case": "result new",
+  "name": "success undef",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": null
+  }
+ },
+ {
+  "case": "result new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (part_blemish) does not pass the type constraint because: Validation failed for 'HashRef' with value undef"
+  },
+  "name": "part_blemish undef"
+ },
+ {
+  "case": "result new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (part_blemish) does not pass the type constraint because: Validation failed for 'HashRef' with value [  ]"
+  },
+  "name": "part_blemish array"
+ },
+ {
+  "case": "result new",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (part_blemish) does not pass the type constraint because: Validation failed for 'HashRef' with value 3"
+  },
+  "name": "all bad"
+ },
+ {
+  "case": "result new",
+  "name": "entire 0",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": 0,
+   "entire_p": 1,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  }
+ },
+ {
+  "annotated": "[1, [2, 2] --*-> 2, 3]",
+  "case": "blemish",
+  "cats": [],
+  "contains": 0,
+  "e2_effective_structure": 2,
+  "effective": "[1, 2, 3]",
+  "effective_structure": [
+   1,
+   2,
+   3
+  ],
+  "history": [
+   "[0]\tcreated"
+  ],
+  "items": [
+   {
+    "active": 0,
+    "cats": [
+     "number"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 0,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category number",
+     "[0]\tAdded category number"
+    ],
+    "info_loss": null,
+    "meto_cat": null,
+    "meto_name": null,
+    "metonymed": 0,
+    "ref": "Seqsee::Element",
+    "starred": null,
+    "starred_is_a_metonym_is_x": null,
+    "structure": 1,
+    "unstarred_defined": null
+   },
+   {
+    "active": 1,
+    "cats": [
+     "sameness"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 1,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category sameness",
+     "[0]\tAdded category sameness",
+     "[0]\tMetonym activeness turned on"
+    ],
+    "info_loss": {
+     "length": 2
+    },
+    "meto_cat": "sameness",
+    "meto_name": "each",
+    "metonymed": 0,
+    "ref": "Seqsee::Object",
+    "starred": 2,
+    "starred_is_a_metonym_is_x": 1,
+    "structure": "[2, 2]",
+    "unstarred_defined": 0
+   },
+   {
+    "active": 0,
+    "cats": [
+     "number"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 0,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category number",
+     "[0]\tAdded category number"
+    ],
+    "info_loss": null,
+    "meto_cat": null,
+    "meto_name": null,
+    "metonymed": 0,
+    "ref": "Seqsee::Element",
+    "starred": null,
+    "starred_is_a_metonym_is_x": null,
+    "structure": 3,
+    "unstarred_defined": null
+   }
+  ],
+  "mid_effective_is_e2": 1,
+  "mid_effective_structure": [
+   2,
+   2
+  ],
+  "name": "middle",
+  "orig_contains": 0,
+  "orig_e2_concrete_is_mid": 1,
+  "orig_e2_is_a_metonym_is_mid": 1,
+  "orig_e2_metonymed": 1,
+  "orig_structure": "[1, 2, 3]",
+  "ref": "Seqsee::Object",
+  "slippages": {
+   "1": 2
+  },
+  "structure": "[1, [2, 2], 3]"
+ },
+ {
+  "annotated": "[1, [2, 2], 3]",
+  "case": "blemish",
+  "contains": 0,
+  "effective": "[1, [2, 2], 3]",
+  "mid_effective_is_mid": 1,
+  "mid_history": [
+   "[0]\tcreated",
+   "[0]\tAdded category sameness",
+   "[0]\tAdded category sameness",
+   "[0]\tMetonym activeness turned on",
+   "[0]\tMetonym activeness turned off"
+  ],
+  "name": "middle, deactivated",
+  "slippages": []
+ },
+ {
+  "annotated": "[[4, 4] --*-> 4, 5]",
+  "case": "blemish",
+  "items": [
+   {
+    "active": 1,
+    "cats": [
+     "sameness"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 1,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category sameness",
+     "[0]\tAdded category sameness",
+     "[0]\tMetonym activeness turned on"
+    ],
+    "info_loss": {
+     "length": 2
+    },
+    "meto_cat": "sameness",
+    "meto_name": "each",
+    "metonymed": 0,
+    "ref": "Seqsee::Object",
+    "starred": 4,
+    "starred_is_a_metonym_is_x": 1,
+    "structure": "[4, 4]",
+    "unstarred_defined": 0
+   },
+   {
+    "active": 0,
+    "cats": [
+     "number"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 0,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category number",
+     "[0]\tAdded category number"
+    ],
+    "info_loss": null,
+    "meto_cat": null,
+    "meto_name": null,
+    "metonymed": 0,
+    "ref": "Seqsee::Element",
+    "starred": null,
+    "starred_is_a_metonym_is_x": null,
+    "structure": 5,
+    "unstarred_defined": null
+   }
+  ],
+  "name": "first",
+  "structure": "[[4, 4], 5]"
+ },
+ {
+  "annotated": "[4, [5, 5] --*-> 5]",
+  "case": "blemish",
+  "items": [
+   {
+    "active": 0,
+    "cats": [
+     "number"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 0,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category number",
+     "[0]\tAdded category number"
+    ],
+    "info_loss": null,
+    "meto_cat": null,
+    "meto_name": null,
+    "metonymed": 0,
+    "ref": "Seqsee::Element",
+    "starred": null,
+    "starred_is_a_metonym_is_x": null,
+    "structure": 4,
+    "unstarred_defined": null
+   },
+   {
+    "active": 1,
+    "cats": [
+     "sameness"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 1,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category sameness",
+     "[0]\tAdded category sameness",
+     "[0]\tMetonym activeness turned on"
+    ],
+    "info_loss": {
+     "length": 2
+    },
+    "meto_cat": "sameness",
+    "meto_name": "each",
+    "metonymed": 0,
+    "ref": "Seqsee::Object",
+    "starred": 5,
+    "starred_is_a_metonym_is_x": 1,
+    "structure": "[5, 5]",
+    "unstarred_defined": 0
+   }
+  ],
+  "name": "last (-1)",
+  "structure": "[4, [5, 5]]"
+ },
+ {
+  "annotated": "[1, [[2, 3], [2, 3]] --*-> [2, 3]]",
+  "case": "blemish",
+  "effective": "[1, [2, 3]]",
+  "items": [
+   {
+    "active": 0,
+    "cats": [
+     "number"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 0,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category number",
+     "[0]\tAdded category number"
+    ],
+    "info_loss": null,
+    "meto_cat": null,
+    "meto_name": null,
+    "metonymed": 0,
+    "ref": "Seqsee::Element",
+    "starred": null,
+    "starred_is_a_metonym_is_x": null,
+    "structure": 1,
+    "unstarred_defined": null
+   },
+   {
+    "active": 1,
+    "cats": [
+     "sameness"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 1,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category sameness",
+     "[0]\tAdded category sameness",
+     "[0]\tMetonym activeness turned on"
+    ],
+    "info_loss": {
+     "length": 2
+    },
+    "meto_cat": "sameness",
+    "meto_name": "each",
+    "metonymed": 0,
+    "ref": "Seqsee::Object",
+    "starred": "[2, 3]",
+    "starred_is_a_metonym_is_x": 1,
+    "structure": "[[2, 3], [2, 3]]",
+    "unstarred_defined": 0
+   }
+  ],
+  "name": "group part",
+  "structure": "[1, [[2, 3], [2, 3]]]"
+ },
+ {
+  "annotated": "[5 --*-> 5, 5]",
+  "case": "blemish",
+  "e_is_a_metonym_is_r0": 1,
+  "items": [
+   {
+    "active": 1,
+    "cats": [
+     "number",
+     "sameness"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 1,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category number",
+     "[0]\tAdded category number",
+     "[0]\tAdded category sameness",
+     "[0]\tAdded category sameness",
+     "[0]\tMetonym activeness turned on"
+    ],
+    "info_loss": {
+     "length": 2
+    },
+    "meto_cat": "sameness",
+    "meto_name": "each",
+    "metonymed": 0,
+    "ref": "Seqsee::Element",
+    "starred": 5,
+    "starred_is_a_metonym_is_x": 1,
+    "structure": 5,
+    "unstarred_defined": 0
+   },
+   {
+    "active": 0,
+    "cats": [
+     "number"
+    ],
+    "concrete_is_self": 1,
+    "contains": 0,
+    "has_meto": 0,
+    "history": [
+     "[0]\tcreated",
+     "[0]\tAdded category number",
+     "[0]\tAdded category number"
+    ],
+    "info_loss": null,
+    "meto_cat": null,
+    "meto_name": null,
+    "metonymed": 0,
+    "ref": "Seqsee::Element",
+    "starred": null,
+    "starred_is_a_metonym_is_x": null,
+    "structure": 5,
+    "unstarred_defined": null
+   }
+  ],
+  "name": "element",
+  "ref": "Seqsee::Object",
+  "structure": "[5, 5]"
+ },
+ {
+  "case": "blemish",
+  "error": {
+   "class": "SErr",
+   "message": "OutOfRange [obj=[4, 5]]index=4, size=2, "
+  },
+  "name": "out of range"
+ },
+ {
+  "case": "blemish",
+  "error": {
+   "class": "SErr",
+   "message": "OutOfRange [obj=[]]index=1, size=0, "
+  },
+  "name": "out of range 0 items"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "2"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "6"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "-3"
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "bl",
+  "struct": "\"5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "bl",
+  "struct": "\"-5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "bl",
+  "struct": "\"5.0\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "bl",
+  "struct": "\"abc\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "bl",
+  "struct": "undef"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[5]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": {
+    "1": 2
+   },
+   "parts_p": 1,
+   "success": 1
+  },
+  "struct": "[1,2,3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "[1,[2,2],3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[2,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[1,2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": {
+    "1": 2
+   },
+   "parts_p": 1,
+   "success": 1
+  },
+  "struct": "obj g123"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj e5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "obj bl"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj gn"
+ },
+ {
+  "case": "cbsa",
+  "obj": "bl",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj emp"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "2"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "6"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "-3"
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "blin",
+  "struct": "\"5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "blin",
+  "struct": "\"-5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "blin",
+  "struct": "\"5.0\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "blin",
+  "struct": "\"abc\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "blin",
+  "struct": "undef"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[5]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": {
+    "1": 2
+   },
+   "parts_p": 1,
+   "success": 1
+  },
+  "struct": "[1,2,3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "[1,[2,2],3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[2,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[1,2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": {
+    "1": 2
+   },
+   "parts_p": 1,
+   "success": 1
+  },
+  "struct": "obj g123"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj e5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "obj bl"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj gn"
+ },
+ {
+  "case": "cbsa",
+  "obj": "blin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj emp"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "2"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "6"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "-3"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "\"5\""
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "\"-5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "SAW CanBeSeenAs(Seqsee::Element, $): Seqsee::Element:[0,0] 5 '5.0",
+  "obj": "e5",
+  "struct": "\"5.0\""
+ },
+ {
+  "case": "cbsa",
+  "error": "SAW CanBeSeenAs(Seqsee::Element, $): Seqsee::Element:[0,0] 5 'abc",
+  "obj": "e5",
+  "struct": "\"abc\""
+ },
+ {
+  "case": "cbsa",
+  "error": "SAW CanBeSeenAs(Seqsee::Element, $): Seqsee::Element:[0,0] 5 '",
+  "obj": "e5",
+  "struct": "undef"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "[5]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2,3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,2],3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[2,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[1,2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj g123"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "obj e5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj bl"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj gn"
+ },
+ {
+  "case": "cbsa",
+  "obj": "e5",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj emp"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "2"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "6"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "-3"
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "emp",
+  "struct": "\"5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "emp",
+  "struct": "\"-5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "emp",
+  "struct": "\"5.0\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "emp",
+  "struct": "\"abc\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "emp",
+  "struct": "undef"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[5]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "[]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2,3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,2],3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[2,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[1,2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj g123"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj e5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj bl"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj gn"
+ },
+ {
+  "case": "cbsa",
+  "obj": "emp",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "obj emp"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "2"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "6"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "-3"
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "g123",
+  "struct": "\"5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "g123",
+  "struct": "\"-5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "g123",
+  "struct": "\"5.0\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "g123",
+  "struct": "\"abc\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "g123",
+  "struct": "undef"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[5]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "[1,2,3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,2],3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[2,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[1,2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "obj g123"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj e5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj bl"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj gn"
+ },
+ {
+  "case": "cbsa",
+  "obj": "g123",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj emp"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "2"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "6"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "-3"
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "gn",
+  "struct": "\"5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "gn",
+  "struct": "\"-5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "gn",
+  "struct": "\"5.0\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "gn",
+  "struct": "\"abc\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "gn",
+  "struct": "undef"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[5]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2,3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,2],3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "[1,[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[2,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[1,2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj g123"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj e5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj bl"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "obj gn"
+ },
+ {
+  "case": "cbsa",
+  "obj": "gn",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj emp"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": 2,
+   "entire_p": 1,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "2"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "6"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "-3"
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "mid",
+  "struct": "\"5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "mid",
+  "struct": "\"-5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "mid",
+  "struct": "\"5.0\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "mid",
+  "struct": "\"abc\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "mid",
+  "struct": "undef"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[5]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2,3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,2],3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "[2,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[1,2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj g123"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj e5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj bl"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj gn"
+ },
+ {
+  "case": "cbsa",
+  "obj": "mid",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj emp"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 1,
+   "bool": 1,
+   "entire": 2,
+   "entire_p": 1,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "2"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "6"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "-3"
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "midin",
+  "struct": "\"5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "midin",
+  "struct": "\"-5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "midin",
+  "struct": "\"5.0\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "midin",
+  "struct": "\"abc\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "midin",
+  "struct": "undef"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[5]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2,3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,2],3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "[2,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[1,2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj g123"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj e5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj bl"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj gn"
+ },
+ {
+  "case": "cbsa",
+  "obj": "midin",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj emp"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "2"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "6"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "-3"
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "one",
+  "struct": "\"5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "one",
+  "struct": "\"-5\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "one",
+  "struct": "\"5.0\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "one",
+  "struct": "\"abc\""
+ },
+ {
+  "case": "cbsa",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(Seqsee::Object,$)",
+  "obj": "one",
+  "struct": "undef"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "[5]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2,3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,2],3]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[2,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[1,2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[1,2]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "[[2,3]]"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj g123"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  },
+  "struct": "obj e5"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj bl"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj gn"
+ },
+ {
+  "case": "cbsa",
+  "obj": "one",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  },
+  "struct": "obj emp"
+ },
+ {
+  "case": "cbsa plain",
+  "name": "5 5",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  }
+ },
+ {
+  "case": "cbsa plain",
+  "name": "5 6",
+  "r": {
+   "blemished": 0,
+   "bool": 0,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 1,
+   "parts": null,
+   "parts_p": 0,
+   "success": 0
+  }
+ },
+ {
+  "case": "cbsa plain",
+  "name": "5 5.0",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  }
+ },
+ {
+  "case": "cbsa plain",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(#,ARRAY)",
+  "name": "5 [5]"
+ },
+ {
+  "case": "cbsa plain",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs(#,Seqsee::Element)",
+  "name": "5 obj"
+ },
+ {
+  "case": "cbsa plain",
+  "error": "No viable candidate for call to multimethod CanBeSeenAs($,#)",
+  "name": "\"5\" 5"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 0,
+   "r": null
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "undef": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 0,
+   "r": null
+  },
+  "case": "cbsa helpers",
+  "obj": "g123",
+  "struct": "[2,2]"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "error": "Can't use string (\"2\") as an ARRAY ref while \"strict refs\" in use"
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "undef": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 0,
+   "r": null
+  },
+  "case": "cbsa helpers",
+  "obj": "g123",
+  "struct": "2"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "case": "cbsa helpers",
+  "obj": "g123",
+  "struct": "[1,2,3]"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 0,
+   "r": null
+  },
+  "CanBeSeenAs_Literal": {
+   "error": ""
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 0,
+   "r": null
+  },
+  "case": "cbsa helpers",
+  "obj": "g123",
+  "struct": "obj e5"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "case": "cbsa helpers",
+  "obj": "mid",
+  "struct": "[2,2]"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "error": "Can't use string (\"2\") as an ARRAY ref while \"strict refs\" in use"
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "undef": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 1,
+   "r": {
+    "blemished": 1,
+    "bool": 1,
+    "entire": 2,
+    "entire_p": 1,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "case": "cbsa helpers",
+  "obj": "mid",
+  "struct": "2"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 0,
+   "r": null
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "undef": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 0,
+   "r": null
+  },
+  "case": "cbsa helpers",
+  "obj": "mid",
+  "struct": "[1,2,3]"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 0,
+   "r": null
+  },
+  "CanBeSeenAs_Literal": {
+   "error": ""
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 0,
+   "r": null
+  },
+  "case": "cbsa helpers",
+  "obj": "mid",
+  "struct": "obj e5"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "case": "cbsa helpers",
+  "obj": "midin",
+  "struct": "[2,2]"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "error": "Can't use string (\"2\") as an ARRAY ref while \"strict refs\" in use"
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "undef": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 1,
+   "r": {
+    "blemished": 1,
+    "bool": 1,
+    "entire": 2,
+    "entire_p": 1,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "case": "cbsa helpers",
+  "obj": "midin",
+  "struct": "2"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 0,
+   "r": null
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "undef": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 0,
+   "r": null
+  },
+  "case": "cbsa helpers",
+  "obj": "midin",
+  "struct": "[1,2,3]"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 0,
+   "r": null
+  },
+  "CanBeSeenAs_Literal": {
+   "error": ""
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 0,
+   "r": null
+  },
+  "case": "cbsa helpers",
+  "obj": "midin",
+  "struct": "obj e5"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 0,
+   "r": null
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "undef": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 0,
+   "r": null
+  },
+  "case": "cbsa helpers",
+  "obj": "e5",
+  "struct": "[2,2]"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "error": "Can't use string (\"2\") as an ARRAY ref while \"strict refs\" in use"
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "plain": false
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 0,
+   "r": null
+  },
+  "case": "cbsa helpers",
+  "obj": "e5",
+  "struct": "2"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 0,
+   "r": null
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "undef": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 0,
+   "r": null
+  },
+  "case": "cbsa helpers",
+  "obj": "e5",
+  "struct": "[1,2,3]"
+ },
+ {
+  "CanBeSeenAs_ByPart": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "CanBeSeenAs_Literal": {
+   "n": 1,
+   "r": {
+    "undef": 1
+   }
+  },
+  "CanBeSeenAs_Literal0rMeto": {
+   "n": 1,
+   "r": {
+    "blemished": 0,
+    "bool": 1,
+    "entire": null,
+    "entire_p": 0,
+    "is_no": 0,
+    "parts": null,
+    "parts_p": 0,
+    "success": 1
+   }
+  },
+  "case": "cbsa helpers",
+  "obj": "e5",
+  "struct": "obj e5"
+ },
+ {
+  "case": "cbsa meto",
+  "match_entire_is_M": 1,
+  "match_n": 1,
+  "nomatch_n": 1,
+  "three_args_error": ""
+ },
+ {
+  "case": "cbsa method",
+  "r": {
+   "blemished": 0,
+   "bool": 1,
+   "entire": null,
+   "entire_p": 0,
+   "is_no": 0,
+   "parts": null,
+   "parts_p": 0,
+   "success": 1
+  }
+ },
+ {
+  "case": "metonym log",
+  "log": [
+   [
+    "on without metonym",
+    {
+     "class": "SErr",
+     "message": "Cannot SetMetonymActiveness without a metonym"
+    },
+    0
+   ],
+   [
+    "off without metonym",
+    [
+     0
+    ],
+    0
+   ],
+   [
+    "SetMetonym",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "on",
+    [
+     1
+    ],
+    1
+   ],
+   [
+    "on again",
+    [],
+    1
+   ],
+   [
+    "effective is star",
+    1
+   ],
+   [
+    "off",
+    [
+     0
+    ],
+    0
+   ],
+   [
+    "effective is self",
+    1
+   ],
+   [
+    "off again",
+    [
+     0
+    ],
+    0
+   ],
+   [
+    "history",
+    [
+     "[0]\tcreated",
+     "[0]\tMetonym activeness turned off",
+     "[0]\tMetonym activeness turned on",
+     "[0]\tMetonym activeness turned off",
+     "[0]\tMetonym activeness turned off"
+    ]
+   ],
+   [
+    "SetMetonym scalar starred",
+    {
+     "class": "SErr",
+     "message": "Metonym must be an Seqsee::Object! Got: 5"
+    },
+    1
+   ],
+   [
+    "SetMetonym hash starred",
+    {
+     "class": "SErr",
+     "message": "Metonym must be an Seqsee::Object! Got: HASH(REF)"
+    }
+   ]
+  ]
+ },
+ {
+  "case": "metonymed log",
+  "log": [
+   [
+    "plain",
+    0,
+    1
+   ],
+   [
+    "self",
+    0,
+    1
+   ],
+   [
+    "other",
+    1,
+    1,
+    1
+   ],
+   [
+    "zero",
+    0,
+    1
+   ],
+   [
+    "contains via item",
+    1,
+    1
+   ],
+   [
+    "element",
+    0
+   ]
+  ]
+ },
+ {
+  "case": "annotate log",
+  "log": [
+   [
+    "annotate ok",
+    null,
+    1,
+    [
+     "am"
+    ],
+    [
+     "[0]\tcreated",
+     "[0]\tAdded category am",
+     "[0]\tAdded category am",
+     "[0]\tAdded metonym \"ok\" for cat am"
+    ],
+    "[7, 7]",
+    1,
+    0,
+    [
+     [
+      "finder",
+      "am",
+      "ok",
+      "FIND"
+     ]
+    ]
+   ],
+   [
+    "annotate not of cat",
+    {
+     "class": "SErr",
+     "message": "Not of category"
+    },
+    [],
+    [
+     "[0]\tcreated"
+    ],
+    []
+   ],
+   [
+    "annotate none",
+    {
+     "class": "SErr::MetonymNotAppicable",
+     "message": ""
+    },
+    1,
+    4
+   ],
+   [
+    "maybe none",
+    null,
+    0
+   ],
+   [
+    "maybe ok",
+    "Died",
+    5,
+    "[7, 7]",
+    0
+   ],
+   [
+    "maybe not of cat",
+    {
+     "class": "SErr",
+     "message": "Not of category"
+    }
+   ],
+   [
+    "maybe no find_metonym",
+    "Can't locate object method \"find_metonym\" via package \"SCategory::Ascending\""
+   ]
+  ]
+ },
+ {
+  "calls": [
+   "uninsert r2",
+   "uninsert r1"
+  ],
+  "case": "relations log",
+  "history": [
+   "[0]\tcreated",
+   "[0]\tadded reln to A",
+   "[0]\tadded reln to B",
+   "[0]\tremoved reln to A",
+   "[0]\tremoved reln to A",
+   "[0]\tadded reln to A"
+  ],
+  "log": [
+   [
+    "add",
+    "r1",
+    null,
+    [
+     "r1"
+    ],
+    1,
+    0
+   ],
+   [
+    "add",
+    "r2",
+    null,
+    [
+     "r1",
+     "r2"
+    ],
+    1,
+    1
+   ],
+   [
+    "add",
+    "r1",
+    {
+     "class": "SErr",
+     "message": "duplicate reln being added"
+    },
+    [
+     "r1",
+     "r2"
+    ],
+    1,
+    1
+   ],
+   [
+    "add",
+    "r3",
+    {
+     "class": "SErr",
+     "message": "relation error: not an end"
+    },
+    [
+     "r1",
+     "r2"
+    ],
+    1,
+    1
+   ],
+   [
+    "remove",
+    "r1",
+    null,
+    [
+     "r2"
+    ],
+    0,
+    1
+   ],
+   [
+    "remove",
+    "r1",
+    null,
+    [
+     "r2"
+    ],
+    0,
+    1
+   ],
+   [
+    "remove",
+    "r3",
+    {
+     "class": "SErr",
+     "message": "relation error: not an end"
+    },
+    [
+     "r2"
+    ],
+    0,
+    1
+   ],
+   [
+    "add",
+    "r1",
+    null,
+    [
+     "r1",
+     "r2"
+    ],
+    1,
+    1
+   ],
+   [
+    "removeall",
+    null,
+    null,
+    [
+     "r1",
+     "r2"
+    ],
+    1,
+    1
+   ]
+  ]
+ },
+ {
+  "a": "A",
+  "b": "B",
+  "case": "other end",
+  "self": "O"
+ },
+ {
+  "calls": [
+   "FindMappingForCat BO",
+   "FindMappingForCat OA",
+   "insert O,A,NEWT",
+   "new O,A,NEWT",
+   "uninsert ra",
+   "uninsert rb"
+  ],
+  "case": "recalculate_relations",
+  "history": [
+   "[0]\tcreated"
+  ]
+ },
+ {
+  "calls": [],
+  "case": "apply_reln_scheme",
+  "error": null,
+  "history": [
+   "[0]\tcreated"
+  ],
+  "name": "undef"
+ },
+ {
+  "calls": [],
+  "case": "apply_reln_scheme",
+  "error": null,
+  "history": [
+   "[0]\tcreated"
+  ],
+  "name": "zero"
+ },
+ {
+  "calls": [],
+  "case": "apply_reln_scheme",
+  "error": null,
+  "history": [
+   "[0]\tcreated"
+  ],
+  "name": "NONE"
+ },
+ {
+  "calls": [
+   "FindMapping AB",
+   "new A,B,TAB",
+   "insert A,B,TAB",
+   "FindMapping BC",
+   "new B,C,NONE",
+   "FindMapping CD",
+   "new C,D,TCD",
+   "insert C,D,TCD"
+  ],
+  "case": "apply_reln_scheme",
+  "error": null,
+  "history": [
+   "[0]\tcreated",
+   "[0]\tRelation scheme \"chain\" applied"
+  ],
+  "name": "CHAIN"
+ },
+ {
+  "calls": [],
+  "case": "apply_reln_scheme",
+  "error": "Relation scheme foo not implemented",
+  "history": [
+   "[0]\tcreated",
+   "[0]\tRelation scheme \"chain\" applied"
+  ],
+  "name": "string"
+ },
+ {
+  "calls": [],
+  "case": "apply_reln_scheme",
+  "error": "Relation scheme 5 not implemented",
+  "history": [
+   "[0]\tcreated",
+   "[0]\tRelation scheme \"chain\" applied"
+  ],
+  "name": "number"
+ },
+ {
+  "calls": [],
+  "case": "apply_reln_scheme",
+  "error": null,
+  "history": [
+   "[0]\tcreated",
+   "[0]\tRelation scheme \"chain\" applied"
+  ],
+  "name": "one item"
+ },
+ {
+  "case": "UpdateStrength",
+  "log": [
+   [
+    "no cats",
+    32,
+    1,
+    "32",
+    [
+     [
+      "activations",
+      []
+     ]
+    ]
+   ],
+   [
+    "c1",
+    47,
+    1,
+    "47",
+    [
+     [
+      "activations",
+      [
+       "c1"
+      ]
+     ]
+    ]
+   ],
+   [
+    "c1 + consistency",
+    77,
+    1,
+    "77",
+    [
+     [
+      "activations",
+      [
+       "c1"
+      ]
+     ]
+    ]
+   ],
+   [
+    "c1 c2 + consistency (capped)",
+    100,
+    1,
+    "100",
+    [
+     [
+      "activations",
+      [
+       "c1",
+       "c2"
+      ]
+     ]
+    ]
+   ],
+   [
+    "c3 undef activation",
+    32,
+    1,
+    "32",
+    [
+     [
+      "activations",
+      [
+       "c3"
+      ]
+     ]
+    ]
+   ],
+   [
+    "c3 c4, float part",
+    38.35,
+    1,
+    "38.35",
+    [
+     [
+      "activations",
+      [
+       "c4",
+       "c3"
+      ]
+     ]
+    ]
+   ],
+   [
+    "undef part strength",
+    34.35,
+    1,
+    "34.35",
+    [
+     [
+      "activations",
+      [
+       "c4",
+       "c3"
+      ]
+     ]
+    ]
+   ],
+   [
+    "negative consistency",
+    -465.65,
+    1,
+    "-465.65",
+    [
+     [
+      "activations",
+      [
+       "c4",
+       "c3"
+      ]
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "calls": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "activations",
+    [
+     "c4"
+    ]
+   ]
+  ],
+  "case": "UpdateStrength empty",
+  "strengths": [
+   20,
+   23.69
+  ]
+ },
+ {
+  "case": "set_underlying_ruleapp",
+  "log": [
+   [
+    "undef",
+    "Cannot set underlying relation to be an undefined value!",
+    "",
+    0,
+    [],
+    [
+     "[0]\tcreated"
+    ],
+    null
+   ],
+   [
+    "zero",
+    "Cannot set underlying relation to be an undefined value!",
+    "",
+    0,
+    [],
+    [
+     "[0]\tcreated"
+    ],
+    null
+   ],
+   [
+    "rule with app",
+    null,
+    "",
+    1,
+    [
+     [
+      "check",
+      "R1",
+      [
+       1,
+       "[2, 3]"
+      ],
+      1,
+      "direction,objects"
+     ]
+    ],
+    [
+     "[0]\tcreated",
+     "[0]\tUnderlying relation set: FakeApp=REF "
+    ],
+    "APP"
+   ],
+   [
+    "rule without app",
+    null,
+    "",
+    1,
+    [
+     [
+      "check",
+      "R2",
+      [
+       1,
+       "[2, 3]"
+      ],
+      1,
+      "direction,objects"
+     ]
+    ],
+    [
+     "[0]\tcreated",
+     "[0]\tUnderlying relation set: FakeApp=REF ",
+     "[0]\tUnderlying relation set:  "
+    ],
+    null
+   ],
+   [
+    "srelation, rule",
+    null,
+    "",
+    1,
+    [
+     [
+      "SRule->create",
+      "FakeSRel"
+     ],
+     [
+      "check",
+      "R3",
+      [
+       1,
+       "[2, 3]"
+      ],
+      1,
+      "direction,objects"
+     ]
+    ],
+    [
+     "[0]\tcreated",
+     "[0]\tUnderlying relation set: FakeApp=REF ",
+     "[0]\tUnderlying relation set:  ",
+     "[0]\tUnderlying relation set: FakeApp=REF "
+    ],
+    "APP"
+   ],
+   [
+    "srelation, no rule",
+    null,
+    "",
+    0,
+    [
+     [
+      "SRule->create",
+      "FakeSRel"
+     ]
+    ],
+    [
+     "[0]\tcreated",
+     "[0]\tUnderlying relation set: FakeApp=REF ",
+     "[0]\tUnderlying relation set:  ",
+     "[0]\tUnderlying relation set: FakeApp=REF "
+    ],
+    "APP"
+   ],
+   [
+    "mapping, rule",
+    null,
+    "",
+    1,
+    [
+     [
+      "SRule->create",
+      "Mapping::Numeric"
+     ],
+     [
+      "check",
+      "R4",
+      [
+       1,
+       "[2, 3]"
+      ],
+      1,
+      "direction,objects"
+     ]
+    ],
+    [
+     "[0]\tcreated",
+     "[0]\tUnderlying relation set: FakeApp=REF ",
+     "[0]\tUnderlying relation set:  ",
+     "[0]\tUnderlying relation set: FakeApp=REF ",
+     "[0]\tUnderlying relation set: FakeApp=REF "
+    ],
+    "APP"
+   ],
+   [
+    "string",
+    "Funny argument foo to set_underlying_ruleapp!",
+    "Funny argument foo to set_underlying_ruleapp!",
+    0,
+    [],
+    [
+     "[0]\tcreated",
+     "[0]\tUnderlying relation set: FakeApp=REF ",
+     "[0]\tUnderlying relation set:  ",
+     "[0]\tUnderlying relation set: FakeApp=REF ",
+     "[0]\tUnderlying relation set: FakeApp=REF "
+    ],
+    "APP"
+   ],
+   [
+    "mapping dir",
+    "Funny argument Mapping::Dir=REF to set_underlying_ruleapp!",
+    "Funny argument Mapping::Dir=REF to set_underlying_ruleapp!",
+    0,
+    [],
+    [
+     "[0]\tcreated",
+     "[0]\tUnderlying relation set: FakeApp=REF ",
+     "[0]\tUnderlying relation set:  ",
+     "[0]\tUnderlying relation set: FakeApp=REF ",
+     "[0]\tUnderlying relation set: FakeApp=REF "
+    ],
+    "APP"
+   ]
+  ]
+ },
+ {
+  "case": "get_pure",
+  "effective": [
+   1,
+   [
+    2,
+    3
+   ]
+  ],
+  "effective_string": "[1, [2, 3]]",
+  "element": 4,
+  "empty_annotated": "[]",
+  "empty_effective": "[]",
+  "group": "[1, [2, 3]]",
+  "one_effective": [
+   4
+  ],
+  "pure": "PLATONIC([1, [2, 3]])"
+ },
+ {
+  "calls": [
+   [
+    "finder",
+    "sq1",
+    "m_a",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_b",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_c",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_d",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_e",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq2",
+    "x",
+    "B2"
+   ],
+   [
+    "finder",
+    "sq2",
+    "y",
+    "B2"
+   ]
+  ],
+  "case": "squint",
+  "name": "group",
+  "types": [
+   "sq1/m_a",
+   "sq1/m_e",
+   "sq2/x"
+  ]
+ },
+ {
+  "calls": [
+   [
+    "finder",
+    "sq1",
+    "m_a",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_b",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_c",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_d",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_e",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq2",
+    "x",
+    "B2"
+   ],
+   [
+    "finder",
+    "sq2",
+    "y",
+    "B2"
+   ]
+  ],
+  "case": "squint",
+  "name": "element 4",
+  "types": [
+   "sq1/m_d",
+   "sq2/y"
+  ]
+ },
+ {
+  "calls": [
+   [
+    "finder",
+    "sq1",
+    "m_a",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_b",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_c",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_d",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_e",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq2",
+    "x",
+    "B2"
+   ],
+   [
+    "finder",
+    "sq2",
+    "y",
+    "B2"
+   ]
+  ],
+  "case": "squint",
+  "name": "nothing",
+  "types": []
+ },
+ {
+  "calls": [
+   [
+    "finder",
+    "sq1",
+    "m_a",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_b",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_c",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_d",
+    "B1"
+   ],
+   [
+    "finder",
+    "sq1",
+    "m_e",
+    "B1"
+   ]
+  ],
+  "case": "squint for cat",
+  "types": [
+   "m_d"
+  ]
+ },
+ {
+  "case": "squint for cat",
+  "error": "CheckSquintabilityForCategory called on object not an instance of the category",
+  "name": "not an instance"
+ },
+ {
+  "applied": "[1, 2, 3, 4, 5]",
+  "applied_cats": [
+   "ascending"
+  ],
+  "applied_reln_scheme": "CHAIN",
+  "case": "real mapping",
+  "changed": {
+   "end": "succ",
+   "length": "succ",
+   "start": "same"
+  },
+  "found": 1,
+  "name": "asc 123 -> 1234",
+  "ref": "Mapping::Structural"
+ },
+ {
+  "applied": "[0, 1, 2]",
+  "applied_cats": [
+   "ascending"
+  ],
+  "applied_reln_scheme": "CHAIN",
+  "case": "real mapping",
+  "changed": {
+   "end": "pred",
+   "length": "same",
+   "start": "pred"
+  },
+  "found": 1,
+  "name": "asc 234 -> 123",
+  "ref": "Mapping::Structural"
+ },
+ {
+  "applied": "[5, 4, 3, 2, 1]",
+  "applied_cats": [
+   "descending"
+  ],
+  "applied_reln_scheme": "CHAIN",
+  "case": "real mapping",
+  "changed": {
+   "end": "same",
+   "length": "succ",
+   "start": "succ"
+  },
+  "found": 1,
+  "name": "desc 321 -> 4321",
+  "ref": "Mapping::Structural"
+ },
+ {
+  "applied": "[4, 4, 4, 4]",
+  "applied_cats": [
+   "sameness"
+  ],
+  "applied_reln_scheme": "CHAIN",
+  "case": "real mapping",
+  "changed": {
+   "each": "succ",
+   "length": "succ"
+  },
+  "found": 1,
+  "name": "same 22 -> 333",
+  "ref": "Mapping::Structural"
+ }
+]

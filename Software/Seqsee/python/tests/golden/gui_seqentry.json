@@ -1,0 +1,551 @@
+[
+ {
+  "combo": {
+   "bindtags": [
+    "Tk::ComboEntry",
+    ".toplevel.comboentry",
+    ".toplevel",
+    "all"
+   ],
+   "entry_bindtags": [
+    "Tk::Entry",
+    ".toplevel.comboentry.entry",
+    ".toplevel",
+    "all"
+   ],
+   "entry_text": "",
+   "list": [
+    "0 1 2 3 1 2 2 3 4 1 2 3 3 3 4 5",
+    "1 1 1 2 1 3",
+    "1 1 2 1 2 3",
+    "1 7 1 2 8 1 2 3 9",
+    "1 7 2 8 3 9",
+    "2 1 2 2 2 2 2 3 2 2",
+    "7 1 7 2 7 3"
+   ],
+   "showmenu": 1,
+   "width": 40
+  },
+  "label_text": "",
+  "name": "ask_seq_widget",
+  "opened": {
+   "calls": [
+    [
+     "Commentary::MessageRequiringNoResponse",
+     "New Sequence Started: ",
+     [],
+     "\n"
+    ]
+   ],
+   "printed": ""
+  },
+  "sequence_list": [
+   "1 1 2 1 2 3",
+   "1 7 2 8 3 9",
+   "1 7 1 2 8 1 2 3 9",
+   "2 1 2 2 2 2 2 3 2 2",
+   "0 1 2 3 1 2 2 3 4 1 2 3 3 3 4 5",
+   "7 1 7 2 7 3",
+   "1 1 1 2 1 3"
+  ],
+  "slaves": [
+   {
+    "class": "Tk::Label",
+    "side": "left",
+    "text": "Enter sequence(space separated): "
+   },
+   {
+    "class": "Tk::Label",
+    "side": "bottom",
+    "text": ""
+   },
+   {
+    "class": "Tk::ComboEntry",
+    "side": "top",
+    "text": null
+   },
+   {
+    "class": "Tk::Button",
+    "side": "right",
+    "text": "Go"
+   }
+  ],
+  "title": "Seqsee Sequence Entry"
+ },
+ {
+  "name": "ask_seq_session",
+  "session": "illformed_then_empty_then_ok",
+  "steps": [
+   {
+    "calls": [],
+    "exists": 1,
+    "how": "return",
+    "label": "Illformed input: 1 x 2",
+    "printed": "",
+    "text": "1 x 2"
+   },
+   {
+    "calls": [],
+    "exists": 1,
+    "how": "go",
+    "label": "Illformed input: 1 x 2",
+    "printed": "",
+    "text": ""
+   },
+   {
+    "calls": [],
+    "exists": 1,
+    "how": "return",
+    "label": "Illformed input: 1 x 2",
+    "printed": "",
+    "text": "   "
+   },
+   {
+    "calls": [
+     [
+      "SWorkspace::clear"
+     ],
+     [
+      "SCoderack::clear"
+     ],
+     [
+      "MainStream::clear"
+     ],
+     [
+      "SWorkspace::insert_elements",
+      "1",
+      "2",
+      "3"
+     ],
+     [
+      "SGUI::Update"
+     ]
+    ],
+    "exists": 0,
+    "how": "go",
+    "label": null,
+    "printed": "Return pressed; Seq is: 1 2 3",
+    "text": " 1, 2  3 "
+   }
+  ]
+ },
+ {
+  "name": "ask_seq_session",
+  "session": "select_first_row",
+  "steps": [
+   {
+    "calls": [
+     [
+      "SWorkspace::clear"
+     ],
+     [
+      "SCoderack::clear"
+     ],
+     [
+      "MainStream::clear"
+     ],
+     [
+      "SWorkspace::insert_elements",
+      "0",
+      "1",
+      "2",
+      "3",
+      "1",
+      "2",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2",
+      "3",
+      "3",
+      "3",
+      "4",
+      "5"
+     ],
+     [
+      "SGUI::Update"
+     ]
+    ],
+    "entry_text": null,
+    "exists": 0,
+    "how": "select",
+    "label": null,
+    "printed": "Return pressed; Seq is: 0 1 2 3 1 2 2 3 4 1 2 3 3 3 4 5",
+    "text": 0
+   }
+  ]
+ },
+ {
+  "name": "ask_seq_session",
+  "session": "select_last_row",
+  "steps": [
+   {
+    "calls": [
+     [
+      "SWorkspace::clear"
+     ],
+     [
+      "SCoderack::clear"
+     ],
+     [
+      "MainStream::clear"
+     ],
+     [
+      "SWorkspace::insert_elements",
+      "7",
+      "1",
+      "7",
+      "2",
+      "7",
+      "3"
+     ],
+     [
+      "SGUI::Update"
+     ]
+    ],
+    "entry_text": null,
+    "exists": 0,
+    "how": "select",
+    "label": null,
+    "printed": "Return pressed; Seq is: 7 1 7 2 7 3",
+    "text": -1
+   }
+  ]
+ },
+ {
+  "name": "ask_seq_session",
+  "session": "negatives",
+  "steps": [
+   {
+    "calls": [
+     [
+      "SWorkspace::clear"
+     ],
+     [
+      "SCoderack::clear"
+     ],
+     [
+      "MainStream::clear"
+     ],
+     [
+      "SWorkspace::insert_elements",
+      "-1",
+      "2",
+      "-3"
+     ],
+     [
+      "SGUI::Update"
+     ]
+    ],
+    "exists": 0,
+    "how": "return",
+    "label": null,
+    "printed": "Return pressed; Seq is: -1 2 -3",
+    "text": "-1 2,-3"
+   }
+  ]
+ },
+ {
+  "name": "ask_seq_session",
+  "session": "dash_inside",
+  "steps": [
+   {
+    "calls": [
+     [
+      "SWorkspace::clear"
+     ],
+     [
+      "SCoderack::clear"
+     ],
+     [
+      "MainStream::clear"
+     ],
+     [
+      "SWorkspace::insert_elements",
+      "1-2",
+      "3"
+     ],
+     [
+      "SGUI::Update"
+     ]
+    ],
+    "exists": 0,
+    "how": "go",
+    "label": null,
+    "printed": "Return pressed; Seq is: 1-2 3",
+    "text": "1-2 3"
+   }
+  ]
+ },
+ {
+  "name": "ask_seq_session",
+  "session": "leading_comma",
+  "steps": [
+   {
+    "calls": [
+     [
+      "SWorkspace::clear"
+     ],
+     [
+      "SCoderack::clear"
+     ],
+     [
+      "MainStream::clear"
+     ],
+     [
+      "SWorkspace::insert_elements",
+      "",
+      "1",
+      "2"
+     ],
+     [
+      "SGUI::Update"
+     ]
+    ],
+    "exists": 0,
+    "how": "return",
+    "label": null,
+    "printed": "Return pressed; Seq is:  1 2",
+    "text": ",1 2"
+   }
+  ]
+ },
+ {
+  "name": "ask_seq_session",
+  "session": "tabs_and_commas",
+  "steps": [
+   {
+    "calls": [
+     [
+      "SWorkspace::clear"
+     ],
+     [
+      "SCoderack::clear"
+     ],
+     [
+      "MainStream::clear"
+     ],
+     [
+      "SWorkspace::insert_elements",
+      "1",
+      "2",
+      "3"
+     ],
+     [
+      "SGUI::Update"
+     ]
+    ],
+    "exists": 0,
+    "how": "return",
+    "label": null,
+    "printed": "Return pressed; Seq is: 1 2 3",
+    "text": "1\t2,,3"
+   }
+  ]
+ },
+ {
+  "name": "ask_seq_session",
+  "session": "decimal_is_illformed",
+  "steps": [
+   {
+    "calls": [],
+    "exists": 1,
+    "how": "go",
+    "label": "Illformed input: 1.5 2",
+    "printed": "",
+    "text": "1.5 2"
+   },
+   {
+    "calls": [
+     [
+      "SWorkspace::clear"
+     ],
+     [
+      "SCoderack::clear"
+     ],
+     [
+      "MainStream::clear"
+     ],
+     [
+      "SWorkspace::insert_elements",
+      "1",
+      "5",
+      "2"
+     ],
+     [
+      "SGUI::Update"
+     ]
+    ],
+    "exists": 0,
+    "how": "go",
+    "label": null,
+    "printed": "Return pressed; Seq is: 1 5 2",
+    "text": "1 5 2"
+   }
+  ]
+ },
+ {
+  "name": "ask_seq_session",
+  "session": "letters_only",
+  "steps": [
+   {
+    "calls": [],
+    "exists": 1,
+    "how": "return",
+    "label": "Illformed input: abc",
+    "printed": "",
+    "text": "abc"
+   }
+  ]
+ },
+ {
+  "name": "ask_seq_session",
+  "session": "dash_only",
+  "steps": [
+   {
+    "calls": [],
+    "exists": 1,
+    "how": "go",
+    "label": "",
+    "printed": "",
+    "text": "-"
+   },
+   {
+    "calls": [],
+    "exists": 1,
+    "how": "go",
+    "label": "",
+    "printed": "",
+    "text": " , "
+   }
+  ]
+ },
+ {
+  "entry_text": "",
+  "entry_width": 20,
+  "name": "more_terms_widget",
+  "slaves": [
+   {
+    "class": "Tk::Label",
+    "side": "top",
+    "text": "I am stuck! Please provide more terms! (space separated): "
+   },
+   {
+    "class": "Tk::Entry",
+    "side": "top",
+    "text": null
+   }
+  ],
+  "title": "Request for more terms"
+ },
+ {
+  "calls": [
+   [
+    "SWorkspace::insert_elements",
+    "7",
+    "8"
+   ],
+   [
+    "SGUI::Update"
+   ]
+  ],
+  "exists": 0,
+  "name": "more_terms_session",
+  "printed": "Return pressed; Seq is: 7 8",
+  "text": " 7 8 "
+ },
+ {
+  "calls": [
+   [
+    "SWorkspace::insert_elements",
+    "7",
+    "8"
+   ],
+   [
+    "SGUI::Update"
+   ]
+  ],
+  "exists": 0,
+  "name": "more_terms_session",
+  "printed": "Return pressed; Seq is: 7 8",
+  "text": "7,8"
+ },
+ {
+  "calls": [
+   [
+    "SWorkspace::insert_elements"
+   ],
+   [
+    "SGUI::Update"
+   ]
+  ],
+  "exists": 0,
+  "name": "more_terms_session",
+  "printed": "Return pressed; Seq is: ",
+  "text": ""
+ },
+ {
+  "calls": [
+   [
+    "SWorkspace::insert_elements"
+   ],
+   [
+    "SGUI::Update"
+   ]
+  ],
+  "exists": 0,
+  "name": "more_terms_session",
+  "printed": "Return pressed; Seq is: ",
+  "text": "   "
+ },
+ {
+  "calls": [
+   [
+    "SWorkspace::insert_elements",
+    "",
+    "7"
+   ],
+   [
+    "SGUI::Update"
+   ]
+  ],
+  "exists": 0,
+  "name": "more_terms_session",
+  "printed": "Return pressed; Seq is:  7",
+  "text": ",7"
+ },
+ {
+  "calls": [
+   [
+    "SWorkspace::insert_elements",
+    "a",
+    "b"
+   ],
+   [
+    "SGUI::Update"
+   ]
+  ],
+  "exists": 0,
+  "name": "more_terms_session",
+  "printed": "Return pressed; Seq is: a b",
+  "text": "a b"
+ },
+ {
+  "calls": [
+   [
+    "SWorkspace::insert_elements",
+    "9",
+    "10",
+    "11"
+   ],
+   [
+    "SGUI::Update"
+   ]
+  ],
+  "exists": 0,
+  "name": "more_terms_session",
+  "printed": "Return pressed; Seq is: 9 10 11",
+  "text": "9\t10 ,11"
+ }
+]

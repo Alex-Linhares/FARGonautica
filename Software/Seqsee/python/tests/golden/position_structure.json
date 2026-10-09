@@ -1,0 +1,5513 @@
+[
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "all_elements",
+  "result": [
+   "0",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9"
+  ],
+  "shape": [
+   {
+    "E": 0
+   },
+   {
+    "E": 1
+   },
+   {
+    "E": 2
+   },
+   {
+    "E": 3
+   },
+   {
+    "E": 4
+   },
+   {
+    "E": 5
+   },
+   {
+    "E": 6
+   },
+   {
+    "E": 7
+   },
+   {
+    "E": 8
+   },
+   {
+    "E": 9
+   }
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "big",
+  "result": [
+   "[[1, 2], [3, 4, 5]]"
+  ],
+  "shape": [
+   [
+    [
+     {
+      "E": 1
+     },
+     {
+      "E": 2
+     }
+    ],
+    [
+     {
+      "E": 3
+     },
+     {
+      "E": 4
+     },
+     {
+      "E": 5
+     }
+    ]
+   ]
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "big,g6_9",
+  "result": [
+   "[[1, 2], [3, 4, 5]]",
+   "[6, 7, 8, 9]"
+  ],
+  "shape": [
+   [
+    [
+     {
+      "E": 1
+     },
+     {
+      "E": 2
+     }
+    ],
+    [
+     {
+      "E": 3
+     },
+     {
+      "E": 4
+     },
+     {
+      "E": 5
+     }
+    ]
+   ],
+   [
+    {
+     "E": 6
+    },
+    {
+     "E": 7
+    },
+    {
+     "E": 8
+    },
+    {
+     "E": 9
+    }
+   ]
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "deep",
+  "result": [
+   "[[[1, 2], [3, 4, 5]], [6, 7, 8, 9]]"
+  ],
+  "shape": [
+   [
+    [
+     [
+      {
+       "E": 1
+      },
+      {
+       "E": 2
+      }
+     ],
+     [
+      {
+       "E": 3
+      },
+      {
+       "E": 4
+      },
+      {
+       "E": 5
+      }
+     ]
+    ],
+    [
+     {
+      "E": 6
+     },
+     {
+      "E": 7
+     },
+     {
+      "E": 8
+     },
+     {
+      "E": 9
+     }
+    ]
+   ]
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "deep,mixed",
+  "result": [
+   "[[[1, 2], [3, 4, 5]], [6, 7, 8, 9]]",
+   "[[0, 1], 2]"
+  ],
+  "shape": [
+   [
+    [
+     [
+      {
+       "E": 1
+      },
+      {
+       "E": 2
+      }
+     ],
+     [
+      {
+       "E": 3
+      },
+      {
+       "E": 4
+      },
+      {
+       "E": 5
+      }
+     ]
+    ],
+    [
+     {
+      "E": 6
+     },
+     {
+      "E": 7
+     },
+     {
+      "E": 8
+     },
+     {
+      "E": 9
+     }
+    ]
+   ],
+   [
+    [
+     {
+      "E": 0
+     },
+     {
+      "E": 1
+     }
+    ],
+    {
+     "E": 2
+    }
+   ]
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "e0",
+  "result": [
+   "0"
+  ],
+  "shape": [
+   {
+    "E": 0
+   }
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "e0,g12,g345",
+  "result": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "shape": [
+   {
+    "E": 0
+   },
+   [
+    {
+     "E": 1
+    },
+    {
+     "E": 2
+    }
+   ],
+   [
+    {
+     "E": 3
+    },
+    {
+     "E": 4
+    },
+    {
+     "E": 5
+    }
+   ]
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "empty",
+  "result": [],
+  "shape": []
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "g12,g345",
+  "result": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "shape": [
+   [
+    {
+     "E": 1
+    },
+    {
+     "E": 2
+    }
+   ],
+   [
+    {
+     "E": 3
+    },
+    {
+     "E": 4
+    },
+    {
+     "E": 5
+    }
+   ]
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "g12,g345,g6_9",
+  "result": [
+   "[1, 2]",
+   "[3, 4, 5]",
+   "[6, 7, 8, 9]"
+  ],
+  "shape": [
+   [
+    {
+     "E": 1
+    },
+    {
+     "E": 2
+    }
+   ],
+   [
+    {
+     "E": 3
+    },
+    {
+     "E": 4
+    },
+    {
+     "E": 5
+    }
+   ],
+   [
+    {
+     "E": 6
+    },
+    {
+     "E": 7
+    },
+    {
+     "E": 8
+    },
+    {
+     "E": 9
+    }
+   ]
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "g12,loose",
+  "result": [
+   "[1, 2]",
+   null
+  ],
+  "shape": [
+   [
+    {
+     "E": 1
+    },
+    {
+     "E": 2
+    }
+   ],
+   {
+    "E": null
+   }
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "loose",
+  "result": [
+   null
+  ],
+  "shape": [
+   {
+    "E": null
+   }
+  ]
+ },
+ {
+  "is_ps": 1,
+  "kind": "create",
+  "name": "mixed",
+  "result": [
+   "[[0, 1], 2]"
+  ],
+  "shape": [
+   [
+    [
+     {
+      "E": 0
+     },
+     {
+      "E": 1
+     }
+    ],
+    {
+     "E": 2
+    }
+   ]
+  ]
+ },
+ {
+  "kind": "as_string",
+  "name": "big",
+  "result": "[[1, 2], [3, 4, 5]]"
+ },
+ {
+  "a": [],
+  "b": [],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1",
+   "2"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "1",
+   "2"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "2",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1.0",
+   "2"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null,
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   null
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   ""
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "1",
+   "1"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "0"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "0",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "0",
+   "1",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "2",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "0",
+   "[1, 2]",
+   "[3, 4, 5]"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1.0",
+   "2"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   null,
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   null
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   ""
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1",
+   "1",
+   "1"
+  ],
+  "kind": "subset",
+  "list": [],
+  "scalar": null
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1",
+   "2",
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": [
+   "1",
+   "2",
+   "3"
+  ],
+  "b": [
+   "1",
+   "2",
+   "3"
+  ],
+  "kind": "subset",
+  "list": [
+   1
+  ],
+  "scalar": 1
+ },
+ {
+  "a": "g12,g345",
+  "b": "g12,g345",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "g12,g345",
+  "b": "e0,g12,g345",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "g12,g345",
+  "b": "g12,g345,g6_9",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "g12,g345",
+  "b": "big",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "g12,g345",
+  "b": "big,g6_9",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "g12,g345",
+  "b": "e0",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "g12,g345",
+  "b": "all_elements",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0,g12,g345",
+  "b": "g12,g345",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0,g12,g345",
+  "b": "e0,g12,g345",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "e0,g12,g345",
+  "b": "g12,g345,g6_9",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0,g12,g345",
+  "b": "big",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0,g12,g345",
+  "b": "big,g6_9",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0,g12,g345",
+  "b": "e0",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0,g12,g345",
+  "b": "all_elements",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "g12,g345,g6_9",
+  "b": "g12,g345",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "g12,g345,g6_9",
+  "b": "e0,g12,g345",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "g12,g345,g6_9",
+  "b": "g12,g345,g6_9",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "g12,g345,g6_9",
+  "b": "big",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "g12,g345,g6_9",
+  "b": "big,g6_9",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "g12,g345,g6_9",
+  "b": "e0",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "g12,g345,g6_9",
+  "b": "all_elements",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big",
+  "b": "g12,g345",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big",
+  "b": "e0,g12,g345",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big",
+  "b": "g12,g345,g6_9",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big",
+  "b": "big",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "big",
+  "b": "big,g6_9",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "big",
+  "b": "e0",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big",
+  "b": "all_elements",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big,g6_9",
+  "b": "g12,g345",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big,g6_9",
+  "b": "e0,g12,g345",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big,g6_9",
+  "b": "g12,g345,g6_9",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big,g6_9",
+  "b": "big",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big,g6_9",
+  "b": "big,g6_9",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "big,g6_9",
+  "b": "e0",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "big,g6_9",
+  "b": "all_elements",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0",
+  "b": "g12,g345",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0",
+  "b": "e0,g12,g345",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "e0",
+  "b": "g12,g345,g6_9",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0",
+  "b": "big",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0",
+  "b": "big,g6_9",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "e0",
+  "b": "e0",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "e0",
+  "b": "all_elements",
+  "kind": "subset_real",
+  "scalar": 1
+ },
+ {
+  "a": "all_elements",
+  "b": "g12,g345",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "all_elements",
+  "b": "e0,g12,g345",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "all_elements",
+  "b": "g12,g345,g6_9",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "all_elements",
+  "b": "big",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "all_elements",
+  "b": "big,g6_9",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "all_elements",
+  "b": "e0",
+  "kind": "subset_real",
+  "scalar": null
+ },
+ {
+  "a": "all_elements",
+  "b": "all_elements",
+  "kind": "subset_real",
+  "scalar": 1
+ }
+]

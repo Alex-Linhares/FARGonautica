@@ -1,0 +1,4011 @@
+[
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (group_p) is required"
+  },
+  "index": 0
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (left_edge) is required"
+  },
+  "index": 1
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (mag) is required"
+  },
+  "index": 2
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (mag) is required"
+  },
+  "index": 3
+ },
+ {
+  "case": "new",
+  "cats": [
+   "number"
+  ],
+  "class": "Seqsee::Element",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "index": 4,
+  "locked": null,
+  "mag": 5,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value 1.5"
+  },
+  "index": 5
+ },
+ {
+  "case": "new",
+  "cats": [
+   "number"
+  ],
+  "class": "Seqsee::Element",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "index": 6,
+  "locked": null,
+  "mag": "5",
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [
+   "number"
+  ],
+  "class": "Seqsee::Element",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "index": 7,
+  "locked": null,
+  "mag": "-3",
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value +3"
+  },
+  "index": 8
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value  3"
+  },
+  "index": 9
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value \"x\""
+  },
+  "index": 10
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value undef"
+  },
+  "index": 11
+ },
+ {
+  "case": "new",
+  "cats": [
+   "number"
+  ],
+  "class": "Seqsee::Element",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "index": 12,
+  "locked": null,
+  "mag": 5,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value [  ]"
+  },
+  "index": 13
+ },
+ {
+  "case": "new",
+  "cats": [
+   "number"
+  ],
+  "class": "Seqsee::Element",
+  "edges": [
+   null,
+   "a"
+  ],
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "index": 14,
+  "locked": null,
+  "mag": 5,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value \"x\""
+  },
+  "index": 15
+ },
+ {
+  "case": "new",
+  "cats": [
+   "number"
+  ],
+  "class": "Seqsee::Element",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "index": 16,
+  "locked": 1,
+  "mag": 2,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (is_locked_against_deletion) does not pass the type constraint because: Validation failed for 'Bool' with value 2"
+  },
+  "index": 17
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (is_locked_against_deletion) does not pass the type constraint because: Validation failed for 'Bool' with value 2"
+  },
+  "index": 18
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (metonym_activeness) does not pass the type constraint because: Validation failed for 'Bool' with value 3"
+  },
+  "index": 19
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (categories) does not pass the type constraint because: Validation failed for 'HashRef' with value 5"
+  },
+  "index": 20
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (categories) does not pass the type constraint because: Validation failed for 'HashRef' with value 5"
+  },
+  "index": 21
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (history_obj) does not pass the type constraint because: Validation failed for 'SHistory' with value 5"
+  },
+  "index": 22
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (group_p) is required"
+  },
+  "index": 23
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (group_p) is required"
+  },
+  "index": 24
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value 5"
+  },
+  "index": 25
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (is_locked_against_deletion) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "index": 26
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (group_p) is required"
+  },
+  "index": 27
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (mag) is required"
+  },
+  "index": 28
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (mag) is required"
+  },
+  "index": 29
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (metonym_activeness) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "index": 30
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Element",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (reln_other_end) does not pass the type constraint because: Validation failed for 'HashRef' with value 5"
+  },
+  "index": 31
+ },
+ {
+  "case": "new",
+  "cats": [
+   "number"
+  ],
+  "class": "Seqsee::Element",
+  "edges": [
+   1,
+   3
+  ],
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "index": 32,
+  "locked": null,
+  "mag": 2,
+  "nitems": 2
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (group_p) is required"
+  },
+  "index": 0
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (left_edge) is required"
+  },
+  "index": 1
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (right_edge) is required"
+  },
+  "index": 2
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 3,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 4,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 5,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 6,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 7,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 8,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 9,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 10,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 11,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 12,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 13,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   null,
+   "a"
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 14,
+  "locked": null,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (right_edge) is required"
+  },
+  "index": 15
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   1
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 16,
+  "locked": 1,
+  "nitems": 0
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (is_locked_against_deletion) does not pass the type constraint because: Validation failed for 'Bool' with value 2"
+  },
+  "index": 17
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (is_locked_against_deletion) does not pass the type constraint because: Validation failed for 'Bool' with value 2"
+  },
+  "index": 18
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (metonym_activeness) does not pass the type constraint because: Validation failed for 'Bool' with value 3"
+  },
+  "index": 19
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (categories) does not pass the type constraint because: Validation failed for 'HashRef' with value 5"
+  },
+  "index": 20
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (categories) does not pass the type constraint because: Validation failed for 'HashRef' with value 5"
+  },
+  "index": 21
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (history_obj) does not pass the type constraint because: Validation failed for 'SHistory' with value 5"
+  },
+  "index": 22
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (group_p) is required"
+  },
+  "index": 23
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (group_p) is required"
+  },
+  "index": 24
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (item) does not pass the type constraint because: Validation failed for 'ArrayRef' with value 5"
+  },
+  "index": 25
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (is_locked_against_deletion) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "index": 26
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::AttributeIsRequired",
+   "message": "Attribute (group_p) is required"
+  },
+  "index": 27
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (reln_other_end) does not pass the type constraint because: Validation failed for 'HashRef' with value 5"
+  },
+  "index": 28
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (metonym_activeness) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "index": 29
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (metonym_activeness) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+  },
+  "index": 30
+ },
+ {
+  "case": "new",
+  "class": "Seqsee::Anchored",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (reln_other_end) does not pass the type constraint because: Validation failed for 'HashRef' with value 5"
+  },
+  "index": 31
+ },
+ {
+  "case": "new",
+  "cats": [],
+  "class": "Seqsee::Anchored",
+  "edges": [
+   1,
+   3
+  ],
+  "hist": [
+   "[0]\tcreated"
+  ],
+  "index": 32,
+  "locked": null,
+  "nitems": 2
+ },
+ {
+  "annotated": 5,
+  "args": [
+   5,
+   2
+  ],
+  "as_text": "Seqsee::Element:[2,2] 5",
+  "bounds": " <2, 2> ",
+  "case": "element_create",
+  "describe": {
+   "cats": [
+    "number"
+   ],
+   "edges": [
+    2,
+    2
+   ],
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number"
+   ],
+   "nitems": 1,
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": 5
+  },
+  "flattened": [
+   5
+  ],
+  "flush_left": 0,
+  "span": 1,
+  "structure": 5
+ },
+ {
+  "annotated": 0,
+  "args": [
+   0,
+   0
+  ],
+  "as_text": "Seqsee::Element:[0,0] 0",
+  "bounds": " <0, 0> ",
+  "case": "element_create",
+  "describe": {
+   "cats": [
+    "number"
+   ],
+   "edges": [
+    0,
+    0
+   ],
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number"
+   ],
+   "nitems": 1,
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": 0
+  },
+  "flattened": [
+   0
+  ],
+  "flush_left": 1,
+  "span": 1,
+  "structure": 0
+ },
+ {
+  "annotated": -3,
+  "args": [
+   -3,
+   -1
+  ],
+  "as_text": "Seqsee::Element:[-1,-1] -3",
+  "bounds": " <-1, -1> ",
+  "case": "element_create",
+  "describe": {
+   "cats": [
+    "number"
+   ],
+   "edges": [
+    -1,
+    -1
+   ],
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number"
+   ],
+   "nitems": 1,
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": -3
+  },
+  "flattened": [
+   -3
+  ],
+  "flush_left": 0,
+  "span": 1,
+  "structure": -3
+ },
+ {
+  "annotated": "7",
+  "args": [
+   "7",
+   3
+  ],
+  "as_text": "Seqsee::Element:[3,3] 7",
+  "bounds": " <3, 3> ",
+  "case": "element_create",
+  "describe": {
+   "cats": [
+    "number"
+   ],
+   "edges": [
+    3,
+    3
+   ],
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number"
+   ],
+   "nitems": 1,
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": "7"
+  },
+  "flattened": [
+   "7"
+  ],
+  "flush_left": 0,
+  "span": 1,
+  "structure": "7"
+ },
+ {
+  "annotated": 12,
+  "args": [
+   12,
+   4
+  ],
+  "as_text": "Seqsee::Element:[4,4] 12",
+  "bounds": " <4, 4> ",
+  "case": "element_create",
+  "describe": {
+   "cats": [
+    "number"
+   ],
+   "edges": [
+    4,
+    4
+   ],
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number"
+   ],
+   "nitems": 1,
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": 12
+  },
+  "flattened": [
+   12
+  ],
+  "flush_left": 0,
+  "span": 1,
+  "structure": 12
+ },
+ {
+  "case": "element_create_bad",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value 1.5"
+  },
+  "mag": 1.5
+ },
+ {
+  "case": "element_create_bad",
+  "error": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value \"x\""
+  },
+  "mag": "x"
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "Prime",
+   "number"
+  ],
+  "feature": "Primes",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category Prime",
+   "[0]\tAdded category Prime"
+  ],
+  "mag": 7
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "number"
+  ],
+  "feature": "Primes",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "mag": 8
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "number"
+  ],
+  "feature": "Primes",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "mag": 9
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "number"
+  ],
+  "feature": "Primes",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "mag": 1
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "Prime",
+   "number"
+  ],
+  "feature": "Primes",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category Prime",
+   "[0]\tAdded category Prime"
+  ],
+  "mag": 2
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "number",
+   "odd"
+  ],
+  "feature": "Parity",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category odd",
+   "[0]\tAdded category odd"
+  ],
+  "mag": 7
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "even",
+   "number"
+  ],
+  "feature": "Parity",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category even",
+   "[0]\tAdded category even"
+  ],
+  "mag": 8
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "even",
+   "number"
+  ],
+  "feature": "Parity",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category even",
+   "[0]\tAdded category even"
+  ],
+  "mag": 0
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "number",
+   "odd"
+  ],
+  "feature": "Parity",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category odd",
+   "[0]\tAdded category odd"
+  ],
+  "mag": -3
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "Prime",
+   "even",
+   "number"
+  ],
+  "feature": "Both",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category Prime",
+   "[0]\tAdded category Prime",
+   "[0]\tAdded category even",
+   "[0]\tAdded category even"
+  ],
+  "mag": 2
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "Prime",
+   "number",
+   "odd"
+  ],
+  "feature": "Both",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category Prime",
+   "[0]\tAdded category Prime",
+   "[0]\tAdded category odd",
+   "[0]\tAdded category odd"
+  ],
+  "mag": 3
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "even",
+   "number"
+  ],
+  "feature": "Both",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category even",
+   "[0]\tAdded category even"
+  ],
+  "mag": 4
+ },
+ {
+  "case": "element_features",
+  "cats": [
+   "number",
+   "odd"
+  ],
+  "feature": "Both",
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category odd",
+   "[0]\tAdded category odd"
+  ],
+  "mag": 9
+ },
+ {
+  "case": "get_at_position",
+  "error": null,
+  "is_self": 1,
+  "position": 1
+ },
+ {
+  "case": "get_at_position",
+  "error": null,
+  "is_self": 1,
+  "position": -1
+ },
+ {
+  "case": "get_at_position",
+  "error": {
+   "class": "SErr",
+   "message": "out of range for Seqsee::Element"
+  },
+  "is_self": 0,
+  "position": 2
+ },
+ {
+  "case": "get_at_position",
+  "error": {
+   "class": "SErr",
+   "message": "out of range for Seqsee::Element"
+  },
+  "is_self": 0,
+  "position": 3
+ },
+ {
+  "case": "element_update_strength",
+  "returned": 0,
+  "strength": 20
+ },
+ {
+  "case": "element_update_strength_keeps",
+  "strength": 33
+ },
+ {
+  "after": 9,
+  "as_text": "Seqsee::Element:[1,1] 9",
+  "bad": {
+   "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+   "message": "Attribute (mag) does not pass the type constraint because: Validation failed for 'Int' with value 2.5"
+  },
+  "before": 4,
+  "case": "mag_accessor"
+ },
+ {
+  "case": "element_squint",
+  "cats_after": [
+   "number"
+  ],
+  "cats_before": [],
+  "hist": [
+   "[0]\tcreated",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number",
+   "[0]\tRemoved category number",
+   "[0]\tAdded category number",
+   "[0]\tAdded category number"
+  ],
+  "result": 0
+ },
+ {
+  "case": "anchored_accessors",
+  "log": [
+   [
+    "edges",
+    [
+     2,
+     4
+    ]
+   ],
+   [
+    "bounds",
+    " <2, 4> "
+   ],
+   [
+    "span",
+    3
+   ],
+   [
+    "as_text",
+    "Seqsee::Anchored  <2, 4>  [1, 2, 3]"
+   ],
+   [
+    "as_text_u",
+    "Seqsee::Anchored u <2, 4>  [1, 2, 3]"
+   ],
+   [
+    "as_text_0",
+    "Seqsee::Anchored  <2, 4>  [1, 2, 3]"
+   ],
+   [
+    "set_edges_returns_self",
+    1
+   ],
+   [
+    "edges",
+    [
+     5,
+     9
+    ]
+   ],
+   [
+    "span",
+    5
+   ],
+   [
+    "recalculated",
+    [
+     2,
+     4
+    ]
+   ],
+   [
+    "locked_default",
+    null
+   ],
+   [
+    "locked",
+    1
+   ],
+   [
+    "locked_bad",
+    {
+     "class": "Moose::Exception::ValidationFailedForInlineTypeConstraint",
+     "message": "Attribute (is_locked_against_deletion) does not pass the type constraint because: Validation failed for 'Bool' with value 5"
+    }
+   ],
+   [
+    "left_any",
+    "abc"
+   ]
+  ]
+ },
+ {
+  "as_text": "Seqsee::Anchored  <0, 1>  []",
+  "case": "anchored_as_text_empty"
+ },
+ {
+  "case": "next_pos_and_flush",
+  "edges": [
+   0,
+   0
+  ],
+  "flush": [
+   [
+    0,
+    0,
+    1
+   ],
+   [
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    0,
+    1
+   ],
+   [
+    6,
+    0,
+    1
+   ]
+  ],
+  "next": {
+   "LEFT": null,
+   "NEITHER": {
+    "class": "DIE",
+    "message": "funny direction to extnd in!!"
+   },
+   "RIGHT": 1,
+   "UNDEF": {
+    "class": "DIE",
+    "message": "funny direction to extnd in!!"
+   },
+   "UNKNOWN": {
+    "class": "DIE",
+    "message": "funny direction to extnd in!!"
+   }
+  }
+ },
+ {
+  "case": "next_pos_and_flush",
+  "edges": [
+   3,
+   5
+  ],
+  "flush": [
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    0
+   ],
+   [
+    2,
+    0,
+    0
+   ],
+   [
+    6,
+    1,
+    0
+   ]
+  ],
+  "next": {
+   "LEFT": 2,
+   "NEITHER": {
+    "class": "DIE",
+    "message": "funny direction to extnd in!!"
+   },
+   "RIGHT": 6,
+   "UNDEF": {
+    "class": "DIE",
+    "message": "funny direction to extnd in!!"
+   },
+   "UNKNOWN": {
+    "class": "DIE",
+    "message": "funny direction to extnd in!!"
+   }
+  }
+ },
+ {
+  "case": "next_pos_and_flush",
+  "edges": [
+   1,
+   2
+  ],
+  "flush": [
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    0
+   ],
+   [
+    2,
+    0,
+    0
+   ],
+   [
+    6,
+    0,
+    0
+   ]
+  ],
+  "next": {
+   "LEFT": 0,
+   "NEITHER": {
+    "class": "DIE",
+    "message": "funny direction to extnd in!!"
+   },
+   "RIGHT": 3,
+   "UNDEF": {
+    "class": "DIE",
+    "message": "funny direction to extnd in!!"
+   },
+   "UNKNOWN": {
+    "class": "DIE",
+    "message": "funny direction to extnd in!!"
+   }
+  }
+ },
+ {
+  "case": "spans_overlaps",
+  "matrix": [
+   [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     3
+    ],
+    0,
+    "",
+    1,
+    "1"
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     5
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     3
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     4,
+     6
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     7,
+     8
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     0
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ],
+   [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ],
+   [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ],
+   [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    0,
+    "",
+    1,
+    "1"
+   ],
+   [
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ],
+   [
+    [
+     0,
+     3
+    ],
+    [
+     4,
+     6
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     0,
+     3
+    ],
+    [
+     7,
+     8
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     0
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    0,
+    "",
+    1,
+    "1"
+   ],
+   [
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ],
+   [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     5
+    ],
+    0,
+    "",
+    1,
+    "1"
+   ],
+   [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     1,
+     2
+    ],
+    [
+     4,
+     6
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     1,
+     2
+    ],
+    [
+     7,
+     8
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     2,
+     5
+    ],
+    [
+     0,
+     0
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     2,
+     5
+    ],
+    [
+     0,
+     3
+    ],
+    0,
+    "",
+    1,
+    "1"
+   ],
+   [
+    [
+     2,
+     5
+    ],
+    [
+     1,
+     2
+    ],
+    0,
+    "",
+    1,
+    "1"
+   ],
+   [
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ],
+   [
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     3
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ],
+   [
+    [
+     2,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    0,
+    "",
+    1,
+    "1"
+   ],
+   [
+    [
+     2,
+     5
+    ],
+    [
+     7,
+     8
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     0
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    0,
+    "",
+    1,
+    "1"
+   ],
+   [
+    [
+     3,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     3,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    0,
+    "",
+    1,
+    "1"
+   ],
+   [
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ],
+   [
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     6
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     3,
+     3
+    ],
+    [
+     7,
+     8
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     4,
+     6
+    ],
+    [
+     0,
+     0
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     4,
+     6
+    ],
+    [
+     0,
+     3
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     4,
+     6
+    ],
+    [
+     1,
+     2
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     4,
+     6
+    ],
+    [
+     2,
+     5
+    ],
+    0,
+    "",
+    1,
+    "1"
+   ],
+   [
+    [
+     4,
+     6
+    ],
+    [
+     3,
+     3
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ],
+   [
+    [
+     4,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     7,
+     8
+    ],
+    [
+     0,
+     0
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     7,
+     8
+    ],
+    [
+     0,
+     3
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     7,
+     8
+    ],
+    [
+     1,
+     2
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     7,
+     8
+    ],
+    [
+     2,
+     5
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     7,
+     8
+    ],
+    [
+     3,
+     3
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     7,
+     8
+    ],
+    [
+     4,
+     6
+    ],
+    0,
+    "",
+    0,
+    ""
+   ],
+   [
+    [
+     7,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    1,
+    "1",
+    1,
+    "1"
+   ]
+  ]
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [
+   [
+    "activations",
+    []
+   ]
+  ],
+  "name": "elt_group",
+  "result": {
+   "cats": [],
+   "edges": [
+    0,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 24,
+   "structure": "[1, [2, 3]]"
+  },
+  "same_as_item": 0,
+  "valid": 1,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": {
+   "class": "SErr",
+   "message": "EmptyCreate"
+  },
+  "log": [],
+  "name": "empty",
+  "result": null,
+  "same_as_item": 0,
+  "valid": null,
+  "valid_error": {
+   "class": "SErr",
+   "message": "EmptyCreate"
+  }
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [
+   [
+    "activations",
+    []
+   ]
+  ],
+  "name": "group_elt",
+  "result": {
+   "cats": [],
+   "edges": [
+    1,
+    3
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 24,
+   "structure": "[[2, 3], 4]"
+  },
+  "same_as_item": 0,
+  "valid": 1,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [],
+  "name": "hole",
+  "result": null,
+  "same_as_item": 0,
+  "valid": null,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [],
+  "name": "hole_then_unanch",
+  "result": null,
+  "same_as_item": 0,
+  "valid": null,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": {
+   "class": "DIE",
+   "message": "Unanchored object 5"
+  },
+  "log": [],
+  "name": "number",
+  "result": null,
+  "same_as_item": 0,
+  "valid": null,
+  "valid_error": {
+   "class": "DIE",
+   "message": "Unanchored object 5"
+  }
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [],
+  "name": "one_elt",
+  "result": {
+   "cats": [
+    "number"
+   ],
+   "edges": [
+    0,
+    0
+   ],
+   "group_p": 0,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category number",
+    "[0]\tAdded category number"
+   ],
+   "nitems": 1,
+   "ref": "Seqsee::Element",
+   "self_item": 1,
+   "strength": 20,
+   "structure": 1
+  },
+  "same_as_item": 1,
+  "valid": 1,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [
+   [
+    "activations",
+    []
+   ]
+  ],
+  "name": "one_group",
+  "result": {
+   "cats": [],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 28,
+   "structure": "[2, 3]"
+  },
+  "same_as_item": 1,
+  "valid": 1,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [],
+  "name": "overlap",
+  "result": null,
+  "same_as_item": 0,
+  "valid": null,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [],
+  "name": "reversed",
+  "result": null,
+  "same_as_item": 0,
+  "valid": null,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [],
+  "name": "same",
+  "result": null,
+  "same_as_item": 0,
+  "valid": null,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [
+   [
+    "activations",
+    []
+   ]
+  ],
+  "name": "three",
+  "result": {
+   "cats": [],
+   "edges": [
+    0,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 32,
+   "structure": "[1, 2, 3]"
+  },
+  "same_as_item": 0,
+  "valid": 1,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": null,
+  "log": [
+   [
+    "activations",
+    []
+   ]
+  ],
+  "name": "two",
+  "result": {
+   "cats": [],
+   "edges": [
+    0,
+    1
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 28,
+   "structure": "[1, 2]"
+  },
+  "same_as_item": 0,
+  "valid": 1,
+  "valid_error": null
+ },
+ {
+  "case": "create",
+  "error": {
+   "class": "DIE",
+   "message": "Unanchored object Seqsee::Object=REF"
+  },
+  "log": [],
+  "name": "unanch_2nd",
+  "result": null,
+  "same_as_item": 0,
+  "valid": null,
+  "valid_error": {
+   "class": "DIE",
+   "message": "Unanchored object Seqsee::Object=REF"
+  }
+ },
+ {
+  "case": "create",
+  "error": {
+   "class": "DIE",
+   "message": "Unanchored object Seqsee::Object=REF"
+  },
+  "log": [],
+  "name": "unanchored",
+  "result": null,
+  "same_as_item": 0,
+  "valid": null,
+  "valid_error": {
+   "class": "DIE",
+   "message": "Unanchored object Seqsee::Object=REF"
+  }
+ },
+ {
+  "case": "create_subclass",
+  "describe": {
+   "cats": [],
+   "edges": [
+    0,
+    1
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated"
+   ],
+   "nitems": 2,
+   "ref": "SubAnchored",
+   "self_item": 0,
+   "strength": 28,
+   "structure": "[1, 2]"
+  },
+  "ref": "SubAnchored"
+ },
+ {
+  "case": "create_subclass_one",
+  "ref": "Seqsee::Element"
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    3
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending",
+    "[0]\tExtended to become  <1, 3> "
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[2, 3, 4]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ],
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "1,3"
+   ]
+  ],
+  "method": "Extend",
+  "name": "end",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    3
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending",
+    "[0]\tExtended to become  <1, 3> "
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[2, 3, 4]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ],
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "1,3"
+   ]
+  ],
+  "method": "SafeExtend",
+  "name": "end",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    0,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending",
+    "[0]\tExtended to become  <0, 2> "
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[1, 2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "0,2",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ],
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "0,2"
+   ]
+  ],
+  "method": "Extend",
+  "name": "start",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    0,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending",
+    "[0]\tExtended to become  <0, 2> "
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[1, 2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "0,2",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ],
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "0,2"
+   ]
+  ],
+  "method": "SafeExtend",
+  "name": "start",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": {
+   "class": "SErr::CouldNotCreateExtendedGroup",
+   "message": "Extended group creation failed"
+  },
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [],
+  "method": "Extend",
+  "name": "hole_end",
+  "next_rand": 0.0416303447718782,
+  "returned": [],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [],
+  "method": "SafeExtend",
+  "name": "hole_end",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   0
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": {
+   "class": "SErr::CouldNotCreateExtendedGroup",
+   "message": "Extended group creation failed"
+  },
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [],
+  "method": "Extend",
+  "name": "wrong_side",
+  "next_rand": 0.0416303447718782,
+  "returned": [],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [],
+  "method": "SafeExtend",
+  "name": "wrong_side",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   0
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    3
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending",
+    "[0]\tExtended to become  <1, 3> "
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[2, 3, 4]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "Resolve",
+    "1,2"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ],
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "1,3"
+   ]
+  ],
+  "method": "Extend",
+  "name": "conflict_ok",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    3
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending",
+    "[0]\tExtended to become  <1, 3> "
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[2, 3, 4]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "Resolve",
+    "1,2"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ],
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "1,3"
+   ]
+  ],
+  "method": "SafeExtend",
+  "name": "conflict_ok",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "Resolve",
+    "1,2"
+   ]
+  ],
+  "method": "Extend",
+  "name": "conflict_fail",
+  "next_rand": 0.0416303447718782,
+  "returned": [],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "Resolve",
+    "1,2"
+   ]
+  ],
+  "method": "SafeExtend",
+  "name": "conflict_fail",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "Resolve",
+    "1,2"
+   ]
+  ],
+  "method": "Extend",
+  "name": "conflict_undef",
+  "next_rand": 0.0416303447718782,
+  "returned": [],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "Resolve",
+    "1,2"
+   ]
+  ],
+  "method": "SafeExtend",
+  "name": "conflict_undef",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    3
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending",
+    "[0]\tExtended to become  <1, 3> "
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[2, 3, 4]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ],
+   [
+    "DeleteGroup",
+    "0,3"
+   ],
+   [
+    "DeleteGroup",
+    "0,4"
+   ],
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "1,3"
+   ]
+  ],
+  "method": "Extend",
+  "name": "super_seed1",
+  "next_rand": 0.454492444728629,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    3
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending",
+    "[0]\tExtended to become  <1, 3> "
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[2, 3, 4]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ],
+   [
+    "DeleteGroup",
+    "0,3"
+   ],
+   [
+    "DeleteGroup",
+    "0,4"
+   ],
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "1,3"
+   ]
+  ],
+  "method": "SafeExtend",
+  "name": "super_seed1",
+  "next_rand": 0.454492444728629,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ]
+  ],
+  "method": "Extend",
+  "name": "super_seed2",
+  "next_rand": 0.159082908972294,
+  "returned": [],
+  "seed": 2
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ]
+  ],
+  "method": "SafeExtend",
+  "name": "super_seed2",
+  "next_rand": 0.159082908972294,
+  "returned": [
+   1
+  ],
+  "seed": 2
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ]
+  ],
+  "method": "Extend",
+  "name": "super_seed3",
+  "next_rand": 0.86367337321596,
+  "returned": [],
+  "seed": 3
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ]
+  ],
+  "method": "SafeExtend",
+  "name": "super_seed3",
+  "next_rand": 0.86367337321596,
+  "returned": [
+   1
+  ],
+  "seed": 3
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ]
+  ],
+  "method": "Extend",
+  "name": "super_seed4",
+  "next_rand": 0.568263837459625,
+  "returned": [],
+  "seed": 4
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "1,3",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ]
+  ],
+  "method": "SafeExtend",
+  "name": "super_seed4",
+  "next_rand": 0.568263837459625,
+  "returned": [
+   1
+  ],
+  "seed": 4
+ },
+ {
+  "case": "extend",
+  "error": {
+   "class": "SErr::CouldNotCreateExtendedGroup",
+   "message": "Extended group creation failed"
+  },
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [],
+  "method": "Extend",
+  "name": "at_end_string0",
+  "next_rand": 0.0416303447718782,
+  "returned": [],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    1,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 2,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 0,
+   "structure": "[2, 3]"
+  },
+  "log": [],
+  "method": "SafeExtend",
+  "name": "at_end_string0",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   0
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    0,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending",
+    "[0]\tExtended to become  <0, 2> "
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[1, 2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "0,2",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ],
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "0,2"
+   ]
+  ],
+  "method": "Extend",
+  "name": "at_end_empty",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    0,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending",
+    "[0]\tExtended to become  <0, 2> "
+   ],
+   "nitems": 3,
+   "ref": "Seqsee::Anchored",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[1, 2, 3]"
+  },
+  "log": [
+   [
+    "activations",
+    []
+   ],
+   [
+    "conflicts",
+    "0,2",
+    "Seqsee::Anchored"
+   ],
+   [
+    "GetSuperGroups",
+    "SWorkspace",
+    "1,2"
+   ],
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "0,2"
+   ]
+  ],
+  "method": "SafeExtend",
+  "name": "at_end_empty",
+  "next_rand": 0.0416303447718782,
+  "returned": [
+   1
+  ],
+  "seed": 1
+ },
+ {
+  "case": "extend_arity",
+  "error": {
+   "class": "DIE",
+   "message": "Need 3 arguments"
+  },
+  "method": "Extend",
+  "n": 1
+ },
+ {
+  "case": "extend_arity",
+  "error": {
+   "class": "DIE",
+   "message": "Need 3 arguments"
+  },
+  "method": "Extend",
+  "n": 3
+ },
+ {
+  "case": "extend_arity",
+  "error": {
+   "class": "DIE",
+   "message": "Need 3 arguments"
+  },
+  "method": "SafeExtend",
+  "n": 1
+ },
+ {
+  "case": "extend_arity",
+  "error": {
+   "class": "DIE",
+   "message": "Need 3 arguments"
+  },
+  "method": "SafeExtend",
+  "n": 3
+ },
+ {
+  "case": "safe_extend_rethrow",
+  "die": "boom\n",
+  "error": {
+   "class": "DIE",
+   "message": "boom\n"
+  },
+  "returned": []
+ },
+ {
+  "case": "safe_extend_rethrow",
+  "die": "obj",
+  "error": {
+   "class": "SErr",
+   "message": "serr boom"
+  },
+  "returned": []
+ },
+ {
+  "case": "update",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    0,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 3,
+   "ref": "TestGroup",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[1, 2, 3]"
+  },
+  "has_reln": 0,
+  "log": [
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "UpdateGroup",
+    "0,2"
+   ]
+  ],
+  "mode": "none",
+  "returned": [
+   "UPDATED"
+  ]
+ },
+ {
+  "case": "update",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    0,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 3,
+   "ref": "TestGroup",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[1, 2, 3]"
+  },
+  "has_reln": 1,
+  "log": [
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "get_rule"
+   ],
+   [
+    "set_underlying_ruleapp",
+    "RULE"
+   ],
+   [
+    "UpdateGroup",
+    "0,2"
+   ]
+  ],
+  "mode": "ok",
+  "returned": [
+   "UPDATED"
+  ]
+ },
+ {
+  "case": "update",
+  "error": null,
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    0,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 3,
+   "ref": "TestGroup",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[1, 2, 3]"
+  },
+  "has_reln": 1,
+  "log": [
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "get_rule"
+   ],
+   [
+    "set_underlying_ruleapp",
+    "RULE"
+   ],
+   [
+    "remove_gp",
+    "SWorkspace",
+    "0,2"
+   ]
+  ],
+  "mode": "die",
+  "returned": []
+ },
+ {
+  "case": "update",
+  "error": {
+   "class": "DIE",
+   "message": "underlying_reln lost here"
+  },
+  "group": {
+   "cats": [
+    "ascending"
+   ],
+   "edges": [
+    0,
+    2
+   ],
+   "group_p": 1,
+   "history": [
+    "[0]\tcreated",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tAdded category ascending",
+    "[0]\tredescribe as instance of category ascending succeded",
+    "[0]\tAdded category ascending"
+   ],
+   "nitems": 3,
+   "ref": "TestGroup",
+   "self_item": 0,
+   "strength": 47,
+   "structure": "[1, 2, 3]"
+  },
+  "has_reln": 0,
+  "log": [
+   [
+    "activations",
+    [
+     "ascending"
+    ]
+   ],
+   [
+    "get_rule"
+   ],
+   [
+    "set_underlying_ruleapp",
+    "RULE"
+   ]
+  ],
+  "mode": "lose",
+  "returned": []
+ },
+ {
+  "case": "update_lost_cats",
+  "error": {
+   "class": "DIE",
+   "message": "LOST ALL CATEGORIES!!!"
+  },
+  "log": [],
+  "returned": []
+ },
+ {
+  "case": "find_extension",
+  "log": [],
+  "returned": [],
+  "with_reln": 0
+ },
+ {
+  "case": "find_extension",
+  "log": [
+   [
+    "FindExtension",
+    "left",
+    2
+   ]
+  ],
+  "returned": [
+   "EXT"
+  ],
+  "with_reln": 1
+ },
+ {
+  "case": "find_extension_arity",
+  "error": {
+   "class": "DIE",
+   "message": "FindExtension for an object requires 3 args"
+  }
+ }
+]

@@ -1,0 +1,937 @@
+[
+ {
+  "as_text": "Codelet(family=TFam,urgency=50,args={ a => 1,  }",
+  "case": "new_basic",
+  "ctime": 0,
+  "family": "TFam",
+  "steps": 0,
+  "urgency": 50,
+  "view": [
+   "TFam",
+   50,
+   0,
+   [
+    "a"
+   ]
+  ]
+ },
+ {
+  "as_text": "Codelet(family=TFam,urgency=50,args={ a => 1,  }",
+  "case": "new_basic",
+  "ctime": 7,
+  "family": "TFam",
+  "steps": 7,
+  "urgency": 50,
+  "view": [
+   "TFam",
+   50,
+   7,
+   [
+    "a"
+   ]
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=10,args={  }",
+  "case": "new_no_args",
+  "ctime": 0,
+  "family": "Foo",
+  "steps": 0,
+  "urgency": 10,
+  "view": [
+   "Foo",
+   10,
+   0,
+   []
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=10,args={  }",
+  "case": "new_no_args",
+  "ctime": 7,
+  "family": "Foo",
+  "steps": 7,
+  "urgency": 10,
+  "view": [
+   "Foo",
+   10,
+   7,
+   []
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=10,args={  }",
+  "case": "new_empty_str",
+  "ctime": 0,
+  "family": "Foo",
+  "steps": 0,
+  "urgency": 10,
+  "view": [
+   "Foo",
+   10,
+   0,
+   []
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=10,args={  }",
+  "case": "new_empty_str",
+  "ctime": 7,
+  "family": "Foo",
+  "steps": 7,
+  "urgency": 10,
+  "view": [
+   "Foo",
+   10,
+   7,
+   []
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=10,args={  }",
+  "case": "new_zero_args",
+  "ctime": 0,
+  "family": "Foo",
+  "steps": 0,
+  "urgency": 10,
+  "view": [
+   "Foo",
+   10,
+   0,
+   []
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=10,args={  }",
+  "case": "new_zero_args",
+  "ctime": 7,
+  "family": "Foo",
+  "steps": 7,
+  "urgency": 10,
+  "view": [
+   "Foo",
+   10,
+   7,
+   []
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=0.5,args={ x => y,  }",
+  "case": "new_float_urg",
+  "ctime": 0,
+  "family": "Foo",
+  "steps": 0,
+  "urgency": 0.5,
+  "view": [
+   "Foo",
+   0.5,
+   0,
+   [
+    "x"
+   ]
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=0.5,args={ x => y,  }",
+  "case": "new_float_urg",
+  "ctime": 7,
+  "family": "Foo",
+  "steps": 7,
+  "urgency": 0.5,
+  "view": [
+   "Foo",
+   0.5,
+   7,
+   [
+    "x"
+   ]
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=,args={ x => undef,  }",
+  "case": "new_undef_urg",
+  "ctime": 0,
+  "family": "Foo",
+  "steps": 0,
+  "urgency": null,
+  "view": [
+   "Foo",
+   null,
+   0,
+   [
+    "x"
+   ]
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=,args={ x => undef,  }",
+  "case": "new_undef_urg",
+  "ctime": 7,
+  "family": "Foo",
+  "steps": 7,
+  "urgency": null,
+  "view": [
+   "Foo",
+   null,
+   7,
+   [
+    "x"
+   ]
+  ]
+ },
+ {
+  "as_text": "Codelet(family=42,urgency=3,args={ x => 2,  }",
+  "case": "new_num_family",
+  "ctime": 0,
+  "family": 42,
+  "steps": 0,
+  "urgency": 3,
+  "view": [
+   42,
+   3,
+   0,
+   [
+    "x"
+   ]
+  ]
+ },
+ {
+  "as_text": "Codelet(family=42,urgency=3,args={ x => 2,  }",
+  "case": "new_num_family",
+  "ctime": 7,
+  "family": 42,
+  "steps": 7,
+  "urgency": 3,
+  "view": [
+   42,
+   3,
+   7,
+   [
+    "x"
+   ]
+  ]
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=20,args={ obj => \u00abSeqsee::Element:[2,2] 3\u00bb,  }",
+  "case": "as_text_object"
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=20,args={ items => [ Seqsee::Element:[1,1] 2, Seqsee::Element:[2,2] 3 ],  }",
+  "case": "as_text_array"
+ },
+ {
+  "as_text": "Codelet(family=Foo,urgency=20,args={ n => 3,  }",
+  "case": "as_text_number"
+ },
+ {
+  "case": "new_undef_family",
+  "error": "Attribute (family) does not pass the type constraint because: Validation failed for 'Str' with value undef",
+  "ok": null
+ },
+ {
+  "case": "new_only_family",
+  "error": null,
+  "ok": 1
+ },
+ {
+  "body": [
+   [
+    1,
+    0,
+    null,
+    4,
+    5
+   ]
+  ],
+  "case": "run_all_given",
+  "current_family": "TFam",
+  "current_is_self": 1,
+  "error": null,
+  "ret": "ret"
+ },
+ {
+  "body": [],
+  "case": "run_missing_a",
+  "current_family": "TFam",
+  "current_is_self": 1,
+  "error": "Mandatory parameter 'a' missing in call to Seqsee::SCF::TFam::run",
+  "ret": null
+ },
+ {
+  "body": [],
+  "case": "run_missing_e",
+  "current_family": "TFam",
+  "current_is_self": 1,
+  "error": "Mandatory parameter 'e' missing in call to Seqsee::SCF::TFam::run",
+  "ret": null
+ },
+ {
+  "body": [],
+  "case": "run_missing_many",
+  "current_family": "TFam",
+  "current_is_self": 1,
+  "error": "Mandatory parameters 'a', 'd', 'e' missing in call to Seqsee::SCF::TFam::run",
+  "ret": null
+ },
+ {
+  "body": [],
+  "case": "run_extra_one",
+  "current_family": "TFam",
+  "current_is_self": 1,
+  "error": "The following parameter was passed in the call to Seqsee::SCF::TFam::run but was not listed in the validation options: zz",
+  "ret": null
+ },
+ {
+  "body": [],
+  "case": "run_extra_missing",
+  "current_family": "TFam",
+  "current_is_self": 1,
+  "error": "The following parameter was passed in the call to Seqsee::SCF::TFam::run but was not listed in the validation options: zz",
+  "ret": null
+ },
+ {
+  "body": [
+   [
+    1,
+    7,
+    3,
+    4,
+    5
+   ]
+  ],
+  "case": "run_optional_set",
+  "current_family": "TFam",
+  "current_is_self": 1,
+  "error": null,
+  "ret": "ret"
+ },
+ {
+  "body": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "case": "run_undef_values",
+  "current_family": "TFam",
+  "current_is_self": 1,
+  "error": null,
+  "ret": "ret"
+ },
+ {
+  "body": [
+   [
+    0
+   ]
+  ],
+  "case": "run_empty_family",
+  "current_family": "Empty",
+  "current_is_self": 1,
+  "error": null,
+  "ret": 7
+ },
+ {
+  "body": [],
+  "case": "run_empty_extra",
+  "current_family": "Empty",
+  "current_is_self": 1,
+  "error": "The following parameter was passed in the call to Seqsee::SCF::Empty::run but was not listed in the validation options: x",
+  "ret": null
+ },
+ {
+  "body": [],
+  "case": "run_unknown_fam",
+  "current_family": "Nope",
+  "current_is_self": 1,
+  "error": "Undefined subroutine &Seqsee::SCF::Nope::run called",
+  "ret": null
+ },
+ {
+  "body": [],
+  "case": "run_unknown_args",
+  "current_family": "Nope",
+  "current_is_self": 1,
+  "error": "Undefined subroutine &Seqsee::SCF::Nope::run called",
+  "ret": null
+ },
+ {
+  "case": "run_extra_two",
+  "error": "The following parameter was passed in the call to Seqsee::SCF::TFam::run but was not listed in the validation options: yy"
+ },
+ {
+  "body": [],
+  "case": "run_nonhash_array",
+  "current_family": null,
+  "error": "Not a HASH reference"
+ },
+ {
+  "body": [],
+  "case": "run_nonhash_string",
+  "current_family": null,
+  "error": "Can't use string (\"5\") as a HASH ref while \"strict refs\" in use"
+ },
+ {
+  "body": [],
+  "case": "fresh_steps_empty_string",
+  "error": "No viable candidate for call to multimethod IsFresh(#,$)",
+  "ret": null
+ },
+ {
+  "body": [
+   [
+    0
+   ]
+  ],
+  "case": "fresh_steps_empty_string_noargs",
+  "error": null,
+  "ret": 7
+ },
+ {
+  "body": [
+   [
+    "e0",
+    0,
+    null,
+    "e1",
+    "e2"
+   ]
+  ],
+  "case": "fresh_element",
+  "error": null,
+  "ret": "ret"
+ },
+ {
+  "body": [],
+  "case": "fresh_element_changed",
+  "error": null,
+  "ret": null
+ },
+ {
+  "body": [
+   [
+    "ARRAY",
+    0,
+    null,
+    "HASH",
+    "str"
+   ]
+  ],
+  "case": "fresh_misc_values",
+  "error": null,
+  "ret": "ret"
+ },
+ {
+  "body": [
+   [
+    "G",
+    0,
+    null,
+    1,
+    1
+   ]
+  ],
+  "case": "fresh_group_unchanged",
+  "error": null,
+  "ret": "ret"
+ },
+ {
+  "body": [],
+  "case": "fresh_group_changed",
+  "error": null,
+  "ret": null
+ },
+ {
+  "body": [
+   [
+    "G",
+    0,
+    null,
+    1,
+    1
+   ]
+  ],
+  "case": "fresh_group_changed_same_step",
+  "error": null,
+  "ret": "ret"
+ },
+ {
+  "body": [
+   [
+    "R",
+    0,
+    null,
+    1,
+    1
+   ]
+  ],
+  "case": "fresh_reln_unchanged",
+  "error": null,
+  "ret": "ret"
+ },
+ {
+  "body": [],
+  "case": "fresh_reln_first_changed",
+  "error": null,
+  "ret": null
+ },
+ {
+  "body": [],
+  "case": "fresh_reln_second_changed",
+  "error": null,
+  "ret": null
+ },
+ {
+  "body": [
+   [
+    "R",
+    0,
+    null,
+    1,
+    1
+   ]
+  ],
+  "case": "fresh_reln_self_changed",
+  "error": null,
+  "ret": "ret"
+ },
+ {
+  "case": "debug_codelet",
+  "error": null,
+  "messages": [
+   [
+    "Empty",
+    "green",
+    "About to run: \u00abCodelet(family=Empty,urgency=50,args={  }\u00bb"
+   ]
+  ],
+  "ret": 7
+ },
+ {
+  "case": "debug_action",
+  "error": null,
+  "messages": [
+   [
+    "Empty",
+    "green",
+    "About to run: reftype=SAction"
+   ]
+  ],
+  "ret": 7
+ },
+ {
+  "case": "debug_off",
+  "messages": [],
+  "ret": 7
+ },
+ {
+  "case": "action_new_empty",
+  "error": "Attribute (arguments) is required",
+  "ok": 0
+ },
+ {
+  "case": "action_new_no_urgency",
+  "error": "Attribute (urgency) is required",
+  "ok": 0
+ },
+ {
+  "case": "action_new_no_args",
+  "error": "Attribute (arguments) is required",
+  "ok": 0
+ },
+ {
+  "case": "action_new_undef_fam",
+  "error": "Attribute (family) does not pass the type constraint because: Validation failed for 'Str' with value undef",
+  "ok": 0
+ },
+ {
+  "case": "action_new_ok",
+  "error": null,
+  "ok": 1
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.18758951699996,
+  "ran": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "seed": 1,
+  "urgency": 0
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.18758951699996,
+  "ran": [
+   7,
+   null,
+   null,
+   null,
+   null,
+   7
+  ],
+  "seed": 1,
+  "urgency": 30
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.18758951699996,
+  "ran": [
+   7,
+   7,
+   null,
+   7,
+   null,
+   7
+  ],
+  "seed": 1,
+  "urgency": 50
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.18758951699996,
+  "ran": [
+   7,
+   7,
+   7,
+   7,
+   7,
+   7
+  ],
+  "seed": 1,
+  "urgency": 90
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.18758951699996,
+  "ran": [
+   7,
+   7,
+   7,
+   7,
+   7,
+   7
+  ],
+  "seed": 1,
+  "urgency": 100
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.18758951699996,
+  "ran": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "seed": 1,
+  "urgency": null
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.15996169824788,
+  "ran": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "seed": 7,
+  "urgency": 0
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.15996169824788,
+  "ran": [
+   7,
+   null,
+   7,
+   7,
+   null,
+   7
+  ],
+  "seed": 7,
+  "urgency": 30
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.15996169824788,
+  "ran": [
+   7,
+   null,
+   7,
+   7,
+   7,
+   7
+  ],
+  "seed": 7,
+  "urgency": 50
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.15996169824788,
+  "ran": [
+   7,
+   7,
+   7,
+   7,
+   7,
+   7
+  ],
+  "seed": 7,
+  "urgency": 90
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.15996169824788,
+  "ran": [
+   7,
+   7,
+   7,
+   7,
+   7,
+   7
+  ],
+  "seed": 7,
+  "urgency": 100
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.15996169824788,
+  "ran": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "seed": 7,
+  "urgency": null
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.498799422194079,
+  "ran": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "seed": 42,
+  "urgency": 0
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.498799422194079,
+  "ran": [
+   null,
+   null,
+   7,
+   null,
+   7,
+   null
+  ],
+  "seed": 42,
+  "urgency": 30
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.498799422194079,
+  "ran": [
+   null,
+   7,
+   7,
+   7,
+   7,
+   null
+  ],
+  "seed": 42,
+  "urgency": 50
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.498799422194079,
+  "ran": [
+   7,
+   7,
+   7,
+   7,
+   7,
+   7
+  ],
+  "seed": 42,
+  "urgency": 90
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.498799422194079,
+  "ran": [
+   7,
+   7,
+   7,
+   7,
+   7,
+   7
+  ],
+  "seed": 42,
+  "urgency": 100
+ },
+ {
+  "case": "conditionally_run",
+  "next": 0.498799422194079,
+  "ran": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "seed": 42,
+  "urgency": null
+ },
+ {
+  "case": "action_sub",
+  "next": 0.267027636381449,
+  "ran": [
+   [
+    null,
+    []
+   ],
+   [
+    null,
+    []
+   ],
+   [
+    "ret",
+    [
+     [
+      95,
+      0,
+      null,
+      1,
+      2
+     ]
+    ]
+   ]
+  ],
+  "seed": 3
+ },
+ {
+  "case": "action_sub",
+  "next": 0.991194061326446,
+  "ran": [
+   [
+    null,
+    []
+   ],
+   [
+    "ret",
+    [
+     [
+      60,
+      0,
+      null,
+      1,
+      2
+     ]
+    ]
+   ],
+   [
+    "ret",
+    [
+     [
+      95,
+      0,
+      null,
+      1,
+      2
+     ]
+    ]
+   ]
+  ],
+  "seed": 11
+ },
+ {
+  "body": [
+   [
+    "G",
+    0,
+    null,
+    1,
+    2
+   ]
+  ],
+  "case": "action_stale_runs",
+  "error": null,
+  "ret": "ret"
+ },
+ {
+  "case": "action_nonhash_array",
+  "current_family": "TFam",
+  "error": "Not a HASH reference"
+ },
+ {
+  "case": "action_nonhash_string",
+  "current_family": "TFam",
+  "error": "Can't use string (\"5\") as a HASH ref while \"strict refs\" in use"
+ },
+ {
+  "case": "action_nonhash_undef",
+  "current_family": "TFam",
+  "error": "Can't use an undefined value as a HASH reference"
+ },
+ {
+  "case": "action_unknown_family",
+  "error": "Undefined subroutine &Seqsee::SCF::Nope::run called"
+ },
+ {
+  "case": "cf_no_attributes",
+  "error": "Require attributes"
+ },
+ {
+  "case": "cf_no_body",
+  "error": "Require body"
+ },
+ {
+  "case": "cf_neither",
+  "error": "Require attributes"
+ },
+ {
+  "case": "cf_undef_attributes",
+  "error": "Require attributes"
+ },
+ {
+  "case": "cw_none",
+  "error": "ContinueWith takes a single argument!"
+ },
+ {
+  "case": "cw_two",
+  "error": "ContinueWith takes a single argument!"
+ },
+ {
+  "case": "cw_string",
+  "error": "ContinueWith takes a thought as argument"
+ },
+ {
+  "case": "cw_undef",
+  "error": "ContinueWith takes a thought as argument"
+ },
+ {
+  "case": "cw_element",
+  "error": "ContinueWith takes a thought as argument"
+ }
+]

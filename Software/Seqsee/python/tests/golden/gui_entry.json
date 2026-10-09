@@ -1,0 +1,315 @@
+[
+ {
+  "argv": [
+   "--seq",
+   "1 1 2 1 2 3",
+   "--seed",
+   "7",
+   "--max_steps",
+   "40",
+   "--update_interval",
+   "5",
+   "--view",
+   "0"
+  ],
+  "ask_seq": 0,
+  "elements": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   3
+  ],
+  "name": "launch",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": 40,
+   "seq": [
+    "1",
+    "1",
+    "2",
+    "1",
+    "2",
+    "3"
+   ],
+   "update_interval": 5,
+   "view": 0
+  },
+  "seed": 7,
+  "steps": 0
+ },
+ {
+  "argv": [
+   "--seed",
+   "7"
+  ],
+  "ask_seq": 1,
+  "elements": [],
+  "name": "launch_no_seq",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "seed": 7,
+  "steps": 0
+ },
+ {
+  "argv": [],
+  "features": [],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "rest": [],
+  "seed": "random"
+ },
+ {
+  "argv": [
+   "--seq",
+   "1 1 2 1 2 3"
+  ],
+  "features": [],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [
+    "1",
+    "1",
+    "2",
+    "1",
+    "2",
+    "3"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "rest": [],
+  "seed": "random"
+ },
+ {
+  "argv": [
+   "--seq",
+   "1, 2, 3",
+   "--seed",
+   "7",
+   "--max_steps",
+   "50",
+   "--update_interval",
+   "5",
+   "--view",
+   "1",
+   "--gui_config",
+   "GUI_sparse"
+  ],
+  "features": [],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": 50,
+   "seq": [
+    "1",
+    "2",
+    "3"
+   ],
+   "update_interval": 5,
+   "view": 1
+  },
+  "rest": [],
+  "seed": 7
+ },
+ {
+  "argv": [
+   "-n",
+   "30",
+   "--seq",
+   "4 5"
+  ],
+  "features": [],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": 30,
+   "seq": [
+    "4",
+    "5"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "rest": [],
+  "seed": "random"
+ },
+ {
+  "argv": [
+   "--max_steps",
+   "20",
+   "-n",
+   "30"
+  ],
+  "features": [],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": 20,
+   "seq": [],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "rest": [],
+  "seed": "random"
+ },
+ {
+  "argv": [
+   "--gui",
+   "GUI_sparse",
+   "--seq",
+   "2 3"
+  ],
+  "features": [],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [
+    "2",
+    "3"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "rest": [],
+  "seed": "random"
+ },
+ {
+  "argv": [
+   "--gui=GUI_sparse"
+  ],
+  "features": [],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "rest": [],
+  "seed": "random"
+ },
+ {
+  "argv": [
+   "--gui_config",
+   "GUI_ws3",
+   "--gui",
+   "GUI_sparse"
+  ],
+  "features": [],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_ws3",
+   "max_steps": "100000",
+   "seq": [],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "rest": [],
+  "seed": "random"
+ },
+ {
+  "argv": [
+   "-f",
+   "debugMAX",
+   "-f",
+   "Primes",
+   "--seq",
+   "7 11"
+  ],
+  "features": [
+   "Primes",
+   "debugMAX"
+  ],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [
+    "7",
+    "11"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "rest": [],
+  "seed": "random"
+ },
+ {
+  "argv": [
+   "--seq",
+   "1 2",
+   "extra",
+   "words"
+  ],
+  "features": [],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [
+    "1",
+    "2"
+   ],
+   "update_interval": "15",
+   "view": "1"
+  },
+  "rest": [
+   "extra",
+   "words"
+  ],
+  "seed": "random"
+ },
+ {
+  "argv": [
+   "--view",
+   "3",
+   "--seed=9"
+  ],
+  "features": [],
+  "name": "options",
+  "options": {
+   "gui_config": "GUI_sparse",
+   "max_steps": "100000",
+   "seq": [],
+   "update_interval": "15",
+   "view": 3
+  },
+  "rest": [],
+  "seed": 9
+ },
+ {
+  "died": 1,
+  "error": "",
+  "gui_config": "GUI_ws3",
+  "name": "setup"
+ },
+ {
+  "died": 1,
+  "error": "Can't open config file 'config/nosuch.conf' (no such file or directory)",
+  "gui_config": "nosuch",
+  "name": "setup"
+ },
+ {
+  "died": 0,
+  "error": "",
+  "gui_config": "GUI_sparse",
+  "name": "setup"
+ }
+]

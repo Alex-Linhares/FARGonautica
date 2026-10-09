@@ -1,0 +1,3613 @@
+[
+ {
+  "as_text": "number",
+  "cat": "number",
+  "class": "SCategory::Number",
+  "deserialized_class": "SCategory::Number",
+  "deserialized_is_same": 0,
+  "does_numeric": 1,
+  "get_name": "number",
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 1,
+  "is_pure": 1,
+  "kind": "basics",
+  "memory_deps_count": 0,
+  "meto_types_count": 0,
+  "serialize": "SCategory::Number->new()",
+  "smartmatch_self": 1,
+  "string_to_recreate": "SCategory::Number->new()"
+ },
+ {
+  "as_text": "Prime",
+  "cat": "prime",
+  "class": "SCategory::Prime",
+  "deserialized_class": "SCategory::Prime",
+  "deserialized_is_same": 0,
+  "does_numeric": 1,
+  "get_name": "Prime",
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 1,
+  "is_pure": 1,
+  "kind": "basics",
+  "memory_deps_count": 0,
+  "meto_types_count": 0,
+  "serialize": "SCategory::Prime->new()",
+  "smartmatch_self": 1,
+  "string_to_recreate": "SCategory::Prime->new()"
+ },
+ {
+  "as_text": "odd",
+  "cat": "odd",
+  "class": "SCategory::Odd",
+  "deserialized_class": "SCategory::Even",
+  "deserialized_is_same": 0,
+  "does_numeric": 1,
+  "get_name": "odd",
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 1,
+  "is_pure": 1,
+  "kind": "basics",
+  "memory_deps_count": 0,
+  "meto_types_count": 0,
+  "serialize": "SCategory::Even->new()",
+  "smartmatch_self": 1,
+  "string_to_recreate": "SCategory::Even->new()"
+ },
+ {
+  "as_text": "even",
+  "cat": "even",
+  "class": "SCategory::Even",
+  "deserialized_class": "SCategory::Even",
+  "deserialized_is_same": 0,
+  "does_numeric": 1,
+  "get_name": "even",
+  "get_pure_is_self": 1,
+  "is_metonyable": null,
+  "is_numeric": 1,
+  "is_pure": 1,
+  "kind": "basics",
+  "memory_deps_count": 0,
+  "meto_types_count": 0,
+  "serialize": "SCategory::Even->new()",
+  "smartmatch_self": 1,
+  "string_to_recreate": "SCategory::Even->new()"
+ },
+ {
+  "atts": [],
+  "cat": "number",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "mag"
+  ],
+  "cat": "number",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "mag",
+   "x"
+  ],
+  "cat": "number",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "x"
+  ],
+  "cat": "number",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [],
+  "cat": "prime",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "mag"
+  ],
+  "cat": "prime",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "mag",
+   "x"
+  ],
+  "cat": "prime",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "x"
+  ],
+  "cat": "prime",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [],
+  "cat": "odd",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "mag"
+  ],
+  "cat": "odd",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "mag",
+   "x"
+  ],
+  "cat": "odd",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "x"
+  ],
+  "cat": "odd",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [],
+  "cat": "even",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "mag"
+  ],
+  "cat": "even",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "mag",
+   "x"
+  ],
+  "cat": "even",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "atts": [
+   "x"
+  ],
+  "cat": "even",
+  "kind": "sufficient",
+  "result": 0
+ },
+ {
+  "input": -5,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": -1,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 0,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 1,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 2,
+  "kind": "is_prime",
+  "result": 1
+ },
+ {
+  "input": 3,
+  "kind": "is_prime",
+  "result": 1
+ },
+ {
+  "input": 4,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 5,
+  "kind": "is_prime",
+  "result": 1
+ },
+ {
+  "input": 9,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 10,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 13,
+  "kind": "is_prime",
+  "result": 1
+ },
+ {
+  "input": 50,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 89,
+  "kind": "is_prime",
+  "result": 1
+ },
+ {
+  "input": 96,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 97,
+  "kind": "is_prime",
+  "result": 1
+ },
+ {
+  "input": 98,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 100,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 1000,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": "7",
+  "kind": "is_prime",
+  "result": 1
+ },
+ {
+  "input": "2.0",
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": 2,
+  "kind": "is_prime",
+  "result": 1
+ },
+ {
+  "input": "07",
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": " 7",
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": "",
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": null,
+  "kind": "is_prime",
+  "result": 0
+ },
+ {
+  "input": -5,
+  "kind": "next_prime",
+  "result": "2"
+ },
+ {
+  "input": -1,
+  "kind": "next_prime",
+  "result": "2"
+ },
+ {
+  "input": 0,
+  "kind": "next_prime",
+  "result": "2"
+ },
+ {
+  "input": 1,
+  "kind": "next_prime",
+  "result": "2"
+ },
+ {
+  "input": 2,
+  "kind": "next_prime",
+  "result": "3"
+ },
+ {
+  "input": 3,
+  "kind": "next_prime",
+  "result": "5"
+ },
+ {
+  "input": 4,
+  "kind": "next_prime",
+  "result": "5"
+ },
+ {
+  "input": 5,
+  "kind": "next_prime",
+  "result": "7"
+ },
+ {
+  "input": 13,
+  "kind": "next_prime",
+  "result": "17"
+ },
+ {
+  "input": 14,
+  "kind": "next_prime",
+  "result": "17"
+ },
+ {
+  "input": 88,
+  "kind": "next_prime",
+  "result": "89"
+ },
+ {
+  "input": 89,
+  "kind": "next_prime",
+  "result": "97"
+ },
+ {
+  "input": 90,
+  "kind": "next_prime",
+  "result": "97"
+ },
+ {
+  "input": 96,
+  "kind": "next_prime",
+  "result": "97"
+ },
+ {
+  "input": 97,
+  "kind": "next_prime",
+  "result": null
+ },
+ {
+  "input": 98,
+  "kind": "next_prime",
+  "result": null
+ },
+ {
+  "input": 1000,
+  "kind": "next_prime",
+  "result": null
+ },
+ {
+  "input": "5",
+  "kind": "next_prime",
+  "result": "7"
+ },
+ {
+  "input": null,
+  "kind": "next_prime",
+  "result": "2"
+ },
+ {
+  "input": 2,
+  "kind": "next_prime",
+  "result": "3"
+ },
+ {
+  "input": -5,
+  "kind": "previous_prime",
+  "result": null
+ },
+ {
+  "input": 0,
+  "kind": "previous_prime",
+  "result": null
+ },
+ {
+  "input": 1,
+  "kind": "previous_prime",
+  "result": null
+ },
+ {
+  "input": 2,
+  "kind": "previous_prime",
+  "result": null
+ },
+ {
+  "input": 3,
+  "kind": "previous_prime",
+  "result": "2"
+ },
+ {
+  "input": 4,
+  "kind": "previous_prime",
+  "result": "3"
+ },
+ {
+  "input": 5,
+  "kind": "previous_prime",
+  "result": "3"
+ },
+ {
+  "input": 14,
+  "kind": "previous_prime",
+  "result": "13"
+ },
+ {
+  "input": 89,
+  "kind": "previous_prime",
+  "result": "83"
+ },
+ {
+  "input": 97,
+  "kind": "previous_prime",
+  "result": "89"
+ },
+ {
+  "input": 98,
+  "kind": "previous_prime",
+  "result": "97"
+ },
+ {
+  "input": 100,
+  "kind": "previous_prime",
+  "result": "97"
+ },
+ {
+  "input": 1000,
+  "kind": "previous_prime",
+  "result": "97"
+ },
+ {
+  "input": "5",
+  "kind": "previous_prime",
+  "result": "3"
+ },
+ {
+  "input": null,
+  "kind": "previous_prime",
+  "result": null
+ },
+ {
+  "input": 7,
+  "kind": "previous_prime",
+  "result": "5"
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": -4,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": -3,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": -2.5,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": -1,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 0,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 1,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 2,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 2.5,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 3,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 3.5,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 4,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 7,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 9,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 97,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 98,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": "5",
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": "6",
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": "abc",
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": "",
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "number",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": null,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": -4,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": -3,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": -2.5,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": -1,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 0,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 1,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "prime",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 2,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 2.5,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "prime",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 3,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 3.5,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 4,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "prime",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 7,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 9,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "prime",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 97,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 98,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "prime",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": "5",
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": "6",
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": "abc",
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": "",
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "prime",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": null,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": -4,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "odd",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": -3,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": -2.5,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "odd",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": -1,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 0,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "odd",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 1,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 2,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 2.5,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "odd",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 3,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "odd",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 3.5,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 4,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "odd",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 7,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "odd",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 9,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "odd",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 97,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 98,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "odd",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": "5",
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": "6",
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": "abc",
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": "",
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "odd",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": null,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": -4,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "even",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": -3,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": -2.5,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "even",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": -1,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 0,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "even",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 1,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 2,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 2.5,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "even",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 3,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "even",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 3.5,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 4,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "even",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 7,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "even",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 9,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": null,
+  "cat": "even",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": 97,
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": 98,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": null,
+  "cat": "even",
+  "defined": 0,
+  "kind": "instancer",
+  "mag": "5",
+  "ref": null,
+  "slippages": null,
+  "via_object_defined": 0
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": "6",
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": "abc",
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": "",
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "bindings": {},
+  "cat": "even",
+  "defined": 1,
+  "kind": "instancer",
+  "mag": null,
+  "ref": "SBindings",
+  "slippages": {},
+  "via_object_defined": 1
+ },
+ {
+  "a": 3,
+  "b": 3,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "same/number"
+ },
+ {
+  "a": 3,
+  "b": 4,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "succ/number"
+ },
+ {
+  "a": 4,
+  "b": 3,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "pred/number"
+ },
+ {
+  "a": 3,
+  "b": 5,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 5,
+  "b": 3,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 7,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 7,
+  "b": 5,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 5,
+  "b": 7,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 4,
+  "b": 5,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "succ/number"
+ },
+ {
+  "a": 4,
+  "b": 6,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 2,
+  "b": 3,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "succ/number"
+ },
+ {
+  "a": 3,
+  "b": 2,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "pred/number"
+ },
+ {
+  "a": 2,
+  "b": 0,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 97,
+  "b": 0,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 97,
+  "b": 97,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "same/number"
+ },
+ {
+  "a": 96,
+  "b": 97,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "succ/number"
+ },
+ {
+  "a": 97,
+  "b": 89,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 1,
+  "b": 2,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "succ/number"
+ },
+ {
+  "a": 0,
+  "b": 2,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": -1,
+  "b": 1,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": "3",
+  "b": "4",
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "succ/number"
+ },
+ {
+  "a": "3",
+  "b": 3,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "same/number"
+ },
+ {
+  "a": 10,
+  "b": 20,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 2.5,
+  "b": 3.5,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": "succ/number"
+ },
+ {
+  "a": 2.5,
+  "b": 4.5,
+  "cat": "number",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 3,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "same/Prime"
+ },
+ {
+  "a": 3,
+  "b": 4,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 4,
+  "b": 3,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "pred/Prime"
+ },
+ {
+  "a": 3,
+  "b": 5,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "succ/Prime"
+ },
+ {
+  "a": 5,
+  "b": 3,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "pred/Prime"
+ },
+ {
+  "a": 3,
+  "b": 7,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 7,
+  "b": 5,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "pred/Prime"
+ },
+ {
+  "a": 5,
+  "b": 7,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "succ/Prime"
+ },
+ {
+  "a": 4,
+  "b": 5,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "succ/Prime"
+ },
+ {
+  "a": 4,
+  "b": 6,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 2,
+  "b": 3,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "succ/Prime"
+ },
+ {
+  "a": 3,
+  "b": 2,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "pred/Prime"
+ },
+ {
+  "a": 2,
+  "b": 0,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "pred/Prime"
+ },
+ {
+  "a": 97,
+  "b": 0,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "succ/Prime"
+ },
+ {
+  "a": 97,
+  "b": 97,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "same/Prime"
+ },
+ {
+  "a": 96,
+  "b": 97,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "succ/Prime"
+ },
+ {
+  "a": 97,
+  "b": 89,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "pred/Prime"
+ },
+ {
+  "a": 1,
+  "b": 2,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "succ/Prime"
+ },
+ {
+  "a": 0,
+  "b": 2,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "succ/Prime"
+ },
+ {
+  "a": -1,
+  "b": 1,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": "4",
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 3,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": "same/Prime"
+ },
+ {
+  "a": 10,
+  "b": 20,
+  "cat": "prime",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 3,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "same/odd"
+ },
+ {
+  "a": 3,
+  "b": 4,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 4,
+  "b": 3,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 5,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "succ/odd"
+ },
+ {
+  "a": 5,
+  "b": 3,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "pred/odd"
+ },
+ {
+  "a": 3,
+  "b": 7,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 7,
+  "b": 5,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "pred/odd"
+ },
+ {
+  "a": 5,
+  "b": 7,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "succ/odd"
+ },
+ {
+  "a": 4,
+  "b": 5,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 4,
+  "b": 6,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "succ/odd"
+ },
+ {
+  "a": 2,
+  "b": 3,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 2,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 2,
+  "b": 0,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "pred/odd"
+ },
+ {
+  "a": 97,
+  "b": 0,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 97,
+  "b": 97,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "same/odd"
+ },
+ {
+  "a": 96,
+  "b": 97,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 97,
+  "b": 89,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 1,
+  "b": 2,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 0,
+  "b": 2,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "succ/odd"
+ },
+ {
+  "a": -1,
+  "b": 1,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "succ/odd"
+ },
+ {
+  "a": 3,
+  "b": "4",
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 3,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "same/odd"
+ },
+ {
+  "a": 10,
+  "b": 20,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 2.5,
+  "b": 3.5,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 2.5,
+  "b": 4.5,
+  "cat": "odd",
+  "kind": "find_mapping",
+  "result": "succ/odd"
+ },
+ {
+  "a": 3,
+  "b": 3,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "same/even"
+ },
+ {
+  "a": 3,
+  "b": 4,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 4,
+  "b": 3,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 5,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "succ/even"
+ },
+ {
+  "a": 5,
+  "b": 3,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "pred/even"
+ },
+ {
+  "a": 3,
+  "b": 7,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 7,
+  "b": 5,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "pred/even"
+ },
+ {
+  "a": 5,
+  "b": 7,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "succ/even"
+ },
+ {
+  "a": 4,
+  "b": 5,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 4,
+  "b": 6,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "succ/even"
+ },
+ {
+  "a": 2,
+  "b": 3,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 2,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 2,
+  "b": 0,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "pred/even"
+ },
+ {
+  "a": 97,
+  "b": 0,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 97,
+  "b": 97,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "same/even"
+ },
+ {
+  "a": 96,
+  "b": 97,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 97,
+  "b": 89,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 1,
+  "b": 2,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 0,
+  "b": 2,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "succ/even"
+ },
+ {
+  "a": -1,
+  "b": 1,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "succ/even"
+ },
+ {
+  "a": 3,
+  "b": "4",
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 3,
+  "b": 3,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "same/even"
+ },
+ {
+  "a": 10,
+  "b": 20,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 2.5,
+  "b": 3.5,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": null
+ },
+ {
+  "a": 2.5,
+  "b": 4.5,
+  "cat": "even",
+  "kind": "find_mapping",
+  "result": "succ/even"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "same",
+  "result": "-1"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "same",
+  "result": "0"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "same",
+  "result": "1"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "same",
+  "result": "2"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "same",
+  "result": "3"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "same",
+  "result": "4"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "same",
+  "result": "5"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "same",
+  "result": "13"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "same",
+  "result": "96"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "same",
+  "result": "97"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "same",
+  "result": "98"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "same",
+  "result": "6"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "succ",
+  "result": "0"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "succ",
+  "result": "1"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "succ",
+  "result": "2"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "succ",
+  "result": "3"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "succ",
+  "result": "4"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "succ",
+  "result": "5"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "succ",
+  "result": "6"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "succ",
+  "result": "14"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "succ",
+  "result": "97"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "succ",
+  "result": "98"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "succ",
+  "result": "99"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "succ",
+  "result": "7"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "pred",
+  "result": "-2"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "pred",
+  "result": "-1"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "pred",
+  "result": "0"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "pred",
+  "result": "1"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "pred",
+  "result": "2"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "pred",
+  "result": "3"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "pred",
+  "result": "4"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "pred",
+  "result": "12"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "pred",
+  "result": "95"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "pred",
+  "result": "96"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "pred",
+  "result": "97"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "pred",
+  "result": "5"
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "number",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "same",
+  "result": "-1"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "same",
+  "result": "0"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "same",
+  "result": "1"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "same",
+  "result": "2"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "same",
+  "result": "3"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "same",
+  "result": "4"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "same",
+  "result": "5"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "same",
+  "result": "13"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "same",
+  "result": "96"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "same",
+  "result": "97"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "same",
+  "result": "98"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "same",
+  "result": "6"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "succ",
+  "result": "2"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "succ",
+  "result": "2"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "succ",
+  "result": "2"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "succ",
+  "result": "3"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "succ",
+  "result": "5"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "succ",
+  "result": "5"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "succ",
+  "result": "7"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "succ",
+  "result": "17"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "succ",
+  "result": "97"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "succ",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "succ",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "succ",
+  "result": "7"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "pred",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "pred",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "pred",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "pred",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "pred",
+  "result": "2"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "pred",
+  "result": "3"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "pred",
+  "result": "3"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "pred",
+  "result": "11"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "pred",
+  "result": "89"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "pred",
+  "result": "89"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "pred",
+  "result": "97"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "pred",
+  "result": "5"
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "prime",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "same",
+  "result": "-1"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "same",
+  "result": "0"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "same",
+  "result": "1"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "same",
+  "result": "2"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "same",
+  "result": "3"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "same",
+  "result": "4"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "same",
+  "result": "5"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "same",
+  "result": "13"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "same",
+  "result": "96"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "same",
+  "result": "97"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "same",
+  "result": "98"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "same",
+  "result": "6"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "succ",
+  "result": "1"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "succ",
+  "result": "2"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "succ",
+  "result": "3"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "succ",
+  "result": "4"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "succ",
+  "result": "5"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "succ",
+  "result": "6"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "succ",
+  "result": "7"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "succ",
+  "result": "15"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "succ",
+  "result": "98"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "succ",
+  "result": "99"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "succ",
+  "result": "100"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "succ",
+  "result": "8"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "pred",
+  "result": "-3"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "pred",
+  "result": "-2"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "pred",
+  "result": "-1"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "pred",
+  "result": "0"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "pred",
+  "result": "1"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "pred",
+  "result": "2"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "pred",
+  "result": "3"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "pred",
+  "result": "11"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "pred",
+  "result": "94"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "pred",
+  "result": "95"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "pred",
+  "result": "96"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "pred",
+  "result": "4"
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "odd",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "same",
+  "result": "-1"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "same",
+  "result": "0"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "same",
+  "result": "1"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "same",
+  "result": "2"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "same",
+  "result": "3"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "same",
+  "result": "4"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "same",
+  "result": "5"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "same",
+  "result": "13"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "same",
+  "result": "96"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "same",
+  "result": "97"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "same",
+  "result": "98"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "same",
+  "result": "6"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "succ",
+  "result": "1"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "succ",
+  "result": "2"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "succ",
+  "result": "3"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "succ",
+  "result": "4"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "succ",
+  "result": "5"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "succ",
+  "result": "6"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "succ",
+  "result": "7"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "succ",
+  "result": "15"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "succ",
+  "result": "98"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "succ",
+  "result": "99"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "succ",
+  "result": "100"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "succ",
+  "result": "8"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "pred",
+  "result": "-3"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "pred",
+  "result": "-2"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "pred",
+  "result": "-1"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "pred",
+  "result": "0"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "pred",
+  "result": "1"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "pred",
+  "result": "2"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "pred",
+  "result": "3"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "pred",
+  "result": "11"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "pred",
+  "result": "94"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "pred",
+  "result": "95"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "pred",
+  "result": "96"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "pred",
+  "result": "4"
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": -1,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 0,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 1,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 2,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 3,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 4,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 5,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 13,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 96,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 97,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": 98,
+  "name": "flip",
+  "result": null
+ },
+ {
+  "cat": "even",
+  "kind": "apply_mapping",
+  "mag": "6",
+  "name": "flip",
+  "result": null
+ },
+ {
+  "args": {
+   "mag": 7
+  },
+  "bindings": {
+   "mag": 7
+  },
+  "bindings_shared": 1,
+  "cat": "number",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": 7,
+  "slippages": {}
+ },
+ {
+  "args": {
+   "extra": "x",
+   "mag": 4
+  },
+  "bindings": {
+   "extra": "x",
+   "mag": 4
+  },
+  "bindings_shared": 1,
+  "cat": "number",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": 4,
+  "slippages": {}
+ },
+ {
+  "args": {
+   "mag": "5"
+  },
+  "bindings": {
+   "mag": "5"
+  },
+  "bindings_shared": 1,
+  "cat": "number",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": "5",
+  "slippages": {}
+ },
+ {
+  "args": {},
+  "cat": "number",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "x": 1
+  },
+  "cat": "number",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "mag": null
+  },
+  "cat": "number",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "mag": 7
+  },
+  "bindings": {
+   "mag": 7
+  },
+  "bindings_shared": 1,
+  "cat": "prime",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": 7,
+  "slippages": {}
+ },
+ {
+  "args": {
+   "extra": "x",
+   "mag": 4
+  },
+  "bindings": {
+   "extra": "x",
+   "mag": 4
+  },
+  "bindings_shared": 1,
+  "cat": "prime",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": 4,
+  "slippages": {}
+ },
+ {
+  "args": {
+   "mag": "5"
+  },
+  "bindings": {
+   "mag": "5"
+  },
+  "bindings_shared": 1,
+  "cat": "prime",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": "5",
+  "slippages": {}
+ },
+ {
+  "args": {},
+  "cat": "prime",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "x": 1
+  },
+  "cat": "prime",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "mag": null
+  },
+  "cat": "prime",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "mag": 7
+  },
+  "bindings": {
+   "mag": 7
+  },
+  "bindings_shared": 1,
+  "cat": "odd",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": 7,
+  "slippages": {}
+ },
+ {
+  "args": {
+   "extra": "x",
+   "mag": 4
+  },
+  "bindings": {
+   "extra": "x",
+   "mag": 4
+  },
+  "bindings_shared": 1,
+  "cat": "odd",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": 4,
+  "slippages": {}
+ },
+ {
+  "args": {
+   "mag": "5"
+  },
+  "bindings": {
+   "mag": "5"
+  },
+  "bindings_shared": 1,
+  "cat": "odd",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": "5",
+  "slippages": {}
+ },
+ {
+  "args": {},
+  "cat": "odd",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "x": 1
+  },
+  "cat": "odd",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "mag": null
+  },
+  "cat": "odd",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "mag": 7
+  },
+  "bindings": {
+   "mag": 7
+  },
+  "bindings_shared": 1,
+  "cat": "even",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": 7,
+  "slippages": {}
+ },
+ {
+  "args": {
+   "extra": "x",
+   "mag": 4
+  },
+  "bindings": {
+   "extra": "x",
+   "mag": 4
+  },
+  "bindings_shared": 1,
+  "cat": "even",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": 4,
+  "slippages": {}
+ },
+ {
+  "args": {
+   "mag": "5"
+  },
+  "bindings": {
+   "mag": "5"
+  },
+  "bindings_shared": 1,
+  "cat": "even",
+  "class": "Seqsee::Element",
+  "has_cat": 1,
+  "kind": "build",
+  "mag": "5",
+  "slippages": {}
+ },
+ {
+  "args": {},
+  "cat": "even",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "x": 1
+  },
+  "cat": "even",
+  "dies": 1,
+  "kind": "build_dies"
+ },
+ {
+  "args": {
+   "mag": null
+  },
+  "cat": "even",
+  "dies": 1,
+  "kind": "build_dies"
+ }
+]

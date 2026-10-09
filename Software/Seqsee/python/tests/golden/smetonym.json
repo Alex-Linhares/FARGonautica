@@ -1,0 +1,994 @@
+[
+ {
+  "as_text": "SMetonymType",
+  "cat_and_name": [
+   "cat:A",
+   "each"
+  ],
+  "category": "cat:A",
+  "get_pure_is_self": 1,
+  "info_loss": "{length=2}",
+  "kind": "new",
+  "name": "each",
+  "new_not_memoized": 1
+ },
+ {
+  "category": "cat:A",
+  "dies": 0,
+  "error": null,
+  "info_loss": "{}",
+  "kind": "new_check",
+  "spec": [
+   "A",
+   "s:each",
+   []
+  ]
+ },
+ {
+  "category": null,
+  "dies": 1,
+  "error": "Need info_loss",
+  "info_loss": null,
+  "kind": "new_check",
+  "spec": [
+   "A",
+   "s:each",
+   "n:0"
+  ]
+ },
+ {
+  "category": null,
+  "dies": 1,
+  "error": "Need info_loss",
+  "info_loss": null,
+  "kind": "new_check",
+  "spec": [
+   "A",
+   "s:each",
+   "s:"
+  ]
+ },
+ {
+  "category": null,
+  "dies": 1,
+  "error": "Need info_loss",
+  "info_loss": null,
+  "kind": "new_check",
+  "spec": [
+   "A",
+   "s:each",
+   "u"
+  ]
+ },
+ {
+  "category": "cat:A",
+  "dies": 0,
+  "error": null,
+  "info_loss": "abc",
+  "kind": "new_check",
+  "spec": [
+   "A",
+   "s:each",
+   "s:abc"
+  ]
+ },
+ {
+  "category": "cat:A",
+  "dies": 0,
+  "error": null,
+  "info_loss": "OBJ:ARRAY",
+  "kind": "new_check",
+  "spec": [
+   "A",
+   "s:each",
+   "array"
+  ]
+ },
+ {
+  "category": null,
+  "dies": 1,
+  "error": "Need name",
+  "info_loss": null,
+  "kind": "new_check",
+  "spec": [
+   "A",
+   "s:0",
+   []
+  ]
+ },
+ {
+  "category": null,
+  "dies": 1,
+  "error": "Need name",
+  "info_loss": null,
+  "kind": "new_check",
+  "spec": [
+   "A",
+   "s:",
+   []
+  ]
+ },
+ {
+  "category": null,
+  "dies": 1,
+  "error": "Need name",
+  "info_loss": null,
+  "kind": "new_check",
+  "spec": [
+   "A",
+   "u",
+   []
+  ]
+ },
+ {
+  "category": "cat:A",
+  "dies": 0,
+  "error": null,
+  "info_loss": "{}",
+  "kind": "new_check",
+  "spec": [
+   "A",
+   "s:0.0",
+   []
+  ]
+ },
+ {
+  "category": null,
+  "dies": 1,
+  "error": "Need category",
+  "info_loss": null,
+  "kind": "new_check",
+  "spec": [
+   "s:0",
+   "s:each",
+   []
+  ]
+ },
+ {
+  "category": null,
+  "dies": 1,
+  "error": "Need category",
+  "info_loss": null,
+  "kind": "new_check",
+  "spec": [
+   "s:",
+   "s:each",
+   []
+  ]
+ },
+ {
+  "category": "cat",
+  "dies": 0,
+  "error": null,
+  "info_loss": "{}",
+  "kind": "new_check",
+  "spec": [
+   "s:cat",
+   "s:each",
+   []
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ],
+  "info_loss": "{length=2}",
+  "info_loss_is_first_hash": 1,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ],
+  "info_loss": "{length=3}",
+  "info_loss_is_first_hash": 0,
+  "kind": "create_pair",
+  "same": 0,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:3"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ],
+  "info_loss": "{length=2}",
+  "info_loss_is_first_hash": 0,
+  "kind": "create_pair",
+  "same": 0,
+  "second": [
+   "B",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ],
+  "info_loss": "{length=2}",
+  "info_loss_is_first_hash": 0,
+  "kind": "create_pair",
+  "same": 0,
+  "second": [
+   "A",
+   "s:other",
+   [
+    "length",
+    "n:2"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ],
+  "info_loss": "{length=2}",
+  "info_loss_is_first_hash": 0,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "i:2"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ],
+  "info_loss": "{length=2}",
+  "info_loss_is_first_hash": 0,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "s:2"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ],
+  "info_loss": "{length=2}",
+  "info_loss_is_first_hash": 0,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2.0"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ],
+  "info_loss": "{length=2.0}",
+  "info_loss_is_first_hash": 0,
+  "kind": "create_pair",
+  "same": 0,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "s:2.0"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ],
+  "info_loss": "{len=2}",
+  "info_loss_is_first_hash": 0,
+  "kind": "create_pair",
+  "same": 0,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "len",
+    "n:2"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "i:5"
+   ]
+  ],
+  "info_loss": "{length=SInt(5)}",
+  "info_loss_is_first_hash": 1,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "i:5"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "o:x"
+   ]
+  ],
+  "info_loss": "{length=obj:x}",
+  "info_loss_is_first_hash": 1,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "o:x"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "o:x"
+   ]
+  ],
+  "info_loss": "{length=obj:y}",
+  "info_loss_is_first_hash": 0,
+  "kind": "create_pair",
+  "same": 0,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "o:y"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "u"
+   ]
+  ],
+  "info_loss": "{length=undef}",
+  "info_loss_is_first_hash": 1,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "s:"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "a",
+    "n:1",
+    "b",
+    "n:2"
+   ]
+  ],
+  "info_loss": "{a=1,b=2}",
+  "info_loss_is_first_hash": 1,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "b",
+    "n:2",
+    "a",
+    "n:1"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   []
+  ],
+  "info_loss": "{}",
+  "info_loss_is_first_hash": 1,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:each",
+   []
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:a",
+   [
+    "b",
+    "s:c"
+   ]
+  ],
+  "info_loss": "{b=c}",
+  "info_loss_is_first_hash": 1,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:a;b;c",
+   []
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:a",
+   [
+    "b",
+    "s:c;d"
+   ]
+  ],
+  "info_loss": "{b=c;d}",
+  "info_loss_is_first_hash": 1,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:a",
+   [
+    "b;c",
+    "s:d"
+   ]
+  ]
+ },
+ {
+  "first": [
+   "s:cat",
+   "s:each",
+   []
+  ],
+  "info_loss": "{}",
+  "info_loss_is_first_hash": 1,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "s:cat",
+   "s:each",
+   []
+  ]
+ },
+ {
+  "first": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "i:7"
+   ]
+  ],
+  "info_loss": "{length=SInt(7)}",
+  "info_loss_is_first_hash": 1,
+  "kind": "create_pair",
+  "same": 1,
+  "second": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:7"
+   ]
+  ]
+ },
+ {
+  "dies": 0,
+  "dies_again": 0,
+  "error": null,
+  "kind": "create_error",
+  "spec": [
+   "A",
+   "s:each",
+   "u"
+  ]
+ },
+ {
+  "dies": 1,
+  "dies_again": 1,
+  "error": "Not a HASH reference",
+  "kind": "create_error",
+  "spec": [
+   "A",
+   "s:each",
+   "array"
+  ]
+ },
+ {
+  "dies": 1,
+  "dies_again": 1,
+  "error": "Can't use string (\"abc\") as a HASH ref while \"strict refs\" in use",
+  "kind": "create_error",
+  "spec": [
+   "A",
+   "s:each",
+   "s:abc"
+  ]
+ },
+ {
+  "dies": 1,
+  "dies_again": 1,
+  "error": "Need name",
+  "kind": "create_error",
+  "spec": [
+   "A",
+   "u",
+   [
+    "zz",
+    "n:1"
+   ]
+  ]
+ },
+ {
+  "dies": 1,
+  "dies_again": 1,
+  "error": "Need category",
+  "kind": "create_error",
+  "spec": [
+   "s:",
+   "s:each",
+   [
+    "zz",
+    "n:2"
+   ]
+  ]
+ },
+ {
+  "dies": 1,
+  "dies_again": 1,
+  "error": "Need name",
+  "kind": "create_error",
+  "spec": [
+   "A",
+   "s:0",
+   [
+    "zz",
+    "n:3"
+   ]
+  ]
+ },
+ {
+  "category": "sameness",
+  "category_is_sameness": 1,
+  "create_is_double": 0,
+  "info_loss": "{length=2}",
+  "kind": "double",
+  "name": "each"
+ },
+ {
+  "describe_calls": [
+   "Bx.describe_as(A)"
+  ],
+  "kind": "blemish",
+  "result": "obj:Bx",
+  "spec": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ],
+  "unfinder_calls": [
+   "A,each,length=2,x"
+  ]
+ },
+ {
+  "describe_calls": [
+   "Bx.describe_as(B)"
+  ],
+  "kind": "blemish",
+  "result": "obj:Bx",
+  "spec": [
+   "B",
+   "s:each",
+   [
+    "length",
+    "i:3",
+    "x",
+    "o:y"
+   ]
+  ],
+  "unfinder_calls": [
+   "B,each,length=SInt(3)/x=obj:y,x"
+  ]
+ },
+ {
+  "describe_calls": [
+   "Bx.describe_as(A)"
+  ],
+  "kind": "blemish",
+  "result": "obj:Bx",
+  "spec": [
+   "A",
+   "s:each",
+   []
+  ],
+  "unfinder_calls": [
+   "A,each,,x"
+  ]
+ },
+ {
+  "describe_calls": [],
+  "dies": 1,
+  "kind": "blemish_no_unfinder"
+ },
+ {
+  "deps_count": 1,
+  "deps_sorted": [
+   "pure:A"
+  ],
+  "encoded": [
+   [
+    "cat:A",
+    "each",
+    "{length=2}"
+   ]
+  ],
+  "kind": "deps",
+  "serialized": "ENC",
+  "spec": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "n:2"
+   ]
+  ]
+ },
+ {
+  "deps_count": 1,
+  "deps_sorted": [
+   "pure:A"
+  ],
+  "encoded": [
+   [
+    "cat:A",
+    "each",
+    "{length=2}"
+   ]
+  ],
+  "kind": "deps",
+  "serialized": "ENC",
+  "spec": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "i:2"
+   ]
+  ]
+ },
+ {
+  "deps_count": 2,
+  "deps_sorted": [
+   "pure:A",
+   "pure:x"
+  ],
+  "encoded": [
+   [
+    "cat:A",
+    "each",
+    "{length=obj:x}"
+   ]
+  ],
+  "kind": "deps",
+  "serialized": "ENC",
+  "spec": [
+   "A",
+   "s:each",
+   [
+    "length",
+    "o:x"
+   ]
+  ]
+ },
+ {
+  "deps_count": 1,
+  "deps_sorted": [
+   "pure:y"
+  ],
+  "encoded": [
+   [
+    "cat",
+    "each",
+    "{length=obj:y}"
+   ]
+  ],
+  "kind": "deps",
+  "serialized": "ENC",
+  "spec": [
+   "s:cat",
+   "s:each",
+   [
+    "length",
+    "o:y"
+   ]
+  ]
+ },
+ {
+  "deps_count": 0,
+  "deps_sorted": [],
+  "encoded": [
+   [
+    "cat",
+    "each",
+    "{length=2}"
+   ]
+  ],
+  "kind": "deps",
+  "serialized": "ENC",
+  "spec": [
+   "s:cat",
+   "s:each",
+   [
+    "length",
+    "s:2"
+   ]
+  ]
+ },
+ {
+  "deps_count": 1,
+  "deps_sorted": [
+   "pure:B"
+  ],
+  "encoded": [
+   [
+    "cat:B",
+    "each",
+    "{}"
+   ]
+  ],
+  "kind": "deps",
+  "serialized": "ENC",
+  "spec": [
+   "B",
+   "s:each",
+   []
+  ]
+ },
+ {
+  "deps_count": 3,
+  "deps_sorted": [
+   "pure:A",
+   "pure:x",
+   "pure:y"
+  ],
+  "encoded": [
+   [
+    "cat:A",
+    "each",
+    "{a=obj:x,b=obj:y,c=SInt(1),d=undef}"
+   ]
+  ],
+  "kind": "deps",
+  "serialized": "ENC",
+  "spec": [
+   "A",
+   "s:each",
+   [
+    "a",
+    "o:x",
+    "b",
+    "o:y",
+    "c",
+    "i:1",
+    "d",
+    "u"
+   ]
+  ]
+ },
+ {
+  "kind": "deserialize",
+  "x_is_existing": 1,
+  "y_category": "cat:B",
+  "y_info_loss": "{length=4}",
+  "y_is_new": 1,
+  "y_memo": 1,
+  "y_name": "each"
+ },
+ {
+  "dies": 1,
+  "error": "Need name",
+  "kind": "deserialize_error"
+ },
+ {
+  "category": "cat:A",
+  "info_loss": "{length=6}",
+  "info_loss_is_opts_hash": 1,
+  "intersection_differ": 0,
+  "intersection_empty_dies": 1,
+  "intersection_one": 1,
+  "intersection_same": 1,
+  "kind": "metonym",
+  "name": "each",
+  "same_type": 1,
+  "starred": "obj:s",
+  "type_is_create": 1,
+  "unstarred": "obj:u"
+ },
+ {
+  "kind": "weak_before",
+  "unstarred": "obj:tmp"
+ },
+ {
+  "kind": "weak_after",
+  "starred": "obj:tmp2",
+  "unstarred": "undef"
+ },
+ {
+  "dies": 1,
+  "error": "Need unstarred",
+  "kind": "metonym_error",
+  "label": "empty_unstarred",
+  "starred": null,
+  "unstarred": null
+ },
+ {
+  "dies": 1,
+  "error": "Need category",
+  "kind": "metonym_error",
+  "label": "no_category",
+  "starred": null,
+  "unstarred": null
+ },
+ {
+  "dies": 1,
+  "error": "Need starred",
+  "kind": "metonym_error",
+  "label": "no_info_loss",
+  "starred": null,
+  "unstarred": null
+ },
+ {
+  "dies": 1,
+  "error": "Need name",
+  "kind": "metonym_error",
+  "label": "no_name",
+  "starred": null,
+  "unstarred": null
+ },
+ {
+  "dies": 1,
+  "error": "Need starred",
+  "kind": "metonym_error",
+  "label": "no_starred",
+  "starred": null,
+  "unstarred": null
+ },
+ {
+  "dies": 1,
+  "error": "Need unstarred",
+  "kind": "metonym_error",
+  "label": "no_unstarred",
+  "starred": null,
+  "unstarred": null
+ },
+ {
+  "dies": 0,
+  "error": null,
+  "kind": "metonym_error",
+  "label": "string_starred",
+  "starred": "abc",
+  "unstarred": "obj:u"
+ },
+ {
+  "dies": 1,
+  "error": "Can't weaken a nonreference",
+  "kind": "metonym_error",
+  "label": "string_unstarred",
+  "starred": null,
+  "unstarred": null
+ },
+ {
+  "dies": 1,
+  "error": "Need starred",
+  "kind": "metonym_error",
+  "label": "zero_starred",
+  "starred": null,
+  "unstarred": null
+ }
+]

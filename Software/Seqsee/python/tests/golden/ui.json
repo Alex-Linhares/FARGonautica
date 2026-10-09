@@ -1,0 +1,5586 @@
+[
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "set_rejected",
+    "1, 2",
+    "7"
+   ],
+   [
+    "already_rejected",
+    1
+   ],
+   [
+    "already_rejected",
+    1,
+    2
+   ],
+   [
+    "already_rejected",
+    1,
+    2,
+    3
+   ],
+   [
+    "already_rejected",
+    2
+   ],
+   [
+    "already_rejected",
+    7,
+    8
+   ],
+   [
+    "already_rejected",
+    8,
+    7
+   ],
+   [
+    "already_rejected"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": "0"
+   }
+  ],
+  "scenario": "already_rejected"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "real_seq",
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   [
+    "user_ext",
+    4
+   ],
+   [
+    "getg",
+    "AtLeastOneUserVerification"
+   ],
+   [
+    "user_ext",
+    4,
+    5
+   ],
+   [
+    "user_ext",
+    5
+   ],
+   [
+    "failed_requests"
+   ],
+   [
+    "user_ext",
+    4,
+    6
+   ],
+   [
+    "failed_requests"
+   ],
+   [
+    "user_ext",
+    4,
+    5,
+    6
+   ],
+   [
+    "user_ext",
+    4,
+    5,
+    6,
+    7
+   ],
+   [
+    "user_ext"
+   ],
+   [
+    "set_rejected",
+    "4"
+   ],
+   [
+    "user_ext",
+    4,
+    5
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "failed_requests"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 2
+   },
+   {
+    "value": "1"
+   },
+   {
+    "error": {
+     "class": "SErr::NotClairvoyant",
+     "message": ""
+    }
+   },
+   {
+    "error": "ask_user_extension called with 0 terms!"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     "4"
+    ]
+   },
+   {
+    "value": 2
+   }
+  ],
+  "scenario": "testing_user_ext"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "global",
+    "AcceptableTrustLevel",
+    0.9
+   ],
+   [
+    "global",
+    "Steps_Finished",
+    4
+   ],
+   [
+    "beyond",
+    "X",
+    4,
+    5
+   ],
+   [
+    "next_elements",
+    "X"
+   ],
+   [
+    "commentary",
+    1
+   ],
+   [
+    "ask",
+    "X",
+    "pre: ",
+    " suf",
+    "dbg"
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "getg",
+    "AcceptableTrustLevel"
+   ],
+   [
+    "getg",
+    "AtLeastOneUserVerification"
+   ],
+   [
+    "getg",
+    "Break_Loop"
+   ],
+   [
+    "getg",
+    "TimeOfLastNewElement"
+   ],
+   [
+    "getg",
+    "TimeOfNewStructure"
+   ],
+   [
+    "global",
+    "Break_Loop",
+    null
+   ],
+   [
+    "beyond",
+    "Y",
+    6
+   ],
+   [
+    "commentary",
+    0
+   ],
+   [
+    "ask",
+    "Y"
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "getg",
+    "Break_Loop"
+   ],
+   [
+    "commentary",
+    1
+   ],
+   [
+    "ask",
+    "Y",
+    "again"
+   ],
+   [
+    "asked"
+   ],
+   [
+    "beyond",
+    "Z",
+    7,
+    8,
+    9
+   ],
+   [
+    "feature",
+    "debug",
+    1
+   ],
+   [
+    "commentary",
+    ""
+   ],
+   [
+    "ask",
+    "Z",
+    "p ",
+    " s",
+    "d"
+   ],
+   [
+    "asked"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "feature",
+    "debug",
+    "none"
+   ],
+   [
+    "beyond",
+    "W",
+    10
+   ],
+   [
+    "commentary"
+   ],
+   [
+    "ask",
+    "W"
+   ],
+   [
+    "asked"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "no_commentary"
+   ],
+   [
+    "beyond",
+    "V",
+    11
+   ],
+   [
+    "ask",
+    "V"
+   ],
+   [
+    "beyond",
+    "E"
+   ],
+   [
+    "commentary"
+   ],
+   [
+    "ask",
+    "E"
+   ],
+   [
+    "asked"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     4,
+     5
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": [
+     [
+      [
+       "pre: Are the next 2 terms 4 and 5? suf"
+      ],
+      []
+     ]
+    ]
+   },
+   {
+    "value": [
+     5,
+     [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": "0.5"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "4"
+   },
+   {
+    "value": "4"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": [
+     [
+      [
+       "Is the next term 6??"
+      ],
+      []
+     ]
+    ]
+   },
+   {
+    "value": [
+     5,
+     [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    ]
+   },
+   {
+    "value": [
+     "6"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": []
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": ""
+   },
+   {
+    "value": [
+     [
+      [
+       "p Are the next 3 terms 7, 8, and 9? s",
+       "",
+       "d",
+       "debug"
+      ],
+      []
+     ]
+    ]
+   },
+   {
+    "value": [
+     "6",
+     "7, 8, 9"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      [
+       "Is the next term 10??"
+      ],
+      []
+     ]
+    ]
+   },
+   {
+    "value": [
+     "10",
+     "6",
+     "7, 8, 9"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "error": "Can't call method \"MessageRequiringBooleanResponse\" on an undefined value"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "error": "\n"
+   },
+   {
+    "value": []
+   }
+  ],
+  "scenario": "ask_gui"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "global",
+    "TestingMode",
+    1
+   ],
+   [
+    "real_seq",
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   [
+    "beyond",
+    "X",
+    4
+   ],
+   [
+    "ask",
+    "X",
+    "ignored"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "getg",
+    "AtLeastOneUserVerification"
+   ],
+   [
+    "getg",
+    "Break_Loop"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "beyond",
+    "Y",
+    9
+   ],
+   [
+    "ask",
+    "Y"
+   ],
+   [
+    "failed_requests"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "beyond",
+    "Z",
+    4,
+    5,
+    6
+   ],
+   [
+    "ask",
+    "Z"
+   ],
+   [
+    "set_rejected",
+    "4"
+   ],
+   [
+    "ask",
+    "X"
+   ],
+   [
+    "failed_requests"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": [
+     3,
+     [
+      1,
+      2,
+      3
+     ]
+    ]
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": []
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": []
+   },
+   {
+    "value": null
+   },
+   {
+    "error": {
+     "class": "SErr::NotClairvoyant",
+     "message": ""
+    }
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 1
+   }
+  ],
+  "scenario": "ask_testing"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   [
+    "spike",
+    "number",
+    10
+   ],
+   [
+    "reln",
+    "R",
+    "e0",
+    "e1",
+    "succ"
+   ],
+   [
+    "gp",
+    "G",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "G"
+   ],
+   [
+    "describe",
+    "G",
+    "ascending"
+   ],
+   [
+    "ruleapp",
+    "G",
+    "R"
+   ],
+   [
+    "name_ruleapp",
+    "RA",
+    "G"
+   ],
+   [
+    "beyond",
+    "X1",
+    6
+   ],
+   [
+    "beyond",
+    "X2",
+    7
+   ],
+   [
+    "beyond",
+    "X3",
+    8
+   ],
+   [
+    "beyond",
+    "X4",
+    9,
+    10
+   ],
+   [
+    "commentary",
+    0,
+    0,
+    1,
+    0
+   ],
+   [
+    "ask_relation",
+    "X1",
+    "R",
+    "msg."
+   ],
+   [
+    "asked"
+   ],
+   [
+    "hilit"
+   ],
+   [
+    "ask_group",
+    "X2",
+    "G",
+    "grp."
+   ],
+   [
+    "asked"
+   ],
+   [
+    "hilit"
+   ],
+   [
+    "ask_ruleapp",
+    "X3",
+    "RA",
+    "ra."
+   ],
+   [
+    "asked"
+   ],
+   [
+    "hilit"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "ask_relation",
+    "X4",
+    "R",
+    null
+   ],
+   [
+    "asked"
+   ],
+   [
+    "hilit"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "rule_app_penetration",
+    "X1",
+    2
+   ],
+   [
+    "rule_app_penetration",
+    "X1",
+    0
+   ],
+   [
+    "relation_penetration",
+    "X1",
+    "R"
+   ],
+   [
+    "beyond",
+    "B",
+    11,
+    12
+   ],
+   [
+    "global",
+    "Steps_Finished",
+    6
+   ],
+   [
+    "global",
+    "AcceptableTrustLevel",
+    0.7
+   ],
+   [
+    "bookkeeping",
+    "B"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "getg",
+    "AcceptableTrustLevel"
+   ],
+   [
+    "getg",
+    "AtLeastOneUserVerification"
+   ],
+   [
+    "getg",
+    "Break_Loop"
+   ],
+   [
+    "getg",
+    "TimeOfLastNewElement"
+   ]
+  ],
+  "results": [
+   {
+    "value": 5
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": " <0, 0>  -->  <1, 1> : succ"
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 3>  [2, 3, 4]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": "SRuleApp"
+   },
+   {
+    "value": "SRuleApp"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": [
+     [
+      [
+       "msg. Extending analogy: Is the next term 6??"
+      ],
+      [
+       "R",
+       "e0",
+       "e1"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": [
+     [
+      [
+       "grp. Extending group: Is the next term 7??"
+      ],
+      [
+       "e1",
+       "e2",
+       "e3"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": [
+     [
+      [
+       "ra. Extending analogy: Is the next term 8??"
+      ],
+      [
+       "e1",
+       "e2",
+       "e3"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     6,
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+     ]
+    ]
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": [
+     [
+      [
+       " Extending analogy: Are the next 2 terms 9 and 10?"
+      ],
+      [
+       "R",
+       "e0",
+       "e1"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     "9, 10"
+    ]
+   },
+   {
+    "value": 0.666666666666667
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": [
+     2,
+     "2"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     8,
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      11,
+      12
+     ]
+    ]
+   },
+   {
+    "value": "0.5"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "6"
+   }
+  ],
+  "scenario": "ask_based_on"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    "spike",
+    "number",
+    10
+   ],
+   [
+    "reln",
+    "R1",
+    "e0",
+    "e1",
+    "succ"
+   ],
+   [
+    "reln",
+    "R2",
+    "e2",
+    "e1",
+    "pred"
+   ],
+   [
+    "rule",
+    "A",
+    "R1"
+   ],
+   [
+    "rule",
+    "B",
+    "R2"
+   ],
+   [
+    "ras",
+    "most_recent",
+    "A"
+   ],
+   [
+    "ras",
+    "time_success",
+    "A"
+   ],
+   [
+    "ras",
+    "time_failure",
+    "A"
+   ],
+   [
+    "global",
+    "Steps_Finished",
+    3
+   ],
+   [
+    "ras",
+    "add_success",
+    "A"
+   ],
+   [
+    "global",
+    "Steps_Finished",
+    7
+   ],
+   [
+    "ras",
+    "most_recent",
+    "A"
+   ],
+   [
+    "ras",
+    "most_recent",
+    "B"
+   ],
+   [
+    "ras",
+    "time_success",
+    "A"
+   ],
+   [
+    "ras",
+    "add_success",
+    "B"
+   ],
+   [
+    "ras",
+    "most_recent",
+    "A"
+   ],
+   [
+    "ras",
+    "most_recent",
+    "B"
+   ],
+   [
+    "ras",
+    "time_success",
+    "A"
+   ],
+   [
+    "ras",
+    "time_success",
+    "B"
+   ],
+   [
+    "ras",
+    "add_success",
+    "A"
+   ],
+   [
+    "ras",
+    "add_failure",
+    "A"
+   ],
+   [
+    "ras",
+    "time_failure",
+    "A"
+   ],
+   [
+    "global",
+    "Steps_Finished",
+    10
+   ],
+   [
+    "ras",
+    "time_failure",
+    "A"
+   ],
+   [
+    "ras",
+    "time_failure",
+    "B"
+   ],
+   [
+    "ras",
+    "time_success",
+    "A"
+   ],
+   [
+    "ras",
+    "has_confirmed",
+    "A"
+   ],
+   [
+    "ras",
+    "has_rejected",
+    "A"
+   ],
+   [
+    "ras",
+    "mark_rejected",
+    "A"
+   ],
+   [
+    "ras",
+    "mark_confirmed",
+    "B"
+   ],
+   [
+    "ras",
+    "mark_confirmed",
+    "B"
+   ],
+   [
+    "ras",
+    "has_confirmed",
+    "A"
+   ],
+   [
+    "ras",
+    "has_confirmed",
+    "B"
+   ],
+   [
+    "ras",
+    "has_rejected",
+    "A"
+   ],
+   [
+    "ras",
+    "has_rejected",
+    "B"
+   ],
+   [
+    "ras_state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 4
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": " <0, 0>  -->  <1, 1> : succ"
+   },
+   {
+    "value": " <2, 2>  -->  <1, 1> : pred"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "-1"
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "4"
+   },
+   {
+    "value": "-1"
+   },
+   {
+    "value": "4"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "-1"
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": "4"
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "3"
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": "3"
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "0"
+   },
+   {
+    "value": [
+     [
+      [
+       "A",
+       7
+      ],
+      [
+       "B",
+       7
+      ],
+      [
+       "A",
+       3
+      ]
+     ],
+     [
+      [
+       "A",
+       7
+      ]
+     ],
+     [
+      "B"
+     ],
+     [
+      "A"
+     ]
+    ]
+   }
+  ],
+  "scenario": "rules_asked_so_far"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    "spike",
+    "number",
+    10
+   ],
+   [
+    "reln",
+    "R1",
+    "e0",
+    "e1",
+    "succ"
+   ],
+   [
+    "reln",
+    "R2",
+    "e2",
+    "e1",
+    "pred"
+   ],
+   [
+    "rule",
+    "A",
+    "R1"
+   ],
+   [
+    "rule",
+    "B",
+    "R2"
+   ],
+   [
+    "gp",
+    "G",
+    "e0",
+    "e1",
+    "e2"
+   ],
+   [
+    "gp",
+    "H",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "gp",
+    "K",
+    "e0",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "gp",
+    "L",
+    "e0",
+    "e1"
+   ],
+   [
+    "add",
+    "L"
+   ],
+   [
+    "gp",
+    "M",
+    "L",
+    "e2",
+    "e3"
+   ],
+   [
+    "ps",
+    "P",
+    "G"
+   ],
+   [
+    "ps",
+    "Q",
+    "K"
+   ],
+   [
+    "ps",
+    "S",
+    "H"
+   ],
+   [
+    "ps",
+    "T",
+    "M"
+   ],
+   [
+    "ps_list",
+    "U",
+    "[1]",
+    "[2]"
+   ],
+   [
+    "sc_has",
+    "A",
+    "P"
+   ],
+   [
+    "sc_state"
+   ],
+   [
+    "sc_reject",
+    "A",
+    "P"
+   ],
+   [
+    "sc_has",
+    "A",
+    "P"
+   ],
+   [
+    "sc_has",
+    "A",
+    "Q"
+   ],
+   [
+    "sc_has",
+    "A",
+    "S"
+   ],
+   [
+    "sc_has",
+    "A",
+    "T"
+   ],
+   [
+    "sc_has",
+    "B",
+    "P"
+   ],
+   [
+    "sc_reject",
+    "A",
+    "U"
+   ],
+   [
+    "sc_has",
+    "A",
+    "S"
+   ],
+   [
+    "sc_has",
+    "A",
+    "T"
+   ],
+   [
+    "sc_reject",
+    "B",
+    "T"
+   ],
+   [
+    "sc_has",
+    "B",
+    "T"
+   ],
+   [
+    "sc_has",
+    "B",
+    "Q"
+   ],
+   [
+    "sc_accept",
+    "B",
+    "Q"
+   ],
+   [
+    "sc_state"
+   ]
+  ],
+  "results": [
+   {
+    "value": 6
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": " <0, 0>  -->  <1, 1> : succ"
+   },
+   {
+    "value": " <2, 2>  -->  <1, 1> : pred"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 2>  [1, 2, 3]"
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 3>  [2, 3, 4]"
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 3>  [1, 2, 3, 4]"
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 1>  [1, 2]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": "Seqsee::Anchored  <0, 3>  [[1, 2], 3, 4]"
+   },
+   {
+    "value": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "value": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "value": [
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "value": [
+     "[0, 1]",
+     2,
+     3
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     null,
+     null,
+     [
+      [
+       "A",
+       0
+      ]
+     ]
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     "B",
+     "Q",
+     [
+      [
+       "A",
+       2
+      ],
+      [
+       "B",
+       1
+      ]
+     ]
+    ]
+   }
+  ],
+  "scenario": "solution_confirmation"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "reln",
+    "R12",
+    "e1",
+    "e2",
+    "succ"
+   ],
+   [
+    "spike_type",
+    "R12",
+    100
+   ],
+   [
+    "spike_type",
+    "R12",
+    100
+   ],
+   [
+    "srand",
+    2
+   ],
+   [
+    "run",
+    "AttemptExtensionOfRelation",
+    [
+     "core",
+     [
+      "obj",
+      "R12"
+     ]
+    ],
+    [
+     "direction",
+     [
+      "dir",
+      "RIGHT"
+     ]
+    ]
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "name_arg",
+    "EX",
+    "AskIfThisIsTheContinuation",
+    "exception"
+   ],
+   [
+    "name_arg",
+    "OBJ",
+    "AskIfThisIsTheContinuation",
+    "expected_object"
+   ],
+   [
+    "next_elements",
+    "EX"
+   ],
+   [
+    "commentary",
+    1
+   ],
+   [
+    "run_scheduled",
+    "AskIfThisIsTheContinuation"
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "getg",
+    "Break_Loop"
+   ],
+   [
+    "name_new",
+    "N"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": " <1, 1>  -->  <2, 2> : succ"
+   },
+   {
+    "value": 0.0432183401544718
+   },
+   {
+    "value": 0.219872451212869
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      "AskIfThisIsTheContinuation",
+      100,
+      "exception=?SErr::ElementsBeyondKnownSought",
+      "expected_object=?Seqsee::Element:[-1,-1] 4",
+      "known_term_count=3",
+      "relation=R12",
+      "start_position=3"
+     ]
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     4
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      [
+       " Extending analogy: Is the next term 4??"
+      ],
+      [
+       "R12",
+       "e1",
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     4,
+     [
+      1,
+      2,
+      3,
+      4
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": [
+     "Seqsee::Element:[3,3] 4"
+    ]
+   },
+   {
+    "value": [
+     [
+      "N0",
+      3,
+      3,
+      [
+       "number"
+      ],
+      null,
+      [
+       "N0"
+      ]
+     ],
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ",
+     "e2 N0 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.573262780710262
+   }
+  ],
+  "scenario": "ask_continuation_relation_1"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "reln",
+    "R12",
+    "e1",
+    "e2",
+    "succ"
+   ],
+   [
+    "spike_type",
+    "R12",
+    100
+   ],
+   [
+    "spike_type",
+    "R12",
+    100
+   ],
+   [
+    "srand",
+    2
+   ],
+   [
+    "run",
+    "AttemptExtensionOfRelation",
+    [
+     "core",
+     [
+      "obj",
+      "R12"
+     ]
+    ],
+    [
+     "direction",
+     [
+      "dir",
+      "RIGHT"
+     ]
+    ]
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "name_arg",
+    "EX",
+    "AskIfThisIsTheContinuation",
+    "exception"
+   ],
+   [
+    "name_arg",
+    "OBJ",
+    "AskIfThisIsTheContinuation",
+    "expected_object"
+   ],
+   [
+    "next_elements",
+    "EX"
+   ],
+   [
+    "commentary",
+    0
+   ],
+   [
+    "run_scheduled",
+    "AskIfThisIsTheContinuation"
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "getg",
+    "Break_Loop"
+   ],
+   [
+    "name_new",
+    "N"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": " <1, 1>  -->  <2, 2> : succ"
+   },
+   {
+    "value": 0.0432183401544718
+   },
+   {
+    "value": 0.219872451212869
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      "AskIfThisIsTheContinuation",
+      100,
+      "exception=?SErr::ElementsBeyondKnownSought",
+      "expected_object=?Seqsee::Element:[-1,-1] 4",
+      "known_term_count=3",
+      "relation=R12",
+      "start_position=3"
+     ]
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     4
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      [
+       " Extending analogy: Is the next term 4??"
+      ],
+      [
+       "R12",
+       "e1",
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     3,
+     [
+      1,
+      2,
+      3
+     ]
+    ]
+   },
+   {
+    "value": [
+     "4"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.573262780710262
+   }
+  ],
+  "scenario": "ask_continuation_relation_0"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "reln",
+    "R12",
+    "e1",
+    "e2",
+    "succ"
+   ],
+   [
+    "spike_type",
+    "R12",
+    100
+   ],
+   [
+    "spike_type",
+    "R12",
+    100
+   ],
+   [
+    "srand",
+    2
+   ],
+   [
+    "run",
+    "AttemptExtensionOfRelation",
+    [
+     "core",
+     [
+      "obj",
+      "R12"
+     ]
+    ],
+    [
+     "direction",
+     [
+      "dir",
+      "RIGHT"
+     ]
+    ]
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "name_arg",
+    "EX",
+    "AskIfThisIsTheContinuation",
+    "exception"
+   ],
+   [
+    "name_arg",
+    "OBJ",
+    "AskIfThisIsTheContinuation",
+    "expected_object"
+   ],
+   [
+    "next_elements",
+    "EX"
+   ],
+   [
+    "commentary"
+   ],
+   [
+    "run",
+    "AskIfThisIsTheContinuation",
+    [
+     "relation",
+     [
+      "obj",
+      "R12"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "EX"
+     ]
+    ],
+    [
+     "expected_object",
+     [
+      "obj",
+      "OBJ"
+     ]
+    ],
+    [
+     "start_position",
+     [
+      "val",
+      3
+     ]
+    ],
+    [
+     "known_term_count",
+     [
+      "val",
+      2
+     ]
+    ]
+   ],
+   [
+    "asked"
+   ],
+   [
+    "run",
+    "AskIfThisIsTheContinuation",
+    [
+     "exception",
+     [
+      "obj",
+      "EX"
+     ]
+    ],
+    [
+     "expected_object",
+     [
+      "obj",
+      "OBJ"
+     ]
+    ],
+    [
+     "start_position",
+     [
+      "val",
+      3
+     ]
+    ],
+    [
+     "known_term_count",
+     [
+      "val",
+      3
+     ]
+    ]
+   ],
+   [
+    "run",
+    "AskIfThisIsTheContinuation",
+    [
+     "relation",
+     [
+      "obj",
+      "R12"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "EX"
+     ]
+    ]
+   ],
+   [
+    "global",
+    "TestingMode",
+    1
+   ],
+   [
+    "real_seq",
+    1,
+    2,
+    3,
+    4
+   ],
+   [
+    "run",
+    "AskIfThisIsTheContinuation",
+    [
+     "relation",
+     [
+      "obj",
+      "R12"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "EX"
+     ]
+    ],
+    [
+     "expected_object",
+     [
+      "obj",
+      "OBJ"
+     ]
+    ],
+    [
+     "start_position",
+     [
+      "val",
+      3
+     ]
+    ],
+    [
+     "known_term_count",
+     [
+      "val",
+      3
+     ]
+    ]
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "getg",
+    "AtLeastOneUserVerification"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": " <1, 1>  -->  <2, 2> : succ"
+   },
+   {
+    "value": 0.0432183401544718
+   },
+   {
+    "value": 0.219872451212869
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      "AskIfThisIsTheContinuation",
+      100,
+      "exception=?SErr::ElementsBeyondKnownSought",
+      "expected_object=?Seqsee::Element:[-1,-1] 4",
+      "known_term_count=3",
+      "relation=R12",
+      "start_position=3"
+     ]
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     4
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": []
+   },
+   {
+    "error": "Need relation or ruleapp"
+   },
+   {
+    "error": "Mandatory parameters 'expected_object', 'known_term_count', 'start_position' missing in call to Seqsee::SCF::AskIfThisIsTheContinuation::run\n"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     3,
+     [
+      1,
+      2,
+      3
+     ]
+    ]
+   },
+   {
+    "value": "1"
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": [
+     [
+      "AskIfThisIsTheContinuation",
+      100,
+      "exception=EX",
+      "expected_object=OBJ",
+      "known_term_count=3",
+      "relation=R12",
+      "start_position=3"
+     ]
+    ]
+   },
+   {
+    "value": 0.573262780710262
+   }
+  ],
+  "scenario": "ask_continuation_relation_misc"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    "spike",
+    "number",
+    10
+   ],
+   [
+    "reln",
+    "R",
+    "e0",
+    "e1",
+    "succ"
+   ],
+   [
+    "gp",
+    "G",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "G"
+   ],
+   [
+    "describe",
+    "G",
+    "ascending"
+   ],
+   [
+    "ruleapp",
+    "G",
+    "R"
+   ],
+   [
+    "beyond",
+    "X",
+    5
+   ],
+   [
+    "element",
+    "O",
+    5
+   ],
+   [
+    "commentary",
+    1
+   ],
+   [
+    "run",
+    "AskIfThisIsTheContinuation",
+    [
+     "group",
+     [
+      "obj",
+      "G"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ],
+    [
+     "expected_object",
+     [
+      "obj",
+      "O"
+     ]
+    ],
+    [
+     "start_position",
+     [
+      "val",
+      4
+     ]
+    ],
+    [
+     "known_term_count",
+     [
+      "val",
+      4
+     ]
+    ]
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "items",
+    "G"
+   ],
+   [
+    "name_new",
+    "N"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 4
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": " <0, 0>  -->  <1, 1> : succ"
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 3>  [2, 3, 4]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": "SRuleApp"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      [
+       " Extending group: Is the next term 5??"
+      ],
+      [
+       "e1",
+       "e2",
+       "e3"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     5,
+     [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     [
+      "e1",
+      "e2",
+      "e3",
+      "?Seqsee::Element:[4,4] 5"
+     ],
+     1,
+     4
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Element:[4,4] 5"
+    ]
+   },
+   {
+    "value": [
+     [
+      "G",
+      1,
+      4,
+      [
+       "ascending"
+      ],
+      "succ",
+      [
+       "e1",
+       "e2",
+       "e3",
+       "N0"
+      ]
+     ],
+     [
+      "N0",
+      4,
+      4,
+      [
+       "number"
+      ],
+      null,
+      [
+       "N0"
+      ]
+     ],
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ],
+     [
+      "e3",
+      3,
+      3,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e3"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e0 e1 succ",
+     "e3 N0 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.0416303447718782
+   }
+  ],
+  "scenario": "ask_continuation_group_ruleapp"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    "spike",
+    "number",
+    10
+   ],
+   [
+    "reln",
+    "R",
+    "e0",
+    "e1",
+    "succ"
+   ],
+   [
+    "gp",
+    "G",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "G"
+   ],
+   [
+    "describe",
+    "G",
+    "ascending"
+   ],
+   [
+    "beyond",
+    "X",
+    5
+   ],
+   [
+    "element",
+    "O",
+    5
+   ],
+   [
+    "commentary",
+    1
+   ],
+   [
+    "run",
+    "AskIfThisIsTheContinuation",
+    [
+     "group",
+     [
+      "obj",
+      "G"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ],
+    [
+     "expected_object",
+     [
+      "obj",
+      "O"
+     ]
+    ],
+    [
+     "start_position",
+     [
+      "val",
+      4
+     ]
+    ],
+    [
+     "known_term_count",
+     [
+      "val",
+      4
+     ]
+    ]
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "items",
+    "G"
+   ],
+   [
+    "name_new",
+    "N"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 4
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": " <0, 0>  -->  <1, 1> : succ"
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 3>  [2, 3, 4]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      [
+       " Extending group: Is the next term 5??"
+      ],
+      [
+       "e1",
+       "e2",
+       "e3"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     5,
+     [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     1,
+     3
+    ]
+   },
+   {
+    "value": [
+     "Seqsee::Element:[4,4] 5"
+    ]
+   },
+   {
+    "value": [
+     [
+      "G",
+      1,
+      3,
+      [
+       "ascending"
+      ],
+      null,
+      [
+       "e1",
+       "e2",
+       "e3"
+      ]
+     ],
+     [
+      "N0",
+      4,
+      4,
+      [
+       "number"
+      ],
+      null,
+      [
+       "N0"
+      ]
+     ],
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ],
+     [
+      "e3",
+      3,
+      3,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e3"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e0 e1 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.0416303447718782
+   }
+  ],
+  "scenario": "ask_continuation_group_bare"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4
+    ]
+   ],
+   [
+    "spike",
+    "number",
+    10
+   ],
+   [
+    "reln",
+    "R",
+    "e0",
+    "e1",
+    "succ"
+   ],
+   [
+    "gp",
+    "G",
+    "e1",
+    "e2",
+    "e3"
+   ],
+   [
+    "add",
+    "G"
+   ],
+   [
+    "describe",
+    "G",
+    "ascending"
+   ],
+   [
+    "ruleapp",
+    "G",
+    "R"
+   ],
+   [
+    "beyond",
+    "X",
+    5
+   ],
+   [
+    "element",
+    "O",
+    5
+   ],
+   [
+    "commentary",
+    0
+   ],
+   [
+    "run",
+    "AskIfThisIsTheContinuation",
+    [
+     "group",
+     [
+      "obj",
+      "G"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ],
+    [
+     "expected_object",
+     [
+      "obj",
+      "O"
+     ]
+    ],
+    [
+     "start_position",
+     [
+      "val",
+      4
+     ]
+    ],
+    [
+     "known_term_count",
+     [
+      "val",
+      4
+     ]
+    ]
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "items",
+    "G"
+   ],
+   [
+    "name_new",
+    "N"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 4
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": " <0, 0>  -->  <1, 1> : succ"
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 3>  [2, 3, 4]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": "SRuleApp"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      [
+       " Extending group: Is the next term 5??"
+      ],
+      [
+       "e1",
+       "e2",
+       "e3"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     4,
+     [
+      1,
+      2,
+      3,
+      4
+     ]
+    ]
+   },
+   {
+    "value": [
+     "5"
+    ]
+   },
+   {
+    "value": [
+     [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     1,
+     3
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     [
+      "G",
+      1,
+      3,
+      [
+       "ascending"
+      ],
+      "succ",
+      [
+       "e1",
+       "e2",
+       "e3"
+      ]
+     ],
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ],
+     [
+      "e3",
+      3,
+      3,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e3"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e0 e1 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.0416303447718782
+   }
+  ],
+  "scenario": "ask_continuation_group_no"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   [
+    "spike",
+    "number",
+    10
+   ],
+   [
+    "reln",
+    "R",
+    "e0",
+    "e1",
+    "succ"
+   ],
+   [
+    "gp",
+    "G",
+    "e1",
+    "e2",
+    "e3",
+    "e4"
+   ],
+   [
+    "add",
+    "G"
+   ],
+   [
+    "describe",
+    "G",
+    "ascending"
+   ],
+   [
+    "ruleapp",
+    "G",
+    "R"
+   ],
+   [
+    "name_ruleapp",
+    "RA",
+    "G"
+   ],
+   [
+    "rule",
+    "A",
+    "R"
+   ],
+   [
+    "beyond",
+    "X",
+    6
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "RA"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "rand"
+   ],
+   [
+    "run_scheduled",
+    "DoTheAsking"
+   ],
+   [
+    "ras",
+    "add_success",
+    "A"
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "RA"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "global",
+    "Steps_Finished",
+    5
+   ],
+   [
+    "ras",
+    "add_success",
+    "A"
+   ],
+   [
+    "global",
+    "Steps_Finished",
+    8
+   ],
+   [
+    "flush_coderack"
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "RA"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "run_scheduled",
+    "MaybeAskUsingThisGoodRule"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "commentary",
+    1
+   ],
+   [
+    "run_scheduled",
+    "DoTheAsking"
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 5
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": " <0, 0>  -->  <1, 1> : succ"
+   },
+   {
+    "value": "Seqsee::Anchored  <1, 4>  [2, 3, 4, 5]"
+   },
+   {
+    "value": [
+     1
+    ]
+   },
+   {
+    "value": 1
+   },
+   {
+    "value": "SRuleApp"
+   },
+   {
+    "value": "SRuleApp"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      "DoTheAsking",
+      100,
+      "core=RA",
+      "exception=X"
+     ]
+    ]
+   },
+   {
+    "value": [
+     [],
+     [
+      [
+       "A",
+       0
+      ]
+     ],
+     [],
+     []
+    ]
+   },
+   {
+    "value": 0.0416303447718782
+   },
+   {
+    "error": "Mandatory parameter 'msg_prefix' missing in call to Seqsee::SCF::DoTheAsking::run\n"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      "DoTheAsking",
+      100,
+      "core=RA",
+      "exception=X"
+     ]
+    ]
+   },
+   {
+    "value": [
+     [
+      [
+       "A",
+       0
+      ]
+     ],
+     [
+      [
+       "A",
+       0
+      ],
+      [
+       "A",
+       0
+      ]
+     ],
+     [],
+     []
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      "MaybeAskUsingThisGoodRule",
+      100,
+      "core=RA",
+      "exception=X",
+      "rule=A"
+     ]
+    ]
+   },
+   {
+    "value": [
+     [
+      [
+       "A",
+       5
+      ],
+      [
+       "A",
+       0
+      ]
+     ],
+     [
+      [
+       "A",
+       0
+      ],
+      [
+       "A",
+       0
+      ]
+     ],
+     [],
+     []
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      "DoTheAsking",
+      100,
+      "core=RA",
+      "exception=X",
+      "msg_prefix=I know I have asked this before..."
+     ]
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      [
+       "I know I have asked this before... Extending analogy: Is the next term 6??"
+      ],
+      [
+       "e1",
+       "e2",
+       "e3",
+       "e4"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     6,
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    ]
+   },
+   {
+    "value": [
+     [
+      [
+       "A",
+       8
+      ],
+      [
+       "A",
+       5
+      ],
+      [
+       "A",
+       0
+      ]
+     ],
+     [
+      [
+       "A",
+       0
+      ],
+      [
+       "A",
+       0
+      ]
+     ],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Element:[5,5] 6",
+      5,
+      5,
+      [
+       "number"
+      ],
+      null,
+      [
+       "?Seqsee::Element:[5,5] 6"
+      ]
+     ],
+     [
+      "G",
+      1,
+      4,
+      [
+       "ascending"
+      ],
+      "succ",
+      [
+       "e1",
+       "e2",
+       "e3",
+       "e4"
+      ]
+     ],
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ],
+     [
+      "e3",
+      3,
+      3,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e3"
+      ]
+     ],
+     [
+      "e4",
+      4,
+      4,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e4"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e0 e1 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.454492444728629
+   }
+  ],
+  "scenario": "maybe_ask_ruleapp"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "reln",
+    "R",
+    "e1",
+    "e2",
+    "succ"
+   ],
+   [
+    "rule",
+    "A",
+    "R"
+   ],
+   [
+    "beyond",
+    "X",
+    4
+   ],
+   [
+    "strength",
+    "R"
+   ],
+   [
+    "srand",
+    1
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "spike_type",
+    "R",
+    0
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "spike_type",
+    "R",
+    0
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": " <1, 1>  -->  <2, 2> : succ"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.0615336067854377
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": [
+     [],
+     [],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.454492444728629
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.00830216884047569
+   },
+   {
+    "value": [
+     [],
+     [],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.3359860301452
+   }
+  ],
+  "scenario": "maybe_ask_relation_1"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "reln",
+    "R",
+    "e1",
+    "e2",
+    "succ"
+   ],
+   [
+    "rule",
+    "A",
+    "R"
+   ],
+   [
+    "beyond",
+    "X",
+    4
+   ],
+   [
+    "strength",
+    "R"
+   ],
+   [
+    "srand",
+    2
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "spike_type",
+    "R",
+    0
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "spike_type",
+    "R",
+    0
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": " <1, 1>  -->  <2, 2> : succ"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.0615336067854377
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": [
+     [],
+     [],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.159082908972294
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.00830216884047569
+   },
+   {
+    "value": [
+     [],
+     [],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.801506833263325
+   }
+  ],
+  "scenario": "maybe_ask_relation_2"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "reln",
+    "R",
+    "e1",
+    "e2",
+    "succ"
+   ],
+   [
+    "rule",
+    "A",
+    "R"
+   ],
+   [
+    "beyond",
+    "X",
+    4
+   ],
+   [
+    "strength",
+    "R"
+   ],
+   [
+    "srand",
+    3
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "spike_type",
+    "R",
+    0
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "spike_type",
+    "R",
+    0
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": " <1, 1>  -->  <2, 2> : succ"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.0615336067854377
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": [
+     [],
+     [],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.86367337321596
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.00830216884047569
+   },
+   {
+    "value": [
+     [],
+     [],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.267027636381449
+   }
+  ],
+  "scenario": "maybe_ask_relation_3"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "reln",
+    "R",
+    "e1",
+    "e2",
+    "succ"
+   ],
+   [
+    "rule",
+    "A",
+    "R"
+   ],
+   [
+    "beyond",
+    "X",
+    4
+   ],
+   [
+    "strength",
+    "R"
+   ],
+   [
+    "srand",
+    4
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "spike_type",
+    "R",
+    0
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "spike_type",
+    "R",
+    0
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": " <1, 1>  -->  <2, 2> : succ"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.0615336067854377
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.00557944094984597
+   },
+   {
+    "value": [
+     [],
+     [],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.568263837459625
+   },
+   {
+    "value": null
+   },
+   {
+    "value": 0.00830216884047569
+   },
+   {
+    "value": [
+     [],
+     [],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.732548439499574
+   }
+  ],
+  "scenario": "maybe_ask_relation_4"
+ },
+ {
+  "ops": [
+   [
+    "init",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "reln",
+    "R",
+    "e1",
+    "e2",
+    "succ"
+   ],
+   [
+    "rule",
+    "A",
+    "R"
+   ],
+   [
+    "beyond",
+    "X",
+    4
+   ],
+   [
+    "beyond",
+    "Y",
+    5
+   ],
+   [
+    "commentary",
+    0,
+    1
+   ],
+   [
+    "run",
+    "DoTheAsking",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "Y"
+     ]
+    ],
+    [
+     "msg_prefix",
+     [
+      "val",
+      "Hi."
+     ]
+    ]
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "global",
+    "Steps_Finished",
+    2
+   ],
+   [
+    "run",
+    "DoTheAsking",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ],
+    [
+     "msg_prefix",
+     [
+      "val",
+      ""
+     ]
+    ]
+   ],
+   [
+    "asked"
+   ],
+   [
+    "ras_state"
+   ],
+   [
+    "ws"
+   ],
+   [
+    "rejected"
+   ],
+   [
+    "state"
+   ],
+   [
+    "relations"
+   ],
+   [
+    "coderack"
+   ],
+   [
+    "rand"
+   ],
+   [
+    "run",
+    "DoTheAsking",
+    [
+     "core",
+     [
+      "val",
+      "foo"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ],
+    [
+     "msg_prefix",
+     [
+      "val",
+      ""
+     ]
+    ]
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "val",
+      "foo"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ]
+   ],
+   [
+    "run",
+    "MaybeAskTheseTerms",
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "run",
+    "MaybeAskUsingThisGoodRule",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ],
+   [
+    "run",
+    "DoTheAsking",
+    [
+     "core",
+     [
+      "obj",
+      "R"
+     ]
+    ],
+    [
+     "exception",
+     [
+      "obj",
+      "X"
+     ]
+    ]
+   ]
+  ],
+  "results": [
+   {
+    "value": 3
+   },
+   {
+    "value": " <1, 1>  -->  <2, 2> : succ"
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      [
+       "Hi. Extending analogy: Is the next term 5??"
+      ],
+      [
+       "R",
+       "e1",
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     [],
+     [
+      [
+       "A",
+       0
+      ]
+     ],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     "5"
+    ]
+   },
+   {
+    "value": null
+   },
+   {
+    "value": null
+   },
+   {
+    "value": [
+     [
+      [
+       " Extending analogy: Is the next term 4??"
+      ],
+      [
+       "R",
+       "e1",
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     [
+      [
+       "A",
+       2
+      ]
+     ],
+     [
+      [
+       "A",
+       0
+      ]
+     ],
+     [],
+     []
+    ]
+   },
+   {
+    "value": [
+     4,
+     [
+      1,
+      2,
+      3,
+      4
+     ]
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": [
+     [
+      "?Seqsee::Element:[3,3] 4",
+      3,
+      3,
+      [
+       "number"
+      ],
+      null,
+      [
+       "?Seqsee::Element:[3,3] 4"
+      ]
+     ],
+     [
+      "e0",
+      0,
+      0,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e0"
+      ]
+     ],
+     [
+      "e1",
+      1,
+      1,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e1"
+      ]
+     ],
+     [
+      "e2",
+      2,
+      2,
+      [
+       "number"
+      ],
+      null,
+      [
+       "e2"
+      ]
+     ]
+    ]
+   },
+   {
+    "value": [
+     "e1 e2 succ"
+    ]
+   },
+   {
+    "value": []
+   },
+   {
+    "value": 0.0416303447718782
+   },
+   {
+    "error": "Strange core foo"
+   },
+   {
+    "error": "Strange core foo"
+   },
+   {
+    "error": "Mandatory parameter 'exception' missing in call to Seqsee::SCF::MaybeAskTheseTerms::run\n"
+   },
+   {
+    "error": "Mandatory parameter 'core' missing in call to Seqsee::SCF::MaybeAskTheseTerms::run\n"
+   },
+   {
+    "error": "Mandatory parameter 'rule' missing in call to Seqsee::SCF::MaybeAskUsingThisGoodRule::run\n"
+   },
+   {
+    "error": "Mandatory parameter 'msg_prefix' missing in call to Seqsee::SCF::DoTheAsking::run\n"
+   }
+  ],
+  "scenario": "do_the_asking"
+ }
+]

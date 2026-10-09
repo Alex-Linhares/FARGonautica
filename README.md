@@ -86,7 +86,7 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | **Yes** |
  | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | **(asap)** Dr. Lara-Dammer desires to clean up the code prior to release (2017-08-29) |
- | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl | **Yes** |
+ | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl (also a Python port) | **Yes** (and a Python port with a Qt GUI) |
 
 
 PROJECT: COPYCAT
@@ -232,11 +232,13 @@ The dissertation (Available [here](/Literature) and in [Dr. Mahabal's website](h
 describes the program and its principles, which are much more general than integer-sequence extrapolation, and compares its performance with human
 performance.
 
-Seqsee is written in Perl and a new version is written in Python and the code is maintained by Dr. Mahabal---which is why we do not provide the code in this git repo.  For the latest versions, see:
+Seqsee is written in Perl, and Dr. Mahabal maintains its code, so this repo doesn't include the original. See:
 
 [Perl version, original project](https://github.com/amahabal/Seqsee)
 
-[Python version being rewritten](https://github.com/amahabal/Pyhttps://scholar.google.com.br/scholar?hl=en&q=Francisco+Lara-Dammer&btnG=&as_sdt=1%2C5&as_sdtp=&oq=francisco+Seqsee)
+[PySeqsee, Dr. Mahabal's own Python rewrite](https://github.com/amahabal/PySeqsee)
+
+This repo does include **[a Python port of the Perl Seqsee](Software/Seqsee/)**, translated module by module and test-first against the running Perl program, with a Qt (PySide6) GUI that redraws the original Perl/Tk GUI's views. Seqsee's choices depend on Perl's hash order, so a port can't repeat a Perl run step for step. Instead, whole runs are compared statistically, over many seeds of Mahabal's test sequences. See [`Software/Seqsee/README.md`](Software/Seqsee/README.md) for how to run it.
 
 ![Abhijit Mahabal's original Perl/Tk Seqsee, unchanged, after solving 1 1 2 1 2 3](/Software/Seqsee/screenshots/seqsee-perl-tk.png)
 
@@ -244,7 +246,7 @@ Seqsee is written in Perl and a new version is written in Python and the code is
 
 ![The same run in a Python port of Seqsee with a PySide6 (Qt) GUI](/Software/Seqsee/screenshots/seqsee-python-qt.png)
 
-*The same sequence in a Python port of Seqsee, with a PySide6 (Qt) GUI that redraws the original's views. With seed 7 it reaches the same solution after 677 steps. The Commentary shows the questions Seqsee asked and the answers (in red): "Is the next term 4?" no; "Are the next 4 terms 1, 2, 3, and 4?" yes; "Are the next 5 terms 1, 2, 3, 4, and 5?" yes; then it describes the solution and asks for confirmation.*
+*The same sequence in [the Python port in this repo](Software/Seqsee/), with a PySide6 (Qt) GUI that redraws the original's views. With seed 7 it reaches the same solution after 677 steps. The Commentary shows the questions Seqsee asked and the answers (in red): "Is the next term 4?" no; "Are the next 4 terms 1, 2, 3, and 4?" yes; "Are the next 5 terms 1, 2, 3, 4, and 5?" yes; then it describes the solution and asks for confirmation.*
 
 
 PROJECT: George

@@ -1,0 +1,416 @@
+[
+ {
+  "as_text": "left",
+  "flip": "right",
+  "flip_dies": 0,
+  "is_left_or_right": 1,
+  "name": "LEFT",
+  "pkg": "DIR",
+  "potentially_extendible": 1,
+  "same_as_package_var": 1
+ },
+ {
+  "as_text": "neither",
+  "flip": null,
+  "flip_dies": 1,
+  "is_left_or_right": 0,
+  "name": "NEITHER",
+  "pkg": "DIR",
+  "potentially_extendible": 0,
+  "same_as_package_var": 1
+ },
+ {
+  "as_text": "right",
+  "flip": "left",
+  "flip_dies": 0,
+  "is_left_or_right": 1,
+  "name": "RIGHT",
+  "pkg": "DIR",
+  "potentially_extendible": 1,
+  "same_as_package_var": 1
+ },
+ {
+  "as_text": "unknown",
+  "flip": null,
+  "flip_dies": 1,
+  "is_left_or_right": 0,
+  "name": "UNKNOWN",
+  "pkg": "DIR",
+  "potentially_extendible": 0,
+  "same_as_package_var": 1
+ },
+ {
+  "a": "LEFT",
+  "b": "LEFT",
+  "eq": 1,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 1
+ },
+ {
+  "a": "LEFT",
+  "b": "NEITHER",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "LEFT",
+  "b": "RIGHT",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "LEFT",
+  "b": "UNKNOWN",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "NEITHER",
+  "b": "LEFT",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "NEITHER",
+  "b": "NEITHER",
+  "eq": 1,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 1
+ },
+ {
+  "a": "NEITHER",
+  "b": "RIGHT",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "NEITHER",
+  "b": "UNKNOWN",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "RIGHT",
+  "b": "LEFT",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "RIGHT",
+  "b": "NEITHER",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "RIGHT",
+  "b": "RIGHT",
+  "eq": 1,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 1
+ },
+ {
+  "a": "RIGHT",
+  "b": "UNKNOWN",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "UNKNOWN",
+  "b": "LEFT",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "UNKNOWN",
+  "b": "NEITHER",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "UNKNOWN",
+  "b": "RIGHT",
+  "eq": 0,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 0
+ },
+ {
+  "a": "UNKNOWN",
+  "b": "UNKNOWN",
+  "eq": 1,
+  "op": "eq",
+  "pkg": "DIR",
+  "smartmatch": 1
+ },
+ {
+  "as_text": "FORWARD",
+  "memory_dependencies": [],
+  "name": "FORWARD",
+  "pkg": "POS_MODE",
+  "roundtrip_same": 1,
+  "serialize": "FORWARD"
+ },
+ {
+  "as_text": "BACKWARD",
+  "memory_dependencies": [],
+  "name": "BACKWARD",
+  "pkg": "POS_MODE",
+  "roundtrip_same": 1,
+  "serialize": "BACKWARD"
+ },
+ {
+  "arg": "NONE",
+  "defined": 0,
+  "op": "deserialize",
+  "pkg": "POS_MODE"
+ },
+ {
+  "arg": "xx",
+  "defined": 0,
+  "op": "deserialize",
+  "pkg": "POS_MODE"
+ },
+ {
+  "arg": "forward",
+  "defined": 0,
+  "op": "deserialize",
+  "pkg": "POS_MODE"
+ },
+ {
+  "as_text": "NONE",
+  "get_pure_same": 1,
+  "is_metonymy_present": 0,
+  "is_position_relevant": 0,
+  "memory_dependencies": [],
+  "name": "NONE",
+  "pkg": "METO_MODE",
+  "roundtrip_same": 1,
+  "serialize": "NONE"
+ },
+ {
+  "as_text": "SINGLE",
+  "get_pure_same": 1,
+  "is_metonymy_present": 1,
+  "is_position_relevant": 1,
+  "memory_dependencies": [],
+  "name": "SINGLE",
+  "pkg": "METO_MODE",
+  "roundtrip_same": 1,
+  "serialize": "SINGLE"
+ },
+ {
+  "as_text": "ALLBUTONE",
+  "get_pure_same": 1,
+  "is_metonymy_present": 1,
+  "is_position_relevant": 1,
+  "memory_dependencies": [],
+  "name": "ALLBUTONE",
+  "pkg": "METO_MODE",
+  "roundtrip_same": 1,
+  "serialize": "ALLBUTONE"
+ },
+ {
+  "as_text": "ALL",
+  "get_pure_same": 1,
+  "is_metonymy_present": 1,
+  "is_position_relevant": 0,
+  "memory_dependencies": [],
+  "name": "ALL",
+  "pkg": "METO_MODE",
+  "roundtrip_same": 1,
+  "serialize": "ALL"
+ },
+ {
+  "as_text": "OTHER",
+  "get_pure_same": 1,
+  "is_metonymy_present": 1,
+  "is_position_relevant": 0,
+  "memory_dependencies": [],
+  "name": "OTHER",
+  "pkg": "METO_MODE",
+  "roundtrip_same": 1,
+  "serialize": "OTHER"
+ },
+ {
+  "arg": "xx",
+  "dies": 1,
+  "op": "deserialize",
+  "pkg": "METO_MODE"
+ },
+ {
+  "arg": "none",
+  "dies": 1,
+  "op": "deserialize",
+  "pkg": "METO_MODE"
+ },
+ {
+  "bool": 0,
+  "mode": "NO",
+  "name": "NO",
+  "pkg": "EXTENDIBILE"
+ },
+ {
+  "bool": 1,
+  "mode": "PERHAPS",
+  "name": "PERHAPS",
+  "pkg": "EXTENDIBILE"
+ },
+ {
+  "bool": 1,
+  "mode": "UNKNOWN",
+  "name": "UNKNOWN",
+  "pkg": "EXTENDIBILE"
+ },
+ {
+  "bool": 0,
+  "name": "NONE",
+  "pkg": "RELN_SCHEME",
+  "value": 0
+ },
+ {
+  "bool": 1,
+  "eq_chain": 1,
+  "eq_none": 0,
+  "name": "CHAIN",
+  "pkg": "RELN_SCHEME",
+  "type": "CHAIN"
+ },
+ {
+  "is_unit_groups": 1,
+  "mode": "group",
+  "name": "GROUP",
+  "pkg": "DISTANCE_MODE"
+ },
+ {
+  "is_unit_groups": 0,
+  "mode": "element",
+  "name": "ELEMENT",
+  "pkg": "DISTANCE_MODE"
+ },
+ {
+  "op": "PickOne",
+  "picks": [
+   "element",
+   "element",
+   "group",
+   "element",
+   "group",
+   "element",
+   "element",
+   "element",
+   "element",
+   "element",
+   "element",
+   "element",
+   "element",
+   "group",
+   "element",
+   "element",
+   "element",
+   "element",
+   "element",
+   "element",
+   "element",
+   "element",
+   "element",
+   "group",
+   "element",
+   "element",
+   "element",
+   "element",
+   "group",
+   "group",
+   "element",
+   "element",
+   "group",
+   "element",
+   "element",
+   "element",
+   "element",
+   "group",
+   "element",
+   "element"
+  ],
+  "pkg": "DISTANCE_MODE",
+  "seed": 42
+ },
+ {
+  "arg": 3,
+  "as_text": "3 element",
+  "ctor": "InElements",
+  "is_non_zero": 3,
+  "is_unit_groups": 0,
+  "magnitude": 3,
+  "pkg": "DISTANCE"
+ },
+ {
+  "arg": 0,
+  "as_text": "0 element",
+  "ctor": "InElements",
+  "is_non_zero": 0,
+  "is_unit_groups": 0,
+  "magnitude": 0,
+  "pkg": "DISTANCE"
+ },
+ {
+  "arg": 1,
+  "as_text": "1 element",
+  "ctor": "InElements",
+  "is_non_zero": 1,
+  "is_unit_groups": 0,
+  "magnitude": 1,
+  "pkg": "DISTANCE"
+ },
+ {
+  "arg": 2,
+  "as_text": "2 group",
+  "ctor": "InGroups",
+  "is_non_zero": 2,
+  "is_unit_groups": 1,
+  "magnitude": 2,
+  "pkg": "DISTANCE"
+ },
+ {
+  "arg": 0,
+  "as_text": "0 group",
+  "ctor": "InGroups",
+  "is_non_zero": 0,
+  "is_unit_groups": 1,
+  "magnitude": 0,
+  "pkg": "DISTANCE"
+ },
+ {
+  "arg": null,
+  "as_text": "0 group",
+  "ctor": "Zero",
+  "is_non_zero": 0,
+  "is_unit_groups": 1,
+  "magnitude": 0,
+  "pkg": "DISTANCE"
+ }
+]
