@@ -1,0 +1,6159 @@
+{
+ "tool": "role_probes",
+ "runs": 200,
+ "seed": 1,
+ "profile": "standard",
+ "penalty_scan_problem": "buridan-01",
+ "penalties": [
+  40,
+  300
+ ],
+ "lesions": [
+  "C1",
+  "C6",
+  "C5",
+  "C3",
+  "C2",
+  "K1",
+  "L2",
+  "A2",
+  "C7",
+  "S2",
+  "L3",
+  "L4",
+  "L5",
+  "A4",
+  "A5",
+  "A6",
+  "A7",
+  "K2",
+  "S5",
+  "C4"
+ ],
+ "lesion_extra": {
+  "C1": [
+   "surround-06",
+   "surround-07",
+   "surround-10"
+  ],
+  "C3": [
+   "surround-06",
+   "surround-07",
+   "surround-10"
+  ],
+  "C6": [
+   "surround-01",
+   "surround-02",
+   "surround-03",
+   "surround-04",
+   "surround-06",
+   "surround-07",
+   "surround-10"
+  ],
+  "S5": [
+   "blockage-07",
+   "blockage-08"
+  ],
+  "C4": [
+   "blockage-07",
+   "blockage-08"
+  ],
+  "A2": [],
+  "C2": [],
+  "C5": [],
+  "C7": [
+   "surround-10"
+  ],
+  "K1": [
+   "surround-06",
+   "surround-07",
+   "surround-10"
+  ],
+  "L2": [
+   "blockage-01",
+   "blockage-03",
+   "blockage-04",
+   "blockage-05"
+  ],
+  "S2": [
+   "surround-06",
+   "surround-07",
+   "surround-10"
+  ],
+  "L3": [
+   "blockage-07",
+   "blockage-08"
+  ],
+  "L4": [
+   "surround-01"
+  ],
+  "L5": [
+   "surround-10"
+  ],
+  "A4": [
+   "figure-ground-01"
+  ],
+  "A5": [
+   "figure-ground-01"
+  ],
+  "A6": [
+   "blockage-07",
+   "blockage-08"
+  ],
+  "A7": [
+   "surround-01",
+   "surround-02",
+   "surround-03",
+   "surround-04"
+  ],
+  "K2": [
+   "figure-ground-01"
+  ]
+ },
+ "seconds": 121.8,
+ "records": [
+  {
+   "problem": "surround-05",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.14,
+     "wv2": 16.5,
+     "coherent": 0.105,
+     "incoherent": 0.105,
+     "tags": 53.08
+    },
+    "answers": {
+     "fork4": 5,
+     "E2": 98,
+     "spoon3": 14,
+     "spoon2": 1,
+     "E1": 36,
+     "cup1": 26,
+     "fork3": 9,
+     "spoon4": 11
+    },
+    "through": {
+     "correspondence": 170,
+     "default": 24,
+     "group": 4,
+     "blocked": 2
+    },
+    "codelets": 77.9,
+    "capped": 0,
+    "literal": 26
+   },
+   "oracle": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.29,
+     "wv2": 31.0,
+     "coherent": 0.195,
+     "incoherent": 0.155,
+     "tags": 49.845
+    },
+    "answers": {
+     "E2": 84,
+     "E1": 39,
+     "cup1": 40,
+     "spoon3": 10,
+     "fork3": 7,
+     "spoon4": 15,
+     "fork4": 4,
+     "knife2": 1
+    },
+    "through": {
+     "correspondence": 160,
+     "default": 39,
+     "blocked": 1
+    },
+    "codelets": 80.2,
+    "capped": 0,
+    "literal": 40
+   },
+   "oracle_tv": 0.11,
+   "roles_read": {
+    "runs": 200,
+    "hand_read": 56,
+    "present": {
+     "ANCHOR": 4.5,
+     "BARRIER": 1.5,
+     "CLAIMED": 1.5,
+     "COLUMN": 100.0,
+     "CONTAINER": 4.0,
+     "CORNER": 99.0,
+     "COUNTERPART": 28.0,
+     "ECHO": 51.0,
+     "FIGURE": 24.0,
+     "GAP": 86.0,
+     "GROUND": 11.5,
+     "LONER": 58.5,
+     "MEMBER": 100.0,
+     "MIDLINE": 96.5,
+     "MIRROR_IMAGE": 93.0,
+     "POINT_IMAGE": 64.0,
+     "ROW": 97.0,
+     "SIDEKICK": 7.0,
+     "SYMMETRY_AXIS": 6.5,
+     "TWIN": 58.0
+    },
+    "missed": 0.358,
+    "extra": 0.176,
+    "missed_most": [
+     "fork3 SIDEKICK 200",
+     "small-glass1 CONNECTOR 200",
+     "spoon4 SIDEKICK 198",
+     "small-glass1 ANCHOR 197",
+     "knife1 SIDEKICK 195",
+     "cup1 ANCHOR 194",
+     "spoon1 SIDEKICK 193",
+     "cup1 MEMBER 147"
+    ]
+   },
+   "no_break": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.135,
+     "wv2": 16.0,
+     "coherent": 0.095,
+     "incoherent": 0.095,
+     "tags": 53.995
+    },
+    "answers": {
+     "fork4": 5,
+     "E2": 99,
+     "spoon3": 13,
+     "spoon2": 1,
+     "E1": 39,
+     "cup1": 25,
+     "fork3": 8,
+     "spoon4": 10
+    },
+    "through": {
+     "correspondence": 172,
+     "default": 23,
+     "group": 3,
+     "blocked": 2
+    },
+    "codelets": 78.0,
+    "capped": 0,
+    "literal": 25,
+    "paired_differ": 12,
+    "moved": {
+     "E2 to E1": 2,
+     "spoon3 to E2": 1,
+     "cup1 to E2": 2,
+     "E1 to E2": 2,
+     "spoon4 to E1": 1,
+     "E2 to cup1": 1,
+     "E2 to spoon3": 1,
+     "spoon3 to E1": 1,
+     "fork3 to E1": 1
+    }
+   },
+   "lesions": {
+    "C1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.045,
+      "wv2": 7.5,
+      "coherent": 0.04,
+      "incoherent": 0.04,
+      "tags": 54.12
+     },
+     "answers": {
+      "E2": 103,
+      "spoon3": 21,
+      "spoon2": 2,
+      "spoon4": 16,
+      "cup1": 20,
+      "E1": 26,
+      "fork3": 7,
+      "fork4": 5
+     },
+     "through": {
+      "correspondence": 179,
+      "default": 20,
+      "group": 1
+     },
+     "codelets": 77.7,
+     "capped": 0,
+     "literal": 20,
+     "paired_differ": 109,
+     "moved": {
+      "fork4 to E2": 5,
+      "E2 to spoon3": 8,
+      "E2 to spoon4": 11,
+      "E1 to E2": 11,
+      "cup1 to E2": 12,
+      "E2 to E1": 10,
+      "fork3 to E2": 4,
+      "E1 to cup1": 3,
+      "spoon4 to E2": 5,
+      "E1 to spoon3": 6,
+      "fork3 to cup1": 1,
+      "E1 to fork3": 2,
+      "spoon3 to cup1": 3,
+      "E2 to fork4": 3,
+      "cup1 to spoon3": 1,
+      "spoon4 to spoon3": 1,
+      "spoon3 to E2": 4,
+      "cup1 to fork4": 1,
+      "E2 to cup1": 3,
+      "spoon4 to E1": 1,
+      "cup1 to E1": 1,
+      "spoon3 to spoon2": 1,
+      "fork3 to E1": 2,
+      "cup1 to fork3": 2,
+      "E1 to spoon4": 3,
+      "E2 to fork3": 1,
+      "spoon4 to fork3": 1,
+      "spoon3 to E1": 1,
+      "spoon4 to cup1": 1,
+      "fork3 to fork4": 1
+     }
+    },
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.145,
+      "wv2": 16.0,
+      "coherent": 0.095,
+      "incoherent": 0.11,
+      "tags": 53.735
+     },
+     "answers": {
+      "E2": 101,
+      "E1": 32,
+      "spoon2": 1,
+      "spoon4": 18,
+      "cup1": 20,
+      "spoon3": 17,
+      "fork4": 2,
+      "fork3": 8,
+      "knife2": 1
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 20,
+      "group": 2
+     },
+     "codelets": 79.3,
+     "capped": 0,
+     "literal": 20,
+     "paired_differ": 78,
+     "moved": {
+      "fork4 to E2": 2,
+      "E2 to E1": 11,
+      "spoon3 to E2": 2,
+      "E2 to spoon4": 6,
+      "cup1 to E2": 7,
+      "E2 to spoon3": 5,
+      "E1 to E2": 14,
+      "fork3 to E2": 4,
+      "cup1 to fork4": 1,
+      "spoon4 to E2": 4,
+      "cup1 to spoon4": 1,
+      "E2 to cup1": 4,
+      "E2 to fork3": 3,
+      "E1 to spoon4": 2,
+      "spoon4 to spoon3": 1,
+      "E1 to spoon3": 2,
+      "cup1 to E1": 1,
+      "cup1 to fork3": 1,
+      "fork4 to spoon4": 2,
+      "spoon3 to E1": 1,
+      "spoon3 to cup1": 1,
+      "E2 to knife2": 1,
+      "spoon3 to spoon4": 1,
+      "fork3 to E1": 1
+     }
+    },
+    "C5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.155,
+      "wv2": 17.5,
+      "coherent": 0.14,
+      "incoherent": 0.085,
+      "tags": 53.21
+     },
+     "answers": {
+      "fork4": 4,
+      "E2": 92,
+      "spoon3": 16,
+      "spoon2": 1,
+      "E1": 40,
+      "cup1": 26,
+      "spoon4": 12,
+      "fork3": 9
+     },
+     "through": {
+      "correspondence": 170,
+      "default": 25,
+      "group": 4,
+      "blocked": 1
+     },
+     "codelets": 78.2,
+     "capped": 0,
+     "literal": 26,
+     "paired_differ": 18,
+     "moved": {
+      "fork3 to E2": 1,
+      "E2 to cup1": 1,
+      "E2 to E1": 4,
+      "E2 to fork3": 2,
+      "E1 to E2": 2,
+      "cup1 to E1": 1,
+      "spoon4 to fork3": 1,
+      "fork3 to E1": 2,
+      "E2 to spoon3": 2,
+      "E1 to spoon4": 1,
+      "fork4 to spoon4": 1
+     }
+    },
+    "C3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.14,
+      "wv2": 16.5,
+      "coherent": 0.105,
+      "incoherent": 0.105,
+      "tags": 53.08
+     },
+     "answers": {
+      "fork4": 5,
+      "E2": 98,
+      "spoon3": 14,
+      "spoon2": 1,
+      "E1": 36,
+      "cup1": 26,
+      "fork3": 9,
+      "spoon4": 11
+     },
+     "through": {
+      "correspondence": 170,
+      "default": 24,
+      "group": 4,
+      "blocked": 2
+     },
+     "codelets": 77.9,
+     "capped": 0,
+     "literal": 26,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "C2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.145,
+      "wv2": 16.5,
+      "coherent": 0.11,
+      "incoherent": 0.11,
+      "tags": 52.945
+     },
+     "answers": {
+      "fork4": 5,
+      "E2": 103,
+      "spoon2": 1,
+      "E1": 36,
+      "cup1": 23,
+      "spoon4": 11,
+      "fork3": 9,
+      "spoon3": 12
+     },
+     "through": {
+      "correspondence": 174,
+      "default": 22,
+      "group": 3,
+      "blocked": 1
+     },
+     "codelets": 78.2,
+     "capped": 0,
+     "literal": 23,
+     "paired_differ": 16,
+     "moved": {
+      "spoon3 to E2": 1,
+      "cup1 to E2": 2,
+      "E1 to E2": 3,
+      "fork3 to E1": 1,
+      "cup1 to fork3": 1,
+      "E2 to E1": 1,
+      "E2 to fork4": 1,
+      "E2 to spoon4": 1,
+      "spoon4 to E2": 2,
+      "fork4 to E1": 1,
+      "E1 to spoon4": 1,
+      "spoon3 to E1": 1
+     }
+    },
+    "K1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.175,
+      "wv2": 19.5,
+      "coherent": 0.13,
+      "incoherent": 0.125,
+      "tags": 52.525
+     },
+     "answers": {
+      "fork4": 4,
+      "E2": 97,
+      "spoon2": 1,
+      "cup1": 26,
+      "E1": 37,
+      "spoon3": 15,
+      "spoon4": 13,
+      "fork3": 7
+     },
+     "through": {
+      "correspondence": 171,
+      "default": 25,
+      "group": 3,
+      "blocked": 1
+     },
+     "codelets": 78.1,
+     "capped": 0,
+     "literal": 26,
+     "paired_differ": 28,
+     "moved": {
+      "spoon3 to E2": 1,
+      "E1 to cup1": 2,
+      "cup1 to E2": 2,
+      "E1 to spoon3": 1,
+      "fork3 to E2": 2,
+      "E2 to spoon4": 3,
+      "E2 to E1": 4,
+      "E1 to E2": 2,
+      "cup1 to spoon4": 1,
+      "spoon4 to cup1": 1,
+      "fork4 to E1": 1,
+      "fork3 to E1": 1,
+      "E1 to fork4": 1,
+      "E2 to fork3": 1,
+      "E2 to spoon3": 2,
+      "spoon3 to E1": 1,
+      "fork4 to E2": 1,
+      "spoon4 to E2": 1
+     }
+    },
+    "L2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.2,
+      "wv2": 20.5,
+      "coherent": 0.125,
+      "incoherent": 0.12,
+      "tags": 41.44
+     },
+     "answers": {
+      "E1": 27,
+      "E2": 94,
+      "spoon4": 28,
+      "fork4": 3,
+      "cup1": 19,
+      "spoon3": 20,
+      "fork3": 9
+     },
+     "through": {
+      "correspondence": 180,
+      "default": 19,
+      "group": 1
+     },
+     "codelets": 74.8,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 135,
+     "moved": {
+      "fork4 to E1": 1,
+      "spoon3 to E2": 6,
+      "spoon2 to E2": 1,
+      "cup1 to spoon4": 7,
+      "E1 to fork4": 1,
+      "cup1 to E2": 13,
+      "E2 to E1": 11,
+      "E1 to E2": 17,
+      "E2 to spoon3": 9,
+      "E1 to spoon3": 4,
+      "E2 to cup1": 10,
+      "fork3 to cup1": 2,
+      "spoon4 to fork3": 2,
+      "E2 to fork3": 6,
+      "spoon4 to E2": 4,
+      "E1 to spoon4": 4,
+      "fork3 to spoon3": 3,
+      "E1 to fork3": 1,
+      "fork3 to E1": 2,
+      "cup1 to spoon3": 1,
+      "E2 to spoon4": 12,
+      "fork4 to E2": 3,
+      "spoon3 to E1": 3,
+      "cup1 to E1": 1,
+      "fork3 to E2": 2,
+      "spoon3 to cup1": 1,
+      "E2 to fork4": 2,
+      "E1 to cup1": 1,
+      "spoon4 to spoon3": 1,
+      "spoon4 to E1": 1,
+      "spoon3 to spoon4": 2,
+      "fork4 to cup1": 1
+     }
+    },
+    "A2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.13,
+      "wv2": 15.5,
+      "coherent": 0.11,
+      "incoherent": 0.09,
+      "tags": 52.56
+     },
+     "answers": {
+      "fork4": 5,
+      "E2": 99,
+      "spoon3": 13,
+      "spoon2": 1,
+      "E1": 34,
+      "cup1": 28,
+      "fork3": 9,
+      "spoon4": 11
+     },
+     "through": {
+      "correspondence": 168,
+      "default": 26,
+      "group": 4,
+      "blocked": 2
+     },
+     "codelets": 77.3,
+     "capped": 0,
+     "literal": 28,
+     "paired_differ": 6,
+     "moved": {
+      "E1 to cup1": 2,
+      "E2 to spoon3": 1,
+      "E1 to E2": 1,
+      "spoon3 to E1": 1,
+      "spoon3 to E2": 1
+     }
+    },
+    "C7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.13,
+      "wv2": 15.5,
+      "coherent": 0.095,
+      "incoherent": 0.105,
+      "tags": 52.845
+     },
+     "answers": {
+      "fork4": 6,
+      "E2": 96,
+      "spoon3": 12,
+      "spoon2": 1,
+      "E1": 36,
+      "cup1": 27,
+      "spoon4": 12,
+      "fork3": 10
+     },
+     "through": {
+      "correspondence": 169,
+      "default": 25,
+      "group": 4,
+      "blocked": 2
+     },
+     "codelets": 77.5,
+     "capped": 0,
+     "literal": 27,
+     "paired_differ": 7,
+     "moved": {
+      "E2 to spoon4": 1,
+      "E1 to cup1": 1,
+      "E2 to E1": 1,
+      "E2 to fork4": 1,
+      "spoon3 to fork3": 2,
+      "fork3 to E2": 1
+     }
+    },
+    "S2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.12,
+      "wv2": 16.5,
+      "coherent": 0.09,
+      "incoherent": 0.08,
+      "tags": 51.145
+     },
+     "answers": {
+      "fork4": 3,
+      "cup1": 31,
+      "E2": 94,
+      "spoon2": 1,
+      "spoon4": 10,
+      "spoon3": 16,
+      "E1": 41,
+      "fork3": 3,
+      "knife2": 1
+     },
+     "through": {
+      "correspondence": 168,
+      "default": 31,
+      "group": 1
+     },
+     "codelets": 77.5,
+     "capped": 0,
+     "literal": 31,
+     "paired_differ": 102,
+     "moved": {
+      "E2 to cup1": 7,
+      "spoon3 to E2": 5,
+      "E2 to spoon4": 6,
+      "E1 to spoon4": 1,
+      "E1 to E2": 14,
+      "cup1 to E2": 8,
+      "E2 to spoon3": 8,
+      "E2 to E1": 13,
+      "cup1 to E1": 3,
+      "fork3 to spoon3": 1,
+      "spoon4 to E2": 2,
+      "E2 to fork3": 1,
+      "E1 to cup1": 3,
+      "spoon4 to cup1": 3,
+      "E2 to fork4": 2,
+      "fork3 to cup1": 1,
+      "E1 to fork3": 1,
+      "fork3 to E2": 4,
+      "spoon4 to E1": 3,
+      "spoon3 to cup1": 3,
+      "E1 to spoon3": 2,
+      "fork4 to spoon3": 1,
+      "cup1 to knife2": 1,
+      "cup1 to spoon3": 1,
+      "fork3 to E1": 2,
+      "fork4 to E1": 2,
+      "spoon3 to E1": 3,
+      "fork4 to cup1": 1
+     }
+    },
+    "L3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.165,
+      "wv2": 20.0,
+      "coherent": 0.1,
+      "incoherent": 0.14,
+      "tags": 52.84
+     },
+     "answers": {
+      "E2": 99,
+      "cup1": 27,
+      "spoon4": 18,
+      "spoon3": 16,
+      "E1": 33,
+      "knife2": 1,
+      "fork3": 1,
+      "fork4": 5
+     },
+     "through": {
+      "correspondence": 169,
+      "default": 26,
+      "group": 4,
+      "blocked": 1
+     },
+     "codelets": 80.1,
+     "capped": 0,
+     "literal": 27,
+     "paired_differ": 133,
+     "moved": {
+      "fork4 to E2": 3,
+      "spoon3 to E2": 6,
+      "spoon2 to E2": 1,
+      "E2 to cup1": 16,
+      "E1 to spoon4": 6,
+      "cup1 to spoon3": 2,
+      "E1 to E2": 11,
+      "cup1 to E2": 15,
+      "cup1 to E1": 4,
+      "E2 to spoon3": 6,
+      "E1 to spoon3": 5,
+      "E1 to knife2": 1,
+      "fork3 to E2": 4,
+      "spoon4 to E2": 3,
+      "fork3 to E1": 3,
+      "E1 to fork3": 1,
+      "spoon3 to spoon4": 1,
+      "E1 to cup1": 5,
+      "E2 to fork4": 3,
+      "E2 to E1": 12,
+      "cup1 to spoon4": 3,
+      "spoon4 to E1": 3,
+      "E2 to spoon4": 5,
+      "fork3 to cup1": 2,
+      "spoon4 to spoon3": 2,
+      "cup1 to fork4": 1,
+      "fork4 to E1": 2,
+      "spoon3 to E1": 3,
+      "spoon3 to cup1": 3,
+      "E1 to fork4": 1
+     }
+    },
+    "L4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.09,
+      "wv2": 14.0,
+      "coherent": 0.09,
+      "incoherent": 0.05,
+      "tags": 53.1
+     },
+     "answers": {
+      "E1": 47,
+      "E2": 91,
+      "cup1": 26,
+      "spoon4": 11,
+      "spoon3": 12,
+      "fork3": 7,
+      "knife1": 1,
+      "fork4": 5
+     },
+     "through": {
+      "correspondence": 172,
+      "default": 25,
+      "group": 2,
+      "blocked": 1
+     },
+     "codelets": 77.2,
+     "capped": 0,
+     "literal": 26,
+     "paired_differ": 65,
+     "moved": {
+      "fork4 to E1": 1,
+      "spoon3 to E2": 2,
+      "spoon2 to E2": 1,
+      "E2 to spoon4": 3,
+      "cup1 to E2": 6,
+      "E1 to spoon3": 3,
+      "fork3 to E2": 6,
+      "spoon4 to E2": 3,
+      "E1 to E2": 1,
+      "spoon4 to E1": 1,
+      "cup1 to fork3": 1,
+      "fork3 to cup1": 1,
+      "E2 to E1": 10,
+      "E2 to fork3": 4,
+      "E2 to cup1": 4,
+      "E2 to knife1": 1,
+      "cup1 to fork4": 1,
+      "E1 to spoon4": 1,
+      "E1 to cup1": 2,
+      "fork4 to spoon4": 1,
+      "cup1 to E1": 1,
+      "E2 to spoon3": 2,
+      "spoon3 to E1": 5,
+      "spoon4 to cup1": 1,
+      "E2 to fork4": 2,
+      "fork4 to cup1": 1
+     }
+    },
+    "L5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.14,
+      "wv2": 16.5,
+      "coherent": 0.105,
+      "incoherent": 0.105,
+      "tags": 53.08
+     },
+     "answers": {
+      "fork4": 5,
+      "E2": 98,
+      "spoon3": 14,
+      "spoon2": 1,
+      "E1": 36,
+      "cup1": 26,
+      "fork3": 9,
+      "spoon4": 11
+     },
+     "through": {
+      "correspondence": 170,
+      "default": 24,
+      "group": 4,
+      "blocked": 2
+     },
+     "codelets": 77.9,
+     "capped": 0,
+     "literal": 26,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "A4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.11,
+      "wv2": 14.0,
+      "coherent": 0.095,
+      "incoherent": 0.09,
+      "tags": 52.975
+     },
+     "answers": {
+      "fork4": 6,
+      "E2": 98,
+      "spoon3": 13,
+      "spoon2": 1,
+      "E1": 30,
+      "cup1": 28,
+      "fork3": 10,
+      "spoon4": 14
+     },
+     "through": {
+      "correspondence": 168,
+      "default": 27,
+      "group": 4,
+      "blocked": 1
+     },
+     "codelets": 77.6,
+     "capped": 0,
+     "literal": 28,
+     "paired_differ": 27,
+     "moved": {
+      "E1 to E2": 6,
+      "E2 to E1": 2,
+      "E2 to spoon4": 1,
+      "E1 to fork4": 1,
+      "cup1 to spoon4": 2,
+      "cup1 to E2": 1,
+      "E1 to cup1": 1,
+      "E2 to cup1": 4,
+      "E2 to fork3": 2,
+      "spoon3 to fork3": 1,
+      "E1 to spoon4": 1,
+      "fork3 to E2": 2,
+      "spoon3 to E1": 1,
+      "spoon4 to E1": 1,
+      "E1 to spoon3": 1
+     }
+    },
+    "A5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.125,
+      "wv2": 15.0,
+      "coherent": 0.11,
+      "incoherent": 0.09,
+      "tags": 52.4
+     },
+     "answers": {
+      "fork4": 6,
+      "E2": 98,
+      "spoon3": 14,
+      "spoon4": 13,
+      "E1": 33,
+      "cup1": 27,
+      "fork3": 9
+     },
+     "through": {
+      "correspondence": 169,
+      "default": 26,
+      "group": 4,
+      "blocked": 1
+     },
+     "codelets": 77.4,
+     "capped": 0,
+     "literal": 27,
+     "paired_differ": 10,
+     "moved": {
+      "spoon2 to spoon4": 1,
+      "E1 to E2": 2,
+      "E1 to fork4": 1,
+      "E1 to cup1": 2,
+      "cup1 to E2": 1,
+      "E2 to E1": 2,
+      "E2 to spoon4": 1
+     }
+    },
+    "A6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.19,
+      "wv2": 19.5,
+      "coherent": 0.14,
+      "incoherent": 0.095,
+      "tags": 51.45
+     },
+     "answers": {
+      "fork4": 7,
+      "E2": 106,
+      "spoon3": 16,
+      "spoon2": 1,
+      "E1": 30,
+      "cup1": 18,
+      "spoon4": 15,
+      "fork3": 6,
+      "knife2": 1
+     },
+     "through": {
+      "correspondence": 179,
+      "default": 16,
+      "group": 3,
+      "blocked": 2
+     },
+     "codelets": 79.1,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 51,
+     "moved": {
+      "cup1 to E2": 6,
+      "cup1 to spoon4": 2,
+      "E1 to spoon3": 2,
+      "E1 to cup1": 2,
+      "cup1 to fork4": 1,
+      "spoon4 to E2": 3,
+      "fork3 to spoon4": 1,
+      "E1 to E2": 4,
+      "E1 to spoon4": 1,
+      "cup1 to E1": 2,
+      "E1 to fork4": 1,
+      "E2 to cup1": 1,
+      "spoon3 to spoon4": 1,
+      "E2 to spoon4": 4,
+      "fork3 to E2": 3,
+      "E2 to spoon3": 4,
+      "fork3 to spoon3": 1,
+      "cup1 to fork3": 1,
+      "spoon3 to fork4": 1,
+      "fork4 to cup1": 1,
+      "spoon4 to E1": 1,
+      "spoon3 to E2": 3,
+      "E1 to fork3": 1,
+      "E2 to E1": 2,
+      "spoon4 to cup1": 1,
+      "cup1 to knife2": 1
+     }
+    },
+    "A7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.175,
+      "wv2": 19.0,
+      "coherent": 0.165,
+      "incoherent": 0.08,
+      "tags": 53.755
+     },
+     "answers": {
+      "E1": 34,
+      "E2": 95,
+      "spoon2": 1,
+      "cup1": 23,
+      "fork4": 6,
+      "spoon4": 14,
+      "spoon3": 19,
+      "fork3": 8
+     },
+     "through": {
+      "correspondence": 173,
+      "default": 22,
+      "group": 4,
+      "blocked": 1
+     },
+     "codelets": 79.3,
+     "capped": 0,
+     "literal": 23,
+     "paired_differ": 58,
+     "moved": {
+      "fork4 to E1": 1,
+      "spoon3 to E2": 2,
+      "E1 to E2": 5,
+      "cup1 to fork4": 1,
+      "E2 to spoon4": 5,
+      "cup1 to E2": 5,
+      "E1 to spoon3": 2,
+      "fork3 to E2": 4,
+      "spoon4 to E1": 1,
+      "E2 to fork4": 1,
+      "spoon4 to E2": 3,
+      "E1 to spoon4": 2,
+      "E2 to cup1": 3,
+      "E2 to fork3": 3,
+      "E2 to E1": 7,
+      "E1 to cup1": 2,
+      "spoon4 to cup1": 1,
+      "cup1 to E1": 1,
+      "fork4 to E2": 1,
+      "cup1 to fork3": 1,
+      "E2 to spoon3": 4,
+      "fork3 to spoon3": 1,
+      "E1 to fork4": 1,
+      "cup1 to spoon4": 1
+     }
+    },
+    "K2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.14,
+      "wv2": 16.5,
+      "coherent": 0.105,
+      "incoherent": 0.105,
+      "tags": 53.08
+     },
+     "answers": {
+      "fork4": 5,
+      "E2": 98,
+      "spoon3": 14,
+      "spoon2": 1,
+      "E1": 36,
+      "cup1": 26,
+      "fork3": 9,
+      "spoon4": 11
+     },
+     "through": {
+      "correspondence": 170,
+      "default": 24,
+      "group": 4,
+      "blocked": 2
+     },
+     "codelets": 77.9,
+     "capped": 0,
+     "literal": 26,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "S5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.155,
+      "wv2": 17.5,
+      "coherent": 0.12,
+      "incoherent": 0.105,
+      "tags": 53.015
+     },
+     "answers": {
+      "fork4": 5,
+      "E2": 99,
+      "spoon3": 14,
+      "spoon2": 1,
+      "E1": 36,
+      "cup1": 24,
+      "fork3": 9,
+      "spoon4": 11,
+      "knife2": 1
+     },
+     "through": {
+      "correspondence": 172,
+      "default": 24,
+      "group": 4
+     },
+     "codelets": 78.0,
+     "capped": 0,
+     "literal": 24,
+     "paired_differ": 2,
+     "moved": {
+      "cup1 to knife2": 1,
+      "cup1 to E2": 1
+     }
+    },
+    "C4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.14,
+      "wv2": 16.5,
+      "coherent": 0.105,
+      "incoherent": 0.105,
+      "tags": 53.075
+     },
+     "answers": {
+      "fork4": 5,
+      "E2": 98,
+      "spoon3": 14,
+      "spoon2": 1,
+      "E1": 36,
+      "cup1": 26,
+      "fork3": 9,
+      "spoon4": 11
+     },
+     "through": {
+      "correspondence": 170,
+      "default": 24,
+      "group": 4,
+      "blocked": 2
+     },
+     "codelets": 77.8,
+     "capped": 0,
+     "literal": 26,
+     "paired_differ": 0,
+     "moved": {}
+    }
+   }
+  },
+  {
+   "problem": "blockage-06",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 0.99,
+     "wv2": 4.0,
+     "coherent": 0.01,
+     "incoherent": 0.03,
+     "tags": 17.17
+    },
+    "answers": {
+     "E2": 80,
+     "E1": 86,
+     "E3": 18,
+     "small-glass2": 7,
+     "small-glass4": 9
+    },
+    "through": {
+     "correspondence": 182,
+     "default": 18
+    },
+    "codelets": 66.7,
+    "capped": 0,
+    "literal": 18
+   },
+   "oracle": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.015,
+     "wv2": 7.0,
+     "coherent": 0.015,
+     "incoherent": 0.055,
+     "tags": 18.615
+    },
+    "answers": {
+     "E1": 67,
+     "E2": 98,
+     "E3": 19,
+     "small-glass2": 7,
+     "small-glass4": 9
+    },
+    "through": {
+     "correspondence": 181,
+     "default": 17,
+     "blocked": 2
+    },
+    "codelets": 65.8,
+    "capped": 0,
+    "literal": 19
+   },
+   "oracle_tv": 0.095,
+   "roles_read": {
+    "runs": 200,
+    "hand_read": 26,
+    "present": {
+     "COLUMN": 98.5,
+     "CORNER": 82.5,
+     "COUNTERPART": 23.0,
+     "ECHO": 14.5,
+     "FIGURE": 19.0,
+     "GAP": 21.5,
+     "GROUND": 36.0,
+     "LONER": 15.0,
+     "MEMBER": 98.0,
+     "MIDLINE": 91.5,
+     "MIRROR_IMAGE": 86.5,
+     "POINT_IMAGE": 31.5,
+     "ROW": 95.0,
+     "SYMMETRY_AXIS": 4.0
+    },
+    "missed": 0.492,
+    "extra": 0.079,
+    "missed_most": [
+     "small-glass2 CORNER 182",
+     "small-glass4 CORNER 182",
+     "cup1 LONER 170",
+     "cup1 FIGURE 162",
+     "small-glass2 ROW 156",
+     "small-glass4 ROW 153",
+     "small-glass2 MEMBER 131",
+     "small-glass2 COLUMN 130"
+    ]
+   },
+   "no_break": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 0.995,
+     "wv2": 4.0,
+     "coherent": 0.01,
+     "incoherent": 0.03,
+     "tags": 18.485
+    },
+    "answers": {
+     "E2": 86,
+     "E1": 85,
+     "small-glass2": 5,
+     "small-glass4": 9,
+     "E3": 15
+    },
+    "through": {
+     "correspondence": 185,
+     "default": 15
+    },
+    "codelets": 66.8,
+    "capped": 0,
+    "literal": 15,
+    "paired_differ": 16,
+    "moved": {
+     "E3 to E2": 1,
+     "E1 to E2": 7,
+     "E2 to small-glass4": 1,
+     "E3 to E1": 2,
+     "small-glass2 to E1": 1,
+     "small-glass4 to E1": 1,
+     "E2 to E1": 2,
+     "small-glass2 to E2": 1
+    }
+   },
+   "lesions": {
+    "C1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.96,
+      "wv2": 1.0,
+      "coherent": 0.0,
+      "incoherent": 0.01,
+      "tags": 18.08
+     },
+     "answers": {
+      "E2": 92,
+      "E1": 78,
+      "small-glass2": 7,
+      "small-glass4": 12,
+      "E3": 11
+     },
+     "through": {
+      "correspondence": 189,
+      "default": 11
+     },
+     "codelets": 65.3,
+     "capped": 0,
+     "literal": 11,
+     "paired_differ": 90,
+     "moved": {
+      "E3 to small-glass2": 3,
+      "E1 to E2": 35,
+      "E1 to small-glass4": 5,
+      "E2 to E1": 28,
+      "E3 to E1": 2,
+      "small-glass4 to small-glass2": 2,
+      "small-glass2 to E2": 3,
+      "E2 to E3": 2,
+      "E2 to small-glass4": 1,
+      "E3 to E2": 3,
+      "E3 to small-glass4": 1,
+      "small-glass4 to E1": 1,
+      "small-glass4 to E2": 2,
+      "small-glass2 to small-glass4": 1,
+      "small-glass2 to E1": 1
+     }
+    },
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.995,
+      "wv2": 4.0,
+      "coherent": 0.005,
+      "incoherent": 0.035,
+      "tags": 17.25
+     },
+     "answers": {
+      "E1": 82,
+      "E3": 15,
+      "E2": 84,
+      "small-glass2": 9,
+      "small-glass4": 10
+     },
+     "through": {
+      "correspondence": 185,
+      "default": 15
+     },
+     "codelets": 65.9,
+     "capped": 0,
+     "literal": 15,
+     "paired_differ": 60,
+     "moved": {
+      "E2 to E1": 18,
+      "E1 to E2": 23,
+      "small-glass4 to small-glass2": 2,
+      "E1 to small-glass2": 2,
+      "E3 to E1": 3,
+      "small-glass2 to E3": 1,
+      "E3 to E2": 2,
+      "E2 to small-glass4": 2,
+      "small-glass2 to small-glass4": 1,
+      "E2 to E3": 1,
+      "E3 to small-glass2": 1,
+      "small-glass2 to E2": 1,
+      "small-glass2 to E1": 1,
+      "E2 to small-glass2": 1,
+      "E1 to E3": 1
+     }
+    },
+    "C5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.99,
+      "wv2": 4.0,
+      "coherent": 0.005,
+      "incoherent": 0.035,
+      "tags": 17.175
+     },
+     "answers": {
+      "E2": 79,
+      "E1": 85,
+      "E3": 17,
+      "small-glass2": 8,
+      "small-glass4": 11
+     },
+     "through": {
+      "correspondence": 183,
+      "default": 16,
+      "blocked": 1
+     },
+     "codelets": 66.4,
+     "capped": 0,
+     "literal": 17,
+     "paired_differ": 3,
+     "moved": {
+      "E2 to small-glass2": 1,
+      "E1 to small-glass4": 1,
+      "E3 to small-glass4": 1
+     }
+    },
+    "C3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.99,
+      "wv2": 4.0,
+      "coherent": 0.01,
+      "incoherent": 0.03,
+      "tags": 17.17
+     },
+     "answers": {
+      "E2": 80,
+      "E1": 86,
+      "E3": 18,
+      "small-glass2": 7,
+      "small-glass4": 9
+     },
+     "through": {
+      "correspondence": 182,
+      "default": 18
+     },
+     "codelets": 66.7,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "C2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.985,
+      "wv2": 3.5,
+      "coherent": 0.01,
+      "incoherent": 0.025,
+      "tags": 17.265
+     },
+     "answers": {
+      "E2": 77,
+      "E1": 88,
+      "E3": 18,
+      "small-glass2": 7,
+      "small-glass4": 10
+     },
+     "through": {
+      "correspondence": 182,
+      "default": 17,
+      "blocked": 1
+     },
+     "codelets": 66.8,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 5,
+     "moved": {
+      "E1 to small-glass4": 1,
+      "E2 to E1": 2,
+      "small-glass4 to E1": 1,
+      "E2 to small-glass4": 1
+     }
+    },
+    "K1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.01,
+      "wv2": 5.0,
+      "coherent": 0.01,
+      "incoherent": 0.04,
+      "tags": 16.965
+     },
+     "answers": {
+      "E2": 86,
+      "E1": 79,
+      "E3": 17,
+      "small-glass2": 6,
+      "small-glass4": 12
+     },
+     "through": {
+      "correspondence": 183,
+      "default": 17
+     },
+     "codelets": 66.8,
+     "capped": 0,
+     "literal": 17,
+     "paired_differ": 26,
+     "moved": {
+      "E3 to E1": 1,
+      "E1 to E3": 3,
+      "E1 to E2": 10,
+      "E2 to E1": 4,
+      "E3 to E2": 1,
+      "small-glass2 to small-glass4": 1,
+      "E3 to small-glass4": 1,
+      "small-glass4 to E1": 1,
+      "small-glass2 to E2": 1,
+      "E2 to small-glass4": 2,
+      "E3 to small-glass2": 1
+     }
+    },
+    "L2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.985,
+      "wv2": 5.5,
+      "coherent": 0.0,
+      "incoherent": 0.055,
+      "tags": 14.04
+     },
+     "answers": {
+      "E2": 84,
+      "small-glass4": 15,
+      "E3": 16,
+      "E1": 79,
+      "small-glass2": 6
+     },
+     "through": {
+      "correspondence": 184,
+      "default": 15,
+      "blocked": 1
+     },
+     "codelets": 64.7,
+     "capped": 0,
+     "literal": 16,
+     "paired_differ": 119,
+     "moved": {
+      "E1 to small-glass4": 8,
+      "E2 to E1": 31,
+      "small-glass2 to E2": 1,
+      "E1 to E2": 36,
+      "E2 to small-glass2": 3,
+      "E2 to small-glass4": 3,
+      "small-glass4 to E1": 5,
+      "E1 to E3": 7,
+      "E3 to small-glass4": 1,
+      "small-glass2 to E3": 1,
+      "E2 to E3": 2,
+      "E3 to E2": 5,
+      "small-glass4 to small-glass2": 1,
+      "E3 to small-glass2": 1,
+      "E3 to E1": 6,
+      "small-glass4 to E2": 1,
+      "small-glass2 to E1": 3,
+      "small-glass4 to E3": 1,
+      "E1 to small-glass2": 1,
+      "small-glass2 to small-glass4": 2
+     }
+    },
+    "A2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.99,
+      "wv2": 4.0,
+      "coherent": 0.01,
+      "incoherent": 0.03,
+      "tags": 17.17
+     },
+     "answers": {
+      "E2": 80,
+      "E1": 86,
+      "E3": 18,
+      "small-glass2": 7,
+      "small-glass4": 9
+     },
+     "through": {
+      "correspondence": 182,
+      "default": 18
+     },
+     "codelets": 66.7,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "C7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.98,
+      "wv2": 3.0,
+      "coherent": 0.01,
+      "incoherent": 0.02,
+      "tags": 17.215
+     },
+     "answers": {
+      "E2": 78,
+      "E1": 84,
+      "E3": 19,
+      "small-glass2": 10,
+      "small-glass4": 9
+     },
+     "through": {
+      "correspondence": 181,
+      "default": 19
+     },
+     "codelets": 66.8,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 7,
+     "moved": {
+      "E1 to small-glass2": 3,
+      "small-glass4 to small-glass2": 1,
+      "E2 to E3": 1,
+      "small-glass2 to small-glass4": 1,
+      "E2 to E1": 1
+     }
+    },
+    "S2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.975,
+      "wv2": 3.5,
+      "coherent": 0.02,
+      "incoherent": 0.015,
+      "tags": 16.945
+     },
+     "answers": {
+      "E2": 78,
+      "E1": 88,
+      "E3": 19,
+      "small-glass4": 6,
+      "small-glass2": 9
+     },
+     "through": {
+      "correspondence": 181,
+      "default": 19
+     },
+     "codelets": 66.8,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 24,
+     "moved": {
+      "small-glass2 to E2": 2,
+      "E1 to E3": 2,
+      "E1 to E2": 1,
+      "small-glass4 to E1": 2,
+      "small-glass2 to E1": 1,
+      "E1 to small-glass2": 3,
+      "E2 to E3": 3,
+      "E3 to small-glass2": 1,
+      "E3 to E2": 1,
+      "small-glass4 to small-glass2": 1,
+      "small-glass4 to E2": 1,
+      "E2 to small-glass4": 1,
+      "E2 to E1": 3,
+      "E3 to E1": 2
+     }
+    },
+    "L3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.98,
+      "wv2": 4.5,
+      "coherent": 0.01,
+      "incoherent": 0.035,
+      "tags": 16.21
+     },
+     "answers": {
+      "E2": 71,
+      "E1": 92,
+      "small-glass4": 7,
+      "small-glass2": 11,
+      "E3": 19
+     },
+     "through": {
+      "correspondence": 181,
+      "default": 18,
+      "blocked": 1
+     },
+     "codelets": 66.0,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 99,
+     "moved": {
+      "E3 to E1": 6,
+      "E1 to E2": 27,
+      "E2 to E1": 30,
+      "E1 to small-glass4": 5,
+      "small-glass2 to E1": 5,
+      "E1 to small-glass2": 2,
+      "E2 to small-glass4": 2,
+      "small-glass4 to E1": 4,
+      "E1 to E3": 5,
+      "E2 to E3": 3,
+      "E3 to E2": 1,
+      "E2 to small-glass2": 3,
+      "small-glass4 to small-glass2": 5,
+      "small-glass2 to E2": 1
+     }
+    },
+    "L4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.0,
+      "wv2": 5.0,
+      "coherent": 0.01,
+      "incoherent": 0.04,
+      "tags": 16.98
+     },
+     "answers": {
+      "E2": 79,
+      "E1": 88,
+      "E3": 17,
+      "small-glass4": 8,
+      "small-glass2": 8
+     },
+     "through": {
+      "correspondence": 183,
+      "default": 17
+     },
+     "codelets": 67.0,
+     "capped": 0,
+     "literal": 17,
+     "paired_differ": 21,
+     "moved": {
+      "small-glass2 to E1": 1,
+      "E1 to small-glass4": 2,
+      "E1 to E2": 2,
+      "E2 to E3": 1,
+      "small-glass4 to E1": 3,
+      "E3 to small-glass4": 2,
+      "small-glass4 to small-glass2": 1,
+      "E1 to small-glass2": 1,
+      "E2 to small-glass2": 2,
+      "small-glass4 to E2": 1,
+      "small-glass2 to E2": 2,
+      "E2 to E1": 3
+     }
+    },
+    "L5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.99,
+      "wv2": 4.0,
+      "coherent": 0.01,
+      "incoherent": 0.03,
+      "tags": 17.17
+     },
+     "answers": {
+      "E2": 80,
+      "E1": 86,
+      "E3": 18,
+      "small-glass2": 7,
+      "small-glass4": 9
+     },
+     "through": {
+      "correspondence": 182,
+      "default": 18
+     },
+     "codelets": 66.7,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "A4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.985,
+      "wv2": 3.0,
+      "coherent": 0.01,
+      "incoherent": 0.02,
+      "tags": 17.27
+     },
+     "answers": {
+      "E2": 76,
+      "E1": 86,
+      "E3": 20,
+      "small-glass4": 10,
+      "small-glass2": 8
+     },
+     "through": {
+      "correspondence": 180,
+      "default": 18,
+      "blocked": 2
+     },
+     "codelets": 67.0,
+     "capped": 0,
+     "literal": 20,
+     "paired_differ": 23,
+     "moved": {
+      "small-glass2 to E2": 2,
+      "E1 to E3": 2,
+      "E2 to E3": 3,
+      "E1 to E2": 1,
+      "small-glass4 to E1": 1,
+      "E3 to small-glass2": 2,
+      "E3 to small-glass4": 1,
+      "E2 to small-glass4": 1,
+      "small-glass4 to small-glass2": 1,
+      "E1 to small-glass2": 1,
+      "E3 to E1": 1,
+      "E2 to small-glass2": 2,
+      "small-glass4 to E3": 1,
+      "small-glass2 to small-glass4": 2,
+      "E2 to E1": 1,
+      "small-glass2 to E1": 1
+     }
+    },
+    "A5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.985,
+      "wv2": 3.0,
+      "coherent": 0.0,
+      "incoherent": 0.03,
+      "tags": 16.425
+     },
+     "answers": {
+      "E2": 77,
+      "E1": 89,
+      "E3": 14,
+      "small-glass4": 13,
+      "small-glass2": 7
+     },
+     "through": {
+      "correspondence": 186,
+      "default": 14
+     },
+     "codelets": 66.1,
+     "capped": 0,
+     "literal": 14,
+     "paired_differ": 51,
+     "moved": {
+      "E1 to E2": 6,
+      "E3 to E1": 4,
+      "small-glass2 to E2": 2,
+      "E1 to E3": 3,
+      "E1 to small-glass4": 2,
+      "E2 to E1": 5,
+      "small-glass4 to small-glass2": 3,
+      "small-glass2 to E3": 1,
+      "E2 to small-glass4": 5,
+      "E2 to E3": 2,
+      "E3 to small-glass4": 4,
+      "small-glass4 to E1": 3,
+      "small-glass4 to E2": 1,
+      "small-glass2 to E1": 2,
+      "E2 to small-glass2": 3,
+      "E3 to E2": 3,
+      "small-glass4 to E3": 1,
+      "small-glass2 to small-glass4": 1
+     }
+    },
+    "A6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.005,
+      "wv2": 5.5,
+      "coherent": 0.01,
+      "incoherent": 0.045,
+      "tags": 16.97
+     },
+     "answers": {
+      "E2": 84,
+      "E1": 89,
+      "E3": 15,
+      "small-glass2": 5,
+      "small-glass4": 7
+     },
+     "through": {
+      "correspondence": 185,
+      "default": 15
+     },
+     "codelets": 66.1,
+     "capped": 0,
+     "literal": 15,
+     "paired_differ": 20,
+     "moved": {
+      "E1 to E2": 3,
+      "small-glass4 to small-glass2": 1,
+      "small-glass4 to E1": 2,
+      "E3 to E1": 2,
+      "small-glass2 to E1": 1,
+      "E1 to small-glass2": 1,
+      "E3 to small-glass4": 1,
+      "E3 to E2": 2,
+      "E2 to E1": 3,
+      "small-glass2 to E3": 1,
+      "small-glass2 to E2": 2,
+      "E1 to E3": 1
+     }
+    },
+    "A7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.99,
+      "wv2": 4.0,
+      "coherent": 0.01,
+      "incoherent": 0.03,
+      "tags": 17.17
+     },
+     "answers": {
+      "E2": 80,
+      "E1": 86,
+      "E3": 18,
+      "small-glass2": 7,
+      "small-glass4": 9
+     },
+     "through": {
+      "correspondence": 182,
+      "default": 18
+     },
+     "codelets": 66.7,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "K2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.99,
+      "wv2": 4.0,
+      "coherent": 0.01,
+      "incoherent": 0.03,
+      "tags": 17.17
+     },
+     "answers": {
+      "E2": 80,
+      "E1": 86,
+      "E3": 18,
+      "small-glass2": 7,
+      "small-glass4": 9
+     },
+     "through": {
+      "correspondence": 182,
+      "default": 18
+     },
+     "codelets": 66.7,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "S5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.99,
+      "wv2": 4.0,
+      "coherent": 0.01,
+      "incoherent": 0.03,
+      "tags": 17.17
+     },
+     "answers": {
+      "E2": 80,
+      "E1": 86,
+      "E3": 18,
+      "small-glass2": 7,
+      "small-glass4": 9
+     },
+     "through": {
+      "correspondence": 182,
+      "default": 18
+     },
+     "codelets": 66.7,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "C4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.99,
+      "wv2": 4.0,
+      "coherent": 0.01,
+      "incoherent": 0.03,
+      "tags": 17.17
+     },
+     "answers": {
+      "E2": 80,
+      "E1": 86,
+      "E3": 18,
+      "small-glass2": 7,
+      "small-glass4": 9
+     },
+     "through": {
+      "correspondence": 182,
+      "default": 18
+     },
+     "codelets": 66.7,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 0,
+     "moved": {}
+    }
+   }
+  },
+  {
+   "problem": "buridan-01",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.2,
+     "wv2": 22.5,
+     "coherent": 0.155,
+     "incoherent": 0.12,
+     "tags": 33.05
+    },
+    "answers": {
+     "E2": 39,
+     "cup4": 12,
+     "E1": 62,
+     "small-glass2": 10,
+     "spoon1": 41,
+     "cup3": 24,
+     "small-glass1": 12
+    },
+    "through": {
+     "correspondence": 158,
+     "default": 41,
+     "group": 1
+    },
+    "codelets": 77.6,
+    "capped": 0,
+    "literal": 41
+   },
+   "oracle": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.23,
+     "wv2": 23.5,
+     "coherent": 0.15,
+     "incoherent": 0.165,
+     "tags": 41.9
+    },
+    "answers": {
+     "E1": 65,
+     "small-glass1": 14,
+     "small-glass2": 16,
+     "cup4": 14,
+     "spoon1": 39,
+     "cup3": 18,
+     "E2": 34
+    },
+    "through": {
+     "correspondence": 160,
+     "default": 39,
+     "group": 1
+    },
+    "codelets": 79.9,
+    "capped": 0,
+    "literal": 39
+   },
+   "oracle_tv": 0.065,
+   "roles_read": {
+    "runs": 200,
+    "hand_read": 47,
+    "present": {
+     "BARRIER": 0.5,
+     "COLUMN": 100.0,
+     "CORNER": 66.0,
+     "COUNTERPART": 28.5,
+     "ECHO": 59.0,
+     "FIGURE": 98.5,
+     "GAP": 76.5,
+     "GROUND": 100.0,
+     "MEMBER": 100.0,
+     "MIDLINE": 92.5,
+     "ROW": 95.5,
+     "SIDEKICK": 18.5,
+     "TWIN": 46.5,
+     "TYPE_KEY": 1.5
+    },
+    "missed": 0.312,
+    "extra": 0.0,
+    "missed_most": [
+     "cup4 SIDEKICK 187",
+     "small-glass1 SIDEKICK 186",
+     "cup2 SIDEKICK 185",
+     "spoon1 MEMBER 146",
+     "spoon1 FIGURE 145",
+     "small-glass1 CORNER 118",
+     "small-glass2 CORNER 118",
+     "spoon2 CORNER 118"
+    ]
+   },
+   "no_break": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.215,
+     "wv2": 24.0,
+     "coherent": 0.2,
+     "incoherent": 0.1,
+     "tags": 34.215
+    },
+    "answers": {
+     "E2": 38,
+     "cup4": 11,
+     "E1": 58,
+     "small-glass2": 11,
+     "spoon1": 41,
+     "cup3": 28,
+     "small-glass1": 13
+    },
+    "through": {
+     "correspondence": 158,
+     "default": 41,
+     "group": 1
+    },
+    "codelets": 77.7,
+    "capped": 0,
+    "literal": 41,
+    "paired_differ": 21,
+    "moved": {
+     "spoon1 to E2": 2,
+     "E1 to cup3": 1,
+     "cup4 to cup3": 2,
+     "E1 to spoon1": 2,
+     "E2 to cup3": 3,
+     "E2 to small-glass2": 1,
+     "small-glass2 to E1": 1,
+     "cup3 to E1": 1,
+     "E1 to small-glass1": 1,
+     "E1 to E2": 2,
+     "E2 to E1": 1,
+     "cup3 to spoon1": 1,
+     "small-glass1 to small-glass2": 1,
+     "spoon1 to small-glass1": 1,
+     "E1 to cup4": 1
+    }
+   },
+   "penalty_scan": {
+    "40": {
+     "perceived": {
+      "runs": 200,
+      "mechanism": {
+       "wv_mean": 1.2,
+       "wv2": 22.5,
+       "coherent": 0.155,
+       "incoherent": 0.12,
+       "tags": 33.05
+      },
+      "answers": {
+       "E2": 39,
+       "cup4": 12,
+       "E1": 62,
+       "small-glass2": 10,
+       "spoon1": 41,
+       "cup3": 24,
+       "small-glass1": 12
+      },
+      "through": {
+       "correspondence": 158,
+       "default": 41,
+       "group": 1
+      },
+      "codelets": 77.6,
+      "capped": 0,
+      "literal": 41
+     },
+     "oracle": {
+      "runs": 200,
+      "mechanism": {
+       "wv_mean": 1.23,
+       "wv2": 23.5,
+       "coherent": 0.15,
+       "incoherent": 0.165,
+       "tags": 41.9
+      },
+      "answers": {
+       "E1": 65,
+       "small-glass1": 14,
+       "small-glass2": 16,
+       "cup4": 14,
+       "spoon1": 39,
+       "cup3": 18,
+       "E2": 34
+      },
+      "through": {
+       "correspondence": 160,
+       "default": 39,
+       "group": 1
+      },
+      "codelets": 79.9,
+      "capped": 0,
+      "literal": 39
+     }
+    },
+    "300": {
+     "perceived": {
+      "runs": 200,
+      "mechanism": {
+       "wv_mean": 1.2,
+       "wv2": 22.5,
+       "coherent": 0.185,
+       "incoherent": 0.09,
+       "tags": 33.05
+      },
+      "answers": {
+       "E2": 40,
+       "cup4": 11,
+       "cup3": 25,
+       "E1": 60,
+       "small-glass2": 10,
+       "spoon1": 42,
+       "small-glass1": 12
+      },
+      "through": {
+       "correspondence": 157,
+       "default": 42,
+       "group": 1
+      },
+      "codelets": 77.6,
+      "capped": 0,
+      "literal": 42
+     },
+     "oracle": {
+      "runs": 200,
+      "mechanism": {
+       "wv_mean": 1.22,
+       "wv2": 22.5,
+       "coherent": 0.165,
+       "incoherent": 0.14,
+       "tags": 41.905
+      },
+      "answers": {
+       "E1": 62,
+       "small-glass1": 14,
+       "small-glass2": 16,
+       "cup4": 14,
+       "E2": 35,
+       "spoon1": 39,
+       "cup3": 20
+      },
+      "through": {
+       "correspondence": 160,
+       "default": 39,
+       "group": 1
+      },
+      "codelets": 79.9,
+      "capped": 0,
+      "literal": 39
+     }
+    }
+   },
+   "lesions": {
+    "C1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.91,
+      "wv2": 1.5,
+      "coherent": 0.015,
+      "incoherent": 0.0,
+      "tags": 33.735
+     },
+     "answers": {
+      "cup3": 25,
+      "spoon1": 21,
+      "cup4": 16,
+      "E2": 46,
+      "E1": 64,
+      "small-glass2": 13,
+      "small-glass1": 15
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "group": 1
+     },
+     "codelets": 75.7,
+     "capped": 0,
+     "literal": 21,
+     "paired_differ": 87,
+     "moved": {
+      "E2 to cup3": 2,
+      "E2 to spoon1": 5,
+      "cup4 to cup3": 1,
+      "E1 to cup4": 5,
+      "cup3 to E1": 2,
+      "spoon1 to small-glass1": 3,
+      "spoon1 to cup4": 2,
+      "spoon1 to cup3": 4,
+      "spoon1 to E2": 11,
+      "E1 to E2": 6,
+      "cup4 to E2": 1,
+      "E1 to small-glass1": 5,
+      "small-glass2 to E1": 1,
+      "E1 to spoon1": 2,
+      "cup3 to small-glass2": 1,
+      "cup3 to spoon1": 1,
+      "small-glass2 to E2": 2,
+      "small-glass1 to E2": 1,
+      "E2 to E1": 5,
+      "E2 to small-glass2": 2,
+      "spoon1 to E1": 7,
+      "spoon1 to small-glass2": 3,
+      "small-glass1 to E1": 3,
+      "small-glass2 to spoon1": 1,
+      "cup4 to E1": 3,
+      "cup3 to E2": 2,
+      "E2 to cup4": 2,
+      "E1 to small-glass2": 1,
+      "small-glass2 to small-glass1": 1,
+      "small-glass1 to small-glass2": 1,
+      "small-glass1 to spoon1": 1
+     }
+    },
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.2,
+      "wv2": 22.5,
+      "coherent": 0.155,
+      "incoherent": 0.12,
+      "tags": 33.05
+     },
+     "answers": {
+      "E2": 39,
+      "cup4": 12,
+      "E1": 62,
+      "small-glass2": 10,
+      "spoon1": 41,
+      "cup3": 24,
+      "small-glass1": 12
+     },
+     "through": {
+      "correspondence": 158,
+      "default": 41,
+      "group": 1
+     },
+     "codelets": 77.6,
+     "capped": 0,
+     "literal": 41,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "C5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.16,
+      "wv2": 20.0,
+      "coherent": 0.125,
+      "incoherent": 0.095,
+      "tags": 32.72
+     },
+     "answers": {
+      "E2": 36,
+      "cup4": 12,
+      "spoon1": 44,
+      "E1": 63,
+      "small-glass2": 9,
+      "cup3": 23,
+      "small-glass1": 13
+     },
+     "through": {
+      "correspondence": 153,
+      "default": 44,
+      "group": 3
+     },
+     "codelets": 76.8,
+     "capped": 0,
+     "literal": 44,
+     "paired_differ": 29,
+     "moved": {
+      "E1 to spoon1": 4,
+      "small-glass2 to E1": 2,
+      "spoon1 to small-glass2": 1,
+      "E2 to spoon1": 1,
+      "E1 to small-glass1": 3,
+      "cup4 to E1": 1,
+      "spoon1 to E1": 3,
+      "cup3 to E1": 1,
+      "E2 to cup3": 1,
+      "cup3 to spoon1": 1,
+      "E2 to E1": 3,
+      "small-glass2 to spoon1": 1,
+      "spoon1 to E2": 2,
+      "cup4 to spoon1": 1,
+      "E1 to cup4": 2,
+      "small-glass1 to spoon1": 1,
+      "small-glass1 to small-glass2": 1
+     }
+    },
+    "C3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.2,
+      "wv2": 22.5,
+      "coherent": 0.155,
+      "incoherent": 0.12,
+      "tags": 33.05
+     },
+     "answers": {
+      "E2": 39,
+      "cup4": 12,
+      "E1": 62,
+      "small-glass2": 10,
+      "spoon1": 41,
+      "cup3": 24,
+      "small-glass1": 12
+     },
+     "through": {
+      "correspondence": 158,
+      "default": 41,
+      "group": 1
+     },
+     "codelets": 77.6,
+     "capped": 0,
+     "literal": 41,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "C2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.205,
+      "wv2": 23.5,
+      "coherent": 0.175,
+      "incoherent": 0.13,
+      "tags": 33.035
+     },
+     "answers": {
+      "E1": 62,
+      "E2": 38,
+      "cup4": 13,
+      "small-glass2": 8,
+      "spoon1": 45,
+      "cup3": 23,
+      "small-glass1": 11
+     },
+     "through": {
+      "correspondence": 154,
+      "default": 45,
+      "group": 1
+     },
+     "codelets": 77.5,
+     "capped": 0,
+     "literal": 45,
+     "paired_differ": 17,
+     "moved": {
+      "E2 to E1": 2,
+      "small-glass2 to E1": 2,
+      "E1 to spoon1": 3,
+      "E2 to spoon1": 1,
+      "E1 to cup4": 1,
+      "cup3 to spoon1": 2,
+      "small-glass1 to spoon1": 1,
+      "spoon1 to cup3": 2,
+      "spoon1 to E1": 1,
+      "cup3 to E2": 1,
+      "E1 to E2": 1
+     }
+    },
+    "K1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.195,
+      "wv2": 21.5,
+      "coherent": 0.155,
+      "incoherent": 0.12,
+      "tags": 32.215
+     },
+     "answers": {
+      "E1": 62,
+      "E2": 38,
+      "spoon1": 43,
+      "cup3": 24,
+      "small-glass2": 8,
+      "cup4": 10,
+      "small-glass1": 15
+     },
+     "through": {
+      "correspondence": 156,
+      "default": 43,
+      "group": 1
+     },
+     "codelets": 77.1,
+     "capped": 0,
+     "literal": 43,
+     "paired_differ": 33,
+     "moved": {
+      "E2 to E1": 3,
+      "cup4 to spoon1": 1,
+      "E2 to cup3": 1,
+      "cup3 to E1": 2,
+      "E1 to cup3": 2,
+      "small-glass2 to E1": 1,
+      "E1 to spoon1": 5,
+      "cup3 to spoon1": 2,
+      "cup4 to cup3": 1,
+      "spoon1 to E1": 3,
+      "small-glass2 to spoon1": 1,
+      "cup4 to small-glass1": 1,
+      "spoon1 to cup3": 1,
+      "small-glass1 to cup4": 1,
+      "E2 to cup4": 1,
+      "spoon1 to small-glass1": 1,
+      "E1 to E2": 1,
+      "cup4 to E2": 1,
+      "spoon1 to E2": 2,
+      "cup3 to small-glass1": 1,
+      "E1 to small-glass1": 1
+     }
+    },
+    "L2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.275,
+      "wv2": 28.5,
+      "coherent": 0.245,
+      "incoherent": 0.14,
+      "tags": 23.405
+     },
+     "answers": {
+      "E1": 75,
+      "cup4": 17,
+      "cup3": 15,
+      "small-glass2": 8,
+      "E2": 41,
+      "spoon1": 35,
+      "small-glass1": 9
+     },
+     "through": {
+      "correspondence": 164,
+      "default": 35,
+      "group": 1
+     },
+     "codelets": 77.1,
+     "capped": 0,
+     "literal": 35,
+     "paired_differ": 147,
+     "moved": {
+      "E2 to E1": 17,
+      "E1 to cup3": 3,
+      "small-glass2 to E1": 4,
+      "E1 to cup4": 9,
+      "spoon1 to small-glass2": 2,
+      "cup3 to E1": 8,
+      "cup3 to E2": 4,
+      "E1 to E2": 12,
+      "small-glass2 to E2": 4,
+      "E2 to spoon1": 7,
+      "spoon1 to E1": 13,
+      "E1 to small-glass2": 2,
+      "cup4 to E2": 3,
+      "spoon1 to cup3": 4,
+      "cup4 to spoon1": 3,
+      "small-glass2 to spoon1": 1,
+      "E1 to small-glass1": 5,
+      "spoon1 to cup4": 4,
+      "E1 to spoon1": 7,
+      "spoon1 to E2": 7,
+      "small-glass1 to E1": 4,
+      "cup4 to E1": 5,
+      "cup3 to spoon1": 3,
+      "small-glass1 to cup3": 1,
+      "small-glass2 to cup4": 1,
+      "E2 to cup3": 2,
+      "E2 to small-glass2": 1,
+      "cup3 to small-glass2": 2,
+      "E2 to cup4": 2,
+      "small-glass1 to spoon1": 3,
+      "small-glass1 to E2": 1,
+      "cup3 to small-glass1": 2,
+      "small-glass1 to small-glass2": 1
+     }
+    },
+    "A2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.2,
+      "wv2": 23.5,
+      "coherent": 0.175,
+      "incoherent": 0.12,
+      "tags": 32.65
+     },
+     "answers": {
+      "E2": 35,
+      "cup4": 14,
+      "E1": 63,
+      "small-glass2": 10,
+      "cup3": 26,
+      "spoon1": 41,
+      "small-glass1": 11
+     },
+     "through": {
+      "correspondence": 159,
+      "default": 41
+     },
+     "codelets": 77.1,
+     "capped": 0,
+     "literal": 41,
+     "paired_differ": 20,
+     "moved": {
+      "spoon1 to small-glass2": 1,
+      "E1 to cup3": 1,
+      "E2 to E1": 2,
+      "spoon1 to small-glass1": 1,
+      "small-glass2 to spoon1": 1,
+      "E1 to spoon1": 3,
+      "E2 to cup4": 1,
+      "spoon1 to E1": 2,
+      "small-glass1 to E1": 1,
+      "small-glass1 to cup4": 2,
+      "E2 to small-glass1": 2,
+      "cup4 to E2": 1,
+      "spoon1 to cup3": 1,
+      "small-glass1 to spoon1": 1
+     }
+    },
+    "C7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.205,
+      "wv2": 22.5,
+      "coherent": 0.19,
+      "incoherent": 0.11,
+      "tags": 32.555
+     },
+     "answers": {
+      "spoon1": 41,
+      "E2": 38,
+      "cup4": 17,
+      "E1": 55,
+      "cup3": 23,
+      "small-glass1": 16,
+      "small-glass2": 10
+     },
+     "through": {
+      "default": 41,
+      "correspondence": 159
+     },
+     "codelets": 76.0,
+     "capped": 0,
+     "literal": 41,
+     "paired_differ": 56,
+     "moved": {
+      "E2 to spoon1": 4,
+      "E1 to spoon1": 4,
+      "small-glass2 to spoon1": 1,
+      "spoon1 to E1": 5,
+      "small-glass2 to E2": 4,
+      "E2 to E1": 2,
+      "E1 to E2": 5,
+      "small-glass2 to small-glass1": 1,
+      "E1 to small-glass1": 5,
+      "small-glass1 to small-glass2": 2,
+      "E2 to small-glass1": 1,
+      "small-glass1 to E2": 1,
+      "spoon1 to E2": 2,
+      "cup3 to spoon1": 1,
+      "E2 to cup3": 1,
+      "E2 to cup4": 4,
+      "cup3 to small-glass1": 1,
+      "E2 to small-glass2": 2,
+      "cup3 to small-glass2": 2,
+      "E1 to small-glass2": 1,
+      "cup3 to E2": 1,
+      "spoon1 to cup3": 2,
+      "small-glass2 to E1": 1,
+      "small-glass1 to E1": 1,
+      "spoon1 to cup4": 1,
+      "E1 to cup3": 1
+     }
+    },
+    "S2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.29,
+      "wv2": 30.5,
+      "coherent": 0.275,
+      "incoherent": 0.15,
+      "tags": 32.04
+     },
+     "answers": {
+      "cup3": 21,
+      "spoon1": 42,
+      "cup4": 13,
+      "E2": 35,
+      "E1": 65,
+      "small-glass2": 11,
+      "small-glass1": 13
+     },
+     "through": {
+      "correspondence": 158,
+      "default": 42
+     },
+     "codelets": 77.0,
+     "capped": 0,
+     "literal": 42,
+     "paired_differ": 88,
+     "moved": {
+      "E2 to cup3": 3,
+      "E2 to spoon1": 4,
+      "E1 to spoon1": 10,
+      "spoon1 to E1": 12,
+      "E1 to E2": 6,
+      "small-glass2 to cup4": 1,
+      "E1 to cup4": 1,
+      "E2 to E1": 2,
+      "cup4 to E1": 4,
+      "spoon1 to cup4": 2,
+      "spoon1 to E2": 2,
+      "small-glass2 to small-glass1": 1,
+      "E1 to cup3": 3,
+      "E1 to small-glass1": 3,
+      "cup3 to E2": 2,
+      "cup3 to E1": 5,
+      "small-glass1 to spoon1": 4,
+      "cup4 to E2": 1,
+      "small-glass2 to cup3": 1,
+      "small-glass2 to E1": 3,
+      "cup3 to cup4": 2,
+      "E2 to small-glass1": 3,
+      "small-glass1 to E1": 1,
+      "E1 to small-glass2": 1,
+      "E2 to cup4": 1,
+      "cup3 to small-glass2": 1,
+      "cup3 to spoon1": 1,
+      "spoon1 to small-glass2": 2,
+      "cup4 to small-glass2": 1,
+      "E2 to small-glass2": 2,
+      "small-glass1 to small-glass2": 1,
+      "spoon1 to cup3": 1,
+      "small-glass2 to spoon1": 1
+     }
+    },
+    "L3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.27,
+      "wv2": 26.5,
+      "coherent": 0.215,
+      "incoherent": 0.12,
+      "tags": 31.965
+     },
+     "answers": {
+      "E2": 37,
+      "spoon1": 40,
+      "E1": 57,
+      "small-glass1": 20,
+      "small-glass2": 10,
+      "cup3": 22,
+      "cup4": 14
+     },
+     "through": {
+      "correspondence": 158,
+      "default": 40,
+      "group": 2
+     },
+     "codelets": 78.5,
+     "capped": 0,
+     "literal": 40,
+     "paired_differ": 88,
+     "moved": {
+      "E2 to spoon1": 5,
+      "cup4 to E1": 2,
+      "E1 to E2": 4,
+      "E1 to small-glass1": 7,
+      "spoon1 to small-glass2": 3,
+      "cup3 to E2": 2,
+      "E2 to small-glass1": 2,
+      "E1 to spoon1": 8,
+      "spoon1 to cup3": 3,
+      "cup4 to spoon1": 2,
+      "spoon1 to E2": 6,
+      "small-glass2 to spoon1": 1,
+      "E1 to cup3": 5,
+      "cup3 to E1": 7,
+      "cup3 to cup4": 3,
+      "small-glass1 to E1": 2,
+      "E1 to small-glass2": 2,
+      "E2 to E1": 6,
+      "E2 to cup4": 3,
+      "small-glass1 to spoon1": 1,
+      "small-glass2 to small-glass1": 2,
+      "small-glass2 to E2": 2,
+      "spoon1 to E1": 4,
+      "small-glass1 to cup4": 1,
+      "E2 to cup3": 1,
+      "spoon1 to small-glass1": 1,
+      "cup4 to cup3": 1,
+      "cup4 to E2": 1,
+      "spoon1 to cup4": 1
+     }
+    },
+    "L4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.2,
+      "wv2": 22.5,
+      "coherent": 0.155,
+      "incoherent": 0.12,
+      "tags": 33.05
+     },
+     "answers": {
+      "E2": 39,
+      "cup4": 12,
+      "E1": 62,
+      "small-glass2": 10,
+      "spoon1": 41,
+      "cup3": 24,
+      "small-glass1": 12
+     },
+     "through": {
+      "correspondence": 158,
+      "default": 41,
+      "group": 1
+     },
+     "codelets": 77.6,
+     "capped": 0,
+     "literal": 41,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "L5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.2,
+      "wv2": 22.5,
+      "coherent": 0.155,
+      "incoherent": 0.12,
+      "tags": 33.05
+     },
+     "answers": {
+      "E2": 39,
+      "cup4": 12,
+      "E1": 62,
+      "small-glass2": 10,
+      "spoon1": 41,
+      "cup3": 24,
+      "small-glass1": 12
+     },
+     "through": {
+      "correspondence": 158,
+      "default": 41,
+      "group": 1
+     },
+     "codelets": 77.6,
+     "capped": 0,
+     "literal": 41,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "A4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.22,
+      "wv2": 24.5,
+      "coherent": 0.165,
+      "incoherent": 0.13,
+      "tags": 30.045
+     },
+     "answers": {
+      "E1": 64,
+      "E2": 34,
+      "cup3": 19,
+      "small-glass2": 12,
+      "cup4": 20,
+      "spoon1": 38,
+      "small-glass1": 13
+     },
+     "through": {
+      "correspondence": 160,
+      "group": 2,
+      "default": 38
+     },
+     "codelets": 75.8,
+     "capped": 0,
+     "literal": 38,
+     "paired_differ": 154,
+     "moved": {
+      "E2 to E1": 11,
+      "cup4 to cup3": 1,
+      "E1 to cup3": 5,
+      "E1 to E2": 17,
+      "small-glass2 to E1": 2,
+      "spoon1 to small-glass2": 4,
+      "cup3 to E1": 8,
+      "cup3 to cup4": 3,
+      "E2 to spoon1": 6,
+      "spoon1 to small-glass1": 3,
+      "spoon1 to E1": 8,
+      "E1 to spoon1": 9,
+      "spoon1 to cup4": 4,
+      "small-glass2 to spoon1": 3,
+      "cup4 to E1": 5,
+      "spoon1 to E2": 6,
+      "E1 to small-glass2": 4,
+      "E1 to small-glass1": 2,
+      "spoon1 to cup3": 4,
+      "cup3 to spoon1": 5,
+      "small-glass1 to E1": 8,
+      "cup3 to small-glass2": 1,
+      "cup3 to small-glass1": 3,
+      "E2 to cup3": 6,
+      "E2 to small-glass1": 3,
+      "E1 to cup4": 3,
+      "E2 to cup4": 5,
+      "small-glass1 to cup3": 2,
+      "small-glass2 to cup4": 2,
+      "E2 to small-glass2": 2,
+      "cup4 to spoon1": 3,
+      "cup3 to E2": 3,
+      "small-glass2 to small-glass1": 1,
+      "small-glass1 to E2": 1,
+      "small-glass2 to E2": 1
+     }
+    },
+    "A5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.015,
+      "wv2": 10.0,
+      "coherent": 0.095,
+      "incoherent": 0.005,
+      "tags": 27.49
+     },
+     "answers": {
+      "spoon1": 26,
+      "cup4": 25,
+      "small-glass1": 14,
+      "E1": 63,
+      "E2": 39,
+      "small-glass2": 14,
+      "cup3": 19
+     },
+     "through": {
+      "default": 26,
+      "correspondence": 173,
+      "group": 1
+     },
+     "codelets": 73.1,
+     "capped": 0,
+     "literal": 26,
+     "paired_differ": 156,
+     "moved": {
+      "E2 to spoon1": 3,
+      "E1 to small-glass1": 7,
+      "E2 to E1": 13,
+      "E1 to E2": 11,
+      "small-glass2 to cup4": 2,
+      "spoon1 to E1": 11,
+      "cup3 to small-glass2": 4,
+      "cup3 to cup4": 3,
+      "cup3 to E1": 6,
+      "spoon1 to cup4": 5,
+      "spoon1 to cup3": 5,
+      "small-glass2 to spoon1": 2,
+      "E1 to spoon1": 11,
+      "spoon1 to E2": 7,
+      "E1 to cup3": 4,
+      "small-glass2 to E2": 2,
+      "E1 to cup4": 7,
+      "cup3 to E2": 7,
+      "small-glass1 to E1": 7,
+      "small-glass2 to E1": 3,
+      "small-glass1 to spoon1": 1,
+      "E2 to cup3": 6,
+      "cup4 to E1": 3,
+      "E2 to cup4": 4,
+      "cup4 to small-glass2": 3,
+      "cup3 to spoon1": 2,
+      "E2 to small-glass2": 3,
+      "spoon1 to small-glass2": 2,
+      "spoon1 to small-glass1": 4,
+      "small-glass2 to cup3": 1,
+      "cup4 to E2": 1,
+      "cup4 to cup3": 1,
+      "E1 to small-glass2": 2,
+      "small-glass1 to E2": 2,
+      "E2 to small-glass1": 1
+     }
+    },
+    "A6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.21,
+      "wv2": 23.0,
+      "coherent": 0.145,
+      "incoherent": 0.165,
+      "tags": 31.34
+     },
+     "answers": {
+      "E2": 35,
+      "cup4": 12,
+      "E1": 68,
+      "spoon1": 42,
+      "cup3": 20,
+      "small-glass2": 12,
+      "small-glass1": 11
+     },
+     "through": {
+      "correspondence": 158,
+      "default": 41,
+      "blocked": 1
+     },
+     "codelets": 76.8,
+     "capped": 0,
+     "literal": 42,
+     "paired_differ": 56,
+     "moved": {
+      "E1 to cup4": 1,
+      "small-glass2 to spoon1": 2,
+      "spoon1 to E1": 9,
+      "E2 to E1": 5,
+      "E1 to E2": 1,
+      "cup4 to E1": 2,
+      "E1 to spoon1": 6,
+      "cup3 to spoon1": 3,
+      "cup3 to E1": 2,
+      "small-glass1 to E1": 1,
+      "E1 to small-glass2": 2,
+      "small-glass2 to E2": 1,
+      "spoon1 to E2": 5,
+      "cup4 to spoon1": 2,
+      "E2 to spoon1": 4,
+      "spoon1 to cup4": 2,
+      "E2 to cup4": 1,
+      "E1 to small-glass1": 2,
+      "E2 to small-glass2": 1,
+      "spoon1 to small-glass2": 1,
+      "small-glass1 to spoon1": 1,
+      "small-glass1 to small-glass2": 1,
+      "E1 to cup3": 1
+     }
+    },
+    "A7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.205,
+      "wv2": 23.5,
+      "coherent": 0.17,
+      "incoherent": 0.125,
+      "tags": 31.725
+     },
+     "answers": {
+      "E1": 53,
+      "spoon1": 47,
+      "cup4": 15,
+      "E2": 42,
+      "small-glass2": 8,
+      "cup3": 22,
+      "small-glass1": 13
+     },
+     "through": {
+      "correspondence": 152,
+      "default": 47,
+      "group": 1
+     },
+     "codelets": 76.1,
+     "capped": 0,
+     "literal": 47,
+     "paired_differ": 60,
+     "moved": {
+      "E2 to E1": 5,
+      "E2 to spoon1": 2,
+      "cup3 to cup4": 1,
+      "cup3 to spoon1": 2,
+      "spoon1 to small-glass2": 2,
+      "spoon1 to E1": 2,
+      "small-glass2 to cup4": 1,
+      "small-glass2 to E1": 2,
+      "E1 to small-glass1": 3,
+      "E1 to cup3": 4,
+      "spoon1 to cup4": 3,
+      "E1 to spoon1": 9,
+      "cup3 to E1": 2,
+      "E1 to E2": 7,
+      "small-glass1 to E1": 2,
+      "cup4 to E1": 2,
+      "small-glass2 to spoon1": 1,
+      "cup4 to spoon1": 2,
+      "E2 to cup3": 1,
+      "cup3 to E2": 2,
+      "spoon1 to E2": 3,
+      "E2 to cup4": 1,
+      "E1 to cup4": 1
+     }
+    },
+    "K2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.205,
+      "wv2": 22.5,
+      "coherent": 0.155,
+      "incoherent": 0.13,
+      "tags": 33.055
+     },
+     "answers": {
+      "E2": 39,
+      "cup4": 12,
+      "E1": 62,
+      "small-glass2": 10,
+      "spoon1": 41,
+      "cup3": 24,
+      "small-glass1": 12
+     },
+     "through": {
+      "correspondence": 158,
+      "default": 41,
+      "group": 1
+     },
+     "codelets": 77.7,
+     "capped": 0,
+     "literal": 41,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "S5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.2,
+      "wv2": 22.5,
+      "coherent": 0.155,
+      "incoherent": 0.12,
+      "tags": 33.05
+     },
+     "answers": {
+      "E2": 39,
+      "cup4": 12,
+      "E1": 62,
+      "small-glass2": 10,
+      "spoon1": 41,
+      "cup3": 24,
+      "small-glass1": 12
+     },
+     "through": {
+      "correspondence": 158,
+      "default": 41,
+      "group": 1
+     },
+     "codelets": 77.6,
+     "capped": 0,
+     "literal": 41,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "C4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.2,
+      "wv2": 22.5,
+      "coherent": 0.155,
+      "incoherent": 0.12,
+      "tags": 33.05
+     },
+     "answers": {
+      "E2": 39,
+      "cup4": 12,
+      "E1": 62,
+      "small-glass2": 10,
+      "spoon1": 41,
+      "cup3": 24,
+      "small-glass1": 12
+     },
+     "through": {
+      "correspondence": 158,
+      "default": 41,
+      "group": 1
+     },
+     "codelets": 77.6,
+     "capped": 0,
+     "literal": 41,
+     "paired_differ": 0,
+     "moved": {}
+    }
+   }
+  },
+  {
+   "problem": "blockage-02",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 0.945,
+     "wv2": 0.0,
+     "coherent": 0.0,
+     "incoherent": 0.0,
+     "tags": 10.325
+    },
+    "answers": {
+     "E1": 163,
+     "small-glass2": 15,
+     "E2": 22
+    },
+    "through": {
+     "correspondence": 178,
+     "default": 21,
+     "blocked": 1
+    },
+    "codelets": 57.7,
+    "capped": 0,
+    "literal": 22
+   },
+   "oracle": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 0.92,
+     "wv2": 0.0,
+     "coherent": 0.0,
+     "incoherent": 0.0,
+     "tags": 11.25
+    },
+    "answers": {
+     "E2": 27,
+     "E1": 147,
+     "small-glass2": 26
+    },
+    "through": {
+     "default": 27,
+     "correspondence": 173
+    },
+    "codelets": 58.7,
+    "capped": 0,
+    "literal": 27
+   },
+   "oracle_tv": 0.08,
+   "roles_read": {
+    "runs": 200,
+    "hand_read": 14,
+    "present": {
+     "BARRIER": 1.0,
+     "CLAIMED": 0.5,
+     "COLUMN": 99.5,
+     "CORNER": 99.0,
+     "COUNTERPART": 50.5,
+     "GAP": 22.0,
+     "LONER": 94.0,
+     "MIDLINE": 86.5,
+     "MIRROR_IMAGE": 86.0,
+     "POINT_IMAGE": 24.5,
+     "ROW": 90.0,
+     "SYMMETRY_AXIS": 1.0
+    },
+    "missed": 0.391,
+    "extra": 0.101,
+    "missed_most": [
+     "cup1 LONER 167",
+     "small-glass2 LONER 156",
+     "small-glass2 ROW 151",
+     "small-glass2 CORNER 139",
+     "small-glass2 COLUMN 136",
+     "small-glass1 MIRROR_IMAGE 83",
+     "small-glass1 ROW 65",
+     "cup1 CORNER 63"
+    ]
+   },
+   "no_break": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 0.945,
+     "wv2": 0.0,
+     "coherent": 0.0,
+     "incoherent": 0.0,
+     "tags": 10.76
+    },
+    "answers": {
+     "E1": 159,
+     "small-glass2": 18,
+     "E2": 23
+    },
+    "through": {
+     "correspondence": 177,
+     "default": 22,
+     "blocked": 1
+    },
+    "codelets": 57.8,
+    "capped": 0,
+    "literal": 23,
+    "paired_differ": 11,
+    "moved": {
+     "E2 to E1": 2,
+     "E2 to small-glass2": 2,
+     "E1 to E2": 4,
+     "small-glass2 to E2": 1,
+     "E1 to small-glass2": 2
+    }
+   },
+   "lesions": {
+    "C1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.93,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.515
+     },
+     "answers": {
+      "E1": 162,
+      "small-glass2": 18,
+      "E2": 20
+     },
+     "through": {
+      "correspondence": 180,
+      "default": 20
+     },
+     "codelets": 57.3,
+     "capped": 0,
+     "literal": 20,
+     "paired_differ": 32,
+     "moved": {
+      "E2 to E1": 10,
+      "small-glass2 to E1": 4,
+      "E1 to E2": 9,
+      "E1 to small-glass2": 6,
+      "E2 to small-glass2": 2,
+      "small-glass2 to E2": 1
+     }
+    },
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.2
+     },
+     "answers": {
+      "E1": 158,
+      "E2": 23,
+      "small-glass2": 19
+     },
+     "through": {
+      "correspondence": 177,
+      "blocked": 1,
+      "default": 22
+     },
+     "codelets": 56.6,
+     "capped": 0,
+     "literal": 23,
+     "paired_differ": 13,
+     "moved": {
+      "E1 to E2": 3,
+      "E1 to small-glass2": 5,
+      "E2 to E1": 2,
+      "small-glass2 to E1": 1,
+      "small-glass2 to E2": 1,
+      "E2 to small-glass2": 1
+     }
+    },
+    "C5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "E2": 23,
+      "small-glass2": 14
+     },
+     "through": {
+      "correspondence": 177,
+      "default": 23
+     },
+     "codelets": 57.5,
+     "capped": 0,
+     "literal": 23,
+     "paired_differ": 6,
+     "moved": {
+      "small-glass2 to E2": 3,
+      "E1 to small-glass2": 1,
+      "E2 to E1": 1,
+      "E2 to small-glass2": 1
+     }
+    },
+    "C3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 15,
+      "E2": 22
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "C2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.955,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.39
+     },
+     "answers": {
+      "E1": 165,
+      "small-glass2": 15,
+      "E2": 20
+     },
+     "through": {
+      "correspondence": 180,
+      "default": 19,
+      "blocked": 1
+     },
+     "codelets": 58.3,
+     "capped": 0,
+     "literal": 20,
+     "paired_differ": 7,
+     "moved": {
+      "small-glass2 to E1": 2,
+      "E2 to E1": 2,
+      "E1 to E2": 1,
+      "E2 to small-glass2": 1,
+      "E1 to small-glass2": 1
+     }
+    },
+    "K1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 9.89
+     },
+     "answers": {
+      "E1": 161,
+      "E2": 19,
+      "small-glass2": 20
+     },
+     "through": {
+      "correspondence": 181,
+      "default": 19
+     },
+     "codelets": 58.1,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 23,
+     "moved": {
+      "small-glass2 to E2": 2,
+      "small-glass2 to E1": 3,
+      "E2 to small-glass2": 3,
+      "E2 to E1": 5,
+      "E1 to small-glass2": 7,
+      "E1 to E2": 3
+     }
+    },
+    "L2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.935,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 8.475
+     },
+     "answers": {
+      "E1": 156,
+      "small-glass2": 17,
+      "E2": 27
+     },
+     "through": {
+      "correspondence": 173,
+      "default": 26,
+      "blocked": 1
+     },
+     "codelets": 56.1,
+     "capped": 0,
+     "literal": 27,
+     "paired_differ": 65,
+     "moved": {
+      "E1 to small-glass2": 14,
+      "small-glass2 to E1": 12,
+      "E2 to E1": 17,
+      "E1 to E2": 22
+     }
+    },
+    "A2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 15,
+      "E2": 22
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "C7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 15,
+      "E2": 22
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "S2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.94,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.075
+     },
+     "answers": {
+      "E1": 160,
+      "E2": 24,
+      "small-glass2": 16
+     },
+     "through": {
+      "correspondence": 176,
+      "default": 24
+     },
+     "codelets": 57.9,
+     "capped": 0,
+     "literal": 24,
+     "paired_differ": 20,
+     "moved": {
+      "small-glass2 to E1": 3,
+      "E2 to E1": 3,
+      "E2 to small-glass2": 2,
+      "E1 to small-glass2": 5,
+      "E1 to E2": 4,
+      "small-glass2 to E2": 3
+     }
+    },
+    "L3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 8.97
+     },
+     "answers": {
+      "E1": 151,
+      "E2": 22,
+      "small-glass2": 27
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 58.9,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 57,
+     "moved": {
+      "E1 to E2": 18,
+      "E2 to E1": 13,
+      "small-glass2 to E1": 7,
+      "E1 to small-glass2": 14,
+      "E2 to small-glass2": 5
+     }
+    },
+    "L4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.91,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 9.39
+     },
+     "answers": {
+      "E1": 154,
+      "E2": 27,
+      "small-glass2": 19
+     },
+     "through": {
+      "correspondence": 173,
+      "default": 27
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 27,
+     "paired_differ": 49,
+     "moved": {
+      "E1 to E2": 19,
+      "small-glass2 to E1": 6,
+      "E2 to E1": 12,
+      "E2 to small-glass2": 3,
+      "E1 to small-glass2": 8,
+      "small-glass2 to E2": 1
+     }
+    },
+    "L5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 15,
+      "E2": 22
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "A4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 15,
+      "E2": 22
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "A5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 15,
+      "E2": 22
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "A6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 15,
+      "E2": 22
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "A7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 15,
+      "E2": 22
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "K2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 15,
+      "E2": 22
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "S5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.31
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 16,
+      "E2": 21
+     },
+     "through": {
+      "correspondence": 179,
+      "default": 21
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 21,
+     "paired_differ": 1,
+     "moved": {
+      "E2 to small-glass2": 1
+     }
+    },
+    "C4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 10.325
+     },
+     "answers": {
+      "E1": 163,
+      "small-glass2": 15,
+      "E2": 22
+     },
+     "through": {
+      "correspondence": 178,
+      "default": 21,
+      "blocked": 1
+     },
+     "codelets": 57.7,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 0,
+     "moved": {}
+    }
+   }
+  }
+ ],
+ "extra_records": [
+  {
+   "problem": "blockage-01",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 0.93,
+     "wv2": 0.0,
+     "coherent": 0.0,
+     "incoherent": 0.0,
+     "tags": 9.5
+    },
+    "answers": {
+     "E1": 186,
+     "E2": 14
+    },
+    "through": {
+     "correspondence": 186,
+     "default": 14
+    },
+    "codelets": 56.2,
+    "capped": 0,
+    "literal": 14
+   },
+   "lesions": {
+    "L2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.91,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 7.57
+     },
+     "answers": {
+      "E1": 182,
+      "E2": 18
+     },
+     "through": {
+      "correspondence": 182,
+      "default": 18
+     },
+     "codelets": 55.3,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 26,
+     "moved": {
+      "E2 to E1": 11,
+      "E1 to E2": 15
+     }
+    }
+   }
+  },
+  {
+   "problem": "blockage-03",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.0,
+     "wv2": 4.5,
+     "coherent": 0.0,
+     "incoherent": 0.045,
+     "tags": 14.75
+    },
+    "answers": {
+     "E2": 78,
+     "E1": 86,
+     "small-glass2": 22,
+     "E3": 14
+    },
+    "through": {
+     "correspondence": 186,
+     "default": 12,
+     "blocked": 2
+    },
+    "codelets": 64.8,
+    "capped": 0,
+    "literal": 14
+   },
+   "lesions": {
+    "L2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.95,
+      "wv2": 3.5,
+      "coherent": 0.0,
+      "incoherent": 0.035,
+      "tags": 10.65
+     },
+     "answers": {
+      "E2": 78,
+      "E3": 18,
+      "E1": 86,
+      "small-glass2": 18
+     },
+     "through": {
+      "correspondence": 182,
+      "default": 18
+     },
+     "codelets": 62.8,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 124,
+     "moved": {
+      "E1 to E3": 9,
+      "E1 to E2": 35,
+      "E1 to small-glass2": 5,
+      "E2 to E1": 39,
+      "E3 to E2": 4,
+      "E3 to E1": 6,
+      "small-glass2 to E2": 9,
+      "E3 to small-glass2": 2,
+      "small-glass2 to E3": 2,
+      "E2 to E3": 5,
+      "small-glass2 to E1": 4,
+      "E2 to small-glass2": 4
+     }
+    }
+   }
+  },
+  {
+   "problem": "blockage-04",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 0.94,
+     "wv2": 2.5,
+     "coherent": 0.0,
+     "incoherent": 0.025,
+     "tags": 16.065
+    },
+    "answers": {
+     "E3": 17,
+     "E2": 78,
+     "E1": 90,
+     "small-glass2": 13,
+     "spoon1": 2
+    },
+    "through": {
+     "default": 17,
+     "correspondence": 183
+    },
+    "codelets": 64.7,
+    "capped": 0,
+    "literal": 17
+   },
+   "lesions": {
+    "L2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.985,
+      "wv2": 2.0,
+      "coherent": 0.0,
+      "incoherent": 0.02,
+      "tags": 12.56
+     },
+     "answers": {
+      "E1": 88,
+      "E2": 86,
+      "E3": 9,
+      "spoon1": 7,
+      "small-glass2": 10
+     },
+     "through": {
+      "correspondence": 189,
+      "default": 9,
+      "group": 2
+     },
+     "codelets": 65.2,
+     "capped": 0,
+     "literal": 9,
+     "paired_differ": 120,
+     "moved": {
+      "E3 to E1": 7,
+      "E2 to E1": 32,
+      "E1 to E2": 36,
+      "E2 to E3": 5,
+      "small-glass2 to E1": 4,
+      "E3 to E2": 9,
+      "E2 to spoon1": 2,
+      "small-glass2 to E2": 6,
+      "E2 to small-glass2": 4,
+      "E1 to small-glass2": 5,
+      "E1 to spoon1": 3,
+      "small-glass2 to spoon1": 2,
+      "E1 to E3": 3,
+      "spoon1 to E1": 2
+     }
+    }
+   }
+  },
+  {
+   "problem": "blockage-05",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 0.975,
+     "wv2": 2.0,
+     "coherent": 0.0,
+     "incoherent": 0.02,
+     "tags": 16.94
+    },
+    "answers": {
+     "E2": 73,
+     "E1": 91,
+     "cup2": 13,
+     "small-glass2": 9,
+     "E3": 14
+    },
+    "through": {
+     "correspondence": 186,
+     "default": 13,
+     "blocked": 1
+    },
+    "codelets": 66.4,
+    "capped": 0,
+    "literal": 14
+   },
+   "lesions": {
+    "L2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.97,
+      "wv2": 3.5,
+      "coherent": 0.0,
+      "incoherent": 0.035,
+      "tags": 12.745
+     },
+     "answers": {
+      "E2": 82,
+      "E1": 84,
+      "E3": 14,
+      "cup2": 16,
+      "small-glass2": 4
+     },
+     "through": {
+      "correspondence": 186,
+      "default": 14
+     },
+     "codelets": 64.3,
+     "capped": 0,
+     "literal": 14,
+     "paired_differ": 134,
+     "moved": {
+      "cup2 to E3": 3,
+      "E1 to E3": 4,
+      "E2 to E1": 27,
+      "E2 to E3": 7,
+      "E1 to E2": 44,
+      "cup2 to E1": 8,
+      "E1 to cup2": 6,
+      "small-glass2 to E1": 5,
+      "E3 to E1": 9,
+      "E2 to cup2": 7,
+      "E3 to E2": 4,
+      "E1 to small-glass2": 2,
+      "E3 to cup2": 1,
+      "cup2 to small-glass2": 1,
+      "small-glass2 to cup2": 2,
+      "small-glass2 to E2": 2,
+      "E2 to small-glass2": 1,
+      "cup2 to E2": 1
+     }
+    }
+   }
+  },
+  {
+   "problem": "blockage-07",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.17,
+     "wv2": 18.0,
+     "coherent": 0.04,
+     "incoherent": 0.17,
+     "tags": 39.075
+    },
+    "answers": {
+     "E2": 70,
+     "E1": 55,
+     "fork2": 18,
+     "E3": 18,
+     "knife2": 15,
+     "small-glass4": 12,
+     "fork1": 3,
+     "small-glass2": 8,
+     "knife1": 1
+    },
+    "through": {
+     "correspondence": 181,
+     "default": 18,
+     "group": 1
+    },
+    "codelets": 78.6,
+    "capped": 0,
+    "literal": 18
+   },
+   "lesions": {
+    "L3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.155,
+      "wv2": 17.5,
+      "coherent": 0.045,
+      "incoherent": 0.18,
+      "tags": 38.425
+     },
+     "answers": {
+      "E2": 66,
+      "E3": 27,
+      "E1": 59,
+      "fork2": 18,
+      "knife2": 13,
+      "fork1": 4,
+      "small-glass4": 8,
+      "small-glass2": 4,
+      "knife1": 1
+     },
+     "through": {
+      "correspondence": 173,
+      "default": 27
+     },
+     "codelets": 77.1,
+     "capped": 0,
+     "literal": 27,
+     "paired_differ": 100,
+     "moved": {
+      "E1 to E3": 7,
+      "E2 to E3": 9,
+      "fork2 to E2": 5,
+      "E2 to E1": 10,
+      "E1 to fork2": 5,
+      "knife2 to E1": 2,
+      "small-glass4 to E2": 3,
+      "E3 to knife2": 1,
+      "E2 to knife2": 4,
+      "E2 to fork2": 5,
+      "fork2 to small-glass4": 1,
+      "small-glass4 to E1": 3,
+      "E3 to E2": 4,
+      "knife2 to E3": 2,
+      "E3 to fork1": 1,
+      "E2 to small-glass2": 2,
+      "small-glass2 to small-glass4": 2,
+      "E3 to E1": 4,
+      "E1 to small-glass4": 1,
+      "fork2 to E3": 1,
+      "knife2 to E2": 3,
+      "E1 to E2": 11,
+      "E3 to fork2": 1,
+      "fork2 to E1": 6,
+      "small-glass2 to E1": 3,
+      "small-glass2 to E3": 1,
+      "small-glass2 to fork2": 1,
+      "small-glass4 to fork2": 1,
+      "small-glass4 to small-glass2": 1
+     }
+    },
+    "A6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.19,
+      "wv2": 20.0,
+      "coherent": 0.05,
+      "incoherent": 0.19,
+      "tags": 38.935
+     },
+     "answers": {
+      "E2": 65,
+      "E3": 20,
+      "fork2": 17,
+      "E1": 59,
+      "small-glass4": 12,
+      "knife2": 16,
+      "fork1": 5,
+      "small-glass2": 5,
+      "knife1": 1
+     },
+     "through": {
+      "correspondence": 180,
+      "default": 20
+     },
+     "codelets": 79.4,
+     "capped": 0,
+     "literal": 20,
+     "paired_differ": 46,
+     "moved": {
+      "E1 to E3": 3,
+      "E2 to E3": 2,
+      "E2 to E1": 7,
+      "E3 to small-glass4": 2,
+      "E1 to E2": 4,
+      "small-glass4 to E2": 1,
+      "E2 to fork2": 2,
+      "knife2 to E1": 1,
+      "fork2 to E1": 3,
+      "E2 to small-glass2": 1,
+      "E2 to small-glass4": 1,
+      "small-glass4 to knife2": 1,
+      "E3 to E2": 2,
+      "small-glass2 to fork2": 1,
+      "E1 to knife2": 1,
+      "E1 to fork1": 1,
+      "E3 to E1": 2,
+      "E3 to small-glass2": 1,
+      "E1 to small-glass4": 1,
+      "fork2 to E2": 1,
+      "small-glass2 to E1": 1,
+      "small-glass2 to E2": 1,
+      "small-glass2 to E3": 1,
+      "E2 to knife2": 1,
+      "small-glass4 to E3": 2,
+      "knife2 to E3": 1,
+      "small-glass2 to fork1": 1
+     }
+    },
+    "S5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.165,
+      "wv2": 18.0,
+      "coherent": 0.035,
+      "incoherent": 0.165,
+      "tags": 39.07
+     },
+     "answers": {
+      "E2": 70,
+      "E1": 55,
+      "fork2": 18,
+      "E3": 18,
+      "knife2": 15,
+      "small-glass4": 12,
+      "fork1": 3,
+      "small-glass2": 8,
+      "knife1": 1
+     },
+     "through": {
+      "correspondence": 181,
+      "default": 18,
+      "group": 1
+     },
+     "codelets": 78.5,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "C4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.17,
+      "wv2": 18.0,
+      "coherent": 0.055,
+      "incoherent": 0.155,
+      "tags": 39.065
+     },
+     "answers": {
+      "E2": 68,
+      "E1": 56,
+      "fork2": 18,
+      "E3": 20,
+      "knife2": 14,
+      "small-glass4": 12,
+      "fork1": 3,
+      "small-glass2": 8,
+      "knife1": 1
+     },
+     "through": {
+      "correspondence": 179,
+      "default": 18,
+      "blocked": 2,
+      "group": 1
+     },
+     "codelets": 78.6,
+     "capped": 0,
+     "literal": 20,
+     "paired_differ": 3,
+     "moved": {
+      "E2 to E3": 1,
+      "E2 to E1": 1,
+      "knife2 to E3": 1
+     }
+    }
+   }
+  },
+  {
+   "problem": "blockage-08",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 0.98,
+     "wv2": 3.5,
+     "coherent": 0.005,
+     "incoherent": 0.025,
+     "tags": 17.66
+    },
+    "answers": {
+     "E2": 86,
+     "E3": 18,
+     "E1": 68,
+     "small-glass4": 17,
+     "small-glass2": 11
+    },
+    "through": {
+     "correspondence": 181,
+     "default": 16,
+     "blocked": 2,
+     "group": 1
+    },
+    "codelets": 66.6,
+    "capped": 0,
+    "literal": 18
+   },
+   "lesions": {
+    "L3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.975,
+      "wv2": 4.0,
+      "coherent": 0.005,
+      "incoherent": 0.03,
+      "tags": 15.595
+     },
+     "answers": {
+      "E1": 79,
+      "E2": 76,
+      "small-glass4": 17,
+      "E3": 17,
+      "small-glass2": 11
+     },
+     "through": {
+      "correspondence": 180,
+      "group": 3,
+      "default": 15,
+      "blocked": 2
+     },
+     "codelets": 65.2,
+     "capped": 0,
+     "literal": 17,
+     "paired_differ": 99,
+     "moved": {
+      "E2 to E1": 32,
+      "E3 to E1": 5,
+      "E2 to small-glass4": 4,
+      "E1 to E3": 4,
+      "E3 to E2": 3,
+      "E1 to E2": 22,
+      "small-glass4 to E2": 4,
+      "small-glass2 to small-glass4": 2,
+      "small-glass4 to E1": 2,
+      "E3 to small-glass2": 1,
+      "small-glass4 to small-glass2": 3,
+      "small-glass2 to E2": 3,
+      "E2 to E3": 4,
+      "E2 to small-glass2": 2,
+      "small-glass2 to E1": 3,
+      "E1 to small-glass4": 3,
+      "E1 to small-glass2": 2
+     }
+    },
+    "A6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.985,
+      "wv2": 4.5,
+      "coherent": 0.0,
+      "incoherent": 0.04,
+      "tags": 17.09
+     },
+     "answers": {
+      "E2": 85,
+      "E1": 74,
+      "E3": 16,
+      "small-glass4": 15,
+      "small-glass2": 10
+     },
+     "through": {
+      "correspondence": 183,
+      "default": 15,
+      "blocked": 1,
+      "group": 1
+     },
+     "codelets": 65.9,
+     "capped": 0,
+     "literal": 16,
+     "paired_differ": 17,
+     "moved": {
+      "E2 to E1": 5,
+      "E3 to small-glass4": 1,
+      "small-glass4 to E2": 3,
+      "E3 to E1": 2,
+      "small-glass2 to small-glass4": 1,
+      "small-glass2 to E2": 1,
+      "small-glass4 to small-glass2": 1,
+      "small-glass2 to E1": 1,
+      "E1 to small-glass2": 1,
+      "E1 to E3": 1
+     }
+    },
+    "S5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.985,
+      "wv2": 4.0,
+      "coherent": 0.005,
+      "incoherent": 0.025,
+      "tags": 17.61
+     },
+     "answers": {
+      "E2": 87,
+      "E3": 16,
+      "E1": 68,
+      "small-glass4": 18,
+      "small-glass2": 11
+     },
+     "through": {
+      "correspondence": 183,
+      "default": 16,
+      "group": 1
+     },
+     "codelets": 66.6,
+     "capped": 0,
+     "literal": 16,
+     "paired_differ": 2,
+     "moved": {
+      "E3 to E2": 1,
+      "E3 to small-glass4": 1
+     }
+    },
+    "C4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.98,
+      "wv2": 3.5,
+      "coherent": 0.005,
+      "incoherent": 0.025,
+      "tags": 17.66
+     },
+     "answers": {
+      "E2": 86,
+      "E3": 18,
+      "E1": 68,
+      "small-glass4": 17,
+      "small-glass2": 11
+     },
+     "through": {
+      "correspondence": 181,
+      "default": 16,
+      "blocked": 2,
+      "group": 1
+     },
+     "codelets": 66.6,
+     "capped": 0,
+     "literal": 18,
+     "paired_differ": 0,
+     "moved": {}
+    }
+   }
+  },
+  {
+   "problem": "figure-ground-01",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.05,
+     "wv2": 14.0,
+     "coherent": 0.14,
+     "incoherent": 0.0,
+     "tags": 20.42
+    },
+    "answers": {
+     "E2": 63,
+     "E1": 75,
+     "E3": 23,
+     "fork3": 39
+    },
+    "through": {
+     "correspondence": 161,
+     "default": 37,
+     "blocked": 2
+    },
+    "codelets": 69.7,
+    "capped": 0,
+    "literal": 39
+   },
+   "lesions": {
+    "A4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.11,
+      "wv2": 16.0,
+      "coherent": 0.19,
+      "incoherent": 0.0,
+      "tags": 18.8
+     },
+     "answers": {
+      "E3": 16,
+      "E1": 74,
+      "E2": 78,
+      "fork3": 32
+     },
+     "through": {
+      "correspondence": 168,
+      "default": 29,
+      "blocked": 3
+     },
+     "codelets": 68.9,
+     "capped": 0,
+     "literal": 32,
+     "paired_differ": 140,
+     "moved": {
+      "E2 to E3": 9,
+      "E2 to E1": 17,
+      "E1 to E2": 31,
+      "E3 to E1": 9,
+      "E3 to E2": 10,
+      "E2 to fork3": 12,
+      "fork3 to E1": 19,
+      "fork3 to E2": 12,
+      "fork3 to E3": 2,
+      "E1 to fork3": 10,
+      "E3 to fork3": 4,
+      "E1 to E3": 5
+     }
+    },
+    "A5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.945,
+      "wv2": 3.0,
+      "coherent": 0.03,
+      "incoherent": 0.0,
+      "tags": 16.82
+     },
+     "answers": {
+      "E1": 88,
+      "E3": 22,
+      "E2": 71,
+      "fork3": 19
+     },
+     "through": {
+      "correspondence": 181,
+      "default": 19
+     },
+     "codelets": 65.8,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 132,
+     "moved": {
+      "E2 to E1": 31,
+      "E2 to E3": 7,
+      "E3 to E1": 10,
+      "E3 to E2": 10,
+      "E1 to E2": 28,
+      "fork3 to E2": 11,
+      "fork3 to E3": 10,
+      "fork3 to E1": 11,
+      "E2 to fork3": 3,
+      "E1 to fork3": 9,
+      "E1 to E3": 2
+     }
+    },
+    "K2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.07,
+      "wv2": 15.5,
+      "coherent": 0.165,
+      "incoherent": 0.0,
+      "tags": 20.245
+     },
+     "answers": {
+      "E2": 64,
+      "E1": 75,
+      "E3": 25,
+      "fork3": 36
+     },
+     "through": {
+      "correspondence": 164,
+      "default": 36
+     },
+     "codelets": 69.6,
+     "capped": 0,
+     "literal": 36,
+     "paired_differ": 8,
+     "moved": {
+      "fork3 to E2": 1,
+      "fork3 to E1": 3,
+      "E1 to fork3": 2,
+      "fork3 to E3": 1,
+      "E1 to E3": 1
+     }
+    }
+   }
+  },
+  {
+   "problem": "surround-01",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 0.95,
+     "wv2": 0.0,
+     "coherent": 0.0,
+     "incoherent": 0.0,
+     "tags": 14.99
+    },
+    "answers": {
+     "E2": 103,
+     "E1": 72,
+     "cup1": 25
+    },
+    "through": {
+     "correspondence": 175,
+     "default": 24,
+     "blocked": 1
+    },
+    "codelets": 58.8,
+    "capped": 0,
+    "literal": 25
+   },
+   "lesions": {
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.95,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 14.735
+     },
+     "answers": {
+      "E2": 102,
+      "E1": 69,
+      "cup1": 29
+     },
+     "through": {
+      "correspondence": 171,
+      "default": 26,
+      "blocked": 3
+     },
+     "codelets": 58.2,
+     "capped": 0,
+     "literal": 29,
+     "paired_differ": 52,
+     "moved": {
+      "E1 to E2": 22,
+      "E2 to cup1": 7,
+      "cup1 to E1": 5,
+      "E2 to E1": 16,
+      "E1 to cup1": 2
+     }
+    },
+    "L4": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.965,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 13.175
+     },
+     "answers": {
+      "E2": 117,
+      "E1": 62,
+      "cup1": 21
+     },
+     "through": {
+      "correspondence": 179,
+      "default": 21
+     },
+     "codelets": 59.4,
+     "capped": 0,
+     "literal": 21,
+     "paired_differ": 98,
+     "moved": {
+      "E2 to E1": 26,
+      "E1 to E2": 36,
+      "E2 to cup1": 9,
+      "cup1 to E1": 7,
+      "cup1 to E2": 13,
+      "E1 to cup1": 7
+     }
+    },
+    "A7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 0.965,
+      "wv2": 0.0,
+      "coherent": 0.0,
+      "incoherent": 0.0,
+      "tags": 14.435
+     },
+     "answers": {
+      "E2": 109,
+      "E1": 66,
+      "cup1": 25
+     },
+     "through": {
+      "correspondence": 175,
+      "default": 22,
+      "blocked": 3
+     },
+     "codelets": 58.8,
+     "capped": 0,
+     "literal": 25,
+     "paired_differ": 88,
+     "moved": {
+      "E2 to E1": 28,
+      "E1 to E2": 32,
+      "E1 to cup1": 5,
+      "E2 to cup1": 9,
+      "cup1 to E2": 11,
+      "cup1 to E1": 3
+     }
+    }
+   }
+  },
+  {
+   "problem": "surround-02",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.14,
+     "wv2": 15.5,
+     "coherent": 0.095,
+     "incoherent": 0.08,
+     "tags": 34.01
+    },
+    "answers": {
+     "E2": 103,
+     "spoon2": 24,
+     "E1": 42,
+     "spoon3": 13,
+     "cup1": 12,
+     "fork1": 6
+    },
+    "through": {
+     "correspondence": 188,
+     "default": 11,
+     "blocked": 1
+    },
+    "codelets": 73.2,
+    "capped": 0,
+    "literal": 12
+   },
+   "lesions": {
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.095,
+      "wv2": 12.0,
+      "coherent": 0.06,
+      "incoherent": 0.07,
+      "tags": 34.53
+     },
+     "answers": {
+      "E2": 97,
+      "E1": 41,
+      "fork1": 7,
+      "spoon2": 18,
+      "cup1": 19,
+      "spoon3": 18
+     },
+     "through": {
+      "correspondence": 180,
+      "default": 18,
+      "group": 1,
+      "blocked": 1
+     },
+     "codelets": 73.9,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 70,
+     "moved": {
+      "spoon2 to E2": 7,
+      "spoon3 to E2": 3,
+      "spoon2 to E1": 5,
+      "E1 to fork1": 2,
+      "E2 to spoon2": 4,
+      "E2 to cup1": 5,
+      "E2 to E1": 10,
+      "E1 to E2": 7,
+      "spoon3 to spoon2": 2,
+      "spoon2 to fork1": 1,
+      "E2 to spoon3": 5,
+      "E2 to fork1": 1,
+      "E1 to spoon3": 5,
+      "E1 to cup1": 3,
+      "fork1 to E2": 1,
+      "cup1 to E1": 1,
+      "fork1 to E1": 1,
+      "fork1 to spoon3": 1,
+      "spoon3 to E1": 1,
+      "E1 to spoon2": 2,
+      "spoon3 to cup1": 1,
+      "cup1 to E2": 1,
+      "spoon2 to spoon3": 1
+     }
+    },
+    "A7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.12,
+      "wv2": 15.5,
+      "coherent": 0.085,
+      "incoherent": 0.07,
+      "tags": 33.61
+     },
+     "answers": {
+      "E2": 97,
+      "E1": 44,
+      "spoon2": 20,
+      "cup1": 17,
+      "spoon3": 17,
+      "fork1": 5
+     },
+     "through": {
+      "correspondence": 183,
+      "default": 16,
+      "blocked": 1
+     },
+     "codelets": 73.1,
+     "capped": 0,
+     "literal": 17,
+     "paired_differ": 71,
+     "moved": {
+      "spoon2 to E2": 7,
+      "spoon3 to E2": 3,
+      "spoon2 to E1": 4,
+      "E2 to E1": 12,
+      "E1 to spoon2": 3,
+      "E2 to cup1": 9,
+      "E1 to E2": 7,
+      "E2 to spoon2": 5,
+      "cup1 to spoon3": 1,
+      "cup1 to E2": 3,
+      "E1 to spoon3": 3,
+      "spoon2 to cup1": 1,
+      "E1 to cup1": 1,
+      "fork1 to E2": 2,
+      "spoon2 to spoon3": 2,
+      "cup1 to fork1": 1,
+      "E2 to spoon3": 2,
+      "fork1 to spoon3": 1,
+      "spoon3 to fork1": 2,
+      "cup1 to spoon2": 1,
+      "fork1 to spoon2": 1
+     }
+    }
+   }
+  },
+  {
+   "problem": "surround-03",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.13,
+     "wv2": 16.0,
+     "coherent": 0.06,
+     "incoherent": 0.12,
+     "tags": 38.23
+    },
+    "answers": {
+     "spoon3": 18,
+     "E2": 105,
+     "E1": 41,
+     "fork1": 10,
+     "spoon2": 8,
+     "cup1": 18
+    },
+    "through": {
+     "correspondence": 182,
+     "default": 18
+    },
+    "codelets": 71.7,
+    "capped": 0,
+    "literal": 18
+   },
+   "lesions": {
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.105,
+      "wv2": 12.5,
+      "coherent": 0.04,
+      "incoherent": 0.085,
+      "tags": 37.79
+     },
+     "answers": {
+      "spoon3": 17,
+      "E2": 108,
+      "E1": 34,
+      "fork1": 8,
+      "cup1": 19,
+      "spoon2": 14
+     },
+     "through": {
+      "correspondence": 180,
+      "default": 19,
+      "group": 1
+     },
+     "codelets": 70.4,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 63,
+     "moved": {
+      "E1 to E2": 10,
+      "spoon3 to E2": 4,
+      "E2 to fork1": 3,
+      "E1 to cup1": 2,
+      "E2 to spoon2": 3,
+      "E2 to cup1": 3,
+      "E2 to E1": 6,
+      "fork1 to spoon3": 1,
+      "spoon3 to E1": 4,
+      "spoon2 to E2": 2,
+      "cup1 to E2": 3,
+      "fork1 to E2": 3,
+      "E1 to spoon2": 4,
+      "spoon3 to spoon2": 1,
+      "E2 to spoon3": 4,
+      "fork1 to E1": 2,
+      "spoon3 to cup1": 1,
+      "cup1 to spoon3": 1,
+      "E1 to fork1": 1,
+      "E1 to spoon3": 3,
+      "spoon2 to E1": 1,
+      "cup1 to spoon2": 1
+     }
+    },
+    "A7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.115,
+      "wv2": 15.0,
+      "coherent": 0.07,
+      "incoherent": 0.1,
+      "tags": 37.895
+     },
+     "answers": {
+      "spoon3": 18,
+      "E2": 100,
+      "cup1": 23,
+      "E1": 39,
+      "fork1": 8,
+      "spoon2": 12
+     },
+     "through": {
+      "correspondence": 177,
+      "default": 22,
+      "blocked": 1
+     },
+     "codelets": 71.7,
+     "capped": 0,
+     "literal": 23,
+     "paired_differ": 60,
+     "moved": {
+      "E2 to cup1": 6,
+      "E2 to spoon3": 3,
+      "E2 to E1": 13,
+      "E1 to E2": 9,
+      "fork1 to E2": 4,
+      "E2 to spoon2": 3,
+      "spoon3 to spoon2": 1,
+      "spoon2 to fork1": 1,
+      "cup1 to E1": 1,
+      "spoon3 to cup1": 1,
+      "cup1 to E2": 4,
+      "spoon3 to E2": 2,
+      "spoon3 to fork1": 1,
+      "E1 to cup1": 3,
+      "spoon2 to E2": 2,
+      "E1 to spoon3": 2,
+      "E2 to fork1": 1,
+      "fork1 to spoon2": 1,
+      "E1 to spoon2": 2
+     }
+    }
+   }
+  },
+  {
+   "problem": "surround-04",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.195,
+     "wv2": 20.5,
+     "coherent": 0.1,
+     "incoherent": 0.155,
+     "tags": 34.52
+    },
+    "answers": {
+     "E2": 100,
+     "spoon3": 18,
+     "E1": 43,
+     "cup1": 20,
+     "spoon4": 19
+    },
+    "through": {
+     "correspondence": 179,
+     "default": 19,
+     "group": 1,
+     "blocked": 1
+    },
+    "codelets": 71.3,
+    "capped": 0,
+    "literal": 20
+   },
+   "lesions": {
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.2,
+      "wv2": 21.5,
+      "coherent": 0.13,
+      "incoherent": 0.125,
+      "tags": 34.995
+     },
+     "answers": {
+      "E2": 107,
+      "spoon3": 21,
+      "E1": 38,
+      "cup1": 20,
+      "spoon4": 14
+     },
+     "through": {
+      "correspondence": 180,
+      "default": 19,
+      "blocked": 1
+     },
+     "codelets": 71.4,
+     "capped": 0,
+     "literal": 20,
+     "paired_differ": 65,
+     "moved": {
+      "cup1 to E1": 5,
+      "cup1 to E2": 1,
+      "spoon3 to E2": 5,
+      "E1 to cup1": 2,
+      "E2 to spoon3": 7,
+      "E2 to cup1": 2,
+      "spoon4 to E2": 7,
+      "spoon3 to cup1": 3,
+      "spoon4 to E1": 1,
+      "E1 to spoon4": 2,
+      "spoon4 to cup1": 1,
+      "E2 to E1": 8,
+      "E1 to E2": 12,
+      "spoon4 to spoon3": 1,
+      "E1 to spoon3": 4,
+      "cup1 to spoon4": 2,
+      "E2 to spoon4": 1,
+      "spoon3 to E1": 1
+     }
+    },
+    "A7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.205,
+      "wv2": 20.0,
+      "coherent": 0.17,
+      "incoherent": 0.095,
+      "tags": 34.76
+     },
+     "answers": {
+      "E1": 47,
+      "spoon3": 21,
+      "E2": 95,
+      "cup1": 19,
+      "spoon4": 18
+     },
+     "through": {
+      "correspondence": 180,
+      "default": 19,
+      "group": 1
+     },
+     "codelets": 73.7,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 65,
+     "moved": {
+      "E2 to E1": 10,
+      "cup1 to E2": 3,
+      "spoon4 to E2": 5,
+      "E2 to spoon3": 5,
+      "spoon3 to E2": 4,
+      "E1 to E2": 10,
+      "spoon4 to spoon3": 2,
+      "cup1 to E1": 7,
+      "E2 to cup1": 6,
+      "E1 to spoon3": 1,
+      "E1 to cup1": 1,
+      "cup1 to spoon4": 1,
+      "E2 to spoon4": 6,
+      "spoon4 to cup1": 2,
+      "E1 to spoon4": 1,
+      "spoon3 to cup1": 1
+     }
+    }
+   }
+  },
+  {
+   "problem": "surround-06",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.245,
+     "wv2": 25.0,
+     "coherent": 0.235,
+     "incoherent": 0.075,
+     "tags": 53.985
+    },
+    "answers": {
+     "E1": 61,
+     "E2": 75,
+     "fork4": 5,
+     "spoon3": 18,
+     "cup1": 26,
+     "spoon2": 1,
+     "spoon4": 11,
+     "fork3": 3
+    },
+    "through": {
+     "correspondence": 173,
+     "default": 26,
+     "group": 1
+    },
+    "codelets": 82.1,
+    "capped": 0,
+    "literal": 26
+   },
+   "lesions": {
+    "C1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.1,
+      "wv2": 12.5,
+      "coherent": 0.085,
+      "incoherent": 0.07,
+      "tags": 53.47
+     },
+     "answers": {
+      "spoon4": 15,
+      "E2": 75,
+      "fork4": 4,
+      "cup1": 15,
+      "spoon3": 18,
+      "E1": 63,
+      "fork3": 8,
+      "knife1": 1,
+      "knife2": 1
+     },
+     "through": {
+      "correspondence": 184,
+      "default": 15,
+      "group": 1
+     },
+     "codelets": 79.4,
+     "capped": 0,
+     "literal": 15,
+     "paired_differ": 108,
+     "moved": {
+      "E1 to spoon4": 3,
+      "fork4 to cup1": 1,
+      "E1 to E2": 13,
+      "E2 to E1": 14,
+      "fork4 to E2": 1,
+      "cup1 to E1": 8,
+      "spoon2 to spoon3": 1,
+      "spoon4 to fork3": 1,
+      "spoon3 to E1": 6,
+      "E1 to fork3": 4,
+      "spoon4 to E2": 1,
+      "E1 to knife1": 1,
+      "cup1 to E2": 6,
+      "E2 to cup1": 2,
+      "E2 to fork4": 1,
+      "E1 to cup1": 5,
+      "fork3 to spoon4": 2,
+      "fork4 to E1": 2,
+      "E1 to spoon3": 8,
+      "E2 to spoon4": 4,
+      "spoon3 to cup1": 1,
+      "spoon4 to E1": 6,
+      "cup1 to fork4": 2,
+      "spoon3 to E2": 2,
+      "cup1 to spoon3": 2,
+      "E2 to fork3": 1,
+      "cup1 to spoon4": 3,
+      "spoon3 to spoon4": 1,
+      "E1 to knife2": 1,
+      "fork3 to E1": 1,
+      "E2 to spoon3": 1,
+      "spoon3 to fork3": 2,
+      "spoon4 to cup1": 1
+     }
+    },
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.245,
+      "wv2": 22.5,
+      "coherent": 0.2,
+      "incoherent": 0.115,
+      "tags": 52.405
+     },
+     "answers": {
+      "E1": 55,
+      "E2": 80,
+      "cup1": 23,
+      "spoon3": 15,
+      "spoon2": 2,
+      "spoon4": 11,
+      "knife2": 1,
+      "fork3": 10,
+      "fork4": 3
+     },
+     "through": {
+      "correspondence": 175,
+      "default": 23,
+      "group": 2
+     },
+     "codelets": 81.9,
+     "capped": 0,
+     "literal": 23,
+     "paired_differ": 87,
+     "moved": {
+      "fork4 to E2": 2,
+      "fork4 to cup1": 1,
+      "E1 to E2": 14,
+      "E2 to spoon3": 4,
+      "fork4 to E1": 2,
+      "cup1 to spoon3": 2,
+      "spoon4 to E2": 2,
+      "spoon3 to E1": 3,
+      "E1 to spoon4": 4,
+      "spoon3 to knife2": 1,
+      "cup1 to fork3": 3,
+      "E2 to E1": 8,
+      "E1 to cup1": 6,
+      "fork3 to cup1": 1,
+      "E2 to spoon4": 1,
+      "E1 to spoon3": 1,
+      "cup1 to E1": 6,
+      "spoon3 to fork3": 3,
+      "spoon4 to E1": 3,
+      "E1 to fork3": 3,
+      "cup1 to E2": 3,
+      "cup1 to spoon4": 1,
+      "spoon3 to spoon2": 1,
+      "E2 to cup1": 3,
+      "cup1 to fork4": 2,
+      "E1 to fork4": 1,
+      "fork3 to E2": 1,
+      "spoon3 to cup1": 2,
+      "fork3 to E1": 1,
+      "spoon4 to cup1": 1,
+      "E2 to fork3": 1
+     }
+    },
+    "C3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.245,
+      "wv2": 25.0,
+      "coherent": 0.235,
+      "incoherent": 0.075,
+      "tags": 53.985
+     },
+     "answers": {
+      "E1": 61,
+      "E2": 75,
+      "fork4": 5,
+      "spoon3": 18,
+      "cup1": 26,
+      "spoon2": 1,
+      "spoon4": 11,
+      "fork3": 3
+     },
+     "through": {
+      "correspondence": 173,
+      "default": 26,
+      "group": 1
+     },
+     "codelets": 82.1,
+     "capped": 0,
+     "literal": 26,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "K1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.235,
+      "wv2": 24.0,
+      "coherent": 0.2,
+      "incoherent": 0.07,
+      "tags": 52.03
+     },
+     "answers": {
+      "E1": 60,
+      "E2": 79,
+      "fork4": 5,
+      "spoon3": 18,
+      "fork3": 2,
+      "spoon2": 1,
+      "spoon4": 11,
+      "cup1": 24
+     },
+     "through": {
+      "correspondence": 175,
+      "default": 23,
+      "blocked": 1,
+      "group": 1
+     },
+     "codelets": 80.9,
+     "capped": 0,
+     "literal": 24,
+     "paired_differ": 28,
+     "moved": {
+      "E2 to fork3": 1,
+      "cup1 to E2": 2,
+      "E2 to cup1": 1,
+      "E1 to E2": 7,
+      "fork3 to E1": 1,
+      "E2 to E1": 3,
+      "spoon3 to E2": 2,
+      "cup1 to E1": 2,
+      "spoon3 to E1": 2,
+      "E2 to spoon3": 1,
+      "spoon3 to cup1": 1,
+      "E2 to spoon4": 1,
+      "fork3 to spoon3": 1,
+      "E1 to spoon3": 2,
+      "spoon4 to spoon3": 1
+     }
+    },
+    "S2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.23,
+      "wv2": 23.0,
+      "coherent": 0.16,
+      "incoherent": 0.12,
+      "tags": 50.615
+     },
+     "answers": {
+      "E1": 58,
+      "E2": 77,
+      "spoon3": 14,
+      "cup1": 19,
+      "knife1": 1,
+      "spoon4": 17,
+      "fork4": 4,
+      "fork3": 7,
+      "spoon2": 2,
+      "knife2": 1
+     },
+     "through": {
+      "correspondence": 179,
+      "default": 18,
+      "blocked": 1,
+      "group": 2
+     },
+     "codelets": 80.4,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 108,
+     "moved": {
+      "E2 to E1": 11,
+      "fork4 to E1": 2,
+      "E1 to E2": 13,
+      "spoon3 to E1": 6,
+      "fork4 to cup1": 1,
+      "cup1 to E2": 7,
+      "spoon2 to E2": 1,
+      "spoon3 to E2": 6,
+      "spoon4 to E2": 3,
+      "E1 to cup1": 4,
+      "E1 to spoon3": 5,
+      "spoon4 to E1": 4,
+      "E2 to cup1": 5,
+      "E1 to knife1": 1,
+      "E1 to spoon4": 7,
+      "cup1 to fork4": 2,
+      "E2 to fork3": 4,
+      "E2 to spoon3": 2,
+      "fork3 to E1": 1,
+      "fork4 to spoon4": 1,
+      "E2 to spoon4": 4,
+      "cup1 to E1": 6,
+      "spoon3 to spoon4": 1,
+      "spoon4 to cup1": 1,
+      "cup1 to fork3": 1,
+      "E2 to spoon2": 1,
+      "E2 to fork4": 1,
+      "cup1 to spoon4": 2,
+      "E1 to fork3": 1,
+      "E1 to knife2": 1,
+      "fork3 to spoon3": 1,
+      "E1 to spoon2": 1,
+      "spoon4 to spoon3": 1
+     }
+    }
+   }
+  },
+  {
+   "problem": "surround-07",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.195,
+     "wv2": 20.0,
+     "coherent": 0.085,
+     "incoherent": 0.175,
+     "tags": 51.965
+    },
+    "answers": {
+     "cup1": 24,
+     "spoon4": 19,
+     "E2": 102,
+     "spoon3": 11,
+     "fork3": 10,
+     "E1": 33,
+     "fork4": 1
+    },
+    "through": {
+     "default": 23,
+     "correspondence": 176,
+     "blocked": 1
+    },
+    "codelets": 80.1,
+    "capped": 0,
+    "literal": 24
+   },
+   "lesions": {
+    "C1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.025,
+      "wv2": 6.5,
+      "coherent": 0.01,
+      "incoherent": 0.055,
+      "tags": 51.17
+     },
+     "answers": {
+      "cup1": 15,
+      "E2": 120,
+      "spoon4": 13,
+      "E1": 29,
+      "spoon3": 13,
+      "fork4": 4,
+      "fork3": 4,
+      "knife2": 2
+     },
+     "through": {
+      "default": 14,
+      "correspondence": 185,
+      "blocked": 1
+     },
+     "codelets": 76.1,
+     "capped": 0,
+     "literal": 15,
+     "paired_differ": 91,
+     "moved": {
+      "spoon4 to cup1": 2,
+      "spoon3 to E2": 3,
+      "fork3 to E1": 2,
+      "E2 to spoon3": 3,
+      "E1 to E2": 17,
+      "E2 to spoon4": 5,
+      "fork3 to E2": 4,
+      "cup1 to E2": 9,
+      "spoon4 to E2": 8,
+      "fork3 to spoon3": 1,
+      "cup1 to spoon4": 4,
+      "spoon4 to spoon3": 3,
+      "E1 to cup1": 1,
+      "E2 to fork4": 3,
+      "E2 to E1": 8,
+      "spoon4 to fork3": 1,
+      "spoon3 to E1": 2,
+      "E1 to knife2": 2,
+      "cup1 to E1": 3,
+      "fork3 to cup1": 1,
+      "E2 to cup1": 3,
+      "cup1 to spoon3": 1,
+      "E2 to fork3": 1,
+      "spoon4 to E1": 2,
+      "spoon3 to cup1": 1,
+      "E1 to spoon4": 1
+     }
+    },
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.155,
+      "wv2": 17.0,
+      "coherent": 0.065,
+      "incoherent": 0.135,
+      "tags": 51.17
+     },
+     "answers": {
+      "cup1": 25,
+      "E2": 105,
+      "spoon3": 21,
+      "spoon4": 16,
+      "E1": 26,
+      "fork4": 3,
+      "fork3": 3,
+      "fork1": 1
+     },
+     "through": {
+      "default": 24,
+      "correspondence": 174,
+      "blocked": 1,
+      "group": 1
+     },
+     "codelets": 78.7,
+     "capped": 0,
+     "literal": 25,
+     "paired_differ": 62,
+     "moved": {
+      "spoon4 to E2": 5,
+      "fork3 to cup1": 1,
+      "E2 to spoon4": 3,
+      "fork3 to E2": 4,
+      "cup1 to spoon4": 2,
+      "spoon4 to spoon3": 3,
+      "E1 to E2": 7,
+      "E2 to E1": 5,
+      "fork3 to spoon3": 1,
+      "E2 to cup1": 3,
+      "E2 to fork4": 1,
+      "E1 to spoon3": 2,
+      "E1 to spoon4": 3,
+      "cup1 to E2": 4,
+      "spoon4 to E1": 2,
+      "fork3 to spoon4": 1,
+      "spoon4 to cup1": 1,
+      "E2 to spoon3": 5,
+      "cup1 to spoon3": 1,
+      "spoon4 to fork1": 1,
+      "fork3 to E1": 1,
+      "E2 to fork3": 1,
+      "E1 to fork4": 1,
+      "E1 to cup1": 2,
+      "spoon3 to cup1": 1,
+      "spoon3 to E2": 1
+     }
+    },
+    "C3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.195,
+      "wv2": 20.0,
+      "coherent": 0.085,
+      "incoherent": 0.175,
+      "tags": 51.965
+     },
+     "answers": {
+      "cup1": 24,
+      "spoon4": 19,
+      "E2": 102,
+      "spoon3": 11,
+      "fork3": 10,
+      "E1": 33,
+      "fork4": 1
+     },
+     "through": {
+      "default": 23,
+      "correspondence": 176,
+      "blocked": 1
+     },
+     "codelets": 80.1,
+     "capped": 0,
+     "literal": 24,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "K1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.205,
+      "wv2": 20.0,
+      "coherent": 0.1,
+      "incoherent": 0.155,
+      "tags": 50.995
+     },
+     "answers": {
+      "cup1": 22,
+      "spoon4": 24,
+      "E2": 103,
+      "spoon3": 14,
+      "fork3": 10,
+      "E1": 26,
+      "fork4": 1
+     },
+     "through": {
+      "default": 21,
+      "correspondence": 178,
+      "blocked": 1
+     },
+     "codelets": 80.3,
+     "capped": 0,
+     "literal": 22,
+     "paired_differ": 31,
+     "moved": {
+      "E2 to spoon4": 2,
+      "E2 to fork3": 2,
+      "fork3 to E2": 1,
+      "E1 to E2": 5,
+      "cup1 to spoon3": 3,
+      "E2 to cup1": 1,
+      "fork3 to cup1": 1,
+      "spoon4 to spoon3": 1,
+      "E1 to spoon4": 4,
+      "spoon3 to E2": 1,
+      "E2 to spoon3": 2,
+      "spoon4 to E2": 2,
+      "spoon3 to spoon4": 2,
+      "cup1 to E1": 1,
+      "E1 to spoon3": 1,
+      "spoon3 to E1": 1,
+      "E2 to E1": 1
+     }
+    },
+    "S2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.175,
+      "wv2": 19.5,
+      "coherent": 0.13,
+      "incoherent": 0.125,
+      "tags": 49.22
+     },
+     "answers": {
+      "cup1": 28,
+      "spoon4": 18,
+      "E2": 105,
+      "spoon3": 12,
+      "fork3": 5,
+      "E1": 31,
+      "knife2": 1
+     },
+     "through": {
+      "default": 28,
+      "correspondence": 172
+     },
+     "codelets": 79.3,
+     "capped": 0,
+     "literal": 28,
+     "paired_differ": 93,
+     "moved": {
+      "spoon3 to E2": 4,
+      "spoon4 to E2": 8,
+      "fork3 to cup1": 3,
+      "E2 to spoon3": 3,
+      "E1 to fork3": 1,
+      "E2 to spoon4": 7,
+      "cup1 to E1": 4,
+      "cup1 to E2": 8,
+      "fork3 to spoon3": 2,
+      "fork3 to E2": 3,
+      "E2 to cup1": 9,
+      "cup1 to spoon4": 3,
+      "spoon4 to spoon3": 1,
+      "E1 to E2": 9,
+      "spoon4 to fork3": 1,
+      "E2 to fork3": 1,
+      "spoon4 to E1": 2,
+      "E2 to knife2": 1,
+      "E2 to E1": 8,
+      "E1 to spoon4": 3,
+      "spoon3 to cup1": 3,
+      "spoon4 to cup1": 2,
+      "E1 to cup1": 2,
+      "fork4 to cup1": 1,
+      "E1 to spoon3": 2,
+      "cup1 to spoon3": 1,
+      "spoon3 to E1": 1
+     }
+    }
+   }
+  },
+  {
+   "problem": "surround-10",
+   "perceived": {
+    "runs": 200,
+    "mechanism": {
+     "wv_mean": 1.155,
+     "wv2": 18.0,
+     "coherent": 0.105,
+     "incoherent": 0.115,
+     "tags": 57.78
+    },
+    "answers": {
+     "spoon3": 15,
+     "fork3": 8,
+     "E2": 81,
+     "E1": 31,
+     "spoon4": 25,
+     "cup1": 24,
+     "pepper-shaker1": 2,
+     "fork4": 5,
+     "small-glass2": 7,
+     "spoon2": 1,
+     "knife2": 1
+    },
+    "through": {
+     "correspondence": 176,
+     "default": 24
+    },
+    "codelets": 81.6,
+    "capped": 0,
+    "literal": 24
+   },
+   "lesions": {
+    "C1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.0,
+      "wv2": 6.0,
+      "coherent": 0.01,
+      "incoherent": 0.04,
+      "tags": 58.41
+     },
+     "answers": {
+      "spoon3": 14,
+      "fork3": 7,
+      "E2": 102,
+      "E1": 31,
+      "spoon4": 19,
+      "cup1": 17,
+      "salt-shaker1": 2,
+      "small-glass2": 2,
+      "pepper-shaker1": 2,
+      "fork4": 2,
+      "spoon2": 1,
+      "knife2": 1
+     },
+     "through": {
+      "correspondence": 183,
+      "default": 16,
+      "blocked": 1
+     },
+     "codelets": 81.0,
+     "capped": 0,
+     "literal": 17,
+     "paired_differ": 110,
+     "moved": {
+      "fork3 to E2": 2,
+      "E2 to spoon4": 8,
+      "spoon4 to E1": 2,
+      "spoon4 to E2": 12,
+      "E1 to spoon3": 3,
+      "cup1 to E2": 12,
+      "E1 to E2": 9,
+      "E1 to fork3": 1,
+      "pepper-shaker1 to cup1": 1,
+      "E2 to E1": 10,
+      "cup1 to salt-shaker1": 1,
+      "spoon3 to fork3": 1,
+      "E1 to cup1": 2,
+      "spoon3 to E1": 3,
+      "E2 to spoon3": 4,
+      "spoon4 to cup1": 2,
+      "E2 to cup1": 2,
+      "fork4 to E2": 3,
+      "fork3 to cup1": 2,
+      "spoon4 to spoon3": 2,
+      "E2 to fork3": 1,
+      "fork4 to E1": 1,
+      "small-glass2 to E2": 5,
+      "pepper-shaker1 to E2": 1,
+      "E1 to pepper-shaker1": 1,
+      "E2 to pepper-shaker1": 1,
+      "E1 to spoon4": 2,
+      "cup1 to spoon4": 2,
+      "spoon3 to spoon4": 2,
+      "spoon3 to E2": 3,
+      "cup1 to spoon3": 2,
+      "spoon4 to salt-shaker1": 1,
+      "cup1 to E1": 1,
+      "spoon3 to cup1": 2,
+      "spoon4 to fork3": 1,
+      "spoon3 to fork4": 1,
+      "fork3 to E1": 1
+     }
+    },
+    "C6": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.12,
+      "wv2": 16.5,
+      "coherent": 0.095,
+      "incoherent": 0.07,
+      "tags": 57.66
+     },
+     "answers": {
+      "E2": 85,
+      "fork3": 8,
+      "E1": 30,
+      "spoon4": 20,
+      "spoon3": 13,
+      "cup1": 23,
+      "fork4": 6,
+      "pepper-shaker1": 4,
+      "small-glass2": 5,
+      "salt-shaker1": 2,
+      "knife2": 2,
+      "knife3": 1,
+      "spoon2": 1
+     },
+     "through": {
+      "correspondence": 177,
+      "default": 23
+     },
+     "codelets": 82.0,
+     "capped": 0,
+     "literal": 23,
+     "paired_differ": 75,
+     "moved": {
+      "spoon3 to E2": 3,
+      "fork3 to E2": 2,
+      "spoon4 to E1": 2,
+      "cup1 to fork4": 2,
+      "E1 to E2": 8,
+      "E1 to spoon4": 1,
+      "E2 to cup1": 7,
+      "cup1 to fork3": 1,
+      "E2 to small-glass2": 1,
+      "spoon3 to E1": 4,
+      "E2 to fork4": 2,
+      "E1 to spoon3": 2,
+      "E2 to spoon3": 2,
+      "spoon4 to fork3": 2,
+      "fork4 to E2": 2,
+      "spoon4 to E2": 4,
+      "fork3 to spoon4": 1,
+      "E1 to pepper-shaker1": 1,
+      "cup1 to E2": 5,
+      "E2 to pepper-shaker1": 1,
+      "cup1 to spoon4": 1,
+      "E1 to salt-shaker1": 2,
+      "E1 to cup1": 1,
+      "fork3 to E1": 1,
+      "spoon4 to fork4": 1,
+      "E2 to knife2": 1,
+      "E2 to E1": 5,
+      "E2 to fork3": 1,
+      "small-glass2 to knife3": 1,
+      "small-glass2 to E2": 2,
+      "fork4 to E1": 1,
+      "E2 to spoon4": 2,
+      "fork4 to cup1": 1,
+      "spoon4 to spoon3": 1,
+      "cup1 to E1": 1
+     }
+    },
+    "C3": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.155,
+      "wv2": 18.0,
+      "coherent": 0.105,
+      "incoherent": 0.115,
+      "tags": 57.78
+     },
+     "answers": {
+      "spoon3": 15,
+      "fork3": 8,
+      "E2": 81,
+      "E1": 31,
+      "spoon4": 25,
+      "cup1": 24,
+      "pepper-shaker1": 2,
+      "fork4": 5,
+      "small-glass2": 7,
+      "spoon2": 1,
+      "knife2": 1
+     },
+     "through": {
+      "correspondence": 176,
+      "default": 24
+     },
+     "codelets": 81.6,
+     "capped": 0,
+     "literal": 24,
+     "paired_differ": 0,
+     "moved": {}
+    },
+    "K1": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.185,
+      "wv2": 21.0,
+      "coherent": 0.115,
+      "incoherent": 0.135,
+      "tags": 56.68
+     },
+     "answers": {
+      "spoon3": 19,
+      "fork3": 10,
+      "E1": 30,
+      "E2": 80,
+      "spoon4": 19,
+      "cup1": 24,
+      "pepper-shaker1": 2,
+      "fork4": 4,
+      "salt-shaker1": 2,
+      "small-glass2": 7,
+      "spoon1": 1,
+      "spoon2": 1,
+      "knife2": 1
+     },
+     "through": {
+      "correspondence": 176,
+      "default": 24
+     },
+     "codelets": 81.8,
+     "capped": 0,
+     "literal": 24,
+     "paired_differ": 25,
+     "moved": {
+      "E2 to spoon3": 2,
+      "E1 to E2": 3,
+      "spoon4 to E1": 1,
+      "E2 to salt-shaker1": 1,
+      "spoon4 to E2": 3,
+      "spoon4 to spoon1": 1,
+      "spoon4 to fork3": 1,
+      "spoon4 to spoon3": 1,
+      "cup1 to fork3": 1,
+      "E2 to spoon4": 1,
+      "E2 to cup1": 1,
+      "E2 to E1": 2,
+      "cup1 to spoon3": 1,
+      "cup1 to salt-shaker1": 1,
+      "E1 to cup1": 2,
+      "fork4 to E2": 1,
+      "fork3 to E1": 1,
+      "E2 to fork3": 1
+     }
+    },
+    "C7": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.15,
+      "wv2": 17.5,
+      "coherent": 0.105,
+      "incoherent": 0.095,
+      "tags": 57.24
+     },
+     "answers": {
+      "spoon3": 14,
+      "fork3": 9,
+      "E2": 77,
+      "E1": 34,
+      "spoon4": 25,
+      "cup1": 24,
+      "pepper-shaker1": 3,
+      "small-glass2": 7,
+      "fork4": 5,
+      "knife2": 1,
+      "spoon2": 1
+     },
+     "through": {
+      "correspondence": 176,
+      "default": 24
+     },
+     "codelets": 81.1,
+     "capped": 0,
+     "literal": 24,
+     "paired_differ": 16,
+     "moved": {
+      "E2 to spoon4": 2,
+      "fork4 to fork3": 1,
+      "fork3 to E1": 2,
+      "spoon4 to E2": 2,
+      "small-glass2 to spoon4": 1,
+      "E2 to pepper-shaker1": 1,
+      "spoon4 to fork4": 1,
+      "E2 to fork3": 1,
+      "E2 to knife2": 1,
+      "small-glass2 to fork3": 1,
+      "E2 to small-glass2": 1,
+      "knife2 to small-glass2": 1,
+      "spoon3 to E1": 1
+     }
+    },
+    "S2": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.145,
+      "wv2": 16.5,
+      "coherent": 0.135,
+      "incoherent": 0.05,
+      "tags": 57.62
+     },
+     "answers": {
+      "spoon4": 27,
+      "E1": 37,
+      "E2": 78,
+      "fork3": 6,
+      "cup1": 19,
+      "spoon3": 19,
+      "pepper-shaker1": 4,
+      "fork4": 4,
+      "salt-shaker1": 2,
+      "knife2": 2,
+      "small-glass2": 2
+     },
+     "through": {
+      "correspondence": 181,
+      "default": 19
+     },
+     "codelets": 83.3,
+     "capped": 0,
+     "literal": 19,
+     "paired_differ": 116,
+     "moved": {
+      "spoon3 to spoon4": 3,
+      "fork3 to spoon4": 1,
+      "E2 to E1": 10,
+      "fork3 to E1": 3,
+      "E2 to fork3": 1,
+      "spoon4 to fork3": 2,
+      "spoon4 to E1": 4,
+      "spoon4 to cup1": 3,
+      "E1 to spoon3": 4,
+      "cup1 to spoon3": 2,
+      "cup1 to E2": 6,
+      "E1 to fork3": 2,
+      "cup1 to spoon4": 3,
+      "E1 to spoon4": 4,
+      "E2 to spoon4": 7,
+      "spoon3 to E2": 3,
+      "E1 to E2": 9,
+      "spoon3 to E1": 3,
+      "E2 to fork4": 3,
+      "E2 to pepper-shaker1": 3,
+      "fork4 to spoon3": 1,
+      "spoon4 to spoon3": 2,
+      "small-glass2 to E1": 2,
+      "spoon4 to salt-shaker1": 1,
+      "fork3 to cup1": 2,
+      "E2 to spoon3": 4,
+      "E2 to cup1": 5,
+      "spoon4 to E2": 7,
+      "small-glass2 to salt-shaker1": 1,
+      "pepper-shaker1 to E2": 1,
+      "cup1 to E1": 5,
+      "E1 to knife2": 1,
+      "E1 to cup1": 1,
+      "fork3 to E2": 1,
+      "fork4 to E2": 1,
+      "small-glass2 to E2": 2,
+      "fork4 to spoon4": 2,
+      "spoon2 to spoon4": 1
+     }
+    },
+    "L5": {
+     "runs": 200,
+     "mechanism": {
+      "wv_mean": 1.155,
+      "wv2": 19.0,
+      "coherent": 0.12,
+      "incoherent": 0.105,
+      "tags": 57.27
+     },
+     "answers": {
+      "spoon3": 18,
+      "E1": 36,
+      "E2": 81,
+      "fork3": 6,
+      "spoon4": 24,
+      "cup1": 25,
+      "pepper-shaker1": 1,
+      "fork4": 4,
+      "small-glass2": 4,
+      "spoon2": 1
+     },
+     "through": {
+      "correspondence": 175,
+      "default": 25
+     },
+     "codelets": 81.4,
+     "capped": 0,
+     "literal": 25,
+     "paired_differ": 25,
+     "moved": {
+      "fork3 to E1": 1,
+      "E2 to fork3": 1,
+      "cup1 to E2": 2,
+      "E2 to fork4": 1,
+      "fork4 to cup1": 1,
+      "fork3 to E2": 2,
+      "spoon4 to E1": 1,
+      "E1 to E2": 1,
+      "small-glass2 to spoon3": 1,
+      "pepper-shaker1 to E2": 1,
+      "E2 to spoon3": 2,
+      "E2 to cup1": 2,
+      "E2 to E1": 3,
+      "E1 to spoon3": 1,
+      "spoon3 to E2": 1,
+      "small-glass2 to E1": 1,
+      "fork4 to E2": 1,
+      "small-glass2 to E2": 1,
+      "knife2 to E1": 1
+     }
+    }
+   }
+  }
+ ]
+}

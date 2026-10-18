@@ -1,0 +1,141 @@
+{
+ "name": "ch2-fig18",
+ "title": "Figure 2.18",
+ "family": "ch2",
+ "source": {
+  "tag": "F95",
+  "page": 34,
+  "figure": "Figure 2.18",
+  "pdf_page": 46,
+  "image_index": 33,
+  "image_size_px": [
+   236,
+   223
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   8,
+   12,
+   224,
+   208
+  ]
+ },
+ "touched": "cup1",
+ "answers": {},
+ "expected": {
+  "answer": "small-glass1",
+  "plausible": [
+   "small-glass1",
+   "cup1"
+  ],
+  "unlikely": [],
+  "quotes": [
+   {
+    "text": "This shifts the balance of pressures back to favoring the glass in front of Eliza.",
+    "page": 35
+   }
+  ],
+  "comparisons": [
+   {
+    "toward": "small-glass1",
+    "more_than": "ch2-fig17"
+   }
+  ]
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 17.8,
+   "y": 13.8,
+   "orientation": null,
+   "box_px": [
+    36,
+    36,
+    50,
+    42
+   ],
+   "figure": "Figure 2.18",
+   "page": 34,
+   "image": "F95 PDF page 46, pdfimages image 33 (236 x 223 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass2",
+   "type": "small glass",
+   "x": 84.3,
+   "y": 14.8,
+   "orientation": null,
+   "box_px": [
+    170,
+    36,
+    177,
+    46
+   ],
+   "figure": "Figure 2.18",
+   "page": 34,
+   "image": "F95 PDF page 46, pdfimages image 33 (236 x 223 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass3",
+   "type": "small glass",
+   "x": 90.9,
+   "y": 14.8,
+   "orientation": null,
+   "box_px": [
+    183,
+    36,
+    190,
+    46
+   ],
+   "figure": "Figure 2.18",
+   "page": 34,
+   "image": "F95 PDF page 46, pdfimages image 33 (236 x 223 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 15.5,
+   "y": 83.2,
+   "orientation": null,
+   "box_px": [
+    35,
+    170,
+    42,
+    180
+   ],
+   "figure": "Figure 2.18",
+   "page": 34,
+   "image": "F95 PDF page 46, pdfimages image 33 (236 x 223 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 21.1,
+   "y": 82.4,
+   "orientation": "up",
+   "box_px": [
+    46,
+    165,
+    53,
+    182
+   ],
+   "figure": "Figure 2.18",
+   "page": 34,
+   "image": "F95 PDF page 46, pdfimages image 33 (236 x 223 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi; chapter 2's figures draw the table alone, 227-246 x 221-229 px, the frame nearly filling the image, with 'Henry' above it and 'Eliza' below it); the table's frame was found as the darkest column and row profiles of the image's left and right eighths and top and bottom quarters (tools/measure_figure.py, find_frame); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H arrow or a neighbouring icon touches an icon, from an ASCII dump of the region, taking the icon's own outline (the cup's rim row, the right edge of its handle and its bottom row; a spoon's bowl and handle; a fork's tines, crossbar and handle) and leaving the arrow out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`). Chapter 2's figures carry no E arrows, so `answers` is empty and French's expectation in words is the `expected` block (docs/problems.md 9).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.51 units in chapter 2's figures (frames of 212-215 x 193-196 px, a tenth larger than chapter 5's); icon boxes are good to about 1 px, and the touched cup, which the H arrow overlaps, to about 2 px. Figure 2.11 is the configuration of Surround 5 and of the chapter 4 screen dumps; measured here it agrees with problems/surround-05.json to within 1.9 units in x and 2.3 in y over the thirteen objects (median 0.7; docs/problems.md 9)."
+ },
+ "notes": [
+  "The touched cup's box read on the dump (rim row 36, handle to x 50, bottom row 42).",
+  "The spoon is numbered spoon2 because the chain of variants from Figure 2.15 already used spoon1 for the upper-right spoon that Figure 2.16 removed."
+ ],
+ "review": "Reviewed: Figure 2.17 with the second lower-left glass replaced by a spoon, bowl up (the text says only that the groups 'are not identical any longer'; the icon is a spoon [F95 p. 34 (img)]). French: the resemblance between the groups is considerably weaker [F95 p. 35].",
+ "based_on": "ch2-fig17"
+}

@@ -201,7 +201,7 @@ single runs finish sooner ([`docs/run-times.md`](../docs/run-times.md)).
 - [`docs/trace-format.md`](../docs/trace-format.md): the trace format and the random
   generator plan.
 - [`docs/demos.md`](../docs/demos.md): the dissertation's demos and which seeds replay.
-- [`ralph_loops/loop0001/PROGRESS.md`](../ralph_loops/loop0001/PROGRESS.md): the log of
+- [`ralph_loops/loop0001/PROGRESS.md`](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0001/PROGRESS.md): the log of
   the work, item by item.
 - [`../python/`](../python/README.md): the second port, to Python.
 

@@ -1,0 +1,127 @@
+{
+ "name": "blockage-05",
+ "title": "Blockage 5",
+ "family": "blockage",
+ "source": {
+  "tag": "F95",
+  "page": 125,
+  "figure": "Blockage 5",
+  "pdf_page": 135,
+  "image_index": 10,
+  "image_size_px": [
+   493,
+   204
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   9,
+   14,
+   203,
+   190
+  ]
+ },
+ "touched": "cup1",
+ "answers": {
+  "E1": "small-glass1",
+  "E2": "small-glass3",
+  "E3": "cup1"
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 17.3,
+   "y": 13.6,
+   "orientation": null,
+   "box_px": [
+    33,
+    35,
+    46,
+    41
+   ],
+   "figure": "Blockage 5",
+   "page": 125,
+   "image": "F95 PDF page 135, pdfimages image 10 (493 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass2",
+   "type": "small glass",
+   "x": 84.8,
+   "y": 15.1,
+   "orientation": null,
+   "box_px": [
+    155,
+    36,
+    162,
+    45
+   ],
+   "figure": "Blockage 5",
+   "page": 125,
+   "image": "F95 PDF page 135, pdfimages image 10 (493 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 91.0,
+   "y": 15.9,
+   "orientation": null,
+   "box_px": [
+    163,
+    39,
+    176,
+    45
+   ],
+   "figure": "Blockage 5",
+   "page": 125,
+   "image": "F95 PDF page 135, pdfimages image 10 (493 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 11.6,
+   "y": 83.2,
+   "orientation": null,
+   "box_px": [
+    26,
+    156,
+    33,
+    165
+   ],
+   "figure": "Blockage 5",
+   "page": 125,
+   "image": "F95 PDF page 135, pdfimages image 10 (493 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass3",
+   "type": "small glass",
+   "x": 17.3,
+   "y": 83.2,
+   "orientation": null,
+   "box_px": [
+    36,
+    156,
+    43,
+    165
+   ],
+   "figure": "Blockage 5",
+   "page": 125,
+   "image": "F95 PDF page 135, pdfimages image 10 (493 x 204 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame; given by hand with --frame where a line is too faint for the profile, as the file's notes say); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (a cup's rim and body, a glass's rim and body, a spoon's bowl and handle, a fork's tines and handle, a shaker's rounded box) and leaving the arrow and its label out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched object, the E1 and E2 objects) to about 2 px; a spoon's bowl under the H arrow is placed from its handle. The uncertainty was measured on Surround 5 against the chapter 4 screen dump of the same configuration (docs/problems.md 5); the Buridan 1 configuration, printed twice (pp. 129 and 130), agrees with itself to within 1.5 units (docs/problems.md 7)."
+ },
+ "notes": [
+  "The H arrow enters the touched cup from the upper left and the E arrow's head its lower right; the cup's box is its rim row to its bottom row, 14 x 7 px, read on the ASCII dump.",
+  "The E arrows enter Eliza's glasses from the lower right; each glass's box is its rim and body, 8 x 10 px, read on the ASCII dump.",
+  "Blockage 4 with 'the spoon in the upper right-hand group ... replaced by a cup' [F95 p. 126]: cup2; the glass and the cup touch in the figure (one cluster of 22 x 10 px) and were separated on the ASCII dump: the glass's rim and body (rows 36-45), the cup's rim (row 39) and body.",
+  "The figure is printed on p. 125 and its table of numbers on p. 126."
+ ],
+ "review": "Reviewed: as Blockage 4 with a cup, not a spoon, right of the upper-right glass.",
+ "based_on": "blockage-04"
+}

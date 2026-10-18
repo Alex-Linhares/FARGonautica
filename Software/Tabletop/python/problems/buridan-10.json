@@ -1,0 +1,94 @@
+{
+ "name": "buridan-10",
+ "title": "Buridan 10",
+ "family": "buridan",
+ "source": {
+  "tag": "F95",
+  "page": 137,
+  "figure": "Buridan 10",
+  "pdf_page": 147,
+  "image_index": 42,
+  "image_size_px": [
+   488,
+   203
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   6,
+   14,
+   200,
+   191
+  ]
+ },
+ "touched": "spoon1",
+ "answers": {
+  "E1": "spoon2",
+  "E2": "fork1"
+ },
+ "objects": [
+  {
+   "id": "spoon1",
+   "type": "spoon",
+   "x": 55.9,
+   "y": 11.3,
+   "orientation": "up",
+   "box_px": [
+    102,
+    26,
+    107,
+    42
+   ],
+   "figure": "Buridan 10",
+   "page": 137,
+   "image": "F95 PDF page 147, pdfimages image 42 (488 x 203 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 13.3,
+   "y": 87.0,
+   "orientation": "up",
+   "box_px": [
+    27,
+    160,
+    32,
+    176
+   ],
+   "figure": "Buridan 10",
+   "page": 137,
+   "image": "F95 PDF page 147, pdfimages image 42 (488 x 203 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork1",
+   "type": "fork",
+   "x": 95.0,
+   "y": 84.7,
+   "orientation": "up",
+   "box_px": [
+    171,
+    156,
+    176,
+    172
+   ],
+   "figure": "Buridan 10",
+   "page": 137,
+   "image": "F95 PDF page 147, pdfimages image 42 (488 x 203 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame; given by hand with --frame where a line is too faint for the profile, as the file's notes say); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (a cup's rim and body, a glass's rim and body, a spoon's bowl and handle, a fork's tines and handle, a shaker's rounded box) and leaving the arrow and its label out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched object, the E1 and E2 objects) to about 2 px; a spoon's bowl under the H arrow is placed from its handle. The uncertainty was measured on Surround 5 against the chapter 4 screen dump of the same configuration (docs/problems.md 5); the Buridan 1 configuration, printed twice (pp. 129 and 130), agrees with itself to within 1.5 units (docs/problems.md 7)."
+ },
+ "notes": [
+  "The H arrow enters the touched spoon's bowl from the upper right; the spoon's box is its bowl (6 px wide, centred on the handle) and handle, 17 px, read on the ASCII dump.",
+  "The E1 arrow enters Eliza's lower-left spoon from the lower left and the E2 arrow her lower-right object from the lower right; their boxes were read on the ASCII dumps, the arrows and labels left out.",
+  "'The complete lack of any positional or grouping factors' [F95 p. 137]: Buridan 1 without its cups and glasses; the three pieces of silverware alone. The touched spoon's bowl lies under the H arrow's head, so its box is placed from the handle (column 104) and the handle's length.",
+  "The H arrow enters the touched spoon from the upper right and the bowl's top is under its head; the bowl's row is set from the handle's 10 px below it."
+ ],
+ "review": "Reviewed: spoon (H) top centre, spoon (E1) lower left, fork (E2) lower right, nothing else [F95 p. 137].",
+ "based_on": "buridan-01"
+}

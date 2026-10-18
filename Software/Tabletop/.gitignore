@@ -1,0 +1,10 @@
+# The compiled engine's build artefacts (python3 tools/build_fast.py, pip install .): the
+# generated C, the annotation HTML, the extension modules and setuptools' build folder are
+# never committed; the .pyx and .pxd sources beside them are.
+python/tabletop/_native/*.c
+python/tabletop/_native/*.html
+python/tabletop/_native/*.so
+python/tabletop/_native/*.pyd
+python/build/
+python/*.egg-info/
+__pycache__/

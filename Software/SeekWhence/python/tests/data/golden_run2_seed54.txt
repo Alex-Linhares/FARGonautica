@@ -1,0 +1,109 @@
+# Golden trace of the reconstruction: run2_373373, seed 54, the console inputs of
+# Meredith's printout [M86 pp. 167-169] and her answers (item 20).
+# Written by `python3 -m seekwhence.bench appendix --runs run2_373373 --golden 54`; the test
+# `tests/test_appendix.py` replays the same session and requires this text exactly.
+# Never edited by hand and never regenerated to make a failing test pass: a change
+# in the engine that changes this run is
+# judged on its merits and, if it is meant, the file is rewritten with the reason in
+# PROGRESS.md. Lines beginning with '#' are this header, not program output.
+
+-> (startup)
+
+please enter a term: 3
+
+please enter a term: 7
+spark1 --- between glint1glint2
+spark2 --- between glint1glint2
+spark3 --- between glint2glint1
+
+please enter a term: 3
+spark4 --- between glint3glint2
+spark5 --- between glint3glint1
+spark6 --- between glint3glint2
+spark7 --- between glint1glint3
+bond1 --- between glint1glint3
+Same -cover proposed --> glint1
+Same -fence proposed --> glint1
+Same -cover proposed --> glint1
+Same -fence proposed --> glint1
+spark8 --- between glint1glint2
+Glommer for Same print-value fence members: (glint1 glint2)
+Glomtester failed glint1
+failed to glom (glint1 glint2 glint3)
+spark9 --- between glom1glint3
+Glomtester failed glint1
+create-template-glom (Cycle 3 2 (3 7))(glom1)
+top-down glom glom2
+template made : (form (Cycle 3 2 (3 7)) state working coverage (1 2) glom glom2)
+check-cycle template (Cycle 3 2 ((3 7)))
+spark10 --- between glom1glint3
+(Cycle 3 2 (3 7))
+top-down glom glom3
+gnoths constructed
+
+please enter a term: show
+terms of the sequence:
+3 7 3
+
+bonds:
+bond1 Same print-value (remote) -- (glint1 glint3)
+
+gloms:
+glom1 (Same print-value fence) --> (3 7) terms 1 to 2
+glom3 pseudo --> ((3 7))  terms 1 to 2
+
+gnoths:
+
+class: Gnoths
+name: gnoth1
+frame: 0
+plato-class: Cycle
+glom: glom3
+notes: nil
+form: (((Cycle 3 2 (3 7)) pure))
+state: stable
+range: (1 2)
+
+please enter a term: show-hypothesis
+(Cycle 3 2 (3 7))
+
+please enter a term: 3
+new term being hypothesis-filtered through (Cycle 3 2 (3 7))
+set-out -- validity: 0
+spark11 --- between glint1glint3
+spark12 --- between glint4glint2
+spark13 --- between glom1glint3
+spark14 --- between glint4glint3
+spark15 --- between glint4glom1
+spark16 --- between glint4glint1
+spark17 --- between glom1glint3
+top-down glom glom4
+top-down glom glom5
+top-down glom glom6
+gnoths: (gnoth1 gnoth2 gnoth3)
+slip-check: stayval: 0.0
+        best: nil
+bond2 --- between glint3glint4
+spark18 --- between glint1glint4
+spark19 --- between glint1glint3
+bond3 --- between glint1glint4
+spark20 --- between glom1glint4
+spark21 --- between glint1glint4
+casts: ((Cycle 3 1 (3)) (Cycle 7 1 (7)) (Cycle 3 1 (3)))
+(Cycle 3 3 (3 7 3))
+new hypoth candidate (Cycle 3 3 (3 7 3))
+
+please enter a term: show-seq
+3 7 3 3
+
+please enter a term: 7
+new term being hypothesis-filtered through (Cycle 3 3 (3 7 3))
+top-down glom glom7
+
+I have a guess!
+
+hypothesis: (Cycle 3 3 (3 7 3))
+3 7 3 3 7
+
+enter no if wrong, ok if right ok
+bye

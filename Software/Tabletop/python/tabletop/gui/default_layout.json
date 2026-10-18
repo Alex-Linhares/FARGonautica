@@ -1,0 +1,132 @@
+{
+ "format": "tabletop-gui-layout",
+ "version": 1,
+ "qt": "6.11.2",
+ "docks": [
+  {
+   "name": "controls-dock",
+   "visible": true,
+   "area": "left",
+   "tabbed_with": []
+  },
+  {
+   "name": "palette-dock",
+   "visible": true,
+   "area": "left",
+   "tabbed_with": []
+  },
+  {
+   "name": "stats-dock",
+   "visible": true,
+   "area": "left",
+   "tabbed_with": []
+  },
+  {
+   "name": "thermometer-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": []
+  },
+  {
+   "name": "slipnet-grid-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": [
+    "slipnet-network-dock"
+   ]
+  },
+  {
+   "name": "slipnet-network-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": [
+    "slipnet-grid-dock"
+   ]
+  },
+  {
+   "name": "worldview-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": [
+    "competitions-dock",
+    "temperature-dock",
+    "roles-dock"
+   ]
+  },
+  {
+   "name": "competitions-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": [
+    "worldview-dock",
+    "temperature-dock",
+    "roles-dock"
+   ]
+  },
+  {
+   "name": "temperature-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": [
+    "worldview-dock",
+    "competitions-dock",
+    "roles-dock"
+   ]
+  },
+  {
+   "name": "roles-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": [
+    "worldview-dock",
+    "competitions-dock",
+    "temperature-dock"
+   ]
+  },
+  {
+   "name": "config-dock",
+   "visible": false,
+   "area": "right",
+   "tabbed_with": []
+  },
+  {
+   "name": "coderack-dock",
+   "visible": true,
+   "area": "bottom",
+   "tabbed_with": [
+    "rack-dock"
+   ]
+  },
+  {
+   "name": "rack-dock",
+   "visible": true,
+   "area": "bottom",
+   "tabbed_with": [
+    "coderack-dock"
+   ]
+  },
+  {
+   "name": "log-dock",
+   "visible": true,
+   "area": "bottom",
+   "tabbed_with": [
+    "results-dock"
+   ]
+  },
+  {
+   "name": "results-dock",
+   "visible": true,
+   "area": "bottom",
+   "tabbed_with": [
+    "log-dock"
+   ]
+  }
+ ],
+ "toolbars": [
+  {
+   "name": "timeline-toolbar",
+   "visible": true
+  }
+ ],
+ "state": "AAAA/wAAAAH9AAAAAwAAAAAAAACqAAACFPwCAAAAA/sAAAAaAGMAbwBuAHQAcgBvAGwAcwAtAGQAbwBjAGsBAAAAFgAAAJUAAABPAP////sAAAAYAHAAYQBsAGUAdAB0AGUALQBkAG8AYwBrAQAAALEAAADeAAAATwD////7AAAAFABzAHQAYQB0AHMALQBkAG8AYwBrAQAAAZUAAACVAAAATwD///8AAAABAAABjAAAAhT8AgAAAAH8AAAAFgAAAhQAAAFCAP////wBAAAAAvsAAAAgAHQAaABlAHIAbQBvAG0AZQB0AGUAcgAtAGQAbwBjAGsBAAABpgAAAEgAAAA4AP////wAAAH0AAABPgAAAMgA/////AIAAAAC/AAAABYAAAEUAAAAxgEAABz6AAAAAAIAAAAC+wAAACIAcwBsAGkAcABuAGUAdAAtAGcAcgBpAGQALQBkAG8AYwBrAQAAAAD/////AAAAqQD////7AAAAKABzAGwAaQBwAG4AZQB0AC0AbgBlAHQAdwBvAHIAawAtAGQAbwBjAGsBAAAAAP////8AAACpAP////wAAAEwAAAA+gAAAHYBAAAc+gAAAAACAAAABfsAAAAcAHcAbwByAGwAZAB2AGkAZQB3AC0AZABvAGMAawEAAAAA/////wAAAFkA////+wAAACIAYwBvAG0AcABlAHQAaQB0AGkAbwBuAHMALQBkAG8AYwBrAQAAAAD/////AAAAWQD////7AAAAIAB0AGUAbQBwAGUAcgBhAHQAdQByAGUALQBkAG8AYwBrAQAAAAD/////AAAATwD////7AAAAFAByAG8AbABlAHMALQBkAG8AYwBrAQAAAAD/////AAAAWQD////7AAAAFgBjAG8AbgBmAGkAZwAtAGQAbwBjAGsAAAAAAP////8AAABPAP///wAAAAMAAAMyAAABZPwBAAAAAfwAAAAAAAADMgAAAMgA/////AIAAAAC/AAAAjAAAACqAAAAdgEAABz6AAAAAAIAAAAC+wAAABoAYwBvAGQAZQByAGEAYwBrAC0AZABvAGMAawEAAAAA/////wAAAFkA////+wAAABIAcgBhAGMAawAtAGQAbwBjAGsBAAAAAP////8AAABZAP////wAAALgAAAAtAAAAHYBAAAc+gAAAAACAAAAAvsAAAAQAGwAbwBnAC0AZABvAGMAawEAAAAA/////wAAAFkA////+wAAABgAcgBlAHMAdQBsAHQAcwAtAGQAbwBjAGsBAAAAAP////8AAABZAP///wAAAPAAAAIUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAwAAAAEAAAAgAHQAaQBtAGUAbABpAG4AZQAtAHQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAA=="
+}

@@ -1133,7 +1133,7 @@ Kinds: 🐛 bug in the original · 🌀 anomaly (behaviour nobody can explain ye
   - A narrower fix (handing the pane to the GUI thread from `__del__`) exposed the next
     off-thread deletion: a `QGraphicsScene` freed on a worker, then a SIGSEGV when its
     timer fired.
-- **Evidence:** `ralph_loops/loop0003/hang-it07-faulthandler.log` (Python stacks); gdb's C
+- **Evidence:** [`ralph_loops/loop0003/hang-it07-faulthandler.log`](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0003/hang-it07-faulthandler.log) (Python stacks); gdb's C
   stacks (`delete_garbage` ← `gc_collect_main` ← `_Py_HandlePending` under
   `QWidget::~QWidget`); `test_the_garbage_collector_runs_on_the_gui_thread_only` fails
   every time without the fix (128+ collections on a worker).

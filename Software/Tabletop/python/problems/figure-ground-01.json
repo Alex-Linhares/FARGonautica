@@ -1,0 +1,141 @@
+{
+ "name": "figure-ground-01",
+ "title": "Figure/ground 1",
+ "family": "figure-ground",
+ "source": {
+  "tag": "F95",
+  "page": 139,
+  "figure": "Figure/ground 1",
+  "pdf_page": 149,
+  "image_index": 50,
+  "image_size_px": [
+   490,
+   202
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   10,
+   13,
+   203,
+   188
+  ]
+ },
+ "touched": "fork3",
+ "answers": {
+  "E1": "fork1",
+  "E2": "fork2",
+  "E3": "small-glass1"
+ },
+ "objects": [
+  {
+   "id": "fork1",
+   "type": "fork",
+   "x": 52.7,
+   "y": 14.3,
+   "orientation": "up",
+   "box_px": [
+    100,
+    30,
+    105,
+    46
+   ],
+   "figure": "Figure/ground 1",
+   "page": 139,
+   "image": "F95 PDF page 149, pdfimages image 50 (490 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork2",
+   "type": "fork",
+   "x": 57.3,
+   "y": 14.3,
+   "orientation": "up",
+   "box_px": [
+    108,
+    30,
+    113,
+    46
+   ],
+   "figure": "Figure/ground 1",
+   "page": 139,
+   "image": "F95 PDF page 149, pdfimages image 50 (490 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 61.8,
+   "y": 14.6,
+   "orientation": null,
+   "box_px": [
+    115,
+    34,
+    122,
+    43
+   ],
+   "figure": "Figure/ground 1",
+   "page": 139,
+   "image": "F95 PDF page 149, pdfimages image 50 (490 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass2",
+   "type": "small glass",
+   "x": 49.0,
+   "y": 83.7,
+   "orientation": null,
+   "box_px": [
+    93,
+    155,
+    99,
+    164
+   ],
+   "figure": "Figure/ground 1",
+   "page": 139,
+   "image": "F95 PDF page 149, pdfimages image 50 (490 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass3",
+   "type": "small glass",
+   "x": 54.1,
+   "y": 83.7,
+   "orientation": null,
+   "box_px": [
+    102,
+    155,
+    108,
+    164
+   ],
+   "figure": "Figure/ground 1",
+   "page": 139,
+   "image": "F95 PDF page 149, pdfimages image 50 (490 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork3",
+   "type": "fork",
+   "x": 59.0,
+   "y": 83.4,
+   "orientation": "up",
+   "box_px": [
+    111,
+    151,
+    116,
+    167
+   ],
+   "figure": "Figure/ground 1",
+   "page": 139,
+   "image": "F95 PDF page 149, pdfimages image 50 (490 x 202 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame; given by hand with --frame where a line is too faint for the profile, as the file's notes say); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (a cup's rim and body, a glass's rim and body, a spoon's bowl and handle, a fork's tines and handle, a shaker's rounded box) and leaving the arrow and its label out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched object, the E1 and E2 objects) to about 2 px; a spoon's bowl under the H arrow is placed from its handle. The uncertainty was measured on Surround 5 against the chapter 4 screen dump of the same configuration (docs/problems.md 5); the Buridan 1 configuration, printed twice (pp. 129 and 130), agrees with itself to within 1.5 units (docs/problems.md 7)."
+ },
+ "notes": [
+  "'Henry reaches across the table and touches the \"figure\" object on Eliza's side' [F95 p. 139]: the touched object is Eliza's fork (fork3), right of her two glasses at the bottom centre; the H arrow comes from the upper right and its head covers the tines' top row, so the box is placed from the handle (column 113) and the tines' first faint row.",
+  "Henry's two forks (E1 the left one, E2 the right one; the labels sit below them) have the E arrows' heads on their handles; their boxes are the tines and 17 px of handle. Henry's glass (E3) has the E3 arrow from the lower right.",
+  "Both groups sit at the centre of their sides, not in a corner."
+ ],
+ "review": "Reviewed: fork (E1), fork (E2), glass (E3) top centre; glass, glass, fork (H) bottom centre [F95 p. 139]."
+}

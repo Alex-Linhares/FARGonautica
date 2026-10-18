@@ -1,0 +1,119 @@
+\documentclass{article}
+
+
+\newcommand{\method}[9]{
+  \par\noindent\begin{minipage}[t]{0.5\linewidth}
+    \textbf{\large method} \textbf{#1}::\textit{\large #2}\vskip2mm
+    \hrule\vskip2mm
+  \par\noindent\textbf{Usage: }
+  \begin{minipage}[t][0.4in]{0.7\linewidth}
+    #3
+  \end{minipage}\vskip2mm
+
+  \par\noindent\textbf{Returns: }
+  \begin{minipage}[t][0.3in]{0.7\linewidth}
+    #5
+  \end{minipage}\vskip1mm
+
+  \par\noindent\textbf{Purpose: }
+  \begin{minipage}[t][1.3in]{0.66\linewidth}
+    #4
+  \end{minipage}
+
+
+  \end{minipage}
+  \begin{minipage}[t]{0.4\linewidth}
+    \vskip3mm
+
+  \par\noindent\textbf{p5sig: }
+  \begin{minipage}[t][0.3in]{0.7\linewidth}
+    #6
+  \end{minipage}\vskip1mm
+    
+  \par\noindent\textbf{p6sig: }
+  \begin{minipage}[t][0.3in]{0.7\linewidth}
+    #7
+  \end{minipage}\vskip1mm
+
+  \par\noindent\textbf{throws: }
+  \begin{minipage}[t][0.3in]{0.7\linewidth}
+    #8
+  \end{minipage}\vskip1mm
+    
+  \par\noindent\textbf{Commens/See Also: }
+  \par\begin{minipage}[t][0.6in]{0.7\linewidth}
+    #9
+  \end{minipage}\vskip1mm
+
+  \end{minipage}
+}
+
+\newenvironment{multimethod}[5]{
+  \textbf{\large multimethod #1}\vskip2mm
+  \par\hrule\vskip2mm\par
+  \begin{minipage}{0.5\linewidth}
+    \par\noindent\textbf{Usage: }
+    \begin{minipage}[t][0.4in]{0.7\linewidth}
+      #2
+    \end{minipage}\vskip1mm
+
+    \par\noindent\textbf{Purpose: }
+    \begin{minipage}[t][1.5in]{0.7\linewidth}
+      #3
+    \end{minipage}\vskip1mm
+  \end{minipage}
+  \begin{minipage}{0.5\linewidth}
+    \par\noindent\textbf{Throws: }
+    \par\begin{minipage}[t][0.4in]{0.7\linewidth}
+      #4
+    \end{minipage}\vskip1mm
+    
+    \par\noindent\textbf{Comments: }
+    \par\begin{minipage}[t][1in]{0.7\linewidth}
+      #5
+    \end{minipage}\vskip1mm
+    
+  \end{minipage}\par\quad\quad\hrule
+  }{\vskip4mm\par\hrule\vskip3mm\par}
+
+\newcommand{\variant}[2]{\vskip2mm\par
+  \quad\quad\textbf{variant: #1}
+  \par\quad\quad\quad\begin{minipage}[t][0.7in]{0.9\linewidth}
+    #2
+  \end{minipage}}
+
+\begin{document}
+
+\title{Seqsee Documentation}
+\date{Thursday, Aug 25, 2005}
+\author{Abhijit Mahabal}
+\maketitle
+
+\section*{Change Log}
+
+\begin{tabular}{llp{3in}}
+  1 & 8/25 & Initial\\
+  
+\end{tabular}
+
+\section*{Positions}
+
+\subsection*{Intro}
+Positions come in three flavors: absolute (like ``first''), named (like ``peak'') and category based (like ``the mountain''). 
+
+\subsection*{Construction}
+
+\begin{itemize}
+\item \verb# SPos->new(3)#
+\item \verb# SPos->new_the($cat)#
+\end{itemize}
+
+\subsection*{Methods}
+
+\begin{itemize}
+\item \verb!find_range!
+\end{itemize}
+
+
+
+\end{document}

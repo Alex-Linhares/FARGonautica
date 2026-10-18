@@ -1,0 +1,15 @@
+Type = NonLTM
+Cluster_Count = 2
+NoChart = 0
+
+[Sequences]
+seq=({1}{ 18 17}) ({ 1 2}{ 18 17 16})({ 1 2 3}{ 18 17 16 15})|({1 2 3 4}{ 18 17 16 15 14})
+seq=1 18 1 17 2 18 1 17 2 16 3 18 1 17 2 16|3 15 4 18 1 17 2 16 3 15
+
+[Cluster_2]
+source = Human
+
+[Sequence_1]
+label=Group-Interlaced
+[Sequence_2]
+label=Individual-Interlaced

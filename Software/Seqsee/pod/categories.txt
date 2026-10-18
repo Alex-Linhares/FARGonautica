@@ -1,0 +1,63 @@
+file: categories
+
+This file documents the categories that seqsee uses.
+
+########################
+cat: group
+
+All groups are instances of this
+
+positions:
+        * leftmost
+        * rightmost
+
+properties:
+        * flush-left
+        * can be expanded left
+        * can be expanded right
+        * length
+        * span
+        * left edge
+        * right edge
+
+########################
+cat: ascending
+
+[1 2 3] etc
+
+positions:
+        * start
+        * end
+
+builder:
+        [$start..$end]
+
+is instance of:
+   * Group
+
+########################
+cat: descending
+
+[5 4 3] etc
+
+########################
+cat: mountain
+
+[3 4 5 4 3] etc
+
+########################
+cat: lit(n)
+
+The category "n" (e.g., "3")
+
+########################
+cat: lit(a,b,c)
+
+The literal gp (e.g., "1 2 3")
+
+########################
+cat: 
+
+########################
+cat: 
+

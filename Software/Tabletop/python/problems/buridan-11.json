@@ -1,0 +1,126 @@
+{
+ "name": "buridan-11",
+ "title": "Buridan 11",
+ "family": "buridan",
+ "source": {
+  "tag": "F95",
+  "page": 137,
+  "figure": "Buridan 11",
+  "pdf_page": 147,
+  "image_index": 44,
+  "image_size_px": [
+   492,
+   207
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   11,
+   16,
+   205,
+   191
+  ]
+ },
+ "touched": "spoon1",
+ "answers": {
+  "E1": "spoon2",
+  "E2": "fork1"
+ },
+ "objects": [
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 49.0,
+   "y": 11.4,
+   "orientation": null,
+   "box_px": [
+    91,
+    33,
+    104,
+    39
+   ],
+   "figure": "Buridan 11",
+   "page": 137,
+   "image": "F95 PDF page 147, pdfimages image 44 (492 x 207 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon1",
+   "type": "spoon",
+   "x": 55.9,
+   "y": 11.4,
+   "orientation": "up",
+   "box_px": [
+    107,
+    28,
+    112,
+    44
+   ],
+   "figure": "Buridan 11",
+   "page": 137,
+   "image": "F95 PDF page 147, pdfimages image 44 (492 x 207 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 13.3,
+   "y": 87.4,
+   "orientation": "up",
+   "box_px": [
+    32,
+    161,
+    37,
+    177
+   ],
+   "figure": "Buridan 11",
+   "page": 137,
+   "image": "F95 PDF page 147, pdfimages image 44 (492 x 207 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup4",
+   "type": "cup",
+   "x": 87.3,
+   "y": 85.4,
+   "orientation": null,
+   "box_px": [
+    159,
+    162,
+    171,
+    169
+   ],
+   "figure": "Buridan 11",
+   "page": 137,
+   "image": "F95 PDF page 147, pdfimages image 44 (492 x 207 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork1",
+   "type": "fork",
+   "x": 95.0,
+   "y": 85.1,
+   "orientation": "up",
+   "box_px": [
+    176,
+    157,
+    181,
+    173
+   ],
+   "figure": "Buridan 11",
+   "page": 137,
+   "image": "F95 PDF page 147, pdfimages image 44 (492 x 207 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame; given by hand with --frame where a line is too faint for the profile, as the file's notes say); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (a cup's rim and body, a glass's rim and body, a spoon's bowl and handle, a fork's tines and handle, a shaker's rounded box) and leaving the arrow and its label out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched object, the E1 and E2 objects) to about 2 px; a spoon's bowl under the H arrow is placed from its handle. The uncertainty was measured on Surround 5 against the chapter 4 screen dump of the same configuration (docs/problems.md 5); the Buridan 1 configuration, printed twice (pp. 129 and 130), agrees with itself to within 1.5 units (docs/problems.md 7)."
+ },
+ "notes": [
+  "The H arrow enters the touched spoon's bowl from the upper right; the spoon's box is its bowl (6 px wide, centred on the handle) and handle, 17 px, read on the ASCII dump.",
+  "The E1 arrow enters Eliza's lower-left spoon from the lower left and the E2 arrow her lower-right object from the lower right; their boxes were read on the ASCII dumps, the arrows and labels left out.",
+  "Buridan 10 plus 'cups next to the touched spoon and the fork' [F95 p. 138]: one cup each (cup2 beside Henry's spoon, cup4 beside Eliza's fork, the ids of the cups next to those pieces in Buridan 1); both clean clusters.",
+  "The lower-right cup measures 13 x 8 px (its left side faint); the box is as measured."
+ ],
+ "review": "Reviewed: cup, spoon (H) top centre; spoon (E1) alone lower left; cup, fork (E2) lower right [F95 p. 137].",
+ "based_on": "buridan-10"
+}

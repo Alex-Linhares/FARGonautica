@@ -1,0 +1,220 @@
+{
+ "name": "ch2-fig08",
+ "title": "Figure 2.8",
+ "family": "ch2",
+ "source": {
+  "tag": "F95",
+  "page": 29,
+  "figure": "Figure 2.8",
+  "pdf_page": 41,
+  "image_index": 13,
+  "image_size_px": [
+   228,
+   224
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   6,
+   15,
+   220,
+   210
+  ]
+ },
+ "touched": "cup1",
+ "answers": {},
+ "expected": {
+  "answer": null,
+  "plausible": [
+   "small-glass1",
+   "cup2"
+  ],
+  "unlikely": [],
+  "quotes": [
+   {
+    "text": "With respect to the previous configuration, this makes it more likely that Eliza will touch the glass in front of her.",
+    "page": 28
+   }
+  ],
+  "comparisons": [
+   {
+    "toward": "small-glass1",
+    "more_than": "ch2-fig07"
+   }
+  ]
+ },
+ "objects": [
+  {
+   "id": "saucer1",
+   "type": "saucer",
+   "x": 7.5,
+   "y": 16.4,
+   "orientation": null,
+   "box_px": [
+    14,
+    40,
+    27,
+    54
+   ],
+   "figure": "Figure 2.8",
+   "page": 29,
+   "image": "F95 PDF page 41, pdfimages image 13 (228 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "knife1",
+   "type": "knife",
+   "x": 13.1,
+   "y": 15.6,
+   "orientation": "up",
+   "box_px": [
+    30,
+    37,
+    33,
+    54
+   ],
+   "figure": "Figure 2.8",
+   "page": 29,
+   "image": "F95 PDF page 41, pdfimages image 13 (228 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork1",
+   "type": "fork",
+   "x": 17.5,
+   "y": 15.6,
+   "orientation": "up",
+   "box_px": [
+    38,
+    37,
+    42,
+    54
+   ],
+   "figure": "Figure 2.8",
+   "page": 29,
+   "image": "F95 PDF page 41, pdfimages image 13 (228 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 24.7,
+   "y": 15.9,
+   "orientation": null,
+   "box_px": [
+    47,
+    43,
+    61,
+    49
+   ],
+   "figure": "Figure 2.8",
+   "page": 29,
+   "image": "F95 PDF page 41, pdfimages image 13 (228 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "salt-shaker1",
+   "type": "salt shaker",
+   "x": 33.4,
+   "y": 14.4,
+   "orientation": null,
+   "box_px": [
+    64,
+    35,
+    78,
+    51
+   ],
+   "figure": "Figure 2.8",
+   "page": 29,
+   "image": "F95 PDF page 41, pdfimages image 13 (228 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon1",
+   "type": "spoon",
+   "x": 18.0,
+   "y": 75.6,
+   "orientation": "up",
+   "box_px": [
+    38,
+    154,
+    44,
+    171
+   ],
+   "figure": "Figure 2.8",
+   "page": 29,
+   "image": "F95 PDF page 41, pdfimages image 13 (228 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 23.4,
+   "y": 75.9,
+   "orientation": null,
+   "box_px": [
+    48,
+    158,
+    55,
+    168
+   ],
+   "figure": "Figure 2.8",
+   "page": 29,
+   "image": "F95 PDF page 41, pdfimages image 13 (228 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 29.3,
+   "y": 75.6,
+   "orientation": "up",
+   "box_px": [
+    60,
+    154,
+    66,
+    171
+   ],
+   "figure": "Figure 2.8",
+   "page": 29,
+   "image": "F95 PDF page 41, pdfimages image 13 (228 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "knife2",
+   "type": "knife",
+   "x": 32.9,
+   "y": 76.2,
+   "orientation": "up",
+   "box_px": [
+    69,
+    155,
+    71,
+    172
+   ],
+   "figure": "Figure 2.8",
+   "page": 29,
+   "image": "F95 PDF page 41, pdfimages image 13 (228 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 87.4,
+   "y": 77.2,
+   "orientation": null,
+   "box_px": [
+    169,
+    162,
+    183,
+    169
+   ],
+   "figure": "Figure 2.8",
+   "page": 29,
+   "image": "F95 PDF page 41, pdfimages image 13 (228 x 224 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi; chapter 2's figures draw the table alone, 227-246 x 221-229 px, the frame nearly filling the image, with 'Henry' above it and 'Eliza' below it); the table's frame was found as the darkest column and row profiles of the image's left and right eighths and top and bottom quarters (tools/measure_figure.py, find_frame); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H arrow or a neighbouring icon touches an icon, from an ASCII dump of the region, taking the icon's own outline (the cup's rim row, the right edge of its handle and its bottom row; a spoon's bowl and handle; a fork's tines, crossbar and handle) and leaving the arrow out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`). Chapter 2's figures carry no E arrows, so `answers` is empty and French's expectation in words is the `expected` block (docs/problems.md 9).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.51 units in chapter 2's figures (frames of 212-215 x 193-196 px, a tenth larger than chapter 5's); icon boxes are good to about 1 px, and the touched cup, which the H arrow overlaps, to about 2 px. Figure 2.11 is the configuration of Surround 5 and of the chapter 4 screen dumps; measured here it agrees with problems/surround-05.json to within 1.9 units in x and 2.3 in y over the thirteen objects (median 0.7; docs/problems.md 9)."
+ },
+ "notes": [
+  "The fork, the H arrow and the cup form one cluster; the fork's tines and crossbar (x 38-42) and the cup (rim row 43, handle to x 61, bottom row 49) were read on the dump."
+ ],
+ "review": "Reviewed: Henry's row, left to right: a saucer, a knife, a fork, the touched cup (H), a saltshaker; Eliza's lower-left group: a spoon, a small glass, a spoon, a knife; the isolated cup lower right. French: the new pressure is belonging to a group; both the glass and the touched cup are part of a group [F95 p. 28].",
+ "based_on": "ch2-fig07"
+}

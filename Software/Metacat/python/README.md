@@ -181,13 +181,13 @@ and comments included.
 
 ## How it was translated
 
-The port was built by a "Ralph loop", [`ralph_loops/loop0002/`](../ralph_loops/loop0002/),
+The port was built by a "Ralph loop", [`ralph_loops/loop0002/`](https://github.com/fargonauts/metacat/tree/main/ralph_loops/loop0002),
 the same method that built the Racket port: one fresh Claude Code session per work item.
 After each session, a gate checks that the original and the references are unchanged and
 that `run-tests.sh` passes. The goal and rules are in
-[`TASK.md`](../ralph_loops/loop0002/TASK.md), the 18 items (00–17) in
-[`iterations.md`](../ralph_loops/loop0002/iterations.md), and each session's work in
-[`PROGRESS.md`](../ralph_loops/loop0002/PROGRESS.md).
+[`TASK.md`](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0002/TASK.md), the 18 items (00–17) in
+[`iterations.md`](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0002/iterations.md), and each session's work in
+[`PROGRESS.md`](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0002/PROGRESS.md).
 
 The rules that shaped the code:
 

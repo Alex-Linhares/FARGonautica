@@ -1,0 +1,110 @@
+class: SInstance 
+
+method: add_category
+
+say that $self belongs to $cat
+
+parameters:
+
+        $cat - the category
+        $bindings - must be an SBindings object
+
+description:
+
+
+method: add_non_category
+
+say that $self *does not* belong to $cat
+
+parameters:
+
+        $cat - the category
+
+description:
+
+  Remembers a decision that the object does not belong to $cat; Remembers the time when it happened.
+
+method: add_property
+
+add property to object.
+
+parameters:
+
+        $prop - the property (like $S::Length)
+        $value - value (like 3)
+
+description:
+
+method: is_of_category_p
+
+Does $self belong to $cat?
+
+parameters:
+        
+        $cat - the category
+
+description:
+
+        object is known to be of cat - return [1, $bindings]
+        known to not be of the cat - return [0, time of decision]
+        none of the above - return [undef]
+
+method: get_property
+
+Gets $prop of $self
+
+
+parameters:
+
+        $prop - the property
+
+description:
+
+###############
+
+
+
+method: 
+
+
+parameters:
+
+
+description:
+
+method: 
+
+
+parameters:
+
+
+description:
+
+method: 
+
+
+parameters:
+
+
+description:
+
+method: 
+
+
+parameters:
+
+
+description:
+
+method: 
+
+
+parameters:
+
+
+description:
+
+
+
+
+

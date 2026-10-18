@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61", "Cython>=3.0"]       # Cython and a C compiler build the compiled engine (setup.py)
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tabletop"
+version = "0.0.1"
+description = "Tabletop (French, 1992) reconstructed from the specification in Python"
+requires-python = ">=3.12"
+# Standard library only at run time: the engine, the command line and the benches need
+# nothing else. The compiled engine (the reference, D-107) needs Cython and a C compiler to
+# build (setup.py, `python3 tools/build_fast.py`); the pure engine, the specification, runs
+# on the explicit request TABLETOP_ENGINE=python. Tests need pytest.
+dependencies = []
+
+[project.optional-dependencies]
+# pytest-xdist is optional: `python3 -m pytest -n auto` (and run-tests.sh) run the tests in
+# parallel when it is installed.
+test = ["pytest>=7.4", "pytest-xdist>=3.0"]
+# The live GUI (python3 -m tabletop.gui, or tabletop-gui). The engine and the CLI need only
+# the standard library. pytest-qt is here, not in `test`, because it refuses to start when no
+# Qt binding is installed: `.[test]` runs the engine's tests and skips the GUI's, and
+# `.[gui,test]` runs everything (GUI-DECISIONS.md G-004).
+gui = ["PySide6>=6.6", "pytest-qt>=4.5"]
+# PySide6 for scripts/docs_figures.py alone, which redraws the pictures of the front page; the
+# engine never imports it.
+docs = ["PySide6>=6.6"]
+
+[project.scripts]
+tabletop = "tabletop.__main__:main"
+tabletop-gui = "tabletop.gui.app:run"
+
+[tool.setuptools]
+packages = ["tabletop", "tabletop._native", "tabletop.bench", "tabletop.codelets", "tabletop.gui",
+            "tabletop.gui.models"]
+
+[tool.setuptools.package-data]
+# The repository's default dock layout travels with the code (loop0006, ANSWERS.md 2).
+"tabletop.gui" = ["default_layout.json"]
+# The Cython sources travel with the package: tabletop.accel checks the build's stamp against
+# them at start (D-110).
+"tabletop._native" = ["*.pyx", "*.pxd"]
+
+[tool.pytest.ini_options]
+# Run from Software/Tabletop/python/ as `python3 -m pytest -q`: the default suite is tests/,
+# the fast one. The slow tests (the multi-seed surveys, the whole-run and window tests) live
+# in tests_slow/, outside testpaths, with their own pytest.ini: `python3 -m pytest -q
+# tests_slow` or `bash run-tests.sh --slow` runs them, `--all` both suites.
+testpaths = ["tests"]
+# The `slow` marker stays as a safety net: every test under tests_slow/ carries it, and a test
+# marked slow that is left in tests/ is still left out of the default suite.
+addopts = "-p no:cacheprovider -m 'not slow'"
+markers = ["slow: a long multi-seed survey or a whole run through the window (seconds or more); lives in tests_slow/, left out of the default suite"]
+xfail_strict = true

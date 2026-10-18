@@ -1,0 +1,11 @@
+[General]
+ClusterCount = 1
+TestSet = performance/LTM_Test_Spec/Simple2
+LTM_SELF_CONTEXT = 1
+
+[Sequences]
+seq =  1 7 1 2 8 1 2 3 9 1 2 3 4 10 | 1 2 3 4 5 11 1 2 3 4 5 6 12 1 2 3 4 5 6 7 13
+
+[cluster_1]
+LTM = 1
+LTM_SELF_CONTEXT = 1

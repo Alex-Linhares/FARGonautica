@@ -1,0 +1,1580 @@
+{
+ "_about": "French's chapter 4 run of Tabletop as data: the configuration of Fig. 4.1, and for each of the nine screen dumps (Figs. 4.1-4.9) the codelets run, the thermometer, the 41 Slipnet boxes, the Coderack bar graph and the structures drawn, every number read on the page image at 300 dpi (600 dpi for the doubtful cells) [F95 pp. 95-107]; then the five partial dumps of other runs (Figs. 4.10-4.14) [F95 pp. 108-110]. French's narration is quoted, with the machine-checked tags, in docs/ch4-run.md; here it is paraphrased. Doubtful readings are listed under 'doubtful'. Checked by tests/test_ch4.py.",
+ "source": "[F95 pp. 95-111]",
+ "pdf_offset": "PDF page = printed page + 11 for pp. 47-111",
+ "problem": {
+  "name": "the chapter 4 configuration, which is Surround 5",
+  "figure": "4.1",
+  "page": 96,
+  "same_as": "Surround 5 [F95 p. 118 (img)]: the same thirteen objects in the same places",
+  "touched": "cup1",
+  "expected_answers": {
+   "E1": "small-glass1",
+   "E2": "cup2"
+  },
+  "palette_counts": {
+   "fork": 4,
+   "knife": 2,
+   "spoon": 4,
+   "cup": 2,
+   "small glass": 1
+  },
+  "henry_side_group": [
+   "fork1",
+   "fork2",
+   "knife1",
+   "cup1",
+   "spoon1",
+   "spoon2"
+  ],
+  "eliza_side_group": [
+   "spoon3",
+   "spoon4",
+   "small-glass1",
+   "fork3",
+   "fork4",
+   "knife2"
+  ],
+  "isolated": [
+   "cup2"
+  ],
+  "coordinates": "fractions of the frame's width (x) and height (y); the frame drawn on the screen is 306 x 268 px at 150 dpi, 1.14 times wider than tall, so the two fractions have different scales (D-001 maps them to a 110 x 100 table); origin at the upper left corner, Henry at the top; measured on the image of Fig. 4.2 [F95 p. 98 (img)] from the dark pixel clusters inside the frame, good to about 0.02 of the frame; the silverware points up",
+  "objects": [
+   {
+    "id": "fork1",
+    "type": "fork",
+    "side": "henry",
+    "x": 0.109,
+    "y": 0.157,
+    "group": "H"
+   },
+   {
+    "id": "fork2",
+    "type": "fork",
+    "side": "henry",
+    "x": 0.155,
+    "y": 0.157,
+    "group": "H"
+   },
+   {
+    "id": "knife1",
+    "type": "knife",
+    "side": "henry",
+    "x": 0.204,
+    "y": 0.157,
+    "group": "H"
+   },
+   {
+    "id": "cup1",
+    "type": "cup",
+    "side": "henry",
+    "x": 0.29,
+    "y": 0.157,
+    "group": "H"
+   },
+   {
+    "id": "spoon1",
+    "type": "spoon",
+    "side": "henry",
+    "x": 0.349,
+    "y": 0.157,
+    "group": "H"
+   },
+   {
+    "id": "spoon2",
+    "type": "spoon",
+    "side": "henry",
+    "x": 0.405,
+    "y": 0.157,
+    "group": "H"
+   },
+   {
+    "id": "spoon3",
+    "type": "spoon",
+    "side": "eliza",
+    "x": 0.13,
+    "y": 0.745,
+    "group": "E"
+   },
+   {
+    "id": "spoon4",
+    "type": "spoon",
+    "side": "eliza",
+    "x": 0.174,
+    "y": 0.745,
+    "group": "E"
+   },
+   {
+    "id": "small-glass1",
+    "type": "small glass",
+    "side": "eliza",
+    "x": 0.232,
+    "y": 0.745,
+    "group": "E"
+   },
+   {
+    "id": "fork3",
+    "type": "fork",
+    "side": "eliza",
+    "x": 0.292,
+    "y": 0.745,
+    "group": "E"
+   },
+   {
+    "id": "fork4",
+    "type": "fork",
+    "side": "eliza",
+    "x": 0.335,
+    "y": 0.745,
+    "group": "E"
+   },
+   {
+    "id": "knife2",
+    "type": "knife",
+    "side": "eliza",
+    "x": 0.375,
+    "y": 0.745,
+    "group": "E"
+   },
+   {
+    "id": "cup2",
+    "type": "cup",
+    "side": "eliza",
+    "x": 0.807,
+    "y": 0.751,
+    "group": null
+   }
+  ],
+  "doubtful": [
+   "every coordinate is a measurement of a printed screen dump, not a value French gives: the book never states table dimensions or object positions; the H arrow overlaps the touched cup, so cup1's x is read from the cup body alone"
+  ]
+ },
+ "slipnet_grid": [
+  [
+   "spoon",
+   "silverware",
+   "buccal obj",
+   "sim shape",
+   "neighbor",
+   "horiz",
+   "one"
+  ],
+  [
+   "small glass",
+   "crockery",
+   "open obj",
+   "used with",
+   "direction",
+   "vert",
+   "two"
+  ],
+  [
+   "fork",
+   "receptacle",
+   "closed obj",
+   "symmetry",
+   "right",
+   "position",
+   "three"
+  ],
+  [
+   "knife",
+   "eat-from-ob",
+   "big. than",
+   "mirror",
+   "left",
+   "end",
+   "many"
+  ],
+  [
+   "cup",
+   "liq holder",
+   "sm. than",
+   "diagonal",
+   "above",
+   "middle",
+   "same"
+  ],
+  [
+   "sharp obj",
+   "food holder",
+   "opposite",
+   "group",
+   "below",
+   "number"
+  ]
+ ],
+ "coderack_labels": [
+  "FND-GP",
+  "SAM",
+  "FD-END",
+  "FD-MID",
+  "FD-SIMN",
+  "FD-NNBR",
+  "BD-OB0",
+  "BD-OB1",
+  "BD-OB2",
+  "BD-OB-DSC",
+  "SC-SMGP",
+  "SC-SIMGP",
+  "PK-SALO",
+  "PK-SALS",
+  "PK2SALO",
+  "CT-CP",
+  "PK-SALC",
+  "EXAM-CP",
+  "BLD-CP",
+  "CP-COMP",
+  "CHK-WV",
+  "CP-CLN",
+  "FND-ANS"
+ ],
+ "coderack_legend": {
+  "source": "the printed legend beside Fig. 4.1 [F95 p. 96 (img)], one full name per label, in the strip's order",
+  "names": {
+   "FND-GP": "find-group",
+   "SAM": "simple-sameness-detect.",
+   "FD-END": "find-end-objs.",
+   "FD-MID": "find-middle-objs.",
+   "FD-SIMN": "find-sim.-nhbr",
+   "FD-NNBR": "find-neighbor",
+   "BD-OB0": "build-obj-0",
+   "BD-OB1": "build-obj-1",
+   "BD-OB2": "build-obj-2",
+   "BD-OB-DSC": "build-obj.-desc.",
+   "SC-SMGP": "search-for-sam.-gp",
+   "SC-SIMGP": "search-for-sim.-gp",
+   "PK-SALO": "pick-salient-obj",
+   "PK-SALS": "pick-salient-subgp.",
+   "PK2SALO": "pick-2nd-salient-obj",
+   "CT-CP": "create-cp",
+   "PK-SALC": "pick-strong-cp",
+   "EXAM-CP": "examine-cp",
+   "BLD-CP": "build-cp-descrip.",
+   "CP-COMP": "cp-compete",
+   "CHK-WV": "check-worldview",
+   "CP-CLN": "clean-up-corresp.",
+   "FND-ANS": "find-answer"
+  }
+ },
+ "dumps": [
+  {
+   "figure": "4.1",
+   "page": 96,
+   "codelets_run": 0,
+   "temperature": null,
+   "slipnet": {
+    "spoon": 1,
+    "silverware": 1,
+    "buccal obj": 1,
+    "sim shape": 1,
+    "neighbor": 1,
+    "horiz": 1,
+    "one": 1,
+    "small glass": 2,
+    "crockery": 2,
+    "open obj": 2,
+    "used with": 1,
+    "direction": 1,
+    "vert": 1,
+    "two": 1,
+    "fork": 1,
+    "receptacle": 1,
+    "closed obj": 1,
+    "symmetry": 1,
+    "right": 1,
+    "position": 1,
+    "three": 1,
+    "knife": 1,
+    "eat-from-ob": 2,
+    "big. than": 1,
+    "mirror": 1,
+    "left": 1,
+    "end": 1,
+    "many": 1,
+    "cup": 51,
+    "liq holder": 4,
+    "sm. than": 1,
+    "diagonal": 1,
+    "above": 1,
+    "middle": 1,
+    "same": 1,
+    "sharp obj": 1,
+    "food holder": 1,
+    "opposite": 139,
+    "group": 1,
+    "below": 1,
+    "number": 1
+   },
+   "coderack": [],
+   "structures": {
+    "groups": [],
+    "correspondences": [],
+    "worldview": [],
+    "notes": "the thirteen objects and the H arrow on cup1; nothing else"
+   },
+   "narration": [
+    {
+     "page": 97,
+     "what": "Henry has just touched; the Coderack is about to be loaded with its standard starting codelets; 'opposite' has been given a large activation because Eliza sits opposite Henry; 'cup' is active because a cup was touched; activation has already spread from 'cup' to 'liquid holder', 'crockery' and so on, though no codelet has run"
+    }
+   ],
+   "doubtful": [
+    "the thermometer column is drawn empty: no reading at 0 codelets",
+    "the page is printed rotated by 90 degrees; read after rotating the image"
+   ]
+  },
+  {
+   "figure": "4.2",
+   "page": 98,
+   "codelets_run": 2,
+   "temperature": 80.0,
+   "slipnet": {
+    "spoon": 9,
+    "silverware": 2,
+    "buccal obj": 1,
+    "sim shape": 1,
+    "neighbor": 1,
+    "horiz": 22,
+    "one": 1,
+    "small glass": 4,
+    "crockery": 4,
+    "open obj": 4,
+    "used with": 1,
+    "direction": 1,
+    "vert": 1,
+    "two": 1,
+    "fork": 9,
+    "receptacle": 1,
+    "closed obj": 2,
+    "symmetry": 1,
+    "right": 2,
+    "position": 1,
+    "three": 1,
+    "knife": 5,
+    "eat-from-ob": 4,
+    "big. than": 1,
+    "mirror": 1,
+    "left": 1,
+    "end": 1,
+    "many": 1,
+    "cup": 89,
+    "liq holder": 9,
+    "sm. than": 1,
+    "diagonal": 1,
+    "above": 2,
+    "middle": 1,
+    "same": 1,
+    "sharp obj": 1,
+    "food holder": 1,
+    "opposite": 139,
+    "group": 44,
+    "below": 1,
+    "number": 1
+   },
+   "coderack": [
+    {
+     "label": "FND-GP",
+     "percent": 56
+    },
+    {
+     "label": "SAM",
+     "percent": 6
+    },
+    {
+     "label": "FD-END",
+     "percent": 3
+    },
+    {
+     "label": "FD-MID",
+     "percent": 3
+    },
+    {
+     "label": "FD-SIMN",
+     "percent": 26
+    },
+    {
+     "label": "PK2SALO",
+     "percent": 7
+    }
+   ],
+   "structures": {
+    "groups": [
+     {
+      "members": "henry_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     }
+    ],
+    "correspondences": [],
+    "worldview": [],
+    "notes": "the first find-group codelet found the group around the touched cup"
+   },
+   "narration": [
+    {
+     "page": 97,
+     "what": "two codelets have run, one a find-group that found the touched cup's group, known so far only as objects physically close together (a gestalt view); it posted codelets to look for sameness groups inside it, for its end and middle objects, and for the neighbours of its objects; it jolted 'group'"
+    }
+   ],
+   "doubtful": [
+    "the 'direction' box shows a dot where its number should be; read as 1, the floor",
+    "the bars sum to 101 (each bar is printed rounded)"
+   ]
+  },
+  {
+   "figure": "4.3",
+   "page": 99,
+   "codelets_run": 12,
+   "temperature": null,
+   "slipnet": {
+    "spoon": 5,
+    "silverware": 5,
+    "buccal obj": 2,
+    "sim shape": 1,
+    "neighbor": 41,
+    "horiz": 55,
+    "one": 1,
+    "small glass": 17,
+    "crockery": 15,
+    "open obj": 20,
+    "used with": 4,
+    "direction": 7,
+    "vert": 2,
+    "two": 8,
+    "fork": 6,
+    "receptacle": 3,
+    "closed obj": 13,
+    "symmetry": 1,
+    "right": 26,
+    "position": 2,
+    "three": 1,
+    "knife": 5,
+    "eat-from-ob": 14,
+    "big. than": 4,
+    "mirror": 1,
+    "left": 20,
+    "end": 9,
+    "many": 1,
+    "cup": 127,
+    "liq holder": 32,
+    "sm. than": 3,
+    "diagonal": 1,
+    "above": 6,
+    "middle": 8,
+    "same": 1,
+    "sharp obj": 2,
+    "food holder": 1,
+    "opposite": 137,
+    "group": 26,
+    "below": 5,
+    "number": 2
+   },
+   "coderack": [
+    {
+     "label": "SAM",
+     "percent": 15
+    },
+    {
+     "label": "FD-END",
+     "percent": 8
+    },
+    {
+     "label": "FD-MID",
+     "percent": 8
+    },
+    {
+     "label": "FD-NNBR",
+     "percent": 30
+    },
+    {
+     "label": "BD-OB0",
+     "percent": 21
+    },
+    {
+     "label": "PK2SALO",
+     "percent": 18
+    }
+   ],
+   "structures": {
+    "groups": [
+     {
+      "members": "henry_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     }
+    ],
+    "correspondences": [
+     {
+      "from": "cup1",
+      "to": "cup2",
+      "status": "tentative",
+      "drawn": "dashed line"
+     }
+    ],
+    "worldview": [],
+    "notes": "Eliza's group is not yet drawn"
+   },
+   "narration": [
+    {
+     "page": 97,
+     "what": "a tentative (dashed) correspondence from the touched cup to the isolated cup, attractive because that cup is very salient: same object type, and roughly diagonally opposite; the group has become a focus; 'horizontal' was discovered; neighbours found, so 'neighbor' is active and find-neighbor codelets posted; 'group' fairly active, so more find-group codelets"
+    },
+    {
+     "page": 101,
+     "what": "21 percent of the codelets are ones whose job is to find (and possibly build) new groups; much activation has spread; after 'cup', 'small glass' is the most active object concept, fed from 'cup'"
+    }
+   ],
+   "doubtful": [
+    "the thermometer column is drawn empty: no reading at 12 codelets",
+    "French's '21 percent' is the bar over BD-OB0 (build-obj-0); FND-GP has no bar at all in this dump, so his 'find (and possibly build) new groups' describes build-object codelets, not find-group"
+   ]
+  },
+  {
+   "figure": "4.4",
+   "page": 100,
+   "codelets_run": 22,
+   "temperature": 59.0,
+   "slipnet": {
+    "spoon": 13,
+    "silverware": 6,
+    "buccal obj": 2,
+    "sim shape": 1,
+    "neighbor": 45,
+    "horiz": 48,
+    "one": 1,
+    "small glass": 20,
+    "crockery": 17,
+    "open obj": 27,
+    "used with": 7,
+    "direction": 11,
+    "vert": 3,
+    "two": 7,
+    "fork": 7,
+    "receptacle": 4,
+    "closed obj": 18,
+    "symmetry": 1,
+    "right": 41,
+    "position": 9,
+    "three": 2,
+    "knife": 13,
+    "eat-from-ob": 15,
+    "big. than": 5,
+    "mirror": 1,
+    "left": 30,
+    "end": 105,
+    "many": 1,
+    "cup": 128,
+    "liq holder": 37,
+    "sm. than": 4,
+    "diagonal": 1,
+    "above": 8,
+    "middle": 7,
+    "same": 1,
+    "sharp obj": 2,
+    "food holder": 1,
+    "opposite": 137,
+    "group": 23,
+    "below": 7,
+    "number": 2
+   },
+   "coderack": [
+    {
+     "label": "SAM",
+     "percent": 10
+    },
+    {
+     "label": "FD-END",
+     "percent": 5
+    },
+    {
+     "label": "FD-MID",
+     "percent": 5
+    },
+    {
+     "label": "FD-NNBR",
+     "percent": 17
+    },
+    {
+     "label": "BD-OB0",
+     "percent": 21
+    },
+    {
+     "label": "PK-SALO",
+     "percent": 3
+    },
+    {
+     "label": "PK2SALO",
+     "percent": 16
+    },
+    {
+     "label": "FND-ANS",
+     "percent": 24
+    }
+   ],
+   "structures": {
+    "groups": [
+     {
+      "members": "henry_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": "eliza_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": [
+       "fork3",
+       "fork4"
+      ],
+      "kind": "neighbours just found",
+      "drawn": "dashed rectangle with a pointer under it"
+     }
+    ],
+    "correspondences": [
+     {
+      "from": "cup1",
+      "to": "cup2",
+      "status": "in the Worldview",
+      "drawn": "solid line"
+     }
+    ],
+    "worldview": [
+     "cup1-cup2"
+    ],
+    "notes": "the fork-fork and spoon-spoon subgroups of Henry's group exist but are not drawn (a subgroup is visible only when first built or when it ends a Worldview correspondence)"
+   },
+   "narration": [
+    {
+     "page": 101,
+     "what": "the cup-cup correspondence is solid, officially in the Worldview; a large group on Eliza's side was found and the program is finding the neighbours of its objects, e.g. the two forks; in Henry's group the fork-fork and spoon-spoon subgroups were found, noticed to be at the ends ('end' highly active) and at the left and right ends ('left' and 'right' active, not 'above' and 'below')"
+    }
+   ],
+   "doubtful": [
+    "'horiz' read as 48 at 600 dpi (40 at a glance)",
+    "the bars sum to 101",
+    "the fork-fork marker in Eliza's group carries no label; it is read as the neighbour relation French mentions, not as a built subgroup"
+   ]
+  },
+  {
+   "figure": "4.5",
+   "page": 102,
+   "codelets_run": 33,
+   "temperature": 43.2,
+   "slipnet": {
+    "spoon": 24,
+    "silverware": 10,
+    "buccal obj": 3,
+    "sim shape": 1,
+    "neighbor": 92,
+    "horiz": 82,
+    "one": 1,
+    "small glass": 27,
+    "crockery": 20,
+    "open obj": 35,
+    "used with": 9,
+    "direction": 17,
+    "vert": 4,
+    "two": 6,
+    "fork": 29,
+    "receptacle": 4,
+    "closed obj": 24,
+    "symmetry": 1,
+    "right": 75,
+    "position": 15,
+    "three": 2,
+    "knife": 21,
+    "eat-from-ob": 17,
+    "big. than": 6,
+    "mirror": 1,
+    "left": 55,
+    "end": 102,
+    "many": 1,
+    "cup": 129,
+    "liq holder": 41,
+    "sm. than": 5,
+    "diagonal": 3,
+    "above": 12,
+    "middle": 6,
+    "same": 1,
+    "sharp obj": 3,
+    "food holder": 1,
+    "opposite": 150,
+    "group": 64,
+    "below": 9,
+    "number": 3
+   },
+   "coderack": [
+    {
+     "label": "SAM",
+     "percent": 2
+    },
+    {
+     "label": "FD-END",
+     "percent": 1
+    },
+    {
+     "label": "FD-MID",
+     "percent": 1
+    },
+    {
+     "label": "FD-NNBR",
+     "percent": 6
+    },
+    {
+     "label": "BD-OB0",
+     "percent": 13
+    },
+    {
+     "label": "SC-SMGP",
+     "percent": 70
+    },
+    {
+     "label": "PK-SALO",
+     "percent": 1
+    },
+    {
+     "label": "PK2SALO",
+     "percent": 3
+    },
+    {
+     "label": "CP-COMP",
+     "percent": 1
+    },
+    {
+     "label": "FND-ANS",
+     "percent": 2
+    }
+   ],
+   "structures": {
+    "groups": [
+     {
+      "members": "henry_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": "eliza_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": [
+       "spoon3",
+       "spoon4"
+      ],
+      "kind": "subgroup just built",
+      "drawn": "solid rectangle labelled 'Build new subgroup'"
+     }
+    ],
+    "correspondences": [
+     {
+      "from": "cup1",
+      "to": "cup2",
+      "status": "in the Worldview",
+      "drawn": "solid line"
+     }
+    ],
+    "worldview": [
+     "cup1-cup2"
+    ],
+    "notes": ""
+   },
+   "narration": [
+    {
+     "page": 101,
+     "what": "a spoon-spoon subgroup was just built in the group around the small glass, so it is briefly visible; many search-for-same-group codelets were posted at once (the tall bar, 70); the temperature fell because the Worldview's one correspondence changed very little, which suggests the structure is getting good"
+    }
+   ],
+   "doubtful": []
+  },
+  {
+   "figure": "4.6",
+   "page": 103,
+   "codelets_run": 36,
+   "temperature": 31.3,
+   "slipnet": {
+    "spoon": 38,
+    "silverware": 14,
+    "buccal obj": 4,
+    "sim shape": 2,
+    "neighbor": 90,
+    "horiz": 132,
+    "one": 1,
+    "small glass": 30,
+    "crockery": 22,
+    "open obj": 45,
+    "used with": 12,
+    "direction": 28,
+    "vert": 5,
+    "two": 10,
+    "fork": 27,
+    "receptacle": 5,
+    "closed obj": 32,
+    "symmetry": 1,
+    "right": 133,
+    "position": 21,
+    "three": 2,
+    "knife": 25,
+    "eat-from-ob": 19,
+    "big. than": 8,
+    "mirror": 1,
+    "left": 92,
+    "end": 99,
+    "many": 1,
+    "cup": 129,
+    "liq holder": 45,
+    "sm. than": 8,
+    "diagonal": 5,
+    "above": 16,
+    "middle": 6,
+    "same": 1,
+    "sharp obj": 5,
+    "food holder": 1,
+    "opposite": 150,
+    "group": 57,
+    "below": 13,
+    "number": 3
+   },
+   "coderack": [
+    {
+     "label": "SAM",
+     "percent": 5
+    },
+    {
+     "label": "FD-END",
+     "percent": 2
+    },
+    {
+     "label": "FD-MID",
+     "percent": 2
+    },
+    {
+     "label": "FD-NNBR",
+     "percent": 15
+    },
+    {
+     "label": "BD-OB0",
+     "percent": 32
+    },
+    {
+     "label": "PK-SALO",
+     "percent": 2
+    },
+    {
+     "label": "PK2SALO",
+     "percent": 8
+    },
+    {
+     "label": "CP-COMP",
+     "percent": 2
+    },
+    {
+     "label": "FND-ANS",
+     "percent": 30
+    }
+   ],
+   "structures": {
+    "groups": [
+     {
+      "members": "henry_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": "eliza_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": [
+       "spoon1",
+       "spoon2"
+      ],
+      "kind": "subgroup",
+      "drawn": "reverse video (the flashing of a new correspondence's ends)"
+     },
+     {
+      "members": [
+       "spoon3",
+       "spoon4"
+      ],
+      "kind": "subgroup",
+      "drawn": "reverse video"
+     }
+    ],
+    "correspondences": [
+     {
+      "from": "cup1",
+      "to": "cup2",
+      "status": "in the Worldview",
+      "drawn": "thin solid line"
+     },
+     {
+      "from": "spoon1-spoon2",
+      "to": "spoon3-spoon4",
+      "status": "tentative, being tested",
+      "drawn": "thick solid line between the two highlighted boxes"
+     }
+    ],
+    "worldview": [
+     "cup1-cup2"
+    ],
+    "notes": "French: the group correspondence is not a rival of the cup-cup one, so it enters the Worldview without a fight, making the Worldview incoherent"
+   },
+   "narration": [
+    {
+     "page": 101,
+     "what": "a tentative correspondence between the two spoon-spoon groups is being tested; its quality is very high (identical categories, directly facing); not a rival of anything in the Worldview, so it is put in without a fight; that makes the Worldview incoherent (one correspondence group-to-group, the other from inside a group to an isolated object), which is permitted but discouraged"
+    },
+    {
+     "page": 105,
+     "what": "rivals share an end point and are mutually exclusive, like Necker-cube readings; incoherent correspondences are like the parts of an impossible figure and can coexist"
+    }
+   ],
+   "doubtful": [
+    "'spoon' read as 38 and 'small glass' as 30 at 600 dpi",
+    "'end' prints as '99.' with a trailing mark, read as 99",
+    "the bars sum to 98"
+   ]
+  },
+  {
+   "figure": "4.7",
+   "page": 104,
+   "codelets_run": 47,
+   "temperature": 35.8,
+   "slipnet": {
+    "spoon": 53,
+    "silverware": 20,
+    "buccal obj": 6,
+    "sim shape": 9,
+    "neighbor": 105,
+    "horiz": 132,
+    "one": 1,
+    "small glass": 53,
+    "crockery": 25,
+    "open obj": 58,
+    "used with": 15,
+    "direction": 45,
+    "vert": 7,
+    "two": 12,
+    "fork": 36,
+    "receptacle": 6,
+    "closed obj": 42,
+    "symmetry": 1,
+    "right": 150,
+    "position": 29,
+    "three": 3,
+    "knife": 45,
+    "eat-from-ob": 21,
+    "big. than": 13,
+    "mirror": 22,
+    "left": 132,
+    "end": 132,
+    "many": 1,
+    "cup": 130,
+    "liq holder": 50,
+    "sm. than": 15,
+    "diagonal": 8,
+    "above": 23,
+    "middle": 5,
+    "same": 22,
+    "sharp obj": 7,
+    "food holder": 1,
+    "opposite": 150,
+    "group": 32,
+    "below": 19,
+    "number": 4
+   },
+   "coderack": [
+    {
+     "label": "SAM",
+     "percent": 5
+    },
+    {
+     "label": "FD-END",
+     "percent": 2
+    },
+    {
+     "label": "FD-MID",
+     "percent": 2
+    },
+    {
+     "label": "FD-NNBR",
+     "percent": 11
+    },
+    {
+     "label": "BD-OB0",
+     "percent": 35
+    },
+    {
+     "label": "BD-OB1",
+     "percent": 1
+    },
+    {
+     "label": "PK-SALO",
+     "percent": 2
+    },
+    {
+     "label": "PK2SALO",
+     "percent": 8
+    },
+    {
+     "label": "CP-COMP",
+     "percent": 3
+    },
+    {
+     "label": "FND-ANS",
+     "percent": 29
+    }
+   ],
+   "structures": {
+    "groups": [
+     {
+      "members": "henry_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": "eliza_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": [
+       "spoon1",
+       "spoon2"
+      ],
+      "kind": "subgroup",
+      "drawn": "dashed rectangle"
+     },
+     {
+      "members": [
+       "spoon3",
+       "spoon4"
+      ],
+      "kind": "subgroup",
+      "drawn": "dashed rectangle"
+     }
+    ],
+    "correspondences": [
+     {
+      "from": "cup1",
+      "to": "cup2",
+      "status": "in the Worldview, competing",
+      "drawn": "dashed line (flashing on the screen)"
+     },
+     {
+      "from": "cup1",
+      "to": "small-glass1",
+      "status": "tentative rival",
+      "drawn": "dashed line"
+     },
+     {
+      "from": "spoon1-spoon2",
+      "to": "spoon3-spoon4",
+      "status": "in the Worldview",
+      "drawn": "thick solid line"
+     }
+    ],
+    "worldview": [
+     "cup1-cup2",
+     "spoon1-spoon2 to spoon3-spoon4"
+    ],
+    "notes": "the fight between cup-cup and cup-glass is on; its winner is shown in Fig. 4.8"
+   },
+   "narration": [
+    {
+     "page": 105,
+     "what": "a tentative cup-to-glass correspondence rivals the cup-cup one, so there is a fight to enter or remain in the Worldview; the cup-cup line is dashed during the competition; the temperature rose slightly since Fig. 4.6: adding a very strong correspondence pushes it down, but it is also a hint that more such correspondences may exist, which pushes it up, so the program does not stop with stones unturned; the rise slightly lowers the chance of running find-answer, which announces the object currently corresponding to the touched one and stops the program; the default answer is the touched object itself"
+    }
+   ],
+   "doubtful": [
+    "the Slipnet panel is identical, box for box, to those of Figs. 4.8 and 4.9",
+    "the Coderack panel and the count (47) are identical to Fig. 4.8's",
+    "the bars sum to 98"
+   ]
+  },
+  {
+   "figure": "4.8",
+   "page": 106,
+   "codelets_run": 47,
+   "temperature": 13.6,
+   "slipnet": {
+    "spoon": 53,
+    "silverware": 20,
+    "buccal obj": 6,
+    "sim shape": 9,
+    "neighbor": 105,
+    "horiz": 132,
+    "one": 1,
+    "small glass": 53,
+    "crockery": 25,
+    "open obj": 58,
+    "used with": 15,
+    "direction": 45,
+    "vert": 7,
+    "two": 12,
+    "fork": 36,
+    "receptacle": 6,
+    "closed obj": 42,
+    "symmetry": 1,
+    "right": 150,
+    "position": 29,
+    "three": 3,
+    "knife": 45,
+    "eat-from-ob": 21,
+    "big. than": 13,
+    "mirror": 22,
+    "left": 132,
+    "end": 132,
+    "many": 1,
+    "cup": 130,
+    "liq holder": 50,
+    "sm. than": 15,
+    "diagonal": 8,
+    "above": 23,
+    "middle": 5,
+    "same": 22,
+    "sharp obj": 7,
+    "food holder": 1,
+    "opposite": 150,
+    "group": 32,
+    "below": 19,
+    "number": 4
+   },
+   "coderack": [
+    {
+     "label": "SAM",
+     "percent": 5
+    },
+    {
+     "label": "FD-END",
+     "percent": 2
+    },
+    {
+     "label": "FD-MID",
+     "percent": 2
+    },
+    {
+     "label": "FD-NNBR",
+     "percent": 11
+    },
+    {
+     "label": "BD-OB0",
+     "percent": 35
+    },
+    {
+     "label": "BD-OB1",
+     "percent": 1
+    },
+    {
+     "label": "PK-SALO",
+     "percent": 2
+    },
+    {
+     "label": "PK2SALO",
+     "percent": 8
+    },
+    {
+     "label": "CP-COMP",
+     "percent": 3
+    },
+    {
+     "label": "FND-ANS",
+     "percent": 29
+    }
+   ],
+   "structures": {
+    "groups": [
+     {
+      "members": "henry_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": "eliza_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": [
+       "spoon1",
+       "spoon2"
+      ],
+      "kind": "subgroup",
+      "drawn": "dashed rectangle"
+     },
+     {
+      "members": [
+       "spoon3",
+       "spoon4"
+      ],
+      "kind": "subgroup",
+      "drawn": "dashed rectangle"
+     }
+    ],
+    "correspondences": [
+     {
+      "from": "cup1",
+      "to": "small-glass1",
+      "status": "in the Worldview",
+      "drawn": "solid line"
+     },
+     {
+      "from": "spoon1-spoon2",
+      "to": "spoon3-spoon4",
+      "status": "in the Worldview",
+      "drawn": "thick solid line"
+     }
+    ],
+    "worldview": [
+     "cup1-small-glass1",
+     "spoon1-spoon2 to spoon3-spoon4"
+    ],
+    "notes": "the cup-cup correspondence is gone"
+   },
+   "narration": [
+    {
+     "page": 105,
+     "what": "the cup-glass correspondence won, because the rating of a coherent Worldview with cup-glass is higher than that of an incoherent one with cup-cup, though cup-cup is a priori stronger (a probabilistic victory); the Worldview changed, which pushes the temperature up, but the rating improved so much (the program is heavily biased against incoherent Worldviews) that the temperature drops; the run ends only when a find-answer codelet runs"
+    }
+   ],
+   "doubtful": [
+    "codelets run is 47, the same as in Fig. 4.7: the two dumps are at the same count, with the same Slipnet and the same Coderack; only the table and the thermometer differ"
+   ]
+  },
+  {
+   "figure": "4.9",
+   "page": 107,
+   "codelets_run": 55,
+   "temperature": 2.0,
+   "slipnet": {
+    "spoon": 53,
+    "silverware": 20,
+    "buccal obj": 6,
+    "sim shape": 9,
+    "neighbor": 105,
+    "horiz": 132,
+    "one": 1,
+    "small glass": 53,
+    "crockery": 25,
+    "open obj": 58,
+    "used with": 15,
+    "direction": 45,
+    "vert": 7,
+    "two": 12,
+    "fork": 36,
+    "receptacle": 6,
+    "closed obj": 42,
+    "symmetry": 1,
+    "right": 150,
+    "position": 29,
+    "three": 3,
+    "knife": 45,
+    "eat-from-ob": 21,
+    "big. than": 13,
+    "mirror": 22,
+    "left": 132,
+    "end": 132,
+    "many": 1,
+    "cup": 130,
+    "liq holder": 50,
+    "sm. than": 15,
+    "diagonal": 8,
+    "above": 23,
+    "middle": 5,
+    "same": 22,
+    "sharp obj": 7,
+    "food holder": 1,
+    "opposite": 150,
+    "group": 32,
+    "below": 19,
+    "number": 4
+   },
+   "coderack": [
+    {
+     "label": "SAM",
+     "percent": 5
+    },
+    {
+     "label": "FD-END",
+     "percent": 3
+    },
+    {
+     "label": "FD-MID",
+     "percent": 3
+    },
+    {
+     "label": "FD-NNBR",
+     "percent": 11
+    },
+    {
+     "label": "BD-OB0",
+     "percent": 35
+    },
+    {
+     "label": "PK-SALO",
+     "percent": 2
+    },
+    {
+     "label": "PK2SALO",
+     "percent": 8
+    },
+    {
+     "label": "CP-COMP",
+     "percent": 3
+    },
+    {
+     "label": "FND-ANS",
+     "percent": 30
+    }
+   ],
+   "structures": {
+    "groups": [
+     {
+      "members": "henry_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": "eliza_side_group",
+      "kind": "gestalt",
+      "drawn": "dashed wavy box"
+     },
+     {
+      "members": [
+       "spoon1",
+       "spoon2"
+      ],
+      "kind": "subgroup",
+      "drawn": "dashed rectangle"
+     },
+     {
+      "members": [
+       "spoon3",
+       "spoon4"
+      ],
+      "kind": "subgroup",
+      "drawn": "dashed rectangle"
+     }
+    ],
+    "correspondences": [
+     {
+      "from": "cup1",
+      "to": "small-glass1",
+      "status": "in the Worldview",
+      "drawn": "solid line"
+     },
+     {
+      "from": "spoon1-spoon2",
+      "to": "spoon3-spoon4",
+      "status": "in the Worldview",
+      "drawn": "thick solid line"
+     }
+    ],
+    "worldview": [
+     "cup1-small-glass1",
+     "spoon1-spoon2 to spoon3-spoon4"
+    ],
+    "answer": "small-glass1",
+    "notes": "the E arrow points at the small glass"
+   },
+   "narration": [
+    {
+     "page": 105,
+     "what": "the Worldview's correspondences are no longer changing, which by definition makes the temperature fall, so the program concludes it has found all the good structure it will find, though it missed every correspondence between the silverware left of Henry's cup and right of Eliza's glass; a find-answer codelet runs; Eliza touches the small glass (shown by a short arrow with an E at its back end) and the program halts"
+    }
+   ],
+   "doubtful": [
+    "the Slipnet panel is identical to Fig. 4.7's and 4.8's, eight codelets later: either no box changed in eight codelets (unlikely with decay) or the panel was not redrawn"
+   ]
+  }
+ ],
+ "other_runs": [
+  {
+   "figure": "4.10",
+   "page": 108,
+   "answer": "small-glass1",
+   "temperature": null,
+   "subgroups_drawn": [
+    [
+     "fork1",
+     "fork2"
+    ],
+    [
+     "fork3",
+     "fork4"
+    ]
+   ],
+   "worldview": [
+    "fork1-fork2 to fork3-fork4",
+    "fork1-fork3 (inside the group correspondence)",
+    "fork2-fork4 (inside the group correspondence)",
+    "cup1-small-glass1"
+   ],
+   "narration": [
+    {
+     "page": 108,
+     "what": "detailed mappings between the two fork-fork groups: both forks of the upper group to forks of the lower group, and the subgroups themselves; the two spoon-spoon groups were not noticed; the fork mapping's support was enough for the small glass"
+    }
+   ],
+   "doubtful": [
+    "which fork maps to which inside the group correspondence is not legible; the two inner lines are read as fork-to-fork in order"
+   ]
+  },
+  {
+   "figure": "4.11",
+   "page": 109,
+   "answer": "small-glass1",
+   "temperature": null,
+   "subgroups_drawn": [
+    [
+     "fork1",
+     "fork2"
+    ],
+    [
+     "fork3",
+     "fork4"
+    ]
+   ],
+   "worldview": [
+    "fork1-fork2 to fork3-fork4",
+    "two fork-to-fork correspondences inside it",
+    "cup1-small-glass1",
+    "spoon1-spoon4 (the spoons flanking the cup and the glass)"
+   ],
+   "narration": [
+    {
+     "page": 108,
+     "what": "the structure of Fig. 4.10 plus the realization that Henry's cup and Eliza's glass are both flanked by spoons, which are put into correspondence; weaker than the group-to-group spoon correspondence of the main run, but it strongly bolsters the small-glass choice"
+    }
+   ],
+   "doubtful": [
+    "the spoon line is read as running from Henry's spoon next to the cup (spoon1) to Eliza's spoon next to the glass (spoon4)"
+   ]
+  },
+  {
+   "figure": "4.12",
+   "page": 109,
+   "answer": "small-glass1",
+   "temperature": null,
+   "subgroups_drawn": [
+    [
+     "fork1",
+     "fork2"
+    ],
+    [
+     "spoon1",
+     "spoon2"
+    ],
+    [
+     "spoon3",
+     "spoon4"
+    ],
+    [
+     "fork3",
+     "fork4"
+    ]
+   ],
+   "worldview": [
+    "fork1-fork2 to fork3-fork4",
+    "spoon1-spoon2 to spoon3-spoon4",
+    "cup1-small-glass1"
+   ],
+   "narration": [
+    {
+     "page": 108,
+     "what": "a very typical Worldview, one of the most frequent: the program did not look for correspondences inside the subgroup-to-subgroup correspondences, not needing them to justify the small glass"
+    },
+    {
+     "page": 109,
+     "what": "the knife-knife correspondence was not found, though obvious to humans once the fork groups are mapped: with groups on the table the program is strongly biased to hunt for group-level correspondences, a bias French calls a bit too strong"
+    }
+   ],
+   "doubtful": []
+  },
+  {
+   "figure": "4.13",
+   "page": 110,
+   "answer": "cup2",
+   "temperature": null,
+   "subgroups_drawn": [
+    [
+     "fork1",
+     "fork2"
+    ],
+    [
+     "spoon1",
+     "spoon2"
+    ],
+    [
+     "spoon3",
+     "spoon4"
+    ],
+    [
+     "fork3",
+     "fork4"
+    ]
+   ],
+   "worldview": [
+    "fork1-fork2 to fork3-fork4",
+    "spoon1-spoon2 to spoon3-spoon4",
+    "cup1-cup2"
+   ],
+   "narration": [
+    {
+     "page": 109,
+     "what": "on rare occasions the program finds a great deal of good structure between the two main groups and still picks the isolated cup; the structure value is quite good"
+    },
+    {
+     "page": 110,
+     "what": "the Worldview is incoherent (it lacks systematicity), the cup-cup correspondence being off by itself; had cup-glass been put in competition it would almost certainly have won by making the Worldview coherent; either the program never noticed the potential cup-glass correspondence, or it was suggested and defeated by cup-cup"
+    }
+   ],
+   "doubtful": [
+    "two lines join the fork-fork boxes, one thick and one thin; whether the thin one is a correspondence inside the group correspondence is not legible"
+   ]
+  },
+  {
+   "figure": "4.14",
+   "page": 110,
+   "answer": null,
+   "temperature": 97.5,
+   "subgroups_drawn": [
+    [
+     "fork1",
+     "fork2"
+    ],
+    [
+     "cup1",
+     "spoon1"
+    ],
+    [
+     "fork3",
+     "fork4"
+    ]
+   ],
+   "worldview": [
+    "fork1-fork2 to fork3-fork4",
+    "cup1-spoon1 (a cup-spoon group) to spoon3 (a single spoon)"
+   ],
+   "narration": [
+    {
+     "page": 110,
+     "what": "the figure includes the temperature and shows the effect of high temperature: a cup-spoon grouping rarely survives, the program being highly unlikely to group objects of such disparate categories"
+    },
+    {
+     "page": 111,
+     "what": "at high temperature the program is relatively willing to try such things; it strongly resists mapping groups onto individual objects, yet here it suggests, tests and briefly puts into the Worldview a correspondence from a cup-spoon group to a single spoon, which at lower temperatures would never have been given the time of day; French defends such fleeting strange structures as necessary for all pathways to stay open"
+    }
+   ],
+   "doubtful": [
+    "the thermometer reads 97.5 or 97.6 at 800 dpi; the last digit is not legible",
+    "the cup-spoon group's correspondence is read as ending on Eliza's leftmost spoon (spoon3)",
+    "no E arrow: the run is not over"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+# Type can be NonLTM, LTM_SELF_CONTEXT, or LTM_WITH_CONTEXT
+Type = NonLTM
+
+# Title for the figure.
+Title = ???
+
+# Should the chart be drawn? If not, only sequences will be shown.
+# The other option is to Split the chart into two (sequences and bars).
+NoChart = 1
+# SplitChart = 1
+
+# Show data from how many sources? Will typically be 2 (Seqsee/Human).
+# Can be lower or higher depending on what needs to be plotted.
+# Makes no sense if chart is not being drawn, but due to a bug, don't make it 0.
+Cluster_Count = 1
+
+# Sequences for which data is being shown.
+# Add 'seq=...' lines, where the ... should be a sequence specification.
+# In such a spec, a '|' separates displayed terms from future terms.
+# Groupings can be indicated with (), <>, {} or [].
+# The first two ('()' and '<>') are for outer ovals, the other two for inner.
+[Sequences]
+seq=({1}{1 2 3})({1 2}{2 3 4})({1 2 3}{3 4 5})|({1 2 3 4}{ 4 5 6})
+
+[Sequence_1]
+# label = 
+
+# Add any number of distractors.
+# Each looks thus: distractor= x y
+# This will draw a oval [x y). The first element has index 0.
+distractor=0 2
+distractor=5 7
+distractor=11 13

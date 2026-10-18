@@ -1,0 +1,2179 @@
+{
+ "_about": "Executable expectations for the Seek-Whence reconstruction, transcribed from Meredith (1986): the three appendix runs (pp. 164-179), the Blackburn dozen (pp. 6-7) with the reported results (pp. 145-147), the solved sequences (p. 88) and the stated failures (pp. 148-153). Every page was read on the scan's image. The 'milestones' of a run are its printed events in order; 'page' is the printed page. Checked against the run files by tests/test_data.py; SPEC.md section 15 explains each field.",
+ "citation": "[M86 pp. 6-7, 88, 145-153, 164-179]",
+ "page_offset": {
+  "body": "PDF = printed + 12"
+ },
+ "runs": [
+  {
+   "id": "run1_3737",
+   "file": "run1_3737.txt",
+   "pages": [
+    164,
+    166
+   ],
+   "pdf_pages": [
+    176,
+    178
+   ],
+   "title_as_printed": "The Sequence  3 7  3 7  3 7",
+   "sequence": [
+    3,
+    7,
+    3,
+    7,
+    3,
+    7
+   ],
+   "terms_entered": [
+    3,
+    7,
+    3,
+    7
+   ],
+   "inputs_in_order": [
+    "3",
+    "7",
+    "3",
+    "show-hypothesis",
+    "7"
+   ],
+   "has_startup_line": true,
+   "prints_task_lines": true,
+   "spark_count": 12,
+   "bond_count": 1,
+   "last_glom": "glom4",
+   "milestones": [
+    {
+     "kind": "term",
+     "page": 164,
+     "index": 1,
+     "value": 3
+    },
+    {
+     "kind": "term",
+     "page": 164,
+     "index": 2,
+     "value": 7
+    },
+    {
+     "kind": "spark",
+     "page": 164,
+     "name": "spark1",
+     "between": [
+      "glint1",
+      "glint2"
+     ],
+     "first": true
+    },
+    {
+     "kind": "term",
+     "page": 164,
+     "index": 3,
+     "value": 3
+    },
+    {
+     "kind": "bond",
+     "page": 164,
+     "name": "bond1",
+     "type": "Same",
+     "field": "print-value",
+     "modifier": "remote",
+     "between": [
+      "glint1",
+      "glint3"
+     ],
+     "first": true
+    },
+    {
+     "kind": "glom-proposal",
+     "page": 165,
+     "family": "Same",
+     "kind_proposed": "cover",
+     "target": "glint1"
+    },
+    {
+     "kind": "glom-proposal",
+     "page": 165,
+     "family": "Same",
+     "kind_proposed": "fence",
+     "target": "glint1"
+    },
+    {
+     "kind": "glom",
+     "page": 165,
+     "name": "glom1",
+     "type": "(Same print-value fence)",
+     "members": [
+      "glint1",
+      "glint2"
+     ],
+     "print_value": [
+      3,
+      7
+     ],
+     "terms": [
+      1,
+      2
+     ],
+     "first": true
+    },
+    {
+     "kind": "glom-failed",
+     "page": 165,
+     "members": [
+      "glint1",
+      "glint2",
+      "glint3"
+     ],
+     "attempted": "(Same print-value cover)"
+    },
+    {
+     "kind": "plato-scout",
+     "page": 165,
+     "classes": [
+      "Cycle"
+     ],
+     "glom": "glom1"
+    },
+    {
+     "kind": "template",
+     "page": 165,
+     "form": "(Cycle 3 2 (3 7))",
+     "from_glom": "glom1",
+     "template_glom": "glom2",
+     "check": "check-cycle template (Cycle 3 2 ((3 7)))"
+    },
+    {
+     "kind": "hypothesis",
+     "page": 165,
+     "form": "(Cycle 3 2 (3 7))",
+     "ordinal": 1
+    },
+    {
+     "kind": "gnoths-constructed",
+     "page": 165,
+     "gnoth_glom": "glom3"
+    },
+    {
+     "kind": "command",
+     "page": 166,
+     "name": "show-hypothesis",
+     "output": [
+      "(Cycle 3 2 (3 7))"
+     ]
+    },
+    {
+     "kind": "term",
+     "page": 166,
+     "index": 4,
+     "value": 7
+    },
+    {
+     "kind": "hfilter",
+     "page": 166,
+     "through": "(Cycle 3 2 (3 7))",
+     "result": "confirmed",
+     "top_down_glom": "glom4"
+    },
+    {
+     "kind": "guess",
+     "page": 166,
+     "hypothesis": "(Cycle 3 2 (3 7))",
+     "predicted_as_printed": "3 7 3 7",
+     "predicted_terms": [
+      3,
+      7,
+      3,
+      7
+     ],
+     "answer": "ok",
+     "after_confirming_terms": 1
+    },
+    {
+     "kind": "bye",
+     "page": 166
+    }
+   ],
+   "task_types": {
+    "set": [
+     "Bonder",
+     "Call-term",
+     "Dissolver",
+     "Glom-inspector",
+     "Glom-scout",
+     "Glommer",
+     "Glomtester",
+     "Gnoth-maker",
+     "Hfilter",
+     "Hypothesizer",
+     "Plato-scout",
+     "Sparkler",
+     "Sparkler-plus",
+     "Template-applier",
+     "Template-evaluator",
+     "Template-scout",
+     "Tester"
+    ],
+    "first_appearance_order": [
+     "Sparkler-plus",
+     "Dissolver",
+     "Sparkler",
+     "Tester",
+     "Bonder",
+     "Glom-scout",
+     "Glomtester",
+     "Glommer",
+     "Glom-inspector",
+     "Plato-scout",
+     "Template-scout",
+     "Template-applier",
+     "Template-evaluator",
+     "Hypothesizer",
+     "Gnoth-maker",
+     "Call-term",
+     "Hfilter"
+    ],
+    "counts": {
+     "Sparkler-plus": 12,
+     "Dissolver": 3,
+     "Sparkler": 9,
+     "Tester": 12,
+     "Bonder": 2,
+     "Glom-scout": 2,
+     "Glomtester": 2,
+     "Glommer": 2,
+     "Glom-inspector": 1,
+     "Plato-scout": 1,
+     "Template-scout": 1,
+     "Template-applier": 1,
+     "Template-evaluator": 1,
+     "Hypothesizer": 1,
+     "Gnoth-maker": 1,
+     "Call-term": 1,
+     "Hfilter": 1
+    },
+    "total": 53
+   }
+  },
+  {
+   "id": "run2_373373",
+   "file": "run2_373373.txt",
+   "pages": [
+    167,
+    169
+   ],
+   "pdf_pages": [
+    179,
+    181
+   ],
+   "title_as_printed": "The Sequence 3 7 3  3 7 3",
+   "sequence": [
+    3,
+    7,
+    3,
+    3,
+    7,
+    3
+   ],
+   "terms_entered": [
+    3,
+    7,
+    3,
+    3,
+    7
+   ],
+   "inputs_in_order": [
+    "3",
+    "7",
+    "3",
+    "show",
+    "show-hypothesis",
+    "3",
+    "show-seq",
+    "7"
+   ],
+   "has_startup_line": false,
+   "prints_task_lines": false,
+   "spark_count": 23,
+   "bond_count": 3,
+   "last_glom": "glom9",
+   "milestones": [
+    {
+     "kind": "term",
+     "page": 167,
+     "index": 1,
+     "value": 3
+    },
+    {
+     "kind": "term",
+     "page": 167,
+     "index": 2,
+     "value": 7
+    },
+    {
+     "kind": "spark",
+     "page": 167,
+     "name": "spark1",
+     "between": [
+      "glint1",
+      "glint2"
+     ],
+     "first": true
+    },
+    {
+     "kind": "term",
+     "page": 167,
+     "index": 3,
+     "value": 3
+    },
+    {
+     "kind": "bond",
+     "page": 167,
+     "name": "bond1",
+     "type": "Same",
+     "field": "print-value",
+     "modifier": "remote",
+     "between": [
+      "glint1",
+      "glint3"
+     ],
+     "first": true
+    },
+    {
+     "kind": "glom-proposal",
+     "page": 167,
+     "family": "Same",
+     "kind_proposed": "cover",
+     "target": "glint1"
+    },
+    {
+     "kind": "glom-proposal",
+     "page": 167,
+     "family": "Same",
+     "kind_proposed": "fence",
+     "target": "glint1"
+    },
+    {
+     "kind": "glom",
+     "page": 167,
+     "name": "glom1",
+     "type": "(Same print-value fence)",
+     "members": [
+      "glint1",
+      "glint2"
+     ],
+     "print_value": [
+      3,
+      7
+     ],
+     "terms": [
+      1,
+      2
+     ],
+     "first": true
+    },
+    {
+     "kind": "glom-failed",
+     "page": 167,
+     "members": [
+      "glint1",
+      "glint2",
+      "glint3"
+     ]
+    },
+    {
+     "kind": "template",
+     "page": 167,
+     "form": "(Cycle 3 2 (3 7))",
+     "from_glom": "glom1",
+     "template_glom": "glom2",
+     "state": "working",
+     "coverage": [
+      1,
+      2
+     ],
+     "check": "check-cycle template (Cycle 3 2 ((3 7)))"
+    },
+    {
+     "kind": "gnoths-constructed",
+     "page": 167,
+     "gnoth_glom": "glom3"
+    },
+    {
+     "kind": "command",
+     "page": 167,
+     "name": "show",
+     "terms": [
+      3,
+      7,
+      3
+     ],
+     "bonds": [
+      "bond1 Same print-value (remote) -- (glint1 glint3)"
+     ],
+     "gloms": [
+      "glom1 (Same print-value fence) --> (3 7) terms 1 to 2",
+      "glom3 pseudo --> ((3 7))  terms 1 to 2"
+     ],
+     "gnoths": [
+      {
+       "class": "Gnoths",
+       "name": "gnoth1",
+       "frame": 0,
+       "plato-class": "Cycle",
+       "glom": "glom3",
+       "notes": "nil",
+       "form": "(((Cycle 3 2 (3 7)) pure))",
+       "state": "stable",
+       "range": [
+        1,
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "command",
+     "page": 168,
+     "name": "show-hypothesis",
+     "output": [
+      "(Cycle 3 2 (3 7))"
+     ]
+    },
+    {
+     "kind": "hypothesis",
+     "page": 168,
+     "form": "(Cycle 3 2 (3 7))",
+     "ordinal": 1,
+     "note": "seen through show-hypothesis; the Hypothesizer line is not printed in this run"
+    },
+    {
+     "kind": "term",
+     "page": 168,
+     "index": 4,
+     "value": 3
+    },
+    {
+     "kind": "hfilter",
+     "page": 168,
+     "through": "(Cycle 3 2 (3 7))",
+     "result": "refuted"
+    },
+    {
+     "kind": "refutation",
+     "page": 168,
+     "line": "set-out -- validity: 0",
+     "hypothesis": "(Cycle 3 2 (3 7))"
+    },
+    {
+     "kind": "gnoth-setter",
+     "page": 168,
+     "top_down_gloms": [
+      "glom4",
+      "glom5",
+      "glom6",
+      "glom7",
+      "glom8"
+     ],
+     "extra_lines": [
+      "groups: ((glint1 glint2))",
+      "glom: (glint1 glint2)"
+     ],
+     "gnoths": [
+      "gnoth1",
+      "gnoth2",
+      "gnoth3"
+     ]
+    },
+    {
+     "kind": "slip-check",
+     "page": 168,
+     "stayval": 0.0,
+     "best": null,
+     "reigning_class": "Cycle",
+     "decision": "stay",
+     "note_by_meredith": "The system will continue to let \"Cycle\" reign."
+    },
+    {
+     "kind": "bond",
+     "page": 168,
+     "name": "bond2",
+     "between": [
+      "glint3",
+      "glint4"
+     ]
+    },
+    {
+     "kind": "bond",
+     "page": 168,
+     "name": "bond3",
+     "between": [
+      "glint1",
+      "glint4"
+     ]
+    },
+    {
+     "kind": "casts",
+     "page": 168,
+     "casts": [
+      "(Cycle 3 1 (3))",
+      "(Cycle 7 1 (7))",
+      "(Cycle 3 1 (3))"
+     ],
+     "generalised": "(Cycle 3 3 (3 7 3))"
+    },
+    {
+     "kind": "new-hypothesis-candidate",
+     "page": 169,
+     "form": "(Cycle 3 3 (3 7 3))"
+    },
+    {
+     "kind": "hypothesis",
+     "page": 169,
+     "form": "(Cycle 3 3 (3 7 3))",
+     "ordinal": 2
+    },
+    {
+     "kind": "command",
+     "page": 169,
+     "name": "show-seq",
+     "output": [
+      "3 7 3 3"
+     ]
+    },
+    {
+     "kind": "term",
+     "page": 169,
+     "index": 5,
+     "value": 7
+    },
+    {
+     "kind": "hfilter",
+     "page": 169,
+     "through": "(Cycle 3 3 (3 7 3))",
+     "result": "confirmed",
+     "top_down_glom": "glom9"
+    },
+    {
+     "kind": "guess",
+     "page": 169,
+     "hypothesis": "(Cycle 3 3 (3 7 3))",
+     "predicted_as_printed": "3 7 3 3 7",
+     "predicted_terms": [
+      3,
+      7,
+      3,
+      3,
+      7
+     ],
+     "answer": "ok",
+     "after_confirming_terms": 1
+    },
+    {
+     "kind": "bye",
+     "page": 169
+    }
+   ],
+   "task_types": null,
+   "task_types_note": "This run is printed without 'doing task' lines, so its task types cannot be read; the stage-one lines printed (sparks 1-12, bond1, the proposals, glom1, the template, gnoths) coincide with run 1's."
+  },
+  {
+   "id": "run3_121231234",
+   "file": "run3_121231234.txt",
+   "pages": [
+    170,
+    179
+   ],
+   "pdf_pages": [
+    182,
+    191
+   ],
+   "title_as_printed": "The Sequence  1 2  1 2 3  1 2 3 4",
+   "sequence": [
+    1,
+    2,
+    1,
+    2,
+    3,
+    1,
+    2,
+    3,
+    4
+   ],
+   "terms_entered": [
+    1,
+    2,
+    1,
+    2,
+    3,
+    1
+   ],
+   "inputs_in_order": [
+    "1",
+    "2",
+    "show-hypothesis",
+    "show",
+    "1",
+    "show-hypothesis",
+    "show-parse",
+    "show",
+    "2",
+    "show-seq",
+    "3",
+    "show-hypothesis",
+    "show-parse",
+    "show",
+    "show-seq",
+    "1"
+   ],
+   "has_startup_line": true,
+   "prints_task_lines": true,
+   "spark_count": 30,
+   "bond_count": 8,
+   "last_glom": "glom15",
+   "milestones": [
+    {
+     "kind": "term",
+     "page": 170,
+     "index": 1,
+     "value": 1
+    },
+    {
+     "kind": "task",
+     "page": 170,
+     "name": "empty-task",
+     "note": "printed once, after the first term; not described in the prose"
+    },
+    {
+     "kind": "term",
+     "page": 170,
+     "index": 2,
+     "value": 2
+    },
+    {
+     "kind": "spark",
+     "page": 170,
+     "name": "spark1",
+     "between": [
+      "glint1",
+      "glint2"
+     ],
+     "first": true
+    },
+    {
+     "kind": "bond",
+     "page": 170,
+     "name": "bond1",
+     "type": "Succ",
+     "field": "print-value",
+     "modifier": "adjacent",
+     "between": [
+      "glint1",
+      "glint2"
+     ],
+     "first": true
+    },
+    {
+     "kind": "glom-proposal",
+     "page": 170,
+     "family": "Pred",
+     "kind_proposed": "group",
+     "target": "glint2"
+    },
+    {
+     "kind": "glom",
+     "page": 170,
+     "name": "glom1",
+     "type": "(Pred print-value group)",
+     "members": [
+      "glint1",
+      "glint2"
+     ],
+     "print_value": [
+      1,
+      2
+     ],
+     "terms": [
+      1,
+      2
+     ],
+     "first": true,
+     "note": "the successor pair (1 2) is glommed under the label Pred print-value group"
+    },
+    {
+     "kind": "glomtester-failed",
+     "page": 170,
+     "line": "Glomtester failed glint2"
+    },
+    {
+     "kind": "plato-scout",
+     "page": 170,
+     "classes": [
+      "S-group",
+      "P-group"
+     ],
+     "glom": "glom1"
+    },
+    {
+     "kind": "plato-evaluator",
+     "page": 170,
+     "classes": [
+      "P-group"
+     ],
+     "glom": "glom1"
+    },
+    {
+     "kind": "template",
+     "page": 170,
+     "form": "(S-group 1 2)",
+     "from_glom": "glom1",
+     "template_glom": "glom2",
+     "line_as_printed": "template: (form (S-group 1 2)",
+     "evaluator_line": "doing task Template-evaluator on nil",
+     "template_line_page": 171
+    },
+    {
+     "kind": "gnoths-constructed",
+     "page": 171,
+     "gnoth_glom": "glom3"
+    },
+    {
+     "kind": "hypothesis",
+     "page": 171,
+     "form": "(Countup 1)",
+     "ordinal": 1,
+     "note": "the Hypothesizer prints (Countup 1) although the template and gnoth1's form are (S-group 1 2)"
+    },
+    {
+     "kind": "command",
+     "page": 171,
+     "name": "show-hypothesis",
+     "output": [
+      "(Countup 1)"
+     ]
+    },
+    {
+     "kind": "command",
+     "page": 171,
+     "name": "show",
+     "terms": [
+      1,
+      2
+     ],
+     "bonds": [
+      "bond1 Succ print-value (adjacent) -- (glint1 glint2)"
+     ],
+     "gloms": [
+      "glom1 (Pred print-value group) --> (1 2) terms 1 to 2",
+      "glom3 pseudo --> ((1 2))  terms 1 to 2"
+     ],
+     "gnoths": [
+      {
+       "class": "Gnoths",
+       "name": "gnoth1",
+       "frame": 0,
+       "plato-class": "S-group",
+       "glom": "glom3",
+       "notes": "nil",
+       "form": "(((S-group 1 2) pure))",
+       "state": "stable",
+       "range": [
+        1,
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "term",
+     "page": 171,
+     "index": 3,
+     "value": 1
+    },
+    {
+     "kind": "hfilter",
+     "page": 171,
+     "through": "(Countup 1)",
+     "result": "refuted",
+     "note": "no 'set-out -- validity: 0' line is printed in this run"
+    },
+    {
+     "kind": "bond",
+     "page": 172,
+     "name": "bond2",
+     "type": "Pred",
+     "field": "print-value",
+     "modifier": "adjacent",
+     "between": [
+      "glint2",
+      "glint3"
+     ]
+    },
+    {
+     "kind": "glom-dissolved",
+     "page": 172,
+     "glom": "glom3",
+     "line": "glom3 is not in cytoplasm"
+    },
+    {
+     "kind": "bond",
+     "page": 172,
+     "name": "bond3",
+     "type": "Same",
+     "field": "print-value",
+     "modifier": "remote",
+     "between": [
+      "glint1",
+      "glint3"
+     ]
+    },
+    {
+     "kind": "glom-proposal",
+     "page": 172,
+     "family": "Same",
+     "kind_proposed": "cover",
+     "target": "glint3"
+    },
+    {
+     "kind": "glom-proposal",
+     "page": 172,
+     "family": "Same",
+     "kind_proposed": "fence",
+     "target": "glint3"
+    },
+    {
+     "kind": "bond",
+     "page": 173,
+     "name": "bond4",
+     "type": "Pred",
+     "field": "print-value",
+     "modifier": "adjacent",
+     "between": [
+      "glom1",
+      "glint3"
+     ]
+    },
+    {
+     "kind": "gnoth-setter",
+     "page": 173,
+     "top_down_gloms": [
+      "glom4",
+      "glom5",
+      "glom6",
+      "glom7",
+      "glom8"
+     ],
+     "gnoths": [
+      "gnoth1",
+      "gnoth2",
+      "gnoth3"
+     ],
+     "note": "no slip-check line is printed after this Gnoth-setter"
+    },
+    {
+     "kind": "plato-scout",
+     "page": 173,
+     "classes": [
+      "C-group",
+      "S-group",
+      "P-group",
+      "Y-group",
+      "Cycle",
+      "Tuple"
+     ],
+     "glom": "glom6"
+    },
+    {
+     "kind": "reigning-class-change",
+     "page": 174,
+     "from_class": "Countup",
+     "to_class": "S-group",
+     "note_by_meredith": "Changing to a new reigning class. Countup --> S-group",
+     "printed_by_program": false,
+     "after_task": "Reformulator"
+    },
+    {
+     "kind": "bond-assessor",
+     "page": 174,
+     "reigning_class": "S-group",
+     "threshold": 8.0
+    },
+    {
+     "kind": "gnoth-operation",
+     "page": 174,
+     "program": "((PROGRAM ((SHIFT-RIGHT gnoth1 gnoth2 (glint1)) (ENCLOSE gnoth1 nil))))",
+     "operations": [
+      {
+       "op": "SHIFT-RIGHT",
+       "args": [
+        "gnoth1",
+        "gnoth2",
+        [
+         "glint1"
+        ]
+       ]
+      },
+      {
+       "op": "ENCLOSE",
+       "args": [
+        "gnoth1",
+        "nil"
+       ]
+      }
+     ],
+     "top_down_glom": "glom9"
+    },
+    {
+     "kind": "bond-assessor",
+     "page": 174,
+     "reigning_class": "S-group",
+     "threshold": 8.0
+    },
+    {
+     "kind": "bond-assessor",
+     "page": 174,
+     "reigning_class": "S-group",
+     "threshold": 9.0
+    },
+    {
+     "kind": "bond-assessor",
+     "page": 174,
+     "reigning_class": "S-group",
+     "threshold": 10.0
+    },
+    {
+     "kind": "casts",
+     "page": 174,
+     "casts": [
+      "(S-group 1 2)",
+      "(S-group 1 1)"
+     ],
+     "generalised": "(S-group 1 2)"
+    },
+    {
+     "kind": "new-hypothesis-candidate",
+     "page": 174,
+     "form": "(S-group 1 2)"
+    },
+    {
+     "kind": "hypothesis",
+     "page": 174,
+     "form": "(S-group 1 2)",
+     "ordinal": 2
+    },
+    {
+     "kind": "command",
+     "page": 174,
+     "name": "show-hypothesis",
+     "output": [
+      "(S-group 1 2)"
+     ]
+    },
+    {
+     "kind": "command",
+     "page": 174,
+     "name": "show-parse",
+     "output": [
+      "((1 2) (1))"
+     ]
+    },
+    {
+     "kind": "command",
+     "page": 174,
+     "name": "show",
+     "terms": [
+      1,
+      2,
+      1
+     ],
+     "bonds": [
+      "bond1 Succ print-value (adjacent) -- (glint1 glint2)",
+      "bond2 Pred print-value (adjacent) -- (glint2 glint3)",
+      "bond3 Same print-value (remote) -- (glint1 glint3)"
+     ],
+     "gloms": [
+      "glom8 pseudo --> (1)  terms 3 to 3",
+      "glom9 pseudo --> (1 2)  terms 1 to 2"
+     ],
+     "gnoths": [
+      {
+       "external-bonds": [
+        [
+         "bond2",
+         0
+        ],
+        [
+         "bond3",
+         -5
+        ]
+       ],
+       "internal-bonds": [
+        [
+         "bond1",
+         10
+        ]
+       ],
+       "equivalence-type": "parse",
+       "groups": "nil",
+       "class": "Gnoths",
+       "name": "gnoth2",
+       "frame": 1,
+       "plato-class": "S-group",
+       "glom": "glom9",
+       "notes": "nil",
+       "form": "(S-group 1 2)",
+       "state": "stable",
+       "range": [
+        1,
+        2
+       ]
+      },
+      {
+       "external-bonds": [
+        [
+         "bond2",
+         0
+        ],
+        [
+         "bond3",
+         -5
+        ]
+       ],
+       "internal-bonds": [],
+       "class": "Gnoths",
+       "name": "gnoth3",
+       "frame": 2,
+       "plato-class": "S-group",
+       "glom": "glom8",
+       "notes": "nil",
+       "form": "(S-group 1 1)",
+       "state": "stable",
+       "range": [
+        3,
+        3
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "term",
+     "page": 175,
+     "index": 4,
+     "value": 2
+    },
+    {
+     "kind": "hfilter",
+     "page": 175,
+     "through": "(S-group 1 2)",
+     "result": "confirmed",
+     "top_down_glom": "glom10"
+    },
+    {
+     "kind": "guess",
+     "page": 175,
+     "hypothesis": "(S-group 1 2)",
+     "predicted_as_printed": "(1 2)(1 2)(1 2)",
+     "predicted_terms": [
+      1,
+      2,
+      1,
+      2,
+      1,
+      2
+     ],
+     "answer": "nope",
+     "after_confirming_terms": 1
+    },
+    {
+     "kind": "command",
+     "page": 176,
+     "name": "show-seq",
+     "output": [
+      "1 2 1 2"
+     ]
+    },
+    {
+     "kind": "term",
+     "page": 176,
+     "index": 5,
+     "value": 3
+    },
+    {
+     "kind": "hfilter",
+     "page": 176,
+     "through_as_printed": "(1 2)1",
+     "result": "refuted",
+     "note": "printed after the refused guess; the line is not a form"
+    },
+    {
+     "kind": "glom-dissolved",
+     "page": 176,
+     "glom": "glom8"
+    },
+    {
+     "kind": "glom-dissolved",
+     "page": 176,
+     "glom": "glom10"
+    },
+    {
+     "kind": "gnoth-setter",
+     "page": 176,
+     "top_down_gloms": [
+      "glom11",
+      "glom12",
+      "glom13"
+     ],
+     "gnoths": [
+      "gnoth2",
+      "gnoth3",
+      "gnoth5"
+     ]
+    },
+    {
+     "kind": "slip-check",
+     "page": 176,
+     "stayval": 15.0,
+     "best": [
+      "Y-group",
+      4.0
+     ],
+     "reigning_class": "S-group",
+     "decision": "stay",
+     "note_by_meredith": "We will stay with the reigning class -- S-group."
+    },
+    {
+     "kind": "bond",
+     "page": 176,
+     "name": "bond5",
+     "type": "Same",
+     "field": "print-value",
+     "modifier": "remote",
+     "between": [
+      "glint2",
+      "glint4"
+     ]
+    },
+    {
+     "kind": "bond",
+     "page": 177,
+     "name": "bond6",
+     "type": "Succ",
+     "field": "print-value",
+     "modifier": "remote",
+     "between": [
+      "glint2",
+      "glint5"
+     ]
+    },
+    {
+     "kind": "bond",
+     "page": 177,
+     "name": "bond7",
+     "type": "Succ",
+     "field": "print-value",
+     "modifier": "adjacent",
+     "between": [
+      "glint3",
+      "glint4"
+     ]
+    },
+    {
+     "kind": "gnoth-operation",
+     "page": 177,
+     "program": "((SHIFT-RIGHT gnoth3 gnoth5 (glint3)))",
+     "operations": [
+      {
+       "op": "SHIFT-RIGHT",
+       "args": [
+        "gnoth3",
+        "gnoth5",
+        [
+         "glint3"
+        ]
+       ]
+      }
+     ],
+     "top_down_glom": "glom14",
+     "note": "the glomlist is (glint3) although glom14 covers terms 3 to 5"
+    },
+    {
+     "kind": "bond-assessor",
+     "page": 177,
+     "reigning_class": "S-group",
+     "threshold": 8.0
+    },
+    {
+     "kind": "bond",
+     "page": 177,
+     "name": "bond8",
+     "type": "Succ",
+     "field": "print-value",
+     "modifier": "adjacent",
+     "between": [
+      "glint4",
+      "glint5"
+     ]
+    },
+    {
+     "kind": "bond-assessor",
+     "page": 178,
+     "reigning_class": "S-group",
+     "threshold": 8.0
+    },
+    {
+     "kind": "bond-assessor",
+     "page": 178,
+     "reigning_class": "S-group",
+     "threshold": 9.0
+    },
+    {
+     "kind": "bond-assessor",
+     "page": 178,
+     "reigning_class": "S-group",
+     "threshold": 10.0
+    },
+    {
+     "kind": "casts",
+     "page": 178,
+     "casts": [
+      "(S-group 1 2)",
+      "(S-group 1 3)"
+     ],
+     "generalised": "(S-group 1 (Countup 2))"
+    },
+    {
+     "kind": "new-hypothesis-candidate",
+     "page": 178,
+     "form": "(S-group 1 (Countup 2))"
+    },
+    {
+     "kind": "hypothesis",
+     "page": 178,
+     "form": "(S-group 1 (Countup 2))",
+     "ordinal": 3
+    },
+    {
+     "kind": "command",
+     "page": 178,
+     "name": "show-hypothesis",
+     "output": [
+      "(S-group 1 (Countup 2))"
+     ]
+    },
+    {
+     "kind": "command",
+     "page": 178,
+     "name": "show-parse",
+     "output": [
+      "((1 2) (1 2 3))"
+     ]
+    },
+    {
+     "kind": "command",
+     "page": 178,
+     "name": "show",
+     "terms": [
+      1,
+      2,
+      1,
+      2,
+      3
+     ],
+     "bonds": [
+      "bond1 Succ print-value (adjacent) -- (glint1 glint2)",
+      "bond2 Pred print-value (adjacent) -- (glint2 glint3)",
+      "bond3 Same print-value (remote) -- (glint1 glint3)",
+      "bond5 Same print-value (remote) -- (glint2 glint4)",
+      "bond6 Succ print-value (remote) -- (glint2 glint5)",
+      "bond7 Succ print-value (adjacent) -- (glint3 glint4)",
+      "bond8 Succ print-value (adjacent) -- (glint4 glint5)"
+     ],
+     "gloms": [
+      "glom9 pseudo --> (1 2)  terms 1 to 2",
+      "glom14 pseudo --> (1 2 3)  terms 3 to 5"
+     ],
+     "gnoths": [
+      {
+       "external-bonds": [
+        [
+         "bond2",
+         0
+        ],
+        [
+         "bond5",
+         -5
+        ],
+        [
+         "bond6",
+         0
+        ],
+        [
+         "bond3",
+         -5
+        ]
+       ],
+       "internal-bonds": [
+        [
+         "bond1",
+         10
+        ]
+       ],
+       "equivalence-type": "parse",
+       "groups": "nil",
+       "class": "Gnoths",
+       "name": "gnoth2",
+       "frame": 1,
+       "plato-class": "S-group",
+       "glom": "glom9",
+       "notes": "nil",
+       "form": "(S-group 1 2)",
+       "state": "stable",
+       "range": [
+        1,
+        2
+       ]
+      },
+      {
+       "external-bonds": [
+        [
+         "bond6",
+         0
+        ],
+        [
+         "bond5",
+         -5
+        ],
+        [
+         "bond2",
+         0
+        ],
+        [
+         "bond3",
+         -5
+        ]
+       ],
+       "internal-bonds": [
+        [
+         "bond8",
+         10
+        ],
+        [
+         "bond7",
+         10
+        ]
+       ],
+       "groups": "nil",
+       "class": "Gnoths",
+       "name": "gnoth5",
+       "frame": 2,
+       "plato-class": "S-group",
+       "glom": "glom14",
+       "notes": "nil",
+       "form": "(S-group 1 3)",
+       "state": "stable",
+       "range": [
+        3,
+        5
+       ]
+      }
+     ],
+     "note": "bond4 (Pred, glom1 to glint3) is no longer listed"
+    },
+    {
+     "kind": "command",
+     "page": 179,
+     "name": "show-seq",
+     "output": [
+      "1 2 1 2 3"
+     ]
+    },
+    {
+     "kind": "term",
+     "page": 179,
+     "index": 6,
+     "value": 1
+    },
+    {
+     "kind": "hfilter",
+     "page": 179,
+     "through": "(S-group 1 (Countup 2))",
+     "result": "confirmed",
+     "top_down_glom": "glom15"
+    },
+    {
+     "kind": "guess",
+     "page": 179,
+     "hypothesis": "(S-group 1 (Countup 2))",
+     "predicted_as_printed": "(1 2)(1 2 3)(1 2 3 4)",
+     "predicted_terms": [
+      1,
+      2,
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4
+     ],
+     "answer": "ok",
+     "after_confirming_terms": 1
+    },
+    {
+     "kind": "bye",
+     "page": 179
+    }
+   ],
+   "task_types": {
+    "set": [
+     "Bond-assessor",
+     "Bonder",
+     "Call-term",
+     "Dissolver",
+     "Glom-inspector",
+     "Glom-scout",
+     "Glommer",
+     "Glomtester",
+     "Gnoth-caster",
+     "Gnoth-maker",
+     "Gnoth-operator",
+     "Gnoth-setter",
+     "Hfilter",
+     "Hypothesizer",
+     "Plato-evaluator",
+     "Plato-scout",
+     "Reformulator",
+     "Sparkler",
+     "Sparkler-plus",
+     "Template-evaluator",
+     "Template-scout",
+     "Tester",
+     "empty-task"
+    ],
+    "first_appearance_order": [
+     "Sparkler-plus",
+     "Dissolver",
+     "empty-task",
+     "Sparkler",
+     "Tester",
+     "Bonder",
+     "Glom-scout",
+     "Glomtester",
+     "Glommer",
+     "Glom-inspector",
+     "Plato-scout",
+     "Plato-evaluator",
+     "Template-scout",
+     "Template-evaluator",
+     "Gnoth-maker",
+     "Hypothesizer",
+     "Call-term",
+     "Hfilter",
+     "Gnoth-setter",
+     "Reformulator",
+     "Bond-assessor",
+     "Gnoth-operator",
+     "Gnoth-caster"
+    ],
+    "counts": {
+     "Sparkler-plus": 45,
+     "Dissolver": 5,
+     "empty-task": 1,
+     "Sparkler": 28,
+     "Tester": 30,
+     "Bonder": 25,
+     "Glom-scout": 8,
+     "Glomtester": 6,
+     "Glommer": 1,
+     "Glom-inspector": 1,
+     "Plato-scout": 2,
+     "Plato-evaluator": 1,
+     "Template-scout": 7,
+     "Template-evaluator": 1,
+     "Gnoth-maker": 1,
+     "Hypothesizer": 1,
+     "Call-term": 3,
+     "Hfilter": 4,
+     "Gnoth-setter": 2,
+     "Reformulator": 8,
+     "Bond-assessor": 8,
+     "Gnoth-operator": 2,
+     "Gnoth-caster": 2
+    },
+    "total": 192
+   },
+   "bond_assessor_thresholds_per_reformulation": [
+    [
+     8.0,
+     8.0,
+     9.0,
+     10.0
+    ],
+    [
+     8.0,
+     8.0,
+     9.0,
+     10.0
+    ]
+   ]
+  }
+ ],
+ "milestone_kinds": [
+  "term",
+  "task",
+  "spark",
+  "bond",
+  "glom-proposal",
+  "glom",
+  "glom-failed",
+  "glomtester-failed",
+  "glom-dissolved",
+  "plato-scout",
+  "plato-evaluator",
+  "template",
+  "hypothesis",
+  "gnoths-constructed",
+  "command",
+  "hfilter",
+  "refutation",
+  "gnoth-setter",
+  "slip-check",
+  "reigning-class-change",
+  "bond-assessor",
+  "gnoth-operation",
+  "casts",
+  "new-hypothesis-candidate",
+  "guess",
+  "bye"
+ ],
+ "guess_rule_observed": {
+  "after_confirming_terms": 1,
+  "evidence_pages": [
+   166,
+   169,
+   175,
+   179
+  ],
+  "note": "in all four guesses the program guesses after exactly one term that confirms the current hypothesis; this is evidence for a decision, not a rule stated in the prose"
+ },
+ "blackburn_dozen": [
+  {
+   "number": 1,
+   "sequence": [
+    1,
+    1,
+    2,
+    1,
+    2,
+    3,
+    1,
+    2,
+    3,
+    4,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "parsed": "1 * 1 2 * 1 2 3 * 1 2 3 4 * 1 2 3 4 5 * ...",
+   "result": "unsolved",
+   "pages": [
+    145
+   ],
+   "notes": "thrashes hopelessly; the initial C-group interferes with finding the lengthening S-groups, which reach the template level but not a hypothesis",
+   "related_solved": [
+    [
+     1,
+     2,
+     1,
+     2,
+     3,
+     1,
+     2,
+     3,
+     4
+    ]
+   ]
+  },
+  {
+   "number": 2,
+   "sequence": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "parsed": "1 * 2 * 3 * 4 * 5 * 6 * 7 ...",
+   "result": "solved",
+   "pages": [
+    145
+   ],
+   "notes": "solved quite readily, in just under one minute",
+   "time": "under one minute"
+  },
+  {
+   "number": 3,
+   "sequence": [
+    2,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    2,
+    2,
+    4,
+    2,
+    2,
+    5,
+    2
+   ],
+   "parsed": "2 1 2 * 2 2 2 * 2 3 2 * 2 4 2 * 2 5 2 ...",
+   "result": "not attempted",
+   "pages": [
+    145,
+    146
+   ],
+   "notes": "hopeless as yet; not even attempted; far too much interference (terms with multiple potential roles); a distant goal"
+  },
+  {
+   "number": 4,
+   "sequence": [
+    1,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4
+   ],
+   "parsed": "1 * 2 2 * 3 3 3 * 4 4 4 4 * ...",
+   "result": "unsolved",
+   "pages": [
+    146
+   ],
+   "notes": "the initial S-groups (1 2) and (2 3) interfere with the budding C-group notion; the correct notion is discovered but cannot break through into a hypothesis",
+   "related_solved": [
+    [
+     2,
+     2,
+     3,
+     3,
+     3,
+     4,
+     4,
+     4,
+     4
+    ],
+    [
+     1,
+     1,
+     2,
+     2,
+     2,
+     3,
+     3,
+     3,
+     3
+    ]
+   ]
+  },
+  {
+   "number": 5,
+   "sequence": [
+    1,
+    8,
+    5,
+    8,
+    1,
+    8,
+    5,
+    8,
+    1,
+    8,
+    5,
+    8
+   ],
+   "parsed": "1 8 5 8 * 1 8 5 8 * 1 8 5 8 * ...",
+   "result": "unsolved",
+   "pages": [
+    146
+   ],
+   "notes": "finds the Y-group 1 8 5 8 1 and doggedly clings to it; stopped after a fifteen-minute attempt",
+   "related_solved": [
+    [
+     1,
+     8,
+     5,
+     8,
+     1,
+     1,
+     8,
+     5,
+     8,
+     1
+    ]
+   ],
+   "time": "stopped after fifteen minutes"
+  },
+  {
+   "number": 6,
+   "sequence": [
+    2,
+    1,
+    2,
+    2,
+    2,
+    3,
+    2,
+    4,
+    2,
+    5
+   ],
+   "parsed": "2 1 * 2 2 * 2 3 * 2 4 * 2 5 ...",
+   "result": "unsolved",
+   "pages": [
+    146
+   ],
+   "notes": "too much interference combined with an alternation of terms; beyond the current system"
+  },
+  {
+   "number": 7,
+   "sequence": [
+    2,
+    3,
+    1,
+    2,
+    3,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    2,
+    3,
+    4,
+    4,
+    4,
+    4
+   ],
+   "parsed": "2 3 (1) * 2 3 (2 2) * 2 3 (3 3 3) * 2 3 (4 4 4 4) * ...",
+   "result": "unsolved",
+   "pages": [
+    146
+   ],
+   "notes": "far beyond the current system: interference, interleaving and growing group lengths"
+  },
+  {
+   "number": 8,
+   "sequence": [
+    1,
+    2,
+    2,
+    3,
+    3,
+    4,
+    4,
+    5,
+    5,
+    6
+   ],
+   "parsed": "1 2 * 2 3 * 3 4 * 4 5 * 5 6 ...",
+   "result": "solved",
+   "pages": [
+    146
+   ],
+   "notes": "solved within three minutes",
+   "time": "within three minutes"
+  },
+  {
+   "number": 9,
+   "sequence": [
+    1,
+    2,
+    3,
+    3,
+    4,
+    4,
+    5,
+    5,
+    5,
+    6,
+    6,
+    6
+   ],
+   "parsed": "1 * 2 * 3 3 * 4 4 * 5 5 5 * 6 6 6 ...",
+   "result": "unsolved",
+   "pages": [
+    146,
+    147
+   ],
+   "notes": "difficult for a while yet: the subtle pattern of growth in group lengths taxes the representation; will probably need group lengths as manifestations"
+  },
+  {
+   "number": 10,
+   "sequence": [
+    9,
+    1,
+    9,
+    2,
+    9,
+    3,
+    9,
+    4
+   ],
+   "parsed": "9 1 * 9 2 * 9 3 * 9 4 ...",
+   "result": "unsolved",
+   "pages": [
+    147
+   ],
+   "notes": "the only problem is the alternation of terms of which at least one is non-constant; will probably be the next sequence solved; 'with slight extension, it should solve problem 10'"
+  },
+  {
+   "number": 11,
+   "sequence": [
+    1,
+    8,
+    1,
+    2,
+    1,
+    8,
+    1,
+    2,
+    3,
+    2,
+    1,
+    8,
+    1,
+    2,
+    3,
+    4,
+    3,
+    2,
+    1,
+    8,
+    1,
+    2,
+    3,
+    4
+   ],
+   "parsed": "1 8 1 * (2 1) 8 (1 2) * (3 2 1) 8 (1 2 3) * ...",
+   "result": "unsolved",
+   "pages": [
+    147
+   ],
+   "notes": "hard: interference between the groups, which grow at both ends; the expressive power is available but the system gets bogged down in spurious relationships"
+  },
+  {
+   "number": 12,
+   "sequence": [
+    1,
+    8,
+    5,
+    5,
+    8,
+    1,
+    1,
+    8,
+    5,
+    5,
+    8,
+    1
+   ],
+   "parsed": "1 8 5 5 8 1 * 1 8 5 5 8 1 * ...",
+   "result": "solved",
+   "pages": [
+    147
+   ],
+   "notes": "solved, but can take up to twenty minutes; often finds the Y-group (1 8 (5 (5 8 1 1 8 5) 5) 8 1) rather than the one we would like; shows the need for cosmetic reform",
+   "time": "up to twenty minutes",
+   "ugly_form": "(1 8 (5 (5 8 1 1 8 5) 5) 8 1)"
+  }
+ ],
+ "blackburn_summary": {
+  "solved": [
+   2,
+   8,
+   12
+  ],
+  "page": 147,
+  "with_slight_extension": [
+   10
+  ],
+  "needs_less_clinging": [
+   1,
+   4,
+   5,
+   6
+  ],
+  "needs_interference_handling": [
+   3,
+   7,
+   11
+  ],
+  "needs_group_lengths_as_manifestations": [
+   9
+  ]
+ },
+ "human_difficulty_p148": {
+  "easiest_to_hardest_groups": [
+   [
+    2,
+    10
+   ],
+   [
+    8
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    12
+   ],
+   [
+    1,
+    3,
+    9
+   ]
+  ],
+  "hardest": 7,
+  "also_time_consuming": 11,
+  "note": "problem 7: seven of twenty-five subjects passed on it; no more than two passed on any other"
+ },
+ "solved_sequences_p88": [
+  {
+   "sequence": [
+    1,
+    1,
+    1
+   ],
+   "as_printed": "1 1 1 ..."
+  },
+  {
+   "sequence": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "as_printed": "1 2 3 4 ..."
+  },
+  {
+   "sequence": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   "as_printed": "1 1 1 2 2 2 3 3 3 ..."
+  },
+  {
+   "sequence": [
+    3,
+    4,
+    3,
+    4,
+    3,
+    4
+   ],
+   "as_printed": "3 4 3 4 3 4 ..."
+  },
+  {
+   "sequence": [
+    3,
+    7,
+    3,
+    7,
+    3,
+    7
+   ],
+   "as_printed": "3 7 3 7 3 7 ...",
+   "run": "run1_3737"
+  },
+  {
+   "sequence": [
+    3,
+    7,
+    3,
+    3,
+    7,
+    3,
+    3,
+    7,
+    3
+   ],
+   "as_printed": "3 7 3 3 7 3 3 7 3 ...",
+   "run": "run2_373373"
+  },
+  {
+   "sequence": [
+    16,
+    15,
+    14,
+    17,
+    16,
+    15,
+    18,
+    17,
+    16
+   ],
+   "as_printed": "16 15 14 17 16 15 18 17 16 ..."
+  },
+  {
+   "sequence": [
+    16,
+    15,
+    14,
+    15,
+    14,
+    13,
+    14,
+    13,
+    12
+   ],
+   "as_printed": "16 15 14 15 14 13 14 13 12 ...",
+   "note": "as well as possible, given a non-infinite pattern"
+  },
+  {
+   "sequence": [
+    1,
+    2,
+    1,
+    2,
+    3,
+    1,
+    2,
+    3,
+    4
+   ],
+   "as_printed": "1 2 1 2 3 1 2 3 4 ...",
+   "run": "run3_121231234",
+   "note": "the running example of chapters 3-5"
+  }
+ ],
+ "unconquered_p150": [
+  {
+   "sequence": [
+    1,
+    2,
+    10,
+    3,
+    4,
+    10,
+    5,
+    6,
+    10
+   ],
+   "as_printed": "1 2 10 3 4 10 5 6 10 ...",
+   "reason": "independent interleaved sequences whose components are more complicated than constants",
+   "contrast_solved": [
+    3,
+    7,
+    3,
+    7,
+    3,
+    7
+   ]
+  },
+  {
+   "sequence": [
+    2,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    2,
+    2,
+    4,
+    2
+   ],
+   "as_printed": "2 1 2  2 2 2  2 3 2  2 4 2 ...",
+   "reason": "a good deal of interference; many adjacent samenesses between 2's although C-group is not in the correct parse (Blackburn 3)"
+  },
+  {
+   "sequence": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    3,
+    1
+   ],
+   "as_printed": "1 1 1  1 2 1  1 3 1 ...",
+   "reason": "a good deal of interference"
+  }
+ ],
+ "stated_problems_pp148_153": [
+  {
+   "name": "fails to notice interleaved sequences of any complexity",
+   "page": 149
+  },
+  {
+   "name": "is unable to handle interference well",
+   "page": 149
+  },
+  {
+   "name": "clings too tenaciously to its first organizing notion",
+   "page": 149
+  },
+  {
+   "name": "implementation faux pas: ad hoc, expr-based Lisp, some disregard for cleaning up old structures",
+   "page": 149
+  },
+  {
+   "name": "unconquered sequences: bonds used only bottom-up; the platoplasm's knowledge of favoured bond types unused; manifestation knowledge virtually unused (Slip-scouts will begin to use it)",
+   "page": 150
+  },
+  {
+   "name": "low-level myopia: favourite early gloms can push up ((1 2) 3) instead of (1 2 3); to be mitigated by divesting pushes, cosmetic reform and form-polishing (none implemented)",
+   "page": 151
+  },
+  {
+   "name": "high-level haughtiness: top-down processing leaves too little room for low-level coercion; the 'Little Prince Problem' (a good notion becomes a template and disappears)",
+   "pages": [
+    151,
+    152
+   ]
+  },
+  {
+   "name": "divesting pushes: not implemented",
+   "page": 152
+  },
+  {
+   "name": "coordination problems: hypothesis and gnoths must agree on the parse; no mechanism keeps them in step automatically",
+   "pages": [
+    152,
+    153
+   ]
+  },
+  {
+   "name": "herky-jerky: reforms at the highest level are rough rather than fluid; differentiated plato-links proposed",
+   "page": 153
+  }
+ ]
+}

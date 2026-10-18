@@ -48,9 +48,7 @@ The script works from the repository root (it `cd`s there itself) and runs, in o
 
 It needs Racket 8 with `racket/gui`, Chez Scheme 10, Python 3, `xvfb-run`, and the tools
 the GUI tests use (`xwininfo`; optionally `bwrap`). The Python port has its own entry
-point, `bash python/run-tests.sh` (see [`python/README.md`](../python/README.md)). The
-regression gate `python3 ralph_loops/loop0001/gate.py` runs this script after checking
-that `chez_scheme/original/` is untouched.
+point, `bash python/run-tests.sh` (see [`python/README.md`](../python/README.md)).
 
 ## `problems.txt`
 
@@ -114,9 +112,7 @@ paragraph, and the end of the run.
     does the same.
 - **Never hand-edit them, and never regenerate them to make a failing port pass.** A
   difference means the port is wrong, or (after a change to the oracle's
-  instrumentation) that the instrumentation changed and the docs must say so. The Python
-  port's gate (`ralph_loops/loop0002/gate.py`) also requires `golden/` and `diff/` to be
-  identical to the commit where the Racket port was finished.
+  instrumentation) that the instrumentation changed and the docs must say so.
 
 ## `diff/`: the differential batteries
 

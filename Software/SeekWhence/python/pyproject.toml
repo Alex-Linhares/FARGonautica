@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seekwhence"
+version = "0.0.1"
+description = "Seek-Whence (Meredith, 1986) reconstructed from the specification in Python"
+requires-python = ">=3.12"
+# Standard library only. Tests need pytest.
+dependencies = []
+
+[project.optional-dependencies]
+# The live GUI (python3 -m seekwhence.gui, or seekwhence-gui). The engine and the CLI
+# need only the standard library.
+gui = ["PySide6>=6.6"]
+# The GUI tests skip when PySide6 is missing.
+# pytest-xdist is optional: `python3 -m pytest -n auto` runs the tests in parallel.
+test = ["pytest>=7.4", "pytest-qt>=4.5", "pytest-xdist>=3.0"]
+
+[project.scripts]
+seekwhence = "seekwhence.__main__:main"
+seekwhence-gui = "seekwhence.gui.app:run"
+
+[tool.setuptools]
+packages = ["seekwhence", "seekwhence.gui", "seekwhence.gui.models"]
+
+[tool.setuptools.package-data]
+# The repository's default dock layout travels with the code (loop0004, ANSWERS.md 8).
+"seekwhence.gui" = ["default_layout.json"]
+
+[tool.pytest.ini_options]
+# Run from Software/SeekWhence/python/ as `python3 -m pytest -q`.
+testpaths = ["tests"]
+# The few long runs (a whole Blackburn sequence drawn event by event) are marked `slow` and
+# left out by default; `python3 -m pytest -m slow` runs only them, `-m ""` everything.
+addopts = "-p no:cacheprovider -m 'not slow'"
+markers = ["slow: a long run (tens of seconds or more); left out unless asked for with -m"]
+xfail_strict = true

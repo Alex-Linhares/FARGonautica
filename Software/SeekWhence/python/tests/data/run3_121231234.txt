@@ -1,0 +1,570 @@
+# Seek-Whence appendix run 3: the sequence 1 2 1 2 3 1 2 3 4  [M86 pp. 170-179]
+#
+# Transcribed from the page images of Meredith (1986), PDF pages 182-191 (printed 170-179),
+# rendered at 130 dpi and read by eye; the scan's text layer was used only as a draft.
+# The conventions are those of run1_3737.txt ("# page:", "# note:", console lines as printed).
+# This is the thesis's running example [M86 p. 88]: a first hypothesis (Countup 1) is refuted,
+# reformulation changes the reigning class to S-group and yields (S-group 1 2), whose guess
+# is refused, and a second reformulation yields (S-group 1 (Countup 2)), whose guess is right.
+#
+# Line wraps: the printout was 72 columns wide, so four program lines wrap on the page; they
+# are kept as printed (two lines each) and listed here so a reader can rejoin them:
+#   p. 170: "Glommer for Pred print-value group members: (glint1" / "glint2)"
+#           (note: run 1, p. 165, prints " members:" on its own line instead).
+#   p. 175: "new term being hypothesis-filtered through (S-group 1" / "2)".
+#   p. 176: "new term being hypothesis-filtered through" / "(1 2)1".
+#   p. 179: "new term being hypothesis-filtered through (S-group 1" / "(Countup 2))".
+#   Also p. 173: "doing task Plato-scout on" / " ((C-group S-group P-group Y-group Cycle Tuple)"
+#   / "         glom6)" -- the argument itself is wrapped once more.
+#
+# Doubtful readings (settled on the image):
+#   p. 170: "Pred -group proposed --> glint2" (text layer "Fred"); the image shows Pred, and
+#           so does the Glomtester line "(Pred group glint2)". The successor pair (1 2) is
+#           really glommed under the label "(Pred print-value group)" (p. 171, "gloms:").
+#   p. 170: "doing task Plato-scout on ((S-group P-group) glom1)" -- two classes, then glom1.
+#   p. 171: "template: (form (S-group 1 2)" -- printed with "template:" (no "made") and an
+#           unbalanced parenthesis, as on the page; "doing task Template-evaluator on nil".
+#   p. 171: the hypothesis printed after "doing task Hypothesizer" is "(Countup 1)" although
+#           the template and the gnoth's form are (S-group 1 2); so printed.
+#   p. 172: "doing task Sparkler-plus on (glint3 glom3 2)" and "(glint3 glom3 10)": the second
+#           element is glom3, the pseudo-glom of the template (text layer "glomJ").
+#   p. 174: the Gnoth-operator's argument is printed on two lines:
+#           "((PROGRAM ((SHIFT-RIGHT gnoth1 gnoth2 (glint1))" / " (ENCLOSE gnoth1 nil))))".
+#   p. 174: "casts: ((S-group 1 2) (S-group 1 1))" then "(S-group 1 2)" on the next line (the
+#           generalised form), then "new hypoth candidate (S-group 1 2)".
+#   p. 175: the gnoth printout under "gnoths:" starts with "external-bonds:" (no "class:"
+#           line first for the first gnoth's extra fields); the fields are printed in the
+#           order shown. "(bond2 0)" is a zero (text layer "O").
+#   p. 175: the user's refusal is typed as "nope" on the prompt line.
+#   p. 176: "(1 2)1" after "hypothesis-filtered through": so printed; it is not a form. The
+#           hypothesis (S-group 1 2) had just been refused.
+#   p. 176: "slip-check: stayval: 15.0" (text layer "1s.o"), "best: (Y-group 4.0)".
+#   p. 177: "doing task Gnoth-operator on" / " ((SHIFT-RIGHT gnoth3 gnoth5 (glint3)))": the
+#           glomlist is (glint3) although the resulting glom14 covers terms 3 to 5 (p. 178).
+#   p. 177: "bond8 --- between glint4glint5" (text layer "bondB").
+#   p. 178: under "bonds:" there is no bond4 (bond4, Pred between glom1 and glint3, p. 173,
+#           was lost when glom1 went); "bond7 ... (adjacent) -- (glint3 glint4)" has the
+#           two-dash separator like the others (the text layer drops it).
+#   p. 178: "casts: ((S-group 1 2) (S-group 1 3))" then "(S-group 1 (Countup 2))".
+#   p. 179: the external-bonds of gnoth2 and gnoth5 are printed on a continuation line with
+#           one leading space; "(bond5 -5)" and "(bond3 -5)" are minus fives, "(bond2 0)" and
+#           "(bond6 0)" zeros.
+
+# page: 170
+  The Sequence  1 2  1 2 3  1 2 3 4
+
+-> (startup)
+
+please enter a term: 1
+doing task Sparkler-plus on (glint1 glint1 2)
+doing task Dissolver
+doing task empty-task
+
+please enter a term: 2
+doing task Sparkler
+spark1 --- between glint1glint2
+doing task Tester
+doing task Sparkler-plus on (glint2 glint1 10)
+spark2 --- between glint2glint1
+doing task Sparkler-plus on (glint2 glint1 10)
+spark3 --- between glint2glint1
+doing task Dissolver on (glint1)
+doing task Bonder on
+ (Succ print-value (adjacent) glint1 glint2)
+bond1 --- between glint1glint2
+doing task Tester
+doing task Glom-scout
+Pred -group proposed --> glint2
+doing task Glom-scout
+Pred -group proposed --> glint2
+doing task Glomtester on (Pred group glint2)
+doing task Tester
+doing task Glommer on
+ (Pred print-value group (glint1 glint2))
+Glommer for Pred print-value group members: (glint1
+glint2)
+doing task Glomtester on (Pred group glint2)
+Glomtester failed glint2
+doing task Sparkler
+doing task Bonder on
+ (Succ print-value (adjacent) glint1 glint2)
+doing task Bonder on
+ (Succ print-value (adjacent) glint1 glint2)
+doing task Glom-inspector on (glom1)
+doing task Sparkler-plus on (glint2 glint1 2)
+spark4 --- between glint2glint1
+doing task Tester
+doing task Plato-scout on ((S-group P-group) glom1)
+doing task Bonder on
+ (Succ print-value (adjacent) glint1 glint2)
+doing task Plato-evaluator on (P-group glom1)
+doing task Sparkler-plus on (glint2 glint2 2)
+doing task Sparkler
+doing task Template-scout on (glom1)
+create-template-glom (S-group 1 2)(glom1)
+top-down glom glom2
+# page: 171
+
+# note: A template is made.
+
+template: (form (S-group 1 2)
+doing task Sparkler
+spark5 --- between glint1glint2
+doing task Template-evaluator on nil
+doing task Sparkler-plus on (glom1 glom1 10)
+doing task Gnoth-maker
+top-down glom glom3
+gnoths constructed
+doing task Sparkler
+
+# note: Now comes the first hypothesis.
+
+doing task Hypothesizer
+(Countup 1)
+doing task Tester
+doing task Call-term
+
+please enter a term: show-hypothesis
+(Countup 1)
+
+please enter a term: show
+terms of the sequence:
+1 2
+
+bonds:
+bond1 Succ print-value (adjacent) -- (glint1 glint2)
+
+gloms:
+glom1 (Pred print-value group) --> (1 2) terms 1 to 2
+glom3 pseudo --> ((1 2))  terms 1 to 2
+
+gnoths:
+
+class: Gnoths
+name: gnoth1
+frame: 0
+plato-class: S-group
+glom: glom3
+notes: nil
+form: (((S-group 1 2) pure))
+state: stable
+range: (1 2)
+
+# note: The next term denies the hypothesis
+
+please enter a term: 1
+doing task Hfilter
+new term being hypothesis-filtered
+ through (Countup 1)
+# page: 172
+doing task Bonder on
+ (Succ print-value (adjacent) glint1 glint2)
+doing task Sparkler-plus on (glint3 glint1 10)
+spark6 --- between glint3glint1
+doing task Sparkler-plus on (glint3 glint2 10)
+spark7 --- between glint3glint2
+doing task Sparkler-plus on (glint3 glom3 2)
+doing task Sparkler-plus on (glom1 glint3 10)
+spark8 --- between glom1glint3
+doing task Sparkler-plus on (glint3 glint2 10)
+spark9 --- between glint3glint2
+doing task Tester
+doing task Sparkler-plus on (glint3 glom3 10)
+doing task Bonder on
+ (Pred print-value (adjacent) glint2 glint3)
+bond2 --- between glint2glint3
+doing task Sparkler-plus on (glint3 glint3 2)
+doing task Sparkler-plus on (glint3 glom3 2)
+doing task Tester
+doing task Dissolver on (glom3)
+glom3 is not in cytoplasm
+doing task Tester
+doing task Sparkler-plus on (glint3 glint1 10)
+spark10 --- between glint3glint1
+doing task Sparkler-plus on (glint3 glint2 10)
+spark11 --- between glint3glint2
+doing task Tester
+doing task Tester
+doing task Sparkler-plus on (glom1 glint1 10)
+doing task Sparkler-plus on (glint3 glint3 2)
+doing task Bonder on
+ (Pred print-value (adjacent) glint2 glint3)
+doing task Bonder on
+ (Same print-value (remote) glint1 glint3)
+bond3 --- between glint1glint3
+doing task Bonder on
+ (Same print-value (remote) glint1 glint3)
+doing task Glom-scout
+doing task Glom-scout
+doing task Bonder on
+ (Pred print-value (adjacent) glint2 glint3)
+doing task Sparkler
+spark12 --- between glint1glint3
+doing task Sparkler
+doing task Glom-scout
+Same -cover proposed --> glint3
+Same -fence proposed --> glint3
+doing task Sparkler
+spark13 --- between glint1glint2
+# page: 173
+doing task Tester
+doing task Glomtester on (Same cover glint3)
+doing task Tester
+doing task Glomtester on (Same fence glint3)
+doing task Sparkler
+doing task Tester
+doing task Bonder on
+ (Succ print-value (adjacent) glint1 glint2)
+doing task Bonder on
+ (Same print-value (remote) glint1 glint3)
+doing task Sparkler
+doing task Sparkler
+spark14 --- between glint1glint3
+doing task Sparkler-plus on (glom1 glom1 10)
+doing task Sparkler
+doing task Bonder on
+ (Pred print-value (adjacent) glom1 glint3)
+bond4 --- between glom1glint3
+doing task Sparkler
+spark15 --- between glint2glint1
+doing task Glom-scout
+Same -cover proposed --> glint3
+Same -fence proposed --> glint3
+doing task Glomtester on (Same fence glint3)
+doing task Tester
+doing task Bonder on
+ (Same print-value (remote) glint1 glint3)
+doing task Glomtester on (Same cover glint3)
+doing task Sparkler
+doing task Gnoth-setter
+top-down glom glom4
+top-down glom glom5
+top-down glom glom6
+top-down glom glom7
+top-down glom glom8
+gnoths: (gnoth1 gnoth2 gnoth3)
+doing task Glom-scout
+doing task Tester
+doing task Bonder on
+ (Succ print-value (adjacent) glint1 glint2)
+doing task Plato-scout on
+ ((C-group S-group P-group Y-group Cycle Tuple)
+         glom6)
+doing task Template-scout on (glom6)
+doing task Template-scout on (glom6)
+doing task Sparkler
+doing task Template-scout on (glom6)
+doing task Sparkler
+doing task Template-scout on (glom6)
+doing task Sparkler
+spark16 --- between glint1glint2
+doing task Template-scout on (glom6)
+# page: 174
+doing task Template-scout on (glom6)
+doing task Sparkler
+doing task Reformulator
+
+# note: Changing to a new reigning class.
+# note: Countup -->  S-group
+
+doing task Bond-assessor on (S-group 8.0)
+
+# note: Reformulation is performed.
+
+doing task Gnoth-operator
+((PROGRAM ((SHIFT-RIGHT gnoth1 gnoth2 (glint1))
+ (ENCLOSE gnoth1 nil))))
+top-down glom glom9
+doing task Glom-scout
+doing task Reformulator
+doing task Tester
+doing task Bonder on
+ (Succ print-value (adjacent) glint1 glint2)
+doing task Sparkler
+doing task Sparkler
+doing task Bond-assessor on (S-group 8.0)
+doing task Reformulator
+doing task Bond-assessor on (S-group 9.0)
+doing task Reformulator
+doing task Bond-assessor on (S-group 10.0)
+doing task Gnoth-caster
+casts: ((S-group 1 2) (S-group 1 1))
+(S-group 1 2)
+new hypoth candidate (S-group 1 2)
+doing task Call-term
+
+# note: A second hypothesis has been devised.
+
+please enter a term: show-hypothesis
+(S-group 1 2)
+
+please enter a term: show-parse
+((1 2) (1))
+
+please enter a term: show
+terms of the sequence:
+1 2 1
+
+bonds:
+bond1 Succ print-value (adjacent) -- (glint1 glint2)
+bond2 Pred print-value (adjacent) -- (glint2 glint3)
+bond3 Same print-value (remote) -- (glint1 glint3)
+# page: 175
+gloms:
+glom8 pseudo --> (1)  terms 3 to 3
+glom9 pseudo --> (1 2)  terms 1 to 2
+
+gnoths:
+
+external-bonds: ((bond2 0) (bond3 -5))
+internal-bonds: ((bond1 10))
+equivalence-type: parse
+groups: nil
+class: Gnoths
+name: gnoth2
+frame: 1
+plato-class: S-group
+glom: glom9
+notes: nil
+form: (S-group 1 2)
+state: stable
+range: (1 2)
+external-bonds: ((bond2 0) (bond3 -5))
+internal-bonds: nil
+class: Gnoths
+name: gnoth3
+frame: 2
+plato-class: S-group
+glom: glom8
+notes: nil
+form: (S-group 1 1)
+state: stable
+range: (3 3)
+
+# note: The next term confirms the hypothesis,
+# note: although it is incorrect.
+
+please enter a term: 2
+doing task Hfilter
+new term being hypothesis-filtered through (S-group 1
+2)
+top-down glom glom10
+
+# note: The system ventures a guess.
+
+I have a guess!
+
+hypothesis: (S-group 1 2)
+(1 2)(1 2)(1 2)
+
+# note: It is wrong this time.
+
+enter no if wrong, ok if right nope
+# page: 176
+please enter a term: show-seq
+1 2 1 2
+
+# note: A new term is entered.
+
+please enter a term: 3
+doing task Hfilter
+new term being hypothesis-filtered through
+(1 2)1
+doing task Sparkler-plus on (glint5 glint4 10)
+spark17 --- between glint5glint4
+doing task Sparkler-plus on (glint5 glom8 2)
+doing task Sparkler-plus on (glint4 glint1 10)
+doing task Sparkler-plus on (glint4 glint3 10)
+spark18 --- between glint4glint3
+doing task Dissolver on (glom8)
+glom8 is not in cytoplasm
+doing task Sparkler-plus on (glint4 glint3 10)
+spark19 --- between glint4glint3
+doing task Sparkler-plus on (glint5 glint1 10)
+spark20 --- between glint5glint1
+doing task Sparkler-plus on (glint5 glom10 2)
+doing task Sparkler-plus on (glint5 glint3 10)
+spark21 --- between glint5glint3
+doing task Sparkler-plus on (glint5 glint5 2)
+doing task Sparkler-plus on (glint5 glint2 10)
+spark22 --- between glint5glint2
+doing task Dissolver on (glom10)
+glom10 is not in cytoplasm
+doing task Sparkler-plus on (glint4 glint2 10)
+spark23 --- between glint4glint2
+doing task Sparkler-plus on (glint4 glom8 2)
+doing task Sparkler-plus on (glint5 glint2 10)
+spark24 --- between glint5glint2
+doing task Gnoth-setter
+top-down glom glom11
+top-down glom glom12
+top-down glom glom13
+gnoths: (gnoth2 gnoth3 gnoth5)
+
+# note: We will stay with the reigning class -- S-group.
+
+slip-check: stayval: 15.0
+        best: (Y-group 4.0)
+doing task Tester
+doing task Bonder on
+ (Same print-value (remote) glint2 glint4)
+bond5 --- between glint2glint4
+doing task Tester
+doing task Tester
+doing task Sparkler-plus on (glint5 glint3 10)
+spark25 --- between glint5glint3
+doing task Tester
+# page: 177
+doing task Bonder on
+ (Succ print-value (remote) glint2 glint5)
+bond6 --- between glint2glint5
+doing task Sparkler
+doing task Bonder on
+ (Succ print-value (adjacent) glint3 glint4)
+bond7 --- between glint3glint4
+doing task Sparkler
+doing task Sparkler-plus on (glint5 glom10 10)
+doing task Sparkler-plus on (glint5 glom10 2)
+doing task Tester
+doing task Sparkler-plus on (glint5 glom8 2)
+doing task Reformulator
+doing task Sparkler-plus on (glint5 glint4 10)
+spark26 --- between glint5glint4
+
+# note: More reformulation is performed.
+
+doing task Gnoth-operator on
+ ((SHIFT-RIGHT gnoth3 gnoth5 (glint3)))
+top-down glom glom14
+doing task Tester
+doing task Bond-assessor on (S-group 8.0)
+doing task Sparkler-plus on (glint5 glint4 10)
+spark27 --- between glint5glint4
+doing task Sparkler
+doing task Tester
+doing task Sparkler
+spark28 --- between glint4glint5
+doing task Bonder on
+ (Succ print-value (adjacent) glint4 glint5)
+bond8 --- between glint4glint5
+doing task Sparkler-plus on (glint5 glint1 10)
+spark29 --- between glint5glint1
+doing task Tester
+doing task Tester
+doing task Sparkler
+doing task Sparkler-plus on (glint4 glint4 2)
+doing task Bonder on
+ (Succ print-value (adjacent) glint3 glint4)
+doing task Sparkler-plus on (glint5 glint5 2)
+doing task Sparkler-plus on (glint4 glom9 2)
+doing task Bonder on
+ (Succ print-value (adjacent) glint4 glint5)
+doing task Sparkler-plus on (glint4 glom8 10)
+doing task Bonder on
+ (Succ print-value (remote) glint2 glint5)
+doing task Sparkler-plus on (glint5 glom9 2)
+doing task Reformulator
+doing task Tester
+doing task Sparkler
+# page: 178
+doing task Bonder on
+ (Succ print-value (adjacent) glint4 glint5)
+doing task Sparkler
+doing task Tester
+doing task Sparkler-plus on (glint5 glom9 2)
+doing task Tester
+doing task Bonder on
+ (Succ print-value (adjacent) glint4 glint5)
+doing task Bond-assessor on (S-group 8.0)
+doing task Reformulator
+doing task Tester
+doing task Sparkler
+spark30 --- between glint5glint1
+doing task Bond-assessor on (S-group 9.0)
+doing task Tester
+doing task Reformulator
+doing task Bond-assessor on (S-group 10.0)
+doing task Gnoth-caster
+casts: ((S-group 1 2) (S-group 1 3))
+(S-group 1 (Countup 2))
+new hypoth candidate (S-group 1 (Countup 2))
+doing task Call-term
+
+# note: A third hypothesis is formulated.
+
+please enter a term: show-hypothesis
+(S-group 1 (Countup 2))
+
+please enter a term: show-parse
+((1 2) (1 2 3))
+
+please enter a term: show
+terms of the sequence:
+1 2 1 2 3
+
+bonds:
+bond1 Succ print-value (adjacent) -- (glint1 glint2)
+bond2 Pred print-value (adjacent) -- (glint2 glint3)
+bond3 Same print-value (remote) -- (glint1 glint3)
+bond5 Same print-value (remote) -- (glint2 glint4)
+bond6 Succ print-value (remote) -- (glint2 glint5)
+bond7 Succ print-value (adjacent) -- (glint3 glint4)
+bond8 Succ print-value (adjacent) -- (glint4 glint5)
+
+gloms:
+glom9 pseudo --> (1 2)  terms 1 to 2
+glom14 pseudo --> (1 2 3)  terms 3 to 5
+# page: 179
+gnoths:
+
+external-bonds:
+ ((bond2 0) (bond5 -5) (bond6 0) (bond3 -5))
+internal-bonds: ((bond1 10))
+equivalence-type: parse
+groups: nil
+class: Gnoths
+name: gnoth2
+frame: 1
+plato-class: S-group
+glom: glom9
+notes: nil
+form: (S-group 1 2)
+state: stable
+range: (1 2)
+
+external-bonds:
+ ((bond6 0) (bond5 -5) (bond2 0) (bond3 -5))
+internal-bonds: ((bond8 10) (bond7 10))
+groups: nil
+class: Gnoths
+name: gnoth5
+frame: 2
+plato-class: S-group
+glom: glom14
+notes: nil
+form: (S-group 1 3)
+state: stable
+range: (3 5)
+
+
+# note: The next term confirms the hypothesis.
+
+please enter a term: show-seq
+1 2 1 2 3
+
+please enter a term: 1
+doing task Hfilter
+new term being hypothesis-filtered through (S-group 1
+(Countup 2))
+top-down glom glom15
+
+I have a guess!
+
+hypothesis: (S-group 1 (Countup 2))
+(1 2)(1 2 3)(1 2 3 4)
+
+
+# note: This time the guess is correct.
+
+enter no if wrong, ok if right ok
+bye

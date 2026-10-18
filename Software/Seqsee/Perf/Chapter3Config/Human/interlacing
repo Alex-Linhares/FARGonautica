@@ -1,0 +1,35 @@
+# Type can be NonLTM, LTM_SELF_CONTEXT, or LTM_WITH_CONTEXT
+Type = NonLTM
+
+# Title for the figure.
+Title = ???
+
+# Should the chart be drawn? If not, only sequences will be shown.
+# The other option is to Split the chart into two (sequences and bars).
+#NoChart = 0
+ SplitChart = 1
+
+# Show data from how many sources? Will typically be 2 (Seqsee/Human).
+# Can be lower or higher depending on what needs to be plotted.
+# Makes no sense if chart is not being drawn, but due to a bug, don't make it 0.
+Cluster_Count = 2
+
+# Sequences for which data is being shown.
+# Add 'seq=...' lines, where the ... should be a sequence specification.
+# In such a spec, a '|' separates displayed terms from future terms.
+# Groupings can be indicated with (), <>, {} or [].
+# The first two ('()' and '<>') are for outer ovals, the other two for inner.
+[Sequences]
+seq = (1 7) (2 8) (3 9)|(4 10) (5 11) (6 12) (7 13)
+seq = (1 7 19) (2 8 20) (3 9 21) | (4 10 22) (5 11 23)
+seq = ({1} 7)  ({1 2} 8) ({1 2 3} 9)|({1 2 3 4} 10) ({1 2 3 4 5} 11)
+
+[Cluster_2]
+source = Human
+
+
+[Cluster_1]
+min_version = 1098:0
+
+# Color
+# color = #

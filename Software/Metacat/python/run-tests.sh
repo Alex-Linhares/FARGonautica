@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# The single entry point for the Python port's tests; the gate
-# (ralph_loops/loop0002/gate.py) runs it with no arguments.
+# The single entry point for the Python port's tests.
 #
 #   bash python/run-tests.sh          # full tier: every test, including the ones
 #                                     # marked slow (Chez re-captures, the 109

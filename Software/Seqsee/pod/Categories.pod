@@ -1,0 +1,111 @@
+=head1 Seqsee Categories
+
+Seqsee is supposedly different from other FARG programs in its obsession with concepts. This document provides a short tour of concepts in Seqsee.
+
+=head1 An Application
+
+The program F<oddman.pl> can be run to explore Seqsee's category mechanisms. Without any ado, here is a sample run.
+
+=over
+
+=item 1
+
+C< object 1: 1 2 3
+  object 2: 8 7 6
+  object 3: 1 2 3 4
+  object 4: 5 6
+  object 5: end>
+
+Reply: C<object 2 (8 7 6) is the odd man out: everythin else is an instance of "ascending">.
+
+ The program thus posseses some approximation of the concept "ascending". All of the following are instances of this category: 1, 2, 3; 1, 2, 3, 3, 3, 4; and 6. Other concepts that Seqsee has include ascending and descending.
+
+=item 2
+
+C< object 1: 1 2 3
+  object 2: 3 4 5
+  object 3: 1 2 3 4
+  object 4: 1 2
+  object 5: end>
+
+Reply: C< object 2 (3 4 5) is the odd man out: all others are instance of the category "ascending with start of 1 >
+
+Given categories, seqsee can derive other related categories from it.
+
+=item 3
+
+C< object 1: 1 2 3 4 3 2 1
+  object 2: 3 4 3
+  object 3: 1 2 1
+  object 4: 4
+  object 5: end>
+
+Reply: C< object 3 (1 2 1) is the odd man out: all others are instance of the category "mountain with peak of 4">
+
+That is really the same as the previous example.
+
+=item 4
+
+C< object 1: 1 1 2 3
+  object 2: 7 7 8 9
+  object 3: 5 5 6 7 8 9
+  object 4: 4 5 5 6
+  object 5: end>
+
+Reply: C< object 4 (4 5 5 6) is the odd man out: all others are instance of the category "ascending with first item doubled">
+
+More derived categories here: blemishes can form the basis of several derived categories, as can be seen in this and subsequent examples.
+
+=item 5
+
+C< object 1: 1 2 3 3 4
+  object 2: 8 9 10 10 11
+  object 3: 3 4 5 6 7 8 9 9 10
+  object 4: 5 6 6 7 8 9
+  object 5: end>
+
+Reply: C< object 4 (5 6 6 7 8 9) is the odd man out: all others are instance of the category "ascending with the last butone element doubled">
+=item 6
+
+C< object 1: 1 2 3 3 4
+  object 2: 3 3 4 5 6 7 8
+  object 3: 2 3 4 4 5 6
+  object 4: 1 2 3 3 4 5 6 7 8
+  object 5: end>
+
+Reply: C< object 3 (2 3 4 4 5 6) is the odd man out: all others are instance of the category "ascending with the '3' doubled">
+
+This is possible because 'the 3' is a valid "Position".
+
+=item 7
+
+C< object 1: 1 2 3 3 3 4
+  object 2: 1 1 1 2 3 4 5 6
+  object 3: 3 4 5 4 4 4 3
+  object 4: 2 3 4 5 5 6 5 4 3 2
+  object 5: end>
+
+Reply: C< object 4 (2 3 4 5 5 6 5 4 3 2) is the odd man out: all others are instance of the category "has a 'tripled' blemish">
+
+That is a very abstract category!
+
+=back
+
+Let us begin with a discussion of the concept 'Ascending'. The code for this concept looks like this:
+
+C<< SBuiltObj->new($start .. $end) >>
+
+Pretty innocent!! But the following are all instances of things that Seqsee can recognize as instances of this concept:
+
+=over
+
+=item * C<2, 3, 4>
+
+=item * C<2>
+
+=item * C<[2, 2], 3, 4>
+
+=back
+
+This is important: I just need to tell it how to build an object (and also how to guess a few things) and it can learn to recognize instances of that category in various contexts.
+

@@ -1,0 +1,154 @@
+# Seek-Whence appendix run 2: the sequence 3 7 3 3 7 3  [M86 pp. 167-169]
+#
+# Transcribed from the page images of Meredith (1986), PDF pages 179-181 (printed 167-169),
+# rendered at 130 dpi and read by eye; the scan's text layer was used only as a draft.
+# The conventions are those of run1_3737.txt ("# page:", "# note:", console lines as printed).
+#
+# This run is printed WITHOUT the "doing task ..." lines and without "-> (startup)": only the
+# spark, bond, glom, template, gnoth, hypothesis and guess lines appear, so the set and order
+# of task types cannot be read from it (expectations.json says so). Where the printed lines
+# coincide with run 1 (the first three terms are the same) they match it spark for spark
+# and bond for bond, up to "gnoths constructed" (p. 167 against pp. 164-165).
+#
+# Doubtful readings (settled on the image):
+#   p. 167: "spark12 --- between glom1glint3" (the text layer has "glint~"); the image is
+#           clear and agrees with run 1, p. 165.
+#   p. 167: the bond line under "bonds:" is "bond1 Same print-value (remote) -- (glint1 glint3)"
+#           with a two-dash separator, unlike the three dashes of the creation lines.
+#   p. 168: "top-down glom glom7" is printed as "glom71" on the page; read as glom7 (gloms are
+#           numbered consecutively and glom8 follows), the trailing "1" taken as a print
+#           artifact. This is the one reading in the three runs that is not certain.
+#   p. 168: "slip-check: stayval: 0.0" then, on the next line and indented, "best: nil".
+#   p. 168: "casts:" runs over two lines; the second begins with one space:
+#           "casts: ((Cycle 3 1 (3)) (Cycle 7 1 (7))" / " (Cycle 3 1 (3))) (Cycle 3 3 (3 7 3))",
+#           i.e. the list of three casts followed by the generalised form.
+#   p. 168: the template line on p. 167 is the only one of the three runs printed with all
+#           four fields: "template made : (form (Cycle 3 2 (3 7))" / " state working coverage
+#           (1 2) glom glom2)".
+
+# page: 167
+      The Sequence 3 7 3  3 7 3
+
+please enter a term: 3
+
+please enter a term: 7
+spark1 --- between glint1glint2
+spark2 --- between glint1glint2
+spark3 --- between glint2glint1
+spark4 --- between glint2glint1
+spark5 --- between glint2glint1
+
+please enter a term: 3
+spark6 --- between glint3glint1
+spark7 --- between glint3glint2
+spark8 --- between glint3glint2
+spark9 --- between glint3glint2
+bond1 --- between glint1glint3
+spark10 --- between glint3glint1
+Same -cover proposed --> glint1
+Same -fence proposed --> glint1
+Glommer for Same print-value fence
+ members: (glint1 glint2)
+failed to glom (glint1 glint2 glint3)
+create-template-glom (Cycle 3 2 (3 7))(glom1)
+top-down glom glom2
+
+# note: A template is created after three terms.
+
+template made : (form (Cycle 3 2 (3 7))
+ state working coverage (1 2) glom glom2)
+check-cycle template (Cycle 3 2 ((3 7)))
+spark11 --- between glint1glint2
+spark12 --- between glom1glint3
+top-down glom glom3
+gnoths constructed
+
+# note: We ask the system to "show" us its structures.
+
+please enter a term: show
+terms of the sequence:
+3 7 3
+
+bonds:
+bond1 Same print-value (remote) -- (glint1 glint3)
+
+gloms:
+glom1 (Same print-value fence) --> (3 7) terms 1 to 2
+glom3 pseudo --> ((3 7))  terms 1 to 2
+# page: 168
+gnoths:
+
+class: Gnoths
+name: gnoth1
+frame: 0
+plato-class: Cycle
+glom: glom3
+notes: nil
+form: (((Cycle 3 2 (3 7)) pure))
+state: stable
+range: (1 2)
+
+# note: A hypothesis was made.  We ask to see it
+
+please enter a term: show-hypothesis
+(Cycle 3 2 (3 7))
+
+# note: The next term will deny the hypothesis.
+
+please enter a term: 3
+new term being hypothesis-filtered
+ through (Cycle 3 2 (3 7))
+spark13 --- between glint4glint2
+spark14 --- between glint4glint3
+spark15 --- between glint4glint3
+spark16 --- between glint4glint1
+spark17 --- between glint4glint3
+set-out -- validity: 0
+top-down glom glom4
+groups: ((glint1 glint2))
+glom: (glint1 glint2)
+top-down glom glom5
+top-down glom glom6
+top-down glom glom7
+top-down glom glom8
+gnoths: (gnoth1 gnoth2 gnoth3)
+
+# note: The system will continue to let "Cycle" reign.
+
+slip-check: stayval: 0.0
+        best: nil
+spark18 --- between glint3glint4
+bond2 --- between glint3glint4
+spark19 --- between glint3glint4
+spark20 --- between glint4glint3
+bond3 --- between glint1glint4
+spark21 --- between glint4glint1
+casts: ((Cycle 3 1 (3)) (Cycle 7 1 (7))
+ (Cycle 3 1 (3))) (Cycle 3 3 (3 7 3))
+# page: 169
+
+# note: A new hypothesis is made.
+
+new hypoth candidate (Cycle 3 3 (3 7 3))
+spark22 --- between glint1glint2
+
+please enter a term: show-seq
+3 7 3 3
+
+# note: The next term will confirm the new hypothesis.
+
+please enter a term: 7
+spark23 --- between glint5glint1
+new term being hypothesis-filtered
+ through (Cycle 3 3 (3 7 3))
+top-down glom glom9
+
+I have a guess!
+
+hypothesis: (Cycle 3 3 (3 7 3))
+3 7 3 3 7
+
+# note: The hypothesis is correct.
+
+enter no if wrong, ok if right ok
+bye

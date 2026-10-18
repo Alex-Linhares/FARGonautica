@@ -32,7 +32,7 @@ optionally `bwrap` (bubblewrap).
 | `control-panel-test.rkt` | The control panel ([`../gui/gui.rkt`](../gui/gui.rkt)), driven through its own widgets | about 9 s with its first 105 checks; it has had 211 since the Demos checks were added |
 | `dist-test.rkt` | The standalone program built by [`make-dist.sh`](../../make-dist.sh) | about 10 s (it includes a 70 MB build in a temporary directory) |
 
-Times are from [`PROGRESS.md`](../../ralph_loops/loop0001/PROGRESS.md) (iterations 16
+Times are from [`PROGRESS.md`](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0001/PROGRESS.md) (iterations 16
 and 17).
 
 ### one-window-test.rkt

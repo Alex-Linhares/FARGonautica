@@ -6,7 +6,7 @@ the frozen fixtures in [`python/fixtures/`](../fixtures/README.md), or live, by 
 oracle next to the Python. The checks range from Chez's random generator and printer up to
 the 109 golden traces, 720 extra-seed runs, and the GUI driven through its own widgets.
 Each test file was written before the code it checks, and failed first; that is recorded in
-[`ralph_loops/loop0002/PROGRESS.md`](../../ralph_loops/loop0002/PROGRESS.md).
+[`ralph_loops/loop0002/PROGRESS.md`](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0002/PROGRESS.md).
 
 ## Running
 
@@ -20,7 +20,7 @@ cd python && python3 -m pytest tests/test_chez.py -q   # one file
 
 `run-tests.sh` runs `python3 -m pytest -x -q` from `python/`, so it stops at the first
 failure. The tier is the `slow` marker, declared in `pyproject.toml`: `--fast` adds
-`-m "not slow"`. The gate `ralph_loops/loop0002/gate.py` runs the full tier. `conftest.py`
+`-m "not slow"`. `conftest.py`
 puts `python/tests/` and `python/oracle/` on `sys.path`, so tests can import the helpers and
 `capture.py`.
 

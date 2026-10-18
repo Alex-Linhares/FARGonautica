@@ -1,0 +1,50 @@
+--- a/RhythmCat/Constants.cs	2026-10-14 15:28:07.183643659 +0100
++++ b/RhythmCat/Constants.cs	2026-10-14 15:28:07.186214411 +0100
+@@ -8,8 +8,8 @@
+ {
+ 	static public class Constants
+ 	{
+-		public const string LOGFILE_PATH = @"C:\RhythmcatTesting\log.txt";
+-		public const string MELODY_PATH = @"C:\Users\epnichols\Documents\Visual Studio 2010\Projects\RhythmCat\RhythmCat\melodies.txt";
++		public const string LOGFILE_PATH = "RhythmcatTesting/log.txt";
++		public const string MELODY_PATH = "melodies.txt";
+ 
+ 		// Coderack.
+ 		public const int MAX_CODERACK_SIZE = 50;
+@@ -115,7 +115,7 @@
+ 		
+ 		// Mist GUI debugging output.
+ 		public const int NUM_ATTENTION_HISTORY_DOTS = 20;
+-		public const string SCREENSHOT_PATH = @"C:\RhythmcatScreenshots\";
++		public const string SCREENSHOT_PATH = "RhythmcatScreenshots/";
+ 		public const bool SHOW_CODERACK_URGENCIES_CONSOLE = true;
+ 		public const bool SHOW_CODELET_RUNTIME_CONSOLE = false;
+ 
+--- a/RhythmCat/Program.cs	2026-10-14 15:28:07.184446201 +0100
++++ b/RhythmCat/Program.cs	2026-10-14 15:28:07.187085110 +0100
+@@ -738,14 +738,14 @@
+ 			if (GUIenabled) {
+ 				// Get and update the program run number.
+ 				try {
+-					TextReader tr = new StreamReader(@"C:\RhythmcatScreenshots\config.txt");
++					TextReader tr = new StreamReader("RhythmcatScreenshots/config.txt");
+ 					string numStr = tr.ReadToEnd().Trim();
+ 					tr.Close();
+ 					programRunNum = int.Parse(numStr) + 1;
+ 				} catch {
+ 					programRunNum = 1;
+ 				}
+-				tw = new StreamWriter(@"C:\RhythmcatScreenshots\config.txt", false);
++				tw = new StreamWriter("RhythmcatScreenshots/config.txt", false);
+ 				tw.WriteLine(programRunNum);
+ 				tw.Close();
+ 			}
+@@ -788,7 +788,7 @@
+ 
+ 			if (GUIenabled) {
+ 				// Write a file containing the list of active codelets for this run.
+-				tw = new StreamWriter(string.Format(@"C:\RhythmcatScreenshots\codelets-run-{0}.txt", programRunNum), false);
++				tw = new StreamWriter(string.Format("RhythmcatScreenshots/codelets-run-{0}.txt", programRunNum), false);
+ 				foreach (string name in coderack.GetActiveCodeletNames())
+ 					tw.WriteLine(name);
+ 				tw.Close();

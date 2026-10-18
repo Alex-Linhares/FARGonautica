@@ -1,0 +1,141 @@
+{
+ "name": "ch2-fig17",
+ "title": "Figure 2.17",
+ "family": "ch2",
+ "source": {
+  "tag": "F95",
+  "page": 34,
+  "figure": "Figure 2.17",
+  "pdf_page": 46,
+  "image_index": 31,
+  "image_size_px": [
+   246,
+   224
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   12,
+   15,
+   227,
+   210
+  ]
+ },
+ "touched": "cup1",
+ "answers": {},
+ "expected": {
+  "answer": null,
+  "plausible": [
+   "cup1",
+   "small-glass1"
+  ],
+  "unlikely": [],
+  "quotes": [
+   {
+    "text": "she is much more likely than she was in figure 2.16 to touch the cup that Henry originally touched",
+    "page": 34
+   }
+  ],
+  "comparisons": [
+   {
+    "toward": "cup1",
+    "more_than": "ch2-fig16"
+   }
+  ]
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 17.4,
+   "y": 13.3,
+   "orientation": null,
+   "box_px": [
+    39,
+    38,
+    53,
+    44
+   ],
+   "figure": "Figure 2.17",
+   "page": 34,
+   "image": "F95 PDF page 46, pdfimages image 31 (246 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass2",
+   "type": "small glass",
+   "x": 84.2,
+   "y": 14.9,
+   "orientation": null,
+   "box_px": [
+    173,
+    39,
+    180,
+    49
+   ],
+   "figure": "Figure 2.17",
+   "page": 34,
+   "image": "F95 PDF page 46, pdfimages image 31 (246 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass3",
+   "type": "small glass",
+   "x": 90.8,
+   "y": 14.9,
+   "orientation": null,
+   "box_px": [
+    186,
+    39,
+    193,
+    49
+   ],
+   "figure": "Figure 2.17",
+   "page": 34,
+   "image": "F95 PDF page 46, pdfimages image 31 (246 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 12.0,
+   "y": 83.1,
+   "orientation": null,
+   "box_px": [
+    32,
+    172,
+    39,
+    182
+   ],
+   "figure": "Figure 2.17",
+   "page": 34,
+   "image": "F95 PDF page 46, pdfimages image 31 (246 x 224 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass4",
+   "type": "small glass",
+   "x": 17.7,
+   "y": 83.6,
+   "orientation": null,
+   "box_px": [
+    43,
+    173,
+    50,
+    183
+   ],
+   "figure": "Figure 2.17",
+   "page": 34,
+   "image": "F95 PDF page 46, pdfimages image 31 (246 x 224 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi; chapter 2's figures draw the table alone, 227-246 x 221-229 px, the frame nearly filling the image, with 'Henry' above it and 'Eliza' below it); the table's frame was found as the darkest column and row profiles of the image's left and right eighths and top and bottom quarters (tools/measure_figure.py, find_frame); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H arrow or a neighbouring icon touches an icon, from an ASCII dump of the region, taking the icon's own outline (the cup's rim row, the right edge of its handle and its bottom row; a spoon's bowl and handle; a fork's tines, crossbar and handle) and leaving the arrow out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`). Chapter 2's figures carry no E arrows, so `answers` is empty and French's expectation in words is the `expected` block (docs/problems.md 9).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.51 units in chapter 2's figures (frames of 212-215 x 193-196 px, a tenth larger than chapter 5's); icon boxes are good to about 1 px, and the touched cup, which the H arrow overlaps, to about 2 px. Figure 2.11 is the configuration of Surround 5 and of the chapter 4 screen dumps; measured here it agrees with problems/surround-05.json to within 1.9 units in x and 2.3 in y over the thirteen objects (median 0.7; docs/problems.md 9)."
+ },
+ "notes": [
+  "The touched cup's box read on the dump (rim row 38, handle to x 53, bottom row 44).",
+  "The additions are numbered in reading order: small-glass3 is the second upper-right glass and small-glass4 the second lower-left one (the Blockage family of chapter 5 numbers its glasses in its own order)."
+ ],
+ "review": "Reviewed: Henry's cup in the upper left (H), two small glasses in the upper right, two in the lower left. French: two identical pairs, diagonally opposite one another [F95 p. 34].",
+ "based_on": "ch2-fig16"
+}

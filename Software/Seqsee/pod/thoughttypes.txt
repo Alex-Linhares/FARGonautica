@@ -1,0 +1,122 @@
+file: Thought Types
+
+A listing of thought types Seqsee may use.
+
+thought type: SInt
+
+Core is an integer
+
+Creation:
+
+    new SThought({ core => SInt->new(7) })
+
+fringe:
+
+        lit(n), categories the object belongs to 
+
+extended fringe:
+
+         lin(n+1), lit(n-1), apart from, of course, the fringe
+
+actions:
+
+        * further exploration (perhaps by launching description scouts)
+
+##############
+
+thought type: Action
+
+The core is an action.
+
+Fringe, extended fringe:
+
+action:
+        run the scheduled action.
+
+##############
+
+thought type: Bond
+
+Core is an already created bond
+
+Creation:
+
+>    new SThought({ core => $bond })
+
+fringe:
+
+        The relation. 
+
+extended fringe:
+
+actions:
+
+        * further exploration: perhaps via description scouts.
+
+##############
+
+thought type: Are x and y related?
+
+sets wheels rolling to check the suspected relatedness of two things.
+
+fringe:
+
+extended fringe:
+
+actions:
+
+  * calls find_reln(x, y). The following can happen: (a) a relation is actually found, and returned (b) no relation found, undef is returned or (c) an exception is thrown, whose payload is another thought to think. This happens for example when more data is needed to make a decision.
+  
+  a - when the relation is found, the action is to schedule a thought for bond creation which is an "action-thought": its only action, if chosen, is its payload which is an action.
+  b - nothing happens
+  c - the returned thought is scheduled.
+
+#############
+
+thought type: Am I almost done?
+
+Sets wheels rolling to gauge if we are finished.
+
+This is distinct from "Am I done?", though of course similar.
+
+fringe, extended fringe:
+        none
+
+actions:
+    * checks that there is a largish group available, preferably flush left.
+    * If this group spans the entire input, schedules the thought "Am I done?" and quits
+    * If not, tries to expand the group rightward if there is still room. (that is, launches codelets that'd do this checking). Also launches codelets to schedule this same thought again a while later.
+
+##################
+
+thought type: Am I done?
+
+Explores whether we are done.
+
+fringe, extended fringe:
+        none
+
+actions:
+        * ???
+
+##################
+
+thought type: Is x an instance of Y?
+
+Sets wheels rolling to see if x is an instance of Y.
+
+Please note that this need not translate into *one* codelet, but can actually be a very large number!
+
+In its actions, it will be very similar to "Are x and y related?" It will call some function which will either return a yes(maybe with bindings), a no or raise an exception whose payload is a thought that needs to be executed in order to answer a subquestion, perhaps.
+
+I will detail this later.
+
+##################
+
+thought type: I should look for more X.
+
+Look for more instances of X.
+
+How this works would depend on what sort of object X is, of course. I need to think through the details of this one too.
+
+    

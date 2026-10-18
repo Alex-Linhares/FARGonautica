@@ -1,0 +1,11 @@
+Goal: Slowly remove genlib.
+
+How: For classes modified by compiling, one by one copy the compiled 
+version onto the original, and do any appropriate cleanup, refactoring.  
+The new version will be unmodified by compiling.  When compiling ceases to 
+do any work, we can replace genlib/ by lib/.
+  
+Goal: Remove dependance on Class::Std
+  
+How: Slowly migrate to Moose.  For some classes, this will be easy, for 
+others, less so.  However, I have some tools to ease the transition.  

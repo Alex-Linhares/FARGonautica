@@ -1,0 +1,220 @@
+\documentclass{article}
+\usepackage{layout}
+\setlength{\oddsidemargin}{1pt}
+%\setlength{\evensidemargin}{1pt}
+\setlength{\textwidth}{7.4in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{0in}
+\setlength{\hoffset}{-1cm}
+\setlength{\marginparwidth}{1pt}
+\begin{document}
+
+\newcommand{\method}[9]{
+  \par\noindent\begin{minipage}[t]{0.5\linewidth}
+    \textbf{\large method} \textbf{#1}::\textit{\large #2}\vskip2mm
+    \hrule\vskip2mm
+  \par\noindent\textbf{Usage: }
+  \begin{minipage}[t][0.4in]{0.7\linewidth}
+    #3
+  \end{minipage}\vskip2mm
+
+  \par\noindent\textbf{Returns: }
+  \begin{minipage}[t][0.3in]{0.7\linewidth}
+    #5
+  \end{minipage}\vskip1mm
+
+  \par\noindent\textbf{Purpose: }
+  \begin{minipage}[t][1.3in]{0.66\linewidth}
+    #4
+  \end{minipage}
+
+
+  \end{minipage}
+  \begin{minipage}[t]{0.4\linewidth}
+    \vskip3mm
+
+  \par\noindent\textbf{p5sig: }
+  \begin{minipage}[t][0.3in]{0.7\linewidth}
+    #6
+  \end{minipage}\vskip1mm
+    
+  \par\noindent\textbf{p6sig: }
+  \begin{minipage}[t][0.3in]{0.7\linewidth}
+    #7
+  \end{minipage}\vskip1mm
+
+  \par\noindent\textbf{throws: }
+  \begin{minipage}[t][0.3in]{0.7\linewidth}
+    #8
+  \end{minipage}\vskip1mm
+    
+  \par\noindent\textbf{Commens/See Also: }
+  \par\begin{minipage}[t][0.6in]{0.7\linewidth}
+    #9
+  \end{minipage}\vskip1mm
+
+  \end{minipage}
+}
+
+\newenvironment{multimethod}[5]{
+  \textbf{\large multimethod #1}\vskip2mm
+  \par\hrule\vskip2mm\par
+  \begin{minipage}{0.5\linewidth}
+    \par\noindent\textbf{Usage: }
+    \begin{minipage}[t][0.4in]{0.7\linewidth}
+      #2
+    \end{minipage}\vskip1mm
+
+    \par\noindent\textbf{Purpose: }
+    \begin{minipage}[t][1.5in]{0.7\linewidth}
+      #3
+    \end{minipage}\vskip1mm
+  \end{minipage}
+  \begin{minipage}{0.5\linewidth}
+    \par\noindent\textbf{Throws: }
+    \par\begin{minipage}[t][0.4in]{0.7\linewidth}
+      #4
+    \end{minipage}\vskip1mm
+    
+    \par\noindent\textbf{Comments: }
+    \par\begin{minipage}[t][1in]{0.7\linewidth}
+      #5
+    \end{minipage}\vskip1mm
+    
+  \end{minipage}\par\quad\quad\hrule
+  }{\vskip4mm\par\hrule\vskip3mm\par}
+
+\newcommand{\variant}[2]{\vskip2mm\par
+  \quad\quad\textbf{variant: #1}
+  \par\quad\quad\quad\begin{minipage}[t][0.7in]{0.9\linewidth}
+    #2
+  \end{minipage}}
+
+%\begin{multimethod}{methodname}{usage usage usage}{purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose}{throws throws throws throws}{comments see also comments see also comments see also}
+
+%  \variant{BuiltObj BuiltObj}{This does a lot of crazy work}
+%  \variant{BuiltObj BuiltObj}{This does a lot of crazy work}
+%  \variant{BuiltObj BuiltObj}{This does a lot of crazy work}
+%  \variant{BuiltObj BuiltObj}{This does a lot of crazy work}
+  
+%\end{multimethod}
+
+%\method{package\_name}{method\_name}{usage usage usage usage}{purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose purpose}{returns  returns}{p5 signature p5 signature}{p6 signature p6 signature}{throws throws}{comments see also comments see also comments see also}
+
+\newcommand{\call}[3]{#1$\rightarrow$#2( #3 )}
+
+\method{}{find\_range}{\call{\$pos}{find\_range}{\$obj}}{}{A range: ref to an array of integers}{}{\$obj}{OutOfRange, MultipleNamed, NoneFound}{}
+
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+\method{\mbox{}\quad\quad\quad\quad\quad\quad\quad\mbox{}}{}{}{}{}{}{}{}{}
+
+\newpage
+\begin{multimethod}{}{}{}{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  
+\end{multimethod}
+
+\newpage
+\begin{multimethod}{}{}{}{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  
+\end{multimethod}
+
+\newpage
+\begin{multimethod}{}{}{}{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  
+\end{multimethod}
+
+\newpage
+\begin{multimethod}{}{}{}{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  
+\end{multimethod}
+
+\newpage
+\begin{multimethod}{}{}{}{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  
+\end{multimethod}
+
+\newpage
+\begin{multimethod}{}{}{}{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  
+\end{multimethod}
+
+\newpage
+\begin{multimethod}{}{}{}{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  \variant{}{}
+  
+\end{multimethod}
+
+\end{document}

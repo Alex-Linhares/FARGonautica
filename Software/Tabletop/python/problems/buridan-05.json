@@ -1,0 +1,189 @@
+{
+ "name": "buridan-05",
+ "title": "Buridan 5",
+ "family": "buridan",
+ "source": {
+  "tag": "F95",
+  "page": 133,
+  "figure": "Buridan 5",
+  "pdf_page": 143,
+  "image_index": 32,
+  "image_size_px": [
+   484,
+   205
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   7,
+   16,
+   200,
+   191
+  ]
+ },
+ "touched": "spoon1",
+ "answers": {
+  "E1": "spoon2",
+  "E2": "spoon3"
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 47.6,
+   "y": 14.3,
+   "orientation": null,
+   "box_px": [
+    84,
+    38,
+    97,
+    44
+   ],
+   "figure": "Buridan 5",
+   "page": 133,
+   "image": "F95 PDF page 143, pdfimages image 32 (484 x 205 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 56.1,
+   "y": 14.3,
+   "orientation": null,
+   "box_px": [
+    99,
+    38,
+    112,
+    44
+   ],
+   "figure": "Buridan 5",
+   "page": 133,
+   "image": "F95 PDF page 143, pdfimages image 32 (484 x 205 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon1",
+   "type": "spoon",
+   "x": 61.8,
+   "y": 13.7,
+   "orientation": "up",
+   "box_px": [
+    113,
+    32,
+    118,
+    48
+   ],
+   "figure": "Buridan 5",
+   "page": 133,
+   "image": "F95 PDF page 143, pdfimages image 32 (484 x 205 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 8.8,
+   "y": 86.3,
+   "orientation": "up",
+   "box_px": [
+    20,
+    159,
+    25,
+    175
+   ],
+   "figure": "Buridan 5",
+   "page": 133,
+   "image": "F95 PDF page 143, pdfimages image 32 (484 x 205 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 13.4,
+   "y": 87.7,
+   "orientation": null,
+   "box_px": [
+    27,
+    165,
+    34,
+    174
+   ],
+   "figure": "Buridan 5",
+   "page": 133,
+   "image": "F95 PDF page 143, pdfimages image 32 (484 x 205 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup5",
+   "type": "cup",
+   "x": 20.2,
+   "y": 87.4,
+   "orientation": null,
+   "box_px": [
+    36,
+    166,
+    49,
+    172
+   ],
+   "figure": "Buridan 5",
+   "page": 133,
+   "image": "F95 PDF page 143, pdfimages image 32 (484 x 205 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass3",
+   "type": "small glass",
+   "x": 81.5,
+   "y": 85.4,
+   "orientation": null,
+   "box_px": [
+    147,
+    161,
+    153,
+    170
+   ],
+   "figure": "Buridan 5",
+   "page": 133,
+   "image": "F95 PDF page 143, pdfimages image 32 (484 x 205 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass4",
+   "type": "small glass",
+   "x": 87.2,
+   "y": 85.4,
+   "orientation": null,
+   "box_px": [
+    157,
+    161,
+    163,
+    170
+   ],
+   "figure": "Buridan 5",
+   "page": 133,
+   "image": "F95 PDF page 143, pdfimages image 32 (484 x 205 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon3",
+   "type": "spoon",
+   "x": 92.6,
+   "y": 84.6,
+   "orientation": "up",
+   "box_px": [
+    167,
+    156,
+    172,
+    172
+   ],
+   "figure": "Buridan 5",
+   "page": 133,
+   "image": "F95 PDF page 143, pdfimages image 32 (484 x 205 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame; given by hand with --frame where a line is too faint for the profile, as the file's notes say); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (a cup's rim and body, a glass's rim and body, a spoon's bowl and handle, a fork's tines and handle, a shaker's rounded box) and leaving the arrow and its label out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched object, the E1 and E2 objects) to about 2 px; a spoon's bowl under the H arrow is placed from its handle. The uncertainty was measured on Surround 5 against the chapter 4 screen dump of the same configuration (docs/problems.md 5); the Buridan 1 configuration, printed twice (pp. 129 and 130), agrees with itself to within 1.5 units (docs/problems.md 7)."
+ },
+ "notes": [
+  "The H arrow enters the touched spoon's bowl from the upper right; the spoon's box is its bowl (6 px wide, centred on the handle) and handle, 17 px, read on the ASCII dump.",
+  "The E1 arrow enters Eliza's lower-left spoon from the lower left and the E2 arrow her lower-right object from the lower right; their boxes were read on the ASCII dumps, the arrows and labels left out.",
+  "Buridan 4 with 'spoons as the sole type of silverware' and a 'glass-glass' group on the right [F95 p. 134]: the lower-right cups are two glasses (small-glass3, small-glass4, clean clusters of 7 x 10 px) and the fork a spoon (spoon3, E2, its bowl 7 px wide under the E2 arrow)."
+ ],
+ "review": "Reviewed: cup, cup, spoon (H) at the top centre; spoon (E1), glass, cup lower left; glass, glass, spoon (E2) lower right [F95 p. 133].",
+ "based_on": "buridan-04"
+}

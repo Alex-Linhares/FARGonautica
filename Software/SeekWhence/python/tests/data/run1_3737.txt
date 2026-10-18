@@ -1,0 +1,153 @@
+# Seek-Whence appendix run 1: the sequence 3 7 3 7 3 7  [M86 pp. 164-166]
+#
+# Transcribed from the page images of Meredith (1986), PDF pages 176-178 (printed 164-166),
+# rendered at 130 dpi and read by eye; the scan's text layer was used only as a draft.
+#
+# Conventions of this file (shared by run2_373373.txt and run3_121231234.txt):
+#   "# page: N"   marks where printed page N begins.
+#   "# note: ..." is one of Meredith's own annotations, printed on the page with a leading
+#                 semicolon ("; A template is made."); it is not program output.
+#   every other non-blank line is a console line exactly as printed: user input stays on the
+#   prompt line ("please enter a term: 3"), continuation lines keep their leading space, and
+#   glint names in spark and bond lines are run together ("glint1glint2") as on the page.
+#   Blank lines are kept where the page has them.
+#
+# Doubtful readings (settled on the image; none changes a value):
+#   p. 164: the text layer reads "glint!" and "glintl" for "glint1" and "sparks" for "spark5";
+#           the image is clear.
+#   p. 165: "Glommer on" is followed by its argument on a continuation line with one leading
+#           space; the closing parentheses after "(glint1 glint2)" are two, read "))".
+#   p. 165: "template made : (form (Cycle 3 2 (3 7))" is printed with a space before the colon
+#           and without the template's other fields (compare p. 167, where they are printed).
+#   p. 166: "enter no if wrong, ok if right ok" -- the user's answer is on the prompt line.
+#
+# Observed on these pages (for expectations.json): the run starts with "-> (startup)"; task
+# lines are printed ("doing task ..."); the guess follows the first term that confirms the
+# hypothesis; "ok" ends the run with "bye".
+
+# page: 164
+               The Sequence  3 7  3 7  3 7
+
+-> (startup)
+
+please enter a term: 3
+doing task Sparkler-plus on (glint1 glint1 2)
+doing task Dissolver
+
+please enter a term: 7
+doing task Sparkler
+spark1 --- between glint1glint2
+doing task Tester
+doing task Dissolver on (glint1)
+doing task Sparkler
+spark2 --- between glint1glint2
+doing task Sparkler-plus on (glint2 glint1 10)
+spark3 --- between glint2glint1
+doing task Sparkler-plus on (glint2 glint2 2)
+doing task Sparkler-plus on (glint2 glint1 10)
+spark4 --- between glint2glint1
+doing task Tester
+doing task Tester
+doing task Sparkler-plus on (glint2 glint1 2)
+spark5 --- between glint2glint1
+doing task Tester
+doing task Tester
+
+please enter a term: 3
+doing task Sparkler-plus on (glint3 glint1 2)
+spark6 --- between glint3glint1
+doing task Dissolver on (glint2)
+doing task Sparkler
+doing task Sparkler-plus on (glint3 glint2 10)
+spark7 --- between glint3glint2
+doing task Sparkler-plus on (glint3 glint3 2)
+doing task Sparkler-plus on (glint3 glint2 2)
+spark8 --- between glint3glint2
+doing task Tester
+doing task Tester
+doing task Sparkler
+doing task Sparkler-plus on (glint3 glint2 10)
+spark9 --- between glint3glint2
+doing task Tester
+doing task Tester
+doing task Bonder on
+ (Same print-value (remote) glint1 glint3)
+bond1 --- between glint1glint3
+doing task Sparkler
+doing task Sparkler
+spark10 --- between glint3glint1
+doing task Glom-scout
+# page: 165
+Same -cover proposed --> glint1
+Same -fence proposed --> glint1
+doing task Glomtester on (Same cover glint1)
+doing task Glomtester on (Same fence glint1)
+# note: The system now gloms the first two terms,
+# note:        giving a parse of  (3 7) 3.
+
+doing task Glommer on
+ (Same print-value fence (glint1 glint2))
+Glommer for Same print-value fence
+ members: (glint1 glint2)
+doing task Sparkler-plus on (glom1 glom1 10)
+doing task Glom-inspector on (glom1)
+doing task Glommer on
+ (Same print-value cover (glint1 glint2 glint3))
+failed to glom (glint1 glint2 glint3)
+doing task Plato-scout on (Cycle glom1)
+doing task Tester
+doing task Sparkler
+doing task Bonder on
+ (Same print-value (remote) glint1 glint3)
+doing task Template-scout on (glom1)
+doing task Template-applier on
+ (glom1 (Cycle 3 2 (3 7)))
+create-template-glom (Cycle 3 2 (3 7))(glom1)
+top-down glom glom2
+
+# note: A template is made.
+
+template made : (form (Cycle 3 2 (3 7))
+doing task Template-evaluator
+check-cycle template (Cycle 3 2 ((3 7)))
+
+# note: A hypothesis is created.
+
+doing task Hypothesizer
+(Cycle 3 2 (3 7))
+doing task Glom-scout
+doing task Sparkler
+spark11 --- between glint1glint2
+doing task Sparkler-plus on (glom1 glint3 10)
+spark12 --- between glom1glint3
+doing task Sparkler
+doing task Gnoth-maker
+top-down glom glom3
+gnoths constructed
+doing task Tester
+doing task Tester
+doing task Call-term
+# page: 166
+please enter a term: show-hypothesis
+(Cycle 3 2 (3 7))
+
+
+# note: The next term will confirm the hypothesis.
+
+please enter a term: 7
+doing task Hfilter
+new term being hypothesis-filtered
+ through (Cycle 3 2 (3 7))
+top-down glom glom4
+
+I have a guess!
+
+# note: The system ventures a guess.
+
+hypothesis: (Cycle 3 2 (3 7))
+     3 7 3 7
+
+# note: It is correct -- this time.
+
+enter no if wrong, ok if right ok
+bye

@@ -1,0 +1,1150 @@
+{
+ "source": "FCCA's Figures IX-1a to IX-1f (the Surround family), IX-2a to IX-2f (Blockage) and IX-3a to IX-3f (Buridan) [FCCA pp. 394-399 (img)], the eighteen layouts FCCA redraws from the book, read as 300 dpi crops of the page images (pdftoppm -r 300 -x -y -W -H) and compared object by object with the files of problems/ rendered by tools/render_problem.py (ANSWERS.md 4: the book's figure wins; docs/problems.md 6).",
+ "method": "FCCA's figures are halftone scans: the icons are light grey and the H, E1, E2 labels and arrows, printed inside the frame, are black, so no ink threshold separates the icons from the arrows (at grey level 200 the touched object, its neighbours and the arrow form one cluster). The comparison is therefore by eye, object by object: for each figure, every object FCCA draws is listed with its type, its label and the ninth of the table it stands in, and checked against the file's object of that id (tests/test_ch2.py checks the type and the ninth). Two things were measured on the scans with tools/measure_figure.py: the frames (find_frame) and, by a column profile of the darkest pixel over the glasses' rows, the gaps of Blockage 6 and 9 (IX-2e, IX-2f).",
+ "frame": "FCCA draws the table square: the eighteen frames measure 359-372 x 365-374 px inside their lines at 300 dpi (ratio 0.98-1.01), where the book's figures are 1.10 wider than tall (D-001). Positions are compared as fractions of the frame's inner width and height.",
+ "figures": [
+  {
+   "figure": "IX-1a",
+   "page": 394,
+   "problem": "surround-01",
+   "title": "Surround 1",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-1b",
+   "page": 394,
+   "problem": "surround-02",
+   "title": "Surround 2",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon3",
+     "type": "spoon",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "fork1",
+     "type": "fork",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-1c",
+   "page": 394,
+   "problem": "surround-04",
+   "title": "Surround 4",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon3",
+     "type": "spoon",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon4",
+     "type": "spoon",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-1d",
+   "page": 395,
+   "problem": "surround-05",
+   "title": "Surround 5",
+   "objects": [
+    {
+     "id": "fork1",
+     "type": "fork",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork2",
+     "type": "fork",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "knife1",
+     "type": "knife",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon3",
+     "type": "spoon",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon4",
+     "type": "spoon",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "fork3",
+     "type": "fork",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork4",
+     "type": "fork",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "knife2",
+     "type": "knife",
+     "region": "lower centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-1e",
+   "page": 395,
+   "problem": "surround-08",
+   "title": "Surround 8",
+   "objects": [
+    {
+     "id": "fork1",
+     "type": "fork",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork2",
+     "type": "fork",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "knife1",
+     "type": "knife",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon3",
+     "type": "spoon",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon4",
+     "type": "spoon",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "plate1",
+     "type": "plate",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "fork3",
+     "type": "fork",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork4",
+     "type": "fork",
+     "region": "lower centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "knife2",
+     "type": "knife",
+     "region": "lower centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-1f",
+   "page": 395,
+   "problem": "surround-10",
+   "title": "Surround 10",
+   "objects": [
+    {
+     "id": "fork1",
+     "type": "fork",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork2",
+     "type": "fork",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "knife1",
+     "type": "knife",
+     "region": "upper left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon3",
+     "type": "spoon",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon4",
+     "type": "spoon",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "fork3",
+     "type": "fork",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork4",
+     "type": "fork",
+     "region": "lower centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "knife2",
+     "type": "knife",
+     "region": "lower centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    },
+    {
+     "id": "pepper-shaker1",
+     "type": "pepper shaker",
+     "region": "middle centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "salt-shaker1",
+     "type": "salt shaker",
+     "region": "middle centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork5",
+     "type": "fork",
+     "region": "middle right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "knife3",
+     "type": "knife",
+     "region": "middle right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass2",
+     "type": "small glass",
+     "region": "middle right",
+     "label": null,
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [
+    {
+     "type": "cup",
+     "region": "middle right",
+     "note": "a sixth junk object, a cup at the right end of the mid-right fork-knife-glass row, partly cut by the frame; 'Six objects have been added' [FCCA p. 395]; the book's Surround 10 draws five [F95 p. 121 (img)]"
+    }
+   ],
+   "missing_in_fcca": [],
+   "differences": [
+    "FCCA's IX-1f is a different configuration from the book's Surround 10 (six junk objects, not five); the file follows the book (SPEC.md 7.6; docs/problems.md 6)."
+   ],
+   "agrees": false
+  },
+  {
+   "figure": "IX-2a",
+   "page": 396,
+   "problem": "blockage-01",
+   "title": "Blockage 1",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H/E2",
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-2b",
+   "page": 396,
+   "problem": "blockage-02",
+   "title": "Blockage 2",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H/E2",
+     "agrees": true
+    },
+    {
+     "id": "small-glass2",
+     "type": "small glass",
+     "region": "upper right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-2c",
+   "page": 396,
+   "problem": "blockage-04",
+   "title": "Blockage 4",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H/E3",
+     "agrees": true
+    },
+    {
+     "id": "small-glass2",
+     "type": "small glass",
+     "region": "upper right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "small-glass3",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-2d",
+   "page": 397,
+   "problem": "blockage-05",
+   "title": "Blockage 5",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H/E3",
+     "agrees": true
+    },
+    {
+     "id": "small-glass2",
+     "type": "small glass",
+     "region": "upper right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "upper right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "small-glass3",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-2e",
+   "page": 397,
+   "problem": "blockage-06",
+   "title": "Blockage 6",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H/E3",
+     "agrees": true
+    },
+    {
+     "id": "small-glass2",
+     "type": "small glass",
+     "region": "upper right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass4",
+     "type": "small glass",
+     "region": "upper right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "small-glass3",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [
+    "Measured as a check of the method: FCCA's upper-right glasses stand at 0.755 and 0.833 of the width (the book's: 0.765 and 0.826), 6 px apart on a 362 px frame, 1.8 units (the book's: 2.8); agreement."
+   ],
+   "agrees": true
+  },
+  {
+   "figure": "IX-2f",
+   "page": 397,
+   "problem": "blockage-09",
+   "title": "Blockage 9",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper left",
+     "label": "H/E3",
+     "agrees": true
+    },
+    {
+     "id": "small-glass2",
+     "type": "small glass",
+     "region": "upper right",
+     "label": null,
+     "agrees": false,
+     "fcca_fx": 0.649
+    },
+    {
+     "id": "small-glass4",
+     "type": "small glass",
+     "region": "upper right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "small-glass3",
+     "type": "small glass",
+     "region": "lower left",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [
+    "The left upper-right glass stands further left in FCCA: its centre at 0.649 of the frame's width against 0.721 in the book's figure (8 units); the right glass agrees (0.833 against 0.834). FCCA's gap is 42 px of a 362 px frame, 12.8 units, 1.7 of its own glass widths (its glasses are 25 px, 7.6 units wide); the book's gap is 7.9 units, 1.8 glass widths of 4.5 units (docs/problems.md 8). The two drawings agree in glass widths and disagree in table units; the book's figure wins."
+   ],
+   "agrees": false
+  },
+  {
+   "figure": "IX-3a",
+   "page": 398,
+   "problem": "buridan-10",
+   "title": "Buridan 10",
+   "objects": [
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "fork1",
+     "type": "fork",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [
+    "FCCA draws the touched spoon at the table's centre line, as the book's Buridan 10 figure does (6 units left of its place in the other Buridan figures; docs/problems.md 5); agreement."
+   ],
+   "agrees": true
+  },
+  {
+   "figure": "IX-3b",
+   "page": 398,
+   "problem": "buridan-11",
+   "title": "Buridan 11",
+   "objects": [
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "cup4",
+     "type": "cup",
+     "region": "lower right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork1",
+     "type": "fork",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [
+    "As IX-3a: the touched spoon at the centre line, as in the book's Buridan 11 figure; agreement."
+   ],
+   "agrees": true
+  },
+  {
+   "figure": "IX-3c",
+   "page": 398,
+   "problem": "buridan-01",
+   "title": "Buridan 1",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass2",
+     "type": "small glass",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup3",
+     "type": "cup",
+     "region": "lower right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup4",
+     "type": "cup",
+     "region": "lower right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork1",
+     "type": "fork",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-3d",
+   "page": 399,
+   "problem": "buridan-04",
+   "title": "Buridan 4",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup5",
+     "type": "cup",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup3",
+     "type": "cup",
+     "region": "lower right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup4",
+     "type": "cup",
+     "region": "lower right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork1",
+     "type": "fork",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-3e",
+   "page": 399,
+   "problem": "buridan-05",
+   "title": "Buridan 5",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "small-glass1",
+     "type": "small glass",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup5",
+     "type": "cup",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass3",
+     "type": "small glass",
+     "region": "lower right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass4",
+     "type": "small glass",
+     "region": "lower right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon3",
+     "type": "spoon",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  },
+  {
+   "figure": "IX-3f",
+   "page": 399,
+   "problem": "buridan-06",
+   "title": "Buridan 6",
+   "objects": [
+    {
+     "id": "cup1",
+     "type": "cup",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup2",
+     "type": "cup",
+     "region": "upper centre",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "spoon1",
+     "type": "spoon",
+     "region": "upper centre",
+     "label": "H",
+     "agrees": true
+    },
+    {
+     "id": "spoon2",
+     "type": "spoon",
+     "region": "lower left",
+     "label": "E1",
+     "agrees": true
+    },
+    {
+     "id": "salt-shaker1",
+     "type": "salt shaker",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "small-glass2",
+     "type": "small glass",
+     "region": "lower left",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup3",
+     "type": "cup",
+     "region": "lower right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "cup4",
+     "type": "cup",
+     "region": "lower right",
+     "label": null,
+     "agrees": true
+    },
+    {
+     "id": "fork1",
+     "type": "fork",
+     "region": "lower right",
+     "label": "E2",
+     "agrees": true
+    }
+   ],
+   "extra_in_fcca": [],
+   "missing_in_fcca": [],
+   "differences": [],
+   "agrees": true
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+Type = NonLTM
+Cluster_Count = 2
+
+[Sequences]
+seq=(7 1 7)( 7 2 7)( 7 3 7 )(7 4 7)|(7 5 7)( 7 6 7) (7 7 7)(7 8 7)
+seq=(2 1 2)( 2 2 2 )(2 3 2)( 2 4 2)( 2 5 2)|(2 6 2)( 2 7 2)(2 8 2)
+seq=(2 1 2)( 2 2 2)( 2 3 2)( 2 4 2)|(2 5 2)( 2 6 2)( 2 7 2)(2 8 2)
+
+[Cluster_2]
+source = Human
+
+[Sequence_1]
+distractor = 17 22
+
+[Sequence_2]
+distractor = 2 7
+
+[Sequence_3]
+distractor = 2 7

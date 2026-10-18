@@ -1,0 +1,87 @@
+{
+  "_about": "French's worked examples of the Coderack and temperature, transcribed as data from F95 pp. 77, 81, 90-93 (the tables and formulas read on the page images). Every number is as printed; print slips are recorded beside the arithmetic. Cited from SPEC.md sections 5 and 6; checked by tests/test_worked_examples.py.",
+  "urgency_choice": {
+    "source": "[F95 p. 77]",
+    "codelets": [
+      {"name": "find-group-around (small-glass1)", "urgency": 6, "probability": 0.6},
+      {"name": "find-neighbor (cup1)", "urgency": 3, "probability": 0.3},
+      {"name": "build-object (fork1, fork2)", "urgency": 1, "probability": 0.1}
+    ],
+    "total_urgency": 10
+  },
+  "temperature_exponent": {
+    "source": "[F95 pp. 92-93]",
+    "a_at_temperature_0": 6,
+    "a_at_temperature_100": 0.1,
+    "law": "linear in the temperature between those two points",
+    "at_a_equal_6": {
+      "codelets": [
+        {"name": "find-group-around (small-glass1)", "urgency": 6, "powered": 46656, "probability": 0.985},
+        {"name": "find-neighbor (cup1)", "urgency": 3, "powered": 729, "probability": 0.015},
+        {"name": "build-object (fork1, fork2)", "urgency": 1, "powered": 1, "probability_below": 0.001}
+      ],
+      "total_powered": 47386
+    },
+    "at_a_equal_1_as_printed": [0.6, 0.4, 0.1],
+    "at_a_equal_1_correct": [0.6, 0.3, 0.1],
+    "print_slip": "p. 93 prints 0.4 for find-neighbor's chance at a = 1; the table of p. 77 and the arithmetic give 0.3"
+  },
+  "urgency_explosion": {
+    "source": "[F95 p. 77]",
+    "rack_before": [{"name": "find-group", "urgency": 10}, {"name": "find-group", "urgency": 10}],
+    "share_before": 0.5,
+    "children_spawned": 6,
+    "child_urgency": 10,
+    "share_after": 0.142857,
+    "as_described": "reduced in one instant to approximately one-quarter of its previous value"
+  },
+  "generations": {
+    "source": "[F95 p. 81]",
+    "rho_in_example": 2,
+    "rho_in_program": 3,
+    "raw_urgency_range": [1, 100],
+    "parent": {"name": "find-group", "generation": 2, "adjusted_urgency": 4},
+    "children": [
+      {"name": "find-end-object", "raw_urgency": 8, "generation": 3, "adjusted_urgency": 1},
+      {"name": "find-middle-object", "raw_urgency": 8, "generation": 3, "adjusted_urgency": 1},
+      {"name": "find-neighbor", "raw_urgency": 8, "generation": 3, "adjusted_urgency": 1},
+      {"name": "find-neighbor", "raw_urgency": 8, "generation": 3, "adjusted_urgency": 1}
+    ],
+    "children_total_adjusted": 4,
+    "children_total_standard": 32,
+    "competitor_share_before_percent": 50,
+    "competitor_share_after_standard_percent_as_printed": 12.5,
+    "competitor_share_after_standard_percent_computed": 11.1,
+    "print_note": "12.5 is 4 of 32; the competing codelet's share of 4 + 32 is 11.1 percent"
+  },
+  "coderack_capacity": {"source": "[F95 p. 82]", "capacity": 150, "removal": "the oldest are pushed off; no removal by urgency [F95 pp. 76-77]"},
+  "worldview_oscillation": {
+    "source": "[F95 p. 90]",
+    "ratings": [274, 267, 280, 273, 285],
+    "note": "two equally good rivals alternately winning; small changes in quality, many changes in composition"
+  },
+  "temperature_formula": {
+    "source": "[F95 p. 91 (img)]",
+    "formula": "T = alpha * dQ / Q + beta * dWV - gamma * Tcp",
+    "Q_range": "0 < Q <= 1",
+    "dQ_window": 6,
+    "dWV_window_competitions": 10,
+    "constants": "alpha, beta, gamma positive; beta and gamma chosen so that dQ/Q dominates"
+  },
+  "chapter_4_final_rack": {
+    "source": "[F95 p. 107 (img)]",
+    "note": "each bar measured against the 23 evenly spaced labels (item 05, docs/ch4-run.md); the same numbers are in ch4.json",
+    "codelets_run": 55,
+    "bars": [
+      {"label": "SAM", "percent": 5},
+      {"label": "FD-END", "percent": 3},
+      {"label": "FD-MID", "percent": 3},
+      {"label": "FD-NNBR", "percent": 11},
+      {"label": "BD-OB0", "percent": 35},
+      {"label": "PK-SALO", "percent": 2},
+      {"label": "PK2SALO", "percent": 8},
+      {"label": "CP-COMP", "percent": 3},
+      {"label": "FND-ANS", "percent": 30}
+    ]
+  }
+}

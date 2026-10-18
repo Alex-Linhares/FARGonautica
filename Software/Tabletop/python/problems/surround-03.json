@@ -1,0 +1,171 @@
+{
+ "name": "surround-03",
+ "title": "Surround 3",
+ "family": "surround",
+ "source": {
+  "tag": "F95",
+  "page": 116,
+  "figure": "Surround 3",
+  "pdf_page": 126,
+  "image_index": 4,
+  "image_size_px": [
+   492,
+   206
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   10,
+   15,
+   203,
+   191
+  ]
+ },
+ "touched": "cup1",
+ "answers": {
+  "E1": "small-glass1",
+  "E2": "cup2"
+ },
+ "objects": [
+  {
+   "id": "knife1",
+   "type": "knife",
+   "x": 18.5,
+   "y": 15.3,
+   "orientation": "up",
+   "box_px": [
+    41,
+    35,
+    44,
+    49
+   ],
+   "figure": "Surround 3",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 4 (492 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 24.8,
+   "y": 15.9,
+   "orientation": null,
+   "box_px": [
+    47,
+    40,
+    60,
+    46
+   ],
+   "figure": "Surround 3",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 4 (492 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon1",
+   "type": "spoon",
+   "x": 31.6,
+   "y": 14.2,
+   "orientation": "up",
+   "box_px": [
+    63,
+    33,
+    68,
+    47
+   ],
+   "figure": "Surround 3",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 4 (492 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 15.7,
+   "y": 74.4,
+   "orientation": "up",
+   "box_px": [
+    35,
+    138,
+    40,
+    154
+   ],
+   "figure": "Surround 3",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 4 (492 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon3",
+   "type": "spoon",
+   "x": 19.9,
+   "y": 74.4,
+   "orientation": "up",
+   "box_px": [
+    42,
+    138,
+    48,
+    154
+   ],
+   "figure": "Surround 3",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 4 (492 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 26.2,
+   "y": 75.9,
+   "orientation": null,
+   "box_px": [
+    52,
+    144,
+    60,
+    153
+   ],
+   "figure": "Surround 3",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 4 (492 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork1",
+   "type": "fork",
+   "x": 31.9,
+   "y": 74.4,
+   "orientation": "up",
+   "box_px": [
+    64,
+    139,
+    68,
+    153
+   ],
+   "figure": "Surround 3",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 4 (492 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 88.1,
+   "y": 77.3,
+   "orientation": null,
+   "box_px": [
+    158,
+    148,
+    171,
+    154
+   ],
+   "figure": "Surround 3",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 4 (492 x 206 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (the cup's rim and body, the glass's rim and body) and leaving the arrow out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched cup, the E1 object) to about 2 px. Surround 5 measured here agrees with the chapter 4 screen dump of the same configuration (tests/data/ch4.json, an independent image) to within 1.6 units in x and 2.2 in y (docs/problems.md)."
+ },
+ "notes": [
+  "The H arrow's shaft crosses the knife to the left of the cup; the knife's blade top is under the arrow, so its box (rows 35-49) is the neighbouring silverware's height placed from the handle's bottom; its x is firm (columns 41-44).",
+  "The figure is printed on p. 116 and its table of numbers on p. 117."
+ ],
+ "review": "Reviewed: Henry's knife, cup, spoon; Eliza's spoon, spoon, glass, fork; the isolated cup. 'there is silverware on either side of both the cup and the small glass' [F95 p. 117]."
+}

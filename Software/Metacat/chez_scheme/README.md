@@ -35,10 +35,8 @@ the Workspace finding `wyz`:
 ## `original/`: Metacat 1.2 as distributed
 
 **Never edit anything in `original/` and never add files to it** (not even a README).
-The import commit `9f072c0` put the distribution in `Metacat/`. The regression gates
-(`ralph_loops/loop0001/gate.py`, `ralph_loops/loop0002/gate.py`) compare the git tree
-hash of `chez_scheme/original` in `HEAD` with `9f072c0:Metacat`. The loop0001 gate also
-rejects uncommitted edits and untracked files there. You can check it yourself:
+The import commit `9f072c0` put the distribution in `Metacat/`, so the git tree hash of
+`chez_scheme/original` in `HEAD` must equal that of `9f072c0:Metacat`. You can check it:
 
 ```bash
 git rev-parse HEAD:chez_scheme/original 9f072c0:Metacat   # the two hashes must be equal

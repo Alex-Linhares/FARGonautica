@@ -1,0 +1,48 @@
+Type = LTM_WITH_CONTEXT
+Cluster_Count = 4
+SplitChart = 1
+
+[Sequences]
+seq = ({1 1 1} 2 3) (1 {2 2 2} 3 4) (1 2 {3 3 3} 4 5) | (1 2 3 {4 4 4} 5 6)
+
+[Sequence_1]
+label = Target sequence
+
+[Cluster_1]
+source = Seqsee
+exact_feature_set = -f=AllowSquinting
+label = Seqsee with squinting, on target sequence, no memories
+
+[Cluster_2]
+context = ({1 1} 2 3) (1 {2 2} 3 4) (1 2 {3 3} 4 5) | (1 2 3 {4 4} 5 6)
+exact_feature_set = -f=AllowSquinting
+label = Seqsee with squinting, on target sequence, having seen 'a'
+color = #99FF00
+
+[Cluster_3]
+context = (2 {3 3} 4) (2 3 {4 4} 5) (2 3 4 {5 5} 6)|(2 3 4 5 {6 6} 7)
+exact_feature_set = -f=AllowSquinting
+label = Seqsee with squinting, on target sequence, having seen 'b'
+color = #FF9900
+
+[Cluster_4]
+context = ({1 1} 2 3) ({1 1} 2 3 4) ({1 1} 2 3 4 5) | ({1 1} 2 3 4 5 6) | 1 1 2 3 4 5 6 7 
+exact_feature_set = -f=AllowSquinting
+label = Seqsee with squinting, on target sequence, having seen 'c'
+color = #BBBB33
+
+[Cluster_Config_1]
+label = Target sequence
+
+
+[Cluster_Config_2]
+label = a
+
+
+[Cluster_Config_3]
+label = b
+
+
+
+[Cluster_Config_4]
+label = c

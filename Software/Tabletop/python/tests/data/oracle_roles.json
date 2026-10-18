@@ -1,0 +1,1174 @@
+{
+ "_about": [
+  "The roles hand-read from the digitized layouts of four carriers (the oracle probe of RESULTS.md 11.3; D-079).",
+  "Read by the registry's definitions (D-079; the plan's catalogue) on the problem files' positions, with the regions of D-004 taken exactly (no blur): columns left (x < 36.7), middle, right (x > 73.3); rows above (y < 33.3), middle, below (y > 66.7).",
+  "Objects only: a group-level role (ECHO, CONTAINER as a setting, GAP, MIDLINE), a Worldview role (SYMMETRY_AXIS, BARRIER, CLAIMED, TYPE_KEY) and the re-cast (COUNTERPART) are not readable as a tag on an object of the layout and are left to the engine.",
+  "Each entry: item, role, args, weight, evidence (the reading, in words). The images and the twin are read for the touched object only; sidekicks for the touched object and the candidates of its type family.",
+  "Surround 5: the plan calls the touched cup a connector; by the definition (each neighbour's far neighbour of its own type) it is not: knife1's far neighbour is fork2. The glass is.",
+  "The table's MIDLINE is hand-read on every carrier (item 04): the middle band is empty on all four, so consumer C1 and C6 have the midline they need; the SYMMETRY_AXIS stays the engine's own reading (the oracle hands the Worldview item back to the engine's detectors).",
+  "ROW and COLUMN (item 07, D-085) are hand-read on every object from its exact region: the row word (above, below; no object of the four carriers lies in the middle band) and the column word (left, middle, right), the weight 1. The re-cast (COUNTERPART) stays the engine's: the recast-role codelet reads it off these tags."
+ ],
+ "surround-05": [
+  {
+   "item": "table",
+   "role": "MIDLINE",
+   "args": [],
+   "weight": 1,
+   "evidence": "hand-read: the middle band holds no grouped object (item 04, D-084)"
+  },
+  {
+   "item": "fork1",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Henry's row, its left end"
+  },
+  {
+   "item": "fork2",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Henry's row"
+  },
+  {
+   "item": "knife1",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Henry's row"
+  },
+  {
+   "item": "cup1",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Henry's row, a middle"
+  },
+  {
+   "item": "spoon1",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Henry's row"
+  },
+  {
+   "item": "spoon2",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Henry's row, its right end"
+  },
+  {
+   "item": "spoon3",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Eliza's row, its left end"
+  },
+  {
+   "item": "spoon4",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Eliza's row"
+  },
+  {
+   "item": "small-glass1",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Eliza's row, a middle"
+  },
+  {
+   "item": "fork3",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Eliza's row"
+  },
+  {
+   "item": "fork4",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Eliza's row"
+  },
+  {
+   "item": "knife2",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "in Eliza's row, its right end"
+  },
+  {
+   "item": "cup1",
+   "role": "ANCHOR",
+   "args": [],
+   "weight": 1,
+   "evidence": "the one liquid holder among silverware, members on both sides"
+  },
+  {
+   "item": "small-glass1",
+   "role": "ANCHOR",
+   "args": [],
+   "weight": 1,
+   "evidence": "the one liquid holder among silverware, members on both sides"
+  },
+  {
+   "item": "small-glass1",
+   "role": "CONNECTOR",
+   "args": [],
+   "weight": 1,
+   "evidence": "between spoon4 (spoon3 beyond) and fork3 (fork4 beyond)"
+  },
+  {
+   "item": "knife1",
+   "role": "SIDEKICK",
+   "args": [
+    "cup1"
+   ],
+   "weight": 1,
+   "evidence": "the cup's left neighbour, a knife"
+  },
+  {
+   "item": "spoon1",
+   "role": "SIDEKICK",
+   "args": [
+    "cup1"
+   ],
+   "weight": 2,
+   "evidence": "the cup's right neighbour, a run of two spoons"
+  },
+  {
+   "item": "spoon4",
+   "role": "SIDEKICK",
+   "args": [
+    "small-glass1"
+   ],
+   "weight": 2,
+   "evidence": "the glass's left neighbour, a run of two spoons"
+  },
+  {
+   "item": "fork3",
+   "role": "SIDEKICK",
+   "args": [
+    "small-glass1"
+   ],
+   "weight": 2,
+   "evidence": "the glass's right neighbour, a run of two forks"
+  },
+  {
+   "item": "cup2",
+   "role": "LONER",
+   "args": [],
+   "weight": 1,
+   "evidence": "isolated in the lower right, set off from the row by a gap"
+  },
+  {
+   "item": "fork1",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "upper-left region"
+  },
+  {
+   "item": "spoon3",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-left region"
+  },
+  {
+   "item": "cup2",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-right region"
+  },
+  {
+   "item": "cup2",
+   "role": "TWIN",
+   "args": [
+    "cup1"
+   ],
+   "weight": 1,
+   "evidence": "a cup on the other side"
+  },
+  {
+   "item": "spoon3",
+   "role": "MIRROR_IMAGE",
+   "args": [
+    "cup1"
+   ],
+   "weight": 1,
+   "evidence": "left column, lower row: the cup's reflection across the midline"
+  },
+  {
+   "item": "spoon4",
+   "role": "MIRROR_IMAGE",
+   "args": [
+    "cup1"
+   ],
+   "weight": 1,
+   "evidence": "left column, lower row"
+  },
+  {
+   "item": "small-glass1",
+   "role": "MIRROR_IMAGE",
+   "args": [
+    "cup1"
+   ],
+   "weight": 1,
+   "evidence": "left column, lower row"
+  },
+  {
+   "item": "fork3",
+   "role": "MIRROR_IMAGE",
+   "args": [
+    "cup1"
+   ],
+   "weight": 1,
+   "evidence": "left column, lower row"
+  },
+  {
+   "item": "cup2",
+   "role": "POINT_IMAGE",
+   "args": [
+    "cup1"
+   ],
+   "weight": 1,
+   "evidence": "right column, lower row: the cup's reflection through the centre"
+  },
+  {
+   "item": "fork1",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 12.5, y 15.3)"
+  },
+  {
+   "item": "fork1",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 12.5, y 15.3)"
+  },
+  {
+   "item": "fork2",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 17.3, y 15.3)"
+  },
+  {
+   "item": "fork2",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 17.3, y 15.3)"
+  },
+  {
+   "item": "knife1",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 22.7, y 15.1)"
+  },
+  {
+   "item": "knife1",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 22.7, y 15.1)"
+  },
+  {
+   "item": "cup1",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 30.3, y 15.3)"
+  },
+  {
+   "item": "cup1",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 30.3, y 15.3)"
+  },
+  {
+   "item": "spoon1",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle above (x 38.8, y 14.8)"
+  },
+  {
+   "item": "spoon1",
+   "role": "COLUMN",
+   "args": [
+    "middle"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle above (x 38.8, y 14.8)"
+  },
+  {
+   "item": "spoon2",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle above (x 45.1, y 14.8)"
+  },
+  {
+   "item": "spoon2",
+   "role": "COLUMN",
+   "args": [
+    "middle"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle above (x 45.1, y 14.8)"
+  },
+  {
+   "item": "spoon3",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 13.9, y 74.7)"
+  },
+  {
+   "item": "spoon3",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 13.9, y 74.7)"
+  },
+  {
+   "item": "spoon4",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 19.8, y 74.7)"
+  },
+  {
+   "item": "spoon4",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 19.8, y 74.7)"
+  },
+  {
+   "item": "small-glass1",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 26.1, y 75.9)"
+  },
+  {
+   "item": "small-glass1",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 26.1, y 75.9)"
+  },
+  {
+   "item": "fork3",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 30.6, y 73.9)"
+  },
+  {
+   "item": "fork3",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 30.6, y 73.9)"
+  },
+  {
+   "item": "fork4",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 35.7, y 73.6)"
+  },
+  {
+   "item": "fork4",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 35.7, y 73.6)"
+  },
+  {
+   "item": "knife2",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle below (x 40.8, y 73.9)"
+  },
+  {
+   "item": "knife2",
+   "role": "COLUMN",
+   "args": [
+    "middle"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle below (x 40.8, y 73.9)"
+  },
+  {
+   "item": "cup2",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region right below (x 87.6, y 77.3)"
+  },
+  {
+   "item": "cup2",
+   "role": "COLUMN",
+   "args": [
+    "right"
+   ],
+   "weight": 1,
+   "evidence": "exact region right below (x 87.6, y 77.3)"
+  }
+ ],
+ "blockage-06": [
+  {
+   "item": "table",
+   "role": "MIDLINE",
+   "args": [],
+   "weight": 1,
+   "evidence": "hand-read: the middle band holds no grouped object (item 04, D-084)"
+  },
+  {
+   "item": "cup1",
+   "role": "LONER",
+   "args": [],
+   "weight": 1,
+   "evidence": "alone in the upper left"
+  },
+  {
+   "item": "cup1",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "upper-left region"
+  },
+  {
+   "item": "small-glass2",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "upper-right region"
+  },
+  {
+   "item": "small-glass4",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "upper-right region"
+  },
+  {
+   "item": "small-glass1",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-left region"
+  },
+  {
+   "item": "small-glass3",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-left region"
+  },
+  {
+   "item": "small-glass2",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "the upper-right pair, its left end"
+  },
+  {
+   "item": "small-glass4",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "the upper-right pair, its right end"
+  },
+  {
+   "item": "small-glass1",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "the lower-left pair, its left end"
+  },
+  {
+   "item": "small-glass3",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "the lower-left pair, its right end"
+  },
+  {
+   "item": "cup1",
+   "role": "FIGURE",
+   "args": [],
+   "weight": 1,
+   "evidence": "the only cup on Henry's side, against the pair of glasses"
+  },
+  {
+   "item": "small-glass2",
+   "role": "GROUND",
+   "args": [],
+   "weight": 1,
+   "evidence": "two glasses in one group on Henry's side"
+  },
+  {
+   "item": "small-glass4",
+   "role": "GROUND",
+   "args": [],
+   "weight": 1,
+   "evidence": "two glasses in one group on Henry's side"
+  },
+  {
+   "item": "small-glass1",
+   "role": "MIRROR_IMAGE",
+   "args": [
+    "cup1"
+   ],
+   "weight": 1,
+   "evidence": "left column, lower row"
+  },
+  {
+   "item": "small-glass3",
+   "role": "MIRROR_IMAGE",
+   "args": [
+    "cup1"
+   ],
+   "weight": 1,
+   "evidence": "left column, lower row"
+  },
+  {
+   "item": "cup1",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 17.1, y 13.6)"
+  },
+  {
+   "item": "cup1",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 17.1, y 13.6)"
+  },
+  {
+   "item": "small-glass2",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region right above (x 84.2, y 14.5)"
+  },
+  {
+   "item": "small-glass2",
+   "role": "COLUMN",
+   "args": [
+    "right"
+   ],
+   "weight": 1,
+   "evidence": "exact region right above (x 84.2, y 14.5)"
+  },
+  {
+   "item": "small-glass4",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region right above (x 90.9, y 14.5)"
+  },
+  {
+   "item": "small-glass4",
+   "role": "COLUMN",
+   "args": [
+    "right"
+   ],
+   "weight": 1,
+   "evidence": "exact region right above (x 90.9, y 14.5)"
+  },
+  {
+   "item": "small-glass1",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 12.1, y 83.2)"
+  },
+  {
+   "item": "small-glass1",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 12.1, y 83.2)"
+  },
+  {
+   "item": "small-glass3",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 17.7, y 83.2)"
+  },
+  {
+   "item": "small-glass3",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 17.7, y 83.2)"
+  }
+ ],
+ "buridan-01": [
+  {
+   "item": "table",
+   "role": "MIDLINE",
+   "args": [],
+   "weight": 1,
+   "evidence": "hand-read: the middle band holds no grouped object (item 04, D-084)"
+  },
+  {
+   "item": "cup1",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "Henry's group, its left end"
+  },
+  {
+   "item": "cup2",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "Henry's group, its middle"
+  },
+  {
+   "item": "spoon1",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "Henry's group, its right end"
+  },
+  {
+   "item": "spoon2",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "Eliza's left group, its left end"
+  },
+  {
+   "item": "small-glass1",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "Eliza's left group, its middle"
+  },
+  {
+   "item": "small-glass2",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "Eliza's left group, its right end"
+  },
+  {
+   "item": "cup3",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "Eliza's right group, its left end"
+  },
+  {
+   "item": "cup4",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "Eliza's right group, its middle"
+  },
+  {
+   "item": "fork1",
+   "role": "MEMBER",
+   "args": [],
+   "weight": 1,
+   "evidence": "Eliza's right group, its right end"
+  },
+  {
+   "item": "cup2",
+   "role": "SIDEKICK",
+   "args": [
+    "spoon1"
+   ],
+   "weight": 2,
+   "evidence": "the touched spoon's left neighbour, a run of two cups"
+  },
+  {
+   "item": "small-glass1",
+   "role": "SIDEKICK",
+   "args": [
+    "spoon2"
+   ],
+   "weight": 2,
+   "evidence": "the spoon's right neighbour, a run of two glasses"
+  },
+  {
+   "item": "cup4",
+   "role": "SIDEKICK",
+   "args": [
+    "fork1"
+   ],
+   "weight": 2,
+   "evidence": "the fork's left neighbour, a run of two cups"
+  },
+  {
+   "item": "spoon1",
+   "role": "FIGURE",
+   "args": [],
+   "weight": 1,
+   "evidence": "the only spoon on Henry's side, against the two cups"
+  },
+  {
+   "item": "cup1",
+   "role": "GROUND",
+   "args": [],
+   "weight": 1,
+   "evidence": "two cups in one group on Henry's side"
+  },
+  {
+   "item": "cup2",
+   "role": "GROUND",
+   "args": [],
+   "weight": 1,
+   "evidence": "two cups in one group on Henry's side"
+  },
+  {
+   "item": "spoon2",
+   "role": "FIGURE",
+   "args": [],
+   "weight": 1,
+   "evidence": "the only spoon on Eliza's side, against the two glasses"
+  },
+  {
+   "item": "small-glass1",
+   "role": "GROUND",
+   "args": [],
+   "weight": 1,
+   "evidence": "two glasses in one group on Eliza's side"
+  },
+  {
+   "item": "small-glass2",
+   "role": "GROUND",
+   "args": [],
+   "weight": 1,
+   "evidence": "two glasses in one group on Eliza's side"
+  },
+  {
+   "item": "fork1",
+   "role": "FIGURE",
+   "args": [],
+   "weight": 1,
+   "evidence": "the only fork on Eliza's side, against the two cups"
+  },
+  {
+   "item": "cup3",
+   "role": "GROUND",
+   "args": [],
+   "weight": 1,
+   "evidence": "two cups in one group on Eliza's side"
+  },
+  {
+   "item": "cup4",
+   "role": "GROUND",
+   "args": [],
+   "weight": 1,
+   "evidence": "two cups in one group on Eliza's side"
+  },
+  {
+   "item": "spoon2",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-left region"
+  },
+  {
+   "item": "small-glass1",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-left region"
+  },
+  {
+   "item": "small-glass2",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-left region"
+  },
+  {
+   "item": "cup3",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-right region"
+  },
+  {
+   "item": "cup4",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-right region"
+  },
+  {
+   "item": "fork1",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-right region"
+  },
+  {
+   "item": "spoon2",
+   "role": "TWIN",
+   "args": [
+    "spoon1"
+   ],
+   "weight": 1,
+   "evidence": "a spoon on the other side"
+  },
+  {
+   "item": "cup1",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle above (x 47.3, y 14.3)"
+  },
+  {
+   "item": "cup1",
+   "role": "COLUMN",
+   "args": [
+    "middle"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle above (x 47.3, y 14.3)"
+  },
+  {
+   "item": "cup2",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle above (x 56.4, y 14.3)"
+  },
+  {
+   "item": "cup2",
+   "role": "COLUMN",
+   "args": [
+    "middle"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle above (x 56.4, y 14.3)"
+  },
+  {
+   "item": "spoon1",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle above (x 62.2, y 13.7)"
+  },
+  {
+   "item": "spoon1",
+   "role": "COLUMN",
+   "args": [
+    "middle"
+   ],
+   "weight": 1,
+   "evidence": "exact region middle above (x 62.2, y 13.7)"
+  },
+  {
+   "item": "spoon2",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 8.9, y 86.9)"
+  },
+  {
+   "item": "spoon2",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 8.9, y 86.9)"
+  },
+  {
+   "item": "small-glass1",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 13.5, y 87.7)"
+  },
+  {
+   "item": "small-glass1",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 13.5, y 87.7)"
+  },
+  {
+   "item": "small-glass2",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 18.6, y 88.3)"
+  },
+  {
+   "item": "small-glass2",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 18.6, y 88.3)"
+  },
+  {
+   "item": "cup3",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region right below (x 78.2, y 85.7)"
+  },
+  {
+   "item": "cup3",
+   "role": "COLUMN",
+   "args": [
+    "right"
+   ],
+   "weight": 1,
+   "evidence": "exact region right below (x 78.2, y 85.7)"
+  },
+  {
+   "item": "cup4",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region right below (x 86.8, y 85.7)"
+  },
+  {
+   "item": "cup4",
+   "role": "COLUMN",
+   "args": [
+    "right"
+   ],
+   "weight": 1,
+   "evidence": "exact region right below (x 86.8, y 85.7)"
+  },
+  {
+   "item": "fork1",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region right below (x 94.2, y 84.6)"
+  },
+  {
+   "item": "fork1",
+   "role": "COLUMN",
+   "args": [
+    "right"
+   ],
+   "weight": 1,
+   "evidence": "exact region right below (x 94.2, y 84.6)"
+  }
+ ],
+ "blockage-02": [
+  {
+   "item": "table",
+   "role": "MIDLINE",
+   "args": [],
+   "weight": 1,
+   "evidence": "hand-read: the middle band holds no grouped object (item 04, D-084)"
+  },
+  {
+   "item": "cup1",
+   "role": "LONER",
+   "args": [],
+   "weight": 1,
+   "evidence": "alone in the upper left"
+  },
+  {
+   "item": "small-glass2",
+   "role": "LONER",
+   "args": [],
+   "weight": 1,
+   "evidence": "alone in the upper right"
+  },
+  {
+   "item": "small-glass1",
+   "role": "LONER",
+   "args": [],
+   "weight": 1,
+   "evidence": "alone in the lower left"
+  },
+  {
+   "item": "cup1",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "upper-left region"
+  },
+  {
+   "item": "small-glass2",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "upper-right region"
+  },
+  {
+   "item": "small-glass1",
+   "role": "CORNER",
+   "args": [],
+   "weight": 1,
+   "evidence": "lower-left region"
+  },
+  {
+   "item": "small-glass1",
+   "role": "MIRROR_IMAGE",
+   "args": [
+    "cup1"
+   ],
+   "weight": 1,
+   "evidence": "left column, lower row"
+  },
+  {
+   "item": "cup1",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 17.3, y 14.1)"
+  },
+  {
+   "item": "cup1",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left above (x 17.3, y 14.1)"
+  },
+  {
+   "item": "small-glass2",
+   "role": "ROW",
+   "args": [
+    "above"
+   ],
+   "weight": 1,
+   "evidence": "exact region right above (x 83.9, y 15)"
+  },
+  {
+   "item": "small-glass2",
+   "role": "COLUMN",
+   "args": [
+    "right"
+   ],
+   "weight": 1,
+   "evidence": "exact region right above (x 83.9, y 15)"
+  },
+  {
+   "item": "small-glass1",
+   "role": "ROW",
+   "args": [
+    "below"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 12.2, y 83.3)"
+  },
+  {
+   "item": "small-glass1",
+   "role": "COLUMN",
+   "args": [
+    "left"
+   ],
+   "weight": 1,
+   "evidence": "exact region left below (x 12.2, y 83.3)"
+  }
+ ]
+}

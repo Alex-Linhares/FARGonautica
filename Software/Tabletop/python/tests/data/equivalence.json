@@ -1,0 +1,345 @@
+{
+ "engine": "python",
+ "info": {
+  "engine": "python",
+  "rng": "splitmix64"
+ },
+ "runs": 200,
+ "profile": "standard",
+ "seed": 1001,
+ "tolerance": 0.25,
+ "commit": "b4083fedf16065ebc85ab3abeb1f1e20f02f9264",
+ "date": "2026-10-17 20:13:37",
+ "problems": {
+  "surround-01": {
+   "batch_seed": 1931838818311738867,
+   "counts": {
+    "cup2": 153,
+    "small-glass1": 47
+   }
+  },
+  "surround-02": {
+   "batch_seed": 17996182918115008484,
+   "counts": {
+    "cup2": 146,
+    "spoon2": 6,
+    "small-glass1": 46,
+    "spoon3": 2
+   }
+  },
+  "surround-03": {
+   "batch_seed": 16714776604929416819,
+   "counts": {
+    "cup2": 133,
+    "small-glass1": 62,
+    "spoon3": 2,
+    "cup1": 1,
+    "spoon2": 2
+   }
+  },
+  "surround-04": {
+   "batch_seed": 10689036849335884027,
+   "counts": {
+    "cup2": 133,
+    "small-glass1": 58,
+    "spoon4": 8,
+    "spoon3": 1
+   }
+  },
+  "surround-05": {
+   "batch_seed": 10636721067032211128,
+   "counts": {
+    "cup2": 131,
+    "small-glass1": 55,
+    "fork4": 1,
+    "spoon3": 5,
+    "spoon4": 8
+   }
+  },
+  "surround-06": {
+   "batch_seed": 8221626826454936954,
+   "counts": {
+    "cup2": 152,
+    "small-glass1": 36,
+    "spoon4": 5,
+    "spoon3": 4,
+    "fork4": 1,
+    "fork3": 1,
+    "cup1": 1
+   }
+  },
+  "surround-07": {
+   "batch_seed": 13448438085742239713,
+   "counts": {
+    "cup2": 142,
+    "saucer1": 45,
+    "spoon4": 8,
+    "cup1": 2,
+    "spoon3": 3
+   }
+  },
+  "surround-08": {
+   "batch_seed": 12750219440950059951,
+   "counts": {
+    "cup2": 150,
+    "spoon4": 7,
+    "cup1": 3,
+    "plate1": 36,
+    "spoon3": 2,
+    "fork3": 1,
+    "knife2": 1
+   }
+  },
+  "surround-09": {
+   "batch_seed": 3083897168673011108,
+   "counts": {
+    "cup2": 173,
+    "spoon3": 8,
+    "cup1": 4,
+    "spoon4": 11,
+    "salt-shaker1": 4
+   }
+  },
+  "surround-10": {
+   "batch_seed": 3826291208782478112,
+   "counts": {
+    "cup2": 130,
+    "small-glass1": 58,
+    "spoon4": 3,
+    "small-glass2": 4,
+    "cup1": 2,
+    "spoon3": 2,
+    "fork3": 1
+   }
+  },
+  "blockage-01": {
+   "batch_seed": 14804561049853854075,
+   "counts": {
+    "small-glass1": 200
+   }
+  },
+  "blockage-02": {
+   "batch_seed": 15323696550969983079,
+   "counts": {
+    "small-glass1": 125,
+    "cup1": 36,
+    "small-glass2": 39
+   }
+  },
+  "blockage-03": {
+   "batch_seed": 18254092146349163350,
+   "counts": {
+    "small-glass1": 94,
+    "small-glass3": 85,
+    "small-glass2": 16,
+    "cup1": 5
+   }
+  },
+  "blockage-04": {
+   "batch_seed": 685696120382985018,
+   "counts": {
+    "small-glass1": 90,
+    "small-glass3": 69,
+    "cup1": 25,
+    "small-glass2": 16
+   }
+  },
+  "blockage-05": {
+   "batch_seed": 13272957536247160529,
+   "counts": {
+    "cup2": 51,
+    "small-glass3": 42,
+    "cup1": 64,
+    "small-glass2": 10,
+    "small-glass1": 33
+   }
+  },
+  "blockage-06": {
+   "batch_seed": 13641474179922423688,
+   "counts": {
+    "small-glass4": 8,
+    "cup1": 130,
+    "small-glass3": 25,
+    "small-glass1": 27,
+    "small-glass2": 10
+   }
+  },
+  "blockage-07": {
+   "batch_seed": 8603722376680082163,
+   "counts": {
+    "cup1": 126,
+    "small-glass1": 31,
+    "small-glass3": 28,
+    "small-glass4": 8,
+    "small-glass2": 4,
+    "fork1": 1,
+    "fork2": 1,
+    "knife2": 1
+   }
+  },
+  "blockage-08": {
+   "batch_seed": 16534147295053410701,
+   "counts": {
+    "cup1": 114,
+    "small-glass1": 41,
+    "small-glass3": 31,
+    "small-glass4": 6,
+    "small-glass2": 8
+   }
+  },
+  "blockage-09": {
+   "batch_seed": 12086252868446557406,
+   "counts": {
+    "cup1": 96,
+    "small-glass3": 32,
+    "small-glass2": 16,
+    "small-glass1": 43,
+    "small-glass4": 13
+   }
+  },
+  "blockage-10": {
+   "batch_seed": 6336421095603934841,
+   "counts": {
+    "small-glass3": 57,
+    "small-glass1": 59,
+    "small-glass4": 30,
+    "small-glass2": 28,
+    "cup1": 26
+   }
+  },
+  "buridan-01": {
+   "batch_seed": 2927248610250146853,
+   "counts": {
+    "spoon1": 3,
+    "fork1": 39,
+    "spoon2": 155,
+    "cup4": 3
+   }
+  },
+  "buridan-02": {
+   "batch_seed": 7633706014532413134,
+   "counts": {
+    "spoon2": 184,
+    "spoon1": 1,
+    "fork1": 13,
+    "small-glass1": 1,
+    "cup4": 1
+   }
+  },
+  "buridan-03": {
+   "batch_seed": 16705779413969184908,
+   "counts": {
+    "fork1": 68,
+    "spoon2": 129,
+    "small-glass1": 2,
+    "cup4": 1
+   }
+  },
+  "buridan-04": {
+   "batch_seed": 11038569959120378268,
+   "counts": {
+    "spoon1": 3,
+    "fork1": 52,
+    "spoon2": 141,
+    "cup4": 1,
+    "small-glass1": 1,
+    "cup5": 1,
+    "cup3": 1
+   }
+  },
+  "buridan-05": {
+   "batch_seed": 10952112282260231197,
+   "counts": {
+    "spoon2": 78,
+    "spoon3": 105,
+    "cup5": 6,
+    "spoon1": 10,
+    "small-glass4": 1
+   }
+  },
+  "buridan-06": {
+   "batch_seed": 15989729189589794111,
+   "counts": {
+    "spoon2": 133,
+    "fork1": 59,
+    "small-glass2": 5,
+    "spoon1": 2,
+    "cup3": 1
+   }
+  },
+  "buridan-07": {
+   "batch_seed": 5544058324202671369,
+   "counts": {
+    "spoon2": 141,
+    "fork1": 54,
+    "spoon1": 2,
+    "cup3": 2,
+    "cup4": 1
+   }
+  },
+  "buridan-08": {
+   "batch_seed": 7709824724567532870,
+   "counts": {
+    "spoon2": 140,
+    "fork1": 51,
+    "spoon1": 4,
+    "cup4": 3,
+    "cup3": 2
+   }
+  },
+  "buridan-09": {
+   "batch_seed": 11388438615696422136,
+   "counts": {
+    "spoon2": 189,
+    "spoon1": 3,
+    "cup4": 1,
+    "small-glass1": 2,
+    "small-glass2": 1,
+    "salt-shaker1": 3,
+    "cup3": 1
+   }
+  },
+  "buridan-10": {
+   "batch_seed": 6052707525847180587,
+   "counts": {
+    "spoon2": 175,
+    "fork1": 24,
+    "spoon1": 1
+   }
+  },
+  "buridan-11": {
+   "batch_seed": 12957581485927802146,
+   "counts": {
+    "spoon2": 179,
+    "spoon1": 4,
+    "fork1": 12,
+    "cup4": 5
+   }
+  },
+  "buridan-12": {
+   "batch_seed": 3242894664176987077,
+   "counts": {
+    "fork1": 32,
+    "small-glass1": 7,
+    "spoon2": 156,
+    "cup5": 3,
+    "cup6": 2
+   }
+  },
+  "buridan-13": {
+   "batch_seed": 15804896479465459546,
+   "counts": {
+    "spoon2": 196,
+    "salt-shaker1": 4
+   }
+  },
+  "figure-ground-01": {
+   "batch_seed": 14140418067915090817,
+   "counts": {
+    "fork1": 104,
+    "fork2": 95,
+    "small-glass1": 1
+   }
+  }
+ }
+}

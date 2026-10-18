@@ -6,9 +6,9 @@ That covers a map of the original Chez Scheme source, the decisions behind the R
 original. It also has the trace format both ports must reproduce, logs of bugs and oddities,
 timing tables, a list of follow-up work, Marshall's dissertation with its figures, and
 screenshots. Most of these files were written and kept up to date by the Ralph loops that
-built the ports ([`../ralph_loops/`](../ralph_loops/README.md)). Item numbers such as
-"item 13" in them refer to the work items of [loop0001](../ralph_loops/loop0001/README.md)
-(Racket) or [loop0002](../ralph_loops/loop0002/README.md) (Python).
+built the ports ([`../ralph_loops/`](https://github.com/fargonauts/metacat/blob/main/ralph_loops/README.md)). Item numbers such as
+"item 13" in them refer to the work items of [loop0001](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0001/README.md)
+(Racket) or [loop0002](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0002/README.md) (Python).
 
 ## Suggested reading order for newcomers
 

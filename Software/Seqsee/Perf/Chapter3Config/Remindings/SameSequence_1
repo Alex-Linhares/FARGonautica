@@ -1,0 +1,10 @@
+Type = LTM_SELF_CONTEXT
+custom_legend = #FF9900; Seqsee's performance on sequence, having seen it n times before
+
+SplitChart = 1
+[Sequences]
+seq = ({1 1} 2 3)(1 {2 2} 3 4) (1 2 {3 3} 4 5)|(1 2 3 {4 4} 5 6)|(1 2 3 4 {5 5} 6 7)
+
+[Cluster_1]
+exact_feature_set=-f=AllowSquinting;-f=LTM;-f=LTM_expt
+color=#FF0000

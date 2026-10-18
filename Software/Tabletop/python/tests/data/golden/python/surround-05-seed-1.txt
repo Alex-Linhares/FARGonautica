@@ -1,0 +1,922 @@
+tabletop surround-05  seed 1  profile standard  engine python  Henry touches cup1
+   1  T=81.9  a=1.5  FND-GP()  -> found knife2 isolated; jolt knife +19; jolt isolated +19; posted 1 (FND-RL); jolt column +19
+      slipnet posts PK-SALO x5 PK-SALC PK2SALO RC-RL
+      RL tag r1 knife2 COLUMN:middle w1 s5 by find-group
+   2  T=81.9  a=1.5  FND-GP()  -> found cup2 isolated; jolt cup +19; jolt opposite +19; jolt isolated +19; posted 1 (FND-RL); jolt column +19; jolt corner +19; jolt isolated +19
+      slipnet posts PK-SALO x3 PK-SALC x2 PK2SALO x3 PR-RCP RC-RL
+      RL tag r2 cup2 COLUMN:right w1 s7 by find-group
+      RL tag r3 cup2 CORNER w1 s5 by find-group
+      RL tag r4 cup2 LONER w1 s8 by find-group
+   3  T=81.9  a=1.5  FND-GP()  -> fizzled (no new group around cup2)
+      slipnet posts PK-SALO x2 PK-SALC
+   4  T=81.9  a=1.5  FND-GP()  -> found g1 {spoon3 spoon4 small-glass1 fork3 fork4 knife2} gestalt horizontal; jolt spoon +19; jolt opposite +19; jolt spoon +19; jolt opposite +19; jolt small glass +19; jolt opposite +19; jolt fork +19; jolt opposite +19; jolt fork +19; jolt opposite +19; jolt group +14; jolt horizontal +19; posted 9 (FND-GP SAM FD-NNBR x2 FD-END FD-MID PK-SALO x2 FND-RL); jolt column +19; jolt group +19; jolt column +19; jolt group +19; jolt column +19; jolt group +19; jolt column +19; jolt group +19; jolt column +19; jolt group +19
+      slipnet posts FND-GP x7 PK-SALO x7 PK-SALC RC-RL x7
+      RL tag r5 spoon3 COLUMN:left w1 s8 by find-group
+      RL tag r6 spoon3 MEMBER w1 s6 by find-group
+      RL tag r7 spoon4 COLUMN:left w1 s9 by find-group
+      RL tag r8 spoon4 MEMBER w1 s8 by find-group
+      RL tag r9 small-glass1 COLUMN:left w1 s11 by find-group
+      RL tag r10 small-glass1 MEMBER w1 s9 by find-group
+      RL tag r11 fork3 COLUMN:left w1 s12 by find-group
+      RL tag r12 fork3 MEMBER w1 s11 by find-group
+      RL tag r13 fork4 COLUMN:left w1 s14 by find-group
+      RL tag r14 fork4 MEMBER w1 s12 by find-group
+   5  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in upper-right)
+      slipnet posts PK-SALO PK-SALC
+   6  T=81.9  a=1.5  FND-GP()  -> fizzled (no new group around knife2)
+      slipnet posts PK-SALO PR-RCP
+   7  T=81.9  a=1.5  PR-RCP()  -> fizzled (no role pair to propose)
+   8  T=81.9  a=1.5  FND-GP()  -> fizzled (no new group around fork3)
+   9  T=81.9  a=1.5  PR-RCP()  -> fizzled (no role pair to propose)
+  10  T=81.9  a=1.5  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+      slipnet posts PR-RCP
+  11  T=81.9  a=1.5  RC-RL()  -> fizzled (the rows of cup1 and its counterparts are not read)
+      slipnet posts CHK-RL
+  12  T=81.9  a=1.5  FND-RL()  -> found r15 table MIDLINE r16 table GAP:below g1 cup2 r17 cup2 POINT_IMAGE:cup1 r18 cup2 ROW:below r2 cup2 COLUMN:right r3 cup2 CORNER r4 cup2 LONER r19 cup2 TWIN:cup1; jolt separator +19; jolt separator +19; jolt diagonal symmetry +19; jolt row +19; jolt sameness +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts SAM PK-SALO PK-SALC x2 FND-RL x3 RC-RL
+      RL tag r15 table MIDLINE w1 s5 by find-roles
+      RL tag r16 table GAP:below g1 cup2 w1 s7 by find-roles
+      RL tag r17 cup2 POINT_IMAGE:cup1 w1 s5 by find-roles
+      RL tag r18 cup2 ROW:below w1 s5 by find-roles
+      RL tag r19 cup2 TWIN:cup1 w1 s5 by find-roles
+  13  T=81.9  a=1.5  FND-RL(knife2)/1  -> found r15 table MIDLINE r16 table GAP:below g1 cup2 r20 knife2 ROW:below r1 knife2 COLUMN:middle r21 knife2 MEMBER; jolt row +19; jolt group +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts FND-GP PK-SALO RC-RL
+      RL tag r20 knife2 ROW:below w1 s7 by find-roles
+      RL tag r21 knife2 MEMBER w1 s12 by find-roles
+  14  T=81.9  a=1.5  RC-RL()  -> fizzled (the rows of cup1 and its counterparts are not read)
+  15  T=81.9  a=1.5  FND-RL()  -> found r15 table MIDLINE r16 table GAP:below g1 cup2 r22 g1 MIRROR_IMAGE:cup1 r23 g1 ROW:below r24 g1 COLUMN:left r25 g1 CORNER; jolt mirror symmetry +19; jolt row +19; jolt column +19; jolt corner +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts PK-SALC PR-RCP x3 RD-WVR RC-RL x2
+      RL tag r22 g1 MIRROR_IMAGE:cup1 w6 s31 by find-roles
+      RL tag r23 g1 ROW:below w6 s33 by find-roles
+      RL tag r24 g1 COLUMN:left w6 s38 by find-roles
+      RL tag r25 g1 CORNER w6 s31 by find-roles
+  16  T=81.9  a=1.5  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts RD-WVR
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+  17  T=81.9  a=1.5  FND-RL()  -> found r15 table MIDLINE r16 table GAP:below g1 cup2 r22 g1 MIRROR_IMAGE:cup1 r23 g1 ROW:below r24 g1 COLUMN:left r25 g1 CORNER; posted 2 (CMP-RL PR-RCP)
+  18  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in middle-right)
+  19  T=81.9  a=1.5  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+  20  T=81.9  a=1.5  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+  21  T=81.9  a=1.5  FND-GP()  -> fizzled (no new group around cup2)
+  22  T=81.9  a=1.5  RC-RL()  -> fizzled (the rows of cup1 and its counterparts are not read)
+  23  T=81.9  a=1.5  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+      slipnet posts CHK-RL
+  24  T=81.9  a=1.5  FND-GP()  -> fizzled (no new group around cup2)
+  25  T=81.9  a=1.5  PR-RCP()/1  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PK-SALO PR-RCP
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+  26  T=81.9  a=1.5  RC-RL()  -> fizzled (the rows of cup1 and its counterparts are not read)
+      slipnet posts PK-SALO
+  27  T=81.9  a=1.5  PK-SALO()  -> picked cup2 and cup1; posted 1 (CT-CP)
+      slipnet posts RD-WVR
+  28  T=81.9  a=1.5  FND-GP()  -> fizzled (no new group around cup2)
+  29  T=81.9  a=1.5  PK-SALO()  -> picked cup2 and cup1; posted 1 (CT-CP)
+  30  T=81.9  a=1.5  CT-CP(cup2 cup1)/1  -> passed cp1 cup2=cup1 static 62 p=0.62; posted 1 (CP-COMP)
+      slipnet posts PR-RCP
+      RL used cup2 COLUMN by C6: placement of cup2 read in the right column
+  31  T=81.9  a=1.5  FND-RL()  -> found r15 table MIDLINE r16 table GAP:below g1 cup2 r26 cup1 POINT_IMAGE:cup2 r27 cup1 MIRROR_IMAGE:spoon3 r28 cup1 MIRROR_IMAGE:spoon4 r29 cup1 MIRROR_IMAGE:small-glass1 r30 cup1 MIRROR_IMAGE:fork3 r31 cup1 MIRROR_IMAGE:fork4 r32 cup1 MIRROR_IMAGE:g1 r33 cup1 ROW:above r34 cup1 COLUMN:left; jolt diagonal symmetry +19; jolt mirror symmetry +19; jolt mirror symmetry +19; jolt mirror symmetry +19; jolt mirror symmetry +19; jolt mirror symmetry +19; jolt mirror symmetry +19; jolt row +19; jolt column +19; posted 3 (CMP-RL PR-RCP RC-RL)
+      slipnet posts PK-SALC x9 PR-RCP RC-RL x3
+      RL tag r26 cup1 POINT_IMAGE:cup2 w1 s7 by find-roles
+      RL tag r27 cup1 MIRROR_IMAGE:spoon3 w1 s7 by find-roles
+      RL drop r26 cup1 POINT_IMAGE (lost to r27)
+      RL tag r28 cup1 MIRROR_IMAGE:spoon4 w1 s9 by find-roles
+      RL tag r29 cup1 MIRROR_IMAGE:small-glass1 w1 s10 by find-roles
+      RL tag r30 cup1 MIRROR_IMAGE:fork3 w1 s12 by find-roles
+      RL tag r31 cup1 MIRROR_IMAGE:fork4 w1 s13 by find-roles
+      RL tag r32 cup1 MIRROR_IMAGE:g1 w1 s15 by find-roles
+      RL tag r33 cup1 ROW:above w1 s8 by find-roles
+      RL tag r34 cup1 COLUMN:left w1 s11 by find-roles
+  32  T=81.9  a=1.5  PR-RCP()/1  -> proposed cup1 and g1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PK-SALO
+      RL used cup1 MIRROR_IMAGE by C1: create-cp cup1 g1
+      RL used cup1 ROW by C1: create-cp cup1 g1
+      RL used g1 ROW by C1: create-cp cup1 g1
+  33  T=81.9  a=1.5  CT-CP(cup1 g1)/2  -> failed cp2 cup1=g1 static -27 p=0.01, removed
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+  34  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in upper-right)
+      slipnet posts FD-MID
+  35  T=81.9  a=1.5  FND-GP()  -> fizzled (no new group around cup2)
+  36  T=81.9  a=1.5  PR-RCP()/1  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts RD-WVR
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+  37  T=81.9  a=1.5  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts RD-WVR
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+  38  T=81.9  a=1.5  CMP-RL(g1)/1  -> found r22 g1 MIRROR_IMAGE:cup1 r23 g1 ROW:below r24 g1 COLUMN:left r25 g1 CORNER; posted 1 (PR-RCP)
+  39  T=81.9  a=1.5  FND-GP()  -> fizzled (no new group around cup2)
+  40  T=81.9  a=1.5  CP-COMP(cp1)/2  -> entered cp1 cup2=cup1 entered the Worldview without a fight, rating 75; jolt opposite +6; jolt diagonal symmetry +6; jolt sameness +6; jolt sameness +6; posted 4 (BLD-CP CP-CLN CHK-WV RD-WVR)
+      slipnet posts SAM
+      T 81.9 -> 41.2 (dQ 0.04 Q 0.75 dWV 1 Tcp 1) by change
+  41  T=41.2  a=4.4  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+  42  T=41.2  a=4.4  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PK-SALO
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      T 41.2 -> 39.4 (dQ 0.04 Q 0.75 dWV 1 Tcp 1) by schedule
+  43  T=39.4  a=4.6  FND-RL()  -> found r15 table MIDLINE r16 table GAP:below g1 cup2 r27 cup1 MIRROR_IMAGE:spoon3 r28 cup1 MIRROR_IMAGE:spoon4 r29 cup1 MIRROR_IMAGE:small-glass1 r30 cup1 MIRROR_IMAGE:fork3 r31 cup1 MIRROR_IMAGE:fork4 r32 cup1 MIRROR_IMAGE:g1 r33 cup1 ROW:above r34 cup1 COLUMN:left; jolt diagonal symmetry +19; posted 3 (CMP-RL PR-RCP RC-RL)
+      slipnet posts PK-SALC
+      RL tag r35 cup1 POINT_IMAGE:cup2 w1 s83 by find-roles
+      RL drop r35 cup1 POINT_IMAGE (lost to r27)
+  44  T=39.4  a=4.6  PR-RCP()/1  -> proposed cup1 and fork3 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used cup1 MIRROR_IMAGE by C1: create-cp cup1 fork3
+      RL used cup1 ROW by C1: create-cp cup1 fork3
+  45  T=39.4  a=4.6  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      T 39.4 -> 37.7 (dQ 0.04 Q 0.75 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 6.0
+  46  T=37.7  a=4.7  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+  47  T=37.7  a=4.7  CMP-RL(cup2)/1  -> found r17 cup2 POINT_IMAGE:cup1 r18 cup2 ROW:below r2 cup2 COLUMN:right r3 cup2 CORNER r4 cup2 LONER r19 cup2 TWIN:cup1; posted 1 (PR-RCP)
+      slipnet posts PR-RCP
+  48  T=37.7  a=4.7  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+      T 37.7 -> 36.1 (dQ 0.03 Q 0.75 dWV 1 Tcp 1) by schedule
+  49  T=36.1  a=4.8  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2; jolt counterpart +19; jolt counterpart +19
+      slipnet posts RC-RL x3
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      RL tag r36 cup2 COUNTERPART:cup1 tier3 w1 s80 by recast-role
+      RL tag r37 knife2 COUNTERPART:cup1 tier4 w1 s82 by recast-role
+  50  T=36.1  a=4.8  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+  51  T=36.1  a=4.8  CT-CP(g1 cup1)/1  -> failed cp3 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 36.1 -> 34.6 (dQ 0.03 Q 0.75 dWV 1 Tcp 1) by schedule
+  52  T=34.6  a=4.9  PR-RCP()/1  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts RD-WVR
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+  53  T=34.6  a=4.9  CMP-RL(g1)/1  -> found r22 g1 MIRROR_IMAGE:cup1 r23 g1 ROW:below r24 g1 COLUMN:left r25 g1 CORNER; posted 1 (PR-RCP)
+  54  T=34.6  a=4.9  FND-RL()  -> found r15 table MIDLINE r16 table GAP:below g1 cup2 r27 cup1 MIRROR_IMAGE:spoon3 r28 cup1 MIRROR_IMAGE:spoon4 r29 cup1 MIRROR_IMAGE:small-glass1 r30 cup1 MIRROR_IMAGE:fork3 r31 cup1 MIRROR_IMAGE:fork4 r32 cup1 MIRROR_IMAGE:g1 r33 cup1 ROW:above r34 cup1 COLUMN:left; jolt diagonal symmetry +19; posted 3 (CMP-RL PR-RCP RC-RL)
+      slipnet posts PK-SALC
+      RL tag r38 cup1 POINT_IMAGE:cup2 w1 s84 by find-roles
+      RL drop r38 cup1 POINT_IMAGE (lost to r27)
+      T 34.6 -> 33.2 (dQ 0.03 Q 0.76 dWV 1 Tcp 1) by schedule
+  55  T=33.2  a=5.0  FND-GP()  -> fizzled (no new group around cup2)
+  56  T=33.2  a=5.0  CT-CP(g1 cup1)/1  -> failed cp4 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+  57  T=33.2  a=5.0  PR-RCP()/1  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      T 33.2 -> 31.9 (dQ 0.03 Q 0.75 dWV 1 Tcp 1) by schedule
+  58  T=31.9  a=5.1  FND-RL()  -> found r15 table MIDLINE r16 table GAP:below g1 cup2 r17 cup2 POINT_IMAGE:cup1 r18 cup2 ROW:below r2 cup2 COLUMN:right r3 cup2 CORNER r4 cup2 LONER r19 cup2 TWIN:cup1; posted 2 (CMP-RL PR-RCP)
+  59  T=31.9  a=5.1  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  60  T=31.9  a=5.1  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      slipnet posts PK-SALO
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 31.9 -> 30.6 (dQ 0.03 Q 0.75 dWV 1 Tcp 1) by schedule
+  61  T=30.6  a=5.2  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  62  T=30.6  a=5.2  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  63  T=30.6  a=5.2  CMP-RL(cup2)/1  -> found r17 cup2 POINT_IMAGE:cup1 r18 cup2 ROW:below r2 cup2 COLUMN:right r3 cup2 CORNER r4 cup2 LONER r19 cup2 TWIN:cup1; posted 1 (PR-RCP)
+      T 30.6 -> 29.5 (dQ 0.03 Q 0.75 dWV 1 Tcp 1) by schedule
+  64  T=29.5  a=5.3  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      slipnet posts PK-SALO
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  65  T=29.5  a=5.3  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      slipnet posts RD-WVR
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      answer schedule: FND-ANS x1 at urgency 8.0
+  66  T=29.5  a=5.3  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      T 29.5 -> 28.3 (dQ 0.02 Q 0.75 dWV 1 Tcp 1) by schedule
+  67  T=28.3  a=5.4  CT-CP(g1 cup1)/1  -> failed cp5 g1=cup1 static -29 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+  68  T=28.3  a=5.4  PR-RCP()/1  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+  69  T=28.3  a=5.4  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      T 28.3 -> 27.3 (dQ 0.02 Q 0.75 dWV 1 Tcp 1) by schedule
+  70  T=27.3  a=5.4  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  71  T=27.3  a=5.4  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      answer schedule: FND-ANS x1 at urgency 9.0
+  72  T=27.3  a=5.4  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 27.3 -> 26.3 (dQ 0.02 Q 0.75 dWV 1 Tcp 1) by schedule
+  73  T=26.3  a=5.5  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  74  T=26.3  a=5.5  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      answer schedule: FND-ANS x1 at urgency 9.0
+  75  T=26.3  a=5.5  CT-CP(cup2 cup1)/1  -> fizzled (cup2=cup1: exists)
+      T 26.3 -> 25.3 (dQ 0.02 Q 0.75 dWV 1 Tcp 1) by schedule
+  76  T=25.3  a=5.6  CHK-RL()  -> removed r12 fork3 MEMBER broken at strength 7
+      RL drop r12 fork3 MEMBER (broken)
+  77  T=25.3  a=5.6  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  78  T=25.3  a=5.6  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      T 25.3 -> 24.4 (dQ 0.02 Q 0.75 dWV 1 Tcp 1) by schedule
+  79  T=24.4  a=5.7  PK-SALO()  -> fizzled (nothing to pair with cup2)
+      RL used cup2 COUNTERPART by C2: picked cup2 for cup1
+      answer schedule: FND-ANS x1 at urgency 10.0
+  80  T=24.4  a=5.7  CT-CP(g1 cup1)/1  -> failed cp6 g1=cup1 static -29 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+  81  T=24.4  a=5.7  RC-RL()/1  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 24.4 -> 23.5 (dQ 0.02 Q 0.75 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 10.0
+  82  T=23.5  a=5.7  CT-CP(g1 cup1)/1  -> failed cp7 g1=cup1 static -29 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 10.0
+  83  T=23.5  a=5.7  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  84  T=23.5  a=5.7  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 23.5 -> 22.7 (dQ 0.02 Q 0.75 dWV 1 Tcp 1) by schedule
+  85  T=22.7  a=5.8  CT-CP(g1 cup1)/1  -> failed cp8 g1=cup1 static -29 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+  86  T=22.7  a=5.8  FND-GP()  -> fizzled (nothing in upper-right)
+  87  T=22.7  a=5.8  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+      T 22.7 -> 21.9 (dQ 0.02 Q 0.75 dWV 1 Tcp 1) by schedule
+  88  T=21.9  a=5.8  CT-CP(g1 cup1)/1  -> failed cp9 g1=cup1 static -30 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+  89  T=21.9  a=5.8  FND-RL(cup2)/1  -> found r15 table MIDLINE r16 table GAP:below g1 cup2 r17 cup2 POINT_IMAGE:cup1 r18 cup2 ROW:below r2 cup2 COLUMN:right r3 cup2 CORNER r4 cup2 LONER r19 cup2 TWIN:cup1; posted 2 (CMP-RL PR-RCP)
+  90  T=21.9  a=5.8  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+      T 21.9 -> 21.2 (dQ 0.02 Q 0.75 dWV 1 Tcp 1) by schedule
+  91  T=21.2  a=5.9  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  92  T=21.2  a=5.9  CT-CP(g1 cup1)/1  -> failed cp10 g1=cup1 static -30 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+  93  T=21.2  a=5.9  FD-NNBR(knife2)/1  -> found neighbours of knife2 in g1: fork4 left; jolt neighbor +14; posted 3 (FD-NNBR BD-OB0 FND-RL)
+      T 21.2 -> 20.5 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+  94  T=20.5  a=5.9  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+  95  T=20.5  a=5.9  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+  96  T=20.5  a=5.9  CT-CP(g1 cup1)/2  -> failed cp11 g1=cup1 static -30 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 20.5 -> 19.8 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+  97  T=19.8  a=6.0  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+      answer schedule: FND-ANS x1 at urgency 11.0
+  98  T=19.8  a=6.0  FND-GP()  -> fizzled (nothing in middle-right)
+  99  T=19.8  a=6.0  BD-OB0(p1)/2  -> failed p1 {fork4 knife2} mixed at stage 0, p=0.00
+      T 19.8 -> 19.2 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+ 100  T=19.2  a=6.0  FND-GP()  -> fizzled (nothing in middle-right)
+ 101  T=19.2  a=6.0  FND-GP()  -> fizzled (no new group around cup2)
+ 102  T=19.2  a=6.0  FND-GP()  -> fizzled (no new group around cup2)
+      T 19.2 -> 18.6 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 103  T=18.6  a=6.1  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 104  T=18.6  a=6.1  FND-GP()  -> fizzled (no new group around cup2)
+ 105  T=18.6  a=6.1  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+      T 18.6 -> 18.0 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+ 106  T=18.0  a=6.1  CMP-RL(cup1)/1  -> found r40 cup1 MIRROR_IMAGE:spoon3 r28 cup1 MIRROR_IMAGE:spoon4 r29 cup1 MIRROR_IMAGE:small-glass1 r30 cup1 MIRROR_IMAGE:fork3 r31 cup1 MIRROR_IMAGE:fork4 r32 cup1 MIRROR_IMAGE:g1 r33 cup1 ROW:above r34 cup1 COLUMN:left; jolt diagonal symmetry +19; jolt mirror symmetry +19; posted 1 (PR-RCP)
+      slipnet posts PK-SALC x5
+      RL tag r39 cup1 POINT_IMAGE:cup2 w1 s82 by compare-roles
+      RL drop r27 cup1 MIRROR_IMAGE (lost to r39)
+      RL drop r39 cup1 POINT_IMAGE (lost to r28)
+      RL tag r40 cup1 MIRROR_IMAGE:spoon3 w1 s82 by compare-roles
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 107  T=18.0  a=6.1  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 108  T=18.0  a=6.1  FD-MID(g1)/1  -> found middles of g1 {spoon4 small-glass1 fork3 fork4}; jolt middle +19; jolt spoon +19; jolt middle +19; jolt small glass +19; jolt middle +19; jolt fork +19; jolt middle +19; jolt fork +19
+      slipnet posts FD-MID x5 PK-SALO x4
+      T 18.0 -> 17.6 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+ 109  T=17.6  a=6.1  FD-MID()  -> fizzled (no group without middles)
+ 110  T=17.6  a=6.1  FD-MID()  -> fizzled (no group without middles)
+ 111  T=17.6  a=6.1  CMP-RL(cup1)/1  -> found r40 cup1 MIRROR_IMAGE:spoon3 r28 cup1 MIRROR_IMAGE:spoon4 r29 cup1 MIRROR_IMAGE:small-glass1 r30 cup1 MIRROR_IMAGE:fork3 r31 cup1 MIRROR_IMAGE:fork4 r32 cup1 MIRROR_IMAGE:g1 r33 cup1 ROW:above r34 cup1 COLUMN:left; jolt diagonal symmetry +19; posted 1 (PR-RCP)
+      slipnet posts PK-SALC
+      RL tag r41 cup1 POINT_IMAGE:cup2 w1 s83 by compare-roles
+      RL drop r41 cup1 POINT_IMAGE (lost to r28)
+      T 17.6 -> 17.2 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+ 112  T=17.2  a=6.2  BLD-CP(cp1)/3  -> described cp1 cup2=cup1 [right-left cup-cup one-one] level top
+      RL used cup2 COLUMN by C6: placement of cup2 read in the right column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+ 113  T=17.2  a=6.2  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+ 114  T=17.2  a=6.2  FND-GP()  -> fizzled (no new group around cup2)
+      T 17.2 -> 16.8 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+ 115  T=16.8  a=6.2  FND-GP()  -> found g2 {spoon4 small-glass1 fork3 fork4 knife2} gestalt horizontal; jolt group +14; jolt horizontal +19; posted 9 (FND-GP SAM FD-NNBR x2 FD-END FD-MID PK-SALO x2 FND-RL)
+      slipnet posts FND-GP CHK-RL
+ 116  T=16.8  a=6.2  FND-GP()  -> fizzled (no new group around knife2)
+      slipnet posts CHK-RL
+ 117  T=16.8  a=6.2  FD-MID()  -> found middles of g2 {small-glass1 fork3 fork4}; jolt middle +19; jolt small glass +19; jolt middle +19; jolt fork +19; jolt middle +19; jolt fork +19
+      slipnet posts FD-MID x4 PK-SALO x4
+      T 16.8 -> 16.4 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+ 118  T=16.4  a=6.2  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+ 119  T=16.4  a=6.2  FND-GP()  -> fizzled (no new group around small-glass1)
+      answer schedule: FND-ANS x1 at urgency 13.0
+ 120  T=16.4  a=6.2  FD-MID()  -> fizzled (no group without middles)
+      T 16.4 -> 16.0 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 13.0
+ 121  T=16.0  a=6.3  RC-RL()/1  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 122  T=16.0  a=6.3  RC-RL()/1  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 123  T=16.0  a=6.3  FND-RL(g2)/1  -> found r15 table MIDLINE r42 table GAP:below g2 cup2 r43 g2 MIRROR_IMAGE:cup1 r44 g2 ROW:below r45 g2 COLUMN:left r46 g2 CORNER; jolt separator +19; jolt mirror symmetry +19; jolt row +19; jolt column +19; jolt corner +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts PK-SALC PR-RCP x2 FND-RL RC-RL x4
+      RL tag r42 table GAP:below g2 cup2 w1 s81 by find-roles
+      RL tag r43 g2 MIRROR_IMAGE:cup1 w5 s100 by find-roles
+      RL tag r44 g2 ROW:below w5 s26 by find-roles
+      RL tag r45 g2 COLUMN:left w5 s27 by find-roles
+      RL tag r46 g2 CORNER w5 s27 by find-roles
+      T 16.0 -> 15.6 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 13.0
+ 124  T=15.6  a=6.3  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts FD-END RD-WVR
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+ 125  T=15.6  a=6.3  PR-RCP()  -> proposed g2 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts CHK-RL RC-RL
+      RL used g2 MIRROR_IMAGE by C1: create-cp g2 cup1
+      RL used g2 ROW by C1: create-cp g2 cup1
+      RL used cup1 ROW by C1: create-cp g2 cup1
+ 126  T=15.6  a=6.3  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 15.6 -> 15.2 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 13.0
+ 127  T=15.2  a=6.3  FND-GP()  -> fizzled (no new group around knife2)
+ 128  T=15.2  a=6.3  RC-RL()  -> found cup1 [] tiers 3:cup2 4:knife2
+      RL recast cup1 [] tiers 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      answer schedule: FND-ANS x1 at urgency 13.0
+ 129  T=15.2  a=6.3  FD-MID()  -> fizzled (no group without middles)
+      T 15.2 -> 14.9 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+ 130  T=14.9  a=6.3  FND-RL()  -> found r15 table MIDLINE r42 table GAP:below g2 cup2 r47 small-glass1 MIRROR_IMAGE:cup1 r48 small-glass1 ROW:below r9 small-glass1 COLUMN:left r10 small-glass1 MEMBER r49 small-glass1 FIGURE; jolt mirror symmetry +19; jolt row +19; jolt figure +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts PK-SALC PR-RCP x3 RD-WVR RC-RL
+      RL tag r47 small-glass1 MIRROR_IMAGE:cup1 w1 s83 by find-roles
+      RL tag r48 small-glass1 ROW:below w1 s7 by find-roles
+      RL tag r49 small-glass1 FIGURE w1 s6 by find-roles
+ 131  T=14.9  a=6.3  RC-RL()  -> found cup1 [] tiers 2:small-glass1 3:cup2 4:knife2; jolt counterpart +19
+      slipnet posts RC-RL
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      RL tag r50 small-glass1 COUNTERPART:cup1 tier2 w1 s81 by recast-role
+      answer schedule: FND-ANS x1 at urgency 13.0
+ 132  T=14.9  a=6.3  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      T 14.9 -> 14.5 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+ 133  T=14.5  a=6.4  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+ 134  T=14.5  a=6.4  PR-RCP()  -> proposed g2 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 MIRROR_IMAGE by C1: create-cp g2 cup1
+      RL used g2 ROW by C1: create-cp g2 cup1
+      RL used cup1 ROW by C1: create-cp g2 cup1
+      answer schedule: FND-ANS x1 at urgency 14.0
+ 135  T=14.5  a=6.4  RC-RL()  -> found cup1 [] tiers 2:small-glass1 3:cup2 4:knife2
+      slipnet posts CHK-RL
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 14.5 -> 14.2 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+ 136  T=14.2  a=6.4  PR-RCP()/1  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+ 137  T=14.2  a=6.4  FND-GP()  -> fizzled (no new group around spoon3)
+      slipnet posts CHK-RL
+      answer schedule: FND-ANS x1 at urgency 14.0
+ 138  T=14.2  a=6.4  CT-CP(g2 cup1)/1  -> failed cp12 g2=cup1 static -29 p=0.01, removed
+      slipnet posts CHK-RL
+      RL used g2 COLUMN by C6: placement of g2 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 14.2 -> 13.8 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 14.0
+ 139  T=13.8  a=6.4  RC-RL()  -> found cup1 [] tiers 2:small-glass1 3:cup2 4:knife2
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      answer schedule: FND-ANS x1 at urgency 14.0
+ 140  T=13.8  a=6.4  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+      slipnet posts CHK-RL
+ 141  T=13.8  a=6.4  RC-RL()  -> found cup1 [] tiers 2:small-glass1 3:cup2 4:knife2
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 13.8 -> 13.5 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 14.0
+ 142  T=13.5  a=6.4  CT-CP(g2 cup1)/1  -> failed cp13 g2=cup1 static -29 p=0.01, removed
+      slipnet posts CHK-RL
+      RL used g2 COLUMN by C6: placement of g2 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+ 143  T=13.5  a=6.4  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      answer schedule: FND-ANS x1 at urgency 14.0
+ 144  T=13.5  a=6.4  CT-CP(g1 cup1)/1  -> failed cp14 g1=cup1 static -29 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 13.5 -> 13.2 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+ 145  T=13.2  a=6.5  FD-MID()  -> fizzled (no group without middles)
+ 146  T=13.2  a=6.5  RC-RL()  -> found cup1 [] tiers 2:small-glass1 3:cup2 4:knife2
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 147  T=13.2  a=6.5  CT-CP(g1 cup1)/1  -> failed cp15 g1=cup1 static -29 p=0.01, removed
+      slipnet posts CHK-RL
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 13.2 -> 13.0 (dQ 0.01 Q 0.74 dWV 1 Tcp 1) by schedule
+ 148  T=13.0  a=6.5  CT-CP(g1 cup1)/1  -> failed cp16 g1=cup1 static -29 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 14.0
+ 149  T=13.0  a=6.5  FD-MID()  -> fizzled (no group without middles)
+      answer schedule: FND-ANS x1 at urgency 14.0
+ 150  T=13.0  a=6.5  CMP-RL(cup1)/1  -> found r40 cup1 MIRROR_IMAGE:spoon3 r28 cup1 MIRROR_IMAGE:spoon4 r29 cup1 MIRROR_IMAGE:small-glass1 r30 cup1 MIRROR_IMAGE:fork3 r31 cup1 MIRROR_IMAGE:fork4 r32 cup1 MIRROR_IMAGE:g1 r52 cup1 MIRROR_IMAGE:g2 r33 cup1 ROW:above r34 cup1 COLUMN:left; jolt diagonal symmetry +19; jolt mirror symmetry +19; posted 1 (PR-RCP)
+      slipnet posts PK-SALC x2
+      RL tag r51 cup1 POINT_IMAGE:cup2 w1 s82 by compare-roles
+      RL drop r51 cup1 POINT_IMAGE (lost to r28)
+      RL tag r52 cup1 MIRROR_IMAGE:g2 w1 s83 by compare-roles
+      T 13.0 -> 12.9 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 14.0
+ 151  T=12.9  a=6.5  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PR-RCP
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+ 152  T=12.9  a=6.5  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PR-RCP
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      answer schedule: FND-ANS x1 at urgency 14.0
+ 153  T=12.9  a=6.5  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      T 12.9 -> 12.7 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+ 154  T=12.7  a=6.5  FND-RL(g1)/1  -> found r15 table MIDLINE r42 table GAP:below g2 cup2 r22 g1 MIRROR_IMAGE:cup1 r23 g1 ROW:below r24 g1 COLUMN:left r25 g1 CORNER; posted 2 (CMP-RL PR-RCP)
+ 155  T=12.7  a=6.5  CT-CP(g1 cup1)/1  -> failed cp17 g1=cup1 static -29 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 156  T=12.7  a=6.5  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      T 12.7 -> 12.4 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 157  T=12.4  a=6.5  FND-GP()  -> fizzled (no new group around cup2)
+      slipnet posts PR-RCP
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 158  T=12.4  a=6.5  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 159  T=12.4  a=6.5  CT-CP(g1 cup1)/1  -> failed cp18 g1=cup1 static -29 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 12.4 -> 12.2 (dQ 0.01 Q 0.75 dWV 1 Tcp 1) by schedule
+ 160  T=12.2  a=6.5  CT-CP(g1 cup1)/1  -> failed cp19 g1=cup1 static -29 p=0.01, removed
+      slipnet posts PR-RCP
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 161  T=12.2  a=6.5  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 162  T=12.2  a=6.5  FD-MID()  -> fizzled (no group without middles)
+      T 12.2 -> 12.0 (dQ 0.00 Q 0.75 dWV 1 Tcp 1) by schedule
+ 163  T=12.0  a=6.6  FND-GP()  -> fizzled (no new group around fork3)
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 164  T=12.0  a=6.6  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+ 165  T=12.0  a=6.6  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+      slipnet posts CHK-RL
+      T 12.0 -> 11.8 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 166  T=11.8  a=6.6  CT-CP(g1 cup1)/2  -> failed cp20 g1=cup1 static -29 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 167  T=11.8  a=6.6  FD-MID()  -> fizzled (no group without middles)
+ 168  T=11.8  a=6.6  FD-MID()  -> fizzled (no group without middles)
+      slipnet posts FD-NNBR
+      T 11.8 -> 11.6 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 169  T=11.6  a=6.6  FD-NNBR()  -> found neighbours of small-glass1 in g1: spoon4 left, fork3 right; jolt neighbor +14; posted 5 (FD-NNBR BD-OB0 FD-NNBR BD-OB0 FND-RL)
+      slipnet posts FD-NNBR
+ 170  T=11.6  a=6.6  BD-OB0(p2)/1  -> passed p2 {spoon4 small-glass1} mixed stage 0, p=1.00; posted 1 (BD-OB1)
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 171  T=11.6  a=6.6  BD-OB0(p3)/1  -> passed p3 {small-glass1 fork3} mixed stage 0, p=1.00; posted 1 (BD-OB1)
+      T 11.6 -> 11.5 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 172  T=11.5  a=6.6  FND-GP()  -> found g3 {spoon3 spoon4 small-glass1 fork3 fork4} gestalt horizontal; jolt group +14; jolt horizontal +19; posted 9 (FND-GP SAM FD-NNBR x2 FD-END FD-MID PK-SALO x2 FND-RL)
+      slipnet posts FND-GP
+      RL drop r42 table GAP (structure gone)
+      RL drop r43 g2 MIRROR_IMAGE (structure gone)
+      RL drop r44 g2 ROW (structure gone)
+      RL drop r45 g2 COLUMN (structure gone)
+      RL drop r46 g2 CORNER (structure gone)
+      RL drop r52 cup1 MIRROR_IMAGE (structure gone)
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 173  T=11.5  a=6.6  FND-GP()  -> fizzled (no new group around small-glass1)
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 174  T=11.5  a=6.6  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+      slipnet posts PR-RCP CHK-RL
+      T 11.5 -> 11.3 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 175  T=11.3  a=6.6  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts SAM
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+ 176  T=11.3  a=6.6  FND-RL(small-glass1)/1  -> found r15 table MIDLINE r47 small-glass1 MIRROR_IMAGE:cup1 r48 small-glass1 ROW:below r9 small-glass1 COLUMN:left r10 small-glass1 MEMBER r53 small-glass1 ANCHOR r22 g1 MIRROR_IMAGE:cup1 r54 g1 CONTAINER:small-glass1 r23 g1 ROW:below r24 g1 COLUMN:left r25 g1 CORNER; jolt anchor +19; jolt container +19; posted 3 (CMP-RL x2 PR-RCP)
+      slipnet posts PR-RCP x4 FND-RL
+      RL tag r53 small-glass1 ANCHOR w1 s8 by find-roles
+      RL tag r54 g1 CONTAINER:small-glass1 w6 s33 by find-roles
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+ 177  T=11.3  a=6.6  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      pushed off: FND-GP() posted at 0
+      T 11.3 -> 11.1 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      pushed off: FND-GP() posted at 0
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 178  T=11.1  a=6.6  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      pushed off: FND-GP() posted at 0
+ 179  T=11.1  a=6.6  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 180  T=11.1  a=6.6  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      pushed off: FND-GP() posted at 0
+      T 11.1 -> 11.0 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+ 181  T=11.0  a=6.6  CT-CP(g1 cup1)/1  -> failed cp21 g1=cup1 static -29 p=0.01, removed
+      slipnet posts PR-RCP FND-RL
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      pushed off: FND-GP() posted at 0
+ 182  T=11.0  a=6.6  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 183  T=11.0  a=6.6  FND-RL()  -> found r15 table MIDLINE r22 g1 MIRROR_IMAGE:cup1 r54 g1 CONTAINER:small-glass1 r23 g1 ROW:below r24 g1 COLUMN:left r25 g1 CORNER; posted 2 (CMP-RL PR-RCP)
+      pushed off: FND-GP() posted at 0
+      T 11.0 -> 10.8 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+ 184  T=10.8  a=6.6  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+      slipnet posts SAM
+      pushed off: FND-GP() posted at 0
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 185  T=10.8  a=6.6  FND-RL()  -> found r15 table MIDLINE r40 cup1 MIRROR_IMAGE:spoon3 r56 cup1 MIRROR_IMAGE:spoon4 r29 cup1 MIRROR_IMAGE:small-glass1 r30 cup1 MIRROR_IMAGE:fork3 r31 cup1 MIRROR_IMAGE:fork4 r32 cup1 MIRROR_IMAGE:g1 r57 cup1 MIRROR_IMAGE:g3 r33 cup1 ROW:above r34 cup1 COLUMN:left; jolt diagonal symmetry +19; jolt mirror symmetry +19; jolt mirror symmetry +19; posted 3 (CMP-RL PR-RCP RC-RL)
+      slipnet posts PK-SALC x4
+      RL tag r55 cup1 POINT_IMAGE:cup2 w1 s81 by find-roles
+      RL drop r28 cup1 MIRROR_IMAGE (lost to r55)
+      RL drop r55 cup1 POINT_IMAGE (lost to r29)
+      RL tag r56 cup1 MIRROR_IMAGE:spoon4 w1 s82 by find-roles
+      RL tag r57 cup1 MIRROR_IMAGE:g3 w1 s84 by find-roles
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 186  T=10.8  a=6.6  PR-RCP()/1  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      pushed off: FND-GP() posted at 0
+      T 10.8 -> 10.9 (dQ 0.00 Q 0.75 dWV 1 Tcp 1) by schedule
+      pushed off: FND-GP() posted at 0
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 187  T=10.9  a=6.6  PR-RCP()/1  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts RC-RL
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      pushed off: FND-GP() posted at 0
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 188  T=10.9  a=6.6  CT-CP(g1 cup1)/1  -> failed cp22 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+ 189  T=10.9  a=6.6  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      T 10.9 -> 10.8 (dQ 0.00 Q 0.75 dWV 1 Tcp 1) by schedule
+ 190  T=10.8  a=6.6  CT-CP(g1 cup1)/1  -> failed cp23 g1=cup1 static -28 p=0.01, removed
+      slipnet posts PR-RCP
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      pushed off: FND-GP() posted at 0
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 191  T=10.8  a=6.6  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      pushed off: FND-GP() posted at 0
+ 192  T=10.8  a=6.6  FD-NNBR()  -> fizzled (no new neighbour of small-glass1)
+      T 10.8 -> 10.6 (dQ 0.00 Q 0.75 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 193  T=10.6  a=6.7  PK-SALO()  -> fizzled (nothing to pair with cup2)
+      slipnet posts PR-RCP
+      RL used cup2 COUNTERPART by C2: picked cup2 for cup1
+      pushed off: FND-GP() posted at 0
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 194  T=10.6  a=6.7  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      pushed off: PK2SALO() posted at 0
+      pushed off: PK2SALO() posted at 0
+      answer schedule: FND-ANS x1 at urgency 15.0
+ 195  T=10.6  a=6.7  CT-CP(g1 cup1)/1  -> failed cp24 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 10.6 -> 10.5 (dQ 0.00 Q 0.75 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 196  T=10.5  a=6.7  CT-CP(g1 cup1)/1  -> failed cp25 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+ 197  T=10.5  a=6.7  CT-CP(g1 cup1)/1  -> failed cp26 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      aged out: PK2SALO() posted at 0
+      aged out: PK-SALO() posted at 0
+      aged out: PK-SALO() posted at 0
+      aged out: PK-SALC() posted at 0
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 198  T=10.5  a=6.7  CT-CP(g1 cup1)/1  -> failed cp27 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 10.5 -> 10.4 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      aged out: PK-SALO() posted at 1
+      aged out: PK-SALO() posted at 1
+      aged out: PK-SALO() posted at 1
+      aged out: PK-SALO() posted at 1
+      aged out: PK2SALO() posted at 1
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 199  T=10.4  a=6.7  CT-CP(g1 cup1)/1  -> failed cp28 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      aged out: PK-SALO() posted at 2
+      aged out: PK-SALO() posted at 2
+      aged out: PK-SALC() posted at 2
+      aged out: PK-SALC() posted at 2
+      aged out: PK2SALO() posted at 2
+      aged out: PK2SALO() posted at 2
+      aged out: PK2SALO() posted at 2
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 200  T=10.4  a=6.7  CHK-RL()  -> removed r5 spoon3 COLUMN:left broken at strength 7
+      RL drop r5 spoon3 COLUMN (broken)
+      aged out: PK-SALO() posted at 3
+      aged out: PK-SALC() posted at 3
+ 201  T=10.4  a=6.7  CT-CP(g1 cup1)/1  -> failed cp29 g1=cup1 static -28 p=0.01, removed
+      slipnet posts PK2SALO
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 10.4 -> 10.3 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      aged out: FND-GP() posted at 4
+      aged out: SAM(g1) posted at 4
+      aged out: FD-NNBR(spoon3) posted at 4
+      aged out: FD-END(g1) posted at 4
+      aged out: PK-SALO() posted at 4
+      aged out: PK-SALO() posted at 4
+      aged out: FND-GP() posted at 4
+      aged out: FND-GP() posted at 4
+      aged out: PK-SALO() posted at 4
+      aged out: PK-SALO() posted at 4
+      aged out: PK-SALO() posted at 4
+      aged out: PK-SALO() posted at 4
+      aged out: PK-SALO() posted at 4
+      aged out: PK-SALO() posted at 4
+      aged out: PK-SALC() posted at 4
+ 202  T=10.3  a=6.7  FND-RL(g3)/1  -> found r15 table MIDLINE r58 g3 MIRROR_IMAGE:cup1 r59 g3 CONTAINER:small-glass1 r60 g3 ROW:below r61 g3 COLUMN:left r62 g3 CORNER; jolt mirror symmetry +19; jolt container +19; jolt row +19; jolt column +19; jolt corner +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts PK-SALC PR-RCP x2 RC-RL x2
+      RL tag r58 g3 MIRROR_IMAGE:cup1 w5 s100 by find-roles
+      RL tag r59 g3 CONTAINER:small-glass1 w5 s28 by find-roles
+      RL tag r60 g3 ROW:below w5 s26 by find-roles
+      RL tag r61 g3 COLUMN:left w5 s27 by find-roles
+      RL tag r62 g3 CORNER w5 s27 by find-roles
+      aged out: PK-SALO() posted at 5
+      aged out: PK-SALC() posted at 5
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 203  T=10.3  a=6.7  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      aged out: PK-SALO() posted at 6
+ 204  T=10.3  a=6.7  PR-RCP()  -> proposed g3 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g3 MIRROR_IMAGE by C1: create-cp g3 cup1
+      RL used g3 ROW by C1: create-cp g3 cup1
+      RL used cup1 ROW by C1: create-cp g3 cup1
+      T 10.3 -> 10.2 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 205  T=10.2  a=6.7  CT-CP(g1 cup1)/3  -> failed cp30 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 206  T=10.2  a=6.7  RC-RL()  -> found cup1 [] tiers 2:small-glass1 3:cup2 4:knife2
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 207  T=10.2  a=6.7  RC-RL()  -> found cup1 [] tiers 2:small-glass1 3:cup2 4:knife2
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 10.2 -> 10.1 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 208  T=10.1  a=6.7  PR-RCP()/2  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts SAM
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      aged out: CHK-RL() posted at 11
+ 209  T=10.1  a=6.7  RC-RL()  -> found cup1 [] tiers 2:small-glass1 3:cup2 4:knife2
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      aged out: SAM() posted at 12
+      aged out: PK-SALO() posted at 12
+      aged out: PK-SALC() posted at 12
+      aged out: PK-SALC() posted at 12
+ 210  T=10.1  a=6.7  CT-CP(cup1 fork3)/2  -> failed cp31 cup1=fork3 static 25 p=0.25, removed
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      RL used fork3 COLUMN by C6: placement of fork3 read in the left column
+      T 10.1 -> 9.9 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      aged out: CMP-RL(knife2) posted at 13
+      aged out: FND-GP() posted at 13
+      aged out: PK-SALO() posted at 13
+ 211  T=9.9  a=6.7  CT-CP(g3 cup1)/1  -> failed cp32 g3=cup1 static -28 p=0.01, removed
+      RL used g3 COLUMN by C6: placement of g3 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 212  T=9.9  a=6.7  CT-CP(g1 cup1)/1  -> failed cp33 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      aged out: PK-SALC() posted at 15
+ 213  T=9.9  a=6.7  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+      T 9.9 -> 9.8 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      aged out: CHK-RL() posted at 16
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 214  T=9.8  a=6.7  RC-RL()/1  -> found cup1 [] tiers 2:small-glass1 3:cup2 4:knife2
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 3:cup2:6.30466 4:knife2:0.34952
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 215  T=9.8  a=6.7  CT-CP(g1 cup1)/2  -> failed cp34 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 216  T=9.8  a=6.7  CT-CP(g1 cup1)/2  -> failed cp35 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 9.8 -> 9.7 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      aged out: CHK-RL() posted at 19
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 217  T=9.7  a=6.7  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+      aged out: CHK-RL() posted at 20
+ 218  T=9.7  a=6.7  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+ 219  T=9.7  a=6.7  FD-MID(g3)/1  -> found middles of g3 {spoon4 small-glass1 fork3}; jolt middle +19; jolt spoon +19; jolt middle +19; jolt small glass +19; jolt middle +19; jolt fork +19
+      slipnet posts FD-MID x3 PK-SALO x3
+      T 9.7 -> 9.6 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 220  T=9.6  a=6.7  CT-CP(g1 cup1)/3  -> failed cp36 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 221  T=9.6  a=6.7  CT-CP(g1 cup1)/2  -> failed cp37 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 222  T=9.6  a=6.7  FND-GP()  -> fizzled (no new group around small-glass1)
+      slipnet posts PR-RCP
+      T 9.6 -> 9.5 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+      aged out: CHK-RL() posted at 25
+      aged out: PK-SALO() posted at 25
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 223  T=9.5  a=6.7  PR-RCP()  -> proposed g1 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts FD-END PR-RCP
+      RL used g1 MIRROR_IMAGE by C1: create-cp g1 cup1
+      RL used g1 ROW by C1: create-cp g1 cup1
+      RL used cup1 ROW by C1: create-cp g1 cup1
+      aged out: PK-SALO() posted at 26
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 224  T=9.5  a=6.7  PR-RCP()  -> proposed g3 and cup1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g3 MIRROR_IMAGE by C1: create-cp g3 cup1
+      RL used g3 ROW by C1: create-cp g3 cup1
+      RL used cup1 ROW by C1: create-cp g3 cup1
+ 225  T=9.5  a=6.7  CT-CP(g1 cup1)/1  -> failed cp38 g1=cup1 static -28 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 9.5 -> 9.5 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+ 226  T=9.5  a=6.7  FD-MID()  -> fizzled (no group without middles)
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 227  T=9.5  a=6.7  CT-CP(g3 cup1)/1  -> failed cp39 g3=cup1 static -28 p=0.01, removed
+      RL used g3 COLUMN by C6: placement of g3 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      answer schedule: FND-ANS x1 at urgency 16.0
+ 228  T=9.5  a=6.7  FND-ANS()  -> answer Eliza touches cup2 (E2)
+      T 9.5 -> 9.4 (dQ 0.00 Q 0.74 dWV 1 Tcp 1) by schedule
+Eliza touches cup2 (E2). Structure 74. Codelets 228. T 9.4.

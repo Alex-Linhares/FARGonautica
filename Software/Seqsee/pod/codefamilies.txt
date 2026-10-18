@@ -1,0 +1,36 @@
+file: Code families
+
+Codelet families for use by Seqsee
+
+CF: Reader
+
+Reads an object from the workspace. Could be an element, a group, a bond or perhaps something else. 
+
+Options:
+
+none, currently
+
+Actions:
+
+none
+
+Thoughts added:
+
+Whatever was read: SInt(n), SGp(a,b,c...), SBnd
+
+Codelets Launched:
+
+###################
+
+CF: Bond Scout rfhg
+
+Looks for bonds, possibly of a specific type
+
+Options:
+
+Actions:
+
+Thoughts added:
+
+Codelets Launched:
+

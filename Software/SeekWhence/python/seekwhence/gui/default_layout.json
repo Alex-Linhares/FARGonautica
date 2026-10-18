@@ -1,0 +1,82 @@
+{
+ "format": "seekwhence-gui-layout",
+ "version": 1,
+ "qt": "6.11.2",
+ "docks": [
+  {
+   "name": "controls-dock",
+   "visible": true,
+   "area": "left",
+   "tabbed_with": []
+  },
+  {
+   "name": "stats-dock",
+   "visible": true,
+   "area": "left",
+   "tabbed_with": []
+  },
+  {
+   "name": "taskrack-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": []
+  },
+  {
+   "name": "socratoplasm-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": []
+  },
+  {
+   "name": "hypothesis-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": [
+    "reformulation-dock"
+   ]
+  },
+  {
+   "name": "reformulation-dock",
+   "visible": true,
+   "area": "right",
+   "tabbed_with": [
+    "hypothesis-dock"
+   ]
+  },
+  {
+   "name": "platoplasm-dock",
+   "visible": true,
+   "area": "bottom",
+   "tabbed_with": []
+  },
+  {
+   "name": "console-dock",
+   "visible": true,
+   "area": "bottom",
+   "tabbed_with": [
+    "log-dock"
+   ]
+  },
+  {
+   "name": "log-dock",
+   "visible": true,
+   "area": "bottom",
+   "tabbed_with": [
+    "console-dock"
+   ]
+  },
+  {
+   "name": "config-dock",
+   "visible": false,
+   "area": "right",
+   "tabbed_with": []
+  }
+ ],
+ "toolbars": [
+  {
+   "name": "timeline-toolbar",
+   "visible": true
+  }
+ ],
+ "state": "AAAA/wAAAAH9AAAAAwAAAAAAAAB4AAAB8vwCAAAAAvsAAAAaAGMAbwBuAHQAcgBvAGwAcwAtAGQAbwBjAGsBAAAAFgAAAQ0AAAArAP////sAAAAUAHMAdABhAHQAcwAtAGQAbwBjAGsBAAABKQAAAN8AAABrAP///wAAAAEAAAEbAAAB8vwCAAAAA/sAAAAaAHQAYQBzAGsAcgBhAGMAawAtAGQAbwBjAGsBAAAAFgAAAH4AAAB+AP////sAAAAiAHMAbwBjAHIAYQB0AG8AcABsAGEAcwBtAC0AZABvAGMAawEAAACaAAAAbgAAAG4A/////AAAAQ4AAAD6AAAA+gEAABz6AAAAAAIAAAAD+wAAAB4AaAB5AHAAbwB0AGgAZQBzAGkAcwAtAGQAbwBjAGsBAAAAAP////8AAADdAP////sAAAAkAHIAZQBmAG8AcgBtAHUAbABhAHQAaQBvAG4ALQBkAG8AYwBrAQAAAAD/////AAAAiQD////7AAAAFgBjAG8AbgBmAGkAZwAtAGQAbwBjAGsAAAAAAP////8AAADeAP///wAAAAMAAANeAAABAvwBAAAAAvsAAAAeAHAAbABhAHQAbwBwAGwAYQBzAG0ALQBkAG8AYwBrAQAAAAAAAAGsAAAApQD////8AAABsgAAAawAAAF3AP////oAAAAAAQAAAAL7AAAAGABjAG8AbgBzAG8AbABlAC0AZABvAGMAawEAAAAA/////wAAAXcA////+wAAABAAbABvAGcALQBkAG8AYwBrAQAAAAD/////AAABFAD///8AAAG/AAAB8gAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAMAAAABAAAAIAB0AGkAbQBlAGwAaQBuAGUALQB0AG8AbwBsAGIAYQByAQAAAAD/////AAAAAAAAAAA="
+}

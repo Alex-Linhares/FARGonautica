@@ -1,0 +1,4 @@
+#!c:/Perl/bin/perl
+my $what = $ARGV[0] or die "Need argument";
+my $cmd = "grep '$what' Seqsee.pl lib/*.pm lib/*/*.pm lib/*/*/*.pm t/*.t Perf/*.pm Perf/*/*.pm";
+system $cmd;

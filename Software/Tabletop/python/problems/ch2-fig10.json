@@ -1,0 +1,225 @@
+{
+ "name": "ch2-fig10",
+ "title": "Figure 2.10",
+ "family": "ch2",
+ "source": {
+  "tag": "F95",
+  "page": 30,
+  "figure": "Figure 2.10",
+  "pdf_page": 42,
+  "image_index": 17,
+  "image_size_px": [
+   234,
+   222
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   9,
+   13,
+   224,
+   207
+  ]
+ },
+ "touched": "cup1",
+ "answers": {},
+ "expected": {
+  "answer": null,
+  "plausible": [
+   "small-glass1",
+   "cup2"
+  ],
+  "unlikely": [],
+  "quotes": [
+   {
+    "text": "This further increases the pressure for Eliza to touch the glass, rather than the cup, on her side of the table.",
+    "page": 30
+   },
+   {
+    "text": "there is a fork between the two spoons in the group on Henry's side of the table, or that there is a fork inside the group on Eliza's side of the table",
+    "page": 36
+   }
+  ],
+  "comparisons": [
+   {
+    "toward": "small-glass1",
+    "more_than": "ch2-fig09"
+   }
+  ]
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 24.6,
+   "y": 16.0,
+   "orientation": null,
+   "box_px": [
+    50,
+    41,
+    64,
+    47
+   ],
+   "figure": "Figure 2.10",
+   "page": 30,
+   "image": "F95 PDF page 42, pdfimages image 17 (234 x 222 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon1",
+   "type": "spoon",
+   "x": 30.7,
+   "y": 15.7,
+   "orientation": "up",
+   "box_px": [
+    66,
+    35,
+    72,
+    52
+   ],
+   "figure": "Figure 2.10",
+   "page": 30,
+   "image": "F95 PDF page 42, pdfimages image 17 (234 x 222 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork1",
+   "type": "fork",
+   "x": 35.0,
+   "y": 16.2,
+   "orientation": "up",
+   "box_px": [
+    75,
+    36,
+    80,
+    53
+   ],
+   "figure": "Figure 2.10",
+   "page": 30,
+   "image": "F95 PDF page 42, pdfimages image 17 (234 x 222 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 39.4,
+   "y": 15.7,
+   "orientation": "up",
+   "box_px": [
+    83,
+    35,
+    89,
+    52
+   ],
+   "figure": "Figure 2.10",
+   "page": 30,
+   "image": "F95 PDF page 42, pdfimages image 17 (234 x 222 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 23.8,
+   "y": 76.5,
+   "orientation": null,
+   "box_px": [
+    52,
+    157,
+    59,
+    166
+   ],
+   "figure": "Figure 2.10",
+   "page": 30,
+   "image": "F95 PDF page 42, pdfimages image 17 (234 x 222 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "knife1",
+   "type": "knife",
+   "x": 27.1,
+   "y": 76.0,
+   "orientation": "up",
+   "box_px": [
+    61,
+    152,
+    63,
+    169
+   ],
+   "figure": "Figure 2.10",
+   "page": 30,
+   "image": "F95 PDF page 42, pdfimages image 17 (234 x 222 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "knife2",
+   "type": "knife",
+   "x": 29.9,
+   "y": 76.5,
+   "orientation": "up",
+   "box_px": [
+    66,
+    153,
+    69,
+    170
+   ],
+   "figure": "Figure 2.10",
+   "page": 30,
+   "image": "F95 PDF page 42, pdfimages image 17 (234 x 222 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork2",
+   "type": "fork",
+   "x": 33.5,
+   "y": 76.8,
+   "orientation": "up",
+   "box_px": [
+    72,
+    153,
+    77,
+    171
+   ],
+   "figure": "Figure 2.10",
+   "page": 30,
+   "image": "F95 PDF page 42, pdfimages image 17 (234 x 222 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork3",
+   "type": "fork",
+   "x": 38.1,
+   "y": 76.5,
+   "orientation": "up",
+   "box_px": [
+    81,
+    153,
+    86,
+    170
+   ],
+   "figure": "Figure 2.10",
+   "page": 30,
+   "image": "F95 PDF page 42, pdfimages image 17 (234 x 222 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 87.5,
+   "y": 77.6,
+   "orientation": null,
+   "box_px": [
+    173,
+    160,
+    187,
+    167
+   ],
+   "figure": "Figure 2.10",
+   "page": 30,
+   "image": "F95 PDF page 42, pdfimages image 17 (234 x 222 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi; chapter 2's figures draw the table alone, 227-246 x 221-229 px, the frame nearly filling the image, with 'Henry' above it and 'Eliza' below it); the table's frame was found as the darkest column and row profiles of the image's left and right eighths and top and bottom quarters (tools/measure_figure.py, find_frame); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H arrow or a neighbouring icon touches an icon, from an ASCII dump of the region, taking the icon's own outline (the cup's rim row, the right edge of its handle and its bottom row; a spoon's bowl and handle; a fork's tines, crossbar and handle) and leaving the arrow out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`). Chapter 2's figures carry no E arrows, so `answers` is empty and French's expectation in words is the `expected` block (docs/problems.md 9).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.51 units in chapter 2's figures (frames of 212-215 x 193-196 px, a tenth larger than chapter 5's); icon boxes are good to about 1 px, and the touched cup, which the H arrow overlaps, to about 2 px. Figure 2.11 is the configuration of Surround 5 and of the chapter 4 screen dumps; measured here it agrees with problems/surround-05.json to within 1.9 units in x and 2.3 in y over the thirteen objects (median 0.7; docs/problems.md 9)."
+ },
+ "notes": [
+  "The first spoon touches the cup's handle and forms one cluster with the cup and the H arrow; the cup (rim row 41, handle to x 64, bottom row 47) and the spoon's bowl and handle were read on the dump.",
+  "The glass and the first knife touch (x 52-63) and were separated on the dump."
+ ],
+ "review": "Reviewed: the touched cup upper left (H) with a spoon, a fork and a spoon to its right; the small glass lower left with a knife, a knife, a fork and a fork to its right; the isolated cup lower right. French: silverware to the right of each, very dissimilar in composition, that may be grouped as 'silverware' [F95 p. 30]; p. 36 names the fork between the two spoons and the fork inside Eliza's group.",
+ "based_on": "ch2-fig07"
+}

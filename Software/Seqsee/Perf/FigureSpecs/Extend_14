@@ -1,0 +1,27 @@
+Type =  NonLTM
+Cluster_Count = 2
+
+[Sequences]
+seq=({1 1 1} 2 3)({ 1 1 1 }2 3 4)({ 1 1 1} 2 3 4 5)|({1 1 1} 2 3 4 5 6)
+seq=({1 1 1} 2 3)( 1 {2 2 2} 3 4)( 1 2 {3 3 3} 4 5)|(1 2 3 {4 4 4} 5 6)
+seq=({1 1} 2 3)({ 1 1 1} 2 3 4)({ 1 1 1 1} 2 3 4 5)|({1 1 1 1 1} 2 3 4 5 6) 
+seq=({1 1} 2 3)( 1 {2 2 2} 3 4)( 1 2 {3 3 3 3} 4 5)|(1 2 3 {4 4 4 4 4} 5 6) 
+
+[Cluster_1]
+source = Seqsee
+exact_feature_set = -f=AllowSquinting
+
+[Cluster_2]
+source = Human
+
+[Sequence_1]
+label = no change
+
+[Sequence_2]
+label = shift
+
+[Sequence_3]
+label = grow
+
+[Sequence_4]
+label = both

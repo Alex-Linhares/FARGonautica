@@ -1,0 +1,17 @@
+Type = NonLTM
+Cluster_Count = 2
+
+[Sequences]
+seq=(24)( 24 25 )(24 25 26)|(24 25 26 27)
+seq=(19)( 19 18 )(19 18 17)|(19 18 17 16)
+seq=(17)( 18 17 )(19 18 17)|(20 19 18 17)
+seq=(15)( 14 15 )(13 14 15)|(12 13 14 15)
+
+[Cluster_2]
+source = Human
+
+[Sequence_1]
+distractor = 0 2
+
+[Sequence_2]
+distractor = 0 2

@@ -1,0 +1,154 @@
+{
+ "name": "surround-04",
+ "title": "Surround 4",
+ "family": "surround",
+ "source": {
+  "tag": "F95",
+  "page": 117,
+  "figure": "Surround 4",
+  "pdf_page": 127,
+  "image_index": 6,
+  "image_size_px": [
+   488,
+   204
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   9,
+   12,
+   201,
+   188
+  ]
+ },
+ "touched": "cup1",
+ "answers": {
+  "E1": "small-glass1",
+  "E2": "cup2"
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 14.6,
+   "y": 15.9,
+   "orientation": null,
+   "box_px": [
+    28,
+    37,
+    41,
+    43
+   ],
+   "figure": "Surround 4",
+   "page": 117,
+   "image": "F95 PDF page 127, pdfimages image 6 (488 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon1",
+   "type": "spoon",
+   "x": 22.9,
+   "y": 15.6,
+   "orientation": "up",
+   "box_px": [
+    46,
+    32,
+    52,
+    47
+   ],
+   "figure": "Surround 4",
+   "page": 117,
+   "image": "F95 PDF page 127, pdfimages image 6 (488 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 28.4,
+   "y": 15.6,
+   "orientation": "up",
+   "box_px": [
+    56,
+    32,
+    61,
+    47
+   ],
+   "figure": "Surround 4",
+   "page": 117,
+   "image": "F95 PDF page 127, pdfimages image 6 (488 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon3",
+   "type": "spoon",
+   "x": 14.0,
+   "y": 74.7,
+   "orientation": "up",
+   "box_px": [
+    31,
+    136,
+    36,
+    151
+   ],
+   "figure": "Surround 4",
+   "page": 117,
+   "image": "F95 PDF page 127, pdfimages image 6 (488 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon4",
+   "type": "spoon",
+   "x": 20.1,
+   "y": 75.0,
+   "orientation": "up",
+   "box_px": [
+    41,
+    136,
+    47,
+    152
+   ],
+   "figure": "Surround 4",
+   "page": 117,
+   "image": "F95 PDF page 127, pdfimages image 6 (488 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 26.4,
+   "y": 76.4,
+   "orientation": null,
+   "box_px": [
+    51,
+    142,
+    59,
+    151
+   ],
+   "figure": "Surround 4",
+   "page": 117,
+   "image": "F95 PDF page 127, pdfimages image 6 (488 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 87.9,
+   "y": 77.3,
+   "orientation": null,
+   "box_px": [
+    156,
+    145,
+    169,
+    151
+   ],
+   "figure": "Surround 4",
+   "page": 117,
+   "image": "F95 PDF page 127, pdfimages image 6 (488 x 204 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (the cup's rim and body, the glass's rim and body) and leaving the arrow out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched cup, the E1 object) to about 2 px. Surround 5 measured here agrees with the chapter 4 screen dump of the same configuration (tests/data/ch4.json, an independent image) to within 1.6 units in x and 2.2 in y (docs/problems.md)."
+ },
+ "notes": [
+  "The touched cup is further left than in the other Surround figures (x 13 against 24-30); the pair of spoons is to its right, as the pair on Eliza's side is to the left of the glass."
+ ],
+ "review": "Reviewed: Henry's cup with a pair of spoons to its right; Eliza's pair of spoons with the glass to their right; the isolated cup. 'the subgroups next to the touched cup (i.e., a pair of spoons) and next to the small glass (another pair of spoons) are identical' [F95 p. 117]."
+}

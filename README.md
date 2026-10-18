@@ -5,7 +5,7 @@ a project in loving memory of Helga Keller
 
 ---
 
-**Repository News: Metacat runs again, in Racket and Python, alongside the classic version. Numbo source-code just added, Seek-Whence should really be coming soon now!**
+**Repository News: Metacat runs again, in Racket and Python, alongside the classic version. Numbo source-code just added. Seek-Whence runs again too: Meredith's 1986 program, reconstructed in Python from her thesis!**
 
 
 ![FCCA](fcca.jpg)
@@ -75,10 +75,10 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
 
  | Project | Author | Language | Available? |
  |---------| --------- | ----------| ----------|
- | Seek-Whence | [Marsha Meredith](https://scholar.google.com.br/scholar?hl=en&q=marsha+meredith&btnG=&as_sdt=1%2C5&as_sdtp=) | Franz Lisp | **Yes  (coming soon)** |
+ | Seek-Whence | [Marsha Meredith](https://scholar.google.com.br/scholar?hl=en&q=marsha+meredith&btnG=&as_sdt=1%2C5&as_sdtp=) | Franz Lisp (lost); Python reconstruction | **Yes** (reconstructed from the thesis, [`Software/SeekWhence/`](Software/SeekWhence/)) |
  | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp (also SBCL port, Python & Clojure) | **Yes** (Finally!) |
  | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | **Yes** |  
- | Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | Lisp (lost; a Python reconstruction with a Qt GUI) | **Yes** (reconstructed from the specification, 2026: [fargonauts/Tabletop](https://github.com/fargonauts/Tabletop)) |
+ | Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | Lisp (lost; a Python reconstruction with a Qt GUI) | **Yes** (reconstructed from the specification, 2026: [fargonauts/Tabletop](https://github.com/fargonauts/Tabletop) and [`Software/Tabletop/`](Software/Tabletop/)) |
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  **Yes** (McGraw's work was extended by Rehling) |
  | Letter Spirit | [John Rehling](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=) |  Scheme |  **Yes** |
  | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Scheme (also Racket & Python ports) |  **Yes** (runs again!) |
@@ -86,7 +86,7 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
  | Musicat | [Eric Nichols](https://github.com/eraoul) | C# | **Yes** |
  | Capyblanca | [Alex Linhares](https://github.com/Alex-Linhares) | Delphi | **Yes** |
  | George | [Francisco Lara-Dammer](https://www.linkedin.com/in/francisco-lara-dammer-ba5a3ab2/) | Java | **(asap)** Dr. Lara-Dammer desires to clean up the code prior to release (2017-08-29) |
- | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl (also a Python port) | **Yes** (and a Python port with a Qt GUI) |
+ | SeqSee | [Abhijit Mahabal](https://github.com/amahabal) | Perl; Python port | **Yes** (Perl original and Python port in `Software/Seqsee/`) |
 
 
 PROJECT: COPYCAT
@@ -109,8 +109,8 @@ Copycat's architecture is tripartite, consisting of a slipnet, a working area (a
 
 | Author  |  Language/Sourcecode |  Note  |
 |--------|------------------------|-------|
-| Melanie Mitchell |  [LISP](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html) | Bitrotten, but see below: |  
-| Scott Burson (& Melanie Mitchell) |  [LISP](https://github.com/slburson/copycat) | Seems to be running! |  
+| Melanie Mitchell |  [LISP](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html) | The original (Lucid Common Lisp + Flavors); revived, see the next row |  
+| Scott Burson (& Melanie Mitchell) |  [LISP](https://github.com/slburson/copycat) | Mitchell's original, revived in modern Common Lisp: runs |  
 | Scott Boland  | [Java](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) | (SB's email lost?) |
 | ["speakeasy"](https://github.com/speakeasy)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland's code |
 | [Greg Detre](https://github.com/gregdetre) | [Clojure](https://github.com/gregdetre/copycat-clojure)  | Not tested  |
@@ -128,6 +128,7 @@ Selected publications regarding Copycat:
  - [**Mitchell, M. (1992) Analogy-Making as Perception. MIT Press.**](http://web.cecs.pdx.edu/~mm/books.html)
  - Mitchell, M. and Hofstadter, D. R. (1990). [The emergence of understanding in a computer model of concepts and analogy-making](/Literature/Copycat-Mitchell.and.Hofstadter-1990-Physica%20D%20Nonlinear%20Phenomena.pdf). Physica D, 42, 322--334, https://doi.org/10.1016/0167-2789(90)90086-5.
  - Chalmers, French, and Hofstadter (1992) [High-level perception, representation, and analogy: a critique of artificial intelligence methodology](/Literature/Foundations-Chalmers.French.and.Hofstadter-1992-Journal%20of%20Experimental%20and%20Theoretical%20Artificial%20Intelligence.pdf), Journal of Experimental and Theoretical Artificial Intelligence 4  185--211.
+ - **The CRCC's own report series**, 72 papers, theses and reports once served from cogsci.indiana.edu (Hofstadter's 1987 FCCA technical report and his geometry papers, the Letter Spirit, Metacat and Tabletop-era papers, French, Chalmers, Pei Wang's NARS), recovered from the Wayback Machine in 2026: [`Literature/CRCC-reports/`](/Literature/CRCC-reports/), with a catalogue.
 
 
 Our recommended version is the one currently maintained by [Lucas Saldyt](https://github.com/LSaldyt); For more information on the code, please see the [project's page](copycat.md).
@@ -195,9 +196,9 @@ Read [The Subtlety of Sameness](https://archive.org/details/subtletyofsamene0000
 
 French asks us to imagine two people, Henry and Eliza, seated at a small table facing each other. Henry touches an object on the table and says "Do this!", and Eliza must respond by doing "the same thing" from her side. The program plays Eliza. Its architecture is Copycat's (a Slipnet, a Workspace and a Coderack), plus a *Worldview* of correspondences that don't contradict one another and a computational temperature that decides when a run ends. The book above, chapters 8 and 9 of *Fluid Concepts and Creative Analogies*, and a 1991 Cognitive Science Society paper describe it.
 
-French's program, over 26,000 lines of Lisp, is lost. **[fargonauts/Tabletop](https://github.com/fargonauts/Tabletop)** is a **reconstruction from the specification** in Python 3, like this repo's reconstruction of Seek-Whence: every module cites the pages it implements, every choice the sources leave open is a numbered decision, and every experiment French reports is replayed by a bench with his numbers beside ours (`RESULTS.md`; the numbers are honest misses more often than matches). All 53 table configurations from the book are digitized and run to an answer. It comes with a command line that prints one line per codelet and ends with French's own report of a run, twelve benches, and a PySide6 GUI that shows a run as it happens: the table, the thermometer, the Slipnet, the Coderack and the Worldview, as French's own screen showed them, with an editor for new tables and a batch pane. The engine needs only the standard library; `pip install -e '.[gui]'` adds the GUI (`tabletop-gui`).
+French's program, over 26,000 lines of Lisp, is lost. **[`Software/Tabletop/`](Software/Tabletop/)** (also on its own at [fargonauts/Tabletop](https://github.com/fargonauts/Tabletop)) is a **reconstruction from the specification** in Python 3, like this repo's reconstruction of Seek-Whence: every module cites the pages it implements, every choice the sources leave open is a numbered decision, and every experiment French reports is replayed by a bench with his numbers beside ours (`RESULTS.md`; the numbers are honest misses more often than matches). All 53 table configurations from the book are digitized and run to an answer. It comes with a command line that prints one line per codelet and ends with French's own report of a run, twelve benches, and a PySide6 GUI that shows a run as it happens: the table, the thermometer, the Slipnet, the Coderack and the Worldview, as French's own screen showed them, with an editor for new tables and a batch pane. The engine needs only the standard library; `pip install -e '.[gui]'` adds the GUI (`tabletop-gui`).
 
-![Tabletop's Python GUI: Surround 5, seed 3, Eliza touches the lone cup](/Software/Tabletop/tabletop-gui-window.png)
+![Tabletop's Python GUI: Surround 5, seed 3, Eliza touches the lone cup](/Software/Tabletop/python/docs/gui-window.png)
 
 *Surround 5, the configuration French follows through his chapter 4. Henry (top) touches his cup, which sits in a row of silverware; on Eliza's side a matching row has a small glass where the cup would be, and a cup stands alone at the far right. In this run Eliza touches the lone cup; French's program chose the glass in 86 percent of its runs, this reconstruction in about 30 percent. Left to right: the problem and the table editor, the table with Henry's touch and Eliza's answer, the thermometer, the Slipnet and the Worldview; below, the Coderack's bars, the trace, and the event timeline that replays the run.*
 
@@ -244,13 +245,11 @@ The dissertation (Available [here](/Literature) and in [Dr. Mahabal's website](h
 describes the program and its principles, which are much more general than integer-sequence extrapolation, and compares its performance with human
 performance.
 
-Seqsee is written in Perl, and Dr. Mahabal maintains its code, so this repo doesn't include the original. See:
+Seqsee is written in Perl, and Dr. Mahabal maintains its code and a newer Python framework, PySeqsee. **This repository now holds a copy of the Perl original and a faithful Python port of it** in [`Software/Seqsee/`](Software/Seqsee/): the port keeps Perl's quirks (marked `# PERL-QUIRK:`), is tested against golden data recorded from the real Perl, and has a Qt GUI checked against the Perl/Tk display (see [`Software/Seqsee/python/README.md`](Software/Seqsee/python/README.md)). Dr. Mahabal's own repositories:
 
 [Perl version, original project](https://github.com/amahabal/Seqsee)
 
-[PySeqsee, Dr. Mahabal's own Python rewrite](https://github.com/amahabal/PySeqsee)
-
-This repo does include **[a Python port of the Perl Seqsee](Software/Seqsee/)**, translated module by module and test-first against the running Perl program, with a Qt (PySide6) GUI that redraws the original Perl/Tk GUI's views. Seqsee's choices depend on Perl's hash order, so a port can't repeat a Perl run step for step. Instead, whole runs are compared statistically, over many seeds of Mahabal's test sequences. See [`Software/Seqsee/README.md`](Software/Seqsee/README.md) for how to run it.
+[PySeqsee, the Python framework](https://github.com/amahabal/PySeqsee)
 
 ![Abhijit Mahabal's original Perl/Tk Seqsee, unchanged, after solving 1 1 2 1 2 3](/Software/Seqsee/screenshots/seqsee-perl-tk.png)
 
@@ -275,7 +274,9 @@ I have exploited these similarities in my attempt to model the mental plane comp
 
 Publications:
 - Lara-Dammer, F. (2009) Modeling Human Discoverativity in Geometry, PhD Thesis, Indiana University,
-- Lara-Dammer & Hofstadter, [*Perception of Direction and its Influence on Geometric Discoveries*](https://cogsci.indiana.edu/pub/lara-dammer.perception-of-direction-2006.pdf)
+- Lara-Dammer, F. (2007) [*The Mental Plane: A Model of Imagining Situations in Euclidean Geometry*](/Literature/George-LaraDammer-2007-CogSci-The-Mental-Plane.pdf), Proceedings of the 29th Annual Meeting of the Cognitive Science Society (a two-page abstract; [eScholarship](https://escholarship.org/uc/item/49r220t9))
+- Lara-Dammer & Hofstadter (2008) [*Perception of Direction and its Influence on Geometric Discoveries*](/Literature/CRCC-reports/lara-dammer.perception-of-direction-2006.pdf), Proceedings of the 30th Annual Conference of the Cognitive Science Society, p. 1845 (the Indiana site that served it is offline; this is the Wayback Machine's copy)
+- Hofstadter's own geometry reports that the thesis builds on, *From Euler to Ulam* (1992) and *A strangely symmetric pattern* (1993), are in [`Literature/CRCC-reports/`](/Literature/CRCC-reports/)
 - [Lara-Dammer, Hofstadter & Goldstone (2017) A computer model of context-dependent perception in a very simple world, *Journal of Experimental and Theoretical Artificial Intelligence* 1--36](http://www.tandfonline.com/eprint/hNcJzAjrviqTaWjzR235/full)
 
 2017-08-29. Dr. Lara-Dammer's Thesis is not available here as he and Prof. Hofstadter are working on a book on the subject.  
@@ -334,6 +335,9 @@ an act to be creative, and I call it a “listening performance”.
 
 PhD Thesis of Dr. Eric Paul Nichols is available here: http://ericpnichols.com/musicat/pdf/MusicatDissertation.pdf, and
 the sourcecode is available at http://ericpnichols.com/musicat/ (and also archived here).  
+
+**Runs on Linux (2026):** the archived RhythmCat builds and runs with Mono, GUI and headless; see
+[`Software/Musicat/linux/RUNNING-ON-LINUX.md`](Software/Musicat/linux/RUNNING-ON-LINUX.md).
 
 
 PROJECT: PHAEACO

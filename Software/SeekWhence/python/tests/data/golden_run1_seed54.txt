@@ -1,0 +1,109 @@
+# Golden trace of the reconstruction: run1_3737, seed 54, the console inputs of
+# Meredith's printout [M86 pp. 164-166] and her answers (item 20).
+# Written by `python3 -m seekwhence.bench appendix --runs run1_3737 --golden 54`; the test
+# `tests/test_appendix.py` replays the same session and requires this text exactly.
+# Never edited by hand and never regenerated to make a failing test pass: a change
+# in the engine that changes this run is
+# judged on its merits and, if it is meant, the file is rewritten with the reason in
+# PROGRESS.md. Lines beginning with '#' are this header, not program output.
+
+-> (startup)
+
+please enter a term: 3
+doing task Dissolver
+doing task Sparkler-plus on (glint1 glint1 2)
+doing task empty-task
+
+please enter a term: 7
+doing task Sparkler
+spark1 --- between glint1glint2
+doing task Sparkler
+spark2 --- between glint1glint2
+doing task Sparkler
+doing task Tester
+doing task Tester
+doing task Sparkler-plus on (glint2 glint1 10)
+spark3 --- between glint2glint1
+doing task Tester
+doing task Dissolver on (glint1)
+doing task Sparkler-plus on (glint2 glint2 2)
+doing task empty-task
+
+please enter a term: 3
+doing task Sparkler-plus on (glint3 glint2 10)
+spark4 --- between glint3glint2
+doing task Tester
+doing task Sparkler-plus on (glint3 glint1 10)
+spark5 --- between glint3glint1
+doing task Sparkler
+spark6 --- between glint3glint2
+doing task Sparkler-plus on (glint3 glint3 2)
+doing task Sparkler
+doing task Tester
+doing task Sparkler
+spark7 --- between glint1glint3
+doing task Tester
+doing task Bonder on (Same print-value (remote) glint1 glint3)
+bond1 --- between glint1glint3
+doing task Glom-scout
+Same -cover proposed --> glint1
+Same -fence proposed --> glint1
+doing task Glom-scout
+Same -cover proposed --> glint1
+Same -fence proposed --> glint1
+doing task Sparkler
+spark8 --- between glint1glint2
+doing task Glomtester on (Same cover glint1)
+doing task Glomtester on (Same fence glint1)
+doing task Glommer on (Same print-value fence (glint1 glint2))
+Glommer for Same print-value fence members: (glint1 glint2)
+doing task Tester
+doing task Glom-inspector on (glom1)
+doing task Plato-scout on (Cycle glom1)
+doing task Bonder on (Same print-value (remote) glint1 glint3)
+doing task Glomtester on (Same fence glint1)
+Glomtester failed glint1
+doing task Glommer on (Same print-value cover (glint1 glint2 glint3))
+failed to glom (glint1 glint2 glint3)
+doing task Sparkler-plus on (glom1 glint1 10)
+doing task Tester
+doing task Sparkler-plus on (glom1 glint3 10)
+spark9 --- between glom1glint3
+doing task Glomtester on (Same cover glint1)
+Glomtester failed glint1
+doing task Sparkler-plus on (glom1 glint2 10)
+doing task Sparkler
+doing task Template-scout on (glom1)
+doing task Tester
+doing task Template-applier on (glom1 (Cycle 3 2 (3 7)))
+create-template-glom (Cycle 3 2 (3 7))(glom1)
+top-down glom glom2
+template made : (form (Cycle 3 2 (3 7)) state working coverage (1 2) glom glom2)
+doing task Template-evaluator
+check-cycle template (Cycle 3 2 ((3 7)))
+doing task Sparkler
+spark10 --- between glom1glint3
+doing task Hypothesizer
+(Cycle 3 2 (3 7))
+doing task Gnoth-maker
+top-down glom glom3
+gnoths constructed
+doing task Sparkler-plus on (glom1 glom1 2)
+doing task Tester
+doing task Call-term
+
+please enter a term: show-hypothesis
+(Cycle 3 2 (3 7))
+
+please enter a term: 7
+doing task Hfilter
+new term being hypothesis-filtered through (Cycle 3 2 (3 7))
+top-down glom glom4
+
+I have a guess!
+
+hypothesis: (Cycle 3 2 (3 7))
+3 7 3 7
+
+enter no if wrong, ok if right ok
+bye

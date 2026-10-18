@@ -1,0 +1,55 @@
+\documentclass{article}
+
+\begin{document}
+\title{Notes for presentation to Doug}
+\date{Sep 2, 2005}
+\maketitle
+
+\section{(Some of the) Categories Seqsee ``needs''}
+
+Seqsee ``needs'' a bunch of categories. ``needs'' is quoted because I just mean that Seqsee should already have these concepts( used interchangeably with \textit{categories}), or be able to manufacture them given the right pressure. I shall list out some of the categories by first showing a sequence where they make sense.
+
+\begin{itemize}
+\item 1 | 1 2| 1 2 3| $\ldots$ \\ category: ascending group
+\item 1 | 1 2 1| 1 2 3 2 1| $\ldots$ \\ mountain
+\item 1 1| 1 1 2| 1 1 2 3| $\ldots$ \\ ascending, first doubled
+\item 1 1| 2 3 3| 3 4 5 5| 4 5 6 7 7| $\ldots$\\ ascending, last doubled 
+\item 1 2 2 1| 1 2 3 3 2 1| $\ldots$\\ mountain, peak doubled 
+\item 1 2 3| 1 2 2 3| 1 2 2 2 3| $\ldots$\\ ascending, second repeated n times  
+\item 1 2 3 3 2 1| 2 3 3 4 3 3 2| 3 3 4 5 4 3 3| 4 5 6 5 4| $\ldots$\\ mountain, 3 doubled  
+%\item  $\ldots$\\  
+%\item  $\ldots$\\  
+\end{itemize}
+
+A few observations of these categories: in all the examples above, there are really just 2 categories: ascending and mountain. These have been twisted and distorted to give a lot of other categories (none (or very few) of which would be ``innate'' to Seqsee). A more important observation is that these ``distortions'' do not use very much (or sometimes any) knowledge of the category itself. Thus, the distortion ``double the first'' may be applied to ascending, mountain or several others. It is almost orthogonal to categories, in some sense.
+
+A second observation (unrelated to the examples above). The category mountain includes `1 2 3 2 1', but also `1 1 2 3 2 1' and `1 1 2 2 3 3 2 2 1 1', provided eyes are squinted in the right way. More about squinting needs to be said: squinting is also almost orthogonal! The mechanisms that let you see `1 1 2 3 2 1' as a mountain are no different from those that let you see `1 1 2 3' as ascending.  If we can fork out this squinting from the concept ascending, we are left with a rather tiny core: something goes up from a start point to some end point. Everything else is just icing on the cake. \footnote{I smell oversimplification here: this oversimplification reminds me of how thinking that words carry all the meaning in a sentence is oversimplification, and phrases play a role too. So there may be much more experience based stuff related to the concept \textit{ascending group}}
+
+In the current implementation, the concept \textit{ascending group} consists of two things: specifying how to build one given \textit{start} and \textit{end}, and guessing, given an object, what the start and end would be if this were an ascending group. Together, these are enough to see several things as ascending groups.
+
+\section*{Positions} Part of my summer work was about positions: if Seqsee is to be able to think of categories like `mountain, peak doubled', and `mountain, the item before the peak doubled', then it needs to understand positions well, be able to see `1 2 3 3 4' as `1 2 3 4, third element doubled', `1 2 3 4, last but one element doubled' and also `1 2 3 4, the 3 doubled'. I think I have all that code working fairly cleanly now.
+
+\section*{The algebra of eye squinting}
+
+I remember you quoting (I think) Stanislaw Ulam as saying ``we need to understand under what conditions something can be seen as another'' or something like that.
+
+Here is how `1 1 2 3' can be seen as an ascending group. A requirement is that the `1 1' has been seen as a potential blemish (instance of the category 'doubled'). When $x$(e.g., 1 1) is a blemished form of $y$(e.g., 1), then $x$ can be seen as a $y$. Currently, depending on how you look at it, `5 5 5' can be de-blemished to both 3 and 5, and thus `1 2 5 5 5' can be seen as an ascending group provided that `5 5 5' has been seen as a `3'.
+
+If this is coded up correctly, and flexibly, then most concepts need not bother with implementing their own squinted eyes: slippages can be made pretty cleanly and uniformly.
+
+\section*{What I have not talked about}
+
+There are other threads going on with my thinking that I'll just mention in the passing. I can think more about those and talk about them next time we meet. I first wanted to see what you think about what I have said so far.
+\begin{itemize}
+\item The other threads: concepts/thoughts like ``I am on the right track'', ``I am getting nowhere''.
+\item Thoughts (as distinct from categories)
+\item Streams of thought
+
+\end{itemize}
+
+\section*{Things that elude me completely}
+
+I have not yet made a frontal assault on thinking how the category `mountain' would be implemented. My mountains so far have to have their feet at the same level: `3 4 5 4 3' is, but `3 4 5 6 5 4' isn't, a mountain, as it stands. I do not know how to remedy that. I also don't know how to get at `1 2 3 4 3 4 5 6 5 4 3 2 1' and so forth. Its not so much a ``mountain'' as ``mountainous''.
+
+
+\end{document}

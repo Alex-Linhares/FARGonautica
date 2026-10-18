@@ -1,0 +1,141 @@
+{
+ "name": "blockage-08",
+ "title": "Blockage 8",
+ "family": "blockage",
+ "source": {
+  "tag": "F95",
+  "page": 127,
+  "figure": "Blockage 8",
+  "pdf_page": 137,
+  "image_index": 16,
+  "image_size_px": [
+   490,
+   206
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   11,
+   16,
+   206,
+   192
+  ]
+ },
+ "touched": "cup1",
+ "answers": {
+  "E1": "small-glass1",
+  "E2": "small-glass3",
+  "E3": "cup1"
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 17.8,
+   "y": 13.6,
+   "orientation": null,
+   "box_px": [
+    36,
+    37,
+    49,
+    43
+   ],
+   "figure": "Blockage 8",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 16 (490 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass2",
+   "type": "small glass",
+   "x": 80.9,
+   "y": 15.1,
+   "orientation": null,
+   "box_px": [
+    151,
+    38,
+    158,
+    47
+   ],
+   "figure": "Blockage 8",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 16 (490 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass4",
+   "type": "small glass",
+   "x": 91.1,
+   "y": 14.5,
+   "orientation": null,
+   "box_px": [
+    169,
+    37,
+    176,
+    46
+   ],
+   "figure": "Blockage 8",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 16 (490 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 12.1,
+   "y": 83.2,
+   "orientation": null,
+   "box_px": [
+    29,
+    158,
+    36,
+    167
+   ],
+   "figure": "Blockage 8",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 16 (490 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass3",
+   "type": "small glass",
+   "x": 17.8,
+   "y": 83.2,
+   "orientation": null,
+   "box_px": [
+    39,
+    158,
+    46,
+    167
+   ],
+   "figure": "Blockage 8",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 16 (490 x 206 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame; given by hand with --frame where a line is too faint for the profile, as the file's notes say); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (a cup's rim and body, a glass's rim and body, a spoon's bowl and handle, a fork's tines and handle, a shaker's rounded box) and leaving the arrow and its label out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched object, the E1 and E2 objects) to about 2 px; a spoon's bowl under the H arrow is placed from its handle. The uncertainty was measured on Surround 5 against the chapter 4 screen dump of the same configuration (docs/problems.md 5); the Buridan 1 configuration, printed twice (pp. 129 and 130), agrees with itself to within 1.5 units (docs/problems.md 7)."
+ },
+ "notes": [
+  "The H arrow enters the touched cup from the upper left and the E arrow's head its lower right; the cup's box is its rim row to its bottom row, 14 x 7 px, read on the ASCII dump.",
+  "The E arrows enter Eliza's glasses from the lower right; each glass's box is its rim and body, 8 x 10 px, read on the ASCII dump.",
+  "Blockage 6 with the upper-right glasses 'gradually pulled further apart' [F95 p. 128]; the gap between the two glass boxes is recorded in `gap` (docs/problems.md 8).",
+  "French: 'the gap is one glass-width wide' [F95 p. 128]; measured, 10 px between the boxes (11 px of white between the ink), 1.3 glass widths of 8 px.",
+  "The figure is printed on p. 127 and its table of numbers on p. 128."
+ ],
+ "review": "Reviewed: as Blockage 6 with the upper-right glasses a glass apart.",
+ "based_on": "blockage-06",
+ "gap": {
+  "between": [
+   "small-glass2",
+   "small-glass4"
+  ],
+  "px": 10,
+  "units": 5.7,
+  "glass_width_units": 4.5,
+  "glass_widths": 1.27,
+  "french": 1,
+  "french_words": "one glass-width wide [F95 p. 128]",
+  "uncertainty_note": "The gap is the white space between the two boxes along x, in pixels of the figure and in units (0.567 per pixel); each glass edge is good to about 1 px, so the gap is good to about 2 px, 1.1 units, a quarter of a glass width (D-003; docs/problems.md 8)."
+ }
+}

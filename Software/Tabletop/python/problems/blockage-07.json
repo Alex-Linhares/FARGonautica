@@ -1,0 +1,191 @@
+{
+ "name": "blockage-07",
+ "title": "Blockage 7",
+ "family": "blockage",
+ "source": {
+  "tag": "F95",
+  "page": 127,
+  "figure": "Blockage 7",
+  "pdf_page": 137,
+  "image_index": 14,
+  "image_size_px": [
+   488,
+   202
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   9,
+   13,
+   203,
+   190
+  ]
+ },
+ "touched": "cup1",
+ "answers": {
+  "E1": "small-glass1",
+  "E2": "small-glass3",
+  "E3": "cup1"
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 17.3,
+   "y": 13.6,
+   "orientation": null,
+   "box_px": [
+    33,
+    34,
+    46,
+    40
+   ],
+   "figure": "Blockage 7",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 14 (488 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork1",
+   "type": "fork",
+   "x": 73.7,
+   "y": 13.3,
+   "orientation": "up",
+   "box_px": [
+    137,
+    29,
+    141,
+    44
+   ],
+   "figure": "Blockage 7",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 14 (488 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "knife1",
+   "type": "knife",
+   "x": 78.2,
+   "y": 13.3,
+   "orientation": "up",
+   "box_px": [
+    146,
+    29,
+    148,
+    44
+   ],
+   "figure": "Blockage 7",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 14 (488 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass2",
+   "type": "small glass",
+   "x": 83.9,
+   "y": 14.4,
+   "orientation": null,
+   "box_px": [
+    154,
+    34,
+    160,
+    43
+   ],
+   "figure": "Blockage 7",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 14 (488 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass4",
+   "type": "small glass",
+   "x": 90.7,
+   "y": 14.4,
+   "orientation": null,
+   "box_px": [
+    166,
+    34,
+    172,
+    43
+   ],
+   "figure": "Blockage 7",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 14 (488 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 11.6,
+   "y": 83.3,
+   "orientation": null,
+   "box_px": [
+    26,
+    156,
+    33,
+    165
+   ],
+   "figure": "Blockage 7",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 14 (488 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass3",
+   "type": "small glass",
+   "x": 17.9,
+   "y": 82.8,
+   "orientation": null,
+   "box_px": [
+    37,
+    155,
+    44,
+    164
+   ],
+   "figure": "Blockage 7",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 14 (488 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork2",
+   "type": "fork",
+   "x": 23.5,
+   "y": 81.1,
+   "orientation": "up",
+   "box_px": [
+    48,
+    149,
+    53,
+    164
+   ],
+   "figure": "Blockage 7",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 14 (488 x 202 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "knife2",
+   "type": "knife",
+   "x": 27.2,
+   "y": 81.1,
+   "orientation": "up",
+   "box_px": [
+    56,
+    149,
+    58,
+    164
+   ],
+   "figure": "Blockage 7",
+   "page": 127,
+   "image": "F95 PDF page 137, pdfimages image 14 (488 x 202 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame; given by hand with --frame where a line is too faint for the profile, as the file's notes say); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (a cup's rim and body, a glass's rim and body, a spoon's bowl and handle, a fork's tines and handle, a shaker's rounded box) and leaving the arrow and its label out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched object, the E1 and E2 objects) to about 2 px; a spoon's bowl under the H arrow is placed from its handle. The uncertainty was measured on Surround 5 against the chapter 4 screen dump of the same configuration (docs/problems.md 5); the Buridan 1 configuration, printed twice (pp. 129 and 130), agrees with itself to within 1.5 units (docs/problems.md 7)."
+ },
+ "notes": [
+  "The H arrow enters the touched cup from the upper left and the E arrow's head its lower right; the cup's box is its rim row to its bottom row, 14 x 7 px, read on the ASCII dump.",
+  "The E arrows enter Eliza's glasses from the lower right; each glass's box is its rim and body, 8 x 10 px, read on the ASCII dump.",
+  "Blockage 6 plus 'the silverware' [F95 p. 127]: a fork and a knife to the left of the upper-right glasses (clean clusters, 5 x 16 and 3 x 16 px) and a fork and a knife to the right of the lower-left glasses (in the glasses' cluster with the E arrows; tines rows 149-154 and handle, blade and handle, read on the ASCII dump). The text does not name the pieces; the icons are a fork (three tines) and a knife (a blade).",
+  "The lower-left fork's and knife's boxes are 16 px tall as drawn."
+ ],
+ "review": "Reviewed: fork, knife, glass, glass upper right; glass, glass, fork, knife lower left; the touched cup.",
+ "based_on": "blockage-06"
+}

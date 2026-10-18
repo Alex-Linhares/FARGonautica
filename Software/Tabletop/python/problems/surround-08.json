@@ -1,0 +1,251 @@
+{
+ "name": "surround-08",
+ "title": "Surround 8",
+ "family": "surround",
+ "source": {
+  "tag": "F95",
+  "page": 120,
+  "figure": "Surround 8",
+  "pdf_page": 130,
+  "image_index": 14,
+  "image_size_px": [
+   489,
+   201
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   10,
+   14,
+   204,
+   190
+  ]
+ },
+ "touched": "cup1",
+ "answers": {
+  "E1": "plate1",
+  "E2": "cup2"
+ },
+ "objects": [
+  {
+   "id": "fork1",
+   "type": "fork",
+   "x": 11.9,
+   "y": 15.6,
+   "orientation": "up",
+   "box_px": [
+    29,
+    34,
+    33,
+    49
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork2",
+   "type": "fork",
+   "x": 16.7,
+   "y": 15.6,
+   "orientation": "up",
+   "box_px": [
+    37,
+    34,
+    42,
+    49
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "knife1",
+   "type": "knife",
+   "x": 22.1,
+   "y": 15.6,
+   "orientation": "up",
+   "box_px": [
+    48,
+    34,
+    50,
+    49
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 29.8,
+   "y": 15.9,
+   "orientation": null,
+   "box_px": [
+    56,
+    39,
+    69,
+    45
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon1",
+   "type": "spoon",
+   "x": 38.0,
+   "y": 15.1,
+   "orientation": "up",
+   "box_px": [
+    74,
+    33,
+    80,
+    48
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 44.2,
+   "y": 15.1,
+   "orientation": "up",
+   "box_px": [
+    85,
+    33,
+    91,
+    48
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon3",
+   "type": "spoon",
+   "x": 13.0,
+   "y": 74.1,
+   "orientation": "up",
+   "box_px": [
+    30,
+    137,
+    36,
+    152
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon4",
+   "type": "spoon",
+   "x": 18.1,
+   "y": 73.9,
+   "orientation": "up",
+   "box_px": [
+    40,
+    137,
+    44,
+    151
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "plate1",
+   "type": "plate",
+   "x": 26.1,
+   "y": 74.4,
+   "orientation": null,
+   "box_px": [
+    47,
+    136,
+    65,
+    154
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork3",
+   "type": "fork",
+   "x": 33.7,
+   "y": 74.1,
+   "orientation": "up",
+   "box_px": [
+    67,
+    137,
+    72,
+    152
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork4",
+   "type": "fork",
+   "x": 38.8,
+   "y": 74.1,
+   "orientation": "up",
+   "box_px": [
+    76,
+    137,
+    81,
+    152
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "knife2",
+   "type": "knife",
+   "x": 43.1,
+   "y": 74.1,
+   "orientation": "up",
+   "box_px": [
+    85,
+    137,
+    87,
+    152
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 87.6,
+   "y": 76.7,
+   "orientation": null,
+   "box_px": [
+    158,
+    146,
+    171,
+    152
+   ],
+   "figure": "Surround 8",
+   "page": 120,
+   "image": "F95 PDF page 130, pdfimages image 14 (489 x 201 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (the cup's rim and body, the glass's rim and body) and leaving the arrow out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched cup, the E1 object) to about 2 px. Surround 5 measured here agrees with the chapter 4 screen dump of the same configuration (tests/data/ch4.json, an independent image) to within 1.6 units in x and 2.2 in y (docs/problems.md)."
+ },
+ "notes": [
+  "Surround 7 with the saucer 'replaced in Surround 8 by a plate' [F95 p. 120]; the plate is a 19 x 19 px circle whose left edge nearly touches the second spoon's handle; both boxes and the fork to the plate's right were read on the ASCII dump, the E1 arrow (whose head lies inside the circle) left out."
+ ],
+ "review": "Reviewed: as Surround 5 with a plate in the glass's place.",
+ "based_on": "surround-05"
+}

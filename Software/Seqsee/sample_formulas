@@ -1,0 +1,23 @@
+SWorkspace::ChallengerWinsFight( $challenger_strength !, $incumbent_strength ! ) returns Bool {
+    SUtil::toss( $challenger_strength / ( $challenger_strength + 1.5 * $incumbent_strength ) );
+}
+
+SErr::AskUser::WorthAsking( $match_size !, $ask_size !, $trust_level ! ) returns Bool {
+    my $fraction_already_matched = $match_size / ( $match_size + $ask_size );
+    $trust_level += ( 1 - $trust_level ) * $fraction_already_matched;
+    if ( $trust_level < $Global::AcceptableTrustLevel ) {
+        0;
+    }
+    else {
+        SUtil::toss($trust_level);
+    }
+}
+
+Urgencies::CLA::CLB() returns Num {
+    100
+}
+
+Urgencies => {
+    CLA::CLB => 100,
+    CLA::D => $x
+};

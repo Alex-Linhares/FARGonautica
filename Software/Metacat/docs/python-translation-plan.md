@@ -2,7 +2,7 @@
 
 Loop0002, item 01, 2026-10-03. This is the counterpart of numbo's
 `docs/python_translation_audit.md`: what the translation has to reproduce, how Python
-will do it, and in which order. Items 02–17 of `ralph_loops/loop0002/iterations.md`
+will do it, and in which order. Items 02–17 of [loop0002's `iterations.md`](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0002/iterations.md)
 follow it. If an item finds a decision here wrong, it fixes this file and says so in
 PROGRESS.md.
 

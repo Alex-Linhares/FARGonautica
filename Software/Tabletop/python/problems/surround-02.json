@@ -1,0 +1,155 @@
+{
+ "name": "surround-02",
+ "title": "Surround 2",
+ "family": "surround",
+ "source": {
+  "tag": "F95",
+  "page": 116,
+  "figure": "Surround 2",
+  "pdf_page": 126,
+  "image_index": 2,
+  "image_size_px": [
+   494,
+   206
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   9,
+   15,
+   205,
+   192
+  ]
+ },
+ "touched": "cup1",
+ "answers": {
+  "E1": "small-glass1",
+  "E2": "cup2"
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 25.0,
+   "y": 15.8,
+   "orientation": null,
+   "box_px": [
+    47,
+    40,
+    60,
+    46
+   ],
+   "figure": "Surround 2",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 2 (494 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon1",
+   "type": "spoon",
+   "x": 31.7,
+   "y": 14.4,
+   "orientation": "up",
+   "box_px": [
+    63,
+    33,
+    68,
+    48
+   ],
+   "figure": "Surround 2",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 2 (494 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 15.7,
+   "y": 74.6,
+   "orientation": "up",
+   "box_px": [
+    34,
+    139,
+    40,
+    155
+   ],
+   "figure": "Surround 2",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 2 (494 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon3",
+   "type": "spoon",
+   "x": 19.9,
+   "y": 74.6,
+   "orientation": "up",
+   "box_px": [
+    42,
+    139,
+    47,
+    155
+   ],
+   "figure": "Surround 2",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 2 (494 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 25.8,
+   "y": 76.0,
+   "orientation": null,
+   "box_px": [
+    51,
+    145,
+    59,
+    154
+   ],
+   "figure": "Surround 2",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 2 (494 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork1",
+   "type": "fork",
+   "x": 31.7,
+   "y": 74.3,
+   "orientation": "up",
+   "box_px": [
+    63,
+    140,
+    68,
+    153
+   ],
+   "figure": "Surround 2",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 2 (494 x 206 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 87.3,
+   "y": 77.4,
+   "orientation": null,
+   "box_px": [
+    158,
+    149,
+    171,
+    155
+   ],
+   "figure": "Surround 2",
+   "page": 116,
+   "image": "F95 PDF page 126, pdfimages image 2 (494 x 206 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (the cup's rim and body, the glass's rim and body) and leaving the arrow out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched cup, the E1 object) to about 2 px. Surround 5 measured here agrees with the chapter 4 screen dump of the same configuration (tests/data/ch4.json, an independent image) to within 1.6 units in x and 2.2 in y (docs/problems.md)."
+ },
+ "notes": [
+  "The first spoon of Eliza's row has a faint handle in the JPEG; its box is given the neighbouring spoon's height.",
+  "The fork to the right of the glass merges with the E1 arrow and label in the clusters; its box (tines rows 140-145, handle to row 153) was read on the ASCII dump."
+ ],
+ "review": "Reviewed: Henry's cup with one spoon to its right; Eliza's spoon, spoon, glass, fork; the isolated cup lower right. 'There are two groups on the table: one group around the touched cup and another around the small glass', sharing only 'the presence of a spoon' [F95 p. 116]."
+}

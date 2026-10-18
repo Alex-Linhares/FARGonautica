@@ -1,0 +1,157 @@
+{
+ "name": "buridan-07",
+ "title": "Buridan 7",
+ "family": "buridan",
+ "source": {
+  "tag": "F95",
+  "page": 135,
+  "figure": "Buridan 7",
+  "pdf_page": 145,
+  "image_index": 36,
+  "image_size_px": [
+   489,
+   204
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   8,
+   12,
+   203,
+   189
+  ]
+ },
+ "touched": "spoon1",
+ "answers": {
+  "E1": "spoon2",
+  "E2": "fork1"
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 47.1,
+   "y": 14.4,
+   "orientation": null,
+   "box_px": [
+    85,
+    34,
+    98,
+    41
+   ],
+   "figure": "Buridan 7",
+   "page": 135,
+   "image": "F95 PDF page 145, pdfimages image 36 (489 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 56.1,
+   "y": 14.7,
+   "orientation": null,
+   "box_px": [
+    101,
+    35,
+    114,
+    41
+   ],
+   "figure": "Buridan 7",
+   "page": 135,
+   "image": "F95 PDF page 145, pdfimages image 36 (489 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon1",
+   "type": "spoon",
+   "x": 61.8,
+   "y": 13.6,
+   "orientation": "up",
+   "box_px": [
+    115,
+    28,
+    120,
+    44
+   ],
+   "figure": "Buridan 7",
+   "page": 135,
+   "image": "F95 PDF page 145, pdfimages image 36 (489 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "spoon2",
+   "type": "spoon",
+   "x": 9.3,
+   "y": 87.0,
+   "orientation": "up",
+   "box_px": [
+    22,
+    158,
+    27,
+    174
+   ],
+   "figure": "Buridan 7",
+   "page": 135,
+   "image": "F95 PDF page 145, pdfimages image 36 (489 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup3",
+   "type": "cup",
+   "x": 78.1,
+   "y": 85.9,
+   "orientation": null,
+   "box_px": [
+    140,
+    161,
+    153,
+    167
+   ],
+   "figure": "Buridan 7",
+   "page": 135,
+   "image": "F95 PDF page 145, pdfimages image 36 (489 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup4",
+   "type": "cup",
+   "x": 86.6,
+   "y": 85.9,
+   "orientation": null,
+   "box_px": [
+    155,
+    161,
+    168,
+    167
+   ],
+   "figure": "Buridan 7",
+   "page": 135,
+   "image": "F95 PDF page 145, pdfimages image 36 (489 x 204 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "fork1",
+   "type": "fork",
+   "x": 92.8,
+   "y": 84.2,
+   "orientation": "up",
+   "box_px": [
+    170,
+    153,
+    175,
+    169
+   ],
+   "figure": "Buridan 7",
+   "page": 135,
+   "image": "F95 PDF page 145, pdfimages image 36 (489 x 204 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame; given by hand with --frame where a line is too faint for the profile, as the file's notes say); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (a cup's rim and body, a glass's rim and body, a spoon's bowl and handle, a fork's tines and handle, a shaker's rounded box) and leaving the arrow and its label out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched object, the E1 and E2 objects) to about 2 px; a spoon's bowl under the H arrow is placed from its handle. The uncertainty was measured on Surround 5 against the chapter 4 screen dump of the same configuration (docs/problems.md 5); the Buridan 1 configuration, printed twice (pp. 129 and 130), agrees with itself to within 1.5 units (docs/problems.md 7)."
+ },
+ "notes": [
+  "The H arrow enters the touched spoon's bowl from the upper right; the spoon's box is its bowl (6 px wide, centred on the handle) and handle, 17 px, read on the ASCII dump.",
+  "The E1 arrow enters Eliza's lower-left spoon from the lower left and the E2 arrow her lower-right object from the lower right; their boxes were read on the ASCII dumps, the arrows and labels left out.",
+  "Buridan 1 with 'no objects at all next to the rival spoon' [F95 p. 135]: both glasses gone; Eliza's spoon stands 1.4 units further right than in Buridan 1."
+ ],
+ "review": "Reviewed: cup, cup, spoon (H) at the top centre; spoon (E1) alone lower left; cup, cup, fork (E2) lower right [F95 p. 135].",
+ "based_on": "buridan-01"
+}

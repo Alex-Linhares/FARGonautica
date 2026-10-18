@@ -32,7 +32,7 @@ modern ports. All of it is James Marshall's work, under the GPL.
 | [`chez_scheme/oracle/`](chez_scheme/oracle/README.md) | 1.2 running headless under a modern Chez Scheme 10 |
 | [`racket/`](racket/README.md) | the Racket port (multi-window and one-window GUIs) |
 | [`python/`](python/README.md) | the Python port (tkinter GUI, and the one-window Qt GUI) |
-| [`tests/`](tests/README.md), [`docs/`](docs/README.md), [`ralph_loops/`](ralph_loops/README.md) | tests, documentation, and the logs of the loops that built the ports |
+| [`tests/`](tests/README.md), [`docs/`](docs/README.md) | tests and documentation |
 
 **The classic GUI**, Metacat on Chez Scheme and SWL (macOS), answering `abc → abd; rkkccc → ?`
 with `rkkddd`:
@@ -215,8 +215,6 @@ bug and Chez's surprising evaluation order, are in
 ```bash
 bash tests/run-tests.sh                  # the Racket port and the Chez checks (about 10 min)
 bash python/run-tests.sh                 # the Python port (about 7 min)
-python3 ralph_loops/loop0001/gate.py     # Racket, plus the check that the original is untouched
-python3 ralph_loops/loop0002/gate.py     # Python, plus the checks on the frozen references
 ```
 
 GUI tests run on a virtual display and need `xvfb-run` (Xvfb) and `xwininfo` (x11-utils).
@@ -232,7 +230,6 @@ Every folder has a README.
 | [`python/`](python/README.md) | the Python port: [package](python/metacat/README.md), [GUI](python/metacat/gui/README.md), [oracle captures](python/oracle/README.md), [fixtures](python/fixtures/README.md), [tests](python/tests/README.md) |
 | [`tests/`](tests/README.md) | shared test data: golden traces, problem list, Chez differential batteries |
 | [`docs/`](docs/README.md) | code map, porting notes, trace format, anomalies, essays, the [dissertation](docs/reference/README.md), the [screenshot gallery](docs/screenshots/README.md) |
-| [`ralph_loops/`](ralph_loops/README.md) | the loops that built the ports: [loop0001](ralph_loops/loop0001/README.md) (Racket), [loop0002](ralph_loops/loop0002/README.md) (Python) |
 | `make-dist.sh` | builds the standalone Racket program |
 
 ## How it was made
@@ -240,10 +237,10 @@ Every folder has a README.
 Both ports were built by "Ralph loops". A driver (`loop.py`) runs one fresh Claude Code
 session per work item. After each session it runs a regression gate, allows up to three fix
 attempts, then commits and pushes. The Racket port took 18 iterations
-([loop0001](ralph_loops/loop0001/README.md)). The Python port was a test-driven translation
+([loop0001](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0001/README.md)). The Python port was a test-driven translation
 that wrote every test before its code, with expected values frozen from Chez; it also took 18
-iterations ([loop0002](ralph_loops/loop0002/README.md)). The method is in
-[`ralph_loops/ralph_loop_guide.md`](ralph_loops/ralph_loop_guide.md).
+iterations ([loop0002](https://github.com/fargonauts/metacat/blob/main/ralph_loops/loop0002/README.md)). The method is in
+[`ralph_loop_guide.md`](../../ralph_loops/ralph_loop_guide.md), and the loops themselves are in the [Metacat repository](https://github.com/fargonauts/metacat/tree/main/ralph_loops).
 
 Two essays in `docs/` place Metacat beside Numbo and Ganesalingam and Gowers's theorem prover:
 [the similarities](docs/robotone_numbo_metacat_similarities.md) and

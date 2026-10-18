@@ -1,0 +1,92 @@
+{
+ "name": "surround-01",
+ "title": "Surround 1",
+ "family": "surround",
+ "source": {
+  "tag": "F95",
+  "page": 115,
+  "figure": "Surround 1",
+  "pdf_page": 125,
+  "image_index": 0,
+  "image_size_px": [
+   489,
+   205
+  ]
+ },
+ "table": {
+  "width": 110,
+  "height": 100,
+  "frame_px": [
+   6,
+   15,
+   200,
+   191
+  ]
+ },
+ "touched": "cup1",
+ "answers": {
+  "E1": "small-glass1",
+  "E2": "cup2"
+ },
+ "objects": [
+  {
+   "id": "cup1",
+   "type": "cup",
+   "x": 24.1,
+   "y": 15.9,
+   "orientation": null,
+   "box_px": [
+    42,
+    40,
+    55,
+    46
+   ],
+   "figure": "Surround 1",
+   "page": 115,
+   "image": "F95 PDF page 125, pdfimages image 0 (489 x 205 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "small-glass1",
+   "type": "small glass",
+   "x": 23.5,
+   "y": 76.1,
+   "orientation": null,
+   "box_px": [
+    44,
+    145,
+    51,
+    153
+   ],
+   "figure": "Surround 1",
+   "page": 115,
+   "image": "F95 PDF page 125, pdfimages image 0 (489 x 205 px, 135 ppi JPEG)"
+  },
+  {
+   "id": "cup2",
+   "type": "cup",
+   "x": 87.6,
+   "y": 77.3,
+   "orientation": null,
+   "box_px": [
+    154,
+    148,
+    167,
+    154
+   ],
+   "figure": "Surround 1",
+   "page": 115,
+   "image": "F95 PDF page 125, pdfimages image 0 (489 x 205 px, 135 ppi JPEG)"
+  }
+ ],
+ "method": "The figure was extracted from the F95 PDF with `pdfimages -png` (an embedded JPEG at 135 ppi); the table's frame was found as the darkest column and row profiles of the image's left part (tools/measure_figure.py, find_frame); each icon's bounding box was read from the clusters of pixels darker than grey level 200 (components, merged within 2 px) and, where the H or E arrow touches an icon, from an ASCII dump of the region, taking the icon's own outline (the cup's rim and body, the glass's rim and body) and leaving the arrow out; the object's position is the centre of that box as a fraction of the frame's inner width and height, scaled to the 110 x 100 table (D-001, D-003). The silverware's orientation was read on the enlarged image (tines, blade and bowl at the top: `up`).",
+ "uncertainty": {
+  "units": 2,
+  "note": "One pixel is 0.57 units; icon boxes are good to about 1 px, and the objects an arrow overlaps (the touched cup, the E1 object) to about 2 px. Surround 5 measured here agrees with the chapter 4 screen dump of the same configuration (tests/data/ch4.json, an independent image) to within 1.6 units in x and 2.2 in y (docs/problems.md)."
+ },
+ "notes": [
+  "The H arrow enters the touched cup from the upper left; the cup's box is its rim (row 40) to its bottom (row 46), 14 x 7 px, read on the ASCII dump.",
+  "The E1 arrow enters the small glass from the lower right and overlaps its lower right corner; the glass's box is its rim and body, 8 x 9 px, read on the dump.",
+  "The E2 arrow's head touches the cup's bottom; the cup's box is the cluster's upper-left 14 x 7 px."
+ ],
+ "review": "Reviewed on the enlarged figure beside the rendering: three objects, the touched cup upper left, the glass lower left, the cup lower right, as French describes [F95 p. 115]."
+}

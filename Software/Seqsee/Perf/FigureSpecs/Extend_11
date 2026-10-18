@@ -1,0 +1,11 @@
+[General]
+ClusterCount = 2
+ TestSet=performance/TestSets/Extend_11
+
+[Sequences]
+seq=6 2 6 7 2 7 8 2 8|9 2 9 10 2 10 11 2 11 12 2 12 13 2 13
+seq=6 2 6 5 2 5 4 2 4|3 2 3 2 2 2 1 2 1 0 2 0
+seq=6 2 6 7 2 5 8 2 4|9 2 3 10 2 2 11 2 1 12 2 0
+seq=6 2 6 5 2 7 4 2 8|3 2 9 2 2 10 1 2 11 0 2 12
+[cluster_2]
+Human = 1

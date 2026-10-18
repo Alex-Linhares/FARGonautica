@@ -1,0 +1,962 @@
+tabletop blockage-06  seed 2  profile standard  engine python  Henry touches cup1
+   1  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-middle)
+      slipnet posts PK-SALC CHK-RL
+   2  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in middle-right)
+      slipnet posts PK-SALO PK-SALC
+   3  T=81.9  a=1.5  FND-GP()  -> found small-glass4 isolated; jolt small glass +19; jolt small glass +19; jolt isolated +19; posted 1 (FND-RL); jolt column +19; jolt column +19; jolt corner +19
+      slipnet posts PK-SALO x2 PK-SALC PK2SALO x2 PR-RCP RC-RL x3
+      RL tag r1 small-glass2 COLUMN:right w1 s5 by find-group
+      RL tag r2 small-glass4 COLUMN:right w1 s7 by find-group
+      RL tag r3 small-glass4 CORNER w1 s5 by find-group
+   4  T=81.9  a=1.5  FND-RL()  -> found r4 table MIDLINE r5 cup1 ROW:above r6 cup1 COLUMN:left; jolt separator +19; jolt row +19; jolt column +19; posted 3 (CMP-RL PR-RCP RC-RL)
+      slipnet posts PK-SALO PK-SALC FND-RL RC-RL x2
+      RL tag r4 table MIDLINE w1 s5 by find-roles
+      RL tag r5 cup1 ROW:above w1 s5 by find-roles
+      RL tag r6 cup1 COLUMN:left w1 s8 by find-roles
+   5  T=81.9  a=1.5  FND-RL()  -> found r4 table MIDLINE r5 cup1 ROW:above r6 cup1 COLUMN:left; posted 3 (CMP-RL PR-RCP RC-RL)
+      slipnet posts PK-SALO x4
+   6  T=81.9  a=1.5  FND-RL()  -> found r4 table MIDLINE r5 cup1 ROW:above r6 cup1 COLUMN:left; posted 3 (CMP-RL PR-RCP RC-RL)
+      slipnet posts PK-SALO
+   7  T=81.9  a=1.5  RC-RL()  -> fizzled (the rows of cup1 and its counterparts are not read)
+      slipnet posts PK-SALO
+   8  T=81.9  a=1.5  RC-RL()/1  -> fizzled (the rows of cup1 and its counterparts are not read)
+      slipnet posts PK-SALO x2
+   9  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+      slipnet posts PK-SALO CHK-RL
+  10  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+  11  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in middle-right)
+      slipnet posts CHK-RL
+  12  T=81.9  a=1.5  RC-RL()  -> fizzled (the rows of cup1 and its counterparts are not read)
+  13  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+      slipnet posts PK-SALO
+  14  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+  15  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+  16  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-middle)
+  17  T=81.9  a=1.5  PR-RCP()  -> fizzled (no role pair to propose)
+  18  T=81.9  a=1.5  FND-GP()  -> found g1 {small-glass1 small-glass3} gestalt horizontal; jolt small glass +19; jolt opposite +19; jolt small glass +19; jolt opposite +19; jolt group +14; jolt horizontal +19; posted 9 (FND-GP SAM FD-NNBR x2 FD-END FD-MID PK-SALO x2 FND-RL); jolt mirror symmetry +19; jolt diagonal symmetry +19; jolt diagonal symmetry +19; jolt row +19; jolt column +19; jolt group +19; jolt mirror symmetry +19; jolt diagonal symmetry +19; jolt diagonal symmetry +19; jolt row +19; jolt column +19; jolt group +19
+      slipnet posts FND-GP x3 PK-SALO x3 PK-SALC x8 PR-RCP RD-WVR RC-RL x5
+      RL tag r7 small-glass1 MIRROR_IMAGE:cup1 w1 s6 by find-group
+      RL tag r8 small-glass1 POINT_IMAGE:small-glass2 w1 s5 by find-group
+      RL drop r7 small-glass1 MIRROR_IMAGE (lost to r8)
+      RL tag r9 small-glass1 POINT_IMAGE:small-glass4 w1 s7 by find-group
+      RL tag r10 small-glass1 ROW:below w1 s6 by find-group
+      RL tag r11 small-glass1 COLUMN:left w1 s8 by find-group
+      RL tag r12 small-glass1 MEMBER w1 s6 by find-group
+      RL tag r13 small-glass3 MIRROR_IMAGE:cup1 w1 s7 by find-group
+      RL tag r14 small-glass3 POINT_IMAGE:small-glass2 w1 s8 by find-group
+      RL drop r13 small-glass3 MIRROR_IMAGE (lost to r14)
+      RL tag r15 small-glass3 POINT_IMAGE:small-glass4 w1 s10 by find-group
+      RL tag r16 small-glass3 ROW:below w1 s8 by find-group
+      RL tag r17 small-glass3 COLUMN:left w1 s10 by find-group
+      RL tag r18 small-glass3 MEMBER w1 s8 by find-group
+  19  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+      slipnet posts RD-WVR
+  20  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+  21  T=81.9  a=1.5  PK-SALO()  -> picked small-glass1 and cup1; posted 1 (CT-CP)
+      slipnet posts PK-SALO
+  22  T=81.9  a=1.5  PR-RCP()/1  -> proposed small-glass3 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PR-RCP
+      RL used small-glass3 POINT_IMAGE by C1: create-cp small-glass3 small-glass2
+      RL used small-glass3 ROW by C1: create-cp small-glass3 small-glass2
+  23  T=81.9  a=1.5  CHK-RL()  -> removed r2 small-glass4 COLUMN:right broken at strength 10
+      slipnet posts PK-SALO
+      RL drop r2 small-glass4 COLUMN (broken)
+  24  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+      slipnet posts PR-RCP RD-WVR
+  25  T=81.9  a=1.5  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+  26  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in middle-left)
+      slipnet posts FD-NNBR
+  27  T=81.9  a=1.5  PR-RCP()  -> proposed small-glass1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PK-SALO x2
+      RL used small-glass1 POINT_IMAGE by C1: create-cp small-glass1 small-glass2
+      RL used small-glass1 ROW by C1: create-cp small-glass1 small-glass2
+  28  T=81.9  a=1.5  PR-RCP()/1  -> proposed small-glass3 and small-glass4 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used small-glass3 POINT_IMAGE by C1: create-cp small-glass3 small-glass4
+      RL used small-glass3 ROW by C1: create-cp small-glass3 small-glass4
+  29  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-middle)
+      slipnet posts PR-RCP
+  30  T=81.9  a=1.5  PK-SALO()  -> picked small-glass1 and cup1; posted 1 (CT-CP)
+      slipnet posts PK-SALO RD-WVR
+  31  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in middle-right)
+      slipnet posts PR-RCP
+  32  T=81.9  a=1.5  FD-NNBR()  -> found neighbours of small-glass3 in g1: small-glass1 left; jolt neighbor +14; posted 3 (FD-NNBR BD-OB0 FND-RL)
+      slipnet posts FD-NNBR
+  33  T=81.9  a=1.5  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+  34  T=81.9  a=1.5  PK-SALC()  -> fizzled (no correspondence outside the Worldview)
+      slipnet posts FD-END PR-RCP
+  35  T=81.9  a=1.5  PR-RCP()/1  -> proposed small-glass3 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used small-glass3 POINT_IMAGE by C1: create-cp small-glass3 small-glass2
+      RL used small-glass3 ROW by C1: create-cp small-glass3 small-glass2
+  36  T=81.9  a=1.5  CT-CP(small-glass1 cup1)/1  -> passed cp1 small-glass1=cup1 static 54 p=0.54; posted 1 (CP-COMP)
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+  37  T=81.9  a=1.5  RC-RL()  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie); jolt counterpart +19; jolt counterpart +19
+      slipnet posts RC-RL x2
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      RL tag r19 small-glass1 COUNTERPART:cup1 tier2 w1 s5 by recast-role
+      RL tag r20 small-glass3 COUNTERPART:cup1 tier2 w1 s7 by recast-role
+  38  T=81.9  a=1.5  PR-RCP()  -> proposed small-glass3 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used small-glass3 POINT_IMAGE by C1: create-cp small-glass3 small-glass2
+      RL used small-glass3 ROW by C1: create-cp small-glass3 small-glass2
+  39  T=81.9  a=1.5  FD-MID(g1)/1  -> fizzled (middles of g1 already known)
+  40  T=81.9  a=1.5  FND-RL()  -> found r4 table MIDLINE r14 small-glass3 POINT_IMAGE:small-glass2 r15 small-glass3 POINT_IMAGE:small-glass4 r16 small-glass3 ROW:below r17 small-glass3 COLUMN:left r18 small-glass3 MEMBER; jolt mirror symmetry +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts PK-SALC PR-RCP
+      RL tag r21 small-glass3 MIRROR_IMAGE:cup1 w1 s8 by find-roles
+      RL drop r21 small-glass3 MIRROR_IMAGE (lost to r14)
+  41  T=81.9  a=1.5  RC-RL()  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie)
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  42  T=81.9  a=1.5  CMP-RL(cup1)/1  -> found r22 cup1 MIRROR_IMAGE:small-glass1 r23 cup1 MIRROR_IMAGE:small-glass3 r24 cup1 MIRROR_IMAGE:g1 r5 cup1 ROW:above r6 cup1 COLUMN:left; jolt mirror symmetry +19; jolt mirror symmetry +19; jolt mirror symmetry +19; posted 1 (PR-RCP)
+      slipnet posts PK-SALC x3
+      RL tag r22 cup1 MIRROR_IMAGE:small-glass1 w1 s9 by compare-roles
+      RL tag r23 cup1 MIRROR_IMAGE:small-glass3 w1 s10 by compare-roles
+      RL tag r24 cup1 MIRROR_IMAGE:g1 w1 s12 by compare-roles
+  43  T=81.9  a=1.5  PR-RCP()  -> proposed cup1 and g1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used cup1 MIRROR_IMAGE by C1: create-cp cup1 g1
+      RL used cup1 ROW by C1: create-cp cup1 g1
+  44  T=81.9  a=1.5  PR-RCP()/1  -> proposed small-glass1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used small-glass1 POINT_IMAGE by C1: create-cp small-glass1 small-glass2
+      RL used small-glass1 ROW by C1: create-cp small-glass1 small-glass2
+  45  T=81.9  a=1.5  PR-RCP()  -> proposed cup1 and small-glass3 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts SAM RD-WVR
+      RL used cup1 MIRROR_IMAGE by C1: create-cp cup1 small-glass3
+      RL used cup1 ROW by C1: create-cp cup1 small-glass3
+      RL used small-glass3 ROW by C1: create-cp cup1 small-glass3
+  46  T=81.9  a=1.5  FD-NNBR(small-glass1)/1  -> fizzled (no new neighbour of small-glass1)
+      slipnet posts RD-WVR
+  47  T=81.9  a=1.5  RC-RL()  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie)
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  48  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in middle-right)
+  49  T=81.9  a=1.5  RC-RL()  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie)
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  50  T=81.9  a=1.5  PK-SALO()  -> fizzled (nothing to pair with small-glass1)
+      RL used small-glass1 COUNTERPART by C2: picked small-glass1 for cup1
+  51  T=81.9  a=1.5  PR-RCP()/2  -> proposed small-glass3 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PK-SALO
+      RL used small-glass3 POINT_IMAGE by C1: create-cp small-glass3 small-glass2
+      RL used small-glass3 ROW by C1: create-cp small-glass3 small-glass2
+  52  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+      slipnet posts PK-SALO
+  53  T=81.9  a=1.5  RC-RL()  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie)
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  54  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-middle)
+      slipnet posts CHK-RL
+  55  T=81.9  a=1.5  CHK-RL()/1  -> removed r22 cup1 MIRROR_IMAGE:small-glass1 broken at strength 11
+      slipnet posts PR-RCP
+      RL drop r22 cup1 MIRROR_IMAGE (broken)
+  56  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+  57  T=81.9  a=1.5  RC-RL()/1  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie)
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  58  T=81.9  a=1.5  PR-RCP()  -> proposed small-glass3 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used small-glass3 POINT_IMAGE by C1: create-cp small-glass3 small-glass2
+      RL used small-glass3 ROW by C1: create-cp small-glass3 small-glass2
+  59  T=81.9  a=1.5  PR-RCP()  -> proposed small-glass3 and small-glass4 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PR-RCP
+      RL used small-glass3 POINT_IMAGE by C1: create-cp small-glass3 small-glass4
+      RL used small-glass3 ROW by C1: create-cp small-glass3 small-glass4
+  60  T=81.9  a=1.5  PR-RCP()  -> proposed cup1 and g1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used cup1 MIRROR_IMAGE by C1: create-cp cup1 g1
+      RL used cup1 ROW by C1: create-cp cup1 g1
+  61  T=81.9  a=1.5  FND-RL()  -> found r4 table MIDLINE r25 cup1 MIRROR_IMAGE:small-glass1 r23 cup1 MIRROR_IMAGE:small-glass3 r24 cup1 MIRROR_IMAGE:g1 r5 cup1 ROW:above r6 cup1 COLUMN:left; jolt mirror symmetry +19; posted 3 (CMP-RL PR-RCP RC-RL)
+      slipnet posts PK-SALC
+      RL tag r25 cup1 MIRROR_IMAGE:small-glass1 w1 s10 by find-roles
+  62  T=81.9  a=1.5  FND-GP()  -> fizzled (nothing in lower-right)
+  63  T=81.9  a=1.5  FND-RL(small-glass3)/1  -> found r4 table MIDLINE r26 small-glass3 MIRROR_IMAGE:cup1 r28 small-glass3 POINT_IMAGE:small-glass4 r16 small-glass3 ROW:below r17 small-glass3 COLUMN:left r18 small-glass3 MEMBER; jolt mirror symmetry +19; jolt diagonal symmetry +19; jolt diagonal symmetry +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts PK-SALC x3 RD-WVR
+      RL tag r26 small-glass3 MIRROR_IMAGE:cup1 w1 s11 by find-roles
+      RL drop r14 small-glass3 POINT_IMAGE (lost to r26)
+      RL drop r15 small-glass3 POINT_IMAGE (lost to r26)
+      RL tag r27 small-glass3 POINT_IMAGE:small-glass2 w1 s8 by find-roles
+      RL drop r27 small-glass3 POINT_IMAGE (lost to r26)
+      RL tag r28 small-glass3 POINT_IMAGE:small-glass4 w1 s9 by find-roles
+      RL drop r26 small-glass3 MIRROR_IMAGE (lost to r28)
+  64  T=81.9  a=1.5  PK-SALC()  -> passed cp1 small-glass1=cup1 rating 66; posted 1 (CP-COMP)
+  65  T=81.9  a=1.5  CMP-RL(small-glass3)/1  -> found r30 small-glass3 POINT_IMAGE:small-glass2 r28 small-glass3 POINT_IMAGE:small-glass4 r16 small-glass3 ROW:below r17 small-glass3 COLUMN:left r18 small-glass3 MEMBER; jolt mirror symmetry +19; jolt diagonal symmetry +19; posted 1 (PR-RCP)
+      slipnet posts PK-SALC x2
+      RL tag r29 small-glass3 MIRROR_IMAGE:cup1 w1 s13 by compare-roles
+      RL drop r29 small-glass3 MIRROR_IMAGE (lost to r28)
+      RL tag r30 small-glass3 POINT_IMAGE:small-glass2 w1 s11 by compare-roles
+  66  T=81.9  a=1.5  PK-SALC()  -> passed cp1 small-glass1=cup1 rating 66; posted 1 (CP-COMP)
+      slipnet posts PK-SALO
+  67  T=81.9  a=1.5  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+  68  T=81.9  a=1.5  FND-GP()  -> fizzled (no new group around small-glass1)
+  69  T=81.9  a=1.5  CP-COMP(cp1)/1  -> entered cp1 small-glass1=cup1 entered the Worldview without a fight, rating 68; jolt mirror symmetry +6; jolt sameness +6; jolt smaller than +6; jolt bigger than +6; jolt sameness +6; posted 4 (BLD-CP CP-CLN CHK-WV RD-WVR)
+      slipnet posts SAM
+      T 81.9 -> 41.0 (dQ 0.04 Q 0.68 dWV 1 Tcp 1) by change
+  70  T=41.0  a=4.4  PR-RCP()  -> proposed small-glass3 and small-glass4 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used small-glass3 POINT_IMAGE by C1: create-cp small-glass3 small-glass4
+      RL used small-glass3 ROW by C1: create-cp small-glass3 small-glass4
+  71  T=41.0  a=4.4  CT-CP(small-glass3 small-glass4)/1  -> failed cp2 small-glass3=small-glass4 static 61 p=0.61, removed
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+  72  T=41.0  a=4.4  PR-RCP()  -> proposed cup1 and g1 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used cup1 MIRROR_IMAGE by C1: create-cp cup1 g1
+      RL used cup1 ROW by C1: create-cp cup1 g1
+      T 41.0 -> 39.5 (dQ 0.03 Q 0.68 dWV 1 Tcp 1) by schedule
+  73  T=39.5  a=4.6  CP-COMP(cp1)/1  -> fizzled (cp1 already in the Worldview)
+  74  T=39.5  a=4.6  PK-SALO()  -> fizzled (nothing to pair with small-glass1)
+      RL used small-glass1 COUNTERPART by C2: picked small-glass1 for cup1
+  75  T=39.5  a=4.6  PR-RCP()/1  -> proposed cup1 and small-glass3 as mirror_image pair; posted 2 (CT-CP CHK-RL)
+      RL used cup1 MIRROR_IMAGE by C1: create-cp cup1 small-glass3
+      RL used cup1 ROW by C1: create-cp cup1 small-glass3
+      RL used small-glass3 ROW by C1: create-cp cup1 small-glass3
+      T 39.5 -> 38.0 (dQ 0.03 Q 0.68 dWV 1 Tcp 1) by schedule
+  76  T=38.0  a=4.7  CT-CP(cup1 g1)/1  -> failed cp3 cup1=g1 static -27 p=0.01, removed
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+  77  T=38.0  a=4.7  FD-NNBR()  -> fizzled (no member whose neighbours are unknown)
+  78  T=38.0  a=4.7  CT-CP(small-glass3 small-glass2)/1  -> failed cp4 small-glass3=small-glass2 static 61 p=0.61, removed
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      T 38.0 -> 36.5 (dQ 0.03 Q 0.67 dWV 1 Tcp 1) by schedule
+  79  T=36.5  a=4.8  RC-RL()/1  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie)
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  80  T=36.5  a=4.8  BLD-CP(cp1)/2  -> described cp1 small-glass1=cup1 [left-left small glass-cup one-one] level top
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+  81  T=36.5  a=4.8  FD-NNBR(small-glass1)/1  -> fizzled (no new neighbour of small-glass1)
+      T 36.5 -> 35.1 (dQ 0.03 Q 0.67 dWV 1 Tcp 1) by schedule
+  82  T=35.1  a=4.9  CT-CP(small-glass1 small-glass2)/1  -> failed cp5 small-glass1=small-glass2 static 61 p=0.61, removed
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+  83  T=35.1  a=4.9  BD-OB0(p1)/1  -> passed p1 {small-glass1 small-glass3} sameness stage 0, p=1.00; posted 1 (BD-OB1)
+  84  T=35.1  a=4.9  CT-CP(cup1 small-glass3)/1  -> passed cp6 cup1=small-glass3 static 56 p=0.56; posted 1 (CP-COMP)
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      T 35.1 -> 33.8 (dQ 0.03 Q 0.67 dWV 1 Tcp 1) by schedule
+  85  T=33.8  a=5.0  RC-RL()  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie)
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+  86  T=33.8  a=5.0  CT-CP(small-glass1 cup1)/1  -> fizzled (small-glass1=cup1: exists)
+  87  T=33.8  a=5.0  RC-RL()  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie)
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 33.8 -> 32.5 (dQ 0.03 Q 0.67 dWV 1 Tcp 1) by schedule
+  88  T=32.5  a=5.1  CP-COMP(cp6)/2  -> fight cp6 cup1=small-glass3 vs cp1: old 67 vs rival 67, p=0.50, rival wins; jolt mirror symmetry +6; jolt sameness +6; jolt smaller than +6; jolt bigger than +6; jolt sameness +6; posted 4 (BLD-CP CP-CLN CHK-WV RD-WVR)
+      T 32.5 -> 39.7 (dQ 0.03 Q 0.70 dWV 2 Tcp 2) by change
+  89  T=39.7  a=4.5  CT-CP(cup1 g1)/1  -> failed cp7 cup1=g1 static -27 p=0.01, removed
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+  90  T=39.7  a=4.5  CP-COMP(cp1)/2  -> fight cp1 small-glass1=cup1 vs cp6: old 70 vs rival 61, p=0.35, rival wins; jolt mirror symmetry +6; jolt sameness +6; jolt smaller than +6; jolt bigger than +6; jolt sameness +6; posted 4 (BLD-CP CP-CLN CHK-WV RD-WVR)
+      slipnet posts SAM
+      T 39.7 -> 51.3 (dQ 0.03 Q 0.65 dWV 3 Tcp 3) by change
+  91  T=51.3  a=3.7  CT-CP(small-glass3 small-glass2)/1  -> passed cp8 small-glass3=small-glass2 static 60 p=0.60; posted 1 (CP-COMP)
+      slipnet posts PK-SALO
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+  92  T=51.3  a=3.7  CT-CP(small-glass3 small-glass2)/2  -> fizzled (small-glass3=small-glass2: exists)
+      slipnet posts PR-RCP
+  93  T=51.3  a=3.7  PR-RCP()  -> proposed small-glass3 and small-glass4 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used small-glass3 POINT_IMAGE by C1: create-cp small-glass3 small-glass4
+      RL used small-glass3 ROW by C1: create-cp small-glass3 small-glass4
+      T 51.3 -> 50.0 (dQ 0.03 Q 0.65 dWV 3 Tcp 3) by schedule
+  94  T=50.0  a=3.8  RD-WVR()  -> fizzled (no axis, key or barrier in the Worldview)
+  95  T=50.0  a=3.8  FND-GP()  -> fizzled (nothing in middle-right)
+  96  T=50.0  a=3.8  CT-CP(small-glass3 small-glass4)/1  -> passed cp9 small-glass3=small-glass4 static 60 p=0.60; posted 1 (CP-COMP)
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      T 50.0 -> 48.7 (dQ 0.03 Q 0.64 dWV 3 Tcp 3) by schedule
+  97  T=48.7  a=3.9  CP-COMP(cp8)/2  -> entered cp8 small-glass3=small-glass2 entered the Worldview without a fight, rating 109; jolt opposite +6; jolt diagonal symmetry +6; jolt sameness +6; jolt sameness +6; posted 4 (BLD-CP CP-CLN CHK-WV RD-WVR)
+      slipnet posts SAM PK-SALC
+      T 48.7 -> 56.2 (dQ 0.02 Q 0.63 dWV 4 Tcp 4) by change
+  98  T=56.2  a=3.3  PK-SALC()  -> passed cp6 cup1=small-glass3 rating 65; posted 1 (CP-COMP)
+      slipnet posts RC-RL
+  99  T=56.2  a=3.3  CP-COMP(cp6)/1  -> fight cp6 cup1=small-glass3 vs cp1 cp8: old 109 vs rival 65, p=0.15, old holds; posted 2 (CP-CLN CHK-WV)
+      T 56.2 -> 54.5 (dQ 0.02 Q 0.67 dWV 4 Tcp 5) by competition
+ 100  T=54.5  a=3.5  CP-COMP(cp9)/2  -> fight cp9 small-glass3=small-glass4 vs cp8: old 115 vs rival 112, p=0.48, old holds; posted 2 (CP-CLN CHK-WV)
+      T 54.5 -> 52.9 (dQ 0.03 Q 0.70 dWV 4 Tcp 6) by competition
+ 101  T=52.9  a=3.6  FND-GP()  -> fizzled (nothing in middle-right)
+ 102  T=52.9  a=3.6  FND-RL(g1)/1  -> found r4 table MIDLINE r31 g1 MIRROR_IMAGE:cup1 r32 g1 POINT_IMAGE:small-glass2 r33 g1 POINT_IMAGE:small-glass4 r34 g1 ROW:below r35 g1 COLUMN:left r36 g1 CORNER; jolt mirror symmetry +19; jolt diagonal symmetry +19; jolt diagonal symmetry +19; jolt row +19; jolt column +19; jolt corner +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts PK-SALC x4 PR-RCP RC-RL x2
+      RL tag r31 g1 MIRROR_IMAGE:cup1 w2 s89 by find-roles
+      RL tag r32 g1 POINT_IMAGE:small-glass2 w2 s88 by find-roles
+      RL drop r31 g1 MIRROR_IMAGE (lost to r32)
+      RL tag r33 g1 POINT_IMAGE:small-glass4 w2 s15 by find-roles
+      RL tag r34 g1 ROW:below w2 s11 by find-roles
+      RL tag r35 g1 COLUMN:left w2 s12 by find-roles
+      RL tag r36 g1 CORNER w2 s12 by find-roles
+      T 52.9 -> 51.8 (dQ 0.02 Q 0.71 dWV 4 Tcp 6) by schedule
+ 103  T=51.8  a=3.7  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 104  T=51.8  a=3.7  FND-GP()  -> fizzled (nothing in lower-right)
+ 105  T=51.8  a=3.7  PR-RCP()/2  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+      T 51.8 -> 50.7 (dQ 0.02 Q 0.70 dWV 4 Tcp 6) by schedule
+ 106  T=50.7  a=3.7  PR-RCP()/2  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 107  T=50.7  a=3.7  RC-RL()  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie)
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 108  T=50.7  a=3.7  CT-CP(g1 small-glass2)/3  -> failed cp10 g1=small-glass2 static -25 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      T 50.7 -> 49.7 (dQ 0.02 Q 0.70 dWV 4 Tcp 6) by schedule
+ 109  T=49.7  a=3.8  PK-SALO()  -> fizzled (nothing to pair with small-glass3)
+      RL used small-glass3 COUNTERPART by C2: picked small-glass3 for cup1
+ 110  T=49.7  a=3.8  RC-RL()  -> found cup1 [] tiers 2:small-glass1 2:small-glass3 (tie)
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 2:small-glass3:3.7513 ambiguous
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 111  T=49.7  a=3.8  FND-GP()  -> fizzled (nothing in lower-middle)
+      T 49.7 -> 48.7 (dQ 0.02 Q 0.70 dWV 4 Tcp 6) by schedule
+ 112  T=48.7  a=3.9  FND-GP()  -> fizzled (nothing in lower-right)
+ 113  T=48.7  a=3.9  CT-CP(small-glass3 small-glass4)/1  -> fizzled (small-glass3=small-glass4: exists)
+ 114  T=48.7  a=3.9  RD-WVR()  -> found r37 worldview SYMMETRY_AXIS:point r38 small-glass2 BARRIER:small-glass3 cp8 r39 small-glass3 CLAIMED:small-glass2 cp8; jolt symmetry +19; jolt diagonal symmetry +14; jolt barrier +19; jolt barrier +19; jolt barrier +14; posted 1 (PK-SALC)
+      slipnet posts PK-SALC RD-WVR
+      RL tag r37 worldview SYMMETRY_AXIS:point w1 s10 by read-worldview-roles
+      RL tag r38 small-glass2 BARRIER:small-glass3 cp8 w1 s80 by read-worldview-roles
+      RL tag r39 small-glass3 CLAIMED:small-glass2 cp8 w1 s82 by read-worldview-roles
+      RL used small-glass2 BARRIER by C4: pick-strong-cp cp8
+      T 48.7 -> 47.7 (dQ 0.02 Q 0.70 dWV 4 Tcp 6) by schedule
+ 115  T=47.7  a=4.0  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3; jolt counterpart +19
+      slipnet posts RC-RL x2
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      RL drop r20 small-glass3 COUNTERPART (broken)
+      RL tag r40 small-glass3 COUNTERPART:cup1 tier5 w1 s100 by recast-role
+ 116  T=47.7  a=4.0  FND-GP()  -> fizzled (nothing in middle-right)
+ 117  T=47.7  a=4.0  FND-GP()  -> fizzled (no new group around small-glass1)
+      slipnet posts PR-RCP
+      T 47.7 -> 46.8 (dQ 0.02 Q 0.70 dWV 4 Tcp 6) by schedule
+ 118  T=46.8  a=4.0  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 119  T=46.8  a=4.0  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      slipnet posts CHK-RL
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 120  T=46.8  a=4.0  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 46.8 -> 46.0 (dQ 0.02 Q 0.70 dWV 4 Tcp 6) by schedule
+ 121  T=46.0  a=4.1  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 122  T=46.0  a=4.1  PK-SALO()  -> fizzled (nothing to pair with small-glass1)
+      RL used small-glass1 COUNTERPART by C2: picked small-glass1 for cup1
+ 123  T=46.0  a=4.1  BLD-CP(cp6)/3  -> described cp6 cup1=small-glass3 [left-left cup-small glass one-one] level top
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      T 46.0 -> 45.1 (dQ 0.02 Q 0.70 dWV 4 Tcp 6) by schedule
+ 124  T=45.1  a=4.1  FND-GP()  -> fizzled (no new group around small-glass3)
+ 125  T=45.1  a=4.1  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 126  T=45.1  a=4.1  CT-CP(cup1 g1)/1  -> failed cp11 cup1=g1 static -28 p=0.01, removed
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      T 45.1 -> 44.4 (dQ 0.02 Q 0.70 dWV 4 Tcp 6) by schedule
+ 127  T=44.4  a=4.2  CT-CP(g1 small-glass2)/1  -> failed cp12 g1=small-glass2 static -26 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+ 128  T=44.4  a=4.2  SAM()  -> fizzled (no twin of cup1)
+      slipnet posts PR-RCP
+      answer schedule: FND-ANS x1 at urgency 4.0
+ 129  T=44.4  a=4.2  CT-CP(small-glass3 small-glass4)/2  -> fizzled (small-glass3=small-glass4: exists)
+      T 44.4 -> 43.6 (dQ 0.02 Q 0.69 dWV 4 Tcp 6) by schedule
+ 130  T=43.6  a=4.3  BLD-CP(cp8)/3  -> described cp8 small-glass3=small-glass2 [left-right small glass-small glass one-one] level top
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+ 131  T=43.6  a=4.3  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 132  T=43.6  a=4.3  PR-RCP()/2  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+      T 43.6 -> 42.9 (dQ 0.01 Q 0.69 dWV 4 Tcp 6) by schedule
+ 133  T=42.9  a=4.3  FND-GP()  -> fizzled (nothing in lower-right)
+ 134  T=42.9  a=4.3  PK-SALO()  -> fizzled (nothing to pair with small-glass1)
+      RL used small-glass1 COUNTERPART by C2: picked small-glass1 for cup1
+ 135  T=42.9  a=4.3  RD-WVR()  -> found r37 worldview SYMMETRY_AXIS:point r38 small-glass2 BARRIER:small-glass3 cp8 r39 small-glass3 CLAIMED:small-glass2 cp8; jolt diagonal symmetry +14; jolt barrier +14; posted 1 (PK-SALC)
+      slipnet posts PK-SALC
+      RL used small-glass2 BARRIER by C4: pick-strong-cp cp8
+      T 42.9 -> 42.2 (dQ 0.01 Q 0.70 dWV 4 Tcp 6) by schedule
+ 136  T=42.2  a=4.4  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 137  T=42.2  a=4.4  RD-WVR()  -> found r37 worldview SYMMETRY_AXIS:point r38 small-glass2 BARRIER:small-glass3 cp8 r39 small-glass3 CLAIMED:small-glass2 cp8; jolt diagonal symmetry +14; jolt barrier +14; posted 1 (PK-SALC)
+      slipnet posts PK-SALC
+      RL used small-glass2 BARRIER by C4: pick-strong-cp cp8
+ 138  T=42.2  a=4.4  RD-WVR()  -> found r37 worldview SYMMETRY_AXIS:point r38 small-glass2 BARRIER:small-glass3 cp8 r39 small-glass3 CLAIMED:small-glass2 cp8; jolt diagonal symmetry +14; jolt barrier +14; posted 1 (PK-SALC)
+      slipnet posts PK-SALC
+      RL used small-glass2 BARRIER by C4: pick-strong-cp cp8
+      T 42.2 -> 41.7 (dQ 0.01 Q 0.70 dWV 4 Tcp 6) by schedule
+ 139  T=41.7  a=4.4  RD-WVR()  -> found r37 worldview SYMMETRY_AXIS:point r38 small-glass2 BARRIER:small-glass3 cp8 r39 small-glass3 CLAIMED:small-glass2 cp8; jolt diagonal symmetry +14; jolt barrier +14; posted 1 (PK-SALC)
+      slipnet posts PK-SALC
+      RL used small-glass2 BARRIER by C4: pick-strong-cp cp8
+ 140  T=41.7  a=4.4  CT-CP(g1 small-glass2)/1  -> failed cp13 g1=small-glass2 static -24 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+ 141  T=41.7  a=4.4  RC-RL()/1  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      slipnet posts SAM PR-RCP
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 41.7 -> 41.0 (dQ 0.01 Q 0.70 dWV 4 Tcp 6) by schedule
+ 142  T=41.0  a=4.4  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 143  T=41.0  a=4.4  FND-GP()  -> fizzled (nothing in lower-right)
+ 144  T=41.0  a=4.4  PK-SALC()  -> passed cp9 small-glass3=small-glass4 rating 56; posted 1 (CP-COMP)
+      T 41.0 -> 40.5 (dQ 0.01 Q 0.70 dWV 4 Tcp 6) by schedule
+ 145  T=40.5  a=4.5  CHK-RL()  -> removed r3 small-glass4 CORNER broken at strength 7
+      slipnet posts PR-RCP CHK-RL
+      RL drop r3 small-glass4 CORNER (broken)
+ 146  T=40.5  a=4.5  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 147  T=40.5  a=4.5  FND-GP()  -> fizzled (no new group around small-glass1)
+      T 40.5 -> 40.0 (dQ 0.01 Q 0.70 dWV 4 Tcp 6) by schedule
+ 148  T=40.0  a=4.5  CP-COMP(cp9)/1  -> fight cp9 small-glass3=small-glass4 vs cp8: old 122 vs rival 109, p=0.38, old holds; posted 2 (CP-CLN CHK-WV)
+      T 40.0 -> 38.6 (dQ 0.01 Q 0.70 dWV 4 Tcp 7) by competition
+ 149  T=38.6  a=4.6  PK-SALC(cp8)/1  -> passed cp9 small-glass3=small-glass4 rating 56; posted 1 (CP-COMP)
+      answer schedule: FND-ANS x1 at urgency 5.0
+ 150  T=38.6  a=4.6  PK-SALO()  -> fizzled (nothing to pair with small-glass1)
+      RL used small-glass1 COUNTERPART by C2: picked small-glass1 for cup1
+      T 38.6 -> 38.1 (dQ 0.01 Q 0.70 dWV 4 Tcp 7) by schedule
+ 151  T=38.1  a=4.7  CT-CP(g1 small-glass2)/1  -> failed cp14 g1=small-glass2 static -25 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+ 152  T=38.1  a=4.7  FND-GP()  -> fizzled (nothing in lower-right)
+ 153  T=38.1  a=4.7  FND-GP()  -> fizzled (nothing in lower-right)
+      slipnet posts PR-RCP
+      T 38.1 -> 37.7 (dQ 0.01 Q 0.70 dWV 4 Tcp 7) by schedule
+ 154  T=37.7  a=4.7  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 155  T=37.7  a=4.7  CP-COMP(cp9)/2  -> fight cp9 small-glass3=small-glass4 vs cp8: old 122 vs rival 109, p=0.37, old holds; posted 2 (CP-CLN CHK-WV)
+      T 37.7 -> 36.4 (dQ 0.01 Q 0.70 dWV 4 Tcp 8) by competition
+ 156  T=36.4  a=4.8  CMP-RL(cup1)/1  -> found r25 cup1 MIRROR_IMAGE:small-glass1 r23 cup1 MIRROR_IMAGE:small-glass3 r24 cup1 MIRROR_IMAGE:g1 r5 cup1 ROW:above r6 cup1 COLUMN:left; posted 1 (PR-RCP)
+      T 36.4 -> 35.9 (dQ 0.01 Q 0.70 dWV 4 Tcp 8) by schedule
+ 157  T=35.9  a=4.8  CT-CP(small-glass1 small-glass2)/2  -> passed cp15 small-glass1=small-glass2 static 64 p=0.64; posted 1 (CP-COMP)
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+ 158  T=35.9  a=4.8  PR-RCP()/2  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 159  T=35.9  a=4.8  CT-CP(g1 small-glass2)/1  -> failed cp16 g1=small-glass2 static -25 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      T 35.9 -> 35.5 (dQ 0.01 Q 0.70 dWV 4 Tcp 8) by schedule
+ 160  T=35.5  a=4.8  CP-COMP(cp15)/3  -> fight cp15 small-glass1=small-glass2 vs cp1 cp8: old 122 vs rival 64, p=0.04, old holds; posted 2 (CP-CLN CHK-WV)
+      T 35.5 -> 35.5 (dQ 0.01 Q 0.73 dWV 4 Tcp 9) by competition
+ 161  T=35.5  a=4.8  FND-GP()  -> fizzled (nothing in lower-right)
+ 162  T=35.5  a=4.8  FND-GP()  -> fizzled (nothing in lower-middle)
+      T 35.5 -> 35.0 (dQ 0.01 Q 0.73 dWV 4 Tcp 9) by schedule
+ 163  T=35.0  a=4.9  CHK-WV()/2  -> found barrier fights cp8; posted 1 (PK-SALC)
+      RL used small-glass2 BARRIER by C4: pick-strong-cp cp8
+ 164  T=35.0  a=4.9  FND-GP()  -> fizzled (nothing in middle-right)
+ 165  T=35.0  a=4.9  CMP-RL(cup1)/1  -> found r25 cup1 MIRROR_IMAGE:small-glass1 r23 cup1 MIRROR_IMAGE:small-glass3 r24 cup1 MIRROR_IMAGE:g1 r5 cup1 ROW:above r6 cup1 COLUMN:left; posted 1 (PR-RCP)
+      T 35.0 -> 34.6 (dQ 0.01 Q 0.73 dWV 4 Tcp 9) by schedule
+ 166  T=34.6  a=4.9  PR-RCP()/2  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 167  T=34.6  a=4.9  FND-GP()  -> fizzled (no new group around small-glass1)
+ 168  T=34.6  a=4.9  FND-RL(small-glass4)/1  -> found r4 table MIDLINE r41 small-glass4 POINT_IMAGE:small-glass1 r42 small-glass4 POINT_IMAGE:small-glass3 r43 small-glass4 POINT_IMAGE:g1 r44 small-glass4 ROW:above r45 small-glass4 COLUMN:right r46 small-glass4 CORNER; jolt diagonal symmetry +19; jolt diagonal symmetry +19; jolt diagonal symmetry +19; jolt row +19; jolt column +19; jolt corner +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts PK-SALC x3 PR-RCP x2 RC-RL x2
+      RL tag r41 small-glass4 POINT_IMAGE:small-glass1 w1 s83 by find-roles
+      RL tag r42 small-glass4 POINT_IMAGE:small-glass3 w1 s84 by find-roles
+      RL tag r43 small-glass4 POINT_IMAGE:g1 w1 s12 by find-roles
+      RL tag r44 small-glass4 ROW:above w1 s6 by find-roles
+      RL tag r45 small-glass4 COLUMN:right w1 s7 by find-roles
+      RL tag r46 small-glass4 CORNER w1 s7 by find-roles
+      T 34.6 -> 34.5 (dQ 0.01 Q 0.74 dWV 4 Tcp 9) by schedule
+ 169  T=34.5  a=4.9  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 170  T=34.5  a=4.9  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts RD-WVR
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 171  T=34.5  a=4.9  CT-CP(g1 small-glass2)/1  -> failed cp17 g1=small-glass2 static -24 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      T 34.5 -> 34.2 (dQ 0.01 Q 0.74 dWV 4 Tcp 9) by schedule
+ 172  T=34.2  a=4.9  CT-CP(g1 small-glass2)/1  -> failed cp18 g1=small-glass2 static -24 p=0.01, removed
+      slipnet posts PK-SALC
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+ 173  T=34.2  a=4.9  FND-GP()  -> fizzled (nothing in lower-right)
+      slipnet posts PR-RCP RD-WVR
+ 174  T=34.2  a=4.9  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+      T 34.2 -> 33.8 (dQ 0.01 Q 0.74 dWV 4 Tcp 9) by schedule
+ 175  T=33.8  a=5.0  CT-CP(g1 small-glass2)/1  -> failed cp19 g1=small-glass2 static -24 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+ 176  T=33.8  a=5.0  PK-SALO()  -> fizzled (nothing to pair with small-glass1)
+      RL used small-glass1 COUNTERPART by C2: picked small-glass1 for cup1
+ 177  T=33.8  a=5.0  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 33.8 -> 33.5 (dQ 0.01 Q 0.74 dWV 4 Tcp 9) by schedule
+ 178  T=33.5  a=5.0  FND-GP()  -> found small-glass1 isolated; jolt isolated +19; posted 1 (FND-RL)
+      slipnet posts FD-MID PK2SALO x2
+ 179  T=33.5  a=5.0  PR-RCP()/2  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 180  T=33.5  a=5.0  CT-CP(g1 small-glass2)/1  -> failed cp20 g1=small-glass2 static -24 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      T 33.5 -> 33.2 (dQ 0.01 Q 0.74 dWV 4 Tcp 9) by schedule
+ 181  T=33.2  a=5.0  FND-GP()  -> found g2 {small-glass2 small-glass4} gestalt horizontal; jolt group +14; jolt horizontal +19; posted 9 (FND-GP SAM FD-NNBR x2 FD-END FD-MID PK-SALO x2 FND-RL)
+      slipnet posts FND-GP
+ 182  T=33.2  a=5.0  FD-MID()  -> fizzled (middles of g2 already known)
+      slipnet posts PR-RCP
+ 183  T=33.2  a=5.0  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+      T 33.2 -> 32.9 (dQ 0.01 Q 0.73 dWV 4 Tcp 9) by schedule
+      answer schedule: FND-ANS x1 at urgency 7.0
+ 184  T=32.9  a=5.0  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+ 185  T=32.9  a=5.0  FD-NNBR(small-glass4)/1  -> found neighbours of small-glass4 in g2: small-glass2 left; jolt neighbor +14; posted 3 (FD-NNBR BD-OB0 FND-RL)
+ 186  T=32.9  a=5.0  CT-CP(g1 small-glass2)/1  -> failed cp21 g1=small-glass2 static -25 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      T 32.9 -> 32.6 (dQ 0.01 Q 0.73 dWV 4 Tcp 9) by schedule
+ 187  T=32.6  a=5.1  PK-SALO()  -> fizzled (nothing to pair with small-glass1)
+      slipnet posts PR-RCP
+      RL used small-glass1 COUNTERPART by C2: picked small-glass1 for cup1
+      answer schedule: FND-ANS x1 at urgency 7.0
+ 188  T=32.6  a=5.1  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+ 189  T=32.6  a=5.1  PK-SALO()  -> fizzled (nothing to pair with small-glass1)
+      RL used small-glass1 COUNTERPART by C2: picked small-glass1 for cup1
+      T 32.6 -> 32.4 (dQ 0.01 Q 0.73 dWV 4 Tcp 9) by schedule
+ 190  T=32.4  a=5.1  BD-OB0(p2)/2  -> passed p2 {small-glass2 small-glass4} sameness stage 0, p=1.00; posted 1 (BD-OB1)
+ 191  T=32.4  a=5.1  FND-RL(g2)/1  -> found r4 table MIDLINE r47 g2 POINT_IMAGE:small-glass1 r48 g2 POINT_IMAGE:small-glass3 r49 g2 POINT_IMAGE:g1 r50 g2 ROW:above r51 g2 COLUMN:right r52 g2 CORNER r53 g2 ECHO:g1; jolt diagonal symmetry +19; jolt diagonal symmetry +19; jolt diagonal symmetry +19; jolt row +19; jolt column +19; jolt corner +19; jolt echo +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts PK-SALC x4 PR-RCP x3 RC-RL x3
+      RL tag r47 g2 POINT_IMAGE:small-glass1 w2 s89 by find-roles
+      RL tag r48 g2 POINT_IMAGE:small-glass3 w2 s90 by find-roles
+      RL tag r49 g2 POINT_IMAGE:g1 w2 s18 by find-roles
+      RL tag r50 g2 ROW:above w2 s11 by find-roles
+      RL tag r51 g2 COLUMN:right w2 s12 by find-roles
+      RL tag r52 g2 CORNER w2 s12 by find-roles
+      RL tag r53 g2 ECHO:g1 w2 s12 by find-roles
+ 192  T=32.4  a=5.1  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts CHK-RL
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used g2 ROW by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+      T 32.4 -> 32.4 (dQ 0.01 Q 0.74 dWV 4 Tcp 9) by schedule
+ 193  T=32.4  a=5.1  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts RD-WVR
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used g2 ROW by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+ 194  T=32.4  a=5.1  PR-RCP()  -> proposed g2 and small-glass1 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass1
+      RL used g2 ROW by C1: create-cp g2 small-glass1
+      RL used small-glass1 ROW by C1: create-cp g2 small-glass1
+ 195  T=32.4  a=5.1  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 32.4 -> 32.2 (dQ 0.01 Q 0.74 dWV 4 Tcp 9) by schedule
+ 196  T=32.2  a=5.1  FND-GP()  -> fizzled (nothing in middle-right)
+ 197  T=32.2  a=5.1  PR-RCP()/2  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: FND-GP() posted at 0
+      aged out: PK2SALO() posted at 0
+      aged out: PK2SALO() posted at 0
+      aged out: PK2SALO() posted at 0
+      aged out: PK-SALO() posted at 0
+      aged out: PK-SALC() posted at 0
+      aged out: PK-SALC() posted at 0
+ 198  T=32.2  a=5.1  BLD-CP(cp1)/3  -> described cp1 small-glass1=cup1 [left-left small glass-cup one-one] level top
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+      RL used cup1 COLUMN by C6: placement of cup1 read in the left column
+      T 32.2 -> 31.9 (dQ 0.01 Q 0.74 dWV 4 Tcp 9) by schedule
+      aged out: PK-SALC() posted at 1
+      aged out: CHK-RL() posted at 1
+ 199  T=31.9  a=5.1  FND-RL(small-glass1)/1  -> found r4 table MIDLINE r8 small-glass1 POINT_IMAGE:small-glass2 r9 small-glass1 POINT_IMAGE:small-glass4 r55 small-glass1 POINT_IMAGE:g2 r10 small-glass1 ROW:below r11 small-glass1 COLUMN:left r12 small-glass1 MEMBER; jolt mirror symmetry +19; jolt diagonal symmetry +19; posted 2 (CMP-RL PR-RCP)
+      slipnet posts PK-SALC x3
+      RL tag r54 small-glass1 MIRROR_IMAGE:cup1 w1 s82 by find-roles
+      RL drop r54 small-glass1 MIRROR_IMAGE (lost to r8)
+      RL tag r55 small-glass1 POINT_IMAGE:g2 w1 s87 by find-roles
+      aged out: PK-SALC() posted at 2
+ 200  T=31.9  a=5.1  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      aged out: PK-SALO() posted at 3
+      aged out: PK-SALC() posted at 3
+      aged out: PK2SALO() posted at 3
+      aged out: PK2SALO() posted at 3
+ 201  T=31.9  a=5.1  PR-RCP()/2  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+      T 31.9 -> 31.8 (dQ 0.01 Q 0.74 dWV 4 Tcp 9) by schedule
+ 202  T=31.8  a=5.1  RD-WVR()  -> found r37 worldview SYMMETRY_AXIS:point r38 small-glass2 BARRIER:small-glass3 cp8 r39 small-glass3 CLAIMED:small-glass2 cp8; jolt diagonal symmetry +14; jolt barrier +14; posted 1 (PK-SALC)
+      slipnet posts PK-SALC PR-RCP
+      RL used small-glass2 BARRIER by C4: pick-strong-cp cp8
+      aged out: PK-SALO() posted at 5
+      aged out: PK-SALO() posted at 5
+ 203  T=31.8  a=5.1  FND-GP()  -> fizzled (no new group around small-glass1)
+      slipnet posts FD-MID CHK-RL
+      aged out: PK-SALO() posted at 6
+ 204  T=31.8  a=5.1  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used g2 ROW by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+      T 31.8 -> 31.6 (dQ 0.01 Q 0.74 dWV 4 Tcp 9) by schedule
+ 205  T=31.6  a=5.1  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      aged out: PK-SALO() posted at 8
+      aged out: PK-SALO() posted at 8
+ 206  T=31.6  a=5.1  CT-CP(g1 small-glass2)/1  -> failed cp22 g1=small-glass2 static -23 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      aged out: CHK-RL() posted at 9
+ 207  T=31.6  a=5.1  RD-WVR()  -> found r37 worldview SYMMETRY_AXIS:point r38 small-glass2 BARRIER:small-glass3 cp8 r39 small-glass3 CLAIMED:small-glass2 cp8; jolt diagonal symmetry +14; jolt barrier +14; posted 1 (PK-SALC)
+      RL used small-glass2 BARRIER by C4: pick-strong-cp cp8
+      T 31.6 -> 31.4 (dQ 0.00 Q 0.75 dWV 4 Tcp 9) by schedule
+ 208  T=31.4  a=5.1  CT-CP(g1 small-glass2)/1  -> failed cp23 g1=small-glass2 static -23 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+ 209  T=31.4  a=5.1  CT-CP(g1 small-glass2)/3  -> failed cp24 g1=small-glass2 static -23 p=0.01, removed
+      slipnet posts FD-MID
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+ 210  T=31.4  a=5.1  CT-CP(g2 small-glass3)/1  -> failed cp25 g2=small-glass3 static -23 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      T 31.4 -> 31.2 (dQ 0.00 Q 0.74 dWV 4 Tcp 9) by schedule
+      aged out: PK-SALO() posted at 13
+ 211  T=31.2  a=5.2  CT-CP(cup1 small-glass3)/2  -> fizzled (cup1=small-glass3: exists)
+      slipnet posts PR-RCP
+ 212  T=31.2  a=5.2  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used g2 ROW by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+ 213  T=31.2  a=5.2  CT-CP(g2 small-glass1)/1  -> failed cp26 g2=small-glass1 static -23 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+      T 31.2 -> 31.1 (dQ 0.00 Q 0.74 dWV 4 Tcp 9) by schedule
+ 214  T=31.1  a=5.2  PK-SALC()  -> passed cp6 cup1=small-glass3 rating 59; posted 1 (CP-COMP)
+      slipnet posts PR-RCP
+ 215  T=31.1  a=5.2  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+      aged out: FND-GP() posted at 18
+      aged out: SAM(g1) posted at 18
+      aged out: FD-NNBR(small-glass3) posted at 18
+      aged out: FD-END(g1) posted at 18
+      aged out: PK-SALO() posted at 18
+      aged out: PK-SALO() posted at 18
+      aged out: FND-GP() posted at 18
+      aged out: FND-GP() posted at 18
+      aged out: PK-SALO() posted at 18
+      aged out: PK-SALO() posted at 18
+      aged out: PK-SALC() posted at 18
+      aged out: PK-SALC() posted at 18
+      aged out: PK-SALC() posted at 18
+      aged out: PK-SALC() posted at 18
+      aged out: PK-SALC() posted at 18
+      aged out: PK-SALC() posted at 18
+ 216  T=31.1  a=5.2  FD-MID()  -> fizzled (no group without middles)
+      T 31.1 -> 30.9 (dQ 0.00 Q 0.74 dWV 4 Tcp 9) by schedule
+ 217  T=30.9  a=5.2  CP-COMP(cp6)/1  -> fight cp6 cup1=small-glass3 vs cp1 cp8: old 130 vs rival 59, p=0.02, old holds; posted 2 (CP-CLN CHK-WV)
+      T 30.9 -> 29.9 (dQ 0.00 Q 0.74 dWV 4 Tcp 10) by competition
+ 218  T=29.9  a=5.3  PK-SALC()  -> passed cp9 small-glass3=small-glass4 rating 57; posted 1 (CP-COMP)
+      aged out: PK-SALO() posted at 21
+ 219  T=29.9  a=5.3  CP-COMP(cp9)/1  -> fight cp9 small-glass3=small-glass4 vs cp8: old 131 vs rival 115, p=0.33, old holds; posted 2 (CP-CLN CHK-WV)
+      T 29.9 -> 28.9 (dQ 0.00 Q 0.75 dWV 4 Tcp 11) by competition
+      aged out: CT-CP(small-glass3 small-glass2) posted at 22
+      aged out: CHK-RL() posted at 22
+ 220  T=28.9  a=5.3  CT-CP(g1 small-glass2)/1  -> failed cp27 g1=small-glass2 static -24 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      aged out: PK-SALO() posted at 23
+      answer schedule: FND-ANS x1 at urgency 8.0
+ 221  T=28.9  a=5.3  CT-CP(g2 small-glass3)/1  -> failed cp28 g2=small-glass3 static -24 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+ 222  T=28.9  a=5.3  CT-CP(g2 small-glass3)/1  -> failed cp29 g2=small-glass3 static -24 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      T 28.9 -> 28.7 (dQ 0.00 Q 0.75 dWV 4 Tcp 11) by schedule
+ 223  T=28.7  a=5.3  CT-CP(g2 small-glass3)/1  -> failed cp30 g2=small-glass3 static -24 p=0.01, removed
+      slipnet posts PR-RCP CHK-RL
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+ 224  T=28.7  a=5.3  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PR-RCP
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used g2 ROW by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+      aged out: CHK-RL() posted at 27
+      aged out: PK-SALO() posted at 27
+      aged out: PK-SALO() posted at 27
+ 225  T=28.7  a=5.3  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts CHK-RL
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used g2 ROW by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+      T 28.7 -> 28.6 (dQ 0.00 Q 0.75 dWV 4 Tcp 11) by schedule
+      aged out: CHK-RL() posted at 28
+ 226  T=28.6  a=5.3  CT-CP(g2 small-glass3)/1  -> failed cp31 g2=small-glass3 static -24 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      answer schedule: FND-ANS x1 at urgency 8.0
+ 227  T=28.6  a=5.3  CHK-RL()  -> removed r52 g2 CORNER broken at strength 13
+      RL drop r52 g2 CORNER (broken)
+ 228  T=28.6  a=5.3  CT-CP(g1 small-glass2)/3  -> failed cp32 g1=small-glass2 static -24 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      T 28.6 -> 28.4 (dQ 0.00 Q 0.74 dWV 4 Tcp 11) by schedule
+ 229  T=28.4  a=5.4  PK-SALC()  -> passed cp15 small-glass1=small-glass2 rating 59; posted 1 (CP-COMP)
+ 230  T=28.4  a=5.4  CP-COMP(cp15)/1  -> fight cp15 small-glass1=small-glass2 vs cp1 cp8: old 131 vs rival 59, p=0.01, old holds; posted 2 (CP-CLN CHK-WV)
+      slipnet posts PR-RCP
+      T 28.4 -> 18.6 (dQ 0.00 Q 0.75 dWV 3 Tcp 12) by competition
+ 231  T=18.6  a=6.1  PR-RCP()  -> proposed g2 and small-glass1 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass1
+      RL used g2 ROW by C1: create-cp g2 small-glass1
+      RL used small-glass1 ROW by C1: create-cp g2 small-glass1
+      T 18.6 -> 18.5 (dQ 0.00 Q 0.75 dWV 3 Tcp 12) by schedule
+      aged out: FD-END() posted at 34
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 232  T=18.5  a=6.1  CT-CP(g2 small-glass3)/1  -> failed cp33 g2=small-glass3 static -24 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      aged out: CHK-RL() posted at 35
+ 233  T=18.5  a=6.1  PK-SALO()  -> fizzled (nothing to pair with small-glass1)
+      RL used small-glass1 COUNTERPART by C2: picked small-glass1 for cup1
+ 234  T=18.5  a=6.1  CHK-RL()  -> removed r53 g2 ECHO:g1 broken at strength 13
+      slipnet posts PR-RCP
+      RL drop r53 g2 ECHO (broken)
+      T 18.5 -> 18.3 (dQ 0.00 Q 0.75 dWV 3 Tcp 12) by schedule
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 235  T=18.3  a=6.1  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PR-RCP
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used g2 ROW by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+      aged out: CHK-RL() posted at 38
+ 236  T=18.3  a=6.1  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PR-RCP x2
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used g2 ROW by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 237  T=18.3  a=6.1  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PR-RCP
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used g2 ROW by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+      T 18.3 -> 18.2 (dQ 0.00 Q 0.75 dWV 3 Tcp 12) by schedule
+      aged out: PK-SALC() posted at 40
+ 238  T=18.2  a=6.1  PR-RCP()  -> proposed g2 and small-glass1 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass1
+      RL used g2 ROW by C1: create-cp g2 small-glass1
+      RL used small-glass1 ROW by C1: create-cp g2 small-glass1
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 239  T=18.2  a=6.1  PR-RCP()  -> proposed g2 and small-glass1 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass1
+      RL used g2 ROW by C1: create-cp g2 small-glass1
+      RL used small-glass1 ROW by C1: create-cp g2 small-glass1
+      aged out: PK-SALC() posted at 42
+      aged out: PK-SALC() posted at 42
+ 240  T=18.2  a=6.1  CHK-RL()/1  -> removed r50 g2 ROW:above broken at strength 11
+      slipnet posts PR-RCP
+      RL drop r50 g2 ROW (broken)
+      T 18.2 -> 18.1 (dQ 0.00 Q 0.75 dWV 3 Tcp 12) by schedule
+ 241  T=18.1  a=6.1  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+      aged out: CHK-RL() posted at 44
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 242  T=18.1  a=6.1  CT-CP(g1 small-glass2)/1  -> failed cp34 g1=small-glass2 static -24 p=0.01, removed
+      slipnet posts PR-RCP
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      aged out: CHK-RL() posted at 45
+      aged out: SAM() posted at 45
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 243  T=18.1  a=6.1  PR-RCP()  -> proposed g2 and small-glass1 as point_image pair; posted 2 (CT-CP CHK-RL)
+      slipnet posts PR-RCP
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass1
+      RL used small-glass1 ROW by C1: create-cp g2 small-glass1
+      T 18.1 -> 18.0 (dQ 0.00 Q 0.74 dWV 3 Tcp 12) by schedule
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 244  T=18.0  a=6.1  PR-RCP()  -> proposed g2 and small-glass1 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass1
+      RL used small-glass1 ROW by C1: create-cp g2 small-glass1
+ 245  T=18.0  a=6.1  CT-CP(g2 small-glass1)/1  -> failed cp35 g2=small-glass1 static -24 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+ 246  T=18.0  a=6.1  CT-CP(g2 small-glass1)/1  -> failed cp36 g2=small-glass1 static -24 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+      T 18.0 -> 17.8 (dQ 0.00 Q 0.74 dWV 3 Tcp 12) by schedule
+ 247  T=17.8  a=6.1  CT-CP(g2 small-glass3)/1  -> failed cp37 g2=small-glass3 static -25 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+ 248  T=17.8  a=6.1  CT-CP(g2 small-glass1)/1  -> failed cp38 g2=small-glass1 static -24 p=0.01, removed
+      slipnet posts PR-RCP x2
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+      aged out: CT-CP(small-glass3 small-glass2) posted at 51
+      aged out: CHK-RL() posted at 51
+      aged out: PK-SALO() posted at 51
+ 249  T=17.8  a=6.1  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+      T 17.8 -> 17.7 (dQ 0.00 Q 0.74 dWV 3 Tcp 12) by schedule
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 250  T=17.7  a=6.1  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+ 251  T=17.7  a=6.1  CT-CP(g2 small-glass1)/1  -> failed cp39 g2=small-glass1 static -25 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+ 252  T=17.7  a=6.1  CT-CP(g2 small-glass3)/1  -> failed cp40 g2=small-glass3 static -25 p=0.01, removed
+      slipnet posts PR-RCP
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      T 17.7 -> 17.6 (dQ 0.00 Q 0.74 dWV 3 Tcp 12) by schedule
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 253  T=17.6  a=6.1  PR-RCP()  -> proposed g2 and small-glass1 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass1
+      RL used small-glass1 ROW by C1: create-cp g2 small-glass1
+ 254  T=17.6  a=6.1  CT-CP(g2 small-glass3)/1  -> failed cp41 g2=small-glass3 static -25 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+ 255  T=17.6  a=6.1  PK-SALC()  -> passed cp15 small-glass1=small-glass2 rating 58; posted 1 (CP-COMP)
+      slipnet posts PR-RCP
+      T 17.6 -> 17.5 (dQ 0.00 Q 0.74 dWV 3 Tcp 12) by schedule
+      aged out: CHK-RL() posted at 58
+ 256  T=17.5  a=6.2  PR-RCP()  -> proposed g1 and small-glass2 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g1 POINT_IMAGE by C1: create-cp g1 small-glass2
+      RL used g1 ROW by C1: create-cp g1 small-glass2
+      aged out: CHK-RL() posted at 59
+      answer schedule: FND-ANS x1 at urgency 12.0
+ 257  T=17.5  a=6.2  CP-COMP(cp15)/1  -> fight cp15 small-glass1=small-glass2 vs cp1 cp8: old 131 vs rival 58, p=0.01, old holds; posted 2 (CP-CLN CHK-WV)
+      T 17.5 -> 7.8 (dQ 0.00 Q 0.75 dWV 2 Tcp 13) by competition
+      aged out: CHK-RL() posted at 60
+      answer schedule: FND-ANS x1 at urgency 17.0
+ 258  T=7.8  a=6.9  CT-CP(g1 small-glass2)/1  -> failed cp42 g1=small-glass2 static -25 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      T 7.8 -> 7.7 (dQ 0.00 Q 0.75 dWV 2 Tcp 13) by schedule
+      aged out: CMP-RL(cup1) posted at 61
+      aged out: PK-SALC() posted at 61
+      answer schedule: FND-ANS x1 at urgency 17.0
+ 259  T=7.7  a=6.9  CT-CP(g1 small-glass2)/1  -> failed cp43 g1=small-glass2 static -25 p=0.01, removed
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      answer schedule: FND-ANS x1 at urgency 17.0
+ 260  T=7.7  a=6.9  CT-CP(g2 small-glass1)/1  -> failed cp44 g2=small-glass1 static -25 p=0.01, removed
+      slipnet posts PR-RCP
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+      aged out: CMP-RL(small-glass3) posted at 63
+      aged out: PK-SALC() posted at 63
+      aged out: PK-SALC() posted at 63
+      aged out: PK-SALC() posted at 63
+ 261  T=7.7  a=6.9  PR-RCP()  -> proposed g2 and small-glass3 as point_image pair; posted 2 (CT-CP CHK-RL)
+      RL used g2 POINT_IMAGE by C1: create-cp g2 small-glass3
+      RL used small-glass3 ROW by C1: create-cp g2 small-glass3
+      T 7.7 -> 7.6 (dQ 0.00 Q 0.75 dWV 2 Tcp 13) by schedule
+      answer schedule: FND-ANS x1 at urgency 17.0
+ 262  T=7.6  a=6.9  CT-CP(g2 small-glass1)/1  -> failed cp45 g2=small-glass1 static -25 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass1 COLUMN by C6: placement of small-glass1 read in the left column
+      aged out: PK-SALC() posted at 65
+      answer schedule: FND-ANS x1 at urgency 17.0
+ 263  T=7.6  a=6.9  CHK-RL()/1  -> removed r45 small-glass4 COLUMN:right broken at strength 7
+      RL drop r45 small-glass4 COLUMN (broken)
+      aged out: PK-SALO() posted at 66
+      answer schedule: FND-ANS x1 at urgency 17.0
+ 264  T=7.6  a=6.9  RD-WVR()  -> found r37 worldview SYMMETRY_AXIS:point r38 small-glass2 BARRIER:small-glass3 cp8 r39 small-glass3 CLAIMED:small-glass2 cp8; jolt diagonal symmetry +14; jolt barrier +14; posted 1 (PK-SALC)
+      slipnet posts PK-SALC
+      RL used small-glass2 BARRIER by C4: pick-strong-cp cp8
+      T 7.6 -> 7.6 (dQ 0.00 Q 0.75 dWV 2 Tcp 13) by schedule
+      answer schedule: FND-ANS x1 at urgency 17.0
+ 265  T=7.6  a=6.9  CT-CP(g1 small-glass2)/3  -> failed cp46 g1=small-glass2 static -24 p=0.01, removed
+      slipnet posts RC-RL
+      RL used g1 COLUMN by C6: placement of g1 read in the left column
+      RL used small-glass2 COLUMN by C6: placement of small-glass2 read in the right column
+      answer schedule: FND-ANS x1 at urgency 17.0
+ 266  T=7.6  a=6.9  CT-CP(g2 small-glass3)/1  -> failed cp47 g2=small-glass3 static -25 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+      aged out: CP-CLN() posted at 69
+      aged out: CHK-WV() posted at 69
+      aged out: RD-WVR() posted at 69
+      aged out: SAM() posted at 69
+      answer schedule: FND-ANS x1 at urgency 17.0
+ 267  T=7.6  a=6.9  RC-RL()  -> found cup1 [] tiers 2:small-glass1 5:small-glass3
+      RL recast cup1 [] tiers 2:small-glass1:3.7513 5:small-glass3:2.05232
+      RL used cup1 ROW by C2: re-cast of cup1
+      RL used cup1 COLUMN by C2: re-cast of cup1
+      T 7.6 -> 7.5 (dQ 0.00 Q 0.75 dWV 2 Tcp 13) by schedule
+      aged out: CHK-RL() posted at 70
+ 268  T=7.5  a=6.9  CT-CP(g2 small-glass3)/1  -> failed cp48 g2=small-glass3 static -25 p=0.01, removed
+      RL used g2 COLUMN by C6: placement of g2 read in the right column
+      RL used small-glass3 COLUMN by C6: placement of small-glass3 read in the left column
+ 269  T=7.5  a=6.9  PK-SALC()  -> passed cp15 small-glass1=small-glass2 rating 59; posted 1 (CP-COMP)
+      aged out: CHK-RL() posted at 72
+      answer schedule: FND-ANS x1 at urgency 17.0
+ 270  T=7.5  a=6.9  CP-COMP(cp15)/1  -> fight cp15 small-glass1=small-glass2 vs cp1 cp8: old 131 vs rival 59, p=0.00, old holds; posted 2 (CP-CLN CHK-WV)
+      T 7.5 -> 0.0 (dQ 0.00 Q 0.75 dWV 1 Tcp 14) by competition
+      answer schedule: FND-ANS x1 at urgency 21.0
+ 271  T=0.0  a=7.4  PK-SALC()  -> passed cp6 cup1=small-glass3 rating 61; posted 1 (CP-COMP)
+      answer schedule: FND-ANS x2 at urgency 21.0
+ 272  T=0.0  a=7.4  CP-COMP(cp6)/1  -> fight cp6 cup1=small-glass3 vs cp1 cp8: old 132 vs rival 61, p=0.00, old holds; posted 2 (CP-CLN CHK-WV)
+      aged out: CHK-RL() posted at 75
+      answer schedule: FND-ANS x1 at urgency 21.0
+ 273  T=0.0  a=7.4  FD-MID()  -> fizzled (no group without middles)
+      answer schedule: FND-ANS x1 at urgency 21.0
+ 274  T=0.0  a=7.4  PK-SALC()  -> passed cp9 small-glass3=small-glass4 rating 56; posted 1 (CP-COMP)
+      answer schedule: FND-ANS x1 at urgency 21.0
+ 275  T=0.0  a=7.4  CP-COMP(cp9)/1  -> fight cp9 small-glass3=small-glass4 vs cp8: old 132 vs rival 115, p=0.27, old holds; posted 2 (CP-CLN CHK-WV)
+      answer schedule: FND-ANS x2 at urgency 21.0
+ 276  T=0.0  a=7.4  PK-SALC()  -> passed cp9 small-glass3=small-glass4 rating 56; posted 1 (CP-COMP)
+      answer schedule: FND-ANS x1 at urgency 21.0
+ 277  T=0.0  a=7.4  CP-COMP(cp9)/1  -> fight cp9 small-glass3=small-glass4 vs cp8: old 133 vs rival 116, p=0.26, old holds; posted 2 (CP-CLN CHK-WV)
+      answer schedule: FND-ANS x1 at urgency 21.0
+ 278  T=0.0  a=7.4  FND-ANS()  -> answer Eliza touches small-glass1 (E1)
+Eliza touches small-glass1 (E1). Structure 133. Codelets 278. T 0.0.
