@@ -78,7 +78,7 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
  | Seek-Whence | [Marsha Meredith](https://scholar.google.com.br/scholar?hl=en&q=marsha+meredith&btnG=&as_sdt=1%2C5&as_sdtp=) | Franz Lisp | **Yes  (coming soon)** |
  | Numbo | [Daniel Defays](http://www.ulg.ac.be/cms/c_6099593/fr/repertoires?uid=U011369) | Lisp (also SBCL port, Python & Clojure) | **Yes** (Finally!) |
  | Copycat | [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) | Lisp (also Java & Python) | **Yes** |  
- | Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | ?? |  Not yet (email sent 2017-08-29) |
+ | Tabletop | [Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | Lisp (lost; a Python reconstruction with a Qt GUI) | **Yes** (reconstructed from the specification, 2026: [fargonauts/Tabletop](https://github.com/fargonauts/Tabletop)) |
  | Letter Spirit | [Gary McGraw](https://www.garymcgraw.com/) | Scheme |  **Yes** (McGraw's work was extended by Rehling) |
  | Letter Spirit | [John Rehling](https://scholar.google.com.br/scholar?hl=en&q=john+rehling&btnG=&as_sdt=1%2C5&as_sdtp=) |  Scheme |  **Yes** |
  | Metacat | [James Marshall](https://www.sarahlawrence.edu/faculty/marshall-james.html) | Scheme (also Racket & Python ports) |  **Yes** (runs again!) |
@@ -185,9 +185,21 @@ run them. The full repository, with all its test data, is
 
 PROJECT: TABLETOP
 ---
+Analogy-making in a microworld of table settings
+
+[Robert M. French](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
+
 Find Bob French [Homepage](http://leadserv.u-bourgogne.fr/en/members/robert-m-french) | [Google Scholar](https://scholar.google.com/citations?user=38ihKBAAAAAJ&hl=en) | [Wikipedia](https://en.wikipedia.org/wiki/Robert_M._French)
 
 Read [The Subtlety of Sameness](https://archive.org/details/subtletyofsamene0000fren/page/n5/mode/2up) on the Internet Archive!
+
+French asks us to imagine two people, Henry and Eliza, seated at a small table facing each other. Henry touches an object on the table and says "Do this!", and Eliza must respond by doing "the same thing" from her side. The program plays Eliza. Its architecture is Copycat's (a Slipnet, a Workspace and a Coderack), plus a *Worldview* of correspondences that don't contradict one another and a computational temperature that decides when a run ends. The book above, chapters 8 and 9 of *Fluid Concepts and Creative Analogies*, and a 1991 Cognitive Science Society paper describe it.
+
+French's program, over 26,000 lines of Lisp, is lost. **[fargonauts/Tabletop](https://github.com/fargonauts/Tabletop)** is a **reconstruction from the specification** in Python 3, like this repo's reconstruction of Seek-Whence: every module cites the pages it implements, every choice the sources leave open is a numbered decision, and every experiment French reports is replayed by a bench with his numbers beside ours (`RESULTS.md`; the numbers are honest misses more often than matches). All 53 table configurations from the book are digitized and run to an answer. It comes with a command line that prints one line per codelet and ends with French's own report of a run, twelve benches, and a PySide6 GUI that shows a run as it happens: the table, the thermometer, the Slipnet, the Coderack and the Worldview, as French's own screen showed them, with an editor for new tables and a batch pane. The engine needs only the standard library; `pip install -e '.[gui]'` adds the GUI (`tabletop-gui`).
+
+![Tabletop's Python GUI: Surround 5, seed 3, Eliza touches the lone cup](/Software/Tabletop/tabletop-gui-window.png)
+
+*Surround 5, the configuration French follows through his chapter 4. Henry (top) touches his cup, which sits in a row of silverware; on Eliza's side a matching row has a small glass where the cup would be, and a cup stands alone at the far right. In this run Eliza touches the lone cup; French's program chose the glass in 86 percent of its runs, this reconstruction in about 30 percent. Left to right: the problem and the table editor, the table with Henry's touch and Eliza's answer, the thermometer, the Slipnet and the Worldview; below, the Coderack's bars, the trace, and the event timeline that replays the run.*
 
 
 PROJECT: NUMBO

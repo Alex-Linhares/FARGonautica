@@ -74,10 +74,16 @@ Every known implementation, in this repo or elsewhere, with its paradigm. When t
 | Original | Perl, OOP | https://github.com/amahabal/Seqsee |
 | PySeqsee, a rewrite and general Fluid Concepts framework | Python 3, OOP | https://github.com/amahabal/PySeqsee (the README's link to it is malformed). Install notes: `PySeqSee-install-log.md`, `pySeqsee-log.md` |
 
+### Tabletop (French & Hofstadter, 1992): analogy-making in a microworld of table settings ("Do this!")
+
+| Implementation | Language / paradigm | Where |
+|---|---|---|
+| Original | Lisp (over 26,000 lines; lost, no code survives) | the book *The Subtlety of Sameness* (MIT Press, 1995); FCCA chapters 8 and 9 |
+| **Python reconstruction** (2026) | Python 3, OOP, standard library; optional Cython build of the Slipnet; PySide6 GUI | https://github.com/fargonauts/Tabletop (also the folder `Software/Tabletop/` of the Gitea copy of this repo): a reconstruction from the specification with `SPEC.md`, `DECISIONS.md` and `RESULTS.md` (every result set French reports beside ours), 53 digitized tables, twelve benches, a CLI and a GUI. Screenshot: `Software/Tabletop/tabletop-gui-window.png` |
+
 ### Projects with no code available
 
 - **Seek-Whence** (Meredith): Franz Lisp, "coming soon".
-- **Tabletop** (French): code not obtained.
 - **Phaeaco** (Foundalis): C++, closed source; the thesis is in `Literature/`.
 - **George** (Lara-Dammer): Java, never released.
 
