@@ -356,6 +356,10 @@ the sourcecode is available at http://ericpnichols.com/musicat/ (and also archiv
 **Runs on Linux (2026):** the archived RhythmCat builds and runs with Mono, GUI and headless; see
 [`Software/Musicat/linux/RUNNING-ON-LINUX.md`](Software/Musicat/linux/RUNNING-ON-LINUX.md).
 
+![Musicat (RhythmCat) running under Mono on Linux: nine bars of Angels We Have Heard on High heard, codelet 8019](/Software/Musicat/linux/musicat-gui-linux-angels-9-bars.png)
+
+*Nichols's RhythmCat, unchanged, running under Mono on Linux after about a minute on "Angels We Have Heard on High", at codelet 8019. The Workspace (left) shows the nine bars heard so far as boxes with their notes, groups as red and green ellipses, links between bars as blue arcs, a dashed expectation for the bar being heard, and a thick green analogy between groups below the staff; under the bars, the per-bar happiness strip. The middle panel holds the melody, the speed and detail sliders, and the run's statistics. On the right, the Coderack with the urgency of each codelet type, and the program's own listing of the input measures.*
+
 
 PROJECT: PHAEACO
 ---
