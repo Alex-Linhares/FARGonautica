@@ -221,6 +221,23 @@ There is also a [version in Clojure](https://github.com/twhume/numbo), by [Tom H
 
 
 
+PROJECT: SEEK-WHENCE
+---
+A Model of Pattern Perception
+
+[Marsha J. Ekstrom Meredith](https://scholar.google.com.br/scholar?hl=en&q=marsha+meredith&btnG=&as_sdt=1%2C5&as_sdtp=) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
+
+Read [Meredith's dissertation](Literature/Ph.D.%20Theses/Meredith-Seek.whence.pdf) (Indiana University, 1986) and her [historical notes on Seek-Whence](Literature/Meredith-Historical-Notes-on-Seek-Whence.pdf) in this repo. Chapter 1 of *Fluid Concepts and Creative Analogies*, "To Seek Whence Cometh a Sequence", is Hofstadter's account of the project.
+
+Seek-Whence is the first of the FARG architectures, built in Hofstadter's group before Copycat. It is shown the terms of an integer sequence one at a time (`3`, `7`, `3`, `7`, ...). As the terms arrive it looks for structure among them, forms a hypothesis out of eight primitive concepts (Constant, Countup, C-group, S-group, P-group, Y-group, Cycle and Tuple, which nest: `(Cycle 3 2 (3 7))` for `3 7 3 7 ...`, `(S-group 1 (Countup 2))` for `1 2 1 2 3 1 2 3 4 ...`), checks each new term against the hypothesis, reformulates it when a term refutes it, and, once it is confident, shows the user its guess at the next terms. The user answers `ok` or `no`. Its three levels, the *cytoplasm* of glints, sparks, bonds and gloms, the *socratoplasm* of gnoths and the *platoplasm* of ideal concepts, and its *taskrack* of small tasks chosen at random by urgency, are the ancestors of Copycat's Workspace, Slipnet and Coderack. The twelve test sequences, the "Blackburn dozen", were first given to students at Blackburn College.
+
+Meredith's program, about 5,400 lines of Franz Lisp, is lost. **[`Software/SeekWhence/`](Software/SeekWhence/)** is a **reconstruction from the specification** in Python 3 (standard library only), the first of this repo's reconstructions, followed by Tabletop's: `SPEC.md` distills the thesis with page citations, every module cites the pages it implements, every choice the thesis leaves open is a numbered decision in `DECISIONS.md`, and `RESULTS.md` replays the thesis's three appendix runs and the Blackburn dozen over many seeds with Meredith's results beside ours. It reproduces her limitations rather than repairing them. On the Blackburn dozen it solves the three sequences her program solved on every seed, plus two more. It comes with a command line that prints traces in the style of her transcripts, and a PySide6 GUI that draws every step of a run: `pip install -e '.[gui]'` in `Software/SeekWhence/python/`, then `python3 -m seekwhence.gui`.
+
+![Seek-Whence's Python GUI at the guess of the thesis's first appendix run, 3 7 3 7, seen as (Cycle 3 2 (3 7))](/Software/SeekWhence/python/docs/gui-window.png)
+
+*The GUI at the moment of its guess on `3 7 3 7`, the first run in the thesis's appendix. Top centre: the four terms, and under them the predicted next block `3 7 3 7` as ghost cells, with the OK and No buttons for the user's answer. Centre: the cytoplasm, where the glints 3, 7, 3, 7 have been bonded and glommed into a Cycle, with a Same bond arcing between the two 3s. Right: the taskrack, the socratoplasm with its two gnoths, and the hypothesis `(Cycle 3 2 (3 7))` with the terms it predicted beside the terms entered. Bottom: the platoplasm, the eight ideal concepts with the slip links between them, and the console with the transcript as the command line prints it. The timeline under everything replays the run.*
+
+
 PROJECT: SEQSEE
 ---
 A Concept-centered Architecture for Sequence Perception
