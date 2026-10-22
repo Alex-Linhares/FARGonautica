@@ -91,7 +91,9 @@ The ambition is to catalogue and archive the sourcecode and literature involved 
 
 PROJECT: COPYCAT
 ---
-[![Watch Joseph Aaron Hager's Copycat (Python 3, OpenGL) solve abc → abd; xyz → ?](/Software/Copycat/copycat-hager-opengl.png)](https://youtu.be/v7Eotp-XKVA)
+![Hager's Copycat answering wyz to abc → abd, xyz → ?, running again in 2026](/Software/Copycat/copycat-opengl/docs/gui-xyz-answer.png)
+
+*Hager's blackboard at the end of `abc abd xyz`, seed 36: the strings with their bonds (arcs, with the direction's arrowhead), groups (boxes), the correspondences between `abc` and `xyz` with the concept mappings that justify them, the rule and its translation, and the answer `wyz`. Below, the Slipnet's activations and the Coderack's codelets.* Hager's own 2009 video of the program: [youtu.be/v7Eotp-XKVA](https://youtu.be/v7Eotp-XKVA).
 
 
 [Melanie Mitchell](http://web.cecs.pdx.edu/~mm/) & [Douglas Hofstadter](http://www.cogs.indiana.edu/people/profile.php?u=dughof)
@@ -109,16 +111,21 @@ Copycat's architecture is tripartite, consisting of a slipnet, a working area (a
 
 | Author  |  Language/Sourcecode |  Note  |
 |--------|------------------------|-------|
-| Melanie Mitchell |  [LISP](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html) | The original (Lucid Common Lisp + Flavors); revived, see the next row |  
-| Scott Burson (& Melanie Mitchell) |  [LISP](https://github.com/slburson/copycat) | Mitchell's original, revived in modern Common Lisp: runs |  
+| Melanie Mitchell |  [LISP](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html), archived here: [`Software/Copycat/Melanie-Mitchell-[LISP]/`](/Software/Copycat/Melanie-Mitchell-%5BLISP%5D/) | The original (Lucid Common Lisp + Flavors); runs again, see the next two rows |  
+| Scott Burson (& Melanie Mitchell) |  [LISP](https://github.com/slburson/copycat) | Mitchell's original, revived in modern Common Lisp (SBCL, Flavors on CLOS): runs; no license file, so read here only as a reference |  
+| Melanie Mitchell, **running on SBCL** (2026) | [LISP](/Software/Copycat/melanies-copycat/): [`Software/Copycat/melanies-copycat/`](/Software/Copycat/melanies-copycat/) | Her files unchanged (`src/`), with a Lucid and Flavors compatibility layer written for this archive (`compat/`); headless, seeded and reproducible; `RESULTS.md` compares six problems × 100 seeds with the figures in FCCA chapter 5 (xyd 78% vs 77%). Graphics not ported. `./run-copycat.sh abc abd ijk 7` |
+| Melanie Mitchell's engine in Hager's GUI (2026) | [Lisp + Python](/Software/Copycat/melanies-opengl/): [`Software/Copycat/melanies-opengl/`](/Software/Copycat/melanies-opengl/) | Her original program, running unchanged on SBCL, displayed live in Hager's OpenGL window: a JSON trace per codelet from the Lisp side, an adapter on the Python side. `python3 -m melanies_opengl abc abd xyz --seed 36`; runs can be recorded and replayed without SBCL |
 | Scott Boland  | [Java](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) | (SB's email lost?) |
 | ["speakeasy"](https://github.com/speakeasy)  |  [Java](https://github.com/speakeasy/CopyCat)  |  fork of Scott Boland's code |
 | [Greg Detre](https://github.com/gregdetre) | [Clojure](https://github.com/gregdetre/copycat-clojure)  | Not tested  |
 | [Arthur O'Dwyer](https://github.com/Quuxplusone), [J Alan Brogan](https://github.com/jalanb),others | [Python 2](https://github.com/Quuxplusone/co.py.cat)  | Multiple forks, no graphics  |
 | [Lucas Saldyt](https://github.com/LSaldyt) | [Python 3](https://github.com/fargonauts/copycat)  | Above repo patch to Python 3  |
-| [Joseph Aaron Hager](https://github.com/ajhager) | [Python 3](https://github.com/ajhager/copycat) | [OpenGL graphics](https://youtu.be/v7Eotp-XKVA) |
+| [Joseph Aaron Hager](https://github.com/ajhager) | [Python 3](https://github.com/ajhager/copycat), archived and repaired here: [`Software/Copycat/copycat-opengl/`](/Software/Copycat/copycat-opengl/) | [OpenGL graphics](https://youtu.be/v7Eotp-XKVA) (pyglet). Runs again on Python 3.12 (2026): the Python 3 crashes and two engine bugs fixed, runs reproducible per seed, and the blackboard now draws the bonds, groups, correspondences, rule and answer |
 | [Paul Geiger](https://github.com/Paul-G2) | [JavaScript](https://github.com/Paul-G2/copycat-js) | [Demo runs in a browser](https://paul-g2.github.io/copycat-js/) |
 
+
+
+**Hager's Copycat runs again (2026).** Its code is archived in [`Software/Copycat/copycat-opengl/`](/Software/Copycat/copycat-opengl/) with the fixes it needed for Python 3.12 and pyglet 2 ([`PORTING_NOTES.md`](/Software/Copycat/copycat-opengl/PORTING_NOTES.md) lists each one), tests, and a workspace view that now draws what the program builds. The engine is standard-library Python: `python3 Copycat.py --quiet abc abd xyz --seed 36` prints the rule and the answer; without `--quiet` it opens the window below.
 
 
 Please see [Mitchell](http://web.cecs.pdx.edu/~mm/)'s [Copycat page](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html). Scott Boland's re-implementation in Java is 404'ing at The University of Queensland, but it is available [here in this repo](/Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip) and in [archive.org](https://archive.org/details/JavaCopycat).
