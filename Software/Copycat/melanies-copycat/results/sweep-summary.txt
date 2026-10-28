@@ -1,0 +1,36 @@
+abc -> abd :: ijk -> ?  (100 runs, seeds 1-100)
+  ijl        97  ( 97%)
+  ijd         2  (  2%)
+  ijk         1  (  1%)
+  mean codelets 296, mean final temperature 18
+abc -> abd :: xyz -> ?  (100 runs, seeds 1-100)
+  xyd        78  ( 78%)
+  wyz        12  ( 12%)
+  yyz         7  (  7%)
+  xyz         2  (  2%)
+  dyz         1  (  1%)
+  mean codelets 3350, mean final temperature 22
+abc -> abd :: iijjkk -> ?  (100 runs, seeds 1-100)
+  iijjll     80  ( 80%)
+  iijjkl     18  ( 18%)
+  iijjkd      1  (  1%)
+  iijjkk      1  (  1%)
+  mean codelets 551, mean final temperature 32
+abc -> abd :: kji -> ?  (100 runs, seeds 1-100)
+  kjh        61  ( 61%)
+  kjj        22  ( 22%)
+  lji        16  ( 16%)
+  kjd         1  (  1%)
+  mean codelets 381, mean final temperature 21
+abc -> abd :: mrrjjj -> ?  (100 runs, seeds 1-100)
+  mrrkkk     76  ( 76%)
+  mrrjjk     18  ( 18%)
+  mrrddd      2  (  2%)
+  mrrjkk      2  (  2%)
+  mrrjjjj     2  (  2%)
+  mean codelets 958, mean final temperature 44
+abc -> abd :: xyd -> ?  (100 runs, seeds 1-100)
+  xye        98  ( 98%)
+  xyd         2  (  2%)
+  mean codelets 582, mean final temperature 44
+SWEEP DONE

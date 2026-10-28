@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "copycat-opengl"
+version = "0.1.0"
+description = "Joseph Aaron Hager's Python translation of Copycat, with its pyglet (OpenGL) client, running on Python 3.12"
+readme = "README.md"
+license = {text = "GPL-2.0-only"}
+requires-python = ">=3.10"
+dependencies = []          # the engine is standard-library Python
+
+[project.optional-dependencies]
+gui = ["pyglet>=2.0"]      # the OpenGL client; needs OpenGL (Mesa is enough) and an X11 or Wayland display
+test = ["pytest>=7", "pillow"]
+
+[tool.setuptools]
+packages = ["copycat", "copycat.coderack", "copycat.coderack.codelets", "copycat.slipnet",
+            "copycat.workspace", "clients", "clients.opengl"]
+
+[tool.setuptools.package-data]
+"clients.opengl" = ["data/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

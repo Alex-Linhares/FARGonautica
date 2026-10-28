@@ -1,0 +1,2 @@
+defflavor workspace-structure | Structure
+

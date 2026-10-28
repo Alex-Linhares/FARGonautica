@@ -5,7 +5,7 @@ a project in loving memory of Helga Keller
 
 ---
 
-**Repository News: Metacat runs again, in Racket and Python, alongside the classic version. Numbo source-code just added. Seek-Whence runs again too: Meredith's 1986 program, reconstructed in Python from her thesis!**
+**Repository News: FARGonautica 1.0.0 (October 2026). Every FARG architecture whose source code survives, or could be reconstructed from its thesis, is here and runs: Copycat (Mitchell's original Lisp, on SBCL and in Hager's OpenGL window), Metacat (Racket and Python ports beside Marshall's Scheme), Numbo (Defays's 1987 printout, on SBCL and in Python), Seek-Whence and Tabletop (reconstructed in Python from the theses and the books), SeqSee (Perl, and a Python port), Musicat (C#, now on Linux too) and Letter Spirit (in the browser).**
 
 
 ![FCCA](fcca.jpg)
@@ -49,19 +49,25 @@ Welcome!  Join us.  This will be insanely fun.
 REPOSITORY VERSION & HOW YOU CAN CONTRIBUTE
 ---
 
-As of right now, this repo is considered, in open-source fashion, to be in version **0.2.1**:
+As of October 2026, this repo is considered, in open-source fashion, to be in version **1.0.0**.
 
-**Goals for version 1.0.0**:
-- Each project should contain:
-    - **Source code** of all major projects, complete and running
-    - **Literature** of all major projects, complete with links to books
-    - **Exercises** for undergraduate courses
-    - **Programming challenges** large or small
-    - **Research challenges** for graduate students (each challenge being able to lead to a publication, in principle)
+**What 1.0.0 means.** The first goal of this repository is met: every FARG architecture whose source code survives, or could be reconstructed from its thesis, is archived here with instructions for running it, and runs on a current machine. Where the original is lost (Seek-Whence, Tabletop), a reconstruction from the published specification stands in for it, with every decision the sources leave open written down. Where the original survives (Copycat, Metacat, Numbo), modern ports are checked against it, event for event where that is possible. The literature is collected: the theses, the papers, and the CRCC reports that cogsci.indiana.edu no longer serves.
 
+| Project | Source code | Runs today | Literature |
+|---------|-------------|------------|------------|
+| Copycat | Mitchell's original Lisp; Hager's Python; links to Saldyt's Python, Boland's Java, Geiger's JavaScript | **Yes**: the original on SBCL, headless or live in Hager's OpenGL window | Yes |
+| Metacat | Marshall's Chez Scheme (1.0 and 1.2) | **Yes**: Racket and Python ports, checked event for event against the original | Yes |
+| Numbo | Defays's 1987 printout, digitized | **Yes**: an SBCL port and a Python implementation with a GUI | Yes |
+| Seek-Whence | Lost (Franz Lisp) | **Yes**: a Python reconstruction from Meredith's thesis | Yes |
+| SeqSee | Mahabal's Perl | **Yes**: the Perl original and a Python port | Yes |
+| Tabletop | Lost (Lisp) | **Yes**: a Python reconstruction from French's book and FCCA, with a GUI | Yes |
+| Letter Spirit | Rehling's Scheme, archived as found | **Yes**: Geiger's JavaScript versions of McGraw's Examiner and of Letter Spirit II, in the browser | Yes |
+| Musicat | Nichols's C# | **Yes**: on Windows, and on Linux with Mono | Yes |
+| Capyblanca | Linhares's Delphi, archived as found | Builds in Delphi; a Python port is planned | Yes |
+| Phaeaco | Closed source | No | Yes (the thesis) |
+| George | Never released | No | Partially |
 
-
-This repo can not only be a library but also a source for undergraduate courses and a set of research questions... hopefully this will enable wider discussions of the scientific concepts presented in this project. An ambitious long-term goal would be to have these projects running in a browser, as recommended by [Bob French](http://onlinelibrary.wiley.com/doi/10.1111/j.1756-8765.2012.01206.x/full)--hopefully in [Jupyter Notebooks](https://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261) and the upcoming [Jupyter Lab](https://medium.com/@boyanangelov/is-this-the-best-data-science-ide-jupyter-lab-review-fdd165470f13). Well, here's where we are and here's [where we're going!](repo-version.md)
+This repo can not only be a library but also a source for undergraduate courses and a set of research questions... hopefully this will enable wider discussions of the scientific concepts presented in this project. An ambitious long-term goal would be to have these projects running in a browser, as recommended by [Bob French](http://onlinelibrary.wiley.com/doi/10.1111/j.1756-8765.2012.01206.x/full)--hopefully in [Jupyter Notebooks](https://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261) and [Jupyter Lab](https://medium.com/@boyanangelov/is-this-the-best-data-science-ide-jupyter-lab-review-fdd165470f13). Paul Geiger's JavaScript versions of Copycat and Letter Spirit already run in a browser.
 
 Here's how you can [contribute to this repository](contributing.md).
 

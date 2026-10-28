@@ -1,12 +1,12 @@
 # REPOSITORY VERSION
 
-As of right now, this repo is considered, in open-source fashion, to be in version 0.2.0.
+As of October 2026, this repo is considered, in open-source fashion, to be in version 1.0.0.
 
 
 # REPOSITORY GOALS
 ---
 
-**Goals for version 1.0.0**:
+**Goals for version 1.0.0**, as written in 2017. Version 1.0.0 (October 2026) meets the first two, source code and literature; the course, that is the exercises and challenges below, is the goal for version 2.0.0:
 - Each project should contain:
     - **Source code** of all major projects, complete and running
     - **Literature** of all major projects, complete with links to books
@@ -14,7 +14,7 @@ As of right now, this repo is considered, in open-source fashion, to be in versi
     - **Programming challenges** large or small
     - **Research challenges** for graduate students (each challenge being able to lead to a publication, in principle)
 
-So here is a table of what version 1 could be:
+So here is a table of what the course version could be:
 
 | Project | Sourcecode | Literature | Exercises | Programming challenges | Research challenges |
 |---------| --------- | ----------| ----------|  ----------| ----------|
@@ -40,6 +40,27 @@ Because when we get there, here's what we can do:
 ![Fargonautica-book](FARGonautica-a-course-saved-image-canva.png)
 
 That's right: we can do a full-blown book/free e-book with *a course on the computer science of building FARG architectures*.  But two things:  First, this book would be the subject of *another* repository; and second, Don't worry about the details now... Whether or not Hofstadter will join... whether or not it will be published anywhere fancy: if you're like me and you feel that this is something that should exist, join us and let's make it happen!  
+
+#1.0.0 (October 2026)
+---
+Here is how this repository stands:
+
+- The first goal is met: every FARG architecture whose source code survives, or could be reconstructed from its thesis, is archived with instructions for running it, and runs on a current machine. Copycat runs from Mitchell's original Lisp on SBCL and inside Hager's OpenGL GUI. Metacat runs in Racket and Python, checked event for event against Marshall's Scheme. Numbo runs on SBCL and in Python from Defays's 1987 printout. Seek-Whence and Tabletop, whose Lisp is lost, are reconstructed in Python from the theses and the books, with every open decision written down. SeqSee has a Python port beside the Perl. Musicat builds and runs on Linux with Mono. Letter Spirit runs in the browser (Paul Geiger's JavaScript).
+- The literature is collected: the theses, the papers, and the CRCC reports that cogsci.indiana.edu no longer serves.
+- The course is the next goal: exercises and challenges exist for Copycat and Capyblanca only.
+
+| Project | Sourcecode | Literature | Exercises | Programming challenges | Research challenges |
+|---------| --------- | ----------| ----------|  ----------| ----------|
+| Seek-Whence & SeqSee | Yes (Seek-Whence reconstructed in Python; SeqSee in Perl and Python) | Yes | 0 | 0 | 0 |
+| Numbo | Yes (SBCL port and Python; runs) | Yes | 0 | 0 | 0 |
+| Copycat & Metacat | Yes (both run: SBCL; Racket and Python) | Yes | **7** | **3** | **1** |
+| Tabletop | Yes (reconstructed in Python; runs) | Yes | 0 | 0 | 0 |
+| Letter Spirit | Yes (Scheme; runs in the browser in JavaScript) | Yes | 0 | 0 | 0 |
+| Phaeaco | No (closed source) | Yes | 0 | 0 | 0 |
+| Musicat | Yes (runs, on Linux too) | Yes | 0 | 0 | 0 |
+| Capyblanca | Yes (Delphi) | Yes | **8** | **2** | **1** |
+| George | No (never released) | Partially | 0 | 0 | 0 |
+
 
 #0.2.1
 ---

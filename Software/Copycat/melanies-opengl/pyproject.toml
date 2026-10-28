@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "melanies-opengl"
+version = "0.1.0"
+description = "Melanie Mitchell's original Copycat (SBCL) displayed live in Joseph Aaron Hager's pyglet GUI"
+readme = "README.md"
+license = {text = "GPL-2.0-only"}
+requires-python = ">=3.10"
+dependencies = []          # the adapter is standard-library Python; the engine is SBCL
+
+[project.optional-dependencies]
+gui = ["pyglet>=2.0"]      # Hager's client, imported from ../copycat-opengl
+test = ["pytest>=7", "pillow"]
+
+[tool.setuptools]
+packages = ["melanies_opengl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

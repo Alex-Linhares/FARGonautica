@@ -17,12 +17,14 @@ Every known implementation, in this repo or elsewhere, with its paradigm. When t
 | Implementation | Language / paradigm | Where |
 |---|---|---|
 | Melanie Mitchell, original | Common Lisp (Lucid) + Flavors (`defflavor`) | [`Software/Copycat/Melanie-Mitchell-[LISP]/`](Software/Copycat/Melanie-Mitchell-[LISP]/) (`.l` files and `ccat.tar.gz`); [Mitchell's page](http://web.cecs.pdx.edu/~mm/how-to-get-copycat.html) |
-| Scott Burson & Mitchell: Mitchell's original, revived in modern Common Lisp (runs) | Common Lisp | https://github.com/slburson/copycat |
+| Scott Burson & Mitchell: Mitchell's original, revived in modern Common Lisp (runs; no license file, read as a reference only) | Common Lisp | https://github.com/slburson/copycat |
+| **Mitchell's original on SBCL** (2026) | Common Lisp; a Lucid + Flavors compatibility layer, headless, seeded | [`Software/Copycat/melanies-copycat/`](Software/Copycat/melanies-copycat/): her files unchanged in `src/`, shims in `compat/`, `PORTING_NOTES.md`, `RESULTS.md` (six problems × 100 seeds against FCCA ch. 5), `tests/run-tests.sh`. Graphics not ported. |
+| **Mitchell's engine in Hager's GUI** (2026) | Common Lisp observer (JSON lines per codelet) + Python adapter over Hager's pyglet client | [`Software/Copycat/melanies-opengl/`](Software/Copycat/melanies-opengl/): `lisp/trace-emitter.lisp` hooks `melanies-copycat` from outside (her files unchanged), `melanies_opengl/` rebuilds the workspace for `copycat-opengl/clients/opengl/` (imported unchanged); `docs/trace-format.md`; record/replay; tests in `tests/`. |
 | Scott Boland | Java, OOP | [`Software/Copycat/Scott-Boland-implementation in JAVA/JavaCopycat.zip`](Software/Copycat/Scott-Boland-implementation%20in%20JAVA/JavaCopycat.zip); [archive.org](https://archive.org/details/JavaCopycat) |
 | "speakeasy", fork of Boland | Java, OOP | https://github.com/speakeasy/CopyCat |
 | Arthur O'Dwyer, J Alan Brogan et al. | Python 2, OOP (no graphics) | https://github.com/Quuxplusone/co.py.cat |
 | Lucas Saldyt (the recommended version) | Python 3, OOP | https://github.com/fargonauts/copycat (and https://github.com/LSaldyt/copycat) |
-| Joseph Aaron Hager | Python 3, OOP, OpenGL graphics | https://github.com/ajhager/copycat |
+| Joseph Aaron Hager | Python 3, OOP, OpenGL graphics (pyglet 2) | https://github.com/ajhager/copycat; archived and repaired for Python 3.12 in [`Software/Copycat/copycat-opengl/`](Software/Copycat/copycat-opengl/) (fixes in its `PORTING_NOTES.md`, tests in `tests/`, the GUI draws bonds, groups, correspondences and the rule) |
 | Paul Geiger | JavaScript, OOP, runs in a browser | https://github.com/Paul-G2/copycat-js ([demo](https://paul-g2.github.io/copycat-js/)) |
 | Greg Detre | Clojure, functional (untested) | https://github.com/gregdetre/copycat-clojure |
 
@@ -112,6 +114,21 @@ Both projects follow the same design. Keep it intact:
 5. **The GUIs only observe.** The engines don't depend on the GUIs, and runs must still match the oracle with every view attached.
 
 ## Commands
+
+### Copycat (run from `Software/Copycat/`)
+
+```sh
+cd melanies-copycat && ./run-copycat.sh abc abd ijk 7        # Mitchell's original on SBCL: rule, answer, temperature, codelets
+cd melanies-copycat && ./run-copycat.sh --sweep 100 abc abd xyz 1 xyz.log   # answer table over 100 seeds
+cd melanies-copycat && bash tests/run-tests.sh               # archive unchanged, compat units, load, seeded runs, copystat (~1 min)
+cd copycat-opengl && python3 Copycat.py --quiet abc abd ijk --seed 1        # Hager's Python engine, headless (stdlib only)
+cd copycat-opengl && ~/dev/copycat-opengl-venv/bin/python Copycat.py abc abd xyz --seed 36   # the pyglet GUI (needs pyglet 2)
+cd copycat-opengl && python3 -m pytest tests/test_headless.py -q            # engine tests; tests/ adds the GUI smoke test under Xvfb
+cd melanies-opengl && ~/dev/copycat-opengl-venv/bin/python -m melanies_opengl abc abd xyz --seed 36   # Mitchell's engine (SBCL) live in Hager's window; --no-gui, --record, --replay
+cd melanies-opengl && python3 -m pytest tests -q                           # emitter (sbcl), adapter; the venv's python adds the GUI smoke test
+```
+
+Mitchell's archived folder `Software/Copycat/Melanie-Mitchell-[LISP]/` is read-only, like the Numbo and Metacat originals; `melanies-copycat/tests/run-tests.sh` checks it.
 
 ### Numbo (run from `Software/Numbo/`)
 
