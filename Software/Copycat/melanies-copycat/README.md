@@ -8,6 +8,17 @@ It runs headless (no graphics) and answers the letter-string problems
 (`abc → abd; ijk → ?`), printing the rule it found, the answer, the final
 temperature and the number of codelets it ran.
 
+The graphics are not ported in this folder, but the same engine can be
+watched live: [`../melanies-opengl/`](../melanies-opengl/) runs it as a
+subprocess and draws every codelet in Joseph Hager's OpenGL window, with
+the workspace, the Slipnet and the Coderack. Its README has a six-frame
+run of `abc → abd; xyz → ?` ending at `wyz`, and five other answer screens.
+
+![Mitchell's Copycat answering wyz to abc→abd, xyz→?, seed 43, drawn by Hager's GUI](../melanies-opengl/docs/run-xyz43-5-answer-wyz.png)
+
+*Mitchell's program, run from this folder, at its answer `wyz` with seed 43, seen
+through [`../melanies-opengl/`](../melanies-opengl/).*
+
 ```
 $ ./run-copycat.sh abc abd xyz 3
 Problem: abc -> abd :: xyz -> ?  (seed 3)
@@ -127,8 +138,12 @@ a modern system.
 
 The engine does not need it: `init-ccat :no-graphics t` turns every
 `%...-graphics%` flag off, and every drawing call sits behind one of those
-flags. A GUI for this port would be built the way the Numbo and Metacat
-ports build theirs, as an observer: the engine's state is all in globals
+flags. A GUI for this port exists, built the way the Numbo and Metacat
+ports build theirs, as an observer, in
+[`../melanies-opengl/`](../melanies-opengl/): a hook loaded beside this
+folder's files (which stay unchanged) writes one JSON line per codelet,
+and Hager's pyglet window redraws from those lines. The engine's state is
+all in globals
 (`*workspace*`, `*coderack*`, `*slipnet*`, `*temperature*`,
 `*codelet-count*`) and `run.l`'s `step-ccat` is the one place a view needs
 to be refreshed from. Porting the 5,500 lines of Lucid drawing code to
